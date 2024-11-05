@@ -1,0 +1,17 @@
+.openapi-generator-ignore
+Dockerfile
+README.md
+_client.sh
+client.sh
+client.sh.bash-completion
+docs/Currency.md
+docs/ErrorEnvelope.md
+docs/ExchangeApi.md
+docs/ExchangeRate.md
+docs/ExchangeRateEnvelope.md
+docs/ExchangeVApi.md
+docs/ForexRatesDto.md
+docs/ForexRatesDtoEnvelope.md
+docs/Money.md
+docs/MoneyEnvelope.md
+docs/RatesApi.md

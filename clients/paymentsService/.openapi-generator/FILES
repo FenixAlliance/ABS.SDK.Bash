@@ -1,0 +1,13 @@
+.openapi-generator-ignore
+Dockerfile
+README.md
+_client.sh
+client.sh
+client.sh.bash-completion
+docs/EmptyEnvelope.md
+docs/ErrorEnvelope.md
+docs/PaymentCreateDto.md
+docs/PaymentDto.md
+docs/PaymentDtoListEnvelope.md
+docs/PaymentUpdateDto.md
+docs/PaymentsApi.md

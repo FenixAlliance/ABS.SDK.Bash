@@ -1,0 +1,17 @@
+.openapi-generator-ignore
+Dockerfile
+README.md
+_client.sh
+client.sh
+client.sh.bash-completion
+docs/ErrorEnvelope.md
+docs/ProjectHoursApprovalApproverUpdateDto.md
+docs/ProjectHoursApprovalCreateDto.md
+docs/ProjectHoursApprovalStatusUpdateDto.md
+docs/ProjectTimeLogCreateDto.md
+docs/ProjectTimeLogDto.md
+docs/ProjectTimeLogDtoEnvelope.md
+docs/ProjectTimeLogDtoListEnvelope.md
+docs/ProjectTimeLogUpdateDto.md
+docs/ProjectTimeLogsApi.md
+docs/TimeLogApprovalsApi.md

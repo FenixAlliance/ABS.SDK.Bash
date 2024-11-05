@@ -1,0 +1,17 @@
+.openapi-generator-ignore
+Dockerfile
+README.md
+_client.sh
+client.sh
+client.sh.bash-completion
+docs/AvatarsApi.md
+docs/Blob.md
+docs/BlobEnvelope.md
+docs/BlobsApi.md
+docs/EmptyEnvelope.md
+docs/ErrorEnvelope.md
+docs/FileUploadDto.md
+docs/FileUploadDtoEnvelope.md
+docs/FilesApi.md
+docs/RadzenEditorApi.md
+docs/UploadsApi.md
