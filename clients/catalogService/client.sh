@@ -1,0 +1,16414 @@
+#!/usr/bin/env bash
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !
+# ! Note:
+# !
+# ! THIS SCRIPT HAS BEEN AUTOMATICALLY GENERATED USING
+# ! openapi-generator (https://openapi-generator.tech)
+# ! FROM OPENAPI SPECIFICATION IN JSON.
+# !
+# ! Generator version: 7.9.0
+# !
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+#
+# This is a Bash client for CatalogService.
+#
+# LICENSE:
+# https://fenix-alliance.com.co/Legal/Policies/eula
+#
+# CONTACT:
+# support@fenix-alliance.com
+#
+# MORE INFORMATION:
+# 
+#
+
+# For improved pattern matching in case statements
+shopt -s extglob
+
+###############################################################################
+#
+# Make sure Bash is at least in version 4.3
+#
+###############################################################################
+if ! ( (("${BASH_VERSION:0:1}" == "4")) && (("${BASH_VERSION:2:1}" >= "3")) ) \
+  && ! (("${BASH_VERSION:0:1}" >= "5")); then
+    echo ""
+    echo "Sorry - your Bash version is ${BASH_VERSION}"
+    echo ""
+    echo "You need at least Bash 4.3 to run this script."
+    echo ""
+    exit 1
+fi
+
+###############################################################################
+#
+# Global variables
+#
+###############################################################################
+
+##
+# The filename of this script for help messages
+script_name=$(basename "$0")
+
+##
+# Map for headers passed after operation as KEY:VALUE
+declare -A header_arguments
+
+
+##
+# Map for operation parameters passed after operation as PARAMETER=VALUE
+# These will be mapped to appropriate path or query parameters
+# The values in operation_parameters are arrays, so that multiple values
+# can be provided for the same parameter if allowed by API specification
+declare -A operation_parameters
+
+##
+# Declare colors with autodetection if output is terminal
+if [ -t 1 ]; then
+    RED="$(tput setaf 1)"
+    GREEN="$(tput setaf 2)"
+    YELLOW="$(tput setaf 3)"
+    BLUE="$(tput setaf 4)"
+    MAGENTA="$(tput setaf 5)"
+    CYAN="$(tput setaf 6)"
+    WHITE="$(tput setaf 7)"
+    BOLD="$(tput bold)"
+    OFF="$(tput sgr0)"
+else
+    RED=""
+    GREEN=""
+    YELLOW=""
+    BLUE=""
+    MAGENTA=""
+    CYAN=""
+    WHITE=""
+    BOLD=""
+    OFF=""
+fi
+
+declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$MAGENTA" "$WHITE" )
+
+##
+# This array stores the minimum number of required occurrences for parameter
+# 0 - optional
+# 1 - required
+declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["createItemAttachmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemAttachmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemAttachmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemAttachmentAsync:::ItemAttachmentCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemAttachmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemAttachmentAsync:::itemAttachmentId"]=1
+operation_parameters_minimum_occurrences["deleteItemAttachmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemAttachmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttachmentByIdAsync:::itemAttachmentId"]=1
+operation_parameters_minimum_occurrences["getItemAttachmentByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttachmentByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttachmentsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemAttachmentsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttachmentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::itemAttachmentId"]=1
+operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::ItemAttachmentUpdateDto"]=0
+operation_parameters_minimum_occurrences["countItemAttributesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countItemAttributesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countItemAttributesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemAttributeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemAttributeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemAttributeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemAttributeAsync:::ItemAttributeCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemAttributeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemAttributeAsync:::itemAttributeId"]=1
+operation_parameters_minimum_occurrences["deleteItemAttributeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemAttributeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttributeByIdAsync:::itemAttributeId"]=1
+operation_parameters_minimum_occurrences["getItemAttributeByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttributeByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttributesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemAttributesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttributesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemAttributeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemAttributeAsync:::itemAttributeId"]=1
+operation_parameters_minimum_occurrences["updateItemAttributeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemAttributeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemAttributeAsync:::ItemAttributeUpdateDto"]=0
+operation_parameters_minimum_occurrences["createItemBrandAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemBrandAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemBrandAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemBrandAsync:::ItemBrandCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemBrandAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemBrandAsync:::itemBrandId"]=1
+operation_parameters_minimum_occurrences["deleteItemBrandAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemBrandAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemBrandByIdAsync:::itemBrandId"]=1
+operation_parameters_minimum_occurrences["getItemBrandByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemBrandByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemBrandsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemBrandsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemBrandsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemBrandAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemBrandAsync:::itemBrandId"]=1
+operation_parameters_minimum_occurrences["updateItemBrandAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemBrandAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemBrandAsync:::ItemBrandUpdateDto"]=0
+operation_parameters_minimum_occurrences["countItemCategoriesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countItemCategoriesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countItemCategoriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemCategoryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemCategoryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemCategoryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemCategoryAsync:::ItemCategoryCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemCategoryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemCategoryAsync:::itemCategoryId"]=1
+operation_parameters_minimum_occurrences["deleteItemCategoryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemCategoryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemCategoriesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemCategoriesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemCategoriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemCategoryByIdAsync:::itemCategoryId"]=1
+operation_parameters_minimum_occurrences["getItemCategoryByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemCategoryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemCategoryAsync:::itemCategoryId"]=1
+operation_parameters_minimum_occurrences["updateItemCategoryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemCategoryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemCategoryAsync:::ItemCategoryUpdateDto"]=0
+operation_parameters_minimum_occurrences["getAllItemGoogleCategoriesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getAllItemGoogleCategoriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getChildrenItemGoogleCategoriesByIdAsync:::itemCategoryId"]=1
+operation_parameters_minimum_occurrences["getChildrenItemGoogleCategoriesByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getChildrenItemGoogleCategoriesByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemGoogleCategoriesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemGoogleCategoriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemGoogleCategoriesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemGoogleCategoriesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemGoogleCategoriesTreeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemGoogleCategoriesTreeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemGoogleCategoryByIdAsync:::itemCategoryId"]=1
+operation_parameters_minimum_occurrences["getItemGoogleCategoryByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemGoogleCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRootItemGoogleCategoriesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRootItemGoogleCategoriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["mapItemGoogleCategoriesTreeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["mapItemGoogleCategoriesTreeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["mapItemGoogleCategoriesTreeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemImageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemImageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemImageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemImageAsync:::ItemImageCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemImageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemImageAsync:::itemImageId"]=1
+operation_parameters_minimum_occurrences["deleteItemImageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemImageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemImageByIdAsync:::itemImageId"]=1
+operation_parameters_minimum_occurrences["getItemImageByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemImageByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemImagesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemImagesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemImagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemImageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemImageAsync:::itemImageId"]=1
+operation_parameters_minimum_occurrences["updateItemImageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemImageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemImageAsync:::ItemImageUpdateDto"]=0
+operation_parameters_minimum_occurrences["createItemQuestionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemQuestionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemQuestionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemQuestionAsync:::ItemQuestionCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemQuestionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemQuestionAsync:::itemQuestionId"]=1
+operation_parameters_minimum_occurrences["deleteItemQuestionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemQuestionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemQuestionByIdAsync:::itemQuestionId"]=1
+operation_parameters_minimum_occurrences["getItemQuestionByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemQuestionByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemQuestionsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemQuestionsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemQuestionsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemQuestionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemQuestionAsync:::itemQuestionId"]=1
+operation_parameters_minimum_occurrences["updateItemQuestionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemQuestionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemQuestionAsync:::ItemQuestionUpdateDto"]=0
+operation_parameters_minimum_occurrences["countItemRefundPoliciesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["countItemRefundPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countItemRefundPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRefundPoliciesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getItemRefundPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemRefundPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRefundPolicyByIdAsync:::itemRefundPolicyId"]=1
+operation_parameters_minimum_occurrences["getItemRefundPolicyByIdAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getItemRefundPolicyByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemRefundPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateItemToRefundPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateItemToRefundPolicyAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["relateItemToRefundPolicyAsync:::refundPolicyId"]=1
+operation_parameters_minimum_occurrences["relateItemToRefundPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["relateItemToRefundPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeRefundPolicyFromItemAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeRefundPolicyFromItemAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["removeRefundPolicyFromItemAsync:::itemRefundPolicyId"]=1
+operation_parameters_minimum_occurrences["removeRefundPolicyFromItemAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["removeRefundPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countItemReturnPoliciesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["countItemReturnPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countItemReturnPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemReturnPoliciesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getItemReturnPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemReturnPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemReturnPolicyByIdAsync:::itemReturnPolicyId"]=1
+operation_parameters_minimum_occurrences["getItemReturnPolicyByIdAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getItemReturnPolicyByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemReturnPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateItemToReturnPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateItemToReturnPolicyAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["relateItemToReturnPolicyAsync:::returnPolicyId"]=1
+operation_parameters_minimum_occurrences["relateItemToReturnPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["relateItemToReturnPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeReturnPolicyFromItemAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeReturnPolicyFromItemAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["removeReturnPolicyFromItemAsync:::itemReturnPolicyId"]=1
+operation_parameters_minimum_occurrences["removeReturnPolicyFromItemAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["removeReturnPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemReviewAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemReviewAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemReviewAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemReviewAsync:::ItemReviewCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemReviewAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemReviewAsync:::itemReviewId"]=1
+operation_parameters_minimum_occurrences["deleteItemReviewAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemReviewAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemReviewByIdAsync:::itemReviewId"]=1
+operation_parameters_minimum_occurrences["getItemReviewByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemReviewByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemReviewsAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["getItemReviewsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemReviewsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemReviewAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemReviewAsync:::itemReviewId"]=1
+operation_parameters_minimum_occurrences["updateItemReviewAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemReviewAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemReviewAsync:::ItemReviewUpdateDto"]=0
+operation_parameters_minimum_occurrences["countItemShippingPoliciesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["countItemShippingPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countItemShippingPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemShippingPoliciesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getItemShippingPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemShippingPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::itemShippingPolicyId"]=1
+operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateItemToShippingPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateItemToShippingPolicyAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["relateItemToShippingPolicyAsync:::shippingPolicyId"]=1
+operation_parameters_minimum_occurrences["relateItemToShippingPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["relateItemToShippingPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeShippingPolicyFromItemAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeShippingPolicyFromItemAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["removeShippingPolicyFromItemAsync:::itemShippingPolicyId"]=1
+operation_parameters_minimum_occurrences["removeShippingPolicyFromItemAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["removeShippingPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemTagAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemTagAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemTagAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemTagAsync:::ItemTagCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemTagAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemTagAsync:::itemTagId"]=1
+operation_parameters_minimum_occurrences["deleteItemTagAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemTagAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemTagByIdAsync:::itemTagId"]=1
+operation_parameters_minimum_occurrences["getItemTagByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemTagByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemTagsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemTagsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemTagsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemTagAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemTagAsync:::itemTagId"]=1
+operation_parameters_minimum_occurrences["updateItemTagAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemTagAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemTagAsync:::ItemTagUpdateDto"]=0
+operation_parameters_minimum_occurrences["countItemTaxPoliciesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["countItemTaxPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countItemTaxPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemTaxPoliciesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getItemTaxPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemTaxPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemTaxPolicyByIdAsync:::itemTaxPolicyId"]=1
+operation_parameters_minimum_occurrences["getItemTaxPolicyByIdAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getItemTaxPolicyByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemTaxPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateItemToTaxPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateItemToTaxPolicyAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["relateItemToTaxPolicyAsync:::taxPolicyId"]=1
+operation_parameters_minimum_occurrences["relateItemToTaxPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["relateItemToTaxPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeTaxPolicyFromItemAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeTaxPolicyFromItemAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["removeTaxPolicyFromItemAsync:::itemTaxPolicyId"]=1
+operation_parameters_minimum_occurrences["removeTaxPolicyFromItemAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["removeTaxPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countItemTypesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countItemTypesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countItemTypesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemTypeAsync:::ItemTypeCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemTypeAsync:::itemTypeID"]=1
+operation_parameters_minimum_occurrences["deleteItemTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemTypeByIdAsync:::itemTypeID"]=1
+operation_parameters_minimum_occurrences["getItemTypeByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemTypeByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemTypesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemTypesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemTypesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemTypeAsync:::itemTypeID"]=1
+operation_parameters_minimum_occurrences["updateItemTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemTypeAsync:::ItemTypeUpdateDto"]=0
+operation_parameters_minimum_occurrences["countItemWarrantyPoliciesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["countItemWarrantyPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countItemWarrantyPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemWarrantyPoliciesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getItemWarrantyPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemWarrantyPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemWarrantyPolicyByIdAsync:::itemWarrantyPolicyId"]=1
+operation_parameters_minimum_occurrences["getItemWarrantyPolicyByIdAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getItemWarrantyPolicyByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemWarrantyPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateItemToWarrantyPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateItemToWarrantyPolicyAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["relateItemToWarrantyPolicyAsync:::warrantyPolicyId"]=1
+operation_parameters_minimum_occurrences["relateItemToWarrantyPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["relateItemToWarrantyPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::itemWarrantyPolicyId"]=1
+operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countStockItemTagsByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["countStockItemTagsByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["countStockItemTagsByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countStockItemsByBusiness:::tenantId"]=0
+operation_parameters_minimum_occurrences["countStockItemsByBusiness:::api-version"]=0
+operation_parameters_minimum_occurrences["countStockItemsByBusiness:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["createStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["createStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createStockItem:::CatalogItemCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["deleteStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getExtendedStockItemById:::itemId"]=1
+operation_parameters_minimum_occurrences["getExtendedStockItemById:::api-version"]=0
+operation_parameters_minimum_occurrences["getExtendedStockItemById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProductPrimaryImageAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["getProductPrimaryImageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProductPrimaryImageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemAttachmentById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemAttachmentById:::itemAttachmentId"]=1
+operation_parameters_minimum_occurrences["getStockItemAttachmentById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemAttachmentById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemAttachmentsByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemAttachmentsByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemAttachmentsByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemAttributeOptionById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemAttributeOptionById:::itemAttributeOptionId"]=1
+operation_parameters_minimum_occurrences["getStockItemAttributeOptionById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemAttributeOptionById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemAttributeOptionsByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemAttributeOptionsByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemAttributeOptionsByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemBrandById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemBrandById:::itemBrandId"]=1
+operation_parameters_minimum_occurrences["getStockItemBrandById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemBrandById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemBrandsByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemBrandsByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemBrandsByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemCategoriesByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemCategoriesByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemCategoriesByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemCategoryById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemCategoryById:::itemCategoryId"]=1
+operation_parameters_minimum_occurrences["getStockItemCategoryById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemCategoryById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemGoogleCategoriesByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemGoogleCategoriesByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemGoogleCategoriesByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemGoogleCategoryById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemGoogleCategoryById:::itemGoogleCategoryId"]=1
+operation_parameters_minimum_occurrences["getStockItemGoogleCategoryById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemGoogleCategoryById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemImageById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemImageById:::itemImageId"]=1
+operation_parameters_minimum_occurrences["getStockItemImageById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemImageById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemImagesByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemImagesByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemImagesByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemPriceRuleById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemPriceRuleById:::itemPriceRuleId"]=1
+operation_parameters_minimum_occurrences["getStockItemPriceRuleById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemPriceRuleById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemPriceRulesByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemPriceRulesByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemPriceRulesByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemQuestionById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemQuestionById:::itemQuestionId"]=1
+operation_parameters_minimum_occurrences["getStockItemQuestionById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemQuestionById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemQuestionsByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemQuestionsByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemQuestionsByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemRefundPoliciesByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemRefundPoliciesByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemRefundPoliciesByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemRefundPolicyById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemRefundPolicyById:::itemRefundPolicyId"]=1
+operation_parameters_minimum_occurrences["getStockItemRefundPolicyById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemRefundPolicyById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemReturnPoliciesByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemReturnPoliciesByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemReturnPoliciesByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemReturnPolicyById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemReturnPolicyById:::itemReturnPolicyId"]=1
+operation_parameters_minimum_occurrences["getStockItemReturnPolicyById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemReturnPolicyById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemReviewById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemReviewById:::itemReviewId"]=1
+operation_parameters_minimum_occurrences["getStockItemReviewById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemReviewById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemReviewsByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemReviewsByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemReviewsByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemShippingPoliciesByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemShippingPoliciesByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemShippingPoliciesByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemShippingPolicyById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemShippingPolicyById:::itemShippingPolicyId"]=1
+operation_parameters_minimum_occurrences["getStockItemShippingPolicyById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemShippingPolicyById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTagById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemTagById:::itemTagId"]=1
+operation_parameters_minimum_occurrences["getStockItemTagById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTagById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTagsByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemTagsByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTagsByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTaxPoliciesByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemTaxPoliciesByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTaxPoliciesByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTaxPolicyById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemTaxPolicyById:::itemTaxPolicyId"]=1
+operation_parameters_minimum_occurrences["getStockItemTaxPolicyById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTaxPolicyById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTypeById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemTypeById:::itemTypeId"]=1
+operation_parameters_minimum_occurrences["getStockItemTypeById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTypeById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTypesByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemTypesByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTypesByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemWarrantyPoliciesByItemId:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemWarrantyPoliciesByItemId:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemWarrantyPoliciesByItemId:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemWarrantyPolicyById:::itemId"]=1
+operation_parameters_minimum_occurrences["getStockItemWarrantyPolicyById:::itemWarrantyPolicyId"]=1
+operation_parameters_minimum_occurrences["getStockItemWarrantyPolicyById:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemWarrantyPolicyById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemsOdataMaxPrice:::tenantId"]=0
+operation_parameters_minimum_occurrences["getStockItemsOdataMaxPrice:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemsOdataMaxPrice:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemsOdataMinPrice:::tenantId"]=0
+operation_parameters_minimum_occurrences["getStockItemsOdataMinPrice:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemsOdataMinPrice:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemsQuery:::tenantId"]=0
+operation_parameters_minimum_occurrences["getStockItemsQuery:::api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemsQuery:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateAttachmentToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateAttachmentToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateAttachmentToStockItem:::itemAttachmentId"]=1
+operation_parameters_minimum_occurrences["relateAttachmentToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateAttachmentToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateAttachmentToStockItem:::ItemAttachmentCreateDto"]=0
+operation_parameters_minimum_occurrences["relateAttributeOptionToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateAttributeOptionToStockItem:::itemAttributeOptionId"]=1
+operation_parameters_minimum_occurrences["relateAttributeOptionToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateAttributeOptionToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateBrandToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateBrandToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateBrandToStockItem:::itemBrandId"]=1
+operation_parameters_minimum_occurrences["relateBrandToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateBrandToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateCategoryToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateCategoryToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateCategoryToStockItem:::itemCategoryId"]=1
+operation_parameters_minimum_occurrences["relateCategoryToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateCategoryToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateGoogleCategoryToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateGoogleCategoryToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateGoogleCategoryToStockItem:::itemGoogleCategoryId"]=1
+operation_parameters_minimum_occurrences["relateGoogleCategoryToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateGoogleCategoryToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateImageToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateImageToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateImageToStockItem:::itemImageId"]=1
+operation_parameters_minimum_occurrences["relateImageToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateImageToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relatePriceRuleToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relatePriceRuleToStockItem:::itemPriceRuleId"]=1
+operation_parameters_minimum_occurrences["relatePriceRuleToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relatePriceRuleToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateQuestionToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateQuestionToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateQuestionToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateQuestionToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateQuestionToStockItem:::ItemQuestionRecordCreateDto"]=0
+operation_parameters_minimum_occurrences["relateRefundPolicyToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateRefundPolicyToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateRefundPolicyToStockItem:::itemRefundPolicyId"]=1
+operation_parameters_minimum_occurrences["relateRefundPolicyToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateRefundPolicyToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateReturnPolicyToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateReturnPolicyToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateReturnPolicyToStockItem:::itemReturnPolicyId"]=1
+operation_parameters_minimum_occurrences["relateReturnPolicyToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateReturnPolicyToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateReviewToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateReviewToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateReviewToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateReviewToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateReviewToStockItem:::ItemReviewRecordCreateDto"]=0
+operation_parameters_minimum_occurrences["relateShippingPolicyToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateShippingPolicyToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateShippingPolicyToStockItem:::itemShippingPolicyId"]=1
+operation_parameters_minimum_occurrences["relateShippingPolicyToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateShippingPolicyToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateTagToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateTagToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateTagToStockItem:::itemTagId"]=1
+operation_parameters_minimum_occurrences["relateTagToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateTagToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateTaxPolicyToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateTaxPolicyToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateTaxPolicyToStockItem:::itemTaxPolicyId"]=1
+operation_parameters_minimum_occurrences["relateTaxPolicyToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateTaxPolicyToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateTypeToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateTypeToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateTypeToStockItem:::itemTypeId"]=1
+operation_parameters_minimum_occurrences["relateTypeToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateTypeToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateWarrantyPolicyToStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateWarrantyPolicyToStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["relateWarrantyPolicyToStockItem:::itemWarrantyPolicyId"]=1
+operation_parameters_minimum_occurrences["relateWarrantyPolicyToStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["relateWarrantyPolicyToStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeAttachmentFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeAttachmentFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeAttachmentFromStockItem:::itemAttachmentId"]=1
+operation_parameters_minimum_occurrences["removeAttachmentFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeAttachmentFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeAttributeOptionFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeAttributeOptionFromStockItem:::itemAttributeOptionId"]=1
+operation_parameters_minimum_occurrences["removeAttributeOptionFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeAttributeOptionFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeBrandFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeBrandFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeBrandFromStockItem:::itemBrandId"]=1
+operation_parameters_minimum_occurrences["removeBrandFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeBrandFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeCategoryFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeCategoryFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeCategoryFromStockItem:::itemCategoryId"]=1
+operation_parameters_minimum_occurrences["removeCategoryFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeCategoryFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeGoogleCategoryFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeGoogleCategoryFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeGoogleCategoryFromStockItem:::itemGoogleCategoryId"]=1
+operation_parameters_minimum_occurrences["removeGoogleCategoryFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeGoogleCategoryFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeImageFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeImageFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeImageFromStockItem:::itemImageId"]=1
+operation_parameters_minimum_occurrences["removeImageFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeImageFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removePriceRuleFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removePriceRuleFromStockItem:::itemPriceRuleId"]=1
+operation_parameters_minimum_occurrences["removePriceRuleFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removePriceRuleFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeQuestionFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeQuestionFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeQuestionFromStockItem:::itemQuestionId"]=1
+operation_parameters_minimum_occurrences["removeQuestionFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeQuestionFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeRefundPolicyFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeRefundPolicyFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeRefundPolicyFromStockItem:::itemRefundPolicyId"]=1
+operation_parameters_minimum_occurrences["removeRefundPolicyFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeRefundPolicyFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeReturnPolicyFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeReturnPolicyFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeReturnPolicyFromStockItem:::itemReturnPolicyId"]=1
+operation_parameters_minimum_occurrences["removeReturnPolicyFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeReturnPolicyFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeReviewFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeReviewFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeReviewFromStockItem:::itemReviewId"]=1
+operation_parameters_minimum_occurrences["removeReviewFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeReviewFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeShippingPolicyFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeShippingPolicyFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeShippingPolicyFromStockItem:::itemShippingPolicyId"]=1
+operation_parameters_minimum_occurrences["removeShippingPolicyFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeShippingPolicyFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeTagFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeTagFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeTagFromStockItem:::itemTagId"]=1
+operation_parameters_minimum_occurrences["removeTagFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeTagFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeTaxPolicyFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeTaxPolicyFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeTaxPolicyFromStockItem:::itemTaxPolicyId"]=1
+operation_parameters_minimum_occurrences["removeTaxPolicyFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeTaxPolicyFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeTypeFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeTypeFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeTypeFromStockItem:::itemTypeId"]=1
+operation_parameters_minimum_occurrences["removeTypeFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeTypeFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeWarrantyPolicyFromStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeWarrantyPolicyFromStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["removeWarrantyPolicyFromStockItem:::itemWarrantyPolicyId"]=1
+operation_parameters_minimum_occurrences["removeWarrantyPolicyFromStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["removeWarrantyPolicyFromStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProductPrimaryImageAsync:::itemId"]=1
+operation_parameters_minimum_occurrences["updateProductPrimaryImageAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["updateProductPrimaryImageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateProductPrimaryImageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProductPrimaryImageAsync:::data"]=0
+operation_parameters_minimum_occurrences["updateStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["updateStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["updateStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateStockItem:::CatalogItemUpdateDto"]=0
+operation_parameters_minimum_occurrences["getMerchantById:::merchantId"]=1
+operation_parameters_minimum_occurrences["getMerchantById:::api-version"]=0
+operation_parameters_minimum_occurrences["getMerchantById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMerchants:::api-version"]=0
+operation_parameters_minimum_occurrences["getMerchants:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMerchantsCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getMerchantsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createPricingRule:::tenantId"]=1
+operation_parameters_minimum_occurrences["createPricingRule:::api-version"]=0
+operation_parameters_minimum_occurrences["createPricingRule:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createPricingRule:::PricingRuleCreateDto"]=0
+operation_parameters_minimum_occurrences["deletePricingRule:::tenantId"]=1
+operation_parameters_minimum_occurrences["deletePricingRule:::pricingRuleId"]=1
+operation_parameters_minimum_occurrences["deletePricingRule:::api-version"]=0
+operation_parameters_minimum_occurrences["deletePricingRule:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPricingRuleById:::pricingRuleId"]=1
+operation_parameters_minimum_occurrences["getPricingRuleById:::api-version"]=0
+operation_parameters_minimum_occurrences["getPricingRuleById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPricingRules:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPricingRules:::api-version"]=0
+operation_parameters_minimum_occurrences["getPricingRules:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updatePricingRule:::tenantId"]=1
+operation_parameters_minimum_occurrences["updatePricingRule:::pricingRuleId"]=1
+operation_parameters_minimum_occurrences["updatePricingRule:::api-version"]=0
+operation_parameters_minimum_occurrences["updatePricingRule:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updatePricingRule:::PricingRuleUpdateDto"]=0
+
+##
+# This array stores the maximum number of allowed occurrences for parameter
+# 1 - single value
+# 2 - 2 values
+# N - N values
+# 0 - unlimited
+declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["createItemAttachmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemAttachmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemAttachmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemAttachmentAsync:::ItemAttachmentCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemAttachmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemAttachmentAsync:::itemAttachmentId"]=0
+operation_parameters_maximum_occurrences["deleteItemAttachmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemAttachmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttachmentByIdAsync:::itemAttachmentId"]=0
+operation_parameters_maximum_occurrences["getItemAttachmentByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttachmentByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttachmentsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemAttachmentsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttachmentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemAttachmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemAttachmentAsync:::itemAttachmentId"]=0
+operation_parameters_maximum_occurrences["updateItemAttachmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemAttachmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemAttachmentAsync:::ItemAttachmentUpdateDto"]=0
+operation_parameters_maximum_occurrences["countItemAttributesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["countItemAttributesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countItemAttributesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemAttributeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemAttributeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemAttributeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemAttributeAsync:::ItemAttributeCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemAttributeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemAttributeAsync:::itemAttributeId"]=0
+operation_parameters_maximum_occurrences["deleteItemAttributeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemAttributeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttributeByIdAsync:::itemAttributeId"]=0
+operation_parameters_maximum_occurrences["getItemAttributeByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttributeByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttributesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemAttributesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttributesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemAttributeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemAttributeAsync:::itemAttributeId"]=0
+operation_parameters_maximum_occurrences["updateItemAttributeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemAttributeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemAttributeAsync:::ItemAttributeUpdateDto"]=0
+operation_parameters_maximum_occurrences["createItemBrandAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemBrandAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemBrandAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemBrandAsync:::ItemBrandCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemBrandAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemBrandAsync:::itemBrandId"]=0
+operation_parameters_maximum_occurrences["deleteItemBrandAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemBrandAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemBrandByIdAsync:::itemBrandId"]=0
+operation_parameters_maximum_occurrences["getItemBrandByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemBrandByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemBrandsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemBrandsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemBrandsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemBrandAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemBrandAsync:::itemBrandId"]=0
+operation_parameters_maximum_occurrences["updateItemBrandAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemBrandAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemBrandAsync:::ItemBrandUpdateDto"]=0
+operation_parameters_maximum_occurrences["countItemCategoriesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["countItemCategoriesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countItemCategoriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemCategoryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemCategoryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemCategoryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemCategoryAsync:::ItemCategoryCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemCategoryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemCategoryAsync:::itemCategoryId"]=0
+operation_parameters_maximum_occurrences["deleteItemCategoryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemCategoryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemCategoriesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemCategoriesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemCategoriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemCategoryByIdAsync:::itemCategoryId"]=0
+operation_parameters_maximum_occurrences["getItemCategoryByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemCategoryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemCategoryAsync:::itemCategoryId"]=0
+operation_parameters_maximum_occurrences["updateItemCategoryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemCategoryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemCategoryAsync:::ItemCategoryUpdateDto"]=0
+operation_parameters_maximum_occurrences["getAllItemGoogleCategoriesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getAllItemGoogleCategoriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getChildrenItemGoogleCategoriesByIdAsync:::itemCategoryId"]=0
+operation_parameters_maximum_occurrences["getChildrenItemGoogleCategoriesByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getChildrenItemGoogleCategoriesByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemGoogleCategoriesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemGoogleCategoriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemGoogleCategoriesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemGoogleCategoriesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemGoogleCategoriesTreeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemGoogleCategoriesTreeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemGoogleCategoryByIdAsync:::itemCategoryId"]=0
+operation_parameters_maximum_occurrences["getItemGoogleCategoryByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemGoogleCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRootItemGoogleCategoriesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRootItemGoogleCategoriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["mapItemGoogleCategoriesTreeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["mapItemGoogleCategoriesTreeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["mapItemGoogleCategoriesTreeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemImageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemImageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemImageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemImageAsync:::ItemImageCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemImageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemImageAsync:::itemImageId"]=0
+operation_parameters_maximum_occurrences["deleteItemImageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemImageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemImageByIdAsync:::itemImageId"]=0
+operation_parameters_maximum_occurrences["getItemImageByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemImageByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemImagesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemImagesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemImagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemImageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemImageAsync:::itemImageId"]=0
+operation_parameters_maximum_occurrences["updateItemImageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemImageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemImageAsync:::ItemImageUpdateDto"]=0
+operation_parameters_maximum_occurrences["createItemQuestionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemQuestionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemQuestionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemQuestionAsync:::ItemQuestionCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemQuestionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemQuestionAsync:::itemQuestionId"]=0
+operation_parameters_maximum_occurrences["deleteItemQuestionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemQuestionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemQuestionByIdAsync:::itemQuestionId"]=0
+operation_parameters_maximum_occurrences["getItemQuestionByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemQuestionByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemQuestionsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemQuestionsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemQuestionsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemQuestionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemQuestionAsync:::itemQuestionId"]=0
+operation_parameters_maximum_occurrences["updateItemQuestionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemQuestionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemQuestionAsync:::ItemQuestionUpdateDto"]=0
+operation_parameters_maximum_occurrences["countItemRefundPoliciesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["countItemRefundPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countItemRefundPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRefundPoliciesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getItemRefundPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemRefundPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRefundPolicyByIdAsync:::itemRefundPolicyId"]=0
+operation_parameters_maximum_occurrences["getItemRefundPolicyByIdAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getItemRefundPolicyByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemRefundPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateItemToRefundPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateItemToRefundPolicyAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["relateItemToRefundPolicyAsync:::refundPolicyId"]=0
+operation_parameters_maximum_occurrences["relateItemToRefundPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["relateItemToRefundPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeRefundPolicyFromItemAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeRefundPolicyFromItemAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["removeRefundPolicyFromItemAsync:::itemRefundPolicyId"]=0
+operation_parameters_maximum_occurrences["removeRefundPolicyFromItemAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["removeRefundPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countItemReturnPoliciesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["countItemReturnPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countItemReturnPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemReturnPoliciesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getItemReturnPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemReturnPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemReturnPolicyByIdAsync:::itemReturnPolicyId"]=0
+operation_parameters_maximum_occurrences["getItemReturnPolicyByIdAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getItemReturnPolicyByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemReturnPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateItemToReturnPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateItemToReturnPolicyAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["relateItemToReturnPolicyAsync:::returnPolicyId"]=0
+operation_parameters_maximum_occurrences["relateItemToReturnPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["relateItemToReturnPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeReturnPolicyFromItemAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeReturnPolicyFromItemAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["removeReturnPolicyFromItemAsync:::itemReturnPolicyId"]=0
+operation_parameters_maximum_occurrences["removeReturnPolicyFromItemAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["removeReturnPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemReviewAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemReviewAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemReviewAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemReviewAsync:::ItemReviewCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemReviewAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemReviewAsync:::itemReviewId"]=0
+operation_parameters_maximum_occurrences["deleteItemReviewAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemReviewAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemReviewByIdAsync:::itemReviewId"]=0
+operation_parameters_maximum_occurrences["getItemReviewByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemReviewByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemReviewsAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getItemReviewsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemReviewsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemReviewAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemReviewAsync:::itemReviewId"]=0
+operation_parameters_maximum_occurrences["updateItemReviewAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemReviewAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemReviewAsync:::ItemReviewUpdateDto"]=0
+operation_parameters_maximum_occurrences["countItemShippingPoliciesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["countItemShippingPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countItemShippingPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemShippingPoliciesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getItemShippingPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemShippingPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::itemShippingPolicyId"]=0
+operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateItemToShippingPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateItemToShippingPolicyAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["relateItemToShippingPolicyAsync:::shippingPolicyId"]=0
+operation_parameters_maximum_occurrences["relateItemToShippingPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["relateItemToShippingPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeShippingPolicyFromItemAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeShippingPolicyFromItemAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["removeShippingPolicyFromItemAsync:::itemShippingPolicyId"]=0
+operation_parameters_maximum_occurrences["removeShippingPolicyFromItemAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["removeShippingPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemTagAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemTagAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemTagAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemTagAsync:::ItemTagCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemTagAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemTagAsync:::itemTagId"]=0
+operation_parameters_maximum_occurrences["deleteItemTagAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemTagAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemTagByIdAsync:::itemTagId"]=0
+operation_parameters_maximum_occurrences["getItemTagByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemTagByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemTagsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemTagsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemTagsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemTagAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemTagAsync:::itemTagId"]=0
+operation_parameters_maximum_occurrences["updateItemTagAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemTagAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemTagAsync:::ItemTagUpdateDto"]=0
+operation_parameters_maximum_occurrences["countItemTaxPoliciesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["countItemTaxPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countItemTaxPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemTaxPoliciesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getItemTaxPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemTaxPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemTaxPolicyByIdAsync:::itemTaxPolicyId"]=0
+operation_parameters_maximum_occurrences["getItemTaxPolicyByIdAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getItemTaxPolicyByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemTaxPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateItemToTaxPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateItemToTaxPolicyAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["relateItemToTaxPolicyAsync:::taxPolicyId"]=0
+operation_parameters_maximum_occurrences["relateItemToTaxPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["relateItemToTaxPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeTaxPolicyFromItemAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeTaxPolicyFromItemAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["removeTaxPolicyFromItemAsync:::itemTaxPolicyId"]=0
+operation_parameters_maximum_occurrences["removeTaxPolicyFromItemAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["removeTaxPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countItemTypesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["countItemTypesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countItemTypesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemTypeAsync:::ItemTypeCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemTypeAsync:::itemTypeID"]=0
+operation_parameters_maximum_occurrences["deleteItemTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemTypeByIdAsync:::itemTypeID"]=0
+operation_parameters_maximum_occurrences["getItemTypeByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemTypeByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemTypesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemTypesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemTypesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemTypeAsync:::itemTypeID"]=0
+operation_parameters_maximum_occurrences["updateItemTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemTypeAsync:::ItemTypeUpdateDto"]=0
+operation_parameters_maximum_occurrences["countItemWarrantyPoliciesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["countItemWarrantyPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countItemWarrantyPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemWarrantyPoliciesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getItemWarrantyPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemWarrantyPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemWarrantyPolicyByIdAsync:::itemWarrantyPolicyId"]=0
+operation_parameters_maximum_occurrences["getItemWarrantyPolicyByIdAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getItemWarrantyPolicyByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemWarrantyPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateItemToWarrantyPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateItemToWarrantyPolicyAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["relateItemToWarrantyPolicyAsync:::warrantyPolicyId"]=0
+operation_parameters_maximum_occurrences["relateItemToWarrantyPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["relateItemToWarrantyPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::itemWarrantyPolicyId"]=0
+operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countStockItemTagsByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["countStockItemTagsByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["countStockItemTagsByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countStockItemsByBusiness:::tenantId"]=0
+operation_parameters_maximum_occurrences["countStockItemsByBusiness:::api-version"]=0
+operation_parameters_maximum_occurrences["countStockItemsByBusiness:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["createStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["createStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createStockItem:::CatalogItemCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["deleteStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getExtendedStockItemById:::itemId"]=0
+operation_parameters_maximum_occurrences["getExtendedStockItemById:::api-version"]=0
+operation_parameters_maximum_occurrences["getExtendedStockItemById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProductPrimaryImageAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getProductPrimaryImageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProductPrimaryImageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemAttachmentById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemAttachmentById:::itemAttachmentId"]=0
+operation_parameters_maximum_occurrences["getStockItemAttachmentById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemAttachmentById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemAttachmentsByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemAttachmentsByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemAttachmentsByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemAttributeOptionById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemAttributeOptionById:::itemAttributeOptionId"]=0
+operation_parameters_maximum_occurrences["getStockItemAttributeOptionById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemAttributeOptionById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemAttributeOptionsByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemAttributeOptionsByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemAttributeOptionsByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemBrandById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemBrandById:::itemBrandId"]=0
+operation_parameters_maximum_occurrences["getStockItemBrandById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemBrandById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemBrandsByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemBrandsByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemBrandsByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemCategoriesByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemCategoriesByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemCategoriesByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemCategoryById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemCategoryById:::itemCategoryId"]=0
+operation_parameters_maximum_occurrences["getStockItemCategoryById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemCategoryById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemGoogleCategoriesByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemGoogleCategoriesByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemGoogleCategoriesByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemGoogleCategoryById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemGoogleCategoryById:::itemGoogleCategoryId"]=0
+operation_parameters_maximum_occurrences["getStockItemGoogleCategoryById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemGoogleCategoryById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemImageById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemImageById:::itemImageId"]=0
+operation_parameters_maximum_occurrences["getStockItemImageById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemImageById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemImagesByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemImagesByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemImagesByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemPriceRuleById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemPriceRuleById:::itemPriceRuleId"]=0
+operation_parameters_maximum_occurrences["getStockItemPriceRuleById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemPriceRuleById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemPriceRulesByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemPriceRulesByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemPriceRulesByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemQuestionById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemQuestionById:::itemQuestionId"]=0
+operation_parameters_maximum_occurrences["getStockItemQuestionById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemQuestionById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemQuestionsByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemQuestionsByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemQuestionsByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemRefundPoliciesByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemRefundPoliciesByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemRefundPoliciesByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemRefundPolicyById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemRefundPolicyById:::itemRefundPolicyId"]=0
+operation_parameters_maximum_occurrences["getStockItemRefundPolicyById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemRefundPolicyById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemReturnPoliciesByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemReturnPoliciesByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemReturnPoliciesByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemReturnPolicyById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemReturnPolicyById:::itemReturnPolicyId"]=0
+operation_parameters_maximum_occurrences["getStockItemReturnPolicyById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemReturnPolicyById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemReviewById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemReviewById:::itemReviewId"]=0
+operation_parameters_maximum_occurrences["getStockItemReviewById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemReviewById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemReviewsByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemReviewsByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemReviewsByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemShippingPoliciesByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemShippingPoliciesByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemShippingPoliciesByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemShippingPolicyById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemShippingPolicyById:::itemShippingPolicyId"]=0
+operation_parameters_maximum_occurrences["getStockItemShippingPolicyById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemShippingPolicyById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTagById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemTagById:::itemTagId"]=0
+operation_parameters_maximum_occurrences["getStockItemTagById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTagById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTagsByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemTagsByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTagsByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTaxPoliciesByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemTaxPoliciesByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTaxPoliciesByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTaxPolicyById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemTaxPolicyById:::itemTaxPolicyId"]=0
+operation_parameters_maximum_occurrences["getStockItemTaxPolicyById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTaxPolicyById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTypeById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemTypeById:::itemTypeId"]=0
+operation_parameters_maximum_occurrences["getStockItemTypeById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTypeById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTypesByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemTypesByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTypesByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemWarrantyPoliciesByItemId:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemWarrantyPoliciesByItemId:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemWarrantyPoliciesByItemId:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemWarrantyPolicyById:::itemId"]=0
+operation_parameters_maximum_occurrences["getStockItemWarrantyPolicyById:::itemWarrantyPolicyId"]=0
+operation_parameters_maximum_occurrences["getStockItemWarrantyPolicyById:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemWarrantyPolicyById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemsOdataMaxPrice:::tenantId"]=0
+operation_parameters_maximum_occurrences["getStockItemsOdataMaxPrice:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemsOdataMaxPrice:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemsOdataMinPrice:::tenantId"]=0
+operation_parameters_maximum_occurrences["getStockItemsOdataMinPrice:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemsOdataMinPrice:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemsQuery:::tenantId"]=0
+operation_parameters_maximum_occurrences["getStockItemsQuery:::api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemsQuery:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateAttachmentToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateAttachmentToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateAttachmentToStockItem:::itemAttachmentId"]=0
+operation_parameters_maximum_occurrences["relateAttachmentToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateAttachmentToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateAttachmentToStockItem:::ItemAttachmentCreateDto"]=0
+operation_parameters_maximum_occurrences["relateAttributeOptionToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateAttributeOptionToStockItem:::itemAttributeOptionId"]=0
+operation_parameters_maximum_occurrences["relateAttributeOptionToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateAttributeOptionToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateBrandToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateBrandToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateBrandToStockItem:::itemBrandId"]=0
+operation_parameters_maximum_occurrences["relateBrandToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateBrandToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateCategoryToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateCategoryToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateCategoryToStockItem:::itemCategoryId"]=0
+operation_parameters_maximum_occurrences["relateCategoryToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateCategoryToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateGoogleCategoryToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateGoogleCategoryToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateGoogleCategoryToStockItem:::itemGoogleCategoryId"]=0
+operation_parameters_maximum_occurrences["relateGoogleCategoryToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateGoogleCategoryToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateImageToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateImageToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateImageToStockItem:::itemImageId"]=0
+operation_parameters_maximum_occurrences["relateImageToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateImageToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relatePriceRuleToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relatePriceRuleToStockItem:::itemPriceRuleId"]=0
+operation_parameters_maximum_occurrences["relatePriceRuleToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relatePriceRuleToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateQuestionToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateQuestionToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateQuestionToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateQuestionToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateQuestionToStockItem:::ItemQuestionRecordCreateDto"]=0
+operation_parameters_maximum_occurrences["relateRefundPolicyToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateRefundPolicyToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateRefundPolicyToStockItem:::itemRefundPolicyId"]=0
+operation_parameters_maximum_occurrences["relateRefundPolicyToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateRefundPolicyToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateReturnPolicyToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateReturnPolicyToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateReturnPolicyToStockItem:::itemReturnPolicyId"]=0
+operation_parameters_maximum_occurrences["relateReturnPolicyToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateReturnPolicyToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateReviewToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateReviewToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateReviewToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateReviewToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateReviewToStockItem:::ItemReviewRecordCreateDto"]=0
+operation_parameters_maximum_occurrences["relateShippingPolicyToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateShippingPolicyToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateShippingPolicyToStockItem:::itemShippingPolicyId"]=0
+operation_parameters_maximum_occurrences["relateShippingPolicyToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateShippingPolicyToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateTagToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateTagToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateTagToStockItem:::itemTagId"]=0
+operation_parameters_maximum_occurrences["relateTagToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateTagToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateTaxPolicyToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateTaxPolicyToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateTaxPolicyToStockItem:::itemTaxPolicyId"]=0
+operation_parameters_maximum_occurrences["relateTaxPolicyToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateTaxPolicyToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateTypeToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateTypeToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateTypeToStockItem:::itemTypeId"]=0
+operation_parameters_maximum_occurrences["relateTypeToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateTypeToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateWarrantyPolicyToStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateWarrantyPolicyToStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["relateWarrantyPolicyToStockItem:::itemWarrantyPolicyId"]=0
+operation_parameters_maximum_occurrences["relateWarrantyPolicyToStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["relateWarrantyPolicyToStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeAttachmentFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeAttachmentFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeAttachmentFromStockItem:::itemAttachmentId"]=0
+operation_parameters_maximum_occurrences["removeAttachmentFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeAttachmentFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeAttributeOptionFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeAttributeOptionFromStockItem:::itemAttributeOptionId"]=0
+operation_parameters_maximum_occurrences["removeAttributeOptionFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeAttributeOptionFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeBrandFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeBrandFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeBrandFromStockItem:::itemBrandId"]=0
+operation_parameters_maximum_occurrences["removeBrandFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeBrandFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeCategoryFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeCategoryFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeCategoryFromStockItem:::itemCategoryId"]=0
+operation_parameters_maximum_occurrences["removeCategoryFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeCategoryFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeGoogleCategoryFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeGoogleCategoryFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeGoogleCategoryFromStockItem:::itemGoogleCategoryId"]=0
+operation_parameters_maximum_occurrences["removeGoogleCategoryFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeGoogleCategoryFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeImageFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeImageFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeImageFromStockItem:::itemImageId"]=0
+operation_parameters_maximum_occurrences["removeImageFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeImageFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removePriceRuleFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removePriceRuleFromStockItem:::itemPriceRuleId"]=0
+operation_parameters_maximum_occurrences["removePriceRuleFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removePriceRuleFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeQuestionFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeQuestionFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeQuestionFromStockItem:::itemQuestionId"]=0
+operation_parameters_maximum_occurrences["removeQuestionFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeQuestionFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeRefundPolicyFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeRefundPolicyFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeRefundPolicyFromStockItem:::itemRefundPolicyId"]=0
+operation_parameters_maximum_occurrences["removeRefundPolicyFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeRefundPolicyFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeReturnPolicyFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeReturnPolicyFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeReturnPolicyFromStockItem:::itemReturnPolicyId"]=0
+operation_parameters_maximum_occurrences["removeReturnPolicyFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeReturnPolicyFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeReviewFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeReviewFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeReviewFromStockItem:::itemReviewId"]=0
+operation_parameters_maximum_occurrences["removeReviewFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeReviewFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeShippingPolicyFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeShippingPolicyFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeShippingPolicyFromStockItem:::itemShippingPolicyId"]=0
+operation_parameters_maximum_occurrences["removeShippingPolicyFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeShippingPolicyFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeTagFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeTagFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeTagFromStockItem:::itemTagId"]=0
+operation_parameters_maximum_occurrences["removeTagFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeTagFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeTaxPolicyFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeTaxPolicyFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeTaxPolicyFromStockItem:::itemTaxPolicyId"]=0
+operation_parameters_maximum_occurrences["removeTaxPolicyFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeTaxPolicyFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeTypeFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeTypeFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeTypeFromStockItem:::itemTypeId"]=0
+operation_parameters_maximum_occurrences["removeTypeFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeTypeFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeWarrantyPolicyFromStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeWarrantyPolicyFromStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["removeWarrantyPolicyFromStockItem:::itemWarrantyPolicyId"]=0
+operation_parameters_maximum_occurrences["removeWarrantyPolicyFromStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["removeWarrantyPolicyFromStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProductPrimaryImageAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["updateProductPrimaryImageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateProductPrimaryImageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateProductPrimaryImageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProductPrimaryImageAsync:::data"]=0
+operation_parameters_maximum_occurrences["updateStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["updateStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["updateStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateStockItem:::CatalogItemUpdateDto"]=0
+operation_parameters_maximum_occurrences["getMerchantById:::merchantId"]=0
+operation_parameters_maximum_occurrences["getMerchantById:::api-version"]=0
+operation_parameters_maximum_occurrences["getMerchantById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMerchants:::api-version"]=0
+operation_parameters_maximum_occurrences["getMerchants:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMerchantsCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getMerchantsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createPricingRule:::tenantId"]=0
+operation_parameters_maximum_occurrences["createPricingRule:::api-version"]=0
+operation_parameters_maximum_occurrences["createPricingRule:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createPricingRule:::PricingRuleCreateDto"]=0
+operation_parameters_maximum_occurrences["deletePricingRule:::tenantId"]=0
+operation_parameters_maximum_occurrences["deletePricingRule:::pricingRuleId"]=0
+operation_parameters_maximum_occurrences["deletePricingRule:::api-version"]=0
+operation_parameters_maximum_occurrences["deletePricingRule:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPricingRuleById:::pricingRuleId"]=0
+operation_parameters_maximum_occurrences["getPricingRuleById:::api-version"]=0
+operation_parameters_maximum_occurrences["getPricingRuleById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPricingRules:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPricingRules:::api-version"]=0
+operation_parameters_maximum_occurrences["getPricingRules:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updatePricingRule:::tenantId"]=0
+operation_parameters_maximum_occurrences["updatePricingRule:::pricingRuleId"]=0
+operation_parameters_maximum_occurrences["updatePricingRule:::api-version"]=0
+operation_parameters_maximum_occurrences["updatePricingRule:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updatePricingRule:::PricingRuleUpdateDto"]=0
+
+##
+# The type of collection for specifying multiple values for parameter:
+# - multi, csv, ssv, tsv
+declare -A operation_parameters_collection_type
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["createItemAttachmentAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemAttachmentAsync:::api-version"]=""
+operation_parameters_collection_type["createItemAttachmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemAttachmentAsync:::ItemAttachmentCreateDto"]=""
+operation_parameters_collection_type["deleteItemAttachmentAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemAttachmentAsync:::itemAttachmentId"]=""
+operation_parameters_collection_type["deleteItemAttachmentAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemAttachmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemAttachmentByIdAsync:::itemAttachmentId"]=""
+operation_parameters_collection_type["getItemAttachmentByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemAttachmentByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemAttachmentsAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemAttachmentsAsync:::api-version"]=""
+operation_parameters_collection_type["getItemAttachmentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemAttachmentAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemAttachmentAsync:::itemAttachmentId"]=""
+operation_parameters_collection_type["updateItemAttachmentAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemAttachmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemAttachmentAsync:::ItemAttachmentUpdateDto"]=""
+operation_parameters_collection_type["countItemAttributesAsync:::tenantId"]=""
+operation_parameters_collection_type["countItemAttributesAsync:::api-version"]=""
+operation_parameters_collection_type["countItemAttributesAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemAttributeAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemAttributeAsync:::api-version"]=""
+operation_parameters_collection_type["createItemAttributeAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemAttributeAsync:::ItemAttributeCreateDto"]=""
+operation_parameters_collection_type["deleteItemAttributeAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemAttributeAsync:::itemAttributeId"]=""
+operation_parameters_collection_type["deleteItemAttributeAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemAttributeAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemAttributeByIdAsync:::itemAttributeId"]=""
+operation_parameters_collection_type["getItemAttributeByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemAttributeByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemAttributesAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemAttributesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemAttributesAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemAttributeAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemAttributeAsync:::itemAttributeId"]=""
+operation_parameters_collection_type["updateItemAttributeAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemAttributeAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemAttributeAsync:::ItemAttributeUpdateDto"]=""
+operation_parameters_collection_type["createItemBrandAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemBrandAsync:::api-version"]=""
+operation_parameters_collection_type["createItemBrandAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemBrandAsync:::ItemBrandCreateDto"]=""
+operation_parameters_collection_type["deleteItemBrandAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemBrandAsync:::itemBrandId"]=""
+operation_parameters_collection_type["deleteItemBrandAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemBrandAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemBrandByIdAsync:::itemBrandId"]=""
+operation_parameters_collection_type["getItemBrandByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemBrandByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemBrandsAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemBrandsAsync:::api-version"]=""
+operation_parameters_collection_type["getItemBrandsAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemBrandAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemBrandAsync:::itemBrandId"]=""
+operation_parameters_collection_type["updateItemBrandAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemBrandAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemBrandAsync:::ItemBrandUpdateDto"]=""
+operation_parameters_collection_type["countItemCategoriesAsync:::tenantId"]=""
+operation_parameters_collection_type["countItemCategoriesAsync:::api-version"]=""
+operation_parameters_collection_type["countItemCategoriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemCategoryAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemCategoryAsync:::api-version"]=""
+operation_parameters_collection_type["createItemCategoryAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemCategoryAsync:::ItemCategoryCreateDto"]=""
+operation_parameters_collection_type["deleteItemCategoryAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemCategoryAsync:::itemCategoryId"]=""
+operation_parameters_collection_type["deleteItemCategoryAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemCategoryAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemCategoriesAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemCategoriesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemCategoriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemCategoryByIdAsync:::itemCategoryId"]=""
+operation_parameters_collection_type["getItemCategoryByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemCategoryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemCategoryAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemCategoryAsync:::itemCategoryId"]=""
+operation_parameters_collection_type["updateItemCategoryAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemCategoryAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemCategoryAsync:::ItemCategoryUpdateDto"]=""
+operation_parameters_collection_type["getAllItemGoogleCategoriesAsync:::api-version"]=""
+operation_parameters_collection_type["getAllItemGoogleCategoriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getChildrenItemGoogleCategoriesByIdAsync:::itemCategoryId"]=""
+operation_parameters_collection_type["getChildrenItemGoogleCategoriesByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getChildrenItemGoogleCategoriesByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemGoogleCategoriesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemGoogleCategoriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemGoogleCategoriesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getItemGoogleCategoriesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemGoogleCategoriesTreeAsync:::api-version"]=""
+operation_parameters_collection_type["getItemGoogleCategoriesTreeAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemGoogleCategoryByIdAsync:::itemCategoryId"]=""
+operation_parameters_collection_type["getItemGoogleCategoryByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemGoogleCategoryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRootItemGoogleCategoriesAsync:::api-version"]=""
+operation_parameters_collection_type["getRootItemGoogleCategoriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["mapItemGoogleCategoriesTreeAsync:::tenantId"]=""
+operation_parameters_collection_type["mapItemGoogleCategoriesTreeAsync:::api-version"]=""
+operation_parameters_collection_type["mapItemGoogleCategoriesTreeAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemImageAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemImageAsync:::api-version"]=""
+operation_parameters_collection_type["createItemImageAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemImageAsync:::ItemImageCreateDto"]=""
+operation_parameters_collection_type["deleteItemImageAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemImageAsync:::itemImageId"]=""
+operation_parameters_collection_type["deleteItemImageAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemImageAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemImageByIdAsync:::itemImageId"]=""
+operation_parameters_collection_type["getItemImageByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemImageByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemImagesAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemImagesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemImagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemImageAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemImageAsync:::itemImageId"]=""
+operation_parameters_collection_type["updateItemImageAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemImageAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemImageAsync:::ItemImageUpdateDto"]=""
+operation_parameters_collection_type["createItemQuestionAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemQuestionAsync:::api-version"]=""
+operation_parameters_collection_type["createItemQuestionAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemQuestionAsync:::ItemQuestionCreateDto"]=""
+operation_parameters_collection_type["deleteItemQuestionAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemQuestionAsync:::itemQuestionId"]=""
+operation_parameters_collection_type["deleteItemQuestionAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemQuestionAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemQuestionByIdAsync:::itemQuestionId"]=""
+operation_parameters_collection_type["getItemQuestionByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemQuestionByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemQuestionsAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemQuestionsAsync:::api-version"]=""
+operation_parameters_collection_type["getItemQuestionsAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemQuestionAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemQuestionAsync:::itemQuestionId"]=""
+operation_parameters_collection_type["updateItemQuestionAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemQuestionAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemQuestionAsync:::ItemQuestionUpdateDto"]=""
+operation_parameters_collection_type["countItemRefundPoliciesAsync:::itemId"]=""
+operation_parameters_collection_type["countItemRefundPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["countItemRefundPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRefundPoliciesAsync:::itemId"]=""
+operation_parameters_collection_type["getItemRefundPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemRefundPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRefundPolicyByIdAsync:::itemRefundPolicyId"]=""
+operation_parameters_collection_type["getItemRefundPolicyByIdAsync:::itemId"]=""
+operation_parameters_collection_type["getItemRefundPolicyByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemRefundPolicyByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["relateItemToRefundPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["relateItemToRefundPolicyAsync:::itemId"]=""
+operation_parameters_collection_type["relateItemToRefundPolicyAsync:::refundPolicyId"]=""
+operation_parameters_collection_type["relateItemToRefundPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["relateItemToRefundPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["removeRefundPolicyFromItemAsync:::tenantId"]=""
+operation_parameters_collection_type["removeRefundPolicyFromItemAsync:::itemId"]=""
+operation_parameters_collection_type["removeRefundPolicyFromItemAsync:::itemRefundPolicyId"]=""
+operation_parameters_collection_type["removeRefundPolicyFromItemAsync:::api-version"]=""
+operation_parameters_collection_type["removeRefundPolicyFromItemAsync:::x-api-version"]=""
+operation_parameters_collection_type["countItemReturnPoliciesAsync:::itemId"]=""
+operation_parameters_collection_type["countItemReturnPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["countItemReturnPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemReturnPoliciesAsync:::itemId"]=""
+operation_parameters_collection_type["getItemReturnPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemReturnPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemReturnPolicyByIdAsync:::itemReturnPolicyId"]=""
+operation_parameters_collection_type["getItemReturnPolicyByIdAsync:::itemId"]=""
+operation_parameters_collection_type["getItemReturnPolicyByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemReturnPolicyByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["relateItemToReturnPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["relateItemToReturnPolicyAsync:::itemId"]=""
+operation_parameters_collection_type["relateItemToReturnPolicyAsync:::returnPolicyId"]=""
+operation_parameters_collection_type["relateItemToReturnPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["relateItemToReturnPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["removeReturnPolicyFromItemAsync:::tenantId"]=""
+operation_parameters_collection_type["removeReturnPolicyFromItemAsync:::itemId"]=""
+operation_parameters_collection_type["removeReturnPolicyFromItemAsync:::itemReturnPolicyId"]=""
+operation_parameters_collection_type["removeReturnPolicyFromItemAsync:::api-version"]=""
+operation_parameters_collection_type["removeReturnPolicyFromItemAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemReviewAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemReviewAsync:::api-version"]=""
+operation_parameters_collection_type["createItemReviewAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemReviewAsync:::ItemReviewCreateDto"]=""
+operation_parameters_collection_type["deleteItemReviewAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemReviewAsync:::itemReviewId"]=""
+operation_parameters_collection_type["deleteItemReviewAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemReviewAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemReviewByIdAsync:::itemReviewId"]=""
+operation_parameters_collection_type["getItemReviewByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemReviewByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemReviewsAsync:::itemId"]=""
+operation_parameters_collection_type["getItemReviewsAsync:::api-version"]=""
+operation_parameters_collection_type["getItemReviewsAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemReviewAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemReviewAsync:::itemReviewId"]=""
+operation_parameters_collection_type["updateItemReviewAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemReviewAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemReviewAsync:::ItemReviewUpdateDto"]=""
+operation_parameters_collection_type["countItemShippingPoliciesAsync:::itemId"]=""
+operation_parameters_collection_type["countItemShippingPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["countItemShippingPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemShippingPoliciesAsync:::itemId"]=""
+operation_parameters_collection_type["getItemShippingPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemShippingPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::itemShippingPolicyId"]=""
+operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::itemId"]=""
+operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["relateItemToShippingPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["relateItemToShippingPolicyAsync:::itemId"]=""
+operation_parameters_collection_type["relateItemToShippingPolicyAsync:::shippingPolicyId"]=""
+operation_parameters_collection_type["relateItemToShippingPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["relateItemToShippingPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["removeShippingPolicyFromItemAsync:::tenantId"]=""
+operation_parameters_collection_type["removeShippingPolicyFromItemAsync:::itemId"]=""
+operation_parameters_collection_type["removeShippingPolicyFromItemAsync:::itemShippingPolicyId"]=""
+operation_parameters_collection_type["removeShippingPolicyFromItemAsync:::api-version"]=""
+operation_parameters_collection_type["removeShippingPolicyFromItemAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemTagAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemTagAsync:::api-version"]=""
+operation_parameters_collection_type["createItemTagAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemTagAsync:::ItemTagCreateDto"]=""
+operation_parameters_collection_type["deleteItemTagAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemTagAsync:::itemTagId"]=""
+operation_parameters_collection_type["deleteItemTagAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemTagAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemTagByIdAsync:::itemTagId"]=""
+operation_parameters_collection_type["getItemTagByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemTagByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemTagsAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemTagsAsync:::api-version"]=""
+operation_parameters_collection_type["getItemTagsAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemTagAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemTagAsync:::itemTagId"]=""
+operation_parameters_collection_type["updateItemTagAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemTagAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemTagAsync:::ItemTagUpdateDto"]=""
+operation_parameters_collection_type["countItemTaxPoliciesAsync:::itemId"]=""
+operation_parameters_collection_type["countItemTaxPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["countItemTaxPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemTaxPoliciesAsync:::itemId"]=""
+operation_parameters_collection_type["getItemTaxPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemTaxPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemTaxPolicyByIdAsync:::itemTaxPolicyId"]=""
+operation_parameters_collection_type["getItemTaxPolicyByIdAsync:::itemId"]=""
+operation_parameters_collection_type["getItemTaxPolicyByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemTaxPolicyByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["relateItemToTaxPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["relateItemToTaxPolicyAsync:::itemId"]=""
+operation_parameters_collection_type["relateItemToTaxPolicyAsync:::taxPolicyId"]=""
+operation_parameters_collection_type["relateItemToTaxPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["relateItemToTaxPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["removeTaxPolicyFromItemAsync:::tenantId"]=""
+operation_parameters_collection_type["removeTaxPolicyFromItemAsync:::itemId"]=""
+operation_parameters_collection_type["removeTaxPolicyFromItemAsync:::itemTaxPolicyId"]=""
+operation_parameters_collection_type["removeTaxPolicyFromItemAsync:::api-version"]=""
+operation_parameters_collection_type["removeTaxPolicyFromItemAsync:::x-api-version"]=""
+operation_parameters_collection_type["countItemTypesAsync:::tenantId"]=""
+operation_parameters_collection_type["countItemTypesAsync:::api-version"]=""
+operation_parameters_collection_type["countItemTypesAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemTypeAsync:::api-version"]=""
+operation_parameters_collection_type["createItemTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemTypeAsync:::ItemTypeCreateDto"]=""
+operation_parameters_collection_type["deleteItemTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemTypeAsync:::itemTypeID"]=""
+operation_parameters_collection_type["deleteItemTypeAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemTypeByIdAsync:::itemTypeID"]=""
+operation_parameters_collection_type["getItemTypeByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemTypeByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemTypesAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemTypesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemTypesAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemTypeAsync:::itemTypeID"]=""
+operation_parameters_collection_type["updateItemTypeAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemTypeAsync:::ItemTypeUpdateDto"]=""
+operation_parameters_collection_type["countItemWarrantyPoliciesAsync:::itemId"]=""
+operation_parameters_collection_type["countItemWarrantyPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["countItemWarrantyPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemWarrantyPoliciesAsync:::itemId"]=""
+operation_parameters_collection_type["getItemWarrantyPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemWarrantyPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemWarrantyPolicyByIdAsync:::itemWarrantyPolicyId"]=""
+operation_parameters_collection_type["getItemWarrantyPolicyByIdAsync:::itemId"]=""
+operation_parameters_collection_type["getItemWarrantyPolicyByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemWarrantyPolicyByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["relateItemToWarrantyPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["relateItemToWarrantyPolicyAsync:::itemId"]=""
+operation_parameters_collection_type["relateItemToWarrantyPolicyAsync:::warrantyPolicyId"]=""
+operation_parameters_collection_type["relateItemToWarrantyPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["relateItemToWarrantyPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::tenantId"]=""
+operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::itemId"]=""
+operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::itemWarrantyPolicyId"]=""
+operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::api-version"]=""
+operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::x-api-version"]=""
+operation_parameters_collection_type["countStockItemTagsByItemId:::itemId"]=""
+operation_parameters_collection_type["countStockItemTagsByItemId:::api-version"]=""
+operation_parameters_collection_type["countStockItemTagsByItemId:::x-api-version"]=""
+operation_parameters_collection_type["countStockItemsByBusiness:::tenantId"]=""
+operation_parameters_collection_type["countStockItemsByBusiness:::api-version"]=""
+operation_parameters_collection_type["countStockItemsByBusiness:::x-api-version"]=""
+operation_parameters_collection_type["createStockItem:::tenantId"]=""
+operation_parameters_collection_type["createStockItem:::api-version"]=""
+operation_parameters_collection_type["createStockItem:::x-api-version"]=""
+operation_parameters_collection_type["createStockItem:::CatalogItemCreateDto"]=""
+operation_parameters_collection_type["deleteStockItem:::tenantId"]=""
+operation_parameters_collection_type["deleteStockItem:::itemId"]=""
+operation_parameters_collection_type["deleteStockItem:::api-version"]=""
+operation_parameters_collection_type["deleteStockItem:::x-api-version"]=""
+operation_parameters_collection_type["getExtendedStockItemById:::itemId"]=""
+operation_parameters_collection_type["getExtendedStockItemById:::api-version"]=""
+operation_parameters_collection_type["getExtendedStockItemById:::x-api-version"]=""
+operation_parameters_collection_type["getProductPrimaryImageAsync:::itemId"]=""
+operation_parameters_collection_type["getProductPrimaryImageAsync:::api-version"]=""
+operation_parameters_collection_type["getProductPrimaryImageAsync:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemAttachmentById:::itemId"]=""
+operation_parameters_collection_type["getStockItemAttachmentById:::itemAttachmentId"]=""
+operation_parameters_collection_type["getStockItemAttachmentById:::api-version"]=""
+operation_parameters_collection_type["getStockItemAttachmentById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemAttachmentsByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemAttachmentsByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemAttachmentsByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemAttributeOptionById:::itemId"]=""
+operation_parameters_collection_type["getStockItemAttributeOptionById:::itemAttributeOptionId"]=""
+operation_parameters_collection_type["getStockItemAttributeOptionById:::api-version"]=""
+operation_parameters_collection_type["getStockItemAttributeOptionById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemAttributeOptionsByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemAttributeOptionsByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemAttributeOptionsByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemBrandById:::itemId"]=""
+operation_parameters_collection_type["getStockItemBrandById:::itemBrandId"]=""
+operation_parameters_collection_type["getStockItemBrandById:::api-version"]=""
+operation_parameters_collection_type["getStockItemBrandById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemBrandsByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemBrandsByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemBrandsByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemById:::itemId"]=""
+operation_parameters_collection_type["getStockItemById:::api-version"]=""
+operation_parameters_collection_type["getStockItemById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemCategoriesByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemCategoriesByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemCategoriesByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemCategoryById:::itemId"]=""
+operation_parameters_collection_type["getStockItemCategoryById:::itemCategoryId"]=""
+operation_parameters_collection_type["getStockItemCategoryById:::api-version"]=""
+operation_parameters_collection_type["getStockItemCategoryById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemGoogleCategoriesByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemGoogleCategoriesByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemGoogleCategoriesByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemGoogleCategoryById:::itemId"]=""
+operation_parameters_collection_type["getStockItemGoogleCategoryById:::itemGoogleCategoryId"]=""
+operation_parameters_collection_type["getStockItemGoogleCategoryById:::api-version"]=""
+operation_parameters_collection_type["getStockItemGoogleCategoryById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemImageById:::itemId"]=""
+operation_parameters_collection_type["getStockItemImageById:::itemImageId"]=""
+operation_parameters_collection_type["getStockItemImageById:::api-version"]=""
+operation_parameters_collection_type["getStockItemImageById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemImagesByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemImagesByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemImagesByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemPriceRuleById:::itemId"]=""
+operation_parameters_collection_type["getStockItemPriceRuleById:::itemPriceRuleId"]=""
+operation_parameters_collection_type["getStockItemPriceRuleById:::api-version"]=""
+operation_parameters_collection_type["getStockItemPriceRuleById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemPriceRulesByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemPriceRulesByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemPriceRulesByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemQuestionById:::itemId"]=""
+operation_parameters_collection_type["getStockItemQuestionById:::itemQuestionId"]=""
+operation_parameters_collection_type["getStockItemQuestionById:::api-version"]=""
+operation_parameters_collection_type["getStockItemQuestionById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemQuestionsByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemQuestionsByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemQuestionsByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemRefundPoliciesByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemRefundPoliciesByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemRefundPoliciesByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemRefundPolicyById:::itemId"]=""
+operation_parameters_collection_type["getStockItemRefundPolicyById:::itemRefundPolicyId"]=""
+operation_parameters_collection_type["getStockItemRefundPolicyById:::api-version"]=""
+operation_parameters_collection_type["getStockItemRefundPolicyById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemReturnPoliciesByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemReturnPoliciesByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemReturnPoliciesByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemReturnPolicyById:::itemId"]=""
+operation_parameters_collection_type["getStockItemReturnPolicyById:::itemReturnPolicyId"]=""
+operation_parameters_collection_type["getStockItemReturnPolicyById:::api-version"]=""
+operation_parameters_collection_type["getStockItemReturnPolicyById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemReviewById:::itemId"]=""
+operation_parameters_collection_type["getStockItemReviewById:::itemReviewId"]=""
+operation_parameters_collection_type["getStockItemReviewById:::api-version"]=""
+operation_parameters_collection_type["getStockItemReviewById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemReviewsByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemReviewsByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemReviewsByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemShippingPoliciesByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemShippingPoliciesByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemShippingPoliciesByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemShippingPolicyById:::itemId"]=""
+operation_parameters_collection_type["getStockItemShippingPolicyById:::itemShippingPolicyId"]=""
+operation_parameters_collection_type["getStockItemShippingPolicyById:::api-version"]=""
+operation_parameters_collection_type["getStockItemShippingPolicyById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemTagById:::itemId"]=""
+operation_parameters_collection_type["getStockItemTagById:::itemTagId"]=""
+operation_parameters_collection_type["getStockItemTagById:::api-version"]=""
+operation_parameters_collection_type["getStockItemTagById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemTagsByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemTagsByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemTagsByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemTaxPoliciesByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemTaxPoliciesByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemTaxPoliciesByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemTaxPolicyById:::itemId"]=""
+operation_parameters_collection_type["getStockItemTaxPolicyById:::itemTaxPolicyId"]=""
+operation_parameters_collection_type["getStockItemTaxPolicyById:::api-version"]=""
+operation_parameters_collection_type["getStockItemTaxPolicyById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemTypeById:::itemId"]=""
+operation_parameters_collection_type["getStockItemTypeById:::itemTypeId"]=""
+operation_parameters_collection_type["getStockItemTypeById:::api-version"]=""
+operation_parameters_collection_type["getStockItemTypeById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemTypesByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemTypesByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemTypesByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemWarrantyPoliciesByItemId:::itemId"]=""
+operation_parameters_collection_type["getStockItemWarrantyPoliciesByItemId:::api-version"]=""
+operation_parameters_collection_type["getStockItemWarrantyPoliciesByItemId:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemWarrantyPolicyById:::itemId"]=""
+operation_parameters_collection_type["getStockItemWarrantyPolicyById:::itemWarrantyPolicyId"]=""
+operation_parameters_collection_type["getStockItemWarrantyPolicyById:::api-version"]=""
+operation_parameters_collection_type["getStockItemWarrantyPolicyById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemsOdataMaxPrice:::tenantId"]=""
+operation_parameters_collection_type["getStockItemsOdataMaxPrice:::api-version"]=""
+operation_parameters_collection_type["getStockItemsOdataMaxPrice:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemsOdataMinPrice:::tenantId"]=""
+operation_parameters_collection_type["getStockItemsOdataMinPrice:::api-version"]=""
+operation_parameters_collection_type["getStockItemsOdataMinPrice:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemsQuery:::tenantId"]=""
+operation_parameters_collection_type["getStockItemsQuery:::api-version"]=""
+operation_parameters_collection_type["getStockItemsQuery:::x-api-version"]=""
+operation_parameters_collection_type["relateAttachmentToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateAttachmentToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateAttachmentToStockItem:::itemAttachmentId"]=""
+operation_parameters_collection_type["relateAttachmentToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateAttachmentToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateAttachmentToStockItem:::ItemAttachmentCreateDto"]=""
+operation_parameters_collection_type["relateAttributeOptionToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateAttributeOptionToStockItem:::itemAttributeOptionId"]=""
+operation_parameters_collection_type["relateAttributeOptionToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateAttributeOptionToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateBrandToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateBrandToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateBrandToStockItem:::itemBrandId"]=""
+operation_parameters_collection_type["relateBrandToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateBrandToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateCategoryToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateCategoryToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateCategoryToStockItem:::itemCategoryId"]=""
+operation_parameters_collection_type["relateCategoryToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateCategoryToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateGoogleCategoryToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateGoogleCategoryToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateGoogleCategoryToStockItem:::itemGoogleCategoryId"]=""
+operation_parameters_collection_type["relateGoogleCategoryToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateGoogleCategoryToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateImageToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateImageToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateImageToStockItem:::itemImageId"]=""
+operation_parameters_collection_type["relateImageToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateImageToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relatePriceRuleToStockItem:::itemId"]=""
+operation_parameters_collection_type["relatePriceRuleToStockItem:::itemPriceRuleId"]=""
+operation_parameters_collection_type["relatePriceRuleToStockItem:::api-version"]=""
+operation_parameters_collection_type["relatePriceRuleToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateQuestionToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateQuestionToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateQuestionToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateQuestionToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateQuestionToStockItem:::ItemQuestionRecordCreateDto"]=""
+operation_parameters_collection_type["relateRefundPolicyToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateRefundPolicyToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateRefundPolicyToStockItem:::itemRefundPolicyId"]=""
+operation_parameters_collection_type["relateRefundPolicyToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateRefundPolicyToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateReturnPolicyToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateReturnPolicyToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateReturnPolicyToStockItem:::itemReturnPolicyId"]=""
+operation_parameters_collection_type["relateReturnPolicyToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateReturnPolicyToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateReviewToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateReviewToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateReviewToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateReviewToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateReviewToStockItem:::ItemReviewRecordCreateDto"]=""
+operation_parameters_collection_type["relateShippingPolicyToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateShippingPolicyToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateShippingPolicyToStockItem:::itemShippingPolicyId"]=""
+operation_parameters_collection_type["relateShippingPolicyToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateShippingPolicyToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateTagToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateTagToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateTagToStockItem:::itemTagId"]=""
+operation_parameters_collection_type["relateTagToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateTagToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateTaxPolicyToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateTaxPolicyToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateTaxPolicyToStockItem:::itemTaxPolicyId"]=""
+operation_parameters_collection_type["relateTaxPolicyToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateTaxPolicyToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateTypeToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateTypeToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateTypeToStockItem:::itemTypeId"]=""
+operation_parameters_collection_type["relateTypeToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateTypeToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["relateWarrantyPolicyToStockItem:::tenantId"]=""
+operation_parameters_collection_type["relateWarrantyPolicyToStockItem:::itemId"]=""
+operation_parameters_collection_type["relateWarrantyPolicyToStockItem:::itemWarrantyPolicyId"]=""
+operation_parameters_collection_type["relateWarrantyPolicyToStockItem:::api-version"]=""
+operation_parameters_collection_type["relateWarrantyPolicyToStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeAttachmentFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeAttachmentFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeAttachmentFromStockItem:::itemAttachmentId"]=""
+operation_parameters_collection_type["removeAttachmentFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeAttachmentFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeAttributeOptionFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeAttributeOptionFromStockItem:::itemAttributeOptionId"]=""
+operation_parameters_collection_type["removeAttributeOptionFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeAttributeOptionFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeBrandFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeBrandFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeBrandFromStockItem:::itemBrandId"]=""
+operation_parameters_collection_type["removeBrandFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeBrandFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeCategoryFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeCategoryFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeCategoryFromStockItem:::itemCategoryId"]=""
+operation_parameters_collection_type["removeCategoryFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeCategoryFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeGoogleCategoryFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeGoogleCategoryFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeGoogleCategoryFromStockItem:::itemGoogleCategoryId"]=""
+operation_parameters_collection_type["removeGoogleCategoryFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeGoogleCategoryFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeImageFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeImageFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeImageFromStockItem:::itemImageId"]=""
+operation_parameters_collection_type["removeImageFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeImageFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removePriceRuleFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removePriceRuleFromStockItem:::itemPriceRuleId"]=""
+operation_parameters_collection_type["removePriceRuleFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removePriceRuleFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeQuestionFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeQuestionFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeQuestionFromStockItem:::itemQuestionId"]=""
+operation_parameters_collection_type["removeQuestionFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeQuestionFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeRefundPolicyFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeRefundPolicyFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeRefundPolicyFromStockItem:::itemRefundPolicyId"]=""
+operation_parameters_collection_type["removeRefundPolicyFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeRefundPolicyFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeReturnPolicyFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeReturnPolicyFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeReturnPolicyFromStockItem:::itemReturnPolicyId"]=""
+operation_parameters_collection_type["removeReturnPolicyFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeReturnPolicyFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeReviewFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeReviewFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeReviewFromStockItem:::itemReviewId"]=""
+operation_parameters_collection_type["removeReviewFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeReviewFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeShippingPolicyFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeShippingPolicyFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeShippingPolicyFromStockItem:::itemShippingPolicyId"]=""
+operation_parameters_collection_type["removeShippingPolicyFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeShippingPolicyFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeTagFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeTagFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeTagFromStockItem:::itemTagId"]=""
+operation_parameters_collection_type["removeTagFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeTagFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeTaxPolicyFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeTaxPolicyFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeTaxPolicyFromStockItem:::itemTaxPolicyId"]=""
+operation_parameters_collection_type["removeTaxPolicyFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeTaxPolicyFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeTypeFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeTypeFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeTypeFromStockItem:::itemTypeId"]=""
+operation_parameters_collection_type["removeTypeFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeTypeFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["removeWarrantyPolicyFromStockItem:::tenantId"]=""
+operation_parameters_collection_type["removeWarrantyPolicyFromStockItem:::itemId"]=""
+operation_parameters_collection_type["removeWarrantyPolicyFromStockItem:::itemWarrantyPolicyId"]=""
+operation_parameters_collection_type["removeWarrantyPolicyFromStockItem:::api-version"]=""
+operation_parameters_collection_type["removeWarrantyPolicyFromStockItem:::x-api-version"]=""
+operation_parameters_collection_type["updateProductPrimaryImageAsync:::itemId"]=""
+operation_parameters_collection_type["updateProductPrimaryImageAsync:::tenantId"]=""
+operation_parameters_collection_type["updateProductPrimaryImageAsync:::api-version"]=""
+operation_parameters_collection_type["updateProductPrimaryImageAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateProductPrimaryImageAsync:::data"]=""
+operation_parameters_collection_type["updateStockItem:::tenantId"]=""
+operation_parameters_collection_type["updateStockItem:::itemId"]=""
+operation_parameters_collection_type["updateStockItem:::api-version"]=""
+operation_parameters_collection_type["updateStockItem:::x-api-version"]=""
+operation_parameters_collection_type["updateStockItem:::CatalogItemUpdateDto"]=""
+operation_parameters_collection_type["getMerchantById:::merchantId"]=""
+operation_parameters_collection_type["getMerchantById:::api-version"]=""
+operation_parameters_collection_type["getMerchantById:::x-api-version"]=""
+operation_parameters_collection_type["getMerchants:::api-version"]=""
+operation_parameters_collection_type["getMerchants:::x-api-version"]=""
+operation_parameters_collection_type["getMerchantsCount:::api-version"]=""
+operation_parameters_collection_type["getMerchantsCount:::x-api-version"]=""
+operation_parameters_collection_type["createPricingRule:::tenantId"]=""
+operation_parameters_collection_type["createPricingRule:::api-version"]=""
+operation_parameters_collection_type["createPricingRule:::x-api-version"]=""
+operation_parameters_collection_type["createPricingRule:::PricingRuleCreateDto"]=""
+operation_parameters_collection_type["deletePricingRule:::tenantId"]=""
+operation_parameters_collection_type["deletePricingRule:::pricingRuleId"]=""
+operation_parameters_collection_type["deletePricingRule:::api-version"]=""
+operation_parameters_collection_type["deletePricingRule:::x-api-version"]=""
+operation_parameters_collection_type["getPricingRuleById:::pricingRuleId"]=""
+operation_parameters_collection_type["getPricingRuleById:::api-version"]=""
+operation_parameters_collection_type["getPricingRuleById:::x-api-version"]=""
+operation_parameters_collection_type["getPricingRules:::tenantId"]=""
+operation_parameters_collection_type["getPricingRules:::api-version"]=""
+operation_parameters_collection_type["getPricingRules:::x-api-version"]=""
+operation_parameters_collection_type["updatePricingRule:::tenantId"]=""
+operation_parameters_collection_type["updatePricingRule:::pricingRuleId"]=""
+operation_parameters_collection_type["updatePricingRule:::api-version"]=""
+operation_parameters_collection_type["updatePricingRule:::x-api-version"]=""
+operation_parameters_collection_type["updatePricingRule:::PricingRuleUpdateDto"]=""
+
+
+##
+# Map for body parameters passed after operation as
+# PARAMETER==STRING_VALUE or PARAMETER:=NUMERIC_VALUE
+# These will be mapped to top level json keys ( { "PARAMETER": "VALUE" })
+declare -A body_parameters
+
+##
+# These arguments will be directly passed to cURL
+curl_arguments=""
+
+##
+# The host for making the request
+host=""
+
+##
+# The user credentials for basic authentication
+basic_auth_credential=""
+
+
+##
+# If true, the script will only output the actual cURL command that would be
+# used
+print_curl=false
+
+##
+# The operation ID passed on the command line
+operation=""
+
+##
+# The provided Accept header value
+header_accept=""
+
+##
+# The provided Content-type header value
+header_content_type=""
+
+##
+# If there is any body content on the stdin pass it to the body of the request
+body_content_temp_file=""
+
+##
+# If this variable is set to true, the request will be performed even
+# if parameters for required query, header or body values are not provided
+# (path parameters are still required).
+force=false
+
+##
+# Declare some mime types abbreviations for easier content-type and accepts
+# headers specification
+declare -A mime_type_abbreviations
+# text/*
+mime_type_abbreviations["text"]="text/plain"
+mime_type_abbreviations["html"]="text/html"
+mime_type_abbreviations["md"]="text/x-markdown"
+mime_type_abbreviations["csv"]="text/csv"
+mime_type_abbreviations["css"]="text/css"
+mime_type_abbreviations["rtf"]="text/rtf"
+# application/*
+mime_type_abbreviations["json"]="application/json"
+mime_type_abbreviations["xml"]="application/xml"
+mime_type_abbreviations["yaml"]="application/yaml"
+mime_type_abbreviations["js"]="application/javascript"
+mime_type_abbreviations["bin"]="application/octet-stream"
+mime_type_abbreviations["rdf"]="application/rdf+xml"
+# image/*
+mime_type_abbreviations["jpg"]="image/jpeg"
+mime_type_abbreviations["png"]="image/png"
+mime_type_abbreviations["gif"]="image/gif"
+mime_type_abbreviations["bmp"]="image/bmp"
+mime_type_abbreviations["tiff"]="image/tiff"
+
+
+##############################################################################
+#
+# Escape special URL characters
+# Based on table at http://www.w3schools.com/tags/ref_urlencode.asp
+#
+##############################################################################
+url_escape() {
+    local raw_url="$1"
+
+    value=$(sed -e 's/ /%20/g' \
+       -e 's/!/%21/g' \
+       -e 's/"/%22/g' \
+       -e 's/#/%23/g' \
+       -e 's/\&/%26/g' \
+       -e 's/'\''/%28/g' \
+       -e 's/(/%28/g' \
+       -e 's/)/%29/g' \
+       -e 's/:/%3A/g' \
+       -e 's/\\t/%09/g' \
+       -e 's/?/%3F/g' <<<"$raw_url");
+
+    echo "$value"
+}
+
+##############################################################################
+#
+# Lookup the mime type abbreviation in the mime_type_abbreviations array.
+# If not present assume the user provided a valid mime type
+#
+##############################################################################
+lookup_mime_type() {
+    local mime_type="$1"
+
+    if [[ ${mime_type_abbreviations[$mime_type]} ]]; then
+        echo "${mime_type_abbreviations[$mime_type]}"
+    else
+        echo "$mime_type"
+    fi
+}
+
+##############################################################################
+#
+# Converts an associative array into a list of cURL header
+# arguments (-H "KEY: VALUE")
+#
+##############################################################################
+header_arguments_to_curl() {
+    local headers_curl=""
+
+    for key in "${!header_arguments[@]}"; do
+        headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
+    done
+    headers_curl+=" "
+
+    echo "${headers_curl}"
+}
+
+##############################################################################
+#
+# Converts an associative array into a simple JSON with keys as top
+# level object attributes
+#
+# \todo Add conversion of more complex attributes using paths
+#
+##############################################################################
+body_parameters_to_json() {
+    if [[ $RAW_BODY == "1" ]]; then
+        echo "-d '${body_parameters["RAW_BODY"]}'"
+    else
+        local body_json="-d '{"
+        local count=0
+        for key in "${!body_parameters[@]}"; do
+            if [[ $((count++)) -gt 0 ]]; then
+                body_json+=", "
+            fi
+            body_json+="\"${key}\": ${body_parameters[${key}]}"
+        done
+        body_json+="}'"
+
+        if [[ "${#body_parameters[@]}" -eq 0 ]]; then
+            echo ""
+        else
+            echo "${body_json}"
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Converts an associative array into form urlencoded string
+#
+##############################################################################
+body_parameters_to_form_urlencoded() {
+    local body_form_urlencoded="-d '"
+    local count=0
+    for key in "${!body_parameters[@]}"; do
+        if [[ $((count++)) -gt 0 ]]; then
+            body_form_urlencoded+="&"
+        fi
+        body_form_urlencoded+="${key}=${body_parameters[${key}]}"
+    done
+    body_form_urlencoded+="'"
+
+    if [[ "${#body_parameters[@]}" -eq 0 ]]; then
+        echo ""
+    else
+        echo "${body_form_urlencoded}"
+    fi
+}
+
+##############################################################################
+#
+# Helper method for showing error because for example echo in
+# build_request_path() is evaluated as part of command line not printed on
+# output. Anyway better idea for resource clean up ;-).
+#
+##############################################################################
+ERROR_MSG=""
+function finish {
+    if [[ -n "$ERROR_MSG" ]]; then
+        echo >&2 "${OFF}${RED}$ERROR_MSG"
+        echo >&2 "${OFF}Check usage: '${script_name} --help'"
+    fi
+}
+trap finish EXIT
+
+
+##############################################################################
+#
+# Validate and build request path including query parameters
+#
+##############################################################################
+build_request_path() {
+    local path_template=$1
+    local -n path_params=$2
+    local -n query_params=$3
+
+
+    #
+    # Check input parameters count against minimum and maximum required
+    #
+    if [[ "$force" = false ]]; then
+        local was_error=""
+        for qparam in "${query_params[@]}" "${path_params[@]}"; do
+            local parameter_values
+            mapfile -t parameter_values < <(sed -e 's/'":::"'/\n/g' <<<"${operation_parameters[$qparam]}")
+
+            #
+            # Check if the number of provided values is not less than minimum required
+            #
+            if [[ ${#parameter_values[@]} -lt ${operation_parameters_minimum_occurrences["${operation}:::${qparam}"]} ]]; then
+                echo "ERROR: Too few values provided for '${qparam}' parameter."
+                was_error=true
+            fi
+
+            #
+            # Check if the number of provided values is not more than maximum
+            #
+            if [[ ${operation_parameters_maximum_occurrences["${operation}:::${qparam}"]} -gt 0 \
+                  && ${#parameter_values[@]} -gt ${operation_parameters_maximum_occurrences["${operation}:::${qparam}"]} ]]; then
+                echo "ERROR: Too many values provided for '${qparam}' parameter"
+                was_error=true
+            fi
+        done
+        if [[ -n "$was_error" ]]; then
+            exit 1
+        fi
+    fi
+
+    # First replace all path parameters in the path
+    for pparam in "${path_params[@]}"; do
+        local path_regex="(.*)(\\{$pparam\\})(.*)"
+        if [[ $path_template =~ $path_regex ]]; then
+            path_template=${BASH_REMATCH[1]}${operation_parameters[$pparam]}${BASH_REMATCH[3]}
+        fi
+    done
+
+    local query_request_part=""
+
+    for qparam in "${query_params[@]}"; do
+        if [[ "${operation_parameters[$qparam]}" == "" ]]; then
+            continue
+        fi
+
+        # Get the array of parameter values
+        local parameter_value=""
+        local parameter_values
+        mapfile -t parameter_values < <(sed -e 's/'":::"'/\n/g' <<<"${operation_parameters[$qparam]}")
+
+
+
+        #
+        # Append parameters without specific cardinality
+        #
+        local collection_type="${operation_parameters_collection_type["${operation}:::${qparam}"]}"
+        if [[ "${collection_type}" == "" ]]; then
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+="&"
+                fi
+                parameter_value+="${qparam}=${qvalue}"
+            done
+        #
+        # Append parameters specified as 'multi' collections i.e. param=value1&param=value2&...
+        #
+        elif [[ "${collection_type}" == "multi" ]]; then
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+="&"
+                fi
+                parameter_value+="${qparam}=${qvalue}"
+            done
+        #
+        # Append parameters specified as 'csv' collections i.e. param=value1,value2,...
+        #
+        elif [[ "${collection_type}" == "csv" ]]; then
+            parameter_value+="${qparam}="
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+=","
+                fi
+                parameter_value+="${qvalue}"
+            done
+        #
+        # Append parameters specified as 'ssv' collections i.e. param="value1 value2 ..."
+        #
+        elif [[ "${collection_type}" == "ssv" ]]; then
+            parameter_value+="${qparam}="
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+=" "
+                fi
+                parameter_value+="${qvalue}"
+            done
+        #
+        # Append parameters specified as 'tsv' collections i.e. param="value1\tvalue2\t..."
+        #
+        elif [[ "${collection_type}" == "tsv" ]]; then
+            parameter_value+="${qparam}="
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+="\\t"
+                fi
+                parameter_value+="${qvalue}"
+            done
+        else
+            echo "Unsupported collection format \"${collection_type}\""
+            exit 1
+        fi
+
+        if [[ -n "${parameter_value}" ]]; then
+            if [[ -n "${query_request_part}" ]]; then
+                query_request_part+="&"
+            fi
+            query_request_part+="${parameter_value}"
+        fi
+
+    done
+
+
+    # Now append query parameters - if any
+    if [[ -n "${query_request_part}" ]]; then
+        path_template+="?${query_request_part}"
+    fi
+
+    echo "$path_template"
+}
+
+
+
+###############################################################################
+#
+# Print main help message
+#
+###############################################################################
+print_help() {
+cat <<EOF
+
+${BOLD}${WHITE}CatalogService command line client (API version 2.0.0.0)${OFF}
+
+${BOLD}${WHITE}Usage${OFF}
+
+  ${GREEN}${script_name}${OFF} [-h|--help] [-V|--version] [--about] [${RED}<curl-options>${OFF}]
+           [-ac|--accept ${GREEN}<mime-type>${OFF}] [-ct,--content-type ${GREEN}<mime-type>${OFF}]
+           [--host ${CYAN}<url>${OFF}] [--dry-run] [-nc|--no-colors] ${YELLOW}<operation>${OFF} [-h|--help]
+           [${BLUE}<headers>${OFF}] [${MAGENTA}<parameters>${OFF}] [${MAGENTA}<body-parameters>${OFF}]
+
+  - ${CYAN}<url>${OFF} - endpoint of the REST service without basepath
+
+  - ${RED}<curl-options>${OFF} - any valid cURL options can be passed before ${YELLOW}<operation>${OFF}
+  - ${GREEN}<mime-type>${OFF} - either full mime-type or one of supported abbreviations:
+                   (text, html, md, csv, css, rtf, json, xml, yaml, js, bin,
+                    rdf, jpg, png, gif, bmp, tiff)
+  - ${BLUE}<headers>${OFF} - HTTP headers can be passed in the form ${YELLOW}HEADER${OFF}:${BLUE}VALUE${OFF}
+  - ${MAGENTA}<parameters>${OFF} - REST operation parameters can be passed in the following
+                   forms:
+                   * ${YELLOW}KEY${OFF}=${BLUE}VALUE${OFF} - path or query parameters
+  - ${MAGENTA}<body-parameters>${OFF} - simple JSON body content (first level only) can be build
+                        using the following arguments:
+                        * ${YELLOW}KEY${OFF}==${BLUE}VALUE${OFF} - body parameters which will be added to body
+                                      JSON as '{ ..., "${YELLOW}KEY${OFF}": "${BLUE}VALUE${OFF}", ... }'
+                        * ${YELLOW}KEY${OFF}:=${BLUE}VALUE${OFF} - body parameters which will be added to body
+                                      JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
+
+EOF
+    echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemAttachments]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createItemAttachmentAsync${OFF};Create a new item attachment
+  ${CYAN}deleteItemAttachmentAsync${OFF};Delete an item attachment
+  ${CYAN}getItemAttachmentByIdAsync${OFF};Get item attachment by ID
+  ${CYAN}getItemAttachmentsAsync${OFF};Get all item attachments
+  ${CYAN}updateItemAttachmentAsync${OFF};Update an item attachment
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemAttributes]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countItemAttributesAsync${OFF};Count item attributes
+  ${CYAN}createItemAttributeAsync${OFF};Create a new item attribute
+  ${CYAN}deleteItemAttributeAsync${OFF};Delete an item attribute
+  ${CYAN}getItemAttributeByIdAsync${OFF};Get item attribute by ID
+  ${CYAN}getItemAttributesAsync${OFF};Get all item attributes
+  ${CYAN}updateItemAttributeAsync${OFF};Update an item attribute
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemBrands]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createItemBrandAsync${OFF};Create a new item brand
+  ${CYAN}deleteItemBrandAsync${OFF};Delete an item brand
+  ${CYAN}getItemBrandByIdAsync${OFF};Get item brand by ID
+  ${CYAN}getItemBrandsAsync${OFF};Get all item brands
+  ${CYAN}updateItemBrandAsync${OFF};Update an item brand
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemCategories]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countItemCategoriesAsync${OFF};Count item categories
+  ${CYAN}createItemCategoryAsync${OFF};Create a new item category
+  ${CYAN}deleteItemCategoryAsync${OFF};Delete an item category
+  ${CYAN}getItemCategoriesAsync${OFF};Get all item categories
+  ${CYAN}getItemCategoryByIdAsync${OFF};Get item category by ID
+  ${CYAN}updateItemCategoryAsync${OFF};Update an item category
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemGoogleCategories]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}getAllItemGoogleCategoriesAsync${OFF};Get all Google item categories (all)
+  ${CYAN}getChildrenItemGoogleCategoriesByIdAsync${OFF};Get children Google item categories by ID
+  ${CYAN}getItemGoogleCategoriesAsync${OFF};Get all Google item categories
+  ${CYAN}getItemGoogleCategoriesCountAsync${OFF};Get Google item categories count
+  ${CYAN}getItemGoogleCategoriesTreeAsync${OFF};Get Google item categories tree
+  ${CYAN}getItemGoogleCategoryByIdAsync${OFF};Get Google item category by ID
+  ${CYAN}getRootItemGoogleCategoriesAsync${OFF};Get root Google item categories
+  ${CYAN}mapItemGoogleCategoriesTreeAsync${OFF};Map Google item categories tree
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemImages]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createItemImageAsync${OFF};Create a new item image
+  ${CYAN}deleteItemImageAsync${OFF};Delete an item image
+  ${CYAN}getItemImageByIdAsync${OFF};Get item image by ID
+  ${CYAN}getItemImagesAsync${OFF};Get all item images
+  ${CYAN}updateItemImageAsync${OFF};Update an item image
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemQuestions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createItemQuestionAsync${OFF};Create a new item question
+  ${CYAN}deleteItemQuestionAsync${OFF};Delete an item question
+  ${CYAN}getItemQuestionByIdAsync${OFF};Get item question by ID
+  ${CYAN}getItemQuestionsAsync${OFF};Get all item questions
+  ${CYAN}updateItemQuestionAsync${OFF};Update an item question
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemRefundPolicies]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countItemRefundPoliciesAsync${OFF};Count item refund policies
+  ${CYAN}getItemRefundPoliciesAsync${OFF};Get item refund policies
+  ${CYAN}getItemRefundPolicyByIdAsync${OFF};Get item refund policy by ID
+  ${CYAN}relateItemToRefundPolicyAsync${OFF};Relate item to refund policy
+  ${CYAN}removeRefundPolicyFromItemAsync${OFF};Remove refund policy from item
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemReturnPolicies]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countItemReturnPoliciesAsync${OFF};Count item return policies
+  ${CYAN}getItemReturnPoliciesAsync${OFF};Get item return policies
+  ${CYAN}getItemReturnPolicyByIdAsync${OFF};Get item return policy by ID
+  ${CYAN}relateItemToReturnPolicyAsync${OFF};Relate item to return policy
+  ${CYAN}removeReturnPolicyFromItemAsync${OFF};Remove return policy from item
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemReviews]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createItemReviewAsync${OFF};Create a new item review
+  ${CYAN}deleteItemReviewAsync${OFF};Delete an item review
+  ${CYAN}getItemReviewByIdAsync${OFF};Get item review by ID
+  ${CYAN}getItemReviewsAsync${OFF};Get all item reviews
+  ${CYAN}updateItemReviewAsync${OFF};Update an item review
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemShippingPolicies]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countItemShippingPoliciesAsync${OFF};Count item shipping policies
+  ${CYAN}getItemShippingPoliciesAsync${OFF};Get item shipping policies
+  ${CYAN}getItemShippingPolicyByIdAsync${OFF};Get item shipping policy by ID
+  ${CYAN}relateItemToShippingPolicyAsync${OFF};Relate item to shipping policy
+  ${CYAN}removeShippingPolicyFromItemAsync${OFF};Remove shipping policy from item
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemTags]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createItemTagAsync${OFF};Create a new item tag
+  ${CYAN}deleteItemTagAsync${OFF};Delete an item tag
+  ${CYAN}getItemTagByIdAsync${OFF};Get item tag by ID
+  ${CYAN}getItemTagsAsync${OFF};Get all item tags
+  ${CYAN}updateItemTagAsync${OFF};Update an item tag
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemTaxPolicies]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countItemTaxPoliciesAsync${OFF};Count item tax policies
+  ${CYAN}getItemTaxPoliciesAsync${OFF};Get item tax policies
+  ${CYAN}getItemTaxPolicyByIdAsync${OFF};Get item tax policy by ID
+  ${CYAN}relateItemToTaxPolicyAsync${OFF};Relate item to tax policy
+  ${CYAN}removeTaxPolicyFromItemAsync${OFF};Remove tax policy from item
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemTypes]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countItemTypesAsync${OFF};Count item types
+  ${CYAN}createItemTypeAsync${OFF};Create a new item type
+  ${CYAN}deleteItemTypeAsync${OFF};Delete an item type
+  ${CYAN}getItemTypeByIdAsync${OFF};Get item type by ID
+  ${CYAN}getItemTypesAsync${OFF};Get all item types
+  ${CYAN}updateItemTypeAsync${OFF};Update an item type
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemWarrantyPolicies]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countItemWarrantyPoliciesAsync${OFF};Count item warranty policies
+  ${CYAN}getItemWarrantyPoliciesAsync${OFF};Get item warranty policies
+  ${CYAN}getItemWarrantyPolicyByIdAsync${OFF};Get item warranty policy by ID
+  ${CYAN}relateItemToWarrantyPolicyAsync${OFF};Relate item to warranty policy
+  ${CYAN}removeWarrantyPolicyFromItemAsync${OFF};Remove warranty policy from item
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[items]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countStockItemTagsByItemId${OFF};Count tags for a stock item
+  ${CYAN}countStockItemsByBusiness${OFF};Count stock items by business
+  ${CYAN}createStockItem${OFF};Create a new stock item
+  ${CYAN}deleteStockItem${OFF};Delete a stock item
+  ${CYAN}getExtendedStockItemById${OFF};Get extended stock item by ID
+  ${CYAN}getProductPrimaryImageAsync${OFF};Get item primary image
+  ${CYAN}getStockItemAttachmentById${OFF};Get attachment by ID for a stock item
+  ${CYAN}getStockItemAttachmentsByItemId${OFF};Get attachments for a stock item
+  ${CYAN}getStockItemAttributeOptionById${OFF};Get attribute option by ID for a stock item
+  ${CYAN}getStockItemAttributeOptionsByItemId${OFF};Get attribute options for a stock item
+  ${CYAN}getStockItemBrandById${OFF};Get brand by ID for a stock item
+  ${CYAN}getStockItemBrandsByItemId${OFF};Get brands for a stock item
+  ${CYAN}getStockItemById${OFF};Get stock item by ID
+  ${CYAN}getStockItemCategoriesByItemId${OFF};Get categories for a stock item
+  ${CYAN}getStockItemCategoryById${OFF};Get category by ID for a stock item
+  ${CYAN}getStockItemGoogleCategoriesByItemId${OFF};Get Google categories for a stock item
+  ${CYAN}getStockItemGoogleCategoryById${OFF};Get Google category by ID for a stock item
+  ${CYAN}getStockItemImageById${OFF};Get image by ID for a stock item
+  ${CYAN}getStockItemImagesByItemId${OFF};Get images for a stock item
+  ${CYAN}getStockItemPriceRuleById${OFF};Get price rule by ID for a stock item
+  ${CYAN}getStockItemPriceRulesByItemId${OFF};Get price rules for a stock item
+  ${CYAN}getStockItemQuestionById${OFF};Get question by ID for a stock item
+  ${CYAN}getStockItemQuestionsByItemId${OFF};Get questions for a stock item
+  ${CYAN}getStockItemRefundPoliciesByItemId${OFF};Get refund policies for a stock item
+  ${CYAN}getStockItemRefundPolicyById${OFF};Get refund policy by ID for a stock item
+  ${CYAN}getStockItemReturnPoliciesByItemId${OFF};Get return policies for a stock item
+  ${CYAN}getStockItemReturnPolicyById${OFF};Get return policy by ID for a stock item
+  ${CYAN}getStockItemReviewById${OFF};Get review by ID for a stock item
+  ${CYAN}getStockItemReviewsByItemId${OFF};Get reviews for a stock item
+  ${CYAN}getStockItemShippingPoliciesByItemId${OFF};Get shipping policies for a stock item
+  ${CYAN}getStockItemShippingPolicyById${OFF};Get shipping policy by ID for a stock item
+  ${CYAN}getStockItemTagById${OFF};Get tag by ID for a stock item
+  ${CYAN}getStockItemTagsByItemId${OFF};Get tags for a stock item
+  ${CYAN}getStockItemTaxPoliciesByItemId${OFF};Get tax policies for a stock item
+  ${CYAN}getStockItemTaxPolicyById${OFF};Get tax policy by ID for a stock item
+  ${CYAN}getStockItemTypeById${OFF};Get type by ID for a stock item
+  ${CYAN}getStockItemTypesByItemId${OFF};Get types for a stock item
+  ${CYAN}getStockItemWarrantyPoliciesByItemId${OFF};Get warranty policies for a stock item
+  ${CYAN}getStockItemWarrantyPolicyById${OFF};Get warranty policy by ID for a stock item
+  ${CYAN}getStockItemsOdataMaxPrice${OFF};Get max price of stock items
+  ${CYAN}getStockItemsOdataMinPrice${OFF};Get min price of stock items
+  ${CYAN}getStockItemsQuery${OFF};Get all stock items
+  ${CYAN}relateAttachmentToStockItem${OFF};Relate attachment to stock item
+  ${CYAN}relateAttributeOptionToStockItem${OFF};Relate attribute option to stock item
+  ${CYAN}relateBrandToStockItem${OFF};Relate brand to stock item
+  ${CYAN}relateCategoryToStockItem${OFF};Relate category to stock item
+  ${CYAN}relateGoogleCategoryToStockItem${OFF};Relate Google category to stock item
+  ${CYAN}relateImageToStockItem${OFF};Relate image to stock item
+  ${CYAN}relatePriceRuleToStockItem${OFF};Relate price rule to stock item
+  ${CYAN}relateQuestionToStockItem${OFF};Create question for stock item
+  ${CYAN}relateRefundPolicyToStockItem${OFF};Relate refund policy to stock item
+  ${CYAN}relateReturnPolicyToStockItem${OFF};Relate return policy to stock item
+  ${CYAN}relateReviewToStockItem${OFF};Create review for stock item
+  ${CYAN}relateShippingPolicyToStockItem${OFF};Relate shipping policy to stock item
+  ${CYAN}relateTagToStockItem${OFF};Relate tag to stock item
+  ${CYAN}relateTaxPolicyToStockItem${OFF};Relate tax policy to stock item
+  ${CYAN}relateTypeToStockItem${OFF};Relate type to stock item
+  ${CYAN}relateWarrantyPolicyToStockItem${OFF};Relate warranty policy to stock item
+  ${CYAN}removeAttachmentFromStockItem${OFF};Remove attachment from stock item
+  ${CYAN}removeAttributeOptionFromStockItem${OFF};Remove attribute option from stock item
+  ${CYAN}removeBrandFromStockItem${OFF};Remove brand from stock item
+  ${CYAN}removeCategoryFromStockItem${OFF};Remove category from stock item
+  ${CYAN}removeGoogleCategoryFromStockItem${OFF};Remove Google category from stock item
+  ${CYAN}removeImageFromStockItem${OFF};Remove image from stock item
+  ${CYAN}removePriceRuleFromStockItem${OFF};Remove price rule from stock item
+  ${CYAN}removeQuestionFromStockItem${OFF};Remove question from stock item
+  ${CYAN}removeRefundPolicyFromStockItem${OFF};Remove refund policy from stock item
+  ${CYAN}removeReturnPolicyFromStockItem${OFF};Remove return policy from stock item
+  ${CYAN}removeReviewFromStockItem${OFF};Remove review from stock item
+  ${CYAN}removeShippingPolicyFromStockItem${OFF};Remove shipping policy from stock item
+  ${CYAN}removeTagFromStockItem${OFF};Remove tag from stock item
+  ${CYAN}removeTaxPolicyFromStockItem${OFF};Remove tax policy from stock item
+  ${CYAN}removeTypeFromStockItem${OFF};Remove type from stock item
+  ${CYAN}removeWarrantyPolicyFromStockItem${OFF};Remove warranty policy from stock item
+  ${CYAN}updateProductPrimaryImageAsync${OFF};Update item primary image
+  ${CYAN}updateStockItem${OFF};Update a stock item
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[merchants]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}getMerchantById${OFF};Get merchant by ID
+  ${CYAN}getMerchants${OFF};Get all merchants
+  ${CYAN}getMerchantsCount${OFF};Count merchants
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[pricingRules]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createPricingRule${OFF};Create a new pricing rule
+  ${CYAN}deletePricingRule${OFF};Delete a pricing rule
+  ${CYAN}getPricingRuleById${OFF};Get pricing rule by ID
+  ${CYAN}getPricingRules${OFF};Get all pricing rules
+  ${CYAN}updatePricingRule${OFF};Update a pricing rule
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}Options${OFF}"
+    echo -e "  -h,--help\\t\\t\\t\\tPrint this help"
+    echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
+    echo -e "  --about\\t\\t\\t\\tPrint the information about service"
+    echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
+
+    echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
+    echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
+    echo -e "  --dry-run\\t\\t\\t\\tPrint out the cURL command without"
+    echo -e "           \\t\\t\\t\\texecuting it"
+    echo -e "  -nc,--no-colors\\t\\t\\tEnforce print without colors, otherwise autodetected"
+    echo -e "  -ac,--accept ${YELLOW}<mime-type>${OFF}\\t\\tSet the 'Accept' header in the request"
+    echo -e "  -ct,--content-type ${YELLOW}<mime-type>${OFF}\\tSet the 'Content-type' header in "
+    echo -e "                                \\tthe request"
+    echo ""
+}
+
+
+##############################################################################
+#
+# Print REST service description
+#
+##############################################################################
+print_about() {
+    echo ""
+    echo -e "${BOLD}${WHITE}CatalogService command line client (API version 2.0.0.0)${OFF}"
+    echo ""
+    echo -e "License: Fenix Alliance Inc."
+    echo -e "Contact: support@fenix-alliance.com"
+    echo ""
+read -r -d '' appdescription <<EOF
+
+No description provided (generated by Openapi Generator https://github.com/openapitools/openapi-generator)
+EOF
+echo "$appdescription" | paste -sd' ' | fold -sw 80
+}
+
+
+##############################################################################
+#
+# Print REST api version
+#
+##############################################################################
+print_version() {
+    echo ""
+    echo -e "${BOLD}CatalogService command line client (API version 2.0.0.0)${OFF}"
+    echo ""
+}
+
+##############################################################################
+#
+# Print help for forgotPasswordPost operation
+#
+##############################################################################
+print_forgotPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for helloGet operation
+#
+##############################################################################
+print_helloGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for loginPost operation
+#
+##############################################################################
+print_loginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manage2faPost operation
+#
+##############################################################################
+print_manage2faPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemAttachmentAsync operation
+#
+##############################################################################
+print_createItemAttachmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemAttachmentAsync - Create a new item attachment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item attachment for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemAttachmentAsync operation
+#
+##############################################################################
+print_deleteItemAttachmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemAttachmentAsync - Delete an item attachment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item attachment for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemAttachmentByIdAsync operation
+#
+##############################################################################
+print_getItemAttachmentByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemAttachmentByIdAsync - Get item attachment by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item attachment by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemAttachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemAttachmentsAsync operation
+#
+##############################################################################
+print_getItemAttachmentsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemAttachmentsAsync - Get all item attachments${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item attachments for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemAttachmentAsync operation
+#
+##############################################################################
+print_updateItemAttachmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemAttachmentAsync - Update an item attachment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item attachment for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countItemAttributesAsync operation
+#
+##############################################################################
+print_countItemAttributesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countItemAttributesAsync - Count item attributes${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all item attributes for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemAttributeAsync operation
+#
+##############################################################################
+print_createItemAttributeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemAttributeAsync - Create a new item attribute${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item attribute for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemAttributeAsync operation
+#
+##############################################################################
+print_deleteItemAttributeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemAttributeAsync - Delete an item attribute${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item attribute for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttributeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttributeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemAttributeByIdAsync operation
+#
+##############################################################################
+print_getItemAttributeByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemAttributeByIdAsync - Get item attribute by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item attribute by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemAttributeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttributeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemAttributesAsync operation
+#
+##############################################################################
+print_getItemAttributesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemAttributesAsync - Get all item attributes${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item attributes for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemAttributeAsync operation
+#
+##############################################################################
+print_updateItemAttributeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemAttributeAsync - Update an item attribute${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item attribute for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttributeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttributeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemBrandAsync operation
+#
+##############################################################################
+print_createItemBrandAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemBrandAsync - Create a new item brand${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item brand for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemBrandAsync operation
+#
+##############################################################################
+print_deleteItemBrandAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemBrandAsync - Delete an item brand${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item brand for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemBrandId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemBrandId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemBrandByIdAsync operation
+#
+##############################################################################
+print_getItemBrandByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemBrandByIdAsync - Get item brand by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item brand by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemBrandId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemBrandId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemBrandsAsync operation
+#
+##############################################################################
+print_getItemBrandsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemBrandsAsync - Get all item brands${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item brands for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemBrandAsync operation
+#
+##############################################################################
+print_updateItemBrandAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemBrandAsync - Update an item brand${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item brand for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemBrandId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemBrandId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countItemCategoriesAsync operation
+#
+##############################################################################
+print_countItemCategoriesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countItemCategoriesAsync - Count item categories${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all item categories for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemCategoryAsync operation
+#
+##############################################################################
+print_createItemCategoryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemCategoryAsync - Create a new item category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item category for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemCategoryAsync operation
+#
+##############################################################################
+print_deleteItemCategoryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemCategoryAsync - Delete an item category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item category for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemCategoriesAsync operation
+#
+##############################################################################
+print_getItemCategoriesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemCategoriesAsync - Get all item categories${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item categories for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemCategoryByIdAsync operation
+#
+##############################################################################
+print_getItemCategoryByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemCategoryByIdAsync - Get item category by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item category by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemCategoryAsync operation
+#
+##############################################################################
+print_updateItemCategoryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemCategoryAsync - Update an item category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item category for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getAllItemGoogleCategoriesAsync operation
+#
+##############################################################################
+print_getAllItemGoogleCategoriesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getAllItemGoogleCategoriesAsync - Get all Google item categories (all)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all Google item categories (all) without OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getChildrenItemGoogleCategoriesByIdAsync operation
+#
+##############################################################################
+print_getChildrenItemGoogleCategoriesByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getChildrenItemGoogleCategoriesByIdAsync - Get children Google item categories by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves children Google item categories for a given ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemGoogleCategoriesAsync operation
+#
+##############################################################################
+print_getItemGoogleCategoriesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemGoogleCategoriesAsync - Get all Google item categories${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all Google item categories using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemGoogleCategoriesCountAsync operation
+#
+##############################################################################
+print_getItemGoogleCategoriesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemGoogleCategoriesCountAsync - Get Google item categories count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the count of Google item categories using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemGoogleCategoriesTreeAsync operation
+#
+##############################################################################
+print_getItemGoogleCategoriesTreeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemGoogleCategoriesTreeAsync - Get Google item categories tree${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the Google item categories tree." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemGoogleCategoryByIdAsync operation
+#
+##############################################################################
+print_getItemGoogleCategoryByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemGoogleCategoryByIdAsync - Get Google item category by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific Google item category by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRootItemGoogleCategoriesAsync operation
+#
+##############################################################################
+print_getRootItemGoogleCategoriesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRootItemGoogleCategoriesAsync - Get root Google item categories${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves root Google item categories." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapItemGoogleCategoriesTreeAsync operation
+#
+##############################################################################
+print_mapItemGoogleCategoriesTreeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapItemGoogleCategoriesTreeAsync - Map Google item categories tree${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Maps the Google item categories tree." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemImageAsync operation
+#
+##############################################################################
+print_createItemImageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemImageAsync - Create a new item image${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item image for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemImageAsync operation
+#
+##############################################################################
+print_deleteItemImageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemImageAsync - Delete an item image${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item image for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemImageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemImageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemImageByIdAsync operation
+#
+##############################################################################
+print_getItemImageByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemImageByIdAsync - Get item image by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item image by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemImageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemImageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemImagesAsync operation
+#
+##############################################################################
+print_getItemImagesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemImagesAsync - Get all item images${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item images for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemImageAsync operation
+#
+##############################################################################
+print_updateItemImageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemImageAsync - Update an item image${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item image for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemImageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemImageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemQuestionAsync operation
+#
+##############################################################################
+print_createItemQuestionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemQuestionAsync - Create a new item question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item question for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemQuestionAsync operation
+#
+##############################################################################
+print_deleteItemQuestionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemQuestionAsync - Delete an item question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item question for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemQuestionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemQuestionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemQuestionByIdAsync operation
+#
+##############################################################################
+print_getItemQuestionByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemQuestionByIdAsync - Get item question by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item question by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemQuestionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemQuestionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemQuestionsAsync operation
+#
+##############################################################################
+print_getItemQuestionsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemQuestionsAsync - Get all item questions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item questions for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemQuestionAsync operation
+#
+##############################################################################
+print_updateItemQuestionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemQuestionAsync - Update an item question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item question for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemQuestionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemQuestionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countItemRefundPoliciesAsync operation
+#
+##############################################################################
+print_countItemRefundPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countItemRefundPoliciesAsync - Count item refund policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all refund policies for a specific item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemRefundPoliciesAsync operation
+#
+##############################################################################
+print_getItemRefundPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemRefundPoliciesAsync - Get item refund policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all refund policies for a specific item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemRefundPolicyByIdAsync operation
+#
+##############################################################################
+print_getItemRefundPolicyByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemRefundPolicyByIdAsync - Get item refund policy by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific refund policy for an item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemRefundPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemRefundPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateItemToRefundPolicyAsync operation
+#
+##############################################################################
+print_relateItemToRefundPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateItemToRefundPolicyAsync - Relate item to refund policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Relates an item to an existing refund policy." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}refundPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: refundPolicyId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeRefundPolicyFromItemAsync operation
+#
+##############################################################################
+print_removeRefundPolicyFromItemAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeRefundPolicyFromItemAsync - Remove refund policy from item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a refund policy from an item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemRefundPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemRefundPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countItemReturnPoliciesAsync operation
+#
+##############################################################################
+print_countItemReturnPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countItemReturnPoliciesAsync - Count item return policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all return policies for a specific item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemReturnPoliciesAsync operation
+#
+##############################################################################
+print_getItemReturnPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemReturnPoliciesAsync - Get item return policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all return policies for a specific item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemReturnPolicyByIdAsync operation
+#
+##############################################################################
+print_getItemReturnPolicyByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemReturnPolicyByIdAsync - Get item return policy by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific return policy for an item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemReturnPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReturnPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateItemToReturnPolicyAsync operation
+#
+##############################################################################
+print_relateItemToReturnPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateItemToReturnPolicyAsync - Relate item to return policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Relates an item to an existing return policy." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}returnPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: returnPolicyId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeReturnPolicyFromItemAsync operation
+#
+##############################################################################
+print_removeReturnPolicyFromItemAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeReturnPolicyFromItemAsync - Remove return policy from item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a return policy from an item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemReturnPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReturnPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemReviewAsync operation
+#
+##############################################################################
+print_createItemReviewAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemReviewAsync - Create a new item review${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item review for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemReviewAsync operation
+#
+##############################################################################
+print_deleteItemReviewAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemReviewAsync - Delete an item review${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item review for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemReviewId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReviewId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemReviewByIdAsync operation
+#
+##############################################################################
+print_getItemReviewByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemReviewByIdAsync - Get item review by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item review by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemReviewId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReviewId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemReviewsAsync operation
+#
+##############################################################################
+print_getItemReviewsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemReviewsAsync - Get all item reviews${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item reviews for the specified item using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemReviewAsync operation
+#
+##############################################################################
+print_updateItemReviewAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemReviewAsync - Update an item review${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item review for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemReviewId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReviewId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countItemShippingPoliciesAsync operation
+#
+##############################################################################
+print_countItemShippingPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countItemShippingPoliciesAsync - Count item shipping policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all shipping policies for a specific item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemShippingPoliciesAsync operation
+#
+##############################################################################
+print_getItemShippingPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemShippingPoliciesAsync - Get item shipping policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all shipping policies for a specific item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemShippingPolicyByIdAsync operation
+#
+##############################################################################
+print_getItemShippingPolicyByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemShippingPolicyByIdAsync - Get item shipping policy by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific shipping policy for an item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemShippingPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemShippingPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateItemToShippingPolicyAsync operation
+#
+##############################################################################
+print_relateItemToShippingPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateItemToShippingPolicyAsync - Relate item to shipping policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Relates an item to an existing shipping policy." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}shippingPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: shippingPolicyId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeShippingPolicyFromItemAsync operation
+#
+##############################################################################
+print_removeShippingPolicyFromItemAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeShippingPolicyFromItemAsync - Remove shipping policy from item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a shipping policy from an item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemShippingPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemShippingPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemTagAsync operation
+#
+##############################################################################
+print_createItemTagAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemTagAsync - Create a new item tag${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item tag for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemTagAsync operation
+#
+##############################################################################
+print_deleteItemTagAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemTagAsync - Delete an item tag${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item tag for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTagId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTagId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemTagByIdAsync operation
+#
+##############################################################################
+print_getItemTagByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemTagByIdAsync - Get item tag by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item tag by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemTagId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTagId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemTagsAsync operation
+#
+##############################################################################
+print_getItemTagsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemTagsAsync - Get all item tags${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item tags for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemTagAsync operation
+#
+##############################################################################
+print_updateItemTagAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemTagAsync - Update an item tag${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item tag for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTagId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTagId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countItemTaxPoliciesAsync operation
+#
+##############################################################################
+print_countItemTaxPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countItemTaxPoliciesAsync - Count item tax policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all tax policies for a specific item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemTaxPoliciesAsync operation
+#
+##############################################################################
+print_getItemTaxPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemTaxPoliciesAsync - Get item tax policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all tax policies for a specific item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemTaxPolicyByIdAsync operation
+#
+##############################################################################
+print_getItemTaxPolicyByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemTaxPolicyByIdAsync - Get item tax policy by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific tax policy for an item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemTaxPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTaxPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateItemToTaxPolicyAsync operation
+#
+##############################################################################
+print_relateItemToTaxPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateItemToTaxPolicyAsync - Relate item to tax policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Relates an item to an existing tax policy." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}taxPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: taxPolicyId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeTaxPolicyFromItemAsync operation
+#
+##############################################################################
+print_removeTaxPolicyFromItemAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeTaxPolicyFromItemAsync - Remove tax policy from item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a tax policy from an item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTaxPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTaxPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countItemTypesAsync operation
+#
+##############################################################################
+print_countItemTypesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countItemTypesAsync - Count item types${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all item types for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemTypeAsync operation
+#
+##############################################################################
+print_createItemTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemTypeAsync - Create a new item type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item type for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemTypeAsync operation
+#
+##############################################################################
+print_deleteItemTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemTypeAsync - Delete an item type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item type for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTypeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTypeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemTypeByIdAsync operation
+#
+##############################################################################
+print_getItemTypeByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemTypeByIdAsync - Get item type by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item type by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemTypeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTypeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemTypesAsync operation
+#
+##############################################################################
+print_getItemTypesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemTypesAsync - Get all item types${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item types for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemTypeAsync operation
+#
+##############################################################################
+print_updateItemTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemTypeAsync - Update an item type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item type for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTypeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTypeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countItemWarrantyPoliciesAsync operation
+#
+##############################################################################
+print_countItemWarrantyPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countItemWarrantyPoliciesAsync - Count item warranty policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all warranty policies for a specific item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemWarrantyPoliciesAsync operation
+#
+##############################################################################
+print_getItemWarrantyPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemWarrantyPoliciesAsync - Get item warranty policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all warranty policies for a specific item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemWarrantyPolicyByIdAsync operation
+#
+##############################################################################
+print_getItemWarrantyPolicyByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemWarrantyPolicyByIdAsync - Get item warranty policy by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific warranty policy for an item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemWarrantyPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemWarrantyPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateItemToWarrantyPolicyAsync operation
+#
+##############################################################################
+print_relateItemToWarrantyPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateItemToWarrantyPolicyAsync - Relate item to warranty policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Relates an item to an existing warranty policy." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}warrantyPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: warrantyPolicyId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeWarrantyPolicyFromItemAsync operation
+#
+##############################################################################
+print_removeWarrantyPolicyFromItemAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeWarrantyPolicyFromItemAsync - Remove warranty policy from item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a warranty policy from an item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemWarrantyPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemWarrantyPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countStockItemTagsByItemId operation
+#
+##############################################################################
+print_countStockItemTagsByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countStockItemTagsByItemId - Count tags for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts the number of tags associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countStockItemsByBusiness operation
+#
+##############################################################################
+print_countStockItemsByBusiness_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countStockItemsByBusiness - Count stock items by business${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts the number of stock items for a business, optionally filtered by tenant and OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createStockItem operation
+#
+##############################################################################
+print_createStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createStockItem - Create a new stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new stock item for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteStockItem operation
+#
+##############################################################################
+print_deleteStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteStockItem - Delete a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a stock item for the specified tenant and item ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getExtendedStockItemById operation
+#
+##############################################################################
+print_getExtendedStockItemById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getExtendedStockItemById - Get extended stock item by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves extended information for a stock item by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProductPrimaryImageAsync operation
+#
+##############################################################################
+print_getProductPrimaryImageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProductPrimaryImageAsync - Get item primary image${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the primary image for a specific catalog item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemAttachmentById operation
+#
+##############################################################################
+print_getStockItemAttachmentById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemAttachmentById - Get attachment by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific attachment by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemAttachmentsByItemId operation
+#
+##############################################################################
+print_getStockItemAttachmentsByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemAttachmentsByItemId - Get attachments for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all attachments associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemAttributeOptionById operation
+#
+##############################################################################
+print_getStockItemAttributeOptionById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemAttributeOptionById - Get attribute option by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific attribute option by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttributeOptionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttributeOptionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemAttributeOptionsByItemId operation
+#
+##############################################################################
+print_getStockItemAttributeOptionsByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemAttributeOptionsByItemId - Get attribute options for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all attribute options associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemBrandById operation
+#
+##############################################################################
+print_getStockItemBrandById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemBrandById - Get brand by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific brand by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemBrandId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemBrandId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemBrandsByItemId operation
+#
+##############################################################################
+print_getStockItemBrandsByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemBrandsByItemId - Get brands for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all brands associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemById operation
+#
+##############################################################################
+print_getStockItemById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemById - Get stock item by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a stock item by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemCategoriesByItemId operation
+#
+##############################################################################
+print_getStockItemCategoriesByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemCategoriesByItemId - Get categories for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all categories associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemCategoryById operation
+#
+##############################################################################
+print_getStockItemCategoryById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemCategoryById - Get category by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific category by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemGoogleCategoriesByItemId operation
+#
+##############################################################################
+print_getStockItemGoogleCategoriesByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemGoogleCategoriesByItemId - Get Google categories for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all Google categories associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemGoogleCategoryById operation
+#
+##############################################################################
+print_getStockItemGoogleCategoryById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemGoogleCategoryById - Get Google category by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific Google category by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemGoogleCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemGoogleCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemImageById operation
+#
+##############################################################################
+print_getStockItemImageById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemImageById - Get image by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific image by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemImageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemImageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemImagesByItemId operation
+#
+##############################################################################
+print_getStockItemImagesByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemImagesByItemId - Get images for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all images associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemPriceRuleById operation
+#
+##############################################################################
+print_getStockItemPriceRuleById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemPriceRuleById - Get price rule by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific pricing rule by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemPriceRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemPriceRuleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemPriceRulesByItemId operation
+#
+##############################################################################
+print_getStockItemPriceRulesByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemPriceRulesByItemId - Get price rules for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all pricing rules associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemQuestionById operation
+#
+##############################################################################
+print_getStockItemQuestionById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemQuestionById - Get question by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific question by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemQuestionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemQuestionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemQuestionsByItemId operation
+#
+##############################################################################
+print_getStockItemQuestionsByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemQuestionsByItemId - Get questions for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all questions associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemRefundPoliciesByItemId operation
+#
+##############################################################################
+print_getStockItemRefundPoliciesByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemRefundPoliciesByItemId - Get refund policies for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all refund policies associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemRefundPolicyById operation
+#
+##############################################################################
+print_getStockItemRefundPolicyById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemRefundPolicyById - Get refund policy by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific refund policy by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemRefundPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemRefundPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemReturnPoliciesByItemId operation
+#
+##############################################################################
+print_getStockItemReturnPoliciesByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemReturnPoliciesByItemId - Get return policies for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all return policies associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemReturnPolicyById operation
+#
+##############################################################################
+print_getStockItemReturnPolicyById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemReturnPolicyById - Get return policy by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific return policy by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemReturnPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReturnPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemReviewById operation
+#
+##############################################################################
+print_getStockItemReviewById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemReviewById - Get review by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific review by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemReviewId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReviewId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemReviewsByItemId operation
+#
+##############################################################################
+print_getStockItemReviewsByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemReviewsByItemId - Get reviews for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all reviews associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemShippingPoliciesByItemId operation
+#
+##############################################################################
+print_getStockItemShippingPoliciesByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemShippingPoliciesByItemId - Get shipping policies for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all shipping policies associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemShippingPolicyById operation
+#
+##############################################################################
+print_getStockItemShippingPolicyById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemShippingPolicyById - Get shipping policy by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific shipping policy by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemShippingPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemShippingPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemTagById operation
+#
+##############################################################################
+print_getStockItemTagById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemTagById - Get tag by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific tag by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTagId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTagId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemTagsByItemId operation
+#
+##############################################################################
+print_getStockItemTagsByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemTagsByItemId - Get tags for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all tags associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemTaxPoliciesByItemId operation
+#
+##############################################################################
+print_getStockItemTaxPoliciesByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemTaxPoliciesByItemId - Get tax policies for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all tax policies associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemTaxPolicyById operation
+#
+##############################################################################
+print_getStockItemTaxPolicyById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemTaxPolicyById - Get tax policy by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific tax policy by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTaxPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTaxPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemTypeById operation
+#
+##############################################################################
+print_getStockItemTypeById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemTypeById - Get type by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific type by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemTypesByItemId operation
+#
+##############################################################################
+print_getStockItemTypesByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemTypesByItemId - Get types for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all types associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemWarrantyPoliciesByItemId operation
+#
+##############################################################################
+print_getStockItemWarrantyPoliciesByItemId_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemWarrantyPoliciesByItemId - Get warranty policies for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all warranty policies associated with a specific stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemWarrantyPolicyById operation
+#
+##############################################################################
+print_getStockItemWarrantyPolicyById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemWarrantyPolicyById - Get warranty policy by ID for a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific warranty policy by ID for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemWarrantyPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemWarrantyPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemsOdataMaxPrice operation
+#
+##############################################################################
+print_getStockItemsOdataMaxPrice_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemsOdataMaxPrice - Get max price of stock items${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the maximum price among all stock items, optionally filtered by tenant and OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemsOdataMinPrice operation
+#
+##############################################################################
+print_getStockItemsOdataMinPrice_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemsOdataMinPrice - Get min price of stock items${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the minimum price among all stock items, optionally filtered by tenant and OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStockItemsQuery operation
+#
+##############################################################################
+print_getStockItemsQuery_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStockItemsQuery - Get all stock items${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all stock items, optionally filtered by tenant and OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateAttachmentToStockItem operation
+#
+##############################################################################
+print_relateAttachmentToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateAttachmentToStockItem - Relate attachment to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates an attachment with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateAttributeOptionToStockItem operation
+#
+##############################################################################
+print_relateAttributeOptionToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateAttributeOptionToStockItem - Relate attribute option to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates an attribute option with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttributeOptionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttributeOptionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateBrandToStockItem operation
+#
+##############################################################################
+print_relateBrandToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateBrandToStockItem - Relate brand to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates a brand with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemBrandId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemBrandId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateCategoryToStockItem operation
+#
+##############################################################################
+print_relateCategoryToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateCategoryToStockItem - Relate category to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates a category with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateGoogleCategoryToStockItem operation
+#
+##############################################################################
+print_relateGoogleCategoryToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateGoogleCategoryToStockItem - Relate Google category to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates a Google category with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemGoogleCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemGoogleCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateImageToStockItem operation
+#
+##############################################################################
+print_relateImageToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateImageToStockItem - Relate image to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates an image with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemImageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemImageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relatePriceRuleToStockItem operation
+#
+##############################################################################
+print_relatePriceRuleToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relatePriceRuleToStockItem - Relate price rule to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates a pricing rule with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemPriceRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemPriceRuleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateQuestionToStockItem operation
+#
+##############################################################################
+print_relateQuestionToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateQuestionToStockItem - Create question for stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new question for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateRefundPolicyToStockItem operation
+#
+##############################################################################
+print_relateRefundPolicyToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateRefundPolicyToStockItem - Relate refund policy to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates a refund policy with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemRefundPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemRefundPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateReturnPolicyToStockItem operation
+#
+##############################################################################
+print_relateReturnPolicyToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateReturnPolicyToStockItem - Relate return policy to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates a return policy with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemReturnPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReturnPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateReviewToStockItem operation
+#
+##############################################################################
+print_relateReviewToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateReviewToStockItem - Create review for stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new review for a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateShippingPolicyToStockItem operation
+#
+##############################################################################
+print_relateShippingPolicyToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateShippingPolicyToStockItem - Relate shipping policy to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates a shipping policy with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemShippingPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemShippingPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateTagToStockItem operation
+#
+##############################################################################
+print_relateTagToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateTagToStockItem - Relate tag to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates a tag with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTagId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTagId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateTaxPolicyToStockItem operation
+#
+##############################################################################
+print_relateTaxPolicyToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateTaxPolicyToStockItem - Relate tax policy to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates a tax policy with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTaxPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTaxPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateTypeToStockItem operation
+#
+##############################################################################
+print_relateTypeToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateTypeToStockItem - Relate type to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates a type with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateWarrantyPolicyToStockItem operation
+#
+##############################################################################
+print_relateWarrantyPolicyToStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateWarrantyPolicyToStockItem - Relate warranty policy to stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Associates a warranty policy with a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemWarrantyPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemWarrantyPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeAttachmentFromStockItem operation
+#
+##############################################################################
+print_removeAttachmentFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeAttachmentFromStockItem - Remove attachment from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes an attachment from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeAttributeOptionFromStockItem operation
+#
+##############################################################################
+print_removeAttributeOptionFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeAttributeOptionFromStockItem - Remove attribute option from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes an attribute option from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttributeOptionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttributeOptionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeBrandFromStockItem operation
+#
+##############################################################################
+print_removeBrandFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeBrandFromStockItem - Remove brand from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a brand association from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemBrandId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemBrandId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeCategoryFromStockItem operation
+#
+##############################################################################
+print_removeCategoryFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeCategoryFromStockItem - Remove category from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a category association from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeGoogleCategoryFromStockItem operation
+#
+##############################################################################
+print_removeGoogleCategoryFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeGoogleCategoryFromStockItem - Remove Google category from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a Google category from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemGoogleCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemGoogleCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeImageFromStockItem operation
+#
+##############################################################################
+print_removeImageFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeImageFromStockItem - Remove image from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes an image association from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemImageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemImageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removePriceRuleFromStockItem operation
+#
+##############################################################################
+print_removePriceRuleFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removePriceRuleFromStockItem - Remove price rule from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a pricing rule from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemPriceRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemPriceRuleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeQuestionFromStockItem operation
+#
+##############################################################################
+print_removeQuestionFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeQuestionFromStockItem - Remove question from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a question from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemQuestionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemQuestionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeRefundPolicyFromStockItem operation
+#
+##############################################################################
+print_removeRefundPolicyFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeRefundPolicyFromStockItem - Remove refund policy from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a refund policy from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemRefundPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemRefundPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeReturnPolicyFromStockItem operation
+#
+##############################################################################
+print_removeReturnPolicyFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeReturnPolicyFromStockItem - Remove return policy from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a return policy from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemReturnPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReturnPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeReviewFromStockItem operation
+#
+##############################################################################
+print_removeReviewFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeReviewFromStockItem - Remove review from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a review from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemReviewId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReviewId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeShippingPolicyFromStockItem operation
+#
+##############################################################################
+print_removeShippingPolicyFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeShippingPolicyFromStockItem - Remove shipping policy from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a shipping policy from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemShippingPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemShippingPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeTagFromStockItem operation
+#
+##############################################################################
+print_removeTagFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeTagFromStockItem - Remove tag from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a tag association from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTagId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTagId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeTaxPolicyFromStockItem operation
+#
+##############################################################################
+print_removeTaxPolicyFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeTaxPolicyFromStockItem - Remove tax policy from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a tax policy from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTaxPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTaxPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeTypeFromStockItem operation
+#
+##############################################################################
+print_removeTypeFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeTypeFromStockItem - Remove type from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a type association from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeWarrantyPolicyFromStockItem operation
+#
+##############################################################################
+print_removeWarrantyPolicyFromStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeWarrantyPolicyFromStockItem - Remove warranty policy from stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a warranty policy from a stock item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemWarrantyPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemWarrantyPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateProductPrimaryImageAsync operation
+#
+##############################################################################
+print_updateProductPrimaryImageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateProductPrimaryImageAsync - Update item primary image${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the primary image for a specific catalog item." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateStockItem operation
+#
+##############################################################################
+print_updateStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateStockItem - Update a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing stock item for the specified tenant and item ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMerchantById operation
+#
+##############################################################################
+print_getMerchantById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMerchantById - Get merchant by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a merchant by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}merchantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: merchantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMerchants operation
+#
+##############################################################################
+print_getMerchants_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMerchants - Get all merchants${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all merchants, optionally filtered by OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMerchantsCount operation
+#
+##############################################################################
+print_getMerchantsCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMerchantsCount - Count merchants${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts the number of merchants, optionally filtered by OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createPricingRule operation
+#
+##############################################################################
+print_createPricingRule_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createPricingRule - Create a new pricing rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new pricing rule for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deletePricingRule operation
+#
+##############################################################################
+print_deletePricingRule_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deletePricingRule - Delete a pricing rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a pricing rule for the specified tenant and rule ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pricingRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pricingRuleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPricingRuleById operation
+#
+##############################################################################
+print_getPricingRuleById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPricingRuleById - Get pricing rule by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a pricing rule by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}pricingRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pricingRuleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPricingRules operation
+#
+##############################################################################
+print_getPricingRules_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPricingRules - Get all pricing rules${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all pricing rules for the specified tenant, with optional OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updatePricingRule operation
+#
+##############################################################################
+print_updatePricingRule_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updatePricingRule - Update a pricing rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing pricing rule for the specified tenant and rule ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pricingRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: pricingRuleId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+
+
+##############################################################################
+#
+# Call forgotPasswordPost operation
+#
+##############################################################################
+call_forgotPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call helloGet operation
+#
+##############################################################################
+call_helloGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call loginPost operation
+#
+##############################################################################
+call_loginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(useCookies useSessionCookies)
+    local path
+
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoPost operation
+#
+##############################################################################
+call_manageInfoPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call refreshPost operation
+#
+##############################################################################
+call_refreshPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createItemAttachmentAsync operation
+#
+##############################################################################
+call_createItemAttachmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttachments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemAttachmentAsync operation
+#
+##############################################################################
+call_deleteItemAttachmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemAttachmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttachments/{itemAttachmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemAttachmentByIdAsync operation
+#
+##############################################################################
+call_getItemAttachmentByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemAttachmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttachments/{itemAttachmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemAttachmentsAsync operation
+#
+##############################################################################
+call_getItemAttachmentsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttachments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemAttachmentAsync operation
+#
+##############################################################################
+call_updateItemAttachmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemAttachmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttachments/{itemAttachmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call countItemAttributesAsync operation
+#
+##############################################################################
+call_countItemAttributesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributes/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createItemAttributeAsync operation
+#
+##############################################################################
+call_createItemAttributeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemAttributeAsync operation
+#
+##############################################################################
+call_deleteItemAttributeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemAttributeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributes/{itemAttributeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemAttributeByIdAsync operation
+#
+##############################################################################
+call_getItemAttributeByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemAttributeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributes/{itemAttributeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemAttributesAsync operation
+#
+##############################################################################
+call_getItemAttributesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemAttributeAsync operation
+#
+##############################################################################
+call_updateItemAttributeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemAttributeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributes/{itemAttributeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createItemBrandAsync operation
+#
+##############################################################################
+call_createItemBrandAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBrands" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemBrandAsync operation
+#
+##############################################################################
+call_deleteItemBrandAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemBrandId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBrands/{itemBrandId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemBrandByIdAsync operation
+#
+##############################################################################
+call_getItemBrandByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemBrandId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBrands/{itemBrandId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemBrandsAsync operation
+#
+##############################################################################
+call_getItemBrandsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBrands" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemBrandAsync operation
+#
+##############################################################################
+call_updateItemBrandAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemBrandId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBrands/{itemBrandId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call countItemCategoriesAsync operation
+#
+##############################################################################
+call_countItemCategoriesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemCategories/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createItemCategoryAsync operation
+#
+##############################################################################
+call_createItemCategoryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemCategories" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemCategoryAsync operation
+#
+##############################################################################
+call_deleteItemCategoryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemCategories/{itemCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemCategoriesAsync operation
+#
+##############################################################################
+call_getItemCategoriesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemCategories" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemCategoryByIdAsync operation
+#
+##############################################################################
+call_getItemCategoryByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemCategories/{itemCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemCategoryAsync operation
+#
+##############################################################################
+call_updateItemCategoryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemCategories/{itemCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getAllItemGoogleCategoriesAsync operation
+#
+##############################################################################
+call_getAllItemGoogleCategoriesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemGoogleCategories/All" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getChildrenItemGoogleCategoriesByIdAsync operation
+#
+##############################################################################
+call_getChildrenItemGoogleCategoriesByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemGoogleCategories/{itemCategoryId}/Children" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemGoogleCategoriesAsync operation
+#
+##############################################################################
+call_getItemGoogleCategoriesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemGoogleCategories" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemGoogleCategoriesCountAsync operation
+#
+##############################################################################
+call_getItemGoogleCategoriesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemGoogleCategories/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemGoogleCategoriesTreeAsync operation
+#
+##############################################################################
+call_getItemGoogleCategoriesTreeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemGoogleCategories/tree" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemGoogleCategoryByIdAsync operation
+#
+##############################################################################
+call_getItemGoogleCategoryByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemGoogleCategories/{itemCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRootItemGoogleCategoriesAsync operation
+#
+##############################################################################
+call_getRootItemGoogleCategoriesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemGoogleCategories/Primary" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call mapItemGoogleCategoriesTreeAsync operation
+#
+##############################################################################
+call_mapItemGoogleCategoriesTreeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemGoogleCategories/tree" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createItemImageAsync operation
+#
+##############################################################################
+call_createItemImageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemImages" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemImageAsync operation
+#
+##############################################################################
+call_deleteItemImageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemImageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemImages/{itemImageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemImageByIdAsync operation
+#
+##############################################################################
+call_getItemImageByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemImageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemImages/{itemImageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemImagesAsync operation
+#
+##############################################################################
+call_getItemImagesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemImages" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemImageAsync operation
+#
+##############################################################################
+call_updateItemImageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemImageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemImages/{itemImageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createItemQuestionAsync operation
+#
+##############################################################################
+call_createItemQuestionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemQuestions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemQuestionAsync operation
+#
+##############################################################################
+call_deleteItemQuestionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemQuestionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemQuestions/{itemQuestionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemQuestionByIdAsync operation
+#
+##############################################################################
+call_getItemQuestionByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemQuestionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemQuestions/{itemQuestionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemQuestionsAsync operation
+#
+##############################################################################
+call_getItemQuestionsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemQuestions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemQuestionAsync operation
+#
+##############################################################################
+call_updateItemQuestionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemQuestionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemQuestions/{itemQuestionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call countItemRefundPoliciesAsync operation
+#
+##############################################################################
+call_countItemRefundPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemRefundPolicies/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemRefundPoliciesAsync operation
+#
+##############################################################################
+call_getItemRefundPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemRefundPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemRefundPolicyByIdAsync operation
+#
+##############################################################################
+call_getItemRefundPolicyByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemRefundPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemRefundPolicies/{itemRefundPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateItemToRefundPolicyAsync operation
+#
+##############################################################################
+call_relateItemToRefundPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId itemId refundPolicyId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemRefundPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeRefundPolicyFromItemAsync operation
+#
+##############################################################################
+call_removeRefundPolicyFromItemAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemRefundPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemRefundPolicies/{itemRefundPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countItemReturnPoliciesAsync operation
+#
+##############################################################################
+call_countItemReturnPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemReturnPolicies/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemReturnPoliciesAsync operation
+#
+##############################################################################
+call_getItemReturnPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemReturnPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemReturnPolicyByIdAsync operation
+#
+##############################################################################
+call_getItemReturnPolicyByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemReturnPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemReturnPolicies/{itemReturnPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateItemToReturnPolicyAsync operation
+#
+##############################################################################
+call_relateItemToReturnPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId itemId returnPolicyId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemReturnPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeReturnPolicyFromItemAsync operation
+#
+##############################################################################
+call_removeReturnPolicyFromItemAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemReturnPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemReturnPolicies/{itemReturnPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createItemReviewAsync operation
+#
+##############################################################################
+call_createItemReviewAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemReviews" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemReviewAsync operation
+#
+##############################################################################
+call_deleteItemReviewAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemReviewId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemReviews/{itemReviewId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemReviewByIdAsync operation
+#
+##############################################################################
+call_getItemReviewByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemReviewId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemReviews/{itemReviewId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemReviewsAsync operation
+#
+##############################################################################
+call_getItemReviewsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemReviews" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemReviewAsync operation
+#
+##############################################################################
+call_updateItemReviewAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemReviewId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemReviews/{itemReviewId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call countItemShippingPoliciesAsync operation
+#
+##############################################################################
+call_countItemShippingPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemShippingPolicies/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemShippingPoliciesAsync operation
+#
+##############################################################################
+call_getItemShippingPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemShippingPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemShippingPolicyByIdAsync operation
+#
+##############################################################################
+call_getItemShippingPolicyByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemShippingPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemShippingPolicies/{itemShippingPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateItemToShippingPolicyAsync operation
+#
+##############################################################################
+call_relateItemToShippingPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId itemId shippingPolicyId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemShippingPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeShippingPolicyFromItemAsync operation
+#
+##############################################################################
+call_removeShippingPolicyFromItemAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemShippingPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemShippingPolicies/{itemShippingPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createItemTagAsync operation
+#
+##############################################################################
+call_createItemTagAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTags" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemTagAsync operation
+#
+##############################################################################
+call_deleteItemTagAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemTagId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTags/{itemTagId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemTagByIdAsync operation
+#
+##############################################################################
+call_getItemTagByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemTagId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTags/{itemTagId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemTagsAsync operation
+#
+##############################################################################
+call_getItemTagsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTags" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemTagAsync operation
+#
+##############################################################################
+call_updateItemTagAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemTagId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTags/{itemTagId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call countItemTaxPoliciesAsync operation
+#
+##############################################################################
+call_countItemTaxPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTaxPolicies/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemTaxPoliciesAsync operation
+#
+##############################################################################
+call_getItemTaxPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTaxPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemTaxPolicyByIdAsync operation
+#
+##############################################################################
+call_getItemTaxPolicyByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemTaxPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTaxPolicies/{itemTaxPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateItemToTaxPolicyAsync operation
+#
+##############################################################################
+call_relateItemToTaxPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId itemId taxPolicyId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTaxPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeTaxPolicyFromItemAsync operation
+#
+##############################################################################
+call_removeTaxPolicyFromItemAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemTaxPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTaxPolicies/{itemTaxPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countItemTypesAsync operation
+#
+##############################################################################
+call_countItemTypesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTypes/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createItemTypeAsync operation
+#
+##############################################################################
+call_createItemTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTypes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemTypeAsync operation
+#
+##############################################################################
+call_deleteItemTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemTypeID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTypes/{itemTypeID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemTypeByIdAsync operation
+#
+##############################################################################
+call_getItemTypeByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemTypeID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTypes/{itemTypeID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemTypesAsync operation
+#
+##############################################################################
+call_getItemTypesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTypes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemTypeAsync operation
+#
+##############################################################################
+call_updateItemTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemTypeID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTypes/{itemTypeID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call countItemWarrantyPoliciesAsync operation
+#
+##############################################################################
+call_countItemWarrantyPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemWarrantyPolicies/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemWarrantyPoliciesAsync operation
+#
+##############################################################################
+call_getItemWarrantyPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemWarrantyPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemWarrantyPolicyByIdAsync operation
+#
+##############################################################################
+call_getItemWarrantyPolicyByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemWarrantyPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemWarrantyPolicies/{itemWarrantyPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateItemToWarrantyPolicyAsync operation
+#
+##############################################################################
+call_relateItemToWarrantyPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId itemId warrantyPolicyId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemWarrantyPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeWarrantyPolicyFromItemAsync operation
+#
+##############################################################################
+call_removeWarrantyPolicyFromItemAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemWarrantyPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId itemId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemWarrantyPolicies/{itemWarrantyPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countStockItemTagsByItemId operation
+#
+##############################################################################
+call_countStockItemTagsByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Tags/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countStockItemsByBusiness operation
+#
+##############################################################################
+call_countStockItemsByBusiness() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createStockItem operation
+#
+##############################################################################
+call_createStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteStockItem operation
+#
+##############################################################################
+call_deleteStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getExtendedStockItemById operation
+#
+##############################################################################
+call_getExtendedStockItemById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Extended" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProductPrimaryImageAsync operation
+#
+##############################################################################
+call_getProductPrimaryImageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Images/Primary" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemAttachmentById operation
+#
+##############################################################################
+call_getStockItemAttachmentById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemAttachmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Attachments/{itemAttachmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemAttachmentsByItemId operation
+#
+##############################################################################
+call_getStockItemAttachmentsByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Attachments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemAttributeOptionById operation
+#
+##############################################################################
+call_getStockItemAttributeOptionById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemAttributeOptionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/AttributeOptions/{itemAttributeOptionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemAttributeOptionsByItemId operation
+#
+##############################################################################
+call_getStockItemAttributeOptionsByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/AttributeOptions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemBrandById operation
+#
+##############################################################################
+call_getStockItemBrandById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemBrandId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Brands/{itemBrandId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemBrandsByItemId operation
+#
+##############################################################################
+call_getStockItemBrandsByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Brands" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemById operation
+#
+##############################################################################
+call_getStockItemById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemCategoriesByItemId operation
+#
+##############################################################################
+call_getStockItemCategoriesByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Categories" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemCategoryById operation
+#
+##############################################################################
+call_getStockItemCategoryById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Categories/{itemCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemGoogleCategoriesByItemId operation
+#
+##############################################################################
+call_getStockItemGoogleCategoriesByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/GoogleCategories" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemGoogleCategoryById operation
+#
+##############################################################################
+call_getStockItemGoogleCategoryById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemGoogleCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/GoogleCategories/{itemGoogleCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemImageById operation
+#
+##############################################################################
+call_getStockItemImageById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemImageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Images/{itemImageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemImagesByItemId operation
+#
+##############################################################################
+call_getStockItemImagesByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Images" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemPriceRuleById operation
+#
+##############################################################################
+call_getStockItemPriceRuleById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemPriceRuleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/PriceRules/{itemPriceRuleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemPriceRulesByItemId operation
+#
+##############################################################################
+call_getStockItemPriceRulesByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/PriceRules" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemQuestionById operation
+#
+##############################################################################
+call_getStockItemQuestionById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemQuestionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Questions/{itemQuestionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemQuestionsByItemId operation
+#
+##############################################################################
+call_getStockItemQuestionsByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Questions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemRefundPoliciesByItemId operation
+#
+##############################################################################
+call_getStockItemRefundPoliciesByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/RefundPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemRefundPolicyById operation
+#
+##############################################################################
+call_getStockItemRefundPolicyById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemRefundPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/RefundPolicies/{itemRefundPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemReturnPoliciesByItemId operation
+#
+##############################################################################
+call_getStockItemReturnPoliciesByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/ReturnPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemReturnPolicyById operation
+#
+##############################################################################
+call_getStockItemReturnPolicyById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemReturnPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/ReturnPolicies/{itemReturnPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemReviewById operation
+#
+##############################################################################
+call_getStockItemReviewById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemReviewId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Reviews/{itemReviewId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemReviewsByItemId operation
+#
+##############################################################################
+call_getStockItemReviewsByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Reviews" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemShippingPoliciesByItemId operation
+#
+##############################################################################
+call_getStockItemShippingPoliciesByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/ShippingPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemShippingPolicyById operation
+#
+##############################################################################
+call_getStockItemShippingPolicyById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemShippingPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/ShippingPolicies/{itemShippingPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemTagById operation
+#
+##############################################################################
+call_getStockItemTagById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemTagId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Tags/{itemTagId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemTagsByItemId operation
+#
+##############################################################################
+call_getStockItemTagsByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Tags" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemTaxPoliciesByItemId operation
+#
+##############################################################################
+call_getStockItemTaxPoliciesByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/TaxPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemTaxPolicyById operation
+#
+##############################################################################
+call_getStockItemTaxPolicyById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemTaxPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/TaxPolicies/{itemTaxPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemTypeById operation
+#
+##############################################################################
+call_getStockItemTypeById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Types/{itemTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemTypesByItemId operation
+#
+##############################################################################
+call_getStockItemTypesByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Types" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemWarrantyPoliciesByItemId operation
+#
+##############################################################################
+call_getStockItemWarrantyPoliciesByItemId() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/WarrantyPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemWarrantyPolicyById operation
+#
+##############################################################################
+call_getStockItemWarrantyPolicyById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemWarrantyPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/WarrantyPolicies/{itemWarrantyPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemsOdataMaxPrice operation
+#
+##############################################################################
+call_getStockItemsOdataMaxPrice() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/MaxPrice" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemsOdataMinPrice operation
+#
+##############################################################################
+call_getStockItemsOdataMinPrice() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/MinPrice" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStockItemsQuery operation
+#
+##############################################################################
+call_getStockItemsQuery() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateAttachmentToStockItem operation
+#
+##############################################################################
+call_relateAttachmentToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemAttachmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Attachments/{itemAttachmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call relateAttributeOptionToStockItem operation
+#
+##############################################################################
+call_relateAttributeOptionToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemAttributeOptionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/AttributeOptions/{itemAttributeOptionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateBrandToStockItem operation
+#
+##############################################################################
+call_relateBrandToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemBrandId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Brands/{itemBrandId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateCategoryToStockItem operation
+#
+##############################################################################
+call_relateCategoryToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Categories/{itemCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateGoogleCategoryToStockItem operation
+#
+##############################################################################
+call_relateGoogleCategoryToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemGoogleCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/GoogleCategories/{itemGoogleCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateImageToStockItem operation
+#
+##############################################################################
+call_relateImageToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemImageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Images/{itemImageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relatePriceRuleToStockItem operation
+#
+##############################################################################
+call_relatePriceRuleToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemPriceRuleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/PriceRules/{itemPriceRuleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateQuestionToStockItem operation
+#
+##############################################################################
+call_relateQuestionToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Questions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call relateRefundPolicyToStockItem operation
+#
+##############################################################################
+call_relateRefundPolicyToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemRefundPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/RefundPolicies/{itemRefundPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateReturnPolicyToStockItem operation
+#
+##############################################################################
+call_relateReturnPolicyToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemReturnPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/ReturnPolicies/{itemReturnPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateReviewToStockItem operation
+#
+##############################################################################
+call_relateReviewToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Reviews" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call relateShippingPolicyToStockItem operation
+#
+##############################################################################
+call_relateShippingPolicyToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemShippingPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/ShippingPolicies/{itemShippingPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateTagToStockItem operation
+#
+##############################################################################
+call_relateTagToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemTagId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Tags/{itemTagId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateTaxPolicyToStockItem operation
+#
+##############################################################################
+call_relateTaxPolicyToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemTaxPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/TaxPolicies/{itemTaxPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateTypeToStockItem operation
+#
+##############################################################################
+call_relateTypeToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Types/{itemTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateWarrantyPolicyToStockItem operation
+#
+##############################################################################
+call_relateWarrantyPolicyToStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemWarrantyPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/WarrantyPolicies/{itemWarrantyPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeAttachmentFromStockItem operation
+#
+##############################################################################
+call_removeAttachmentFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemAttachmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Attachments/{itemAttachmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeAttributeOptionFromStockItem operation
+#
+##############################################################################
+call_removeAttributeOptionFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemAttributeOptionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/AttributeOptions/{itemAttributeOptionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeBrandFromStockItem operation
+#
+##############################################################################
+call_removeBrandFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemBrandId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Brands/{itemBrandId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeCategoryFromStockItem operation
+#
+##############################################################################
+call_removeCategoryFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Categories/{itemCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeGoogleCategoryFromStockItem operation
+#
+##############################################################################
+call_removeGoogleCategoryFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemGoogleCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/GoogleCategories/{itemGoogleCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeImageFromStockItem operation
+#
+##############################################################################
+call_removeImageFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemImageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Images/{itemImageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removePriceRuleFromStockItem operation
+#
+##############################################################################
+call_removePriceRuleFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemPriceRuleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/PriceRules/{itemPriceRuleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeQuestionFromStockItem operation
+#
+##############################################################################
+call_removeQuestionFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemQuestionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Questions/{itemQuestionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeRefundPolicyFromStockItem operation
+#
+##############################################################################
+call_removeRefundPolicyFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemRefundPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/RefundPolicies/{itemRefundPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeReturnPolicyFromStockItem operation
+#
+##############################################################################
+call_removeReturnPolicyFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemReturnPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/ReturnPolicies/{itemReturnPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeReviewFromStockItem operation
+#
+##############################################################################
+call_removeReviewFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemReviewId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Reviews/{itemReviewId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeShippingPolicyFromStockItem operation
+#
+##############################################################################
+call_removeShippingPolicyFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemShippingPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/ShippingPolicies/{itemShippingPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeTagFromStockItem operation
+#
+##############################################################################
+call_removeTagFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemTagId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Tags/{itemTagId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeTaxPolicyFromStockItem operation
+#
+##############################################################################
+call_removeTaxPolicyFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemTaxPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/TaxPolicies/{itemTaxPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeTypeFromStockItem operation
+#
+##############################################################################
+call_removeTypeFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Types/{itemTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeWarrantyPolicyFromStockItem operation
+#
+##############################################################################
+call_removeWarrantyPolicyFromStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId itemWarrantyPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/WarrantyPolicies/{itemWarrantyPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateProductPrimaryImageAsync operation
+#
+##############################################################################
+call_updateProductPrimaryImageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Images/Primary" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateStockItem operation
+#
+##############################################################################
+call_updateStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getMerchantById operation
+#
+##############################################################################
+call_getMerchantById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(merchantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Merchants/{merchantId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMerchants operation
+#
+##############################################################################
+call_getMerchants() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Merchants" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMerchantsCount operation
+#
+##############################################################################
+call_getMerchantsCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Merchants/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createPricingRule operation
+#
+##############################################################################
+call_createPricingRule() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/PricingRules" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deletePricingRule operation
+#
+##############################################################################
+call_deletePricingRule() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pricingRuleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/PricingRules/{pricingRuleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPricingRuleById operation
+#
+##############################################################################
+call_getPricingRuleById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pricingRuleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/PricingRules/{pricingRuleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPricingRules operation
+#
+##############################################################################
+call_getPricingRules() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/PricingRules" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updatePricingRule operation
+#
+##############################################################################
+call_updatePricingRule() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId pricingRuleId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/PricingRules/Update" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+
+
+##############################################################################
+#
+# Main
+#
+##############################################################################
+
+
+# Check dependencies
+type curl >/dev/null 2>&1 || { echo >&2 "ERROR: You do not have 'cURL' installed."; exit 1; }
+type sed >/dev/null 2>&1 || { echo >&2 "ERROR: You do not have 'sed' installed."; exit 1; }
+type column >/dev/null 2>&1 || { echo >&2 "ERROR: You do not have 'bsdmainutils' installed."; exit 1; }
+
+#
+# Process command line
+#
+# Pass all arguments before 'operation' to cURL except the ones we override
+#
+take_user=false
+take_host=false
+take_accept_header=false
+take_contenttype_header=false
+
+for key in "$@"; do
+# Take the value of -u|--user argument
+if [[ "$take_user" = true ]]; then
+    basic_auth_credential="$key"
+    take_user=false
+    continue
+fi
+# Take the value of --host argument
+if [[ "$take_host" = true ]]; then
+    host="$key"
+    take_host=false
+    continue
+fi
+# Take the value of --accept argument
+if [[ "$take_accept_header" = true ]]; then
+    header_accept=$(lookup_mime_type "$key")
+    take_accept_header=false
+    continue
+fi
+# Take the value of --content-type argument
+if [[ "$take_contenttype_header" = true ]]; then
+    header_content_type=$(lookup_mime_type "$key")
+    take_contenttype_header=false
+    continue
+fi
+case $key in
+    -h|--help)
+    if [[ "x$operation" == "x" ]]; then
+        print_help
+        exit 0
+    else
+        eval "print_${operation}_help"
+        exit 0
+    fi
+    ;;
+    -V|--version)
+    print_version
+    exit 0
+    ;;
+    --about)
+    print_about
+    exit 0
+    ;;
+    -u|--user)
+    take_user=true
+    ;;
+    --host)
+    take_host=true
+    ;;
+    --force)
+    force=true
+    ;;
+    -ac|--accept)
+    take_accept_header=true
+    ;;
+    -ct|--content-type)
+    take_contenttype_header=true
+    ;;
+    --dry-run)
+    print_curl=true
+    ;;
+    -nc|--no-colors)
+        RED=""
+        GREEN=""
+        YELLOW=""
+        BLUE=""
+        MAGENTA=""
+        CYAN=""
+        WHITE=""
+        BOLD=""
+        OFF=""
+        result_color_table=( "" "" "" "" "" "" "" )
+    ;;
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
+    ;;
+    healthGet)
+    operation="healthGet"
+    ;;
+    helloGet)
+    operation="helloGet"
+    ;;
+    loginPost)
+    operation="loginPost"
+    ;;
+    manage2faPost)
+    operation="manage2faPost"
+    ;;
+    manageInfoGet)
+    operation="manageInfoGet"
+    ;;
+    manageInfoPost)
+    operation="manageInfoPost"
+    ;;
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
+    ;;
+    refreshPost)
+    operation="refreshPost"
+    ;;
+    registerPost)
+    operation="registerPost"
+    ;;
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
+    ;;
+    resetPasswordPost)
+    operation="resetPasswordPost"
+    ;;
+    versionGet)
+    operation="versionGet"
+    ;;
+    createItemAttachmentAsync)
+    operation="createItemAttachmentAsync"
+    ;;
+    deleteItemAttachmentAsync)
+    operation="deleteItemAttachmentAsync"
+    ;;
+    getItemAttachmentByIdAsync)
+    operation="getItemAttachmentByIdAsync"
+    ;;
+    getItemAttachmentsAsync)
+    operation="getItemAttachmentsAsync"
+    ;;
+    updateItemAttachmentAsync)
+    operation="updateItemAttachmentAsync"
+    ;;
+    countItemAttributesAsync)
+    operation="countItemAttributesAsync"
+    ;;
+    createItemAttributeAsync)
+    operation="createItemAttributeAsync"
+    ;;
+    deleteItemAttributeAsync)
+    operation="deleteItemAttributeAsync"
+    ;;
+    getItemAttributeByIdAsync)
+    operation="getItemAttributeByIdAsync"
+    ;;
+    getItemAttributesAsync)
+    operation="getItemAttributesAsync"
+    ;;
+    updateItemAttributeAsync)
+    operation="updateItemAttributeAsync"
+    ;;
+    createItemBrandAsync)
+    operation="createItemBrandAsync"
+    ;;
+    deleteItemBrandAsync)
+    operation="deleteItemBrandAsync"
+    ;;
+    getItemBrandByIdAsync)
+    operation="getItemBrandByIdAsync"
+    ;;
+    getItemBrandsAsync)
+    operation="getItemBrandsAsync"
+    ;;
+    updateItemBrandAsync)
+    operation="updateItemBrandAsync"
+    ;;
+    countItemCategoriesAsync)
+    operation="countItemCategoriesAsync"
+    ;;
+    createItemCategoryAsync)
+    operation="createItemCategoryAsync"
+    ;;
+    deleteItemCategoryAsync)
+    operation="deleteItemCategoryAsync"
+    ;;
+    getItemCategoriesAsync)
+    operation="getItemCategoriesAsync"
+    ;;
+    getItemCategoryByIdAsync)
+    operation="getItemCategoryByIdAsync"
+    ;;
+    updateItemCategoryAsync)
+    operation="updateItemCategoryAsync"
+    ;;
+    getAllItemGoogleCategoriesAsync)
+    operation="getAllItemGoogleCategoriesAsync"
+    ;;
+    getChildrenItemGoogleCategoriesByIdAsync)
+    operation="getChildrenItemGoogleCategoriesByIdAsync"
+    ;;
+    getItemGoogleCategoriesAsync)
+    operation="getItemGoogleCategoriesAsync"
+    ;;
+    getItemGoogleCategoriesCountAsync)
+    operation="getItemGoogleCategoriesCountAsync"
+    ;;
+    getItemGoogleCategoriesTreeAsync)
+    operation="getItemGoogleCategoriesTreeAsync"
+    ;;
+    getItemGoogleCategoryByIdAsync)
+    operation="getItemGoogleCategoryByIdAsync"
+    ;;
+    getRootItemGoogleCategoriesAsync)
+    operation="getRootItemGoogleCategoriesAsync"
+    ;;
+    mapItemGoogleCategoriesTreeAsync)
+    operation="mapItemGoogleCategoriesTreeAsync"
+    ;;
+    createItemImageAsync)
+    operation="createItemImageAsync"
+    ;;
+    deleteItemImageAsync)
+    operation="deleteItemImageAsync"
+    ;;
+    getItemImageByIdAsync)
+    operation="getItemImageByIdAsync"
+    ;;
+    getItemImagesAsync)
+    operation="getItemImagesAsync"
+    ;;
+    updateItemImageAsync)
+    operation="updateItemImageAsync"
+    ;;
+    createItemQuestionAsync)
+    operation="createItemQuestionAsync"
+    ;;
+    deleteItemQuestionAsync)
+    operation="deleteItemQuestionAsync"
+    ;;
+    getItemQuestionByIdAsync)
+    operation="getItemQuestionByIdAsync"
+    ;;
+    getItemQuestionsAsync)
+    operation="getItemQuestionsAsync"
+    ;;
+    updateItemQuestionAsync)
+    operation="updateItemQuestionAsync"
+    ;;
+    countItemRefundPoliciesAsync)
+    operation="countItemRefundPoliciesAsync"
+    ;;
+    getItemRefundPoliciesAsync)
+    operation="getItemRefundPoliciesAsync"
+    ;;
+    getItemRefundPolicyByIdAsync)
+    operation="getItemRefundPolicyByIdAsync"
+    ;;
+    relateItemToRefundPolicyAsync)
+    operation="relateItemToRefundPolicyAsync"
+    ;;
+    removeRefundPolicyFromItemAsync)
+    operation="removeRefundPolicyFromItemAsync"
+    ;;
+    countItemReturnPoliciesAsync)
+    operation="countItemReturnPoliciesAsync"
+    ;;
+    getItemReturnPoliciesAsync)
+    operation="getItemReturnPoliciesAsync"
+    ;;
+    getItemReturnPolicyByIdAsync)
+    operation="getItemReturnPolicyByIdAsync"
+    ;;
+    relateItemToReturnPolicyAsync)
+    operation="relateItemToReturnPolicyAsync"
+    ;;
+    removeReturnPolicyFromItemAsync)
+    operation="removeReturnPolicyFromItemAsync"
+    ;;
+    createItemReviewAsync)
+    operation="createItemReviewAsync"
+    ;;
+    deleteItemReviewAsync)
+    operation="deleteItemReviewAsync"
+    ;;
+    getItemReviewByIdAsync)
+    operation="getItemReviewByIdAsync"
+    ;;
+    getItemReviewsAsync)
+    operation="getItemReviewsAsync"
+    ;;
+    updateItemReviewAsync)
+    operation="updateItemReviewAsync"
+    ;;
+    countItemShippingPoliciesAsync)
+    operation="countItemShippingPoliciesAsync"
+    ;;
+    getItemShippingPoliciesAsync)
+    operation="getItemShippingPoliciesAsync"
+    ;;
+    getItemShippingPolicyByIdAsync)
+    operation="getItemShippingPolicyByIdAsync"
+    ;;
+    relateItemToShippingPolicyAsync)
+    operation="relateItemToShippingPolicyAsync"
+    ;;
+    removeShippingPolicyFromItemAsync)
+    operation="removeShippingPolicyFromItemAsync"
+    ;;
+    createItemTagAsync)
+    operation="createItemTagAsync"
+    ;;
+    deleteItemTagAsync)
+    operation="deleteItemTagAsync"
+    ;;
+    getItemTagByIdAsync)
+    operation="getItemTagByIdAsync"
+    ;;
+    getItemTagsAsync)
+    operation="getItemTagsAsync"
+    ;;
+    updateItemTagAsync)
+    operation="updateItemTagAsync"
+    ;;
+    countItemTaxPoliciesAsync)
+    operation="countItemTaxPoliciesAsync"
+    ;;
+    getItemTaxPoliciesAsync)
+    operation="getItemTaxPoliciesAsync"
+    ;;
+    getItemTaxPolicyByIdAsync)
+    operation="getItemTaxPolicyByIdAsync"
+    ;;
+    relateItemToTaxPolicyAsync)
+    operation="relateItemToTaxPolicyAsync"
+    ;;
+    removeTaxPolicyFromItemAsync)
+    operation="removeTaxPolicyFromItemAsync"
+    ;;
+    countItemTypesAsync)
+    operation="countItemTypesAsync"
+    ;;
+    createItemTypeAsync)
+    operation="createItemTypeAsync"
+    ;;
+    deleteItemTypeAsync)
+    operation="deleteItemTypeAsync"
+    ;;
+    getItemTypeByIdAsync)
+    operation="getItemTypeByIdAsync"
+    ;;
+    getItemTypesAsync)
+    operation="getItemTypesAsync"
+    ;;
+    updateItemTypeAsync)
+    operation="updateItemTypeAsync"
+    ;;
+    countItemWarrantyPoliciesAsync)
+    operation="countItemWarrantyPoliciesAsync"
+    ;;
+    getItemWarrantyPoliciesAsync)
+    operation="getItemWarrantyPoliciesAsync"
+    ;;
+    getItemWarrantyPolicyByIdAsync)
+    operation="getItemWarrantyPolicyByIdAsync"
+    ;;
+    relateItemToWarrantyPolicyAsync)
+    operation="relateItemToWarrantyPolicyAsync"
+    ;;
+    removeWarrantyPolicyFromItemAsync)
+    operation="removeWarrantyPolicyFromItemAsync"
+    ;;
+    countStockItemTagsByItemId)
+    operation="countStockItemTagsByItemId"
+    ;;
+    countStockItemsByBusiness)
+    operation="countStockItemsByBusiness"
+    ;;
+    createStockItem)
+    operation="createStockItem"
+    ;;
+    deleteStockItem)
+    operation="deleteStockItem"
+    ;;
+    getExtendedStockItemById)
+    operation="getExtendedStockItemById"
+    ;;
+    getProductPrimaryImageAsync)
+    operation="getProductPrimaryImageAsync"
+    ;;
+    getStockItemAttachmentById)
+    operation="getStockItemAttachmentById"
+    ;;
+    getStockItemAttachmentsByItemId)
+    operation="getStockItemAttachmentsByItemId"
+    ;;
+    getStockItemAttributeOptionById)
+    operation="getStockItemAttributeOptionById"
+    ;;
+    getStockItemAttributeOptionsByItemId)
+    operation="getStockItemAttributeOptionsByItemId"
+    ;;
+    getStockItemBrandById)
+    operation="getStockItemBrandById"
+    ;;
+    getStockItemBrandsByItemId)
+    operation="getStockItemBrandsByItemId"
+    ;;
+    getStockItemById)
+    operation="getStockItemById"
+    ;;
+    getStockItemCategoriesByItemId)
+    operation="getStockItemCategoriesByItemId"
+    ;;
+    getStockItemCategoryById)
+    operation="getStockItemCategoryById"
+    ;;
+    getStockItemGoogleCategoriesByItemId)
+    operation="getStockItemGoogleCategoriesByItemId"
+    ;;
+    getStockItemGoogleCategoryById)
+    operation="getStockItemGoogleCategoryById"
+    ;;
+    getStockItemImageById)
+    operation="getStockItemImageById"
+    ;;
+    getStockItemImagesByItemId)
+    operation="getStockItemImagesByItemId"
+    ;;
+    getStockItemPriceRuleById)
+    operation="getStockItemPriceRuleById"
+    ;;
+    getStockItemPriceRulesByItemId)
+    operation="getStockItemPriceRulesByItemId"
+    ;;
+    getStockItemQuestionById)
+    operation="getStockItemQuestionById"
+    ;;
+    getStockItemQuestionsByItemId)
+    operation="getStockItemQuestionsByItemId"
+    ;;
+    getStockItemRefundPoliciesByItemId)
+    operation="getStockItemRefundPoliciesByItemId"
+    ;;
+    getStockItemRefundPolicyById)
+    operation="getStockItemRefundPolicyById"
+    ;;
+    getStockItemReturnPoliciesByItemId)
+    operation="getStockItemReturnPoliciesByItemId"
+    ;;
+    getStockItemReturnPolicyById)
+    operation="getStockItemReturnPolicyById"
+    ;;
+    getStockItemReviewById)
+    operation="getStockItemReviewById"
+    ;;
+    getStockItemReviewsByItemId)
+    operation="getStockItemReviewsByItemId"
+    ;;
+    getStockItemShippingPoliciesByItemId)
+    operation="getStockItemShippingPoliciesByItemId"
+    ;;
+    getStockItemShippingPolicyById)
+    operation="getStockItemShippingPolicyById"
+    ;;
+    getStockItemTagById)
+    operation="getStockItemTagById"
+    ;;
+    getStockItemTagsByItemId)
+    operation="getStockItemTagsByItemId"
+    ;;
+    getStockItemTaxPoliciesByItemId)
+    operation="getStockItemTaxPoliciesByItemId"
+    ;;
+    getStockItemTaxPolicyById)
+    operation="getStockItemTaxPolicyById"
+    ;;
+    getStockItemTypeById)
+    operation="getStockItemTypeById"
+    ;;
+    getStockItemTypesByItemId)
+    operation="getStockItemTypesByItemId"
+    ;;
+    getStockItemWarrantyPoliciesByItemId)
+    operation="getStockItemWarrantyPoliciesByItemId"
+    ;;
+    getStockItemWarrantyPolicyById)
+    operation="getStockItemWarrantyPolicyById"
+    ;;
+    getStockItemsOdataMaxPrice)
+    operation="getStockItemsOdataMaxPrice"
+    ;;
+    getStockItemsOdataMinPrice)
+    operation="getStockItemsOdataMinPrice"
+    ;;
+    getStockItemsQuery)
+    operation="getStockItemsQuery"
+    ;;
+    relateAttachmentToStockItem)
+    operation="relateAttachmentToStockItem"
+    ;;
+    relateAttributeOptionToStockItem)
+    operation="relateAttributeOptionToStockItem"
+    ;;
+    relateBrandToStockItem)
+    operation="relateBrandToStockItem"
+    ;;
+    relateCategoryToStockItem)
+    operation="relateCategoryToStockItem"
+    ;;
+    relateGoogleCategoryToStockItem)
+    operation="relateGoogleCategoryToStockItem"
+    ;;
+    relateImageToStockItem)
+    operation="relateImageToStockItem"
+    ;;
+    relatePriceRuleToStockItem)
+    operation="relatePriceRuleToStockItem"
+    ;;
+    relateQuestionToStockItem)
+    operation="relateQuestionToStockItem"
+    ;;
+    relateRefundPolicyToStockItem)
+    operation="relateRefundPolicyToStockItem"
+    ;;
+    relateReturnPolicyToStockItem)
+    operation="relateReturnPolicyToStockItem"
+    ;;
+    relateReviewToStockItem)
+    operation="relateReviewToStockItem"
+    ;;
+    relateShippingPolicyToStockItem)
+    operation="relateShippingPolicyToStockItem"
+    ;;
+    relateTagToStockItem)
+    operation="relateTagToStockItem"
+    ;;
+    relateTaxPolicyToStockItem)
+    operation="relateTaxPolicyToStockItem"
+    ;;
+    relateTypeToStockItem)
+    operation="relateTypeToStockItem"
+    ;;
+    relateWarrantyPolicyToStockItem)
+    operation="relateWarrantyPolicyToStockItem"
+    ;;
+    removeAttachmentFromStockItem)
+    operation="removeAttachmentFromStockItem"
+    ;;
+    removeAttributeOptionFromStockItem)
+    operation="removeAttributeOptionFromStockItem"
+    ;;
+    removeBrandFromStockItem)
+    operation="removeBrandFromStockItem"
+    ;;
+    removeCategoryFromStockItem)
+    operation="removeCategoryFromStockItem"
+    ;;
+    removeGoogleCategoryFromStockItem)
+    operation="removeGoogleCategoryFromStockItem"
+    ;;
+    removeImageFromStockItem)
+    operation="removeImageFromStockItem"
+    ;;
+    removePriceRuleFromStockItem)
+    operation="removePriceRuleFromStockItem"
+    ;;
+    removeQuestionFromStockItem)
+    operation="removeQuestionFromStockItem"
+    ;;
+    removeRefundPolicyFromStockItem)
+    operation="removeRefundPolicyFromStockItem"
+    ;;
+    removeReturnPolicyFromStockItem)
+    operation="removeReturnPolicyFromStockItem"
+    ;;
+    removeReviewFromStockItem)
+    operation="removeReviewFromStockItem"
+    ;;
+    removeShippingPolicyFromStockItem)
+    operation="removeShippingPolicyFromStockItem"
+    ;;
+    removeTagFromStockItem)
+    operation="removeTagFromStockItem"
+    ;;
+    removeTaxPolicyFromStockItem)
+    operation="removeTaxPolicyFromStockItem"
+    ;;
+    removeTypeFromStockItem)
+    operation="removeTypeFromStockItem"
+    ;;
+    removeWarrantyPolicyFromStockItem)
+    operation="removeWarrantyPolicyFromStockItem"
+    ;;
+    updateProductPrimaryImageAsync)
+    operation="updateProductPrimaryImageAsync"
+    ;;
+    updateStockItem)
+    operation="updateStockItem"
+    ;;
+    getMerchantById)
+    operation="getMerchantById"
+    ;;
+    getMerchants)
+    operation="getMerchants"
+    ;;
+    getMerchantsCount)
+    operation="getMerchantsCount"
+    ;;
+    createPricingRule)
+    operation="createPricingRule"
+    ;;
+    deletePricingRule)
+    operation="deletePricingRule"
+    ;;
+    getPricingRuleById)
+    operation="getPricingRuleById"
+    ;;
+    getPricingRules)
+    operation="getPricingRules"
+    ;;
+    updatePricingRule)
+    operation="updatePricingRule"
+    ;;
+    *==*)
+    # Parse body arguments and convert them into top level
+    # JSON properties passed in the body content as strings
+    if [[ "$operation" ]]; then
+        IFS='==' read -r body_key sep body_value <<< "$key"
+        body_parameters[${body_key}]="\"${body_value}\""
+    fi
+    ;;
+    --body=*)
+    # Parse value of body as argument and convert it into only
+    # the raw body content
+    if [[ "$operation" ]]; then
+        IFS='--body=' read -r body_value <<< "$key"
+        body_value=${body_value##--body=}
+        body_parameters["RAW_BODY"]="${body_value}"
+        RAW_BODY=1
+    fi
+    ;;
+    *:=*)
+    # Parse body arguments and convert them into top level
+    # JSON properties passed in the body content without quotes
+    if [[ "$operation" ]]; then
+        # ignore error about 'sep' being unused
+        # shellcheck disable=SC2034
+        IFS=':=' read -r body_key sep body_value <<< "$key"
+        body_parameters[${body_key}]=${body_value}
+    fi
+    ;;
+    +([^=]):*)
+    # Parse header arguments and convert them into curl
+    # only after the operation argument
+    if [[ "$operation" ]]; then
+        IFS=':' read -r header_name header_value <<< "$key"
+        header_arguments[$header_name]=$header_value
+    else
+        curl_arguments+=" $key"
+    fi
+    ;;
+    -)
+    body_content_temp_file=$(mktemp)
+    cat - > "$body_content_temp_file"
+    ;;
+    *=*)
+    # Parse operation arguments and convert them into curl
+    # only after the operation argument
+    if [[ "$operation" ]]; then
+        IFS='=' read -r parameter_name parameter_value <<< "$key"
+        if [[ -z "${operation_parameters[$parameter_name]+foo}" ]]; then
+            operation_parameters[$parameter_name]=$(url_escape "${parameter_value}")
+        else
+            operation_parameters[$parameter_name]+=":::"$(url_escape "${parameter_value}")
+        fi
+    else
+        curl_arguments+=" $key"
+    fi
+    ;;
+    *)
+    # If we are before the operation, treat the arguments as cURL arguments
+    if [[ "x$operation" == "x" ]]; then
+        # Maintain quotes around cURL arguments if necessary
+        space_regexp="[[:space:]]"
+        if [[ $key =~ $space_regexp ]]; then
+            curl_arguments+=" \"$key\""
+        else
+            curl_arguments+=" $key"
+        fi
+    fi
+    ;;
+esac
+done
+
+
+# Check if user provided host name
+if [[ -z "$host" ]]; then
+    ERROR_MSG="ERROR: No hostname provided!!! You have to  provide on command line option '--host ...'"
+    exit 1
+fi
+
+# Check if user specified operation ID
+if [[ -z "$operation" ]]; then
+    ERROR_MSG="ERROR: No operation specified!!!"
+    exit 1
+fi
+
+
+# Run cURL command based on the operation ID
+case $operation in
+    forgotPasswordPost)
+    call_forgotPasswordPost
+    ;;
+    healthGet)
+    call_healthGet
+    ;;
+    helloGet)
+    call_helloGet
+    ;;
+    loginPost)
+    call_loginPost
+    ;;
+    manage2faPost)
+    call_manage2faPost
+    ;;
+    manageInfoGet)
+    call_manageInfoGet
+    ;;
+    manageInfoPost)
+    call_manageInfoPost
+    ;;
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
+    ;;
+    refreshPost)
+    call_refreshPost
+    ;;
+    registerPost)
+    call_registerPost
+    ;;
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
+    ;;
+    resetPasswordPost)
+    call_resetPasswordPost
+    ;;
+    versionGet)
+    call_versionGet
+    ;;
+    createItemAttachmentAsync)
+    call_createItemAttachmentAsync
+    ;;
+    deleteItemAttachmentAsync)
+    call_deleteItemAttachmentAsync
+    ;;
+    getItemAttachmentByIdAsync)
+    call_getItemAttachmentByIdAsync
+    ;;
+    getItemAttachmentsAsync)
+    call_getItemAttachmentsAsync
+    ;;
+    updateItemAttachmentAsync)
+    call_updateItemAttachmentAsync
+    ;;
+    countItemAttributesAsync)
+    call_countItemAttributesAsync
+    ;;
+    createItemAttributeAsync)
+    call_createItemAttributeAsync
+    ;;
+    deleteItemAttributeAsync)
+    call_deleteItemAttributeAsync
+    ;;
+    getItemAttributeByIdAsync)
+    call_getItemAttributeByIdAsync
+    ;;
+    getItemAttributesAsync)
+    call_getItemAttributesAsync
+    ;;
+    updateItemAttributeAsync)
+    call_updateItemAttributeAsync
+    ;;
+    createItemBrandAsync)
+    call_createItemBrandAsync
+    ;;
+    deleteItemBrandAsync)
+    call_deleteItemBrandAsync
+    ;;
+    getItemBrandByIdAsync)
+    call_getItemBrandByIdAsync
+    ;;
+    getItemBrandsAsync)
+    call_getItemBrandsAsync
+    ;;
+    updateItemBrandAsync)
+    call_updateItemBrandAsync
+    ;;
+    countItemCategoriesAsync)
+    call_countItemCategoriesAsync
+    ;;
+    createItemCategoryAsync)
+    call_createItemCategoryAsync
+    ;;
+    deleteItemCategoryAsync)
+    call_deleteItemCategoryAsync
+    ;;
+    getItemCategoriesAsync)
+    call_getItemCategoriesAsync
+    ;;
+    getItemCategoryByIdAsync)
+    call_getItemCategoryByIdAsync
+    ;;
+    updateItemCategoryAsync)
+    call_updateItemCategoryAsync
+    ;;
+    getAllItemGoogleCategoriesAsync)
+    call_getAllItemGoogleCategoriesAsync
+    ;;
+    getChildrenItemGoogleCategoriesByIdAsync)
+    call_getChildrenItemGoogleCategoriesByIdAsync
+    ;;
+    getItemGoogleCategoriesAsync)
+    call_getItemGoogleCategoriesAsync
+    ;;
+    getItemGoogleCategoriesCountAsync)
+    call_getItemGoogleCategoriesCountAsync
+    ;;
+    getItemGoogleCategoriesTreeAsync)
+    call_getItemGoogleCategoriesTreeAsync
+    ;;
+    getItemGoogleCategoryByIdAsync)
+    call_getItemGoogleCategoryByIdAsync
+    ;;
+    getRootItemGoogleCategoriesAsync)
+    call_getRootItemGoogleCategoriesAsync
+    ;;
+    mapItemGoogleCategoriesTreeAsync)
+    call_mapItemGoogleCategoriesTreeAsync
+    ;;
+    createItemImageAsync)
+    call_createItemImageAsync
+    ;;
+    deleteItemImageAsync)
+    call_deleteItemImageAsync
+    ;;
+    getItemImageByIdAsync)
+    call_getItemImageByIdAsync
+    ;;
+    getItemImagesAsync)
+    call_getItemImagesAsync
+    ;;
+    updateItemImageAsync)
+    call_updateItemImageAsync
+    ;;
+    createItemQuestionAsync)
+    call_createItemQuestionAsync
+    ;;
+    deleteItemQuestionAsync)
+    call_deleteItemQuestionAsync
+    ;;
+    getItemQuestionByIdAsync)
+    call_getItemQuestionByIdAsync
+    ;;
+    getItemQuestionsAsync)
+    call_getItemQuestionsAsync
+    ;;
+    updateItemQuestionAsync)
+    call_updateItemQuestionAsync
+    ;;
+    countItemRefundPoliciesAsync)
+    call_countItemRefundPoliciesAsync
+    ;;
+    getItemRefundPoliciesAsync)
+    call_getItemRefundPoliciesAsync
+    ;;
+    getItemRefundPolicyByIdAsync)
+    call_getItemRefundPolicyByIdAsync
+    ;;
+    relateItemToRefundPolicyAsync)
+    call_relateItemToRefundPolicyAsync
+    ;;
+    removeRefundPolicyFromItemAsync)
+    call_removeRefundPolicyFromItemAsync
+    ;;
+    countItemReturnPoliciesAsync)
+    call_countItemReturnPoliciesAsync
+    ;;
+    getItemReturnPoliciesAsync)
+    call_getItemReturnPoliciesAsync
+    ;;
+    getItemReturnPolicyByIdAsync)
+    call_getItemReturnPolicyByIdAsync
+    ;;
+    relateItemToReturnPolicyAsync)
+    call_relateItemToReturnPolicyAsync
+    ;;
+    removeReturnPolicyFromItemAsync)
+    call_removeReturnPolicyFromItemAsync
+    ;;
+    createItemReviewAsync)
+    call_createItemReviewAsync
+    ;;
+    deleteItemReviewAsync)
+    call_deleteItemReviewAsync
+    ;;
+    getItemReviewByIdAsync)
+    call_getItemReviewByIdAsync
+    ;;
+    getItemReviewsAsync)
+    call_getItemReviewsAsync
+    ;;
+    updateItemReviewAsync)
+    call_updateItemReviewAsync
+    ;;
+    countItemShippingPoliciesAsync)
+    call_countItemShippingPoliciesAsync
+    ;;
+    getItemShippingPoliciesAsync)
+    call_getItemShippingPoliciesAsync
+    ;;
+    getItemShippingPolicyByIdAsync)
+    call_getItemShippingPolicyByIdAsync
+    ;;
+    relateItemToShippingPolicyAsync)
+    call_relateItemToShippingPolicyAsync
+    ;;
+    removeShippingPolicyFromItemAsync)
+    call_removeShippingPolicyFromItemAsync
+    ;;
+    createItemTagAsync)
+    call_createItemTagAsync
+    ;;
+    deleteItemTagAsync)
+    call_deleteItemTagAsync
+    ;;
+    getItemTagByIdAsync)
+    call_getItemTagByIdAsync
+    ;;
+    getItemTagsAsync)
+    call_getItemTagsAsync
+    ;;
+    updateItemTagAsync)
+    call_updateItemTagAsync
+    ;;
+    countItemTaxPoliciesAsync)
+    call_countItemTaxPoliciesAsync
+    ;;
+    getItemTaxPoliciesAsync)
+    call_getItemTaxPoliciesAsync
+    ;;
+    getItemTaxPolicyByIdAsync)
+    call_getItemTaxPolicyByIdAsync
+    ;;
+    relateItemToTaxPolicyAsync)
+    call_relateItemToTaxPolicyAsync
+    ;;
+    removeTaxPolicyFromItemAsync)
+    call_removeTaxPolicyFromItemAsync
+    ;;
+    countItemTypesAsync)
+    call_countItemTypesAsync
+    ;;
+    createItemTypeAsync)
+    call_createItemTypeAsync
+    ;;
+    deleteItemTypeAsync)
+    call_deleteItemTypeAsync
+    ;;
+    getItemTypeByIdAsync)
+    call_getItemTypeByIdAsync
+    ;;
+    getItemTypesAsync)
+    call_getItemTypesAsync
+    ;;
+    updateItemTypeAsync)
+    call_updateItemTypeAsync
+    ;;
+    countItemWarrantyPoliciesAsync)
+    call_countItemWarrantyPoliciesAsync
+    ;;
+    getItemWarrantyPoliciesAsync)
+    call_getItemWarrantyPoliciesAsync
+    ;;
+    getItemWarrantyPolicyByIdAsync)
+    call_getItemWarrantyPolicyByIdAsync
+    ;;
+    relateItemToWarrantyPolicyAsync)
+    call_relateItemToWarrantyPolicyAsync
+    ;;
+    removeWarrantyPolicyFromItemAsync)
+    call_removeWarrantyPolicyFromItemAsync
+    ;;
+    countStockItemTagsByItemId)
+    call_countStockItemTagsByItemId
+    ;;
+    countStockItemsByBusiness)
+    call_countStockItemsByBusiness
+    ;;
+    createStockItem)
+    call_createStockItem
+    ;;
+    deleteStockItem)
+    call_deleteStockItem
+    ;;
+    getExtendedStockItemById)
+    call_getExtendedStockItemById
+    ;;
+    getProductPrimaryImageAsync)
+    call_getProductPrimaryImageAsync
+    ;;
+    getStockItemAttachmentById)
+    call_getStockItemAttachmentById
+    ;;
+    getStockItemAttachmentsByItemId)
+    call_getStockItemAttachmentsByItemId
+    ;;
+    getStockItemAttributeOptionById)
+    call_getStockItemAttributeOptionById
+    ;;
+    getStockItemAttributeOptionsByItemId)
+    call_getStockItemAttributeOptionsByItemId
+    ;;
+    getStockItemBrandById)
+    call_getStockItemBrandById
+    ;;
+    getStockItemBrandsByItemId)
+    call_getStockItemBrandsByItemId
+    ;;
+    getStockItemById)
+    call_getStockItemById
+    ;;
+    getStockItemCategoriesByItemId)
+    call_getStockItemCategoriesByItemId
+    ;;
+    getStockItemCategoryById)
+    call_getStockItemCategoryById
+    ;;
+    getStockItemGoogleCategoriesByItemId)
+    call_getStockItemGoogleCategoriesByItemId
+    ;;
+    getStockItemGoogleCategoryById)
+    call_getStockItemGoogleCategoryById
+    ;;
+    getStockItemImageById)
+    call_getStockItemImageById
+    ;;
+    getStockItemImagesByItemId)
+    call_getStockItemImagesByItemId
+    ;;
+    getStockItemPriceRuleById)
+    call_getStockItemPriceRuleById
+    ;;
+    getStockItemPriceRulesByItemId)
+    call_getStockItemPriceRulesByItemId
+    ;;
+    getStockItemQuestionById)
+    call_getStockItemQuestionById
+    ;;
+    getStockItemQuestionsByItemId)
+    call_getStockItemQuestionsByItemId
+    ;;
+    getStockItemRefundPoliciesByItemId)
+    call_getStockItemRefundPoliciesByItemId
+    ;;
+    getStockItemRefundPolicyById)
+    call_getStockItemRefundPolicyById
+    ;;
+    getStockItemReturnPoliciesByItemId)
+    call_getStockItemReturnPoliciesByItemId
+    ;;
+    getStockItemReturnPolicyById)
+    call_getStockItemReturnPolicyById
+    ;;
+    getStockItemReviewById)
+    call_getStockItemReviewById
+    ;;
+    getStockItemReviewsByItemId)
+    call_getStockItemReviewsByItemId
+    ;;
+    getStockItemShippingPoliciesByItemId)
+    call_getStockItemShippingPoliciesByItemId
+    ;;
+    getStockItemShippingPolicyById)
+    call_getStockItemShippingPolicyById
+    ;;
+    getStockItemTagById)
+    call_getStockItemTagById
+    ;;
+    getStockItemTagsByItemId)
+    call_getStockItemTagsByItemId
+    ;;
+    getStockItemTaxPoliciesByItemId)
+    call_getStockItemTaxPoliciesByItemId
+    ;;
+    getStockItemTaxPolicyById)
+    call_getStockItemTaxPolicyById
+    ;;
+    getStockItemTypeById)
+    call_getStockItemTypeById
+    ;;
+    getStockItemTypesByItemId)
+    call_getStockItemTypesByItemId
+    ;;
+    getStockItemWarrantyPoliciesByItemId)
+    call_getStockItemWarrantyPoliciesByItemId
+    ;;
+    getStockItemWarrantyPolicyById)
+    call_getStockItemWarrantyPolicyById
+    ;;
+    getStockItemsOdataMaxPrice)
+    call_getStockItemsOdataMaxPrice
+    ;;
+    getStockItemsOdataMinPrice)
+    call_getStockItemsOdataMinPrice
+    ;;
+    getStockItemsQuery)
+    call_getStockItemsQuery
+    ;;
+    relateAttachmentToStockItem)
+    call_relateAttachmentToStockItem
+    ;;
+    relateAttributeOptionToStockItem)
+    call_relateAttributeOptionToStockItem
+    ;;
+    relateBrandToStockItem)
+    call_relateBrandToStockItem
+    ;;
+    relateCategoryToStockItem)
+    call_relateCategoryToStockItem
+    ;;
+    relateGoogleCategoryToStockItem)
+    call_relateGoogleCategoryToStockItem
+    ;;
+    relateImageToStockItem)
+    call_relateImageToStockItem
+    ;;
+    relatePriceRuleToStockItem)
+    call_relatePriceRuleToStockItem
+    ;;
+    relateQuestionToStockItem)
+    call_relateQuestionToStockItem
+    ;;
+    relateRefundPolicyToStockItem)
+    call_relateRefundPolicyToStockItem
+    ;;
+    relateReturnPolicyToStockItem)
+    call_relateReturnPolicyToStockItem
+    ;;
+    relateReviewToStockItem)
+    call_relateReviewToStockItem
+    ;;
+    relateShippingPolicyToStockItem)
+    call_relateShippingPolicyToStockItem
+    ;;
+    relateTagToStockItem)
+    call_relateTagToStockItem
+    ;;
+    relateTaxPolicyToStockItem)
+    call_relateTaxPolicyToStockItem
+    ;;
+    relateTypeToStockItem)
+    call_relateTypeToStockItem
+    ;;
+    relateWarrantyPolicyToStockItem)
+    call_relateWarrantyPolicyToStockItem
+    ;;
+    removeAttachmentFromStockItem)
+    call_removeAttachmentFromStockItem
+    ;;
+    removeAttributeOptionFromStockItem)
+    call_removeAttributeOptionFromStockItem
+    ;;
+    removeBrandFromStockItem)
+    call_removeBrandFromStockItem
+    ;;
+    removeCategoryFromStockItem)
+    call_removeCategoryFromStockItem
+    ;;
+    removeGoogleCategoryFromStockItem)
+    call_removeGoogleCategoryFromStockItem
+    ;;
+    removeImageFromStockItem)
+    call_removeImageFromStockItem
+    ;;
+    removePriceRuleFromStockItem)
+    call_removePriceRuleFromStockItem
+    ;;
+    removeQuestionFromStockItem)
+    call_removeQuestionFromStockItem
+    ;;
+    removeRefundPolicyFromStockItem)
+    call_removeRefundPolicyFromStockItem
+    ;;
+    removeReturnPolicyFromStockItem)
+    call_removeReturnPolicyFromStockItem
+    ;;
+    removeReviewFromStockItem)
+    call_removeReviewFromStockItem
+    ;;
+    removeShippingPolicyFromStockItem)
+    call_removeShippingPolicyFromStockItem
+    ;;
+    removeTagFromStockItem)
+    call_removeTagFromStockItem
+    ;;
+    removeTaxPolicyFromStockItem)
+    call_removeTaxPolicyFromStockItem
+    ;;
+    removeTypeFromStockItem)
+    call_removeTypeFromStockItem
+    ;;
+    removeWarrantyPolicyFromStockItem)
+    call_removeWarrantyPolicyFromStockItem
+    ;;
+    updateProductPrimaryImageAsync)
+    call_updateProductPrimaryImageAsync
+    ;;
+    updateStockItem)
+    call_updateStockItem
+    ;;
+    getMerchantById)
+    call_getMerchantById
+    ;;
+    getMerchants)
+    call_getMerchants
+    ;;
+    getMerchantsCount)
+    call_getMerchantsCount
+    ;;
+    createPricingRule)
+    call_createPricingRule
+    ;;
+    deletePricingRule)
+    call_deletePricingRule
+    ;;
+    getPricingRuleById)
+    call_getPricingRuleById
+    ;;
+    getPricingRules)
+    call_getPricingRules
+    ;;
+    updatePricingRule)
+    call_updatePricingRule
+    ;;
+    *)
+    ERROR_MSG="ERROR: Unknown operation: $operation"
+    exit 1
+esac

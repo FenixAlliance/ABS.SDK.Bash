@@ -4,23 +4,25 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2MarketingServiceEmailSignaturesCountGet**](EmailSignaturesApi.md#apiV2MarketingServiceEmailSignaturesCountGet) | **GET** /api/v2/MarketingService/EmailSignatures/Count | 
-[**apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete**](EmailSignaturesApi.md#apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete) | **DELETE** /api/v2/MarketingService/EmailSignatures/{emailsignatureId} | 
-[**apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet**](EmailSignaturesApi.md#apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet) | **GET** /api/v2/MarketingService/EmailSignatures/{emailsignatureId} | 
-[**apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut**](EmailSignaturesApi.md#apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut) | **PUT** /api/v2/MarketingService/EmailSignatures/{emailsignatureId} | 
-[**apiV2MarketingServiceEmailSignaturesGet**](EmailSignaturesApi.md#apiV2MarketingServiceEmailSignaturesGet) | **GET** /api/v2/MarketingService/EmailSignatures | 
-[**apiV2MarketingServiceEmailSignaturesPost**](EmailSignaturesApi.md#apiV2MarketingServiceEmailSignaturesPost) | **POST** /api/v2/MarketingService/EmailSignatures | 
+[**createEmailSignatureAsync**](EmailSignaturesApi.md#createEmailSignatureAsync) | **POST** /api/v2/MarketingService/EmailSignatures | Create an email signature
+[**deleteEmailSignatureAsync**](EmailSignaturesApi.md#deleteEmailSignatureAsync) | **DELETE** /api/v2/MarketingService/EmailSignatures/{emailsignatureId} | Delete an email signature
+[**getEmailSignatureDetailsAsync**](EmailSignaturesApi.md#getEmailSignatureDetailsAsync) | **GET** /api/v2/MarketingService/EmailSignatures/{emailsignatureId} | Get email signature by ID
+[**getEmailSignaturesCountAsync**](EmailSignaturesApi.md#getEmailSignaturesCountAsync) | **GET** /api/v2/MarketingService/EmailSignatures/Count | Get email signatures count
+[**getEmailSignaturesODataAsync**](EmailSignaturesApi.md#getEmailSignaturesODataAsync) | **GET** /api/v2/MarketingService/EmailSignatures | Get email signatures
+[**updateEmailSignatureAsync**](EmailSignaturesApi.md#updateEmailSignatureAsync) | **PUT** /api/v2/MarketingService/EmailSignatures/{emailsignatureId} | Update an email signature
 
 
 
-## apiV2MarketingServiceEmailSignaturesCountGet
+## createEmailSignatureAsync
 
+Create an email signature
 
+Creates a new email signature for the specified tenant.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceEmailSignaturesCountGet  tenantId=value  api-version=value x-api-version:value
+ createEmailSignatureAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -29,33 +31,36 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **emailSignatureCreateDto** | [**EmailSignatureCreateDto**](EmailSignatureCreateDto.md) |  |
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
 ### Return type
 
-[**Int32Envelope**](Int32Envelope.md)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete
+## deleteEmailSignatureAsync
 
+Delete an email signature
 
+Deletes an email signature by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete  tenantId=value emailsignatureId=value  api-version=value x-api-version:value
+ deleteEmailSignatureAsync  tenantId=value emailsignatureId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -74,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -84,14 +89,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet
+## getEmailSignatureDetailsAsync
 
+Get email signature by ID
 
+Retrieves the details of a specific email signature by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet  tenantId=value emailsignatureId=value  api-version=value x-api-version:value
+ getEmailSignatureDetailsAsync  tenantId=value emailsignatureId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -110,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -120,14 +127,90 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut
+## getEmailSignaturesCountAsync
 
+Get email signatures count
 
+Returns the count of email signatures for the specified tenant using OData query options.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut  tenantId=value emailsignatureId=value  api-version=value x-api-version:value
+ getEmailSignaturesCountAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getEmailSignaturesODataAsync
+
+Get email signatures
+
+Retrieves a collection of email signatures for the specified tenant using OData query options.
+
+### Example
+
+```bash
+ getEmailSignaturesODataAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**EmailSignatureDtoListEnvelope**](EmailSignatureDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateEmailSignatureAsync
+
+Update an email signature
+
+Updates an existing email signature by its ID.
+
+### Example
+
+```bash
+ updateEmailSignatureAsync  tenantId=value emailsignatureId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -147,78 +230,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2MarketingServiceEmailSignaturesGet
-
-
-
-### Example
-
-```bash
- apiV2MarketingServiceEmailSignaturesGet  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmailSignatureDtoListEnvelope**](EmailSignatureDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2MarketingServiceEmailSignaturesPost
-
-
-
-### Example
-
-```bash
- apiV2MarketingServiceEmailSignaturesPost  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **emailSignatureCreateDto** | [**EmailSignatureCreateDto**](EmailSignatureCreateDto.md) |  |
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

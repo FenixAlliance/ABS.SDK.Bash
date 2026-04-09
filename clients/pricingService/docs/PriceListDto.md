@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **unitGroupId** | **string** |  | [optional] [default to null]
 **partnerVisible** | **boolean** |  | [optional] [default to null]
 **unitOfMeasureDependant** | **boolean** |  | [optional] [default to null]
-**enrolmentId** | **string** |  | [optional] [default to null]
+**enrollmentId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

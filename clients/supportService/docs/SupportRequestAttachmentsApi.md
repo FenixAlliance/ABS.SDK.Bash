@@ -4,23 +4,25 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2SupportServiceSupportRequestAttachmentsCountGet**](SupportRequestAttachmentsApi.md#apiV2SupportServiceSupportRequestAttachmentsCountGet) | **GET** /api/v2/SupportService/SupportRequestAttachments/Count | 
-[**apiV2SupportServiceSupportRequestAttachmentsGet**](SupportRequestAttachmentsApi.md#apiV2SupportServiceSupportRequestAttachmentsGet) | **GET** /api/v2/SupportService/SupportRequestAttachments | 
-[**apiV2SupportServiceSupportRequestAttachmentsPost**](SupportRequestAttachmentsApi.md#apiV2SupportServiceSupportRequestAttachmentsPost) | **POST** /api/v2/SupportService/SupportRequestAttachments | 
-[**apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete**](SupportRequestAttachmentsApi.md#apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete) | **DELETE** /api/v2/SupportService/SupportRequestAttachments/{supportRequestAttachmentId} | 
-[**apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet**](SupportRequestAttachmentsApi.md#apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet) | **GET** /api/v2/SupportService/SupportRequestAttachments/{supportRequestAttachmentId} | 
-[**apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut**](SupportRequestAttachmentsApi.md#apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut) | **PUT** /api/v2/SupportService/SupportRequestAttachments/{supportRequestAttachmentId} | 
+[**createSupportRequestAttachmentAsync**](SupportRequestAttachmentsApi.md#createSupportRequestAttachmentAsync) | **POST** /api/v2/SupportService/SupportRequestAttachments | Create a new support request attachment
+[**deleteSupportRequestAttachmentAsync**](SupportRequestAttachmentsApi.md#deleteSupportRequestAttachmentAsync) | **DELETE** /api/v2/SupportService/SupportRequestAttachments/{supportRequestAttachmentId} | Delete a support request attachment
+[**getSupportRequestAttachmentAsync**](SupportRequestAttachmentsApi.md#getSupportRequestAttachmentAsync) | **GET** /api/v2/SupportService/SupportRequestAttachments/{supportRequestAttachmentId} | Retrieve a support request attachment by ID
+[**getSupportRequestAttachmentsAsync**](SupportRequestAttachmentsApi.md#getSupportRequestAttachmentsAsync) | **GET** /api/v2/SupportService/SupportRequestAttachments | Retrieve a list of support request attachments
+[**getSupportRequestAttachmentsCountAsync**](SupportRequestAttachmentsApi.md#getSupportRequestAttachmentsCountAsync) | **GET** /api/v2/SupportService/SupportRequestAttachments/Count | Get the count of support request attachments
+[**updateSupportRequestAttachmentAsync**](SupportRequestAttachmentsApi.md#updateSupportRequestAttachmentAsync) | **PUT** /api/v2/SupportService/SupportRequestAttachments/{supportRequestAttachmentId} | Update a support request attachment
 
 
 
-## apiV2SupportServiceSupportRequestAttachmentsCountGet
+## createSupportRequestAttachmentAsync
 
+Create a new support request attachment
 
+Creates a new support request attachment for the specified tenant.
 
 ### Example
 
 ```bash
- apiV2SupportServiceSupportRequestAttachmentsCountGet  tenantId=value  api-version=value x-api-version:value
+ createSupportRequestAttachmentAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -28,80 +30,10 @@ Method | HTTP request | Description
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [optional] [default to null]
+ **tenantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**Int32Envelope**](Int32Envelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2SupportServiceSupportRequestAttachmentsGet
-
-
-
-### Example
-
-```bash
- apiV2SupportServiceSupportRequestAttachmentsGet  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [optional] [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**SupportRequestAttachmentDtoListEnvelope**](SupportRequestAttachmentDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2SupportServiceSupportRequestAttachmentsPost
-
-
-
-### Example
-
-```bash
- apiV2SupportServiceSupportRequestAttachmentsPost  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **supportRequestAttachmentCreateDto** | [**SupportRequestAttachmentCreateDto**](SupportRequestAttachmentCreateDto.md) |  |
- **tenantId** | **string** |  | [optional] [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
+ **supportRequestAttachmentCreateDto** | [**SupportRequestAttachmentCreateDto**](SupportRequestAttachmentCreateDto.md) |  | [optional]
 
 ### Return type
 
@@ -109,7 +41,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -119,14 +51,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete
+## deleteSupportRequestAttachmentAsync
 
+Delete a support request attachment
 
+Deletes a support request attachment by its unique identifier.
 
 ### Example
 
 ```bash
- apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete supportRequestAttachmentId=value  tenantId=value  api-version=value x-api-version:value
+ deleteSupportRequestAttachmentAsync  tenantId=value supportRequestAttachmentId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -134,8 +68,8 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **supportRequestAttachmentId** | **string** |  | [default to null]
- **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -145,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -155,14 +89,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet
+## getSupportRequestAttachmentAsync
 
+Retrieve a support request attachment by ID
 
+Retrieves a single support request attachment by its unique identifier.
 
 ### Example
 
 ```bash
- apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet supportRequestAttachmentId=value  api-version=value x-api-version:value
+ getSupportRequestAttachmentAsync  tenantId=value supportRequestAttachmentId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -170,6 +106,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **supportRequestAttachmentId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -180,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -190,14 +127,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut
+## getSupportRequestAttachmentsAsync
 
+Retrieve a list of support request attachments
 
+Retrieves a list of support request attachments for the specified tenant with OData query support.
 
 ### Example
 
 ```bash
- apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut supportRequestAttachmentId=value  tenantId=value  api-version=value x-api-version:value
+ getSupportRequestAttachmentsAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -205,11 +144,85 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **supportRequestAttachmentId** | **string** |  | [default to null]
- **supportRequestAttachmentUpdateDto** | [**SupportRequestAttachmentUpdateDto**](SupportRequestAttachmentUpdateDto.md) |  |
- **tenantId** | **string** |  | [optional] [default to null]
+ **tenantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**SupportRequestAttachmentDtoListEnvelope**](SupportRequestAttachmentDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getSupportRequestAttachmentsCountAsync
+
+Get the count of support request attachments
+
+Returns the total count of support request attachments for the specified tenant with OData query support.
+
+### Example
+
+```bash
+ getSupportRequestAttachmentsCountAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateSupportRequestAttachmentAsync
+
+Update a support request attachment
+
+Updates an existing support request attachment by its unique identifier.
+
+### Example
+
+```bash
+ updateSupportRequestAttachmentAsync  tenantId=value supportRequestAttachmentId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **supportRequestAttachmentId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **supportRequestAttachmentUpdateDto** | [**SupportRequestAttachmentUpdateDto**](SupportRequestAttachmentUpdateDto.md) |  | [optional]
 
 ### Return type
 
@@ -217,7 +230,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

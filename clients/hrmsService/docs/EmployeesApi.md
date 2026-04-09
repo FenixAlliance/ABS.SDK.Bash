@@ -4,18 +4,20 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createEmployeeAsync**](EmployeesApi.md#createEmployeeAsync) | **POST** /api/v2/HrmsService/Employees | 
-[**deleteEmployeeAsync**](EmployeesApi.md#deleteEmployeeAsync) | **DELETE** /api/v2/HrmsService/Employees/{employeeId} | 
-[**getEmployeeByIdAsync**](EmployeesApi.md#getEmployeeByIdAsync) | **GET** /api/v2/HrmsService/Employees/{employeeId} | 
-[**getEmployeesAsync**](EmployeesApi.md#getEmployeesAsync) | **GET** /api/v2/HrmsService/Employees | 
-[**getEmployeesCountAsync**](EmployeesApi.md#getEmployeesCountAsync) | **GET** /api/v2/HrmsService/Employees/Count | 
-[**updateEmployeeAsync**](EmployeesApi.md#updateEmployeeAsync) | **PUT** /api/v2/HrmsService/Employees/{employeeId} | 
+[**createEmployeeAsync**](EmployeesApi.md#createEmployeeAsync) | **POST** /api/v2/HrmsService/Employees | Create an employee
+[**deleteEmployeeAsync**](EmployeesApi.md#deleteEmployeeAsync) | **DELETE** /api/v2/HrmsService/Employees/{employeeId} | Delete an employee
+[**getEmployeeByIdAsync**](EmployeesApi.md#getEmployeeByIdAsync) | **GET** /api/v2/HrmsService/Employees/{employeeId} | Get employee by ID
+[**getEmployeesAsync**](EmployeesApi.md#getEmployeesAsync) | **GET** /api/v2/HrmsService/Employees | Get employees
+[**getEmployeesCountAsync**](EmployeesApi.md#getEmployeesCountAsync) | **GET** /api/v2/HrmsService/Employees/Count | Count employees
+[**updateEmployeeAsync**](EmployeesApi.md#updateEmployeeAsync) | **PUT** /api/v2/HrmsService/Employees/{employeeId} | Update an employee
 
 
 
 ## createEmployeeAsync
 
+Create an employee
 
+Creates a new employee for the specified tenant.
 
 ### Example
 
@@ -39,7 +41,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -51,7 +53,9 @@ Name | Type | Description  | Notes
 
 ## deleteEmployeeAsync
 
+Delete an employee
 
+Deletes an employee for the specified tenant.
 
 ### Example
 
@@ -75,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -87,7 +91,9 @@ Name | Type | Description  | Notes
 
 ## getEmployeeByIdAsync
 
+Get employee by ID
 
+Retrieves a specific employee by its identifier.
 
 ### Example
 
@@ -111,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -123,7 +129,9 @@ Name | Type | Description  | Notes
 
 ## getEmployeesAsync
 
+Get employees
 
+Retrieves employees for the specified tenant.
 
 ### Example
 
@@ -146,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -158,7 +166,9 @@ Name | Type | Description  | Notes
 
 ## getEmployeesCountAsync
 
+Count employees
 
+Counts employees for the specified tenant.
 
 ### Example
 
@@ -181,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -193,7 +203,9 @@ Name | Type | Description  | Notes
 
 ## updateEmployeeAsync
 
+Update an employee
 
+Updates an existing employee for the specified tenant.
 
 ### Example
 
@@ -218,7 +230,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

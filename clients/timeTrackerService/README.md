@@ -103,22 +103,43 @@ All URIs are relative to **
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ProjectTimeLogsApi* | [**apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet**](docs/ProjectTimeLogsApi.md#apiv2timetrackerserviceprojecttimelogsbyresponsiblecontactget) | **GET** /api/v2/TimeTrackerService/ProjectTimeLogs/ByResponsibleContact | 
-*ProjectTimeLogsApi* | [**apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet**](docs/ProjectTimeLogsApi.md#apiv2timetrackerserviceprojecttimelogscreatedbycontactget) | **GET** /api/v2/TimeTrackerService/ProjectTimeLogs/CreatedByContact | 
-*ProjectTimeLogsApi* | [**apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet**](docs/ProjectTimeLogsApi.md#apiv2timetrackerserviceprojecttimelogsforprojectprojectidget) | **GET** /api/v2/TimeTrackerService/ProjectTimeLogs/ForProject/{projectId} | 
-*ProjectTimeLogsApi* | [**apiV2TimeTrackerServiceProjectTimeLogsGet**](docs/ProjectTimeLogsApi.md#apiv2timetrackerserviceprojecttimelogsget) | **GET** /api/v2/TimeTrackerService/ProjectTimeLogs | 
-*ProjectTimeLogsApi* | [**apiV2TimeTrackerServiceProjectTimeLogsPost**](docs/ProjectTimeLogsApi.md#apiv2timetrackerserviceprojecttimelogspost) | **POST** /api/v2/TimeTrackerService/ProjectTimeLogs | 
-*ProjectTimeLogsApi* | [**apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete**](docs/ProjectTimeLogsApi.md#apiv2timetrackerserviceprojecttimelogstimelogiddelete) | **DELETE** /api/v2/TimeTrackerService/ProjectTimeLogs/{timeLogId} | 
-*ProjectTimeLogsApi* | [**apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet**](docs/ProjectTimeLogsApi.md#apiv2timetrackerserviceprojecttimelogstimelogidget) | **GET** /api/v2/TimeTrackerService/ProjectTimeLogs/{timeLogId} | 
-*ProjectTimeLogsApi* | [**apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut**](docs/ProjectTimeLogsApi.md#apiv2timetrackerserviceprojecttimelogstimelogidput) | **PUT** /api/v2/TimeTrackerService/ProjectTimeLogs/{timeLogId} | 
-*TimeLogApprovalsApi* | [**apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut**](docs/TimeLogApprovalsApi.md#apiv2timetrackerservicetimelogapprovalsapprovalidapproverput) | **PUT** /api/v2/TimeTrackerService/TimeLogApprovals/{approvalId}/Approver | 
-*TimeLogApprovalsApi* | [**apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut**](docs/TimeLogApprovalsApi.md#apiv2timetrackerservicetimelogapprovalsapprovalidstatusput) | **PUT** /api/v2/TimeTrackerService/TimeLogApprovals/{approvalId}/Status | 
-*TimeLogApprovalsApi* | [**apiV2TimeTrackerServiceTimeLogApprovalsPost**](docs/TimeLogApprovalsApi.md#apiv2timetrackerservicetimelogapprovalspost) | **POST** /api/v2/TimeTrackerService/TimeLogApprovals | 
+*FenixAllianceABPWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABPWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
+*FenixAllianceABPWebApi* | [**healthGet**](docs/FenixAllianceABPWebApi.md#healthget) | **GET** /health | 
+*FenixAllianceABPWebApi* | [**helloGet**](docs/FenixAllianceABPWebApi.md#helloget) | **GET** /hello | 
+*FenixAllianceABPWebApi* | [**loginPost**](docs/FenixAllianceABPWebApi.md#loginpost) | **POST** /login | 
+*FenixAllianceABPWebApi* | [**manage2faPost**](docs/FenixAllianceABPWebApi.md#manage2fapost) | **POST** /manage/2fa | 
+*FenixAllianceABPWebApi* | [**manageInfoGet**](docs/FenixAllianceABPWebApi.md#manageinfoget) | **GET** /manage/info | 
+*FenixAllianceABPWebApi* | [**manageInfoPost**](docs/FenixAllianceABPWebApi.md#manageinfopost) | **POST** /manage/info | 
+*FenixAllianceABPWebApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAllianceABPWebApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
+*FenixAllianceABPWebApi* | [**refreshPost**](docs/FenixAllianceABPWebApi.md#refreshpost) | **POST** /refresh | 
+*FenixAllianceABPWebApi* | [**registerPost**](docs/FenixAllianceABPWebApi.md#registerpost) | **POST** /register | 
+*FenixAllianceABPWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABPWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
+*FenixAllianceABPWebApi* | [**resetPasswordPost**](docs/FenixAllianceABPWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
+*FenixAllianceABPWebApi* | [**versionGet**](docs/FenixAllianceABPWebApi.md#versionget) | **GET** /version | 
+*ProjectTimeLogsApi* | [**countProjectPeriodTimeLogsAsync**](docs/ProjectTimeLogsApi.md#countprojectperiodtimelogsasync) | **GET** /api/v2/TimeTrackerService/ProjectTimeLogs/Count | Get the count of project period time logs
+*ProjectTimeLogsApi* | [**createProjectTimeLogAsync**](docs/ProjectTimeLogsApi.md#createprojecttimelogasync) | **POST** /api/v2/TimeTrackerService/ProjectTimeLogs | Create a new project time log
+*ProjectTimeLogsApi* | [**deleteProjectTimeLogAsync**](docs/ProjectTimeLogsApi.md#deleteprojecttimelogasync) | **DELETE** /api/v2/TimeTrackerService/ProjectTimeLogs/{timeLogId} | Delete a project time log
+*ProjectTimeLogsApi* | [**getProjectPeriodTimeLogsAsync**](docs/ProjectTimeLogsApi.md#getprojectperiodtimelogsasync) | **GET** /api/v2/TimeTrackerService/ProjectTimeLogs | Retrieve project period time logs
+*ProjectTimeLogsApi* | [**getProjectTimeLogByIdAsync**](docs/ProjectTimeLogsApi.md#getprojecttimelogbyidasync) | **GET** /api/v2/TimeTrackerService/ProjectTimeLogs/{timeLogId} | Retrieve a project time log by ID
+*ProjectTimeLogsApi* | [**getProjectTimeLogsAsync**](docs/ProjectTimeLogsApi.md#getprojecttimelogsasync) | **GET** /api/v2/TimeTrackerService/ProjectTimeLogs/ForProject/{projectId} | Retrieve time logs for a project
+*ProjectTimeLogsApi* | [**getProjectTimeLogsByResponsibleContactAsync**](docs/ProjectTimeLogsApi.md#getprojecttimelogsbyresponsiblecontactasync) | **GET** /api/v2/TimeTrackerService/ProjectTimeLogs/ByResponsibleContact | Retrieve time logs by responsible contact
+*ProjectTimeLogsApi* | [**getProjectTimeLogsCreatedByContactAsync**](docs/ProjectTimeLogsApi.md#getprojecttimelogscreatedbycontactasync) | **GET** /api/v2/TimeTrackerService/ProjectTimeLogs/CreatedByContact | Retrieve time logs created by a contact
+*ProjectTimeLogsApi* | [**updateProjectTimeLogAsync**](docs/ProjectTimeLogsApi.md#updateprojecttimelogasync) | **PUT** /api/v2/TimeTrackerService/ProjectTimeLogs/{timeLogId} | Update a project time log
+*TimeLogApprovalsApi* | [**requestProjectHoursApprovalAsync**](docs/TimeLogApprovalsApi.md#requestprojecthoursapprovalasync) | **POST** /api/v2/TimeTrackerService/TimeLogApprovals | Request project hours approval
+*TimeLogApprovalsApi* | [**updateProjectHoursApprovalApproverAsync**](docs/TimeLogApprovalsApi.md#updateprojecthoursapprovalapproverasync) | **PUT** /api/v2/TimeTrackerService/TimeLogApprovals/{approvalId}/Approver | Update approval approver
+*TimeLogApprovalsApi* | [**updateProjectHoursApprovalStatusAsync**](docs/TimeLogApprovalsApi.md#updateprojecthoursapprovalstatusasync) | **PUT** /api/v2/TimeTrackerService/TimeLogApprovals/{approvalId}/Status | Update approval status
 
 
 ## Documentation For Models
 
+ - [AccessTokenResponse](docs/AccessTokenResponse.md)
  - [ErrorEnvelope](docs/ErrorEnvelope.md)
+ - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
+ - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
+ - [InfoRequest](docs/InfoRequest.md)
+ - [InfoResponse](docs/InfoResponse.md)
+ - [Int32Envelope](docs/Int32Envelope.md)
+ - [LoginRequest](docs/LoginRequest.md)
  - [ProjectHoursApprovalApproverUpdateDto](docs/ProjectHoursApprovalApproverUpdateDto.md)
  - [ProjectHoursApprovalCreateDto](docs/ProjectHoursApprovalCreateDto.md)
  - [ProjectHoursApprovalStatusUpdateDto](docs/ProjectHoursApprovalStatusUpdateDto.md)
@@ -127,15 +148,15 @@ Class | Method | HTTP request | Description
  - [ProjectTimeLogDtoEnvelope](docs/ProjectTimeLogDtoEnvelope.md)
  - [ProjectTimeLogDtoListEnvelope](docs/ProjectTimeLogDtoListEnvelope.md)
  - [ProjectTimeLogUpdateDto](docs/ProjectTimeLogUpdateDto.md)
+ - [RefreshRequest](docs/RefreshRequest.md)
+ - [RegisterRequest](docs/RegisterRequest.md)
+ - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)
+ - [ResetPasswordRequest](docs/ResetPasswordRequest.md)
+ - [TwoFactorRequest](docs/TwoFactorRequest.md)
+ - [TwoFactorResponse](docs/TwoFactorResponse.md)
 
 
 ## Documentation For Authorization
 
-
-## Bearer
-
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+ All endpoints do not require authorization.
 

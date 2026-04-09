@@ -1,0 +1,18 @@
+# GigUpdateDto
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**title** | **string** |  | [optional] [default to null]
+**description** | **string** |  | [optional] [default to null]
+**price** | **float** |  | [optional] [default to null]
+**currency** | **string** |  | [optional] [default to null]
+**location** | **string** |  | [optional] [default to null]
+**startDate** | **string** |  | [optional] [default to null]
+**endDate** | **string** |  | [optional] [default to null]
+**category** | **string** |  | [optional] [default to null]
+**tags** | **string** |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

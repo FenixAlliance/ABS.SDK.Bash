@@ -103,35 +103,54 @@ All URIs are relative to **
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ExchangeApi* | [**apiV2ForexServiceExchangeHistoryGet**](docs/ExchangeApi.md#apiv2forexserviceexchangehistoryget) | **GET** /api/v2/ForexService/Exchange/History | 
-*ExchangeApi* | [**apiV2ForexServiceExchangeLatestGet**](docs/ExchangeApi.md#apiv2forexserviceexchangelatestget) | **GET** /api/v2/ForexService/Exchange/Latest | 
-*ExchangeVApi* | [**apiV3ForexServiceExchangeHistoryGet**](docs/ExchangeVApi.md#apiv3forexserviceexchangehistoryget) | **GET** /api/v3/ForexService/Exchange/History | 
-*ExchangeVApi* | [**apiV3ForexServiceExchangeLatestGet**](docs/ExchangeVApi.md#apiv3forexserviceexchangelatestget) | **GET** /api/v3/ForexService/Exchange/Latest | 
-*RatesApi* | [**apiV2ForexServiceRatesHistoryCurrencyIdGet**](docs/RatesApi.md#apiv2forexservicerateshistorycurrencyidget) | **GET** /api/v2/ForexService/Rates/History/{currencyId} | 
-*RatesApi* | [**apiV2ForexServiceRatesHistoryGet**](docs/RatesApi.md#apiv2forexservicerateshistoryget) | **GET** /api/v2/ForexService/Rates/History | 
-*RatesApi* | [**apiV2ForexServiceRatesLatestCurrencyIdGet**](docs/RatesApi.md#apiv2forexservicerateslatestcurrencyidget) | **GET** /api/v2/ForexService/Rates/Latest/{currencyId} | 
-*RatesApi* | [**apiV2ForexServiceRatesLatestGet**](docs/RatesApi.md#apiv2forexservicerateslatestget) | **GET** /api/v2/ForexService/Rates/Latest | 
+*ExchangeApi* | [**exchangeAmountAsync**](docs/ExchangeApi.md#exchangeamountasync) | **GET** /api/v2/ForexService/Exchange/Latest | Exchange currency at latest rates
+*ExchangeApi* | [**exchangeAmountHistoricalAsync**](docs/ExchangeApi.md#exchangeamounthistoricalasync) | **GET** /api/v2/ForexService/Exchange/History | Exchange currency at historical rates
+*ExchangeVApi* | [**exchangeAmountHistoricalV3Async**](docs/ExchangeVApi.md#exchangeamounthistoricalv3async) | **GET** /api/v3/ForexService/Exchange/History | Exchange currency at historical rates (v3)
+*ExchangeVApi* | [**exchangeAmountV3Async**](docs/ExchangeVApi.md#exchangeamountv3async) | **GET** /api/v3/ForexService/Exchange/Latest | Exchange currency at latest rates (v3)
+*FenixAllianceABPWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABPWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
+*FenixAllianceABPWebApi* | [**healthGet**](docs/FenixAllianceABPWebApi.md#healthget) | **GET** /health | 
+*FenixAllianceABPWebApi* | [**helloGet**](docs/FenixAllianceABPWebApi.md#helloget) | **GET** /hello | 
+*FenixAllianceABPWebApi* | [**loginPost**](docs/FenixAllianceABPWebApi.md#loginpost) | **POST** /login | 
+*FenixAllianceABPWebApi* | [**manage2faPost**](docs/FenixAllianceABPWebApi.md#manage2fapost) | **POST** /manage/2fa | 
+*FenixAllianceABPWebApi* | [**manageInfoGet**](docs/FenixAllianceABPWebApi.md#manageinfoget) | **GET** /manage/info | 
+*FenixAllianceABPWebApi* | [**manageInfoPost**](docs/FenixAllianceABPWebApi.md#manageinfopost) | **POST** /manage/info | 
+*FenixAllianceABPWebApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAllianceABPWebApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
+*FenixAllianceABPWebApi* | [**refreshPost**](docs/FenixAllianceABPWebApi.md#refreshpost) | **POST** /refresh | 
+*FenixAllianceABPWebApi* | [**registerPost**](docs/FenixAllianceABPWebApi.md#registerpost) | **POST** /register | 
+*FenixAllianceABPWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABPWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
+*FenixAllianceABPWebApi* | [**resetPasswordPost**](docs/FenixAllianceABPWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
+*FenixAllianceABPWebApi* | [**versionGet**](docs/FenixAllianceABPWebApi.md#versionget) | **GET** /version | 
+*RatesApi* | [**getHistoricalCurrencyRateAsync**](docs/RatesApi.md#gethistoricalcurrencyrateasync) | **GET** /api/v2/ForexService/Rates/History/{currencyId} | Get historical rate for a currency
+*RatesApi* | [**getHistoricalCurrencyRatesAsync**](docs/RatesApi.md#gethistoricalcurrencyratesasync) | **GET** /api/v2/ForexService/Rates/History | Get historical currency rates
+*RatesApi* | [**getLatestCurrencyRateAsync**](docs/RatesApi.md#getlatestcurrencyrateasync) | **GET** /api/v2/ForexService/Rates/Latest/{currencyId} | Get latest rate for a currency
+*RatesApi* | [**getLatestCurrencyRatesModelAsync**](docs/RatesApi.md#getlatestcurrencyratesmodelasync) | **GET** /api/v2/ForexService/Rates/Latest | Get latest currency rates
 
 
 ## Documentation For Models
 
- - [Currency](docs/Currency.md)
+ - [AccessTokenResponse](docs/AccessTokenResponse.md)
+ - [CurrencyId](docs/CurrencyId.md)
  - [ErrorEnvelope](docs/ErrorEnvelope.md)
  - [ExchangeRate](docs/ExchangeRate.md)
  - [ExchangeRateEnvelope](docs/ExchangeRateEnvelope.md)
  - [ForexRatesDto](docs/ForexRatesDto.md)
  - [ForexRatesDtoEnvelope](docs/ForexRatesDtoEnvelope.md)
+ - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
+ - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
+ - [InfoRequest](docs/InfoRequest.md)
+ - [InfoResponse](docs/InfoResponse.md)
+ - [LoginRequest](docs/LoginRequest.md)
  - [Money](docs/Money.md)
  - [MoneyEnvelope](docs/MoneyEnvelope.md)
+ - [RefreshRequest](docs/RefreshRequest.md)
+ - [RegisterRequest](docs/RegisterRequest.md)
+ - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)
+ - [ResetPasswordRequest](docs/ResetPasswordRequest.md)
+ - [TwoFactorRequest](docs/TwoFactorRequest.md)
+ - [TwoFactorResponse](docs/TwoFactorResponse.md)
 
 
 ## Documentation For Authorization
 
-
-## Bearer
-
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+ All endpoints do not require authorization.
 

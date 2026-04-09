@@ -1,0 +1,50 @@
+# PortalOptions
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**title** | **string** |  | [optional] [default to null]
+**description** | **string** |  | [optional] [default to null]
+**portalUiEngine** | **string** |  | [optional] [default to null]
+**seo** | [**SeoOptions**](SeoOptions.md) |  | [optional] [default to null]
+**store** | [**StoreOptions**](StoreOptions.md) |  | [optional] [default to null]
+**theming** | [**ThemingOptions**](ThemingOptions.md) |  | [optional] [default to null]
+**branding** | [**BrandingOptions**](BrandingOptions.md) |  | [optional] [default to null]
+**social** | [**SocialMediaOptions**](SocialMediaOptions.md) |  | [optional] [default to null]
+**privacy** | [**PrivacyOptions**](PrivacyOptions.md) |  | [optional] [default to null]
+**blog** | [**BlogOptions**](BlogOptions.md) |  | [optional] [default to null]
+**forums** | [**ForumOptions**](ForumOptions.md) |  | [optional] [default to null]
+**footer** | [**FooterOptions**](FooterOptions.md) |  | [optional] [default to null]
+**background** | [**BackgroundOptions**](BackgroundOptions.md) |  | [optional] [default to null]
+**breadcrumbs** | [**BreadcrumbsOptions**](BreadcrumbsOptions.md) |  | [optional] [default to null]
+**contact** | [**ContactOptions**](ContactOptions.md) |  | [optional] [default to null]
+**color** | [**ColorOptions**](ColorOptions.md) |  | [optional] [default to null]
+**dashboard** | [**DashboardOptions**](DashboardOptions.md) |  | [optional] [default to null]
+**header** | [**HeaderOptions**](HeaderOptions.md) |  | [optional] [default to null]
+**titleBar** | [**TitleBarOptions**](TitleBarOptions.md) |  | [optional] [default to null]
+**typography** | [**TypographyOptions**](TypographyOptions.md) |  | [optional] [default to null]
+**socialMedia** | [**SocialMediaOptions**](SocialMediaOptions.md) |  | [optional] [default to null]
+**slidingBar** | [**SlidingBarOptions**](SlidingBarOptions.md) |  | [optional] [default to null]
+**slideshow** | **map** |  | [optional] [default to null]
+**slider** | **map** |  | [optional] [default to null]
+**sidebar** | **map** |  | [optional] [default to null]
+**search** | **map** |  | [optional] [default to null]
+**responsive** | [**ResponsiveOptions**](ResponsiveOptions.md) |  | [optional] [default to null]
+**portfolio** | **map** |  | [optional] [default to null]
+**performance** | **map** |  | [optional] [default to null]
+**pagination** | **map** |  | [optional] [default to null]
+**miscellaneous** | **map** |  | [optional] [default to null]
+**menu** | [**MenuOptions**](MenuOptions.md) |  | [optional] [default to null]
+**grid** | **map** |  | [optional] [default to null]
+**mansory** | **map** |  | [optional] [default to null]
+**lightbox** | **map** |  | [optional] [default to null]
+**layout** | [**LayoutOptions**](LayoutOptions.md) |  | [optional] [default to null]
+**codeFields** | **map** |  | [optional] [default to null]
+**features** | **map** |  | [optional] [default to null]
+**forms** | **map** |  | [optional] [default to null]
+**integrations** | [**IntegrationsOptions**](IntegrationsOptions.md) |  | [optional] [default to null]
+**emails** | [**EmailsOptions**](EmailsOptions.md) |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

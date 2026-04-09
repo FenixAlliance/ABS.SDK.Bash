@@ -4,23 +4,25 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2MarketingServiceEmailTemplatesCountGet**](EmailTemplatesApi.md#apiV2MarketingServiceEmailTemplatesCountGet) | **GET** /api/v2/MarketingService/EmailTemplates/Count | 
-[**apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete**](EmailTemplatesApi.md#apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete) | **DELETE** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | 
-[**apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet**](EmailTemplatesApi.md#apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet) | **GET** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | 
-[**apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut**](EmailTemplatesApi.md#apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut) | **PUT** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | 
-[**apiV2MarketingServiceEmailTemplatesGet**](EmailTemplatesApi.md#apiV2MarketingServiceEmailTemplatesGet) | **GET** /api/v2/MarketingService/EmailTemplates | 
-[**apiV2MarketingServiceEmailTemplatesPost**](EmailTemplatesApi.md#apiV2MarketingServiceEmailTemplatesPost) | **POST** /api/v2/MarketingService/EmailTemplates | 
+[**createEmailTemplateAsync**](EmailTemplatesApi.md#createEmailTemplateAsync) | **POST** /api/v2/MarketingService/EmailTemplates | Create an email template
+[**deleteEmailTemplateAsync**](EmailTemplatesApi.md#deleteEmailTemplateAsync) | **DELETE** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | Delete an email template
+[**getEmailTemplateDetailsAsync**](EmailTemplatesApi.md#getEmailTemplateDetailsAsync) | **GET** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | Get email template by ID
+[**getEmailTemplatesCountAsync**](EmailTemplatesApi.md#getEmailTemplatesCountAsync) | **GET** /api/v2/MarketingService/EmailTemplates/Count | Get email templates count
+[**getEmailTemplatesODataAsync**](EmailTemplatesApi.md#getEmailTemplatesODataAsync) | **GET** /api/v2/MarketingService/EmailTemplates | Get email templates
+[**updateEmailTemplateAsync**](EmailTemplatesApi.md#updateEmailTemplateAsync) | **PUT** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | Update an email template
 
 
 
-## apiV2MarketingServiceEmailTemplatesCountGet
+## createEmailTemplateAsync
 
+Create an email template
 
+Creates a new email template for the specified tenant.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceEmailTemplatesCountGet  tenantId=value  api-version=value x-api-version:value
+ createEmailTemplateAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -29,33 +31,36 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **emailTemplateCreateDto** | [**EmailTemplateCreateDto**](EmailTemplateCreateDto.md) |  |
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
 ### Return type
 
-[**Int32Envelope**](Int32Envelope.md)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete
+## deleteEmailTemplateAsync
 
+Delete an email template
 
+Deletes an email template by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete  tenantId=value emailTemplateId=value  api-version=value x-api-version:value
+ deleteEmailTemplateAsync  tenantId=value emailTemplateId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -74,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -84,14 +89,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet
+## getEmailTemplateDetailsAsync
 
+Get email template by ID
 
+Retrieves the details of a specific email template by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet  tenantId=value  emailTemplatesId=value emailTemplateId=value  api-version=value x-api-version:value
+ getEmailTemplateDetailsAsync  tenantId=value emailTemplateId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -100,7 +107,6 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
- **emailTemplatesId** | **string** |  | [default to null]
  **emailTemplateId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -111,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -121,14 +127,90 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut
+## getEmailTemplatesCountAsync
 
+Get email templates count
 
+Returns the count of email templates for the specified tenant using OData query options.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut  tenantId=value emailTemplateId=value  api-version=value x-api-version:value
+ getEmailTemplatesCountAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getEmailTemplatesODataAsync
+
+Get email templates
+
+Retrieves a collection of email templates for the specified tenant using OData query options.
+
+### Example
+
+```bash
+ getEmailTemplatesODataAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**EmailTemplateDtoListEnvelope**](EmailTemplateDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateEmailTemplateAsync
+
+Update an email template
+
+Updates an existing email template by its ID.
+
+### Example
+
+```bash
+ updateEmailTemplateAsync  tenantId=value emailTemplateId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -148,78 +230,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2MarketingServiceEmailTemplatesGet
-
-
-
-### Example
-
-```bash
- apiV2MarketingServiceEmailTemplatesGet  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmailTemplateDtoListEnvelope**](EmailTemplateDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2MarketingServiceEmailTemplatesPost
-
-
-
-### Example
-
-```bash
- apiV2MarketingServiceEmailTemplatesPost  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **emailTemplateCreateDto** | [**EmailTemplateCreateDto**](EmailTemplateCreateDto.md) |  |
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

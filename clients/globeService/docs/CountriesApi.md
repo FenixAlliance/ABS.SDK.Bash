@@ -4,27 +4,102 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2GlobeServiceCountriesCountryIdCallingCodesGet**](CountriesApi.md#apiV2GlobeServiceCountriesCountryIdCallingCodesGet) | **GET** /api/v2/GlobeService/Countries/{countryId}/CallingCodes | 
-[**apiV2GlobeServiceCountriesCountryIdCurrenciesGet**](CountriesApi.md#apiV2GlobeServiceCountriesCountryIdCurrenciesGet) | **GET** /api/v2/GlobeService/Countries/{countryId}/Currencies | 
-[**apiV2GlobeServiceCountriesCountryIdGet**](CountriesApi.md#apiV2GlobeServiceCountriesCountryIdGet) | **GET** /api/v2/GlobeService/Countries/{countryId} | 
-[**apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet**](CountriesApi.md#apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet) | **GET** /api/v2/GlobeService/Countries/{countryId}/States/{countryStateId}/Cities | 
-[**apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet**](CountriesApi.md#apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet) | **GET** /api/v2/GlobeService/Countries/{countryId}/States/{countryStateId} | 
-[**apiV2GlobeServiceCountriesCountryIdStatesGet**](CountriesApi.md#apiV2GlobeServiceCountriesCountryIdStatesGet) | **GET** /api/v2/GlobeService/Countries/{countryId}/States | 
-[**apiV2GlobeServiceCountriesCountryIdTimezonesGet**](CountriesApi.md#apiV2GlobeServiceCountriesCountryIdTimezonesGet) | **GET** /api/v2/GlobeService/Countries/{countryId}/Timezones | 
-[**apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet**](CountriesApi.md#apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet) | **GET** /api/v2/GlobeService/Countries/{countryId}/TopLevelDomains | 
-[**apiV2GlobeServiceCountriesGet**](CountriesApi.md#apiV2GlobeServiceCountriesGet) | **GET** /api/v2/GlobeService/Countries | 
-[**apiV2GlobeServiceCountriesSearchGet**](CountriesApi.md#apiV2GlobeServiceCountriesSearchGet) | **GET** /api/v2/GlobeService/Countries/Search | 
+[**countCountries**](CountriesApi.md#countCountries) | **GET** /api/v2/GlobeService/Countries/Count | Count countries
+[**getAllCountries**](CountriesApi.md#getAllCountries) | **GET** /api/v2/GlobeService/Countries | Get all countries
+[**getCallingCodesByCountryIdAsync**](CountriesApi.md#getCallingCodesByCountryIdAsync) | **GET** /api/v2/GlobeService/Countries/{countryId}/CallingCodes | Get calling codes for a country
+[**getCitiesByCountryStateIdAsync**](CountriesApi.md#getCitiesByCountryStateIdAsync) | **GET** /api/v2/GlobeService/Countries/{countryId}/States/{countryStateId}/Cities | Get cities for a state
+[**getCountryById**](CountriesApi.md#getCountryById) | **GET** /api/v2/GlobeService/Countries/{countryId} | Get country by ID
+[**getCountryStateByIdAsync**](CountriesApi.md#getCountryStateByIdAsync) | **GET** /api/v2/GlobeService/Countries/{countryId}/States/{countryStateId} | Get state by ID
+[**getCountryStatesAsync**](CountriesApi.md#getCountryStatesAsync) | **GET** /api/v2/GlobeService/Countries/{countryId}/States | Get states for a country
+[**getEnabledCurrenciesByCountryIdAsync**](CountriesApi.md#getEnabledCurrenciesByCountryIdAsync) | **GET** /api/v2/GlobeService/Countries/{countryId}/Currencies | Get currencies for a country
+[**getTimeZonesByCountryIdAsync**](CountriesApi.md#getTimeZonesByCountryIdAsync) | **GET** /api/v2/GlobeService/Countries/{countryId}/Timezones | Get timezones for a country
+[**getTopLevelDomainsByCountryIdAsync**](CountriesApi.md#getTopLevelDomainsByCountryIdAsync) | **GET** /api/v2/GlobeService/Countries/{countryId}/TopLevelDomains | Get top-level domains for a country
+[**searchCountriesByNameAsync**](CountriesApi.md#searchCountriesByNameAsync) | **GET** /api/v2/GlobeService/Countries/Search | Search countries by name
 
 
 
-## apiV2GlobeServiceCountriesCountryIdCallingCodesGet
+## countCountries
 
+Count countries
 
+Returns the total number of countries, with optional OData filtering.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceCountriesCountryIdCallingCodesGet countryId=value  api-version=value x-api-version:value
+ countCountries  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getAllCountries
+
+Get all countries
+
+Retrieves a list of all countries with optional OData pagination and filtering.
+
+### Example
+
+```bash
+ getAllCountries  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**CountryDtoListEnvelope**](CountryDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getCallingCodesByCountryIdAsync
+
+Get calling codes for a country
+
+Retrieves the list of international telephone calling codes associated with the specified country.
+
+### Example
+
+```bash
+ getCallingCodesByCountryIdAsync countryId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -42,94 +117,26 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2GlobeServiceCountriesCountryIdCurrenciesGet
+## getCitiesByCountryStateIdAsync
 
+Get cities for a state
 
-
-### Example
-
-```bash
- apiV2GlobeServiceCountriesCountryIdCurrenciesGet countryId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **countryId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**CurrencyDtoListEnvelope**](CurrencyDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2GlobeServiceCountriesCountryIdGet
-
-
+Retrieves the list of cities belonging to the specified state or province.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceCountriesCountryIdGet countryId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **countryId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**CountryDtoEnvelope**](CountryDtoEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet
-
-
-
-### Example
-
-```bash
- apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet countryStateId=value countryId=value  api-version=value x-api-version:value
+ getCitiesByCountryStateIdAsync countryStateId=value countryId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -148,24 +155,63 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet
+## getCountryById
 
+Get country by ID
 
+Retrieves a single country by its unique identifier.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet countryStateId=value countryId=value  api-version=value x-api-version:value
+ getCountryById countryId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **countryId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**CountryDtoEnvelope**](CountryDtoEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getCountryStateByIdAsync
+
+Get state by ID
+
+Retrieves a single state or province by its unique identifier within a country.
+
+### Example
+
+```bash
+ getCountryStateByIdAsync countryStateId=value countryId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -184,24 +230,26 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2GlobeServiceCountriesCountryIdStatesGet
+## getCountryStatesAsync
 
+Get states for a country
 
+Retrieves the list of states or provinces belonging to the specified country.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceCountriesCountryIdStatesGet countryId=value  api-version=value x-api-version:value
+ getCountryStatesAsync countryId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -219,24 +267,63 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2GlobeServiceCountriesCountryIdTimezonesGet
+## getEnabledCurrenciesByCountryIdAsync
 
+Get currencies for a country
 
+Retrieves the list of enabled currencies for the specified country.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceCountriesCountryIdTimezonesGet countryId=value  api-version=value x-api-version:value
+ getEnabledCurrenciesByCountryIdAsync countryId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **countryId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**CurrencyDtoListEnvelope**](CurrencyDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getTimeZonesByCountryIdAsync
+
+Get timezones for a country
+
+Retrieves the list of timezones associated with the specified country.
+
+### Example
+
+```bash
+ getTimeZonesByCountryIdAsync countryId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -254,24 +341,26 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet
+## getTopLevelDomainsByCountryIdAsync
 
+Get top-level domains for a country
 
+Retrieves the list of internet top-level domains (TLDs) associated with the specified country.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet countryId=value  api-version=value x-api-version:value
+ getTopLevelDomainsByCountryIdAsync countryId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -289,58 +378,26 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2GlobeServiceCountriesGet
+## searchCountriesByNameAsync
 
+Search countries by name
 
-
-### Example
-
-```bash
- apiV2GlobeServiceCountriesGet  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**CountryDtoListEnvelope**](CountryDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/xml, application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2GlobeServiceCountriesSearchGet
-
-
+Searches for countries whose name matches the specified search term.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceCountriesSearchGet  countryName=value  api-version=value x-api-version:value
+ searchCountriesByNameAsync  countryName=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -358,12 +415,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

@@ -4,18 +4,20 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createEmployerAsync**](EmployersApi.md#createEmployerAsync) | **POST** /api/v2/HrmsService/Employers | 
-[**deleteEmployerAsync**](EmployersApi.md#deleteEmployerAsync) | **DELETE** /api/v2/HrmsService/Employers/{employerId} | 
-[**getEmployerByIdAsync**](EmployersApi.md#getEmployerByIdAsync) | **GET** /api/v2/HrmsService/Employers/{employerId} | 
-[**getEmployersAsync**](EmployersApi.md#getEmployersAsync) | **GET** /api/v2/HrmsService/Employers | 
-[**getEmployersCountAsync**](EmployersApi.md#getEmployersCountAsync) | **GET** /api/v2/HrmsService/Employers/Count | 
-[**updateEmployerAsync**](EmployersApi.md#updateEmployerAsync) | **PUT** /api/v2/HrmsService/Employers/{employerId} | 
+[**createEmployerAsync**](EmployersApi.md#createEmployerAsync) | **POST** /api/v2/HrmsService/Employers | Create an employer
+[**deleteEmployerAsync**](EmployersApi.md#deleteEmployerAsync) | **DELETE** /api/v2/HrmsService/Employers/{employerId} | Delete an employer
+[**getEmployerByIdAsync**](EmployersApi.md#getEmployerByIdAsync) | **GET** /api/v2/HrmsService/Employers/{employerId} | Get employer by ID
+[**getEmployersAsync**](EmployersApi.md#getEmployersAsync) | **GET** /api/v2/HrmsService/Employers | Get employers
+[**getEmployersCountAsync**](EmployersApi.md#getEmployersCountAsync) | **GET** /api/v2/HrmsService/Employers/Count | Count employers
+[**updateEmployerAsync**](EmployersApi.md#updateEmployerAsync) | **PUT** /api/v2/HrmsService/Employers/{employerId} | Update an employer
 
 
 
 ## createEmployerAsync
 
+Create an employer
 
+Creates a new employer for the specified tenant.
 
 ### Example
 
@@ -35,11 +37,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -51,7 +53,9 @@ Name | Type | Description  | Notes
 
 ## deleteEmployerAsync
 
+Delete an employer
 
+Deletes an employer for the specified tenant.
 
 ### Example
 
@@ -71,11 +75,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -87,7 +91,9 @@ Name | Type | Description  | Notes
 
 ## getEmployerByIdAsync
 
+Get employer by ID
 
+Retrieves a specific employer by its identifier.
 
 ### Example
 
@@ -111,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -123,7 +129,9 @@ Name | Type | Description  | Notes
 
 ## getEmployersAsync
 
+Get employers
 
+Retrieves employers for the specified tenant.
 
 ### Example
 
@@ -146,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -158,7 +166,9 @@ Name | Type | Description  | Notes
 
 ## getEmployersCountAsync
 
+Count employers
 
+Counts employers for the specified tenant.
 
 ### Example
 
@@ -181,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -193,7 +203,9 @@ Name | Type | Description  | Notes
 
 ## updateEmployerAsync
 
+Update an employer
 
+Updates an existing employer for the specified tenant.
 
 ### Example
 
@@ -214,11 +226,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

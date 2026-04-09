@@ -96,42 +96,61 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersExtendedGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdCalculatePut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdCalculatePut:::orderId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdDelete:::orderId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesCountGet:::orderId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesGet:::orderId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesGet:::itemId"]=0
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut:::orderId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut:::orderLineId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete:::orderId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete:::orderLineId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet:::orderId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet:::orderLineId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut:::orderId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut:::orderLineId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut:::OrderLineUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesPost:::orderId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesPost:::OrderLineCreateDto"]=0
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdPut:::orderId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersOrderIdPut:::OrderUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersPost:::OrderCreateDto"]=0
-operation_parameters_minimum_occurrences["apiV2OrdersServiceOrdersSubmitCartPost:::cartId"]=1
-operation_parameters_minimum_occurrences["getOrderAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getOrderAsync:::orderId"]=1
-operation_parameters_minimum_occurrences["getOrdersAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["calculateOrder:::tenantId"]=1
+operation_parameters_minimum_occurrences["calculateOrder:::orderId"]=1
+operation_parameters_minimum_occurrences["calculateOrderLine:::tenantId"]=1
+operation_parameters_minimum_occurrences["calculateOrderLine:::orderId"]=1
+operation_parameters_minimum_occurrences["calculateOrderLine:::orderLineId"]=1
+operation_parameters_minimum_occurrences["createOrder:::tenantId"]=1
+operation_parameters_minimum_occurrences["createOrder:::OrderCreateDto"]=0
+operation_parameters_minimum_occurrences["createOrderLine:::tenantId"]=1
+operation_parameters_minimum_occurrences["createOrderLine:::orderId"]=1
+operation_parameters_minimum_occurrences["createOrderLine:::OrderLineCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteOrder:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteOrder:::orderId"]=1
+operation_parameters_minimum_occurrences["deleteOrderLine:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteOrderLine:::orderId"]=1
+operation_parameters_minimum_occurrences["deleteOrderLine:::orderLineId"]=1
+operation_parameters_minimum_occurrences["getExtendedOrders:::tenantId"]=1
+operation_parameters_minimum_occurrences["getOrder:::tenantId"]=1
+operation_parameters_minimum_occurrences["getOrder:::orderId"]=1
+operation_parameters_minimum_occurrences["getOrderLine:::tenantId"]=1
+operation_parameters_minimum_occurrences["getOrderLine:::orderId"]=1
+operation_parameters_minimum_occurrences["getOrderLine:::orderLineId"]=1
+operation_parameters_minimum_occurrences["getOrderLines:::tenantId"]=1
+operation_parameters_minimum_occurrences["getOrderLines:::orderId"]=1
+operation_parameters_minimum_occurrences["getOrderLines:::itemId"]=0
+operation_parameters_minimum_occurrences["getOrderLinesCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["getOrderLinesCount:::orderId"]=1
+operation_parameters_minimum_occurrences["getOrders:::tenantId"]=1
+operation_parameters_minimum_occurrences["getOrdersCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["previewOrderEmailTemplate:::orderId"]=1
+operation_parameters_minimum_occurrences["previewOrderEmailTemplate:::tenantId"]=1
+operation_parameters_minimum_occurrences["previewOrderEmailTemplate:::EmailDispatchRequest"]=0
+operation_parameters_minimum_occurrences["sendOrderEmail:::tenantId"]=1
+operation_parameters_minimum_occurrences["sendOrderEmail:::orderId"]=1
+operation_parameters_minimum_occurrences["sendOrderEmail:::EmailDispatchRequest"]=0
+operation_parameters_minimum_occurrences["submitCart:::cartId"]=1
+operation_parameters_minimum_occurrences["updateOrder:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateOrder:::orderId"]=1
+operation_parameters_minimum_occurrences["updateOrder:::OrderUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateOrderLine:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateOrderLine:::orderId"]=1
+operation_parameters_minimum_occurrences["updateOrderLine:::orderLineId"]=1
+operation_parameters_minimum_occurrences["updateOrderLine:::OrderLineUpdateDto"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -140,83 +159,121 @@ operation_parameters_minimum_occurrences["getOrdersAsync:::tenantId"]=1
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersExtendedGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdCalculatePut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdCalculatePut:::orderId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdDelete:::orderId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesCountGet:::orderId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesGet:::orderId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesGet:::itemId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut:::orderId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut:::orderLineId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete:::orderId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete:::orderLineId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet:::orderId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet:::orderLineId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut:::orderId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut:::orderLineId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut:::OrderLineUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesPost:::orderId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdLinesPost:::OrderLineCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdPut:::orderId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersOrderIdPut:::OrderUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersPost:::OrderCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2OrdersServiceOrdersSubmitCartPost:::cartId"]=0
-operation_parameters_maximum_occurrences["getOrderAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getOrderAsync:::orderId"]=0
-operation_parameters_maximum_occurrences["getOrdersAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["calculateOrder:::tenantId"]=0
+operation_parameters_maximum_occurrences["calculateOrder:::orderId"]=0
+operation_parameters_maximum_occurrences["calculateOrderLine:::tenantId"]=0
+operation_parameters_maximum_occurrences["calculateOrderLine:::orderId"]=0
+operation_parameters_maximum_occurrences["calculateOrderLine:::orderLineId"]=0
+operation_parameters_maximum_occurrences["createOrder:::tenantId"]=0
+operation_parameters_maximum_occurrences["createOrder:::OrderCreateDto"]=0
+operation_parameters_maximum_occurrences["createOrderLine:::tenantId"]=0
+operation_parameters_maximum_occurrences["createOrderLine:::orderId"]=0
+operation_parameters_maximum_occurrences["createOrderLine:::OrderLineCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteOrder:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteOrder:::orderId"]=0
+operation_parameters_maximum_occurrences["deleteOrderLine:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteOrderLine:::orderId"]=0
+operation_parameters_maximum_occurrences["deleteOrderLine:::orderLineId"]=0
+operation_parameters_maximum_occurrences["getExtendedOrders:::tenantId"]=0
+operation_parameters_maximum_occurrences["getOrder:::tenantId"]=0
+operation_parameters_maximum_occurrences["getOrder:::orderId"]=0
+operation_parameters_maximum_occurrences["getOrderLine:::tenantId"]=0
+operation_parameters_maximum_occurrences["getOrderLine:::orderId"]=0
+operation_parameters_maximum_occurrences["getOrderLine:::orderLineId"]=0
+operation_parameters_maximum_occurrences["getOrderLines:::tenantId"]=0
+operation_parameters_maximum_occurrences["getOrderLines:::orderId"]=0
+operation_parameters_maximum_occurrences["getOrderLines:::itemId"]=0
+operation_parameters_maximum_occurrences["getOrderLinesCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["getOrderLinesCount:::orderId"]=0
+operation_parameters_maximum_occurrences["getOrders:::tenantId"]=0
+operation_parameters_maximum_occurrences["getOrdersCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["previewOrderEmailTemplate:::orderId"]=0
+operation_parameters_maximum_occurrences["previewOrderEmailTemplate:::tenantId"]=0
+operation_parameters_maximum_occurrences["previewOrderEmailTemplate:::EmailDispatchRequest"]=0
+operation_parameters_maximum_occurrences["sendOrderEmail:::tenantId"]=0
+operation_parameters_maximum_occurrences["sendOrderEmail:::orderId"]=0
+operation_parameters_maximum_occurrences["sendOrderEmail:::EmailDispatchRequest"]=0
+operation_parameters_maximum_occurrences["submitCart:::cartId"]=0
+operation_parameters_maximum_occurrences["updateOrder:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateOrder:::orderId"]=0
+operation_parameters_maximum_occurrences["updateOrder:::OrderUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateOrderLine:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateOrderLine:::orderId"]=0
+operation_parameters_maximum_occurrences["updateOrderLine:::orderLineId"]=0
+operation_parameters_maximum_occurrences["updateOrderLine:::OrderLineUpdateDto"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
-operation_parameters_collection_type["apiV2OrdersServiceOrdersCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersExtendedGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdCalculatePut:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdCalculatePut:::orderId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdDelete:::orderId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesCountGet:::orderId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesGet:::orderId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesGet:::itemId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut:::orderId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut:::orderLineId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete:::orderId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete:::orderLineId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet:::orderId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet:::orderLineId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut:::orderId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut:::orderLineId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut:::OrderLineUpdateDto"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesPost:::orderId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdLinesPost:::OrderLineCreateDto"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdPut:::orderId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersOrderIdPut:::OrderUpdateDto"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersPost:::OrderCreateDto"]=""
-operation_parameters_collection_type["apiV2OrdersServiceOrdersSubmitCartPost:::cartId"]=""
-operation_parameters_collection_type["getOrderAsync:::tenantId"]=""
-operation_parameters_collection_type["getOrderAsync:::orderId"]=""
-operation_parameters_collection_type["getOrdersAsync:::tenantId"]=""
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["calculateOrder:::tenantId"]=""
+operation_parameters_collection_type["calculateOrder:::orderId"]=""
+operation_parameters_collection_type["calculateOrderLine:::tenantId"]=""
+operation_parameters_collection_type["calculateOrderLine:::orderId"]=""
+operation_parameters_collection_type["calculateOrderLine:::orderLineId"]=""
+operation_parameters_collection_type["createOrder:::tenantId"]=""
+operation_parameters_collection_type["createOrder:::OrderCreateDto"]=""
+operation_parameters_collection_type["createOrderLine:::tenantId"]=""
+operation_parameters_collection_type["createOrderLine:::orderId"]=""
+operation_parameters_collection_type["createOrderLine:::OrderLineCreateDto"]=""
+operation_parameters_collection_type["deleteOrder:::tenantId"]=""
+operation_parameters_collection_type["deleteOrder:::orderId"]=""
+operation_parameters_collection_type["deleteOrderLine:::tenantId"]=""
+operation_parameters_collection_type["deleteOrderLine:::orderId"]=""
+operation_parameters_collection_type["deleteOrderLine:::orderLineId"]=""
+operation_parameters_collection_type["getExtendedOrders:::tenantId"]=""
+operation_parameters_collection_type["getOrder:::tenantId"]=""
+operation_parameters_collection_type["getOrder:::orderId"]=""
+operation_parameters_collection_type["getOrderLine:::tenantId"]=""
+operation_parameters_collection_type["getOrderLine:::orderId"]=""
+operation_parameters_collection_type["getOrderLine:::orderLineId"]=""
+operation_parameters_collection_type["getOrderLines:::tenantId"]=""
+operation_parameters_collection_type["getOrderLines:::orderId"]=""
+operation_parameters_collection_type["getOrderLines:::itemId"]=""
+operation_parameters_collection_type["getOrderLinesCount:::tenantId"]=""
+operation_parameters_collection_type["getOrderLinesCount:::orderId"]=""
+operation_parameters_collection_type["getOrders:::tenantId"]=""
+operation_parameters_collection_type["getOrdersCount:::tenantId"]=""
+operation_parameters_collection_type["previewOrderEmailTemplate:::orderId"]=""
+operation_parameters_collection_type["previewOrderEmailTemplate:::tenantId"]=""
+operation_parameters_collection_type["previewOrderEmailTemplate:::EmailDispatchRequest"]=""
+operation_parameters_collection_type["sendOrderEmail:::tenantId"]=""
+operation_parameters_collection_type["sendOrderEmail:::orderId"]=""
+operation_parameters_collection_type["sendOrderEmail:::EmailDispatchRequest"]=""
+operation_parameters_collection_type["submitCart:::cartId"]=""
+operation_parameters_collection_type["updateOrder:::tenantId"]=""
+operation_parameters_collection_type["updateOrder:::orderId"]=""
+operation_parameters_collection_type["updateOrder:::OrderUpdateDto"]=""
+operation_parameters_collection_type["updateOrderLine:::tenantId"]=""
+operation_parameters_collection_type["updateOrderLine:::orderId"]=""
+operation_parameters_collection_type["updateOrderLine:::orderLineId"]=""
+operation_parameters_collection_type["updateOrderLine:::OrderLineUpdateDto"]=""
 
 
 ##
@@ -237,9 +294,6 @@ host=""
 # The user credentials for basic authentication
 basic_auth_credential=""
 
-##
-# The user API key
-apikey_auth_credential=""
 
 ##
 # If true, the script will only output the actual cURL command that would be
@@ -342,23 +396,10 @@ lookup_mime_type() {
 ##############################################################################
 header_arguments_to_curl() {
     local headers_curl=""
-    local api_key_header=""
-    local api_key_header_in_cli=""
-    api_key_header="Authorization"
 
     for key in "${!header_arguments[@]}"; do
         headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
-        if [[ "${key}XX" == "${api_key_header}XX" ]]; then
-            api_key_header_in_cli="YES"
-        fi
     done
-    #
-    # If the api_key was not provided in the header, try one from the
-    # environment variable
-    #
-    if [[ -z $api_key_header_in_cli && -n $apikey_auth_credential ]]; then
-        headers_curl+="-H \"${api_key_header}: ${apikey_auth_credential}\""
-    fi
     headers_curl+=" "
 
     echo "${headers_curl}"
@@ -590,7 +631,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}OrdersService command line client (API version 2.0.1.4089)${OFF}
+${BOLD}${WHITE}OrdersService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -617,31 +658,46 @@ ${BOLD}${WHITE}Usage${OFF}
                                       JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
 
 EOF
-    echo -e "${BOLD}${WHITE}Authentication methods${OFF}"
-    echo -e ""
-    echo -e "  - ${BLUE}Api-key${OFF} - add '${RED}Authorization:<api-key>${OFF}' after ${YELLOW}<operation>${OFF}"
-    
-    echo ""
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[orders]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2OrdersServiceOrdersCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersExtendedGet${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersOrderIdCalculatePut${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersOrderIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersOrderIdLinesCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersOrderIdLinesGet${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersOrderIdLinesPost${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersOrderIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersPost${OFF}; (AUTH)
-  ${CYAN}apiV2OrdersServiceOrdersSubmitCartPost${OFF}; (AUTH)
-  ${CYAN}getOrderAsync${OFF}; (AUTH)
-  ${CYAN}getOrdersAsync${OFF}; (AUTH)
+  ${CYAN}calculateOrder${OFF};Calculates totals for an order.
+  ${CYAN}calculateOrderLine${OFF};Calculates totals for an order line.
+  ${CYAN}createOrder${OFF};Creates a new order.
+  ${CYAN}createOrderLine${OFF};Creates a new order line.
+  ${CYAN}deleteOrder${OFF};Deletes an order.
+  ${CYAN}deleteOrderLine${OFF};Deletes an order line.
+  ${CYAN}getExtendedOrders${OFF};Gets a list of extended orders for a tenant.
+  ${CYAN}getOrder${OFF};Gets a specific order by ID.
+  ${CYAN}getOrderLine${OFF};Gets a specific order line.
+  ${CYAN}getOrderLines${OFF};Gets order lines for an order.
+  ${CYAN}getOrderLinesCount${OFF};Gets the count of order lines for an order.
+  ${CYAN}getOrders${OFF};Gets a list of orders for a tenant.
+  ${CYAN}getOrdersCount${OFF};Gets the count of orders for a tenant.
+  ${CYAN}previewOrderEmailTemplate${OFF};Preview the rendered email for an Order.
+  ${CYAN}sendOrderEmail${OFF};Send a transactional email for an order.
+  ${CYAN}submitCart${OFF};Submits a cart and creates an order.
+  ${CYAN}updateOrder${OFF};Updates an existing order.
+  ${CYAN}updateOrderLine${OFF};Updates an order line.
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -671,7 +727,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}OrdersService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}${WHITE}OrdersService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -691,56 +747,255 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}OrdersService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}OrdersService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
 ##############################################################################
 #
-# Print help for apiV2OrdersServiceOrdersCountGet operation
+# Print help for forgotPasswordPost operation
 #
 ##############################################################################
-print_apiV2OrdersServiceOrdersCountGet_help() {
+print_forgotPasswordPost_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for apiV2OrdersServiceOrdersExtendedGet operation
+# Print help for helloGet operation
 #
 ##############################################################################
-print_apiV2OrdersServiceOrdersExtendedGet_help() {
+print_helloGet_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersExtendedGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for apiV2OrdersServiceOrdersOrderIdCalculatePut operation
+# Print help for loginPost operation
 #
 ##############################################################################
-print_apiV2OrdersServiceOrdersOrderIdCalculatePut_help() {
+print_loginPost_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersOrderIdCalculatePut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manage2faPost operation
+#
+##############################################################################
+print_manage2faPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for calculateOrder operation
+#
+##############################################################################
+print_calculateOrder_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}calculateOrder - Calculates totals for an order.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Performs calculation of totals and taxes for the specified order." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -755,12 +1010,84 @@ print_apiV2OrdersServiceOrdersOrderIdCalculatePut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2OrdersServiceOrdersOrderIdDelete operation
+# Print help for calculateOrderLine operation
 #
 ##############################################################################
-print_apiV2OrdersServiceOrdersOrderIdDelete_help() {
+print_calculateOrderLine_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersOrderIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}calculateOrderLine - Calculates totals for an order line.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Performs calculation of totals and taxes for the specified order line." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}orderLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createOrder operation
+#
+##############################################################################
+print_createOrder_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createOrder - Creates a new order.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new order for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createOrderLine operation
+#
+##############################################################################
+print_createOrderLine_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createOrderLine - Creates a new order line.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new line (item) for the specified order." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteOrder operation
+#
+##############################################################################
+print_deleteOrder_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteOrder - Deletes an order.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes the specified order." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -775,12 +1102,58 @@ print_apiV2OrdersServiceOrdersOrderIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2OrdersServiceOrdersOrderIdLinesCountGet operation
+# Print help for deleteOrderLine operation
 #
 ##############################################################################
-print_apiV2OrdersServiceOrdersOrderIdLinesCountGet_help() {
+print_deleteOrderLine_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersOrderIdLinesCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteOrderLine - Deletes an order line.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes the specified order line." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}orderLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getExtendedOrders operation
+#
+##############################################################################
+print_getExtendedOrders_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getExtendedOrders - Gets a list of extended orders for a tenant.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of extended order details for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getOrder operation
+#
+##############################################################################
+print_getOrder_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getOrder - Gets a specific order by ID.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a specific order by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -795,12 +1168,37 @@ print_apiV2OrdersServiceOrdersOrderIdLinesCountGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2OrdersServiceOrdersOrderIdLinesGet operation
+# Print help for getOrderLine operation
 #
 ##############################################################################
-print_apiV2OrdersServiceOrdersOrderIdLinesGet_help() {
+print_getOrderLine_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersOrderIdLinesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getOrderLine - Gets a specific order line.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a specific order line by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}orderLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getOrderLines operation
+#
+##############################################################################
+print_getOrderLines_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getOrderLines - Gets order lines for an order.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the lines (items) for the specified order." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -817,18 +1215,19 @@ print_apiV2OrdersServiceOrdersOrderIdLinesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut operation
+# Print help for getOrderLinesCount operation
 #
 ##############################################################################
-print_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut_help() {
+print_getOrderLinesCount_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getOrderLinesCount - Gets the count of order lines for an order.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the total number of lines for the specified order." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}orderLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -838,18 +1237,18 @@ print_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete operation
+# Print help for getOrders operation
 #
 ##############################################################################
-print_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete_help() {
+print_getOrders_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getOrders - Gets a list of orders for a tenant.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of orders for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}orderLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -859,18 +1258,18 @@ print_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet operation
+# Print help for getOrdersCount operation
 #
 ##############################################################################
-print_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet_help() {
+print_getOrdersCount_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getOrdersCount - Gets the count of orders for a tenant.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the total number of orders for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}orderLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -880,57 +1279,36 @@ print_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut operation
+# Print help for previewOrderEmailTemplate operation
 #
 ##############################################################################
-print_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut_help() {
+print_previewOrderEmailTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}previewOrderEmailTemplate - Preview the rendered email for an Order.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Previews the rendered email template for the specified order. Only users with the 'send_email' permission are permitted." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}orderLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for apiV2OrdersServiceOrdersOrderIdLinesPost operation
+# Print help for sendOrderEmail operation
 #
 ##############################################################################
-print_apiV2OrdersServiceOrdersOrderIdLinesPost_help() {
+print_sendOrderEmail_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersOrderIdLinesPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}sendOrderEmail - Send a transactional email for an order.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2OrdersServiceOrdersOrderIdPut operation
-#
-##############################################################################
-print_apiV2OrdersServiceOrdersOrderIdPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersOrderIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Sends a transactional email for the specified order. Only users with the 'send_email' permission are permitted." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -940,40 +1318,23 @@ print_apiV2OrdersServiceOrdersOrderIdPut_help() {
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for apiV2OrdersServiceOrdersPost operation
+# Print help for submitCart operation
 #
 ##############################################################################
-print_apiV2OrdersServiceOrdersPost_help() {
+print_submitCart_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}submitCart - Submits a cart and creates an order.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2OrdersServiceOrdersSubmitCartPost operation
-#
-##############################################################################
-print_apiV2OrdersServiceOrdersSubmitCartPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2OrdersServiceOrdersSubmitCartPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Submits the specified cart and creates an order for the authenticated user." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}cartId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: cartId=value${OFF}" \
@@ -987,17 +1348,21 @@ print_apiV2OrdersServiceOrdersSubmitCartPost_help() {
 }
 ##############################################################################
 #
-# Print help for getOrderAsync operation
+# Print help for updateOrder operation
 #
 ##############################################################################
-print_getOrderAsync_help() {
+print_updateOrder_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getOrderAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateOrder - Updates an existing order.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the details of an existing order." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1007,16 +1372,22 @@ print_getOrderAsync_help() {
 }
 ##############################################################################
 #
-# Print help for getOrdersAsync operation
+# Print help for updateOrderLine operation
 #
 ##############################################################################
-print_getOrdersAsync_help() {
+print_updateOrderLine_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getOrdersAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateOrderLine - Updates an order line.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the details of a specific order line." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}orderLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1028,19 +1399,97 @@ print_getOrdersAsync_help() {
 
 ##############################################################################
 #
-# Call apiV2OrdersServiceOrdersCountGet operation
+# Call forgotPasswordPost operation
 #
 ##############################################################################
-call_apiV2OrdersServiceOrdersCountGet() {
+call_forgotPasswordPost() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=()
     local path
 
-    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/Count" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -1064,19 +1513,19 @@ call_apiV2OrdersServiceOrdersCountGet() {
 
 ##############################################################################
 #
-# Call apiV2OrdersServiceOrdersExtendedGet operation
+# Call helloGet operation
 #
 ##############################################################################
-call_apiV2OrdersServiceOrdersExtendedGet() {
+call_helloGet() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=()
     local path
 
-    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/Extended" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -1100,16 +1549,670 @@ call_apiV2OrdersServiceOrdersExtendedGet() {
 
 ##############################################################################
 #
-# Call apiV2OrdersServiceOrdersOrderIdCalculatePut operation
+# Call loginPost operation
 #
 ##############################################################################
-call_apiV2OrdersServiceOrdersOrderIdCalculatePut() {
+call_loginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(useCookies useSessionCookies)
+    local path
+
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoPost operation
+#
+##############################################################################
+call_manageInfoPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call refreshPost operation
+#
+##############################################################################
+call_refreshPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call calculateOrder operation
+#
+##############################################################################
+call_calculateOrder() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(orderId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Calculate" path_parameter_names query_parameter_names); then
@@ -1136,124 +2239,16 @@ call_apiV2OrdersServiceOrdersOrderIdCalculatePut() {
 
 ##############################################################################
 #
-# Call apiV2OrdersServiceOrdersOrderIdDelete operation
+# Call calculateOrderLine operation
 #
 ##############################################################################
-call_apiV2OrdersServiceOrdersOrderIdDelete() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(orderId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2OrdersServiceOrdersOrderIdLinesCountGet operation
-#
-##############################################################################
-call_apiV2OrdersServiceOrdersOrderIdLinesCountGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(orderId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines/Count" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2OrdersServiceOrdersOrderIdLinesGet operation
-#
-##############################################################################
-call_apiV2OrdersServiceOrdersOrderIdLinesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(orderId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId itemId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut operation
-#
-##############################################################################
-call_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut() {
+call_calculateOrderLine() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(orderId orderLineId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId}/Calculate" path_parameter_names query_parameter_names); then
@@ -1280,95 +2275,23 @@ call_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut() {
 
 ##############################################################################
 #
-# Call apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete operation
+# Call createOrder operation
 #
 ##############################################################################
-call_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete() {
+call_createOrder() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(orderId orderLineId)
+    local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
     local path
 
-    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet operation
-#
-##############################################################################
-call_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(orderId orderLineId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut operation
-#
-##############################################################################
-call_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(orderId orderLineId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -1428,16 +2351,16 @@ call_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut() {
 
 ##############################################################################
 #
-# Call apiV2OrdersServiceOrdersOrderIdLinesPost operation
+# Call createOrderLine operation
 #
 ##############################################################################
-call_apiV2OrdersServiceOrdersOrderIdLinesPost() {
+call_createOrderLine() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(orderId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines" path_parameter_names query_parameter_names); then
@@ -1504,16 +2427,528 @@ call_apiV2OrdersServiceOrdersOrderIdLinesPost() {
 
 ##############################################################################
 #
-# Call apiV2OrdersServiceOrdersOrderIdPut operation
+# Call deleteOrder operation
 #
 ##############################################################################
-call_apiV2OrdersServiceOrdersOrderIdPut() {
+call_deleteOrder() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(orderId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteOrderLine operation
+#
+##############################################################################
+call_deleteOrderLine() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(orderId orderLineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getExtendedOrders operation
+#
+##############################################################################
+call_getExtendedOrders() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/Extended" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getOrder operation
+#
+##############################################################################
+call_getOrder() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(orderId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getOrderLine operation
+#
+##############################################################################
+call_getOrderLine() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(orderId orderLineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getOrderLines operation
+#
+##############################################################################
+call_getOrderLines() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(orderId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId itemId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getOrderLinesCount operation
+#
+##############################################################################
+call_getOrderLinesCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(orderId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getOrders operation
+#
+##############################################################################
+call_getOrders() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getOrdersCount operation
+#
+##############################################################################
+call_getOrdersCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call previewOrderEmailTemplate operation
+#
+##############################################################################
+call_previewOrderEmailTemplate() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(orderId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Emails/Preview" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call sendOrderEmail operation
+#
+##############################################################################
+call_sendOrderEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(orderId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Emails/Send" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call submitCart operation
+#
+##############################################################################
+call_submitCart() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(cartId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/SubmitCart" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateOrder operation
+#
+##############################################################################
+call_updateOrder() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(orderId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}" path_parameter_names query_parameter_names); then
@@ -1580,23 +3015,23 @@ call_apiV2OrdersServiceOrdersOrderIdPut() {
 
 ##############################################################################
 #
-# Call apiV2OrdersServiceOrdersPost operation
+# Call updateOrderLine operation
 #
 ##############################################################################
-call_apiV2OrdersServiceOrdersPost() {
+call_updateOrderLine() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=()
+    local path_parameter_names=(orderId orderLineId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
     local path
 
-    if ! path=$(build_request_path "/api/v2/OrdersService/Orders" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="POST"
+    local method="PUT"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -1651,114 +3086,6 @@ call_apiV2OrdersServiceOrdersPost() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2OrdersServiceOrdersSubmitCartPost operation
-#
-##############################################################################
-call_apiV2OrdersServiceOrdersSubmitCartPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(cartId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/SubmitCart" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getOrderAsync operation
-#
-##############################################################################
-call_getOrderAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(orderId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getOrdersAsync operation
-#
-##############################################################################
-call_getOrdersAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/OrdersService/Orders" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -1859,53 +3186,98 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
-    apiV2OrdersServiceOrdersCountGet)
-    operation="apiV2OrdersServiceOrdersCountGet"
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
     ;;
-    apiV2OrdersServiceOrdersExtendedGet)
-    operation="apiV2OrdersServiceOrdersExtendedGet"
+    healthGet)
+    operation="healthGet"
     ;;
-    apiV2OrdersServiceOrdersOrderIdCalculatePut)
-    operation="apiV2OrdersServiceOrdersOrderIdCalculatePut"
+    helloGet)
+    operation="helloGet"
     ;;
-    apiV2OrdersServiceOrdersOrderIdDelete)
-    operation="apiV2OrdersServiceOrdersOrderIdDelete"
+    loginPost)
+    operation="loginPost"
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesCountGet)
-    operation="apiV2OrdersServiceOrdersOrderIdLinesCountGet"
+    manage2faPost)
+    operation="manage2faPost"
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesGet)
-    operation="apiV2OrdersServiceOrdersOrderIdLinesGet"
+    manageInfoGet)
+    operation="manageInfoGet"
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut)
-    operation="apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut"
+    manageInfoPost)
+    operation="manageInfoPost"
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete)
-    operation="apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete"
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet)
-    operation="apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet"
+    refreshPost)
+    operation="refreshPost"
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut)
-    operation="apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut"
+    registerPost)
+    operation="registerPost"
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesPost)
-    operation="apiV2OrdersServiceOrdersOrderIdLinesPost"
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
     ;;
-    apiV2OrdersServiceOrdersOrderIdPut)
-    operation="apiV2OrdersServiceOrdersOrderIdPut"
+    resetPasswordPost)
+    operation="resetPasswordPost"
     ;;
-    apiV2OrdersServiceOrdersPost)
-    operation="apiV2OrdersServiceOrdersPost"
+    versionGet)
+    operation="versionGet"
     ;;
-    apiV2OrdersServiceOrdersSubmitCartPost)
-    operation="apiV2OrdersServiceOrdersSubmitCartPost"
+    calculateOrder)
+    operation="calculateOrder"
     ;;
-    getOrderAsync)
-    operation="getOrderAsync"
+    calculateOrderLine)
+    operation="calculateOrderLine"
     ;;
-    getOrdersAsync)
-    operation="getOrdersAsync"
+    createOrder)
+    operation="createOrder"
+    ;;
+    createOrderLine)
+    operation="createOrderLine"
+    ;;
+    deleteOrder)
+    operation="deleteOrder"
+    ;;
+    deleteOrderLine)
+    operation="deleteOrderLine"
+    ;;
+    getExtendedOrders)
+    operation="getExtendedOrders"
+    ;;
+    getOrder)
+    operation="getOrder"
+    ;;
+    getOrderLine)
+    operation="getOrderLine"
+    ;;
+    getOrderLines)
+    operation="getOrderLines"
+    ;;
+    getOrderLinesCount)
+    operation="getOrderLinesCount"
+    ;;
+    getOrders)
+    operation="getOrders"
+    ;;
+    getOrdersCount)
+    operation="getOrdersCount"
+    ;;
+    previewOrderEmailTemplate)
+    operation="previewOrderEmailTemplate"
+    ;;
+    sendOrderEmail)
+    operation="sendOrderEmail"
+    ;;
+    submitCart)
+    operation="submitCart"
+    ;;
+    updateOrder)
+    operation="updateOrder"
+    ;;
+    updateOrderLine)
+    operation="updateOrderLine"
     ;;
     *==*)
     # Parse body arguments and convert them into top level
@@ -1940,13 +3312,6 @@ case $key in
     # only after the operation argument
     if [[ "$operation" ]]; then
         IFS=':' read -r header_name header_value <<< "$key"
-        #
-        # If the header key is the same as the api_key expected by API in the
-        # header, override the ${apikey_auth_credential} variable
-        #
-        if [[ $header_name == "Authorization" ]]; then
-            apikey_auth_credential=$header_value
-        fi
         header_arguments[$header_name]=$header_value
     else
         curl_arguments+=" $key"
@@ -2001,53 +3366,98 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
-    apiV2OrdersServiceOrdersCountGet)
-    call_apiV2OrdersServiceOrdersCountGet
+    forgotPasswordPost)
+    call_forgotPasswordPost
     ;;
-    apiV2OrdersServiceOrdersExtendedGet)
-    call_apiV2OrdersServiceOrdersExtendedGet
+    healthGet)
+    call_healthGet
     ;;
-    apiV2OrdersServiceOrdersOrderIdCalculatePut)
-    call_apiV2OrdersServiceOrdersOrderIdCalculatePut
+    helloGet)
+    call_helloGet
     ;;
-    apiV2OrdersServiceOrdersOrderIdDelete)
-    call_apiV2OrdersServiceOrdersOrderIdDelete
+    loginPost)
+    call_loginPost
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesCountGet)
-    call_apiV2OrdersServiceOrdersOrderIdLinesCountGet
+    manage2faPost)
+    call_manage2faPost
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesGet)
-    call_apiV2OrdersServiceOrdersOrderIdLinesGet
+    manageInfoGet)
+    call_manageInfoGet
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut)
-    call_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut
+    manageInfoPost)
+    call_manageInfoPost
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete)
-    call_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet)
-    call_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet
+    refreshPost)
+    call_refreshPost
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut)
-    call_apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut
+    registerPost)
+    call_registerPost
     ;;
-    apiV2OrdersServiceOrdersOrderIdLinesPost)
-    call_apiV2OrdersServiceOrdersOrderIdLinesPost
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
     ;;
-    apiV2OrdersServiceOrdersOrderIdPut)
-    call_apiV2OrdersServiceOrdersOrderIdPut
+    resetPasswordPost)
+    call_resetPasswordPost
     ;;
-    apiV2OrdersServiceOrdersPost)
-    call_apiV2OrdersServiceOrdersPost
+    versionGet)
+    call_versionGet
     ;;
-    apiV2OrdersServiceOrdersSubmitCartPost)
-    call_apiV2OrdersServiceOrdersSubmitCartPost
+    calculateOrder)
+    call_calculateOrder
     ;;
-    getOrderAsync)
-    call_getOrderAsync
+    calculateOrderLine)
+    call_calculateOrderLine
     ;;
-    getOrdersAsync)
-    call_getOrdersAsync
+    createOrder)
+    call_createOrder
+    ;;
+    createOrderLine)
+    call_createOrderLine
+    ;;
+    deleteOrder)
+    call_deleteOrder
+    ;;
+    deleteOrderLine)
+    call_deleteOrderLine
+    ;;
+    getExtendedOrders)
+    call_getExtendedOrders
+    ;;
+    getOrder)
+    call_getOrder
+    ;;
+    getOrderLine)
+    call_getOrderLine
+    ;;
+    getOrderLines)
+    call_getOrderLines
+    ;;
+    getOrderLinesCount)
+    call_getOrderLinesCount
+    ;;
+    getOrders)
+    call_getOrders
+    ;;
+    getOrdersCount)
+    call_getOrdersCount
+    ;;
+    previewOrderEmailTemplate)
+    call_previewOrderEmailTemplate
+    ;;
+    sendOrderEmail)
+    call_sendOrderEmail
+    ;;
+    submitCart)
+    call_submitCart
+    ;;
+    updateOrder)
+    call_updateOrder
+    ;;
+    updateOrderLine)
+    call_updateOrderLine
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

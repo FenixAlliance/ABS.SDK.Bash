@@ -297,47 +297,59 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2MarketingServiceEmailGroupsCountGet[]" \
-            "apiV2MarketingServiceEmailGroupsEmailgroupIdDelete[]" \
-            "apiV2MarketingServiceEmailGroupsEmailgroupIdGet[]" \
-            "apiV2MarketingServiceEmailGroupsEmailgroupIdPut[]" \
-            "apiV2MarketingServiceEmailGroupsGet[]" \
-            "apiV2MarketingServiceEmailGroupsPost[]"             "apiV2MarketingServiceEmailSignaturesCountGet[]" \
-            "apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete[]" \
-            "apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet[]" \
-            "apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut[]" \
-            "apiV2MarketingServiceEmailSignaturesGet[]" \
-            "apiV2MarketingServiceEmailSignaturesPost[]"             "apiV2MarketingServiceEmailTemplatesCountGet[]" \
-            "apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete[]" \
-            "apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet[]" \
-            "apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut[]" \
-            "apiV2MarketingServiceEmailTemplatesGet[]" \
-            "apiV2MarketingServiceEmailTemplatesPost[]"             "apiV2MarketingServiceMarketingCampaignsCountGet[]" \
-            "apiV2MarketingServiceMarketingCampaignsGet[]" \
-            "apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete[]" \
-            "apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet[]" \
-            "apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut[]" \
-            "apiV2MarketingServiceMarketingCampaignsPost[]"             "apiV2MarketingServiceMarketingListsCountGet[]" \
-            "apiV2MarketingServiceMarketingListsGet[]" \
-            "apiV2MarketingServiceMarketingListsMarketinglistIdDelete[]" \
-            "apiV2MarketingServiceMarketingListsMarketinglistIdGet[]" \
-            "apiV2MarketingServiceMarketingListsMarketinglistIdPut[]" \
-            "apiV2MarketingServiceMarketingListsPost[]"             "apiV2MarketingServiceNewslettersCountGet[]" \
-            "apiV2MarketingServiceNewslettersGet[]" \
-            "apiV2MarketingServiceNewslettersNewsletterIdDelete[]" \
-            "apiV2MarketingServiceNewslettersNewsletterIdGet[]" \
-            "apiV2MarketingServiceNewslettersNewsletterIdPut[]" \
-            "apiV2MarketingServiceNewslettersPost[]"             "apiV2MarketingServiceSocialMediaPostsCountGet[]" \
-            "apiV2MarketingServiceSocialMediaPostsGet[]" \
-            "apiV2MarketingServiceSocialMediaPostsPost[]" \
-            "apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete[]" \
-            "apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet[]" \
-            "apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut[]"             "apiV2MarketingServiceSocialPostBucketsCountGet[]" \
-            "apiV2MarketingServiceSocialPostBucketsGet[]" \
-            "apiV2MarketingServiceSocialPostBucketsPost[]" \
-            "apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete[]" \
-            "apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet[]" \
-            "apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut[]"             "apiV2MarketingServiceTrackingPixelsPixelIdGet[]" \
+            "createEmailGroupAsync[Create an email group]" \
+            "deleteEmailGroupAsync[Delete an email group]" \
+            "getEmailGroupDetailsAsync[Get email group by ID]" \
+            "getEmailGroupsCountAsync[Get email groups count]" \
+            "getEmailGroupsODataAsync[Get email groups]" \
+            "updateEmailGroupAsync[Update an email group]"             "createEmailSignatureAsync[Create an email signature]" \
+            "deleteEmailSignatureAsync[Delete an email signature]" \
+            "getEmailSignatureDetailsAsync[Get email signature by ID]" \
+            "getEmailSignaturesCountAsync[Get email signatures count]" \
+            "getEmailSignaturesODataAsync[Get email signatures]" \
+            "updateEmailSignatureAsync[Update an email signature]"             "createEmailTemplateAsync[Create an email template]" \
+            "deleteEmailTemplateAsync[Delete an email template]" \
+            "getEmailTemplateDetailsAsync[Get email template by ID]" \
+            "getEmailTemplatesCountAsync[Get email templates count]" \
+            "getEmailTemplatesODataAsync[Get email templates]" \
+            "updateEmailTemplateAsync[Update an email template]"             "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "createMarketingCampaignAsync[Create a marketing campaign]" \
+            "deleteMarketingCampaignAsync[Delete a marketing campaign]" \
+            "getMarketingCampaignDetailsAsync[Get marketing campaign by ID]" \
+            "getMarketingCampaignODataAsync[Get marketing campaigns]" \
+            "getMarketingCampaignsCountAsync[Get marketing campaigns count]" \
+            "updateMarketingCampaignAsync[Update a marketing campaign]"             "createMarketingListAsync[Create a marketing list]" \
+            "deleteMarketingListAsync[Delete a marketing list]" \
+            "getMarketingListDetailsAsync[Get marketing list by ID]" \
+            "getMarketingListODataAsync[Get marketing lists]" \
+            "getMarketingListsCountAsync[Get marketing lists count]" \
+            "updateMarketingListAsync[Update a marketing list]"             "createNewsletterAsync[Create a newsletter]" \
+            "deleteNewsletterAsync[Delete a newsletter]" \
+            "getNewsletterDetailsAsync[Get newsletter by ID]" \
+            "getNewsletterODataAsync[Get newsletters]" \
+            "getNewslettersCountAsync[Get newsletters count]" \
+            "updateNewsletterAsync[Update a newsletter]"             "createSocialMediaPostAsync[Create a social media post]" \
+            "deleteSocialMediaPostAsync[Delete a social media post]" \
+            "getSocialMediaPostDetailsAsync[Get social media post by ID]" \
+            "getSocialMediaPostsCountAsync[Get social media posts count]" \
+            "getSocialMediaPostsODataAsync[Get social media posts]" \
+            "updateSocialMediaPostAsync[Update a social media post]"             "createSocialPostBucketAsync[Create a social post bucket]" \
+            "deleteSocialPostBucketAsync[Delete a social post bucket]" \
+            "getSocialPostBucketDetailsAsync[Get social post bucket by ID]" \
+            "getSocialPostBucketsCountAsync[Get social post buckets count]" \
+            "getSocialPostBucketsODataAsync[Get social post buckets]" \
+            "updateSocialPostBucketAsync[Update a social post bucket]"             "getTrackingPixelAsync[Get a tracking pixel]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -345,7 +357,7 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2MarketingServiceEmailGroupsCountGet)
+      createEmailGroupAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -354,7 +366,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceEmailGroupsEmailgroupIdDelete)
+      deleteEmailGroupAsync)
         local -a _op_arguments
         _op_arguments=(
           "emailgroupId=:[PATH] "
@@ -364,7 +376,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceEmailGroupsEmailgroupIdGet)
+      getEmailGroupDetailsAsync)
         local -a _op_arguments
         _op_arguments=(
           "emailgroupId=:[PATH] "
@@ -374,7 +386,25 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceEmailGroupsEmailgroupIdPut)
+      getEmailGroupsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getEmailGroupsODataAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateEmailGroupAsync)
         local -a _op_arguments
         _op_arguments=(
           "emailgroupId=:[PATH] "
@@ -384,7 +414,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceEmailGroupsGet)
+      createEmailSignatureAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -393,25 +423,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceEmailGroupsPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceEmailSignaturesCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete)
+      deleteEmailSignatureAsync)
         local -a _op_arguments
         _op_arguments=(
           "emailsignatureId=:[PATH] "
@@ -421,7 +433,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet)
+      getEmailSignatureDetailsAsync)
         local -a _op_arguments
         _op_arguments=(
           "emailsignatureId=:[PATH] "
@@ -431,7 +443,25 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut)
+      getEmailSignaturesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getEmailSignaturesODataAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateEmailSignatureAsync)
         local -a _op_arguments
         _op_arguments=(
           "emailsignatureId=:[PATH] "
@@ -441,7 +471,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceEmailSignaturesGet)
+      createEmailTemplateAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -450,25 +480,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceEmailSignaturesPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceEmailTemplatesCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete)
+      deleteEmailTemplateAsync)
         local -a _op_arguments
         _op_arguments=(
           "emailTemplateId=:[PATH] "
@@ -478,18 +490,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "emailTemplateId=:[PATH] "
-          "tenantId=:[QUERY] "
-"emailTemplatesId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut)
+      getEmailTemplateDetailsAsync)
         local -a _op_arguments
         _op_arguments=(
           "emailTemplateId=:[PATH] "
@@ -499,7 +500,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceEmailTemplatesGet)
+      getEmailTemplatesCountAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -508,7 +509,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceEmailTemplatesPost)
+      getEmailTemplatesODataAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -517,7 +518,102 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceMarketingCampaignsCountGet)
+      updateEmailTemplateAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "emailTemplateId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createMarketingCampaignAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -526,16 +622,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceMarketingCampaignsGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete)
+      deleteMarketingCampaignAsync)
         local -a _op_arguments
         _op_arguments=(
           "marketingcampaignId=:[PATH] "
@@ -545,7 +632,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet)
+      getMarketingCampaignDetailsAsync)
         local -a _op_arguments
         _op_arguments=(
           "marketingcampaignId=:[PATH] "
@@ -555,7 +642,25 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut)
+      getMarketingCampaignODataAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMarketingCampaignsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateMarketingCampaignAsync)
         local -a _op_arguments
         _op_arguments=(
           "marketingcampaignId=:[PATH] "
@@ -565,7 +670,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceMarketingCampaignsPost)
+      createMarketingListAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -574,25 +679,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceMarketingListsCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceMarketingListsGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceMarketingListsMarketinglistIdDelete)
+      deleteMarketingListAsync)
         local -a _op_arguments
         _op_arguments=(
           "marketinglistId=:[PATH] "
@@ -602,7 +689,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceMarketingListsMarketinglistIdGet)
+      getMarketingListDetailsAsync)
         local -a _op_arguments
         _op_arguments=(
           "marketinglistId=:[PATH] "
@@ -612,7 +699,25 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceMarketingListsMarketinglistIdPut)
+      getMarketingListODataAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMarketingListsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateMarketingListAsync)
         local -a _op_arguments
         _op_arguments=(
           "marketinglistId=:[PATH] "
@@ -622,7 +727,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceMarketingListsPost)
+      createNewsletterAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -631,25 +736,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceNewslettersCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceNewslettersGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceNewslettersNewsletterIdDelete)
+      deleteNewsletterAsync)
         local -a _op_arguments
         _op_arguments=(
           "newsletterId=:[PATH] "
@@ -659,7 +746,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceNewslettersNewsletterIdGet)
+      getNewsletterDetailsAsync)
         local -a _op_arguments
         _op_arguments=(
           "newsletterId=:[PATH] "
@@ -669,7 +756,25 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceNewslettersNewsletterIdPut)
+      getNewsletterODataAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getNewslettersCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateNewsletterAsync)
         local -a _op_arguments
         _op_arguments=(
           "newsletterId=:[PATH] "
@@ -679,7 +784,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceNewslettersPost)
+      createSocialMediaPostAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -688,34 +793,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceSocialMediaPostsCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceSocialMediaPostsGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceSocialMediaPostsPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete)
+      deleteSocialMediaPostAsync)
         local -a _op_arguments
         _op_arguments=(
           "socialmediapostId=:[PATH] "
@@ -725,7 +803,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet)
+      getSocialMediaPostDetailsAsync)
         local -a _op_arguments
         _op_arguments=(
           "socialmediapostId=:[PATH] "
@@ -735,7 +813,25 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut)
+      getSocialMediaPostsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSocialMediaPostsODataAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateSocialMediaPostAsync)
         local -a _op_arguments
         _op_arguments=(
           "socialmediapostId=:[PATH] "
@@ -745,7 +841,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceSocialPostBucketsCountGet)
+      createSocialPostBucketAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -754,25 +850,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceSocialPostBucketsGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceSocialPostBucketsPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete)
+      deleteSocialPostBucketAsync)
         local -a _op_arguments
         _op_arguments=(
           "socialpostbucketId=:[PATH] "
@@ -782,7 +860,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet)
+      getSocialPostBucketDetailsAsync)
         local -a _op_arguments
         _op_arguments=(
           "socialpostbucketId=:[PATH] "
@@ -792,7 +870,25 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut)
+      getSocialPostBucketsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSocialPostBucketsODataAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateSocialPostBucketAsync)
         local -a _op_arguments
         _op_arguments=(
           "socialpostbucketId=:[PATH] "
@@ -802,7 +898,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2MarketingServiceTrackingPixelsPixelIdGet)
+      getTrackingPixelAsync)
         local -a _op_arguments
         _op_arguments=(
           "pixelId=:[PATH] "

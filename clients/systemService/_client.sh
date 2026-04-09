@@ -297,35 +297,56 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2SystemServiceAntiforgeryGetAndStoreTokensGet[]" \
-            "apiV2SystemServiceAntiforgeryIsRequestValidGet[]"             "apiLicensingLicensesGeneratePost[]" \
-            "apiLicensingLicensesValidateAttributesGet[]" \
-            "apiLicensingLicensesValidateErrorsGet[]" \
-            "apiLicensingLicensesValidateGet[]"             "apiV2SystemServiceLicensingLicensesGet[]" \
-            "apiV2SystemServiceLicensingLicensesLicenseIdAssignmentsGet[]" \
-            "apiV2SystemServiceLicensingLicensesLicenseIdAttributesGet[]" \
-            "apiV2SystemServiceLicensingLicensesLicenseIdFeaturesGet[]" \
-            "apiV2SystemServiceLicensingLicensesLicenseIdGet[]" \
-            "apiV2SystemServiceLicensingLicensesLicenseIdQuotaGet[]" \
-            "apiV2SystemServiceLicensingLicensesRedeemPost[]" \
-            "apiV2SystemServiceLicensingLicensesValidatePost[]"             "apiV2SystemServiceMigrationsGet[]" \
-            "apiV2SystemServiceMigrationsMigratePost[]"             "getAllModules[Get all modules available on this suite server instance.]" \
-            "getAvailableModules[Get all modules available to a tenant user.]"             "createTenant[Create a new tenant.]" \
+            "getAndStoreTokens[Get and store antiforgery tokens]" \
+            "isRequestValidAsync[Validate antiforgery request]"             "adminPreviewBasicEmailTemplate[Preview a rendered basic email template.]" \
+            "adminSendBasicEmail[Send a basic transactional email to recipients.]"             "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "getLicenseAssignmentsAsync[Retrieve license assignments]" \
+            "getLicenseAttributesAsync[Retrieve license attributes]" \
+            "getLicenseByIdAsync[Retrieve a license by ID]" \
+            "getLicenseFeaturesAsync[Retrieve license features]" \
+            "getLicenseRecordsQuotaAsync[Retrieve license record quota]" \
+            "getLicensesAsync[Retrieve a list of licenses]" \
+            "redeemLicenseAsync[Redeem a license]" \
+            "validateLicenseAsync[Validate a license]"             "migrate[Apply pending database migrations]" \
+            "migrations[Retrieve database migrations]"             "getAllModules[Get all modules available on this suite server instance.]" \
+            "getAvailableModules[Get all modules available to a tenant user.]"             "createSystemOption[Create a new system option]" \
+            "deleteSystemOption[Delete a system option]" \
+            "getSystemOptionById[Retrieve a single system option by its ID]" \
+            "getSystemOptionByKey[Retrieve a single system option by its key]" \
+            "getSystemOptions[Retrieve a list of system options]" \
+            "getSystemOptionsCount[Get the count of system options]" \
+            "updateSystemOption[Update a system option]" \
+            "upsertSystemOption[Create or update a system option by key]"             "adminPreviewTenantEmail[Preview the rendered email for a user.]" \
+            "adminSendTenantEmail[Send an email to a user.]" \
+            "createTenant[Create a new tenant.]" \
             "deleteTenant[Delete a specific tenant by ID.]" \
             "getAllExtendedTenants[Get all extended tenants available on this suite server instance.]" \
             "getAllTenants[Get all tenants available on this suite server instance.]" \
             "getExtendedTenantsCount[Get the total count of extended tenants available on this suite server instance.]" \
             "getTenant[Get a specific tenant by ID.]" \
             "getTenantsCount[Get the total count of tenants available on this suite server instance.]" \
-            "updateTenant[Update a specific tenant by ID.]"             "apiV2SystemServiceUsersCountGet[]" \
-            "apiV2SystemServiceUsersExtendedCountGet[]" \
-            "apiV2SystemServiceUsersExtendedGet[]" \
-            "apiV2SystemServiceUsersGet[]" \
-            "apiV2SystemServiceUsersPost[]" \
-            "apiV2SystemServiceUsersUserIdDelete[]" \
-            "apiV2SystemServiceUsersUserIdExtendedGet[]" \
-            "apiV2SystemServiceUsersUserIdPut[]" \
-            "getUserAsync[]" \
+            "updateTenant[Update a specific tenant by ID.]"             "adminPreviewUserEmailTemplate[Preview the rendered email for a user.]" \
+            "adminSendUserEmail[Send an email to a user.]" \
+            "createAccountHolderAsync[Create a new user]" \
+            "deleteAccountHolderAsync[Delete a user]" \
+            "getExtendedAccountHolderAsync[Retrieve an extended user by ID]" \
+            "getExtendedUsersAsync[Retrieve a list of extended users]" \
+            "getExtendedUsersCountAsync[Get the count of extended users]" \
+            "getUserAsync[Retrieve a user by ID]" \
+            "getUsersAsync[Retrieve a list of users]" \
+            "getUsersCountAsync[Get the count of users]" \
+            "updateAccountHolderAsync[Update a user]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -333,7 +354,7 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2SystemServiceAntiforgeryGetAndStoreTokensGet)
+      getAndStoreTokens)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
@@ -341,7 +362,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SystemServiceAntiforgeryIsRequestValidGet)
+      isRequestValidAsync)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
@@ -349,52 +370,108 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiLicensingLicensesGeneratePost)
+      adminPreviewBasicEmailTemplate)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
+                    "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiLicensingLicensesValidateAttributesGet)
+      adminSendBasicEmail)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
+                    "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiLicensingLicensesValidateErrorsGet)
+      forgotPasswordPost)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiLicensingLicensesValidateGet)
+      healthGet)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SystemServiceLicensingLicensesGet)
+      helloGet)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SystemServiceLicensingLicensesLicenseIdAssignmentsGet)
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLicenseAssignmentsAsync)
         local -a _op_arguments
         _op_arguments=(
           "licenseId=:[PATH] "
@@ -404,7 +481,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SystemServiceLicensingLicensesLicenseIdAttributesGet)
+      getLicenseAttributesAsync)
         local -a _op_arguments
         _op_arguments=(
           "licenseId=:[PATH] "
@@ -414,17 +491,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SystemServiceLicensingLicensesLicenseIdFeaturesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "licenseId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SystemServiceLicensingLicensesLicenseIdGet)
+      getLicenseByIdAsync)
         local -a _op_arguments
         _op_arguments=(
           "licenseId=:[PATH] "
@@ -433,7 +500,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SystemServiceLicensingLicensesLicenseIdQuotaGet)
+      getLicenseFeaturesAsync)
         local -a _op_arguments
         _op_arguments=(
           "licenseId=:[PATH] "
@@ -443,7 +510,17 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SystemServiceLicensingLicensesRedeemPost)
+      getLicenseRecordsQuotaAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "licenseId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLicensesAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -452,28 +529,37 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SystemServiceLicensingLicensesValidatePost)
+      redeemLicenseAsync)
         local -a _op_arguments
         _op_arguments=(
-                    "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SystemServiceMigrationsGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "pending=true:[QUERY] "
-          "pending=false:[QUERY] "
+                    "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SystemServiceMigrationsMigratePost)
+      validateLicenseAsync)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      migrate)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      migrations)
+        local -a _op_arguments
+        _op_arguments=(
+                    "pending=true:[QUERY] "
+          "pending=false:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -492,6 +578,99 @@ case $state in
         _op_arguments=(
                     "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createSystemOption)
+        local -a _op_arguments
+        _op_arguments=(
+                    "key=:[QUERY] "
+"portalId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteSystemOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "optionId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSystemOptionById)
+        local -a _op_arguments
+        _op_arguments=(
+          "optionId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSystemOptionByKey)
+        local -a _op_arguments
+        _op_arguments=(
+          "key=:[PATH] "
+          "portalId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSystemOptions)
+        local -a _op_arguments
+        _op_arguments=(
+                    "portalId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSystemOptionsCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "portalId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateSystemOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "optionId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      upsertSystemOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "key=:[PATH] "
+          "portalId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      adminPreviewTenantEmail)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      adminSendTenantEmail)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantId=:[PATH] "
+          "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -563,47 +742,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SystemServiceUsersCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SystemServiceUsersExtendedCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SystemServiceUsersExtendedGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SystemServiceUsersGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SystemServiceUsersPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SystemServiceUsersUserIdDelete)
+      adminPreviewUserEmailTemplate)
         local -a _op_arguments
         _op_arguments=(
           "userId=:[PATH] "
@@ -612,7 +751,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SystemServiceUsersUserIdExtendedGet)
+      adminSendUserEmail)
         local -a _op_arguments
         _op_arguments=(
           "userId=:[PATH] "
@@ -621,16 +760,74 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SystemServiceUsersUserIdPut)
+      createAccountHolderAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteAccountHolderAsync)
         local -a _op_arguments
         _op_arguments=(
           "userId=:[PATH] "
           "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExtendedAccountHolderAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "userId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExtendedUsersAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExtendedUsersCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getUserAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "userId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getUsersAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getUsersCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateAccountHolderAsync)
         local -a _op_arguments
         _op_arguments=(
           "userId=:[PATH] "

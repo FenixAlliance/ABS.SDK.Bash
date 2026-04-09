@@ -4,18 +4,20 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createGigAsync**](GigsApi.md#createGigAsync) | **POST** /api/v2/HrmsService/Gigs | 
-[**deleteGigAsync**](GigsApi.md#deleteGigAsync) | **DELETE** /api/v2/HrmsService/Gigs/{gigId} | 
-[**getGigByIdAsync**](GigsApi.md#getGigByIdAsync) | **GET** /api/v2/HrmsService/Gigs/{gigId} | 
-[**getGigsAsync**](GigsApi.md#getGigsAsync) | **GET** /api/v2/HrmsService/Gigs | 
-[**getGigsCountAsync**](GigsApi.md#getGigsCountAsync) | **GET** /api/v2/HrmsService/Gigs/Count | 
-[**updateGigAsync**](GigsApi.md#updateGigAsync) | **PUT** /api/v2/HrmsService/Gigs/{gigId} | 
+[**createGigAsync**](GigsApi.md#createGigAsync) | **POST** /api/v2/HrmsService/Gigs | Create a gig
+[**deleteGigAsync**](GigsApi.md#deleteGigAsync) | **DELETE** /api/v2/HrmsService/Gigs/{gigId} | Delete a gig
+[**getGigByIdAsync**](GigsApi.md#getGigByIdAsync) | **GET** /api/v2/HrmsService/Gigs/{gigId} | Get gig by ID
+[**getGigsAsync**](GigsApi.md#getGigsAsync) | **GET** /api/v2/HrmsService/Gigs | Get gigs
+[**getGigsCountAsync**](GigsApi.md#getGigsCountAsync) | **GET** /api/v2/HrmsService/Gigs/Count | Count gigs
+[**updateGigAsync**](GigsApi.md#updateGigAsync) | **PUT** /api/v2/HrmsService/Gigs/{gigId} | Update a gig
 
 
 
 ## createGigAsync
 
+Create a gig
 
+Creates a new gig for the specified tenant.
 
 ### Example
 
@@ -35,11 +37,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -51,7 +53,9 @@ Name | Type | Description  | Notes
 
 ## deleteGigAsync
 
+Delete a gig
 
+Deletes a gig for the specified tenant.
 
 ### Example
 
@@ -71,11 +75,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -87,7 +91,9 @@ Name | Type | Description  | Notes
 
 ## getGigByIdAsync
 
+Get gig by ID
 
+Retrieves a specific gig by its identifier.
 
 ### Example
 
@@ -111,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -123,7 +129,9 @@ Name | Type | Description  | Notes
 
 ## getGigsAsync
 
+Get gigs
 
+Retrieves gigs for the specified tenant.
 
 ### Example
 
@@ -146,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -158,7 +166,9 @@ Name | Type | Description  | Notes
 
 ## getGigsCountAsync
 
+Count gigs
 
+Counts gigs for the specified tenant.
 
 ### Example
 
@@ -181,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -193,7 +203,9 @@ Name | Type | Description  | Notes
 
 ## updateGigAsync
 
+Update a gig
 
+Updates an existing gig for the specified tenant.
 
 ### Example
 
@@ -210,15 +222,15 @@ Name | Type | Description  | Notes
  **gigId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
- **body** | **map** |  | [optional]
+ **gigUpdateDto** | [**GigUpdateDto**](GigUpdateDto.md) |  | [optional]
 
 ### Return type
 
-(empty response body)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

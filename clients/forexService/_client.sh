@@ -297,12 +297,24 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2ForexServiceExchangeHistoryGet[]" \
-            "apiV2ForexServiceExchangeLatestGet[]"             "apiV3ForexServiceExchangeHistoryGet[]" \
-            "apiV3ForexServiceExchangeLatestGet[]"             "apiV2ForexServiceRatesHistoryCurrencyIdGet[]" \
-            "apiV2ForexServiceRatesHistoryGet[]" \
-            "apiV2ForexServiceRatesLatestCurrencyIdGet[]" \
-            "apiV2ForexServiceRatesLatestGet[]" \
+            "exchangeAmountAsync[Exchange currency at latest rates]" \
+            "exchangeAmountHistoricalAsync[Exchange currency at historical rates]"             "exchangeAmountHistoricalV3Async[Exchange currency at historical rates (v3)]" \
+            "exchangeAmountV3Async[Exchange currency at latest rates (v3)]"             "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "getHistoricalCurrencyRateAsync[Get historical rate for a currency]" \
+            "getHistoricalCurrencyRatesAsync[Get historical currency rates]" \
+            "getLatestCurrencyRateAsync[Get latest rate for a currency]" \
+            "getLatestCurrencyRatesModelAsync[Get latest currency rates]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -310,7 +322,16 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2ForexServiceExchangeHistoryGet)
+      exchangeAmountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "amount=:[QUERY] "
+"sourceCurrencyId=:[QUERY] "
+"targetCurrencyId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      exchangeAmountHistoricalAsync)
         local -a _op_arguments
         _op_arguments=(
                     "amount=:[QUERY] "
@@ -320,16 +341,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ForexServiceExchangeLatestGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "amount=:[QUERY] "
-"sourceCurrencyId=:[QUERY] "
-"targetCurrencyId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV3ForexServiceExchangeHistoryGet)
+      exchangeAmountHistoricalV3Async)
         local -a _op_arguments
         _op_arguments=(
                     "amount=:[QUERY] "
@@ -339,7 +351,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV3ForexServiceExchangeLatestGet)
+      exchangeAmountV3Async)
         local -a _op_arguments
         _op_arguments=(
                     "amount=:[QUERY] "
@@ -348,7 +360,92 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ForexServiceRatesHistoryCurrencyIdGet)
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getHistoricalCurrencyRateAsync)
         local -a _op_arguments
         _op_arguments=(
           "currencyId=:[PATH] "
@@ -358,7 +455,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ForexServiceRatesHistoryGet)
+      getHistoricalCurrencyRatesAsync)
         local -a _op_arguments
         _op_arguments=(
                     "date=:[QUERY] "
@@ -367,7 +464,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ForexServiceRatesLatestCurrencyIdGet)
+      getLatestCurrencyRateAsync)
         local -a _op_arguments
         _op_arguments=(
           "currencyId=:[PATH] "
@@ -376,7 +473,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ForexServiceRatesLatestGet)
+      getLatestCurrencyRatesModelAsync)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "

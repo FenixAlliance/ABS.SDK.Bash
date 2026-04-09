@@ -322,13 +322,34 @@ case $state in
             "getOrganizationRelatedIndividualsAsync[Get organization related individuals]" \
             "getOrganizationRelatedOrganizationsAsync[Get organization related organizations]" \
             "patchContactAsync[Patch a contact]" \
+            "previewContactEmailTemplate[Preview the rendered email for a contact.]" \
+            "sendContactEmail[Send an email to a contact.]" \
             "updateContactAsync[Update a contact]" \
             "updateContactAvatarAsync[Update a contact's avatar]" \
             "upsertTenantOntoAnotherTenantContactListAsync[Upsert a tenant onto another tenant's contact list]" \
-            "upsertUserOntoAnotherTenantContactListAsync[Upsert a user onto a tenant's contact list]"             "apiV2CrmServiceSyncMePost[]" \
-            "apiV2CrmServiceSyncPost[]" \
-            "apiV2CrmServiceSyncTenantPost[]" \
-            "apiV2CrmServiceSyncUserPost[]" \
+            "upsertUserOntoAnotherTenantContactListAsync[Upsert a user onto a tenant's contact list]"             "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "createContactOption[Create a new contact option]" \
+            "deleteContactOption[Delete a contact option]" \
+            "getContactOptionById[Retrieve a single contact option by its ID]" \
+            "getContactOptionByKey[Retrieve a single contact option by its key]" \
+            "getContactOptions[Retrieve a list of contact options]" \
+            "getContactOptionsCount[Get the count of contact options]" \
+            "updateContactOption[Update a contact option]" \
+            "upsertContactOption[Create or update a contact option by key]"             "syncCurrentHolderToCurrentTenantCrm[Sync the current user into the current tenant's contact list]" \
+            "syncCurrentHolderToTenantCrm[Sync the current user into a tenant's contact list]" \
+            "syncHolderToTenantCrmAsync[Sync a user into a tenant's contact list]" \
+            "syncTenantToTenantCrm[Sync a tenant into another tenant's contact list]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -576,6 +597,24 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      previewContactEmailTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      sendContactEmail)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateContactAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -616,7 +655,183 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2CrmServiceSyncMePost)
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createContactOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+          "tenantId=:[QUERY] "
+"key=:[QUERY] "
+"portalId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteContactOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"optionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactOptionById)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"optionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactOptionByKey)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"key=:[PATH] "
+          "tenantId=:[QUERY] "
+"portalId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactOptions)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+          "tenantId=:[QUERY] "
+"portalId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactOptionsCount)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+          "tenantId=:[QUERY] "
+"portalId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateContactOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"optionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      upsertContactOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"key=:[PATH] "
+          "tenantId=:[QUERY] "
+"portalId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      syncCurrentHolderToCurrentTenantCrm)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -625,7 +840,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2CrmServiceSyncPost)
+      syncCurrentHolderToTenantCrm)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -634,21 +849,21 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2CrmServiceSyncTenantPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"relatedTenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2CrmServiceSyncUserPost)
+      syncHolderToTenantCrmAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
 "relatedUserId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      syncTenantToTenantCrm)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"relatedTenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

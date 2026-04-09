@@ -4,23 +4,25 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2MarketingServiceMarketingListsCountGet**](MarketingListsApi.md#apiV2MarketingServiceMarketingListsCountGet) | **GET** /api/v2/MarketingService/MarketingLists/Count | 
-[**apiV2MarketingServiceMarketingListsGet**](MarketingListsApi.md#apiV2MarketingServiceMarketingListsGet) | **GET** /api/v2/MarketingService/MarketingLists | 
-[**apiV2MarketingServiceMarketingListsMarketinglistIdDelete**](MarketingListsApi.md#apiV2MarketingServiceMarketingListsMarketinglistIdDelete) | **DELETE** /api/v2/MarketingService/MarketingLists/{marketinglistId} | 
-[**apiV2MarketingServiceMarketingListsMarketinglistIdGet**](MarketingListsApi.md#apiV2MarketingServiceMarketingListsMarketinglistIdGet) | **GET** /api/v2/MarketingService/MarketingLists/{marketinglistId} | 
-[**apiV2MarketingServiceMarketingListsMarketinglistIdPut**](MarketingListsApi.md#apiV2MarketingServiceMarketingListsMarketinglistIdPut) | **PUT** /api/v2/MarketingService/MarketingLists/{marketinglistId} | 
-[**apiV2MarketingServiceMarketingListsPost**](MarketingListsApi.md#apiV2MarketingServiceMarketingListsPost) | **POST** /api/v2/MarketingService/MarketingLists | 
+[**createMarketingListAsync**](MarketingListsApi.md#createMarketingListAsync) | **POST** /api/v2/MarketingService/MarketingLists | Create a marketing list
+[**deleteMarketingListAsync**](MarketingListsApi.md#deleteMarketingListAsync) | **DELETE** /api/v2/MarketingService/MarketingLists/{marketinglistId} | Delete a marketing list
+[**getMarketingListDetailsAsync**](MarketingListsApi.md#getMarketingListDetailsAsync) | **GET** /api/v2/MarketingService/MarketingLists/{marketinglistId} | Get marketing list by ID
+[**getMarketingListODataAsync**](MarketingListsApi.md#getMarketingListODataAsync) | **GET** /api/v2/MarketingService/MarketingLists | Get marketing lists
+[**getMarketingListsCountAsync**](MarketingListsApi.md#getMarketingListsCountAsync) | **GET** /api/v2/MarketingService/MarketingLists/Count | Get marketing lists count
+[**updateMarketingListAsync**](MarketingListsApi.md#updateMarketingListAsync) | **PUT** /api/v2/MarketingService/MarketingLists/{marketinglistId} | Update a marketing list
 
 
 
-## apiV2MarketingServiceMarketingListsCountGet
+## createMarketingListAsync
 
+Create a marketing list
 
+Creates a new marketing list for the specified tenant.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceMarketingListsCountGet  tenantId=value  api-version=value x-api-version:value
+ createMarketingListAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -29,68 +31,36 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **marketingListCreateDto** | [**MarketingListCreateDto**](MarketingListCreateDto.md) |  |
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
 ### Return type
 
-[**Int32Envelope**](Int32Envelope.md)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceMarketingListsGet
+## deleteMarketingListAsync
 
+Delete a marketing list
 
-
-### Example
-
-```bash
- apiV2MarketingServiceMarketingListsGet  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**MarketingListDtoListEnvelope**](MarketingListDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2MarketingServiceMarketingListsMarketinglistIdDelete
-
-
+Deletes a marketing list by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceMarketingListsMarketinglistIdDelete  tenantId=value marketinglistId=value  api-version=value x-api-version:value
+ deleteMarketingListAsync  tenantId=value marketinglistId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -109,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -119,14 +89,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceMarketingListsMarketinglistIdGet
+## getMarketingListDetailsAsync
 
+Get marketing list by ID
 
+Retrieves the details of a specific marketing list by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceMarketingListsMarketinglistIdGet  tenantId=value marketinglistId=value  api-version=value x-api-version:value
+ getMarketingListDetailsAsync  tenantId=value marketinglistId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -145,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -155,14 +127,90 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceMarketingListsMarketinglistIdPut
+## getMarketingListODataAsync
 
+Get marketing lists
 
+Retrieves a collection of marketing lists for the specified tenant using OData query options.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceMarketingListsMarketinglistIdPut  tenantId=value marketinglistId=value  api-version=value x-api-version:value
+ getMarketingListODataAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**MarketingListDtoListEnvelope**](MarketingListDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getMarketingListsCountAsync
+
+Get marketing lists count
+
+Returns the count of marketing lists for the specified tenant using OData query options.
+
+### Example
+
+```bash
+ getMarketingListsCountAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateMarketingListAsync
+
+Update a marketing list
+
+Updates an existing marketing list by its ID.
+
+### Example
+
+```bash
+ updateMarketingListAsync  tenantId=value marketinglistId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -182,43 +230,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2MarketingServiceMarketingListsPost
-
-
-
-### Example
-
-```bash
- apiV2MarketingServiceMarketingListsPost  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **marketingListCreateDto** | [**MarketingListCreateDto**](MarketingListCreateDto.md) |  |
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

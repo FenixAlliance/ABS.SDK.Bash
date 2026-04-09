@@ -69,35 +69,69 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet"]=1
-    operations["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet"]=1
-    operations["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet"]=1
-    operations["apiV2TimeTrackerServiceProjectTimeLogsGet"]=1
-    operations["apiV2TimeTrackerServiceProjectTimeLogsPost"]=1
-    operations["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete"]=1
-    operations["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet"]=1
-    operations["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut"]=1
-    operations["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut"]=1
-    operations["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut"]=1
-    operations["apiV2TimeTrackerServiceTimeLogApprovalsPost"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["countProjectPeriodTimeLogsAsync"]=1
+    operations["createProjectTimeLogAsync"]=1
+    operations["deleteProjectTimeLogAsync"]=1
+    operations["getProjectPeriodTimeLogsAsync"]=1
+    operations["getProjectTimeLogByIdAsync"]=1
+    operations["getProjectTimeLogsAsync"]=1
+    operations["getProjectTimeLogsByResponsibleContactAsync"]=1
+    operations["getProjectTimeLogsCreatedByContactAsync"]=1
+    operations["updateProjectTimeLogAsync"]=1
+    operations["requestProjectHoursApprovalAsync"]=1
+    operations["updateProjectHoursApprovalApproverAsync"]=1
+    operations["updateProjectHoursApprovalStatusAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet"]="contactId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet"]="contactId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet"]="projectId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2TimeTrackerServiceProjectTimeLogsGet"]="tenantId= projectPeriodId= api-version= x-api-version: "
-    operation_parameters["apiV2TimeTrackerServiceProjectTimeLogsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete"]="timeLogId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet"]="timeLogId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut"]="timeLogId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut"]="approvalId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut"]="approvalId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2TimeTrackerServiceTimeLogApprovalsPost"]="tenantId= api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["countProjectPeriodTimeLogsAsync"]="tenantId= projectPeriodId= api-version= x-api-version: "
+    operation_parameters["createProjectTimeLogAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteProjectTimeLogAsync"]="timeLogId= tenantId= api-version= x-api-version: "
+    operation_parameters["getProjectPeriodTimeLogsAsync"]="tenantId= projectPeriodId= api-version= x-api-version: "
+    operation_parameters["getProjectTimeLogByIdAsync"]="timeLogId= tenantId= api-version= x-api-version: "
+    operation_parameters["getProjectTimeLogsAsync"]="projectId= tenantId= api-version= x-api-version: "
+    operation_parameters["getProjectTimeLogsByResponsibleContactAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["getProjectTimeLogsCreatedByContactAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateProjectTimeLogAsync"]="timeLogId= tenantId= api-version= x-api-version: "
+    operation_parameters["requestProjectHoursApprovalAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateProjectHoursApprovalApproverAsync"]="approvalId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateProjectHoursApprovalStatusAsync"]="approvalId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

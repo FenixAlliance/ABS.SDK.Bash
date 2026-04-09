@@ -96,117 +96,96 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete:::dealUnitFlowId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet:::dealUnitFlowId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::dealUnitFlowId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::DealUnitFlowUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet:::dealUnitFlowId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::dealUnitFlowId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::dealUnitFlowStageId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::dealUnitFlowId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::dealUnitFlowStageId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::dealUnitFlowId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::dealUnitFlowStageId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::DealUnitFlowStageUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet:::dealUnitFlowId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::dealUnitFlowId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::DealUnitFlowStageCreateDto"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitFlowsPost:::DealUnitFlowCreateDto"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdCalculatePut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdCalculatePut:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdDelete:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdExtendedGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdExtendedGet:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut:::dealUnitLineId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete:::dealUnitLineId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet:::dealUnitLineId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut:::dealUnitLineId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut:::DealUnitLineUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesGet:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesGet:::itemId"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesPost:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesPost:::DealUnitLineCreateDto"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdPut:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdPut:::DealUnitUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsExtendedGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceDealUnitsPost:::DealUnitCreateDto"]=0
+operation_parameters_minimum_occurrences["createDealUnitFlowAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createDealUnitFlowAsync:::DealUnitFlowCreateDto"]=0
+operation_parameters_minimum_occurrences["createDealUnitFlowStageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createDealUnitFlowStageAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["createDealUnitFlowStageAsync:::DealUnitFlowStageCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteDealUnitFlowAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteDealUnitFlowAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["deleteDealUnitFlowStageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteDealUnitFlowStageAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["deleteDealUnitFlowStageAsync:::dealUnitFlowStageId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowStageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowStageAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowStageAsync:::dealUnitFlowStageId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowStagesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowStagesAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowStagesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowStagesCountAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateDealUnitFlowAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateDealUnitFlowAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["updateDealUnitFlowAsync:::DealUnitFlowUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateDealUnitFlowStageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateDealUnitFlowStageAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["updateDealUnitFlowStageAsync:::dealUnitFlowStageId"]=1
+operation_parameters_minimum_occurrences["updateDealUnitFlowStageAsync:::DealUnitFlowStageUpdateDto"]=0
+operation_parameters_minimum_occurrences["calculateDealUnitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["calculateDealUnitAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["calculateDealUnitLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["calculateDealUnitLineAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["calculateDealUnitLineAsync:::dealUnitLineId"]=1
+operation_parameters_minimum_occurrences["createDealUnitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createDealUnitAsync:::DealUnitCreateDto"]=0
+operation_parameters_minimum_occurrences["createGetDealUnitLinesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createGetDealUnitLinesAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["createGetDealUnitLinesAsync:::DealUnitLineCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteDealUnitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteDealUnitAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["deleteDealUnitPriceAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteDealUnitPriceAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["deleteDealUnitPriceAsync:::dealUnitLineId"]=1
 operation_parameters_minimum_occurrences["getDealUnitAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getDealUnitAsync:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesExtendedGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesExtendedGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesExtendedGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesPost:::SalesLiteratureCreateDto"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete:::salesLiteratureId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet:::salesLiteratureId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::salesLiteratureId"]=1
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::SalesLiteratureUpdateDto"]=0
+operation_parameters_minimum_occurrences["getDealUnitLinesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitLinesAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["getDealUnitLinesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getDealUnitLinesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitLinesCountAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["getDealUnitPriceAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitPriceAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["getDealUnitPriceAsync:::dealUnitLineId"]=1
+operation_parameters_minimum_occurrences["getDealUnitsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getExtendedDealUnitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getExtendedDealUnitAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["getExtendedDealUnitsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateDealUnitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateDealUnitAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["updateDealUnitAsync:::DealUnitUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateDealUnitPriceAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateDealUnitPriceAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["updateDealUnitPriceAsync:::dealUnitLineId"]=1
+operation_parameters_minimum_occurrences["updateDealUnitPriceAsync:::DealUnitLineUpdateDto"]=0
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["countSalesLiteraturesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSalesLiteratureAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSalesLiteratureAsync:::SalesLiteratureCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSalesLiteratureAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSalesLiteratureAsync:::salesLiteratureId"]=1
+operation_parameters_minimum_occurrences["getExtendedSalesLiteraturesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSalesLiteratureAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSalesLiteratureAsync:::salesLiteratureId"]=1
+operation_parameters_minimum_occurrences["getSalesLiteraturesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSalesLiteratureAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSalesLiteratureAsync:::salesLiteratureId"]=1
+operation_parameters_minimum_occurrences["updateSalesLiteratureAsync:::SalesLiteratureUpdateDto"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -215,233 +194,191 @@ operation_parameters_minimum_occurrences["apiV2DealsServiceSalesLiteraturesSales
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete:::dealUnitFlowId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet:::dealUnitFlowId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::dealUnitFlowId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::DealUnitFlowUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet:::dealUnitFlowId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::dealUnitFlowId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::dealUnitFlowStageId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::dealUnitFlowId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::dealUnitFlowStageId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::dealUnitFlowId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::dealUnitFlowStageId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::DealUnitFlowStageUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet:::dealUnitFlowId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::dealUnitFlowId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::DealUnitFlowStageCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitFlowsPost:::DealUnitFlowCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdCalculatePut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdCalculatePut:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdDelete:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdExtendedGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdExtendedGet:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut:::dealUnitLineId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete:::dealUnitLineId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet:::dealUnitLineId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut:::dealUnitLineId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut:::DealUnitLineUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesGet:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesGet:::itemId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesPost:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdLinesPost:::DealUnitLineCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdPut:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsDealUnitIdPut:::DealUnitUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsExtendedGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceDealUnitsPost:::DealUnitCreateDto"]=0
+operation_parameters_maximum_occurrences["createDealUnitFlowAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createDealUnitFlowAsync:::DealUnitFlowCreateDto"]=0
+operation_parameters_maximum_occurrences["createDealUnitFlowStageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createDealUnitFlowStageAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["createDealUnitFlowStageAsync:::DealUnitFlowStageCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteDealUnitFlowAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteDealUnitFlowAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["deleteDealUnitFlowStageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteDealUnitFlowStageAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["deleteDealUnitFlowStageAsync:::dealUnitFlowStageId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowStageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowStageAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowStageAsync:::dealUnitFlowStageId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowStagesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowStagesAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowStagesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowStagesCountAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateDealUnitFlowAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateDealUnitFlowAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["updateDealUnitFlowAsync:::DealUnitFlowUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateDealUnitFlowStageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateDealUnitFlowStageAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["updateDealUnitFlowStageAsync:::dealUnitFlowStageId"]=0
+operation_parameters_maximum_occurrences["updateDealUnitFlowStageAsync:::DealUnitFlowStageUpdateDto"]=0
+operation_parameters_maximum_occurrences["calculateDealUnitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["calculateDealUnitAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["calculateDealUnitLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["calculateDealUnitLineAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["calculateDealUnitLineAsync:::dealUnitLineId"]=0
+operation_parameters_maximum_occurrences["createDealUnitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createDealUnitAsync:::DealUnitCreateDto"]=0
+operation_parameters_maximum_occurrences["createGetDealUnitLinesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createGetDealUnitLinesAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["createGetDealUnitLinesAsync:::DealUnitLineCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteDealUnitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteDealUnitAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["deleteDealUnitPriceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteDealUnitPriceAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["deleteDealUnitPriceAsync:::dealUnitLineId"]=0
 operation_parameters_maximum_occurrences["getDealUnitAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getDealUnitAsync:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesExtendedGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesExtendedGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesExtendedGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesPost:::SalesLiteratureCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete:::salesLiteratureId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet:::salesLiteratureId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::salesLiteratureId"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::SalesLiteratureUpdateDto"]=0
+operation_parameters_maximum_occurrences["getDealUnitLinesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitLinesAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["getDealUnitLinesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getDealUnitLinesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitLinesCountAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["getDealUnitPriceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitPriceAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["getDealUnitPriceAsync:::dealUnitLineId"]=0
+operation_parameters_maximum_occurrences["getDealUnitsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getExtendedDealUnitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getExtendedDealUnitAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["getExtendedDealUnitsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateDealUnitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateDealUnitAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["updateDealUnitAsync:::DealUnitUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateDealUnitPriceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateDealUnitPriceAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["updateDealUnitPriceAsync:::dealUnitLineId"]=0
+operation_parameters_maximum_occurrences["updateDealUnitPriceAsync:::DealUnitLineUpdateDto"]=0
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["countSalesLiteraturesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSalesLiteratureAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSalesLiteratureAsync:::SalesLiteratureCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSalesLiteratureAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSalesLiteratureAsync:::salesLiteratureId"]=0
+operation_parameters_maximum_occurrences["getExtendedSalesLiteraturesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSalesLiteratureAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSalesLiteratureAsync:::salesLiteratureId"]=0
+operation_parameters_maximum_occurrences["getSalesLiteraturesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSalesLiteratureAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSalesLiteratureAsync:::salesLiteratureId"]=0
+operation_parameters_maximum_occurrences["updateSalesLiteratureAsync:::SalesLiteratureUpdateDto"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete:::dealUnitFlowId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet:::dealUnitFlowId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::dealUnitFlowId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut:::DealUnitFlowUpdateDto"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet:::dealUnitFlowId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::dealUnitFlowId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::dealUnitFlowStageId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::dealUnitFlowId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::dealUnitFlowStageId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::dealUnitFlowId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::dealUnitFlowStageId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut:::DealUnitFlowStageUpdateDto"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet:::dealUnitFlowId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::dealUnitFlowId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost:::DealUnitFlowStageCreateDto"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitFlowsPost:::DealUnitFlowCreateDto"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdCalculatePut:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdCalculatePut:::dealUnitId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdDelete:::dealUnitId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdExtendedGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdExtendedGet:::dealUnitId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet:::dealUnitId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut:::dealUnitId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut:::dealUnitLineId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete:::dealUnitId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete:::dealUnitLineId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet:::dealUnitId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet:::dealUnitLineId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut:::dealUnitId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut:::dealUnitLineId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut:::DealUnitLineUpdateDto"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesGet:::dealUnitId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesGet:::itemId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesPost:::dealUnitId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdLinesPost:::DealUnitLineCreateDto"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdPut:::dealUnitId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsDealUnitIdPut:::DealUnitUpdateDto"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsExtendedGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceDealUnitsPost:::DealUnitCreateDto"]=""
+operation_parameters_collection_type["createDealUnitFlowAsync:::tenantId"]=""
+operation_parameters_collection_type["createDealUnitFlowAsync:::DealUnitFlowCreateDto"]=""
+operation_parameters_collection_type["createDealUnitFlowStageAsync:::tenantId"]=""
+operation_parameters_collection_type["createDealUnitFlowStageAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["createDealUnitFlowStageAsync:::DealUnitFlowStageCreateDto"]=""
+operation_parameters_collection_type["deleteDealUnitFlowAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteDealUnitFlowAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["deleteDealUnitFlowStageAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteDealUnitFlowStageAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["deleteDealUnitFlowStageAsync:::dealUnitFlowStageId"]=""
+operation_parameters_collection_type["getDealUnitFlowAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitFlowAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["getDealUnitFlowStageAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitFlowStageAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["getDealUnitFlowStageAsync:::dealUnitFlowStageId"]=""
+operation_parameters_collection_type["getDealUnitFlowStagesAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitFlowStagesAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["getDealUnitFlowStagesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitFlowStagesCountAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["getDealUnitFlowsAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitFlowsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["updateDealUnitFlowAsync:::tenantId"]=""
+operation_parameters_collection_type["updateDealUnitFlowAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["updateDealUnitFlowAsync:::DealUnitFlowUpdateDto"]=""
+operation_parameters_collection_type["updateDealUnitFlowStageAsync:::tenantId"]=""
+operation_parameters_collection_type["updateDealUnitFlowStageAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["updateDealUnitFlowStageAsync:::dealUnitFlowStageId"]=""
+operation_parameters_collection_type["updateDealUnitFlowStageAsync:::DealUnitFlowStageUpdateDto"]=""
+operation_parameters_collection_type["calculateDealUnitAsync:::tenantId"]=""
+operation_parameters_collection_type["calculateDealUnitAsync:::dealUnitId"]=""
+operation_parameters_collection_type["calculateDealUnitLineAsync:::tenantId"]=""
+operation_parameters_collection_type["calculateDealUnitLineAsync:::dealUnitId"]=""
+operation_parameters_collection_type["calculateDealUnitLineAsync:::dealUnitLineId"]=""
+operation_parameters_collection_type["createDealUnitAsync:::tenantId"]=""
+operation_parameters_collection_type["createDealUnitAsync:::DealUnitCreateDto"]=""
+operation_parameters_collection_type["createGetDealUnitLinesAsync:::tenantId"]=""
+operation_parameters_collection_type["createGetDealUnitLinesAsync:::dealUnitId"]=""
+operation_parameters_collection_type["createGetDealUnitLinesAsync:::DealUnitLineCreateDto"]=""
+operation_parameters_collection_type["deleteDealUnitAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteDealUnitAsync:::dealUnitId"]=""
+operation_parameters_collection_type["deleteDealUnitPriceAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteDealUnitPriceAsync:::dealUnitId"]=""
+operation_parameters_collection_type["deleteDealUnitPriceAsync:::dealUnitLineId"]=""
 operation_parameters_collection_type["getDealUnitAsync:::tenantId"]=""
 operation_parameters_collection_type["getDealUnitAsync:::dealUnitId"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesExtendedGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesExtendedGet:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesExtendedGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesPost:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesPost:::SalesLiteratureCreateDto"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete:::salesLiteratureId"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet:::salesLiteratureId"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::salesLiteratureId"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut:::SalesLiteratureUpdateDto"]=""
+operation_parameters_collection_type["getDealUnitLinesAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitLinesAsync:::dealUnitId"]=""
+operation_parameters_collection_type["getDealUnitLinesAsync:::itemId"]=""
+operation_parameters_collection_type["getDealUnitLinesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitLinesCountAsync:::dealUnitId"]=""
+operation_parameters_collection_type["getDealUnitPriceAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitPriceAsync:::dealUnitId"]=""
+operation_parameters_collection_type["getDealUnitPriceAsync:::dealUnitLineId"]=""
+operation_parameters_collection_type["getDealUnitsAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getExtendedDealUnitAsync:::tenantId"]=""
+operation_parameters_collection_type["getExtendedDealUnitAsync:::dealUnitId"]=""
+operation_parameters_collection_type["getExtendedDealUnitsAsync:::tenantId"]=""
+operation_parameters_collection_type["updateDealUnitAsync:::tenantId"]=""
+operation_parameters_collection_type["updateDealUnitAsync:::dealUnitId"]=""
+operation_parameters_collection_type["updateDealUnitAsync:::DealUnitUpdateDto"]=""
+operation_parameters_collection_type["updateDealUnitPriceAsync:::tenantId"]=""
+operation_parameters_collection_type["updateDealUnitPriceAsync:::dealUnitId"]=""
+operation_parameters_collection_type["updateDealUnitPriceAsync:::dealUnitLineId"]=""
+operation_parameters_collection_type["updateDealUnitPriceAsync:::DealUnitLineUpdateDto"]=""
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["countSalesLiteraturesAsync:::tenantId"]=""
+operation_parameters_collection_type["createSalesLiteratureAsync:::tenantId"]=""
+operation_parameters_collection_type["createSalesLiteratureAsync:::SalesLiteratureCreateDto"]=""
+operation_parameters_collection_type["deleteSalesLiteratureAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSalesLiteratureAsync:::salesLiteratureId"]=""
+operation_parameters_collection_type["getExtendedSalesLiteraturesAsync:::tenantId"]=""
+operation_parameters_collection_type["getSalesLiteratureAsync:::tenantId"]=""
+operation_parameters_collection_type["getSalesLiteratureAsync:::salesLiteratureId"]=""
+operation_parameters_collection_type["getSalesLiteraturesAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSalesLiteratureAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSalesLiteratureAsync:::salesLiteratureId"]=""
+operation_parameters_collection_type["updateSalesLiteratureAsync:::SalesLiteratureUpdateDto"]=""
 
 
 ##
@@ -462,9 +399,6 @@ host=""
 # The user credentials for basic authentication
 basic_auth_credential=""
 
-##
-# The user API key
-apikey_auth_credential=""
 
 ##
 # If true, the script will only output the actual cURL command that would be
@@ -567,23 +501,10 @@ lookup_mime_type() {
 ##############################################################################
 header_arguments_to_curl() {
     local headers_curl=""
-    local api_key_header=""
-    local api_key_header_in_cli=""
-    api_key_header="Authorization"
 
     for key in "${!header_arguments[@]}"; do
         headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
-        if [[ "${key}XX" == "${api_key_header}XX" ]]; then
-            api_key_header_in_cli="YES"
-        fi
     done
-    #
-    # If the api_key was not provided in the header, try one from the
-    # environment variable
-    #
-    if [[ -z $api_key_header_in_cli && -n $apikey_auth_credential ]]; then
-        headers_curl+="-H \"${api_key_header}: ${apikey_auth_credential}\""
-    fi
     headers_curl+=" "
 
     echo "${headers_curl}"
@@ -815,7 +736,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}DealsService command line client (API version 2.0.1.4089)${OFF}
+${BOLD}${WHITE}DealsService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -842,59 +763,73 @@ ${BOLD}${WHITE}Usage${OFF}
                                       JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
 
 EOF
-    echo -e "${BOLD}${WHITE}Authentication methods${OFF}"
-    echo -e ""
-    echo -e "  - ${BLUE}Api-key${OFF} - add '${RED}Authorization:<api-key>${OFF}' after ${YELLOW}<operation>${OFF}"
-    
-    echo ""
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
     echo -e "${BOLD}${WHITE}[dealUnitFlows]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2DealsServiceDealUnitFlowsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitFlowsGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitFlowsPost${OFF}; (AUTH)
+  ${CYAN}createDealUnitFlowAsync${OFF};Create a deal unit flow
+  ${CYAN}createDealUnitFlowStageAsync${OFF};Create a deal unit flow stage
+  ${CYAN}deleteDealUnitFlowAsync${OFF};Delete a deal unit flow
+  ${CYAN}deleteDealUnitFlowStageAsync${OFF};Delete a deal unit flow stage
+  ${CYAN}getDealUnitFlowAsync${OFF};Get deal unit flow by ID
+  ${CYAN}getDealUnitFlowStageAsync${OFF};Get a deal unit flow stage by ID
+  ${CYAN}getDealUnitFlowStagesAsync${OFF};Get stages for a deal unit flow
+  ${CYAN}getDealUnitFlowStagesCountAsync${OFF};Get stages count for a deal unit flow
+  ${CYAN}getDealUnitFlowsAsync${OFF};Get deal unit flows
+  ${CYAN}getDealUnitFlowsCountAsync${OFF};Get deal unit flows count
+  ${CYAN}updateDealUnitFlowAsync${OFF};Update a deal unit flow
+  ${CYAN}updateDealUnitFlowStageAsync${OFF};Update a deal unit flow stage
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[dealUnits]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2DealsServiceDealUnitsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsDealUnitIdCalculatePut${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsDealUnitIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsDealUnitIdExtendedGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsDealUnitIdLinesGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsDealUnitIdLinesPost${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsDealUnitIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsExtendedGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceDealUnitsPost${OFF}; (AUTH)
-  ${CYAN}getDealUnitAsync${OFF}; (AUTH)
+  ${CYAN}calculateDealUnitAsync${OFF};Calculate a deal unit
+  ${CYAN}calculateDealUnitLineAsync${OFF};Calculate a deal unit line
+  ${CYAN}createDealUnitAsync${OFF};Create a deal unit
+  ${CYAN}createGetDealUnitLinesAsync${OFF};Create a deal unit line
+  ${CYAN}deleteDealUnitAsync${OFF};Delete a deal unit
+  ${CYAN}deleteDealUnitPriceAsync${OFF};Delete a deal unit line
+  ${CYAN}getDealUnitAsync${OFF};Get deal unit by ID
+  ${CYAN}getDealUnitLinesAsync${OFF};Get deal unit lines
+  ${CYAN}getDealUnitLinesCountAsync${OFF};Get deal unit lines count
+  ${CYAN}getDealUnitPriceAsync${OFF};Get a deal unit line by ID
+  ${CYAN}getDealUnitsAsync${OFF};Get deal units
+  ${CYAN}getDealUnitsCountAsync${OFF};Get deal units count
+  ${CYAN}getExtendedDealUnitAsync${OFF};Get extended deal unit by ID
+  ${CYAN}getExtendedDealUnitsAsync${OFF};Get extended deal units
+  ${CYAN}updateDealUnitAsync${OFF};Update a deal unit
+  ${CYAN}updateDealUnitPriceAsync${OFF};Update a deal unit line
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[salesLiteratures]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2DealsServiceSalesLiteraturesExtendedGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceSalesLiteraturesGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceSalesLiteraturesPost${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut${OFF}; (AUTH)
+  ${CYAN}countSalesLiteraturesAsync${OFF};Get sales literatures count
+  ${CYAN}createSalesLiteratureAsync${OFF};Create a sales literature
+  ${CYAN}deleteSalesLiteratureAsync${OFF};Delete a sales literature
+  ${CYAN}getExtendedSalesLiteraturesAsync${OFF};Get extended sales literatures
+  ${CYAN}getSalesLiteratureAsync${OFF};Get sales literature by ID
+  ${CYAN}getSalesLiteraturesAsync${OFF};Get sales literatures
+  ${CYAN}updateSalesLiteratureAsync${OFF};Update a sales literature
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -924,7 +859,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}DealsService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}${WHITE}DealsService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -944,94 +879,24 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}DealsService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}DealsService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitFlowsCountGet operation
+# Print help for createDealUnitFlowAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitFlowsCountGet_help() {
+print_createDealUnitFlowAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitFlowsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createDealUnitFlowAsync - Create a deal unit flow${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new deal unit flow for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -1043,20 +908,21 @@ print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet operation
+# Print help for createDealUnitFlowStageAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet_help() {
+print_createDealUnitFlowStageAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createDealUnitFlowStageAsync - Create a deal unit flow stage${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new stage within a specific deal unit flow." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1066,21 +932,42 @@ print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete operation
+# Print help for deleteDealUnitFlowAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete_help() {
+print_deleteDealUnitFlowAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteDealUnitFlowAsync - Delete a deal unit flow${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an existing deal unit flow by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteDealUnitFlowStageAsync operation
+#
+##############################################################################
+print_deleteDealUnitFlowStageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteDealUnitFlowStageAsync - Delete a deal unit flow stage${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an existing stage from a specific deal unit flow." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}dealUnitFlowStageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowStageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1090,21 +977,42 @@ print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelet
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet operation
+# Print help for getDealUnitFlowAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet_help() {
+print_getDealUnitFlowAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getDealUnitFlowAsync - Get deal unit flow by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single deal unit flow by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDealUnitFlowStageAsync operation
+#
+##############################################################################
+print_getDealUnitFlowStageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDealUnitFlowStageAsync - Get a deal unit flow stage by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single stage for a specific deal unit flow by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}dealUnitFlowStageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowStageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1114,21 +1022,130 @@ print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet_h
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut operation
+# Print help for getDealUnitFlowStagesAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut_help() {
+print_getDealUnitFlowStagesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getDealUnitFlowStagesAsync - Get stages for a deal unit flow${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of stages for a specific deal unit flow with OData query support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDealUnitFlowStagesCountAsync operation
+#
+##############################################################################
+print_getDealUnitFlowStagesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDealUnitFlowStagesCountAsync - Get stages count for a deal unit flow${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of stages for a specific deal unit flow with OData filter support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDealUnitFlowsAsync operation
+#
+##############################################################################
+print_getDealUnitFlowsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDealUnitFlowsAsync - Get deal unit flows${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of deal unit flows for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDealUnitFlowsCountAsync operation
+#
+##############################################################################
+print_getDealUnitFlowsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDealUnitFlowsCountAsync - Get deal unit flows count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of deal unit flows for the specified tenant with OData filter support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateDealUnitFlowAsync operation
+#
+##############################################################################
+print_updateDealUnitFlowAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateDealUnitFlowAsync - Update a deal unit flow${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing deal unit flow by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateDealUnitFlowStageAsync operation
+#
+##############################################################################
+print_updateDealUnitFlowStageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateDealUnitFlowStageAsync - Update a deal unit flow stage${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing stage within a specific deal unit flow." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}dealUnitFlowStageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowStageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -1140,125 +1157,14 @@ print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut_h
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet operation
+# Print help for calculateDealUnitAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet_help() {
+print_calculateDealUnitAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}calculateDealUnitAsync - Calculate a deal unit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitFlowsGet operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitFlowsGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitFlowsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitFlowsPost operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitFlowsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitFlowsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitsCountGet operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitsCountGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitsDealUnitIdCalculatePut operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitsDealUnitIdCalculatePut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsDealUnitIdCalculatePut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Triggers recalculation of totals and derived values for a specific deal unit." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1273,72 +1179,14 @@ print_apiV2DealsServiceDealUnitsDealUnitIdCalculatePut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitsDealUnitIdDelete operation
+# Print help for calculateDealUnitLineAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitsDealUnitIdDelete_help() {
+print_calculateDealUnitLineAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsDealUnitIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}calculateDealUnitLineAsync - Calculate a deal unit line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitsDealUnitIdExtendedGet operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitsDealUnitIdExtendedGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsDealUnitIdExtendedGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Triggers recalculation of totals and derived values for a specific deal unit line." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1354,60 +1202,18 @@ print_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut_help()
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete operation
+# Print help for createDealUnitAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete_help() {
+print_createDealUnitAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createDealUnitAsync - Create a deal unit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new deal unit for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -1419,12 +1225,105 @@ print_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitsDealUnitIdLinesGet operation
+# Print help for createGetDealUnitLinesAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitsDealUnitIdLinesGet_help() {
+print_createGetDealUnitLinesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsDealUnitIdLinesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createGetDealUnitLinesAsync - Create a deal unit line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new line within a specific deal unit." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteDealUnitAsync operation
+#
+##############################################################################
+print_deleteDealUnitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteDealUnitAsync - Delete a deal unit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an existing deal unit by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteDealUnitPriceAsync operation
+#
+##############################################################################
+print_deleteDealUnitPriceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteDealUnitPriceAsync - Delete a deal unit line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an existing line from a specific deal unit." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDealUnitAsync operation
+#
+##############################################################################
+print_getDealUnitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDealUnitAsync - Get deal unit by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single deal unit by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDealUnitLinesAsync operation
+#
+##############################################################################
+print_getDealUnitLinesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDealUnitLinesAsync - Get deal unit lines${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of lines for a specific deal unit with OData query support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1441,12 +1340,144 @@ print_apiV2DealsServiceDealUnitsDealUnitIdLinesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitsDealUnitIdLinesPost operation
+# Print help for getDealUnitLinesCountAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitsDealUnitIdLinesPost_help() {
+print_getDealUnitLinesCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsDealUnitIdLinesPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getDealUnitLinesCountAsync - Get deal unit lines count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of lines for a specific deal unit with OData filter support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDealUnitPriceAsync operation
+#
+##############################################################################
+print_getDealUnitPriceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDealUnitPriceAsync - Get a deal unit line by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single deal unit line by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDealUnitsAsync operation
+#
+##############################################################################
+print_getDealUnitsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDealUnitsAsync - Get deal units${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of deal units for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDealUnitsCountAsync operation
+#
+##############################################################################
+print_getDealUnitsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDealUnitsCountAsync - Get deal units count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of deal units for the specified tenant with OData filter support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getExtendedDealUnitAsync operation
+#
+##############################################################################
+print_getExtendedDealUnitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getExtendedDealUnitAsync - Get extended deal unit by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single deal unit with extended details by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getExtendedDealUnitsAsync operation
+#
+##############################################################################
+print_getExtendedDealUnitsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getExtendedDealUnitsAsync - Get extended deal units${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of deal units with extended details for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateDealUnitAsync operation
+#
+##############################################################################
+print_updateDealUnitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateDealUnitAsync - Update a deal unit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing deal unit by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1463,17 +1494,20 @@ print_apiV2DealsServiceDealUnitsDealUnitIdLinesPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitsDealUnitIdPut operation
+# Print help for updateDealUnitPriceAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitsDealUnitIdPut_help() {
+print_updateDealUnitPriceAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsDealUnitIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateDealUnitPriceAsync - Update a deal unit line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing line within a specific deal unit." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -1485,12 +1519,249 @@ print_apiV2DealsServiceDealUnitsDealUnitIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitsExtendedGet operation
+# Print help for forgotPasswordPost operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitsExtendedGet_help() {
+print_forgotPasswordPost_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsExtendedGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for helloGet operation
+#
+##############################################################################
+print_helloGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for loginPost operation
+#
+##############################################################################
+print_loginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manage2faPost operation
+#
+##############################################################################
+print_manage2faPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countSalesLiteraturesAsync operation
+#
+##############################################################################
+print_countSalesLiteraturesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countSalesLiteraturesAsync - Get sales literatures count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of sales literatures for the specified tenant with OData filter support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1504,31 +1775,14 @@ print_apiV2DealsServiceDealUnitsExtendedGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceDealUnitsGet operation
+# Print help for createSalesLiteratureAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceDealUnitsGet_help() {
+print_createSalesLiteratureAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createSalesLiteratureAsync - Create a sales literature${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceDealUnitsPost operation
-#
-##############################################################################
-print_apiV2DealsServiceDealUnitsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceDealUnitsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Creates a new sales literature for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1544,108 +1798,19 @@ print_apiV2DealsServiceDealUnitsPost_help() {
 }
 ##############################################################################
 #
-# Print help for getDealUnitAsync operation
+# Print help for deleteSalesLiteratureAsync operation
 #
 ##############################################################################
-print_getDealUnitAsync_help() {
+print_deleteSalesLiteratureAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getDealUnitAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteSalesLiteratureAsync - Delete a sales literature${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceSalesLiteraturesExtendedGet operation
-#
-##############################################################################
-print_apiV2DealsServiceSalesLiteraturesExtendedGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceSalesLiteraturesExtendedGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceSalesLiteraturesGet operation
-#
-##############################################################################
-print_apiV2DealsServiceSalesLiteraturesGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceSalesLiteraturesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceSalesLiteraturesPost operation
-#
-##############################################################################
-print_apiV2DealsServiceSalesLiteraturesPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceSalesLiteraturesPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete operation
-#
-##############################################################################
-print_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Deletes an existing sales literature by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}salesLiteratureId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: salesLiteratureId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1655,18 +1820,18 @@ print_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet operation
+# Print help for getExtendedSalesLiteraturesAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet_help() {
+print_getExtendedSalesLiteraturesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getExtendedSalesLiteraturesAsync - Get extended sales literatures${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of sales literatures with extended details for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}salesLiteratureId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: salesLiteratureId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1676,20 +1841,62 @@ print_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut operation
+# Print help for getSalesLiteratureAsync operation
 #
 ##############################################################################
-print_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut_help() {
+print_getSalesLiteratureAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSalesLiteratureAsync - Get sales literature by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single sales literature by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}salesLiteratureId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: salesLiteratureId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSalesLiteraturesAsync operation
+#
+##############################################################################
+print_getSalesLiteraturesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSalesLiteraturesAsync - Get sales literatures${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of sales literatures for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSalesLiteratureAsync operation
+#
+##############################################################################
+print_updateSalesLiteratureAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSalesLiteratureAsync - Update a sales literature${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing sales literature by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}salesLiteratureId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: salesLiteratureId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -1703,131 +1910,23 @@ print_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut_help() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceDealUnitFlowsCountGet operation
+# Call createDealUnitFlowAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceDealUnitFlowsCountGet() {
+call_createDealUnitFlowAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/Count" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitFlowId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitFlowId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitFlowId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -1887,16 +1986,272 @@ call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet operation
+# Call createDealUnitFlowStageAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet() {
+call_createDealUnitFlowStageAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(dealUnitFlowId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteDealUnitFlowAsync operation
+#
+##############################################################################
+call_deleteDealUnitFlowAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitFlowId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteDealUnitFlowStageAsync operation
+#
+##############################################################################
+call_deleteDealUnitFlowStageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitFlowId dealUnitFlowStageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages/{dealUnitFlowStageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDealUnitFlowAsync operation
+#
+##############################################################################
+call_getDealUnitFlowAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitFlowId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDealUnitFlowStageAsync operation
+#
+##############################################################################
+call_getDealUnitFlowStageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitFlowId dealUnitFlowStageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages/{dealUnitFlowStageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDealUnitFlowStagesAsync operation
+#
+##############################################################################
+call_getDealUnitFlowStagesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitFlowId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDealUnitFlowStagesCountAsync operation
+#
+##############################################################################
+call_getDealUnitFlowStagesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitFlowId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages/Count" path_parameter_names query_parameter_names); then
@@ -1923,55 +2278,19 @@ call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete operation
+# Call getDealUnitFlowsAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete() {
+call_getDealUnitFlowsAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitFlowId dealUnitFlowStageId)
+    local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages/{dealUnitFlowStageId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitFlowId dealUnitFlowStageId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages/{dealUnitFlowStageId}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -1995,16 +2314,128 @@ call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet() 
 
 ##############################################################################
 #
-# Call apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut operation
+# Call getDealUnitFlowsCountAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut() {
+call_getDealUnitFlowsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateDealUnitFlowAsync operation
+#
+##############################################################################
+call_updateDealUnitFlowAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitFlowId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateDealUnitFlowStageAsync operation
+#
+##############################################################################
+call_updateDealUnitFlowStageAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(dealUnitFlowId dealUnitFlowStageId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages/{dealUnitFlowStageId}" path_parameter_names query_parameter_names); then
@@ -2071,276 +2502,16 @@ call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut() 
 
 ##############################################################################
 #
-# Call apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet operation
+# Call calculateDealUnitAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitFlowId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitFlowId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitFlowsGet operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitFlowsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitFlowsPost operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitFlowsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitsCountGet operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitsCountGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/Count" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitsDealUnitIdCalculatePut operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitsDealUnitIdCalculatePut() {
+call_calculateDealUnitAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(dealUnitId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Calculate" path_parameter_names query_parameter_names); then
@@ -2367,124 +2538,16 @@ call_apiV2DealsServiceDealUnitsDealUnitIdCalculatePut() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceDealUnitsDealUnitIdDelete operation
+# Call calculateDealUnitLineAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceDealUnitsDealUnitIdDelete() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitsDealUnitIdExtendedGet operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitsDealUnitIdExtendedGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Extended" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines/Count" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut() {
+call_calculateDealUnitLineAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(dealUnitId dealUnitLineId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines/{dealUnitLineId}/Calculate" path_parameter_names query_parameter_names); then
@@ -2511,95 +2574,23 @@ call_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete operation
+# Call createDealUnitAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete() {
+call_createDealUnitAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitId dealUnitLineId)
+    local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
     local path
 
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines/{dealUnitLineId}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitId dealUnitLineId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines/{dealUnitLineId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitId dealUnitLineId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines/{dealUnitLineId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -2659,52 +2650,16 @@ call_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceDealUnitsDealUnitIdLinesGet operation
+# Call createGetDealUnitLinesAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceDealUnitsDealUnitIdLinesGet() {
+call_createGetDealUnitLinesAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(dealUnitId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId itemId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitsDealUnitIdLinesPost operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitsDealUnitIdLinesPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(dealUnitId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines" path_parameter_names query_parameter_names); then
@@ -2771,23 +2726,23 @@ call_apiV2DealsServiceDealUnitsDealUnitIdLinesPost() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceDealUnitsDealUnitIdPut operation
+# Call deleteDealUnitAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceDealUnitsDealUnitIdPut() {
+call_deleteDealUnitAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(dealUnitId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="PUT"
+    local method="DELETE"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -2798,65 +2753,313 @@ call_apiV2DealsServiceDealUnitsDealUnitIdPut() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
 ##############################################################################
 #
-# Call apiV2DealsServiceDealUnitsExtendedGet operation
+# Call deleteDealUnitPriceAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceDealUnitsExtendedGet() {
+call_deleteDealUnitPriceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitId dealUnitLineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines/{dealUnitLineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDealUnitAsync operation
+#
+##############################################################################
+call_getDealUnitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDealUnitLinesAsync operation
+#
+##############################################################################
+call_getDealUnitLinesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId itemId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDealUnitLinesCountAsync operation
+#
+##############################################################################
+call_getDealUnitLinesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDealUnitPriceAsync operation
+#
+##############################################################################
+call_getDealUnitPriceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitId dealUnitLineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines/{dealUnitLineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDealUnitsAsync operation
+#
+##############################################################################
+call_getDealUnitsAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDealUnitsCountAsync operation
+#
+##############################################################################
+call_getDealUnitsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getExtendedDealUnitAsync operation
+#
+##############################################################################
+call_getExtendedDealUnitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Extended" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getExtendedDealUnitsAsync operation
+#
+##############################################################################
+call_getExtendedDealUnitsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/Extended" path_parameter_names query_parameter_names); then
@@ -2883,135 +3086,23 @@ call_apiV2DealsServiceDealUnitsExtendedGet() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceDealUnitsGet operation
+# Call updateDealUnitAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceDealUnitsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2DealsServiceDealUnitsPost operation
-#
-##############################################################################
-call_apiV2DealsServiceDealUnitsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call getDealUnitAsync operation
-#
-##############################################################################
-call_getDealUnitAsync() {
+call_updateDealUnitAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(dealUnitId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="GET"
+    local method="PUT"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -3022,28 +3113,222 @@ call_getDealUnitAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
 ##############################################################################
 #
-# Call apiV2DealsServiceSalesLiteraturesExtendedGet operation
+# Call updateDealUnitPriceAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceSalesLiteraturesExtendedGet() {
+call_updateDealUnitPriceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitId dealUnitLineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines/{dealUnitLineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call forgotPasswordPost operation
+#
+##############################################################################
+call_forgotPasswordPost() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=()
     local path
 
-    if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures/Extended" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3067,19 +3352,19 @@ call_apiV2DealsServiceSalesLiteraturesExtendedGet() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceSalesLiteraturesGet operation
+# Call helloGet operation
 #
 ##############################################################################
-call_apiV2DealsServiceSalesLiteraturesGet() {
+call_helloGet() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=()
     local path
 
-    if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3103,16 +3388,706 @@ call_apiV2DealsServiceSalesLiteraturesGet() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceSalesLiteraturesPost operation
+# Call loginPost operation
 #
 ##############################################################################
-call_apiV2DealsServiceSalesLiteraturesPost() {
+call_loginPost() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(useCookies useSessionCookies)
+    local path
+
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoPost operation
+#
+##############################################################################
+call_manageInfoPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call refreshPost operation
+#
+##############################################################################
+call_refreshPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countSalesLiteraturesAsync operation
+#
+##############################################################################
+call_countSalesLiteraturesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createSalesLiteratureAsync operation
+#
+##############################################################################
+call_createSalesLiteratureAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures" path_parameter_names query_parameter_names); then
@@ -3179,16 +4154,16 @@ call_apiV2DealsServiceSalesLiteraturesPost() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete operation
+# Call deleteSalesLiteratureAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete() {
+call_deleteSalesLiteratureAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(salesLiteratureId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures/{salesLiteratureId}" path_parameter_names query_parameter_names); then
@@ -3215,16 +4190,52 @@ call_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet operation
+# Call getExtendedSalesLiteraturesAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet() {
+call_getExtendedSalesLiteraturesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures/Extended" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSalesLiteratureAsync operation
+#
+##############################################################################
+call_getSalesLiteratureAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(salesLiteratureId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures/{salesLiteratureId}" path_parameter_names query_parameter_names); then
@@ -3251,16 +4262,52 @@ call_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet() {
 
 ##############################################################################
 #
-# Call apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut operation
+# Call getSalesLiteraturesAsync operation
 #
 ##############################################################################
-call_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut() {
+call_getSalesLiteraturesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateSalesLiteratureAsync operation
+#
+##############################################################################
+call_updateSalesLiteratureAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(salesLiteratureId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures/{salesLiteratureId}" path_parameter_names query_parameter_names); then
@@ -3422,107 +4469,149 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
-    apiV2DealsServiceDealUnitFlowsCountGet)
-    operation="apiV2DealsServiceDealUnitFlowsCountGet"
+    createDealUnitFlowAsync)
+    operation="createDealUnitFlowAsync"
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete)
-    operation="apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete"
+    createDealUnitFlowStageAsync)
+    operation="createDealUnitFlowStageAsync"
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet)
-    operation="apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet"
+    deleteDealUnitFlowAsync)
+    operation="deleteDealUnitFlowAsync"
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut)
-    operation="apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut"
+    deleteDealUnitFlowStageAsync)
+    operation="deleteDealUnitFlowStageAsync"
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet)
-    operation="apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet"
+    getDealUnitFlowAsync)
+    operation="getDealUnitFlowAsync"
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete)
-    operation="apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete"
+    getDealUnitFlowStageAsync)
+    operation="getDealUnitFlowStageAsync"
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet)
-    operation="apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet"
+    getDealUnitFlowStagesAsync)
+    operation="getDealUnitFlowStagesAsync"
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut)
-    operation="apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut"
+    getDealUnitFlowStagesCountAsync)
+    operation="getDealUnitFlowStagesCountAsync"
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet)
-    operation="apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet"
+    getDealUnitFlowsAsync)
+    operation="getDealUnitFlowsAsync"
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost)
-    operation="apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost"
+    getDealUnitFlowsCountAsync)
+    operation="getDealUnitFlowsCountAsync"
     ;;
-    apiV2DealsServiceDealUnitFlowsGet)
-    operation="apiV2DealsServiceDealUnitFlowsGet"
+    updateDealUnitFlowAsync)
+    operation="updateDealUnitFlowAsync"
     ;;
-    apiV2DealsServiceDealUnitFlowsPost)
-    operation="apiV2DealsServiceDealUnitFlowsPost"
+    updateDealUnitFlowStageAsync)
+    operation="updateDealUnitFlowStageAsync"
     ;;
-    apiV2DealsServiceDealUnitsCountGet)
-    operation="apiV2DealsServiceDealUnitsCountGet"
+    calculateDealUnitAsync)
+    operation="calculateDealUnitAsync"
     ;;
-    apiV2DealsServiceDealUnitsDealUnitIdCalculatePut)
-    operation="apiV2DealsServiceDealUnitsDealUnitIdCalculatePut"
+    calculateDealUnitLineAsync)
+    operation="calculateDealUnitLineAsync"
     ;;
-    apiV2DealsServiceDealUnitsDealUnitIdDelete)
-    operation="apiV2DealsServiceDealUnitsDealUnitIdDelete"
+    createDealUnitAsync)
+    operation="createDealUnitAsync"
     ;;
-    apiV2DealsServiceDealUnitsDealUnitIdExtendedGet)
-    operation="apiV2DealsServiceDealUnitsDealUnitIdExtendedGet"
+    createGetDealUnitLinesAsync)
+    operation="createGetDealUnitLinesAsync"
     ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet)
-    operation="apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet"
+    deleteDealUnitAsync)
+    operation="deleteDealUnitAsync"
     ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut)
-    operation="apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut"
-    ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete)
-    operation="apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete"
-    ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet)
-    operation="apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet"
-    ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut)
-    operation="apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut"
-    ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesGet)
-    operation="apiV2DealsServiceDealUnitsDealUnitIdLinesGet"
-    ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesPost)
-    operation="apiV2DealsServiceDealUnitsDealUnitIdLinesPost"
-    ;;
-    apiV2DealsServiceDealUnitsDealUnitIdPut)
-    operation="apiV2DealsServiceDealUnitsDealUnitIdPut"
-    ;;
-    apiV2DealsServiceDealUnitsExtendedGet)
-    operation="apiV2DealsServiceDealUnitsExtendedGet"
-    ;;
-    apiV2DealsServiceDealUnitsGet)
-    operation="apiV2DealsServiceDealUnitsGet"
-    ;;
-    apiV2DealsServiceDealUnitsPost)
-    operation="apiV2DealsServiceDealUnitsPost"
+    deleteDealUnitPriceAsync)
+    operation="deleteDealUnitPriceAsync"
     ;;
     getDealUnitAsync)
     operation="getDealUnitAsync"
     ;;
-    apiV2DealsServiceSalesLiteraturesExtendedGet)
-    operation="apiV2DealsServiceSalesLiteraturesExtendedGet"
+    getDealUnitLinesAsync)
+    operation="getDealUnitLinesAsync"
     ;;
-    apiV2DealsServiceSalesLiteraturesGet)
-    operation="apiV2DealsServiceSalesLiteraturesGet"
+    getDealUnitLinesCountAsync)
+    operation="getDealUnitLinesCountAsync"
     ;;
-    apiV2DealsServiceSalesLiteraturesPost)
-    operation="apiV2DealsServiceSalesLiteraturesPost"
+    getDealUnitPriceAsync)
+    operation="getDealUnitPriceAsync"
     ;;
-    apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete)
-    operation="apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete"
+    getDealUnitsAsync)
+    operation="getDealUnitsAsync"
     ;;
-    apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet)
-    operation="apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet"
+    getDealUnitsCountAsync)
+    operation="getDealUnitsCountAsync"
     ;;
-    apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut)
-    operation="apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut"
+    getExtendedDealUnitAsync)
+    operation="getExtendedDealUnitAsync"
+    ;;
+    getExtendedDealUnitsAsync)
+    operation="getExtendedDealUnitsAsync"
+    ;;
+    updateDealUnitAsync)
+    operation="updateDealUnitAsync"
+    ;;
+    updateDealUnitPriceAsync)
+    operation="updateDealUnitPriceAsync"
+    ;;
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
+    ;;
+    healthGet)
+    operation="healthGet"
+    ;;
+    helloGet)
+    operation="helloGet"
+    ;;
+    loginPost)
+    operation="loginPost"
+    ;;
+    manage2faPost)
+    operation="manage2faPost"
+    ;;
+    manageInfoGet)
+    operation="manageInfoGet"
+    ;;
+    manageInfoPost)
+    operation="manageInfoPost"
+    ;;
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
+    ;;
+    refreshPost)
+    operation="refreshPost"
+    ;;
+    registerPost)
+    operation="registerPost"
+    ;;
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
+    ;;
+    resetPasswordPost)
+    operation="resetPasswordPost"
+    ;;
+    versionGet)
+    operation="versionGet"
+    ;;
+    countSalesLiteraturesAsync)
+    operation="countSalesLiteraturesAsync"
+    ;;
+    createSalesLiteratureAsync)
+    operation="createSalesLiteratureAsync"
+    ;;
+    deleteSalesLiteratureAsync)
+    operation="deleteSalesLiteratureAsync"
+    ;;
+    getExtendedSalesLiteraturesAsync)
+    operation="getExtendedSalesLiteraturesAsync"
+    ;;
+    getSalesLiteratureAsync)
+    operation="getSalesLiteratureAsync"
+    ;;
+    getSalesLiteraturesAsync)
+    operation="getSalesLiteraturesAsync"
+    ;;
+    updateSalesLiteratureAsync)
+    operation="updateSalesLiteratureAsync"
     ;;
     *==*)
     # Parse body arguments and convert them into top level
@@ -3557,13 +4646,6 @@ case $key in
     # only after the operation argument
     if [[ "$operation" ]]; then
         IFS=':' read -r header_name header_value <<< "$key"
-        #
-        # If the header key is the same as the api_key expected by API in the
-        # header, override the ${apikey_auth_credential} variable
-        #
-        if [[ $header_name == "Authorization" ]]; then
-            apikey_auth_credential=$header_value
-        fi
         header_arguments[$header_name]=$header_value
     else
         curl_arguments+=" $key"
@@ -3618,107 +4700,149 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
-    apiV2DealsServiceDealUnitFlowsCountGet)
-    call_apiV2DealsServiceDealUnitFlowsCountGet
+    createDealUnitFlowAsync)
+    call_createDealUnitFlowAsync
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete)
-    call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete
+    createDealUnitFlowStageAsync)
+    call_createDealUnitFlowStageAsync
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet)
-    call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet
+    deleteDealUnitFlowAsync)
+    call_deleteDealUnitFlowAsync
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut)
-    call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut
+    deleteDealUnitFlowStageAsync)
+    call_deleteDealUnitFlowStageAsync
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet)
-    call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet
+    getDealUnitFlowAsync)
+    call_getDealUnitFlowAsync
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete)
-    call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete
+    getDealUnitFlowStageAsync)
+    call_getDealUnitFlowStageAsync
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet)
-    call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet
+    getDealUnitFlowStagesAsync)
+    call_getDealUnitFlowStagesAsync
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut)
-    call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut
+    getDealUnitFlowStagesCountAsync)
+    call_getDealUnitFlowStagesCountAsync
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet)
-    call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet
+    getDealUnitFlowsAsync)
+    call_getDealUnitFlowsAsync
     ;;
-    apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost)
-    call_apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost
+    getDealUnitFlowsCountAsync)
+    call_getDealUnitFlowsCountAsync
     ;;
-    apiV2DealsServiceDealUnitFlowsGet)
-    call_apiV2DealsServiceDealUnitFlowsGet
+    updateDealUnitFlowAsync)
+    call_updateDealUnitFlowAsync
     ;;
-    apiV2DealsServiceDealUnitFlowsPost)
-    call_apiV2DealsServiceDealUnitFlowsPost
+    updateDealUnitFlowStageAsync)
+    call_updateDealUnitFlowStageAsync
     ;;
-    apiV2DealsServiceDealUnitsCountGet)
-    call_apiV2DealsServiceDealUnitsCountGet
+    calculateDealUnitAsync)
+    call_calculateDealUnitAsync
     ;;
-    apiV2DealsServiceDealUnitsDealUnitIdCalculatePut)
-    call_apiV2DealsServiceDealUnitsDealUnitIdCalculatePut
+    calculateDealUnitLineAsync)
+    call_calculateDealUnitLineAsync
     ;;
-    apiV2DealsServiceDealUnitsDealUnitIdDelete)
-    call_apiV2DealsServiceDealUnitsDealUnitIdDelete
+    createDealUnitAsync)
+    call_createDealUnitAsync
     ;;
-    apiV2DealsServiceDealUnitsDealUnitIdExtendedGet)
-    call_apiV2DealsServiceDealUnitsDealUnitIdExtendedGet
+    createGetDealUnitLinesAsync)
+    call_createGetDealUnitLinesAsync
     ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet)
-    call_apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet
+    deleteDealUnitAsync)
+    call_deleteDealUnitAsync
     ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut)
-    call_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut
-    ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete)
-    call_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete
-    ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet)
-    call_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet
-    ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut)
-    call_apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut
-    ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesGet)
-    call_apiV2DealsServiceDealUnitsDealUnitIdLinesGet
-    ;;
-    apiV2DealsServiceDealUnitsDealUnitIdLinesPost)
-    call_apiV2DealsServiceDealUnitsDealUnitIdLinesPost
-    ;;
-    apiV2DealsServiceDealUnitsDealUnitIdPut)
-    call_apiV2DealsServiceDealUnitsDealUnitIdPut
-    ;;
-    apiV2DealsServiceDealUnitsExtendedGet)
-    call_apiV2DealsServiceDealUnitsExtendedGet
-    ;;
-    apiV2DealsServiceDealUnitsGet)
-    call_apiV2DealsServiceDealUnitsGet
-    ;;
-    apiV2DealsServiceDealUnitsPost)
-    call_apiV2DealsServiceDealUnitsPost
+    deleteDealUnitPriceAsync)
+    call_deleteDealUnitPriceAsync
     ;;
     getDealUnitAsync)
     call_getDealUnitAsync
     ;;
-    apiV2DealsServiceSalesLiteraturesExtendedGet)
-    call_apiV2DealsServiceSalesLiteraturesExtendedGet
+    getDealUnitLinesAsync)
+    call_getDealUnitLinesAsync
     ;;
-    apiV2DealsServiceSalesLiteraturesGet)
-    call_apiV2DealsServiceSalesLiteraturesGet
+    getDealUnitLinesCountAsync)
+    call_getDealUnitLinesCountAsync
     ;;
-    apiV2DealsServiceSalesLiteraturesPost)
-    call_apiV2DealsServiceSalesLiteraturesPost
+    getDealUnitPriceAsync)
+    call_getDealUnitPriceAsync
     ;;
-    apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete)
-    call_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete
+    getDealUnitsAsync)
+    call_getDealUnitsAsync
     ;;
-    apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet)
-    call_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet
+    getDealUnitsCountAsync)
+    call_getDealUnitsCountAsync
     ;;
-    apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut)
-    call_apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut
+    getExtendedDealUnitAsync)
+    call_getExtendedDealUnitAsync
+    ;;
+    getExtendedDealUnitsAsync)
+    call_getExtendedDealUnitsAsync
+    ;;
+    updateDealUnitAsync)
+    call_updateDealUnitAsync
+    ;;
+    updateDealUnitPriceAsync)
+    call_updateDealUnitPriceAsync
+    ;;
+    forgotPasswordPost)
+    call_forgotPasswordPost
+    ;;
+    healthGet)
+    call_healthGet
+    ;;
+    helloGet)
+    call_helloGet
+    ;;
+    loginPost)
+    call_loginPost
+    ;;
+    manage2faPost)
+    call_manage2faPost
+    ;;
+    manageInfoGet)
+    call_manageInfoGet
+    ;;
+    manageInfoPost)
+    call_manageInfoPost
+    ;;
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
+    ;;
+    refreshPost)
+    call_refreshPost
+    ;;
+    registerPost)
+    call_registerPost
+    ;;
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
+    ;;
+    resetPasswordPost)
+    call_resetPasswordPost
+    ;;
+    versionGet)
+    call_versionGet
+    ;;
+    countSalesLiteraturesAsync)
+    call_countSalesLiteraturesAsync
+    ;;
+    createSalesLiteratureAsync)
+    call_createSalesLiteratureAsync
+    ;;
+    deleteSalesLiteratureAsync)
+    call_deleteSalesLiteratureAsync
+    ;;
+    getExtendedSalesLiteraturesAsync)
+    call_getExtendedSalesLiteraturesAsync
+    ;;
+    getSalesLiteratureAsync)
+    call_getSalesLiteratureAsync
+    ;;
+    getSalesLiteraturesAsync)
+    call_getSalesLiteraturesAsync
+    ;;
+    updateSalesLiteratureAsync)
+    call_updateSalesLiteratureAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

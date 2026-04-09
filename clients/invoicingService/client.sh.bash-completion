@@ -69,95 +69,131 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2InvoicingServiceInvoicesCountGet"]=1
-    operations["apiV2InvoicingServiceInvoicesDiscountsAggregatePost"]=1
-    operations["apiV2InvoicingServiceInvoicesExtendedCountGet"]=1
-    operations["apiV2InvoicingServiceInvoicesExtendedGet"]=1
-    operations["apiV2InvoicingServiceInvoicesGet"]=1
-    operations["apiV2InvoicingServiceInvoicesGlobalSurchargesAggregatePost"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsCountGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsInvoiceAdjustmentIdDelete"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsInvoiceAdjustmentIdGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsInvoiceAdjustmentIdPut"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsPost"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdCalculatePut"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdDelete"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdExtendedGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdLinesCountGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdLinesGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdCalculatePut"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdDelete"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdPut"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesCountGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesInvoiceLineTaxIdDelete"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesInvoiceLineTaxIdPut"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesPost"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdLinesPost"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdPaymentsCountGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdPaymentsGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdPut"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdReferencesCountGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdReferencesGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdReferencesInvoiceReferenceIdDelete"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdReferencesInvoiceReferenceIdGet"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdReferencesInvoiceReferenceIdPut"]=1
-    operations["apiV2InvoicingServiceInvoicesInvoiceIdReferencesPost"]=1
-    operations["apiV2InvoicingServiceInvoicesPost"]=1
-    operations["apiV2InvoicingServiceInvoicesTaxBasesAggregatePost"]=1
-    operations["apiV2InvoicingServiceInvoicesTaxesAggregatePost"]=1
-    operations["apiV2InvoicingServiceInvoicesTotalsAggregatePost"]=1
-    operations["getInvoiceAsync"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["aggregateInvoiceDiscounts"]=1
+    operations["aggregateInvoiceGlobalSurcharges"]=1
+    operations["aggregateInvoiceTaxBases"]=1
+    operations["aggregateInvoiceTaxes"]=1
+    operations["aggregateInvoiceTotals"]=1
+    operations["calculateInvoice"]=1
+    operations["calculateInvoiceLine"]=1
+    operations["createInvoice"]=1
+    operations["createInvoiceAdjustment"]=1
+    operations["createInvoiceLine"]=1
+    operations["createInvoiceLineTax"]=1
+    operations["createInvoiceReference"]=1
+    operations["deleteInvoice"]=1
+    operations["deleteInvoiceAdjustment"]=1
+    operations["deleteInvoiceLine"]=1
+    operations["deleteInvoiceLineTax"]=1
+    operations["deleteInvoiceReference"]=1
+    operations["getExtendedInvoice"]=1
+    operations["getExtendedInvoices"]=1
+    operations["getExtendedInvoicesCount"]=1
+    operations["getInvoice"]=1
+    operations["getInvoiceAdjustment"]=1
+    operations["getInvoiceAdjustments"]=1
+    operations["getInvoiceAdjustmentsCount"]=1
+    operations["getInvoiceLine"]=1
+    operations["getInvoiceLineTaxes"]=1
+    operations["getInvoiceLineTaxesCount"]=1
+    operations["getInvoiceLines"]=1
+    operations["getInvoiceLinesCount"]=1
+    operations["getInvoicePayments"]=1
+    operations["getInvoicePaymentsCount"]=1
+    operations["getInvoiceReference"]=1
+    operations["getInvoiceReferences"]=1
+    operations["getInvoiceReferencesCount"]=1
+    operations["getInvoices"]=1
+    operations["getInvoicesCount"]=1
+    operations["previewInvoiceEmail"]=1
+    operations["sendInvoiceEmail"]=1
+    operations["updateInvoice"]=1
+    operations["updateInvoiceAdjustment"]=1
+    operations["updateInvoiceLine"]=1
+    operations["updateInvoiceLineTax"]=1
+    operations["updateInvoiceReference"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2InvoicingServiceInvoicesCountGet"]="tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesDiscountsAggregatePost"]="currencyId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesExtendedCountGet"]="tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesExtendedGet"]="tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesGet"]="tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesGlobalSurchargesAggregatePost"]="currencyId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsCountGet"]="invoiceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsGet"]="invoiceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsInvoiceAdjustmentIdDelete"]="invoiceId= invoiceAdjustmentId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsInvoiceAdjustmentIdGet"]="invoiceId= invoiceAdjustmentId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsInvoiceAdjustmentIdPut"]="invoiceId= invoiceAdjustmentId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsPost"]="invoiceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdCalculatePut"]="invoiceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdDelete"]="invoiceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdExtendedGet"]="invoiceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdLinesCountGet"]="invoiceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdLinesGet"]="invoiceId= tenantId= itemId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdCalculatePut"]="invoiceId= invoiceLineId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdDelete"]="invoiceId= invoiceLineId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdGet"]="invoiceId= invoiceLineId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdPut"]="invoiceId= invoiceLineId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesCountGet"]="invoiceId= invoiceLineId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesGet"]="invoiceId= invoiceLineId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesInvoiceLineTaxIdDelete"]="invoiceId= invoiceLineId= invoiceLineTaxId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesInvoiceLineTaxIdPut"]="invoiceId= invoiceLineId= invoiceLineTaxId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesPost"]="invoiceId= invoiceLineId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdLinesPost"]="invoiceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdPaymentsCountGet"]="invoiceId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdPaymentsGet"]="invoiceId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdPut"]="invoiceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdReferencesCountGet"]="invoiceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdReferencesGet"]="invoiceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdReferencesInvoiceReferenceIdDelete"]="invoiceId= invoiceReferenceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdReferencesInvoiceReferenceIdGet"]="invoiceId= invoiceReferenceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdReferencesInvoiceReferenceIdPut"]="invoiceId= invoiceReferenceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesInvoiceIdReferencesPost"]="invoiceId= tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesPost"]="tenantId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesTaxBasesAggregatePost"]="currencyId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesTaxesAggregatePost"]="currencyId= "
-    operation_parameters["apiV2InvoicingServiceInvoicesTotalsAggregatePost"]="currencyId= "
-    operation_parameters["getInvoiceAsync"]="invoiceId= tenantId= "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["aggregateInvoiceDiscounts"]="currencyId= "
+    operation_parameters["aggregateInvoiceGlobalSurcharges"]="currencyId= "
+    operation_parameters["aggregateInvoiceTaxBases"]="currencyId= "
+    operation_parameters["aggregateInvoiceTaxes"]="currencyId= "
+    operation_parameters["aggregateInvoiceTotals"]="currencyId= "
+    operation_parameters["calculateInvoice"]="invoiceId= tenantId= "
+    operation_parameters["calculateInvoiceLine"]="invoiceId= invoiceLineId= tenantId= "
+    operation_parameters["createInvoice"]="tenantId= "
+    operation_parameters["createInvoiceAdjustment"]="invoiceId= tenantId= "
+    operation_parameters["createInvoiceLine"]="invoiceId= tenantId= "
+    operation_parameters["createInvoiceLineTax"]="invoiceId= invoiceLineId= tenantId= "
+    operation_parameters["createInvoiceReference"]="invoiceId= tenantId= "
+    operation_parameters["deleteInvoice"]="invoiceId= tenantId= "
+    operation_parameters["deleteInvoiceAdjustment"]="invoiceId= invoiceAdjustmentId= tenantId= "
+    operation_parameters["deleteInvoiceLine"]="invoiceId= invoiceLineId= tenantId= "
+    operation_parameters["deleteInvoiceLineTax"]="invoiceId= invoiceLineId= invoiceLineTaxId= tenantId= "
+    operation_parameters["deleteInvoiceReference"]="invoiceId= invoiceReferenceId= tenantId= "
+    operation_parameters["getExtendedInvoice"]="invoiceId= tenantId= "
+    operation_parameters["getExtendedInvoices"]="tenantId= "
+    operation_parameters["getExtendedInvoicesCount"]="tenantId= "
+    operation_parameters["getInvoice"]="invoiceId= tenantId= "
+    operation_parameters["getInvoiceAdjustment"]="invoiceId= invoiceAdjustmentId= tenantId= "
+    operation_parameters["getInvoiceAdjustments"]="invoiceId= tenantId= "
+    operation_parameters["getInvoiceAdjustmentsCount"]="invoiceId= tenantId= "
+    operation_parameters["getInvoiceLine"]="invoiceId= invoiceLineId= tenantId= "
+    operation_parameters["getInvoiceLineTaxes"]="invoiceId= invoiceLineId= tenantId= "
+    operation_parameters["getInvoiceLineTaxesCount"]="invoiceId= invoiceLineId= tenantId= "
+    operation_parameters["getInvoiceLines"]="invoiceId= tenantId= itemId= "
+    operation_parameters["getInvoiceLinesCount"]="invoiceId= tenantId= "
+    operation_parameters["getInvoicePayments"]="invoiceId= "
+    operation_parameters["getInvoicePaymentsCount"]="invoiceId= "
+    operation_parameters["getInvoiceReference"]="invoiceId= invoiceReferenceId= tenantId= "
+    operation_parameters["getInvoiceReferences"]="invoiceId= tenantId= "
+    operation_parameters["getInvoiceReferencesCount"]="invoiceId= tenantId= "
+    operation_parameters["getInvoices"]="tenantId= "
+    operation_parameters["getInvoicesCount"]="tenantId= "
+    operation_parameters["previewInvoiceEmail"]="invoiceId= tenantId= "
+    operation_parameters["sendInvoiceEmail"]="invoiceId= tenantId= "
+    operation_parameters["updateInvoice"]="invoiceId= tenantId= "
+    operation_parameters["updateInvoiceAdjustment"]="invoiceId= invoiceAdjustmentId= tenantId= "
+    operation_parameters["updateInvoiceLine"]="invoiceId= invoiceLineId= tenantId= "
+    operation_parameters["updateInvoiceLineTax"]="invoiceId= invoiceLineId= invoiceLineTaxId= tenantId= "
+    operation_parameters["updateInvoiceReference"]="invoiceId= invoiceReferenceId= tenantId= "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

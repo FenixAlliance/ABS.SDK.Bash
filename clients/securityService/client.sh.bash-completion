@@ -69,63 +69,155 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2SecurityServicePermissionsGet"]=1
-    operations["apiV2SecurityServicePermissionsPost"]=1
-    operations["apiV2SecurityServicePermissionsSecurityPermissionIdApplicationsApplicationIdDelete"]=1
-    operations["apiV2SecurityServicePermissionsSecurityPermissionIdApplicationsApplicationIdPost"]=1
-    operations["apiV2SecurityServicePermissionsSecurityPermissionIdDelete"]=1
-    operations["apiV2SecurityServicePermissionsSecurityPermissionIdEnrollmentsEnrollmentIdDelete"]=1
-    operations["apiV2SecurityServicePermissionsSecurityPermissionIdEnrollmentsEnrollmentIdPost"]=1
-    operations["apiV2SecurityServicePermissionsSecurityPermissionIdEnrollmentsGet"]=1
-    operations["apiV2SecurityServicePermissionsSecurityPermissionIdGet"]=1
-    operations["apiV2SecurityServicePermissionsSecurityPermissionIdPut"]=1
-    operations["apiV2SecurityServicePermissionsSecurityPermissionIdRolesSecurityRoleIdDelete"]=1
-    operations["apiV2SecurityServicePermissionsSecurityPermissionIdRolesSecurityRoleIdPost"]=1
-    operations["apiV2SecurityServiceRolesGet"]=1
-    operations["apiV2SecurityServiceRolesPost"]=1
-    operations["apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdDelete"]=1
-    operations["apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdPost"]=1
-    operations["apiV2SecurityServiceRolesSecurityRoleIdDelete"]=1
-    operations["apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdDelete"]=1
-    operations["apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdPost"]=1
-    operations["apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsGet"]=1
-    operations["apiV2SecurityServiceRolesSecurityRoleIdGet"]=1
-    operations["apiV2SecurityServiceRolesSecurityRoleIdPermissionsGet"]=1
-    operations["apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdDelete"]=1
-    operations["apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdPost"]=1
-    operations["apiV2SecurityServiceRolesSecurityRoleIdPut"]=1
+    operations["createBusinessApplicationAsync"]=1
+    operations["deleteBusinessApplicationAsync"]=1
+    operations["getBusinessApplicationByIdAsync"]=1
+    operations["getBusinessApplicationsAsync"]=1
+    operations["getBusinessApplicationsCountAsync"]=1
+    operations["updateBusinessApplicationAsync"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["getLogsAsync"]=1
+    operations["getLogsCountAsync"]=1
+    operations["createOAuthApplicationAsync"]=1
+    operations["deleteOAuthApplicationAsync"]=1
+    operations["getOAuthApplicationByIdAsync"]=1
+    operations["getOAuthApplicationsAsync"]=1
+    operations["getOAuthApplicationsCountAsync"]=1
+    operations["getOAuthAuthorizationByIdAsync"]=1
+    operations["getOAuthAuthorizationsAsync"]=1
+    operations["getOAuthAuthorizationsCountAsync"]=1
+    operations["updateOAuthApplicationAsync"]=1
+    operations["assignPermissionToBusinessApplicationAsync"]=1
+    operations["assignPermissionToEnrollmentAsync"]=1
+    operations["assignRoleToPermissionAsync"]=1
+    operations["createPermissionAsync"]=1
+    operations["deletePermissionAsync"]=1
+    operations["getApplicationsByPermissionAsync"]=1
+    operations["getEnrollmentsByPermissionAsync"]=1
+    operations["getPermissionAsync"]=1
+    operations["getPermissionsAsync"]=1
+    operations["getPermissionsByEnrollmentAsync"]=1
+    operations["getPermissionsCountAsync"]=1
+    operations["getRolesByPermissionAsync"]=1
+    operations["revokePermissionFromBusinessApplicationAsync"]=1
+    operations["revokePermissionFromEnrollmentAsync"]=1
+    operations["revokeRoleFromPermissionAsync"]=1
+    operations["updatePermissionAsync"]=1
+    operations["assignPermissionToRoleAsync"]=1
+    operations["assignRoleToBusinessApplicationAsync"]=1
+    operations["assignRoleToEnrollmentAsync"]=1
+    operations["createRoleAsync"]=1
+    operations["deleteRoleAsync"]=1
+    operations["getApplicationsByRoleAsync"]=1
+    operations["getEnrollmentsByRoleAsync"]=1
+    operations["getRoleAsync"]=1
+    operations["getRolePermissionsAsync"]=1
+    operations["getRolesAsync"]=1
+    operations["getRolesByEnrollmentAsync"]=1
+    operations["getRolesCountAsync"]=1
+    operations["revokePermissionFromRoleAsync"]=1
+    operations["revokeRoleFromBusinessApplicationAsync"]=1
+    operations["revokeRoleFromEnrollmentAsync"]=1
+    operations["updateRoleAsync"]=1
+    operations["getSecurityCertificatesAsync"]=1
+    operations["getSecurityCertificatesCountAsync"]=1
+    operations["getSecurityLogsAsync"]=1
+    operations["getSecurityLogsCountAsync"]=1
+    operations["getWebhookRequestsAsync"]=1
+    operations["getWebhookRequestsCountAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2SecurityServicePermissionsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServicePermissionsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServicePermissionsSecurityPermissionIdApplicationsApplicationIdDelete"]="securityPermissionId= applicationId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServicePermissionsSecurityPermissionIdApplicationsApplicationIdPost"]="securityPermissionId= applicationId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServicePermissionsSecurityPermissionIdDelete"]="securityPermissionId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServicePermissionsSecurityPermissionIdEnrollmentsEnrollmentIdDelete"]="securityPermissionId= enrollmentId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServicePermissionsSecurityPermissionIdEnrollmentsEnrollmentIdPost"]="securityPermissionId= enrollmentId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServicePermissionsSecurityPermissionIdEnrollmentsGet"]="securityPermissionId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServicePermissionsSecurityPermissionIdGet"]="securityPermissionId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServicePermissionsSecurityPermissionIdPut"]="securityPermissionId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServicePermissionsSecurityPermissionIdRolesSecurityRoleIdDelete"]="securityPermissionId= securityRoleId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServicePermissionsSecurityPermissionIdRolesSecurityRoleIdPost"]="securityPermissionId= securityRoleId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdDelete"]="securityRoleId= applicationId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdPost"]="securityRoleId= applicationId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesSecurityRoleIdDelete"]="securityRoleId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdDelete"]="securityRoleId= enrollmentId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdPost"]="securityRoleId= enrollmentId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsGet"]="securityRoleId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesSecurityRoleIdGet"]="securityRoleId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesSecurityRoleIdPermissionsGet"]="securityRoleId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdDelete"]="securityRoleId= securityPermissionId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdPost"]="securityRoleId= securityPermissionId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SecurityServiceRolesSecurityRoleIdPut"]="securityRoleId= tenantId= api-version= x-api-version: "
+    operation_parameters["createBusinessApplicationAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteBusinessApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBusinessApplicationByIdAsync"]="applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBusinessApplicationsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getBusinessApplicationsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateBusinessApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["getLogsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getLogsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createOAuthApplicationAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteOAuthApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getOAuthApplicationByIdAsync"]="applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getOAuthApplicationsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getOAuthApplicationsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getOAuthAuthorizationByIdAsync"]="authorizationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getOAuthAuthorizationsAsync"]="tenantId= userId= api-version= x-api-version: "
+    operation_parameters["getOAuthAuthorizationsCountAsync"]="tenantId= userId= api-version= x-api-version: "
+    operation_parameters["updateOAuthApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["assignPermissionToBusinessApplicationAsync"]="securityPermissionId= applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["assignPermissionToEnrollmentAsync"]="securityPermissionId= enrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["assignRoleToPermissionAsync"]="securityPermissionId= securityRoleId= tenantId= api-version= x-api-version: "
+    operation_parameters["createPermissionAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deletePermissionAsync"]="securityPermissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getApplicationsByPermissionAsync"]="securityPermissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getEnrollmentsByPermissionAsync"]="securityPermissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPermissionAsync"]="securityPermissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPermissionsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getPermissionsByEnrollmentAsync"]="enrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPermissionsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getRolesByPermissionAsync"]="securityPermissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["revokePermissionFromBusinessApplicationAsync"]="securityPermissionId= applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["revokePermissionFromEnrollmentAsync"]="securityPermissionId= enrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["revokeRoleFromPermissionAsync"]="securityPermissionId= securityRoleId= tenantId= api-version= x-api-version: "
+    operation_parameters["updatePermissionAsync"]="securityPermissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["assignPermissionToRoleAsync"]="securityRoleId= securityPermissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["assignRoleToBusinessApplicationAsync"]="securityRoleId= applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["assignRoleToEnrollmentAsync"]="securityRoleId= enrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["createRoleAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteRoleAsync"]="securityRoleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getApplicationsByRoleAsync"]="securityRoleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getEnrollmentsByRoleAsync"]="securityRoleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getRoleAsync"]="securityRoleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getRolePermissionsAsync"]="securityRoleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getRolesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getRolesByEnrollmentAsync"]="enrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getRolesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["revokePermissionFromRoleAsync"]="securityRoleId= securityPermissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["revokeRoleFromBusinessApplicationAsync"]="securityRoleId= applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["revokeRoleFromEnrollmentAsync"]="securityRoleId= enrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateRoleAsync"]="securityRoleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSecurityCertificatesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getSecurityCertificatesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getSecurityLogsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getSecurityLogsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getWebhookRequestsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getWebhookRequestsCountAsync"]="tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

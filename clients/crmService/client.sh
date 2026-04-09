@@ -96,7 +96,7 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
-operation_parameters_minimum_occurrences["createContactAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createContactAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["createContactAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createContactAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createContactAsync:::ContactCreateDto"]=0
@@ -188,6 +188,14 @@ operation_parameters_minimum_occurrences["patchContactAsync:::contactId"]=1
 operation_parameters_minimum_occurrences["patchContactAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchContactAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchContactAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["previewContactEmailTemplate:::contactId"]=1
+operation_parameters_minimum_occurrences["previewContactEmailTemplate:::api-version"]=0
+operation_parameters_minimum_occurrences["previewContactEmailTemplate:::x-api-version"]=0
+operation_parameters_minimum_occurrences["previewContactEmailTemplate:::EmailDispatchRequest"]=0
+operation_parameters_minimum_occurrences["sendContactEmail:::contactId"]=1
+operation_parameters_minimum_occurrences["sendContactEmail:::api-version"]=0
+operation_parameters_minimum_occurrences["sendContactEmail:::x-api-version"]=0
+operation_parameters_minimum_occurrences["sendContactEmail:::EmailDispatchRequest"]=0
 operation_parameters_minimum_occurrences["updateContactAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateContactAsync:::contactId"]=1
 operation_parameters_minimum_occurrences["updateContactAsync:::api-version"]=0
@@ -206,20 +214,79 @@ operation_parameters_minimum_occurrences["upsertUserOntoAnotherTenantContactList
 operation_parameters_minimum_occurrences["upsertUserOntoAnotherTenantContactListAsync:::relatedUserId"]=1
 operation_parameters_minimum_occurrences["upsertUserOntoAnotherTenantContactListAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["upsertUserOntoAnotherTenantContactListAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncMePost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncMePost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncMePost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncTenantPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncTenantPost:::relatedTenantId"]=1
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncTenantPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncTenantPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncUserPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncUserPost:::relatedUserId"]=1
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncUserPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2CrmServiceSyncUserPost:::x-api-version"]=0
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["createContactOption:::tenantId"]=1
+operation_parameters_minimum_occurrences["createContactOption:::contactId"]=1
+operation_parameters_minimum_occurrences["createContactOption:::key"]=1
+operation_parameters_minimum_occurrences["createContactOption:::portalId"]=0
+operation_parameters_minimum_occurrences["createContactOption:::api-version"]=0
+operation_parameters_minimum_occurrences["createContactOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createContactOption:::OptionCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteContactOption:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteContactOption:::contactId"]=1
+operation_parameters_minimum_occurrences["deleteContactOption:::optionId"]=1
+operation_parameters_minimum_occurrences["deleteContactOption:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteContactOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactOptionById:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactOptionById:::contactId"]=1
+operation_parameters_minimum_occurrences["getContactOptionById:::optionId"]=1
+operation_parameters_minimum_occurrences["getContactOptionById:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactOptionById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactOptionByKey:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactOptionByKey:::contactId"]=1
+operation_parameters_minimum_occurrences["getContactOptionByKey:::key"]=1
+operation_parameters_minimum_occurrences["getContactOptionByKey:::portalId"]=0
+operation_parameters_minimum_occurrences["getContactOptionByKey:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactOptionByKey:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactOptions:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactOptions:::contactId"]=1
+operation_parameters_minimum_occurrences["getContactOptions:::portalId"]=0
+operation_parameters_minimum_occurrences["getContactOptions:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactOptions:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactOptionsCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactOptionsCount:::contactId"]=1
+operation_parameters_minimum_occurrences["getContactOptionsCount:::portalId"]=0
+operation_parameters_minimum_occurrences["getContactOptionsCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateContactOption:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateContactOption:::contactId"]=1
+operation_parameters_minimum_occurrences["updateContactOption:::optionId"]=1
+operation_parameters_minimum_occurrences["updateContactOption:::api-version"]=0
+operation_parameters_minimum_occurrences["updateContactOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateContactOption:::OptionUpdateDto"]=0
+operation_parameters_minimum_occurrences["upsertContactOption:::tenantId"]=1
+operation_parameters_minimum_occurrences["upsertContactOption:::contactId"]=1
+operation_parameters_minimum_occurrences["upsertContactOption:::key"]=1
+operation_parameters_minimum_occurrences["upsertContactOption:::portalId"]=0
+operation_parameters_minimum_occurrences["upsertContactOption:::api-version"]=0
+operation_parameters_minimum_occurrences["upsertContactOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["upsertContactOption:::OptionUpdateDto"]=0
+operation_parameters_minimum_occurrences["syncCurrentHolderToCurrentTenantCrm:::tenantId"]=1
+operation_parameters_minimum_occurrences["syncCurrentHolderToCurrentTenantCrm:::api-version"]=0
+operation_parameters_minimum_occurrences["syncCurrentHolderToCurrentTenantCrm:::x-api-version"]=0
+operation_parameters_minimum_occurrences["syncCurrentHolderToTenantCrm:::tenantId"]=1
+operation_parameters_minimum_occurrences["syncCurrentHolderToTenantCrm:::api-version"]=0
+operation_parameters_minimum_occurrences["syncCurrentHolderToTenantCrm:::x-api-version"]=0
+operation_parameters_minimum_occurrences["syncHolderToTenantCrmAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["syncHolderToTenantCrmAsync:::relatedUserId"]=1
+operation_parameters_minimum_occurrences["syncHolderToTenantCrmAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["syncHolderToTenantCrmAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["syncTenantToTenantCrm:::tenantId"]=1
+operation_parameters_minimum_occurrences["syncTenantToTenantCrm:::relatedTenantId"]=1
+operation_parameters_minimum_occurrences["syncTenantToTenantCrm:::api-version"]=0
+operation_parameters_minimum_occurrences["syncTenantToTenantCrm:::x-api-version"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -320,6 +387,14 @@ operation_parameters_maximum_occurrences["patchContactAsync:::contactId"]=0
 operation_parameters_maximum_occurrences["patchContactAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchContactAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchContactAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["previewContactEmailTemplate:::contactId"]=0
+operation_parameters_maximum_occurrences["previewContactEmailTemplate:::api-version"]=0
+operation_parameters_maximum_occurrences["previewContactEmailTemplate:::x-api-version"]=0
+operation_parameters_maximum_occurrences["previewContactEmailTemplate:::EmailDispatchRequest"]=0
+operation_parameters_maximum_occurrences["sendContactEmail:::contactId"]=0
+operation_parameters_maximum_occurrences["sendContactEmail:::api-version"]=0
+operation_parameters_maximum_occurrences["sendContactEmail:::x-api-version"]=0
+operation_parameters_maximum_occurrences["sendContactEmail:::EmailDispatchRequest"]=0
 operation_parameters_maximum_occurrences["updateContactAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateContactAsync:::contactId"]=0
 operation_parameters_maximum_occurrences["updateContactAsync:::api-version"]=0
@@ -338,20 +413,79 @@ operation_parameters_maximum_occurrences["upsertUserOntoAnotherTenantContactList
 operation_parameters_maximum_occurrences["upsertUserOntoAnotherTenantContactListAsync:::relatedUserId"]=0
 operation_parameters_maximum_occurrences["upsertUserOntoAnotherTenantContactListAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["upsertUserOntoAnotherTenantContactListAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncMePost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncMePost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncMePost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncTenantPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncTenantPost:::relatedTenantId"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncTenantPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncTenantPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncUserPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncUserPost:::relatedUserId"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncUserPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2CrmServiceSyncUserPost:::x-api-version"]=0
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["createContactOption:::tenantId"]=0
+operation_parameters_maximum_occurrences["createContactOption:::contactId"]=0
+operation_parameters_maximum_occurrences["createContactOption:::key"]=0
+operation_parameters_maximum_occurrences["createContactOption:::portalId"]=0
+operation_parameters_maximum_occurrences["createContactOption:::api-version"]=0
+operation_parameters_maximum_occurrences["createContactOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createContactOption:::OptionCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteContactOption:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteContactOption:::contactId"]=0
+operation_parameters_maximum_occurrences["deleteContactOption:::optionId"]=0
+operation_parameters_maximum_occurrences["deleteContactOption:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteContactOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactOptionById:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactOptionById:::contactId"]=0
+operation_parameters_maximum_occurrences["getContactOptionById:::optionId"]=0
+operation_parameters_maximum_occurrences["getContactOptionById:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactOptionById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactOptionByKey:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactOptionByKey:::contactId"]=0
+operation_parameters_maximum_occurrences["getContactOptionByKey:::key"]=0
+operation_parameters_maximum_occurrences["getContactOptionByKey:::portalId"]=0
+operation_parameters_maximum_occurrences["getContactOptionByKey:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactOptionByKey:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactOptions:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactOptions:::contactId"]=0
+operation_parameters_maximum_occurrences["getContactOptions:::portalId"]=0
+operation_parameters_maximum_occurrences["getContactOptions:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactOptions:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactOptionsCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactOptionsCount:::contactId"]=0
+operation_parameters_maximum_occurrences["getContactOptionsCount:::portalId"]=0
+operation_parameters_maximum_occurrences["getContactOptionsCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateContactOption:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateContactOption:::contactId"]=0
+operation_parameters_maximum_occurrences["updateContactOption:::optionId"]=0
+operation_parameters_maximum_occurrences["updateContactOption:::api-version"]=0
+operation_parameters_maximum_occurrences["updateContactOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateContactOption:::OptionUpdateDto"]=0
+operation_parameters_maximum_occurrences["upsertContactOption:::tenantId"]=0
+operation_parameters_maximum_occurrences["upsertContactOption:::contactId"]=0
+operation_parameters_maximum_occurrences["upsertContactOption:::key"]=0
+operation_parameters_maximum_occurrences["upsertContactOption:::portalId"]=0
+operation_parameters_maximum_occurrences["upsertContactOption:::api-version"]=0
+operation_parameters_maximum_occurrences["upsertContactOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["upsertContactOption:::OptionUpdateDto"]=0
+operation_parameters_maximum_occurrences["syncCurrentHolderToCurrentTenantCrm:::tenantId"]=0
+operation_parameters_maximum_occurrences["syncCurrentHolderToCurrentTenantCrm:::api-version"]=0
+operation_parameters_maximum_occurrences["syncCurrentHolderToCurrentTenantCrm:::x-api-version"]=0
+operation_parameters_maximum_occurrences["syncCurrentHolderToTenantCrm:::tenantId"]=0
+operation_parameters_maximum_occurrences["syncCurrentHolderToTenantCrm:::api-version"]=0
+operation_parameters_maximum_occurrences["syncCurrentHolderToTenantCrm:::x-api-version"]=0
+operation_parameters_maximum_occurrences["syncHolderToTenantCrmAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["syncHolderToTenantCrmAsync:::relatedUserId"]=0
+operation_parameters_maximum_occurrences["syncHolderToTenantCrmAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["syncHolderToTenantCrmAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["syncTenantToTenantCrm:::tenantId"]=0
+operation_parameters_maximum_occurrences["syncTenantToTenantCrm:::relatedTenantId"]=0
+operation_parameters_maximum_occurrences["syncTenantToTenantCrm:::api-version"]=0
+operation_parameters_maximum_occurrences["syncTenantToTenantCrm:::x-api-version"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
@@ -449,6 +583,14 @@ operation_parameters_collection_type["patchContactAsync:::contactId"]=""
 operation_parameters_collection_type["patchContactAsync:::api-version"]=""
 operation_parameters_collection_type["patchContactAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchContactAsync:::Operation"]=
+operation_parameters_collection_type["previewContactEmailTemplate:::contactId"]=""
+operation_parameters_collection_type["previewContactEmailTemplate:::api-version"]=""
+operation_parameters_collection_type["previewContactEmailTemplate:::x-api-version"]=""
+operation_parameters_collection_type["previewContactEmailTemplate:::EmailDispatchRequest"]=""
+operation_parameters_collection_type["sendContactEmail:::contactId"]=""
+operation_parameters_collection_type["sendContactEmail:::api-version"]=""
+operation_parameters_collection_type["sendContactEmail:::x-api-version"]=""
+operation_parameters_collection_type["sendContactEmail:::EmailDispatchRequest"]=""
 operation_parameters_collection_type["updateContactAsync:::tenantId"]=""
 operation_parameters_collection_type["updateContactAsync:::contactId"]=""
 operation_parameters_collection_type["updateContactAsync:::api-version"]=""
@@ -467,20 +609,79 @@ operation_parameters_collection_type["upsertUserOntoAnotherTenantContactListAsyn
 operation_parameters_collection_type["upsertUserOntoAnotherTenantContactListAsync:::relatedUserId"]=""
 operation_parameters_collection_type["upsertUserOntoAnotherTenantContactListAsync:::api-version"]=""
 operation_parameters_collection_type["upsertUserOntoAnotherTenantContactListAsync:::x-api-version"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncMePost:::tenantId"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncMePost:::api-version"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncMePost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncPost:::api-version"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncTenantPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncTenantPost:::relatedTenantId"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncTenantPost:::api-version"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncTenantPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncUserPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncUserPost:::relatedUserId"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncUserPost:::api-version"]=""
-operation_parameters_collection_type["apiV2CrmServiceSyncUserPost:::x-api-version"]=""
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["createContactOption:::tenantId"]=""
+operation_parameters_collection_type["createContactOption:::contactId"]=""
+operation_parameters_collection_type["createContactOption:::key"]=""
+operation_parameters_collection_type["createContactOption:::portalId"]=""
+operation_parameters_collection_type["createContactOption:::api-version"]=""
+operation_parameters_collection_type["createContactOption:::x-api-version"]=""
+operation_parameters_collection_type["createContactOption:::OptionCreateDto"]=""
+operation_parameters_collection_type["deleteContactOption:::tenantId"]=""
+operation_parameters_collection_type["deleteContactOption:::contactId"]=""
+operation_parameters_collection_type["deleteContactOption:::optionId"]=""
+operation_parameters_collection_type["deleteContactOption:::api-version"]=""
+operation_parameters_collection_type["deleteContactOption:::x-api-version"]=""
+operation_parameters_collection_type["getContactOptionById:::tenantId"]=""
+operation_parameters_collection_type["getContactOptionById:::contactId"]=""
+operation_parameters_collection_type["getContactOptionById:::optionId"]=""
+operation_parameters_collection_type["getContactOptionById:::api-version"]=""
+operation_parameters_collection_type["getContactOptionById:::x-api-version"]=""
+operation_parameters_collection_type["getContactOptionByKey:::tenantId"]=""
+operation_parameters_collection_type["getContactOptionByKey:::contactId"]=""
+operation_parameters_collection_type["getContactOptionByKey:::key"]=""
+operation_parameters_collection_type["getContactOptionByKey:::portalId"]=""
+operation_parameters_collection_type["getContactOptionByKey:::api-version"]=""
+operation_parameters_collection_type["getContactOptionByKey:::x-api-version"]=""
+operation_parameters_collection_type["getContactOptions:::tenantId"]=""
+operation_parameters_collection_type["getContactOptions:::contactId"]=""
+operation_parameters_collection_type["getContactOptions:::portalId"]=""
+operation_parameters_collection_type["getContactOptions:::api-version"]=""
+operation_parameters_collection_type["getContactOptions:::x-api-version"]=""
+operation_parameters_collection_type["getContactOptionsCount:::tenantId"]=""
+operation_parameters_collection_type["getContactOptionsCount:::contactId"]=""
+operation_parameters_collection_type["getContactOptionsCount:::portalId"]=""
+operation_parameters_collection_type["getContactOptionsCount:::api-version"]=""
+operation_parameters_collection_type["getContactOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["updateContactOption:::tenantId"]=""
+operation_parameters_collection_type["updateContactOption:::contactId"]=""
+operation_parameters_collection_type["updateContactOption:::optionId"]=""
+operation_parameters_collection_type["updateContactOption:::api-version"]=""
+operation_parameters_collection_type["updateContactOption:::x-api-version"]=""
+operation_parameters_collection_type["updateContactOption:::OptionUpdateDto"]=""
+operation_parameters_collection_type["upsertContactOption:::tenantId"]=""
+operation_parameters_collection_type["upsertContactOption:::contactId"]=""
+operation_parameters_collection_type["upsertContactOption:::key"]=""
+operation_parameters_collection_type["upsertContactOption:::portalId"]=""
+operation_parameters_collection_type["upsertContactOption:::api-version"]=""
+operation_parameters_collection_type["upsertContactOption:::x-api-version"]=""
+operation_parameters_collection_type["upsertContactOption:::OptionUpdateDto"]=""
+operation_parameters_collection_type["syncCurrentHolderToCurrentTenantCrm:::tenantId"]=""
+operation_parameters_collection_type["syncCurrentHolderToCurrentTenantCrm:::api-version"]=""
+operation_parameters_collection_type["syncCurrentHolderToCurrentTenantCrm:::x-api-version"]=""
+operation_parameters_collection_type["syncCurrentHolderToTenantCrm:::tenantId"]=""
+operation_parameters_collection_type["syncCurrentHolderToTenantCrm:::api-version"]=""
+operation_parameters_collection_type["syncCurrentHolderToTenantCrm:::x-api-version"]=""
+operation_parameters_collection_type["syncHolderToTenantCrmAsync:::tenantId"]=""
+operation_parameters_collection_type["syncHolderToTenantCrmAsync:::relatedUserId"]=""
+operation_parameters_collection_type["syncHolderToTenantCrmAsync:::api-version"]=""
+operation_parameters_collection_type["syncHolderToTenantCrmAsync:::x-api-version"]=""
+operation_parameters_collection_type["syncTenantToTenantCrm:::tenantId"]=""
+operation_parameters_collection_type["syncTenantToTenantCrm:::relatedTenantId"]=""
+operation_parameters_collection_type["syncTenantToTenantCrm:::api-version"]=""
+operation_parameters_collection_type["syncTenantToTenantCrm:::x-api-version"]=""
 
 
 ##
@@ -501,9 +702,6 @@ host=""
 # The user credentials for basic authentication
 basic_auth_credential=""
 
-##
-# The user API key
-apikey_auth_credential=""
 
 ##
 # If true, the script will only output the actual cURL command that would be
@@ -606,23 +804,10 @@ lookup_mime_type() {
 ##############################################################################
 header_arguments_to_curl() {
     local headers_curl=""
-    local api_key_header=""
-    local api_key_header_in_cli=""
-    api_key_header="Authorization"
 
     for key in "${!header_arguments[@]}"; do
         headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
-        if [[ "${key}XX" == "${api_key_header}XX" ]]; then
-            api_key_header_in_cli="YES"
-        fi
     done
-    #
-    # If the api_key was not provided in the header, try one from the
-    # environment variable
-    #
-    if [[ -z $api_key_header_in_cli && -n $apikey_auth_credential ]]; then
-        headers_curl+="-H \"${api_key_header}: ${apikey_auth_credential}\""
-    fi
     headers_curl+=" "
 
     echo "${headers_curl}"
@@ -854,7 +1039,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}CrmService command line client (API version 2.0.1.4089)${OFF}
+${BOLD}${WHITE}CrmService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -881,53 +1066,81 @@ ${BOLD}${WHITE}Usage${OFF}
                                       JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
 
 EOF
-    echo -e "${BOLD}${WHITE}Authentication methods${OFF}"
-    echo -e ""
-    echo -e "  - ${BLUE}Api-key${OFF} - add '${RED}Authorization:<api-key>${OFF}' after ${YELLOW}<operation>${OFF}"
-    
-    echo ""
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
     echo -e "${BOLD}${WHITE}[contacts]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}createContactAsync${OFF};Create a new contact (AUTH)
-  ${CYAN}deleteContactAsync${OFF};Delete a contact (AUTH)
-  ${CYAN}getBusinessOwnedIndividualAsync${OFF};Get a Contact of type Individual by ID (AUTH)
-  ${CYAN}getBusinessOwnedIndividualsAsync${OFF};Get all contacts of type individual (AUTH)
-  ${CYAN}getBusinessOwnedIndividualsCountAsync${OFF};Get all contacts of type individual count (AUTH)
-  ${CYAN}getBusinessOwnedOrganizationAsync${OFF};Get a Contact of type Organization by ID (AUTH)
-  ${CYAN}getBusinessOwnedOrganizationsAsync${OFF};Get all contacts of type organization (AUTH)
-  ${CYAN}getBusinessOwnedOrganizationsCountAsync${OFF};Get all contacts of type organization count (AUTH)
-  ${CYAN}getContactAsync${OFF};Get a contact by ID (AUTH)
-  ${CYAN}getContactAvatarAsync${OFF};Get a contact's avatar (AUTH)
-  ${CYAN}getContactCartAsync${OFF};Get a contact's cart (AUTH)
-  ${CYAN}getContactProfilesAsync${OFF};Get a contact's social profiles (AUTH)
-  ${CYAN}getContactSocialProfileAsync${OFF};Get a contact's social profile (AUTH)
-  ${CYAN}getContactWalletAsync${OFF};Get a contact's wallet (AUTH)
-  ${CYAN}getContactsAsync${OFF};Get all business owned contacts (AUTH)
-  ${CYAN}getContactsCountAsync${OFF};Get all business owned contacts count (AUTH)
-  ${CYAN}getExtendedBusinessOwnedIndividualsAsync${OFF};Get all contacts of type individual (AUTH)
-  ${CYAN}getExtendedBusinessOwnedOrganizationsAsync${OFF};Get all contacts of type organization (AUTH)
-  ${CYAN}getExtendedContactAsync${OFF};Get a contact by ID (AUTH)
-  ${CYAN}getExtendedContactsAsync${OFF};Get all business owned contacts (AUTH)
-  ${CYAN}getIndividualRelatedIndividualsAsync${OFF};Get individual related individuals (AUTH)
-  ${CYAN}getIndividualRelatedOrganizationsAsync${OFF};Get individual related organizations (AUTH)
-  ${CYAN}getOrganizationRelatedIndividualsAsync${OFF};Get organization related individuals (AUTH)
-  ${CYAN}getOrganizationRelatedOrganizationsAsync${OFF};Get organization related organizations (AUTH)
-  ${CYAN}patchContactAsync${OFF};Patch a contact (AUTH)
-  ${CYAN}updateContactAsync${OFF};Update a contact (AUTH)
-  ${CYAN}updateContactAvatarAsync${OFF};Update a contact's avatar (AUTH)
-  ${CYAN}upsertTenantOntoAnotherTenantContactListAsync${OFF};Upsert a tenant onto another tenant's contact list (AUTH)
-  ${CYAN}upsertUserOntoAnotherTenantContactListAsync${OFF};Upsert a user onto a tenant's contact list (AUTH)
+  ${CYAN}createContactAsync${OFF};Create a new contact
+  ${CYAN}deleteContactAsync${OFF};Delete a contact
+  ${CYAN}getBusinessOwnedIndividualAsync${OFF};Get a Contact of type Individual by ID
+  ${CYAN}getBusinessOwnedIndividualsAsync${OFF};Get all contacts of type individual
+  ${CYAN}getBusinessOwnedIndividualsCountAsync${OFF};Get all contacts of type individual count
+  ${CYAN}getBusinessOwnedOrganizationAsync${OFF};Get a Contact of type Organization by ID
+  ${CYAN}getBusinessOwnedOrganizationsAsync${OFF};Get all contacts of type organization
+  ${CYAN}getBusinessOwnedOrganizationsCountAsync${OFF};Get all contacts of type organization count
+  ${CYAN}getContactAsync${OFF};Get a contact by ID
+  ${CYAN}getContactAvatarAsync${OFF};Get a contact's avatar
+  ${CYAN}getContactCartAsync${OFF};Get a contact's cart
+  ${CYAN}getContactProfilesAsync${OFF};Get a contact's social profiles
+  ${CYAN}getContactSocialProfileAsync${OFF};Get a contact's social profile
+  ${CYAN}getContactWalletAsync${OFF};Get a contact's wallet
+  ${CYAN}getContactsAsync${OFF};Get all business owned contacts
+  ${CYAN}getContactsCountAsync${OFF};Get all business owned contacts count
+  ${CYAN}getExtendedBusinessOwnedIndividualsAsync${OFF};Get all contacts of type individual
+  ${CYAN}getExtendedBusinessOwnedOrganizationsAsync${OFF};Get all contacts of type organization
+  ${CYAN}getExtendedContactAsync${OFF};Get a contact by ID
+  ${CYAN}getExtendedContactsAsync${OFF};Get all business owned contacts
+  ${CYAN}getIndividualRelatedIndividualsAsync${OFF};Get individual related individuals
+  ${CYAN}getIndividualRelatedOrganizationsAsync${OFF};Get individual related organizations
+  ${CYAN}getOrganizationRelatedIndividualsAsync${OFF};Get organization related individuals
+  ${CYAN}getOrganizationRelatedOrganizationsAsync${OFF};Get organization related organizations
+  ${CYAN}patchContactAsync${OFF};Patch a contact
+  ${CYAN}previewContactEmailTemplate${OFF};Preview the rendered email for a contact.
+  ${CYAN}sendContactEmail${OFF};Send an email to a contact.
+  ${CYAN}updateContactAsync${OFF};Update a contact
+  ${CYAN}updateContactAvatarAsync${OFF};Update a contact's avatar
+  ${CYAN}upsertTenantOntoAnotherTenantContactListAsync${OFF};Upsert a tenant onto another tenant's contact list
+  ${CYAN}upsertUserOntoAnotherTenantContactListAsync${OFF};Upsert a user onto a tenant's contact list
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[options]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createContactOption${OFF};Create a new contact option
+  ${CYAN}deleteContactOption${OFF};Delete a contact option
+  ${CYAN}getContactOptionById${OFF};Retrieve a single contact option by its ID
+  ${CYAN}getContactOptionByKey${OFF};Retrieve a single contact option by its key
+  ${CYAN}getContactOptions${OFF};Retrieve a list of contact options
+  ${CYAN}getContactOptionsCount${OFF};Get the count of contact options
+  ${CYAN}updateContactOption${OFF};Update a contact option
+  ${CYAN}upsertContactOption${OFF};Create or update a contact option by key
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[sync]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2CrmServiceSyncMePost${OFF}; (AUTH)
-  ${CYAN}apiV2CrmServiceSyncPost${OFF}; (AUTH)
-  ${CYAN}apiV2CrmServiceSyncTenantPost${OFF}; (AUTH)
-  ${CYAN}apiV2CrmServiceSyncUserPost${OFF}; (AUTH)
+  ${CYAN}syncCurrentHolderToCurrentTenantCrm${OFF};Sync the current user into the current tenant's contact list
+  ${CYAN}syncCurrentHolderToTenantCrm${OFF};Sync the current user into a tenant's contact list
+  ${CYAN}syncHolderToTenantCrmAsync${OFF};Sync a user into a tenant's contact list
+  ${CYAN}syncTenantToTenantCrm${OFF};Sync a tenant into another tenant's contact list
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -957,7 +1170,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}CrmService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}${WHITE}CrmService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -977,7 +1190,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}CrmService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}CrmService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
@@ -988,12 +1201,12 @@ print_version() {
 ##############################################################################
 print_createContactAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createContactAsync - Create a new contact${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createContactAsync - Create a new contact${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Create a new contact" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1016,7 +1229,7 @@ print_createContactAsync_help() {
 ##############################################################################
 print_deleteContactAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteContactAsync - Delete a contact${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteContactAsync - Delete a contact${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Delete a contact" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1043,7 +1256,7 @@ print_deleteContactAsync_help() {
 ##############################################################################
 print_getBusinessOwnedIndividualAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBusinessOwnedIndividualAsync - Get a Contact of type Individual by ID${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBusinessOwnedIndividualAsync - Get a Contact of type Individual by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get a Contact of type Individual by ID" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1072,7 +1285,7 @@ print_getBusinessOwnedIndividualAsync_help() {
 ##############################################################################
 print_getBusinessOwnedIndividualsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBusinessOwnedIndividualsAsync - Get all contacts of type individual${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBusinessOwnedIndividualsAsync - Get all contacts of type individual${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get all contacts of type individual" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1098,7 +1311,7 @@ print_getBusinessOwnedIndividualsAsync_help() {
 ##############################################################################
 print_getBusinessOwnedIndividualsCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBusinessOwnedIndividualsCountAsync - Get all contacts of type individual count${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBusinessOwnedIndividualsCountAsync - Get all contacts of type individual count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get all contacts of type individual count" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1124,7 +1337,7 @@ print_getBusinessOwnedIndividualsCountAsync_help() {
 ##############################################################################
 print_getBusinessOwnedOrganizationAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBusinessOwnedOrganizationAsync - Get a Contact of type Organization by ID${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBusinessOwnedOrganizationAsync - Get a Contact of type Organization by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get a Contact of type Organization by ID" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1153,7 +1366,7 @@ print_getBusinessOwnedOrganizationAsync_help() {
 ##############################################################################
 print_getBusinessOwnedOrganizationsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBusinessOwnedOrganizationsAsync - Get all contacts of type organization${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBusinessOwnedOrganizationsAsync - Get all contacts of type organization${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get all contacts of type organization" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1179,7 +1392,7 @@ print_getBusinessOwnedOrganizationsAsync_help() {
 ##############################################################################
 print_getBusinessOwnedOrganizationsCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBusinessOwnedOrganizationsCountAsync - Get all contacts of type organization count${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBusinessOwnedOrganizationsCountAsync - Get all contacts of type organization count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get all contacts of type organization count" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1205,7 +1418,7 @@ print_getBusinessOwnedOrganizationsCountAsync_help() {
 ##############################################################################
 print_getContactAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getContactAsync - Get a contact by ID${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getContactAsync - Get a contact by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get a contact by ID" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1232,7 +1445,7 @@ print_getContactAsync_help() {
 ##############################################################################
 print_getContactAvatarAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getContactAvatarAsync - Get a contact's avatar${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getContactAvatarAsync - Get a contact's avatar${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get a contact's avatar" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1259,7 +1472,7 @@ print_getContactAvatarAsync_help() {
 ##############################################################################
 print_getContactCartAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getContactCartAsync - Get a contact's cart${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getContactCartAsync - Get a contact's cart${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get a contact's cart" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1288,7 +1501,7 @@ print_getContactCartAsync_help() {
 ##############################################################################
 print_getContactProfilesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getContactProfilesAsync - Get a contact's social profiles${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getContactProfilesAsync - Get a contact's social profiles${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get a contact's social profiles" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1317,7 +1530,7 @@ print_getContactProfilesAsync_help() {
 ##############################################################################
 print_getContactSocialProfileAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getContactSocialProfileAsync - Get a contact's social profile${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getContactSocialProfileAsync - Get a contact's social profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get a contact's social profile" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1346,7 +1559,7 @@ print_getContactSocialProfileAsync_help() {
 ##############################################################################
 print_getContactWalletAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getContactWalletAsync - Get a contact's wallet${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getContactWalletAsync - Get a contact's wallet${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get a contact's wallet" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1375,7 +1588,7 @@ print_getContactWalletAsync_help() {
 ##############################################################################
 print_getContactsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getContactsAsync - Get all business owned contacts${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getContactsAsync - Get all business owned contacts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get all business owned contacts" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1401,7 +1614,7 @@ print_getContactsAsync_help() {
 ##############################################################################
 print_getContactsCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getContactsCountAsync - Get all business owned contacts count${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getContactsCountAsync - Get all business owned contacts count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get all business owned contacts count" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1427,7 +1640,7 @@ print_getContactsCountAsync_help() {
 ##############################################################################
 print_getExtendedBusinessOwnedIndividualsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getExtendedBusinessOwnedIndividualsAsync - Get all contacts of type individual${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getExtendedBusinessOwnedIndividualsAsync - Get all contacts of type individual${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get all contacts of type individual" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1453,7 +1666,7 @@ print_getExtendedBusinessOwnedIndividualsAsync_help() {
 ##############################################################################
 print_getExtendedBusinessOwnedOrganizationsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getExtendedBusinessOwnedOrganizationsAsync - Get all contacts of type organization${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getExtendedBusinessOwnedOrganizationsAsync - Get all contacts of type organization${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get all contacts of type organization" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1479,7 +1692,7 @@ print_getExtendedBusinessOwnedOrganizationsAsync_help() {
 ##############################################################################
 print_getExtendedContactAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getExtendedContactAsync - Get a contact by ID${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getExtendedContactAsync - Get a contact by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get a contact by ID" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1506,7 +1719,7 @@ print_getExtendedContactAsync_help() {
 ##############################################################################
 print_getExtendedContactsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getExtendedContactsAsync - Get all business owned contacts${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getExtendedContactsAsync - Get all business owned contacts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get all business owned contacts" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1532,7 +1745,7 @@ print_getExtendedContactsAsync_help() {
 ##############################################################################
 print_getIndividualRelatedIndividualsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getIndividualRelatedIndividualsAsync - Get individual related individuals${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getIndividualRelatedIndividualsAsync - Get individual related individuals${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get individual related individuals" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1559,7 +1772,7 @@ print_getIndividualRelatedIndividualsAsync_help() {
 ##############################################################################
 print_getIndividualRelatedOrganizationsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getIndividualRelatedOrganizationsAsync - Get individual related organizations${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getIndividualRelatedOrganizationsAsync - Get individual related organizations${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get individual related organizations" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1586,7 +1799,7 @@ print_getIndividualRelatedOrganizationsAsync_help() {
 ##############################################################################
 print_getOrganizationRelatedIndividualsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getOrganizationRelatedIndividualsAsync - Get organization related individuals${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getOrganizationRelatedIndividualsAsync - Get organization related individuals${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get organization related individuals" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1613,7 +1826,7 @@ print_getOrganizationRelatedIndividualsAsync_help() {
 ##############################################################################
 print_getOrganizationRelatedOrganizationsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getOrganizationRelatedOrganizationsAsync - Get organization related organizations${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getOrganizationRelatedOrganizationsAsync - Get organization related organizations${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get organization related organizations" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1640,7 +1853,7 @@ print_getOrganizationRelatedOrganizationsAsync_help() {
 ##############################################################################
 print_patchContactAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}patchContactAsync - Patch a contact${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}patchContactAsync - Patch a contact${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Patch a contact" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1664,12 +1877,58 @@ print_patchContactAsync_help() {
 }
 ##############################################################################
 #
+# Print help for previewContactEmailTemplate operation
+#
+##############################################################################
+print_previewContactEmailTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}previewContactEmailTemplate - Preview the rendered email for a contact.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This action is only available for global administrators (business_owner role)." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for sendContactEmail operation
+#
+##############################################################################
+print_sendContactEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}sendContactEmail - Send an email to a contact.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This action is only available for global administrators (business_owner role)." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateContactAsync operation
 #
 ##############################################################################
 print_updateContactAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateContactAsync - Update a contact${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateContactAsync - Update a contact${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Update a contact" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1698,7 +1957,7 @@ print_updateContactAsync_help() {
 ##############################################################################
 print_updateContactAvatarAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateContactAvatarAsync - Update a contact's avatar${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateContactAvatarAsync - Update a contact's avatar${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Update a contact's avatar" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1725,7 +1984,7 @@ print_updateContactAvatarAsync_help() {
 ##############################################################################
 print_upsertTenantOntoAnotherTenantContactListAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}upsertTenantOntoAnotherTenantContactListAsync - Upsert a tenant onto another tenant's contact list${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}upsertTenantOntoAnotherTenantContactListAsync - Upsert a tenant onto another tenant's contact list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Upsert a tenant onto another tenant's contact list" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1753,7 +2012,7 @@ print_upsertTenantOntoAnotherTenantContactListAsync_help() {
 ##############################################################################
 print_upsertUserOntoAnotherTenantContactListAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}upsertUserOntoAnotherTenantContactListAsync - Upsert a user onto a tenant's contact list${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}upsertUserOntoAnotherTenantContactListAsync - Upsert a user onto a tenant's contact list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Upsert a user onto a tenant's contact list" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1776,12 +2035,488 @@ print_upsertUserOntoAnotherTenantContactListAsync_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2CrmServiceSyncMePost operation
+# Print help for forgotPasswordPost operation
 #
 ##############################################################################
-print_apiV2CrmServiceSyncMePost_help() {
+print_forgotPasswordPost_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2CrmServiceSyncMePost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for helloGet operation
+#
+##############################################################################
+print_helloGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for loginPost operation
+#
+##############################################################################
+print_loginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manage2faPost operation
+#
+##############################################################################
+print_manage2faPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createContactOption operation
+#
+##############################################################################
+print_createContactOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createContactOption - Create a new contact option${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Create a new option for a contact" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}key${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: key=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteContactOption operation
+#
+##############################################################################
+print_deleteContactOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteContactOption - Delete a contact option${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Delete a contact option" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactOptionById operation
+#
+##############################################################################
+print_getContactOptionById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactOptionById - Retrieve a single contact option by its ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieve a single contact option by its ID" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactOptionByKey operation
+#
+##############################################################################
+print_getContactOptionByKey_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactOptionByKey - Retrieve a single contact option by its key${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieve a single contact option by its key" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}key${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactOptions operation
+#
+##############################################################################
+print_getContactOptions_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactOptions - Retrieve a list of contact options${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieve a list of options for a contact" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactOptionsCount operation
+#
+##############################################################################
+print_getContactOptionsCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactOptionsCount - Get the count of contact options${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get the count of options for a contact" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateContactOption operation
+#
+##############################################################################
+print_updateContactOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateContactOption - Update a contact option${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Update a contact option" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for upsertContactOption operation
+#
+##############################################################################
+print_upsertContactOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}upsertContactOption - Create or update a contact option by key${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Create or update a contact option by key" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}key${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for syncCurrentHolderToCurrentTenantCrm operation
+#
+##############################################################################
+print_syncCurrentHolderToCurrentTenantCrm_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}syncCurrentHolderToCurrentTenantCrm - Sync the current user into the current tenant's contact list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Synchronizes the currently authenticated user into the current tenant's CRM contact list." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1800,12 +2535,14 @@ print_apiV2CrmServiceSyncMePost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2CrmServiceSyncPost operation
+# Print help for syncCurrentHolderToTenantCrm operation
 #
 ##############################################################################
-print_apiV2CrmServiceSyncPost_help() {
+print_syncCurrentHolderToTenantCrm_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2CrmServiceSyncPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}syncCurrentHolderToTenantCrm - Sync the current user into a tenant's contact list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Synchronizes the currently authenticated user into the specified tenant's CRM contact list." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1824,43 +2561,47 @@ print_apiV2CrmServiceSyncPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2CrmServiceSyncTenantPost operation
+# Print help for syncHolderToTenantCrmAsync operation
 #
 ##############################################################################
-print_apiV2CrmServiceSyncTenantPost_help() {
+print_syncHolderToTenantCrmAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2CrmServiceSyncTenantPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}syncHolderToTenantCrmAsync - Sync a user into a tenant's contact list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}relatedTenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: relatedTenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2CrmServiceSyncUserPost operation
-#
-##############################################################################
-print_apiV2CrmServiceSyncUserPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2CrmServiceSyncUserPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Synchronizes a specified user into the tenant's CRM contact list." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}relatedUserId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: relatedUserId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for syncTenantToTenantCrm operation
+#
+##############################################################################
+print_syncTenantToTenantCrm_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}syncTenantToTenantCrm - Sync a tenant into another tenant's contact list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Synchronizes a tenant into another tenant's CRM contact list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}relatedTenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: relatedTenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1887,7 +2628,7 @@ call_createContactAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts" path_parameter_names query_parameter_names); then
@@ -1963,7 +2704,7 @@ call_deleteContactAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}" path_parameter_names query_parameter_names); then
@@ -1999,7 +2740,7 @@ call_getBusinessOwnedIndividualAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Individuals/{contactId}" path_parameter_names query_parameter_names); then
@@ -2035,7 +2776,7 @@ call_getBusinessOwnedIndividualsAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Individuals" path_parameter_names query_parameter_names); then
@@ -2071,7 +2812,7 @@ call_getBusinessOwnedIndividualsCountAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Individuals/Count" path_parameter_names query_parameter_names); then
@@ -2107,7 +2848,7 @@ call_getBusinessOwnedOrganizationAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Organizations/{contactId}" path_parameter_names query_parameter_names); then
@@ -2143,7 +2884,7 @@ call_getBusinessOwnedOrganizationsAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Organizations" path_parameter_names query_parameter_names); then
@@ -2179,7 +2920,7 @@ call_getBusinessOwnedOrganizationsCountAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Organizations/Count" path_parameter_names query_parameter_names); then
@@ -2215,7 +2956,7 @@ call_getContactAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}" path_parameter_names query_parameter_names); then
@@ -2251,7 +2992,7 @@ call_getContactAvatarAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Avatar" path_parameter_names query_parameter_names); then
@@ -2287,7 +3028,7 @@ call_getContactCartAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Cart" path_parameter_names query_parameter_names); then
@@ -2323,7 +3064,7 @@ call_getContactProfilesAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Profiles" path_parameter_names query_parameter_names); then
@@ -2359,7 +3100,7 @@ call_getContactSocialProfileAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/SocialProfile" path_parameter_names query_parameter_names); then
@@ -2395,7 +3136,7 @@ call_getContactWalletAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Wallet" path_parameter_names query_parameter_names); then
@@ -2431,7 +3172,7 @@ call_getContactsAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts" path_parameter_names query_parameter_names); then
@@ -2467,7 +3208,7 @@ call_getContactsCountAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Count" path_parameter_names query_parameter_names); then
@@ -2503,7 +3244,7 @@ call_getExtendedBusinessOwnedIndividualsAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Individuals/Extended" path_parameter_names query_parameter_names); then
@@ -2539,7 +3280,7 @@ call_getExtendedBusinessOwnedOrganizationsAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Organizations/Extended" path_parameter_names query_parameter_names); then
@@ -2575,7 +3316,7 @@ call_getExtendedContactAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Extended" path_parameter_names query_parameter_names); then
@@ -2611,7 +3352,7 @@ call_getExtendedContactsAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Extended" path_parameter_names query_parameter_names); then
@@ -2647,7 +3388,7 @@ call_getIndividualRelatedIndividualsAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Individuals/{contactId}/Individuals" path_parameter_names query_parameter_names); then
@@ -2683,7 +3424,7 @@ call_getIndividualRelatedOrganizationsAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Individuals/{contactId}/Organizations" path_parameter_names query_parameter_names); then
@@ -2719,7 +3460,7 @@ call_getOrganizationRelatedIndividualsAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Organizations/{contactId}/Individuals" path_parameter_names query_parameter_names); then
@@ -2755,7 +3496,7 @@ call_getOrganizationRelatedOrganizationsAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Organizations/{contactId}/Organizations" path_parameter_names query_parameter_names); then
@@ -2791,7 +3532,7 @@ call_patchContactAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}" path_parameter_names query_parameter_names); then
@@ -2799,6 +3540,158 @@ call_patchContactAsync() {
         exit 1
     fi
     local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call previewContactEmailTemplate operation
+#
+##############################################################################
+call_previewContactEmailTemplate() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Emails/Preview" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call sendContactEmail operation
+#
+##############################################################################
+call_sendContactEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Emails/Send" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -2867,7 +3760,7 @@ call_updateContactAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}" path_parameter_names query_parameter_names); then
@@ -2943,7 +3836,7 @@ call_updateContactAvatarAsync() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Avatar" path_parameter_names query_parameter_names); then
@@ -2980,7 +3873,7 @@ call_upsertTenantOntoAnotherTenantContactListAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId relatedTenantId api-version  )
+    local query_parameter_names=(tenantId relatedTenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Organizations/Upsert" path_parameter_names query_parameter_names); then
@@ -3016,7 +3909,7 @@ call_upsertUserOntoAnotherTenantContactListAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId relatedUserId api-version  )
+    local query_parameter_names=(tenantId relatedUserId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Individuals/Upsert" path_parameter_names query_parameter_names); then
@@ -3043,23 +3936,101 @@ call_upsertUserOntoAnotherTenantContactListAsync() {
 
 ##############################################################################
 #
-# Call apiV2CrmServiceSyncMePost operation
+# Call forgotPasswordPost operation
 #
 ##############################################################################
-call_apiV2CrmServiceSyncMePost() {
+call_forgotPasswordPost() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=()
     local path
 
-    if ! path=$(build_request_path "/api/v2/CrmService/Sync/Me" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
     local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -3079,16 +4050,1114 @@ call_apiV2CrmServiceSyncMePost() {
 
 ##############################################################################
 #
-# Call apiV2CrmServiceSyncPost operation
+# Call helloGet operation
 #
 ##############################################################################
-call_apiV2CrmServiceSyncPost() {
+call_helloGet() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call loginPost operation
+#
+##############################################################################
+call_loginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(useCookies useSessionCookies)
+    local path
+
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoPost operation
+#
+##############################################################################
+call_manageInfoPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call refreshPost operation
+#
+##############################################################################
+call_refreshPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createContactOption operation
+#
+##############################################################################
+call_createContactOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId key portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Options" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteContactOption operation
+#
+##############################################################################
+call_deleteContactOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactOptionById operation
+#
+##############################################################################
+call_getContactOptionById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactOptionByKey operation
+#
+##############################################################################
+call_getContactOptionByKey() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId key)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Options/Key/{key}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactOptions operation
+#
+##############################################################################
+call_getContactOptions() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Options" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactOptionsCount operation
+#
+##############################################################################
+call_getContactOptionsCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Options/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateContactOption operation
+#
+##############################################################################
+call_updateContactOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call upsertContactOption operation
+#
+##############################################################################
+call_upsertContactOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId key)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Options/Upsert/{key}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call syncCurrentHolderToCurrentTenantCrm operation
+#
+##############################################################################
+call_syncCurrentHolderToCurrentTenantCrm() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Sync" path_parameter_names query_parameter_names); then
@@ -3115,19 +5184,19 @@ call_apiV2CrmServiceSyncPost() {
 
 ##############################################################################
 #
-# Call apiV2CrmServiceSyncTenantPost operation
+# Call syncCurrentHolderToTenantCrm operation
 #
 ##############################################################################
-call_apiV2CrmServiceSyncTenantPost() {
+call_syncCurrentHolderToTenantCrm() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId relatedTenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/CrmService/Sync/Tenant" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/CrmService/Sync/Me" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3151,19 +5220,55 @@ call_apiV2CrmServiceSyncTenantPost() {
 
 ##############################################################################
 #
-# Call apiV2CrmServiceSyncUserPost operation
+# Call syncHolderToTenantCrmAsync operation
 #
 ##############################################################################
-call_apiV2CrmServiceSyncUserPost() {
+call_syncHolderToTenantCrmAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId relatedUserId api-version  )
+    local query_parameter_names=(tenantId relatedUserId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Sync/User" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call syncTenantToTenantCrm operation
+#
+##############################################################################
+call_syncTenantToTenantCrm() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId relatedTenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Sync/Tenant" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3357,6 +5462,12 @@ case $key in
     patchContactAsync)
     operation="patchContactAsync"
     ;;
+    previewContactEmailTemplate)
+    operation="previewContactEmailTemplate"
+    ;;
+    sendContactEmail)
+    operation="sendContactEmail"
+    ;;
     updateContactAsync)
     operation="updateContactAsync"
     ;;
@@ -3369,17 +5480,80 @@ case $key in
     upsertUserOntoAnotherTenantContactListAsync)
     operation="upsertUserOntoAnotherTenantContactListAsync"
     ;;
-    apiV2CrmServiceSyncMePost)
-    operation="apiV2CrmServiceSyncMePost"
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
     ;;
-    apiV2CrmServiceSyncPost)
-    operation="apiV2CrmServiceSyncPost"
+    healthGet)
+    operation="healthGet"
     ;;
-    apiV2CrmServiceSyncTenantPost)
-    operation="apiV2CrmServiceSyncTenantPost"
+    helloGet)
+    operation="helloGet"
     ;;
-    apiV2CrmServiceSyncUserPost)
-    operation="apiV2CrmServiceSyncUserPost"
+    loginPost)
+    operation="loginPost"
+    ;;
+    manage2faPost)
+    operation="manage2faPost"
+    ;;
+    manageInfoGet)
+    operation="manageInfoGet"
+    ;;
+    manageInfoPost)
+    operation="manageInfoPost"
+    ;;
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
+    ;;
+    refreshPost)
+    operation="refreshPost"
+    ;;
+    registerPost)
+    operation="registerPost"
+    ;;
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
+    ;;
+    resetPasswordPost)
+    operation="resetPasswordPost"
+    ;;
+    versionGet)
+    operation="versionGet"
+    ;;
+    createContactOption)
+    operation="createContactOption"
+    ;;
+    deleteContactOption)
+    operation="deleteContactOption"
+    ;;
+    getContactOptionById)
+    operation="getContactOptionById"
+    ;;
+    getContactOptionByKey)
+    operation="getContactOptionByKey"
+    ;;
+    getContactOptions)
+    operation="getContactOptions"
+    ;;
+    getContactOptionsCount)
+    operation="getContactOptionsCount"
+    ;;
+    updateContactOption)
+    operation="updateContactOption"
+    ;;
+    upsertContactOption)
+    operation="upsertContactOption"
+    ;;
+    syncCurrentHolderToCurrentTenantCrm)
+    operation="syncCurrentHolderToCurrentTenantCrm"
+    ;;
+    syncCurrentHolderToTenantCrm)
+    operation="syncCurrentHolderToTenantCrm"
+    ;;
+    syncHolderToTenantCrmAsync)
+    operation="syncHolderToTenantCrmAsync"
+    ;;
+    syncTenantToTenantCrm)
+    operation="syncTenantToTenantCrm"
     ;;
     *==*)
     # Parse body arguments and convert them into top level
@@ -3414,13 +5588,6 @@ case $key in
     # only after the operation argument
     if [[ "$operation" ]]; then
         IFS=':' read -r header_name header_value <<< "$key"
-        #
-        # If the header key is the same as the api_key expected by API in the
-        # header, override the ${apikey_auth_credential} variable
-        #
-        if [[ $header_name == "Authorization" ]]; then
-            apikey_auth_credential=$header_value
-        fi
         header_arguments[$header_name]=$header_value
     else
         curl_arguments+=" $key"
@@ -3550,6 +5717,12 @@ case $operation in
     patchContactAsync)
     call_patchContactAsync
     ;;
+    previewContactEmailTemplate)
+    call_previewContactEmailTemplate
+    ;;
+    sendContactEmail)
+    call_sendContactEmail
+    ;;
     updateContactAsync)
     call_updateContactAsync
     ;;
@@ -3562,17 +5735,80 @@ case $operation in
     upsertUserOntoAnotherTenantContactListAsync)
     call_upsertUserOntoAnotherTenantContactListAsync
     ;;
-    apiV2CrmServiceSyncMePost)
-    call_apiV2CrmServiceSyncMePost
+    forgotPasswordPost)
+    call_forgotPasswordPost
     ;;
-    apiV2CrmServiceSyncPost)
-    call_apiV2CrmServiceSyncPost
+    healthGet)
+    call_healthGet
     ;;
-    apiV2CrmServiceSyncTenantPost)
-    call_apiV2CrmServiceSyncTenantPost
+    helloGet)
+    call_helloGet
     ;;
-    apiV2CrmServiceSyncUserPost)
-    call_apiV2CrmServiceSyncUserPost
+    loginPost)
+    call_loginPost
+    ;;
+    manage2faPost)
+    call_manage2faPost
+    ;;
+    manageInfoGet)
+    call_manageInfoGet
+    ;;
+    manageInfoPost)
+    call_manageInfoPost
+    ;;
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
+    ;;
+    refreshPost)
+    call_refreshPost
+    ;;
+    registerPost)
+    call_registerPost
+    ;;
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
+    ;;
+    resetPasswordPost)
+    call_resetPasswordPost
+    ;;
+    versionGet)
+    call_versionGet
+    ;;
+    createContactOption)
+    call_createContactOption
+    ;;
+    deleteContactOption)
+    call_deleteContactOption
+    ;;
+    getContactOptionById)
+    call_getContactOptionById
+    ;;
+    getContactOptionByKey)
+    call_getContactOptionByKey
+    ;;
+    getContactOptions)
+    call_getContactOptions
+    ;;
+    getContactOptionsCount)
+    call_getContactOptionsCount
+    ;;
+    updateContactOption)
+    call_updateContactOption
+    ;;
+    upsertContactOption)
+    call_upsertContactOption
+    ;;
+    syncCurrentHolderToCurrentTenantCrm)
+    call_syncCurrentHolderToCurrentTenantCrm
+    ;;
+    syncCurrentHolderToTenantCrm)
+    call_syncCurrentHolderToTenantCrm
+    ;;
+    syncHolderToTenantCrmAsync)
+    call_syncHolderToTenantCrmAsync
+    ;;
+    syncTenantToTenantCrm)
+    call_syncTenantToTenantCrm
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

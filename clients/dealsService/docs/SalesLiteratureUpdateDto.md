@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **modifiedDate** | **string** |  | [optional] [default to null]
 **expirationDate** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]
-**enrolmentId** | **string** |  | [optional] [default to null]
+**enrollmentId** | **string** |  | [optional] [default to null]
 **salesLiteratureTypeId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

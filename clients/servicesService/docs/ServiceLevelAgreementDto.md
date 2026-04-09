@@ -1,0 +1,14 @@
+# ServiceLevelAgreementDto
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
+**serviceId** | **string** |  | [optional] [default to null]
+**serviceLevelId** | **string** |  | [optional] [default to null]
+**contactId** | **string** |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

@@ -4,23 +4,25 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2MarketingServiceMarketingCampaignsCountGet**](MarketingCampaignsApi.md#apiV2MarketingServiceMarketingCampaignsCountGet) | **GET** /api/v2/MarketingService/MarketingCampaigns/Count | 
-[**apiV2MarketingServiceMarketingCampaignsGet**](MarketingCampaignsApi.md#apiV2MarketingServiceMarketingCampaignsGet) | **GET** /api/v2/MarketingService/MarketingCampaigns | 
-[**apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete**](MarketingCampaignsApi.md#apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete) | **DELETE** /api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId} | 
-[**apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet**](MarketingCampaignsApi.md#apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet) | **GET** /api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId} | 
-[**apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut**](MarketingCampaignsApi.md#apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut) | **PUT** /api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId} | 
-[**apiV2MarketingServiceMarketingCampaignsPost**](MarketingCampaignsApi.md#apiV2MarketingServiceMarketingCampaignsPost) | **POST** /api/v2/MarketingService/MarketingCampaigns | 
+[**createMarketingCampaignAsync**](MarketingCampaignsApi.md#createMarketingCampaignAsync) | **POST** /api/v2/MarketingService/MarketingCampaigns | Create a marketing campaign
+[**deleteMarketingCampaignAsync**](MarketingCampaignsApi.md#deleteMarketingCampaignAsync) | **DELETE** /api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId} | Delete a marketing campaign
+[**getMarketingCampaignDetailsAsync**](MarketingCampaignsApi.md#getMarketingCampaignDetailsAsync) | **GET** /api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId} | Get marketing campaign by ID
+[**getMarketingCampaignODataAsync**](MarketingCampaignsApi.md#getMarketingCampaignODataAsync) | **GET** /api/v2/MarketingService/MarketingCampaigns | Get marketing campaigns
+[**getMarketingCampaignsCountAsync**](MarketingCampaignsApi.md#getMarketingCampaignsCountAsync) | **GET** /api/v2/MarketingService/MarketingCampaigns/Count | Get marketing campaigns count
+[**updateMarketingCampaignAsync**](MarketingCampaignsApi.md#updateMarketingCampaignAsync) | **PUT** /api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId} | Update a marketing campaign
 
 
 
-## apiV2MarketingServiceMarketingCampaignsCountGet
+## createMarketingCampaignAsync
 
+Create a marketing campaign
 
+Creates a new marketing campaign for the specified tenant.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceMarketingCampaignsCountGet  tenantId=value  api-version=value x-api-version:value
+ createMarketingCampaignAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -29,68 +31,36 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **marketingCampaignCreateDto** | [**MarketingCampaignCreateDto**](MarketingCampaignCreateDto.md) |  |
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
 ### Return type
 
-[**Int32Envelope**](Int32Envelope.md)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceMarketingCampaignsGet
+## deleteMarketingCampaignAsync
 
+Delete a marketing campaign
 
-
-### Example
-
-```bash
- apiV2MarketingServiceMarketingCampaignsGet  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-(empty response body)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete
-
-
+Deletes a marketing campaign by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete  tenantId=value marketingcampaignId=value  api-version=value x-api-version:value
+ deleteMarketingCampaignAsync  tenantId=value marketingcampaignId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -109,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -119,14 +89,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet
+## getMarketingCampaignDetailsAsync
 
+Get marketing campaign by ID
 
+Retrieves the details of a specific marketing campaign by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet  tenantId=value marketingcampaignId=value  api-version=value x-api-version:value
+ getMarketingCampaignDetailsAsync  tenantId=value marketingcampaignId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -145,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -155,14 +127,90 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut
+## getMarketingCampaignODataAsync
 
+Get marketing campaigns
 
+Retrieves a collection of marketing campaigns for the specified tenant using OData query options.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut  tenantId=value marketingcampaignId=value  api-version=value x-api-version:value
+ getMarketingCampaignODataAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getMarketingCampaignsCountAsync
+
+Get marketing campaigns count
+
+Returns the count of marketing campaigns for the specified tenant using OData query options.
+
+### Example
+
+```bash
+ getMarketingCampaignsCountAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateMarketingCampaignAsync
+
+Update a marketing campaign
+
+Updates an existing marketing campaign by its ID.
+
+### Example
+
+```bash
+ updateMarketingCampaignAsync  tenantId=value marketingcampaignId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -182,43 +230,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2MarketingServiceMarketingCampaignsPost
-
-
-
-### Example
-
-```bash
- apiV2MarketingServiceMarketingCampaignsPost  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **marketingCampaignCreateDto** | [**MarketingCampaignCreateDto**](MarketingCampaignCreateDto.md) |  |
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

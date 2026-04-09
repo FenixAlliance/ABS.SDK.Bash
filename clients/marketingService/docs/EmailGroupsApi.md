@@ -4,23 +4,25 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2MarketingServiceEmailGroupsCountGet**](EmailGroupsApi.md#apiV2MarketingServiceEmailGroupsCountGet) | **GET** /api/v2/MarketingService/EmailGroups/Count | 
-[**apiV2MarketingServiceEmailGroupsEmailgroupIdDelete**](EmailGroupsApi.md#apiV2MarketingServiceEmailGroupsEmailgroupIdDelete) | **DELETE** /api/v2/MarketingService/EmailGroups/{emailgroupId} | 
-[**apiV2MarketingServiceEmailGroupsEmailgroupIdGet**](EmailGroupsApi.md#apiV2MarketingServiceEmailGroupsEmailgroupIdGet) | **GET** /api/v2/MarketingService/EmailGroups/{emailgroupId} | 
-[**apiV2MarketingServiceEmailGroupsEmailgroupIdPut**](EmailGroupsApi.md#apiV2MarketingServiceEmailGroupsEmailgroupIdPut) | **PUT** /api/v2/MarketingService/EmailGroups/{emailgroupId} | 
-[**apiV2MarketingServiceEmailGroupsGet**](EmailGroupsApi.md#apiV2MarketingServiceEmailGroupsGet) | **GET** /api/v2/MarketingService/EmailGroups | 
-[**apiV2MarketingServiceEmailGroupsPost**](EmailGroupsApi.md#apiV2MarketingServiceEmailGroupsPost) | **POST** /api/v2/MarketingService/EmailGroups | 
+[**createEmailGroupAsync**](EmailGroupsApi.md#createEmailGroupAsync) | **POST** /api/v2/MarketingService/EmailGroups | Create an email group
+[**deleteEmailGroupAsync**](EmailGroupsApi.md#deleteEmailGroupAsync) | **DELETE** /api/v2/MarketingService/EmailGroups/{emailgroupId} | Delete an email group
+[**getEmailGroupDetailsAsync**](EmailGroupsApi.md#getEmailGroupDetailsAsync) | **GET** /api/v2/MarketingService/EmailGroups/{emailgroupId} | Get email group by ID
+[**getEmailGroupsCountAsync**](EmailGroupsApi.md#getEmailGroupsCountAsync) | **GET** /api/v2/MarketingService/EmailGroups/Count | Get email groups count
+[**getEmailGroupsODataAsync**](EmailGroupsApi.md#getEmailGroupsODataAsync) | **GET** /api/v2/MarketingService/EmailGroups | Get email groups
+[**updateEmailGroupAsync**](EmailGroupsApi.md#updateEmailGroupAsync) | **PUT** /api/v2/MarketingService/EmailGroups/{emailgroupId} | Update an email group
 
 
 
-## apiV2MarketingServiceEmailGroupsCountGet
+## createEmailGroupAsync
 
+Create an email group
 
+Creates a new email group for the specified tenant.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceEmailGroupsCountGet  tenantId=value  api-version=value x-api-version:value
+ createEmailGroupAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -29,33 +31,36 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **emailGroupCreateDto** | [**EmailGroupCreateDto**](EmailGroupCreateDto.md) |  |
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
 ### Return type
 
-[**Int32Envelope**](Int32Envelope.md)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceEmailGroupsEmailgroupIdDelete
+## deleteEmailGroupAsync
 
+Delete an email group
 
+Deletes an email group by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceEmailGroupsEmailgroupIdDelete  tenantId=value emailgroupId=value  api-version=value x-api-version:value
+ deleteEmailGroupAsync  tenantId=value emailgroupId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -74,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -84,14 +89,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceEmailGroupsEmailgroupIdGet
+## getEmailGroupDetailsAsync
 
+Get email group by ID
 
+Retrieves the details of a specific email group by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceEmailGroupsEmailgroupIdGet  tenantId=value emailgroupId=value  api-version=value x-api-version:value
+ getEmailGroupDetailsAsync  tenantId=value emailgroupId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -110,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -120,14 +127,90 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceEmailGroupsEmailgroupIdPut
+## getEmailGroupsCountAsync
 
+Get email groups count
 
+Returns the count of email groups for the specified tenant using OData query options.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceEmailGroupsEmailgroupIdPut  tenantId=value emailgroupId=value  api-version=value x-api-version:value
+ getEmailGroupsCountAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getEmailGroupsODataAsync
+
+Get email groups
+
+Retrieves a collection of email groups for the specified tenant using OData query options.
+
+### Example
+
+```bash
+ getEmailGroupsODataAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**EmailGroupDtoListEnvelope**](EmailGroupDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateEmailGroupAsync
+
+Update an email group
+
+Updates an existing email group by its ID.
+
+### Example
+
+```bash
+ updateEmailGroupAsync  tenantId=value emailgroupId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -147,78 +230,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2MarketingServiceEmailGroupsGet
-
-
-
-### Example
-
-```bash
- apiV2MarketingServiceEmailGroupsGet  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmailGroupDtoListEnvelope**](EmailGroupDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2MarketingServiceEmailGroupsPost
-
-
-
-### Example
-
-```bash
- apiV2MarketingServiceEmailGroupsPost  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **emailGroupCreateDto** | [**EmailGroupCreateDto**](EmailGroupCreateDto.md) |  |
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

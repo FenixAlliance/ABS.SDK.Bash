@@ -96,194 +96,206 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete:::emailgroupId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdGet:::emailgroupId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::emailgroupId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::EmailGroupUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsPost:::EmailGroupCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailGroupsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete:::emailsignatureId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet:::emailsignatureId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::emailsignatureId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::EmailSignatureUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesPost:::EmailSignatureCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailSignaturesPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete:::emailTemplateId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::emailTemplatesId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::emailTemplateId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::emailTemplateId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::EmailTemplateUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesPost:::EmailTemplateCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceEmailTemplatesPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete:::marketingcampaignId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet:::marketingcampaignId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::marketingcampaignId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::MarketingCampaignUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsPost:::MarketingCampaignCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingCampaignsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdDelete:::marketinglistId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdGet:::marketinglistId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::marketinglistId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::MarketingListUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsPost:::MarketingListCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceMarketingListsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdDelete:::newsletterId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdGet:::newsletterId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdPut:::newsletterId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdPut:::NewsletterUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersPost:::NewsletterCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceNewslettersPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsPost:::SocialMediaPostCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete:::socialmediapostId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet:::socialmediapostId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::socialmediapostId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::SocialMediaPostUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsPost:::SocialPostBucketCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete:::socialpostbucketId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet:::socialpostbucketId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::socialpostbucketId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::SocialPostBucketUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceTrackingPixelsPixelIdGet:::pixelId"]=1
-operation_parameters_minimum_occurrences["apiV2MarketingServiceTrackingPixelsPixelIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2MarketingServiceTrackingPixelsPixelIdGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createEmailGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createEmailGroupAsync:::EmailGroupCreateDto"]=1
+operation_parameters_minimum_occurrences["createEmailGroupAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createEmailGroupAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteEmailGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteEmailGroupAsync:::emailgroupId"]=1
+operation_parameters_minimum_occurrences["deleteEmailGroupAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteEmailGroupAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEmailGroupDetailsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getEmailGroupDetailsAsync:::emailgroupId"]=1
+operation_parameters_minimum_occurrences["getEmailGroupDetailsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEmailGroupDetailsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEmailGroupsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getEmailGroupsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEmailGroupsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEmailGroupsODataAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getEmailGroupsODataAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEmailGroupsODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateEmailGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateEmailGroupAsync:::emailgroupId"]=1
+operation_parameters_minimum_occurrences["updateEmailGroupAsync:::EmailGroupUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateEmailGroupAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateEmailGroupAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createEmailSignatureAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createEmailSignatureAsync:::EmailSignatureCreateDto"]=1
+operation_parameters_minimum_occurrences["createEmailSignatureAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createEmailSignatureAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteEmailSignatureAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteEmailSignatureAsync:::emailsignatureId"]=1
+operation_parameters_minimum_occurrences["deleteEmailSignatureAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteEmailSignatureAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEmailSignatureDetailsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getEmailSignatureDetailsAsync:::emailsignatureId"]=1
+operation_parameters_minimum_occurrences["getEmailSignatureDetailsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEmailSignatureDetailsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEmailSignaturesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getEmailSignaturesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEmailSignaturesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEmailSignaturesODataAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getEmailSignaturesODataAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEmailSignaturesODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateEmailSignatureAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateEmailSignatureAsync:::emailsignatureId"]=1
+operation_parameters_minimum_occurrences["updateEmailSignatureAsync:::EmailSignatureUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateEmailSignatureAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateEmailSignatureAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createEmailTemplateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createEmailTemplateAsync:::EmailTemplateCreateDto"]=1
+operation_parameters_minimum_occurrences["createEmailTemplateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createEmailTemplateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteEmailTemplateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteEmailTemplateAsync:::emailTemplateId"]=1
+operation_parameters_minimum_occurrences["deleteEmailTemplateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteEmailTemplateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEmailTemplateDetailsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getEmailTemplateDetailsAsync:::emailTemplateId"]=1
+operation_parameters_minimum_occurrences["getEmailTemplateDetailsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEmailTemplateDetailsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEmailTemplatesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getEmailTemplatesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEmailTemplatesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEmailTemplatesODataAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getEmailTemplatesODataAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEmailTemplatesODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateEmailTemplateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateEmailTemplateAsync:::emailTemplateId"]=1
+operation_parameters_minimum_occurrences["updateEmailTemplateAsync:::EmailTemplateUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateEmailTemplateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateEmailTemplateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["createMarketingCampaignAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createMarketingCampaignAsync:::MarketingCampaignCreateDto"]=1
+operation_parameters_minimum_occurrences["createMarketingCampaignAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createMarketingCampaignAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteMarketingCampaignAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteMarketingCampaignAsync:::marketingcampaignId"]=1
+operation_parameters_minimum_occurrences["deleteMarketingCampaignAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteMarketingCampaignAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingCampaignDetailsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMarketingCampaignDetailsAsync:::marketingcampaignId"]=1
+operation_parameters_minimum_occurrences["getMarketingCampaignDetailsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingCampaignDetailsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingCampaignODataAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMarketingCampaignODataAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingCampaignODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingCampaignsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMarketingCampaignsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingCampaignsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateMarketingCampaignAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateMarketingCampaignAsync:::marketingcampaignId"]=1
+operation_parameters_minimum_occurrences["updateMarketingCampaignAsync:::MarketingCampaignUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateMarketingCampaignAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateMarketingCampaignAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createMarketingListAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createMarketingListAsync:::MarketingListCreateDto"]=1
+operation_parameters_minimum_occurrences["createMarketingListAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createMarketingListAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteMarketingListAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteMarketingListAsync:::marketinglistId"]=1
+operation_parameters_minimum_occurrences["deleteMarketingListAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteMarketingListAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingListDetailsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMarketingListDetailsAsync:::marketinglistId"]=1
+operation_parameters_minimum_occurrences["getMarketingListDetailsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingListDetailsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingListODataAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMarketingListODataAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingListODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingListsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMarketingListsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingListsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateMarketingListAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateMarketingListAsync:::marketinglistId"]=1
+operation_parameters_minimum_occurrences["updateMarketingListAsync:::MarketingListUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateMarketingListAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateMarketingListAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createNewsletterAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createNewsletterAsync:::NewsletterCreateDto"]=1
+operation_parameters_minimum_occurrences["createNewsletterAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createNewsletterAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteNewsletterAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteNewsletterAsync:::newsletterId"]=1
+operation_parameters_minimum_occurrences["deleteNewsletterAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteNewsletterAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getNewsletterDetailsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getNewsletterDetailsAsync:::newsletterId"]=1
+operation_parameters_minimum_occurrences["getNewsletterDetailsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getNewsletterDetailsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getNewsletterODataAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getNewsletterODataAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getNewsletterODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getNewslettersCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getNewslettersCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getNewslettersCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateNewsletterAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateNewsletterAsync:::newsletterId"]=1
+operation_parameters_minimum_occurrences["updateNewsletterAsync:::NewsletterUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateNewsletterAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateNewsletterAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSocialMediaPostAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSocialMediaPostAsync:::SocialMediaPostCreateDto"]=1
+operation_parameters_minimum_occurrences["createSocialMediaPostAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createSocialMediaPostAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteSocialMediaPostAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSocialMediaPostAsync:::socialmediapostId"]=1
+operation_parameters_minimum_occurrences["deleteSocialMediaPostAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSocialMediaPostAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialMediaPostDetailsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSocialMediaPostDetailsAsync:::socialmediapostId"]=1
+operation_parameters_minimum_occurrences["getSocialMediaPostDetailsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSocialMediaPostDetailsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialMediaPostsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSocialMediaPostsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSocialMediaPostsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialMediaPostsODataAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSocialMediaPostsODataAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSocialMediaPostsODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSocialMediaPostAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSocialMediaPostAsync:::socialmediapostId"]=1
+operation_parameters_minimum_occurrences["updateSocialMediaPostAsync:::SocialMediaPostUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateSocialMediaPostAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSocialMediaPostAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSocialPostBucketAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSocialPostBucketAsync:::SocialPostBucketCreateDto"]=1
+operation_parameters_minimum_occurrences["createSocialPostBucketAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createSocialPostBucketAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteSocialPostBucketAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSocialPostBucketAsync:::socialpostbucketId"]=1
+operation_parameters_minimum_occurrences["deleteSocialPostBucketAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSocialPostBucketAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostBucketDetailsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSocialPostBucketDetailsAsync:::socialpostbucketId"]=1
+operation_parameters_minimum_occurrences["getSocialPostBucketDetailsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostBucketDetailsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostBucketsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSocialPostBucketsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostBucketsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostBucketsODataAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSocialPostBucketsODataAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostBucketsODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSocialPostBucketAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSocialPostBucketAsync:::socialpostbucketId"]=1
+operation_parameters_minimum_occurrences["updateSocialPostBucketAsync:::SocialPostBucketUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateSocialPostBucketAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSocialPostBucketAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTrackingPixelAsync:::pixelId"]=1
+operation_parameters_minimum_occurrences["getTrackingPixelAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTrackingPixelAsync:::x-api-version"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -292,387 +304,411 @@ operation_parameters_minimum_occurrences["apiV2MarketingServiceTrackingPixelsPix
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete:::emailgroupId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdGet:::emailgroupId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::emailgroupId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::EmailGroupUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsPost:::EmailGroupCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailGroupsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete:::emailsignatureId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet:::emailsignatureId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::emailsignatureId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::EmailSignatureUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesPost:::EmailSignatureCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailSignaturesPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete:::emailTemplateId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::emailTemplatesId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::emailTemplateId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::emailTemplateId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::EmailTemplateUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesPost:::EmailTemplateCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceEmailTemplatesPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete:::marketingcampaignId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet:::marketingcampaignId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::marketingcampaignId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::MarketingCampaignUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsPost:::MarketingCampaignCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingCampaignsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdDelete:::marketinglistId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdGet:::marketinglistId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::marketinglistId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::MarketingListUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsPost:::MarketingListCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceMarketingListsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdDelete:::newsletterId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdGet:::newsletterId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdPut:::newsletterId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdPut:::NewsletterUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersNewsletterIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersPost:::NewsletterCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceNewslettersPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsPost:::SocialMediaPostCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete:::socialmediapostId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet:::socialmediapostId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::socialmediapostId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::SocialMediaPostUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsPost:::SocialPostBucketCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete:::socialpostbucketId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet:::socialpostbucketId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::socialpostbucketId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::SocialPostBucketUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceTrackingPixelsPixelIdGet:::pixelId"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceTrackingPixelsPixelIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2MarketingServiceTrackingPixelsPixelIdGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createEmailGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createEmailGroupAsync:::EmailGroupCreateDto"]=0
+operation_parameters_maximum_occurrences["createEmailGroupAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createEmailGroupAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteEmailGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteEmailGroupAsync:::emailgroupId"]=0
+operation_parameters_maximum_occurrences["deleteEmailGroupAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteEmailGroupAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEmailGroupDetailsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getEmailGroupDetailsAsync:::emailgroupId"]=0
+operation_parameters_maximum_occurrences["getEmailGroupDetailsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEmailGroupDetailsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEmailGroupsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getEmailGroupsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEmailGroupsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEmailGroupsODataAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getEmailGroupsODataAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEmailGroupsODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateEmailGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateEmailGroupAsync:::emailgroupId"]=0
+operation_parameters_maximum_occurrences["updateEmailGroupAsync:::EmailGroupUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateEmailGroupAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateEmailGroupAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createEmailSignatureAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createEmailSignatureAsync:::EmailSignatureCreateDto"]=0
+operation_parameters_maximum_occurrences["createEmailSignatureAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createEmailSignatureAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteEmailSignatureAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteEmailSignatureAsync:::emailsignatureId"]=0
+operation_parameters_maximum_occurrences["deleteEmailSignatureAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteEmailSignatureAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEmailSignatureDetailsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getEmailSignatureDetailsAsync:::emailsignatureId"]=0
+operation_parameters_maximum_occurrences["getEmailSignatureDetailsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEmailSignatureDetailsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEmailSignaturesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getEmailSignaturesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEmailSignaturesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEmailSignaturesODataAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getEmailSignaturesODataAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEmailSignaturesODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateEmailSignatureAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateEmailSignatureAsync:::emailsignatureId"]=0
+operation_parameters_maximum_occurrences["updateEmailSignatureAsync:::EmailSignatureUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateEmailSignatureAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateEmailSignatureAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createEmailTemplateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createEmailTemplateAsync:::EmailTemplateCreateDto"]=0
+operation_parameters_maximum_occurrences["createEmailTemplateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createEmailTemplateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteEmailTemplateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteEmailTemplateAsync:::emailTemplateId"]=0
+operation_parameters_maximum_occurrences["deleteEmailTemplateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteEmailTemplateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEmailTemplateDetailsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getEmailTemplateDetailsAsync:::emailTemplateId"]=0
+operation_parameters_maximum_occurrences["getEmailTemplateDetailsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEmailTemplateDetailsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEmailTemplatesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getEmailTemplatesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEmailTemplatesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEmailTemplatesODataAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getEmailTemplatesODataAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEmailTemplatesODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateEmailTemplateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateEmailTemplateAsync:::emailTemplateId"]=0
+operation_parameters_maximum_occurrences["updateEmailTemplateAsync:::EmailTemplateUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateEmailTemplateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateEmailTemplateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["createMarketingCampaignAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createMarketingCampaignAsync:::MarketingCampaignCreateDto"]=0
+operation_parameters_maximum_occurrences["createMarketingCampaignAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createMarketingCampaignAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteMarketingCampaignAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteMarketingCampaignAsync:::marketingcampaignId"]=0
+operation_parameters_maximum_occurrences["deleteMarketingCampaignAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteMarketingCampaignAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingCampaignDetailsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMarketingCampaignDetailsAsync:::marketingcampaignId"]=0
+operation_parameters_maximum_occurrences["getMarketingCampaignDetailsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingCampaignDetailsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingCampaignODataAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMarketingCampaignODataAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingCampaignODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingCampaignsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMarketingCampaignsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingCampaignsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateMarketingCampaignAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateMarketingCampaignAsync:::marketingcampaignId"]=0
+operation_parameters_maximum_occurrences["updateMarketingCampaignAsync:::MarketingCampaignUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateMarketingCampaignAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateMarketingCampaignAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createMarketingListAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createMarketingListAsync:::MarketingListCreateDto"]=0
+operation_parameters_maximum_occurrences["createMarketingListAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createMarketingListAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteMarketingListAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteMarketingListAsync:::marketinglistId"]=0
+operation_parameters_maximum_occurrences["deleteMarketingListAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteMarketingListAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingListDetailsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMarketingListDetailsAsync:::marketinglistId"]=0
+operation_parameters_maximum_occurrences["getMarketingListDetailsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingListDetailsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingListODataAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMarketingListODataAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingListODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingListsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMarketingListsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingListsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateMarketingListAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateMarketingListAsync:::marketinglistId"]=0
+operation_parameters_maximum_occurrences["updateMarketingListAsync:::MarketingListUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateMarketingListAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateMarketingListAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createNewsletterAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createNewsletterAsync:::NewsletterCreateDto"]=0
+operation_parameters_maximum_occurrences["createNewsletterAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createNewsletterAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteNewsletterAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteNewsletterAsync:::newsletterId"]=0
+operation_parameters_maximum_occurrences["deleteNewsletterAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteNewsletterAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getNewsletterDetailsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getNewsletterDetailsAsync:::newsletterId"]=0
+operation_parameters_maximum_occurrences["getNewsletterDetailsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getNewsletterDetailsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getNewsletterODataAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getNewsletterODataAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getNewsletterODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getNewslettersCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getNewslettersCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getNewslettersCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateNewsletterAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateNewsletterAsync:::newsletterId"]=0
+operation_parameters_maximum_occurrences["updateNewsletterAsync:::NewsletterUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateNewsletterAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateNewsletterAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSocialMediaPostAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSocialMediaPostAsync:::SocialMediaPostCreateDto"]=0
+operation_parameters_maximum_occurrences["createSocialMediaPostAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createSocialMediaPostAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteSocialMediaPostAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSocialMediaPostAsync:::socialmediapostId"]=0
+operation_parameters_maximum_occurrences["deleteSocialMediaPostAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSocialMediaPostAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialMediaPostDetailsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSocialMediaPostDetailsAsync:::socialmediapostId"]=0
+operation_parameters_maximum_occurrences["getSocialMediaPostDetailsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSocialMediaPostDetailsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialMediaPostsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSocialMediaPostsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSocialMediaPostsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialMediaPostsODataAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSocialMediaPostsODataAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSocialMediaPostsODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSocialMediaPostAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSocialMediaPostAsync:::socialmediapostId"]=0
+operation_parameters_maximum_occurrences["updateSocialMediaPostAsync:::SocialMediaPostUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateSocialMediaPostAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSocialMediaPostAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSocialPostBucketAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSocialPostBucketAsync:::SocialPostBucketCreateDto"]=0
+operation_parameters_maximum_occurrences["createSocialPostBucketAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createSocialPostBucketAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteSocialPostBucketAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSocialPostBucketAsync:::socialpostbucketId"]=0
+operation_parameters_maximum_occurrences["deleteSocialPostBucketAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSocialPostBucketAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostBucketDetailsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSocialPostBucketDetailsAsync:::socialpostbucketId"]=0
+operation_parameters_maximum_occurrences["getSocialPostBucketDetailsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostBucketDetailsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostBucketsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSocialPostBucketsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostBucketsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostBucketsODataAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSocialPostBucketsODataAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostBucketsODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSocialPostBucketAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSocialPostBucketAsync:::socialpostbucketId"]=0
+operation_parameters_maximum_occurrences["updateSocialPostBucketAsync:::SocialPostBucketUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateSocialPostBucketAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSocialPostBucketAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTrackingPixelAsync:::pixelId"]=0
+operation_parameters_maximum_occurrences["getTrackingPixelAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTrackingPixelAsync:::x-api-version"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete:::emailgroupId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdGet:::emailgroupId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::emailgroupId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::EmailGroupUpdateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsEmailgroupIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsPost:::EmailGroupCreateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailGroupsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete:::emailsignatureId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet:::emailsignatureId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::emailsignatureId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::EmailSignatureUpdateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesPost:::EmailSignatureCreateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesPost:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailSignaturesPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete:::emailTemplateId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::emailTemplatesId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::emailTemplateId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::emailTemplateId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::EmailTemplateUpdateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesPost:::EmailTemplateCreateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesPost:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceEmailTemplatesPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete:::marketingcampaignId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet:::marketingcampaignId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::marketingcampaignId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::MarketingCampaignUpdateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsPost:::MarketingCampaignCreateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingCampaignsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdDelete:::marketinglistId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdGet:::marketinglistId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::marketinglistId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::MarketingListUpdateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsMarketinglistIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsPost:::MarketingListCreateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceMarketingListsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdDelete:::newsletterId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdGet:::newsletterId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdPut:::newsletterId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdPut:::NewsletterUpdateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersNewsletterIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersPost:::NewsletterCreateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersPost:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceNewslettersPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsPost:::SocialMediaPostCreateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete:::socialmediapostId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet:::socialmediapostId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::socialmediapostId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::SocialMediaPostUpdateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsPost:::SocialPostBucketCreateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete:::socialpostbucketId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet:::socialpostbucketId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::socialpostbucketId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::SocialPostBucketUpdateDto"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceTrackingPixelsPixelIdGet:::pixelId"]=""
-operation_parameters_collection_type["apiV2MarketingServiceTrackingPixelsPixelIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2MarketingServiceTrackingPixelsPixelIdGet:::x-api-version"]=""
+operation_parameters_collection_type["createEmailGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["createEmailGroupAsync:::EmailGroupCreateDto"]=""
+operation_parameters_collection_type["createEmailGroupAsync:::api-version"]=""
+operation_parameters_collection_type["createEmailGroupAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteEmailGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteEmailGroupAsync:::emailgroupId"]=""
+operation_parameters_collection_type["deleteEmailGroupAsync:::api-version"]=""
+operation_parameters_collection_type["deleteEmailGroupAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEmailGroupDetailsAsync:::tenantId"]=""
+operation_parameters_collection_type["getEmailGroupDetailsAsync:::emailgroupId"]=""
+operation_parameters_collection_type["getEmailGroupDetailsAsync:::api-version"]=""
+operation_parameters_collection_type["getEmailGroupDetailsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEmailGroupsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getEmailGroupsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getEmailGroupsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEmailGroupsODataAsync:::tenantId"]=""
+operation_parameters_collection_type["getEmailGroupsODataAsync:::api-version"]=""
+operation_parameters_collection_type["getEmailGroupsODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateEmailGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["updateEmailGroupAsync:::emailgroupId"]=""
+operation_parameters_collection_type["updateEmailGroupAsync:::EmailGroupUpdateDto"]=""
+operation_parameters_collection_type["updateEmailGroupAsync:::api-version"]=""
+operation_parameters_collection_type["updateEmailGroupAsync:::x-api-version"]=""
+operation_parameters_collection_type["createEmailSignatureAsync:::tenantId"]=""
+operation_parameters_collection_type["createEmailSignatureAsync:::EmailSignatureCreateDto"]=""
+operation_parameters_collection_type["createEmailSignatureAsync:::api-version"]=""
+operation_parameters_collection_type["createEmailSignatureAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteEmailSignatureAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteEmailSignatureAsync:::emailsignatureId"]=""
+operation_parameters_collection_type["deleteEmailSignatureAsync:::api-version"]=""
+operation_parameters_collection_type["deleteEmailSignatureAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEmailSignatureDetailsAsync:::tenantId"]=""
+operation_parameters_collection_type["getEmailSignatureDetailsAsync:::emailsignatureId"]=""
+operation_parameters_collection_type["getEmailSignatureDetailsAsync:::api-version"]=""
+operation_parameters_collection_type["getEmailSignatureDetailsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEmailSignaturesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getEmailSignaturesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getEmailSignaturesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEmailSignaturesODataAsync:::tenantId"]=""
+operation_parameters_collection_type["getEmailSignaturesODataAsync:::api-version"]=""
+operation_parameters_collection_type["getEmailSignaturesODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateEmailSignatureAsync:::tenantId"]=""
+operation_parameters_collection_type["updateEmailSignatureAsync:::emailsignatureId"]=""
+operation_parameters_collection_type["updateEmailSignatureAsync:::EmailSignatureUpdateDto"]=""
+operation_parameters_collection_type["updateEmailSignatureAsync:::api-version"]=""
+operation_parameters_collection_type["updateEmailSignatureAsync:::x-api-version"]=""
+operation_parameters_collection_type["createEmailTemplateAsync:::tenantId"]=""
+operation_parameters_collection_type["createEmailTemplateAsync:::EmailTemplateCreateDto"]=""
+operation_parameters_collection_type["createEmailTemplateAsync:::api-version"]=""
+operation_parameters_collection_type["createEmailTemplateAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteEmailTemplateAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteEmailTemplateAsync:::emailTemplateId"]=""
+operation_parameters_collection_type["deleteEmailTemplateAsync:::api-version"]=""
+operation_parameters_collection_type["deleteEmailTemplateAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEmailTemplateDetailsAsync:::tenantId"]=""
+operation_parameters_collection_type["getEmailTemplateDetailsAsync:::emailTemplateId"]=""
+operation_parameters_collection_type["getEmailTemplateDetailsAsync:::api-version"]=""
+operation_parameters_collection_type["getEmailTemplateDetailsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEmailTemplatesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getEmailTemplatesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getEmailTemplatesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEmailTemplatesODataAsync:::tenantId"]=""
+operation_parameters_collection_type["getEmailTemplatesODataAsync:::api-version"]=""
+operation_parameters_collection_type["getEmailTemplatesODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateEmailTemplateAsync:::tenantId"]=""
+operation_parameters_collection_type["updateEmailTemplateAsync:::emailTemplateId"]=""
+operation_parameters_collection_type["updateEmailTemplateAsync:::EmailTemplateUpdateDto"]=""
+operation_parameters_collection_type["updateEmailTemplateAsync:::api-version"]=""
+operation_parameters_collection_type["updateEmailTemplateAsync:::x-api-version"]=""
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["createMarketingCampaignAsync:::tenantId"]=""
+operation_parameters_collection_type["createMarketingCampaignAsync:::MarketingCampaignCreateDto"]=""
+operation_parameters_collection_type["createMarketingCampaignAsync:::api-version"]=""
+operation_parameters_collection_type["createMarketingCampaignAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteMarketingCampaignAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteMarketingCampaignAsync:::marketingcampaignId"]=""
+operation_parameters_collection_type["deleteMarketingCampaignAsync:::api-version"]=""
+operation_parameters_collection_type["deleteMarketingCampaignAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMarketingCampaignDetailsAsync:::tenantId"]=""
+operation_parameters_collection_type["getMarketingCampaignDetailsAsync:::marketingcampaignId"]=""
+operation_parameters_collection_type["getMarketingCampaignDetailsAsync:::api-version"]=""
+operation_parameters_collection_type["getMarketingCampaignDetailsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMarketingCampaignODataAsync:::tenantId"]=""
+operation_parameters_collection_type["getMarketingCampaignODataAsync:::api-version"]=""
+operation_parameters_collection_type["getMarketingCampaignODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMarketingCampaignsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getMarketingCampaignsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getMarketingCampaignsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateMarketingCampaignAsync:::tenantId"]=""
+operation_parameters_collection_type["updateMarketingCampaignAsync:::marketingcampaignId"]=""
+operation_parameters_collection_type["updateMarketingCampaignAsync:::MarketingCampaignUpdateDto"]=""
+operation_parameters_collection_type["updateMarketingCampaignAsync:::api-version"]=""
+operation_parameters_collection_type["updateMarketingCampaignAsync:::x-api-version"]=""
+operation_parameters_collection_type["createMarketingListAsync:::tenantId"]=""
+operation_parameters_collection_type["createMarketingListAsync:::MarketingListCreateDto"]=""
+operation_parameters_collection_type["createMarketingListAsync:::api-version"]=""
+operation_parameters_collection_type["createMarketingListAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteMarketingListAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteMarketingListAsync:::marketinglistId"]=""
+operation_parameters_collection_type["deleteMarketingListAsync:::api-version"]=""
+operation_parameters_collection_type["deleteMarketingListAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMarketingListDetailsAsync:::tenantId"]=""
+operation_parameters_collection_type["getMarketingListDetailsAsync:::marketinglistId"]=""
+operation_parameters_collection_type["getMarketingListDetailsAsync:::api-version"]=""
+operation_parameters_collection_type["getMarketingListDetailsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMarketingListODataAsync:::tenantId"]=""
+operation_parameters_collection_type["getMarketingListODataAsync:::api-version"]=""
+operation_parameters_collection_type["getMarketingListODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMarketingListsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getMarketingListsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getMarketingListsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateMarketingListAsync:::tenantId"]=""
+operation_parameters_collection_type["updateMarketingListAsync:::marketinglistId"]=""
+operation_parameters_collection_type["updateMarketingListAsync:::MarketingListUpdateDto"]=""
+operation_parameters_collection_type["updateMarketingListAsync:::api-version"]=""
+operation_parameters_collection_type["updateMarketingListAsync:::x-api-version"]=""
+operation_parameters_collection_type["createNewsletterAsync:::tenantId"]=""
+operation_parameters_collection_type["createNewsletterAsync:::NewsletterCreateDto"]=""
+operation_parameters_collection_type["createNewsletterAsync:::api-version"]=""
+operation_parameters_collection_type["createNewsletterAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteNewsletterAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteNewsletterAsync:::newsletterId"]=""
+operation_parameters_collection_type["deleteNewsletterAsync:::api-version"]=""
+operation_parameters_collection_type["deleteNewsletterAsync:::x-api-version"]=""
+operation_parameters_collection_type["getNewsletterDetailsAsync:::tenantId"]=""
+operation_parameters_collection_type["getNewsletterDetailsAsync:::newsletterId"]=""
+operation_parameters_collection_type["getNewsletterDetailsAsync:::api-version"]=""
+operation_parameters_collection_type["getNewsletterDetailsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getNewsletterODataAsync:::tenantId"]=""
+operation_parameters_collection_type["getNewsletterODataAsync:::api-version"]=""
+operation_parameters_collection_type["getNewsletterODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["getNewslettersCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getNewslettersCountAsync:::api-version"]=""
+operation_parameters_collection_type["getNewslettersCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateNewsletterAsync:::tenantId"]=""
+operation_parameters_collection_type["updateNewsletterAsync:::newsletterId"]=""
+operation_parameters_collection_type["updateNewsletterAsync:::NewsletterUpdateDto"]=""
+operation_parameters_collection_type["updateNewsletterAsync:::api-version"]=""
+operation_parameters_collection_type["updateNewsletterAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSocialMediaPostAsync:::tenantId"]=""
+operation_parameters_collection_type["createSocialMediaPostAsync:::SocialMediaPostCreateDto"]=""
+operation_parameters_collection_type["createSocialMediaPostAsync:::api-version"]=""
+operation_parameters_collection_type["createSocialMediaPostAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteSocialMediaPostAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSocialMediaPostAsync:::socialmediapostId"]=""
+operation_parameters_collection_type["deleteSocialMediaPostAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSocialMediaPostAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialMediaPostDetailsAsync:::tenantId"]=""
+operation_parameters_collection_type["getSocialMediaPostDetailsAsync:::socialmediapostId"]=""
+operation_parameters_collection_type["getSocialMediaPostDetailsAsync:::api-version"]=""
+operation_parameters_collection_type["getSocialMediaPostDetailsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialMediaPostsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getSocialMediaPostsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSocialMediaPostsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialMediaPostsODataAsync:::tenantId"]=""
+operation_parameters_collection_type["getSocialMediaPostsODataAsync:::api-version"]=""
+operation_parameters_collection_type["getSocialMediaPostsODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSocialMediaPostAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSocialMediaPostAsync:::socialmediapostId"]=""
+operation_parameters_collection_type["updateSocialMediaPostAsync:::SocialMediaPostUpdateDto"]=""
+operation_parameters_collection_type["updateSocialMediaPostAsync:::api-version"]=""
+operation_parameters_collection_type["updateSocialMediaPostAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSocialPostBucketAsync:::tenantId"]=""
+operation_parameters_collection_type["createSocialPostBucketAsync:::SocialPostBucketCreateDto"]=""
+operation_parameters_collection_type["createSocialPostBucketAsync:::api-version"]=""
+operation_parameters_collection_type["createSocialPostBucketAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteSocialPostBucketAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSocialPostBucketAsync:::socialpostbucketId"]=""
+operation_parameters_collection_type["deleteSocialPostBucketAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSocialPostBucketAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialPostBucketDetailsAsync:::tenantId"]=""
+operation_parameters_collection_type["getSocialPostBucketDetailsAsync:::socialpostbucketId"]=""
+operation_parameters_collection_type["getSocialPostBucketDetailsAsync:::api-version"]=""
+operation_parameters_collection_type["getSocialPostBucketDetailsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialPostBucketsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getSocialPostBucketsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSocialPostBucketsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialPostBucketsODataAsync:::tenantId"]=""
+operation_parameters_collection_type["getSocialPostBucketsODataAsync:::api-version"]=""
+operation_parameters_collection_type["getSocialPostBucketsODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSocialPostBucketAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSocialPostBucketAsync:::socialpostbucketId"]=""
+operation_parameters_collection_type["updateSocialPostBucketAsync:::SocialPostBucketUpdateDto"]=""
+operation_parameters_collection_type["updateSocialPostBucketAsync:::api-version"]=""
+operation_parameters_collection_type["updateSocialPostBucketAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTrackingPixelAsync:::pixelId"]=""
+operation_parameters_collection_type["getTrackingPixelAsync:::api-version"]=""
+operation_parameters_collection_type["getTrackingPixelAsync:::x-api-version"]=""
 
 
 ##
@@ -693,9 +729,6 @@ host=""
 # The user credentials for basic authentication
 basic_auth_credential=""
 
-##
-# The user API key
-apikey_auth_credential=""
 
 ##
 # If true, the script will only output the actual cURL command that would be
@@ -798,23 +831,10 @@ lookup_mime_type() {
 ##############################################################################
 header_arguments_to_curl() {
     local headers_curl=""
-    local api_key_header=""
-    local api_key_header_in_cli=""
-    api_key_header="Authorization"
 
     for key in "${!header_arguments[@]}"; do
         headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
-        if [[ "${key}XX" == "${api_key_header}XX" ]]; then
-            api_key_header_in_cli="YES"
-        fi
     done
-    #
-    # If the api_key was not provided in the header, try one from the
-    # environment variable
-    #
-    if [[ -z $api_key_header_in_cli && -n $apikey_auth_credential ]]; then
-        headers_curl+="-H \"${api_key_header}: ${apikey_auth_credential}\""
-    fi
     headers_curl+=" "
 
     echo "${headers_curl}"
@@ -1046,7 +1066,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}MarketingService command line client (API version 2.0.1.4089)${OFF}
+${BOLD}${WHITE}MarketingService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1073,104 +1093,117 @@ ${BOLD}${WHITE}Usage${OFF}
                                       JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
 
 EOF
-    echo -e "${BOLD}${WHITE}Authentication methods${OFF}"
-    echo -e ""
-    echo -e "  - ${BLUE}Api-key${OFF} - add '${RED}Authorization:<api-key>${OFF}' after ${YELLOW}<operation>${OFF}"
-    
-    echo ""
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
     echo -e "${BOLD}${WHITE}[emailGroups]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2MarketingServiceEmailGroupsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailGroupsEmailgroupIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailGroupsEmailgroupIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailGroupsEmailgroupIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailGroupsGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailGroupsPost${OFF}; (AUTH)
+  ${CYAN}createEmailGroupAsync${OFF};Create an email group
+  ${CYAN}deleteEmailGroupAsync${OFF};Delete an email group
+  ${CYAN}getEmailGroupDetailsAsync${OFF};Get email group by ID
+  ${CYAN}getEmailGroupsCountAsync${OFF};Get email groups count
+  ${CYAN}getEmailGroupsODataAsync${OFF};Get email groups
+  ${CYAN}updateEmailGroupAsync${OFF};Update an email group
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[emailSignatures]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2MarketingServiceEmailSignaturesCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailSignaturesGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailSignaturesPost${OFF}; (AUTH)
+  ${CYAN}createEmailSignatureAsync${OFF};Create an email signature
+  ${CYAN}deleteEmailSignatureAsync${OFF};Delete an email signature
+  ${CYAN}getEmailSignatureDetailsAsync${OFF};Get email signature by ID
+  ${CYAN}getEmailSignaturesCountAsync${OFF};Get email signatures count
+  ${CYAN}getEmailSignaturesODataAsync${OFF};Get email signatures
+  ${CYAN}updateEmailSignatureAsync${OFF};Update an email signature
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[emailTemplates]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2MarketingServiceEmailTemplatesCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailTemplatesGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceEmailTemplatesPost${OFF}; (AUTH)
+  ${CYAN}createEmailTemplateAsync${OFF};Create an email template
+  ${CYAN}deleteEmailTemplateAsync${OFF};Delete an email template
+  ${CYAN}getEmailTemplateDetailsAsync${OFF};Get email template by ID
+  ${CYAN}getEmailTemplatesCountAsync${OFF};Get email templates count
+  ${CYAN}getEmailTemplatesODataAsync${OFF};Get email templates
+  ${CYAN}updateEmailTemplateAsync${OFF};Update an email template
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[marketingCampaigns]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2MarketingServiceMarketingCampaignsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceMarketingCampaignsGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceMarketingCampaignsPost${OFF}; (AUTH)
+  ${CYAN}createMarketingCampaignAsync${OFF};Create a marketing campaign
+  ${CYAN}deleteMarketingCampaignAsync${OFF};Delete a marketing campaign
+  ${CYAN}getMarketingCampaignDetailsAsync${OFF};Get marketing campaign by ID
+  ${CYAN}getMarketingCampaignODataAsync${OFF};Get marketing campaigns
+  ${CYAN}getMarketingCampaignsCountAsync${OFF};Get marketing campaigns count
+  ${CYAN}updateMarketingCampaignAsync${OFF};Update a marketing campaign
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[marketingLists]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2MarketingServiceMarketingListsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceMarketingListsGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceMarketingListsMarketinglistIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceMarketingListsMarketinglistIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceMarketingListsMarketinglistIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceMarketingListsPost${OFF}; (AUTH)
+  ${CYAN}createMarketingListAsync${OFF};Create a marketing list
+  ${CYAN}deleteMarketingListAsync${OFF};Delete a marketing list
+  ${CYAN}getMarketingListDetailsAsync${OFF};Get marketing list by ID
+  ${CYAN}getMarketingListODataAsync${OFF};Get marketing lists
+  ${CYAN}getMarketingListsCountAsync${OFF};Get marketing lists count
+  ${CYAN}updateMarketingListAsync${OFF};Update a marketing list
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[newsletters]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2MarketingServiceNewslettersCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceNewslettersGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceNewslettersNewsletterIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceNewslettersNewsletterIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceNewslettersNewsletterIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceNewslettersPost${OFF}; (AUTH)
+  ${CYAN}createNewsletterAsync${OFF};Create a newsletter
+  ${CYAN}deleteNewsletterAsync${OFF};Delete a newsletter
+  ${CYAN}getNewsletterDetailsAsync${OFF};Get newsletter by ID
+  ${CYAN}getNewsletterODataAsync${OFF};Get newsletters
+  ${CYAN}getNewslettersCountAsync${OFF};Get newsletters count
+  ${CYAN}updateNewsletterAsync${OFF};Update a newsletter
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[socialMediaPosts]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2MarketingServiceSocialMediaPostsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceSocialMediaPostsGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceSocialMediaPostsPost${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut${OFF}; (AUTH)
+  ${CYAN}createSocialMediaPostAsync${OFF};Create a social media post
+  ${CYAN}deleteSocialMediaPostAsync${OFF};Delete a social media post
+  ${CYAN}getSocialMediaPostDetailsAsync${OFF};Get social media post by ID
+  ${CYAN}getSocialMediaPostsCountAsync${OFF};Get social media posts count
+  ${CYAN}getSocialMediaPostsODataAsync${OFF};Get social media posts
+  ${CYAN}updateSocialMediaPostAsync${OFF};Update a social media post
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[socialPostBuckets]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2MarketingServiceSocialPostBucketsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceSocialPostBucketsGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceSocialPostBucketsPost${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut${OFF}; (AUTH)
+  ${CYAN}createSocialPostBucketAsync${OFF};Create a social post bucket
+  ${CYAN}deleteSocialPostBucketAsync${OFF};Delete a social post bucket
+  ${CYAN}getSocialPostBucketDetailsAsync${OFF};Get social post bucket by ID
+  ${CYAN}getSocialPostBucketsCountAsync${OFF};Get social post buckets count
+  ${CYAN}getSocialPostBucketsODataAsync${OFF};Get social post buckets
+  ${CYAN}updateSocialPostBucketAsync${OFF};Update a social post bucket
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[trackingPixels]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2MarketingServiceTrackingPixelsPixelIdGet${OFF}; (AUTH)
+  ${CYAN}getTrackingPixelAsync${OFF};Get a tracking pixel
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1200,7 +1233,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}MarketingService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}${WHITE}MarketingService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1220,18 +1253,20 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}MarketingService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}MarketingService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailGroupsCountGet operation
+# Print help for createEmailGroupAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailGroupsCountGet_help() {
+print_createEmailGroupAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailGroupsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createEmailGroupAsync - Create an email group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new email group for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1239,6 +1274,8 @@ print_apiV2MarketingServiceEmailGroupsCountGet_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1247,17 +1284,19 @@ print_apiV2MarketingServiceEmailGroupsCountGet_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailGroupsEmailgroupIdDelete operation
+# Print help for deleteEmailGroupAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailGroupsEmailgroupIdDelete_help() {
+print_deleteEmailGroupAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailGroupsEmailgroupIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteEmailGroupAsync - Delete an email group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an email group by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1279,12 +1318,14 @@ print_apiV2MarketingServiceEmailGroupsEmailgroupIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailGroupsEmailgroupIdGet operation
+# Print help for getEmailGroupDetailsAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailGroupsEmailgroupIdGet_help() {
+print_getEmailGroupDetailsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailGroupsEmailgroupIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getEmailGroupDetailsAsync - Get email group by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a specific email group by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1306,12 +1347,68 @@ print_apiV2MarketingServiceEmailGroupsEmailgroupIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailGroupsEmailgroupIdPut operation
+# Print help for getEmailGroupsCountAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailGroupsEmailgroupIdPut_help() {
+print_getEmailGroupsCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailGroupsEmailgroupIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getEmailGroupsCountAsync - Get email groups count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of email groups for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getEmailGroupsODataAsync operation
+#
+##############################################################################
+print_getEmailGroupsODataAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getEmailGroupsODataAsync - Get email groups${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a collection of email groups for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateEmailGroupAsync operation
+#
+##############################################################################
+print_updateEmailGroupAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateEmailGroupAsync - Update an email group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing email group by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1335,36 +1432,14 @@ print_apiV2MarketingServiceEmailGroupsEmailgroupIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailGroupsGet operation
+# Print help for createEmailSignatureAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailGroupsGet_help() {
+print_createEmailSignatureAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailGroupsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createEmailSignatureAsync - Create an email signature${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceEmailGroupsPost operation
-#
-##############################################################################
-print_apiV2MarketingServiceEmailGroupsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailGroupsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Creates a new email signature for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1387,38 +1462,14 @@ print_apiV2MarketingServiceEmailGroupsPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailSignaturesCountGet operation
+# Print help for deleteEmailSignatureAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailSignaturesCountGet_help() {
+print_deleteEmailSignatureAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailSignaturesCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteEmailSignatureAsync - Delete an email signature${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete operation
-#
-##############################################################################
-print_apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Deletes an email signature by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1440,12 +1491,14 @@ print_apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet operation
+# Print help for getEmailSignatureDetailsAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet_help() {
+print_getEmailSignatureDetailsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getEmailSignatureDetailsAsync - Get email signature by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a specific email signature by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1467,12 +1520,68 @@ print_apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut operation
+# Print help for getEmailSignaturesCountAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut_help() {
+print_getEmailSignaturesCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getEmailSignaturesCountAsync - Get email signatures count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of email signatures for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getEmailSignaturesODataAsync operation
+#
+##############################################################################
+print_getEmailSignaturesODataAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getEmailSignaturesODataAsync - Get email signatures${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a collection of email signatures for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateEmailSignatureAsync operation
+#
+##############################################################################
+print_updateEmailSignatureAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateEmailSignatureAsync - Update an email signature${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing email signature by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1496,36 +1605,14 @@ print_apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailSignaturesGet operation
+# Print help for createEmailTemplateAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailSignaturesGet_help() {
+print_createEmailTemplateAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailSignaturesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createEmailTemplateAsync - Create an email template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceEmailSignaturesPost operation
-#
-##############################################################################
-print_apiV2MarketingServiceEmailSignaturesPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailSignaturesPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Creates a new email template for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1548,38 +1635,14 @@ print_apiV2MarketingServiceEmailSignaturesPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailTemplatesCountGet operation
+# Print help for deleteEmailTemplateAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailTemplatesCountGet_help() {
+print_deleteEmailTemplateAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailTemplatesCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteEmailTemplateAsync - Delete an email template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete operation
-#
-##############################################################################
-print_apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Deletes an email template by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1601,41 +1664,14 @@ print_apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet operation
+# Print help for getEmailTemplateDetailsAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet_help() {
+print_getEmailTemplateDetailsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getEmailTemplateDetailsAsync - Get email template by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}emailTemplatesId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: emailTemplatesId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}emailTemplateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: emailTemplateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut operation
-#
-##############################################################################
-print_apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Retrieves the details of a specific email template by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1644,8 +1680,6 @@ print_apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1659,12 +1693,42 @@ print_apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailTemplatesGet operation
+# Print help for getEmailTemplatesCountAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailTemplatesGet_help() {
+print_getEmailTemplatesCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailTemplatesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getEmailTemplatesCountAsync - Get email templates count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of email templates for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getEmailTemplatesODataAsync operation
+#
+##############################################################################
+print_getEmailTemplatesODataAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getEmailTemplatesODataAsync - Get email templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a collection of email templates for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1683,12 +1747,280 @@ print_apiV2MarketingServiceEmailTemplatesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceEmailTemplatesPost operation
+# Print help for updateEmailTemplateAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceEmailTemplatesPost_help() {
+print_updateEmailTemplateAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceEmailTemplatesPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateEmailTemplateAsync - Update an email template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing email template by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}emailTemplateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: emailTemplateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for forgotPasswordPost operation
+#
+##############################################################################
+print_forgotPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for helloGet operation
+#
+##############################################################################
+print_helloGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for loginPost operation
+#
+##############################################################################
+print_loginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manage2faPost operation
+#
+##############################################################################
+print_manage2faPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createMarketingCampaignAsync operation
+#
+##############################################################################
+print_createMarketingCampaignAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createMarketingCampaignAsync - Create a marketing campaign${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new marketing campaign for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1711,62 +2043,14 @@ print_apiV2MarketingServiceEmailTemplatesPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceMarketingCampaignsCountGet operation
+# Print help for deleteMarketingCampaignAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceMarketingCampaignsCountGet_help() {
+print_deleteMarketingCampaignAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceMarketingCampaignsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteMarketingCampaignAsync - Delete a marketing campaign${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceMarketingCampaignsGet operation
-#
-##############################################################################
-print_apiV2MarketingServiceMarketingCampaignsGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceMarketingCampaignsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete operation
-#
-##############################################################################
-print_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Deletes a marketing campaign by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1788,12 +2072,14 @@ print_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet operation
+# Print help for getMarketingCampaignDetailsAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet_help() {
+print_getMarketingCampaignDetailsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getMarketingCampaignDetailsAsync - Get marketing campaign by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a specific marketing campaign by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1815,12 +2101,68 @@ print_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut operation
+# Print help for getMarketingCampaignODataAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut_help() {
+print_getMarketingCampaignODataAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getMarketingCampaignODataAsync - Get marketing campaigns${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a collection of marketing campaigns for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMarketingCampaignsCountAsync operation
+#
+##############################################################################
+print_getMarketingCampaignsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMarketingCampaignsCountAsync - Get marketing campaigns count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of marketing campaigns for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateMarketingCampaignAsync operation
+#
+##############################################################################
+print_updateMarketingCampaignAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateMarketingCampaignAsync - Update a marketing campaign${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing marketing campaign by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1844,12 +2186,14 @@ print_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceMarketingCampaignsPost operation
+# Print help for createMarketingListAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceMarketingCampaignsPost_help() {
+print_createMarketingListAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceMarketingCampaignsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createMarketingListAsync - Create a marketing list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new marketing list for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1872,62 +2216,14 @@ print_apiV2MarketingServiceMarketingCampaignsPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceMarketingListsCountGet operation
+# Print help for deleteMarketingListAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceMarketingListsCountGet_help() {
+print_deleteMarketingListAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceMarketingListsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteMarketingListAsync - Delete a marketing list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceMarketingListsGet operation
-#
-##############################################################################
-print_apiV2MarketingServiceMarketingListsGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceMarketingListsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceMarketingListsMarketinglistIdDelete operation
-#
-##############################################################################
-print_apiV2MarketingServiceMarketingListsMarketinglistIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceMarketingListsMarketinglistIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Deletes a marketing list by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1949,12 +2245,14 @@ print_apiV2MarketingServiceMarketingListsMarketinglistIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceMarketingListsMarketinglistIdGet operation
+# Print help for getMarketingListDetailsAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceMarketingListsMarketinglistIdGet_help() {
+print_getMarketingListDetailsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceMarketingListsMarketinglistIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getMarketingListDetailsAsync - Get marketing list by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a specific marketing list by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1976,12 +2274,68 @@ print_apiV2MarketingServiceMarketingListsMarketinglistIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceMarketingListsMarketinglistIdPut operation
+# Print help for getMarketingListODataAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceMarketingListsMarketinglistIdPut_help() {
+print_getMarketingListODataAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceMarketingListsMarketinglistIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getMarketingListODataAsync - Get marketing lists${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a collection of marketing lists for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMarketingListsCountAsync operation
+#
+##############################################################################
+print_getMarketingListsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMarketingListsCountAsync - Get marketing lists count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of marketing lists for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateMarketingListAsync operation
+#
+##############################################################################
+print_updateMarketingListAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateMarketingListAsync - Update a marketing list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing marketing list by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2005,12 +2359,14 @@ print_apiV2MarketingServiceMarketingListsMarketinglistIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceMarketingListsPost operation
+# Print help for createNewsletterAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceMarketingListsPost_help() {
+print_createNewsletterAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceMarketingListsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createNewsletterAsync - Create a newsletter${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new newsletter for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2033,62 +2389,14 @@ print_apiV2MarketingServiceMarketingListsPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceNewslettersCountGet operation
+# Print help for deleteNewsletterAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceNewslettersCountGet_help() {
+print_deleteNewsletterAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceNewslettersCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteNewsletterAsync - Delete a newsletter${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceNewslettersGet operation
-#
-##############################################################################
-print_apiV2MarketingServiceNewslettersGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceNewslettersGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceNewslettersNewsletterIdDelete operation
-#
-##############################################################################
-print_apiV2MarketingServiceNewslettersNewsletterIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceNewslettersNewsletterIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Deletes a newsletter by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2110,12 +2418,14 @@ print_apiV2MarketingServiceNewslettersNewsletterIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceNewslettersNewsletterIdGet operation
+# Print help for getNewsletterDetailsAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceNewslettersNewsletterIdGet_help() {
+print_getNewsletterDetailsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceNewslettersNewsletterIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getNewsletterDetailsAsync - Get newsletter by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a specific newsletter by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2137,12 +2447,68 @@ print_apiV2MarketingServiceNewslettersNewsletterIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceNewslettersNewsletterIdPut operation
+# Print help for getNewsletterODataAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceNewslettersNewsletterIdPut_help() {
+print_getNewsletterODataAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceNewslettersNewsletterIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getNewsletterODataAsync - Get newsletters${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a collection of newsletters for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getNewslettersCountAsync operation
+#
+##############################################################################
+print_getNewslettersCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getNewslettersCountAsync - Get newsletters count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of newsletters for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateNewsletterAsync operation
+#
+##############################################################################
+print_updateNewsletterAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateNewsletterAsync - Update a newsletter${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing newsletter by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2166,12 +2532,14 @@ print_apiV2MarketingServiceNewslettersNewsletterIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceNewslettersPost operation
+# Print help for createSocialMediaPostAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceNewslettersPost_help() {
+print_createSocialMediaPostAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceNewslettersPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createSocialMediaPostAsync - Create a social media post${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new social media post for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2194,90 +2562,14 @@ print_apiV2MarketingServiceNewslettersPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceSocialMediaPostsCountGet operation
+# Print help for deleteSocialMediaPostAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceSocialMediaPostsCountGet_help() {
+print_deleteSocialMediaPostAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceSocialMediaPostsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteSocialMediaPostAsync - Delete a social media post${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceSocialMediaPostsGet operation
-#
-##############################################################################
-print_apiV2MarketingServiceSocialMediaPostsGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceSocialMediaPostsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceSocialMediaPostsPost operation
-#
-##############################################################################
-print_apiV2MarketingServiceSocialMediaPostsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceSocialMediaPostsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete operation
-#
-##############################################################################
-print_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Deletes a social media post by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2299,12 +2591,14 @@ print_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet operation
+# Print help for getSocialMediaPostDetailsAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet_help() {
+print_getSocialMediaPostDetailsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSocialMediaPostDetailsAsync - Get social media post by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a specific social media post by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2326,12 +2620,68 @@ print_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut operation
+# Print help for getSocialMediaPostsCountAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut_help() {
+print_getSocialMediaPostsCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSocialMediaPostsCountAsync - Get social media posts count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of social media posts for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSocialMediaPostsODataAsync operation
+#
+##############################################################################
+print_getSocialMediaPostsODataAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSocialMediaPostsODataAsync - Get social media posts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a collection of social media posts for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSocialMediaPostAsync operation
+#
+##############################################################################
+print_updateSocialMediaPostAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSocialMediaPostAsync - Update a social media post${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing social media post by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2355,62 +2705,14 @@ print_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceSocialPostBucketsCountGet operation
+# Print help for createSocialPostBucketAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceSocialPostBucketsCountGet_help() {
+print_createSocialPostBucketAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceSocialPostBucketsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createSocialPostBucketAsync - Create a social post bucket${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceSocialPostBucketsGet operation
-#
-##############################################################################
-print_apiV2MarketingServiceSocialPostBucketsGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceSocialPostBucketsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2MarketingServiceSocialPostBucketsPost operation
-#
-##############################################################################
-print_apiV2MarketingServiceSocialPostBucketsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceSocialPostBucketsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Creates a new social post bucket for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2433,12 +2735,14 @@ print_apiV2MarketingServiceSocialPostBucketsPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete operation
+# Print help for deleteSocialPostBucketAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete_help() {
+print_deleteSocialPostBucketAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteSocialPostBucketAsync - Delete a social post bucket${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a social post bucket by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2460,12 +2764,14 @@ print_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet operation
+# Print help for getSocialPostBucketDetailsAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet_help() {
+print_getSocialPostBucketDetailsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSocialPostBucketDetailsAsync - Get social post bucket by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a specific social post bucket by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2487,12 +2793,68 @@ print_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut operation
+# Print help for getSocialPostBucketsCountAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut_help() {
+print_getSocialPostBucketsCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSocialPostBucketsCountAsync - Get social post buckets count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of social post buckets for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSocialPostBucketsODataAsync operation
+#
+##############################################################################
+print_getSocialPostBucketsODataAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSocialPostBucketsODataAsync - Get social post buckets${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a collection of social post buckets for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSocialPostBucketAsync operation
+#
+##############################################################################
+print_updateSocialPostBucketAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSocialPostBucketAsync - Update a social post bucket${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing social post bucket by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2516,12 +2878,14 @@ print_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2MarketingServiceTrackingPixelsPixelIdGet operation
+# Print help for getTrackingPixelAsync operation
 #
 ##############################################################################
-print_apiV2MarketingServiceTrackingPixelsPixelIdGet_help() {
+print_getTrackingPixelAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2MarketingServiceTrackingPixelsPixelIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getTrackingPixelAsync - Get a tracking pixel${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a tracking pixel by its ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}pixelId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pixelId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2537,16 +2901,164 @@ print_apiV2MarketingServiceTrackingPixelsPixelIdGet_help() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailGroupsCountGet operation
+# Call createEmailGroupAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailGroupsCountGet() {
+call_createEmailGroupAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailGroups" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteEmailGroupAsync operation
+#
+##############################################################################
+call_deleteEmailGroupAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(emailgroupId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailGroups/{emailgroupId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getEmailGroupDetailsAsync operation
+#
+##############################################################################
+call_getEmailGroupDetailsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(emailgroupId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailGroups/{emailgroupId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getEmailGroupsCountAsync operation
+#
+##############################################################################
+call_getEmailGroupsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/EmailGroups/Count" path_parameter_names query_parameter_names); then
@@ -2573,55 +3085,19 @@ call_apiV2MarketingServiceEmailGroupsCountGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailGroupsEmailgroupIdDelete operation
+# Call getEmailGroupsODataAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailGroupsEmailgroupIdDelete() {
+call_getEmailGroupsODataAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(emailgroupId)
+    local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/MarketingService/EmailGroups/{emailgroupId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceEmailGroupsEmailgroupIdGet operation
-#
-##############################################################################
-call_apiV2MarketingServiceEmailGroupsEmailgroupIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(emailgroupId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/EmailGroups/{emailgroupId}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailGroups" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -2645,16 +3121,16 @@ call_apiV2MarketingServiceEmailGroupsEmailgroupIdGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailGroupsEmailgroupIdPut operation
+# Call updateEmailGroupAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailGroupsEmailgroupIdPut() {
+call_updateEmailGroupAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(emailgroupId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/EmailGroups/{emailgroupId}" path_parameter_names query_parameter_names); then
@@ -2721,55 +3197,19 @@ call_apiV2MarketingServiceEmailGroupsEmailgroupIdPut() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailGroupsGet operation
+# Call createEmailSignatureAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailGroupsGet() {
+call_createEmailSignatureAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/MarketingService/EmailGroups" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceEmailGroupsPost operation
-#
-##############################################################################
-call_apiV2MarketingServiceEmailGroupsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/EmailGroups" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailSignatures" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -2833,16 +3273,88 @@ call_apiV2MarketingServiceEmailGroupsPost() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailSignaturesCountGet operation
+# Call deleteEmailSignatureAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailSignaturesCountGet() {
+call_deleteEmailSignatureAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(emailsignatureId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailSignatures/{emailsignatureId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getEmailSignatureDetailsAsync operation
+#
+##############################################################################
+call_getEmailSignatureDetailsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(emailsignatureId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailSignatures/{emailsignatureId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getEmailSignaturesCountAsync operation
+#
+##############################################################################
+call_getEmailSignaturesCountAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/EmailSignatures/Count" path_parameter_names query_parameter_names); then
@@ -2869,55 +3381,19 @@ call_apiV2MarketingServiceEmailSignaturesCountGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete operation
+# Call getEmailSignaturesODataAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete() {
+call_getEmailSignaturesODataAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(emailsignatureId)
+    local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/MarketingService/EmailSignatures/{emailsignatureId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet operation
-#
-##############################################################################
-call_apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(emailsignatureId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/EmailSignatures/{emailsignatureId}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailSignatures" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -2941,16 +3417,16 @@ call_apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut operation
+# Call updateEmailSignatureAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut() {
+call_updateEmailSignatureAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(emailsignatureId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/EmailSignatures/{emailsignatureId}" path_parameter_names query_parameter_names); then
@@ -3017,55 +3493,19 @@ call_apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailSignaturesGet operation
+# Call createEmailTemplateAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailSignaturesGet() {
+call_createEmailTemplateAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/MarketingService/EmailSignatures" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceEmailSignaturesPost operation
-#
-##############################################################################
-call_apiV2MarketingServiceEmailSignaturesPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/EmailSignatures" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailTemplates" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3129,16 +3569,88 @@ call_apiV2MarketingServiceEmailSignaturesPost() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailTemplatesCountGet operation
+# Call deleteEmailTemplateAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailTemplatesCountGet() {
+call_deleteEmailTemplateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(emailTemplateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailTemplates/{emailTemplateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getEmailTemplateDetailsAsync operation
+#
+##############################################################################
+call_getEmailTemplateDetailsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(emailTemplateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailTemplates/{emailTemplateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getEmailTemplatesCountAsync operation
+#
+##############################################################################
+call_getEmailTemplatesCountAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/EmailTemplates/Count" path_parameter_names query_parameter_names); then
@@ -3165,55 +3677,19 @@ call_apiV2MarketingServiceEmailTemplatesCountGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete operation
+# Call getEmailTemplatesODataAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete() {
+call_getEmailTemplatesODataAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(emailTemplateId)
+    local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/MarketingService/EmailTemplates/{emailTemplateId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet operation
-#
-##############################################################################
-call_apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(emailTemplateId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId emailTemplatesId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/EmailTemplates/{emailTemplateId}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailTemplates" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3237,16 +3713,16 @@ call_apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut operation
+# Call updateEmailTemplateAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut() {
+call_updateEmailTemplateAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(emailTemplateId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/EmailTemplates/{emailTemplateId}" path_parameter_names query_parameter_names); then
@@ -3313,19 +3789,97 @@ call_apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailTemplatesGet operation
+# Call forgotPasswordPost operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailTemplatesGet() {
+call_forgotPasswordPost() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=()
     local path
 
-    if ! path=$(build_request_path "/api/v2/MarketingService/EmailTemplates" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3349,19 +3903,709 @@ call_apiV2MarketingServiceEmailTemplatesGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceEmailTemplatesPost operation
+# Call helloGet operation
 #
 ##############################################################################
-call_apiV2MarketingServiceEmailTemplatesPost() {
+call_helloGet() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=()
     local path
 
-    if ! path=$(build_request_path "/api/v2/MarketingService/EmailTemplates" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call loginPost operation
+#
+##############################################################################
+call_loginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(useCookies useSessionCookies)
+    local path
+
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoPost operation
+#
+##############################################################################
+call_manageInfoPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call refreshPost operation
+#
+##############################################################################
+call_refreshPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createMarketingCampaignAsync operation
+#
+##############################################################################
+call_createMarketingCampaignAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingCampaigns" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3425,16 +4669,124 @@ call_apiV2MarketingServiceEmailTemplatesPost() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceMarketingCampaignsCountGet operation
+# Call deleteMarketingCampaignAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceMarketingCampaignsCountGet() {
+call_deleteMarketingCampaignAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketingcampaignId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMarketingCampaignDetailsAsync operation
+#
+##############################################################################
+call_getMarketingCampaignDetailsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketingcampaignId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMarketingCampaignODataAsync operation
+#
+##############################################################################
+call_getMarketingCampaignODataAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingCampaigns" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMarketingCampaignsCountAsync operation
+#
+##############################################################################
+call_getMarketingCampaignsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/MarketingCampaigns/Count" path_parameter_names query_parameter_names); then
@@ -3461,124 +4813,16 @@ call_apiV2MarketingServiceMarketingCampaignsCountGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceMarketingCampaignsGet operation
+# Call updateMarketingCampaignAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceMarketingCampaignsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingCampaigns" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete operation
-#
-##############################################################################
-call_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete() {
+call_updateMarketingCampaignAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(marketingcampaignId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet operation
-#
-##############################################################################
-call_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(marketingcampaignId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut operation
-#
-##############################################################################
-call_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(marketingcampaignId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId}" path_parameter_names query_parameter_names); then
@@ -3645,19 +4889,19 @@ call_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceMarketingCampaignsPost operation
+# Call createMarketingListAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceMarketingCampaignsPost() {
+call_createMarketingListAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingCampaigns" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLists" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3721,16 +4965,124 @@ call_apiV2MarketingServiceMarketingCampaignsPost() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceMarketingListsCountGet operation
+# Call deleteMarketingListAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceMarketingListsCountGet() {
+call_deleteMarketingListAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketinglistId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLists/{marketinglistId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMarketingListDetailsAsync operation
+#
+##############################################################################
+call_getMarketingListDetailsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketinglistId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLists/{marketinglistId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMarketingListODataAsync operation
+#
+##############################################################################
+call_getMarketingListODataAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLists" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMarketingListsCountAsync operation
+#
+##############################################################################
+call_getMarketingListsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLists/Count" path_parameter_names query_parameter_names); then
@@ -3757,124 +5109,16 @@ call_apiV2MarketingServiceMarketingListsCountGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceMarketingListsGet operation
+# Call updateMarketingListAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceMarketingListsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLists" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceMarketingListsMarketinglistIdDelete operation
-#
-##############################################################################
-call_apiV2MarketingServiceMarketingListsMarketinglistIdDelete() {
+call_updateMarketingListAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(marketinglistId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLists/{marketinglistId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceMarketingListsMarketinglistIdGet operation
-#
-##############################################################################
-call_apiV2MarketingServiceMarketingListsMarketinglistIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(marketinglistId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLists/{marketinglistId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceMarketingListsMarketinglistIdPut operation
-#
-##############################################################################
-call_apiV2MarketingServiceMarketingListsMarketinglistIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(marketinglistId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLists/{marketinglistId}" path_parameter_names query_parameter_names); then
@@ -3941,19 +5185,19 @@ call_apiV2MarketingServiceMarketingListsMarketinglistIdPut() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceMarketingListsPost operation
+# Call createNewsletterAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceMarketingListsPost() {
+call_createNewsletterAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLists" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/MarketingService/Newsletters" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -4017,16 +5261,124 @@ call_apiV2MarketingServiceMarketingListsPost() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceNewslettersCountGet operation
+# Call deleteNewsletterAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceNewslettersCountGet() {
+call_deleteNewsletterAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(newsletterId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/Newsletters/{newsletterId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getNewsletterDetailsAsync operation
+#
+##############################################################################
+call_getNewsletterDetailsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(newsletterId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/Newsletters/{newsletterId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getNewsletterODataAsync operation
+#
+##############################################################################
+call_getNewsletterODataAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/Newsletters" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getNewslettersCountAsync operation
+#
+##############################################################################
+call_getNewslettersCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/Newsletters/Count" path_parameter_names query_parameter_names); then
@@ -4053,124 +5405,16 @@ call_apiV2MarketingServiceNewslettersCountGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceNewslettersGet operation
+# Call updateNewsletterAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceNewslettersGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/Newsletters" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceNewslettersNewsletterIdDelete operation
-#
-##############################################################################
-call_apiV2MarketingServiceNewslettersNewsletterIdDelete() {
+call_updateNewsletterAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(newsletterId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/Newsletters/{newsletterId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceNewslettersNewsletterIdGet operation
-#
-##############################################################################
-call_apiV2MarketingServiceNewslettersNewsletterIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(newsletterId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/Newsletters/{newsletterId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceNewslettersNewsletterIdPut operation
-#
-##############################################################################
-call_apiV2MarketingServiceNewslettersNewsletterIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(newsletterId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/Newsletters/{newsletterId}" path_parameter_names query_parameter_names); then
@@ -4237,19 +5481,19 @@ call_apiV2MarketingServiceNewslettersNewsletterIdPut() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceNewslettersPost operation
+# Call createSocialMediaPostAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceNewslettersPost() {
+call_createSocialMediaPostAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/MarketingService/Newsletters" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/MarketingService/SocialMediaPosts" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -4313,16 +5557,88 @@ call_apiV2MarketingServiceNewslettersPost() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceSocialMediaPostsCountGet operation
+# Call deleteSocialMediaPostAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceSocialMediaPostsCountGet() {
+call_deleteSocialMediaPostAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialmediapostId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/SocialMediaPosts/{socialmediapostId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSocialMediaPostDetailsAsync operation
+#
+##############################################################################
+call_getSocialMediaPostDetailsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialmediapostId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/SocialMediaPosts/{socialmediapostId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSocialMediaPostsCountAsync operation
+#
+##############################################################################
+call_getSocialMediaPostsCountAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/SocialMediaPosts/Count" path_parameter_names query_parameter_names); then
@@ -4349,16 +5665,16 @@ call_apiV2MarketingServiceSocialMediaPostsCountGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceSocialMediaPostsGet operation
+# Call getSocialMediaPostsODataAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceSocialMediaPostsGet() {
+call_getSocialMediaPostsODataAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/SocialMediaPosts" path_parameter_names query_parameter_names); then
@@ -4385,164 +5701,16 @@ call_apiV2MarketingServiceSocialMediaPostsGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceSocialMediaPostsPost operation
+# Call updateSocialMediaPostAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceSocialMediaPostsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/SocialMediaPosts" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete operation
-#
-##############################################################################
-call_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete() {
+call_updateSocialMediaPostAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(socialmediapostId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/SocialMediaPosts/{socialmediapostId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet operation
-#
-##############################################################################
-call_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(socialmediapostId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/SocialMediaPosts/{socialmediapostId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut operation
-#
-##############################################################################
-call_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(socialmediapostId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/SocialMediaPosts/{socialmediapostId}" path_parameter_names query_parameter_names); then
@@ -4609,16 +5777,164 @@ call_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceSocialPostBucketsCountGet operation
+# Call createSocialPostBucketAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceSocialPostBucketsCountGet() {
+call_createSocialPostBucketAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/SocialPostBuckets" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSocialPostBucketAsync operation
+#
+##############################################################################
+call_deleteSocialPostBucketAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialpostbucketId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSocialPostBucketDetailsAsync operation
+#
+##############################################################################
+call_getSocialPostBucketDetailsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialpostbucketId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSocialPostBucketsCountAsync operation
+#
+##############################################################################
+call_getSocialPostBucketsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/SocialPostBuckets/Count" path_parameter_names query_parameter_names); then
@@ -4645,16 +5961,16 @@ call_apiV2MarketingServiceSocialPostBucketsCountGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceSocialPostBucketsGet operation
+# Call getSocialPostBucketsODataAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceSocialPostBucketsGet() {
+call_getSocialPostBucketsODataAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/SocialPostBuckets" path_parameter_names query_parameter_names); then
@@ -4681,164 +5997,16 @@ call_apiV2MarketingServiceSocialPostBucketsGet() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceSocialPostBucketsPost operation
+# Call updateSocialPostBucketAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceSocialPostBucketsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/SocialPostBuckets" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete operation
-#
-##############################################################################
-call_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete() {
+call_updateSocialPostBucketAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(socialpostbucketId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet operation
-#
-##############################################################################
-call_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(socialpostbucketId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut operation
-#
-##############################################################################
-call_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(socialpostbucketId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId}" path_parameter_names query_parameter_names); then
@@ -4905,16 +6073,16 @@ call_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut() {
 
 ##############################################################################
 #
-# Call apiV2MarketingServiceTrackingPixelsPixelIdGet operation
+# Call getTrackingPixelAsync operation
 #
 ##############################################################################
-call_apiV2MarketingServiceTrackingPixelsPixelIdGet() {
+call_getTrackingPixelAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(pixelId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/TrackingPixels/{pixelId}" path_parameter_names query_parameter_names); then
@@ -5036,152 +6204,191 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
-    apiV2MarketingServiceEmailGroupsCountGet)
-    operation="apiV2MarketingServiceEmailGroupsCountGet"
+    createEmailGroupAsync)
+    operation="createEmailGroupAsync"
     ;;
-    apiV2MarketingServiceEmailGroupsEmailgroupIdDelete)
-    operation="apiV2MarketingServiceEmailGroupsEmailgroupIdDelete"
+    deleteEmailGroupAsync)
+    operation="deleteEmailGroupAsync"
     ;;
-    apiV2MarketingServiceEmailGroupsEmailgroupIdGet)
-    operation="apiV2MarketingServiceEmailGroupsEmailgroupIdGet"
+    getEmailGroupDetailsAsync)
+    operation="getEmailGroupDetailsAsync"
     ;;
-    apiV2MarketingServiceEmailGroupsEmailgroupIdPut)
-    operation="apiV2MarketingServiceEmailGroupsEmailgroupIdPut"
+    getEmailGroupsCountAsync)
+    operation="getEmailGroupsCountAsync"
     ;;
-    apiV2MarketingServiceEmailGroupsGet)
-    operation="apiV2MarketingServiceEmailGroupsGet"
+    getEmailGroupsODataAsync)
+    operation="getEmailGroupsODataAsync"
     ;;
-    apiV2MarketingServiceEmailGroupsPost)
-    operation="apiV2MarketingServiceEmailGroupsPost"
+    updateEmailGroupAsync)
+    operation="updateEmailGroupAsync"
     ;;
-    apiV2MarketingServiceEmailSignaturesCountGet)
-    operation="apiV2MarketingServiceEmailSignaturesCountGet"
+    createEmailSignatureAsync)
+    operation="createEmailSignatureAsync"
     ;;
-    apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete)
-    operation="apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete"
+    deleteEmailSignatureAsync)
+    operation="deleteEmailSignatureAsync"
     ;;
-    apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet)
-    operation="apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet"
+    getEmailSignatureDetailsAsync)
+    operation="getEmailSignatureDetailsAsync"
     ;;
-    apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut)
-    operation="apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut"
+    getEmailSignaturesCountAsync)
+    operation="getEmailSignaturesCountAsync"
     ;;
-    apiV2MarketingServiceEmailSignaturesGet)
-    operation="apiV2MarketingServiceEmailSignaturesGet"
+    getEmailSignaturesODataAsync)
+    operation="getEmailSignaturesODataAsync"
     ;;
-    apiV2MarketingServiceEmailSignaturesPost)
-    operation="apiV2MarketingServiceEmailSignaturesPost"
+    updateEmailSignatureAsync)
+    operation="updateEmailSignatureAsync"
     ;;
-    apiV2MarketingServiceEmailTemplatesCountGet)
-    operation="apiV2MarketingServiceEmailTemplatesCountGet"
+    createEmailTemplateAsync)
+    operation="createEmailTemplateAsync"
     ;;
-    apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete)
-    operation="apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete"
+    deleteEmailTemplateAsync)
+    operation="deleteEmailTemplateAsync"
     ;;
-    apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet)
-    operation="apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet"
+    getEmailTemplateDetailsAsync)
+    operation="getEmailTemplateDetailsAsync"
     ;;
-    apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut)
-    operation="apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut"
+    getEmailTemplatesCountAsync)
+    operation="getEmailTemplatesCountAsync"
     ;;
-    apiV2MarketingServiceEmailTemplatesGet)
-    operation="apiV2MarketingServiceEmailTemplatesGet"
+    getEmailTemplatesODataAsync)
+    operation="getEmailTemplatesODataAsync"
     ;;
-    apiV2MarketingServiceEmailTemplatesPost)
-    operation="apiV2MarketingServiceEmailTemplatesPost"
+    updateEmailTemplateAsync)
+    operation="updateEmailTemplateAsync"
     ;;
-    apiV2MarketingServiceMarketingCampaignsCountGet)
-    operation="apiV2MarketingServiceMarketingCampaignsCountGet"
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
     ;;
-    apiV2MarketingServiceMarketingCampaignsGet)
-    operation="apiV2MarketingServiceMarketingCampaignsGet"
+    healthGet)
+    operation="healthGet"
     ;;
-    apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete)
-    operation="apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete"
+    helloGet)
+    operation="helloGet"
     ;;
-    apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet)
-    operation="apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet"
+    loginPost)
+    operation="loginPost"
     ;;
-    apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut)
-    operation="apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut"
+    manage2faPost)
+    operation="manage2faPost"
     ;;
-    apiV2MarketingServiceMarketingCampaignsPost)
-    operation="apiV2MarketingServiceMarketingCampaignsPost"
+    manageInfoGet)
+    operation="manageInfoGet"
     ;;
-    apiV2MarketingServiceMarketingListsCountGet)
-    operation="apiV2MarketingServiceMarketingListsCountGet"
+    manageInfoPost)
+    operation="manageInfoPost"
     ;;
-    apiV2MarketingServiceMarketingListsGet)
-    operation="apiV2MarketingServiceMarketingListsGet"
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
     ;;
-    apiV2MarketingServiceMarketingListsMarketinglistIdDelete)
-    operation="apiV2MarketingServiceMarketingListsMarketinglistIdDelete"
+    refreshPost)
+    operation="refreshPost"
     ;;
-    apiV2MarketingServiceMarketingListsMarketinglistIdGet)
-    operation="apiV2MarketingServiceMarketingListsMarketinglistIdGet"
+    registerPost)
+    operation="registerPost"
     ;;
-    apiV2MarketingServiceMarketingListsMarketinglistIdPut)
-    operation="apiV2MarketingServiceMarketingListsMarketinglistIdPut"
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
     ;;
-    apiV2MarketingServiceMarketingListsPost)
-    operation="apiV2MarketingServiceMarketingListsPost"
+    resetPasswordPost)
+    operation="resetPasswordPost"
     ;;
-    apiV2MarketingServiceNewslettersCountGet)
-    operation="apiV2MarketingServiceNewslettersCountGet"
+    versionGet)
+    operation="versionGet"
     ;;
-    apiV2MarketingServiceNewslettersGet)
-    operation="apiV2MarketingServiceNewslettersGet"
+    createMarketingCampaignAsync)
+    operation="createMarketingCampaignAsync"
     ;;
-    apiV2MarketingServiceNewslettersNewsletterIdDelete)
-    operation="apiV2MarketingServiceNewslettersNewsletterIdDelete"
+    deleteMarketingCampaignAsync)
+    operation="deleteMarketingCampaignAsync"
     ;;
-    apiV2MarketingServiceNewslettersNewsletterIdGet)
-    operation="apiV2MarketingServiceNewslettersNewsletterIdGet"
+    getMarketingCampaignDetailsAsync)
+    operation="getMarketingCampaignDetailsAsync"
     ;;
-    apiV2MarketingServiceNewslettersNewsletterIdPut)
-    operation="apiV2MarketingServiceNewslettersNewsletterIdPut"
+    getMarketingCampaignODataAsync)
+    operation="getMarketingCampaignODataAsync"
     ;;
-    apiV2MarketingServiceNewslettersPost)
-    operation="apiV2MarketingServiceNewslettersPost"
+    getMarketingCampaignsCountAsync)
+    operation="getMarketingCampaignsCountAsync"
     ;;
-    apiV2MarketingServiceSocialMediaPostsCountGet)
-    operation="apiV2MarketingServiceSocialMediaPostsCountGet"
+    updateMarketingCampaignAsync)
+    operation="updateMarketingCampaignAsync"
     ;;
-    apiV2MarketingServiceSocialMediaPostsGet)
-    operation="apiV2MarketingServiceSocialMediaPostsGet"
+    createMarketingListAsync)
+    operation="createMarketingListAsync"
     ;;
-    apiV2MarketingServiceSocialMediaPostsPost)
-    operation="apiV2MarketingServiceSocialMediaPostsPost"
+    deleteMarketingListAsync)
+    operation="deleteMarketingListAsync"
     ;;
-    apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete)
-    operation="apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete"
+    getMarketingListDetailsAsync)
+    operation="getMarketingListDetailsAsync"
     ;;
-    apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet)
-    operation="apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet"
+    getMarketingListODataAsync)
+    operation="getMarketingListODataAsync"
     ;;
-    apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut)
-    operation="apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut"
+    getMarketingListsCountAsync)
+    operation="getMarketingListsCountAsync"
     ;;
-    apiV2MarketingServiceSocialPostBucketsCountGet)
-    operation="apiV2MarketingServiceSocialPostBucketsCountGet"
+    updateMarketingListAsync)
+    operation="updateMarketingListAsync"
     ;;
-    apiV2MarketingServiceSocialPostBucketsGet)
-    operation="apiV2MarketingServiceSocialPostBucketsGet"
+    createNewsletterAsync)
+    operation="createNewsletterAsync"
     ;;
-    apiV2MarketingServiceSocialPostBucketsPost)
-    operation="apiV2MarketingServiceSocialPostBucketsPost"
+    deleteNewsletterAsync)
+    operation="deleteNewsletterAsync"
     ;;
-    apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete)
-    operation="apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete"
+    getNewsletterDetailsAsync)
+    operation="getNewsletterDetailsAsync"
     ;;
-    apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet)
-    operation="apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet"
+    getNewsletterODataAsync)
+    operation="getNewsletterODataAsync"
     ;;
-    apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut)
-    operation="apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut"
+    getNewslettersCountAsync)
+    operation="getNewslettersCountAsync"
     ;;
-    apiV2MarketingServiceTrackingPixelsPixelIdGet)
-    operation="apiV2MarketingServiceTrackingPixelsPixelIdGet"
+    updateNewsletterAsync)
+    operation="updateNewsletterAsync"
+    ;;
+    createSocialMediaPostAsync)
+    operation="createSocialMediaPostAsync"
+    ;;
+    deleteSocialMediaPostAsync)
+    operation="deleteSocialMediaPostAsync"
+    ;;
+    getSocialMediaPostDetailsAsync)
+    operation="getSocialMediaPostDetailsAsync"
+    ;;
+    getSocialMediaPostsCountAsync)
+    operation="getSocialMediaPostsCountAsync"
+    ;;
+    getSocialMediaPostsODataAsync)
+    operation="getSocialMediaPostsODataAsync"
+    ;;
+    updateSocialMediaPostAsync)
+    operation="updateSocialMediaPostAsync"
+    ;;
+    createSocialPostBucketAsync)
+    operation="createSocialPostBucketAsync"
+    ;;
+    deleteSocialPostBucketAsync)
+    operation="deleteSocialPostBucketAsync"
+    ;;
+    getSocialPostBucketDetailsAsync)
+    operation="getSocialPostBucketDetailsAsync"
+    ;;
+    getSocialPostBucketsCountAsync)
+    operation="getSocialPostBucketsCountAsync"
+    ;;
+    getSocialPostBucketsODataAsync)
+    operation="getSocialPostBucketsODataAsync"
+    ;;
+    updateSocialPostBucketAsync)
+    operation="updateSocialPostBucketAsync"
+    ;;
+    getTrackingPixelAsync)
+    operation="getTrackingPixelAsync"
     ;;
     *==*)
     # Parse body arguments and convert them into top level
@@ -5216,13 +6423,6 @@ case $key in
     # only after the operation argument
     if [[ "$operation" ]]; then
         IFS=':' read -r header_name header_value <<< "$key"
-        #
-        # If the header key is the same as the api_key expected by API in the
-        # header, override the ${apikey_auth_credential} variable
-        #
-        if [[ $header_name == "Authorization" ]]; then
-            apikey_auth_credential=$header_value
-        fi
         header_arguments[$header_name]=$header_value
     else
         curl_arguments+=" $key"
@@ -5277,152 +6477,191 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
-    apiV2MarketingServiceEmailGroupsCountGet)
-    call_apiV2MarketingServiceEmailGroupsCountGet
+    createEmailGroupAsync)
+    call_createEmailGroupAsync
     ;;
-    apiV2MarketingServiceEmailGroupsEmailgroupIdDelete)
-    call_apiV2MarketingServiceEmailGroupsEmailgroupIdDelete
+    deleteEmailGroupAsync)
+    call_deleteEmailGroupAsync
     ;;
-    apiV2MarketingServiceEmailGroupsEmailgroupIdGet)
-    call_apiV2MarketingServiceEmailGroupsEmailgroupIdGet
+    getEmailGroupDetailsAsync)
+    call_getEmailGroupDetailsAsync
     ;;
-    apiV2MarketingServiceEmailGroupsEmailgroupIdPut)
-    call_apiV2MarketingServiceEmailGroupsEmailgroupIdPut
+    getEmailGroupsCountAsync)
+    call_getEmailGroupsCountAsync
     ;;
-    apiV2MarketingServiceEmailGroupsGet)
-    call_apiV2MarketingServiceEmailGroupsGet
+    getEmailGroupsODataAsync)
+    call_getEmailGroupsODataAsync
     ;;
-    apiV2MarketingServiceEmailGroupsPost)
-    call_apiV2MarketingServiceEmailGroupsPost
+    updateEmailGroupAsync)
+    call_updateEmailGroupAsync
     ;;
-    apiV2MarketingServiceEmailSignaturesCountGet)
-    call_apiV2MarketingServiceEmailSignaturesCountGet
+    createEmailSignatureAsync)
+    call_createEmailSignatureAsync
     ;;
-    apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete)
-    call_apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete
+    deleteEmailSignatureAsync)
+    call_deleteEmailSignatureAsync
     ;;
-    apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet)
-    call_apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet
+    getEmailSignatureDetailsAsync)
+    call_getEmailSignatureDetailsAsync
     ;;
-    apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut)
-    call_apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut
+    getEmailSignaturesCountAsync)
+    call_getEmailSignaturesCountAsync
     ;;
-    apiV2MarketingServiceEmailSignaturesGet)
-    call_apiV2MarketingServiceEmailSignaturesGet
+    getEmailSignaturesODataAsync)
+    call_getEmailSignaturesODataAsync
     ;;
-    apiV2MarketingServiceEmailSignaturesPost)
-    call_apiV2MarketingServiceEmailSignaturesPost
+    updateEmailSignatureAsync)
+    call_updateEmailSignatureAsync
     ;;
-    apiV2MarketingServiceEmailTemplatesCountGet)
-    call_apiV2MarketingServiceEmailTemplatesCountGet
+    createEmailTemplateAsync)
+    call_createEmailTemplateAsync
     ;;
-    apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete)
-    call_apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete
+    deleteEmailTemplateAsync)
+    call_deleteEmailTemplateAsync
     ;;
-    apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet)
-    call_apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet
+    getEmailTemplateDetailsAsync)
+    call_getEmailTemplateDetailsAsync
     ;;
-    apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut)
-    call_apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut
+    getEmailTemplatesCountAsync)
+    call_getEmailTemplatesCountAsync
     ;;
-    apiV2MarketingServiceEmailTemplatesGet)
-    call_apiV2MarketingServiceEmailTemplatesGet
+    getEmailTemplatesODataAsync)
+    call_getEmailTemplatesODataAsync
     ;;
-    apiV2MarketingServiceEmailTemplatesPost)
-    call_apiV2MarketingServiceEmailTemplatesPost
+    updateEmailTemplateAsync)
+    call_updateEmailTemplateAsync
     ;;
-    apiV2MarketingServiceMarketingCampaignsCountGet)
-    call_apiV2MarketingServiceMarketingCampaignsCountGet
+    forgotPasswordPost)
+    call_forgotPasswordPost
     ;;
-    apiV2MarketingServiceMarketingCampaignsGet)
-    call_apiV2MarketingServiceMarketingCampaignsGet
+    healthGet)
+    call_healthGet
     ;;
-    apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete)
-    call_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete
+    helloGet)
+    call_helloGet
     ;;
-    apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet)
-    call_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet
+    loginPost)
+    call_loginPost
     ;;
-    apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut)
-    call_apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut
+    manage2faPost)
+    call_manage2faPost
     ;;
-    apiV2MarketingServiceMarketingCampaignsPost)
-    call_apiV2MarketingServiceMarketingCampaignsPost
+    manageInfoGet)
+    call_manageInfoGet
     ;;
-    apiV2MarketingServiceMarketingListsCountGet)
-    call_apiV2MarketingServiceMarketingListsCountGet
+    manageInfoPost)
+    call_manageInfoPost
     ;;
-    apiV2MarketingServiceMarketingListsGet)
-    call_apiV2MarketingServiceMarketingListsGet
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
     ;;
-    apiV2MarketingServiceMarketingListsMarketinglistIdDelete)
-    call_apiV2MarketingServiceMarketingListsMarketinglistIdDelete
+    refreshPost)
+    call_refreshPost
     ;;
-    apiV2MarketingServiceMarketingListsMarketinglistIdGet)
-    call_apiV2MarketingServiceMarketingListsMarketinglistIdGet
+    registerPost)
+    call_registerPost
     ;;
-    apiV2MarketingServiceMarketingListsMarketinglistIdPut)
-    call_apiV2MarketingServiceMarketingListsMarketinglistIdPut
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
     ;;
-    apiV2MarketingServiceMarketingListsPost)
-    call_apiV2MarketingServiceMarketingListsPost
+    resetPasswordPost)
+    call_resetPasswordPost
     ;;
-    apiV2MarketingServiceNewslettersCountGet)
-    call_apiV2MarketingServiceNewslettersCountGet
+    versionGet)
+    call_versionGet
     ;;
-    apiV2MarketingServiceNewslettersGet)
-    call_apiV2MarketingServiceNewslettersGet
+    createMarketingCampaignAsync)
+    call_createMarketingCampaignAsync
     ;;
-    apiV2MarketingServiceNewslettersNewsletterIdDelete)
-    call_apiV2MarketingServiceNewslettersNewsletterIdDelete
+    deleteMarketingCampaignAsync)
+    call_deleteMarketingCampaignAsync
     ;;
-    apiV2MarketingServiceNewslettersNewsletterIdGet)
-    call_apiV2MarketingServiceNewslettersNewsletterIdGet
+    getMarketingCampaignDetailsAsync)
+    call_getMarketingCampaignDetailsAsync
     ;;
-    apiV2MarketingServiceNewslettersNewsletterIdPut)
-    call_apiV2MarketingServiceNewslettersNewsletterIdPut
+    getMarketingCampaignODataAsync)
+    call_getMarketingCampaignODataAsync
     ;;
-    apiV2MarketingServiceNewslettersPost)
-    call_apiV2MarketingServiceNewslettersPost
+    getMarketingCampaignsCountAsync)
+    call_getMarketingCampaignsCountAsync
     ;;
-    apiV2MarketingServiceSocialMediaPostsCountGet)
-    call_apiV2MarketingServiceSocialMediaPostsCountGet
+    updateMarketingCampaignAsync)
+    call_updateMarketingCampaignAsync
     ;;
-    apiV2MarketingServiceSocialMediaPostsGet)
-    call_apiV2MarketingServiceSocialMediaPostsGet
+    createMarketingListAsync)
+    call_createMarketingListAsync
     ;;
-    apiV2MarketingServiceSocialMediaPostsPost)
-    call_apiV2MarketingServiceSocialMediaPostsPost
+    deleteMarketingListAsync)
+    call_deleteMarketingListAsync
     ;;
-    apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete)
-    call_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete
+    getMarketingListDetailsAsync)
+    call_getMarketingListDetailsAsync
     ;;
-    apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet)
-    call_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet
+    getMarketingListODataAsync)
+    call_getMarketingListODataAsync
     ;;
-    apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut)
-    call_apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut
+    getMarketingListsCountAsync)
+    call_getMarketingListsCountAsync
     ;;
-    apiV2MarketingServiceSocialPostBucketsCountGet)
-    call_apiV2MarketingServiceSocialPostBucketsCountGet
+    updateMarketingListAsync)
+    call_updateMarketingListAsync
     ;;
-    apiV2MarketingServiceSocialPostBucketsGet)
-    call_apiV2MarketingServiceSocialPostBucketsGet
+    createNewsletterAsync)
+    call_createNewsletterAsync
     ;;
-    apiV2MarketingServiceSocialPostBucketsPost)
-    call_apiV2MarketingServiceSocialPostBucketsPost
+    deleteNewsletterAsync)
+    call_deleteNewsletterAsync
     ;;
-    apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete)
-    call_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete
+    getNewsletterDetailsAsync)
+    call_getNewsletterDetailsAsync
     ;;
-    apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet)
-    call_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet
+    getNewsletterODataAsync)
+    call_getNewsletterODataAsync
     ;;
-    apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut)
-    call_apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut
+    getNewslettersCountAsync)
+    call_getNewslettersCountAsync
     ;;
-    apiV2MarketingServiceTrackingPixelsPixelIdGet)
-    call_apiV2MarketingServiceTrackingPixelsPixelIdGet
+    updateNewsletterAsync)
+    call_updateNewsletterAsync
+    ;;
+    createSocialMediaPostAsync)
+    call_createSocialMediaPostAsync
+    ;;
+    deleteSocialMediaPostAsync)
+    call_deleteSocialMediaPostAsync
+    ;;
+    getSocialMediaPostDetailsAsync)
+    call_getSocialMediaPostDetailsAsync
+    ;;
+    getSocialMediaPostsCountAsync)
+    call_getSocialMediaPostsCountAsync
+    ;;
+    getSocialMediaPostsODataAsync)
+    call_getSocialMediaPostsODataAsync
+    ;;
+    updateSocialMediaPostAsync)
+    call_updateSocialMediaPostAsync
+    ;;
+    createSocialPostBucketAsync)
+    call_createSocialPostBucketAsync
+    ;;
+    deleteSocialPostBucketAsync)
+    call_deleteSocialPostBucketAsync
+    ;;
+    getSocialPostBucketDetailsAsync)
+    call_getSocialPostBucketDetailsAsync
+    ;;
+    getSocialPostBucketsCountAsync)
+    call_getSocialPostBucketsCountAsync
+    ;;
+    getSocialPostBucketsODataAsync)
+    call_getSocialPostBucketsODataAsync
+    ;;
+    updateSocialPostBucketAsync)
+    call_updateSocialPostBucketAsync
+    ;;
+    getTrackingPixelAsync)
+    call_getTrackingPixelAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

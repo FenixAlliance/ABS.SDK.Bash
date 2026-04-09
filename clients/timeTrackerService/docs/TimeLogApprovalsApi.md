@@ -4,20 +4,60 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut**](TimeLogApprovalsApi.md#apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut) | **PUT** /api/v2/TimeTrackerService/TimeLogApprovals/{approvalId}/Approver | 
-[**apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut**](TimeLogApprovalsApi.md#apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut) | **PUT** /api/v2/TimeTrackerService/TimeLogApprovals/{approvalId}/Status | 
-[**apiV2TimeTrackerServiceTimeLogApprovalsPost**](TimeLogApprovalsApi.md#apiV2TimeTrackerServiceTimeLogApprovalsPost) | **POST** /api/v2/TimeTrackerService/TimeLogApprovals | 
+[**requestProjectHoursApprovalAsync**](TimeLogApprovalsApi.md#requestProjectHoursApprovalAsync) | **POST** /api/v2/TimeTrackerService/TimeLogApprovals | Request project hours approval
+[**updateProjectHoursApprovalApproverAsync**](TimeLogApprovalsApi.md#updateProjectHoursApprovalApproverAsync) | **PUT** /api/v2/TimeTrackerService/TimeLogApprovals/{approvalId}/Approver | Update approval approver
+[**updateProjectHoursApprovalStatusAsync**](TimeLogApprovalsApi.md#updateProjectHoursApprovalStatusAsync) | **PUT** /api/v2/TimeTrackerService/TimeLogApprovals/{approvalId}/Status | Update approval status
 
 
 
-## apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut
+## requestProjectHoursApprovalAsync
 
+Request project hours approval
 
+Creates a new project hours approval request.
 
 ### Example
 
 ```bash
- apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut approvalId=value  tenantId=value  api-version=value x-api-version:value
+ requestProjectHoursApprovalAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **projectHoursApprovalCreateDto** | [**ProjectHoursApprovalCreateDto**](ProjectHoursApprovalCreateDto.md) |  | [optional]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateProjectHoursApprovalApproverAsync
+
+Update approval approver
+
+Updates the approver of an existing project hours approval.
+
+### Example
+
+```bash
+ updateProjectHoursApprovalApproverAsync approvalId=value  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -37,7 +77,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -47,14 +87,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut
+## updateProjectHoursApprovalStatusAsync
 
+Update approval status
 
+Updates the status of an existing project hours approval.
 
 ### Example
 
 ```bash
- apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut  tenantId=value approvalId=value  api-version=value x-api-version:value
+ updateProjectHoursApprovalStatusAsync  tenantId=value approvalId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -74,43 +116,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2TimeTrackerServiceTimeLogApprovalsPost
-
-
-
-### Example
-
-```bash
- apiV2TimeTrackerServiceTimeLogApprovalsPost  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
- **projectHoursApprovalCreateDto** | [**ProjectHoursApprovalCreateDto**](ProjectHoursApprovalCreateDto.md) |  | [optional]
-
-### Return type
-
-(empty response body)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

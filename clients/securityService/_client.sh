@@ -297,30 +297,66 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2SecurityServicePermissionsGet[]" \
-            "apiV2SecurityServicePermissionsPost[]" \
-            "apiV2SecurityServicePermissionsSecurityPermissionIdApplicationsApplicationIdDelete[]" \
-            "apiV2SecurityServicePermissionsSecurityPermissionIdApplicationsApplicationIdPost[]" \
-            "apiV2SecurityServicePermissionsSecurityPermissionIdDelete[]" \
-            "apiV2SecurityServicePermissionsSecurityPermissionIdEnrollmentsEnrollmentIdDelete[]" \
-            "apiV2SecurityServicePermissionsSecurityPermissionIdEnrollmentsEnrollmentIdPost[]" \
-            "apiV2SecurityServicePermissionsSecurityPermissionIdEnrollmentsGet[]" \
-            "apiV2SecurityServicePermissionsSecurityPermissionIdGet[]" \
-            "apiV2SecurityServicePermissionsSecurityPermissionIdPut[]" \
-            "apiV2SecurityServicePermissionsSecurityPermissionIdRolesSecurityRoleIdDelete[]" \
-            "apiV2SecurityServicePermissionsSecurityPermissionIdRolesSecurityRoleIdPost[]"             "apiV2SecurityServiceRolesGet[]" \
-            "apiV2SecurityServiceRolesPost[]" \
-            "apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdDelete[]" \
-            "apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdPost[]" \
-            "apiV2SecurityServiceRolesSecurityRoleIdDelete[]" \
-            "apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdDelete[]" \
-            "apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdPost[]" \
-            "apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsGet[]" \
-            "apiV2SecurityServiceRolesSecurityRoleIdGet[]" \
-            "apiV2SecurityServiceRolesSecurityRoleIdPermissionsGet[]" \
-            "apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdDelete[]" \
-            "apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdPost[]" \
-            "apiV2SecurityServiceRolesSecurityRoleIdPut[]" \
+            "createBusinessApplicationAsync[Create a new business application]" \
+            "deleteBusinessApplicationAsync[Delete a business application]" \
+            "getBusinessApplicationByIdAsync[Get business application by ID]" \
+            "getBusinessApplicationsAsync[Get all business applications]" \
+            "getBusinessApplicationsCountAsync[Get business applications count]" \
+            "updateBusinessApplicationAsync[Update an existing business application]"             "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "getLogsAsync[Get tenant logs]" \
+            "getLogsCountAsync[Get tenant logs count]"             "createOAuthApplicationAsync[Create a new OAuth application]" \
+            "deleteOAuthApplicationAsync[Delete an OAuth application]" \
+            "getOAuthApplicationByIdAsync[Get OAuth application by ID]" \
+            "getOAuthApplicationsAsync[Get all OAuth applications]" \
+            "getOAuthApplicationsCountAsync[Get OAuth applications count]" \
+            "getOAuthAuthorizationByIdAsync[Get OAuth authorization by ID]" \
+            "getOAuthAuthorizationsAsync[Get all OAuth authorizations]" \
+            "getOAuthAuthorizationsCountAsync[Get OAuth authorizations count]" \
+            "updateOAuthApplicationAsync[Update an existing OAuth application]"             "assignPermissionToBusinessApplicationAsync[Assign a permission to a business application]" \
+            "assignPermissionToEnrollmentAsync[Assign a permission to an enrollment]" \
+            "assignRoleToPermissionAsync[Assign a role to a permission]" \
+            "createPermissionAsync[Create a new permission]" \
+            "deletePermissionAsync[Delete an existing permission]" \
+            "getApplicationsByPermissionAsync[Get applications by permission]" \
+            "getEnrollmentsByPermissionAsync[Get enrollments by permission]" \
+            "getPermissionAsync[Get permission by ID]" \
+            "getPermissionsAsync[Get all permissions]" \
+            "getPermissionsByEnrollmentAsync[Get permissions by enrollment]" \
+            "getPermissionsCountAsync[Get permissions count]" \
+            "getRolesByPermissionAsync[Get roles by permission]" \
+            "revokePermissionFromBusinessApplicationAsync[Revoke a permission from a business application]" \
+            "revokePermissionFromEnrollmentAsync[Revoke a permission from an enrollment]" \
+            "revokeRoleFromPermissionAsync[Revoke a role from a permission]" \
+            "updatePermissionAsync[Update an existing permission]"             "assignPermissionToRoleAsync[Assign a permission to a role]" \
+            "assignRoleToBusinessApplicationAsync[Assign a role to a business application]" \
+            "assignRoleToEnrollmentAsync[Assign a role to an enrollment]" \
+            "createRoleAsync[Create a new role]" \
+            "deleteRoleAsync[Delete an existing role]" \
+            "getApplicationsByRoleAsync[Get applications by role]" \
+            "getEnrollmentsByRoleAsync[Get enrollments by role]" \
+            "getRoleAsync[Get role by ID]" \
+            "getRolePermissionsAsync[Get permissions by role]" \
+            "getRolesAsync[Get all roles]" \
+            "getRolesByEnrollmentAsync[Get roles by enrollment]" \
+            "getRolesCountAsync[Get roles count]" \
+            "revokePermissionFromRoleAsync[Revoke a permission from a role]" \
+            "revokeRoleFromBusinessApplicationAsync[Revoke a role from a business application]" \
+            "revokeRoleFromEnrollmentAsync[Revoke a role from an enrollment]" \
+            "updateRoleAsync[Update an existing role]"             "getSecurityCertificatesAsync[Get security certificates]" \
+            "getSecurityCertificatesCountAsync[Get security certificates count]"             "getSecurityLogsAsync[Get business security logs]" \
+            "getSecurityLogsCountAsync[Get business security logs count]"             "getWebhookRequestsAsync[Get all webhook requests]" \
+            "getWebhookRequestsCountAsync[Get webhook requests count]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -328,7 +364,7 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2SecurityServicePermissionsGet)
+      createBusinessApplicationAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -337,7 +373,27 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SecurityServicePermissionsPost)
+      deleteBusinessApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBusinessApplicationByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBusinessApplicationsAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -346,7 +402,216 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SecurityServicePermissionsSecurityPermissionIdApplicationsApplicationIdDelete)
+      getBusinessApplicationsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateBusinessApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLogsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLogsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createOAuthApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteOAuthApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getOAuthApplicationByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getOAuthApplicationsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getOAuthApplicationsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getOAuthAuthorizationByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "authorizationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getOAuthAuthorizationsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"userId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getOAuthAuthorizationsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"userId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateOAuthApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      assignPermissionToBusinessApplicationAsync)
         local -a _op_arguments
         _op_arguments=(
           "securityPermissionId=:[PATH] "
@@ -357,28 +622,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SecurityServicePermissionsSecurityPermissionIdApplicationsApplicationIdPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityPermissionId=:[PATH] "
-"applicationId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServicePermissionsSecurityPermissionIdDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityPermissionId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServicePermissionsSecurityPermissionIdEnrollmentsEnrollmentIdDelete)
+      assignPermissionToEnrollmentAsync)
         local -a _op_arguments
         _op_arguments=(
           "securityPermissionId=:[PATH] "
@@ -389,48 +633,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SecurityServicePermissionsSecurityPermissionIdEnrollmentsEnrollmentIdPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityPermissionId=:[PATH] "
-"enrollmentId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServicePermissionsSecurityPermissionIdEnrollmentsGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityPermissionId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServicePermissionsSecurityPermissionIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityPermissionId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServicePermissionsSecurityPermissionIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityPermissionId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServicePermissionsSecurityPermissionIdRolesSecurityRoleIdDelete)
+      assignRoleToPermissionAsync)
         local -a _op_arguments
         _op_arguments=(
           "securityPermissionId=:[PATH] "
@@ -441,7 +644,116 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SecurityServicePermissionsSecurityPermissionIdRolesSecurityRoleIdPost)
+      createPermissionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deletePermissionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityPermissionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getApplicationsByPermissionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityPermissionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getEnrollmentsByPermissionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityPermissionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPermissionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityPermissionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPermissionsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPermissionsByEnrollmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "enrollmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPermissionsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRolesByPermissionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityPermissionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      revokePermissionFromBusinessApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityPermissionId=:[PATH] "
+"applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      revokePermissionFromEnrollmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityPermissionId=:[PATH] "
+"enrollmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      revokeRoleFromPermissionAsync)
         local -a _op_arguments
         _op_arguments=(
           "securityPermissionId=:[PATH] "
@@ -452,109 +764,17 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SecurityServiceRolesGet)
+      updatePermissionAsync)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServiceRolesPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityRoleId=:[PATH] "
-"applicationId=:[PATH] "
+          "securityPermissionId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityRoleId=:[PATH] "
-"applicationId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServiceRolesSecurityRoleIdDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityRoleId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityRoleId=:[PATH] "
-"enrollmentId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityRoleId=:[PATH] "
-"enrollmentId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityRoleId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServiceRolesSecurityRoleIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityRoleId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServiceRolesSecurityRoleIdPermissionsGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "securityRoleId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdDelete)
+      assignPermissionToRoleAsync)
         local -a _op_arguments
         _op_arguments=(
           "securityRoleId=:[PATH] "
@@ -565,7 +785,116 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdPost)
+      assignRoleToBusinessApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityRoleId=:[PATH] "
+"applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      assignRoleToEnrollmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityRoleId=:[PATH] "
+"enrollmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createRoleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteRoleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityRoleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getApplicationsByRoleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityRoleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getEnrollmentsByRoleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityRoleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRoleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityRoleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRolePermissionsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityRoleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRolesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRolesByEnrollmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "enrollmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRolesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      revokePermissionFromRoleAsync)
         local -a _op_arguments
         _op_arguments=(
           "securityRoleId=:[PATH] "
@@ -576,11 +905,87 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SecurityServiceRolesSecurityRoleIdPut)
+      revokeRoleFromBusinessApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityRoleId=:[PATH] "
+"applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      revokeRoleFromEnrollmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityRoleId=:[PATH] "
+"enrollmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateRoleAsync)
         local -a _op_arguments
         _op_arguments=(
           "securityRoleId=:[PATH] "
           "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSecurityCertificatesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSecurityCertificatesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSecurityLogsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSecurityLogsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWebhookRequestsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWebhookRequestsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

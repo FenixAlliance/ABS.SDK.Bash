@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **discountAmount** | **float** |  | [optional] [default to null]
 **totalSurcharge** | **float** |  | [optional] [default to null]
 **totalDiscount** | **float** |  | [optional] [default to null]
-**type** | **integer** |  | [optional] [default to null]
+**type** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

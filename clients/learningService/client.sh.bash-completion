@@ -1,0 +1,597 @@
+#  completion                               -*- shell-script -*-
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !
+# ! Note:
+# !
+# ! THIS SCRIPT HAS BEEN AUTOMATICALLY GENERATED USING
+# ! openapi-generator (https://openapi-generator.tech)
+# ! FROM OPENAPI SPECIFICATION IN JSON.
+# !
+# ! Generator version: 7.9.0
+# !
+# !
+# ! System wide installation:
+# !
+# ! $ sudo cp .bash-completion /etc/bash-completion.d/
+# !
+# !
+# ! User home installation (add this line to .bash_profile):
+# !
+# ! [ -r ~/.bash-completion ] && source ~/.bash-completion
+# !
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+declare -A mime_type_abbreviations
+# text/*
+mime_type_abbreviations["text"]="text/plain"
+mime_type_abbreviations["html"]="text/html"
+mime_type_abbreviations["md"]="text/x-markdown"
+mime_type_abbreviations["csv"]="text/csv"
+mime_type_abbreviations["css"]="text/css"
+mime_type_abbreviations["rtf"]="text/rtf"
+# application/*
+mime_type_abbreviations["json"]="application/json"
+mime_type_abbreviations["xml"]="application/xml"
+mime_type_abbreviations["yaml"]="application/yaml"
+mime_type_abbreviations["js"]="application/javascript"
+mime_type_abbreviations["bin"]="application/octet-stream"
+mime_type_abbreviations["rdf"]="application/rdf+xml"
+# image/*
+mime_type_abbreviations["jpg"]="image/jpeg"
+mime_type_abbreviations["png"]="image/png"
+mime_type_abbreviations["gif"]="image/gif"
+mime_type_abbreviations["bmp"]="image/bmp"
+mime_type_abbreviations["tiff"]="image/tiff"
+
+
+#
+# Check if this is OSX, if so defined custom init_completion
+#
+if [[ `uname` =~ "Darwin" ]]; then
+    __osx_init_completion()
+    {
+        COMPREPLY=()
+        _get_comp_words_by_ref cur prev words cword
+    }
+fi
+
+_()
+{
+    local cur
+    local prev
+    local words
+    local cword
+
+    # The reference of currently selected REST operation
+    local operation=""
+
+    # The list of available operation in the REST service
+    # It's modelled as an associative array for efficient key lookup
+    declare -A operations
+    operations["createCourseArticleAsync"]=1
+    operations["deleteCourseArticleAsync"]=1
+    operations["getCourseArticleByIdAsync"]=1
+    operations["getCourseArticlesAsync"]=1
+    operations["getCourseArticlesCountAsync"]=1
+    operations["updateCourseArticleAsync"]=1
+    operations["createCourseAssignmentAsync"]=1
+    operations["deleteCourseAssignmentAsync"]=1
+    operations["getCourseAssignmentByIdAsync"]=1
+    operations["getCourseAssignmentsAsync"]=1
+    operations["getCourseAssignmentsCountAsync"]=1
+    operations["updateCourseAssignmentAsync"]=1
+    operations["createCourseCategoryAsync"]=1
+    operations["deleteCourseCategoryAsync"]=1
+    operations["getCourseCategoriesAsync"]=1
+    operations["getCourseCategoriesCountAsync"]=1
+    operations["getCourseCategoryByIdAsync"]=1
+    operations["updateCourseCategoryAsync"]=1
+    operations["createCourseCertificateAsync"]=1
+    operations["createCourseCertificateTemplateAsync"]=1
+    operations["deleteCourseCertificateAsync"]=1
+    operations["deleteCourseCertificateTemplateAsync"]=1
+    operations["getCourseCertificateAsync"]=1
+    operations["getCourseCertificateTemplateAsync"]=1
+    operations["getCourseCertificateTemplatesAsync"]=1
+    operations["getCourseCertificatesAsync"]=1
+    operations["getCourseCertificatesCountAsync"]=1
+    operations["updateCourseCertificateAsync"]=1
+    operations["createCourseCohortAsync"]=1
+    operations["deleteCourseCohortAsync"]=1
+    operations["getCourseCohortByIdAsync"]=1
+    operations["getCourseCohortsAsync"]=1
+    operations["getCourseCohortsCountAsync"]=1
+    operations["updateCourseCohortAsync"]=1
+    operations["createCourseEnrollmentAsync"]=1
+    operations["deleteCourseEnrollmentAsync"]=1
+    operations["getCourseEnrollmentAsync"]=1
+    operations["getEnrollmentsAsync"]=1
+    operations["getEnrollmentsCountAsync"]=1
+    operations["getStudentCourseEnrollmentsAsync"]=1
+    operations["updateCourseEnrollmentAsync"]=1
+    operations["createCourseFileAsync"]=1
+    operations["deleteCourseFileAsync"]=1
+    operations["getCourseFileByIdAsync"]=1
+    operations["getCourseFilesAsync"]=1
+    operations["getCourseFilesCountAsync"]=1
+    operations["updateCourseFileAsync"]=1
+    operations["createCourseForumAsync"]=1
+    operations["deleteCourseForumAsync"]=1
+    operations["getCourseForumByIdAsync"]=1
+    operations["getCourseForumsAsync"]=1
+    operations["getCourseForumsCountAsync"]=1
+    operations["updateCourseForumAsync"]=1
+    operations["createCourseHandoutAsync"]=1
+    operations["deleteCourseHandoutAsync"]=1
+    operations["getCourseHandoutByIdAsync"]=1
+    operations["getCourseHandoutsAsync"]=1
+    operations["getCourseHandoutsCountAsync"]=1
+    operations["updateCourseHandoutAsync"]=1
+    operations["createCourseLibraryAsync"]=1
+    operations["deleteCourseLibraryAsync"]=1
+    operations["getCourseLibrariesAsync"]=1
+    operations["getCourseLibrariesCountAsync"]=1
+    operations["getCourseLibraryByIdAsync"]=1
+    operations["updateCourseLibraryAsync"]=1
+    operations["createCoursePageAsync"]=1
+    operations["deleteCoursePageAsync"]=1
+    operations["getCoursePageByIdAsync"]=1
+    operations["getCoursePagesAsync"]=1
+    operations["getCoursePagesCountAsync"]=1
+    operations["updateCoursePageAsync"]=1
+    operations["createCourseProblemSetAsync"]=1
+    operations["deleteCourseProblemSetAsync"]=1
+    operations["getCourseProblemSetByIdAsync"]=1
+    operations["getCourseProblemSetsAsync"]=1
+    operations["getCourseProblemSetsCountAsync"]=1
+    operations["updateCourseProblemSetAsync"]=1
+    operations["createCourseSectionAsync"]=1
+    operations["deleteCourseSectionAsync"]=1
+    operations["getCourseSectionByIdAsync"]=1
+    operations["getCourseSectionsAsync"]=1
+    operations["getCourseSectionsCountAsync"]=1
+    operations["updateCourseSectionAsync"]=1
+    operations["createCourseUnitComponentAsync"]=1
+    operations["deleteCourseUnitComponentAsync"]=1
+    operations["getCourseUnitComponentByIdAsync"]=1
+    operations["getCourseUnitComponentsAsync"]=1
+    operations["getCourseUnitComponentsCountAsync"]=1
+    operations["updateCourseUnitComponentAsync"]=1
+    operations["createCourseUnitAsync"]=1
+    operations["deleteCourseUnitAsync"]=1
+    operations["getCourseUnitByIdAsync"]=1
+    operations["getCourseUnitsAsync"]=1
+    operations["getCourseUnitsCountAsync"]=1
+    operations["updateCourseUnitAsync"]=1
+    operations["createCourseUpdateAsync"]=1
+    operations["deleteCourseUpdateAsync"]=1
+    operations["getCourseUpdateByIdAsync"]=1
+    operations["getCourseUpdatesAsync"]=1
+    operations["getCourseUpdatesCountAsync"]=1
+    operations["updateCourseUpdateAsync"]=1
+    operations["createCourseWikiAsync"]=1
+    operations["deleteCourseWikiAsync"]=1
+    operations["getCourseWikiByIdAsync"]=1
+    operations["getCourseWikisAsync"]=1
+    operations["getCourseWikisCountAsync"]=1
+    operations["updateCourseWikiAsync"]=1
+    operations["createCourseAsync"]=1
+    operations["deleteCourseAsync"]=1
+    operations["getCourseArticlesByCourseWikiAsync"]=1
+    operations["getCourseArticlesByCourseWikiCountAsync"]=1
+    operations["getCourseAssignmentsByCourseAsync"]=1
+    operations["getCourseAssignmentsByCourseCountAsync"]=1
+    operations["getCourseByIdAsync"]=1
+    operations["getCourseCategoriesByCourseAsync"]=1
+    operations["getCourseCategoriesByCourseCountAsync"]=1
+    operations["getCourseCohortsByCourseAsync"]=1
+    operations["getCourseCohortsByCourseCountAsync"]=1
+    operations["getCourseEnrollmentsByCourseAsync"]=1
+    operations["getCourseFilesByCourseAsync"]=1
+    operations["getCourseFilesByCourseCountAsync"]=1
+    operations["getCourseForumsByCourseAsync"]=1
+    operations["getCourseForumsByCourseCountAsync"]=1
+    operations["getCourseHandoutsByCourseAsync"]=1
+    operations["getCourseHandoutsByCourseCountAsync"]=1
+    operations["getCourseLibrariesByCourseAsync"]=1
+    operations["getCourseLibrariesByCourseCountAsync"]=1
+    operations["getCoursePagesByCourseAsync"]=1
+    operations["getCoursePagesByCourseCountAsync"]=1
+    operations["getCourseProblemSetsByCourseAsync"]=1
+    operations["getCourseProblemSetsByCourseCountAsync"]=1
+    operations["getCourseSectionsByCourseAsync"]=1
+    operations["getCourseSectionsByCourseCountAsync"]=1
+    operations["getCourseUnitComponentsByCourseAsync"]=1
+    operations["getCourseUnitComponentsByCourseCountAsync"]=1
+    operations["getCourseUnitsBySectionAsync"]=1
+    operations["getCourseUnitsBySectionCountAsync"]=1
+    operations["getCourseUpdatesByCourseAsync"]=1
+    operations["getCourseUpdatesByCourseCountAsync"]=1
+    operations["getCourseWikisByCourseAsync"]=1
+    operations["getCourseWikisByCourseCountAsync"]=1
+    operations["getCoursesAsync"]=1
+    operations["getCoursesCountAsync"]=1
+    operations["getInstructorProfilesByCourseAsync"]=1
+    operations["getInstructorProfilesByCourseCountAsync"]=1
+    operations["getStudentProfilesByCourseAsync"]=1
+    operations["getStudentProfilesByCourseCountAsync"]=1
+    operations["updateCourseAsync"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["apiV2LearningServiceInstructorProfilesCountGet"]=1
+    operations["apiV2LearningServiceInstructorProfilesGet"]=1
+    operations["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete"]=1
+    operations["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet"]=1
+    operations["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut"]=1
+    operations["apiV2LearningServiceInstructorProfilesPost"]=1
+    operations["apiV2LearningServiceStudentProfilesCountGet"]=1
+    operations["apiV2LearningServiceStudentProfilesGet"]=1
+    operations["apiV2LearningServiceStudentProfilesPost"]=1
+    operations["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet"]=1
+    operations["apiV2LearningServiceStudentProfilesStudentProfileIdDelete"]=1
+    operations["apiV2LearningServiceStudentProfilesStudentProfileIdGet"]=1
+    operations["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet"]=1
+    operations["apiV2LearningServiceStudentProfilesStudentProfileIdPut"]=1
+
+    # An associative array of operations to their parameters
+    # Only include path, query and header parameters
+    declare -A operation_parameters
+    operation_parameters["createCourseArticleAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseArticleAsync"]="articleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseArticleByIdAsync"]="articleId= api-version= x-api-version: "
+    operation_parameters["getCourseArticlesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseArticlesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseArticleAsync"]="articleId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseAssignmentAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseAssignmentAsync"]="assignmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseAssignmentByIdAsync"]="assignmentId= api-version= x-api-version: "
+    operation_parameters["getCourseAssignmentsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseAssignmentsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseAssignmentAsync"]="assignmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseCategoryAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseCategoryAsync"]="categoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseCategoriesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseCategoriesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseCategoryByIdAsync"]="categoryId= api-version= x-api-version: "
+    operation_parameters["updateCourseCategoryAsync"]="categoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseCertificateAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseCertificateTemplateAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseCertificateAsync"]="courseCertificateId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseCertificateTemplateAsync"]="courseCertificateTemplateId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseCertificateAsync"]="courseCertificateId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseCertificateTemplateAsync"]="courseCertificateTemplateId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseCertificateTemplatesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseCertificatesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseCertificatesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseCertificateAsync"]="courseCertificateId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseCohortAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseCohortAsync"]="cohortId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseCohortByIdAsync"]="cohortId= api-version= x-api-version: "
+    operation_parameters["getCourseCohortsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseCohortsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseCohortAsync"]="cohortId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseEnrollmentAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseEnrollmentAsync"]="courseEnrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseEnrollmentAsync"]="courseEnrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getEnrollmentsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getEnrollmentsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getStudentCourseEnrollmentsAsync"]="studentProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseEnrollmentAsync"]="courseEnrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseFileAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseFileAsync"]="fileId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseFileByIdAsync"]="fileId= api-version= x-api-version: "
+    operation_parameters["getCourseFilesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseFilesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseFileAsync"]="fileId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseForumAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseForumAsync"]="forumId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseForumByIdAsync"]="forumId= api-version= x-api-version: "
+    operation_parameters["getCourseForumsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseForumsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseForumAsync"]="forumId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseHandoutAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseHandoutAsync"]="handoutId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseHandoutByIdAsync"]="handoutId= api-version= x-api-version: "
+    operation_parameters["getCourseHandoutsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseHandoutsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseHandoutAsync"]="handoutId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseLibraryAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseLibraryAsync"]="libraryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseLibrariesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseLibrariesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseLibraryByIdAsync"]="libraryId= api-version= x-api-version: "
+    operation_parameters["updateCourseLibraryAsync"]="libraryId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCoursePageAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCoursePageAsync"]="pageId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCoursePageByIdAsync"]="pageId= api-version= x-api-version: "
+    operation_parameters["getCoursePagesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCoursePagesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCoursePageAsync"]="pageId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseProblemSetAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseProblemSetAsync"]="problemSetId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseProblemSetByIdAsync"]="problemSetId= api-version= x-api-version: "
+    operation_parameters["getCourseProblemSetsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseProblemSetsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseProblemSetAsync"]="problemSetId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseSectionAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseSectionAsync"]="sectionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseSectionByIdAsync"]="sectionId= api-version= x-api-version: "
+    operation_parameters["getCourseSectionsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseSectionsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseSectionAsync"]="sectionId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseUnitComponentAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseUnitComponentAsync"]="componentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseUnitComponentByIdAsync"]="componentId= api-version= x-api-version: "
+    operation_parameters["getCourseUnitComponentsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseUnitComponentsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseUnitComponentAsync"]="componentId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseUnitAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseUnitAsync"]="unitId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseUnitByIdAsync"]="unitId= api-version= x-api-version: "
+    operation_parameters["getCourseUnitsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseUnitsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseUnitAsync"]="unitId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseUpdateAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseUpdateAsync"]="updateId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseUpdateByIdAsync"]="updateId= api-version= x-api-version: "
+    operation_parameters["getCourseUpdatesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseUpdatesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseUpdateAsync"]="updateId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseWikiAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseWikiAsync"]="wikiId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseWikiByIdAsync"]="wikiId= api-version= x-api-version: "
+    operation_parameters["getCourseWikisAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseWikisCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCourseWikiAsync"]="wikiId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCourseAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCourseAsync"]="courseId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseArticlesByCourseWikiAsync"]="courseId= wikiId= api-version= x-api-version: "
+    operation_parameters["getCourseArticlesByCourseWikiCountAsync"]="courseId= wikiId= api-version= x-api-version: "
+    operation_parameters["getCourseAssignmentsByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseAssignmentsByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseByIdAsync"]="courseId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseCategoriesByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseCategoriesByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseCohortsByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseCohortsByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseEnrollmentsByCourseAsync"]="courseId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCourseFilesByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseFilesByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseForumsByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseForumsByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseHandoutsByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseHandoutsByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseLibrariesByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseLibrariesByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCoursePagesByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCoursePagesByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseProblemSetsByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseProblemSetsByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseSectionsByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseSectionsByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseUnitComponentsByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseUnitComponentsByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseUnitsBySectionAsync"]="courseId= sectionId= api-version= x-api-version: "
+    operation_parameters["getCourseUnitsBySectionCountAsync"]="courseId= sectionId= api-version= x-api-version: "
+    operation_parameters["getCourseUpdatesByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseUpdatesByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseWikisByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCourseWikisByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getCoursesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCoursesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getInstructorProfilesByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getInstructorProfilesByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getStudentProfilesByCourseAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["getStudentProfilesByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["updateCourseAsync"]="courseId= tenantId= api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["apiV2LearningServiceInstructorProfilesCountGet"]="tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceInstructorProfilesGet"]="tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete"]="instructorProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet"]="instructorProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut"]="instructorProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceInstructorProfilesPost"]="tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceStudentProfilesCountGet"]="tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceStudentProfilesGet"]="tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceStudentProfilesPost"]="tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet"]="studentProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceStudentProfilesStudentProfileIdDelete"]="studentProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceStudentProfilesStudentProfileIdGet"]="studentProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet"]="studentProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceStudentProfilesStudentProfileIdPut"]="studentProfileId= tenantId= api-version= x-api-version: "
+
+    # An associative array of possible values for enum parameters
+    declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+
+    #
+    # Check if this is OSX and use special __osx_init_completion function
+    #
+    if [[ `uname` =~ "Darwin" ]]; then
+        __osx_init_completion || return
+    else
+        _init_completion -s || return
+    fi
+
+
+    # Check if operation is already in the command line provided
+    for word in "${words[@]}"; do
+        if [[ -n $word && ${operations[$word]} ]]; then
+            operation="${word}"
+        fi
+    done
+
+    if [[ -z $operation ]]; then
+        case $prev in
+            --ciphers|--connect-timeout|-C|--continue-at|-F|--form|--form-string|\
+            --ftp-account|--ftp-alternative-to-user|-P|--ftp-port|-H|--header|-h|\
+            --help|--hostpubmd5|--keepalive-time|--krb|--limit-rate|--local-port|\
+            --mail-from|--mail-rcpt|--max-filesize|--max-redirs|-m|--max-time|\
+            --pass|--proto|--proto-redir|--proxy-user|--proxy1.0|-Q|--quote|-r|\
+            --range|-X|--request|--retry|--retry-delay|--retry-max-time|\
+            --socks5-gssapi-service|-t|--telnet-option|--tftp-blksize|-z|\
+            --time-cond|--url|-u|--user|-A|--user-agent|-V|--version|-w|\
+            --write-out|--resolve|--tlsuser|--tlspassword|--about)
+                return
+                ;;
+            -K|--config|-b|--cookie|-c|--cookie-jar|-D|--dump-header|--egd-file|\
+            --key|--libcurl|-o|--output|--random-file|-T|--upload-file|--trace|\
+            --trace-ascii|--netrc-file)
+                _filedir
+                return
+                ;;
+            --cacert|-E|--cert)
+                _filedir '@(c?(e)rt|cer|pem|der)'
+                return
+                ;;
+            --capath)
+                _filedir -d
+                return
+                ;;
+            --cert-type|--key-type)
+                COMPREPLY=( $( compgen -W 'DER PEM ENG' -- "$cur" ) )
+                return
+                ;;
+            --crlfile)
+                _filedir crl
+                return
+                ;;
+            -d|--data|--data-ascii|--data-binary|--data-urlencode)
+                if [[ $cur == \@* ]]; then
+                    cur=${cur:1}
+                    _filedir
+                    COMPREPLY=( "${COMPREPLY[@]/#/@}" )
+                fi
+                return
+                ;;
+            --delegation)
+                COMPREPLY=( $( compgen -W 'none policy always' -- "$cur" ) )
+                return
+                ;;
+            --engine)
+                COMPREPLY=( $( compgen -W 'list' -- "$cur" ) )
+                return
+                ;;
+            --ftp-method)
+                COMPREPLY=( $( compgen -W 'multicwd nocwd singlecwd' -- "$cur" ) )
+                return
+                ;;
+            --ftp-ssl-ccc-mode)
+                COMPREPLY=( $( compgen -W 'active passive' -- "$cur" ) )
+                return
+                ;;
+            --interface)
+                _available_interfaces -a
+                return
+                ;;
+            -x|--proxy|--socks4|--socks4a|--socks5|--socks5-hostname)
+                _known_hosts_real
+                return
+                ;;
+            --pubkey)
+                _filedir pub
+                return
+                ;;
+            --stderr)
+                COMPREPLY=( $( compgen -W '-' -- "$cur" ) )
+                _filedir
+                return
+                ;;
+            --tlsauthtype)
+                COMPREPLY=( $( compgen -W 'SRP' -- "$cur" ) )
+                return
+                ;;
+            --host)
+                COMPREPLY=( $( compgen -W 'http:// https://' -- "$cur" ) )
+                return
+                ;;
+            -ct|--content-type|-ac|--accept)
+                COMPREPLY=( $( compgen -W '${!mime_type_abbreviations[*]}' -- "$cur" ) )
+                return
+                ;;
+        esac
+    fi
+
+    #
+    # Complete the server address based on ~/.ssh/known_hosts
+    # and ~/.ssh/config
+    #
+    local prefix=${COMP_WORDS[COMP_CWORD-2]}
+    local colon=${COMP_WORDS[COMP_CWORD-1]}
+    if [[ "$colon" == ":" && ( $prefix == "https" || $prefix == "http" ) ]]; then
+        COMPREPLY=()
+        local comp_ssh_hosts=`[[ -f ~/.ssh/known_hosts ]] && \
+                              ( cat ~/.ssh/known_hosts | \
+                              grep '^[a-zA-Z0-9]' | \
+                              cut -f 1 -d ' ' | \
+                              sed -e s/,.*//g | \
+                              grep -v ^# | \
+                              uniq | \
+                              grep -v "\[" ) ;
+                              [[ -f ~/.ssh/config ]] && \
+                              ( cat ~/.ssh/config | \
+                              grep "^Host " | \
+                              awk '{print $2}' )`
+        COMPREPLY=( $( compgen -P '//' -W '${comp_ssh_hosts}' -- "${cur:2}") )
+        return
+    fi
+
+    #
+    # Complete the  and cURL's arguments
+    #
+    if [[ $cur == -* ]]; then
+        COMPREPLY=( $( compgen -W '$(_parse_help curl) $(_parse_help $1)' -- "$cur" ) )
+        return
+    fi
+
+    #
+    # If the argument starts with a letter this could be either an operation
+    # or an operation parameter
+    # When $cur is empty, suggest the list of operations by default
+    #
+    if [[ $cur =~ ^[A-Za-z_0-9]* ]]; then
+        # If operation has not been yet selected, suggest the list of operations
+        # otherwise suggest arguments of this operation as declared in the
+        # OpenAPI specification
+        if [[ -z $operation ]]; then
+            COMPREPLY=( $(compgen -W '${!operations[*]}' -- ${cur}) )
+        else
+            COMPREPLY=( $(compgen -W '${operation_parameters[$operation]}' -- ${cur}) )
+            compopt -o nospace
+        fi
+        return
+    fi
+
+} &&
+complete -F _ 
+
+# ex: ts=4 sw=4 et filetype=sh

@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] [readonly] [default to null]
-**timestamp** | **string** |  | [optional] [readonly] [default to null]
+**id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **requesterContactID** | **string** |  | [optional] [default to null]
 **approverContactID** | **string** |  | [optional] [default to null]
 **projectPeriodID** | **string** |  | [optional] [default to null]

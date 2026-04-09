@@ -96,125 +96,93 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDelete:::discountListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet:::discountListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::discountListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::discountListEntryId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::discountListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::discountListEntryId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::DiscountUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet:::discountListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::discountListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::DiscountCreateDto"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdGet:::discountListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdPut:::discountListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdPut:::DiscountListUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServiceDiscountListsPost:::DiscountListCreateDto"]=0
+operation_parameters_minimum_occurrences["createDiscountList:::tenantId"]=1
+operation_parameters_minimum_occurrences["createDiscountList:::DiscountListCreateDto"]=0
+operation_parameters_minimum_occurrences["createDiscountListEntry:::tenantId"]=1
+operation_parameters_minimum_occurrences["createDiscountListEntry:::discountListId"]=1
+operation_parameters_minimum_occurrences["createDiscountListEntry:::DiscountCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteDiscountList:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteDiscountList:::discountListId"]=1
+operation_parameters_minimum_occurrences["deleteDiscountListEntry:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteDiscountListEntry:::discountListId"]=1
+operation_parameters_minimum_occurrences["deleteDiscountListEntry:::discountListEntryId"]=1
+operation_parameters_minimum_occurrences["getDiscountList:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDiscountList:::discountListId"]=1
+operation_parameters_minimum_occurrences["getDiscountListEntries:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDiscountListEntries:::discountListId"]=1
+operation_parameters_minimum_occurrences["getDiscountListEntriesCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDiscountListEntriesCount:::discountListId"]=1
 operation_parameters_minimum_occurrences["getDiscountListEntry:::tenantId"]=1
 operation_parameters_minimum_occurrences["getDiscountListEntry:::discountListId"]=1
 operation_parameters_minimum_occurrences["getDiscountListEntry:::discountListEntryId"]=1
-operation_parameters_minimum_occurrences["getDiscountListEntry:::api-version"]=0
-operation_parameters_minimum_occurrences["getDiscountListEntry:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsCountGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPost:::PriceListCreateDto"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdDelete:::priceListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPost:::priceListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPost:::ItemPriceCreateDto"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::priceListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::priceId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::priceListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::priceId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::ItemPriceUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPut:::priceListId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePriceListsPriceListIdPut:::PriceListUpdateDto"]=0
+operation_parameters_minimum_occurrences["getDiscountLists:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDiscountListsCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateDiscountList:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateDiscountList:::discountListId"]=1
+operation_parameters_minimum_occurrences["updateDiscountList:::DiscountListUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateDiscountListEntry:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateDiscountListEntry:::discountListId"]=1
+operation_parameters_minimum_occurrences["updateDiscountListEntry:::discountListEntryId"]=1
+operation_parameters_minimum_occurrences["updateDiscountListEntry:::DiscountUpdateDto"]=0
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["createPriceListAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createPriceListAsync:::PriceListCreateDto"]=0
+operation_parameters_minimum_occurrences["createPriceListPricesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createPriceListPricesAsync:::priceListId"]=1
+operation_parameters_minimum_occurrences["createPriceListPricesAsync:::ItemPriceCreateDto"]=0
+operation_parameters_minimum_occurrences["deletePriceListAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deletePriceListAsync:::priceListId"]=1
+operation_parameters_minimum_occurrences["deletePriceListPriceAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deletePriceListPriceAsync:::priceListId"]=1
+operation_parameters_minimum_occurrences["deletePriceListPriceAsync:::priceId"]=1
 operation_parameters_minimum_occurrences["getPriceListAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPriceListAsync:::priceListId"]=1
-operation_parameters_minimum_occurrences["getPriceListAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getPriceListAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getPriceListPriceAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPriceListPriceAsync:::priceListId"]=1
 operation_parameters_minimum_occurrences["getPriceListPriceAsync:::priceId"]=1
-operation_parameters_minimum_occurrences["getPriceListPriceAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getPriceListPriceAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getPriceListPricesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPriceListPricesAsync:::priceListId"]=1
 operation_parameters_minimum_occurrences["getPriceListPricesAsync:::itemId"]=0
-operation_parameters_minimum_occurrences["getPriceListPricesAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getPriceListPricesAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdFinalPriceGet:::itemId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdFinalPriceGet:::currencyId"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdFinalPriceGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdFinalPriceGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdPriceGet:::itemId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdPriceGet:::priceListId"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdPriceGet:::discountsListId"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdPriceGet:::currencyId"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdPriceGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdPriceGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdTotalSavingsGet:::itemId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdTotalSavingsGet:::currencyId"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdTotalSavingsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdTotalSavingsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdTotalTaxesGet:::itemId"]=1
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdTotalTaxesGet:::currencyId"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdTotalTaxesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdTotalTaxesGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPriceListsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPriceListsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updatePriceListAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updatePriceListAsync:::priceListId"]=1
+operation_parameters_minimum_occurrences["updatePriceListAsync:::PriceListUpdateDto"]=0
+operation_parameters_minimum_occurrences["updatePriceListPriceAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updatePriceListPriceAsync:::priceListId"]=1
+operation_parameters_minimum_occurrences["updatePriceListPriceAsync:::priceId"]=1
+operation_parameters_minimum_occurrences["updatePriceListPriceAsync:::ItemPriceUpdateDto"]=0
+operation_parameters_minimum_occurrences["getFinalPrice:::itemId"]=1
+operation_parameters_minimum_occurrences["getFinalPrice:::currencyId"]=0
+operation_parameters_minimum_occurrences["getFinalPrice:::api-version"]=0
+operation_parameters_minimum_occurrences["getFinalPrice:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPrice:::itemId"]=1
+operation_parameters_minimum_occurrences["getPrice:::priceListId"]=0
+operation_parameters_minimum_occurrences["getPrice:::discountsListId"]=0
+operation_parameters_minimum_occurrences["getPrice:::quantity"]=0
+operation_parameters_minimum_occurrences["getPrice:::currencyId"]=0
+operation_parameters_minimum_occurrences["getPrice:::api-version"]=0
+operation_parameters_minimum_occurrences["getPrice:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTotalSavingsInUsd:::itemId"]=1
+operation_parameters_minimum_occurrences["getTotalSavingsInUsd:::currencyId"]=0
+operation_parameters_minimum_occurrences["getTotalSavingsInUsd:::api-version"]=0
+operation_parameters_minimum_occurrences["getTotalSavingsInUsd:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTotalTaxesInUsd:::itemId"]=1
+operation_parameters_minimum_occurrences["getTotalTaxesInUsd:::currencyId"]=0
+operation_parameters_minimum_occurrences["getTotalTaxesInUsd:::api-version"]=0
+operation_parameters_minimum_occurrences["getTotalTaxesInUsd:::x-api-version"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -223,249 +191,185 @@ operation_parameters_minimum_occurrences["apiV2PricingServicePricesItemIdTotalTa
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDelete:::discountListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet:::discountListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::discountListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::discountListEntryId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::discountListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::discountListEntryId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::DiscountUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet:::discountListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::discountListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::DiscountCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdGet:::discountListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdPut:::discountListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsDiscountListIdPut:::DiscountListUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServiceDiscountListsPost:::DiscountListCreateDto"]=0
+operation_parameters_maximum_occurrences["createDiscountList:::tenantId"]=0
+operation_parameters_maximum_occurrences["createDiscountList:::DiscountListCreateDto"]=0
+operation_parameters_maximum_occurrences["createDiscountListEntry:::tenantId"]=0
+operation_parameters_maximum_occurrences["createDiscountListEntry:::discountListId"]=0
+operation_parameters_maximum_occurrences["createDiscountListEntry:::DiscountCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteDiscountList:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteDiscountList:::discountListId"]=0
+operation_parameters_maximum_occurrences["deleteDiscountListEntry:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteDiscountListEntry:::discountListId"]=0
+operation_parameters_maximum_occurrences["deleteDiscountListEntry:::discountListEntryId"]=0
+operation_parameters_maximum_occurrences["getDiscountList:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDiscountList:::discountListId"]=0
+operation_parameters_maximum_occurrences["getDiscountListEntries:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDiscountListEntries:::discountListId"]=0
+operation_parameters_maximum_occurrences["getDiscountListEntriesCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDiscountListEntriesCount:::discountListId"]=0
 operation_parameters_maximum_occurrences["getDiscountListEntry:::tenantId"]=0
 operation_parameters_maximum_occurrences["getDiscountListEntry:::discountListId"]=0
 operation_parameters_maximum_occurrences["getDiscountListEntry:::discountListEntryId"]=0
-operation_parameters_maximum_occurrences["getDiscountListEntry:::api-version"]=0
-operation_parameters_maximum_occurrences["getDiscountListEntry:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPost:::PriceListCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdDelete:::priceListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPost:::priceListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPost:::ItemPriceCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::priceListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::priceId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::priceListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::priceId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::ItemPriceUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPut:::priceListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePriceListsPriceListIdPut:::PriceListUpdateDto"]=0
+operation_parameters_maximum_occurrences["getDiscountLists:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDiscountListsCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateDiscountList:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateDiscountList:::discountListId"]=0
+operation_parameters_maximum_occurrences["updateDiscountList:::DiscountListUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateDiscountListEntry:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateDiscountListEntry:::discountListId"]=0
+operation_parameters_maximum_occurrences["updateDiscountListEntry:::discountListEntryId"]=0
+operation_parameters_maximum_occurrences["updateDiscountListEntry:::DiscountUpdateDto"]=0
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["createPriceListAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createPriceListAsync:::PriceListCreateDto"]=0
+operation_parameters_maximum_occurrences["createPriceListPricesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createPriceListPricesAsync:::priceListId"]=0
+operation_parameters_maximum_occurrences["createPriceListPricesAsync:::ItemPriceCreateDto"]=0
+operation_parameters_maximum_occurrences["deletePriceListAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deletePriceListAsync:::priceListId"]=0
+operation_parameters_maximum_occurrences["deletePriceListPriceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deletePriceListPriceAsync:::priceListId"]=0
+operation_parameters_maximum_occurrences["deletePriceListPriceAsync:::priceId"]=0
 operation_parameters_maximum_occurrences["getPriceListAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPriceListAsync:::priceListId"]=0
-operation_parameters_maximum_occurrences["getPriceListAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getPriceListAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getPriceListPriceAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPriceListPriceAsync:::priceListId"]=0
 operation_parameters_maximum_occurrences["getPriceListPriceAsync:::priceId"]=0
-operation_parameters_maximum_occurrences["getPriceListPriceAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getPriceListPriceAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getPriceListPricesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPriceListPricesAsync:::priceListId"]=0
 operation_parameters_maximum_occurrences["getPriceListPricesAsync:::itemId"]=0
-operation_parameters_maximum_occurrences["getPriceListPricesAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getPriceListPricesAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdFinalPriceGet:::itemId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdFinalPriceGet:::currencyId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdFinalPriceGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdFinalPriceGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdPriceGet:::itemId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdPriceGet:::priceListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdPriceGet:::discountsListId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdPriceGet:::currencyId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdPriceGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdPriceGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdTotalSavingsGet:::itemId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdTotalSavingsGet:::currencyId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdTotalSavingsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdTotalSavingsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdTotalTaxesGet:::itemId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdTotalTaxesGet:::currencyId"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdTotalTaxesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2PricingServicePricesItemIdTotalTaxesGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPriceListsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPriceListsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updatePriceListAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updatePriceListAsync:::priceListId"]=0
+operation_parameters_maximum_occurrences["updatePriceListAsync:::PriceListUpdateDto"]=0
+operation_parameters_maximum_occurrences["updatePriceListPriceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updatePriceListPriceAsync:::priceListId"]=0
+operation_parameters_maximum_occurrences["updatePriceListPriceAsync:::priceId"]=0
+operation_parameters_maximum_occurrences["updatePriceListPriceAsync:::ItemPriceUpdateDto"]=0
+operation_parameters_maximum_occurrences["getFinalPrice:::itemId"]=0
+operation_parameters_maximum_occurrences["getFinalPrice:::currencyId"]=0
+operation_parameters_maximum_occurrences["getFinalPrice:::api-version"]=0
+operation_parameters_maximum_occurrences["getFinalPrice:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPrice:::itemId"]=0
+operation_parameters_maximum_occurrences["getPrice:::priceListId"]=0
+operation_parameters_maximum_occurrences["getPrice:::discountsListId"]=0
+operation_parameters_maximum_occurrences["getPrice:::quantity"]=0
+operation_parameters_maximum_occurrences["getPrice:::currencyId"]=0
+operation_parameters_maximum_occurrences["getPrice:::api-version"]=0
+operation_parameters_maximum_occurrences["getPrice:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTotalSavingsInUsd:::itemId"]=0
+operation_parameters_maximum_occurrences["getTotalSavingsInUsd:::currencyId"]=0
+operation_parameters_maximum_occurrences["getTotalSavingsInUsd:::api-version"]=0
+operation_parameters_maximum_occurrences["getTotalSavingsInUsd:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTotalTaxesInUsd:::itemId"]=0
+operation_parameters_maximum_occurrences["getTotalTaxesInUsd:::currencyId"]=0
+operation_parameters_maximum_occurrences["getTotalTaxesInUsd:::api-version"]=0
+operation_parameters_maximum_occurrences["getTotalTaxesInUsd:::x-api-version"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDelete:::discountListId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet:::discountListId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::discountListId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::discountListEntryId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::discountListId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::discountListEntryId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut:::DiscountUpdateDto"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet:::discountListId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::discountListId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost:::DiscountCreateDto"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdGet:::discountListId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdPut:::discountListId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsDiscountListIdPut:::DiscountListUpdateDto"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServiceDiscountListsPost:::DiscountListCreateDto"]=""
+operation_parameters_collection_type["createDiscountList:::tenantId"]=""
+operation_parameters_collection_type["createDiscountList:::DiscountListCreateDto"]=""
+operation_parameters_collection_type["createDiscountListEntry:::tenantId"]=""
+operation_parameters_collection_type["createDiscountListEntry:::discountListId"]=""
+operation_parameters_collection_type["createDiscountListEntry:::DiscountCreateDto"]=""
+operation_parameters_collection_type["deleteDiscountList:::tenantId"]=""
+operation_parameters_collection_type["deleteDiscountList:::discountListId"]=""
+operation_parameters_collection_type["deleteDiscountListEntry:::tenantId"]=""
+operation_parameters_collection_type["deleteDiscountListEntry:::discountListId"]=""
+operation_parameters_collection_type["deleteDiscountListEntry:::discountListEntryId"]=""
+operation_parameters_collection_type["getDiscountList:::tenantId"]=""
+operation_parameters_collection_type["getDiscountList:::discountListId"]=""
+operation_parameters_collection_type["getDiscountListEntries:::tenantId"]=""
+operation_parameters_collection_type["getDiscountListEntries:::discountListId"]=""
+operation_parameters_collection_type["getDiscountListEntriesCount:::tenantId"]=""
+operation_parameters_collection_type["getDiscountListEntriesCount:::discountListId"]=""
 operation_parameters_collection_type["getDiscountListEntry:::tenantId"]=""
 operation_parameters_collection_type["getDiscountListEntry:::discountListId"]=""
 operation_parameters_collection_type["getDiscountListEntry:::discountListEntryId"]=""
-operation_parameters_collection_type["getDiscountListEntry:::api-version"]=""
-operation_parameters_collection_type["getDiscountListEntry:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPost:::PriceListCreateDto"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdDelete:::priceListId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPost:::priceListId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPost:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPost:::ItemPriceCreateDto"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::priceListId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::priceId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::priceListId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::priceId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut:::ItemPriceUpdateDto"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPut:::priceListId"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePriceListsPriceListIdPut:::PriceListUpdateDto"]=""
+operation_parameters_collection_type["getDiscountLists:::tenantId"]=""
+operation_parameters_collection_type["getDiscountListsCount:::tenantId"]=""
+operation_parameters_collection_type["updateDiscountList:::tenantId"]=""
+operation_parameters_collection_type["updateDiscountList:::discountListId"]=""
+operation_parameters_collection_type["updateDiscountList:::DiscountListUpdateDto"]=""
+operation_parameters_collection_type["updateDiscountListEntry:::tenantId"]=""
+operation_parameters_collection_type["updateDiscountListEntry:::discountListId"]=""
+operation_parameters_collection_type["updateDiscountListEntry:::discountListEntryId"]=""
+operation_parameters_collection_type["updateDiscountListEntry:::DiscountUpdateDto"]=""
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["createPriceListAsync:::tenantId"]=""
+operation_parameters_collection_type["createPriceListAsync:::PriceListCreateDto"]=""
+operation_parameters_collection_type["createPriceListPricesAsync:::tenantId"]=""
+operation_parameters_collection_type["createPriceListPricesAsync:::priceListId"]=""
+operation_parameters_collection_type["createPriceListPricesAsync:::ItemPriceCreateDto"]=""
+operation_parameters_collection_type["deletePriceListAsync:::tenantId"]=""
+operation_parameters_collection_type["deletePriceListAsync:::priceListId"]=""
+operation_parameters_collection_type["deletePriceListPriceAsync:::tenantId"]=""
+operation_parameters_collection_type["deletePriceListPriceAsync:::priceListId"]=""
+operation_parameters_collection_type["deletePriceListPriceAsync:::priceId"]=""
 operation_parameters_collection_type["getPriceListAsync:::tenantId"]=""
 operation_parameters_collection_type["getPriceListAsync:::priceListId"]=""
-operation_parameters_collection_type["getPriceListAsync:::api-version"]=""
-operation_parameters_collection_type["getPriceListAsync:::x-api-version"]=""
 operation_parameters_collection_type["getPriceListPriceAsync:::tenantId"]=""
 operation_parameters_collection_type["getPriceListPriceAsync:::priceListId"]=""
 operation_parameters_collection_type["getPriceListPriceAsync:::priceId"]=""
-operation_parameters_collection_type["getPriceListPriceAsync:::api-version"]=""
-operation_parameters_collection_type["getPriceListPriceAsync:::x-api-version"]=""
 operation_parameters_collection_type["getPriceListPricesAsync:::tenantId"]=""
 operation_parameters_collection_type["getPriceListPricesAsync:::priceListId"]=""
 operation_parameters_collection_type["getPriceListPricesAsync:::itemId"]=""
-operation_parameters_collection_type["getPriceListPricesAsync:::api-version"]=""
-operation_parameters_collection_type["getPriceListPricesAsync:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdFinalPriceGet:::itemId"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdFinalPriceGet:::currencyId"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdFinalPriceGet:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdFinalPriceGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdPriceGet:::itemId"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdPriceGet:::priceListId"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdPriceGet:::discountsListId"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdPriceGet:::currencyId"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdPriceGet:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdPriceGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdTotalSavingsGet:::itemId"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdTotalSavingsGet:::currencyId"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdTotalSavingsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdTotalSavingsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdTotalTaxesGet:::itemId"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdTotalTaxesGet:::currencyId"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdTotalTaxesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2PricingServicePricesItemIdTotalTaxesGet:::x-api-version"]=""
+operation_parameters_collection_type["getPriceListsAsync:::tenantId"]=""
+operation_parameters_collection_type["getPriceListsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["updatePriceListAsync:::tenantId"]=""
+operation_parameters_collection_type["updatePriceListAsync:::priceListId"]=""
+operation_parameters_collection_type["updatePriceListAsync:::PriceListUpdateDto"]=""
+operation_parameters_collection_type["updatePriceListPriceAsync:::tenantId"]=""
+operation_parameters_collection_type["updatePriceListPriceAsync:::priceListId"]=""
+operation_parameters_collection_type["updatePriceListPriceAsync:::priceId"]=""
+operation_parameters_collection_type["updatePriceListPriceAsync:::ItemPriceUpdateDto"]=""
+operation_parameters_collection_type["getFinalPrice:::itemId"]=""
+operation_parameters_collection_type["getFinalPrice:::currencyId"]=""
+operation_parameters_collection_type["getFinalPrice:::api-version"]=""
+operation_parameters_collection_type["getFinalPrice:::x-api-version"]=""
+operation_parameters_collection_type["getPrice:::itemId"]=""
+operation_parameters_collection_type["getPrice:::priceListId"]=""
+operation_parameters_collection_type["getPrice:::discountsListId"]=""
+operation_parameters_collection_type["getPrice:::quantity"]=""
+operation_parameters_collection_type["getPrice:::currencyId"]=""
+operation_parameters_collection_type["getPrice:::api-version"]=""
+operation_parameters_collection_type["getPrice:::x-api-version"]=""
+operation_parameters_collection_type["getTotalSavingsInUsd:::itemId"]=""
+operation_parameters_collection_type["getTotalSavingsInUsd:::currencyId"]=""
+operation_parameters_collection_type["getTotalSavingsInUsd:::api-version"]=""
+operation_parameters_collection_type["getTotalSavingsInUsd:::x-api-version"]=""
+operation_parameters_collection_type["getTotalTaxesInUsd:::itemId"]=""
+operation_parameters_collection_type["getTotalTaxesInUsd:::currencyId"]=""
+operation_parameters_collection_type["getTotalTaxesInUsd:::api-version"]=""
+operation_parameters_collection_type["getTotalTaxesInUsd:::x-api-version"]=""
 
 
 ##
@@ -486,9 +390,6 @@ host=""
 # The user credentials for basic authentication
 basic_auth_credential=""
 
-##
-# The user API key
-apikey_auth_credential=""
 
 ##
 # If true, the script will only output the actual cURL command that would be
@@ -591,23 +492,10 @@ lookup_mime_type() {
 ##############################################################################
 header_arguments_to_curl() {
     local headers_curl=""
-    local api_key_header=""
-    local api_key_header_in_cli=""
-    api_key_header="Authorization"
 
     for key in "${!header_arguments[@]}"; do
         headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
-        if [[ "${key}XX" == "${api_key_header}XX" ]]; then
-            api_key_header_in_cli="YES"
-        fi
     done
-    #
-    # If the api_key was not provided in the header, try one from the
-    # environment variable
-    #
-    if [[ -z $api_key_header_in_cli && -n $apikey_auth_credential ]]; then
-        headers_curl+="-H \"${api_key_header}: ${apikey_auth_credential}\""
-    fi
     headers_curl+=" "
 
     echo "${headers_curl}"
@@ -839,7 +727,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}PricingService command line client (API version 2.0.1.4089)${OFF}
+${BOLD}${WHITE}PricingService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -866,52 +754,65 @@ ${BOLD}${WHITE}Usage${OFF}
                                       JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
 
 EOF
-    echo -e "${BOLD}${WHITE}Authentication methods${OFF}"
-    echo -e ""
-    echo -e "  - ${BLUE}Api-key${OFF} - add '${RED}Authorization:<api-key>${OFF}' after ${YELLOW}<operation>${OFF}"
-    
-    echo ""
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
     echo -e "${BOLD}${WHITE}[discountLists]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2PricingServiceDiscountListsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServiceDiscountListsDiscountListIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServiceDiscountListsDiscountListIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServiceDiscountListsDiscountListIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServiceDiscountListsGet${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServiceDiscountListsPost${OFF}; (AUTH)
-  ${CYAN}getDiscountListEntry${OFF}; (AUTH)
+  ${CYAN}createDiscountList${OFF};Creates a new discount list
+  ${CYAN}createDiscountListEntry${OFF};Creates a discount list entry
+  ${CYAN}deleteDiscountList${OFF};Deletes a discount list
+  ${CYAN}deleteDiscountListEntry${OFF};Deletes a discount list entry
+  ${CYAN}getDiscountList${OFF};Gets a discount list by ID
+  ${CYAN}getDiscountListEntries${OFF};Retrieves discounts in a discount list
+  ${CYAN}getDiscountListEntriesCount${OFF};Counts discounts in a discount list
+  ${CYAN}getDiscountListEntry${OFF};Gets a discount list entry by ID
+  ${CYAN}getDiscountLists${OFF};Retrieves all discount lists
+  ${CYAN}getDiscountListsCount${OFF};Counts discount lists
+  ${CYAN}updateDiscountList${OFF};Updates a discount list
+  ${CYAN}updateDiscountListEntry${OFF};Updates a discount list entry
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[priceLists]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2PricingServicePriceListsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServicePriceListsGet${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServicePriceListsPost${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServicePriceListsPriceListIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServicePriceListsPriceListIdPricesPost${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServicePriceListsPriceListIdPut${OFF}; (AUTH)
-  ${CYAN}getPriceListAsync${OFF}; (AUTH)
-  ${CYAN}getPriceListPriceAsync${OFF}; (AUTH)
-  ${CYAN}getPriceListPricesAsync${OFF}; (AUTH)
+  ${CYAN}createPriceListAsync${OFF};Creates a new price list
+  ${CYAN}createPriceListPricesAsync${OFF};Creates a price list entry
+  ${CYAN}deletePriceListAsync${OFF};Deletes a price list
+  ${CYAN}deletePriceListPriceAsync${OFF};Deletes a price list entry
+  ${CYAN}getPriceListAsync${OFF};Gets a price list by ID
+  ${CYAN}getPriceListPriceAsync${OFF};Gets a price list entry by ID
+  ${CYAN}getPriceListPricesAsync${OFF};Retrieves prices in a price list
+  ${CYAN}getPriceListsAsync${OFF};Retrieves all price lists
+  ${CYAN}getPriceListsCountAsync${OFF};Counts price lists
+  ${CYAN}updatePriceListAsync${OFF};Updates a price list
+  ${CYAN}updatePriceListPriceAsync${OFF};Updates a price list entry
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[prices]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2PricingServicePricesItemIdFinalPriceGet${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServicePricesItemIdPriceGet${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServicePricesItemIdTotalSavingsGet${OFF}; (AUTH)
-  ${CYAN}apiV2PricingServicePricesItemIdTotalTaxesGet${OFF}; (AUTH)
+  ${CYAN}getFinalPrice${OFF};Gets the final price for an item
+  ${CYAN}getPrice${OFF};Gets the calculated price for an item
+  ${CYAN}getTotalSavingsInUsd${OFF};Gets total savings for an item
+  ${CYAN}getTotalTaxesInUsd${OFF};Gets total taxes for an item
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -941,7 +842,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}PricingService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}${WHITE}PricingService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -961,191 +862,24 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}PricingService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}PricingService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
 ##############################################################################
 #
-# Print help for apiV2PricingServiceDiscountListsCountGet operation
+# Print help for createDiscountList operation
 #
 ##############################################################################
-print_apiV2PricingServiceDiscountListsCountGet_help() {
+print_createDiscountList_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServiceDiscountListsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createDiscountList - Creates a new discount list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new discount list for the current tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2PricingServiceDiscountListsDiscountListIdDelete operation
-#
-##############################################################################
-print_apiV2PricingServiceDiscountListsDiscountListIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServiceDiscountListsDiscountListIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet operation
-#
-##############################################################################
-print_apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete operation
-#
-##############################################################################
-print_apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}discountListEntryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListEntryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut operation
-#
-##############################################################################
-print_apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}discountListEntryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListEntryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet operation
-#
-##############################################################################
-print_apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost operation
-#
-##############################################################################
-print_apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -1161,107 +895,156 @@ print_apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2PricingServiceDiscountListsDiscountListIdGet operation
+# Print help for createDiscountListEntry operation
 #
 ##############################################################################
-print_apiV2PricingServiceDiscountListsDiscountListIdGet_help() {
+print_createDiscountListEntry_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServiceDiscountListsDiscountListIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createDiscountListEntry - Creates a discount list entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new discount entry in the specified discount list." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2PricingServiceDiscountListsDiscountListIdPut operation
-#
-##############################################################################
-print_apiV2PricingServiceDiscountListsDiscountListIdPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServiceDiscountListsDiscountListIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2PricingServiceDiscountListsGet operation
-#
-##############################################################################
-print_apiV2PricingServiceDiscountListsGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServiceDiscountListsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2PricingServiceDiscountListsPost operation
-#
-##############################################################################
-print_apiV2PricingServiceDiscountListsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServiceDiscountListsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=201
     echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteDiscountList operation
+#
+##############################################################################
+print_deleteDiscountList_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteDiscountList - Deletes a discount list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes the specified discount list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteDiscountListEntry operation
+#
+##############################################################################
+print_deleteDiscountListEntry_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteDiscountListEntry - Deletes a discount list entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes the specified discount entry from a discount list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}discountListEntryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListEntryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDiscountList operation
+#
+##############################################################################
+print_getDiscountList_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDiscountList - Gets a discount list by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a discount list using its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDiscountListEntries operation
+#
+##############################################################################
+print_getDiscountListEntries_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDiscountListEntries - Retrieves discounts in a discount list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets all discount entries for a specific discount list with OData support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDiscountListEntriesCount operation
+#
+##############################################################################
+print_getDiscountListEntriesCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDiscountListEntriesCount - Counts discounts in a discount list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets the count of discount entries for a specific discount list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=403
@@ -1276,16 +1059,15 @@ print_apiV2PricingServiceDiscountListsPost_help() {
 ##############################################################################
 print_getDiscountListEntry_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getDiscountListEntry - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getDiscountListEntry - Gets a discount list entry by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific discount entry from a discount list." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}discountListEntryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListEntryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1299,63 +1081,360 @@ print_getDiscountListEntry_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2PricingServicePriceListsCountGet operation
+# Print help for getDiscountLists operation
 #
 ##############################################################################
-print_apiV2PricingServicePriceListsCountGet_help() {
+print_getDiscountLists_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServicePriceListsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getDiscountLists - Retrieves all discount lists${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets all discount lists for the current tenant with OData support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDiscountListsCount operation
+#
+##############################################################################
+print_getDiscountListsCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDiscountListsCount - Counts discount lists${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets the count of discount lists for the current tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateDiscountList operation
+#
+##############################################################################
+print_updateDiscountList_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateDiscountList - Updates a discount list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the specified discount list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateDiscountListEntry operation
+#
+##############################################################################
+print_updateDiscountListEntry_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateDiscountListEntry - Updates a discount list entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the specified discount entry in a discount list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}discountListEntryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListEntryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for forgotPasswordPost operation
+#
+##############################################################################
+print_forgotPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for apiV2PricingServicePriceListsGet operation
+# Print help for helloGet operation
 #
 ##############################################################################
-print_apiV2PricingServicePriceListsGet_help() {
+print_helloGet_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServicePriceListsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for apiV2PricingServicePriceListsPost operation
+# Print help for loginPost operation
 #
 ##############################################################################
-print_apiV2PricingServicePriceListsPost_help() {
+print_loginPost_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServicePriceListsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manage2faPost operation
+#
+##############################################################################
+print_manage2faPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createPriceListAsync operation
+#
+##############################################################################
+print_createPriceListAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createPriceListAsync - Creates a new price list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new price list for the current tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -1367,43 +1446,19 @@ print_apiV2PricingServicePriceListsPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2PricingServicePriceListsPriceListIdDelete operation
+# Print help for createPriceListPricesAsync operation
 #
 ##############################################################################
-print_apiV2PricingServicePriceListsPriceListIdDelete_help() {
+print_createPriceListPricesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServicePriceListsPriceListIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createPriceListPricesAsync - Creates a price list entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new price entry in the specified price list." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2PricingServicePriceListsPriceListIdPricesPost operation
-#
-##############################################################################
-print_apiV2PricingServicePriceListsPriceListIdPricesPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServicePriceListsPriceListIdPricesPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -1415,72 +1470,42 @@ print_apiV2PricingServicePriceListsPriceListIdPricesPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete operation
+# Print help for deletePriceListAsync operation
 #
 ##############################################################################
-print_apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete_help() {
+print_deletePriceListAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deletePriceListAsync - Deletes a price list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes the specified price list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deletePriceListPriceAsync operation
+#
+##############################################################################
+print_deletePriceListPriceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deletePriceListPriceAsync - Deletes a price list entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes the specified price entry from a price list." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}priceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut operation
-#
-##############################################################################
-print_apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}priceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2PricingServicePriceListsPriceListIdPut operation
-#
-##############################################################################
-print_apiV2PricingServicePriceListsPriceListIdPut_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServicePriceListsPriceListIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1495,15 +1520,14 @@ print_apiV2PricingServicePriceListsPriceListIdPut_help() {
 ##############################################################################
 print_getPriceListAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getPriceListAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getPriceListAsync - Gets a price list by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a price list using its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1518,16 +1542,15 @@ print_getPriceListAsync_help() {
 ##############################################################################
 print_getPriceListPriceAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getPriceListPriceAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getPriceListPriceAsync - Gets a price list entry by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific price entry from a price list." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}priceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1542,7 +1565,9 @@ print_getPriceListPriceAsync_help() {
 ##############################################################################
 print_getPriceListPricesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getPriceListPricesAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getPriceListPricesAsync - Retrieves prices in a price list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets all price entries for a specific price list with OData support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1550,9 +1575,6 @@ print_getPriceListPricesAsync_help() {
     echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1562,12 +1584,105 @@ print_getPriceListPricesAsync_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2PricingServicePricesItemIdFinalPriceGet operation
+# Print help for getPriceListsAsync operation
 #
 ##############################################################################
-print_apiV2PricingServicePricesItemIdFinalPriceGet_help() {
+print_getPriceListsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServicePricesItemIdFinalPriceGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getPriceListsAsync - Retrieves all price lists${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets all price lists for the current tenant with OData support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPriceListsCountAsync operation
+#
+##############################################################################
+print_getPriceListsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPriceListsCountAsync - Counts price lists${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets the count of price lists for the current tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updatePriceListAsync operation
+#
+##############################################################################
+print_updatePriceListAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updatePriceListAsync - Updates a price list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the specified price list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updatePriceListPriceAsync operation
+#
+##############################################################################
+print_updatePriceListPriceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updatePriceListPriceAsync - Updates a price list entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the specified price entry in a price list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}priceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getFinalPrice operation
+#
+##############################################################################
+print_getFinalPrice_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getFinalPrice - Gets the final price for an item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets the final price for an item after all discounts and taxes in the specified currency." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1585,12 +1700,14 @@ print_apiV2PricingServicePricesItemIdFinalPriceGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2PricingServicePricesItemIdPriceGet operation
+# Print help for getPrice operation
 #
 ##############################################################################
-print_apiV2PricingServicePricesItemIdPriceGet_help() {
+print_getPrice_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServicePricesItemIdPriceGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getPrice - Gets the calculated price for an item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Calculates the price for an item considering price list, discount list, quantity, and currency." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1598,6 +1715,8 @@ print_apiV2PricingServicePricesItemIdPriceGet_help() {
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}discountsListId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: discountsListId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}quantity${OFF} ${BLUE}[float]${OFF} ${CYAN}(default: 1)${OFF} - ${YELLOW} Specify as: quantity=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: USD.USA)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -1612,12 +1731,14 @@ print_apiV2PricingServicePricesItemIdPriceGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2PricingServicePricesItemIdTotalSavingsGet operation
+# Print help for getTotalSavingsInUsd operation
 #
 ##############################################################################
-print_apiV2PricingServicePricesItemIdTotalSavingsGet_help() {
+print_getTotalSavingsInUsd_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServicePricesItemIdTotalSavingsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getTotalSavingsInUsd - Gets total savings for an item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets the total savings amount for an item in the specified currency." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1635,12 +1756,14 @@ print_apiV2PricingServicePricesItemIdTotalSavingsGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2PricingServicePricesItemIdTotalTaxesGet operation
+# Print help for getTotalTaxesInUsd operation
 #
 ##############################################################################
-print_apiV2PricingServicePricesItemIdTotalTaxesGet_help() {
+print_getTotalTaxesInUsd_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2PricingServicePricesItemIdTotalTaxesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getTotalTaxesInUsd - Gets total taxes for an item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets the total tax amount for an item in the specified currency." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1660,23 +1783,23 @@ print_apiV2PricingServicePricesItemIdTotalTaxesGet_help() {
 
 ##############################################################################
 #
-# Call apiV2PricingServiceDiscountListsCountGet operation
+# Call createDiscountList operation
 #
 ##############################################################################
-call_apiV2PricingServiceDiscountListsCountGet() {
+call_createDiscountList() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
-    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/Count" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="GET"
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -1687,25 +1810,141 @@ call_apiV2PricingServiceDiscountListsCountGet() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
 ##############################################################################
 #
-# Call apiV2PricingServiceDiscountListsDiscountListIdDelete operation
+# Call createDiscountListEntry operation
 #
 ##############################################################################
-call_apiV2PricingServiceDiscountListsDiscountListIdDelete() {
+call_createDiscountListEntry() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(discountListId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}/Discounts" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteDiscountList operation
+#
+##############################################################################
+call_deleteDiscountList() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(discountListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}" path_parameter_names query_parameter_names); then
@@ -1732,16 +1971,124 @@ call_apiV2PricingServiceDiscountListsDiscountListIdDelete() {
 
 ##############################################################################
 #
-# Call apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet operation
+# Call deleteDiscountListEntry operation
 #
 ##############################################################################
-call_apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet() {
+call_deleteDiscountListEntry() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(discountListId discountListEntryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDiscountList operation
+#
+##############################################################################
+call_getDiscountList() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(discountListId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDiscountListEntries operation
+#
+##############################################################################
+call_getDiscountListEntries() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(discountListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}/Discounts" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDiscountListEntriesCount operation
+#
+##############################################################################
+call_getDiscountListEntriesCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(discountListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}/Discounts/Count" path_parameter_names query_parameter_names); then
@@ -1768,454 +2115,6 @@ call_apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet() {
 
 ##############################################################################
 #
-# Call apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete operation
-#
-##############################################################################
-call_apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(discountListId discountListEntryId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut operation
-#
-##############################################################################
-call_apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(discountListId discountListEntryId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet operation
-#
-##############################################################################
-call_apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(discountListId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}/Discounts" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost operation
-#
-##############################################################################
-call_apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(discountListId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}/Discounts" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2PricingServiceDiscountListsDiscountListIdGet operation
-#
-##############################################################################
-call_apiV2PricingServiceDiscountListsDiscountListIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(discountListId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2PricingServiceDiscountListsDiscountListIdPut operation
-#
-##############################################################################
-call_apiV2PricingServiceDiscountListsDiscountListIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(discountListId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2PricingServiceDiscountListsGet operation
-#
-##############################################################################
-call_apiV2PricingServiceDiscountListsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2PricingServiceDiscountListsPost operation
-#
-##############################################################################
-call_apiV2PricingServiceDiscountListsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
 # Call getDiscountListEntry operation
 #
 ##############################################################################
@@ -2225,7 +2124,7 @@ call_getDiscountListEntry() {
     local path_parameter_names=(discountListId discountListEntryId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId}" path_parameter_names query_parameter_names); then
@@ -2252,19 +2151,19 @@ call_getDiscountListEntry() {
 
 ##############################################################################
 #
-# Call apiV2PricingServicePriceListsCountGet operation
+# Call getDiscountLists operation
 #
 ##############################################################################
-call_apiV2PricingServicePriceListsCountGet() {
+call_getDiscountLists() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
-    if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/Count" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -2288,19 +2187,19 @@ call_apiV2PricingServicePriceListsCountGet() {
 
 ##############################################################################
 #
-# Call apiV2PricingServicePriceListsGet operation
+# Call getDiscountListsCount operation
 #
 ##############################################################################
-call_apiV2PricingServicePriceListsGet() {
+call_getDiscountListsCount() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
-    if ! path=$(build_request_path "/api/v2/PricingService/PriceLists" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/Count" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -2324,16 +2223,972 @@ call_apiV2PricingServicePriceListsGet() {
 
 ##############################################################################
 #
-# Call apiV2PricingServicePriceListsPost operation
+# Call updateDiscountList operation
 #
 ##############################################################################
-call_apiV2PricingServicePriceListsPost() {
+call_updateDiscountList() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(discountListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateDiscountListEntry operation
+#
+##############################################################################
+call_updateDiscountListEntry() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(discountListId discountListEntryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call forgotPasswordPost operation
+#
+##############################################################################
+call_forgotPasswordPost() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call helloGet operation
+#
+##############################################################################
+call_helloGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call loginPost operation
+#
+##############################################################################
+call_loginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(useCookies useSessionCookies)
+    local path
+
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoPost operation
+#
+##############################################################################
+call_manageInfoPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call refreshPost operation
+#
+##############################################################################
+call_refreshPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createPriceListAsync operation
+#
+##############################################################################
+call_createPriceListAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/PriceLists" path_parameter_names query_parameter_names); then
@@ -2400,52 +3255,16 @@ call_apiV2PricingServicePriceListsPost() {
 
 ##############################################################################
 #
-# Call apiV2PricingServicePriceListsPriceListIdDelete operation
+# Call createPriceListPricesAsync operation
 #
 ##############################################################################
-call_apiV2PricingServicePriceListsPriceListIdDelete() {
+call_createPriceListPricesAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(priceListId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2PricingServicePriceListsPriceListIdPricesPost operation
-#
-##############################################################################
-call_apiV2PricingServicePriceListsPriceListIdPricesPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(priceListId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}/Prices" path_parameter_names query_parameter_names); then
@@ -2512,16 +3331,52 @@ call_apiV2PricingServicePriceListsPriceListIdPricesPost() {
 
 ##############################################################################
 #
-# Call apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete operation
+# Call deletePriceListAsync operation
 #
 ##############################################################################
-call_apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete() {
+call_deletePriceListAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(priceListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deletePriceListPriceAsync operation
+#
+##############################################################################
+call_deletePriceListPriceAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(priceListId priceId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId}" path_parameter_names query_parameter_names); then
@@ -2548,158 +3403,6 @@ call_apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete() {
 
 ##############################################################################
 #
-# Call apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut operation
-#
-##############################################################################
-call_apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(priceListId priceId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2PricingServicePriceListsPriceListIdPut operation
-#
-##############################################################################
-call_apiV2PricingServicePriceListsPriceListIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(priceListId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
 # Call getPriceListAsync operation
 #
 ##############################################################################
@@ -2709,7 +3412,7 @@ call_getPriceListAsync() {
     local path_parameter_names=(priceListId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}" path_parameter_names query_parameter_names); then
@@ -2745,7 +3448,7 @@ call_getPriceListPriceAsync() {
     local path_parameter_names=(priceListId priceId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId}" path_parameter_names query_parameter_names); then
@@ -2781,7 +3484,7 @@ call_getPriceListPricesAsync() {
     local path_parameter_names=(priceListId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId itemId api-version  )
+    local query_parameter_names=(tenantId itemId)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}/Prices" path_parameter_names query_parameter_names); then
@@ -2808,16 +3511,240 @@ call_getPriceListPricesAsync() {
 
 ##############################################################################
 #
-# Call apiV2PricingServicePricesItemIdFinalPriceGet operation
+# Call getPriceListsAsync operation
 #
 ##############################################################################
-call_apiV2PricingServicePricesItemIdFinalPriceGet() {
+call_getPriceListsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PriceLists" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPriceListsCountAsync operation
+#
+##############################################################################
+call_getPriceListsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updatePriceListAsync operation
+#
+##############################################################################
+call_updatePriceListAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(priceListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updatePriceListPriceAsync operation
+#
+##############################################################################
+call_updatePriceListPriceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(priceListId priceId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getFinalPrice operation
+#
+##############################################################################
+call_getFinalPrice() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(itemId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(currencyId api-version  )
+    local query_parameter_names=(currencyId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/Prices/{itemId}/FinalPrice" path_parameter_names query_parameter_names); then
@@ -2844,16 +3771,16 @@ call_apiV2PricingServicePricesItemIdFinalPriceGet() {
 
 ##############################################################################
 #
-# Call apiV2PricingServicePricesItemIdPriceGet operation
+# Call getPrice operation
 #
 ##############################################################################
-call_apiV2PricingServicePricesItemIdPriceGet() {
+call_getPrice() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(itemId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(priceListId discountsListId currencyId api-version  )
+    local query_parameter_names=(priceListId discountsListId quantity currencyId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/Prices/{itemId}/Price" path_parameter_names query_parameter_names); then
@@ -2880,16 +3807,16 @@ call_apiV2PricingServicePricesItemIdPriceGet() {
 
 ##############################################################################
 #
-# Call apiV2PricingServicePricesItemIdTotalSavingsGet operation
+# Call getTotalSavingsInUsd operation
 #
 ##############################################################################
-call_apiV2PricingServicePricesItemIdTotalSavingsGet() {
+call_getTotalSavingsInUsd() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(itemId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(currencyId api-version  )
+    local query_parameter_names=(currencyId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/Prices/{itemId}/TotalSavings" path_parameter_names query_parameter_names); then
@@ -2916,16 +3843,16 @@ call_apiV2PricingServicePricesItemIdTotalSavingsGet() {
 
 ##############################################################################
 #
-# Call apiV2PricingServicePricesItemIdTotalTaxesGet operation
+# Call getTotalTaxesInUsd operation
 #
 ##############################################################################
-call_apiV2PricingServicePricesItemIdTotalTaxesGet() {
+call_getTotalTaxesInUsd() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(itemId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(currencyId api-version  )
+    local query_parameter_names=(currencyId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/PricingService/Prices/{itemId}/TotalTaxes" path_parameter_names query_parameter_names); then
@@ -3047,65 +3974,92 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
-    apiV2PricingServiceDiscountListsCountGet)
-    operation="apiV2PricingServiceDiscountListsCountGet"
+    createDiscountList)
+    operation="createDiscountList"
     ;;
-    apiV2PricingServiceDiscountListsDiscountListIdDelete)
-    operation="apiV2PricingServiceDiscountListsDiscountListIdDelete"
+    createDiscountListEntry)
+    operation="createDiscountListEntry"
     ;;
-    apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet)
-    operation="apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet"
+    deleteDiscountList)
+    operation="deleteDiscountList"
     ;;
-    apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete)
-    operation="apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete"
+    deleteDiscountListEntry)
+    operation="deleteDiscountListEntry"
     ;;
-    apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut)
-    operation="apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut"
+    getDiscountList)
+    operation="getDiscountList"
     ;;
-    apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet)
-    operation="apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet"
+    getDiscountListEntries)
+    operation="getDiscountListEntries"
     ;;
-    apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost)
-    operation="apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost"
-    ;;
-    apiV2PricingServiceDiscountListsDiscountListIdGet)
-    operation="apiV2PricingServiceDiscountListsDiscountListIdGet"
-    ;;
-    apiV2PricingServiceDiscountListsDiscountListIdPut)
-    operation="apiV2PricingServiceDiscountListsDiscountListIdPut"
-    ;;
-    apiV2PricingServiceDiscountListsGet)
-    operation="apiV2PricingServiceDiscountListsGet"
-    ;;
-    apiV2PricingServiceDiscountListsPost)
-    operation="apiV2PricingServiceDiscountListsPost"
+    getDiscountListEntriesCount)
+    operation="getDiscountListEntriesCount"
     ;;
     getDiscountListEntry)
     operation="getDiscountListEntry"
     ;;
-    apiV2PricingServicePriceListsCountGet)
-    operation="apiV2PricingServicePriceListsCountGet"
+    getDiscountLists)
+    operation="getDiscountLists"
     ;;
-    apiV2PricingServicePriceListsGet)
-    operation="apiV2PricingServicePriceListsGet"
+    getDiscountListsCount)
+    operation="getDiscountListsCount"
     ;;
-    apiV2PricingServicePriceListsPost)
-    operation="apiV2PricingServicePriceListsPost"
+    updateDiscountList)
+    operation="updateDiscountList"
     ;;
-    apiV2PricingServicePriceListsPriceListIdDelete)
-    operation="apiV2PricingServicePriceListsPriceListIdDelete"
+    updateDiscountListEntry)
+    operation="updateDiscountListEntry"
     ;;
-    apiV2PricingServicePriceListsPriceListIdPricesPost)
-    operation="apiV2PricingServicePriceListsPriceListIdPricesPost"
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
     ;;
-    apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete)
-    operation="apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete"
+    healthGet)
+    operation="healthGet"
     ;;
-    apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut)
-    operation="apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut"
+    helloGet)
+    operation="helloGet"
     ;;
-    apiV2PricingServicePriceListsPriceListIdPut)
-    operation="apiV2PricingServicePriceListsPriceListIdPut"
+    loginPost)
+    operation="loginPost"
+    ;;
+    manage2faPost)
+    operation="manage2faPost"
+    ;;
+    manageInfoGet)
+    operation="manageInfoGet"
+    ;;
+    manageInfoPost)
+    operation="manageInfoPost"
+    ;;
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
+    ;;
+    refreshPost)
+    operation="refreshPost"
+    ;;
+    registerPost)
+    operation="registerPost"
+    ;;
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
+    ;;
+    resetPasswordPost)
+    operation="resetPasswordPost"
+    ;;
+    versionGet)
+    operation="versionGet"
+    ;;
+    createPriceListAsync)
+    operation="createPriceListAsync"
+    ;;
+    createPriceListPricesAsync)
+    operation="createPriceListPricesAsync"
+    ;;
+    deletePriceListAsync)
+    operation="deletePriceListAsync"
+    ;;
+    deletePriceListPriceAsync)
+    operation="deletePriceListPriceAsync"
     ;;
     getPriceListAsync)
     operation="getPriceListAsync"
@@ -3116,17 +4070,29 @@ case $key in
     getPriceListPricesAsync)
     operation="getPriceListPricesAsync"
     ;;
-    apiV2PricingServicePricesItemIdFinalPriceGet)
-    operation="apiV2PricingServicePricesItemIdFinalPriceGet"
+    getPriceListsAsync)
+    operation="getPriceListsAsync"
     ;;
-    apiV2PricingServicePricesItemIdPriceGet)
-    operation="apiV2PricingServicePricesItemIdPriceGet"
+    getPriceListsCountAsync)
+    operation="getPriceListsCountAsync"
     ;;
-    apiV2PricingServicePricesItemIdTotalSavingsGet)
-    operation="apiV2PricingServicePricesItemIdTotalSavingsGet"
+    updatePriceListAsync)
+    operation="updatePriceListAsync"
     ;;
-    apiV2PricingServicePricesItemIdTotalTaxesGet)
-    operation="apiV2PricingServicePricesItemIdTotalTaxesGet"
+    updatePriceListPriceAsync)
+    operation="updatePriceListPriceAsync"
+    ;;
+    getFinalPrice)
+    operation="getFinalPrice"
+    ;;
+    getPrice)
+    operation="getPrice"
+    ;;
+    getTotalSavingsInUsd)
+    operation="getTotalSavingsInUsd"
+    ;;
+    getTotalTaxesInUsd)
+    operation="getTotalTaxesInUsd"
     ;;
     *==*)
     # Parse body arguments and convert them into top level
@@ -3161,13 +4127,6 @@ case $key in
     # only after the operation argument
     if [[ "$operation" ]]; then
         IFS=':' read -r header_name header_value <<< "$key"
-        #
-        # If the header key is the same as the api_key expected by API in the
-        # header, override the ${apikey_auth_credential} variable
-        #
-        if [[ $header_name == "Authorization" ]]; then
-            apikey_auth_credential=$header_value
-        fi
         header_arguments[$header_name]=$header_value
     else
         curl_arguments+=" $key"
@@ -3222,65 +4181,92 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
-    apiV2PricingServiceDiscountListsCountGet)
-    call_apiV2PricingServiceDiscountListsCountGet
+    createDiscountList)
+    call_createDiscountList
     ;;
-    apiV2PricingServiceDiscountListsDiscountListIdDelete)
-    call_apiV2PricingServiceDiscountListsDiscountListIdDelete
+    createDiscountListEntry)
+    call_createDiscountListEntry
     ;;
-    apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet)
-    call_apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet
+    deleteDiscountList)
+    call_deleteDiscountList
     ;;
-    apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete)
-    call_apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete
+    deleteDiscountListEntry)
+    call_deleteDiscountListEntry
     ;;
-    apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut)
-    call_apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut
+    getDiscountList)
+    call_getDiscountList
     ;;
-    apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet)
-    call_apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet
+    getDiscountListEntries)
+    call_getDiscountListEntries
     ;;
-    apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost)
-    call_apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost
-    ;;
-    apiV2PricingServiceDiscountListsDiscountListIdGet)
-    call_apiV2PricingServiceDiscountListsDiscountListIdGet
-    ;;
-    apiV2PricingServiceDiscountListsDiscountListIdPut)
-    call_apiV2PricingServiceDiscountListsDiscountListIdPut
-    ;;
-    apiV2PricingServiceDiscountListsGet)
-    call_apiV2PricingServiceDiscountListsGet
-    ;;
-    apiV2PricingServiceDiscountListsPost)
-    call_apiV2PricingServiceDiscountListsPost
+    getDiscountListEntriesCount)
+    call_getDiscountListEntriesCount
     ;;
     getDiscountListEntry)
     call_getDiscountListEntry
     ;;
-    apiV2PricingServicePriceListsCountGet)
-    call_apiV2PricingServicePriceListsCountGet
+    getDiscountLists)
+    call_getDiscountLists
     ;;
-    apiV2PricingServicePriceListsGet)
-    call_apiV2PricingServicePriceListsGet
+    getDiscountListsCount)
+    call_getDiscountListsCount
     ;;
-    apiV2PricingServicePriceListsPost)
-    call_apiV2PricingServicePriceListsPost
+    updateDiscountList)
+    call_updateDiscountList
     ;;
-    apiV2PricingServicePriceListsPriceListIdDelete)
-    call_apiV2PricingServicePriceListsPriceListIdDelete
+    updateDiscountListEntry)
+    call_updateDiscountListEntry
     ;;
-    apiV2PricingServicePriceListsPriceListIdPricesPost)
-    call_apiV2PricingServicePriceListsPriceListIdPricesPost
+    forgotPasswordPost)
+    call_forgotPasswordPost
     ;;
-    apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete)
-    call_apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete
+    healthGet)
+    call_healthGet
     ;;
-    apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut)
-    call_apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut
+    helloGet)
+    call_helloGet
     ;;
-    apiV2PricingServicePriceListsPriceListIdPut)
-    call_apiV2PricingServicePriceListsPriceListIdPut
+    loginPost)
+    call_loginPost
+    ;;
+    manage2faPost)
+    call_manage2faPost
+    ;;
+    manageInfoGet)
+    call_manageInfoGet
+    ;;
+    manageInfoPost)
+    call_manageInfoPost
+    ;;
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
+    ;;
+    refreshPost)
+    call_refreshPost
+    ;;
+    registerPost)
+    call_registerPost
+    ;;
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
+    ;;
+    resetPasswordPost)
+    call_resetPasswordPost
+    ;;
+    versionGet)
+    call_versionGet
+    ;;
+    createPriceListAsync)
+    call_createPriceListAsync
+    ;;
+    createPriceListPricesAsync)
+    call_createPriceListPricesAsync
+    ;;
+    deletePriceListAsync)
+    call_deletePriceListAsync
+    ;;
+    deletePriceListPriceAsync)
+    call_deletePriceListPriceAsync
     ;;
     getPriceListAsync)
     call_getPriceListAsync
@@ -3291,17 +4277,29 @@ case $operation in
     getPriceListPricesAsync)
     call_getPriceListPricesAsync
     ;;
-    apiV2PricingServicePricesItemIdFinalPriceGet)
-    call_apiV2PricingServicePricesItemIdFinalPriceGet
+    getPriceListsAsync)
+    call_getPriceListsAsync
     ;;
-    apiV2PricingServicePricesItemIdPriceGet)
-    call_apiV2PricingServicePricesItemIdPriceGet
+    getPriceListsCountAsync)
+    call_getPriceListsCountAsync
     ;;
-    apiV2PricingServicePricesItemIdTotalSavingsGet)
-    call_apiV2PricingServicePricesItemIdTotalSavingsGet
+    updatePriceListAsync)
+    call_updatePriceListAsync
     ;;
-    apiV2PricingServicePricesItemIdTotalTaxesGet)
-    call_apiV2PricingServicePricesItemIdTotalTaxesGet
+    updatePriceListPriceAsync)
+    call_updatePriceListPriceAsync
+    ;;
+    getFinalPrice)
+    call_getFinalPrice
+    ;;
+    getPrice)
+    call_getPrice
+    ;;
+    getTotalSavingsInUsd)
+    call_getTotalSavingsInUsd
+    ;;
+    getTotalTaxesInUsd)
+    call_getTotalTaxesInUsd
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

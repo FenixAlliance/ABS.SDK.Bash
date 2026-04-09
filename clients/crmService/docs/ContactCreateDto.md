@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] [readonly] [default to null]
-**timestamp** | **string** |  | [optional] [readonly] [default to null]
+**id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [default to null]
-**type** | **integer** |  | [default to null]
+**type** | **string** |  | [default to null]
 **firstName** | **string** |  | [default to null]
 **lastName** | **string** |  | [optional] [default to null]
 **email** | **string** |  | [default to null]
@@ -40,11 +40,12 @@ Name | Type | Description | Notes
 **linkedInUrl** | **string** |  | [optional] [default to null]
 **instagramUrl** | **string** |  | [optional] [default to null]
 **githubUsername** | **string** |  | [optional] [default to null]
-**instagramUsername** | [**AnyType**](.md) |  | [optional] [default to null]
-**tikTokUsername** | [**AnyType**](.md) |  | [optional] [default to null]
-**stackExchangeUrl** | [**AnyType**](.md) |  | [optional] [default to null]
-**stackOverflowUrl** | [**AnyType**](.md) |  | [optional] [default to null]
-**parentContactId** | [**AnyType**](.md) |  | [optional] [default to null]
+**instagramUsername** | **string** |  | [optional] [default to null]
+**tikTokUsername** | **string** |  | [optional] [default to null]
+**stackExchangeUrl** | **string** |  | [optional] [default to null]
+**stackOverflowUrl** | **string** |  | [optional] [default to null]
+**parentContactId** | **string** |  | [optional] [default to null]
+**faxNumber** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

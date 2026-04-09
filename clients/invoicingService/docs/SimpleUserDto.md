@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **fullName** | **string** |  | [optional] [readonly] [default to null]
 **qualifiedName** | **string** |  | [optional] [default to null]
 **publicName** | **string** |  | [optional] [default to null]
+**handler** | **string** |  | [optional] [default to null]
 **lastName** | **string** |  | [optional] [default to null]
 **firstName** | **string** |  | [optional] [default to null]
 **coverUrl** | **string** |  | [optional] [default to null]

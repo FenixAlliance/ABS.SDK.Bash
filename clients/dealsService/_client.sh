@@ -297,38 +297,51 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2DealsServiceDealUnitFlowsCountGet[]" \
-            "apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete[]" \
-            "apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet[]" \
-            "apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut[]" \
-            "apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet[]" \
-            "apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete[]" \
-            "apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet[]" \
-            "apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut[]" \
-            "apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet[]" \
-            "apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost[]" \
-            "apiV2DealsServiceDealUnitFlowsGet[]" \
-            "apiV2DealsServiceDealUnitFlowsPost[]"             "apiV2DealsServiceDealUnitsCountGet[]" \
-            "apiV2DealsServiceDealUnitsDealUnitIdCalculatePut[]" \
-            "apiV2DealsServiceDealUnitsDealUnitIdDelete[]" \
-            "apiV2DealsServiceDealUnitsDealUnitIdExtendedGet[]" \
-            "apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet[]" \
-            "apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut[]" \
-            "apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete[]" \
-            "apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet[]" \
-            "apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut[]" \
-            "apiV2DealsServiceDealUnitsDealUnitIdLinesGet[]" \
-            "apiV2DealsServiceDealUnitsDealUnitIdLinesPost[]" \
-            "apiV2DealsServiceDealUnitsDealUnitIdPut[]" \
-            "apiV2DealsServiceDealUnitsExtendedGet[]" \
-            "apiV2DealsServiceDealUnitsGet[]" \
-            "apiV2DealsServiceDealUnitsPost[]" \
-            "getDealUnitAsync[]"             "apiV2DealsServiceSalesLiteraturesExtendedGet[]" \
-            "apiV2DealsServiceSalesLiteraturesGet[]" \
-            "apiV2DealsServiceSalesLiteraturesPost[]" \
-            "apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete[]" \
-            "apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet[]" \
-            "apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut[]" \
+            "createDealUnitFlowAsync[Create a deal unit flow]" \
+            "createDealUnitFlowStageAsync[Create a deal unit flow stage]" \
+            "deleteDealUnitFlowAsync[Delete a deal unit flow]" \
+            "deleteDealUnitFlowStageAsync[Delete a deal unit flow stage]" \
+            "getDealUnitFlowAsync[Get deal unit flow by ID]" \
+            "getDealUnitFlowStageAsync[Get a deal unit flow stage by ID]" \
+            "getDealUnitFlowStagesAsync[Get stages for a deal unit flow]" \
+            "getDealUnitFlowStagesCountAsync[Get stages count for a deal unit flow]" \
+            "getDealUnitFlowsAsync[Get deal unit flows]" \
+            "getDealUnitFlowsCountAsync[Get deal unit flows count]" \
+            "updateDealUnitFlowAsync[Update a deal unit flow]" \
+            "updateDealUnitFlowStageAsync[Update a deal unit flow stage]"             "calculateDealUnitAsync[Calculate a deal unit]" \
+            "calculateDealUnitLineAsync[Calculate a deal unit line]" \
+            "createDealUnitAsync[Create a deal unit]" \
+            "createGetDealUnitLinesAsync[Create a deal unit line]" \
+            "deleteDealUnitAsync[Delete a deal unit]" \
+            "deleteDealUnitPriceAsync[Delete a deal unit line]" \
+            "getDealUnitAsync[Get deal unit by ID]" \
+            "getDealUnitLinesAsync[Get deal unit lines]" \
+            "getDealUnitLinesCountAsync[Get deal unit lines count]" \
+            "getDealUnitPriceAsync[Get a deal unit line by ID]" \
+            "getDealUnitsAsync[Get deal units]" \
+            "getDealUnitsCountAsync[Get deal units count]" \
+            "getExtendedDealUnitAsync[Get extended deal unit by ID]" \
+            "getExtendedDealUnitsAsync[Get extended deal units]" \
+            "updateDealUnitAsync[Update a deal unit]" \
+            "updateDealUnitPriceAsync[Update a deal unit line]"             "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "countSalesLiteraturesAsync[Get sales literatures count]" \
+            "createSalesLiteratureAsync[Create a sales literature]" \
+            "deleteSalesLiteratureAsync[Delete a sales literature]" \
+            "getExtendedSalesLiteraturesAsync[Get extended sales literatures]" \
+            "getSalesLiteratureAsync[Get sales literature by ID]" \
+            "getSalesLiteraturesAsync[Get sales literatures]" \
+            "updateSalesLiteratureAsync[Update a sales literature]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -336,134 +349,103 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2DealsServiceDealUnitFlowsCountGet)
+      createDealUnitFlowAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete)
+      createDealUnitFlowStageAsync)
         local -a _op_arguments
         _op_arguments=(
           "dealUnitFlowId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet)
+      deleteDealUnitFlowAsync)
         local -a _op_arguments
         _op_arguments=(
           "dealUnitFlowId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitFlowId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitFlowId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete)
+      deleteDealUnitFlowStageAsync)
         local -a _op_arguments
         _op_arguments=(
           "dealUnitFlowId=:[PATH] "
 "dealUnitFlowStageId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet)
+      getDealUnitFlowAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitFlowId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDealUnitFlowStageAsync)
         local -a _op_arguments
         _op_arguments=(
           "dealUnitFlowId=:[PATH] "
 "dealUnitFlowStageId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut)
+      getDealUnitFlowStagesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitFlowId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDealUnitFlowStagesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitFlowId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDealUnitFlowsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDealUnitFlowsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateDealUnitFlowAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitFlowId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateDealUnitFlowStageAsync)
         local -a _op_arguments
         _op_arguments=(
           "dealUnitFlowId=:[PATH] "
 "dealUnitFlowStageId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitFlowId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitFlowId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitFlowsGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitFlowsPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitsCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceDealUnitsDealUnitIdCalculatePut)
+      calculateDealUnitAsync)
         local -a _op_arguments
         _op_arguments=(
           "dealUnitId=:[PATH] "
@@ -471,31 +453,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceDealUnitsDealUnitIdDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitsDealUnitIdExtendedGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut)
+      calculateDealUnitLineAsync)
         local -a _op_arguments
         _op_arguments=(
           "dealUnitId=:[PATH] "
@@ -504,76 +462,35 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitId=:[PATH] "
-"dealUnitLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitId=:[PATH] "
-"dealUnitLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitId=:[PATH] "
-"dealUnitLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitsDealUnitIdLinesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitId=:[PATH] "
-          "tenantId=:[QUERY] "
-"itemId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitsDealUnitIdLinesPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitsDealUnitIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "dealUnitId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2DealsServiceDealUnitsExtendedGet)
+      createDealUnitAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceDealUnitsGet)
+      createGetDealUnitLinesAsync)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
+          "dealUnitId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceDealUnitsPost)
+      deleteDealUnitAsync)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
+          "dealUnitId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteDealUnitPriceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitId=:[PATH] "
+"dealUnitLineId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -585,60 +502,213 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceSalesLiteraturesExtendedGet)
+      getDealUnitLinesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitId=:[PATH] "
+          "tenantId=:[QUERY] "
+"itemId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDealUnitLinesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDealUnitPriceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitId=:[PATH] "
+"dealUnitLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDealUnitsAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceSalesLiteraturesGet)
+      getDealUnitsCountAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceSalesLiteraturesPost)
+      getExtendedDealUnitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExtendedDealUnitsAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete)
+      updateDealUnitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateDealUnitPriceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitId=:[PATH] "
+"dealUnitLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countSalesLiteraturesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createSalesLiteratureAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteSalesLiteratureAsync)
         local -a _op_arguments
         _op_arguments=(
           "salesLiteratureId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet)
+      getExtendedSalesLiteraturesAsync)
         local -a _op_arguments
         _op_arguments=(
-          "salesLiteratureId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+                    "tenantId=:[QUERY] "
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut)
+      getSalesLiteratureAsync)
         local -a _op_arguments
         _op_arguments=(
           "salesLiteratureId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSalesLiteraturesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateSalesLiteratureAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "salesLiteratureId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
     esac

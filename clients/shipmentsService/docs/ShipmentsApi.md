@@ -4,18 +4,20 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2ShipmentsServiceShipmentsGet**](ShipmentsApi.md#apiV2ShipmentsServiceShipmentsGet) | **GET** /api/v2/ShipmentsService/Shipments | 
+[**getShipmentsAsync**](ShipmentsApi.md#getShipmentsAsync) | **GET** /api/v2/ShipmentsService/Shipments | Retrieve a list of shipments
 
 
 
-## apiV2ShipmentsServiceShipmentsGet
+## getShipmentsAsync
 
+Retrieve a list of shipments
 
+Retrieves a list of shipments for the specified tenant.
 
 ### Example
 
 ```bash
- apiV2ShipmentsServiceShipmentsGet  tenantId=value  api-version=value x-api-version:value
+ getShipmentsAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -33,7 +35,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

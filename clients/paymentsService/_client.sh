@@ -297,12 +297,39 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2PaymentsServicePaymentsGet[]" \
-            "apiV2PaymentsServicePaymentsPaymentIdDelete[]" \
-            "apiV2PaymentsServicePaymentsPaymentIdDetailsGet[]" \
-            "apiV2PaymentsServicePaymentsPaymentIdGet[]" \
-            "apiV2PaymentsServicePaymentsPaymentIdPut[]" \
-            "apiV2PaymentsServicePaymentsPost[]" \
+            "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "createPaymentMethodAsync[Creates a new payment method]" \
+            "deletePaymentMethodAsync[Deletes a payment method]" \
+            "getPaymentMethodDetailsAsync[Gets a payment method by ID]" \
+            "getPaymentMethodsAsync[Retrieves all payment methods]" \
+            "getPaymentMethodsCountAsync[Counts payment methods]" \
+            "updatePaymentMethodAsync[Updates a payment method]"             "createPaymentModeAsync[Creates a new payment mode]" \
+            "deletePaymentModeAsync[Deletes a payment mode]" \
+            "getPaymentModeDetailsAsync[Gets a payment mode by ID]" \
+            "getPaymentModesAsync[Retrieves all payment modes]" \
+            "getPaymentModesCountAsync[Counts payment modes]" \
+            "updatePaymentModeAsync[Updates a payment mode]"             "createPaymentTermAsync[Creates a new payment term]" \
+            "deletePaymentTermAsync[Deletes a payment term]" \
+            "getPaymentTermDetailsAsync[Gets a payment term by ID]" \
+            "getPaymentTermsAsync[Retrieves all payment terms]" \
+            "getPaymentTermsCountAsync[Counts payment terms]" \
+            "updatePaymentTermAsync[Updates a payment term]"             "createPaymentAsync[Creates a new payment]" \
+            "deletePaymentAsync[Deletes a payment]" \
+            "getPaymentAsync[Gets a payment by ID (deprecated)]" \
+            "getPaymentAsyncV2[Gets a payment by ID]" \
+            "getPaymentsAsync[Retrieves all payments]" \
+            "updatePaymentAsync[Updates a payment]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -310,14 +337,270 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2PaymentsServicePaymentsGet)
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createPaymentMethodAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deletePaymentMethodAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentMethodId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPaymentMethodDetailsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentMethodId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPaymentMethodsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPaymentMethodsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePaymentMethodAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentMethodId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createPaymentModeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deletePaymentModeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentModeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPaymentModeDetailsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentModeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPaymentModesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPaymentModesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePaymentModeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentModeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createPaymentTermAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deletePaymentTermAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentTermId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPaymentTermDetailsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentTermId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPaymentTermsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPaymentTermsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePaymentTermAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentTermId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createPaymentAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PaymentsServicePaymentsPaymentIdDelete)
+      deletePaymentAsync)
         local -a _op_arguments
         _op_arguments=(
           "paymentId=:[PATH] "
@@ -325,32 +608,32 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PaymentsServicePaymentsPaymentIdDetailsGet)
+      getPaymentAsync)
         local -a _op_arguments
         _op_arguments=(
           "paymentId=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PaymentsServicePaymentsPaymentIdGet)
+      getPaymentAsyncV2)
         local -a _op_arguments
         _op_arguments=(
           "paymentId=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PaymentsServicePaymentsPaymentIdPut)
+      getPaymentsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePaymentAsync)
         local -a _op_arguments
         _op_arguments=(
           "paymentId=:[PATH] "
           "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2PaymentsServicePaymentsPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

@@ -14,7 +14,6 @@ Name | Type | Description | Notes
 **validResponse** | **boolean** |  | [optional] [default to null]
 **parentFileUploadID** | **string** |  | [optional] [default to null]
 **filePath** | **string** |  | [optional] [default to null]
-**file** | **binary** |  | [optional] [default to null]
 **contentType** | **string** |  | [optional] [default to null]
 **fileLength** | **integer** |  | [optional] [default to null]
 

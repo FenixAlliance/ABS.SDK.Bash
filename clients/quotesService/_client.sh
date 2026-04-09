@@ -297,21 +297,40 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2QuotesServiceQuotesCountGet[]" \
-            "apiV2QuotesServiceQuotesExtendedGet[]" \
-            "apiV2QuotesServiceQuotesGet[]" \
-            "apiV2QuotesServiceQuotesPost[]" \
-            "apiV2QuotesServiceQuotesQuoteIdCalculatePut[]" \
-            "apiV2QuotesServiceQuotesQuoteIdDelete[]" \
-            "apiV2QuotesServiceQuotesQuoteIdLinesCountGet[]" \
-            "apiV2QuotesServiceQuotesQuoteIdLinesGet[]" \
-            "apiV2QuotesServiceQuotesQuoteIdLinesPost[]" \
-            "apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdCalculatePut[]" \
-            "apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdDelete[]" \
-            "apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdGet[]" \
-            "apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdPut[]" \
-            "apiV2QuotesServiceQuotesQuoteIdPut[]" \
-            "getQuoteAsync[]" \
+            "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "calculateQuote[Calculate a quote.]" \
+            "calculateQuoteLine[Calculate a quote line.]" \
+            "closeQuote[Close a quote.]" \
+            "createOrderFromQuote[Create an order from a quote.]" \
+            "createQuote[Create a new quote.]" \
+            "createQuoteLine[Create a new quote line.]" \
+            "deleteQuote[Delete a quote.]" \
+            "deleteQuoteLine[Delete a quote line.]" \
+            "getExtendedQuotes[Get a list of extended quotes.]" \
+            "getQuote[Get a quote by ID.]" \
+            "getQuoteLine[Get a quote line by ID.]" \
+            "getQuoteLines[Get quote lines for a quote.]" \
+            "getQuoteLinesCount[Get the count of quote lines.]" \
+            "getQuotes[Get a list of quotes.]" \
+            "getQuotesCount[Get the count of quotes.]" \
+            "previewQuoteEmailTemplate[Preview the rendered email for an invoice.]" \
+            "quoteLineExists[Check if a quote line exists.]" \
+            "reopenQuote[Reopen a closed quote.]" \
+            "sendQuoteEmail[Send a quote transactional email to recipients.]" \
+            "updateQuote[Update an existing quote.]" \
+            "updateQuoteLine[Update a quote line.]" \
+            "upsertQuoteLine[Upsert a quote line.]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -319,35 +338,92 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2QuotesServiceQuotesCountGet)
+      forgotPasswordPost)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2QuotesServiceQuotesExtendedGet)
+      manage2faPost)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2QuotesServiceQuotesGet)
+      refreshPost)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
-          )
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2QuotesServiceQuotesPost)
+      registerPost)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
-          )
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2QuotesServiceQuotesQuoteIdCalculatePut)
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      calculateQuote)
         local -a _op_arguments
         _op_arguments=(
           "quoteId=:[PATH] "
@@ -355,7 +431,16 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2QuotesServiceQuotesQuoteIdDelete)
+      calculateQuoteLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+"quoteLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      closeQuote)
         local -a _op_arguments
         _op_arguments=(
           "quoteId=:[PATH] "
@@ -363,7 +448,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2QuotesServiceQuotesQuoteIdLinesCountGet)
+      createOrderFromQuote)
         local -a _op_arguments
         _op_arguments=(
           "quoteId=:[PATH] "
@@ -371,7 +456,63 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2QuotesServiceQuotesQuoteIdLinesGet)
+      createQuote)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createQuoteLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteQuote)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteQuoteLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+"quoteLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExtendedQuotes)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getQuote)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getQuoteLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+"quoteLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getQuoteLines)
         local -a _op_arguments
         _op_arguments=(
           "quoteId=:[PATH] "
@@ -380,7 +521,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2QuotesServiceQuotesQuoteIdLinesPost)
+      getQuoteLinesCount)
         local -a _op_arguments
         _op_arguments=(
           "quoteId=:[PATH] "
@@ -388,7 +529,63 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdCalculatePut)
+      getQuotes)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getQuotesCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      previewQuoteEmailTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      quoteLineExists)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+          "tenantId=:[QUERY] "
+"quoteLineId=:[QUERY] "
+"itemId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      reopenQuote)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      sendQuoteEmail)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateQuote)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateQuoteLine)
         local -a _op_arguments
         _op_arguments=(
           "quoteId=:[PATH] "
@@ -397,45 +594,11 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdDelete)
+      upsertQuoteLine)
         local -a _op_arguments
         _op_arguments=(
           "quoteId=:[PATH] "
 "quoteLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "quoteId=:[PATH] "
-"quoteLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "quoteId=:[PATH] "
-"quoteLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2QuotesServiceQuotesQuoteIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "quoteId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getQuoteAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "quoteId=:[PATH] "
           "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0

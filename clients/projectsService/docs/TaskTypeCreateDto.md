@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] [readonly] [default to null]
-**timestamp** | **string** |  | [optional] [readonly] [default to null]
+**id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **title** | **string** |  | [optional] [default to null]
 **taskCategoryID** | **string** |  | [optional] [default to null]
 **displayInTimeTracker** | **boolean** |  | [optional] [default to null]

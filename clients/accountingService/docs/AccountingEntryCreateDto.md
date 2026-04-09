@@ -1,0 +1,21 @@
+# AccountingEntryCreateDto
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
+**tenantId** | **string** |  | [optional] [default to null]
+**enrollmentId** | **string** |  | [optional] [default to null]
+**description** | **string** |  | [default to null]
+**date** | **string** |  | [optional] [default to null]
+**amount** | **float** |  | [optional] [default to null]
+**currencyId** | **string** |  | [default to null]
+**debitAccountId** | **string** |  | [optional] [default to null]
+**creditAccountId** | **string** |  | [optional] [default to null]
+**journalEntryId** | **string** |  | [optional] [default to null]
+**accountingEntryType** | **string** |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

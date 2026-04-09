@@ -96,53 +96,70 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet:::contactId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet:::contactId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet:::projectId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsGet:::projectPeriodId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsPost:::ProjectTimeLogCreateDto"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete:::timeLogId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet:::timeLogId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::timeLogId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::ProjectTimeLogUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::approvalId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::ProjectHoursApprovalApproverUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::approvalId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::ProjectHoursApprovalStatusUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsPost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsPost:::ProjectHoursApprovalCreateDto"]=0
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["countProjectPeriodTimeLogsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countProjectPeriodTimeLogsAsync:::projectPeriodId"]=1
+operation_parameters_minimum_occurrences["countProjectPeriodTimeLogsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countProjectPeriodTimeLogsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createProjectTimeLogAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createProjectTimeLogAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createProjectTimeLogAsync:::ProjectTimeLogCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteProjectTimeLogAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteProjectTimeLogAsync:::timeLogId"]=1
+operation_parameters_minimum_occurrences["deleteProjectTimeLogAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectPeriodTimeLogsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectPeriodTimeLogsAsync:::projectPeriodId"]=1
+operation_parameters_minimum_occurrences["getProjectPeriodTimeLogsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectPeriodTimeLogsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogByIdAsync:::timeLogId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogsAsync:::projectId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogsCreatedByContactAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogsCreatedByContactAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogsCreatedByContactAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogsCreatedByContactAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectTimeLogAsync:::timeLogId"]=1
+operation_parameters_minimum_occurrences["updateProjectTimeLogAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateProjectTimeLogAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectTimeLogAsync:::ProjectTimeLogUpdateDto"]=0
+operation_parameters_minimum_occurrences["requestProjectHoursApprovalAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["requestProjectHoursApprovalAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["requestProjectHoursApprovalAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["requestProjectHoursApprovalAsync:::ProjectHoursApprovalCreateDto"]=0
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalApproverAsync:::approvalId"]=1
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalApproverAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalApproverAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalApproverAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalApproverAsync:::ProjectHoursApprovalApproverUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalStatusAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalStatusAsync:::approvalId"]=1
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalStatusAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalStatusAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalStatusAsync:::ProjectHoursApprovalStatusUpdateDto"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -151,105 +168,139 @@ operation_parameters_minimum_occurrences["apiV2TimeTrackerServiceTimeLogApproval
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet:::contactId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet:::contactId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet:::projectId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsGet:::projectPeriodId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsPost:::ProjectTimeLogCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete:::timeLogId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet:::timeLogId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::timeLogId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::ProjectTimeLogUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::approvalId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::ProjectHoursApprovalApproverUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::approvalId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::ProjectHoursApprovalStatusUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2TimeTrackerServiceTimeLogApprovalsPost:::ProjectHoursApprovalCreateDto"]=0
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["countProjectPeriodTimeLogsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["countProjectPeriodTimeLogsAsync:::projectPeriodId"]=0
+operation_parameters_maximum_occurrences["countProjectPeriodTimeLogsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countProjectPeriodTimeLogsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createProjectTimeLogAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createProjectTimeLogAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createProjectTimeLogAsync:::ProjectTimeLogCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteProjectTimeLogAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteProjectTimeLogAsync:::timeLogId"]=0
+operation_parameters_maximum_occurrences["deleteProjectTimeLogAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectPeriodTimeLogsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectPeriodTimeLogsAsync:::projectPeriodId"]=0
+operation_parameters_maximum_occurrences["getProjectPeriodTimeLogsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectPeriodTimeLogsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogByIdAsync:::timeLogId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsAsync:::projectId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsCreatedByContactAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsCreatedByContactAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsCreatedByContactAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsCreatedByContactAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectTimeLogAsync:::timeLogId"]=0
+operation_parameters_maximum_occurrences["updateProjectTimeLogAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateProjectTimeLogAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectTimeLogAsync:::ProjectTimeLogUpdateDto"]=0
+operation_parameters_maximum_occurrences["requestProjectHoursApprovalAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["requestProjectHoursApprovalAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["requestProjectHoursApprovalAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["requestProjectHoursApprovalAsync:::ProjectHoursApprovalCreateDto"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalApproverAsync:::approvalId"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalApproverAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalApproverAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalApproverAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalApproverAsync:::ProjectHoursApprovalApproverUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalStatusAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalStatusAsync:::approvalId"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalStatusAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalStatusAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalStatusAsync:::ProjectHoursApprovalStatusUpdateDto"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet:::contactId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet:::api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet:::contactId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet:::api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet:::projectId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsGet:::projectPeriodId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsPost:::ProjectTimeLogCreateDto"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete:::timeLogId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet:::timeLogId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::timeLogId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut:::ProjectTimeLogUpdateDto"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::approvalId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut:::ProjectHoursApprovalApproverUpdateDto"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::approvalId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut:::ProjectHoursApprovalStatusUpdateDto"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2TimeTrackerServiceTimeLogApprovalsPost:::ProjectHoursApprovalCreateDto"]=""
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["countProjectPeriodTimeLogsAsync:::tenantId"]=""
+operation_parameters_collection_type["countProjectPeriodTimeLogsAsync:::projectPeriodId"]=""
+operation_parameters_collection_type["countProjectPeriodTimeLogsAsync:::api-version"]=""
+operation_parameters_collection_type["countProjectPeriodTimeLogsAsync:::x-api-version"]=""
+operation_parameters_collection_type["createProjectTimeLogAsync:::tenantId"]=""
+operation_parameters_collection_type["createProjectTimeLogAsync:::api-version"]=""
+operation_parameters_collection_type["createProjectTimeLogAsync:::x-api-version"]=""
+operation_parameters_collection_type["createProjectTimeLogAsync:::ProjectTimeLogCreateDto"]=""
+operation_parameters_collection_type["deleteProjectTimeLogAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteProjectTimeLogAsync:::timeLogId"]=""
+operation_parameters_collection_type["deleteProjectTimeLogAsync:::api-version"]=""
+operation_parameters_collection_type["deleteProjectTimeLogAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectPeriodTimeLogsAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectPeriodTimeLogsAsync:::projectPeriodId"]=""
+operation_parameters_collection_type["getProjectPeriodTimeLogsAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectPeriodTimeLogsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogByIdAsync:::timeLogId"]=""
+operation_parameters_collection_type["getProjectTimeLogByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectTimeLogByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogsAsync:::projectId"]=""
+operation_parameters_collection_type["getProjectTimeLogsAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectTimeLogsAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogsByResponsibleContactAsync:::contactId"]=""
+operation_parameters_collection_type["getProjectTimeLogsByResponsibleContactAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectTimeLogsByResponsibleContactAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogsByResponsibleContactAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogsCreatedByContactAsync:::contactId"]=""
+operation_parameters_collection_type["getProjectTimeLogsCreatedByContactAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectTimeLogsCreatedByContactAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogsCreatedByContactAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateProjectTimeLogAsync:::timeLogId"]=""
+operation_parameters_collection_type["updateProjectTimeLogAsync:::tenantId"]=""
+operation_parameters_collection_type["updateProjectTimeLogAsync:::api-version"]=""
+operation_parameters_collection_type["updateProjectTimeLogAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateProjectTimeLogAsync:::ProjectTimeLogUpdateDto"]=""
+operation_parameters_collection_type["requestProjectHoursApprovalAsync:::tenantId"]=""
+operation_parameters_collection_type["requestProjectHoursApprovalAsync:::api-version"]=""
+operation_parameters_collection_type["requestProjectHoursApprovalAsync:::x-api-version"]=""
+operation_parameters_collection_type["requestProjectHoursApprovalAsync:::ProjectHoursApprovalCreateDto"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalApproverAsync:::approvalId"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalApproverAsync:::tenantId"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalApproverAsync:::api-version"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalApproverAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalApproverAsync:::ProjectHoursApprovalApproverUpdateDto"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalStatusAsync:::tenantId"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalStatusAsync:::approvalId"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalStatusAsync:::api-version"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalStatusAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalStatusAsync:::ProjectHoursApprovalStatusUpdateDto"]=""
 
 
 ##
@@ -270,9 +321,6 @@ host=""
 # The user credentials for basic authentication
 basic_auth_credential=""
 
-##
-# The user API key
-apikey_auth_credential=""
 
 ##
 # If true, the script will only output the actual cURL command that would be
@@ -375,23 +423,10 @@ lookup_mime_type() {
 ##############################################################################
 header_arguments_to_curl() {
     local headers_curl=""
-    local api_key_header=""
-    local api_key_header_in_cli=""
-    api_key_header="Authorization"
 
     for key in "${!header_arguments[@]}"; do
         headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
-        if [[ "${key}XX" == "${api_key_header}XX" ]]; then
-            api_key_header_in_cli="YES"
-        fi
     done
-    #
-    # If the api_key was not provided in the header, try one from the
-    # environment variable
-    #
-    if [[ -z $api_key_header_in_cli && -n $apikey_auth_credential ]]; then
-        headers_curl+="-H \"${api_key_header}: ${apikey_auth_credential}\""
-    fi
     headers_curl+=" "
 
     echo "${headers_curl}"
@@ -623,7 +658,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}TimeTrackerService command line client (API version 2.0.1.4089)${OFF}
+${BOLD}${WHITE}TimeTrackerService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -650,31 +685,45 @@ ${BOLD}${WHITE}Usage${OFF}
                                       JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
 
 EOF
-    echo -e "${BOLD}${WHITE}Authentication methods${OFF}"
-    echo -e ""
-    echo -e "  - ${BLUE}Api-key${OFF} - add '${RED}Authorization:<api-key>${OFF}' after ${YELLOW}<operation>${OFF}"
-    
-    echo ""
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[projectTimeLogs]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet${OFF}; (AUTH)
-  ${CYAN}apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet${OFF}; (AUTH)
-  ${CYAN}apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2TimeTrackerServiceProjectTimeLogsGet${OFF}; (AUTH)
-  ${CYAN}apiV2TimeTrackerServiceProjectTimeLogsPost${OFF}; (AUTH)
-  ${CYAN}apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut${OFF}; (AUTH)
+  ${CYAN}countProjectPeriodTimeLogsAsync${OFF};Get the count of project period time logs
+  ${CYAN}createProjectTimeLogAsync${OFF};Create a new project time log
+  ${CYAN}deleteProjectTimeLogAsync${OFF};Delete a project time log
+  ${CYAN}getProjectPeriodTimeLogsAsync${OFF};Retrieve project period time logs
+  ${CYAN}getProjectTimeLogByIdAsync${OFF};Retrieve a project time log by ID
+  ${CYAN}getProjectTimeLogsAsync${OFF};Retrieve time logs for a project
+  ${CYAN}getProjectTimeLogsByResponsibleContactAsync${OFF};Retrieve time logs by responsible contact
+  ${CYAN}getProjectTimeLogsCreatedByContactAsync${OFF};Retrieve time logs created by a contact
+  ${CYAN}updateProjectTimeLogAsync${OFF};Update a project time log
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[timeLogApprovals]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut${OFF}; (AUTH)
-  ${CYAN}apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut${OFF}; (AUTH)
-  ${CYAN}apiV2TimeTrackerServiceTimeLogApprovalsPost${OFF}; (AUTH)
+  ${CYAN}requestProjectHoursApprovalAsync${OFF};Request project hours approval
+  ${CYAN}updateProjectHoursApprovalApproverAsync${OFF};Update approval approver
+  ${CYAN}updateProjectHoursApprovalStatusAsync${OFF};Update approval status
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -704,7 +753,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}TimeTrackerService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}${WHITE}TimeTrackerService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -724,95 +773,255 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}TimeTrackerService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}TimeTrackerService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
 ##############################################################################
 #
-# Print help for apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet operation
+# Print help for forgotPasswordPost operation
 #
 ##############################################################################
-print_apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet_help() {
+print_forgotPasswordPost_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: contactId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet operation
+# Print help for helloGet operation
 #
 ##############################################################################
-print_apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet_help() {
+print_helloGet_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: contactId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet operation
+# Print help for loginPost operation
 #
 ##############################################################################
-print_apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet_help() {
+print_loginPost_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}projectId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for apiV2TimeTrackerServiceProjectTimeLogsGet operation
+# Print help for manage2faPost operation
 #
 ##############################################################################
-print_apiV2TimeTrackerServiceProjectTimeLogsGet_help() {
+print_manage2faPost_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2TimeTrackerServiceProjectTimeLogsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countProjectPeriodTimeLogsAsync operation
+#
+##############################################################################
+print_countProjectPeriodTimeLogsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countProjectPeriodTimeLogsAsync - Get the count of project period time logs${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of time logs for a specific project period with OData query support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -833,12 +1042,14 @@ print_apiV2TimeTrackerServiceProjectTimeLogsGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2TimeTrackerServiceProjectTimeLogsPost operation
+# Print help for createProjectTimeLogAsync operation
 #
 ##############################################################################
-print_apiV2TimeTrackerServiceProjectTimeLogsPost_help() {
+print_createProjectTimeLogAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2TimeTrackerServiceProjectTimeLogsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createProjectTimeLogAsync - Create a new project time log${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new project time log entry." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -859,12 +1070,14 @@ print_apiV2TimeTrackerServiceProjectTimeLogsPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete operation
+# Print help for deleteProjectTimeLogAsync operation
 #
 ##############################################################################
-print_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete_help() {
+print_deleteProjectTimeLogAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteProjectTimeLogAsync - Delete a project time log${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a project time log entry." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -884,12 +1097,42 @@ print_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet operation
+# Print help for getProjectPeriodTimeLogsAsync operation
 #
 ##############################################################################
-print_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet_help() {
+print_getProjectPeriodTimeLogsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getProjectPeriodTimeLogsAsync - Retrieve project period time logs${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of time logs for a specific project period with OData query support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}projectPeriodId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: projectPeriodId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProjectTimeLogByIdAsync operation
+#
+##############################################################################
+print_getProjectTimeLogByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProjectTimeLogByIdAsync - Retrieve a project time log by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single project time log by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}timeLogId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: timeLogId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -909,12 +1152,97 @@ print_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut operation
+# Print help for getProjectTimeLogsAsync operation
 #
 ##############################################################################
-print_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut_help() {
+print_getProjectTimeLogsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getProjectTimeLogsAsync - Retrieve time logs for a project${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all time logs associated with the specified project." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}projectId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProjectTimeLogsByResponsibleContactAsync operation
+#
+##############################################################################
+print_getProjectTimeLogsByResponsibleContactAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProjectTimeLogsByResponsibleContactAsync - Retrieve time logs by responsible contact${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves time logs where the specified contact is the responsible party." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: contactId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProjectTimeLogsCreatedByContactAsync operation
+#
+##############################################################################
+print_getProjectTimeLogsCreatedByContactAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProjectTimeLogsCreatedByContactAsync - Retrieve time logs created by a contact${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves time logs that were created by the specified contact." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: contactId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateProjectTimeLogAsync operation
+#
+##############################################################################
+print_updateProjectTimeLogAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateProjectTimeLogAsync - Update a project time log${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing project time log entry." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}timeLogId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: timeLogId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -936,12 +1264,42 @@ print_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut operation
+# Print help for requestProjectHoursApprovalAsync operation
 #
 ##############################################################################
-print_apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut_help() {
+print_requestProjectHoursApprovalAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}requestProjectHoursApprovalAsync - Request project hours approval${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new project hours approval request." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateProjectHoursApprovalApproverAsync operation
+#
+##############################################################################
+print_updateProjectHoursApprovalApproverAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateProjectHoursApprovalApproverAsync - Update approval approver${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the approver of an existing project hours approval." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}approvalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: approvalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -963,12 +1321,14 @@ print_apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut operation
+# Print help for updateProjectHoursApprovalStatusAsync operation
 #
 ##############################################################################
-print_apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut_help() {
+print_updateProjectHoursApprovalStatusAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateProjectHoursApprovalStatusAsync - Update approval status${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the status of an existing project hours approval." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -988,49 +1348,101 @@ print_apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut_help() {
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
-##############################################################################
-#
-# Print help for apiV2TimeTrackerServiceTimeLogApprovalsPost operation
-#
-##############################################################################
-print_apiV2TimeTrackerServiceTimeLogApprovalsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2TimeTrackerServiceTimeLogApprovalsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
 
 
 ##############################################################################
 #
-# Call apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet operation
+# Call forgotPasswordPost operation
 #
 ##############################################################################
-call_apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet() {
+call_forgotPasswordPost() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(contactId tenantId api-version  )
+    local query_parameter_names=()
     local path
 
-    if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs/ByResponsibleContact" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -1054,19 +1466,19 @@ call_apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet() {
 
 ##############################################################################
 #
-# Call apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet operation
+# Call helloGet operation
 #
 ##############################################################################
-call_apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet() {
+call_helloGet() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(contactId tenantId api-version  )
+    local query_parameter_names=()
     local path
 
-    if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs/CreatedByContact" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -1090,19 +1502,175 @@ call_apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet() {
 
 ##############################################################################
 #
-# Call apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet operation
+# Call loginPost operation
 #
 ##############################################################################
-call_apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet() {
+call_loginPost() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(projectId)
+    local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(useCookies useSessionCookies)
     local path
 
-    if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs/ForProject/{projectId}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -1126,19 +1694,97 @@ call_apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet() {
 
 ##############################################################################
 #
-# Call apiV2TimeTrackerServiceProjectTimeLogsGet operation
+# Call manageInfoPost operation
 #
 ##############################################################################
-call_apiV2TimeTrackerServiceProjectTimeLogsGet() {
+call_manageInfoPost() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId projectPeriodId api-version  )
+    local query_parameter_names=()
     local path
 
-    if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -1162,16 +1808,400 @@ call_apiV2TimeTrackerServiceProjectTimeLogsGet() {
 
 ##############################################################################
 #
-# Call apiV2TimeTrackerServiceProjectTimeLogsPost operation
+# Call refreshPost operation
 #
 ##############################################################################
-call_apiV2TimeTrackerServiceProjectTimeLogsPost() {
+call_refreshPost() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countProjectPeriodTimeLogsAsync operation
+#
+##############################################################################
+call_countProjectPeriodTimeLogsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId projectPeriodId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createProjectTimeLogAsync operation
+#
+##############################################################################
+call_createProjectTimeLogAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs" path_parameter_names query_parameter_names); then
@@ -1238,16 +2268,16 @@ call_apiV2TimeTrackerServiceProjectTimeLogsPost() {
 
 ##############################################################################
 #
-# Call apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete operation
+# Call deleteProjectTimeLogAsync operation
 #
 ##############################################################################
-call_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete() {
+call_deleteProjectTimeLogAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(timeLogId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs/{timeLogId}" path_parameter_names query_parameter_names); then
@@ -1274,16 +2304,52 @@ call_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete() {
 
 ##############################################################################
 #
-# Call apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet operation
+# Call getProjectPeriodTimeLogsAsync operation
 #
 ##############################################################################
-call_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet() {
+call_getProjectPeriodTimeLogsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId projectPeriodId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProjectTimeLogByIdAsync operation
+#
+##############################################################################
+call_getProjectTimeLogByIdAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(timeLogId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs/{timeLogId}" path_parameter_names query_parameter_names); then
@@ -1310,16 +2376,124 @@ call_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet() {
 
 ##############################################################################
 #
-# Call apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut operation
+# Call getProjectTimeLogsAsync operation
 #
 ##############################################################################
-call_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut() {
+call_getProjectTimeLogsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(projectId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs/ForProject/{projectId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProjectTimeLogsByResponsibleContactAsync operation
+#
+##############################################################################
+call_getProjectTimeLogsByResponsibleContactAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(contactId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs/ByResponsibleContact" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProjectTimeLogsCreatedByContactAsync operation
+#
+##############################################################################
+call_getProjectTimeLogsCreatedByContactAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(contactId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs/CreatedByContact" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateProjectTimeLogAsync operation
+#
+##############################################################################
+call_updateProjectTimeLogAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(timeLogId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/TimeTrackerService/ProjectTimeLogs/{timeLogId}" path_parameter_names query_parameter_names); then
@@ -1386,16 +2560,92 @@ call_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut() {
 
 ##############################################################################
 #
-# Call apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut operation
+# Call requestProjectHoursApprovalAsync operation
 #
 ##############################################################################
-call_apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut() {
+call_requestProjectHoursApprovalAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TimeTrackerService/TimeLogApprovals" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateProjectHoursApprovalApproverAsync operation
+#
+##############################################################################
+call_updateProjectHoursApprovalApproverAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(approvalId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/TimeTrackerService/TimeLogApprovals/{approvalId}/Approver" path_parameter_names query_parameter_names); then
@@ -1462,16 +2712,16 @@ call_apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut() {
 
 ##############################################################################
 #
-# Call apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut operation
+# Call updateProjectHoursApprovalStatusAsync operation
 #
 ##############################################################################
-call_apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut() {
+call_updateProjectHoursApprovalStatusAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(approvalId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/TimeTrackerService/TimeLogApprovals/{approvalId}/Status" path_parameter_names query_parameter_names); then
@@ -1479,82 +2729,6 @@ call_apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut() {
         exit 1
     fi
     local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2TimeTrackerServiceTimeLogApprovalsPost operation
-#
-##############################################################################
-call_apiV2TimeTrackerServiceTimeLogApprovalsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/TimeTrackerService/TimeLogApprovals" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -1709,38 +2883,80 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet)
-    operation="apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet"
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet)
-    operation="apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet"
+    healthGet)
+    operation="healthGet"
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet)
-    operation="apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet"
+    helloGet)
+    operation="helloGet"
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsGet)
-    operation="apiV2TimeTrackerServiceProjectTimeLogsGet"
+    loginPost)
+    operation="loginPost"
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsPost)
-    operation="apiV2TimeTrackerServiceProjectTimeLogsPost"
+    manage2faPost)
+    operation="manage2faPost"
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete)
-    operation="apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete"
+    manageInfoGet)
+    operation="manageInfoGet"
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet)
-    operation="apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet"
+    manageInfoPost)
+    operation="manageInfoPost"
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut)
-    operation="apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut"
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
     ;;
-    apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut)
-    operation="apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut"
+    refreshPost)
+    operation="refreshPost"
     ;;
-    apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut)
-    operation="apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut"
+    registerPost)
+    operation="registerPost"
     ;;
-    apiV2TimeTrackerServiceTimeLogApprovalsPost)
-    operation="apiV2TimeTrackerServiceTimeLogApprovalsPost"
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
+    ;;
+    resetPasswordPost)
+    operation="resetPasswordPost"
+    ;;
+    versionGet)
+    operation="versionGet"
+    ;;
+    countProjectPeriodTimeLogsAsync)
+    operation="countProjectPeriodTimeLogsAsync"
+    ;;
+    createProjectTimeLogAsync)
+    operation="createProjectTimeLogAsync"
+    ;;
+    deleteProjectTimeLogAsync)
+    operation="deleteProjectTimeLogAsync"
+    ;;
+    getProjectPeriodTimeLogsAsync)
+    operation="getProjectPeriodTimeLogsAsync"
+    ;;
+    getProjectTimeLogByIdAsync)
+    operation="getProjectTimeLogByIdAsync"
+    ;;
+    getProjectTimeLogsAsync)
+    operation="getProjectTimeLogsAsync"
+    ;;
+    getProjectTimeLogsByResponsibleContactAsync)
+    operation="getProjectTimeLogsByResponsibleContactAsync"
+    ;;
+    getProjectTimeLogsCreatedByContactAsync)
+    operation="getProjectTimeLogsCreatedByContactAsync"
+    ;;
+    updateProjectTimeLogAsync)
+    operation="updateProjectTimeLogAsync"
+    ;;
+    requestProjectHoursApprovalAsync)
+    operation="requestProjectHoursApprovalAsync"
+    ;;
+    updateProjectHoursApprovalApproverAsync)
+    operation="updateProjectHoursApprovalApproverAsync"
+    ;;
+    updateProjectHoursApprovalStatusAsync)
+    operation="updateProjectHoursApprovalStatusAsync"
     ;;
     *==*)
     # Parse body arguments and convert them into top level
@@ -1775,13 +2991,6 @@ case $key in
     # only after the operation argument
     if [[ "$operation" ]]; then
         IFS=':' read -r header_name header_value <<< "$key"
-        #
-        # If the header key is the same as the api_key expected by API in the
-        # header, override the ${apikey_auth_credential} variable
-        #
-        if [[ $header_name == "Authorization" ]]; then
-            apikey_auth_credential=$header_value
-        fi
         header_arguments[$header_name]=$header_value
     else
         curl_arguments+=" $key"
@@ -1836,38 +3045,80 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
-    apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet)
-    call_apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet
+    forgotPasswordPost)
+    call_forgotPasswordPost
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet)
-    call_apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet
+    healthGet)
+    call_healthGet
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet)
-    call_apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet
+    helloGet)
+    call_helloGet
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsGet)
-    call_apiV2TimeTrackerServiceProjectTimeLogsGet
+    loginPost)
+    call_loginPost
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsPost)
-    call_apiV2TimeTrackerServiceProjectTimeLogsPost
+    manage2faPost)
+    call_manage2faPost
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete)
-    call_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete
+    manageInfoGet)
+    call_manageInfoGet
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet)
-    call_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet
+    manageInfoPost)
+    call_manageInfoPost
     ;;
-    apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut)
-    call_apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
     ;;
-    apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut)
-    call_apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut
+    refreshPost)
+    call_refreshPost
     ;;
-    apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut)
-    call_apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut
+    registerPost)
+    call_registerPost
     ;;
-    apiV2TimeTrackerServiceTimeLogApprovalsPost)
-    call_apiV2TimeTrackerServiceTimeLogApprovalsPost
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
+    ;;
+    resetPasswordPost)
+    call_resetPasswordPost
+    ;;
+    versionGet)
+    call_versionGet
+    ;;
+    countProjectPeriodTimeLogsAsync)
+    call_countProjectPeriodTimeLogsAsync
+    ;;
+    createProjectTimeLogAsync)
+    call_createProjectTimeLogAsync
+    ;;
+    deleteProjectTimeLogAsync)
+    call_deleteProjectTimeLogAsync
+    ;;
+    getProjectPeriodTimeLogsAsync)
+    call_getProjectPeriodTimeLogsAsync
+    ;;
+    getProjectTimeLogByIdAsync)
+    call_getProjectTimeLogByIdAsync
+    ;;
+    getProjectTimeLogsAsync)
+    call_getProjectTimeLogsAsync
+    ;;
+    getProjectTimeLogsByResponsibleContactAsync)
+    call_getProjectTimeLogsByResponsibleContactAsync
+    ;;
+    getProjectTimeLogsCreatedByContactAsync)
+    call_getProjectTimeLogsCreatedByContactAsync
+    ;;
+    updateProjectTimeLogAsync)
+    call_updateProjectTimeLogAsync
+    ;;
+    requestProjectHoursApprovalAsync)
+    call_requestProjectHoursApprovalAsync
+    ;;
+    updateProjectHoursApprovalApproverAsync)
+    call_updateProjectHoursApprovalApproverAsync
+    ;;
+    updateProjectHoursApprovalStatusAsync)
+    call_updateProjectHoursApprovalStatusAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

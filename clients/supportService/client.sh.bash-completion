@@ -69,105 +69,137 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2SupportServiceSupportEntitlementsCountGet"]=1
-    operations["apiV2SupportServiceSupportEntitlementsGet"]=1
-    operations["apiV2SupportServiceSupportEntitlementsPost"]=1
-    operations["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete"]=1
-    operations["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet"]=1
-    operations["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut"]=1
-    operations["apiV2SupportServiceSupportRequestAttachmentsCountGet"]=1
-    operations["apiV2SupportServiceSupportRequestAttachmentsGet"]=1
-    operations["apiV2SupportServiceSupportRequestAttachmentsPost"]=1
-    operations["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete"]=1
-    operations["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet"]=1
-    operations["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut"]=1
-    operations["apiV2SupportServiceSupportRequestsCountGet"]=1
-    operations["apiV2SupportServiceSupportRequestsGet"]=1
-    operations["apiV2SupportServiceSupportRequestsPost"]=1
-    operations["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet"]=1
-    operations["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet"]=1
-    operations["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet"]=1
-    operations["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost"]=1
-    operations["apiV2SupportServiceSupportRequestsSupportRequestIdDelete"]=1
-    operations["apiV2SupportServiceSupportRequestsSupportRequestIdGet"]=1
-    operations["apiV2SupportServiceSupportRequestsSupportRequestIdPut"]=1
-    operations["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet"]=1
-    operations["apiV2SupportServiceSupportTicketPrioritiesCountGet"]=1
-    operations["apiV2SupportServiceSupportTicketPrioritiesGet"]=1
-    operations["apiV2SupportServiceSupportTicketPrioritiesPost"]=1
-    operations["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete"]=1
-    operations["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet"]=1
-    operations["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut"]=1
-    operations["apiV2SupportServiceSupportTicketTypesCountGet"]=1
-    operations["apiV2SupportServiceSupportTicketTypesGet"]=1
-    operations["apiV2SupportServiceSupportTicketTypesPost"]=1
-    operations["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete"]=1
-    operations["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet"]=1
-    operations["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut"]=1
-    operations["apiV2SupportServiceSupportTicketsCountGet"]=1
-    operations["apiV2SupportServiceSupportTicketsGet"]=1
-    operations["apiV2SupportServiceSupportTicketsPost"]=1
-    operations["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet"]=1
-    operations["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost"]=1
-    operations["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete"]=1
-    operations["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet"]=1
-    operations["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet"]=1
-    operations["apiV2SupportServiceSupportTicketsSupportTicketIdDelete"]=1
-    operations["apiV2SupportServiceSupportTicketsSupportTicketIdGet"]=1
-    operations["apiV2SupportServiceSupportTicketsSupportTicketIdPut"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["createSupportEntitlementAsync"]=1
+    operations["deleteSupportEntitlementAsync"]=1
+    operations["getSupportEntitlementAsync"]=1
+    operations["getSupportEntitlementsAsync"]=1
+    operations["getSupportEntitlementsCountAsync"]=1
+    operations["updateSupportEntitlementAsync"]=1
+    operations["createSupportRequestAttachmentAsync"]=1
+    operations["deleteSupportRequestAttachmentAsync"]=1
+    operations["getSupportRequestAttachmentAsync"]=1
+    operations["getSupportRequestAttachmentsAsync"]=1
+    operations["getSupportRequestAttachmentsCountAsync"]=1
+    operations["updateSupportRequestAttachmentAsync"]=1
+    operations["createSupportRequestAsync"]=1
+    operations["deleteSupportRequestAsync"]=1
+    operations["getSupportRequestAsync"]=1
+    operations["getSupportRequestAttachmentByRequest"]=1
+    operations["getSupportRequestAttachmentsByRequest"]=1
+    operations["getSupportRequestAttachmentsCountByRequest"]=1
+    operations["getSupportRequestTicketsAsync"]=1
+    operations["getSupportRequestsAsync"]=1
+    operations["getSupportRequestsCountAsync"]=1
+    operations["relateSupportRequestToAttachmentAsync"]=1
+    operations["updateSupportRequestAsync"]=1
+    operations["createSupportTicketPriorityAsync"]=1
+    operations["deleteSupportTicketPriorityAsync"]=1
+    operations["getSupportTicketPrioritiesAsync"]=1
+    operations["getSupportTicketPrioritiesCountAsync"]=1
+    operations["getSupportTicketPriorityAsync"]=1
+    operations["updateSupportTicketPriorityAsync"]=1
+    operations["createSupportTicketTypeAsync"]=1
+    operations["deleteSupportTicketTypeAsync"]=1
+    operations["getSupportTicketTypeAsync"]=1
+    operations["getSupportTicketTypesAsync"]=1
+    operations["getSupportTicketTypesCountAsync"]=1
+    operations["updateSupportTicketTypeAsync"]=1
+    operations["createSupportTicketAsync"]=1
+    operations["deleteSupportTicketAsync"]=1
+    operations["deleteSupportTicketConversationAsync"]=1
+    operations["getSupportTicketAsync"]=1
+    operations["getSupportTicketConversationAsync"]=1
+    operations["getSupportTicketConversationMessagesAsync"]=1
+    operations["getSupportTicketConversationsAsync"]=1
+    operations["getSupportTicketsAsync"]=1
+    operations["getSupportTicketsCountAsync"]=1
+    operations["relateSupportTicketToConversationAsync"]=1
+    operations["updateSupportTicketAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2SupportServiceSupportEntitlementsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportEntitlementsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportEntitlementsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete"]="supportEntitlementId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet"]="supportEntitlementId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut"]="supportEntitlementId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestAttachmentsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestAttachmentsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestAttachmentsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete"]="supportRequestAttachmentId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet"]="supportRequestAttachmentId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut"]="supportRequestAttachmentId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet"]="supportRequestId= attachmentId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet"]="supportRequestId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet"]="supportRequestId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost"]="supportRequestId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestsSupportRequestIdDelete"]="supportRequestId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestsSupportRequestIdGet"]="supportRequestId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestsSupportRequestIdPut"]="supportRequestId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet"]="supportRequestId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketPrioritiesCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketPrioritiesGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketPrioritiesPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete"]="supportTicketPriorityId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet"]="supportTicketPriorityId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut"]="supportTicketPriorityId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketTypesCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketTypesGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketTypesPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete"]="supportTicketTypeId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet"]="supportTicketTypeId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut"]="supportTicketTypeId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet"]="supportTicketId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost"]="supportTicketId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete"]="supportTicketId= supportTicketConversationId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet"]="supportTicketId= supportTicketConversationId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet"]="supportTicketConversationId= supportTicketId= pageNumber= pageSize= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketsSupportTicketIdDelete"]="supportTicketId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketsSupportTicketIdGet"]="supportTicketId= api-version= x-api-version: "
-    operation_parameters["apiV2SupportServiceSupportTicketsSupportTicketIdPut"]="supportTicketId= tenantId= api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["createSupportEntitlementAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteSupportEntitlementAsync"]="supportEntitlementId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportEntitlementAsync"]="supportEntitlementId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportEntitlementsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportEntitlementsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateSupportEntitlementAsync"]="supportEntitlementId= tenantId= api-version= x-api-version: "
+    operation_parameters["createSupportRequestAttachmentAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteSupportRequestAttachmentAsync"]="supportRequestAttachmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportRequestAttachmentAsync"]="supportRequestAttachmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportRequestAttachmentsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportRequestAttachmentsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateSupportRequestAttachmentAsync"]="supportRequestAttachmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["createSupportRequestAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteSupportRequestAsync"]="supportRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportRequestAsync"]="supportRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportRequestAttachmentByRequest"]="supportRequestId= attachmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportRequestAttachmentsByRequest"]="supportRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportRequestAttachmentsCountByRequest"]="supportRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportRequestTicketsAsync"]="supportRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportRequestsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportRequestsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["relateSupportRequestToAttachmentAsync"]="supportRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateSupportRequestAsync"]="supportRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["createSupportTicketPriorityAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteSupportTicketPriorityAsync"]="supportTicketPriorityId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportTicketPrioritiesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportTicketPrioritiesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportTicketPriorityAsync"]="supportTicketPriorityId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateSupportTicketPriorityAsync"]="supportTicketPriorityId= tenantId= api-version= x-api-version: "
+    operation_parameters["createSupportTicketTypeAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteSupportTicketTypeAsync"]="supportTicketTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportTicketTypeAsync"]="supportTicketTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportTicketTypesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportTicketTypesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateSupportTicketTypeAsync"]="supportTicketTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["createSupportTicketAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteSupportTicketAsync"]="supportTicketId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteSupportTicketConversationAsync"]="supportTicketId= supportTicketConversationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportTicketAsync"]="supportTicketId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportTicketConversationAsync"]="supportTicketId= supportTicketConversationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportTicketConversationMessagesAsync"]="supportTicketId= supportTicketConversationId= tenantId= pageNumber= pageSize= api-version= x-api-version: "
+    operation_parameters["getSupportTicketConversationsAsync"]="supportTicketId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportTicketsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getSupportTicketsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["relateSupportTicketToConversationAsync"]="supportTicketId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateSupportTicketAsync"]="supportTicketId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

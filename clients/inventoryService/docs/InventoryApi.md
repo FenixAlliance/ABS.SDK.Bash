@@ -4,18 +4,20 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2InventoryServiceInventoryStockItemIdDetailsGet**](InventoryApi.md#apiV2InventoryServiceInventoryStockItemIdDetailsGet) | **GET** /api/v2/InventoryService/Inventory/{stockItemId}/Details | 
+[**getInventoryDetailsAsync**](InventoryApi.md#getInventoryDetailsAsync) | **GET** /api/v2/InventoryService/Inventory/{stockItemId}/Details | Get inventory details for a stock item
 
 
 
-## apiV2InventoryServiceInventoryStockItemIdDetailsGet
+## getInventoryDetailsAsync
 
+Get inventory details for a stock item
 
+Retrieves the inventory details for a specific stock item by its ID.
 
 ### Example
 
 ```bash
- apiV2InventoryServiceInventoryStockItemIdDetailsGet stockItemId=value  api-version=value x-api-version:value
+ getInventoryDetailsAsync stockItemId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -33,7 +35,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

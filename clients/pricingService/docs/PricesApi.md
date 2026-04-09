@@ -4,21 +4,23 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2PricingServicePricesItemIdFinalPriceGet**](PricesApi.md#apiV2PricingServicePricesItemIdFinalPriceGet) | **GET** /api/v2/PricingService/Prices/{itemId}/FinalPrice | 
-[**apiV2PricingServicePricesItemIdPriceGet**](PricesApi.md#apiV2PricingServicePricesItemIdPriceGet) | **GET** /api/v2/PricingService/Prices/{itemId}/Price | 
-[**apiV2PricingServicePricesItemIdTotalSavingsGet**](PricesApi.md#apiV2PricingServicePricesItemIdTotalSavingsGet) | **GET** /api/v2/PricingService/Prices/{itemId}/TotalSavings | 
-[**apiV2PricingServicePricesItemIdTotalTaxesGet**](PricesApi.md#apiV2PricingServicePricesItemIdTotalTaxesGet) | **GET** /api/v2/PricingService/Prices/{itemId}/TotalTaxes | 
+[**getFinalPrice**](PricesApi.md#getFinalPrice) | **GET** /api/v2/PricingService/Prices/{itemId}/FinalPrice | Gets the final price for an item
+[**getPrice**](PricesApi.md#getPrice) | **GET** /api/v2/PricingService/Prices/{itemId}/Price | Gets the calculated price for an item
+[**getTotalSavingsInUsd**](PricesApi.md#getTotalSavingsInUsd) | **GET** /api/v2/PricingService/Prices/{itemId}/TotalSavings | Gets total savings for an item
+[**getTotalTaxesInUsd**](PricesApi.md#getTotalTaxesInUsd) | **GET** /api/v2/PricingService/Prices/{itemId}/TotalTaxes | Gets total taxes for an item
 
 
 
-## apiV2PricingServicePricesItemIdFinalPriceGet
+## getFinalPrice
 
+Gets the final price for an item
 
+Gets the final price for an item after all discounts and taxes in the specified currency.
 
 ### Example
 
 ```bash
- apiV2PricingServicePricesItemIdFinalPriceGet itemId=value  currencyId=value  api-version=value x-api-version:value
+ getFinalPrice itemId=value  currencyId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -37,7 +39,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -47,14 +49,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2PricingServicePricesItemIdPriceGet
+## getPrice
 
+Gets the calculated price for an item
 
+Calculates the price for an item considering price list, discount list, quantity, and currency.
 
 ### Example
 
 ```bash
- apiV2PricingServicePricesItemIdPriceGet itemId=value  priceListId=value  discountsListId=value  currencyId=value  api-version=value x-api-version:value
+ getPrice itemId=value  priceListId=value  discountsListId=value  quantity=value  currencyId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -65,17 +69,18 @@ Name | Type | Description  | Notes
  **itemId** | **string** |  | [default to null]
  **priceListId** | **string** |  | [optional] [default to null]
  **discountsListId** | **string** |  | [optional] [default to null]
+ **quantity** | **float** |  | [optional] [default to 1]
  **currencyId** | **string** |  | [optional] [default to USD.USA]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
 ### Return type
 
-[**PriceCalculationDtoEnvelope**](PriceCalculationDtoEnvelope.md)
+[**ItemPriceCalculationEnvelope**](ItemPriceCalculationEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -85,14 +90,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2PricingServicePricesItemIdTotalSavingsGet
+## getTotalSavingsInUsd
 
+Gets total savings for an item
 
+Gets the total savings amount for an item in the specified currency.
 
 ### Example
 
 ```bash
- apiV2PricingServicePricesItemIdTotalSavingsGet itemId=value  currencyId=value  api-version=value x-api-version:value
+ getTotalSavingsInUsd itemId=value  currencyId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -111,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -121,14 +128,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2PricingServicePricesItemIdTotalTaxesGet
+## getTotalTaxesInUsd
 
+Gets total taxes for an item
 
+Gets the total tax amount for an item in the specified currency.
 
 ### Example
 
 ```bash
- apiV2PricingServicePricesItemIdTotalTaxesGet itemId=value  currencyId=value  api-version=value x-api-version:value
+ getTotalTaxesInUsd itemId=value  currencyId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -147,7 +156,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

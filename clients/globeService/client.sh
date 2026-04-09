@@ -96,54 +96,73 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdCallingCodesGet:::countryId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdCallingCodesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdCallingCodesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdCurrenciesGet:::countryId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdCurrenciesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdCurrenciesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdGet:::countryId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet:::countryStateId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet:::countryId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet:::countryStateId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet:::countryId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesGet:::countryId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdTimezonesGet:::countryId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdTimezonesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdTimezonesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet:::countryId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesSearchGet:::countryName"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesSearchGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCountriesSearchGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCurrenciesCurrencyIdGet:::currencyId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCurrenciesCurrencyIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCurrenciesCurrencyIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCurrenciesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceCurrenciesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceLanguagesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceLanguagesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceLanguagesLanguageIdGet:::languageId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceLanguagesLanguageIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceLanguagesLanguageIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobalSystemMigratePost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobalSystemMigratePost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceTimezonesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceTimezonesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceTimezonesTimeZoneIdGet:::timeZoneId"]=1
-operation_parameters_minimum_occurrences["apiV2GlobeServiceTimezonesTimeZoneIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2GlobeServiceTimezonesTimeZoneIdGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countCountries:::api-version"]=0
+operation_parameters_minimum_occurrences["countCountries:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAllCountries:::api-version"]=0
+operation_parameters_minimum_occurrences["getAllCountries:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCallingCodesByCountryIdAsync:::countryId"]=1
+operation_parameters_minimum_occurrences["getCallingCodesByCountryIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCallingCodesByCountryIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCitiesByCountryStateIdAsync:::countryStateId"]=1
+operation_parameters_minimum_occurrences["getCitiesByCountryStateIdAsync:::countryId"]=1
+operation_parameters_minimum_occurrences["getCitiesByCountryStateIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCitiesByCountryStateIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCountryById:::countryId"]=1
+operation_parameters_minimum_occurrences["getCountryById:::api-version"]=0
+operation_parameters_minimum_occurrences["getCountryById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCountryStateByIdAsync:::countryStateId"]=1
+operation_parameters_minimum_occurrences["getCountryStateByIdAsync:::countryId"]=1
+operation_parameters_minimum_occurrences["getCountryStateByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCountryStateByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCountryStatesAsync:::countryId"]=1
+operation_parameters_minimum_occurrences["getCountryStatesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCountryStatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEnabledCurrenciesByCountryIdAsync:::countryId"]=1
+operation_parameters_minimum_occurrences["getEnabledCurrenciesByCountryIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEnabledCurrenciesByCountryIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTimeZonesByCountryIdAsync:::countryId"]=1
+operation_parameters_minimum_occurrences["getTimeZonesByCountryIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTimeZonesByCountryIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTopLevelDomainsByCountryIdAsync:::countryId"]=1
+operation_parameters_minimum_occurrences["getTopLevelDomainsByCountryIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTopLevelDomainsByCountryIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["searchCountriesByNameAsync:::countryName"]=1
+operation_parameters_minimum_occurrences["searchCountriesByNameAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["searchCountriesByNameAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countCurrenciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countCurrenciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCurrencyByIdAsync:::currencyId"]=1
+operation_parameters_minimum_occurrences["getCurrencyByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCurrencyByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEnabledCurrenciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEnabledCurrenciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["countLanguagesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countLanguagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLanguageByIdAsync:::languageId"]=1
+operation_parameters_minimum_occurrences["getLanguageByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getLanguageByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLanguagesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getLanguagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countTimezonesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countTimezonesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTimeZoneByIdAsync:::timeZoneId"]=1
+operation_parameters_minimum_occurrences["getTimeZoneByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTimeZoneByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTimeZonesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTimeZonesAsync:::x-api-version"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -152,107 +171,145 @@ operation_parameters_minimum_occurrences["apiV2GlobeServiceTimezonesTimeZoneIdGe
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdCallingCodesGet:::countryId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdCallingCodesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdCallingCodesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdCurrenciesGet:::countryId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdCurrenciesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdCurrenciesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdGet:::countryId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet:::countryStateId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet:::countryId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet:::countryStateId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet:::countryId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesGet:::countryId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdStatesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdTimezonesGet:::countryId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdTimezonesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdTimezonesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet:::countryId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesSearchGet:::countryName"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesSearchGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCountriesSearchGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCurrenciesCurrencyIdGet:::currencyId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCurrenciesCurrencyIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCurrenciesCurrencyIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCurrenciesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceCurrenciesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceLanguagesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceLanguagesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceLanguagesLanguageIdGet:::languageId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceLanguagesLanguageIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceLanguagesLanguageIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobalSystemMigratePost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobalSystemMigratePost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceTimezonesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceTimezonesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceTimezonesTimeZoneIdGet:::timeZoneId"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceTimezonesTimeZoneIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2GlobeServiceTimezonesTimeZoneIdGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countCountries:::api-version"]=0
+operation_parameters_maximum_occurrences["countCountries:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAllCountries:::api-version"]=0
+operation_parameters_maximum_occurrences["getAllCountries:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCallingCodesByCountryIdAsync:::countryId"]=0
+operation_parameters_maximum_occurrences["getCallingCodesByCountryIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCallingCodesByCountryIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCitiesByCountryStateIdAsync:::countryStateId"]=0
+operation_parameters_maximum_occurrences["getCitiesByCountryStateIdAsync:::countryId"]=0
+operation_parameters_maximum_occurrences["getCitiesByCountryStateIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCitiesByCountryStateIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCountryById:::countryId"]=0
+operation_parameters_maximum_occurrences["getCountryById:::api-version"]=0
+operation_parameters_maximum_occurrences["getCountryById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCountryStateByIdAsync:::countryStateId"]=0
+operation_parameters_maximum_occurrences["getCountryStateByIdAsync:::countryId"]=0
+operation_parameters_maximum_occurrences["getCountryStateByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCountryStateByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCountryStatesAsync:::countryId"]=0
+operation_parameters_maximum_occurrences["getCountryStatesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCountryStatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEnabledCurrenciesByCountryIdAsync:::countryId"]=0
+operation_parameters_maximum_occurrences["getEnabledCurrenciesByCountryIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEnabledCurrenciesByCountryIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTimeZonesByCountryIdAsync:::countryId"]=0
+operation_parameters_maximum_occurrences["getTimeZonesByCountryIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTimeZonesByCountryIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTopLevelDomainsByCountryIdAsync:::countryId"]=0
+operation_parameters_maximum_occurrences["getTopLevelDomainsByCountryIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTopLevelDomainsByCountryIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["searchCountriesByNameAsync:::countryName"]=0
+operation_parameters_maximum_occurrences["searchCountriesByNameAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["searchCountriesByNameAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countCurrenciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countCurrenciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCurrencyByIdAsync:::currencyId"]=0
+operation_parameters_maximum_occurrences["getCurrencyByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCurrencyByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEnabledCurrenciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEnabledCurrenciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["countLanguagesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countLanguagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLanguageByIdAsync:::languageId"]=0
+operation_parameters_maximum_occurrences["getLanguageByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getLanguageByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLanguagesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getLanguagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countTimezonesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countTimezonesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTimeZoneByIdAsync:::timeZoneId"]=0
+operation_parameters_maximum_occurrences["getTimeZoneByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTimeZoneByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTimeZonesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTimeZonesAsync:::x-api-version"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdCallingCodesGet:::countryId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdCallingCodesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdCallingCodesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdCurrenciesGet:::countryId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdCurrenciesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdCurrenciesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdGet:::countryId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet:::countryStateId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet:::countryId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet:::countryStateId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet:::countryId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdStatesGet:::countryId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdStatesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdStatesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdTimezonesGet:::countryId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdTimezonesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdTimezonesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet:::countryId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesSearchGet:::countryName"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesSearchGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCountriesSearchGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCurrenciesCurrencyIdGet:::currencyId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCurrenciesCurrencyIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCurrenciesCurrencyIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCurrenciesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceCurrenciesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceLanguagesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceLanguagesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceLanguagesLanguageIdGet:::languageId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceLanguagesLanguageIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceLanguagesLanguageIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobalSystemMigratePost:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobalSystemMigratePost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceTimezonesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceTimezonesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceTimezonesTimeZoneIdGet:::timeZoneId"]=""
-operation_parameters_collection_type["apiV2GlobeServiceTimezonesTimeZoneIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2GlobeServiceTimezonesTimeZoneIdGet:::x-api-version"]=""
+operation_parameters_collection_type["countCountries:::api-version"]=""
+operation_parameters_collection_type["countCountries:::x-api-version"]=""
+operation_parameters_collection_type["getAllCountries:::api-version"]=""
+operation_parameters_collection_type["getAllCountries:::x-api-version"]=""
+operation_parameters_collection_type["getCallingCodesByCountryIdAsync:::countryId"]=""
+operation_parameters_collection_type["getCallingCodesByCountryIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCallingCodesByCountryIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCitiesByCountryStateIdAsync:::countryStateId"]=""
+operation_parameters_collection_type["getCitiesByCountryStateIdAsync:::countryId"]=""
+operation_parameters_collection_type["getCitiesByCountryStateIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCitiesByCountryStateIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCountryById:::countryId"]=""
+operation_parameters_collection_type["getCountryById:::api-version"]=""
+operation_parameters_collection_type["getCountryById:::x-api-version"]=""
+operation_parameters_collection_type["getCountryStateByIdAsync:::countryStateId"]=""
+operation_parameters_collection_type["getCountryStateByIdAsync:::countryId"]=""
+operation_parameters_collection_type["getCountryStateByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCountryStateByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCountryStatesAsync:::countryId"]=""
+operation_parameters_collection_type["getCountryStatesAsync:::api-version"]=""
+operation_parameters_collection_type["getCountryStatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEnabledCurrenciesByCountryIdAsync:::countryId"]=""
+operation_parameters_collection_type["getEnabledCurrenciesByCountryIdAsync:::api-version"]=""
+operation_parameters_collection_type["getEnabledCurrenciesByCountryIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTimeZonesByCountryIdAsync:::countryId"]=""
+operation_parameters_collection_type["getTimeZonesByCountryIdAsync:::api-version"]=""
+operation_parameters_collection_type["getTimeZonesByCountryIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTopLevelDomainsByCountryIdAsync:::countryId"]=""
+operation_parameters_collection_type["getTopLevelDomainsByCountryIdAsync:::api-version"]=""
+operation_parameters_collection_type["getTopLevelDomainsByCountryIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["searchCountriesByNameAsync:::countryName"]=""
+operation_parameters_collection_type["searchCountriesByNameAsync:::api-version"]=""
+operation_parameters_collection_type["searchCountriesByNameAsync:::x-api-version"]=""
+operation_parameters_collection_type["countCurrenciesAsync:::api-version"]=""
+operation_parameters_collection_type["countCurrenciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCurrencyByIdAsync:::currencyId"]=""
+operation_parameters_collection_type["getCurrencyByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCurrencyByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEnabledCurrenciesAsync:::api-version"]=""
+operation_parameters_collection_type["getEnabledCurrenciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["countLanguagesAsync:::api-version"]=""
+operation_parameters_collection_type["countLanguagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLanguageByIdAsync:::languageId"]=""
+operation_parameters_collection_type["getLanguageByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getLanguageByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLanguagesAsync:::api-version"]=""
+operation_parameters_collection_type["getLanguagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countTimezonesAsync:::api-version"]=""
+operation_parameters_collection_type["countTimezonesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTimeZoneByIdAsync:::timeZoneId"]=""
+operation_parameters_collection_type["getTimeZoneByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getTimeZoneByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTimeZonesAsync:::api-version"]=""
+operation_parameters_collection_type["getTimeZonesAsync:::x-api-version"]=""
 
 
 ##
@@ -273,9 +330,6 @@ host=""
 # The user credentials for basic authentication
 basic_auth_credential=""
 
-##
-# The user API key
-apikey_auth_credential=""
 
 ##
 # If true, the script will only output the actual cURL command that would be
@@ -378,23 +432,10 @@ lookup_mime_type() {
 ##############################################################################
 header_arguments_to_curl() {
     local headers_curl=""
-    local api_key_header=""
-    local api_key_header_in_cli=""
-    api_key_header="Authorization"
 
     for key in "${!header_arguments[@]}"; do
         headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
-        if [[ "${key}XX" == "${api_key_header}XX" ]]; then
-            api_key_header_in_cli="YES"
-        fi
     done
-    #
-    # If the api_key was not provided in the header, try one from the
-    # environment variable
-    #
-    if [[ -z $api_key_header_in_cli && -n $apikey_auth_credential ]]; then
-        headers_curl+="-H \"${api_key_header}: ${apikey_auth_credential}\""
-    fi
     headers_curl+=" "
 
     echo "${headers_curl}"
@@ -626,7 +667,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}GlobeService command line client (API version 2.0.1.4089)${OFF}
+${BOLD}${WHITE}GlobeService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -653,52 +694,63 @@ ${BOLD}${WHITE}Usage${OFF}
                                       JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
 
 EOF
-    echo -e "${BOLD}${WHITE}Authentication methods${OFF}"
-    echo -e ""
-    echo -e "  - ${BLUE}Api-key${OFF} - add '${RED}Authorization:<api-key>${OFF}' after ${YELLOW}<operation>${OFF}"
-    
-    echo ""
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
     echo -e "${BOLD}${WHITE}[countries]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2GlobeServiceCountriesCountryIdCallingCodesGet${OFF}; (AUTH)
-  ${CYAN}apiV2GlobeServiceCountriesCountryIdCurrenciesGet${OFF}; (AUTH)
-  ${CYAN}apiV2GlobeServiceCountriesCountryIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet${OFF}; (AUTH)
-  ${CYAN}apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2GlobeServiceCountriesCountryIdStatesGet${OFF}; (AUTH)
-  ${CYAN}apiV2GlobeServiceCountriesCountryIdTimezonesGet${OFF}; (AUTH)
-  ${CYAN}apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet${OFF}; (AUTH)
-  ${CYAN}apiV2GlobeServiceCountriesGet${OFF}; (AUTH)
-  ${CYAN}apiV2GlobeServiceCountriesSearchGet${OFF}; (AUTH)
+  ${CYAN}countCountries${OFF};Count countries
+  ${CYAN}getAllCountries${OFF};Get all countries
+  ${CYAN}getCallingCodesByCountryIdAsync${OFF};Get calling codes for a country
+  ${CYAN}getCitiesByCountryStateIdAsync${OFF};Get cities for a state
+  ${CYAN}getCountryById${OFF};Get country by ID
+  ${CYAN}getCountryStateByIdAsync${OFF};Get state by ID
+  ${CYAN}getCountryStatesAsync${OFF};Get states for a country
+  ${CYAN}getEnabledCurrenciesByCountryIdAsync${OFF};Get currencies for a country
+  ${CYAN}getTimeZonesByCountryIdAsync${OFF};Get timezones for a country
+  ${CYAN}getTopLevelDomainsByCountryIdAsync${OFF};Get top-level domains for a country
+  ${CYAN}searchCountriesByNameAsync${OFF};Search countries by name
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[currencies]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2GlobeServiceCurrenciesCurrencyIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2GlobeServiceCurrenciesGet${OFF}; (AUTH)
+  ${CYAN}countCurrenciesAsync${OFF};Count currencies
+  ${CYAN}getCurrencyByIdAsync${OFF};Get currency by ID
+  ${CYAN}getEnabledCurrenciesAsync${OFF};Get all currencies
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[languages]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2GlobeServiceLanguagesGet${OFF}; (AUTH)
-  ${CYAN}apiV2GlobeServiceLanguagesLanguageIdGet${OFF}; (AUTH)
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[migrations]${OFF}"
-read -r -d '' ops <<EOF
-  ${CYAN}apiV2GlobalSystemMigratePost${OFF}; (AUTH)
+  ${CYAN}countLanguagesAsync${OFF};Count languages
+  ${CYAN}getLanguageByIdAsync${OFF};Get language by ID
+  ${CYAN}getLanguagesAsync${OFF};Get all languages
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[timezones]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2GlobeServiceTimezonesGet${OFF}; (AUTH)
-  ${CYAN}apiV2GlobeServiceTimezonesTimeZoneIdGet${OFF}; (AUTH)
+  ${CYAN}countTimezonesAsync${OFF};Count timezones
+  ${CYAN}getTimeZoneByIdAsync${OFF};Get timezone by ID
+  ${CYAN}getTimeZonesAsync${OFF};Get all timezones
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -728,7 +780,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}GlobeService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}${WHITE}GlobeService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -748,18 +800,68 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}GlobeService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}GlobeService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceCountriesCountryIdCallingCodesGet operation
+# Print help for countCountries operation
 #
 ##############################################################################
-print_apiV2GlobeServiceCountriesCountryIdCallingCodesGet_help() {
+print_countCountries_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceCountriesCountryIdCallingCodesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}countCountries - Count countries${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total number of countries, with optional OData filtering." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getAllCountries operation
+#
+##############################################################################
+print_getAllCountries_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getAllCountries - Get all countries${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of all countries with optional OData pagination and filtering." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCallingCodesByCountryIdAsync operation
+#
+##############################################################################
+print_getCallingCodesByCountryIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCallingCodesByCountryIdAsync - Get calling codes for a country${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the list of international telephone calling codes associated with the specified country." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -777,58 +879,14 @@ print_apiV2GlobeServiceCountriesCountryIdCallingCodesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceCountriesCountryIdCurrenciesGet operation
+# Print help for getCitiesByCountryStateIdAsync operation
 #
 ##############################################################################
-print_apiV2GlobeServiceCountriesCountryIdCurrenciesGet_help() {
+print_getCitiesByCountryStateIdAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceCountriesCountryIdCurrenciesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCitiesByCountryStateIdAsync - Get cities for a state${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2GlobeServiceCountriesCountryIdGet operation
-#
-##############################################################################
-print_apiV2GlobeServiceCountriesCountryIdGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceCountriesCountryIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet operation
-#
-##############################################################################
-print_apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Retrieves the list of cities belonging to the specified state or province." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}countryStateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryStateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -847,12 +905,39 @@ print_apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet operation
+# Print help for getCountryById operation
 #
 ##############################################################################
-print_apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet_help() {
+print_getCountryById_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCountryById - Get country by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single country by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCountryStateByIdAsync operation
+#
+##############################################################################
+print_getCountryStateByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCountryStateByIdAsync - Get state by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single state or province by its unique identifier within a country." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}countryStateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryStateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -871,12 +956,14 @@ print_apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceCountriesCountryIdStatesGet operation
+# Print help for getCountryStatesAsync operation
 #
 ##############################################################################
-print_apiV2GlobeServiceCountriesCountryIdStatesGet_help() {
+print_getCountryStatesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceCountriesCountryIdStatesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCountryStatesAsync - Get states for a country${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the list of states or provinces belonging to the specified country." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -894,12 +981,14 @@ print_apiV2GlobeServiceCountriesCountryIdStatesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceCountriesCountryIdTimezonesGet operation
+# Print help for getEnabledCurrenciesByCountryIdAsync operation
 #
 ##############################################################################
-print_apiV2GlobeServiceCountriesCountryIdTimezonesGet_help() {
+print_getEnabledCurrenciesByCountryIdAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceCountriesCountryIdTimezonesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getEnabledCurrenciesByCountryIdAsync - Get currencies for a country${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the list of enabled currencies for the specified country." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -917,12 +1006,14 @@ print_apiV2GlobeServiceCountriesCountryIdTimezonesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet operation
+# Print help for getTimeZonesByCountryIdAsync operation
 #
 ##############################################################################
-print_apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet_help() {
+print_getTimeZonesByCountryIdAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getTimeZonesByCountryIdAsync - Get timezones for a country${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the list of timezones associated with the specified country." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -940,14 +1031,17 @@ print_apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceCountriesGet operation
+# Print help for getTopLevelDomainsByCountryIdAsync operation
 #
 ##############################################################################
-print_apiV2GlobeServiceCountriesGet_help() {
+print_getTopLevelDomainsByCountryIdAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceCountriesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getTopLevelDomainsByCountryIdAsync - Get top-level domains for a country${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the list of internet top-level domains (TLDs) associated with the specified country." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -962,12 +1056,14 @@ print_apiV2GlobeServiceCountriesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceCountriesSearchGet operation
+# Print help for searchCountriesByNameAsync operation
 #
 ##############################################################################
-print_apiV2GlobeServiceCountriesSearchGet_help() {
+print_searchCountriesByNameAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceCountriesSearchGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}searchCountriesByNameAsync - Search countries by name${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Searches for countries whose name matches the specified search term." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}countryName${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: countryName=value${OFF}" \
@@ -986,12 +1082,38 @@ print_apiV2GlobeServiceCountriesSearchGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceCurrenciesCurrencyIdGet operation
+# Print help for countCurrenciesAsync operation
 #
 ##############################################################################
-print_apiV2GlobeServiceCurrenciesCurrencyIdGet_help() {
+print_countCurrenciesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceCurrenciesCurrencyIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}countCurrenciesAsync - Count currencies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total number of enabled currencies, with optional OData filtering." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCurrencyByIdAsync operation
+#
+##############################################################################
+print_getCurrencyByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCurrencyByIdAsync - Get currency by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single currency by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: currencyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1009,12 +1131,14 @@ print_apiV2GlobeServiceCurrenciesCurrencyIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceCurrenciesGet operation
+# Print help for getEnabledCurrenciesAsync operation
 #
 ##############################################################################
-print_apiV2GlobeServiceCurrenciesGet_help() {
+print_getEnabledCurrenciesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceCurrenciesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getEnabledCurrenciesAsync - Get all currencies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the list of all enabled currencies with optional OData pagination and filtering." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -1031,12 +1155,249 @@ print_apiV2GlobeServiceCurrenciesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceLanguagesGet operation
+# Print help for forgotPasswordPost operation
 #
 ##############################################################################
-print_apiV2GlobeServiceLanguagesGet_help() {
+print_forgotPasswordPost_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceLanguagesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for helloGet operation
+#
+##############################################################################
+print_helloGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for loginPost operation
+#
+##############################################################################
+print_loginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manage2faPost operation
+#
+##############################################################################
+print_manage2faPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countLanguagesAsync operation
+#
+##############################################################################
+print_countLanguagesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countLanguagesAsync - Count languages${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total number of supported languages, with optional OData filtering." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -1053,12 +1414,14 @@ print_apiV2GlobeServiceLanguagesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceLanguagesLanguageIdGet operation
+# Print help for getLanguageByIdAsync operation
 #
 ##############################################################################
-print_apiV2GlobeServiceLanguagesLanguageIdGet_help() {
+print_getLanguageByIdAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceLanguagesLanguageIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getLanguageByIdAsync - Get language by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single language by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}languageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: languageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1076,34 +1439,14 @@ print_apiV2GlobeServiceLanguagesLanguageIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobalSystemMigratePost operation
+# Print help for getLanguagesAsync operation
 #
 ##############################################################################
-print_apiV2GlobalSystemMigratePost_help() {
+print_getLanguagesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobalSystemMigratePost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getLanguagesAsync - Get all languages${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=500
-    echo -e "${result_color_table[${code:0:1}]}  500;Internal Server Error${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2GlobeServiceTimezonesGet operation
-#
-##############################################################################
-print_apiV2GlobeServiceTimezonesGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceTimezonesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Retrieves the list of all supported languages with optional OData pagination and filtering." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -1120,12 +1463,38 @@ print_apiV2GlobeServiceTimezonesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2GlobeServiceTimezonesTimeZoneIdGet operation
+# Print help for countTimezonesAsync operation
 #
 ##############################################################################
-print_apiV2GlobeServiceTimezonesTimeZoneIdGet_help() {
+print_countTimezonesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2GlobeServiceTimezonesTimeZoneIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}countTimezonesAsync - Count timezones${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total number of supported timezones, with optional OData filtering." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTimeZoneByIdAsync operation
+#
+##############################################################################
+print_getTimeZoneByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTimeZoneByIdAsync - Get timezone by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single timezone by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}timeZoneId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: timeZoneId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1141,308 +1510,80 @@ print_apiV2GlobeServiceTimezonesTimeZoneIdGet_help() {
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
-
-
 ##############################################################################
 #
-# Call apiV2GlobeServiceCountriesCountryIdCallingCodesGet operation
+# Print help for getTimeZonesAsync operation
 #
 ##############################################################################
-call_apiV2GlobeServiceCountriesCountryIdCallingCodesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(countryId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/CallingCodes" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
+print_getTimeZonesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTimeZonesAsync - Get all timezones${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the list of all supported timezones with optional OData pagination and filtering." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 
-##############################################################################
-#
-# Call apiV2GlobeServiceCountriesCountryIdCurrenciesGet operation
-#
-##############################################################################
-call_apiV2GlobeServiceCountriesCountryIdCurrenciesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(countryId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/Currencies" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
 
 ##############################################################################
 #
-# Call apiV2GlobeServiceCountriesCountryIdGet operation
+# Call countCountries operation
 #
 ##############################################################################
-call_apiV2GlobeServiceCountriesCountryIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(countryId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet operation
-#
-##############################################################################
-call_apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(countryStateId countryId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/States/{countryStateId}/Cities" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet operation
-#
-##############################################################################
-call_apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(countryStateId countryId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/States/{countryStateId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2GlobeServiceCountriesCountryIdStatesGet operation
-#
-##############################################################################
-call_apiV2GlobeServiceCountriesCountryIdStatesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(countryId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/States" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2GlobeServiceCountriesCountryIdTimezonesGet operation
-#
-##############################################################################
-call_apiV2GlobeServiceCountriesCountryIdTimezonesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(countryId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/Timezones" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet operation
-#
-##############################################################################
-call_apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(countryId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/TopLevelDomains" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2GlobeServiceCountriesGet operation
-#
-##############################################################################
-call_apiV2GlobeServiceCountriesGet() {
+call_countCountries() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getAllCountries operation
+#
+##############################################################################
+call_getAllCountries() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/GlobeService/Countries" path_parameter_names query_parameter_names); then
@@ -1469,16 +1610,304 @@ call_apiV2GlobeServiceCountriesGet() {
 
 ##############################################################################
 #
-# Call apiV2GlobeServiceCountriesSearchGet operation
+# Call getCallingCodesByCountryIdAsync operation
 #
 ##############################################################################
-call_apiV2GlobeServiceCountriesSearchGet() {
+call_getCallingCodesByCountryIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/CallingCodes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCitiesByCountryStateIdAsync operation
+#
+##############################################################################
+call_getCitiesByCountryStateIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryStateId countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/States/{countryStateId}/Cities" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCountryById operation
+#
+##############################################################################
+call_getCountryById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCountryStateByIdAsync operation
+#
+##############################################################################
+call_getCountryStateByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryStateId countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/States/{countryStateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCountryStatesAsync operation
+#
+##############################################################################
+call_getCountryStatesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/States" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getEnabledCurrenciesByCountryIdAsync operation
+#
+##############################################################################
+call_getEnabledCurrenciesByCountryIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/Currencies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTimeZonesByCountryIdAsync operation
+#
+##############################################################################
+call_getTimeZonesByCountryIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/Timezones" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTopLevelDomainsByCountryIdAsync operation
+#
+##############################################################################
+call_getTopLevelDomainsByCountryIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/TopLevelDomains" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchCountriesByNameAsync operation
+#
+##############################################################################
+call_searchCountriesByNameAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(countryName api-version  )
+    local query_parameter_names=(countryName api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/GlobeService/Countries/Search" path_parameter_names query_parameter_names); then
@@ -1505,16 +1934,52 @@ call_apiV2GlobeServiceCountriesSearchGet() {
 
 ##############################################################################
 #
-# Call apiV2GlobeServiceCurrenciesCurrencyIdGet operation
+# Call countCurrenciesAsync operation
 #
 ##############################################################################
-call_apiV2GlobeServiceCurrenciesCurrencyIdGet() {
+call_countCurrenciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Currencies/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCurrencyByIdAsync operation
+#
+##############################################################################
+call_getCurrencyByIdAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(currencyId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/GlobeService/Currencies/{currencyId}" path_parameter_names query_parameter_names); then
@@ -1541,16 +2006,16 @@ call_apiV2GlobeServiceCurrenciesCurrencyIdGet() {
 
 ##############################################################################
 #
-# Call apiV2GlobeServiceCurrenciesGet operation
+# Call getEnabledCurrenciesAsync operation
 #
 ##############################################################################
-call_apiV2GlobeServiceCurrenciesGet() {
+call_getEnabledCurrenciesAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/GlobeService/Currencies" path_parameter_names query_parameter_names); then
@@ -1577,19 +2042,97 @@ call_apiV2GlobeServiceCurrenciesGet() {
 
 ##############################################################################
 #
-# Call apiV2GlobeServiceLanguagesGet operation
+# Call forgotPasswordPost operation
 #
 ##############################################################################
-call_apiV2GlobeServiceLanguagesGet() {
+call_forgotPasswordPost() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=()
     local path
 
-    if ! path=$(build_request_path "/api/v2/GlobeService/Languages" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -1613,16 +2156,742 @@ call_apiV2GlobeServiceLanguagesGet() {
 
 ##############################################################################
 #
-# Call apiV2GlobeServiceLanguagesLanguageIdGet operation
+# Call helloGet operation
 #
 ##############################################################################
-call_apiV2GlobeServiceLanguagesLanguageIdGet() {
+call_helloGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call loginPost operation
+#
+##############################################################################
+call_loginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(useCookies useSessionCookies)
+    local path
+
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoPost operation
+#
+##############################################################################
+call_manageInfoPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call refreshPost operation
+#
+##############################################################################
+call_refreshPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countLanguagesAsync operation
+#
+##############################################################################
+call_countLanguagesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Languages/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getLanguageByIdAsync operation
+#
+##############################################################################
+call_getLanguageByIdAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(languageId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/GlobeService/Languages/{languageId}" path_parameter_names query_parameter_names); then
@@ -1649,55 +2918,19 @@ call_apiV2GlobeServiceLanguagesLanguageIdGet() {
 
 ##############################################################################
 #
-# Call apiV2GlobalSystemMigratePost operation
+# Call getLanguagesAsync operation
 #
 ##############################################################################
-call_apiV2GlobalSystemMigratePost() {
+call_getLanguagesAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/Global/System/Migrate" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2GlobeServiceTimezonesGet operation
-#
-##############################################################################
-call_apiV2GlobeServiceTimezonesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/GlobeService/Timezones" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/GlobeService/Languages" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -1721,19 +2954,91 @@ call_apiV2GlobeServiceTimezonesGet() {
 
 ##############################################################################
 #
-# Call apiV2GlobeServiceTimezonesTimeZoneIdGet operation
+# Call countTimezonesAsync operation
 #
 ##############################################################################
-call_apiV2GlobeServiceTimezonesTimeZoneIdGet() {
+call_countTimezonesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Timezones/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTimeZoneByIdAsync operation
+#
+##############################################################################
+call_getTimeZoneByIdAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(timeZoneId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/GlobeService/Timezones/{timeZoneId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTimeZonesAsync operation
+#
+##############################################################################
+call_getTimeZonesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Timezones" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -1852,56 +3157,104 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
-    apiV2GlobeServiceCountriesCountryIdCallingCodesGet)
-    operation="apiV2GlobeServiceCountriesCountryIdCallingCodesGet"
+    countCountries)
+    operation="countCountries"
     ;;
-    apiV2GlobeServiceCountriesCountryIdCurrenciesGet)
-    operation="apiV2GlobeServiceCountriesCountryIdCurrenciesGet"
+    getAllCountries)
+    operation="getAllCountries"
     ;;
-    apiV2GlobeServiceCountriesCountryIdGet)
-    operation="apiV2GlobeServiceCountriesCountryIdGet"
+    getCallingCodesByCountryIdAsync)
+    operation="getCallingCodesByCountryIdAsync"
     ;;
-    apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet)
-    operation="apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet"
+    getCitiesByCountryStateIdAsync)
+    operation="getCitiesByCountryStateIdAsync"
     ;;
-    apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet)
-    operation="apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet"
+    getCountryById)
+    operation="getCountryById"
     ;;
-    apiV2GlobeServiceCountriesCountryIdStatesGet)
-    operation="apiV2GlobeServiceCountriesCountryIdStatesGet"
+    getCountryStateByIdAsync)
+    operation="getCountryStateByIdAsync"
     ;;
-    apiV2GlobeServiceCountriesCountryIdTimezonesGet)
-    operation="apiV2GlobeServiceCountriesCountryIdTimezonesGet"
+    getCountryStatesAsync)
+    operation="getCountryStatesAsync"
     ;;
-    apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet)
-    operation="apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet"
+    getEnabledCurrenciesByCountryIdAsync)
+    operation="getEnabledCurrenciesByCountryIdAsync"
     ;;
-    apiV2GlobeServiceCountriesGet)
-    operation="apiV2GlobeServiceCountriesGet"
+    getTimeZonesByCountryIdAsync)
+    operation="getTimeZonesByCountryIdAsync"
     ;;
-    apiV2GlobeServiceCountriesSearchGet)
-    operation="apiV2GlobeServiceCountriesSearchGet"
+    getTopLevelDomainsByCountryIdAsync)
+    operation="getTopLevelDomainsByCountryIdAsync"
     ;;
-    apiV2GlobeServiceCurrenciesCurrencyIdGet)
-    operation="apiV2GlobeServiceCurrenciesCurrencyIdGet"
+    searchCountriesByNameAsync)
+    operation="searchCountriesByNameAsync"
     ;;
-    apiV2GlobeServiceCurrenciesGet)
-    operation="apiV2GlobeServiceCurrenciesGet"
+    countCurrenciesAsync)
+    operation="countCurrenciesAsync"
     ;;
-    apiV2GlobeServiceLanguagesGet)
-    operation="apiV2GlobeServiceLanguagesGet"
+    getCurrencyByIdAsync)
+    operation="getCurrencyByIdAsync"
     ;;
-    apiV2GlobeServiceLanguagesLanguageIdGet)
-    operation="apiV2GlobeServiceLanguagesLanguageIdGet"
+    getEnabledCurrenciesAsync)
+    operation="getEnabledCurrenciesAsync"
     ;;
-    apiV2GlobalSystemMigratePost)
-    operation="apiV2GlobalSystemMigratePost"
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
     ;;
-    apiV2GlobeServiceTimezonesGet)
-    operation="apiV2GlobeServiceTimezonesGet"
+    healthGet)
+    operation="healthGet"
     ;;
-    apiV2GlobeServiceTimezonesTimeZoneIdGet)
-    operation="apiV2GlobeServiceTimezonesTimeZoneIdGet"
+    helloGet)
+    operation="helloGet"
+    ;;
+    loginPost)
+    operation="loginPost"
+    ;;
+    manage2faPost)
+    operation="manage2faPost"
+    ;;
+    manageInfoGet)
+    operation="manageInfoGet"
+    ;;
+    manageInfoPost)
+    operation="manageInfoPost"
+    ;;
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
+    ;;
+    refreshPost)
+    operation="refreshPost"
+    ;;
+    registerPost)
+    operation="registerPost"
+    ;;
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
+    ;;
+    resetPasswordPost)
+    operation="resetPasswordPost"
+    ;;
+    versionGet)
+    operation="versionGet"
+    ;;
+    countLanguagesAsync)
+    operation="countLanguagesAsync"
+    ;;
+    getLanguageByIdAsync)
+    operation="getLanguageByIdAsync"
+    ;;
+    getLanguagesAsync)
+    operation="getLanguagesAsync"
+    ;;
+    countTimezonesAsync)
+    operation="countTimezonesAsync"
+    ;;
+    getTimeZoneByIdAsync)
+    operation="getTimeZoneByIdAsync"
+    ;;
+    getTimeZonesAsync)
+    operation="getTimeZonesAsync"
     ;;
     *==*)
     # Parse body arguments and convert them into top level
@@ -1936,13 +3289,6 @@ case $key in
     # only after the operation argument
     if [[ "$operation" ]]; then
         IFS=':' read -r header_name header_value <<< "$key"
-        #
-        # If the header key is the same as the api_key expected by API in the
-        # header, override the ${apikey_auth_credential} variable
-        #
-        if [[ $header_name == "Authorization" ]]; then
-            apikey_auth_credential=$header_value
-        fi
         header_arguments[$header_name]=$header_value
     else
         curl_arguments+=" $key"
@@ -1997,56 +3343,104 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
-    apiV2GlobeServiceCountriesCountryIdCallingCodesGet)
-    call_apiV2GlobeServiceCountriesCountryIdCallingCodesGet
+    countCountries)
+    call_countCountries
     ;;
-    apiV2GlobeServiceCountriesCountryIdCurrenciesGet)
-    call_apiV2GlobeServiceCountriesCountryIdCurrenciesGet
+    getAllCountries)
+    call_getAllCountries
     ;;
-    apiV2GlobeServiceCountriesCountryIdGet)
-    call_apiV2GlobeServiceCountriesCountryIdGet
+    getCallingCodesByCountryIdAsync)
+    call_getCallingCodesByCountryIdAsync
     ;;
-    apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet)
-    call_apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet
+    getCitiesByCountryStateIdAsync)
+    call_getCitiesByCountryStateIdAsync
     ;;
-    apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet)
-    call_apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet
+    getCountryById)
+    call_getCountryById
     ;;
-    apiV2GlobeServiceCountriesCountryIdStatesGet)
-    call_apiV2GlobeServiceCountriesCountryIdStatesGet
+    getCountryStateByIdAsync)
+    call_getCountryStateByIdAsync
     ;;
-    apiV2GlobeServiceCountriesCountryIdTimezonesGet)
-    call_apiV2GlobeServiceCountriesCountryIdTimezonesGet
+    getCountryStatesAsync)
+    call_getCountryStatesAsync
     ;;
-    apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet)
-    call_apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet
+    getEnabledCurrenciesByCountryIdAsync)
+    call_getEnabledCurrenciesByCountryIdAsync
     ;;
-    apiV2GlobeServiceCountriesGet)
-    call_apiV2GlobeServiceCountriesGet
+    getTimeZonesByCountryIdAsync)
+    call_getTimeZonesByCountryIdAsync
     ;;
-    apiV2GlobeServiceCountriesSearchGet)
-    call_apiV2GlobeServiceCountriesSearchGet
+    getTopLevelDomainsByCountryIdAsync)
+    call_getTopLevelDomainsByCountryIdAsync
     ;;
-    apiV2GlobeServiceCurrenciesCurrencyIdGet)
-    call_apiV2GlobeServiceCurrenciesCurrencyIdGet
+    searchCountriesByNameAsync)
+    call_searchCountriesByNameAsync
     ;;
-    apiV2GlobeServiceCurrenciesGet)
-    call_apiV2GlobeServiceCurrenciesGet
+    countCurrenciesAsync)
+    call_countCurrenciesAsync
     ;;
-    apiV2GlobeServiceLanguagesGet)
-    call_apiV2GlobeServiceLanguagesGet
+    getCurrencyByIdAsync)
+    call_getCurrencyByIdAsync
     ;;
-    apiV2GlobeServiceLanguagesLanguageIdGet)
-    call_apiV2GlobeServiceLanguagesLanguageIdGet
+    getEnabledCurrenciesAsync)
+    call_getEnabledCurrenciesAsync
     ;;
-    apiV2GlobalSystemMigratePost)
-    call_apiV2GlobalSystemMigratePost
+    forgotPasswordPost)
+    call_forgotPasswordPost
     ;;
-    apiV2GlobeServiceTimezonesGet)
-    call_apiV2GlobeServiceTimezonesGet
+    healthGet)
+    call_healthGet
     ;;
-    apiV2GlobeServiceTimezonesTimeZoneIdGet)
-    call_apiV2GlobeServiceTimezonesTimeZoneIdGet
+    helloGet)
+    call_helloGet
+    ;;
+    loginPost)
+    call_loginPost
+    ;;
+    manage2faPost)
+    call_manage2faPost
+    ;;
+    manageInfoGet)
+    call_manageInfoGet
+    ;;
+    manageInfoPost)
+    call_manageInfoPost
+    ;;
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
+    ;;
+    refreshPost)
+    call_refreshPost
+    ;;
+    registerPost)
+    call_registerPost
+    ;;
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
+    ;;
+    resetPasswordPost)
+    call_resetPasswordPost
+    ;;
+    versionGet)
+    call_versionGet
+    ;;
+    countLanguagesAsync)
+    call_countLanguagesAsync
+    ;;
+    getLanguageByIdAsync)
+    call_getLanguageByIdAsync
+    ;;
+    getLanguagesAsync)
+    call_getLanguagesAsync
+    ;;
+    countTimezonesAsync)
+    call_countTimezonesAsync
+    ;;
+    getTimeZoneByIdAsync)
+    call_getTimeZoneByIdAsync
+    ;;
+    getTimeZonesAsync)
+    call_getTimeZonesAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

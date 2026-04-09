@@ -4,21 +4,23 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2ProjectsServiceTaskTypesPost**](TaskTypesApi.md#apiV2ProjectsServiceTaskTypesPost) | **POST** /api/v2/ProjectsService/TaskTypes | 
-[**apiV2ProjectsServiceTaskTypesTaskTypeIdDelete**](TaskTypesApi.md#apiV2ProjectsServiceTaskTypesTaskTypeIdDelete) | **DELETE** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | 
-[**apiV2ProjectsServiceTaskTypesTaskTypeIdGet**](TaskTypesApi.md#apiV2ProjectsServiceTaskTypesTaskTypeIdGet) | **GET** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | 
-[**apiV2ProjectsServiceTaskTypesTaskTypeIdPut**](TaskTypesApi.md#apiV2ProjectsServiceTaskTypesTaskTypeIdPut) | **PUT** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | 
+[**createTaskTypeAsync**](TaskTypesApi.md#createTaskTypeAsync) | **POST** /api/v2/ProjectsService/TaskTypes | Creates a new task type
+[**deleteTaskTypeAsync**](TaskTypesApi.md#deleteTaskTypeAsync) | **DELETE** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | Deletes a task type
+[**getTaskTypeByIdAsync**](TaskTypesApi.md#getTaskTypeByIdAsync) | **GET** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | Gets a task type by ID
+[**updateTaskTypeAsync**](TaskTypesApi.md#updateTaskTypeAsync) | **PUT** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | Updates a task type
 
 
 
-## apiV2ProjectsServiceTaskTypesPost
+## createTaskTypeAsync
 
+Creates a new task type
 
+Creates a new task type for the current tenant.
 
 ### Example
 
 ```bash
- apiV2ProjectsServiceTaskTypesPost  tenantId=value  api-version=value x-api-version:value
+ createTaskTypeAsync  tenantId=value
 ```
 
 ### Parameters
@@ -27,8 +29,6 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
  **taskTypeCreateDto** | [**TaskTypeCreateDto**](TaskTypeCreateDto.md) |  | [optional]
 
 ### Return type
@@ -37,7 +37,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -47,14 +47,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2ProjectsServiceTaskTypesTaskTypeIdDelete
+## deleteTaskTypeAsync
 
+Deletes a task type
 
+Deletes the specified task type.
 
 ### Example
 
 ```bash
- apiV2ProjectsServiceTaskTypesTaskTypeIdDelete taskTypeId=value  tenantId=value  api-version=value x-api-version:value
+ deleteTaskTypeAsync taskTypeId=value  tenantId=value
 ```
 
 ### Parameters
@@ -64,8 +66,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **taskTypeId** | **string** |  | [default to null]
  **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -83,14 +83,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2ProjectsServiceTaskTypesTaskTypeIdGet
+## getTaskTypeByIdAsync
 
+Gets a task type by ID
 
+Retrieves the details of a task type using its unique identifier.
 
 ### Example
 
 ```bash
- apiV2ProjectsServiceTaskTypesTaskTypeIdGet taskTypeId=value  tenantId=value  api-version=value x-api-version:value
+ getTaskTypeByIdAsync taskTypeId=value  tenantId=value
 ```
 
 ### Parameters
@@ -100,8 +102,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **taskTypeId** | **string** |  | [default to null]
  **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
 
 ### Return type
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -119,14 +119,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2ProjectsServiceTaskTypesTaskTypeIdPut
+## updateTaskTypeAsync
 
+Updates a task type
 
+Updates the specified task type.
 
 ### Example
 
 ```bash
- apiV2ProjectsServiceTaskTypesTaskTypeIdPut taskTypeId=value  tenantId=value  api-version=value x-api-version:value
+ updateTaskTypeAsync taskTypeId=value  tenantId=value
 ```
 
 ### Parameters
@@ -136,8 +138,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **taskTypeId** | **string** |  | [default to null]
  **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
  **taskTypeUpdateDto** | [**TaskTypeUpdateDto**](TaskTypeUpdateDto.md) |  | [optional]
 
 ### Return type
@@ -146,7 +146,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

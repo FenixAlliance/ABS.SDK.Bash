@@ -81,6 +81,19 @@ _()
     operations["getEmployersAsync"]=1
     operations["getEmployersCountAsync"]=1
     operations["updateEmployerAsync"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
     operations["createGigAsync"]=1
     operations["deleteGigAsync"]=1
     operations["getGigByIdAsync"]=1
@@ -109,6 +122,19 @@ _()
     operation_parameters["getEmployersAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getEmployersCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateEmployerAsync"]="employerId= tenantId= api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
     operation_parameters["createGigAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteGigAsync"]="gigId= tenantId= api-version= x-api-version: "
     operation_parameters["getGigByIdAsync"]="gigId= tenantId= api-version= x-api-version: "
@@ -124,6 +150,12 @@ _()
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

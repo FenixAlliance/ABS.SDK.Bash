@@ -96,32 +96,45 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
-operation_parameters_minimum_occurrences["apiV2ForexServiceExchangeHistoryGet:::amount"]=1
-operation_parameters_minimum_occurrences["apiV2ForexServiceExchangeHistoryGet:::sourceCurrencyId"]=1
-operation_parameters_minimum_occurrences["apiV2ForexServiceExchangeHistoryGet:::targetCurrencyId"]=1
-operation_parameters_minimum_occurrences["apiV2ForexServiceExchangeHistoryGet:::date"]=1
-operation_parameters_minimum_occurrences["apiV2ForexServiceExchangeLatestGet:::amount"]=1
-operation_parameters_minimum_occurrences["apiV2ForexServiceExchangeLatestGet:::sourceCurrencyId"]=1
-operation_parameters_minimum_occurrences["apiV2ForexServiceExchangeLatestGet:::targetCurrencyId"]=1
-operation_parameters_minimum_occurrences["apiV3ForexServiceExchangeHistoryGet:::amount"]=1
-operation_parameters_minimum_occurrences["apiV3ForexServiceExchangeHistoryGet:::sourceCurrencyId"]=1
-operation_parameters_minimum_occurrences["apiV3ForexServiceExchangeHistoryGet:::targetCurrencyId"]=1
-operation_parameters_minimum_occurrences["apiV3ForexServiceExchangeHistoryGet:::date"]=1
-operation_parameters_minimum_occurrences["apiV3ForexServiceExchangeLatestGet:::amount"]=1
-operation_parameters_minimum_occurrences["apiV3ForexServiceExchangeLatestGet:::sourceCurrencyId"]=1
-operation_parameters_minimum_occurrences["apiV3ForexServiceExchangeLatestGet:::targetCurrencyId"]=1
-operation_parameters_minimum_occurrences["apiV2ForexServiceRatesHistoryCurrencyIdGet:::currencyId"]=1
-operation_parameters_minimum_occurrences["apiV2ForexServiceRatesHistoryCurrencyIdGet:::date"]=0
-operation_parameters_minimum_occurrences["apiV2ForexServiceRatesHistoryCurrencyIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2ForexServiceRatesHistoryCurrencyIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2ForexServiceRatesHistoryGet:::date"]=0
-operation_parameters_minimum_occurrences["apiV2ForexServiceRatesHistoryGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2ForexServiceRatesHistoryGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2ForexServiceRatesLatestCurrencyIdGet:::currencyId"]=1
-operation_parameters_minimum_occurrences["apiV2ForexServiceRatesLatestCurrencyIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2ForexServiceRatesLatestCurrencyIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2ForexServiceRatesLatestGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2ForexServiceRatesLatestGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["exchangeAmountAsync:::amount"]=1
+operation_parameters_minimum_occurrences["exchangeAmountAsync:::sourceCurrencyId"]=1
+operation_parameters_minimum_occurrences["exchangeAmountAsync:::targetCurrencyId"]=1
+operation_parameters_minimum_occurrences["exchangeAmountHistoricalAsync:::amount"]=1
+operation_parameters_minimum_occurrences["exchangeAmountHistoricalAsync:::sourceCurrencyId"]=1
+operation_parameters_minimum_occurrences["exchangeAmountHistoricalAsync:::targetCurrencyId"]=1
+operation_parameters_minimum_occurrences["exchangeAmountHistoricalAsync:::date"]=1
+operation_parameters_minimum_occurrences["exchangeAmountHistoricalV3Async:::amount"]=1
+operation_parameters_minimum_occurrences["exchangeAmountHistoricalV3Async:::sourceCurrencyId"]=1
+operation_parameters_minimum_occurrences["exchangeAmountHistoricalV3Async:::targetCurrencyId"]=1
+operation_parameters_minimum_occurrences["exchangeAmountHistoricalV3Async:::date"]=1
+operation_parameters_minimum_occurrences["exchangeAmountV3Async:::amount"]=1
+operation_parameters_minimum_occurrences["exchangeAmountV3Async:::sourceCurrencyId"]=1
+operation_parameters_minimum_occurrences["exchangeAmountV3Async:::targetCurrencyId"]=1
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["getHistoricalCurrencyRateAsync:::currencyId"]=1
+operation_parameters_minimum_occurrences["getHistoricalCurrencyRateAsync:::date"]=0
+operation_parameters_minimum_occurrences["getHistoricalCurrencyRateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getHistoricalCurrencyRateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getHistoricalCurrencyRatesAsync:::date"]=0
+operation_parameters_minimum_occurrences["getHistoricalCurrencyRatesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getHistoricalCurrencyRatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLatestCurrencyRateAsync:::currencyId"]=1
+operation_parameters_minimum_occurrences["getLatestCurrencyRateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getLatestCurrencyRateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLatestCurrencyRatesModelAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getLatestCurrencyRatesModelAsync:::x-api-version"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -130,63 +143,89 @@ operation_parameters_minimum_occurrences["apiV2ForexServiceRatesLatestGet:::x-ap
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
-operation_parameters_maximum_occurrences["apiV2ForexServiceExchangeHistoryGet:::amount"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceExchangeHistoryGet:::sourceCurrencyId"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceExchangeHistoryGet:::targetCurrencyId"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceExchangeHistoryGet:::date"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceExchangeLatestGet:::amount"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceExchangeLatestGet:::sourceCurrencyId"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceExchangeLatestGet:::targetCurrencyId"]=0
-operation_parameters_maximum_occurrences["apiV3ForexServiceExchangeHistoryGet:::amount"]=0
-operation_parameters_maximum_occurrences["apiV3ForexServiceExchangeHistoryGet:::sourceCurrencyId"]=0
-operation_parameters_maximum_occurrences["apiV3ForexServiceExchangeHistoryGet:::targetCurrencyId"]=0
-operation_parameters_maximum_occurrences["apiV3ForexServiceExchangeHistoryGet:::date"]=0
-operation_parameters_maximum_occurrences["apiV3ForexServiceExchangeLatestGet:::amount"]=0
-operation_parameters_maximum_occurrences["apiV3ForexServiceExchangeLatestGet:::sourceCurrencyId"]=0
-operation_parameters_maximum_occurrences["apiV3ForexServiceExchangeLatestGet:::targetCurrencyId"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceRatesHistoryCurrencyIdGet:::currencyId"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceRatesHistoryCurrencyIdGet:::date"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceRatesHistoryCurrencyIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceRatesHistoryCurrencyIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceRatesHistoryGet:::date"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceRatesHistoryGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceRatesHistoryGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceRatesLatestCurrencyIdGet:::currencyId"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceRatesLatestCurrencyIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceRatesLatestCurrencyIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceRatesLatestGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2ForexServiceRatesLatestGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["exchangeAmountAsync:::amount"]=0
+operation_parameters_maximum_occurrences["exchangeAmountAsync:::sourceCurrencyId"]=0
+operation_parameters_maximum_occurrences["exchangeAmountAsync:::targetCurrencyId"]=0
+operation_parameters_maximum_occurrences["exchangeAmountHistoricalAsync:::amount"]=0
+operation_parameters_maximum_occurrences["exchangeAmountHistoricalAsync:::sourceCurrencyId"]=0
+operation_parameters_maximum_occurrences["exchangeAmountHistoricalAsync:::targetCurrencyId"]=0
+operation_parameters_maximum_occurrences["exchangeAmountHistoricalAsync:::date"]=0
+operation_parameters_maximum_occurrences["exchangeAmountHistoricalV3Async:::amount"]=0
+operation_parameters_maximum_occurrences["exchangeAmountHistoricalV3Async:::sourceCurrencyId"]=0
+operation_parameters_maximum_occurrences["exchangeAmountHistoricalV3Async:::targetCurrencyId"]=0
+operation_parameters_maximum_occurrences["exchangeAmountHistoricalV3Async:::date"]=0
+operation_parameters_maximum_occurrences["exchangeAmountV3Async:::amount"]=0
+operation_parameters_maximum_occurrences["exchangeAmountV3Async:::sourceCurrencyId"]=0
+operation_parameters_maximum_occurrences["exchangeAmountV3Async:::targetCurrencyId"]=0
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["getHistoricalCurrencyRateAsync:::currencyId"]=0
+operation_parameters_maximum_occurrences["getHistoricalCurrencyRateAsync:::date"]=0
+operation_parameters_maximum_occurrences["getHistoricalCurrencyRateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getHistoricalCurrencyRateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getHistoricalCurrencyRatesAsync:::date"]=0
+operation_parameters_maximum_occurrences["getHistoricalCurrencyRatesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getHistoricalCurrencyRatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLatestCurrencyRateAsync:::currencyId"]=0
+operation_parameters_maximum_occurrences["getLatestCurrencyRateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getLatestCurrencyRateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLatestCurrencyRatesModelAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getLatestCurrencyRatesModelAsync:::x-api-version"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
-operation_parameters_collection_type["apiV2ForexServiceExchangeHistoryGet:::amount"]=""
-operation_parameters_collection_type["apiV2ForexServiceExchangeHistoryGet:::sourceCurrencyId"]=""
-operation_parameters_collection_type["apiV2ForexServiceExchangeHistoryGet:::targetCurrencyId"]=""
-operation_parameters_collection_type["apiV2ForexServiceExchangeHistoryGet:::date"]=""
-operation_parameters_collection_type["apiV2ForexServiceExchangeLatestGet:::amount"]=""
-operation_parameters_collection_type["apiV2ForexServiceExchangeLatestGet:::sourceCurrencyId"]=""
-operation_parameters_collection_type["apiV2ForexServiceExchangeLatestGet:::targetCurrencyId"]=""
-operation_parameters_collection_type["apiV3ForexServiceExchangeHistoryGet:::amount"]=""
-operation_parameters_collection_type["apiV3ForexServiceExchangeHistoryGet:::sourceCurrencyId"]=""
-operation_parameters_collection_type["apiV3ForexServiceExchangeHistoryGet:::targetCurrencyId"]=""
-operation_parameters_collection_type["apiV3ForexServiceExchangeHistoryGet:::date"]=""
-operation_parameters_collection_type["apiV3ForexServiceExchangeLatestGet:::amount"]=""
-operation_parameters_collection_type["apiV3ForexServiceExchangeLatestGet:::sourceCurrencyId"]=""
-operation_parameters_collection_type["apiV3ForexServiceExchangeLatestGet:::targetCurrencyId"]=""
-operation_parameters_collection_type["apiV2ForexServiceRatesHistoryCurrencyIdGet:::currencyId"]=""
-operation_parameters_collection_type["apiV2ForexServiceRatesHistoryCurrencyIdGet:::date"]=""
-operation_parameters_collection_type["apiV2ForexServiceRatesHistoryCurrencyIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2ForexServiceRatesHistoryCurrencyIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2ForexServiceRatesHistoryGet:::date"]=""
-operation_parameters_collection_type["apiV2ForexServiceRatesHistoryGet:::api-version"]=""
-operation_parameters_collection_type["apiV2ForexServiceRatesHistoryGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2ForexServiceRatesLatestCurrencyIdGet:::currencyId"]=""
-operation_parameters_collection_type["apiV2ForexServiceRatesLatestCurrencyIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2ForexServiceRatesLatestCurrencyIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2ForexServiceRatesLatestGet:::api-version"]=""
-operation_parameters_collection_type["apiV2ForexServiceRatesLatestGet:::x-api-version"]=""
+operation_parameters_collection_type["exchangeAmountAsync:::amount"]=""
+operation_parameters_collection_type["exchangeAmountAsync:::sourceCurrencyId"]=""
+operation_parameters_collection_type["exchangeAmountAsync:::targetCurrencyId"]=""
+operation_parameters_collection_type["exchangeAmountHistoricalAsync:::amount"]=""
+operation_parameters_collection_type["exchangeAmountHistoricalAsync:::sourceCurrencyId"]=""
+operation_parameters_collection_type["exchangeAmountHistoricalAsync:::targetCurrencyId"]=""
+operation_parameters_collection_type["exchangeAmountHistoricalAsync:::date"]=""
+operation_parameters_collection_type["exchangeAmountHistoricalV3Async:::amount"]=""
+operation_parameters_collection_type["exchangeAmountHistoricalV3Async:::sourceCurrencyId"]=""
+operation_parameters_collection_type["exchangeAmountHistoricalV3Async:::targetCurrencyId"]=""
+operation_parameters_collection_type["exchangeAmountHistoricalV3Async:::date"]=""
+operation_parameters_collection_type["exchangeAmountV3Async:::amount"]=""
+operation_parameters_collection_type["exchangeAmountV3Async:::sourceCurrencyId"]=""
+operation_parameters_collection_type["exchangeAmountV3Async:::targetCurrencyId"]=""
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["getHistoricalCurrencyRateAsync:::currencyId"]=""
+operation_parameters_collection_type["getHistoricalCurrencyRateAsync:::date"]=""
+operation_parameters_collection_type["getHistoricalCurrencyRateAsync:::api-version"]=""
+operation_parameters_collection_type["getHistoricalCurrencyRateAsync:::x-api-version"]=""
+operation_parameters_collection_type["getHistoricalCurrencyRatesAsync:::date"]=""
+operation_parameters_collection_type["getHistoricalCurrencyRatesAsync:::api-version"]=""
+operation_parameters_collection_type["getHistoricalCurrencyRatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLatestCurrencyRateAsync:::currencyId"]=""
+operation_parameters_collection_type["getLatestCurrencyRateAsync:::api-version"]=""
+operation_parameters_collection_type["getLatestCurrencyRateAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLatestCurrencyRatesModelAsync:::api-version"]=""
+operation_parameters_collection_type["getLatestCurrencyRatesModelAsync:::x-api-version"]=""
 
 
 ##
@@ -207,9 +246,6 @@ host=""
 # The user credentials for basic authentication
 basic_auth_credential=""
 
-##
-# The user API key
-apikey_auth_credential=""
 
 ##
 # If true, the script will only output the actual cURL command that would be
@@ -312,23 +348,10 @@ lookup_mime_type() {
 ##############################################################################
 header_arguments_to_curl() {
     local headers_curl=""
-    local api_key_header=""
-    local api_key_header_in_cli=""
-    api_key_header="Authorization"
 
     for key in "${!header_arguments[@]}"; do
         headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
-        if [[ "${key}XX" == "${api_key_header}XX" ]]; then
-            api_key_header_in_cli="YES"
-        fi
     done
-    #
-    # If the api_key was not provided in the header, try one from the
-    # environment variable
-    #
-    if [[ -z $api_key_header_in_cli && -n $apikey_auth_credential ]]; then
-        headers_curl+="-H \"${api_key_header}: ${apikey_auth_credential}\""
-    fi
     headers_curl+=" "
 
     echo "${headers_curl}"
@@ -560,7 +583,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}ForexService command line client (API version 2.0.1.4089)${OFF}
+${BOLD}${WHITE}ForexService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -587,33 +610,46 @@ ${BOLD}${WHITE}Usage${OFF}
                                       JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
 
 EOF
-    echo -e "${BOLD}${WHITE}Authentication methods${OFF}"
-    echo -e ""
-    echo -e "  - ${BLUE}Api-key${OFF} - add '${RED}Authorization:<api-key>${OFF}' after ${YELLOW}<operation>${OFF}"
-    
-    echo ""
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
     echo -e "${BOLD}${WHITE}[exchange]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2ForexServiceExchangeHistoryGet${OFF}; (AUTH)
-  ${CYAN}apiV2ForexServiceExchangeLatestGet${OFF}; (AUTH)
+  ${CYAN}exchangeAmountAsync${OFF};Exchange currency at latest rates
+  ${CYAN}exchangeAmountHistoricalAsync${OFF};Exchange currency at historical rates
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[exchangeV]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV3ForexServiceExchangeHistoryGet${OFF}; (AUTH)
-  ${CYAN}apiV3ForexServiceExchangeLatestGet${OFF}; (AUTH)
+  ${CYAN}exchangeAmountHistoricalV3Async${OFF};Exchange currency at historical rates (v3)
+  ${CYAN}exchangeAmountV3Async${OFF};Exchange currency at latest rates (v3)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[rates]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2ForexServiceRatesHistoryCurrencyIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2ForexServiceRatesHistoryGet${OFF}; (AUTH)
-  ${CYAN}apiV2ForexServiceRatesLatestCurrencyIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2ForexServiceRatesLatestGet${OFF}; (AUTH)
+  ${CYAN}getHistoricalCurrencyRateAsync${OFF};Get historical rate for a currency
+  ${CYAN}getHistoricalCurrencyRatesAsync${OFF};Get historical currency rates
+  ${CYAN}getLatestCurrencyRateAsync${OFF};Get latest rate for a currency
+  ${CYAN}getLatestCurrencyRatesModelAsync${OFF};Get latest currency rates
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -643,7 +679,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}ForexService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}${WHITE}ForexService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -663,18 +699,47 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}ForexService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}ForexService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
 ##############################################################################
 #
-# Print help for apiV2ForexServiceExchangeHistoryGet operation
+# Print help for exchangeAmountAsync operation
 #
 ##############################################################################
-print_apiV2ForexServiceExchangeHistoryGet_help() {
+print_exchangeAmountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2ForexServiceExchangeHistoryGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}exchangeAmountAsync - Exchange currency at latest rates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Exchange an amount of money from one currency to another using the latest available exchange rates." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}amount${OFF} ${BLUE}[float]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: amount=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}sourceCurrencyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: sourceCurrencyId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}targetCurrencyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: targetCurrencyId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for exchangeAmountHistoricalAsync operation
+#
+##############################################################################
+print_exchangeAmountHistoricalAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}exchangeAmountHistoricalAsync - Exchange currency at historical rates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Exchange an amount of money from one currency to another using exchange rates from a specific historical date." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}amount${OFF} ${BLUE}[float]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: amount=value${OFF}" \
@@ -696,37 +761,14 @@ print_apiV2ForexServiceExchangeHistoryGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2ForexServiceExchangeLatestGet operation
+# Print help for exchangeAmountHistoricalV3Async operation
 #
 ##############################################################################
-print_apiV2ForexServiceExchangeLatestGet_help() {
+print_exchangeAmountHistoricalV3Async_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2ForexServiceExchangeLatestGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}exchangeAmountHistoricalV3Async - Exchange currency at historical rates (v3)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}amount${OFF} ${BLUE}[float]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: amount=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}sourceCurrencyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: sourceCurrencyId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}targetCurrencyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: targetCurrencyId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV3ForexServiceExchangeHistoryGet operation
-#
-##############################################################################
-print_apiV3ForexServiceExchangeHistoryGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV3ForexServiceExchangeHistoryGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Exchange an amount of money from one currency to another using exchange rates from a specific historical date. Returns the full ExchangeRate details." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}amount${OFF} ${BLUE}[float]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: amount=value${OFF}" \
@@ -748,12 +790,14 @@ print_apiV3ForexServiceExchangeHistoryGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV3ForexServiceExchangeLatestGet operation
+# Print help for exchangeAmountV3Async operation
 #
 ##############################################################################
-print_apiV3ForexServiceExchangeLatestGet_help() {
+print_exchangeAmountV3Async_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV3ForexServiceExchangeLatestGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}exchangeAmountV3Async - Exchange currency at latest rates (v3)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Exchange an amount of money from one currency to another using the latest available exchange rates. Returns the full ExchangeRate details." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}amount${OFF} ${BLUE}[float]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: amount=value${OFF}" \
@@ -773,12 +817,249 @@ print_apiV3ForexServiceExchangeLatestGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2ForexServiceRatesHistoryCurrencyIdGet operation
+# Print help for forgotPasswordPost operation
 #
 ##############################################################################
-print_apiV2ForexServiceRatesHistoryCurrencyIdGet_help() {
+print_forgotPasswordPost_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2ForexServiceRatesHistoryCurrencyIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for helloGet operation
+#
+##############################################################################
+print_helloGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for loginPost operation
+#
+##############################################################################
+print_loginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manage2faPost operation
+#
+##############################################################################
+print_manage2faPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getHistoricalCurrencyRateAsync operation
+#
+##############################################################################
+print_getHistoricalCurrencyRateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getHistoricalCurrencyRateAsync - Get historical rate for a currency${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the exchange rate for a specific currency as of a specific historical date." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: currencyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -798,12 +1079,14 @@ print_apiV2ForexServiceRatesHistoryCurrencyIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2ForexServiceRatesHistoryGet operation
+# Print help for getHistoricalCurrencyRatesAsync operation
 #
 ##############################################################################
-print_apiV2ForexServiceRatesHistoryGet_help() {
+print_getHistoricalCurrencyRatesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2ForexServiceRatesHistoryGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getHistoricalCurrencyRatesAsync - Get historical currency rates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves exchange rates for all supported currencies as of a specific historical date." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}date${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: date=value${OFF}" \
@@ -822,12 +1105,14 @@ print_apiV2ForexServiceRatesHistoryGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2ForexServiceRatesLatestCurrencyIdGet operation
+# Print help for getLatestCurrencyRateAsync operation
 #
 ##############################################################################
-print_apiV2ForexServiceRatesLatestCurrencyIdGet_help() {
+print_getLatestCurrencyRateAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2ForexServiceRatesLatestCurrencyIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getLatestCurrencyRateAsync - Get latest rate for a currency${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the latest exchange rate for a specific currency by its identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: currencyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -845,12 +1130,14 @@ print_apiV2ForexServiceRatesLatestCurrencyIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2ForexServiceRatesLatestGet operation
+# Print help for getLatestCurrencyRatesModelAsync operation
 #
 ##############################################################################
-print_apiV2ForexServiceRatesLatestGet_help() {
+print_getLatestCurrencyRatesModelAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2ForexServiceRatesLatestGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getLatestCurrencyRatesModelAsync - Get latest currency rates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the latest exchange rates for all supported currencies." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -869,52 +1156,16 @@ print_apiV2ForexServiceRatesLatestGet_help() {
 
 ##############################################################################
 #
-# Call apiV2ForexServiceExchangeHistoryGet operation
+# Call exchangeAmountAsync operation
 #
 ##############################################################################
-call_apiV2ForexServiceExchangeHistoryGet() {
+call_exchangeAmountAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(amount sourceCurrencyId targetCurrencyId date  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/ForexService/Exchange/History" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2ForexServiceExchangeLatestGet operation
-#
-##############################################################################
-call_apiV2ForexServiceExchangeLatestGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(amount sourceCurrencyId targetCurrencyId  )
+    local query_parameter_names=(amount sourceCurrencyId targetCurrencyId)
     local path
 
     if ! path=$(build_request_path "/api/v2/ForexService/Exchange/Latest" path_parameter_names query_parameter_names); then
@@ -941,16 +1192,52 @@ call_apiV2ForexServiceExchangeLatestGet() {
 
 ##############################################################################
 #
-# Call apiV3ForexServiceExchangeHistoryGet operation
+# Call exchangeAmountHistoricalAsync operation
 #
 ##############################################################################
-call_apiV3ForexServiceExchangeHistoryGet() {
+call_exchangeAmountHistoricalAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(amount sourceCurrencyId targetCurrencyId date  )
+    local query_parameter_names=(amount sourceCurrencyId targetCurrencyId date)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ForexService/Exchange/History" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call exchangeAmountHistoricalV3Async operation
+#
+##############################################################################
+call_exchangeAmountHistoricalV3Async() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(amount sourceCurrencyId targetCurrencyId date)
     local path
 
     if ! path=$(build_request_path "/api/v3/ForexService/Exchange/History" path_parameter_names query_parameter_names); then
@@ -977,16 +1264,16 @@ call_apiV3ForexServiceExchangeHistoryGet() {
 
 ##############################################################################
 #
-# Call apiV3ForexServiceExchangeLatestGet operation
+# Call exchangeAmountV3Async operation
 #
 ##############################################################################
-call_apiV3ForexServiceExchangeLatestGet() {
+call_exchangeAmountV3Async() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(amount sourceCurrencyId targetCurrencyId  )
+    local query_parameter_names=(amount sourceCurrencyId targetCurrencyId)
     local path
 
     if ! path=$(build_request_path "/api/v3/ForexService/Exchange/Latest" path_parameter_names query_parameter_names); then
@@ -1013,16 +1300,820 @@ call_apiV3ForexServiceExchangeLatestGet() {
 
 ##############################################################################
 #
-# Call apiV2ForexServiceRatesHistoryCurrencyIdGet operation
+# Call forgotPasswordPost operation
 #
 ##############################################################################
-call_apiV2ForexServiceRatesHistoryCurrencyIdGet() {
+call_forgotPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call helloGet operation
+#
+##############################################################################
+call_helloGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call loginPost operation
+#
+##############################################################################
+call_loginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(useCookies useSessionCookies)
+    local path
+
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoPost operation
+#
+##############################################################################
+call_manageInfoPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call refreshPost operation
+#
+##############################################################################
+call_refreshPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getHistoricalCurrencyRateAsync operation
+#
+##############################################################################
+call_getHistoricalCurrencyRateAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(currencyId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(date api-version  )
+    local query_parameter_names=(date api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/ForexService/Rates/History/{currencyId}" path_parameter_names query_parameter_names); then
@@ -1049,16 +2140,16 @@ call_apiV2ForexServiceRatesHistoryCurrencyIdGet() {
 
 ##############################################################################
 #
-# Call apiV2ForexServiceRatesHistoryGet operation
+# Call getHistoricalCurrencyRatesAsync operation
 #
 ##############################################################################
-call_apiV2ForexServiceRatesHistoryGet() {
+call_getHistoricalCurrencyRatesAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(date api-version  )
+    local query_parameter_names=(date api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/ForexService/Rates/History" path_parameter_names query_parameter_names); then
@@ -1085,16 +2176,16 @@ call_apiV2ForexServiceRatesHistoryGet() {
 
 ##############################################################################
 #
-# Call apiV2ForexServiceRatesLatestCurrencyIdGet operation
+# Call getLatestCurrencyRateAsync operation
 #
 ##############################################################################
-call_apiV2ForexServiceRatesLatestCurrencyIdGet() {
+call_getLatestCurrencyRateAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(currencyId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/ForexService/Rates/Latest/{currencyId}" path_parameter_names query_parameter_names); then
@@ -1121,16 +2212,16 @@ call_apiV2ForexServiceRatesLatestCurrencyIdGet() {
 
 ##############################################################################
 #
-# Call apiV2ForexServiceRatesLatestGet operation
+# Call getLatestCurrencyRatesModelAsync operation
 #
 ##############################################################################
-call_apiV2ForexServiceRatesLatestGet() {
+call_getLatestCurrencyRatesModelAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/ForexService/Rates/Latest" path_parameter_names query_parameter_names); then
@@ -1252,29 +2343,68 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
-    apiV2ForexServiceExchangeHistoryGet)
-    operation="apiV2ForexServiceExchangeHistoryGet"
+    exchangeAmountAsync)
+    operation="exchangeAmountAsync"
     ;;
-    apiV2ForexServiceExchangeLatestGet)
-    operation="apiV2ForexServiceExchangeLatestGet"
+    exchangeAmountHistoricalAsync)
+    operation="exchangeAmountHistoricalAsync"
     ;;
-    apiV3ForexServiceExchangeHistoryGet)
-    operation="apiV3ForexServiceExchangeHistoryGet"
+    exchangeAmountHistoricalV3Async)
+    operation="exchangeAmountHistoricalV3Async"
     ;;
-    apiV3ForexServiceExchangeLatestGet)
-    operation="apiV3ForexServiceExchangeLatestGet"
+    exchangeAmountV3Async)
+    operation="exchangeAmountV3Async"
     ;;
-    apiV2ForexServiceRatesHistoryCurrencyIdGet)
-    operation="apiV2ForexServiceRatesHistoryCurrencyIdGet"
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
     ;;
-    apiV2ForexServiceRatesHistoryGet)
-    operation="apiV2ForexServiceRatesHistoryGet"
+    healthGet)
+    operation="healthGet"
     ;;
-    apiV2ForexServiceRatesLatestCurrencyIdGet)
-    operation="apiV2ForexServiceRatesLatestCurrencyIdGet"
+    helloGet)
+    operation="helloGet"
     ;;
-    apiV2ForexServiceRatesLatestGet)
-    operation="apiV2ForexServiceRatesLatestGet"
+    loginPost)
+    operation="loginPost"
+    ;;
+    manage2faPost)
+    operation="manage2faPost"
+    ;;
+    manageInfoGet)
+    operation="manageInfoGet"
+    ;;
+    manageInfoPost)
+    operation="manageInfoPost"
+    ;;
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
+    ;;
+    refreshPost)
+    operation="refreshPost"
+    ;;
+    registerPost)
+    operation="registerPost"
+    ;;
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
+    ;;
+    resetPasswordPost)
+    operation="resetPasswordPost"
+    ;;
+    versionGet)
+    operation="versionGet"
+    ;;
+    getHistoricalCurrencyRateAsync)
+    operation="getHistoricalCurrencyRateAsync"
+    ;;
+    getHistoricalCurrencyRatesAsync)
+    operation="getHistoricalCurrencyRatesAsync"
+    ;;
+    getLatestCurrencyRateAsync)
+    operation="getLatestCurrencyRateAsync"
+    ;;
+    getLatestCurrencyRatesModelAsync)
+    operation="getLatestCurrencyRatesModelAsync"
     ;;
     *==*)
     # Parse body arguments and convert them into top level
@@ -1309,13 +2439,6 @@ case $key in
     # only after the operation argument
     if [[ "$operation" ]]; then
         IFS=':' read -r header_name header_value <<< "$key"
-        #
-        # If the header key is the same as the api_key expected by API in the
-        # header, override the ${apikey_auth_credential} variable
-        #
-        if [[ $header_name == "Authorization" ]]; then
-            apikey_auth_credential=$header_value
-        fi
         header_arguments[$header_name]=$header_value
     else
         curl_arguments+=" $key"
@@ -1370,29 +2493,68 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
-    apiV2ForexServiceExchangeHistoryGet)
-    call_apiV2ForexServiceExchangeHistoryGet
+    exchangeAmountAsync)
+    call_exchangeAmountAsync
     ;;
-    apiV2ForexServiceExchangeLatestGet)
-    call_apiV2ForexServiceExchangeLatestGet
+    exchangeAmountHistoricalAsync)
+    call_exchangeAmountHistoricalAsync
     ;;
-    apiV3ForexServiceExchangeHistoryGet)
-    call_apiV3ForexServiceExchangeHistoryGet
+    exchangeAmountHistoricalV3Async)
+    call_exchangeAmountHistoricalV3Async
     ;;
-    apiV3ForexServiceExchangeLatestGet)
-    call_apiV3ForexServiceExchangeLatestGet
+    exchangeAmountV3Async)
+    call_exchangeAmountV3Async
     ;;
-    apiV2ForexServiceRatesHistoryCurrencyIdGet)
-    call_apiV2ForexServiceRatesHistoryCurrencyIdGet
+    forgotPasswordPost)
+    call_forgotPasswordPost
     ;;
-    apiV2ForexServiceRatesHistoryGet)
-    call_apiV2ForexServiceRatesHistoryGet
+    healthGet)
+    call_healthGet
     ;;
-    apiV2ForexServiceRatesLatestCurrencyIdGet)
-    call_apiV2ForexServiceRatesLatestCurrencyIdGet
+    helloGet)
+    call_helloGet
     ;;
-    apiV2ForexServiceRatesLatestGet)
-    call_apiV2ForexServiceRatesLatestGet
+    loginPost)
+    call_loginPost
+    ;;
+    manage2faPost)
+    call_manage2faPost
+    ;;
+    manageInfoGet)
+    call_manageInfoGet
+    ;;
+    manageInfoPost)
+    call_manageInfoPost
+    ;;
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
+    ;;
+    refreshPost)
+    call_refreshPost
+    ;;
+    registerPost)
+    call_registerPost
+    ;;
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
+    ;;
+    resetPasswordPost)
+    call_resetPasswordPost
+    ;;
+    versionGet)
+    call_versionGet
+    ;;
+    getHistoricalCurrencyRateAsync)
+    call_getHistoricalCurrencyRateAsync
+    ;;
+    getHistoricalCurrencyRatesAsync)
+    call_getHistoricalCurrencyRatesAsync
+    ;;
+    getLatestCurrencyRateAsync)
+    call_getLatestCurrencyRateAsync
+    ;;
+    getLatestCurrencyRatesModelAsync)
+    call_getLatestCurrencyRatesModelAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

@@ -297,16 +297,29 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet[]" \
-            "apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet[]" \
-            "apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet[]" \
-            "apiV2TimeTrackerServiceProjectTimeLogsGet[]" \
-            "apiV2TimeTrackerServiceProjectTimeLogsPost[]" \
-            "apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete[]" \
-            "apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet[]" \
-            "apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut[]"             "apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut[]" \
-            "apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut[]" \
-            "apiV2TimeTrackerServiceTimeLogApprovalsPost[]" \
+            "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "countProjectPeriodTimeLogsAsync[Get the count of project period time logs]" \
+            "createProjectTimeLogAsync[Create a new project time log]" \
+            "deleteProjectTimeLogAsync[Delete a project time log]" \
+            "getProjectPeriodTimeLogsAsync[Retrieve project period time logs]" \
+            "getProjectTimeLogByIdAsync[Retrieve a project time log by ID]" \
+            "getProjectTimeLogsAsync[Retrieve time logs for a project]" \
+            "getProjectTimeLogsByResponsibleContactAsync[Retrieve time logs by responsible contact]" \
+            "getProjectTimeLogsCreatedByContactAsync[Retrieve time logs created by a contact]" \
+            "updateProjectTimeLogAsync[Update a project time log]"             "requestProjectHoursApprovalAsync[Request project hours approval]" \
+            "updateProjectHoursApprovalApproverAsync[Update approval approver]" \
+            "updateProjectHoursApprovalStatusAsync[Update approval status]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -314,37 +327,92 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2TimeTrackerServiceProjectTimeLogsByResponsibleContactGet)
+      forgotPasswordPost)
         local -a _op_arguments
         _op_arguments=(
-                    "contactId=:[QUERY] "
-"tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2TimeTrackerServiceProjectTimeLogsCreatedByContactGet)
+      healthGet)
         local -a _op_arguments
         _op_arguments=(
-                    "contactId=:[QUERY] "
-"tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2TimeTrackerServiceProjectTimeLogsForProjectProjectIdGet)
+      helloGet)
         local -a _op_arguments
         _op_arguments=(
-          "projectId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2TimeTrackerServiceProjectTimeLogsGet)
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countProjectPeriodTimeLogsAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -354,7 +422,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2TimeTrackerServiceProjectTimeLogsPost)
+      createProjectTimeLogAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -363,7 +431,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdDelete)
+      deleteProjectTimeLogAsync)
         local -a _op_arguments
         _op_arguments=(
           "timeLogId=:[PATH] "
@@ -373,7 +441,17 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdGet)
+      getProjectPeriodTimeLogsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"projectPeriodId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTimeLogByIdAsync)
         local -a _op_arguments
         _op_arguments=(
           "timeLogId=:[PATH] "
@@ -383,7 +461,37 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2TimeTrackerServiceProjectTimeLogsTimeLogIdPut)
+      getProjectTimeLogsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTimeLogsByResponsibleContactAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "contactId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTimeLogsCreatedByContactAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "contactId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateProjectTimeLogAsync)
         local -a _op_arguments
         _op_arguments=(
           "timeLogId=:[PATH] "
@@ -393,7 +501,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdApproverPut)
+      requestProjectHoursApprovalAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateProjectHoursApprovalApproverAsync)
         local -a _op_arguments
         _op_arguments=(
           "approvalId=:[PATH] "
@@ -403,20 +520,11 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2TimeTrackerServiceTimeLogApprovalsApprovalIdStatusPut)
+      updateProjectHoursApprovalStatusAsync)
         local -a _op_arguments
         _op_arguments=(
           "approvalId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2TimeTrackerServiceTimeLogApprovalsPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

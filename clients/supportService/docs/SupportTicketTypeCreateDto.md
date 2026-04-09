@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] [readonly] [default to null]
-**timestamp** | **string** |  | [optional] [readonly] [default to null]
+**id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **title** | **string** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
 **businessID** | **string** |  | [optional] [default to null]

@@ -69,69 +69,105 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2ProjectsServiceProjectsCountGet"]=1
-    operations["apiV2ProjectsServiceProjectsGet"]=1
-    operations["apiV2ProjectsServiceProjectsPost"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdDelete"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdGet"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdPeriodsGet"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdDelete"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdPut"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdPut"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdTaskCategoriesCountGet"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdTaskCategoriesGet"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdTasksCountGet"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdTasksGet"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdTasksPost"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdDelete"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdPut"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdTimeLogsCountGet"]=1
-    operations["apiV2ProjectsServiceProjectsProjectIdTimeLogsGet"]=1
-    operations["apiV2ProjectsServiceTaskCategoriesGet"]=1
-    operations["apiV2ProjectsServiceTaskCategoriesPost"]=1
-    operations["apiV2ProjectsServiceTaskCategoriesTaskCategoryIdDelete"]=1
-    operations["apiV2ProjectsServiceTaskCategoriesTaskCategoryIdGet"]=1
-    operations["apiV2ProjectsServiceTaskCategoriesTaskCategoryIdPut"]=1
-    operations["apiV2ProjectsServiceTaskCategoriesTaskCategoryIdTypesGet"]=1
-    operations["apiV2ProjectsServiceTaskTypesPost"]=1
-    operations["apiV2ProjectsServiceTaskTypesTaskTypeIdDelete"]=1
-    operations["apiV2ProjectsServiceTaskTypesTaskTypeIdGet"]=1
-    operations["apiV2ProjectsServiceTaskTypesTaskTypeIdPut"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["createProjectAsync"]=1
+    operations["createProjectPeriodAsync"]=1
+    operations["createProjectTaskAsync"]=1
+    operations["deleteProjectAsync"]=1
+    operations["deleteProjectPeriodAsync"]=1
+    operations["deleteProjectTaskAsync"]=1
+    operations["getProjectByIdAsync"]=1
+    operations["getProjectPeriodsAsync"]=1
+    operations["getProjectTaskCategoriesAsync"]=1
+    operations["getProjectTaskCategoriesCountAsync"]=1
+    operations["getProjectTasksAsync"]=1
+    operations["getProjectTasksCountAsync"]=1
+    operations["getProjectTimeLogsAsync"]=1
+    operations["getProjectTimeLogsCountAsync"]=1
+    operations["getProjectsByTenantIdAsync"]=1
+    operations["getProjectsCountByTenantIdAsync"]=1
+    operations["updateProjectAsync"]=1
+    operations["updateProjectPeriodAsync"]=1
+    operations["updateProjectTaskAsync"]=1
+    operations["countTenantTaskCategoriesAsync"]=1
+    operations["createTaskCategoryAsync"]=1
+    operations["deleteTaskCategoryAsync"]=1
+    operations["getTaskCategoryByIdAsync"]=1
+    operations["getTaskCategoryTaskTypesAsync"]=1
+    operations["getTenantTaskCategoriesAsync"]=1
+    operations["updateTaskCategoryAsync"]=1
+    operations["createTaskTypeAsync"]=1
+    operations["deleteTaskTypeAsync"]=1
+    operations["getTaskTypeByIdAsync"]=1
+    operations["updateTaskTypeAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2ProjectsServiceProjectsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdDelete"]="projectId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdGet"]="projectId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdPeriodsGet"]="projectId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdDelete"]="projectId= projectPeriodId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdPut"]="projectId= projectPeriodId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdPut"]="projectId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdTaskCategoriesCountGet"]="projectId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdTaskCategoriesGet"]="projectId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdTasksCountGet"]="projectId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdTasksGet"]="projectId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdTasksPost"]="projectId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdDelete"]="projectId= projectTaskId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdPut"]="projectId= projectTaskId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdTimeLogsCountGet"]="projectId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceProjectsProjectIdTimeLogsGet"]="projectId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceTaskCategoriesGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceTaskCategoriesPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceTaskCategoriesTaskCategoryIdDelete"]="taskCategoryId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceTaskCategoriesTaskCategoryIdGet"]="taskCategoryId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceTaskCategoriesTaskCategoryIdPut"]="taskCategoryId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceTaskCategoriesTaskCategoryIdTypesGet"]="taskCategoryId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceTaskTypesPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceTaskTypesTaskTypeIdDelete"]="taskTypeId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceTaskTypesTaskTypeIdGet"]="taskTypeId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2ProjectsServiceTaskTypesTaskTypeIdPut"]="taskTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["createProjectAsync"]="tenantId= "
+    operation_parameters["createProjectPeriodAsync"]="projectId= tenantId= "
+    operation_parameters["createProjectTaskAsync"]="projectId= tenantId= "
+    operation_parameters["deleteProjectAsync"]="projectId= tenantId= "
+    operation_parameters["deleteProjectPeriodAsync"]="projectId= projectPeriodId= tenantId= "
+    operation_parameters["deleteProjectTaskAsync"]="projectId= projectTaskId= tenantId= "
+    operation_parameters["getProjectByIdAsync"]="projectId= tenantId= "
+    operation_parameters["getProjectPeriodsAsync"]="projectId= tenantId= "
+    operation_parameters["getProjectTaskCategoriesAsync"]="projectId= tenantId= "
+    operation_parameters["getProjectTaskCategoriesCountAsync"]="projectId= tenantId= "
+    operation_parameters["getProjectTasksAsync"]="projectId= tenantId= "
+    operation_parameters["getProjectTasksCountAsync"]="projectId= tenantId= "
+    operation_parameters["getProjectTimeLogsAsync"]="projectId= tenantId= "
+    operation_parameters["getProjectTimeLogsCountAsync"]="projectId= tenantId= "
+    operation_parameters["getProjectsByTenantIdAsync"]="tenantId= "
+    operation_parameters["getProjectsCountByTenantIdAsync"]="tenantId= "
+    operation_parameters["updateProjectAsync"]="projectId= tenantId= "
+    operation_parameters["updateProjectPeriodAsync"]="projectId= projectPeriodId= tenantId= "
+    operation_parameters["updateProjectTaskAsync"]="projectId= projectTaskId= tenantId= "
+    operation_parameters["countTenantTaskCategoriesAsync"]="tenantId= "
+    operation_parameters["createTaskCategoryAsync"]="tenantId= "
+    operation_parameters["deleteTaskCategoryAsync"]="taskCategoryId= tenantId= "
+    operation_parameters["getTaskCategoryByIdAsync"]="taskCategoryId= tenantId= "
+    operation_parameters["getTaskCategoryTaskTypesAsync"]="taskCategoryId= tenantId= "
+    operation_parameters["getTenantTaskCategoriesAsync"]="tenantId= "
+    operation_parameters["updateTaskCategoryAsync"]="taskCategoryId= tenantId= "
+    operation_parameters["createTaskTypeAsync"]="tenantId= "
+    operation_parameters["deleteTaskTypeAsync"]="taskTypeId= tenantId= "
+    operation_parameters["getTaskTypeByIdAsync"]="taskTypeId= tenantId= "
+    operation_parameters["updateTaskTypeAsync"]="taskTypeId= tenantId= "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

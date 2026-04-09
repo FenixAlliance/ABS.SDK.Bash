@@ -4,19 +4,21 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2SystemServiceAntiforgeryGetAndStoreTokensGet**](AntiforgeryApi.md#apiV2SystemServiceAntiforgeryGetAndStoreTokensGet) | **GET** /api/v2/SystemService/Antiforgery/GetAndStoreTokens | 
-[**apiV2SystemServiceAntiforgeryIsRequestValidGet**](AntiforgeryApi.md#apiV2SystemServiceAntiforgeryIsRequestValidGet) | **GET** /api/v2/SystemService/Antiforgery/IsRequestValid | 
+[**getAndStoreTokens**](AntiforgeryApi.md#getAndStoreTokens) | **GET** /api/v2/SystemService/Antiforgery/GetAndStoreTokens | Get and store antiforgery tokens
+[**isRequestValidAsync**](AntiforgeryApi.md#isRequestValidAsync) | **GET** /api/v2/SystemService/Antiforgery/IsRequestValid | Validate antiforgery request
 
 
 
-## apiV2SystemServiceAntiforgeryGetAndStoreTokensGet
+## getAndStoreTokens
 
+Get and store antiforgery tokens
 
+Generates antiforgery tokens and stores them in the current HTTP context.
 
 ### Example
 
 ```bash
- apiV2SystemServiceAntiforgeryGetAndStoreTokensGet  api-version=value x-api-version:value
+ getAndStoreTokens  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -33,7 +35,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -43,14 +45,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SystemServiceAntiforgeryIsRequestValidGet
+## isRequestValidAsync
 
+Validate antiforgery request
 
+Validates whether the current HTTP request contains a valid antiforgery token.
 
 ### Example
 
 ```bash
- apiV2SystemServiceAntiforgeryIsRequestValidGet  api-version=value x-api-version:value
+ isRequestValidAsync  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -67,7 +71,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

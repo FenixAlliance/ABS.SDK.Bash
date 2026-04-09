@@ -4,21 +4,23 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2ForexServiceRatesHistoryCurrencyIdGet**](RatesApi.md#apiV2ForexServiceRatesHistoryCurrencyIdGet) | **GET** /api/v2/ForexService/Rates/History/{currencyId} | 
-[**apiV2ForexServiceRatesHistoryGet**](RatesApi.md#apiV2ForexServiceRatesHistoryGet) | **GET** /api/v2/ForexService/Rates/History | 
-[**apiV2ForexServiceRatesLatestCurrencyIdGet**](RatesApi.md#apiV2ForexServiceRatesLatestCurrencyIdGet) | **GET** /api/v2/ForexService/Rates/Latest/{currencyId} | 
-[**apiV2ForexServiceRatesLatestGet**](RatesApi.md#apiV2ForexServiceRatesLatestGet) | **GET** /api/v2/ForexService/Rates/Latest | 
+[**getHistoricalCurrencyRateAsync**](RatesApi.md#getHistoricalCurrencyRateAsync) | **GET** /api/v2/ForexService/Rates/History/{currencyId} | Get historical rate for a currency
+[**getHistoricalCurrencyRatesAsync**](RatesApi.md#getHistoricalCurrencyRatesAsync) | **GET** /api/v2/ForexService/Rates/History | Get historical currency rates
+[**getLatestCurrencyRateAsync**](RatesApi.md#getLatestCurrencyRateAsync) | **GET** /api/v2/ForexService/Rates/Latest/{currencyId} | Get latest rate for a currency
+[**getLatestCurrencyRatesModelAsync**](RatesApi.md#getLatestCurrencyRatesModelAsync) | **GET** /api/v2/ForexService/Rates/Latest | Get latest currency rates
 
 
 
-## apiV2ForexServiceRatesHistoryCurrencyIdGet
+## getHistoricalCurrencyRateAsync
 
+Get historical rate for a currency
 
+Retrieves the exchange rate for a specific currency as of a specific historical date.
 
 ### Example
 
 ```bash
- apiV2ForexServiceRatesHistoryCurrencyIdGet currencyId=value  date=value  api-version=value x-api-version:value
+ getHistoricalCurrencyRateAsync currencyId=value  date=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -37,7 +39,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -47,14 +49,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2ForexServiceRatesHistoryGet
+## getHistoricalCurrencyRatesAsync
 
+Get historical currency rates
 
+Retrieves exchange rates for all supported currencies as of a specific historical date.
 
 ### Example
 
 ```bash
- apiV2ForexServiceRatesHistoryGet  date=value  api-version=value x-api-version:value
+ getHistoricalCurrencyRatesAsync  date=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -72,7 +76,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -82,14 +86,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2ForexServiceRatesLatestCurrencyIdGet
+## getLatestCurrencyRateAsync
 
+Get latest rate for a currency
 
+Retrieves the latest exchange rate for a specific currency by its identifier.
 
 ### Example
 
 ```bash
- apiV2ForexServiceRatesLatestCurrencyIdGet currencyId=value  api-version=value x-api-version:value
+ getLatestCurrencyRateAsync currencyId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -107,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -117,14 +123,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2ForexServiceRatesLatestGet
+## getLatestCurrencyRatesModelAsync
 
+Get latest currency rates
 
+Retrieves the latest exchange rates for all supported currencies.
 
 ### Example
 
 ```bash
- apiV2ForexServiceRatesLatestGet  api-version=value x-api-version:value
+ getLatestCurrencyRatesModelAsync  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -141,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

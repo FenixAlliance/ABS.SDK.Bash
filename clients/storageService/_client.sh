@@ -305,16 +305,28 @@ case $state in
             "updateContactAvatar[Update the avatar for a given contact.]" \
             "updateTenantAvatar[Update the avatar for a given tenant.]" \
             "updateUserAvatar[Update the avatar for the current user.]"             "getBlobAsync[]" \
-            "getBlobsAsync[]"             "createFileAsync[]" \
+            "getBlobsAsync[]"             "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "createFileAsync[]" \
             "deleteFileAsync[]" \
             "downloadFileAsync[]" \
             "getFileAsync[]" \
             "getFilesAsync[]" \
-            "updateFileAsync[]"             "apiV2StorageServiceRadzenEditorUploadsIdPost[]" \
-            "apiV2StorageServiceRadzenEditorUploadsImagePost[]" \
-            "apiV2StorageServiceRadzenEditorUploadsMultiplePost[]" \
-            "apiV2StorageServiceRadzenEditorUploadsSinglePost[]" \
-            "apiV2StorageServiceRadzenEditorUploadsSpecificPost[]"             "apiV2StorageServiceUploadsPost[]" \
+            "updateFileAsync[]"             "image[Upload an image file]" \
+            "multiple[Upload multiple files]" \
+            "post[Upload files by ID]" \
+            "single[Upload a single file]" \
+            "specific[Upload a specific file]"             "saveFileAsync[Upload a file]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -420,6 +432,91 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createFileAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -478,7 +575,25 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2StorageServiceRadzenEditorUploadsIdPost)
+      image)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      multiple)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      post)
         local -a _op_arguments
         _op_arguments=(
           "id=:[PATH] "
@@ -488,7 +603,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2StorageServiceRadzenEditorUploadsImagePost)
+      single)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -497,7 +612,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2StorageServiceRadzenEditorUploadsMultiplePost)
+      specific)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -506,25 +621,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2StorageServiceRadzenEditorUploadsSinglePost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2StorageServiceRadzenEditorUploadsSpecificPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2StorageServiceUploadsPost)
+      saveFileAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "

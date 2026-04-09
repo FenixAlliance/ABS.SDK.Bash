@@ -128,18 +128,42 @@ Class | Method | HTTP request | Description
 *ContactsApi* | [**getOrganizationRelatedIndividualsAsync**](docs/ContactsApi.md#getorganizationrelatedindividualsasync) | **GET** /api/v2/CrmService/Contacts/Organizations/{contactId}/Individuals | Get organization related individuals
 *ContactsApi* | [**getOrganizationRelatedOrganizationsAsync**](docs/ContactsApi.md#getorganizationrelatedorganizationsasync) | **GET** /api/v2/CrmService/Contacts/Organizations/{contactId}/Organizations | Get organization related organizations
 *ContactsApi* | [**patchContactAsync**](docs/ContactsApi.md#patchcontactasync) | **PATCH** /api/v2/CrmService/Contacts/{contactId} | Patch a contact
+*ContactsApi* | [**previewContactEmailTemplate**](docs/ContactsApi.md#previewcontactemailtemplate) | **POST** /api/v2/CrmService/Contacts/{contactId}/Emails/Preview | Preview the rendered email for a contact.
+*ContactsApi* | [**sendContactEmail**](docs/ContactsApi.md#sendcontactemail) | **POST** /api/v2/CrmService/Contacts/{contactId}/Emails/Send | Send an email to a contact.
 *ContactsApi* | [**updateContactAsync**](docs/ContactsApi.md#updatecontactasync) | **PUT** /api/v2/CrmService/Contacts/{contactId} | Update a contact
 *ContactsApi* | [**updateContactAvatarAsync**](docs/ContactsApi.md#updatecontactavatarasync) | **POST** /api/v2/CrmService/Contacts/{contactId}/Avatar | Update a contact&#39;s avatar
 *ContactsApi* | [**upsertTenantOntoAnotherTenantContactListAsync**](docs/ContactsApi.md#upserttenantontoanothertenantcontactlistasync) | **POST** /api/v2/CrmService/Contacts/Organizations/Upsert | Upsert a tenant onto another tenant&#39;s contact list
 *ContactsApi* | [**upsertUserOntoAnotherTenantContactListAsync**](docs/ContactsApi.md#upsertuserontoanothertenantcontactlistasync) | **POST** /api/v2/CrmService/Contacts/Individuals/Upsert | Upsert a user onto a tenant&#39;s contact list
-*SyncApi* | [**apiV2CrmServiceSyncMePost**](docs/SyncApi.md#apiv2crmservicesyncmepost) | **POST** /api/v2/CrmService/Sync/Me | 
-*SyncApi* | [**apiV2CrmServiceSyncPost**](docs/SyncApi.md#apiv2crmservicesyncpost) | **POST** /api/v2/CrmService/Sync | 
-*SyncApi* | [**apiV2CrmServiceSyncTenantPost**](docs/SyncApi.md#apiv2crmservicesynctenantpost) | **POST** /api/v2/CrmService/Sync/Tenant | 
-*SyncApi* | [**apiV2CrmServiceSyncUserPost**](docs/SyncApi.md#apiv2crmservicesyncuserpost) | **POST** /api/v2/CrmService/Sync/User | 
+*FenixAllianceABPWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABPWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
+*FenixAllianceABPWebApi* | [**healthGet**](docs/FenixAllianceABPWebApi.md#healthget) | **GET** /health | 
+*FenixAllianceABPWebApi* | [**helloGet**](docs/FenixAllianceABPWebApi.md#helloget) | **GET** /hello | 
+*FenixAllianceABPWebApi* | [**loginPost**](docs/FenixAllianceABPWebApi.md#loginpost) | **POST** /login | 
+*FenixAllianceABPWebApi* | [**manage2faPost**](docs/FenixAllianceABPWebApi.md#manage2fapost) | **POST** /manage/2fa | 
+*FenixAllianceABPWebApi* | [**manageInfoGet**](docs/FenixAllianceABPWebApi.md#manageinfoget) | **GET** /manage/info | 
+*FenixAllianceABPWebApi* | [**manageInfoPost**](docs/FenixAllianceABPWebApi.md#manageinfopost) | **POST** /manage/info | 
+*FenixAllianceABPWebApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAllianceABPWebApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
+*FenixAllianceABPWebApi* | [**refreshPost**](docs/FenixAllianceABPWebApi.md#refreshpost) | **POST** /refresh | 
+*FenixAllianceABPWebApi* | [**registerPost**](docs/FenixAllianceABPWebApi.md#registerpost) | **POST** /register | 
+*FenixAllianceABPWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABPWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
+*FenixAllianceABPWebApi* | [**resetPasswordPost**](docs/FenixAllianceABPWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
+*FenixAllianceABPWebApi* | [**versionGet**](docs/FenixAllianceABPWebApi.md#versionget) | **GET** /version | 
+*OptionsApi* | [**createContactOption**](docs/OptionsApi.md#createcontactoption) | **POST** /api/v2/CrmService/Contacts/{contactId}/Options | Create a new contact option
+*OptionsApi* | [**deleteContactOption**](docs/OptionsApi.md#deletecontactoption) | **DELETE** /api/v2/CrmService/Contacts/{contactId}/Options/{optionId} | Delete a contact option
+*OptionsApi* | [**getContactOptionById**](docs/OptionsApi.md#getcontactoptionbyid) | **GET** /api/v2/CrmService/Contacts/{contactId}/Options/{optionId} | Retrieve a single contact option by its ID
+*OptionsApi* | [**getContactOptionByKey**](docs/OptionsApi.md#getcontactoptionbykey) | **GET** /api/v2/CrmService/Contacts/{contactId}/Options/Key/{key} | Retrieve a single contact option by its key
+*OptionsApi* | [**getContactOptions**](docs/OptionsApi.md#getcontactoptions) | **GET** /api/v2/CrmService/Contacts/{contactId}/Options | Retrieve a list of contact options
+*OptionsApi* | [**getContactOptionsCount**](docs/OptionsApi.md#getcontactoptionscount) | **GET** /api/v2/CrmService/Contacts/{contactId}/Options/Count | Get the count of contact options
+*OptionsApi* | [**updateContactOption**](docs/OptionsApi.md#updatecontactoption) | **PUT** /api/v2/CrmService/Contacts/{contactId}/Options/{optionId} | Update a contact option
+*OptionsApi* | [**upsertContactOption**](docs/OptionsApi.md#upsertcontactoption) | **PUT** /api/v2/CrmService/Contacts/{contactId}/Options/Upsert/{key} | Create or update a contact option by key
+*SyncApi* | [**syncCurrentHolderToCurrentTenantCrm**](docs/SyncApi.md#synccurrentholdertocurrenttenantcrm) | **POST** /api/v2/CrmService/Sync | Sync the current user into the current tenant&#39;s contact list
+*SyncApi* | [**syncCurrentHolderToTenantCrm**](docs/SyncApi.md#synccurrentholdertotenantcrm) | **POST** /api/v2/CrmService/Sync/Me | Sync the current user into a tenant&#39;s contact list
+*SyncApi* | [**syncHolderToTenantCrmAsync**](docs/SyncApi.md#syncholdertotenantcrmasync) | **POST** /api/v2/CrmService/Sync/User | Sync a user into a tenant&#39;s contact list
+*SyncApi* | [**syncTenantToTenantCrm**](docs/SyncApi.md#synctenanttotenantcrm) | **POST** /api/v2/CrmService/Sync/Tenant | Sync a tenant into another tenant&#39;s contact list
 
 
 ## Documentation For Models
 
+ - [AccessTokenResponse](docs/AccessTokenResponse.md)
  - [CartDto](docs/CartDto.md)
  - [CartDtoEnvelope](docs/CartDtoEnvelope.md)
  - [ContactCreateDto](docs/ContactCreateDto.md)
@@ -149,15 +173,34 @@ Class | Method | HTTP request | Description
  - [ContactProfileDto](docs/ContactProfileDto.md)
  - [ContactProfileDtoListEnvelope](docs/ContactProfileDtoListEnvelope.md)
  - [ContactUpdateDto](docs/ContactUpdateDto.md)
+ - [EmailDispatchRequest](docs/EmailDispatchRequest.md)
  - [EmptyEnvelope](docs/EmptyEnvelope.md)
+ - [Envelope](docs/Envelope.md)
  - [ErrorEnvelope](docs/ErrorEnvelope.md)
  - [ExtendedContactDto](docs/ExtendedContactDto.md)
  - [ExtendedContactDtoEnvelope](docs/ExtendedContactDtoEnvelope.md)
  - [ExtendedContactDtoListEnvelope](docs/ExtendedContactDtoListEnvelope.md)
+ - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
+ - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
+ - [InfoRequest](docs/InfoRequest.md)
+ - [InfoResponse](docs/InfoResponse.md)
+ - [Int32Envelope](docs/Int32Envelope.md)
+ - [LoginRequest](docs/LoginRequest.md)
  - [Operation](docs/Operation.md)
+ - [OptionCreateDto](docs/OptionCreateDto.md)
+ - [OptionDto](docs/OptionDto.md)
+ - [OptionDtoEnvelope](docs/OptionDtoEnvelope.md)
+ - [OptionDtoListEnvelope](docs/OptionDtoListEnvelope.md)
+ - [OptionUpdateDto](docs/OptionUpdateDto.md)
+ - [RefreshRequest](docs/RefreshRequest.md)
+ - [RegisterRequest](docs/RegisterRequest.md)
+ - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)
+ - [ResetPasswordRequest](docs/ResetPasswordRequest.md)
  - [SimpleContactDto](docs/SimpleContactDto.md)
  - [SocialProfileDto](docs/SocialProfileDto.md)
  - [SocialProfileDtoEnvelope](docs/SocialProfileDtoEnvelope.md)
+ - [TwoFactorRequest](docs/TwoFactorRequest.md)
+ - [TwoFactorResponse](docs/TwoFactorResponse.md)
  - [UpdateContactAvatarAsyncRequest](docs/UpdateContactAvatarAsyncRequest.md)
  - [WalletDto](docs/WalletDto.md)
  - [WalletDtoEnvelope](docs/WalletDtoEnvelope.md)
@@ -165,11 +208,5 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Authorization
 
-
-## Bearer
-
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+ All endpoints do not require authorization.
 

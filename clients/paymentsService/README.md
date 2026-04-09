@@ -103,31 +103,84 @@ All URIs are relative to **
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*PaymentsApi* | [**apiV2PaymentsServicePaymentsGet**](docs/PaymentsApi.md#apiv2paymentsservicepaymentsget) | **GET** /api/v2/PaymentsService/Payments | 
-*PaymentsApi* | [**apiV2PaymentsServicePaymentsPaymentIdDelete**](docs/PaymentsApi.md#apiv2paymentsservicepaymentspaymentiddelete) | **DELETE** /api/v2/PaymentsService/Payments/{paymentId} | 
-*PaymentsApi* | [**apiV2PaymentsServicePaymentsPaymentIdDetailsGet**](docs/PaymentsApi.md#apiv2paymentsservicepaymentspaymentiddetailsget) | **GET** /api/v2/PaymentsService/Payments/{paymentId}/Details | 
-*PaymentsApi* | [**apiV2PaymentsServicePaymentsPaymentIdGet**](docs/PaymentsApi.md#apiv2paymentsservicepaymentspaymentidget) | **GET** /api/v2/PaymentsService/Payments/{paymentId} | 
-*PaymentsApi* | [**apiV2PaymentsServicePaymentsPaymentIdPut**](docs/PaymentsApi.md#apiv2paymentsservicepaymentspaymentidput) | **PUT** /api/v2/PaymentsService/Payments/{paymentId} | 
-*PaymentsApi* | [**apiV2PaymentsServicePaymentsPost**](docs/PaymentsApi.md#apiv2paymentsservicepaymentspost) | **POST** /api/v2/PaymentsService/Payments | 
+*FenixAllianceABPWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABPWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
+*FenixAllianceABPWebApi* | [**healthGet**](docs/FenixAllianceABPWebApi.md#healthget) | **GET** /health | 
+*FenixAllianceABPWebApi* | [**helloGet**](docs/FenixAllianceABPWebApi.md#helloget) | **GET** /hello | 
+*FenixAllianceABPWebApi* | [**loginPost**](docs/FenixAllianceABPWebApi.md#loginpost) | **POST** /login | 
+*FenixAllianceABPWebApi* | [**manage2faPost**](docs/FenixAllianceABPWebApi.md#manage2fapost) | **POST** /manage/2fa | 
+*FenixAllianceABPWebApi* | [**manageInfoGet**](docs/FenixAllianceABPWebApi.md#manageinfoget) | **GET** /manage/info | 
+*FenixAllianceABPWebApi* | [**manageInfoPost**](docs/FenixAllianceABPWebApi.md#manageinfopost) | **POST** /manage/info | 
+*FenixAllianceABPWebApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAllianceABPWebApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
+*FenixAllianceABPWebApi* | [**refreshPost**](docs/FenixAllianceABPWebApi.md#refreshpost) | **POST** /refresh | 
+*FenixAllianceABPWebApi* | [**registerPost**](docs/FenixAllianceABPWebApi.md#registerpost) | **POST** /register | 
+*FenixAllianceABPWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABPWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
+*FenixAllianceABPWebApi* | [**resetPasswordPost**](docs/FenixAllianceABPWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
+*FenixAllianceABPWebApi* | [**versionGet**](docs/FenixAllianceABPWebApi.md#versionget) | **GET** /version | 
+*PaymentMethodsApi* | [**createPaymentMethodAsync**](docs/PaymentMethodsApi.md#createpaymentmethodasync) | **POST** /api/v2/PaymentsService/PaymentMethods | Creates a new payment method
+*PaymentMethodsApi* | [**deletePaymentMethodAsync**](docs/PaymentMethodsApi.md#deletepaymentmethodasync) | **DELETE** /api/v2/PaymentsService/PaymentMethods/{paymentMethodId} | Deletes a payment method
+*PaymentMethodsApi* | [**getPaymentMethodDetailsAsync**](docs/PaymentMethodsApi.md#getpaymentmethoddetailsasync) | **GET** /api/v2/PaymentsService/PaymentMethods/{paymentMethodId} | Gets a payment method by ID
+*PaymentMethodsApi* | [**getPaymentMethodsAsync**](docs/PaymentMethodsApi.md#getpaymentmethodsasync) | **GET** /api/v2/PaymentsService/PaymentMethods | Retrieves all payment methods
+*PaymentMethodsApi* | [**getPaymentMethodsCountAsync**](docs/PaymentMethodsApi.md#getpaymentmethodscountasync) | **GET** /api/v2/PaymentsService/PaymentMethods/Count | Counts payment methods
+*PaymentMethodsApi* | [**updatePaymentMethodAsync**](docs/PaymentMethodsApi.md#updatepaymentmethodasync) | **PUT** /api/v2/PaymentsService/PaymentMethods/{paymentMethodId} | Updates a payment method
+*PaymentModesApi* | [**createPaymentModeAsync**](docs/PaymentModesApi.md#createpaymentmodeasync) | **POST** /api/v2/PaymentsService/PaymentModes | Creates a new payment mode
+*PaymentModesApi* | [**deletePaymentModeAsync**](docs/PaymentModesApi.md#deletepaymentmodeasync) | **DELETE** /api/v2/PaymentsService/PaymentModes/{paymentModeId} | Deletes a payment mode
+*PaymentModesApi* | [**getPaymentModeDetailsAsync**](docs/PaymentModesApi.md#getpaymentmodedetailsasync) | **GET** /api/v2/PaymentsService/PaymentModes/{paymentModeId} | Gets a payment mode by ID
+*PaymentModesApi* | [**getPaymentModesAsync**](docs/PaymentModesApi.md#getpaymentmodesasync) | **GET** /api/v2/PaymentsService/PaymentModes | Retrieves all payment modes
+*PaymentModesApi* | [**getPaymentModesCountAsync**](docs/PaymentModesApi.md#getpaymentmodescountasync) | **GET** /api/v2/PaymentsService/PaymentModes/Count | Counts payment modes
+*PaymentModesApi* | [**updatePaymentModeAsync**](docs/PaymentModesApi.md#updatepaymentmodeasync) | **PUT** /api/v2/PaymentsService/PaymentModes/{paymentModeId} | Updates a payment mode
+*PaymentTermsApi* | [**createPaymentTermAsync**](docs/PaymentTermsApi.md#createpaymenttermasync) | **POST** /api/v2/PaymentsService/PaymentTerms | Creates a new payment term
+*PaymentTermsApi* | [**deletePaymentTermAsync**](docs/PaymentTermsApi.md#deletepaymenttermasync) | **DELETE** /api/v2/PaymentsService/PaymentTerms/{paymentTermId} | Deletes a payment term
+*PaymentTermsApi* | [**getPaymentTermDetailsAsync**](docs/PaymentTermsApi.md#getpaymenttermdetailsasync) | **GET** /api/v2/PaymentsService/PaymentTerms/{paymentTermId} | Gets a payment term by ID
+*PaymentTermsApi* | [**getPaymentTermsAsync**](docs/PaymentTermsApi.md#getpaymenttermsasync) | **GET** /api/v2/PaymentsService/PaymentTerms | Retrieves all payment terms
+*PaymentTermsApi* | [**getPaymentTermsCountAsync**](docs/PaymentTermsApi.md#getpaymenttermscountasync) | **GET** /api/v2/PaymentsService/PaymentTerms/Count | Counts payment terms
+*PaymentTermsApi* | [**updatePaymentTermAsync**](docs/PaymentTermsApi.md#updatepaymenttermasync) | **PUT** /api/v2/PaymentsService/PaymentTerms/{paymentTermId} | Updates a payment term
+*PaymentsApi* | [**createPaymentAsync**](docs/PaymentsApi.md#createpaymentasync) | **POST** /api/v2/PaymentsService/Payments | Creates a new payment
+*PaymentsApi* | [**deletePaymentAsync**](docs/PaymentsApi.md#deletepaymentasync) | **DELETE** /api/v2/PaymentsService/Payments/{paymentId} | Deletes a payment
+*PaymentsApi* | [**getPaymentAsync**](docs/PaymentsApi.md#getpaymentasync) | **GET** /api/v2/PaymentsService/Payments/{paymentId}/Details | Gets a payment by ID (deprecated)
+*PaymentsApi* | [**getPaymentAsyncV2**](docs/PaymentsApi.md#getpaymentasyncv2) | **GET** /api/v2/PaymentsService/Payments/{paymentId} | Gets a payment by ID
+*PaymentsApi* | [**getPaymentsAsync**](docs/PaymentsApi.md#getpaymentsasync) | **GET** /api/v2/PaymentsService/Payments | Retrieves all payments
+*PaymentsApi* | [**updatePaymentAsync**](docs/PaymentsApi.md#updatepaymentasync) | **PUT** /api/v2/PaymentsService/Payments/{paymentId} | Updates a payment
 
 
 ## Documentation For Models
 
+ - [AccessTokenResponse](docs/AccessTokenResponse.md)
  - [EmptyEnvelope](docs/EmptyEnvelope.md)
  - [ErrorEnvelope](docs/ErrorEnvelope.md)
+ - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
+ - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
+ - [InfoRequest](docs/InfoRequest.md)
+ - [InfoResponse](docs/InfoResponse.md)
+ - [Int32Envelope](docs/Int32Envelope.md)
+ - [LoginRequest](docs/LoginRequest.md)
  - [PaymentCreateDto](docs/PaymentCreateDto.md)
  - [PaymentDto](docs/PaymentDto.md)
  - [PaymentDtoListEnvelope](docs/PaymentDtoListEnvelope.md)
+ - [PaymentMethodCreateDto](docs/PaymentMethodCreateDto.md)
+ - [PaymentMethodDto](docs/PaymentMethodDto.md)
+ - [PaymentMethodDtoEnvelope](docs/PaymentMethodDtoEnvelope.md)
+ - [PaymentMethodDtoIReadOnlyListEnvelope](docs/PaymentMethodDtoIReadOnlyListEnvelope.md)
+ - [PaymentMethodUpdateDto](docs/PaymentMethodUpdateDto.md)
+ - [PaymentModeCreateDto](docs/PaymentModeCreateDto.md)
+ - [PaymentModeDto](docs/PaymentModeDto.md)
+ - [PaymentModeDtoEnvelope](docs/PaymentModeDtoEnvelope.md)
+ - [PaymentModeDtoIReadOnlyListEnvelope](docs/PaymentModeDtoIReadOnlyListEnvelope.md)
+ - [PaymentModeUpdateDto](docs/PaymentModeUpdateDto.md)
+ - [PaymentTermCreateDto](docs/PaymentTermCreateDto.md)
+ - [PaymentTermDto](docs/PaymentTermDto.md)
+ - [PaymentTermDtoEnvelope](docs/PaymentTermDtoEnvelope.md)
+ - [PaymentTermDtoIReadOnlyListEnvelope](docs/PaymentTermDtoIReadOnlyListEnvelope.md)
+ - [PaymentTermUpdateDto](docs/PaymentTermUpdateDto.md)
  - [PaymentUpdateDto](docs/PaymentUpdateDto.md)
+ - [RefreshRequest](docs/RefreshRequest.md)
+ - [RegisterRequest](docs/RegisterRequest.md)
+ - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)
+ - [ResetPasswordRequest](docs/ResetPasswordRequest.md)
+ - [TwoFactorRequest](docs/TwoFactorRequest.md)
+ - [TwoFactorResponse](docs/TwoFactorResponse.md)
 
 
 ## Documentation For Authorization
 
-
-## Bearer
-
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+ All endpoints do not require authorization.
 

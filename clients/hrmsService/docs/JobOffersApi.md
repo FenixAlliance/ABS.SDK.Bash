@@ -4,18 +4,20 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createJobOfferAsync**](JobOffersApi.md#createJobOfferAsync) | **POST** /api/v2/HrmsService/JobOffers | 
-[**deleteJobOfferAsync**](JobOffersApi.md#deleteJobOfferAsync) | **DELETE** /api/v2/HrmsService/JobOffers/{jobOfferId} | 
-[**getJobOfferByIdAsync**](JobOffersApi.md#getJobOfferByIdAsync) | **GET** /api/v2/HrmsService/JobOffers/{jobOfferId} | 
-[**getJobOffersAsync**](JobOffersApi.md#getJobOffersAsync) | **GET** /api/v2/HrmsService/JobOffers | 
-[**getJobOffersCountAsync**](JobOffersApi.md#getJobOffersCountAsync) | **GET** /api/v2/HrmsService/JobOffers/Count | 
-[**updateJobOfferAsync**](JobOffersApi.md#updateJobOfferAsync) | **PUT** /api/v2/HrmsService/JobOffers/{jobOfferId} | 
+[**createJobOfferAsync**](JobOffersApi.md#createJobOfferAsync) | **POST** /api/v2/HrmsService/JobOffers | Create a job offer
+[**deleteJobOfferAsync**](JobOffersApi.md#deleteJobOfferAsync) | **DELETE** /api/v2/HrmsService/JobOffers/{jobOfferId} | Delete a job offer
+[**getJobOfferByIdAsync**](JobOffersApi.md#getJobOfferByIdAsync) | **GET** /api/v2/HrmsService/JobOffers/{jobOfferId} | Get job offer by ID
+[**getJobOffersAsync**](JobOffersApi.md#getJobOffersAsync) | **GET** /api/v2/HrmsService/JobOffers | Get job offers
+[**getJobOffersCountAsync**](JobOffersApi.md#getJobOffersCountAsync) | **GET** /api/v2/HrmsService/JobOffers/Count | Count job offers
+[**updateJobOfferAsync**](JobOffersApi.md#updateJobOfferAsync) | **PUT** /api/v2/HrmsService/JobOffers/{jobOfferId} | Update a job offer
 
 
 
 ## createJobOfferAsync
 
+Create a job offer
 
+Creates a new job offer for the specified tenant.
 
 ### Example
 
@@ -35,11 +37,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -51,7 +53,9 @@ Name | Type | Description  | Notes
 
 ## deleteJobOfferAsync
 
+Delete a job offer
 
+Deletes a job offer for the specified tenant.
 
 ### Example
 
@@ -71,11 +75,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -87,7 +91,9 @@ Name | Type | Description  | Notes
 
 ## getJobOfferByIdAsync
 
+Get job offer by ID
 
+Retrieves a specific job offer by its identifier.
 
 ### Example
 
@@ -111,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -123,7 +129,9 @@ Name | Type | Description  | Notes
 
 ## getJobOffersAsync
 
+Get job offers
 
+Retrieves job offers for the specified tenant.
 
 ### Example
 
@@ -146,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -158,7 +166,9 @@ Name | Type | Description  | Notes
 
 ## getJobOffersCountAsync
 
+Count job offers
 
+Counts job offers for the specified tenant.
 
 ### Example
 
@@ -181,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -193,7 +203,9 @@ Name | Type | Description  | Notes
 
 ## updateJobOfferAsync
 
+Update a job offer
 
+Updates an existing job offer for the specified tenant.
 
 ### Example
 
@@ -214,11 +226,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-(empty response body)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

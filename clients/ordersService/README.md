@@ -103,33 +103,56 @@ All URIs are relative to **
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*OrdersApi* | [**apiV2OrdersServiceOrdersCountGet**](docs/OrdersApi.md#apiv2ordersserviceorderscountget) | **GET** /api/v2/OrdersService/Orders/Count | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersExtendedGet**](docs/OrdersApi.md#apiv2ordersserviceordersextendedget) | **GET** /api/v2/OrdersService/Orders/Extended | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersOrderIdCalculatePut**](docs/OrdersApi.md#apiv2ordersserviceordersorderidcalculateput) | **PUT** /api/v2/OrdersService/Orders/{orderId}/Calculate | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersOrderIdDelete**](docs/OrdersApi.md#apiv2ordersserviceordersorderiddelete) | **DELETE** /api/v2/OrdersService/Orders/{orderId} | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersOrderIdLinesCountGet**](docs/OrdersApi.md#apiv2ordersserviceordersorderidlinescountget) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines/Count | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersOrderIdLinesGet**](docs/OrdersApi.md#apiv2ordersserviceordersorderidlinesget) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut**](docs/OrdersApi.md#apiv2ordersserviceordersorderidlinesorderlineidcalculateput) | **PUT** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId}/Calculate | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete**](docs/OrdersApi.md#apiv2ordersserviceordersorderidlinesorderlineiddelete) | **DELETE** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet**](docs/OrdersApi.md#apiv2ordersserviceordersorderidlinesorderlineidget) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut**](docs/OrdersApi.md#apiv2ordersserviceordersorderidlinesorderlineidput) | **PUT** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersOrderIdLinesPost**](docs/OrdersApi.md#apiv2ordersserviceordersorderidlinespost) | **POST** /api/v2/OrdersService/Orders/{orderId}/Lines | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersOrderIdPut**](docs/OrdersApi.md#apiv2ordersserviceordersorderidput) | **PUT** /api/v2/OrdersService/Orders/{orderId} | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersPost**](docs/OrdersApi.md#apiv2ordersserviceorderspost) | **POST** /api/v2/OrdersService/Orders | 
-*OrdersApi* | [**apiV2OrdersServiceOrdersSubmitCartPost**](docs/OrdersApi.md#apiv2ordersserviceorderssubmitcartpost) | **POST** /api/v2/OrdersService/Orders/SubmitCart | 
-*OrdersApi* | [**getOrderAsync**](docs/OrdersApi.md#getorderasync) | **GET** /api/v2/OrdersService/Orders/{orderId} | 
-*OrdersApi* | [**getOrdersAsync**](docs/OrdersApi.md#getordersasync) | **GET** /api/v2/OrdersService/Orders | 
+*FenixAllianceABPWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABPWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
+*FenixAllianceABPWebApi* | [**healthGet**](docs/FenixAllianceABPWebApi.md#healthget) | **GET** /health | 
+*FenixAllianceABPWebApi* | [**helloGet**](docs/FenixAllianceABPWebApi.md#helloget) | **GET** /hello | 
+*FenixAllianceABPWebApi* | [**loginPost**](docs/FenixAllianceABPWebApi.md#loginpost) | **POST** /login | 
+*FenixAllianceABPWebApi* | [**manage2faPost**](docs/FenixAllianceABPWebApi.md#manage2fapost) | **POST** /manage/2fa | 
+*FenixAllianceABPWebApi* | [**manageInfoGet**](docs/FenixAllianceABPWebApi.md#manageinfoget) | **GET** /manage/info | 
+*FenixAllianceABPWebApi* | [**manageInfoPost**](docs/FenixAllianceABPWebApi.md#manageinfopost) | **POST** /manage/info | 
+*FenixAllianceABPWebApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAllianceABPWebApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
+*FenixAllianceABPWebApi* | [**refreshPost**](docs/FenixAllianceABPWebApi.md#refreshpost) | **POST** /refresh | 
+*FenixAllianceABPWebApi* | [**registerPost**](docs/FenixAllianceABPWebApi.md#registerpost) | **POST** /register | 
+*FenixAllianceABPWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABPWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
+*FenixAllianceABPWebApi* | [**resetPasswordPost**](docs/FenixAllianceABPWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
+*FenixAllianceABPWebApi* | [**versionGet**](docs/FenixAllianceABPWebApi.md#versionget) | **GET** /version | 
+*OrdersApi* | [**calculateOrder**](docs/OrdersApi.md#calculateorder) | **PUT** /api/v2/OrdersService/Orders/{orderId}/Calculate | Calculates totals for an order.
+*OrdersApi* | [**calculateOrderLine**](docs/OrdersApi.md#calculateorderline) | **PUT** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId}/Calculate | Calculates totals for an order line.
+*OrdersApi* | [**createOrder**](docs/OrdersApi.md#createorder) | **POST** /api/v2/OrdersService/Orders | Creates a new order.
+*OrdersApi* | [**createOrderLine**](docs/OrdersApi.md#createorderline) | **POST** /api/v2/OrdersService/Orders/{orderId}/Lines | Creates a new order line.
+*OrdersApi* | [**deleteOrder**](docs/OrdersApi.md#deleteorder) | **DELETE** /api/v2/OrdersService/Orders/{orderId} | Deletes an order.
+*OrdersApi* | [**deleteOrderLine**](docs/OrdersApi.md#deleteorderline) | **DELETE** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | Deletes an order line.
+*OrdersApi* | [**getExtendedOrders**](docs/OrdersApi.md#getextendedorders) | **GET** /api/v2/OrdersService/Orders/Extended | Gets a list of extended orders for a tenant.
+*OrdersApi* | [**getOrder**](docs/OrdersApi.md#getorder) | **GET** /api/v2/OrdersService/Orders/{orderId} | Gets a specific order by ID.
+*OrdersApi* | [**getOrderLine**](docs/OrdersApi.md#getorderline) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | Gets a specific order line.
+*OrdersApi* | [**getOrderLines**](docs/OrdersApi.md#getorderlines) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines | Gets order lines for an order.
+*OrdersApi* | [**getOrderLinesCount**](docs/OrdersApi.md#getorderlinescount) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines/Count | Gets the count of order lines for an order.
+*OrdersApi* | [**getOrders**](docs/OrdersApi.md#getorders) | **GET** /api/v2/OrdersService/Orders | Gets a list of orders for a tenant.
+*OrdersApi* | [**getOrdersCount**](docs/OrdersApi.md#getorderscount) | **GET** /api/v2/OrdersService/Orders/Count | Gets the count of orders for a tenant.
+*OrdersApi* | [**previewOrderEmailTemplate**](docs/OrdersApi.md#previeworderemailtemplate) | **POST** /api/v2/OrdersService/Orders/{orderId}/Emails/Preview | Preview the rendered email for an Order.
+*OrdersApi* | [**sendOrderEmail**](docs/OrdersApi.md#sendorderemail) | **POST** /api/v2/OrdersService/Orders/{orderId}/Emails/Send | Send a transactional email for an order.
+*OrdersApi* | [**submitCart**](docs/OrdersApi.md#submitcart) | **POST** /api/v2/OrdersService/Orders/SubmitCart | Submits a cart and creates an order.
+*OrdersApi* | [**updateOrder**](docs/OrdersApi.md#updateorder) | **PUT** /api/v2/OrdersService/Orders/{orderId} | Updates an existing order.
+*OrdersApi* | [**updateOrderLine**](docs/OrdersApi.md#updateorderline) | **PUT** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | Updates an order line.
 
 
 ## Documentation For Models
 
+ - [AccessTokenResponse](docs/AccessTokenResponse.md)
  - [ContactDto](docs/ContactDto.md)
- - [Currency](docs/Currency.md)
+ - [CurrencyId](docs/CurrencyId.md)
+ - [EmailDispatchRequest](docs/EmailDispatchRequest.md)
  - [EmptyEnvelope](docs/EmptyEnvelope.md)
  - [ErrorEnvelope](docs/ErrorEnvelope.md)
  - [ExtendedOrderDto](docs/ExtendedOrderDto.md)
  - [ExtendedOrderDtoListEnvelope](docs/ExtendedOrderDtoListEnvelope.md)
+ - [ForexRates](docs/ForexRates.md)
+ - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
+ - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
+ - [InfoRequest](docs/InfoRequest.md)
+ - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
+ - [LoginRequest](docs/LoginRequest.md)
  - [Money](docs/Money.md)
  - [OrderCreateDto](docs/OrderCreateDto.md)
  - [OrderDto](docs/OrderDto.md)
@@ -141,18 +164,18 @@ Class | Method | HTTP request | Description
  - [OrderLineDtoListEnvelope](docs/OrderLineDtoListEnvelope.md)
  - [OrderLineUpdateDto](docs/OrderLineUpdateDto.md)
  - [OrderUpdateDto](docs/OrderUpdateDto.md)
+ - [RefreshRequest](docs/RefreshRequest.md)
+ - [RegisterRequest](docs/RegisterRequest.md)
+ - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)
+ - [ResetPasswordRequest](docs/ResetPasswordRequest.md)
  - [TenantDto](docs/TenantDto.md)
- - [TenantEnrolmentDto](docs/TenantEnrolmentDto.md)
+ - [TenantEnrollmentDto](docs/TenantEnrollmentDto.md)
+ - [TwoFactorRequest](docs/TwoFactorRequest.md)
+ - [TwoFactorResponse](docs/TwoFactorResponse.md)
  - [UserDto](docs/UserDto.md)
 
 
 ## Documentation For Authorization
 
-
-## Bearer
-
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+ All endpoints do not require authorization.
 

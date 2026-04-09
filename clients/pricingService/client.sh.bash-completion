@@ -69,67 +69,99 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2PricingServiceDiscountListsCountGet"]=1
-    operations["apiV2PricingServiceDiscountListsDiscountListIdDelete"]=1
-    operations["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet"]=1
-    operations["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete"]=1
-    operations["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut"]=1
-    operations["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet"]=1
-    operations["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost"]=1
-    operations["apiV2PricingServiceDiscountListsDiscountListIdGet"]=1
-    operations["apiV2PricingServiceDiscountListsDiscountListIdPut"]=1
-    operations["apiV2PricingServiceDiscountListsGet"]=1
-    operations["apiV2PricingServiceDiscountListsPost"]=1
+    operations["createDiscountList"]=1
+    operations["createDiscountListEntry"]=1
+    operations["deleteDiscountList"]=1
+    operations["deleteDiscountListEntry"]=1
+    operations["getDiscountList"]=1
+    operations["getDiscountListEntries"]=1
+    operations["getDiscountListEntriesCount"]=1
     operations["getDiscountListEntry"]=1
-    operations["apiV2PricingServicePriceListsCountGet"]=1
-    operations["apiV2PricingServicePriceListsGet"]=1
-    operations["apiV2PricingServicePriceListsPost"]=1
-    operations["apiV2PricingServicePriceListsPriceListIdDelete"]=1
-    operations["apiV2PricingServicePriceListsPriceListIdPricesPost"]=1
-    operations["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete"]=1
-    operations["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut"]=1
-    operations["apiV2PricingServicePriceListsPriceListIdPut"]=1
+    operations["getDiscountLists"]=1
+    operations["getDiscountListsCount"]=1
+    operations["updateDiscountList"]=1
+    operations["updateDiscountListEntry"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["createPriceListAsync"]=1
+    operations["createPriceListPricesAsync"]=1
+    operations["deletePriceListAsync"]=1
+    operations["deletePriceListPriceAsync"]=1
     operations["getPriceListAsync"]=1
     operations["getPriceListPriceAsync"]=1
     operations["getPriceListPricesAsync"]=1
-    operations["apiV2PricingServicePricesItemIdFinalPriceGet"]=1
-    operations["apiV2PricingServicePricesItemIdPriceGet"]=1
-    operations["apiV2PricingServicePricesItemIdTotalSavingsGet"]=1
-    operations["apiV2PricingServicePricesItemIdTotalTaxesGet"]=1
+    operations["getPriceListsAsync"]=1
+    operations["getPriceListsCountAsync"]=1
+    operations["updatePriceListAsync"]=1
+    operations["updatePriceListPriceAsync"]=1
+    operations["getFinalPrice"]=1
+    operations["getPrice"]=1
+    operations["getTotalSavingsInUsd"]=1
+    operations["getTotalTaxesInUsd"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2PricingServiceDiscountListsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServiceDiscountListsDiscountListIdDelete"]="discountListId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet"]="discountListId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete"]="discountListId= discountListEntryId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut"]="discountListId= discountListEntryId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet"]="discountListId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost"]="discountListId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServiceDiscountListsDiscountListIdGet"]="discountListId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServiceDiscountListsDiscountListIdPut"]="discountListId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServiceDiscountListsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServiceDiscountListsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["getDiscountListEntry"]="discountListId= discountListEntryId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServicePriceListsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServicePriceListsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServicePriceListsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServicePriceListsPriceListIdDelete"]="priceListId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServicePriceListsPriceListIdPricesPost"]="priceListId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete"]="priceListId= priceId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut"]="priceListId= priceId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServicePriceListsPriceListIdPut"]="priceListId= tenantId= api-version= x-api-version: "
-    operation_parameters["getPriceListAsync"]="priceListId= tenantId= api-version= x-api-version: "
-    operation_parameters["getPriceListPriceAsync"]="priceListId= priceId= tenantId= api-version= x-api-version: "
-    operation_parameters["getPriceListPricesAsync"]="priceListId= tenantId= itemId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServicePricesItemIdFinalPriceGet"]="itemId= currencyId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServicePricesItemIdPriceGet"]="itemId= priceListId= discountsListId= currencyId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServicePricesItemIdTotalSavingsGet"]="itemId= currencyId= api-version= x-api-version: "
-    operation_parameters["apiV2PricingServicePricesItemIdTotalTaxesGet"]="itemId= currencyId= api-version= x-api-version: "
+    operation_parameters["createDiscountList"]="tenantId= "
+    operation_parameters["createDiscountListEntry"]="discountListId= tenantId= "
+    operation_parameters["deleteDiscountList"]="discountListId= tenantId= "
+    operation_parameters["deleteDiscountListEntry"]="discountListId= discountListEntryId= tenantId= "
+    operation_parameters["getDiscountList"]="discountListId= tenantId= "
+    operation_parameters["getDiscountListEntries"]="discountListId= tenantId= "
+    operation_parameters["getDiscountListEntriesCount"]="discountListId= tenantId= "
+    operation_parameters["getDiscountListEntry"]="discountListId= discountListEntryId= tenantId= "
+    operation_parameters["getDiscountLists"]="tenantId= "
+    operation_parameters["getDiscountListsCount"]="tenantId= "
+    operation_parameters["updateDiscountList"]="discountListId= tenantId= "
+    operation_parameters["updateDiscountListEntry"]="discountListId= discountListEntryId= tenantId= "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["createPriceListAsync"]="tenantId= "
+    operation_parameters["createPriceListPricesAsync"]="priceListId= tenantId= "
+    operation_parameters["deletePriceListAsync"]="priceListId= tenantId= "
+    operation_parameters["deletePriceListPriceAsync"]="priceListId= priceId= tenantId= "
+    operation_parameters["getPriceListAsync"]="priceListId= tenantId= "
+    operation_parameters["getPriceListPriceAsync"]="priceListId= priceId= tenantId= "
+    operation_parameters["getPriceListPricesAsync"]="priceListId= tenantId= itemId= "
+    operation_parameters["getPriceListsAsync"]="tenantId= "
+    operation_parameters["getPriceListsCountAsync"]="tenantId= "
+    operation_parameters["updatePriceListAsync"]="priceListId= tenantId= "
+    operation_parameters["updatePriceListPriceAsync"]="priceListId= priceId= tenantId= "
+    operation_parameters["getFinalPrice"]="itemId= currencyId= api-version= x-api-version: "
+    operation_parameters["getPrice"]="itemId= priceListId= discountsListId= quantity= currencyId= api-version= x-api-version: "
+    operation_parameters["getTotalSavingsInUsd"]="itemId= currencyId= api-version= x-api-version: "
+    operation_parameters["getTotalTaxesInUsd"]="itemId= currencyId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

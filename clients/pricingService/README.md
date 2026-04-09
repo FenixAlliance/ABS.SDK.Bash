@@ -103,38 +103,52 @@ All URIs are relative to **
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DiscountListsApi* | [**apiV2PricingServiceDiscountListsCountGet**](docs/DiscountListsApi.md#apiv2pricingservicediscountlistscountget) | **GET** /api/v2/PricingService/DiscountLists/Count | 
-*DiscountListsApi* | [**apiV2PricingServiceDiscountListsDiscountListIdDelete**](docs/DiscountListsApi.md#apiv2pricingservicediscountlistsdiscountlistiddelete) | **DELETE** /api/v2/PricingService/DiscountLists/{discountListId} | 
-*DiscountListsApi* | [**apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet**](docs/DiscountListsApi.md#apiv2pricingservicediscountlistsdiscountlistiddiscountscountget) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/Count | 
-*DiscountListsApi* | [**apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete**](docs/DiscountListsApi.md#apiv2pricingservicediscountlistsdiscountlistiddiscountsdiscountlistentryiddelete) | **DELETE** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | 
-*DiscountListsApi* | [**apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut**](docs/DiscountListsApi.md#apiv2pricingservicediscountlistsdiscountlistiddiscountsdiscountlistentryidput) | **PUT** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | 
-*DiscountListsApi* | [**apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet**](docs/DiscountListsApi.md#apiv2pricingservicediscountlistsdiscountlistiddiscountsget) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts | 
-*DiscountListsApi* | [**apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost**](docs/DiscountListsApi.md#apiv2pricingservicediscountlistsdiscountlistiddiscountspost) | **POST** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts | 
-*DiscountListsApi* | [**apiV2PricingServiceDiscountListsDiscountListIdGet**](docs/DiscountListsApi.md#apiv2pricingservicediscountlistsdiscountlistidget) | **GET** /api/v2/PricingService/DiscountLists/{discountListId} | 
-*DiscountListsApi* | [**apiV2PricingServiceDiscountListsDiscountListIdPut**](docs/DiscountListsApi.md#apiv2pricingservicediscountlistsdiscountlistidput) | **PUT** /api/v2/PricingService/DiscountLists/{discountListId} | 
-*DiscountListsApi* | [**apiV2PricingServiceDiscountListsGet**](docs/DiscountListsApi.md#apiv2pricingservicediscountlistsget) | **GET** /api/v2/PricingService/DiscountLists | 
-*DiscountListsApi* | [**apiV2PricingServiceDiscountListsPost**](docs/DiscountListsApi.md#apiv2pricingservicediscountlistspost) | **POST** /api/v2/PricingService/DiscountLists | 
-*DiscountListsApi* | [**getDiscountListEntry**](docs/DiscountListsApi.md#getdiscountlistentry) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | 
-*PriceListsApi* | [**apiV2PricingServicePriceListsCountGet**](docs/PriceListsApi.md#apiv2pricingservicepricelistscountget) | **GET** /api/v2/PricingService/PriceLists/Count | 
-*PriceListsApi* | [**apiV2PricingServicePriceListsGet**](docs/PriceListsApi.md#apiv2pricingservicepricelistsget) | **GET** /api/v2/PricingService/PriceLists | 
-*PriceListsApi* | [**apiV2PricingServicePriceListsPost**](docs/PriceListsApi.md#apiv2pricingservicepricelistspost) | **POST** /api/v2/PricingService/PriceLists | 
-*PriceListsApi* | [**apiV2PricingServicePriceListsPriceListIdDelete**](docs/PriceListsApi.md#apiv2pricingservicepricelistspricelistiddelete) | **DELETE** /api/v2/PricingService/PriceLists/{priceListId} | 
-*PriceListsApi* | [**apiV2PricingServicePriceListsPriceListIdPricesPost**](docs/PriceListsApi.md#apiv2pricingservicepricelistspricelistidpricespost) | **POST** /api/v2/PricingService/PriceLists/{priceListId}/Prices | 
-*PriceListsApi* | [**apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete**](docs/PriceListsApi.md#apiv2pricingservicepricelistspricelistidpricespriceiddelete) | **DELETE** /api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId} | 
-*PriceListsApi* | [**apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut**](docs/PriceListsApi.md#apiv2pricingservicepricelistspricelistidpricespriceidput) | **PUT** /api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId} | 
-*PriceListsApi* | [**apiV2PricingServicePriceListsPriceListIdPut**](docs/PriceListsApi.md#apiv2pricingservicepricelistspricelistidput) | **PUT** /api/v2/PricingService/PriceLists/{priceListId} | 
-*PriceListsApi* | [**getPriceListAsync**](docs/PriceListsApi.md#getpricelistasync) | **GET** /api/v2/PricingService/PriceLists/{priceListId} | 
-*PriceListsApi* | [**getPriceListPriceAsync**](docs/PriceListsApi.md#getpricelistpriceasync) | **GET** /api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId} | 
-*PriceListsApi* | [**getPriceListPricesAsync**](docs/PriceListsApi.md#getpricelistpricesasync) | **GET** /api/v2/PricingService/PriceLists/{priceListId}/Prices | 
-*PricesApi* | [**apiV2PricingServicePricesItemIdFinalPriceGet**](docs/PricesApi.md#apiv2pricingservicepricesitemidfinalpriceget) | **GET** /api/v2/PricingService/Prices/{itemId}/FinalPrice | 
-*PricesApi* | [**apiV2PricingServicePricesItemIdPriceGet**](docs/PricesApi.md#apiv2pricingservicepricesitemidpriceget) | **GET** /api/v2/PricingService/Prices/{itemId}/Price | 
-*PricesApi* | [**apiV2PricingServicePricesItemIdTotalSavingsGet**](docs/PricesApi.md#apiv2pricingservicepricesitemidtotalsavingsget) | **GET** /api/v2/PricingService/Prices/{itemId}/TotalSavings | 
-*PricesApi* | [**apiV2PricingServicePricesItemIdTotalTaxesGet**](docs/PricesApi.md#apiv2pricingservicepricesitemidtotaltaxesget) | **GET** /api/v2/PricingService/Prices/{itemId}/TotalTaxes | 
+*DiscountListsApi* | [**createDiscountList**](docs/DiscountListsApi.md#creatediscountlist) | **POST** /api/v2/PricingService/DiscountLists | Creates a new discount list
+*DiscountListsApi* | [**createDiscountListEntry**](docs/DiscountListsApi.md#creatediscountlistentry) | **POST** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts | Creates a discount list entry
+*DiscountListsApi* | [**deleteDiscountList**](docs/DiscountListsApi.md#deletediscountlist) | **DELETE** /api/v2/PricingService/DiscountLists/{discountListId} | Deletes a discount list
+*DiscountListsApi* | [**deleteDiscountListEntry**](docs/DiscountListsApi.md#deletediscountlistentry) | **DELETE** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | Deletes a discount list entry
+*DiscountListsApi* | [**getDiscountList**](docs/DiscountListsApi.md#getdiscountlist) | **GET** /api/v2/PricingService/DiscountLists/{discountListId} | Gets a discount list by ID
+*DiscountListsApi* | [**getDiscountListEntries**](docs/DiscountListsApi.md#getdiscountlistentries) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts | Retrieves discounts in a discount list
+*DiscountListsApi* | [**getDiscountListEntriesCount**](docs/DiscountListsApi.md#getdiscountlistentriescount) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/Count | Counts discounts in a discount list
+*DiscountListsApi* | [**getDiscountListEntry**](docs/DiscountListsApi.md#getdiscountlistentry) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | Gets a discount list entry by ID
+*DiscountListsApi* | [**getDiscountLists**](docs/DiscountListsApi.md#getdiscountlists) | **GET** /api/v2/PricingService/DiscountLists | Retrieves all discount lists
+*DiscountListsApi* | [**getDiscountListsCount**](docs/DiscountListsApi.md#getdiscountlistscount) | **GET** /api/v2/PricingService/DiscountLists/Count | Counts discount lists
+*DiscountListsApi* | [**updateDiscountList**](docs/DiscountListsApi.md#updatediscountlist) | **PUT** /api/v2/PricingService/DiscountLists/{discountListId} | Updates a discount list
+*DiscountListsApi* | [**updateDiscountListEntry**](docs/DiscountListsApi.md#updatediscountlistentry) | **PUT** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | Updates a discount list entry
+*FenixAllianceABPWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABPWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
+*FenixAllianceABPWebApi* | [**healthGet**](docs/FenixAllianceABPWebApi.md#healthget) | **GET** /health | 
+*FenixAllianceABPWebApi* | [**helloGet**](docs/FenixAllianceABPWebApi.md#helloget) | **GET** /hello | 
+*FenixAllianceABPWebApi* | [**loginPost**](docs/FenixAllianceABPWebApi.md#loginpost) | **POST** /login | 
+*FenixAllianceABPWebApi* | [**manage2faPost**](docs/FenixAllianceABPWebApi.md#manage2fapost) | **POST** /manage/2fa | 
+*FenixAllianceABPWebApi* | [**manageInfoGet**](docs/FenixAllianceABPWebApi.md#manageinfoget) | **GET** /manage/info | 
+*FenixAllianceABPWebApi* | [**manageInfoPost**](docs/FenixAllianceABPWebApi.md#manageinfopost) | **POST** /manage/info | 
+*FenixAllianceABPWebApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAllianceABPWebApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
+*FenixAllianceABPWebApi* | [**refreshPost**](docs/FenixAllianceABPWebApi.md#refreshpost) | **POST** /refresh | 
+*FenixAllianceABPWebApi* | [**registerPost**](docs/FenixAllianceABPWebApi.md#registerpost) | **POST** /register | 
+*FenixAllianceABPWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABPWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
+*FenixAllianceABPWebApi* | [**resetPasswordPost**](docs/FenixAllianceABPWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
+*FenixAllianceABPWebApi* | [**versionGet**](docs/FenixAllianceABPWebApi.md#versionget) | **GET** /version | 
+*PriceListsApi* | [**createPriceListAsync**](docs/PriceListsApi.md#createpricelistasync) | **POST** /api/v2/PricingService/PriceLists | Creates a new price list
+*PriceListsApi* | [**createPriceListPricesAsync**](docs/PriceListsApi.md#createpricelistpricesasync) | **POST** /api/v2/PricingService/PriceLists/{priceListId}/Prices | Creates a price list entry
+*PriceListsApi* | [**deletePriceListAsync**](docs/PriceListsApi.md#deletepricelistasync) | **DELETE** /api/v2/PricingService/PriceLists/{priceListId} | Deletes a price list
+*PriceListsApi* | [**deletePriceListPriceAsync**](docs/PriceListsApi.md#deletepricelistpriceasync) | **DELETE** /api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId} | Deletes a price list entry
+*PriceListsApi* | [**getPriceListAsync**](docs/PriceListsApi.md#getpricelistasync) | **GET** /api/v2/PricingService/PriceLists/{priceListId} | Gets a price list by ID
+*PriceListsApi* | [**getPriceListPriceAsync**](docs/PriceListsApi.md#getpricelistpriceasync) | **GET** /api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId} | Gets a price list entry by ID
+*PriceListsApi* | [**getPriceListPricesAsync**](docs/PriceListsApi.md#getpricelistpricesasync) | **GET** /api/v2/PricingService/PriceLists/{priceListId}/Prices | Retrieves prices in a price list
+*PriceListsApi* | [**getPriceListsAsync**](docs/PriceListsApi.md#getpricelistsasync) | **GET** /api/v2/PricingService/PriceLists | Retrieves all price lists
+*PriceListsApi* | [**getPriceListsCountAsync**](docs/PriceListsApi.md#getpricelistscountasync) | **GET** /api/v2/PricingService/PriceLists/Count | Counts price lists
+*PriceListsApi* | [**updatePriceListAsync**](docs/PriceListsApi.md#updatepricelistasync) | **PUT** /api/v2/PricingService/PriceLists/{priceListId} | Updates a price list
+*PriceListsApi* | [**updatePriceListPriceAsync**](docs/PriceListsApi.md#updatepricelistpriceasync) | **PUT** /api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId} | Updates a price list entry
+*PricesApi* | [**getFinalPrice**](docs/PricesApi.md#getfinalprice) | **GET** /api/v2/PricingService/Prices/{itemId}/FinalPrice | Gets the final price for an item
+*PricesApi* | [**getPrice**](docs/PricesApi.md#getprice) | **GET** /api/v2/PricingService/Prices/{itemId}/Price | Gets the calculated price for an item
+*PricesApi* | [**getTotalSavingsInUsd**](docs/PricesApi.md#gettotalsavingsinusd) | **GET** /api/v2/PricingService/Prices/{itemId}/TotalSavings | Gets total savings for an item
+*PricesApi* | [**getTotalTaxesInUsd**](docs/PricesApi.md#gettotaltaxesinusd) | **GET** /api/v2/PricingService/Prices/{itemId}/TotalTaxes | Gets total taxes for an item
 
 
 ## Documentation For Models
 
- - [Currency](docs/Currency.md)
+ - [AccessTokenResponse](docs/AccessTokenResponse.md)
+ - [CurrencyId](docs/CurrencyId.md)
  - [DiscountCreateDto](docs/DiscountCreateDto.md)
  - [DiscountDto](docs/DiscountDto.md)
  - [DiscountDtoEnvelope](docs/DiscountDtoEnvelope.md)
@@ -147,30 +161,35 @@ Class | Method | HTTP request | Description
  - [DiscountUpdateDto](docs/DiscountUpdateDto.md)
  - [EmptyEnvelope](docs/EmptyEnvelope.md)
  - [ErrorEnvelope](docs/ErrorEnvelope.md)
+ - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
+ - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
+ - [InfoRequest](docs/InfoRequest.md)
+ - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
+ - [ItemPriceCalculation](docs/ItemPriceCalculation.md)
+ - [ItemPriceCalculationEnvelope](docs/ItemPriceCalculationEnvelope.md)
  - [ItemPriceCreateDto](docs/ItemPriceCreateDto.md)
  - [ItemPriceDto](docs/ItemPriceDto.md)
  - [ItemPriceDtoEnvelope](docs/ItemPriceDtoEnvelope.md)
  - [ItemPriceDtoListEnvelope](docs/ItemPriceDtoListEnvelope.md)
  - [ItemPriceUpdateDto](docs/ItemPriceUpdateDto.md)
+ - [LoginRequest](docs/LoginRequest.md)
  - [Money](docs/Money.md)
  - [MoneyEnvelope](docs/MoneyEnvelope.md)
- - [PriceCalculationDto](docs/PriceCalculationDto.md)
- - [PriceCalculationDtoEnvelope](docs/PriceCalculationDtoEnvelope.md)
  - [PriceListCreateDto](docs/PriceListCreateDto.md)
  - [PriceListDto](docs/PriceListDto.md)
  - [PriceListDtoEnvelope](docs/PriceListDtoEnvelope.md)
  - [PriceListDtoListEnvelope](docs/PriceListDtoListEnvelope.md)
  - [PriceListUpdateDto](docs/PriceListUpdateDto.md)
+ - [RefreshRequest](docs/RefreshRequest.md)
+ - [RegisterRequest](docs/RegisterRequest.md)
+ - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)
+ - [ResetPasswordRequest](docs/ResetPasswordRequest.md)
+ - [TwoFactorRequest](docs/TwoFactorRequest.md)
+ - [TwoFactorResponse](docs/TwoFactorResponse.md)
 
 
 ## Documentation For Authorization
 
-
-## Bearer
-
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+ All endpoints do not require authorization.
 

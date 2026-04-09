@@ -4,29 +4,31 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2PricingServiceDiscountListsCountGet**](DiscountListsApi.md#apiV2PricingServiceDiscountListsCountGet) | **GET** /api/v2/PricingService/DiscountLists/Count | 
-[**apiV2PricingServiceDiscountListsDiscountListIdDelete**](DiscountListsApi.md#apiV2PricingServiceDiscountListsDiscountListIdDelete) | **DELETE** /api/v2/PricingService/DiscountLists/{discountListId} | 
-[**apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet**](DiscountListsApi.md#apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/Count | 
-[**apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete**](DiscountListsApi.md#apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete) | **DELETE** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | 
-[**apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut**](DiscountListsApi.md#apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut) | **PUT** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | 
-[**apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet**](DiscountListsApi.md#apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts | 
-[**apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost**](DiscountListsApi.md#apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost) | **POST** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts | 
-[**apiV2PricingServiceDiscountListsDiscountListIdGet**](DiscountListsApi.md#apiV2PricingServiceDiscountListsDiscountListIdGet) | **GET** /api/v2/PricingService/DiscountLists/{discountListId} | 
-[**apiV2PricingServiceDiscountListsDiscountListIdPut**](DiscountListsApi.md#apiV2PricingServiceDiscountListsDiscountListIdPut) | **PUT** /api/v2/PricingService/DiscountLists/{discountListId} | 
-[**apiV2PricingServiceDiscountListsGet**](DiscountListsApi.md#apiV2PricingServiceDiscountListsGet) | **GET** /api/v2/PricingService/DiscountLists | 
-[**apiV2PricingServiceDiscountListsPost**](DiscountListsApi.md#apiV2PricingServiceDiscountListsPost) | **POST** /api/v2/PricingService/DiscountLists | 
-[**getDiscountListEntry**](DiscountListsApi.md#getDiscountListEntry) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | 
+[**createDiscountList**](DiscountListsApi.md#createDiscountList) | **POST** /api/v2/PricingService/DiscountLists | Creates a new discount list
+[**createDiscountListEntry**](DiscountListsApi.md#createDiscountListEntry) | **POST** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts | Creates a discount list entry
+[**deleteDiscountList**](DiscountListsApi.md#deleteDiscountList) | **DELETE** /api/v2/PricingService/DiscountLists/{discountListId} | Deletes a discount list
+[**deleteDiscountListEntry**](DiscountListsApi.md#deleteDiscountListEntry) | **DELETE** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | Deletes a discount list entry
+[**getDiscountList**](DiscountListsApi.md#getDiscountList) | **GET** /api/v2/PricingService/DiscountLists/{discountListId} | Gets a discount list by ID
+[**getDiscountListEntries**](DiscountListsApi.md#getDiscountListEntries) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts | Retrieves discounts in a discount list
+[**getDiscountListEntriesCount**](DiscountListsApi.md#getDiscountListEntriesCount) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/Count | Counts discounts in a discount list
+[**getDiscountListEntry**](DiscountListsApi.md#getDiscountListEntry) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | Gets a discount list entry by ID
+[**getDiscountLists**](DiscountListsApi.md#getDiscountLists) | **GET** /api/v2/PricingService/DiscountLists | Retrieves all discount lists
+[**getDiscountListsCount**](DiscountListsApi.md#getDiscountListsCount) | **GET** /api/v2/PricingService/DiscountLists/Count | Counts discount lists
+[**updateDiscountList**](DiscountListsApi.md#updateDiscountList) | **PUT** /api/v2/PricingService/DiscountLists/{discountListId} | Updates a discount list
+[**updateDiscountListEntry**](DiscountListsApi.md#updateDiscountListEntry) | **PUT** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | Updates a discount list entry
 
 
 
-## apiV2PricingServiceDiscountListsCountGet
+## createDiscountList
 
+Creates a new discount list
 
+Creates a new discount list for the current tenant.
 
 ### Example
 
 ```bash
- apiV2PricingServiceDiscountListsCountGet  tenantId=value  api-version=value x-api-version:value
+ createDiscountList  tenantId=value
 ```
 
 ### Parameters
@@ -35,371 +37,6 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**Int32Envelope**](Int32Envelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2PricingServiceDiscountListsDiscountListIdDelete
-
-
-
-### Example
-
-```bash
- apiV2PricingServiceDiscountListsDiscountListIdDelete  tenantId=value discountListId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **discountListId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet
-
-
-
-### Example
-
-```bash
- apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet  tenantId=value discountListId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **discountListId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**Int32Envelope**](Int32Envelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete
-
-
-
-### Example
-
-```bash
- apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete  tenantId=value discountListId=value discountListEntryId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **discountListId** | **string** |  | [default to null]
- **discountListEntryId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut
-
-
-
-### Example
-
-```bash
- apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut  tenantId=value discountListId=value discountListEntryId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **discountListId** | **string** |  | [default to null]
- **discountListEntryId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
- **discountUpdateDto** | [**DiscountUpdateDto**](DiscountUpdateDto.md) |  | [optional]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet
-
-
-
-### Example
-
-```bash
- apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet  tenantId=value discountListId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **discountListId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**DiscountDtoListEnvelope**](DiscountDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost
-
-
-
-### Example
-
-```bash
- apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost  tenantId=value discountListId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **discountListId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
- **discountCreateDto** | [**DiscountCreateDto**](DiscountCreateDto.md) |  | [optional]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2PricingServiceDiscountListsDiscountListIdGet
-
-
-
-### Example
-
-```bash
- apiV2PricingServiceDiscountListsDiscountListIdGet  tenantId=value discountListId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **discountListId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**DiscountListDtoEnvelope**](DiscountListDtoEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2PricingServiceDiscountListsDiscountListIdPut
-
-
-
-### Example
-
-```bash
- apiV2PricingServiceDiscountListsDiscountListIdPut  tenantId=value discountListId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **discountListId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
- **discountListUpdateDto** | [**DiscountListUpdateDto**](DiscountListUpdateDto.md) |  | [optional]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2PricingServiceDiscountListsGet
-
-
-
-### Example
-
-```bash
- apiV2PricingServiceDiscountListsGet  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**DiscountListDtoListEnvelope**](DiscountListDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2PricingServiceDiscountListsPost
-
-
-
-### Example
-
-```bash
- apiV2PricingServiceDiscountListsPost  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
  **discountListCreateDto** | [**DiscountListCreateDto**](DiscountListCreateDto.md) |  | [optional]
 
 ### Return type
@@ -408,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -418,14 +55,89 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## getDiscountListEntry
+## createDiscountListEntry
 
+Creates a discount list entry
 
+Creates a new discount entry in the specified discount list.
 
 ### Example
 
 ```bash
- getDiscountListEntry  tenantId=value discountListId=value discountListEntryId=value  api-version=value x-api-version:value
+ createDiscountListEntry  tenantId=value discountListId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **discountListId** | **string** |  | [default to null]
+ **discountCreateDto** | [**DiscountCreateDto**](DiscountCreateDto.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## deleteDiscountList
+
+Deletes a discount list
+
+Deletes the specified discount list.
+
+### Example
+
+```bash
+ deleteDiscountList  tenantId=value discountListId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **discountListId** | **string** |  | [default to null]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## deleteDiscountListEntry
+
+Deletes a discount list entry
+
+Deletes the specified discount entry from a discount list.
+
+### Example
+
+```bash
+ deleteDiscountListEntry  tenantId=value discountListId=value discountListEntryId=value
 ```
 
 ### Parameters
@@ -436,8 +148,151 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **discountListId** | **string** |  | [default to null]
  **discountListEntryId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getDiscountList
+
+Gets a discount list by ID
+
+Retrieves the details of a discount list using its unique identifier.
+
+### Example
+
+```bash
+ getDiscountList  tenantId=value discountListId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **discountListId** | **string** |  | [default to null]
+
+### Return type
+
+[**DiscountListDtoEnvelope**](DiscountListDtoEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getDiscountListEntries
+
+Retrieves discounts in a discount list
+
+Gets all discount entries for a specific discount list with OData support.
+
+### Example
+
+```bash
+ getDiscountListEntries  tenantId=value discountListId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **discountListId** | **string** |  | [default to null]
+
+### Return type
+
+[**DiscountDtoListEnvelope**](DiscountDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getDiscountListEntriesCount
+
+Counts discounts in a discount list
+
+Gets the count of discount entries for a specific discount list.
+
+### Example
+
+```bash
+ getDiscountListEntriesCount  tenantId=value discountListId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **discountListId** | **string** |  | [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getDiscountListEntry
+
+Gets a discount list entry by ID
+
+Retrieves a specific discount entry from a discount list.
+
+### Example
+
+```bash
+ getDiscountListEntry  tenantId=value discountListId=value discountListEntryId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **discountListId** | **string** |  | [default to null]
+ **discountListEntryId** | **string** |  | [default to null]
 
 ### Return type
 
@@ -445,11 +300,156 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getDiscountLists
+
+Retrieves all discount lists
+
+Gets all discount lists for the current tenant with OData support.
+
+### Example
+
+```bash
+ getDiscountLists  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**DiscountListDtoListEnvelope**](DiscountListDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getDiscountListsCount
+
+Counts discount lists
+
+Gets the count of discount lists for the current tenant.
+
+### Example
+
+```bash
+ getDiscountListsCount  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateDiscountList
+
+Updates a discount list
+
+Updates the specified discount list.
+
+### Example
+
+```bash
+ updateDiscountList  tenantId=value discountListId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **discountListId** | **string** |  | [default to null]
+ **discountListUpdateDto** | [**DiscountListUpdateDto**](DiscountListUpdateDto.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateDiscountListEntry
+
+Updates a discount list entry
+
+Updates the specified discount entry in a discount list.
+
+### Example
+
+```bash
+ updateDiscountListEntry  tenantId=value discountListId=value discountListEntryId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **discountListId** | **string** |  | [default to null]
+ **discountListEntryId** | **string** |  | [default to null]
+ **discountUpdateDto** | [**DiscountUpdateDto**](DiscountUpdateDto.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

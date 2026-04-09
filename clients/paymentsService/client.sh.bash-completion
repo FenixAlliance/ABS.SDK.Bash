@@ -69,25 +69,93 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2PaymentsServicePaymentsGet"]=1
-    operations["apiV2PaymentsServicePaymentsPaymentIdDelete"]=1
-    operations["apiV2PaymentsServicePaymentsPaymentIdDetailsGet"]=1
-    operations["apiV2PaymentsServicePaymentsPaymentIdGet"]=1
-    operations["apiV2PaymentsServicePaymentsPaymentIdPut"]=1
-    operations["apiV2PaymentsServicePaymentsPost"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["createPaymentMethodAsync"]=1
+    operations["deletePaymentMethodAsync"]=1
+    operations["getPaymentMethodDetailsAsync"]=1
+    operations["getPaymentMethodsAsync"]=1
+    operations["getPaymentMethodsCountAsync"]=1
+    operations["updatePaymentMethodAsync"]=1
+    operations["createPaymentModeAsync"]=1
+    operations["deletePaymentModeAsync"]=1
+    operations["getPaymentModeDetailsAsync"]=1
+    operations["getPaymentModesAsync"]=1
+    operations["getPaymentModesCountAsync"]=1
+    operations["updatePaymentModeAsync"]=1
+    operations["createPaymentTermAsync"]=1
+    operations["deletePaymentTermAsync"]=1
+    operations["getPaymentTermDetailsAsync"]=1
+    operations["getPaymentTermsAsync"]=1
+    operations["getPaymentTermsCountAsync"]=1
+    operations["updatePaymentTermAsync"]=1
+    operations["createPaymentAsync"]=1
+    operations["deletePaymentAsync"]=1
+    operations["getPaymentAsync"]=1
+    operations["getPaymentAsyncV2"]=1
+    operations["getPaymentsAsync"]=1
+    operations["updatePaymentAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2PaymentsServicePaymentsGet"]="tenantId= "
-    operation_parameters["apiV2PaymentsServicePaymentsPaymentIdDelete"]="paymentId= tenantId= "
-    operation_parameters["apiV2PaymentsServicePaymentsPaymentIdDetailsGet"]="paymentId= "
-    operation_parameters["apiV2PaymentsServicePaymentsPaymentIdGet"]="paymentId= "
-    operation_parameters["apiV2PaymentsServicePaymentsPaymentIdPut"]="paymentId= tenantId= "
-    operation_parameters["apiV2PaymentsServicePaymentsPost"]="tenantId= "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["createPaymentMethodAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deletePaymentMethodAsync"]="paymentMethodId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPaymentMethodDetailsAsync"]="paymentMethodId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPaymentMethodsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getPaymentMethodsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updatePaymentMethodAsync"]="paymentMethodId= tenantId= api-version= x-api-version: "
+    operation_parameters["createPaymentModeAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deletePaymentModeAsync"]="paymentModeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPaymentModeDetailsAsync"]="paymentModeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPaymentModesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getPaymentModesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updatePaymentModeAsync"]="paymentModeId= tenantId= api-version= x-api-version: "
+    operation_parameters["createPaymentTermAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deletePaymentTermAsync"]="paymentTermId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPaymentTermDetailsAsync"]="paymentTermId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPaymentTermsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getPaymentTermsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updatePaymentTermAsync"]="paymentTermId= tenantId= api-version= x-api-version: "
+    operation_parameters["createPaymentAsync"]="tenantId= "
+    operation_parameters["deletePaymentAsync"]="paymentId= tenantId= "
+    operation_parameters["getPaymentAsync"]="paymentId= "
+    operation_parameters["getPaymentAsyncV2"]="paymentId= "
+    operation_parameters["getPaymentsAsync"]="tenantId= "
+    operation_parameters["updatePaymentAsync"]="paymentId= tenantId= "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

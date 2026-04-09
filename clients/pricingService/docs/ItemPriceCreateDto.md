@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] [readonly] [default to null]
-**timestamp** | **string** |  | [optional] [readonly] [default to null]
+**id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **itemId** | **string** |  | [default to null]
 **unitId** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]

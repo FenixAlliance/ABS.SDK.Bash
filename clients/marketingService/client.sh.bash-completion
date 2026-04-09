@@ -69,111 +69,143 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2MarketingServiceEmailGroupsCountGet"]=1
-    operations["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete"]=1
-    operations["apiV2MarketingServiceEmailGroupsEmailgroupIdGet"]=1
-    operations["apiV2MarketingServiceEmailGroupsEmailgroupIdPut"]=1
-    operations["apiV2MarketingServiceEmailGroupsGet"]=1
-    operations["apiV2MarketingServiceEmailGroupsPost"]=1
-    operations["apiV2MarketingServiceEmailSignaturesCountGet"]=1
-    operations["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete"]=1
-    operations["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet"]=1
-    operations["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut"]=1
-    operations["apiV2MarketingServiceEmailSignaturesGet"]=1
-    operations["apiV2MarketingServiceEmailSignaturesPost"]=1
-    operations["apiV2MarketingServiceEmailTemplatesCountGet"]=1
-    operations["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete"]=1
-    operations["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet"]=1
-    operations["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut"]=1
-    operations["apiV2MarketingServiceEmailTemplatesGet"]=1
-    operations["apiV2MarketingServiceEmailTemplatesPost"]=1
-    operations["apiV2MarketingServiceMarketingCampaignsCountGet"]=1
-    operations["apiV2MarketingServiceMarketingCampaignsGet"]=1
-    operations["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete"]=1
-    operations["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet"]=1
-    operations["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut"]=1
-    operations["apiV2MarketingServiceMarketingCampaignsPost"]=1
-    operations["apiV2MarketingServiceMarketingListsCountGet"]=1
-    operations["apiV2MarketingServiceMarketingListsGet"]=1
-    operations["apiV2MarketingServiceMarketingListsMarketinglistIdDelete"]=1
-    operations["apiV2MarketingServiceMarketingListsMarketinglistIdGet"]=1
-    operations["apiV2MarketingServiceMarketingListsMarketinglistIdPut"]=1
-    operations["apiV2MarketingServiceMarketingListsPost"]=1
-    operations["apiV2MarketingServiceNewslettersCountGet"]=1
-    operations["apiV2MarketingServiceNewslettersGet"]=1
-    operations["apiV2MarketingServiceNewslettersNewsletterIdDelete"]=1
-    operations["apiV2MarketingServiceNewslettersNewsletterIdGet"]=1
-    operations["apiV2MarketingServiceNewslettersNewsletterIdPut"]=1
-    operations["apiV2MarketingServiceNewslettersPost"]=1
-    operations["apiV2MarketingServiceSocialMediaPostsCountGet"]=1
-    operations["apiV2MarketingServiceSocialMediaPostsGet"]=1
-    operations["apiV2MarketingServiceSocialMediaPostsPost"]=1
-    operations["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete"]=1
-    operations["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet"]=1
-    operations["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut"]=1
-    operations["apiV2MarketingServiceSocialPostBucketsCountGet"]=1
-    operations["apiV2MarketingServiceSocialPostBucketsGet"]=1
-    operations["apiV2MarketingServiceSocialPostBucketsPost"]=1
-    operations["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete"]=1
-    operations["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet"]=1
-    operations["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut"]=1
-    operations["apiV2MarketingServiceTrackingPixelsPixelIdGet"]=1
+    operations["createEmailGroupAsync"]=1
+    operations["deleteEmailGroupAsync"]=1
+    operations["getEmailGroupDetailsAsync"]=1
+    operations["getEmailGroupsCountAsync"]=1
+    operations["getEmailGroupsODataAsync"]=1
+    operations["updateEmailGroupAsync"]=1
+    operations["createEmailSignatureAsync"]=1
+    operations["deleteEmailSignatureAsync"]=1
+    operations["getEmailSignatureDetailsAsync"]=1
+    operations["getEmailSignaturesCountAsync"]=1
+    operations["getEmailSignaturesODataAsync"]=1
+    operations["updateEmailSignatureAsync"]=1
+    operations["createEmailTemplateAsync"]=1
+    operations["deleteEmailTemplateAsync"]=1
+    operations["getEmailTemplateDetailsAsync"]=1
+    operations["getEmailTemplatesCountAsync"]=1
+    operations["getEmailTemplatesODataAsync"]=1
+    operations["updateEmailTemplateAsync"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["createMarketingCampaignAsync"]=1
+    operations["deleteMarketingCampaignAsync"]=1
+    operations["getMarketingCampaignDetailsAsync"]=1
+    operations["getMarketingCampaignODataAsync"]=1
+    operations["getMarketingCampaignsCountAsync"]=1
+    operations["updateMarketingCampaignAsync"]=1
+    operations["createMarketingListAsync"]=1
+    operations["deleteMarketingListAsync"]=1
+    operations["getMarketingListDetailsAsync"]=1
+    operations["getMarketingListODataAsync"]=1
+    operations["getMarketingListsCountAsync"]=1
+    operations["updateMarketingListAsync"]=1
+    operations["createNewsletterAsync"]=1
+    operations["deleteNewsletterAsync"]=1
+    operations["getNewsletterDetailsAsync"]=1
+    operations["getNewsletterODataAsync"]=1
+    operations["getNewslettersCountAsync"]=1
+    operations["updateNewsletterAsync"]=1
+    operations["createSocialMediaPostAsync"]=1
+    operations["deleteSocialMediaPostAsync"]=1
+    operations["getSocialMediaPostDetailsAsync"]=1
+    operations["getSocialMediaPostsCountAsync"]=1
+    operations["getSocialMediaPostsODataAsync"]=1
+    operations["updateSocialMediaPostAsync"]=1
+    operations["createSocialPostBucketAsync"]=1
+    operations["deleteSocialPostBucketAsync"]=1
+    operations["getSocialPostBucketDetailsAsync"]=1
+    operations["getSocialPostBucketsCountAsync"]=1
+    operations["getSocialPostBucketsODataAsync"]=1
+    operations["updateSocialPostBucketAsync"]=1
+    operations["getTrackingPixelAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2MarketingServiceEmailGroupsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailGroupsEmailgroupIdDelete"]="emailgroupId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailGroupsEmailgroupIdGet"]="emailgroupId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailGroupsEmailgroupIdPut"]="emailgroupId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailGroupsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailGroupsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailSignaturesCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailSignaturesEmailsignatureIdDelete"]="emailsignatureId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailSignaturesEmailsignatureIdGet"]="emailsignatureId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailSignaturesEmailsignatureIdPut"]="emailsignatureId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailSignaturesGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailSignaturesPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailTemplatesCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailTemplatesEmailTemplateIdDelete"]="emailTemplateId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailTemplatesEmailTemplateIdGet"]="emailTemplateId= tenantId= emailTemplatesId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailTemplatesEmailTemplateIdPut"]="emailTemplateId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailTemplatesGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceEmailTemplatesPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceMarketingCampaignsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceMarketingCampaignsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdDelete"]="marketingcampaignId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdGet"]="marketingcampaignId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceMarketingCampaignsMarketingcampaignIdPut"]="marketingcampaignId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceMarketingCampaignsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceMarketingListsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceMarketingListsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceMarketingListsMarketinglistIdDelete"]="marketinglistId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceMarketingListsMarketinglistIdGet"]="marketinglistId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceMarketingListsMarketinglistIdPut"]="marketinglistId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceMarketingListsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceNewslettersCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceNewslettersGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceNewslettersNewsletterIdDelete"]="newsletterId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceNewslettersNewsletterIdGet"]="newsletterId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceNewslettersNewsletterIdPut"]="newsletterId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceNewslettersPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceSocialMediaPostsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceSocialMediaPostsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceSocialMediaPostsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdDelete"]="socialmediapostId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdGet"]="socialmediapostId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceSocialMediaPostsSocialmediapostIdPut"]="socialmediapostId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceSocialPostBucketsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceSocialPostBucketsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceSocialPostBucketsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdDelete"]="socialpostbucketId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdGet"]="socialpostbucketId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceSocialPostBucketsSocialpostbucketIdPut"]="socialpostbucketId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2MarketingServiceTrackingPixelsPixelIdGet"]="pixelId= api-version= x-api-version: "
+    operation_parameters["createEmailGroupAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteEmailGroupAsync"]="emailgroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["getEmailGroupDetailsAsync"]="emailgroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["getEmailGroupsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getEmailGroupsODataAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateEmailGroupAsync"]="emailgroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["createEmailSignatureAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteEmailSignatureAsync"]="emailsignatureId= tenantId= api-version= x-api-version: "
+    operation_parameters["getEmailSignatureDetailsAsync"]="emailsignatureId= tenantId= api-version= x-api-version: "
+    operation_parameters["getEmailSignaturesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getEmailSignaturesODataAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateEmailSignatureAsync"]="emailsignatureId= tenantId= api-version= x-api-version: "
+    operation_parameters["createEmailTemplateAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteEmailTemplateAsync"]="emailTemplateId= tenantId= api-version= x-api-version: "
+    operation_parameters["getEmailTemplateDetailsAsync"]="emailTemplateId= tenantId= api-version= x-api-version: "
+    operation_parameters["getEmailTemplatesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getEmailTemplatesODataAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateEmailTemplateAsync"]="emailTemplateId= tenantId= api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["createMarketingCampaignAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteMarketingCampaignAsync"]="marketingcampaignId= tenantId= api-version= x-api-version: "
+    operation_parameters["getMarketingCampaignDetailsAsync"]="marketingcampaignId= tenantId= api-version= x-api-version: "
+    operation_parameters["getMarketingCampaignODataAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getMarketingCampaignsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateMarketingCampaignAsync"]="marketingcampaignId= tenantId= api-version= x-api-version: "
+    operation_parameters["createMarketingListAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteMarketingListAsync"]="marketinglistId= tenantId= api-version= x-api-version: "
+    operation_parameters["getMarketingListDetailsAsync"]="marketinglistId= tenantId= api-version= x-api-version: "
+    operation_parameters["getMarketingListODataAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getMarketingListsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateMarketingListAsync"]="marketinglistId= tenantId= api-version= x-api-version: "
+    operation_parameters["createNewsletterAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteNewsletterAsync"]="newsletterId= tenantId= api-version= x-api-version: "
+    operation_parameters["getNewsletterDetailsAsync"]="newsletterId= tenantId= api-version= x-api-version: "
+    operation_parameters["getNewsletterODataAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getNewslettersCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateNewsletterAsync"]="newsletterId= tenantId= api-version= x-api-version: "
+    operation_parameters["createSocialMediaPostAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteSocialMediaPostAsync"]="socialmediapostId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSocialMediaPostDetailsAsync"]="socialmediapostId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSocialMediaPostsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getSocialMediaPostsODataAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateSocialMediaPostAsync"]="socialmediapostId= tenantId= api-version= x-api-version: "
+    operation_parameters["createSocialPostBucketAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteSocialPostBucketAsync"]="socialpostbucketId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSocialPostBucketDetailsAsync"]="socialpostbucketId= tenantId= api-version= x-api-version: "
+    operation_parameters["getSocialPostBucketsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getSocialPostBucketsODataAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateSocialPostBucketAsync"]="socialpostbucketId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTrackingPixelAsync"]="pixelId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

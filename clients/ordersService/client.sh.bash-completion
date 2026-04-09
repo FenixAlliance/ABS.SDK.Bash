@@ -69,45 +69,81 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2OrdersServiceOrdersCountGet"]=1
-    operations["apiV2OrdersServiceOrdersExtendedGet"]=1
-    operations["apiV2OrdersServiceOrdersOrderIdCalculatePut"]=1
-    operations["apiV2OrdersServiceOrdersOrderIdDelete"]=1
-    operations["apiV2OrdersServiceOrdersOrderIdLinesCountGet"]=1
-    operations["apiV2OrdersServiceOrdersOrderIdLinesGet"]=1
-    operations["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut"]=1
-    operations["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete"]=1
-    operations["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet"]=1
-    operations["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut"]=1
-    operations["apiV2OrdersServiceOrdersOrderIdLinesPost"]=1
-    operations["apiV2OrdersServiceOrdersOrderIdPut"]=1
-    operations["apiV2OrdersServiceOrdersPost"]=1
-    operations["apiV2OrdersServiceOrdersSubmitCartPost"]=1
-    operations["getOrderAsync"]=1
-    operations["getOrdersAsync"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["calculateOrder"]=1
+    operations["calculateOrderLine"]=1
+    operations["createOrder"]=1
+    operations["createOrderLine"]=1
+    operations["deleteOrder"]=1
+    operations["deleteOrderLine"]=1
+    operations["getExtendedOrders"]=1
+    operations["getOrder"]=1
+    operations["getOrderLine"]=1
+    operations["getOrderLines"]=1
+    operations["getOrderLinesCount"]=1
+    operations["getOrders"]=1
+    operations["getOrdersCount"]=1
+    operations["previewOrderEmailTemplate"]=1
+    operations["sendOrderEmail"]=1
+    operations["submitCart"]=1
+    operations["updateOrder"]=1
+    operations["updateOrderLine"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2OrdersServiceOrdersCountGet"]="tenantId= "
-    operation_parameters["apiV2OrdersServiceOrdersExtendedGet"]="tenantId= "
-    operation_parameters["apiV2OrdersServiceOrdersOrderIdCalculatePut"]="orderId= tenantId= "
-    operation_parameters["apiV2OrdersServiceOrdersOrderIdDelete"]="orderId= tenantId= "
-    operation_parameters["apiV2OrdersServiceOrdersOrderIdLinesCountGet"]="orderId= tenantId= "
-    operation_parameters["apiV2OrdersServiceOrdersOrderIdLinesGet"]="orderId= tenantId= itemId= "
-    operation_parameters["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut"]="orderId= orderLineId= tenantId= "
-    operation_parameters["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete"]="orderId= orderLineId= tenantId= "
-    operation_parameters["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet"]="orderId= orderLineId= tenantId= "
-    operation_parameters["apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut"]="orderId= orderLineId= tenantId= "
-    operation_parameters["apiV2OrdersServiceOrdersOrderIdLinesPost"]="orderId= tenantId= "
-    operation_parameters["apiV2OrdersServiceOrdersOrderIdPut"]="orderId= tenantId= "
-    operation_parameters["apiV2OrdersServiceOrdersPost"]="tenantId= "
-    operation_parameters["apiV2OrdersServiceOrdersSubmitCartPost"]="cartId= "
-    operation_parameters["getOrderAsync"]="orderId= tenantId= "
-    operation_parameters["getOrdersAsync"]="tenantId= "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["calculateOrder"]="orderId= tenantId= "
+    operation_parameters["calculateOrderLine"]="orderId= orderLineId= tenantId= "
+    operation_parameters["createOrder"]="tenantId= "
+    operation_parameters["createOrderLine"]="orderId= tenantId= "
+    operation_parameters["deleteOrder"]="orderId= tenantId= "
+    operation_parameters["deleteOrderLine"]="orderId= orderLineId= tenantId= "
+    operation_parameters["getExtendedOrders"]="tenantId= "
+    operation_parameters["getOrder"]="orderId= tenantId= "
+    operation_parameters["getOrderLine"]="orderId= orderLineId= tenantId= "
+    operation_parameters["getOrderLines"]="orderId= tenantId= itemId= "
+    operation_parameters["getOrderLinesCount"]="orderId= tenantId= "
+    operation_parameters["getOrders"]="tenantId= "
+    operation_parameters["getOrdersCount"]="tenantId= "
+    operation_parameters["previewOrderEmailTemplate"]="orderId= tenantId= "
+    operation_parameters["sendOrderEmail"]="orderId= tenantId= "
+    operation_parameters["submitCart"]="cartId= "
+    operation_parameters["updateOrder"]="orderId= tenantId= "
+    operation_parameters["updateOrderLine"]="orderId= orderLineId= tenantId= "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

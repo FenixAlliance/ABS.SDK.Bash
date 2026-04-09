@@ -297,47 +297,59 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2SupportServiceSupportEntitlementsCountGet[]" \
-            "apiV2SupportServiceSupportEntitlementsGet[]" \
-            "apiV2SupportServiceSupportEntitlementsPost[]" \
-            "apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete[]" \
-            "apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet[]" \
-            "apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut[]"             "apiV2SupportServiceSupportRequestAttachmentsCountGet[]" \
-            "apiV2SupportServiceSupportRequestAttachmentsGet[]" \
-            "apiV2SupportServiceSupportRequestAttachmentsPost[]" \
-            "apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete[]" \
-            "apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet[]" \
-            "apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut[]"             "apiV2SupportServiceSupportRequestsCountGet[]" \
-            "apiV2SupportServiceSupportRequestsGet[]" \
-            "apiV2SupportServiceSupportRequestsPost[]" \
-            "apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet[]" \
-            "apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet[]" \
-            "apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet[]" \
-            "apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost[]" \
-            "apiV2SupportServiceSupportRequestsSupportRequestIdDelete[]" \
-            "apiV2SupportServiceSupportRequestsSupportRequestIdGet[]" \
-            "apiV2SupportServiceSupportRequestsSupportRequestIdPut[]" \
-            "apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet[]"             "apiV2SupportServiceSupportTicketPrioritiesCountGet[]" \
-            "apiV2SupportServiceSupportTicketPrioritiesGet[]" \
-            "apiV2SupportServiceSupportTicketPrioritiesPost[]" \
-            "apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete[]" \
-            "apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet[]" \
-            "apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut[]"             "apiV2SupportServiceSupportTicketTypesCountGet[]" \
-            "apiV2SupportServiceSupportTicketTypesGet[]" \
-            "apiV2SupportServiceSupportTicketTypesPost[]" \
-            "apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete[]" \
-            "apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet[]" \
-            "apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut[]"             "apiV2SupportServiceSupportTicketsCountGet[]" \
-            "apiV2SupportServiceSupportTicketsGet[]" \
-            "apiV2SupportServiceSupportTicketsPost[]" \
-            "apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet[]" \
-            "apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost[]" \
-            "apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete[]" \
-            "apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet[]" \
-            "apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet[]" \
-            "apiV2SupportServiceSupportTicketsSupportTicketIdDelete[]" \
-            "apiV2SupportServiceSupportTicketsSupportTicketIdGet[]" \
-            "apiV2SupportServiceSupportTicketsSupportTicketIdPut[]" \
+            "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "createSupportEntitlementAsync[Create a new support entitlement]" \
+            "deleteSupportEntitlementAsync[Delete a support entitlement]" \
+            "getSupportEntitlementAsync[Retrieve a support entitlement by ID]" \
+            "getSupportEntitlementsAsync[Retrieve a list of support entitlements]" \
+            "getSupportEntitlementsCountAsync[Get the count of support entitlements]" \
+            "updateSupportEntitlementAsync[Update a support entitlement]"             "createSupportRequestAttachmentAsync[Create a new support request attachment]" \
+            "deleteSupportRequestAttachmentAsync[Delete a support request attachment]" \
+            "getSupportRequestAttachmentAsync[Retrieve a support request attachment by ID]" \
+            "getSupportRequestAttachmentsAsync[Retrieve a list of support request attachments]" \
+            "getSupportRequestAttachmentsCountAsync[Get the count of support request attachments]" \
+            "updateSupportRequestAttachmentAsync[Update a support request attachment]"             "createSupportRequestAsync[Create a new support request]" \
+            "deleteSupportRequestAsync[Delete a support request]" \
+            "getSupportRequestAsync[Retrieve a support request by ID]" \
+            "getSupportRequestAttachmentByRequest[Retrieve a specific attachment for a support request]" \
+            "getSupportRequestAttachmentsByRequest[Retrieve attachments for a support request]" \
+            "getSupportRequestAttachmentsCountByRequest[Get the count of attachments for a support request]" \
+            "getSupportRequestTicketsAsync[Retrieve tickets for a support request]" \
+            "getSupportRequestsAsync[Retrieve a list of support requests]" \
+            "getSupportRequestsCountAsync[Get the count of support requests]" \
+            "relateSupportRequestToAttachmentAsync[Add an attachment to a support request]" \
+            "updateSupportRequestAsync[Update a support request]"             "createSupportTicketPriorityAsync[Create a new support ticket priority]" \
+            "deleteSupportTicketPriorityAsync[Delete a support ticket priority]" \
+            "getSupportTicketPrioritiesAsync[Retrieve a list of support ticket priorities]" \
+            "getSupportTicketPrioritiesCountAsync[Get the count of support ticket priorities]" \
+            "getSupportTicketPriorityAsync[Retrieve a support ticket priority by ID]" \
+            "updateSupportTicketPriorityAsync[Update a support ticket priority]"             "createSupportTicketTypeAsync[Create a new support ticket type]" \
+            "deleteSupportTicketTypeAsync[Delete a support ticket type]" \
+            "getSupportTicketTypeAsync[Retrieve a support ticket type by ID]" \
+            "getSupportTicketTypesAsync[Retrieve a list of support ticket types]" \
+            "getSupportTicketTypesCountAsync[Get the count of support ticket types]" \
+            "updateSupportTicketTypeAsync[Update a support ticket type]"             "createSupportTicketAsync[Create a new support ticket]" \
+            "deleteSupportTicketAsync[Delete a support ticket]" \
+            "deleteSupportTicketConversationAsync[Delete a conversation from a support ticket]" \
+            "getSupportTicketAsync[Retrieve a support ticket by ID]" \
+            "getSupportTicketConversationAsync[Retrieve a specific conversation for a support ticket]" \
+            "getSupportTicketConversationMessagesAsync[Retrieve messages for a support ticket conversation]" \
+            "getSupportTicketConversationsAsync[Retrieve conversations for a support ticket]" \
+            "getSupportTicketsAsync[Retrieve a list of support tickets]" \
+            "getSupportTicketsCountAsync[Get the count of support tickets]" \
+            "relateSupportTicketToConversationAsync[Create a conversation for a support ticket]" \
+            "updateSupportTicketAsync[Update a support ticket]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -345,7 +357,92 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2SupportServiceSupportEntitlementsCountGet)
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createSupportEntitlementAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -354,25 +451,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportEntitlementsGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SupportServiceSupportEntitlementsPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete)
+      deleteSupportEntitlementAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportEntitlementId=:[PATH] "
@@ -382,16 +461,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "supportEntitlementId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut)
+      getSupportEntitlementAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportEntitlementId=:[PATH] "
@@ -401,7 +471,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestAttachmentsCountGet)
+      getSupportEntitlementsAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -410,7 +480,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestAttachmentsGet)
+      getSupportEntitlementsCountAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -419,7 +489,17 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestAttachmentsPost)
+      updateSupportEntitlementAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportEntitlementId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createSupportRequestAttachmentAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -428,7 +508,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete)
+      deleteSupportRequestAttachmentAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportRequestAttachmentId=:[PATH] "
@@ -438,16 +518,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "supportRequestAttachmentId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut)
+      getSupportRequestAttachmentAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportRequestAttachmentId=:[PATH] "
@@ -457,7 +528,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestsCountGet)
+      getSupportRequestAttachmentsAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -466,7 +537,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestsGet)
+      getSupportRequestAttachmentsCountAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -475,7 +546,17 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestsPost)
+      updateSupportRequestAttachmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportRequestAttachmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createSupportRequestAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -484,17 +565,38 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet)
+      deleteSupportRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSupportRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSupportRequestAttachmentByRequest)
         local -a _op_arguments
         _op_arguments=(
           "supportRequestId=:[PATH] "
 "attachmentId=:[PATH] "
-          "api-version=:[QUERY] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet)
+      getSupportRequestAttachmentsByRequest)
         local -a _op_arguments
         _op_arguments=(
           "supportRequestId=:[PATH] "
@@ -504,7 +606,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet)
+      getSupportRequestAttachmentsCountByRequest)
         local -a _op_arguments
         _op_arguments=(
           "supportRequestId=:[PATH] "
@@ -514,16 +616,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "supportRequestId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SupportServiceSupportRequestsSupportRequestIdDelete)
+      getSupportRequestTicketsAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportRequestId=:[PATH] "
@@ -533,36 +626,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportRequestsSupportRequestIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "supportRequestId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SupportServiceSupportRequestsSupportRequestIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "supportRequestId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "supportRequestId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SupportServiceSupportTicketPrioritiesCountGet)
+      getSupportRequestsAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -571,7 +635,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketPrioritiesGet)
+      getSupportRequestsCountAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -580,7 +644,27 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketPrioritiesPost)
+      relateSupportRequestToAttachmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateSupportRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createSupportTicketPriorityAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -589,7 +673,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete)
+      deleteSupportTicketPriorityAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportTicketPriorityId=:[PATH] "
@@ -599,16 +683,35 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet)
+      getSupportTicketPrioritiesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSupportTicketPrioritiesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSupportTicketPriorityAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportTicketPriorityId=:[PATH] "
-          "api-version=:[QUERY] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut)
+      updateSupportTicketPriorityAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportTicketPriorityId=:[PATH] "
@@ -618,7 +721,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketTypesCountGet)
+      createSupportTicketTypeAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -627,25 +730,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketTypesGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SupportServiceSupportTicketTypesPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete)
+      deleteSupportTicketTypeAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportTicketTypeId=:[PATH] "
@@ -655,16 +740,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "supportTicketTypeId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut)
+      getSupportTicketTypeAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportTicketTypeId=:[PATH] "
@@ -674,7 +750,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketsCountGet)
+      getSupportTicketTypesAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -683,7 +759,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketsGet)
+      getSupportTicketTypesCountAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -692,7 +768,17 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketsPost)
+      updateSupportTicketTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportTicketTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createSupportTicketAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -701,16 +787,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "supportTicketId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost)
+      deleteSupportTicketAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportTicketId=:[PATH] "
@@ -720,7 +797,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete)
+      deleteSupportTicketConversationAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportTicketId=:[PATH] "
@@ -731,29 +808,41 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet)
+      getSupportTicketAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportTicketId=:[PATH] "
-"supportTicketConversationId=:[PATH] "
-          "api-version=:[QUERY] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet)
+      getSupportTicketConversationAsync)
         local -a _op_arguments
         _op_arguments=(
-          "supportTicketConversationId=:[PATH] "
-"supportTicketId=:[PATH] "
-          "pageNumber=:[QUERY] "
+          "supportTicketId=:[PATH] "
+"supportTicketConversationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSupportTicketConversationMessagesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportTicketId=:[PATH] "
+"supportTicketConversationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"pageNumber=:[QUERY] "
 "pageSize=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketsSupportTicketIdDelete)
+      getSupportTicketConversationsAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportTicketId=:[PATH] "
@@ -763,16 +852,35 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketsSupportTicketIdGet)
+      getSupportTicketsAsync)
         local -a _op_arguments
         _op_arguments=(
-          "supportTicketId=:[PATH] "
-          "api-version=:[QUERY] "
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2SupportServiceSupportTicketsSupportTicketIdPut)
+      getSupportTicketsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      relateSupportTicketToConversationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportTicketId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateSupportTicketAsync)
         local -a _op_arguments
         _op_arguments=(
           "supportTicketId=:[PATH] "

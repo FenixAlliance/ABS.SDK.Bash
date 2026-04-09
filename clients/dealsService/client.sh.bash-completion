@@ -69,81 +69,115 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2DealsServiceDealUnitFlowsCountGet"]=1
-    operations["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete"]=1
-    operations["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet"]=1
-    operations["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut"]=1
-    operations["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet"]=1
-    operations["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete"]=1
-    operations["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet"]=1
-    operations["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut"]=1
-    operations["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet"]=1
-    operations["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost"]=1
-    operations["apiV2DealsServiceDealUnitFlowsGet"]=1
-    operations["apiV2DealsServiceDealUnitFlowsPost"]=1
-    operations["apiV2DealsServiceDealUnitsCountGet"]=1
-    operations["apiV2DealsServiceDealUnitsDealUnitIdCalculatePut"]=1
-    operations["apiV2DealsServiceDealUnitsDealUnitIdDelete"]=1
-    operations["apiV2DealsServiceDealUnitsDealUnitIdExtendedGet"]=1
-    operations["apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet"]=1
-    operations["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut"]=1
-    operations["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete"]=1
-    operations["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet"]=1
-    operations["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut"]=1
-    operations["apiV2DealsServiceDealUnitsDealUnitIdLinesGet"]=1
-    operations["apiV2DealsServiceDealUnitsDealUnitIdLinesPost"]=1
-    operations["apiV2DealsServiceDealUnitsDealUnitIdPut"]=1
-    operations["apiV2DealsServiceDealUnitsExtendedGet"]=1
-    operations["apiV2DealsServiceDealUnitsGet"]=1
-    operations["apiV2DealsServiceDealUnitsPost"]=1
+    operations["createDealUnitFlowAsync"]=1
+    operations["createDealUnitFlowStageAsync"]=1
+    operations["deleteDealUnitFlowAsync"]=1
+    operations["deleteDealUnitFlowStageAsync"]=1
+    operations["getDealUnitFlowAsync"]=1
+    operations["getDealUnitFlowStageAsync"]=1
+    operations["getDealUnitFlowStagesAsync"]=1
+    operations["getDealUnitFlowStagesCountAsync"]=1
+    operations["getDealUnitFlowsAsync"]=1
+    operations["getDealUnitFlowsCountAsync"]=1
+    operations["updateDealUnitFlowAsync"]=1
+    operations["updateDealUnitFlowStageAsync"]=1
+    operations["calculateDealUnitAsync"]=1
+    operations["calculateDealUnitLineAsync"]=1
+    operations["createDealUnitAsync"]=1
+    operations["createGetDealUnitLinesAsync"]=1
+    operations["deleteDealUnitAsync"]=1
+    operations["deleteDealUnitPriceAsync"]=1
     operations["getDealUnitAsync"]=1
-    operations["apiV2DealsServiceSalesLiteraturesExtendedGet"]=1
-    operations["apiV2DealsServiceSalesLiteraturesGet"]=1
-    operations["apiV2DealsServiceSalesLiteraturesPost"]=1
-    operations["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete"]=1
-    operations["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet"]=1
-    operations["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut"]=1
+    operations["getDealUnitLinesAsync"]=1
+    operations["getDealUnitLinesCountAsync"]=1
+    operations["getDealUnitPriceAsync"]=1
+    operations["getDealUnitsAsync"]=1
+    operations["getDealUnitsCountAsync"]=1
+    operations["getExtendedDealUnitAsync"]=1
+    operations["getExtendedDealUnitsAsync"]=1
+    operations["updateDealUnitAsync"]=1
+    operations["updateDealUnitPriceAsync"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["countSalesLiteraturesAsync"]=1
+    operations["createSalesLiteratureAsync"]=1
+    operations["deleteSalesLiteratureAsync"]=1
+    operations["getExtendedSalesLiteraturesAsync"]=1
+    operations["getSalesLiteratureAsync"]=1
+    operations["getSalesLiteraturesAsync"]=1
+    operations["updateSalesLiteratureAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2DealsServiceDealUnitFlowsCountGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdDelete"]="dealUnitFlowId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdGet"]="dealUnitFlowId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdPut"]="dealUnitFlowId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesCountGet"]="dealUnitFlowId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdDelete"]="dealUnitFlowId= dealUnitFlowStageId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdGet"]="dealUnitFlowId= dealUnitFlowStageId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesDealUnitFlowStageIdPut"]="dealUnitFlowId= dealUnitFlowStageId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesGet"]="dealUnitFlowId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceDealUnitFlowsDealUnitFlowIdStagesPost"]="dealUnitFlowId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceDealUnitFlowsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceDealUnitFlowsPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceDealUnitsCountGet"]="tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsDealUnitIdCalculatePut"]="dealUnitId= tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsDealUnitIdDelete"]="dealUnitId= tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsDealUnitIdExtendedGet"]="dealUnitId= tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsDealUnitIdLinesCountGet"]="dealUnitId= tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdCalculatePut"]="dealUnitId= dealUnitLineId= tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdDelete"]="dealUnitId= dealUnitLineId= tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdGet"]="dealUnitId= dealUnitLineId= tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsDealUnitIdLinesDealUnitLineIdPut"]="dealUnitId= dealUnitLineId= tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsDealUnitIdLinesGet"]="dealUnitId= tenantId= itemId= "
-    operation_parameters["apiV2DealsServiceDealUnitsDealUnitIdLinesPost"]="dealUnitId= tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsDealUnitIdPut"]="dealUnitId= tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsExtendedGet"]="tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsGet"]="tenantId= "
-    operation_parameters["apiV2DealsServiceDealUnitsPost"]="tenantId= "
+    operation_parameters["createDealUnitFlowAsync"]="tenantId= "
+    operation_parameters["createDealUnitFlowStageAsync"]="dealUnitFlowId= tenantId= "
+    operation_parameters["deleteDealUnitFlowAsync"]="dealUnitFlowId= tenantId= "
+    operation_parameters["deleteDealUnitFlowStageAsync"]="dealUnitFlowId= dealUnitFlowStageId= tenantId= "
+    operation_parameters["getDealUnitFlowAsync"]="dealUnitFlowId= tenantId= "
+    operation_parameters["getDealUnitFlowStageAsync"]="dealUnitFlowId= dealUnitFlowStageId= tenantId= "
+    operation_parameters["getDealUnitFlowStagesAsync"]="dealUnitFlowId= tenantId= "
+    operation_parameters["getDealUnitFlowStagesCountAsync"]="dealUnitFlowId= tenantId= "
+    operation_parameters["getDealUnitFlowsAsync"]="tenantId= "
+    operation_parameters["getDealUnitFlowsCountAsync"]="tenantId= "
+    operation_parameters["updateDealUnitFlowAsync"]="dealUnitFlowId= tenantId= "
+    operation_parameters["updateDealUnitFlowStageAsync"]="dealUnitFlowId= dealUnitFlowStageId= tenantId= "
+    operation_parameters["calculateDealUnitAsync"]="dealUnitId= tenantId= "
+    operation_parameters["calculateDealUnitLineAsync"]="dealUnitId= dealUnitLineId= tenantId= "
+    operation_parameters["createDealUnitAsync"]="tenantId= "
+    operation_parameters["createGetDealUnitLinesAsync"]="dealUnitId= tenantId= "
+    operation_parameters["deleteDealUnitAsync"]="dealUnitId= tenantId= "
+    operation_parameters["deleteDealUnitPriceAsync"]="dealUnitId= dealUnitLineId= tenantId= "
     operation_parameters["getDealUnitAsync"]="dealUnitId= tenantId= "
-    operation_parameters["apiV2DealsServiceSalesLiteraturesExtendedGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceSalesLiteraturesGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceSalesLiteraturesPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdDelete"]="salesLiteratureId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdGet"]="salesLiteratureId= api-version= x-api-version: "
-    operation_parameters["apiV2DealsServiceSalesLiteraturesSalesLiteratureIdPut"]="salesLiteratureId= tenantId= api-version= x-api-version: "
+    operation_parameters["getDealUnitLinesAsync"]="dealUnitId= tenantId= itemId= "
+    operation_parameters["getDealUnitLinesCountAsync"]="dealUnitId= tenantId= "
+    operation_parameters["getDealUnitPriceAsync"]="dealUnitId= dealUnitLineId= tenantId= "
+    operation_parameters["getDealUnitsAsync"]="tenantId= "
+    operation_parameters["getDealUnitsCountAsync"]="tenantId= "
+    operation_parameters["getExtendedDealUnitAsync"]="dealUnitId= tenantId= "
+    operation_parameters["getExtendedDealUnitsAsync"]="tenantId= "
+    operation_parameters["updateDealUnitAsync"]="dealUnitId= tenantId= "
+    operation_parameters["updateDealUnitPriceAsync"]="dealUnitId= dealUnitLineId= tenantId= "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["countSalesLiteraturesAsync"]="tenantId= "
+    operation_parameters["createSalesLiteratureAsync"]="tenantId= "
+    operation_parameters["deleteSalesLiteratureAsync"]="salesLiteratureId= tenantId= "
+    operation_parameters["getExtendedSalesLiteraturesAsync"]="tenantId= "
+    operation_parameters["getSalesLiteratureAsync"]="salesLiteratureId= tenantId= "
+    operation_parameters["getSalesLiteraturesAsync"]="tenantId= "
+    operation_parameters["updateSalesLiteratureAsync"]="salesLiteratureId= tenantId= "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

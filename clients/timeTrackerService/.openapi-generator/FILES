@@ -4,7 +4,15 @@ README.md
 _client.sh
 client.sh
 client.sh.bash-completion
+docs/AccessTokenResponse.md
 docs/ErrorEnvelope.md
+docs/FenixAllianceABPWebApi.md
+docs/ForgotPasswordRequest.md
+docs/HttpValidationProblemDetails.md
+docs/InfoRequest.md
+docs/InfoResponse.md
+docs/Int32Envelope.md
+docs/LoginRequest.md
 docs/ProjectHoursApprovalApproverUpdateDto.md
 docs/ProjectHoursApprovalCreateDto.md
 docs/ProjectHoursApprovalStatusUpdateDto.md
@@ -14,4 +22,10 @@ docs/ProjectTimeLogDtoEnvelope.md
 docs/ProjectTimeLogDtoListEnvelope.md
 docs/ProjectTimeLogUpdateDto.md
 docs/ProjectTimeLogsApi.md
+docs/RefreshRequest.md
+docs/RegisterRequest.md
+docs/ResendConfirmationEmailRequest.md
+docs/ResetPasswordRequest.md
 docs/TimeLogApprovalsApi.md
+docs/TwoFactorRequest.md
+docs/TwoFactorResponse.md

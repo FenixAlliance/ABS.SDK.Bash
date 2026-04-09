@@ -1,0 +1,603 @@
+#  completion                               -*- shell-script -*-
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !
+# ! Note:
+# !
+# ! THIS SCRIPT HAS BEEN AUTOMATICALLY GENERATED USING
+# ! openapi-generator (https://openapi-generator.tech)
+# ! FROM OPENAPI SPECIFICATION IN JSON.
+# !
+# ! Generator version: 7.9.0
+# !
+# !
+# ! System wide installation:
+# !
+# ! $ sudo cp .bash-completion /etc/bash-completion.d/
+# !
+# !
+# ! User home installation (add this line to .bash_profile):
+# !
+# ! [ -r ~/.bash-completion ] && source ~/.bash-completion
+# !
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+declare -A mime_type_abbreviations
+# text/*
+mime_type_abbreviations["text"]="text/plain"
+mime_type_abbreviations["html"]="text/html"
+mime_type_abbreviations["md"]="text/x-markdown"
+mime_type_abbreviations["csv"]="text/csv"
+mime_type_abbreviations["css"]="text/css"
+mime_type_abbreviations["rtf"]="text/rtf"
+# application/*
+mime_type_abbreviations["json"]="application/json"
+mime_type_abbreviations["xml"]="application/xml"
+mime_type_abbreviations["yaml"]="application/yaml"
+mime_type_abbreviations["js"]="application/javascript"
+mime_type_abbreviations["bin"]="application/octet-stream"
+mime_type_abbreviations["rdf"]="application/rdf+xml"
+# image/*
+mime_type_abbreviations["jpg"]="image/jpeg"
+mime_type_abbreviations["png"]="image/png"
+mime_type_abbreviations["gif"]="image/gif"
+mime_type_abbreviations["bmp"]="image/bmp"
+mime_type_abbreviations["tiff"]="image/tiff"
+
+
+#
+# Check if this is OSX, if so defined custom init_completion
+#
+if [[ `uname` =~ "Darwin" ]]; then
+    __osx_init_completion()
+    {
+        COMPREPLY=()
+        _get_comp_words_by_ref cur prev words cword
+    }
+fi
+
+_()
+{
+    local cur
+    local prev
+    local words
+    local cword
+
+    # The reference of currently selected REST operation
+    local operation=""
+
+    # The list of available operation in the REST service
+    # It's modelled as an associative array for efficient key lookup
+    declare -A operations
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["createItemAttachmentAsync"]=1
+    operations["deleteItemAttachmentAsync"]=1
+    operations["getItemAttachmentByIdAsync"]=1
+    operations["getItemAttachmentsAsync"]=1
+    operations["updateItemAttachmentAsync"]=1
+    operations["countItemAttributesAsync"]=1
+    operations["createItemAttributeAsync"]=1
+    operations["deleteItemAttributeAsync"]=1
+    operations["getItemAttributeByIdAsync"]=1
+    operations["getItemAttributesAsync"]=1
+    operations["updateItemAttributeAsync"]=1
+    operations["createItemBrandAsync"]=1
+    operations["deleteItemBrandAsync"]=1
+    operations["getItemBrandByIdAsync"]=1
+    operations["getItemBrandsAsync"]=1
+    operations["updateItemBrandAsync"]=1
+    operations["countItemCategoriesAsync"]=1
+    operations["createItemCategoryAsync"]=1
+    operations["deleteItemCategoryAsync"]=1
+    operations["getItemCategoriesAsync"]=1
+    operations["getItemCategoryByIdAsync"]=1
+    operations["updateItemCategoryAsync"]=1
+    operations["getAllItemGoogleCategoriesAsync"]=1
+    operations["getChildrenItemGoogleCategoriesByIdAsync"]=1
+    operations["getItemGoogleCategoriesAsync"]=1
+    operations["getItemGoogleCategoriesCountAsync"]=1
+    operations["getItemGoogleCategoriesTreeAsync"]=1
+    operations["getItemGoogleCategoryByIdAsync"]=1
+    operations["getRootItemGoogleCategoriesAsync"]=1
+    operations["mapItemGoogleCategoriesTreeAsync"]=1
+    operations["createItemImageAsync"]=1
+    operations["deleteItemImageAsync"]=1
+    operations["getItemImageByIdAsync"]=1
+    operations["getItemImagesAsync"]=1
+    operations["updateItemImageAsync"]=1
+    operations["createItemQuestionAsync"]=1
+    operations["deleteItemQuestionAsync"]=1
+    operations["getItemQuestionByIdAsync"]=1
+    operations["getItemQuestionsAsync"]=1
+    operations["updateItemQuestionAsync"]=1
+    operations["countItemRefundPoliciesAsync"]=1
+    operations["getItemRefundPoliciesAsync"]=1
+    operations["getItemRefundPolicyByIdAsync"]=1
+    operations["relateItemToRefundPolicyAsync"]=1
+    operations["removeRefundPolicyFromItemAsync"]=1
+    operations["countItemReturnPoliciesAsync"]=1
+    operations["getItemReturnPoliciesAsync"]=1
+    operations["getItemReturnPolicyByIdAsync"]=1
+    operations["relateItemToReturnPolicyAsync"]=1
+    operations["removeReturnPolicyFromItemAsync"]=1
+    operations["createItemReviewAsync"]=1
+    operations["deleteItemReviewAsync"]=1
+    operations["getItemReviewByIdAsync"]=1
+    operations["getItemReviewsAsync"]=1
+    operations["updateItemReviewAsync"]=1
+    operations["countItemShippingPoliciesAsync"]=1
+    operations["getItemShippingPoliciesAsync"]=1
+    operations["getItemShippingPolicyByIdAsync"]=1
+    operations["relateItemToShippingPolicyAsync"]=1
+    operations["removeShippingPolicyFromItemAsync"]=1
+    operations["createItemTagAsync"]=1
+    operations["deleteItemTagAsync"]=1
+    operations["getItemTagByIdAsync"]=1
+    operations["getItemTagsAsync"]=1
+    operations["updateItemTagAsync"]=1
+    operations["countItemTaxPoliciesAsync"]=1
+    operations["getItemTaxPoliciesAsync"]=1
+    operations["getItemTaxPolicyByIdAsync"]=1
+    operations["relateItemToTaxPolicyAsync"]=1
+    operations["removeTaxPolicyFromItemAsync"]=1
+    operations["countItemTypesAsync"]=1
+    operations["createItemTypeAsync"]=1
+    operations["deleteItemTypeAsync"]=1
+    operations["getItemTypeByIdAsync"]=1
+    operations["getItemTypesAsync"]=1
+    operations["updateItemTypeAsync"]=1
+    operations["countItemWarrantyPoliciesAsync"]=1
+    operations["getItemWarrantyPoliciesAsync"]=1
+    operations["getItemWarrantyPolicyByIdAsync"]=1
+    operations["relateItemToWarrantyPolicyAsync"]=1
+    operations["removeWarrantyPolicyFromItemAsync"]=1
+    operations["countStockItemTagsByItemId"]=1
+    operations["countStockItemsByBusiness"]=1
+    operations["createStockItem"]=1
+    operations["deleteStockItem"]=1
+    operations["getExtendedStockItemById"]=1
+    operations["getProductPrimaryImageAsync"]=1
+    operations["getStockItemAttachmentById"]=1
+    operations["getStockItemAttachmentsByItemId"]=1
+    operations["getStockItemAttributeOptionById"]=1
+    operations["getStockItemAttributeOptionsByItemId"]=1
+    operations["getStockItemBrandById"]=1
+    operations["getStockItemBrandsByItemId"]=1
+    operations["getStockItemById"]=1
+    operations["getStockItemCategoriesByItemId"]=1
+    operations["getStockItemCategoryById"]=1
+    operations["getStockItemGoogleCategoriesByItemId"]=1
+    operations["getStockItemGoogleCategoryById"]=1
+    operations["getStockItemImageById"]=1
+    operations["getStockItemImagesByItemId"]=1
+    operations["getStockItemPriceRuleById"]=1
+    operations["getStockItemPriceRulesByItemId"]=1
+    operations["getStockItemQuestionById"]=1
+    operations["getStockItemQuestionsByItemId"]=1
+    operations["getStockItemRefundPoliciesByItemId"]=1
+    operations["getStockItemRefundPolicyById"]=1
+    operations["getStockItemReturnPoliciesByItemId"]=1
+    operations["getStockItemReturnPolicyById"]=1
+    operations["getStockItemReviewById"]=1
+    operations["getStockItemReviewsByItemId"]=1
+    operations["getStockItemShippingPoliciesByItemId"]=1
+    operations["getStockItemShippingPolicyById"]=1
+    operations["getStockItemTagById"]=1
+    operations["getStockItemTagsByItemId"]=1
+    operations["getStockItemTaxPoliciesByItemId"]=1
+    operations["getStockItemTaxPolicyById"]=1
+    operations["getStockItemTypeById"]=1
+    operations["getStockItemTypesByItemId"]=1
+    operations["getStockItemWarrantyPoliciesByItemId"]=1
+    operations["getStockItemWarrantyPolicyById"]=1
+    operations["getStockItemsOdataMaxPrice"]=1
+    operations["getStockItemsOdataMinPrice"]=1
+    operations["getStockItemsQuery"]=1
+    operations["relateAttachmentToStockItem"]=1
+    operations["relateAttributeOptionToStockItem"]=1
+    operations["relateBrandToStockItem"]=1
+    operations["relateCategoryToStockItem"]=1
+    operations["relateGoogleCategoryToStockItem"]=1
+    operations["relateImageToStockItem"]=1
+    operations["relatePriceRuleToStockItem"]=1
+    operations["relateQuestionToStockItem"]=1
+    operations["relateRefundPolicyToStockItem"]=1
+    operations["relateReturnPolicyToStockItem"]=1
+    operations["relateReviewToStockItem"]=1
+    operations["relateShippingPolicyToStockItem"]=1
+    operations["relateTagToStockItem"]=1
+    operations["relateTaxPolicyToStockItem"]=1
+    operations["relateTypeToStockItem"]=1
+    operations["relateWarrantyPolicyToStockItem"]=1
+    operations["removeAttachmentFromStockItem"]=1
+    operations["removeAttributeOptionFromStockItem"]=1
+    operations["removeBrandFromStockItem"]=1
+    operations["removeCategoryFromStockItem"]=1
+    operations["removeGoogleCategoryFromStockItem"]=1
+    operations["removeImageFromStockItem"]=1
+    operations["removePriceRuleFromStockItem"]=1
+    operations["removeQuestionFromStockItem"]=1
+    operations["removeRefundPolicyFromStockItem"]=1
+    operations["removeReturnPolicyFromStockItem"]=1
+    operations["removeReviewFromStockItem"]=1
+    operations["removeShippingPolicyFromStockItem"]=1
+    operations["removeTagFromStockItem"]=1
+    operations["removeTaxPolicyFromStockItem"]=1
+    operations["removeTypeFromStockItem"]=1
+    operations["removeWarrantyPolicyFromStockItem"]=1
+    operations["updateProductPrimaryImageAsync"]=1
+    operations["updateStockItem"]=1
+    operations["getMerchantById"]=1
+    operations["getMerchants"]=1
+    operations["getMerchantsCount"]=1
+    operations["createPricingRule"]=1
+    operations["deletePricingRule"]=1
+    operations["getPricingRuleById"]=1
+    operations["getPricingRules"]=1
+    operations["updatePricingRule"]=1
+
+    # An associative array of operations to their parameters
+    # Only include path, query and header parameters
+    declare -A operation_parameters
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["createItemAttachmentAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemAttachmentAsync"]="itemAttachmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemAttachmentByIdAsync"]="itemAttachmentId= api-version= x-api-version: "
+    operation_parameters["getItemAttachmentsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateItemAttachmentAsync"]="itemAttachmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["countItemAttributesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createItemAttributeAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemAttributeAsync"]="itemAttributeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemAttributeByIdAsync"]="itemAttributeId= api-version= x-api-version: "
+    operation_parameters["getItemAttributesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateItemAttributeAsync"]="itemAttributeId= tenantId= api-version= x-api-version: "
+    operation_parameters["createItemBrandAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemBrandAsync"]="itemBrandId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemBrandByIdAsync"]="itemBrandId= api-version= x-api-version: "
+    operation_parameters["getItemBrandsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateItemBrandAsync"]="itemBrandId= tenantId= api-version= x-api-version: "
+    operation_parameters["countItemCategoriesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createItemCategoryAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemCategoryAsync"]="itemCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemCategoriesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getItemCategoryByIdAsync"]="itemCategoryId= api-version= x-api-version: "
+    operation_parameters["updateItemCategoryAsync"]="itemCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAllItemGoogleCategoriesAsync"]="api-version= x-api-version: "
+    operation_parameters["getChildrenItemGoogleCategoriesByIdAsync"]="itemCategoryId= api-version= x-api-version: "
+    operation_parameters["getItemGoogleCategoriesAsync"]="api-version= x-api-version: "
+    operation_parameters["getItemGoogleCategoriesCountAsync"]="api-version= x-api-version: "
+    operation_parameters["getItemGoogleCategoriesTreeAsync"]="api-version= x-api-version: "
+    operation_parameters["getItemGoogleCategoryByIdAsync"]="itemCategoryId= api-version= x-api-version: "
+    operation_parameters["getRootItemGoogleCategoriesAsync"]="api-version= x-api-version: "
+    operation_parameters["mapItemGoogleCategoriesTreeAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createItemImageAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemImageAsync"]="itemImageId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemImageByIdAsync"]="itemImageId= api-version= x-api-version: "
+    operation_parameters["getItemImagesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateItemImageAsync"]="itemImageId= tenantId= api-version= x-api-version: "
+    operation_parameters["createItemQuestionAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemQuestionAsync"]="itemQuestionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemQuestionByIdAsync"]="itemQuestionId= api-version= x-api-version: "
+    operation_parameters["getItemQuestionsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateItemQuestionAsync"]="itemQuestionId= tenantId= api-version= x-api-version: "
+    operation_parameters["countItemRefundPoliciesAsync"]="itemId= api-version= x-api-version: "
+    operation_parameters["getItemRefundPoliciesAsync"]="itemId= api-version= x-api-version: "
+    operation_parameters["getItemRefundPolicyByIdAsync"]="itemRefundPolicyId= itemId= api-version= x-api-version: "
+    operation_parameters["relateItemToRefundPolicyAsync"]="tenantId= itemId= refundPolicyId= api-version= x-api-version: "
+    operation_parameters["removeRefundPolicyFromItemAsync"]="itemRefundPolicyId= tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["countItemReturnPoliciesAsync"]="itemId= api-version= x-api-version: "
+    operation_parameters["getItemReturnPoliciesAsync"]="itemId= api-version= x-api-version: "
+    operation_parameters["getItemReturnPolicyByIdAsync"]="itemReturnPolicyId= itemId= api-version= x-api-version: "
+    operation_parameters["relateItemToReturnPolicyAsync"]="tenantId= itemId= returnPolicyId= api-version= x-api-version: "
+    operation_parameters["removeReturnPolicyFromItemAsync"]="itemReturnPolicyId= tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["createItemReviewAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemReviewAsync"]="itemReviewId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemReviewByIdAsync"]="itemReviewId= api-version= x-api-version: "
+    operation_parameters["getItemReviewsAsync"]="itemId= api-version= x-api-version: "
+    operation_parameters["updateItemReviewAsync"]="itemReviewId= tenantId= api-version= x-api-version: "
+    operation_parameters["countItemShippingPoliciesAsync"]="itemId= api-version= x-api-version: "
+    operation_parameters["getItemShippingPoliciesAsync"]="itemId= api-version= x-api-version: "
+    operation_parameters["getItemShippingPolicyByIdAsync"]="itemShippingPolicyId= itemId= api-version= x-api-version: "
+    operation_parameters["relateItemToShippingPolicyAsync"]="tenantId= itemId= shippingPolicyId= api-version= x-api-version: "
+    operation_parameters["removeShippingPolicyFromItemAsync"]="itemShippingPolicyId= tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["createItemTagAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemTagAsync"]="itemTagId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemTagByIdAsync"]="itemTagId= api-version= x-api-version: "
+    operation_parameters["getItemTagsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateItemTagAsync"]="itemTagId= tenantId= api-version= x-api-version: "
+    operation_parameters["countItemTaxPoliciesAsync"]="itemId= api-version= x-api-version: "
+    operation_parameters["getItemTaxPoliciesAsync"]="itemId= api-version= x-api-version: "
+    operation_parameters["getItemTaxPolicyByIdAsync"]="itemTaxPolicyId= itemId= api-version= x-api-version: "
+    operation_parameters["relateItemToTaxPolicyAsync"]="tenantId= itemId= taxPolicyId= api-version= x-api-version: "
+    operation_parameters["removeTaxPolicyFromItemAsync"]="itemTaxPolicyId= tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["countItemTypesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createItemTypeAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemTypeAsync"]="itemTypeID= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemTypeByIdAsync"]="itemTypeID= api-version= x-api-version: "
+    operation_parameters["getItemTypesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateItemTypeAsync"]="itemTypeID= tenantId= api-version= x-api-version: "
+    operation_parameters["countItemWarrantyPoliciesAsync"]="itemId= api-version= x-api-version: "
+    operation_parameters["getItemWarrantyPoliciesAsync"]="itemId= api-version= x-api-version: "
+    operation_parameters["getItemWarrantyPolicyByIdAsync"]="itemWarrantyPolicyId= itemId= api-version= x-api-version: "
+    operation_parameters["relateItemToWarrantyPolicyAsync"]="tenantId= itemId= warrantyPolicyId= api-version= x-api-version: "
+    operation_parameters["removeWarrantyPolicyFromItemAsync"]="itemWarrantyPolicyId= tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["countStockItemTagsByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["countStockItemsByBusiness"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createStockItem"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteStockItem"]="itemId= tenantId= api-version= x-api-version: "
+    operation_parameters["getExtendedStockItemById"]="itemId= api-version= x-api-version: "
+    operation_parameters["getProductPrimaryImageAsync"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemAttachmentById"]="itemId= itemAttachmentId= api-version= x-api-version: "
+    operation_parameters["getStockItemAttachmentsByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemAttributeOptionById"]="itemId= itemAttributeOptionId= api-version= x-api-version: "
+    operation_parameters["getStockItemAttributeOptionsByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemBrandById"]="itemId= itemBrandId= api-version= x-api-version: "
+    operation_parameters["getStockItemBrandsByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemById"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemCategoriesByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemCategoryById"]="itemId= itemCategoryId= api-version= x-api-version: "
+    operation_parameters["getStockItemGoogleCategoriesByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemGoogleCategoryById"]="itemId= itemGoogleCategoryId= api-version= x-api-version: "
+    operation_parameters["getStockItemImageById"]="itemId= itemImageId= api-version= x-api-version: "
+    operation_parameters["getStockItemImagesByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemPriceRuleById"]="itemId= itemPriceRuleId= api-version= x-api-version: "
+    operation_parameters["getStockItemPriceRulesByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemQuestionById"]="itemId= itemQuestionId= api-version= x-api-version: "
+    operation_parameters["getStockItemQuestionsByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemRefundPoliciesByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemRefundPolicyById"]="itemId= itemRefundPolicyId= api-version= x-api-version: "
+    operation_parameters["getStockItemReturnPoliciesByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemReturnPolicyById"]="itemId= itemReturnPolicyId= api-version= x-api-version: "
+    operation_parameters["getStockItemReviewById"]="itemId= itemReviewId= api-version= x-api-version: "
+    operation_parameters["getStockItemReviewsByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemShippingPoliciesByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemShippingPolicyById"]="itemId= itemShippingPolicyId= api-version= x-api-version: "
+    operation_parameters["getStockItemTagById"]="itemId= itemTagId= api-version= x-api-version: "
+    operation_parameters["getStockItemTagsByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemTaxPoliciesByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemTaxPolicyById"]="itemId= itemTaxPolicyId= api-version= x-api-version: "
+    operation_parameters["getStockItemTypeById"]="itemId= itemTypeId= api-version= x-api-version: "
+    operation_parameters["getStockItemTypesByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemWarrantyPoliciesByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemWarrantyPolicyById"]="itemId= itemWarrantyPolicyId= api-version= x-api-version: "
+    operation_parameters["getStockItemsOdataMaxPrice"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getStockItemsOdataMinPrice"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getStockItemsQuery"]="tenantId= api-version= x-api-version: "
+    operation_parameters["relateAttachmentToStockItem"]="itemId= itemAttachmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateAttributeOptionToStockItem"]="itemId= itemAttributeOptionId= api-version= x-api-version: "
+    operation_parameters["relateBrandToStockItem"]="itemId= itemBrandId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateCategoryToStockItem"]="itemId= itemCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateGoogleCategoryToStockItem"]="itemId= itemGoogleCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateImageToStockItem"]="itemId= itemImageId= tenantId= api-version= x-api-version: "
+    operation_parameters["relatePriceRuleToStockItem"]="itemId= itemPriceRuleId= api-version= x-api-version: "
+    operation_parameters["relateQuestionToStockItem"]="itemId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateRefundPolicyToStockItem"]="itemId= itemRefundPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateReturnPolicyToStockItem"]="itemId= itemReturnPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateReviewToStockItem"]="itemId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateShippingPolicyToStockItem"]="itemId= itemShippingPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateTagToStockItem"]="itemId= itemTagId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateTaxPolicyToStockItem"]="itemId= itemTaxPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateTypeToStockItem"]="itemId= itemTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateWarrantyPolicyToStockItem"]="itemId= itemWarrantyPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeAttachmentFromStockItem"]="itemId= itemAttachmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeAttributeOptionFromStockItem"]="itemId= itemAttributeOptionId= api-version= x-api-version: "
+    operation_parameters["removeBrandFromStockItem"]="itemId= itemBrandId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeCategoryFromStockItem"]="itemId= itemCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeGoogleCategoryFromStockItem"]="itemId= itemGoogleCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeImageFromStockItem"]="itemId= itemImageId= tenantId= api-version= x-api-version: "
+    operation_parameters["removePriceRuleFromStockItem"]="itemId= itemPriceRuleId= api-version= x-api-version: "
+    operation_parameters["removeQuestionFromStockItem"]="itemId= itemQuestionId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeRefundPolicyFromStockItem"]="itemId= itemRefundPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeReturnPolicyFromStockItem"]="itemId= itemReturnPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeReviewFromStockItem"]="itemId= itemReviewId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeShippingPolicyFromStockItem"]="itemId= itemShippingPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeTagFromStockItem"]="itemId= itemTagId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeTaxPolicyFromStockItem"]="itemId= itemTaxPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeTypeFromStockItem"]="itemId= itemTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["removeWarrantyPolicyFromStockItem"]="itemId= itemWarrantyPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateProductPrimaryImageAsync"]="itemId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateStockItem"]="itemId= tenantId= api-version= x-api-version: "
+    operation_parameters["getMerchantById"]="merchantId= api-version= x-api-version: "
+    operation_parameters["getMerchants"]="api-version= x-api-version: "
+    operation_parameters["getMerchantsCount"]="api-version= x-api-version: "
+    operation_parameters["createPricingRule"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deletePricingRule"]="pricingRuleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPricingRuleById"]="pricingRuleId= api-version= x-api-version: "
+    operation_parameters["getPricingRules"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updatePricingRule"]="tenantId= pricingRuleId= api-version= x-api-version: "
+
+    # An associative array of possible values for enum parameters
+    declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+
+    #
+    # Check if this is OSX and use special __osx_init_completion function
+    #
+    if [[ `uname` =~ "Darwin" ]]; then
+        __osx_init_completion || return
+    else
+        _init_completion -s || return
+    fi
+
+
+    # Check if operation is already in the command line provided
+    for word in "${words[@]}"; do
+        if [[ -n $word && ${operations[$word]} ]]; then
+            operation="${word}"
+        fi
+    done
+
+    if [[ -z $operation ]]; then
+        case $prev in
+            --ciphers|--connect-timeout|-C|--continue-at|-F|--form|--form-string|\
+            --ftp-account|--ftp-alternative-to-user|-P|--ftp-port|-H|--header|-h|\
+            --help|--hostpubmd5|--keepalive-time|--krb|--limit-rate|--local-port|\
+            --mail-from|--mail-rcpt|--max-filesize|--max-redirs|-m|--max-time|\
+            --pass|--proto|--proto-redir|--proxy-user|--proxy1.0|-Q|--quote|-r|\
+            --range|-X|--request|--retry|--retry-delay|--retry-max-time|\
+            --socks5-gssapi-service|-t|--telnet-option|--tftp-blksize|-z|\
+            --time-cond|--url|-u|--user|-A|--user-agent|-V|--version|-w|\
+            --write-out|--resolve|--tlsuser|--tlspassword|--about)
+                return
+                ;;
+            -K|--config|-b|--cookie|-c|--cookie-jar|-D|--dump-header|--egd-file|\
+            --key|--libcurl|-o|--output|--random-file|-T|--upload-file|--trace|\
+            --trace-ascii|--netrc-file)
+                _filedir
+                return
+                ;;
+            --cacert|-E|--cert)
+                _filedir '@(c?(e)rt|cer|pem|der)'
+                return
+                ;;
+            --capath)
+                _filedir -d
+                return
+                ;;
+            --cert-type|--key-type)
+                COMPREPLY=( $( compgen -W 'DER PEM ENG' -- "$cur" ) )
+                return
+                ;;
+            --crlfile)
+                _filedir crl
+                return
+                ;;
+            -d|--data|--data-ascii|--data-binary|--data-urlencode)
+                if [[ $cur == \@* ]]; then
+                    cur=${cur:1}
+                    _filedir
+                    COMPREPLY=( "${COMPREPLY[@]/#/@}" )
+                fi
+                return
+                ;;
+            --delegation)
+                COMPREPLY=( $( compgen -W 'none policy always' -- "$cur" ) )
+                return
+                ;;
+            --engine)
+                COMPREPLY=( $( compgen -W 'list' -- "$cur" ) )
+                return
+                ;;
+            --ftp-method)
+                COMPREPLY=( $( compgen -W 'multicwd nocwd singlecwd' -- "$cur" ) )
+                return
+                ;;
+            --ftp-ssl-ccc-mode)
+                COMPREPLY=( $( compgen -W 'active passive' -- "$cur" ) )
+                return
+                ;;
+            --interface)
+                _available_interfaces -a
+                return
+                ;;
+            -x|--proxy|--socks4|--socks4a|--socks5|--socks5-hostname)
+                _known_hosts_real
+                return
+                ;;
+            --pubkey)
+                _filedir pub
+                return
+                ;;
+            --stderr)
+                COMPREPLY=( $( compgen -W '-' -- "$cur" ) )
+                _filedir
+                return
+                ;;
+            --tlsauthtype)
+                COMPREPLY=( $( compgen -W 'SRP' -- "$cur" ) )
+                return
+                ;;
+            --host)
+                COMPREPLY=( $( compgen -W 'http:// https://' -- "$cur" ) )
+                return
+                ;;
+            -ct|--content-type|-ac|--accept)
+                COMPREPLY=( $( compgen -W '${!mime_type_abbreviations[*]}' -- "$cur" ) )
+                return
+                ;;
+        esac
+    fi
+
+    #
+    # Complete the server address based on ~/.ssh/known_hosts
+    # and ~/.ssh/config
+    #
+    local prefix=${COMP_WORDS[COMP_CWORD-2]}
+    local colon=${COMP_WORDS[COMP_CWORD-1]}
+    if [[ "$colon" == ":" && ( $prefix == "https" || $prefix == "http" ) ]]; then
+        COMPREPLY=()
+        local comp_ssh_hosts=`[[ -f ~/.ssh/known_hosts ]] && \
+                              ( cat ~/.ssh/known_hosts | \
+                              grep '^[a-zA-Z0-9]' | \
+                              cut -f 1 -d ' ' | \
+                              sed -e s/,.*//g | \
+                              grep -v ^# | \
+                              uniq | \
+                              grep -v "\[" ) ;
+                              [[ -f ~/.ssh/config ]] && \
+                              ( cat ~/.ssh/config | \
+                              grep "^Host " | \
+                              awk '{print $2}' )`
+        COMPREPLY=( $( compgen -P '//' -W '${comp_ssh_hosts}' -- "${cur:2}") )
+        return
+    fi
+
+    #
+    # Complete the  and cURL's arguments
+    #
+    if [[ $cur == -* ]]; then
+        COMPREPLY=( $( compgen -W '$(_parse_help curl) $(_parse_help $1)' -- "$cur" ) )
+        return
+    fi
+
+    #
+    # If the argument starts with a letter this could be either an operation
+    # or an operation parameter
+    # When $cur is empty, suggest the list of operations by default
+    #
+    if [[ $cur =~ ^[A-Za-z_0-9]* ]]; then
+        # If operation has not been yet selected, suggest the list of operations
+        # otherwise suggest arguments of this operation as declared in the
+        # OpenAPI specification
+        if [[ -z $operation ]]; then
+            COMPREPLY=( $(compgen -W '${!operations[*]}' -- ${cur}) )
+        else
+            COMPREPLY=( $(compgen -W '${operation_parameters[$operation]}' -- ${cur}) )
+            compopt -o nospace
+        fi
+        return
+    fi
+
+} &&
+complete -F _ 
+
+# ex: ts=4 sw=4 et filetype=sh

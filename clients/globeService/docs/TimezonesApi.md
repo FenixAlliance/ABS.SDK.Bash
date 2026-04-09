@@ -4,19 +4,22 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2GlobeServiceTimezonesGet**](TimezonesApi.md#apiV2GlobeServiceTimezonesGet) | **GET** /api/v2/GlobeService/Timezones | 
-[**apiV2GlobeServiceTimezonesTimeZoneIdGet**](TimezonesApi.md#apiV2GlobeServiceTimezonesTimeZoneIdGet) | **GET** /api/v2/GlobeService/Timezones/{timeZoneId} | 
+[**countTimezonesAsync**](TimezonesApi.md#countTimezonesAsync) | **GET** /api/v2/GlobeService/Timezones/Count | Count timezones
+[**getTimeZoneByIdAsync**](TimezonesApi.md#getTimeZoneByIdAsync) | **GET** /api/v2/GlobeService/Timezones/{timeZoneId} | Get timezone by ID
+[**getTimeZonesAsync**](TimezonesApi.md#getTimeZonesAsync) | **GET** /api/v2/GlobeService/Timezones | Get all timezones
 
 
 
-## apiV2GlobeServiceTimezonesGet
+## countTimezonesAsync
 
+Count timezones
 
+Returns the total number of supported timezones, with optional OData filtering.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceTimezonesGet  api-version=value x-api-version:value
+ countTimezonesAsync  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -29,11 +32,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TimezoneDtoListEnvelope**](TimezoneDtoListEnvelope.md)
+[**Int32Envelope**](Int32Envelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -43,14 +46,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2GlobeServiceTimezonesTimeZoneIdGet
+## getTimeZoneByIdAsync
 
+Get timezone by ID
 
+Retrieves a single timezone by its unique identifier.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceTimezonesTimeZoneIdGet timeZoneId=value  api-version=value x-api-version:value
+ getTimeZoneByIdAsync timeZoneId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -68,7 +73,43 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getTimeZonesAsync
+
+Get all timezones
+
+Retrieves the list of all supported timezones with optional OData pagination and filtering.
+
+### Example
+
+```bash
+ getTimeZonesAsync  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**TimezoneDtoListEnvelope**](TimezoneDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
 
 ### HTTP request headers
 

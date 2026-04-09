@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] [readonly] [default to null]
-**timestamp** | **string** |  | [optional] [readonly] [default to null]
+**id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **invoiceId** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]
 **emisorWalletId** | **string** |  | [optional] [default to null]
@@ -23,9 +23,9 @@ Name | Type | Description | Notes
 **referenceCode** | **string** |  | [optional] [default to null]
 **correlationCode** | **string** |  | [optional] [default to null]
 **lastUpdated** | **string** |  | [optional] [default to null]
-**onBehalfOf** | **integer** |  | [optional] [default to null]
-**paymentType** | **integer** |  | [optional] [default to null]
-**paymentStatus** | **integer** |  | [optional] [default to null]
+**onBehalfOf** | **string** |  | [optional] [default to null]
+**paymentType** | **string** |  | [optional] [default to null]
+**paymentStatus** | **string** |  | [optional] [default to null]
 **baseCost** | **float** |  | [optional] [default to null]
 **signature** | **string** |  | [optional] [default to null]
 **signatureMismatch** | **boolean** |  | [optional] [default to null]
@@ -58,7 +58,7 @@ Name | Type | Description | Notes
 **accountingEntryId** | **string** |  | [optional] [default to null]
 **paymentGatewayId** | **string** |  | [optional] [default to null]
 **bankAccountId** | **string** |  | [optional] [default to null]
-**enrolmentId** | **string** |  | [optional] [default to null]
+**enrollmentId** | **string** |  | [optional] [default to null]
 **bankId** | **string** |  | [optional] [default to null]
 **paymentTokenId** | **string** |  | [optional] [default to null]
 **emisorWalletAccountId** | **string** |  | [optional] [default to null]

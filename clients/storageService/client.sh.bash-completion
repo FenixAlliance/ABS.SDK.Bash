@@ -79,18 +79,31 @@ _()
     operations["updateUserAvatar"]=1
     operations["getBlobAsync"]=1
     operations["getBlobsAsync"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
     operations["createFileAsync"]=1
     operations["deleteFileAsync"]=1
     operations["downloadFileAsync"]=1
     operations["getFileAsync"]=1
     operations["getFilesAsync"]=1
     operations["updateFileAsync"]=1
-    operations["apiV2StorageServiceRadzenEditorUploadsIdPost"]=1
-    operations["apiV2StorageServiceRadzenEditorUploadsImagePost"]=1
-    operations["apiV2StorageServiceRadzenEditorUploadsMultiplePost"]=1
-    operations["apiV2StorageServiceRadzenEditorUploadsSinglePost"]=1
-    operations["apiV2StorageServiceRadzenEditorUploadsSpecificPost"]=1
-    operations["apiV2StorageServiceUploadsPost"]=1
+    operations["image"]=1
+    operations["multiple"]=1
+    operations["post"]=1
+    operations["single"]=1
+    operations["specific"]=1
+    operations["saveFileAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
@@ -105,18 +118,31 @@ _()
     operation_parameters["updateUserAvatar"]="api-version= x-api-version: "
     operation_parameters["getBlobAsync"]="tenantId= filePath= api-version= x-api-version: "
     operation_parameters["getBlobsAsync"]="tenantId= folderPath= browseFilter= filePrefix= recurse= maxResults= includeAttributes= api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
     operation_parameters["createFileAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteFileAsync"]="fileId= tenantId= api-version= x-api-version: "
     operation_parameters["downloadFileAsync"]="fileId= tenantId= api-version= x-api-version: "
     operation_parameters["getFileAsync"]="fileId= tenantId= api-version= x-api-version: "
     operation_parameters["getFilesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateFileAsync"]="fileId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2StorageServiceRadzenEditorUploadsIdPost"]="id= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2StorageServiceRadzenEditorUploadsImagePost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2StorageServiceRadzenEditorUploadsMultiplePost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2StorageServiceRadzenEditorUploadsSinglePost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2StorageServiceRadzenEditorUploadsSpecificPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2StorageServiceUploadsPost"]="tenantId= api-version= x-api-version: "
+    operation_parameters["image"]="tenantId= api-version= x-api-version: "
+    operation_parameters["multiple"]="tenantId= api-version= x-api-version: "
+    operation_parameters["post"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["single"]="tenantId= api-version= x-api-version: "
+    operation_parameters["specific"]="tenantId= api-version= x-api-version: "
+    operation_parameters["saveFileAsync"]="tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
@@ -138,6 +164,12 @@ _()
     operation_parameters_enum_values["getBlobsAsync::includeAttributes"]="true false"
     operation_parameters_enum_values["getBlobsAsync::recurse"]="true false"
     operation_parameters_enum_values["getBlobsAsync::includeAttributes"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

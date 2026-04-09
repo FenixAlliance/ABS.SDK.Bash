@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **percent** | **float** |  | [optional] [default to null]
 **itemId** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]
-**enrolmentId** | **string** |  | [optional] [default to null]
+**enrollmentId** | **string** |  | [optional] [default to null]
 **discountListId** | **string** |  | [optional] [default to null]
 **endQuantity** | **float** |  | [optional] [default to null]
 **beginQuantity** | **float** |  | [optional] [default to null]

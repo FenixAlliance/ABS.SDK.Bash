@@ -4,19 +4,21 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV3ForexServiceExchangeHistoryGet**](ExchangeVApi.md#apiV3ForexServiceExchangeHistoryGet) | **GET** /api/v3/ForexService/Exchange/History | 
-[**apiV3ForexServiceExchangeLatestGet**](ExchangeVApi.md#apiV3ForexServiceExchangeLatestGet) | **GET** /api/v3/ForexService/Exchange/Latest | 
+[**exchangeAmountHistoricalV3Async**](ExchangeVApi.md#exchangeAmountHistoricalV3Async) | **GET** /api/v3/ForexService/Exchange/History | Exchange currency at historical rates (v3)
+[**exchangeAmountV3Async**](ExchangeVApi.md#exchangeAmountV3Async) | **GET** /api/v3/ForexService/Exchange/Latest | Exchange currency at latest rates (v3)
 
 
 
-## apiV3ForexServiceExchangeHistoryGet
+## exchangeAmountHistoricalV3Async
 
+Exchange currency at historical rates (v3)
 
+Exchange an amount of money from one currency to another using exchange rates from a specific historical date. Returns the full ExchangeRate details.
 
 ### Example
 
 ```bash
- apiV3ForexServiceExchangeHistoryGet  amount=value  sourceCurrencyId=value  targetCurrencyId=value  date=value
+ exchangeAmountHistoricalV3Async  amount=value  sourceCurrencyId=value  targetCurrencyId=value  date=value
 ```
 
 ### Parameters
@@ -35,7 +37,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -45,14 +47,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV3ForexServiceExchangeLatestGet
+## exchangeAmountV3Async
 
+Exchange currency at latest rates (v3)
 
+Exchange an amount of money from one currency to another using the latest available exchange rates. Returns the full ExchangeRate details.
 
 ### Example
 
 ```bash
- apiV3ForexServiceExchangeLatestGet  amount=value  sourceCurrencyId=value  targetCurrencyId=value
+ exchangeAmountV3Async  amount=value  sourceCurrencyId=value  targetCurrencyId=value
 ```
 
 ### Parameters
@@ -70,7 +74,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

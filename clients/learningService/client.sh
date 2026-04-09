@@ -1,0 +1,16311 @@
+#!/usr/bin/env bash
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !
+# ! Note:
+# !
+# ! THIS SCRIPT HAS BEEN AUTOMATICALLY GENERATED USING
+# ! openapi-generator (https://openapi-generator.tech)
+# ! FROM OPENAPI SPECIFICATION IN JSON.
+# !
+# ! Generator version: 7.9.0
+# !
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+#
+# This is a Bash client for LearningService.
+#
+# LICENSE:
+# https://fenix-alliance.com.co/Legal/Policies/eula
+#
+# CONTACT:
+# support@fenix-alliance.com
+#
+# MORE INFORMATION:
+# 
+#
+
+# For improved pattern matching in case statements
+shopt -s extglob
+
+###############################################################################
+#
+# Make sure Bash is at least in version 4.3
+#
+###############################################################################
+if ! ( (("${BASH_VERSION:0:1}" == "4")) && (("${BASH_VERSION:2:1}" >= "3")) ) \
+  && ! (("${BASH_VERSION:0:1}" >= "5")); then
+    echo ""
+    echo "Sorry - your Bash version is ${BASH_VERSION}"
+    echo ""
+    echo "You need at least Bash 4.3 to run this script."
+    echo ""
+    exit 1
+fi
+
+###############################################################################
+#
+# Global variables
+#
+###############################################################################
+
+##
+# The filename of this script for help messages
+script_name=$(basename "$0")
+
+##
+# Map for headers passed after operation as KEY:VALUE
+declare -A header_arguments
+
+
+##
+# Map for operation parameters passed after operation as PARAMETER=VALUE
+# These will be mapped to appropriate path or query parameters
+# The values in operation_parameters are arrays, so that multiple values
+# can be provided for the same parameter if allowed by API specification
+declare -A operation_parameters
+
+##
+# Declare colors with autodetection if output is terminal
+if [ -t 1 ]; then
+    RED="$(tput setaf 1)"
+    GREEN="$(tput setaf 2)"
+    YELLOW="$(tput setaf 3)"
+    BLUE="$(tput setaf 4)"
+    MAGENTA="$(tput setaf 5)"
+    CYAN="$(tput setaf 6)"
+    WHITE="$(tput setaf 7)"
+    BOLD="$(tput bold)"
+    OFF="$(tput sgr0)"
+else
+    RED=""
+    GREEN=""
+    YELLOW=""
+    BLUE=""
+    MAGENTA=""
+    CYAN=""
+    WHITE=""
+    BOLD=""
+    OFF=""
+fi
+
+declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$MAGENTA" "$WHITE" )
+
+##
+# This array stores the minimum number of required occurrences for parameter
+# 0 - optional
+# 1 - required
+declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["createCourseArticleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseArticleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseArticleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseArticleAsync:::CourseArticleCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseArticleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseArticleAsync:::articleId"]=1
+operation_parameters_minimum_occurrences["deleteCourseArticleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseArticleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseArticleByIdAsync:::articleId"]=1
+operation_parameters_minimum_occurrences["getCourseArticleByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseArticleByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseArticlesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseArticlesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseArticlesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseArticlesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseArticlesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseArticlesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseArticleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseArticleAsync:::articleId"]=1
+operation_parameters_minimum_occurrences["updateCourseArticleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseArticleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseArticleAsync:::CourseArticleUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseAssignmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseAssignmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseAssignmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseAssignmentAsync:::CourseAssignmentCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseAssignmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseAssignmentAsync:::assignmentId"]=1
+operation_parameters_minimum_occurrences["deleteCourseAssignmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseAssignmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseAssignmentByIdAsync:::assignmentId"]=1
+operation_parameters_minimum_occurrences["getCourseAssignmentByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseAssignmentByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseAssignmentsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseAssignmentsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseAssignmentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseAssignmentsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseAssignmentsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseAssignmentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseAssignmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseAssignmentAsync:::assignmentId"]=1
+operation_parameters_minimum_occurrences["updateCourseAssignmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseAssignmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseAssignmentAsync:::CourseAssignmentUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseCategoryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseCategoryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseCategoryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseCategoryAsync:::CourseCategoryCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseCategoryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseCategoryAsync:::categoryId"]=1
+operation_parameters_minimum_occurrences["deleteCourseCategoryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseCategoryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCategoriesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseCategoriesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCategoriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCategoriesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseCategoriesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCategoriesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCategoryByIdAsync:::categoryId"]=1
+operation_parameters_minimum_occurrences["getCourseCategoryByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseCategoryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseCategoryAsync:::categoryId"]=1
+operation_parameters_minimum_occurrences["updateCourseCategoryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseCategoryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseCategoryAsync:::CourseCategoryUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseCertificateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseCertificateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseCertificateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseCertificateAsync:::CourseCompletionCertificateCreateDto"]=0
+operation_parameters_minimum_occurrences["createCourseCertificateTemplateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseCertificateTemplateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseCertificateTemplateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseCertificateTemplateAsync:::CourseCertificateTemplateCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseCertificateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseCertificateAsync:::courseCertificateId"]=1
+operation_parameters_minimum_occurrences["deleteCourseCertificateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseCertificateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseCertificateTemplateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseCertificateTemplateAsync:::courseCertificateTemplateId"]=1
+operation_parameters_minimum_occurrences["deleteCourseCertificateTemplateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseCertificateTemplateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCertificateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseCertificateAsync:::courseCertificateId"]=1
+operation_parameters_minimum_occurrences["getCourseCertificateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCertificateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCertificateTemplateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseCertificateTemplateAsync:::courseCertificateTemplateId"]=1
+operation_parameters_minimum_occurrences["getCourseCertificateTemplateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCertificateTemplateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCertificateTemplatesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseCertificateTemplatesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCertificateTemplatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCertificatesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseCertificatesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCertificatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCertificatesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseCertificatesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCertificatesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseCertificateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseCertificateAsync:::courseCertificateId"]=1
+operation_parameters_minimum_occurrences["updateCourseCertificateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseCertificateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseCertificateAsync:::CourseCompletionCertificateUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseCohortAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseCohortAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseCohortAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseCohortAsync:::CourseCohortCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseCohortAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseCohortAsync:::cohortId"]=1
+operation_parameters_minimum_occurrences["deleteCourseCohortAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseCohortAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCohortByIdAsync:::cohortId"]=1
+operation_parameters_minimum_occurrences["getCourseCohortByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCohortByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCohortsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseCohortsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCohortsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCohortsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseCohortsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCohortsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseCohortAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseCohortAsync:::cohortId"]=1
+operation_parameters_minimum_occurrences["updateCourseCohortAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseCohortAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseCohortAsync:::CourseCohortUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseEnrollmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseEnrollmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseEnrollmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseEnrollmentAsync:::CourseEnrollmentCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseEnrollmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseEnrollmentAsync:::courseEnrollmentId"]=1
+operation_parameters_minimum_occurrences["deleteCourseEnrollmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseEnrollmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseEnrollmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseEnrollmentAsync:::courseEnrollmentId"]=1
+operation_parameters_minimum_occurrences["getCourseEnrollmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseEnrollmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEnrollmentsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getEnrollmentsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEnrollmentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEnrollmentsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getEnrollmentsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEnrollmentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStudentCourseEnrollmentsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getStudentCourseEnrollmentsAsync:::studentProfileId"]=1
+operation_parameters_minimum_occurrences["getStudentCourseEnrollmentsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getStudentCourseEnrollmentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseEnrollmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseEnrollmentAsync:::courseEnrollmentId"]=1
+operation_parameters_minimum_occurrences["updateCourseEnrollmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseEnrollmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseEnrollmentAsync:::CourseEnrollmentUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseFileAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseFileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseFileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseFileAsync:::CourseFileCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseFileAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseFileAsync:::fileId"]=1
+operation_parameters_minimum_occurrences["deleteCourseFileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseFileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseFileByIdAsync:::fileId"]=1
+operation_parameters_minimum_occurrences["getCourseFileByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseFileByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseFilesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseFilesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseFilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseFilesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseFilesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseFilesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseFileAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseFileAsync:::fileId"]=1
+operation_parameters_minimum_occurrences["updateCourseFileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseFileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseFileAsync:::CourseFileUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseForumAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseForumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseForumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseForumAsync:::CourseForumCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseForumAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseForumAsync:::forumId"]=1
+operation_parameters_minimum_occurrences["deleteCourseForumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseForumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseForumByIdAsync:::forumId"]=1
+operation_parameters_minimum_occurrences["getCourseForumByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseForumByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseForumsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseForumsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseForumsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseForumsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseForumsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseForumsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseForumAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseForumAsync:::forumId"]=1
+operation_parameters_minimum_occurrences["updateCourseForumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseForumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseForumAsync:::CourseForumUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseHandoutAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseHandoutAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseHandoutAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseHandoutAsync:::CourseHandoutCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseHandoutAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseHandoutAsync:::handoutId"]=1
+operation_parameters_minimum_occurrences["deleteCourseHandoutAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseHandoutAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseHandoutByIdAsync:::handoutId"]=1
+operation_parameters_minimum_occurrences["getCourseHandoutByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseHandoutByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseHandoutsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseHandoutsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseHandoutsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseHandoutsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseHandoutsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseHandoutsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseHandoutAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseHandoutAsync:::handoutId"]=1
+operation_parameters_minimum_occurrences["updateCourseHandoutAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseHandoutAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseHandoutAsync:::CourseHandoutUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseLibraryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseLibraryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseLibraryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseLibraryAsync:::CourseLibraryCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseLibraryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseLibraryAsync:::libraryId"]=1
+operation_parameters_minimum_occurrences["deleteCourseLibraryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseLibraryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseLibrariesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseLibrariesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseLibrariesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseLibrariesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseLibrariesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseLibrariesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseLibraryByIdAsync:::libraryId"]=1
+operation_parameters_minimum_occurrences["getCourseLibraryByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseLibraryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseLibraryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseLibraryAsync:::libraryId"]=1
+operation_parameters_minimum_occurrences["updateCourseLibraryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseLibraryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseLibraryAsync:::CourseLibraryUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCoursePageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCoursePageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCoursePageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCoursePageAsync:::CoursePageCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCoursePageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCoursePageAsync:::pageId"]=1
+operation_parameters_minimum_occurrences["deleteCoursePageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCoursePageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCoursePageByIdAsync:::pageId"]=1
+operation_parameters_minimum_occurrences["getCoursePageByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCoursePageByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCoursePagesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCoursePagesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCoursePagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCoursePagesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCoursePagesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCoursePagesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCoursePageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCoursePageAsync:::pageId"]=1
+operation_parameters_minimum_occurrences["updateCoursePageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCoursePageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCoursePageAsync:::CoursePageUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseProblemSetAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseProblemSetAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseProblemSetAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseProblemSetAsync:::CourseProblemSetCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseProblemSetAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseProblemSetAsync:::problemSetId"]=1
+operation_parameters_minimum_occurrences["deleteCourseProblemSetAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseProblemSetAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseProblemSetByIdAsync:::problemSetId"]=1
+operation_parameters_minimum_occurrences["getCourseProblemSetByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseProblemSetByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseProblemSetsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseProblemSetsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseProblemSetsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseProblemSetsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseProblemSetsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseProblemSetsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseProblemSetAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseProblemSetAsync:::problemSetId"]=1
+operation_parameters_minimum_occurrences["updateCourseProblemSetAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseProblemSetAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseProblemSetAsync:::CourseProblemSetUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseSectionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseSectionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseSectionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseSectionAsync:::CourseSectionCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseSectionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseSectionAsync:::sectionId"]=1
+operation_parameters_minimum_occurrences["deleteCourseSectionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseSectionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseSectionByIdAsync:::sectionId"]=1
+operation_parameters_minimum_occurrences["getCourseSectionByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseSectionByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseSectionsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseSectionsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseSectionsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseSectionsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseSectionsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseSectionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseSectionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseSectionAsync:::sectionId"]=1
+operation_parameters_minimum_occurrences["updateCourseSectionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseSectionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseSectionAsync:::CourseSectionUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseUnitComponentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseUnitComponentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseUnitComponentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseUnitComponentAsync:::CourseUnitComponentCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseUnitComponentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseUnitComponentAsync:::componentId"]=1
+operation_parameters_minimum_occurrences["deleteCourseUnitComponentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseUnitComponentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitComponentByIdAsync:::componentId"]=1
+operation_parameters_minimum_occurrences["getCourseUnitComponentByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitComponentByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitComponentsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseUnitComponentsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitComponentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitComponentsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseUnitComponentsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitComponentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseUnitComponentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseUnitComponentAsync:::componentId"]=1
+operation_parameters_minimum_occurrences["updateCourseUnitComponentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseUnitComponentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseUnitComponentAsync:::CourseUnitComponentUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseUnitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseUnitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseUnitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseUnitAsync:::CourseUnitCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseUnitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseUnitAsync:::unitId"]=1
+operation_parameters_minimum_occurrences["deleteCourseUnitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseUnitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitByIdAsync:::unitId"]=1
+operation_parameters_minimum_occurrences["getCourseUnitByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseUnitsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseUnitsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseUnitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseUnitAsync:::unitId"]=1
+operation_parameters_minimum_occurrences["updateCourseUnitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseUnitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseUnitAsync:::CourseUnitUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseUpdateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseUpdateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseUpdateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseUpdateAsync:::CourseNewsCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseUpdateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseUpdateAsync:::updateId"]=1
+operation_parameters_minimum_occurrences["deleteCourseUpdateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseUpdateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUpdateByIdAsync:::updateId"]=1
+operation_parameters_minimum_occurrences["getCourseUpdateByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUpdateByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUpdatesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseUpdatesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUpdatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUpdatesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseUpdatesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUpdatesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseUpdateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseUpdateAsync:::updateId"]=1
+operation_parameters_minimum_occurrences["updateCourseUpdateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseUpdateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseUpdateAsync:::CourseNewsUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseWikiAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseWikiAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseWikiAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseWikiAsync:::CourseWikiCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseWikiAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseWikiAsync:::wikiId"]=1
+operation_parameters_minimum_occurrences["deleteCourseWikiAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseWikiAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseWikiByIdAsync:::wikiId"]=1
+operation_parameters_minimum_occurrences["getCourseWikiByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseWikiByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseWikisAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseWikisAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseWikisAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseWikisCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseWikisCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseWikisCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseWikiAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseWikiAsync:::wikiId"]=1
+operation_parameters_minimum_occurrences["updateCourseWikiAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseWikiAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseWikiAsync:::CourseWikiUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCourseAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCourseAsync:::CourseCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCourseAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["deleteCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseArticlesByCourseWikiAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseArticlesByCourseWikiAsync:::wikiId"]=1
+operation_parameters_minimum_occurrences["getCourseArticlesByCourseWikiAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseArticlesByCourseWikiAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseArticlesByCourseWikiCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseArticlesByCourseWikiCountAsync:::wikiId"]=1
+operation_parameters_minimum_occurrences["getCourseArticlesByCourseWikiCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseArticlesByCourseWikiCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseAssignmentsByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseAssignmentsByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseAssignmentsByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseAssignmentsByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseAssignmentsByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseAssignmentsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseByIdAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCategoriesByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseCategoriesByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCategoriesByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCategoriesByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseCategoriesByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCategoriesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCohortsByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseCohortsByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCohortsByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCohortsByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseCohortsByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseCohortsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseEnrollmentsByCourseAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCourseEnrollmentsByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseEnrollmentsByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseEnrollmentsByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseFilesByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseFilesByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseFilesByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseFilesByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseFilesByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseFilesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseForumsByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseForumsByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseForumsByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseForumsByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseForumsByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseForumsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseHandoutsByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseHandoutsByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseHandoutsByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseHandoutsByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseHandoutsByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseHandoutsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseLibrariesByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseLibrariesByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseLibrariesByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseLibrariesByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseLibrariesByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseLibrariesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCoursePagesByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCoursePagesByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCoursePagesByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCoursePagesByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCoursePagesByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCoursePagesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseProblemSetsByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseProblemSetsByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseProblemSetsByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseProblemSetsByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseProblemSetsByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseProblemSetsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseSectionsByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseSectionsByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseSectionsByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseSectionsByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseSectionsByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseSectionsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitComponentsByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseUnitComponentsByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitComponentsByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitComponentsByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseUnitComponentsByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitComponentsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitsBySectionAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseUnitsBySectionAsync:::sectionId"]=1
+operation_parameters_minimum_occurrences["getCourseUnitsBySectionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitsBySectionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitsBySectionCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseUnitsBySectionCountAsync:::sectionId"]=1
+operation_parameters_minimum_occurrences["getCourseUnitsBySectionCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUnitsBySectionCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUpdatesByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseUpdatesByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUpdatesByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUpdatesByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseUpdatesByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseUpdatesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseWikisByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseWikisByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseWikisByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCourseWikisByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getCourseWikisByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCourseWikisByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCoursesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCoursesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCoursesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCoursesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCoursesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCoursesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getInstructorProfilesByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getInstructorProfilesByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getInstructorProfilesByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getInstructorProfilesByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getInstructorProfilesByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getInstructorProfilesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStudentProfilesByCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getStudentProfilesByCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getStudentProfilesByCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStudentProfilesByCourseCountAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["getStudentProfilesByCourseCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getStudentProfilesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["updateCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCourseAsync:::CourseUpdateDto"]=0
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesCountGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesCountGet:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesCountGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesGet:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete:::instructorProfileId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::instructorProfileId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::instructorProfileId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::InstructorProfileUpdateDto"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesPost:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesPost:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesPost:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesPost:::InstructorProfileCreateDto"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesCountGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesCountGet:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesCountGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesGet:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesPost:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesPost:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesPost:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesPost:::StudentProfileCreateDto"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet:::studentProfileId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdDelete:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdDelete:::studentProfileId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdDelete:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdDelete:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdGet:::studentProfileId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdGet:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::studentProfileId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::studentProfileId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::StudentProfileUpdateDto"]=0
+
+##
+# This array stores the maximum number of allowed occurrences for parameter
+# 1 - single value
+# 2 - 2 values
+# N - N values
+# 0 - unlimited
+declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["createCourseArticleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseArticleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseArticleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseArticleAsync:::CourseArticleCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseArticleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseArticleAsync:::articleId"]=0
+operation_parameters_maximum_occurrences["deleteCourseArticleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseArticleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseArticleByIdAsync:::articleId"]=0
+operation_parameters_maximum_occurrences["getCourseArticleByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseArticleByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseArticleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseArticleAsync:::articleId"]=0
+operation_parameters_maximum_occurrences["updateCourseArticleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseArticleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseArticleAsync:::CourseArticleUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseAssignmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseAssignmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseAssignmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseAssignmentAsync:::CourseAssignmentCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseAssignmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseAssignmentAsync:::assignmentId"]=0
+operation_parameters_maximum_occurrences["deleteCourseAssignmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseAssignmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentByIdAsync:::assignmentId"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseAssignmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseAssignmentAsync:::assignmentId"]=0
+operation_parameters_maximum_occurrences["updateCourseAssignmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseAssignmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseAssignmentAsync:::CourseAssignmentUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseCategoryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseCategoryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseCategoryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseCategoryAsync:::CourseCategoryCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseCategoryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseCategoryAsync:::categoryId"]=0
+operation_parameters_maximum_occurrences["deleteCourseCategoryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseCategoryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCategoriesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseCategoriesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCategoriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCategoriesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseCategoriesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCategoriesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCategoryByIdAsync:::categoryId"]=0
+operation_parameters_maximum_occurrences["getCourseCategoryByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseCategoryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseCategoryAsync:::categoryId"]=0
+operation_parameters_maximum_occurrences["updateCourseCategoryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseCategoryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseCategoryAsync:::CourseCategoryUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseCertificateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseCertificateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseCertificateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseCertificateAsync:::CourseCompletionCertificateCreateDto"]=0
+operation_parameters_maximum_occurrences["createCourseCertificateTemplateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseCertificateTemplateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseCertificateTemplateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseCertificateTemplateAsync:::CourseCertificateTemplateCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseCertificateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseCertificateAsync:::courseCertificateId"]=0
+operation_parameters_maximum_occurrences["deleteCourseCertificateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseCertificateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseCertificateTemplateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseCertificateTemplateAsync:::courseCertificateTemplateId"]=0
+operation_parameters_maximum_occurrences["deleteCourseCertificateTemplateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseCertificateTemplateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCertificateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseCertificateAsync:::courseCertificateId"]=0
+operation_parameters_maximum_occurrences["getCourseCertificateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCertificateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCertificateTemplateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseCertificateTemplateAsync:::courseCertificateTemplateId"]=0
+operation_parameters_maximum_occurrences["getCourseCertificateTemplateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCertificateTemplateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCertificateTemplatesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseCertificateTemplatesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCertificateTemplatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCertificatesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseCertificatesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCertificatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCertificatesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseCertificatesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCertificatesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseCertificateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseCertificateAsync:::courseCertificateId"]=0
+operation_parameters_maximum_occurrences["updateCourseCertificateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseCertificateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseCertificateAsync:::CourseCompletionCertificateUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseCohortAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseCohortAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseCohortAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseCohortAsync:::CourseCohortCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseCohortAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseCohortAsync:::cohortId"]=0
+operation_parameters_maximum_occurrences["deleteCourseCohortAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseCohortAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCohortByIdAsync:::cohortId"]=0
+operation_parameters_maximum_occurrences["getCourseCohortByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCohortByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCohortsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseCohortsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCohortsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCohortsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseCohortsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCohortsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseCohortAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseCohortAsync:::cohortId"]=0
+operation_parameters_maximum_occurrences["updateCourseCohortAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseCohortAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseCohortAsync:::CourseCohortUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseEnrollmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseEnrollmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseEnrollmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseEnrollmentAsync:::CourseEnrollmentCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseEnrollmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseEnrollmentAsync:::courseEnrollmentId"]=0
+operation_parameters_maximum_occurrences["deleteCourseEnrollmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseEnrollmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseEnrollmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseEnrollmentAsync:::courseEnrollmentId"]=0
+operation_parameters_maximum_occurrences["getCourseEnrollmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseEnrollmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEnrollmentsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getEnrollmentsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEnrollmentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEnrollmentsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getEnrollmentsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEnrollmentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStudentCourseEnrollmentsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getStudentCourseEnrollmentsAsync:::studentProfileId"]=0
+operation_parameters_maximum_occurrences["getStudentCourseEnrollmentsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getStudentCourseEnrollmentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseEnrollmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseEnrollmentAsync:::courseEnrollmentId"]=0
+operation_parameters_maximum_occurrences["updateCourseEnrollmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseEnrollmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseEnrollmentAsync:::CourseEnrollmentUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseFileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseFileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseFileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseFileAsync:::CourseFileCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseFileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseFileAsync:::fileId"]=0
+operation_parameters_maximum_occurrences["deleteCourseFileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseFileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseFileByIdAsync:::fileId"]=0
+operation_parameters_maximum_occurrences["getCourseFileByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseFileByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseFilesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseFilesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseFilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseFilesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseFilesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseFilesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseFileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseFileAsync:::fileId"]=0
+operation_parameters_maximum_occurrences["updateCourseFileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseFileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseFileAsync:::CourseFileUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseForumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseForumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseForumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseForumAsync:::CourseForumCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseForumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseForumAsync:::forumId"]=0
+operation_parameters_maximum_occurrences["deleteCourseForumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseForumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseForumByIdAsync:::forumId"]=0
+operation_parameters_maximum_occurrences["getCourseForumByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseForumByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseForumsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseForumsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseForumsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseForumsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseForumsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseForumsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseForumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseForumAsync:::forumId"]=0
+operation_parameters_maximum_occurrences["updateCourseForumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseForumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseForumAsync:::CourseForumUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseHandoutAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseHandoutAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseHandoutAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseHandoutAsync:::CourseHandoutCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseHandoutAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseHandoutAsync:::handoutId"]=0
+operation_parameters_maximum_occurrences["deleteCourseHandoutAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseHandoutAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutByIdAsync:::handoutId"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseHandoutAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseHandoutAsync:::handoutId"]=0
+operation_parameters_maximum_occurrences["updateCourseHandoutAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseHandoutAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseHandoutAsync:::CourseHandoutUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseLibraryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseLibraryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseLibraryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseLibraryAsync:::CourseLibraryCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseLibraryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseLibraryAsync:::libraryId"]=0
+operation_parameters_maximum_occurrences["deleteCourseLibraryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseLibraryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseLibrariesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseLibrariesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseLibrariesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseLibrariesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseLibrariesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseLibrariesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseLibraryByIdAsync:::libraryId"]=0
+operation_parameters_maximum_occurrences["getCourseLibraryByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseLibraryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseLibraryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseLibraryAsync:::libraryId"]=0
+operation_parameters_maximum_occurrences["updateCourseLibraryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseLibraryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseLibraryAsync:::CourseLibraryUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCoursePageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCoursePageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCoursePageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCoursePageAsync:::CoursePageCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCoursePageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCoursePageAsync:::pageId"]=0
+operation_parameters_maximum_occurrences["deleteCoursePageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCoursePageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCoursePageByIdAsync:::pageId"]=0
+operation_parameters_maximum_occurrences["getCoursePageByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCoursePageByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCoursePagesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCoursePagesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCoursePagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCoursePagesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCoursePagesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCoursePagesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCoursePageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCoursePageAsync:::pageId"]=0
+operation_parameters_maximum_occurrences["updateCoursePageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCoursePageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCoursePageAsync:::CoursePageUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseProblemSetAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseProblemSetAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseProblemSetAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseProblemSetAsync:::CourseProblemSetCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseProblemSetAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseProblemSetAsync:::problemSetId"]=0
+operation_parameters_maximum_occurrences["deleteCourseProblemSetAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseProblemSetAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetByIdAsync:::problemSetId"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseProblemSetAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseProblemSetAsync:::problemSetId"]=0
+operation_parameters_maximum_occurrences["updateCourseProblemSetAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseProblemSetAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseProblemSetAsync:::CourseProblemSetUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseSectionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseSectionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseSectionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseSectionAsync:::CourseSectionCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseSectionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseSectionAsync:::sectionId"]=0
+operation_parameters_maximum_occurrences["deleteCourseSectionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseSectionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseSectionByIdAsync:::sectionId"]=0
+operation_parameters_maximum_occurrences["getCourseSectionByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseSectionByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseSectionsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseSectionsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseSectionsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseSectionsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseSectionsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseSectionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseSectionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseSectionAsync:::sectionId"]=0
+operation_parameters_maximum_occurrences["updateCourseSectionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseSectionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseSectionAsync:::CourseSectionUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseUnitComponentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseUnitComponentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseUnitComponentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseUnitComponentAsync:::CourseUnitComponentCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseUnitComponentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseUnitComponentAsync:::componentId"]=0
+operation_parameters_maximum_occurrences["deleteCourseUnitComponentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseUnitComponentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentByIdAsync:::componentId"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseUnitComponentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseUnitComponentAsync:::componentId"]=0
+operation_parameters_maximum_occurrences["updateCourseUnitComponentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseUnitComponentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseUnitComponentAsync:::CourseUnitComponentUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseUnitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseUnitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseUnitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseUnitAsync:::CourseUnitCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseUnitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseUnitAsync:::unitId"]=0
+operation_parameters_maximum_occurrences["deleteCourseUnitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseUnitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitByIdAsync:::unitId"]=0
+operation_parameters_maximum_occurrences["getCourseUnitByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseUnitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseUnitAsync:::unitId"]=0
+operation_parameters_maximum_occurrences["updateCourseUnitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseUnitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseUnitAsync:::CourseUnitUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseUpdateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseUpdateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseUpdateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseUpdateAsync:::CourseNewsCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseUpdateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseUpdateAsync:::updateId"]=0
+operation_parameters_maximum_occurrences["deleteCourseUpdateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseUpdateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUpdateByIdAsync:::updateId"]=0
+operation_parameters_maximum_occurrences["getCourseUpdateByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUpdateByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUpdatesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseUpdatesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUpdatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUpdatesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseUpdatesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUpdatesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseUpdateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseUpdateAsync:::updateId"]=0
+operation_parameters_maximum_occurrences["updateCourseUpdateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseUpdateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseUpdateAsync:::CourseNewsUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseWikiAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseWikiAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseWikiAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseWikiAsync:::CourseWikiCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseWikiAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseWikiAsync:::wikiId"]=0
+operation_parameters_maximum_occurrences["deleteCourseWikiAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseWikiAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseWikiByIdAsync:::wikiId"]=0
+operation_parameters_maximum_occurrences["getCourseWikiByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseWikiByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseWikisAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseWikisAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseWikisAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseWikisCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseWikisCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseWikisCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseWikiAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseWikiAsync:::wikiId"]=0
+operation_parameters_maximum_occurrences["updateCourseWikiAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseWikiAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseWikiAsync:::CourseWikiUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCourseAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCourseAsync:::CourseCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCourseAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["deleteCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesByCourseWikiAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesByCourseWikiAsync:::wikiId"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesByCourseWikiAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesByCourseWikiAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesByCourseWikiCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesByCourseWikiCountAsync:::wikiId"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesByCourseWikiCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseArticlesByCourseWikiCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentsByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentsByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentsByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentsByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentsByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseAssignmentsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseByIdAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCategoriesByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseCategoriesByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCategoriesByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCategoriesByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseCategoriesByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCategoriesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCohortsByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseCohortsByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCohortsByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCohortsByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseCohortsByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseCohortsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseEnrollmentsByCourseAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCourseEnrollmentsByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseEnrollmentsByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseEnrollmentsByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseFilesByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseFilesByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseFilesByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseFilesByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseFilesByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseFilesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseForumsByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseForumsByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseForumsByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseForumsByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseForumsByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseForumsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutsByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutsByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutsByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutsByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutsByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseHandoutsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseLibrariesByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseLibrariesByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseLibrariesByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseLibrariesByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseLibrariesByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseLibrariesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCoursePagesByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCoursePagesByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCoursePagesByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCoursePagesByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCoursePagesByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCoursePagesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetsByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetsByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetsByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetsByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetsByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseProblemSetsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseSectionsByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseSectionsByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseSectionsByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseSectionsByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseSectionsByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseSectionsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentsByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentsByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentsByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentsByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentsByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitComponentsByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsBySectionAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsBySectionAsync:::sectionId"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsBySectionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsBySectionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsBySectionCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsBySectionCountAsync:::sectionId"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsBySectionCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUnitsBySectionCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUpdatesByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseUpdatesByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUpdatesByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUpdatesByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseUpdatesByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseUpdatesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseWikisByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseWikisByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseWikisByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCourseWikisByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getCourseWikisByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCourseWikisByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCoursesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCoursesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCoursesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCoursesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCoursesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCoursesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getInstructorProfilesByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getInstructorProfilesByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getInstructorProfilesByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getInstructorProfilesByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getInstructorProfilesByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getInstructorProfilesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStudentProfilesByCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getStudentProfilesByCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getStudentProfilesByCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStudentProfilesByCourseCountAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["getStudentProfilesByCourseCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getStudentProfilesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["updateCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCourseAsync:::CourseUpdateDto"]=0
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesCountGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesCountGet:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesCountGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesGet:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete:::instructorProfileId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::instructorProfileId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::instructorProfileId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::InstructorProfileUpdateDto"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesPost:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesPost:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesPost:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesPost:::InstructorProfileCreateDto"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesCountGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesCountGet:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesCountGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesGet:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesPost:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesPost:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesPost:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesPost:::StudentProfileCreateDto"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet:::studentProfileId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdDelete:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdDelete:::studentProfileId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdDelete:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdDelete:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdGet:::studentProfileId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdGet:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::studentProfileId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::studentProfileId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::StudentProfileUpdateDto"]=0
+
+##
+# The type of collection for specifying multiple values for parameter:
+# - multi, csv, ssv, tsv
+declare -A operation_parameters_collection_type
+operation_parameters_collection_type["createCourseArticleAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseArticleAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseArticleAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseArticleAsync:::CourseArticleCreateDto"]=""
+operation_parameters_collection_type["deleteCourseArticleAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseArticleAsync:::articleId"]=""
+operation_parameters_collection_type["deleteCourseArticleAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseArticleAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseArticleByIdAsync:::articleId"]=""
+operation_parameters_collection_type["getCourseArticleByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseArticleByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseArticlesAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseArticlesAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseArticlesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseArticlesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseArticlesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseArticlesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseArticleAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseArticleAsync:::articleId"]=""
+operation_parameters_collection_type["updateCourseArticleAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseArticleAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseArticleAsync:::CourseArticleUpdateDto"]=""
+operation_parameters_collection_type["createCourseAssignmentAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseAssignmentAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseAssignmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseAssignmentAsync:::CourseAssignmentCreateDto"]=""
+operation_parameters_collection_type["deleteCourseAssignmentAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseAssignmentAsync:::assignmentId"]=""
+operation_parameters_collection_type["deleteCourseAssignmentAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseAssignmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseAssignmentByIdAsync:::assignmentId"]=""
+operation_parameters_collection_type["getCourseAssignmentByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseAssignmentByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseAssignmentsAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseAssignmentsAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseAssignmentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseAssignmentsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseAssignmentsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseAssignmentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseAssignmentAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseAssignmentAsync:::assignmentId"]=""
+operation_parameters_collection_type["updateCourseAssignmentAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseAssignmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseAssignmentAsync:::CourseAssignmentUpdateDto"]=""
+operation_parameters_collection_type["createCourseCategoryAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseCategoryAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseCategoryAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseCategoryAsync:::CourseCategoryCreateDto"]=""
+operation_parameters_collection_type["deleteCourseCategoryAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseCategoryAsync:::categoryId"]=""
+operation_parameters_collection_type["deleteCourseCategoryAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseCategoryAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCategoriesAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseCategoriesAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCategoriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCategoriesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseCategoriesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCategoriesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCategoryByIdAsync:::categoryId"]=""
+operation_parameters_collection_type["getCourseCategoryByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCategoryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseCategoryAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseCategoryAsync:::categoryId"]=""
+operation_parameters_collection_type["updateCourseCategoryAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseCategoryAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseCategoryAsync:::CourseCategoryUpdateDto"]=""
+operation_parameters_collection_type["createCourseCertificateAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseCertificateAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseCertificateAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseCertificateAsync:::CourseCompletionCertificateCreateDto"]=""
+operation_parameters_collection_type["createCourseCertificateTemplateAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseCertificateTemplateAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseCertificateTemplateAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseCertificateTemplateAsync:::CourseCertificateTemplateCreateDto"]=""
+operation_parameters_collection_type["deleteCourseCertificateAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseCertificateAsync:::courseCertificateId"]=""
+operation_parameters_collection_type["deleteCourseCertificateAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseCertificateAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteCourseCertificateTemplateAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseCertificateTemplateAsync:::courseCertificateTemplateId"]=""
+operation_parameters_collection_type["deleteCourseCertificateTemplateAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseCertificateTemplateAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCertificateAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseCertificateAsync:::courseCertificateId"]=""
+operation_parameters_collection_type["getCourseCertificateAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCertificateAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCertificateTemplateAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseCertificateTemplateAsync:::courseCertificateTemplateId"]=""
+operation_parameters_collection_type["getCourseCertificateTemplateAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCertificateTemplateAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCertificateTemplatesAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseCertificateTemplatesAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCertificateTemplatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCertificatesAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseCertificatesAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCertificatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCertificatesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseCertificatesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCertificatesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseCertificateAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseCertificateAsync:::courseCertificateId"]=""
+operation_parameters_collection_type["updateCourseCertificateAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseCertificateAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseCertificateAsync:::CourseCompletionCertificateUpdateDto"]=""
+operation_parameters_collection_type["createCourseCohortAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseCohortAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseCohortAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseCohortAsync:::CourseCohortCreateDto"]=""
+operation_parameters_collection_type["deleteCourseCohortAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseCohortAsync:::cohortId"]=""
+operation_parameters_collection_type["deleteCourseCohortAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseCohortAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCohortByIdAsync:::cohortId"]=""
+operation_parameters_collection_type["getCourseCohortByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCohortByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCohortsAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseCohortsAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCohortsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCohortsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseCohortsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCohortsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseCohortAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseCohortAsync:::cohortId"]=""
+operation_parameters_collection_type["updateCourseCohortAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseCohortAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseCohortAsync:::CourseCohortUpdateDto"]=""
+operation_parameters_collection_type["createCourseEnrollmentAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseEnrollmentAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseEnrollmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseEnrollmentAsync:::CourseEnrollmentCreateDto"]=""
+operation_parameters_collection_type["deleteCourseEnrollmentAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseEnrollmentAsync:::courseEnrollmentId"]=""
+operation_parameters_collection_type["deleteCourseEnrollmentAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseEnrollmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseEnrollmentAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseEnrollmentAsync:::courseEnrollmentId"]=""
+operation_parameters_collection_type["getCourseEnrollmentAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseEnrollmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEnrollmentsAsync:::tenantId"]=""
+operation_parameters_collection_type["getEnrollmentsAsync:::api-version"]=""
+operation_parameters_collection_type["getEnrollmentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEnrollmentsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getEnrollmentsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getEnrollmentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getStudentCourseEnrollmentsAsync:::tenantId"]=""
+operation_parameters_collection_type["getStudentCourseEnrollmentsAsync:::studentProfileId"]=""
+operation_parameters_collection_type["getStudentCourseEnrollmentsAsync:::api-version"]=""
+operation_parameters_collection_type["getStudentCourseEnrollmentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseEnrollmentAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseEnrollmentAsync:::courseEnrollmentId"]=""
+operation_parameters_collection_type["updateCourseEnrollmentAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseEnrollmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseEnrollmentAsync:::CourseEnrollmentUpdateDto"]=""
+operation_parameters_collection_type["createCourseFileAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseFileAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseFileAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseFileAsync:::CourseFileCreateDto"]=""
+operation_parameters_collection_type["deleteCourseFileAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseFileAsync:::fileId"]=""
+operation_parameters_collection_type["deleteCourseFileAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseFileAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseFileByIdAsync:::fileId"]=""
+operation_parameters_collection_type["getCourseFileByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseFileByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseFilesAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseFilesAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseFilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseFilesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseFilesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseFilesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseFileAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseFileAsync:::fileId"]=""
+operation_parameters_collection_type["updateCourseFileAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseFileAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseFileAsync:::CourseFileUpdateDto"]=""
+operation_parameters_collection_type["createCourseForumAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseForumAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseForumAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseForumAsync:::CourseForumCreateDto"]=""
+operation_parameters_collection_type["deleteCourseForumAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseForumAsync:::forumId"]=""
+operation_parameters_collection_type["deleteCourseForumAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseForumAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseForumByIdAsync:::forumId"]=""
+operation_parameters_collection_type["getCourseForumByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseForumByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseForumsAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseForumsAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseForumsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseForumsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseForumsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseForumsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseForumAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseForumAsync:::forumId"]=""
+operation_parameters_collection_type["updateCourseForumAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseForumAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseForumAsync:::CourseForumUpdateDto"]=""
+operation_parameters_collection_type["createCourseHandoutAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseHandoutAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseHandoutAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseHandoutAsync:::CourseHandoutCreateDto"]=""
+operation_parameters_collection_type["deleteCourseHandoutAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseHandoutAsync:::handoutId"]=""
+operation_parameters_collection_type["deleteCourseHandoutAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseHandoutAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseHandoutByIdAsync:::handoutId"]=""
+operation_parameters_collection_type["getCourseHandoutByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseHandoutByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseHandoutsAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseHandoutsAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseHandoutsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseHandoutsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseHandoutsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseHandoutsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseHandoutAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseHandoutAsync:::handoutId"]=""
+operation_parameters_collection_type["updateCourseHandoutAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseHandoutAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseHandoutAsync:::CourseHandoutUpdateDto"]=""
+operation_parameters_collection_type["createCourseLibraryAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseLibraryAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseLibraryAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseLibraryAsync:::CourseLibraryCreateDto"]=""
+operation_parameters_collection_type["deleteCourseLibraryAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseLibraryAsync:::libraryId"]=""
+operation_parameters_collection_type["deleteCourseLibraryAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseLibraryAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseLibrariesAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseLibrariesAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseLibrariesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseLibrariesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseLibrariesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseLibrariesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseLibraryByIdAsync:::libraryId"]=""
+operation_parameters_collection_type["getCourseLibraryByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseLibraryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseLibraryAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseLibraryAsync:::libraryId"]=""
+operation_parameters_collection_type["updateCourseLibraryAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseLibraryAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseLibraryAsync:::CourseLibraryUpdateDto"]=""
+operation_parameters_collection_type["createCoursePageAsync:::tenantId"]=""
+operation_parameters_collection_type["createCoursePageAsync:::api-version"]=""
+operation_parameters_collection_type["createCoursePageAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCoursePageAsync:::CoursePageCreateDto"]=""
+operation_parameters_collection_type["deleteCoursePageAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCoursePageAsync:::pageId"]=""
+operation_parameters_collection_type["deleteCoursePageAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCoursePageAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCoursePageByIdAsync:::pageId"]=""
+operation_parameters_collection_type["getCoursePageByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCoursePageByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCoursePagesAsync:::tenantId"]=""
+operation_parameters_collection_type["getCoursePagesAsync:::api-version"]=""
+operation_parameters_collection_type["getCoursePagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCoursePagesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCoursePagesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCoursePagesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCoursePageAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCoursePageAsync:::pageId"]=""
+operation_parameters_collection_type["updateCoursePageAsync:::api-version"]=""
+operation_parameters_collection_type["updateCoursePageAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCoursePageAsync:::CoursePageUpdateDto"]=""
+operation_parameters_collection_type["createCourseProblemSetAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseProblemSetAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseProblemSetAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseProblemSetAsync:::CourseProblemSetCreateDto"]=""
+operation_parameters_collection_type["deleteCourseProblemSetAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseProblemSetAsync:::problemSetId"]=""
+operation_parameters_collection_type["deleteCourseProblemSetAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseProblemSetAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseProblemSetByIdAsync:::problemSetId"]=""
+operation_parameters_collection_type["getCourseProblemSetByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseProblemSetByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseProblemSetsAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseProblemSetsAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseProblemSetsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseProblemSetsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseProblemSetsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseProblemSetsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseProblemSetAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseProblemSetAsync:::problemSetId"]=""
+operation_parameters_collection_type["updateCourseProblemSetAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseProblemSetAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseProblemSetAsync:::CourseProblemSetUpdateDto"]=""
+operation_parameters_collection_type["createCourseSectionAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseSectionAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseSectionAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseSectionAsync:::CourseSectionCreateDto"]=""
+operation_parameters_collection_type["deleteCourseSectionAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseSectionAsync:::sectionId"]=""
+operation_parameters_collection_type["deleteCourseSectionAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseSectionAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseSectionByIdAsync:::sectionId"]=""
+operation_parameters_collection_type["getCourseSectionByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseSectionByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseSectionsAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseSectionsAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseSectionsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseSectionsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseSectionsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseSectionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseSectionAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseSectionAsync:::sectionId"]=""
+operation_parameters_collection_type["updateCourseSectionAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseSectionAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseSectionAsync:::CourseSectionUpdateDto"]=""
+operation_parameters_collection_type["createCourseUnitComponentAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseUnitComponentAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseUnitComponentAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseUnitComponentAsync:::CourseUnitComponentCreateDto"]=""
+operation_parameters_collection_type["deleteCourseUnitComponentAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseUnitComponentAsync:::componentId"]=""
+operation_parameters_collection_type["deleteCourseUnitComponentAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseUnitComponentAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUnitComponentByIdAsync:::componentId"]=""
+operation_parameters_collection_type["getCourseUnitComponentByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUnitComponentByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUnitComponentsAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseUnitComponentsAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUnitComponentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUnitComponentsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseUnitComponentsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUnitComponentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseUnitComponentAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseUnitComponentAsync:::componentId"]=""
+operation_parameters_collection_type["updateCourseUnitComponentAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseUnitComponentAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseUnitComponentAsync:::CourseUnitComponentUpdateDto"]=""
+operation_parameters_collection_type["createCourseUnitAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseUnitAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseUnitAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseUnitAsync:::CourseUnitCreateDto"]=""
+operation_parameters_collection_type["deleteCourseUnitAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseUnitAsync:::unitId"]=""
+operation_parameters_collection_type["deleteCourseUnitAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseUnitAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUnitByIdAsync:::unitId"]=""
+operation_parameters_collection_type["getCourseUnitByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUnitByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUnitsAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseUnitsAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUnitsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUnitsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseUnitsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUnitsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseUnitAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseUnitAsync:::unitId"]=""
+operation_parameters_collection_type["updateCourseUnitAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseUnitAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseUnitAsync:::CourseUnitUpdateDto"]=""
+operation_parameters_collection_type["createCourseUpdateAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseUpdateAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseUpdateAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseUpdateAsync:::CourseNewsCreateDto"]=""
+operation_parameters_collection_type["deleteCourseUpdateAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseUpdateAsync:::updateId"]=""
+operation_parameters_collection_type["deleteCourseUpdateAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseUpdateAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUpdateByIdAsync:::updateId"]=""
+operation_parameters_collection_type["getCourseUpdateByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUpdateByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUpdatesAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseUpdatesAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUpdatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUpdatesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseUpdatesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUpdatesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseUpdateAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseUpdateAsync:::updateId"]=""
+operation_parameters_collection_type["updateCourseUpdateAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseUpdateAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseUpdateAsync:::CourseNewsUpdateDto"]=""
+operation_parameters_collection_type["createCourseWikiAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseWikiAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseWikiAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseWikiAsync:::CourseWikiCreateDto"]=""
+operation_parameters_collection_type["deleteCourseWikiAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseWikiAsync:::wikiId"]=""
+operation_parameters_collection_type["deleteCourseWikiAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseWikiAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseWikiByIdAsync:::wikiId"]=""
+operation_parameters_collection_type["getCourseWikiByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseWikiByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseWikisAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseWikisAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseWikisAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseWikisCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseWikisCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseWikisCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseWikiAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseWikiAsync:::wikiId"]=""
+operation_parameters_collection_type["updateCourseWikiAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseWikiAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseWikiAsync:::CourseWikiUpdateDto"]=""
+operation_parameters_collection_type["createCourseAsync:::tenantId"]=""
+operation_parameters_collection_type["createCourseAsync:::api-version"]=""
+operation_parameters_collection_type["createCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCourseAsync:::CourseCreateDto"]=""
+operation_parameters_collection_type["deleteCourseAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCourseAsync:::courseId"]=""
+operation_parameters_collection_type["deleteCourseAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseArticlesByCourseWikiAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseArticlesByCourseWikiAsync:::wikiId"]=""
+operation_parameters_collection_type["getCourseArticlesByCourseWikiAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseArticlesByCourseWikiAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseArticlesByCourseWikiCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseArticlesByCourseWikiCountAsync:::wikiId"]=""
+operation_parameters_collection_type["getCourseArticlesByCourseWikiCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseArticlesByCourseWikiCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseAssignmentsByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseAssignmentsByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseAssignmentsByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseAssignmentsByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseAssignmentsByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseAssignmentsByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseByIdAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCategoriesByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseCategoriesByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCategoriesByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCategoriesByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseCategoriesByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCategoriesByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCohortsByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseCohortsByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCohortsByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseCohortsByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseCohortsByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseCohortsByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseEnrollmentsByCourseAsync:::tenantId"]=""
+operation_parameters_collection_type["getCourseEnrollmentsByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseEnrollmentsByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseEnrollmentsByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseFilesByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseFilesByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseFilesByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseFilesByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseFilesByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseFilesByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseForumsByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseForumsByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseForumsByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseForumsByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseForumsByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseForumsByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseHandoutsByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseHandoutsByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseHandoutsByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseHandoutsByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseHandoutsByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseHandoutsByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseLibrariesByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseLibrariesByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseLibrariesByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseLibrariesByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseLibrariesByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseLibrariesByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCoursePagesByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCoursePagesByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCoursePagesByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCoursePagesByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCoursePagesByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCoursePagesByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseProblemSetsByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseProblemSetsByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseProblemSetsByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseProblemSetsByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseProblemSetsByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseProblemSetsByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseSectionsByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseSectionsByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseSectionsByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseSectionsByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseSectionsByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseSectionsByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUnitComponentsByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseUnitComponentsByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUnitComponentsByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUnitComponentsByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseUnitComponentsByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUnitComponentsByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUnitsBySectionAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseUnitsBySectionAsync:::sectionId"]=""
+operation_parameters_collection_type["getCourseUnitsBySectionAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUnitsBySectionAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUnitsBySectionCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseUnitsBySectionCountAsync:::sectionId"]=""
+operation_parameters_collection_type["getCourseUnitsBySectionCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUnitsBySectionCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUpdatesByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseUpdatesByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUpdatesByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseUpdatesByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseUpdatesByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseUpdatesByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseWikisByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseWikisByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseWikisByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCourseWikisByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getCourseWikisByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCourseWikisByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCoursesAsync:::tenantId"]=""
+operation_parameters_collection_type["getCoursesAsync:::api-version"]=""
+operation_parameters_collection_type["getCoursesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCoursesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCoursesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCoursesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getInstructorProfilesByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getInstructorProfilesByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getInstructorProfilesByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getInstructorProfilesByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getInstructorProfilesByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getInstructorProfilesByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getStudentProfilesByCourseAsync:::courseId"]=""
+operation_parameters_collection_type["getStudentProfilesByCourseAsync:::api-version"]=""
+operation_parameters_collection_type["getStudentProfilesByCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getStudentProfilesByCourseCountAsync:::courseId"]=""
+operation_parameters_collection_type["getStudentProfilesByCourseCountAsync:::api-version"]=""
+operation_parameters_collection_type["getStudentProfilesByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCourseAsync:::courseId"]=""
+operation_parameters_collection_type["updateCourseAsync:::api-version"]=""
+operation_parameters_collection_type["updateCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCourseAsync:::CourseUpdateDto"]=""
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesCountGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesCountGet:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesCountGet:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesGet:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesGet:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete:::instructorProfileId"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::instructorProfileId"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::instructorProfileId"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::InstructorProfileUpdateDto"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesPost:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesPost:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesPost:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesPost:::InstructorProfileCreateDto"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesCountGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesCountGet:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesCountGet:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesGet:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesGet:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesPost:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesPost:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesPost:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesPost:::StudentProfileCreateDto"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet:::studentProfileId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdDelete:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdDelete:::studentProfileId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdDelete:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdDelete:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdGet:::studentProfileId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdGet:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdGet:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::studentProfileId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::studentProfileId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::StudentProfileUpdateDto"]=""
+
+
+##
+# Map for body parameters passed after operation as
+# PARAMETER==STRING_VALUE or PARAMETER:=NUMERIC_VALUE
+# These will be mapped to top level json keys ( { "PARAMETER": "VALUE" })
+declare -A body_parameters
+
+##
+# These arguments will be directly passed to cURL
+curl_arguments=""
+
+##
+# The host for making the request
+host=""
+
+##
+# The user credentials for basic authentication
+basic_auth_credential=""
+
+
+##
+# If true, the script will only output the actual cURL command that would be
+# used
+print_curl=false
+
+##
+# The operation ID passed on the command line
+operation=""
+
+##
+# The provided Accept header value
+header_accept=""
+
+##
+# The provided Content-type header value
+header_content_type=""
+
+##
+# If there is any body content on the stdin pass it to the body of the request
+body_content_temp_file=""
+
+##
+# If this variable is set to true, the request will be performed even
+# if parameters for required query, header or body values are not provided
+# (path parameters are still required).
+force=false
+
+##
+# Declare some mime types abbreviations for easier content-type and accepts
+# headers specification
+declare -A mime_type_abbreviations
+# text/*
+mime_type_abbreviations["text"]="text/plain"
+mime_type_abbreviations["html"]="text/html"
+mime_type_abbreviations["md"]="text/x-markdown"
+mime_type_abbreviations["csv"]="text/csv"
+mime_type_abbreviations["css"]="text/css"
+mime_type_abbreviations["rtf"]="text/rtf"
+# application/*
+mime_type_abbreviations["json"]="application/json"
+mime_type_abbreviations["xml"]="application/xml"
+mime_type_abbreviations["yaml"]="application/yaml"
+mime_type_abbreviations["js"]="application/javascript"
+mime_type_abbreviations["bin"]="application/octet-stream"
+mime_type_abbreviations["rdf"]="application/rdf+xml"
+# image/*
+mime_type_abbreviations["jpg"]="image/jpeg"
+mime_type_abbreviations["png"]="image/png"
+mime_type_abbreviations["gif"]="image/gif"
+mime_type_abbreviations["bmp"]="image/bmp"
+mime_type_abbreviations["tiff"]="image/tiff"
+
+
+##############################################################################
+#
+# Escape special URL characters
+# Based on table at http://www.w3schools.com/tags/ref_urlencode.asp
+#
+##############################################################################
+url_escape() {
+    local raw_url="$1"
+
+    value=$(sed -e 's/ /%20/g' \
+       -e 's/!/%21/g' \
+       -e 's/"/%22/g' \
+       -e 's/#/%23/g' \
+       -e 's/\&/%26/g' \
+       -e 's/'\''/%28/g' \
+       -e 's/(/%28/g' \
+       -e 's/)/%29/g' \
+       -e 's/:/%3A/g' \
+       -e 's/\\t/%09/g' \
+       -e 's/?/%3F/g' <<<"$raw_url");
+
+    echo "$value"
+}
+
+##############################################################################
+#
+# Lookup the mime type abbreviation in the mime_type_abbreviations array.
+# If not present assume the user provided a valid mime type
+#
+##############################################################################
+lookup_mime_type() {
+    local mime_type="$1"
+
+    if [[ ${mime_type_abbreviations[$mime_type]} ]]; then
+        echo "${mime_type_abbreviations[$mime_type]}"
+    else
+        echo "$mime_type"
+    fi
+}
+
+##############################################################################
+#
+# Converts an associative array into a list of cURL header
+# arguments (-H "KEY: VALUE")
+#
+##############################################################################
+header_arguments_to_curl() {
+    local headers_curl=""
+
+    for key in "${!header_arguments[@]}"; do
+        headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
+    done
+    headers_curl+=" "
+
+    echo "${headers_curl}"
+}
+
+##############################################################################
+#
+# Converts an associative array into a simple JSON with keys as top
+# level object attributes
+#
+# \todo Add conversion of more complex attributes using paths
+#
+##############################################################################
+body_parameters_to_json() {
+    if [[ $RAW_BODY == "1" ]]; then
+        echo "-d '${body_parameters["RAW_BODY"]}'"
+    else
+        local body_json="-d '{"
+        local count=0
+        for key in "${!body_parameters[@]}"; do
+            if [[ $((count++)) -gt 0 ]]; then
+                body_json+=", "
+            fi
+            body_json+="\"${key}\": ${body_parameters[${key}]}"
+        done
+        body_json+="}'"
+
+        if [[ "${#body_parameters[@]}" -eq 0 ]]; then
+            echo ""
+        else
+            echo "${body_json}"
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Converts an associative array into form urlencoded string
+#
+##############################################################################
+body_parameters_to_form_urlencoded() {
+    local body_form_urlencoded="-d '"
+    local count=0
+    for key in "${!body_parameters[@]}"; do
+        if [[ $((count++)) -gt 0 ]]; then
+            body_form_urlencoded+="&"
+        fi
+        body_form_urlencoded+="${key}=${body_parameters[${key}]}"
+    done
+    body_form_urlencoded+="'"
+
+    if [[ "${#body_parameters[@]}" -eq 0 ]]; then
+        echo ""
+    else
+        echo "${body_form_urlencoded}"
+    fi
+}
+
+##############################################################################
+#
+# Helper method for showing error because for example echo in
+# build_request_path() is evaluated as part of command line not printed on
+# output. Anyway better idea for resource clean up ;-).
+#
+##############################################################################
+ERROR_MSG=""
+function finish {
+    if [[ -n "$ERROR_MSG" ]]; then
+        echo >&2 "${OFF}${RED}$ERROR_MSG"
+        echo >&2 "${OFF}Check usage: '${script_name} --help'"
+    fi
+}
+trap finish EXIT
+
+
+##############################################################################
+#
+# Validate and build request path including query parameters
+#
+##############################################################################
+build_request_path() {
+    local path_template=$1
+    local -n path_params=$2
+    local -n query_params=$3
+
+
+    #
+    # Check input parameters count against minimum and maximum required
+    #
+    if [[ "$force" = false ]]; then
+        local was_error=""
+        for qparam in "${query_params[@]}" "${path_params[@]}"; do
+            local parameter_values
+            mapfile -t parameter_values < <(sed -e 's/'":::"'/\n/g' <<<"${operation_parameters[$qparam]}")
+
+            #
+            # Check if the number of provided values is not less than minimum required
+            #
+            if [[ ${#parameter_values[@]} -lt ${operation_parameters_minimum_occurrences["${operation}:::${qparam}"]} ]]; then
+                echo "ERROR: Too few values provided for '${qparam}' parameter."
+                was_error=true
+            fi
+
+            #
+            # Check if the number of provided values is not more than maximum
+            #
+            if [[ ${operation_parameters_maximum_occurrences["${operation}:::${qparam}"]} -gt 0 \
+                  && ${#parameter_values[@]} -gt ${operation_parameters_maximum_occurrences["${operation}:::${qparam}"]} ]]; then
+                echo "ERROR: Too many values provided for '${qparam}' parameter"
+                was_error=true
+            fi
+        done
+        if [[ -n "$was_error" ]]; then
+            exit 1
+        fi
+    fi
+
+    # First replace all path parameters in the path
+    for pparam in "${path_params[@]}"; do
+        local path_regex="(.*)(\\{$pparam\\})(.*)"
+        if [[ $path_template =~ $path_regex ]]; then
+            path_template=${BASH_REMATCH[1]}${operation_parameters[$pparam]}${BASH_REMATCH[3]}
+        fi
+    done
+
+    local query_request_part=""
+
+    for qparam in "${query_params[@]}"; do
+        if [[ "${operation_parameters[$qparam]}" == "" ]]; then
+            continue
+        fi
+
+        # Get the array of parameter values
+        local parameter_value=""
+        local parameter_values
+        mapfile -t parameter_values < <(sed -e 's/'":::"'/\n/g' <<<"${operation_parameters[$qparam]}")
+
+
+
+        #
+        # Append parameters without specific cardinality
+        #
+        local collection_type="${operation_parameters_collection_type["${operation}:::${qparam}"]}"
+        if [[ "${collection_type}" == "" ]]; then
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+="&"
+                fi
+                parameter_value+="${qparam}=${qvalue}"
+            done
+        #
+        # Append parameters specified as 'multi' collections i.e. param=value1&param=value2&...
+        #
+        elif [[ "${collection_type}" == "multi" ]]; then
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+="&"
+                fi
+                parameter_value+="${qparam}=${qvalue}"
+            done
+        #
+        # Append parameters specified as 'csv' collections i.e. param=value1,value2,...
+        #
+        elif [[ "${collection_type}" == "csv" ]]; then
+            parameter_value+="${qparam}="
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+=","
+                fi
+                parameter_value+="${qvalue}"
+            done
+        #
+        # Append parameters specified as 'ssv' collections i.e. param="value1 value2 ..."
+        #
+        elif [[ "${collection_type}" == "ssv" ]]; then
+            parameter_value+="${qparam}="
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+=" "
+                fi
+                parameter_value+="${qvalue}"
+            done
+        #
+        # Append parameters specified as 'tsv' collections i.e. param="value1\tvalue2\t..."
+        #
+        elif [[ "${collection_type}" == "tsv" ]]; then
+            parameter_value+="${qparam}="
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+="\\t"
+                fi
+                parameter_value+="${qvalue}"
+            done
+        else
+            echo "Unsupported collection format \"${collection_type}\""
+            exit 1
+        fi
+
+        if [[ -n "${parameter_value}" ]]; then
+            if [[ -n "${query_request_part}" ]]; then
+                query_request_part+="&"
+            fi
+            query_request_part+="${parameter_value}"
+        fi
+
+    done
+
+
+    # Now append query parameters - if any
+    if [[ -n "${query_request_part}" ]]; then
+        path_template+="?${query_request_part}"
+    fi
+
+    echo "$path_template"
+}
+
+
+
+###############################################################################
+#
+# Print main help message
+#
+###############################################################################
+print_help() {
+cat <<EOF
+
+${BOLD}${WHITE}LearningService command line client (API version 2.0.0.0)${OFF}
+
+${BOLD}${WHITE}Usage${OFF}
+
+  ${GREEN}${script_name}${OFF} [-h|--help] [-V|--version] [--about] [${RED}<curl-options>${OFF}]
+           [-ac|--accept ${GREEN}<mime-type>${OFF}] [-ct,--content-type ${GREEN}<mime-type>${OFF}]
+           [--host ${CYAN}<url>${OFF}] [--dry-run] [-nc|--no-colors] ${YELLOW}<operation>${OFF} [-h|--help]
+           [${BLUE}<headers>${OFF}] [${MAGENTA}<parameters>${OFF}] [${MAGENTA}<body-parameters>${OFF}]
+
+  - ${CYAN}<url>${OFF} - endpoint of the REST service without basepath
+
+  - ${RED}<curl-options>${OFF} - any valid cURL options can be passed before ${YELLOW}<operation>${OFF}
+  - ${GREEN}<mime-type>${OFF} - either full mime-type or one of supported abbreviations:
+                   (text, html, md, csv, css, rtf, json, xml, yaml, js, bin,
+                    rdf, jpg, png, gif, bmp, tiff)
+  - ${BLUE}<headers>${OFF} - HTTP headers can be passed in the form ${YELLOW}HEADER${OFF}:${BLUE}VALUE${OFF}
+  - ${MAGENTA}<parameters>${OFF} - REST operation parameters can be passed in the following
+                   forms:
+                   * ${YELLOW}KEY${OFF}=${BLUE}VALUE${OFF} - path or query parameters
+  - ${MAGENTA}<body-parameters>${OFF} - simple JSON body content (first level only) can be build
+                        using the following arguments:
+                        * ${YELLOW}KEY${OFF}==${BLUE}VALUE${OFF} - body parameters which will be added to body
+                                      JSON as '{ ..., "${YELLOW}KEY${OFF}": "${BLUE}VALUE${OFF}", ... }'
+                        * ${YELLOW}KEY${OFF}:=${BLUE}VALUE${OFF} - body parameters which will be added to body
+                                      JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
+
+EOF
+    echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseArticles]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseArticleAsync${OFF};Create a new course article
+  ${CYAN}deleteCourseArticleAsync${OFF};Delete a course article
+  ${CYAN}getCourseArticleByIdAsync${OFF};Get course article by ID
+  ${CYAN}getCourseArticlesAsync${OFF};Get all course articles
+  ${CYAN}getCourseArticlesCountAsync${OFF};Get course articles count
+  ${CYAN}updateCourseArticleAsync${OFF};Update a course article
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseAssignments]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseAssignmentAsync${OFF};Create a new course assignment
+  ${CYAN}deleteCourseAssignmentAsync${OFF};Delete a course assignment
+  ${CYAN}getCourseAssignmentByIdAsync${OFF};Get course assignment by ID
+  ${CYAN}getCourseAssignmentsAsync${OFF};Get all course assignments
+  ${CYAN}getCourseAssignmentsCountAsync${OFF};Get course assignments count
+  ${CYAN}updateCourseAssignmentAsync${OFF};Update a course assignment
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseCategories]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseCategoryAsync${OFF};Create a new course category
+  ${CYAN}deleteCourseCategoryAsync${OFF};Delete a course category
+  ${CYAN}getCourseCategoriesAsync${OFF};Get all course categories
+  ${CYAN}getCourseCategoriesCountAsync${OFF};Get course categories count
+  ${CYAN}getCourseCategoryByIdAsync${OFF};Get course category by ID
+  ${CYAN}updateCourseCategoryAsync${OFF};Update a course category
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseCertificates]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseCertificateAsync${OFF};Create a course certificate
+  ${CYAN}createCourseCertificateTemplateAsync${OFF};Create a certificate template
+  ${CYAN}deleteCourseCertificateAsync${OFF};Delete a course certificate
+  ${CYAN}deleteCourseCertificateTemplateAsync${OFF};Delete a certificate template
+  ${CYAN}getCourseCertificateAsync${OFF};Get course certificate by ID
+  ${CYAN}getCourseCertificateTemplateAsync${OFF};Get certificate template by ID
+  ${CYAN}getCourseCertificateTemplatesAsync${OFF};Get all certificate templates
+  ${CYAN}getCourseCertificatesAsync${OFF};Get all course certificates
+  ${CYAN}getCourseCertificatesCountAsync${OFF};Get course certificates count
+  ${CYAN}updateCourseCertificateAsync${OFF};Update a course certificate
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseCohorts]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseCohortAsync${OFF};Create a new course cohort
+  ${CYAN}deleteCourseCohortAsync${OFF};Delete a course cohort
+  ${CYAN}getCourseCohortByIdAsync${OFF};Get course cohort by ID
+  ${CYAN}getCourseCohortsAsync${OFF};Get all course cohorts
+  ${CYAN}getCourseCohortsCountAsync${OFF};Get course cohorts count
+  ${CYAN}updateCourseCohortAsync${OFF};Update a course cohort
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseEnrollments]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseEnrollmentAsync${OFF};Create a new course enrollment
+  ${CYAN}deleteCourseEnrollmentAsync${OFF};Delete a course enrollment
+  ${CYAN}getCourseEnrollmentAsync${OFF};Get course enrollment by ID
+  ${CYAN}getEnrollmentsAsync${OFF};Get all course enrollments
+  ${CYAN}getEnrollmentsCountAsync${OFF};Get course enrollments count
+  ${CYAN}getStudentCourseEnrollmentsAsync${OFF};Get enrollments by student
+  ${CYAN}updateCourseEnrollmentAsync${OFF};Update a course enrollment
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseFiles]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseFileAsync${OFF};Create a new course file
+  ${CYAN}deleteCourseFileAsync${OFF};Delete a course file
+  ${CYAN}getCourseFileByIdAsync${OFF};Get course file by ID
+  ${CYAN}getCourseFilesAsync${OFF};Get all course files
+  ${CYAN}getCourseFilesCountAsync${OFF};Get course files count
+  ${CYAN}updateCourseFileAsync${OFF};Update a course file
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseForums]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseForumAsync${OFF};Create a course forum
+  ${CYAN}deleteCourseForumAsync${OFF};Delete a course forum
+  ${CYAN}getCourseForumByIdAsync${OFF};Get course forum by ID
+  ${CYAN}getCourseForumsAsync${OFF};Get all course forums
+  ${CYAN}getCourseForumsCountAsync${OFF};Get course forums count
+  ${CYAN}updateCourseForumAsync${OFF};Update a course forum
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseHandouts]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseHandoutAsync${OFF};Create a course handout
+  ${CYAN}deleteCourseHandoutAsync${OFF};Delete a course handout
+  ${CYAN}getCourseHandoutByIdAsync${OFF};Get course handout by ID
+  ${CYAN}getCourseHandoutsAsync${OFF};Get all course handouts
+  ${CYAN}getCourseHandoutsCountAsync${OFF};Get course handouts count
+  ${CYAN}updateCourseHandoutAsync${OFF};Update a course handout
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseLibraries]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseLibraryAsync${OFF};Create a course library
+  ${CYAN}deleteCourseLibraryAsync${OFF};Delete a course library
+  ${CYAN}getCourseLibrariesAsync${OFF};Get all course libraries
+  ${CYAN}getCourseLibrariesCountAsync${OFF};Get course libraries count
+  ${CYAN}getCourseLibraryByIdAsync${OFF};Get course library by ID
+  ${CYAN}updateCourseLibraryAsync${OFF};Update a course library
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[coursePages]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCoursePageAsync${OFF};Create a new course page
+  ${CYAN}deleteCoursePageAsync${OFF};Delete a course page
+  ${CYAN}getCoursePageByIdAsync${OFF};Get course page by ID
+  ${CYAN}getCoursePagesAsync${OFF};Get all course pages
+  ${CYAN}getCoursePagesCountAsync${OFF};Get course pages count
+  ${CYAN}updateCoursePageAsync${OFF};Update a course page
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseProblemSets]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseProblemSetAsync${OFF};Create a new course problem set
+  ${CYAN}deleteCourseProblemSetAsync${OFF};Delete a course problem set
+  ${CYAN}getCourseProblemSetByIdAsync${OFF};Get course problem set by ID
+  ${CYAN}getCourseProblemSetsAsync${OFF};Get all course problem sets
+  ${CYAN}getCourseProblemSetsCountAsync${OFF};Get course problem sets count
+  ${CYAN}updateCourseProblemSetAsync${OFF};Update a course problem set
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseSections]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseSectionAsync${OFF};Create a new course section
+  ${CYAN}deleteCourseSectionAsync${OFF};Delete a course section
+  ${CYAN}getCourseSectionByIdAsync${OFF};Get course section by ID
+  ${CYAN}getCourseSectionsAsync${OFF};Get all course sections
+  ${CYAN}getCourseSectionsCountAsync${OFF};Get course sections count
+  ${CYAN}updateCourseSectionAsync${OFF};Update a course section
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseUnitComponents]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseUnitComponentAsync${OFF};Create a new course unit component
+  ${CYAN}deleteCourseUnitComponentAsync${OFF};Delete a course unit component
+  ${CYAN}getCourseUnitComponentByIdAsync${OFF};Get course unit component by ID
+  ${CYAN}getCourseUnitComponentsAsync${OFF};Get all course unit components
+  ${CYAN}getCourseUnitComponentsCountAsync${OFF};Get course unit components count
+  ${CYAN}updateCourseUnitComponentAsync${OFF};Update a course unit component
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseUnits]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseUnitAsync${OFF};Create a new course unit
+  ${CYAN}deleteCourseUnitAsync${OFF};Delete a course unit
+  ${CYAN}getCourseUnitByIdAsync${OFF};Get course unit by ID
+  ${CYAN}getCourseUnitsAsync${OFF};Get all course units
+  ${CYAN}getCourseUnitsCountAsync${OFF};Get course units count
+  ${CYAN}updateCourseUnitAsync${OFF};Update a course unit
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseUpdates]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseUpdateAsync${OFF};Create a new course update
+  ${CYAN}deleteCourseUpdateAsync${OFF};Delete a course update
+  ${CYAN}getCourseUpdateByIdAsync${OFF};Get course update by ID
+  ${CYAN}getCourseUpdatesAsync${OFF};Get all course updates
+  ${CYAN}getCourseUpdatesCountAsync${OFF};Get course updates count
+  ${CYAN}updateCourseUpdateAsync${OFF};Update a course update
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courseWikis]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseWikiAsync${OFF};Create a new course wiki
+  ${CYAN}deleteCourseWikiAsync${OFF};Delete a course wiki
+  ${CYAN}getCourseWikiByIdAsync${OFF};Get course wiki by ID
+  ${CYAN}getCourseWikisAsync${OFF};Get all course wikis
+  ${CYAN}getCourseWikisCountAsync${OFF};Get course wikis count
+  ${CYAN}updateCourseWikiAsync${OFF};Update a course wiki
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[courses]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCourseAsync${OFF};Create a new course
+  ${CYAN}deleteCourseAsync${OFF};Delete a course
+  ${CYAN}getCourseArticlesByCourseWikiAsync${OFF};Get course articles by course wiki
+  ${CYAN}getCourseArticlesByCourseWikiCountAsync${OFF};Get course articles by course wiki count
+  ${CYAN}getCourseAssignmentsByCourseAsync${OFF};Get course assignments by course
+  ${CYAN}getCourseAssignmentsByCourseCountAsync${OFF};Get course assignments by course count
+  ${CYAN}getCourseByIdAsync${OFF};Get course by ID
+  ${CYAN}getCourseCategoriesByCourseAsync${OFF};Get course categories by course
+  ${CYAN}getCourseCategoriesByCourseCountAsync${OFF};Get course categories by course count
+  ${CYAN}getCourseCohortsByCourseAsync${OFF};Get course cohorts by course
+  ${CYAN}getCourseCohortsByCourseCountAsync${OFF};Get course cohorts by course count
+  ${CYAN}getCourseEnrollmentsByCourseAsync${OFF};Get enrollments by course
+  ${CYAN}getCourseFilesByCourseAsync${OFF};Get course files by course
+  ${CYAN}getCourseFilesByCourseCountAsync${OFF};Get course files by course count
+  ${CYAN}getCourseForumsByCourseAsync${OFF};Get course forums by course
+  ${CYAN}getCourseForumsByCourseCountAsync${OFF};Get course forums by course count
+  ${CYAN}getCourseHandoutsByCourseAsync${OFF};Get course handouts by course
+  ${CYAN}getCourseHandoutsByCourseCountAsync${OFF};Get course handouts by course count
+  ${CYAN}getCourseLibrariesByCourseAsync${OFF};Get course libraries by course
+  ${CYAN}getCourseLibrariesByCourseCountAsync${OFF};Get course libraries by course count
+  ${CYAN}getCoursePagesByCourseAsync${OFF};Get course pages by course
+  ${CYAN}getCoursePagesByCourseCountAsync${OFF};Get course pages by course count
+  ${CYAN}getCourseProblemSetsByCourseAsync${OFF};Get course problem sets by course
+  ${CYAN}getCourseProblemSetsByCourseCountAsync${OFF};Get course problem sets by course count
+  ${CYAN}getCourseSectionsByCourseAsync${OFF};Get course sections by course
+  ${CYAN}getCourseSectionsByCourseCountAsync${OFF};Get course sections by course count
+  ${CYAN}getCourseUnitComponentsByCourseAsync${OFF};Get course unit components by course
+  ${CYAN}getCourseUnitComponentsByCourseCountAsync${OFF};Get course unit components by course count
+  ${CYAN}getCourseUnitsBySectionAsync${OFF};Get course units by section
+  ${CYAN}getCourseUnitsBySectionCountAsync${OFF};Get course units by section count
+  ${CYAN}getCourseUpdatesByCourseAsync${OFF};Get course updates by course
+  ${CYAN}getCourseUpdatesByCourseCountAsync${OFF};Get course updates by course count
+  ${CYAN}getCourseWikisByCourseAsync${OFF};Get course wikis by course
+  ${CYAN}getCourseWikisByCourseCountAsync${OFF};Get course wikis by course count
+  ${CYAN}getCoursesAsync${OFF};Get courses
+  ${CYAN}getCoursesCountAsync${OFF};Get courses count
+  ${CYAN}getInstructorProfilesByCourseAsync${OFF};Get instructor profiles by course
+  ${CYAN}getInstructorProfilesByCourseCountAsync${OFF};Get instructor profiles by course count
+  ${CYAN}getStudentProfilesByCourseAsync${OFF};Get student profiles by course
+  ${CYAN}getStudentProfilesByCourseCountAsync${OFF};Get student profiles by course count
+  ${CYAN}updateCourseAsync${OFF};Update a course
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[instructorProfiles]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2LearningServiceInstructorProfilesCountGet${OFF};
+  ${CYAN}apiV2LearningServiceInstructorProfilesGet${OFF};
+  ${CYAN}apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete${OFF};
+  ${CYAN}apiV2LearningServiceInstructorProfilesInstructorProfileIdGet${OFF};
+  ${CYAN}apiV2LearningServiceInstructorProfilesInstructorProfileIdPut${OFF};
+  ${CYAN}apiV2LearningServiceInstructorProfilesPost${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[studentProfiles]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2LearningServiceStudentProfilesCountGet${OFF};
+  ${CYAN}apiV2LearningServiceStudentProfilesGet${OFF};
+  ${CYAN}apiV2LearningServiceStudentProfilesPost${OFF};
+  ${CYAN}apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet${OFF};
+  ${CYAN}apiV2LearningServiceStudentProfilesStudentProfileIdDelete${OFF};
+  ${CYAN}apiV2LearningServiceStudentProfilesStudentProfileIdGet${OFF};
+  ${CYAN}apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet${OFF};
+  ${CYAN}apiV2LearningServiceStudentProfilesStudentProfileIdPut${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}Options${OFF}"
+    echo -e "  -h,--help\\t\\t\\t\\tPrint this help"
+    echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
+    echo -e "  --about\\t\\t\\t\\tPrint the information about service"
+    echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
+
+    echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
+    echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
+    echo -e "  --dry-run\\t\\t\\t\\tPrint out the cURL command without"
+    echo -e "           \\t\\t\\t\\texecuting it"
+    echo -e "  -nc,--no-colors\\t\\t\\tEnforce print without colors, otherwise autodetected"
+    echo -e "  -ac,--accept ${YELLOW}<mime-type>${OFF}\\t\\tSet the 'Accept' header in the request"
+    echo -e "  -ct,--content-type ${YELLOW}<mime-type>${OFF}\\tSet the 'Content-type' header in "
+    echo -e "                                \\tthe request"
+    echo ""
+}
+
+
+##############################################################################
+#
+# Print REST service description
+#
+##############################################################################
+print_about() {
+    echo ""
+    echo -e "${BOLD}${WHITE}LearningService command line client (API version 2.0.0.0)${OFF}"
+    echo ""
+    echo -e "License: Fenix Alliance Inc."
+    echo -e "Contact: support@fenix-alliance.com"
+    echo ""
+read -r -d '' appdescription <<EOF
+
+No description provided (generated by Openapi Generator https://github.com/openapitools/openapi-generator)
+EOF
+echo "$appdescription" | paste -sd' ' | fold -sw 80
+}
+
+
+##############################################################################
+#
+# Print REST api version
+#
+##############################################################################
+print_version() {
+    echo ""
+    echo -e "${BOLD}LearningService command line client (API version 2.0.0.0)${OFF}"
+    echo ""
+}
+
+##############################################################################
+#
+# Print help for createCourseArticleAsync operation
+#
+##############################################################################
+print_createCourseArticleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseArticleAsync - Create a new course article${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course article for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseArticleAsync operation
+#
+##############################################################################
+print_deleteCourseArticleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseArticleAsync - Delete a course article${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course article for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}articleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: articleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseArticleByIdAsync operation
+#
+##############################################################################
+print_getCourseArticleByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseArticleByIdAsync - Get course article by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course article by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}articleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: articleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseArticlesAsync operation
+#
+##############################################################################
+print_getCourseArticlesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseArticlesAsync - Get all course articles${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course articles for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseArticlesCountAsync operation
+#
+##############################################################################
+print_getCourseArticlesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseArticlesCountAsync - Get course articles count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course articles for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseArticleAsync operation
+#
+##############################################################################
+print_updateCourseArticleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseArticleAsync - Update a course article${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course article for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}articleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: articleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseAssignmentAsync operation
+#
+##############################################################################
+print_createCourseAssignmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseAssignmentAsync - Create a new course assignment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course assignment for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseAssignmentAsync operation
+#
+##############################################################################
+print_deleteCourseAssignmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseAssignmentAsync - Delete a course assignment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course assignment for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}assignmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assignmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseAssignmentByIdAsync operation
+#
+##############################################################################
+print_getCourseAssignmentByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseAssignmentByIdAsync - Get course assignment by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course assignment by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}assignmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assignmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseAssignmentsAsync operation
+#
+##############################################################################
+print_getCourseAssignmentsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseAssignmentsAsync - Get all course assignments${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course assignments for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseAssignmentsCountAsync operation
+#
+##############################################################################
+print_getCourseAssignmentsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseAssignmentsCountAsync - Get course assignments count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course assignments for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseAssignmentAsync operation
+#
+##############################################################################
+print_updateCourseAssignmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseAssignmentAsync - Update a course assignment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course assignment for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}assignmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assignmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseCategoryAsync operation
+#
+##############################################################################
+print_createCourseCategoryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseCategoryAsync - Create a new course category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course category for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseCategoryAsync operation
+#
+##############################################################################
+print_deleteCourseCategoryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseCategoryAsync - Delete a course category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course category for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}categoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: categoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCategoriesAsync operation
+#
+##############################################################################
+print_getCourseCategoriesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCategoriesAsync - Get all course categories${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course categories for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCategoriesCountAsync operation
+#
+##############################################################################
+print_getCourseCategoriesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCategoriesCountAsync - Get course categories count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course categories for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCategoryByIdAsync operation
+#
+##############################################################################
+print_getCourseCategoryByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCategoryByIdAsync - Get course category by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course category by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}categoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: categoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseCategoryAsync operation
+#
+##############################################################################
+print_updateCourseCategoryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseCategoryAsync - Update a course category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course category for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}categoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: categoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseCertificateAsync operation
+#
+##############################################################################
+print_createCourseCertificateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseCertificateAsync - Create a course certificate${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course certificate for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseCertificateTemplateAsync operation
+#
+##############################################################################
+print_createCourseCertificateTemplateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseCertificateTemplateAsync - Create a certificate template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course certificate template for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseCertificateAsync operation
+#
+##############################################################################
+print_deleteCourseCertificateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseCertificateAsync - Delete a course certificate${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course certificate for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseCertificateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseCertificateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseCertificateTemplateAsync operation
+#
+##############################################################################
+print_deleteCourseCertificateTemplateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseCertificateTemplateAsync - Delete a certificate template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course certificate template for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseCertificateTemplateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseCertificateTemplateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCertificateAsync operation
+#
+##############################################################################
+print_getCourseCertificateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCertificateAsync - Get course certificate by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course certificate by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseCertificateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseCertificateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCertificateTemplateAsync operation
+#
+##############################################################################
+print_getCourseCertificateTemplateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCertificateTemplateAsync - Get certificate template by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course certificate template by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseCertificateTemplateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseCertificateTemplateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCertificateTemplatesAsync operation
+#
+##############################################################################
+print_getCourseCertificateTemplatesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCertificateTemplatesAsync - Get all certificate templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course certificate templates for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCertificatesAsync operation
+#
+##############################################################################
+print_getCourseCertificatesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCertificatesAsync - Get all course certificates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course certificates for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCertificatesCountAsync operation
+#
+##############################################################################
+print_getCourseCertificatesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCertificatesCountAsync - Get course certificates count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course certificates for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseCertificateAsync operation
+#
+##############################################################################
+print_updateCourseCertificateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseCertificateAsync - Update a course certificate${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course certificate for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseCertificateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseCertificateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseCohortAsync operation
+#
+##############################################################################
+print_createCourseCohortAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseCohortAsync - Create a new course cohort${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course cohort for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseCohortAsync operation
+#
+##############################################################################
+print_deleteCourseCohortAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseCohortAsync - Delete a course cohort${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course cohort for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}cohortId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: cohortId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCohortByIdAsync operation
+#
+##############################################################################
+print_getCourseCohortByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCohortByIdAsync - Get course cohort by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course cohort by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}cohortId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: cohortId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCohortsAsync operation
+#
+##############################################################################
+print_getCourseCohortsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCohortsAsync - Get all course cohorts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course cohorts for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCohortsCountAsync operation
+#
+##############################################################################
+print_getCourseCohortsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCohortsCountAsync - Get course cohorts count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course cohorts for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseCohortAsync operation
+#
+##############################################################################
+print_updateCourseCohortAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseCohortAsync - Update a course cohort${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course cohort for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}cohortId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: cohortId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseEnrollmentAsync operation
+#
+##############################################################################
+print_createCourseEnrollmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseEnrollmentAsync - Create a new course enrollment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course enrollment for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseEnrollmentAsync operation
+#
+##############################################################################
+print_deleteCourseEnrollmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseEnrollmentAsync - Delete a course enrollment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course enrollment for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseEnrollmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseEnrollmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseEnrollmentAsync operation
+#
+##############################################################################
+print_getCourseEnrollmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseEnrollmentAsync - Get course enrollment by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course enrollment by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseEnrollmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseEnrollmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getEnrollmentsAsync operation
+#
+##############################################################################
+print_getEnrollmentsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getEnrollmentsAsync - Get all course enrollments${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course enrollments for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getEnrollmentsCountAsync operation
+#
+##############################################################################
+print_getEnrollmentsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getEnrollmentsCountAsync - Get course enrollments count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course enrollments for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStudentCourseEnrollmentsAsync operation
+#
+##############################################################################
+print_getStudentCourseEnrollmentsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStudentCourseEnrollmentsAsync - Get enrollments by student${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all enrollments for a specific student." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}studentProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: studentProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseEnrollmentAsync operation
+#
+##############################################################################
+print_updateCourseEnrollmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseEnrollmentAsync - Update a course enrollment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course enrollment for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseEnrollmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseEnrollmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseFileAsync operation
+#
+##############################################################################
+print_createCourseFileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseFileAsync - Create a new course file${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course file for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseFileAsync operation
+#
+##############################################################################
+print_deleteCourseFileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseFileAsync - Delete a course file${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course file for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}fileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseFileByIdAsync operation
+#
+##############################################################################
+print_getCourseFileByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseFileByIdAsync - Get course file by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course file by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}fileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseFilesAsync operation
+#
+##############################################################################
+print_getCourseFilesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseFilesAsync - Get all course files${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course files for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseFilesCountAsync operation
+#
+##############################################################################
+print_getCourseFilesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseFilesCountAsync - Get course files count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course files for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseFileAsync operation
+#
+##############################################################################
+print_updateCourseFileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseFileAsync - Update a course file${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course file for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}fileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseForumAsync operation
+#
+##############################################################################
+print_createCourseForumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseForumAsync - Create a course forum${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course forum for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseForumAsync operation
+#
+##############################################################################
+print_deleteCourseForumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseForumAsync - Delete a course forum${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course forum by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}forumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: forumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseForumByIdAsync operation
+#
+##############################################################################
+print_getCourseForumByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseForumByIdAsync - Get course forum by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course forum by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}forumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: forumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseForumsAsync operation
+#
+##############################################################################
+print_getCourseForumsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseForumsAsync - Get all course forums${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course forums for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseForumsCountAsync operation
+#
+##############################################################################
+print_getCourseForumsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseForumsCountAsync - Get course forums count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course forums for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseForumAsync operation
+#
+##############################################################################
+print_updateCourseForumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseForumAsync - Update a course forum${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course forum." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}forumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: forumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseHandoutAsync operation
+#
+##############################################################################
+print_createCourseHandoutAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseHandoutAsync - Create a course handout${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course handout for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseHandoutAsync operation
+#
+##############################################################################
+print_deleteCourseHandoutAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseHandoutAsync - Delete a course handout${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course handout by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}handoutId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: handoutId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseHandoutByIdAsync operation
+#
+##############################################################################
+print_getCourseHandoutByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseHandoutByIdAsync - Get course handout by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course handout by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}handoutId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: handoutId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseHandoutsAsync operation
+#
+##############################################################################
+print_getCourseHandoutsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseHandoutsAsync - Get all course handouts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course handouts for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseHandoutsCountAsync operation
+#
+##############################################################################
+print_getCourseHandoutsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseHandoutsCountAsync - Get course handouts count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course handouts for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseHandoutAsync operation
+#
+##############################################################################
+print_updateCourseHandoutAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseHandoutAsync - Update a course handout${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course handout." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}handoutId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: handoutId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseLibraryAsync operation
+#
+##############################################################################
+print_createCourseLibraryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseLibraryAsync - Create a course library${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course library for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseLibraryAsync operation
+#
+##############################################################################
+print_deleteCourseLibraryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseLibraryAsync - Delete a course library${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course library by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}libraryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: libraryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseLibrariesAsync operation
+#
+##############################################################################
+print_getCourseLibrariesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseLibrariesAsync - Get all course libraries${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course libraries for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseLibrariesCountAsync operation
+#
+##############################################################################
+print_getCourseLibrariesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseLibrariesCountAsync - Get course libraries count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course libraries for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseLibraryByIdAsync operation
+#
+##############################################################################
+print_getCourseLibraryByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseLibraryByIdAsync - Get course library by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course library by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}libraryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: libraryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseLibraryAsync operation
+#
+##############################################################################
+print_updateCourseLibraryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseLibraryAsync - Update a course library${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course library." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}libraryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: libraryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCoursePageAsync operation
+#
+##############################################################################
+print_createCoursePageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCoursePageAsync - Create a new course page${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course page for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCoursePageAsync operation
+#
+##############################################################################
+print_deleteCoursePageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCoursePageAsync - Delete a course page${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course page for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCoursePageByIdAsync operation
+#
+##############################################################################
+print_getCoursePageByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCoursePageByIdAsync - Get course page by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course page by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}pageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCoursePagesAsync operation
+#
+##############################################################################
+print_getCoursePagesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCoursePagesAsync - Get all course pages${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course pages for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCoursePagesCountAsync operation
+#
+##############################################################################
+print_getCoursePagesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCoursePagesCountAsync - Get course pages count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course pages for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCoursePageAsync operation
+#
+##############################################################################
+print_updateCoursePageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCoursePageAsync - Update a course page${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course page for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseProblemSetAsync operation
+#
+##############################################################################
+print_createCourseProblemSetAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseProblemSetAsync - Create a new course problem set${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course problem set for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseProblemSetAsync operation
+#
+##############################################################################
+print_deleteCourseProblemSetAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseProblemSetAsync - Delete a course problem set${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course problem set for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}problemSetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: problemSetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseProblemSetByIdAsync operation
+#
+##############################################################################
+print_getCourseProblemSetByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseProblemSetByIdAsync - Get course problem set by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course problem set by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}problemSetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: problemSetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseProblemSetsAsync operation
+#
+##############################################################################
+print_getCourseProblemSetsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseProblemSetsAsync - Get all course problem sets${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course problem sets for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseProblemSetsCountAsync operation
+#
+##############################################################################
+print_getCourseProblemSetsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseProblemSetsCountAsync - Get course problem sets count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course problem sets for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseProblemSetAsync operation
+#
+##############################################################################
+print_updateCourseProblemSetAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseProblemSetAsync - Update a course problem set${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course problem set for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}problemSetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: problemSetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseSectionAsync operation
+#
+##############################################################################
+print_createCourseSectionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseSectionAsync - Create a new course section${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course section for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseSectionAsync operation
+#
+##############################################################################
+print_deleteCourseSectionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseSectionAsync - Delete a course section${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course section for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}sectionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: sectionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseSectionByIdAsync operation
+#
+##############################################################################
+print_getCourseSectionByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseSectionByIdAsync - Get course section by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course section by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}sectionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: sectionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseSectionsAsync operation
+#
+##############################################################################
+print_getCourseSectionsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseSectionsAsync - Get all course sections${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course sections for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseSectionsCountAsync operation
+#
+##############################################################################
+print_getCourseSectionsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseSectionsCountAsync - Get course sections count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course sections for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseSectionAsync operation
+#
+##############################################################################
+print_updateCourseSectionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseSectionAsync - Update a course section${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course section for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}sectionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: sectionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseUnitComponentAsync operation
+#
+##############################################################################
+print_createCourseUnitComponentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseUnitComponentAsync - Create a new course unit component${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course unit component for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseUnitComponentAsync operation
+#
+##############################################################################
+print_deleteCourseUnitComponentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseUnitComponentAsync - Delete a course unit component${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course unit component for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}componentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: componentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUnitComponentByIdAsync operation
+#
+##############################################################################
+print_getCourseUnitComponentByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUnitComponentByIdAsync - Get course unit component by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course unit component by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}componentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: componentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUnitComponentsAsync operation
+#
+##############################################################################
+print_getCourseUnitComponentsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUnitComponentsAsync - Get all course unit components${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course unit components for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUnitComponentsCountAsync operation
+#
+##############################################################################
+print_getCourseUnitComponentsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUnitComponentsCountAsync - Get course unit components count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course unit components for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseUnitComponentAsync operation
+#
+##############################################################################
+print_updateCourseUnitComponentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseUnitComponentAsync - Update a course unit component${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course unit component for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}componentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: componentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseUnitAsync operation
+#
+##############################################################################
+print_createCourseUnitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseUnitAsync - Create a new course unit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course unit for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseUnitAsync operation
+#
+##############################################################################
+print_deleteCourseUnitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseUnitAsync - Delete a course unit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course unit for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}unitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: unitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUnitByIdAsync operation
+#
+##############################################################################
+print_getCourseUnitByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUnitByIdAsync - Get course unit by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course unit by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}unitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: unitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUnitsAsync operation
+#
+##############################################################################
+print_getCourseUnitsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUnitsAsync - Get all course units${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course units for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUnitsCountAsync operation
+#
+##############################################################################
+print_getCourseUnitsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUnitsCountAsync - Get course units count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course units for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseUnitAsync operation
+#
+##############################################################################
+print_updateCourseUnitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseUnitAsync - Update a course unit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course unit for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}unitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: unitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseUpdateAsync operation
+#
+##############################################################################
+print_createCourseUpdateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseUpdateAsync - Create a new course update${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course update for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseUpdateAsync operation
+#
+##############################################################################
+print_deleteCourseUpdateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseUpdateAsync - Delete a course update${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course update for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}updateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: updateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUpdateByIdAsync operation
+#
+##############################################################################
+print_getCourseUpdateByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUpdateByIdAsync - Get course update by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course update by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}updateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: updateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUpdatesAsync operation
+#
+##############################################################################
+print_getCourseUpdatesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUpdatesAsync - Get all course updates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course updates for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUpdatesCountAsync operation
+#
+##############################################################################
+print_getCourseUpdatesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUpdatesCountAsync - Get course updates count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course updates for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseUpdateAsync operation
+#
+##############################################################################
+print_updateCourseUpdateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseUpdateAsync - Update a course update${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course update for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}updateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: updateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseWikiAsync operation
+#
+##############################################################################
+print_createCourseWikiAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseWikiAsync - Create a new course wiki${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course wiki for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseWikiAsync operation
+#
+##############################################################################
+print_deleteCourseWikiAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseWikiAsync - Delete a course wiki${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course wiki for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}wikiId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: wikiId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseWikiByIdAsync operation
+#
+##############################################################################
+print_getCourseWikiByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseWikiByIdAsync - Get course wiki by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course wiki by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}wikiId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: wikiId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseWikisAsync operation
+#
+##############################################################################
+print_getCourseWikisAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseWikisAsync - Get all course wikis${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course wikis for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseWikisCountAsync operation
+#
+##############################################################################
+print_getCourseWikisCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseWikisCountAsync - Get course wikis count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course wikis for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseWikiAsync operation
+#
+##############################################################################
+print_updateCourseWikiAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseWikiAsync - Update a course wiki${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course wiki for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}wikiId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: wikiId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCourseAsync operation
+#
+##############################################################################
+print_createCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCourseAsync - Create a new course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new course for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCourseAsync operation
+#
+##############################################################################
+print_deleteCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCourseAsync - Delete a course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a course for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseArticlesByCourseWikiAsync operation
+#
+##############################################################################
+print_getCourseArticlesByCourseWikiAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseArticlesByCourseWikiAsync - Get course articles by course wiki${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course articles for a specific course wiki." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}wikiId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: wikiId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseArticlesByCourseWikiCountAsync operation
+#
+##############################################################################
+print_getCourseArticlesByCourseWikiCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseArticlesByCourseWikiCountAsync - Get course articles by course wiki count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course articles for a specific course wiki." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}wikiId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: wikiId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseAssignmentsByCourseAsync operation
+#
+##############################################################################
+print_getCourseAssignmentsByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseAssignmentsByCourseAsync - Get course assignments by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course assignments for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseAssignmentsByCourseCountAsync operation
+#
+##############################################################################
+print_getCourseAssignmentsByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseAssignmentsByCourseCountAsync - Get course assignments by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course assignments for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseByIdAsync operation
+#
+##############################################################################
+print_getCourseByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseByIdAsync - Get course by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific course by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCategoriesByCourseAsync operation
+#
+##############################################################################
+print_getCourseCategoriesByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCategoriesByCourseAsync - Get course categories by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course categories for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCategoriesByCourseCountAsync operation
+#
+##############################################################################
+print_getCourseCategoriesByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCategoriesByCourseCountAsync - Get course categories by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course categories for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCohortsByCourseAsync operation
+#
+##############################################################################
+print_getCourseCohortsByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCohortsByCourseAsync - Get course cohorts by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course cohorts for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseCohortsByCourseCountAsync operation
+#
+##############################################################################
+print_getCourseCohortsByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseCohortsByCourseCountAsync - Get course cohorts by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course cohorts for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseEnrollmentsByCourseAsync operation
+#
+##############################################################################
+print_getCourseEnrollmentsByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseEnrollmentsByCourseAsync - Get enrollments by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all enrollments for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseFilesByCourseAsync operation
+#
+##############################################################################
+print_getCourseFilesByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseFilesByCourseAsync - Get course files by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course files for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseFilesByCourseCountAsync operation
+#
+##############################################################################
+print_getCourseFilesByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseFilesByCourseCountAsync - Get course files by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course files for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseForumsByCourseAsync operation
+#
+##############################################################################
+print_getCourseForumsByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseForumsByCourseAsync - Get course forums by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course forums for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseForumsByCourseCountAsync operation
+#
+##############################################################################
+print_getCourseForumsByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseForumsByCourseCountAsync - Get course forums by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course forums for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseHandoutsByCourseAsync operation
+#
+##############################################################################
+print_getCourseHandoutsByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseHandoutsByCourseAsync - Get course handouts by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course handouts for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseHandoutsByCourseCountAsync operation
+#
+##############################################################################
+print_getCourseHandoutsByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseHandoutsByCourseCountAsync - Get course handouts by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course handouts for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseLibrariesByCourseAsync operation
+#
+##############################################################################
+print_getCourseLibrariesByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseLibrariesByCourseAsync - Get course libraries by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course libraries for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseLibrariesByCourseCountAsync operation
+#
+##############################################################################
+print_getCourseLibrariesByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseLibrariesByCourseCountAsync - Get course libraries by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course libraries for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCoursePagesByCourseAsync operation
+#
+##############################################################################
+print_getCoursePagesByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCoursePagesByCourseAsync - Get course pages by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course pages for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCoursePagesByCourseCountAsync operation
+#
+##############################################################################
+print_getCoursePagesByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCoursePagesByCourseCountAsync - Get course pages by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course pages for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseProblemSetsByCourseAsync operation
+#
+##############################################################################
+print_getCourseProblemSetsByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseProblemSetsByCourseAsync - Get course problem sets by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course problem sets for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseProblemSetsByCourseCountAsync operation
+#
+##############################################################################
+print_getCourseProblemSetsByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseProblemSetsByCourseCountAsync - Get course problem sets by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course problem sets for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseSectionsByCourseAsync operation
+#
+##############################################################################
+print_getCourseSectionsByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseSectionsByCourseAsync - Get course sections by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course sections for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseSectionsByCourseCountAsync operation
+#
+##############################################################################
+print_getCourseSectionsByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseSectionsByCourseCountAsync - Get course sections by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course sections for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUnitComponentsByCourseAsync operation
+#
+##############################################################################
+print_getCourseUnitComponentsByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUnitComponentsByCourseAsync - Get course unit components by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course unit components for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUnitComponentsByCourseCountAsync operation
+#
+##############################################################################
+print_getCourseUnitComponentsByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUnitComponentsByCourseCountAsync - Get course unit components by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course unit components for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUnitsBySectionAsync operation
+#
+##############################################################################
+print_getCourseUnitsBySectionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUnitsBySectionAsync - Get course units by section${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course units for a specific course section." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}sectionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: sectionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUnitsBySectionCountAsync operation
+#
+##############################################################################
+print_getCourseUnitsBySectionCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUnitsBySectionCountAsync - Get course units by section count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course units for a specific course section." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}sectionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: sectionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUpdatesByCourseAsync operation
+#
+##############################################################################
+print_getCourseUpdatesByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUpdatesByCourseAsync - Get course updates by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course updates for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseUpdatesByCourseCountAsync operation
+#
+##############################################################################
+print_getCourseUpdatesByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseUpdatesByCourseCountAsync - Get course updates by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course updates for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseWikisByCourseAsync operation
+#
+##############################################################################
+print_getCourseWikisByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseWikisByCourseAsync - Get course wikis by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all course wikis for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCourseWikisByCourseCountAsync operation
+#
+##############################################################################
+print_getCourseWikisByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCourseWikisByCourseCountAsync - Get course wikis by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of course wikis for a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCoursesAsync operation
+#
+##############################################################################
+print_getCoursesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCoursesAsync - Get courses${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves courses. When tenantId is provided, returns tenant-scoped courses; otherwise returns all courses." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCoursesCountAsync operation
+#
+##############################################################################
+print_getCoursesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCoursesCountAsync - Get courses count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of courses. When tenantId is provided, returns tenant-scoped count; otherwise returns global count." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getInstructorProfilesByCourseAsync operation
+#
+##############################################################################
+print_getInstructorProfilesByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getInstructorProfilesByCourseAsync - Get instructor profiles by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all instructor profiles teaching a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getInstructorProfilesByCourseCountAsync operation
+#
+##############################################################################
+print_getInstructorProfilesByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getInstructorProfilesByCourseCountAsync - Get instructor profiles by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of instructor profiles teaching a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStudentProfilesByCourseAsync operation
+#
+##############################################################################
+print_getStudentProfilesByCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStudentProfilesByCourseAsync - Get student profiles by course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all student profiles enrolled in a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getStudentProfilesByCourseCountAsync operation
+#
+##############################################################################
+print_getStudentProfilesByCourseCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getStudentProfilesByCourseCountAsync - Get student profiles by course count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of student profiles enrolled in a specific course." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCourseAsync operation
+#
+##############################################################################
+print_updateCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCourseAsync - Update a course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing course for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for forgotPasswordPost operation
+#
+##############################################################################
+print_forgotPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for helloGet operation
+#
+##############################################################################
+print_helloGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for loginPost operation
+#
+##############################################################################
+print_loginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manage2faPost operation
+#
+##############################################################################
+print_manage2faPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceInstructorProfilesCountGet operation
+#
+##############################################################################
+print_apiV2LearningServiceInstructorProfilesCountGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceInstructorProfilesCountGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceInstructorProfilesGet operation
+#
+##############################################################################
+print_apiV2LearningServiceInstructorProfilesGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceInstructorProfilesGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete operation
+#
+##############################################################################
+print_apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}instructorProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: instructorProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceInstructorProfilesInstructorProfileIdGet operation
+#
+##############################################################################
+print_apiV2LearningServiceInstructorProfilesInstructorProfileIdGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceInstructorProfilesInstructorProfileIdGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}instructorProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: instructorProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceInstructorProfilesInstructorProfileIdPut operation
+#
+##############################################################################
+print_apiV2LearningServiceInstructorProfilesInstructorProfileIdPut_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceInstructorProfilesInstructorProfileIdPut - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}instructorProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: instructorProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceInstructorProfilesPost operation
+#
+##############################################################################
+print_apiV2LearningServiceInstructorProfilesPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceInstructorProfilesPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceStudentProfilesCountGet operation
+#
+##############################################################################
+print_apiV2LearningServiceStudentProfilesCountGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceStudentProfilesCountGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceStudentProfilesGet operation
+#
+##############################################################################
+print_apiV2LearningServiceStudentProfilesGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceStudentProfilesGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceStudentProfilesPost operation
+#
+##############################################################################
+print_apiV2LearningServiceStudentProfilesPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceStudentProfilesPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet operation
+#
+##############################################################################
+print_apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}studentProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: studentProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceStudentProfilesStudentProfileIdDelete operation
+#
+##############################################################################
+print_apiV2LearningServiceStudentProfilesStudentProfileIdDelete_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceStudentProfilesStudentProfileIdDelete - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}studentProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: studentProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceStudentProfilesStudentProfileIdGet operation
+#
+##############################################################################
+print_apiV2LearningServiceStudentProfilesStudentProfileIdGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceStudentProfilesStudentProfileIdGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}studentProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: studentProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet operation
+#
+##############################################################################
+print_apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}studentProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: studentProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceStudentProfilesStudentProfileIdPut operation
+#
+##############################################################################
+print_apiV2LearningServiceStudentProfilesStudentProfileIdPut_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceStudentProfilesStudentProfileIdPut - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}studentProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: studentProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+
+
+##############################################################################
+#
+# Call createCourseArticleAsync operation
+#
+##############################################################################
+call_createCourseArticleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseArticles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseArticleAsync operation
+#
+##############################################################################
+call_deleteCourseArticleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(articleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseArticles/{articleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseArticleByIdAsync operation
+#
+##############################################################################
+call_getCourseArticleByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(articleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseArticles/{articleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseArticlesAsync operation
+#
+##############################################################################
+call_getCourseArticlesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseArticles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseArticlesCountAsync operation
+#
+##############################################################################
+call_getCourseArticlesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseArticles/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseArticleAsync operation
+#
+##############################################################################
+call_updateCourseArticleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(articleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseArticles/{articleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseAssignmentAsync operation
+#
+##############################################################################
+call_createCourseAssignmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseAssignments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseAssignmentAsync operation
+#
+##############################################################################
+call_deleteCourseAssignmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(assignmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseAssignments/{assignmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseAssignmentByIdAsync operation
+#
+##############################################################################
+call_getCourseAssignmentByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(assignmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseAssignments/{assignmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseAssignmentsAsync operation
+#
+##############################################################################
+call_getCourseAssignmentsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseAssignments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseAssignmentsCountAsync operation
+#
+##############################################################################
+call_getCourseAssignmentsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseAssignments/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseAssignmentAsync operation
+#
+##############################################################################
+call_updateCourseAssignmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(assignmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseAssignments/{assignmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseCategoryAsync operation
+#
+##############################################################################
+call_createCourseCategoryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCategories" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseCategoryAsync operation
+#
+##############################################################################
+call_deleteCourseCategoryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(categoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCategories/{categoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCategoriesAsync operation
+#
+##############################################################################
+call_getCourseCategoriesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCategories" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCategoriesCountAsync operation
+#
+##############################################################################
+call_getCourseCategoriesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCategories/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCategoryByIdAsync operation
+#
+##############################################################################
+call_getCourseCategoryByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(categoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCategories/{categoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseCategoryAsync operation
+#
+##############################################################################
+call_updateCourseCategoryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(categoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCategories/{categoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseCertificateAsync operation
+#
+##############################################################################
+call_createCourseCertificateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCertificates" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseCertificateTemplateAsync operation
+#
+##############################################################################
+call_createCourseCertificateTemplateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCertificates/Template" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseCertificateAsync operation
+#
+##############################################################################
+call_deleteCourseCertificateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseCertificateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCertificates/{courseCertificateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseCertificateTemplateAsync operation
+#
+##############################################################################
+call_deleteCourseCertificateTemplateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseCertificateTemplateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCertificates/Template/{courseCertificateTemplateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCertificateAsync operation
+#
+##############################################################################
+call_getCourseCertificateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseCertificateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCertificates/{courseCertificateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCertificateTemplateAsync operation
+#
+##############################################################################
+call_getCourseCertificateTemplateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseCertificateTemplateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCertificates/Template/{courseCertificateTemplateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCertificateTemplatesAsync operation
+#
+##############################################################################
+call_getCourseCertificateTemplatesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCertificates/Template" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCertificatesAsync operation
+#
+##############################################################################
+call_getCourseCertificatesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCertificates" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCertificatesCountAsync operation
+#
+##############################################################################
+call_getCourseCertificatesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCertificates/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseCertificateAsync operation
+#
+##############################################################################
+call_updateCourseCertificateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseCertificateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCertificates/{courseCertificateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseCohortAsync operation
+#
+##############################################################################
+call_createCourseCohortAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCohorts" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseCohortAsync operation
+#
+##############################################################################
+call_deleteCourseCohortAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(cohortId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCohorts/{cohortId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCohortByIdAsync operation
+#
+##############################################################################
+call_getCourseCohortByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(cohortId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCohorts/{cohortId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCohortsAsync operation
+#
+##############################################################################
+call_getCourseCohortsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCohorts" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCohortsCountAsync operation
+#
+##############################################################################
+call_getCourseCohortsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCohorts/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseCohortAsync operation
+#
+##############################################################################
+call_updateCourseCohortAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(cohortId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCohorts/{cohortId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseEnrollmentAsync operation
+#
+##############################################################################
+call_createCourseEnrollmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseEnrollments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseEnrollmentAsync operation
+#
+##############################################################################
+call_deleteCourseEnrollmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseEnrollmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseEnrollments/{courseEnrollmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseEnrollmentAsync operation
+#
+##############################################################################
+call_getCourseEnrollmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseEnrollmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseEnrollments/{courseEnrollmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getEnrollmentsAsync operation
+#
+##############################################################################
+call_getEnrollmentsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseEnrollments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getEnrollmentsCountAsync operation
+#
+##############################################################################
+call_getEnrollmentsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseEnrollments/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStudentCourseEnrollmentsAsync operation
+#
+##############################################################################
+call_getStudentCourseEnrollmentsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(studentProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseEnrollments/Student/{studentProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseEnrollmentAsync operation
+#
+##############################################################################
+call_updateCourseEnrollmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseEnrollmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseEnrollments/{courseEnrollmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseFileAsync operation
+#
+##############################################################################
+call_createCourseFileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseFiles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseFileAsync operation
+#
+##############################################################################
+call_deleteCourseFileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(fileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseFiles/{fileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseFileByIdAsync operation
+#
+##############################################################################
+call_getCourseFileByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(fileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseFiles/{fileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseFilesAsync operation
+#
+##############################################################################
+call_getCourseFilesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseFiles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseFilesCountAsync operation
+#
+##############################################################################
+call_getCourseFilesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseFiles/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseFileAsync operation
+#
+##############################################################################
+call_updateCourseFileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(fileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseFiles/{fileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseForumAsync operation
+#
+##############################################################################
+call_createCourseForumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseForums" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseForumAsync operation
+#
+##############################################################################
+call_deleteCourseForumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(forumId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseForums/{forumId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseForumByIdAsync operation
+#
+##############################################################################
+call_getCourseForumByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(forumId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseForums/{forumId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseForumsAsync operation
+#
+##############################################################################
+call_getCourseForumsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseForums" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseForumsCountAsync operation
+#
+##############################################################################
+call_getCourseForumsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseForums/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseForumAsync operation
+#
+##############################################################################
+call_updateCourseForumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(forumId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseForums/{forumId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseHandoutAsync operation
+#
+##############################################################################
+call_createCourseHandoutAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseHandouts" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseHandoutAsync operation
+#
+##############################################################################
+call_deleteCourseHandoutAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(handoutId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseHandouts/{handoutId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseHandoutByIdAsync operation
+#
+##############################################################################
+call_getCourseHandoutByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(handoutId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseHandouts/{handoutId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseHandoutsAsync operation
+#
+##############################################################################
+call_getCourseHandoutsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseHandouts" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseHandoutsCountAsync operation
+#
+##############################################################################
+call_getCourseHandoutsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseHandouts/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseHandoutAsync operation
+#
+##############################################################################
+call_updateCourseHandoutAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(handoutId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseHandouts/{handoutId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseLibraryAsync operation
+#
+##############################################################################
+call_createCourseLibraryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseLibraries" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseLibraryAsync operation
+#
+##############################################################################
+call_deleteCourseLibraryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(libraryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseLibraries/{libraryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseLibrariesAsync operation
+#
+##############################################################################
+call_getCourseLibrariesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseLibraries" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseLibrariesCountAsync operation
+#
+##############################################################################
+call_getCourseLibrariesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseLibraries/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseLibraryByIdAsync operation
+#
+##############################################################################
+call_getCourseLibraryByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(libraryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseLibraries/{libraryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseLibraryAsync operation
+#
+##############################################################################
+call_updateCourseLibraryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(libraryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseLibraries/{libraryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCoursePageAsync operation
+#
+##############################################################################
+call_createCoursePageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CoursePages" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCoursePageAsync operation
+#
+##############################################################################
+call_deleteCoursePageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CoursePages/{pageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCoursePageByIdAsync operation
+#
+##############################################################################
+call_getCoursePageByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CoursePages/{pageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCoursePagesAsync operation
+#
+##############################################################################
+call_getCoursePagesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CoursePages" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCoursePagesCountAsync operation
+#
+##############################################################################
+call_getCoursePagesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CoursePages/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCoursePageAsync operation
+#
+##############################################################################
+call_updateCoursePageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CoursePages/{pageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseProblemSetAsync operation
+#
+##############################################################################
+call_createCourseProblemSetAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseProblemSets" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseProblemSetAsync operation
+#
+##############################################################################
+call_deleteCourseProblemSetAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(problemSetId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseProblemSets/{problemSetId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseProblemSetByIdAsync operation
+#
+##############################################################################
+call_getCourseProblemSetByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(problemSetId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseProblemSets/{problemSetId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseProblemSetsAsync operation
+#
+##############################################################################
+call_getCourseProblemSetsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseProblemSets" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseProblemSetsCountAsync operation
+#
+##############################################################################
+call_getCourseProblemSetsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseProblemSets/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseProblemSetAsync operation
+#
+##############################################################################
+call_updateCourseProblemSetAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(problemSetId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseProblemSets/{problemSetId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseSectionAsync operation
+#
+##############################################################################
+call_createCourseSectionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseSections" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseSectionAsync operation
+#
+##############################################################################
+call_deleteCourseSectionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(sectionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseSections/{sectionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseSectionByIdAsync operation
+#
+##############################################################################
+call_getCourseSectionByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(sectionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseSections/{sectionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseSectionsAsync operation
+#
+##############################################################################
+call_getCourseSectionsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseSections" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseSectionsCountAsync operation
+#
+##############################################################################
+call_getCourseSectionsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseSections/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseSectionAsync operation
+#
+##############################################################################
+call_updateCourseSectionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(sectionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseSections/{sectionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseUnitComponentAsync operation
+#
+##############################################################################
+call_createCourseUnitComponentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnitComponents" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseUnitComponentAsync operation
+#
+##############################################################################
+call_deleteCourseUnitComponentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(componentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnitComponents/{componentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUnitComponentByIdAsync operation
+#
+##############################################################################
+call_getCourseUnitComponentByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(componentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnitComponents/{componentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUnitComponentsAsync operation
+#
+##############################################################################
+call_getCourseUnitComponentsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnitComponents" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUnitComponentsCountAsync operation
+#
+##############################################################################
+call_getCourseUnitComponentsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnitComponents/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseUnitComponentAsync operation
+#
+##############################################################################
+call_updateCourseUnitComponentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(componentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnitComponents/{componentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseUnitAsync operation
+#
+##############################################################################
+call_createCourseUnitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnits" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseUnitAsync operation
+#
+##############################################################################
+call_deleteCourseUnitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(unitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnits/{unitId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUnitByIdAsync operation
+#
+##############################################################################
+call_getCourseUnitByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(unitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnits/{unitId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUnitsAsync operation
+#
+##############################################################################
+call_getCourseUnitsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnits" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUnitsCountAsync operation
+#
+##############################################################################
+call_getCourseUnitsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnits/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseUnitAsync operation
+#
+##############################################################################
+call_updateCourseUnitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(unitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnits/{unitId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseUpdateAsync operation
+#
+##############################################################################
+call_createCourseUpdateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUpdates" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseUpdateAsync operation
+#
+##############################################################################
+call_deleteCourseUpdateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(updateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUpdates/{updateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUpdateByIdAsync operation
+#
+##############################################################################
+call_getCourseUpdateByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(updateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUpdates/{updateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUpdatesAsync operation
+#
+##############################################################################
+call_getCourseUpdatesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUpdates" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUpdatesCountAsync operation
+#
+##############################################################################
+call_getCourseUpdatesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUpdates/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseUpdateAsync operation
+#
+##############################################################################
+call_updateCourseUpdateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(updateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUpdates/{updateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseWikiAsync operation
+#
+##############################################################################
+call_createCourseWikiAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseWikis" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseWikiAsync operation
+#
+##############################################################################
+call_deleteCourseWikiAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(wikiId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseWikis/{wikiId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseWikiByIdAsync operation
+#
+##############################################################################
+call_getCourseWikiByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(wikiId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseWikis/{wikiId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseWikisAsync operation
+#
+##############################################################################
+call_getCourseWikisAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseWikis" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseWikisCountAsync operation
+#
+##############################################################################
+call_getCourseWikisCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseWikis/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseWikiAsync operation
+#
+##############################################################################
+call_updateCourseWikiAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(wikiId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseWikis/{wikiId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCourseAsync operation
+#
+##############################################################################
+call_createCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCourseAsync operation
+#
+##############################################################################
+call_deleteCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseArticlesByCourseWikiAsync operation
+#
+##############################################################################
+call_getCourseArticlesByCourseWikiAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId wikiId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Articles/{wikiId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseArticlesByCourseWikiCountAsync operation
+#
+##############################################################################
+call_getCourseArticlesByCourseWikiCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId wikiId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Articles/{wikiId}/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseAssignmentsByCourseAsync operation
+#
+##############################################################################
+call_getCourseAssignmentsByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Assignments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseAssignmentsByCourseCountAsync operation
+#
+##############################################################################
+call_getCourseAssignmentsByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Assignments/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseByIdAsync operation
+#
+##############################################################################
+call_getCourseByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCategoriesByCourseAsync operation
+#
+##############################################################################
+call_getCourseCategoriesByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Categories" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCategoriesByCourseCountAsync operation
+#
+##############################################################################
+call_getCourseCategoriesByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Categories/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCohortsByCourseAsync operation
+#
+##############################################################################
+call_getCourseCohortsByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Cohorts" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseCohortsByCourseCountAsync operation
+#
+##############################################################################
+call_getCourseCohortsByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Cohorts/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseEnrollmentsByCourseAsync operation
+#
+##############################################################################
+call_getCourseEnrollmentsByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Enrollments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseFilesByCourseAsync operation
+#
+##############################################################################
+call_getCourseFilesByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Files" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseFilesByCourseCountAsync operation
+#
+##############################################################################
+call_getCourseFilesByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Files/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseForumsByCourseAsync operation
+#
+##############################################################################
+call_getCourseForumsByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Forums" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseForumsByCourseCountAsync operation
+#
+##############################################################################
+call_getCourseForumsByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Forums/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseHandoutsByCourseAsync operation
+#
+##############################################################################
+call_getCourseHandoutsByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Handouts" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseHandoutsByCourseCountAsync operation
+#
+##############################################################################
+call_getCourseHandoutsByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Handouts/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseLibrariesByCourseAsync operation
+#
+##############################################################################
+call_getCourseLibrariesByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Libraries" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseLibrariesByCourseCountAsync operation
+#
+##############################################################################
+call_getCourseLibrariesByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Libraries/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCoursePagesByCourseAsync operation
+#
+##############################################################################
+call_getCoursePagesByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Pages" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCoursePagesByCourseCountAsync operation
+#
+##############################################################################
+call_getCoursePagesByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Pages/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseProblemSetsByCourseAsync operation
+#
+##############################################################################
+call_getCourseProblemSetsByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/ProblemSets" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseProblemSetsByCourseCountAsync operation
+#
+##############################################################################
+call_getCourseProblemSetsByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/ProblemSets/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseSectionsByCourseAsync operation
+#
+##############################################################################
+call_getCourseSectionsByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Sections" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseSectionsByCourseCountAsync operation
+#
+##############################################################################
+call_getCourseSectionsByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Sections/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUnitComponentsByCourseAsync operation
+#
+##############################################################################
+call_getCourseUnitComponentsByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/UnitComponents" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUnitComponentsByCourseCountAsync operation
+#
+##############################################################################
+call_getCourseUnitComponentsByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/UnitComponents/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUnitsBySectionAsync operation
+#
+##############################################################################
+call_getCourseUnitsBySectionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId sectionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Units/{sectionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUnitsBySectionCountAsync operation
+#
+##############################################################################
+call_getCourseUnitsBySectionCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId sectionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Units/{sectionId}/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUpdatesByCourseAsync operation
+#
+##############################################################################
+call_getCourseUpdatesByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Updates" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseUpdatesByCourseCountAsync operation
+#
+##############################################################################
+call_getCourseUpdatesByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Updates/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseWikisByCourseAsync operation
+#
+##############################################################################
+call_getCourseWikisByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Wikis" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCourseWikisByCourseCountAsync operation
+#
+##############################################################################
+call_getCourseWikisByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Wikis/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCoursesAsync operation
+#
+##############################################################################
+call_getCoursesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCoursesCountAsync operation
+#
+##############################################################################
+call_getCoursesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getInstructorProfilesByCourseAsync operation
+#
+##############################################################################
+call_getInstructorProfilesByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Instructors" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getInstructorProfilesByCourseCountAsync operation
+#
+##############################################################################
+call_getInstructorProfilesByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Instructors/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStudentProfilesByCourseAsync operation
+#
+##############################################################################
+call_getStudentProfilesByCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Students" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getStudentProfilesByCourseCountAsync operation
+#
+##############################################################################
+call_getStudentProfilesByCourseCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}/Students/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateCourseAsync operation
+#
+##############################################################################
+call_updateCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call forgotPasswordPost operation
+#
+##############################################################################
+call_forgotPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call helloGet operation
+#
+##############################################################################
+call_helloGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call loginPost operation
+#
+##############################################################################
+call_loginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(useCookies useSessionCookies)
+    local path
+
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoPost operation
+#
+##############################################################################
+call_manageInfoPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call refreshPost operation
+#
+##############################################################################
+call_refreshPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceInstructorProfilesCountGet operation
+#
+##############################################################################
+call_apiV2LearningServiceInstructorProfilesCountGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/InstructorProfiles/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceInstructorProfilesGet operation
+#
+##############################################################################
+call_apiV2LearningServiceInstructorProfilesGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/InstructorProfiles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete operation
+#
+##############################################################################
+call_apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(instructorProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/InstructorProfiles/{instructorProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceInstructorProfilesInstructorProfileIdGet operation
+#
+##############################################################################
+call_apiV2LearningServiceInstructorProfilesInstructorProfileIdGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(instructorProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/InstructorProfiles/{instructorProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceInstructorProfilesInstructorProfileIdPut operation
+#
+##############################################################################
+call_apiV2LearningServiceInstructorProfilesInstructorProfileIdPut() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(instructorProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/InstructorProfiles/{instructorProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceInstructorProfilesPost operation
+#
+##############################################################################
+call_apiV2LearningServiceInstructorProfilesPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/InstructorProfiles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceStudentProfilesCountGet operation
+#
+##############################################################################
+call_apiV2LearningServiceStudentProfilesCountGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/StudentProfiles/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceStudentProfilesGet operation
+#
+##############################################################################
+call_apiV2LearningServiceStudentProfilesGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/StudentProfiles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceStudentProfilesPost operation
+#
+##############################################################################
+call_apiV2LearningServiceStudentProfilesPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/StudentProfiles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet operation
+#
+##############################################################################
+call_apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(studentProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/StudentProfiles/{studentProfileId}/Average" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceStudentProfilesStudentProfileIdDelete operation
+#
+##############################################################################
+call_apiV2LearningServiceStudentProfilesStudentProfileIdDelete() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(studentProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/StudentProfiles/{studentProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceStudentProfilesStudentProfileIdGet operation
+#
+##############################################################################
+call_apiV2LearningServiceStudentProfilesStudentProfileIdGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(studentProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/StudentProfiles/{studentProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet operation
+#
+##############################################################################
+call_apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(studentProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/StudentProfiles/{studentProfileId}/HoursCompleted" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2LearningServiceStudentProfilesStudentProfileIdPut operation
+#
+##############################################################################
+call_apiV2LearningServiceStudentProfilesStudentProfileIdPut() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(studentProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/StudentProfiles/{studentProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+
+
+##############################################################################
+#
+# Main
+#
+##############################################################################
+
+
+# Check dependencies
+type curl >/dev/null 2>&1 || { echo >&2 "ERROR: You do not have 'cURL' installed."; exit 1; }
+type sed >/dev/null 2>&1 || { echo >&2 "ERROR: You do not have 'sed' installed."; exit 1; }
+type column >/dev/null 2>&1 || { echo >&2 "ERROR: You do not have 'bsdmainutils' installed."; exit 1; }
+
+#
+# Process command line
+#
+# Pass all arguments before 'operation' to cURL except the ones we override
+#
+take_user=false
+take_host=false
+take_accept_header=false
+take_contenttype_header=false
+
+for key in "$@"; do
+# Take the value of -u|--user argument
+if [[ "$take_user" = true ]]; then
+    basic_auth_credential="$key"
+    take_user=false
+    continue
+fi
+# Take the value of --host argument
+if [[ "$take_host" = true ]]; then
+    host="$key"
+    take_host=false
+    continue
+fi
+# Take the value of --accept argument
+if [[ "$take_accept_header" = true ]]; then
+    header_accept=$(lookup_mime_type "$key")
+    take_accept_header=false
+    continue
+fi
+# Take the value of --content-type argument
+if [[ "$take_contenttype_header" = true ]]; then
+    header_content_type=$(lookup_mime_type "$key")
+    take_contenttype_header=false
+    continue
+fi
+case $key in
+    -h|--help)
+    if [[ "x$operation" == "x" ]]; then
+        print_help
+        exit 0
+    else
+        eval "print_${operation}_help"
+        exit 0
+    fi
+    ;;
+    -V|--version)
+    print_version
+    exit 0
+    ;;
+    --about)
+    print_about
+    exit 0
+    ;;
+    -u|--user)
+    take_user=true
+    ;;
+    --host)
+    take_host=true
+    ;;
+    --force)
+    force=true
+    ;;
+    -ac|--accept)
+    take_accept_header=true
+    ;;
+    -ct|--content-type)
+    take_contenttype_header=true
+    ;;
+    --dry-run)
+    print_curl=true
+    ;;
+    -nc|--no-colors)
+        RED=""
+        GREEN=""
+        YELLOW=""
+        BLUE=""
+        MAGENTA=""
+        CYAN=""
+        WHITE=""
+        BOLD=""
+        OFF=""
+        result_color_table=( "" "" "" "" "" "" "" )
+    ;;
+    createCourseArticleAsync)
+    operation="createCourseArticleAsync"
+    ;;
+    deleteCourseArticleAsync)
+    operation="deleteCourseArticleAsync"
+    ;;
+    getCourseArticleByIdAsync)
+    operation="getCourseArticleByIdAsync"
+    ;;
+    getCourseArticlesAsync)
+    operation="getCourseArticlesAsync"
+    ;;
+    getCourseArticlesCountAsync)
+    operation="getCourseArticlesCountAsync"
+    ;;
+    updateCourseArticleAsync)
+    operation="updateCourseArticleAsync"
+    ;;
+    createCourseAssignmentAsync)
+    operation="createCourseAssignmentAsync"
+    ;;
+    deleteCourseAssignmentAsync)
+    operation="deleteCourseAssignmentAsync"
+    ;;
+    getCourseAssignmentByIdAsync)
+    operation="getCourseAssignmentByIdAsync"
+    ;;
+    getCourseAssignmentsAsync)
+    operation="getCourseAssignmentsAsync"
+    ;;
+    getCourseAssignmentsCountAsync)
+    operation="getCourseAssignmentsCountAsync"
+    ;;
+    updateCourseAssignmentAsync)
+    operation="updateCourseAssignmentAsync"
+    ;;
+    createCourseCategoryAsync)
+    operation="createCourseCategoryAsync"
+    ;;
+    deleteCourseCategoryAsync)
+    operation="deleteCourseCategoryAsync"
+    ;;
+    getCourseCategoriesAsync)
+    operation="getCourseCategoriesAsync"
+    ;;
+    getCourseCategoriesCountAsync)
+    operation="getCourseCategoriesCountAsync"
+    ;;
+    getCourseCategoryByIdAsync)
+    operation="getCourseCategoryByIdAsync"
+    ;;
+    updateCourseCategoryAsync)
+    operation="updateCourseCategoryAsync"
+    ;;
+    createCourseCertificateAsync)
+    operation="createCourseCertificateAsync"
+    ;;
+    createCourseCertificateTemplateAsync)
+    operation="createCourseCertificateTemplateAsync"
+    ;;
+    deleteCourseCertificateAsync)
+    operation="deleteCourseCertificateAsync"
+    ;;
+    deleteCourseCertificateTemplateAsync)
+    operation="deleteCourseCertificateTemplateAsync"
+    ;;
+    getCourseCertificateAsync)
+    operation="getCourseCertificateAsync"
+    ;;
+    getCourseCertificateTemplateAsync)
+    operation="getCourseCertificateTemplateAsync"
+    ;;
+    getCourseCertificateTemplatesAsync)
+    operation="getCourseCertificateTemplatesAsync"
+    ;;
+    getCourseCertificatesAsync)
+    operation="getCourseCertificatesAsync"
+    ;;
+    getCourseCertificatesCountAsync)
+    operation="getCourseCertificatesCountAsync"
+    ;;
+    updateCourseCertificateAsync)
+    operation="updateCourseCertificateAsync"
+    ;;
+    createCourseCohortAsync)
+    operation="createCourseCohortAsync"
+    ;;
+    deleteCourseCohortAsync)
+    operation="deleteCourseCohortAsync"
+    ;;
+    getCourseCohortByIdAsync)
+    operation="getCourseCohortByIdAsync"
+    ;;
+    getCourseCohortsAsync)
+    operation="getCourseCohortsAsync"
+    ;;
+    getCourseCohortsCountAsync)
+    operation="getCourseCohortsCountAsync"
+    ;;
+    updateCourseCohortAsync)
+    operation="updateCourseCohortAsync"
+    ;;
+    createCourseEnrollmentAsync)
+    operation="createCourseEnrollmentAsync"
+    ;;
+    deleteCourseEnrollmentAsync)
+    operation="deleteCourseEnrollmentAsync"
+    ;;
+    getCourseEnrollmentAsync)
+    operation="getCourseEnrollmentAsync"
+    ;;
+    getEnrollmentsAsync)
+    operation="getEnrollmentsAsync"
+    ;;
+    getEnrollmentsCountAsync)
+    operation="getEnrollmentsCountAsync"
+    ;;
+    getStudentCourseEnrollmentsAsync)
+    operation="getStudentCourseEnrollmentsAsync"
+    ;;
+    updateCourseEnrollmentAsync)
+    operation="updateCourseEnrollmentAsync"
+    ;;
+    createCourseFileAsync)
+    operation="createCourseFileAsync"
+    ;;
+    deleteCourseFileAsync)
+    operation="deleteCourseFileAsync"
+    ;;
+    getCourseFileByIdAsync)
+    operation="getCourseFileByIdAsync"
+    ;;
+    getCourseFilesAsync)
+    operation="getCourseFilesAsync"
+    ;;
+    getCourseFilesCountAsync)
+    operation="getCourseFilesCountAsync"
+    ;;
+    updateCourseFileAsync)
+    operation="updateCourseFileAsync"
+    ;;
+    createCourseForumAsync)
+    operation="createCourseForumAsync"
+    ;;
+    deleteCourseForumAsync)
+    operation="deleteCourseForumAsync"
+    ;;
+    getCourseForumByIdAsync)
+    operation="getCourseForumByIdAsync"
+    ;;
+    getCourseForumsAsync)
+    operation="getCourseForumsAsync"
+    ;;
+    getCourseForumsCountAsync)
+    operation="getCourseForumsCountAsync"
+    ;;
+    updateCourseForumAsync)
+    operation="updateCourseForumAsync"
+    ;;
+    createCourseHandoutAsync)
+    operation="createCourseHandoutAsync"
+    ;;
+    deleteCourseHandoutAsync)
+    operation="deleteCourseHandoutAsync"
+    ;;
+    getCourseHandoutByIdAsync)
+    operation="getCourseHandoutByIdAsync"
+    ;;
+    getCourseHandoutsAsync)
+    operation="getCourseHandoutsAsync"
+    ;;
+    getCourseHandoutsCountAsync)
+    operation="getCourseHandoutsCountAsync"
+    ;;
+    updateCourseHandoutAsync)
+    operation="updateCourseHandoutAsync"
+    ;;
+    createCourseLibraryAsync)
+    operation="createCourseLibraryAsync"
+    ;;
+    deleteCourseLibraryAsync)
+    operation="deleteCourseLibraryAsync"
+    ;;
+    getCourseLibrariesAsync)
+    operation="getCourseLibrariesAsync"
+    ;;
+    getCourseLibrariesCountAsync)
+    operation="getCourseLibrariesCountAsync"
+    ;;
+    getCourseLibraryByIdAsync)
+    operation="getCourseLibraryByIdAsync"
+    ;;
+    updateCourseLibraryAsync)
+    operation="updateCourseLibraryAsync"
+    ;;
+    createCoursePageAsync)
+    operation="createCoursePageAsync"
+    ;;
+    deleteCoursePageAsync)
+    operation="deleteCoursePageAsync"
+    ;;
+    getCoursePageByIdAsync)
+    operation="getCoursePageByIdAsync"
+    ;;
+    getCoursePagesAsync)
+    operation="getCoursePagesAsync"
+    ;;
+    getCoursePagesCountAsync)
+    operation="getCoursePagesCountAsync"
+    ;;
+    updateCoursePageAsync)
+    operation="updateCoursePageAsync"
+    ;;
+    createCourseProblemSetAsync)
+    operation="createCourseProblemSetAsync"
+    ;;
+    deleteCourseProblemSetAsync)
+    operation="deleteCourseProblemSetAsync"
+    ;;
+    getCourseProblemSetByIdAsync)
+    operation="getCourseProblemSetByIdAsync"
+    ;;
+    getCourseProblemSetsAsync)
+    operation="getCourseProblemSetsAsync"
+    ;;
+    getCourseProblemSetsCountAsync)
+    operation="getCourseProblemSetsCountAsync"
+    ;;
+    updateCourseProblemSetAsync)
+    operation="updateCourseProblemSetAsync"
+    ;;
+    createCourseSectionAsync)
+    operation="createCourseSectionAsync"
+    ;;
+    deleteCourseSectionAsync)
+    operation="deleteCourseSectionAsync"
+    ;;
+    getCourseSectionByIdAsync)
+    operation="getCourseSectionByIdAsync"
+    ;;
+    getCourseSectionsAsync)
+    operation="getCourseSectionsAsync"
+    ;;
+    getCourseSectionsCountAsync)
+    operation="getCourseSectionsCountAsync"
+    ;;
+    updateCourseSectionAsync)
+    operation="updateCourseSectionAsync"
+    ;;
+    createCourseUnitComponentAsync)
+    operation="createCourseUnitComponentAsync"
+    ;;
+    deleteCourseUnitComponentAsync)
+    operation="deleteCourseUnitComponentAsync"
+    ;;
+    getCourseUnitComponentByIdAsync)
+    operation="getCourseUnitComponentByIdAsync"
+    ;;
+    getCourseUnitComponentsAsync)
+    operation="getCourseUnitComponentsAsync"
+    ;;
+    getCourseUnitComponentsCountAsync)
+    operation="getCourseUnitComponentsCountAsync"
+    ;;
+    updateCourseUnitComponentAsync)
+    operation="updateCourseUnitComponentAsync"
+    ;;
+    createCourseUnitAsync)
+    operation="createCourseUnitAsync"
+    ;;
+    deleteCourseUnitAsync)
+    operation="deleteCourseUnitAsync"
+    ;;
+    getCourseUnitByIdAsync)
+    operation="getCourseUnitByIdAsync"
+    ;;
+    getCourseUnitsAsync)
+    operation="getCourseUnitsAsync"
+    ;;
+    getCourseUnitsCountAsync)
+    operation="getCourseUnitsCountAsync"
+    ;;
+    updateCourseUnitAsync)
+    operation="updateCourseUnitAsync"
+    ;;
+    createCourseUpdateAsync)
+    operation="createCourseUpdateAsync"
+    ;;
+    deleteCourseUpdateAsync)
+    operation="deleteCourseUpdateAsync"
+    ;;
+    getCourseUpdateByIdAsync)
+    operation="getCourseUpdateByIdAsync"
+    ;;
+    getCourseUpdatesAsync)
+    operation="getCourseUpdatesAsync"
+    ;;
+    getCourseUpdatesCountAsync)
+    operation="getCourseUpdatesCountAsync"
+    ;;
+    updateCourseUpdateAsync)
+    operation="updateCourseUpdateAsync"
+    ;;
+    createCourseWikiAsync)
+    operation="createCourseWikiAsync"
+    ;;
+    deleteCourseWikiAsync)
+    operation="deleteCourseWikiAsync"
+    ;;
+    getCourseWikiByIdAsync)
+    operation="getCourseWikiByIdAsync"
+    ;;
+    getCourseWikisAsync)
+    operation="getCourseWikisAsync"
+    ;;
+    getCourseWikisCountAsync)
+    operation="getCourseWikisCountAsync"
+    ;;
+    updateCourseWikiAsync)
+    operation="updateCourseWikiAsync"
+    ;;
+    createCourseAsync)
+    operation="createCourseAsync"
+    ;;
+    deleteCourseAsync)
+    operation="deleteCourseAsync"
+    ;;
+    getCourseArticlesByCourseWikiAsync)
+    operation="getCourseArticlesByCourseWikiAsync"
+    ;;
+    getCourseArticlesByCourseWikiCountAsync)
+    operation="getCourseArticlesByCourseWikiCountAsync"
+    ;;
+    getCourseAssignmentsByCourseAsync)
+    operation="getCourseAssignmentsByCourseAsync"
+    ;;
+    getCourseAssignmentsByCourseCountAsync)
+    operation="getCourseAssignmentsByCourseCountAsync"
+    ;;
+    getCourseByIdAsync)
+    operation="getCourseByIdAsync"
+    ;;
+    getCourseCategoriesByCourseAsync)
+    operation="getCourseCategoriesByCourseAsync"
+    ;;
+    getCourseCategoriesByCourseCountAsync)
+    operation="getCourseCategoriesByCourseCountAsync"
+    ;;
+    getCourseCohortsByCourseAsync)
+    operation="getCourseCohortsByCourseAsync"
+    ;;
+    getCourseCohortsByCourseCountAsync)
+    operation="getCourseCohortsByCourseCountAsync"
+    ;;
+    getCourseEnrollmentsByCourseAsync)
+    operation="getCourseEnrollmentsByCourseAsync"
+    ;;
+    getCourseFilesByCourseAsync)
+    operation="getCourseFilesByCourseAsync"
+    ;;
+    getCourseFilesByCourseCountAsync)
+    operation="getCourseFilesByCourseCountAsync"
+    ;;
+    getCourseForumsByCourseAsync)
+    operation="getCourseForumsByCourseAsync"
+    ;;
+    getCourseForumsByCourseCountAsync)
+    operation="getCourseForumsByCourseCountAsync"
+    ;;
+    getCourseHandoutsByCourseAsync)
+    operation="getCourseHandoutsByCourseAsync"
+    ;;
+    getCourseHandoutsByCourseCountAsync)
+    operation="getCourseHandoutsByCourseCountAsync"
+    ;;
+    getCourseLibrariesByCourseAsync)
+    operation="getCourseLibrariesByCourseAsync"
+    ;;
+    getCourseLibrariesByCourseCountAsync)
+    operation="getCourseLibrariesByCourseCountAsync"
+    ;;
+    getCoursePagesByCourseAsync)
+    operation="getCoursePagesByCourseAsync"
+    ;;
+    getCoursePagesByCourseCountAsync)
+    operation="getCoursePagesByCourseCountAsync"
+    ;;
+    getCourseProblemSetsByCourseAsync)
+    operation="getCourseProblemSetsByCourseAsync"
+    ;;
+    getCourseProblemSetsByCourseCountAsync)
+    operation="getCourseProblemSetsByCourseCountAsync"
+    ;;
+    getCourseSectionsByCourseAsync)
+    operation="getCourseSectionsByCourseAsync"
+    ;;
+    getCourseSectionsByCourseCountAsync)
+    operation="getCourseSectionsByCourseCountAsync"
+    ;;
+    getCourseUnitComponentsByCourseAsync)
+    operation="getCourseUnitComponentsByCourseAsync"
+    ;;
+    getCourseUnitComponentsByCourseCountAsync)
+    operation="getCourseUnitComponentsByCourseCountAsync"
+    ;;
+    getCourseUnitsBySectionAsync)
+    operation="getCourseUnitsBySectionAsync"
+    ;;
+    getCourseUnitsBySectionCountAsync)
+    operation="getCourseUnitsBySectionCountAsync"
+    ;;
+    getCourseUpdatesByCourseAsync)
+    operation="getCourseUpdatesByCourseAsync"
+    ;;
+    getCourseUpdatesByCourseCountAsync)
+    operation="getCourseUpdatesByCourseCountAsync"
+    ;;
+    getCourseWikisByCourseAsync)
+    operation="getCourseWikisByCourseAsync"
+    ;;
+    getCourseWikisByCourseCountAsync)
+    operation="getCourseWikisByCourseCountAsync"
+    ;;
+    getCoursesAsync)
+    operation="getCoursesAsync"
+    ;;
+    getCoursesCountAsync)
+    operation="getCoursesCountAsync"
+    ;;
+    getInstructorProfilesByCourseAsync)
+    operation="getInstructorProfilesByCourseAsync"
+    ;;
+    getInstructorProfilesByCourseCountAsync)
+    operation="getInstructorProfilesByCourseCountAsync"
+    ;;
+    getStudentProfilesByCourseAsync)
+    operation="getStudentProfilesByCourseAsync"
+    ;;
+    getStudentProfilesByCourseCountAsync)
+    operation="getStudentProfilesByCourseCountAsync"
+    ;;
+    updateCourseAsync)
+    operation="updateCourseAsync"
+    ;;
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
+    ;;
+    healthGet)
+    operation="healthGet"
+    ;;
+    helloGet)
+    operation="helloGet"
+    ;;
+    loginPost)
+    operation="loginPost"
+    ;;
+    manage2faPost)
+    operation="manage2faPost"
+    ;;
+    manageInfoGet)
+    operation="manageInfoGet"
+    ;;
+    manageInfoPost)
+    operation="manageInfoPost"
+    ;;
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
+    ;;
+    refreshPost)
+    operation="refreshPost"
+    ;;
+    registerPost)
+    operation="registerPost"
+    ;;
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
+    ;;
+    resetPasswordPost)
+    operation="resetPasswordPost"
+    ;;
+    versionGet)
+    operation="versionGet"
+    ;;
+    apiV2LearningServiceInstructorProfilesCountGet)
+    operation="apiV2LearningServiceInstructorProfilesCountGet"
+    ;;
+    apiV2LearningServiceInstructorProfilesGet)
+    operation="apiV2LearningServiceInstructorProfilesGet"
+    ;;
+    apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete)
+    operation="apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete"
+    ;;
+    apiV2LearningServiceInstructorProfilesInstructorProfileIdGet)
+    operation="apiV2LearningServiceInstructorProfilesInstructorProfileIdGet"
+    ;;
+    apiV2LearningServiceInstructorProfilesInstructorProfileIdPut)
+    operation="apiV2LearningServiceInstructorProfilesInstructorProfileIdPut"
+    ;;
+    apiV2LearningServiceInstructorProfilesPost)
+    operation="apiV2LearningServiceInstructorProfilesPost"
+    ;;
+    apiV2LearningServiceStudentProfilesCountGet)
+    operation="apiV2LearningServiceStudentProfilesCountGet"
+    ;;
+    apiV2LearningServiceStudentProfilesGet)
+    operation="apiV2LearningServiceStudentProfilesGet"
+    ;;
+    apiV2LearningServiceStudentProfilesPost)
+    operation="apiV2LearningServiceStudentProfilesPost"
+    ;;
+    apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet)
+    operation="apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet"
+    ;;
+    apiV2LearningServiceStudentProfilesStudentProfileIdDelete)
+    operation="apiV2LearningServiceStudentProfilesStudentProfileIdDelete"
+    ;;
+    apiV2LearningServiceStudentProfilesStudentProfileIdGet)
+    operation="apiV2LearningServiceStudentProfilesStudentProfileIdGet"
+    ;;
+    apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet)
+    operation="apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet"
+    ;;
+    apiV2LearningServiceStudentProfilesStudentProfileIdPut)
+    operation="apiV2LearningServiceStudentProfilesStudentProfileIdPut"
+    ;;
+    *==*)
+    # Parse body arguments and convert them into top level
+    # JSON properties passed in the body content as strings
+    if [[ "$operation" ]]; then
+        IFS='==' read -r body_key sep body_value <<< "$key"
+        body_parameters[${body_key}]="\"${body_value}\""
+    fi
+    ;;
+    --body=*)
+    # Parse value of body as argument and convert it into only
+    # the raw body content
+    if [[ "$operation" ]]; then
+        IFS='--body=' read -r body_value <<< "$key"
+        body_value=${body_value##--body=}
+        body_parameters["RAW_BODY"]="${body_value}"
+        RAW_BODY=1
+    fi
+    ;;
+    *:=*)
+    # Parse body arguments and convert them into top level
+    # JSON properties passed in the body content without quotes
+    if [[ "$operation" ]]; then
+        # ignore error about 'sep' being unused
+        # shellcheck disable=SC2034
+        IFS=':=' read -r body_key sep body_value <<< "$key"
+        body_parameters[${body_key}]=${body_value}
+    fi
+    ;;
+    +([^=]):*)
+    # Parse header arguments and convert them into curl
+    # only after the operation argument
+    if [[ "$operation" ]]; then
+        IFS=':' read -r header_name header_value <<< "$key"
+        header_arguments[$header_name]=$header_value
+    else
+        curl_arguments+=" $key"
+    fi
+    ;;
+    -)
+    body_content_temp_file=$(mktemp)
+    cat - > "$body_content_temp_file"
+    ;;
+    *=*)
+    # Parse operation arguments and convert them into curl
+    # only after the operation argument
+    if [[ "$operation" ]]; then
+        IFS='=' read -r parameter_name parameter_value <<< "$key"
+        if [[ -z "${operation_parameters[$parameter_name]+foo}" ]]; then
+            operation_parameters[$parameter_name]=$(url_escape "${parameter_value}")
+        else
+            operation_parameters[$parameter_name]+=":::"$(url_escape "${parameter_value}")
+        fi
+    else
+        curl_arguments+=" $key"
+    fi
+    ;;
+    *)
+    # If we are before the operation, treat the arguments as cURL arguments
+    if [[ "x$operation" == "x" ]]; then
+        # Maintain quotes around cURL arguments if necessary
+        space_regexp="[[:space:]]"
+        if [[ $key =~ $space_regexp ]]; then
+            curl_arguments+=" \"$key\""
+        else
+            curl_arguments+=" $key"
+        fi
+    fi
+    ;;
+esac
+done
+
+
+# Check if user provided host name
+if [[ -z "$host" ]]; then
+    ERROR_MSG="ERROR: No hostname provided!!! You have to  provide on command line option '--host ...'"
+    exit 1
+fi
+
+# Check if user specified operation ID
+if [[ -z "$operation" ]]; then
+    ERROR_MSG="ERROR: No operation specified!!!"
+    exit 1
+fi
+
+
+# Run cURL command based on the operation ID
+case $operation in
+    createCourseArticleAsync)
+    call_createCourseArticleAsync
+    ;;
+    deleteCourseArticleAsync)
+    call_deleteCourseArticleAsync
+    ;;
+    getCourseArticleByIdAsync)
+    call_getCourseArticleByIdAsync
+    ;;
+    getCourseArticlesAsync)
+    call_getCourseArticlesAsync
+    ;;
+    getCourseArticlesCountAsync)
+    call_getCourseArticlesCountAsync
+    ;;
+    updateCourseArticleAsync)
+    call_updateCourseArticleAsync
+    ;;
+    createCourseAssignmentAsync)
+    call_createCourseAssignmentAsync
+    ;;
+    deleteCourseAssignmentAsync)
+    call_deleteCourseAssignmentAsync
+    ;;
+    getCourseAssignmentByIdAsync)
+    call_getCourseAssignmentByIdAsync
+    ;;
+    getCourseAssignmentsAsync)
+    call_getCourseAssignmentsAsync
+    ;;
+    getCourseAssignmentsCountAsync)
+    call_getCourseAssignmentsCountAsync
+    ;;
+    updateCourseAssignmentAsync)
+    call_updateCourseAssignmentAsync
+    ;;
+    createCourseCategoryAsync)
+    call_createCourseCategoryAsync
+    ;;
+    deleteCourseCategoryAsync)
+    call_deleteCourseCategoryAsync
+    ;;
+    getCourseCategoriesAsync)
+    call_getCourseCategoriesAsync
+    ;;
+    getCourseCategoriesCountAsync)
+    call_getCourseCategoriesCountAsync
+    ;;
+    getCourseCategoryByIdAsync)
+    call_getCourseCategoryByIdAsync
+    ;;
+    updateCourseCategoryAsync)
+    call_updateCourseCategoryAsync
+    ;;
+    createCourseCertificateAsync)
+    call_createCourseCertificateAsync
+    ;;
+    createCourseCertificateTemplateAsync)
+    call_createCourseCertificateTemplateAsync
+    ;;
+    deleteCourseCertificateAsync)
+    call_deleteCourseCertificateAsync
+    ;;
+    deleteCourseCertificateTemplateAsync)
+    call_deleteCourseCertificateTemplateAsync
+    ;;
+    getCourseCertificateAsync)
+    call_getCourseCertificateAsync
+    ;;
+    getCourseCertificateTemplateAsync)
+    call_getCourseCertificateTemplateAsync
+    ;;
+    getCourseCertificateTemplatesAsync)
+    call_getCourseCertificateTemplatesAsync
+    ;;
+    getCourseCertificatesAsync)
+    call_getCourseCertificatesAsync
+    ;;
+    getCourseCertificatesCountAsync)
+    call_getCourseCertificatesCountAsync
+    ;;
+    updateCourseCertificateAsync)
+    call_updateCourseCertificateAsync
+    ;;
+    createCourseCohortAsync)
+    call_createCourseCohortAsync
+    ;;
+    deleteCourseCohortAsync)
+    call_deleteCourseCohortAsync
+    ;;
+    getCourseCohortByIdAsync)
+    call_getCourseCohortByIdAsync
+    ;;
+    getCourseCohortsAsync)
+    call_getCourseCohortsAsync
+    ;;
+    getCourseCohortsCountAsync)
+    call_getCourseCohortsCountAsync
+    ;;
+    updateCourseCohortAsync)
+    call_updateCourseCohortAsync
+    ;;
+    createCourseEnrollmentAsync)
+    call_createCourseEnrollmentAsync
+    ;;
+    deleteCourseEnrollmentAsync)
+    call_deleteCourseEnrollmentAsync
+    ;;
+    getCourseEnrollmentAsync)
+    call_getCourseEnrollmentAsync
+    ;;
+    getEnrollmentsAsync)
+    call_getEnrollmentsAsync
+    ;;
+    getEnrollmentsCountAsync)
+    call_getEnrollmentsCountAsync
+    ;;
+    getStudentCourseEnrollmentsAsync)
+    call_getStudentCourseEnrollmentsAsync
+    ;;
+    updateCourseEnrollmentAsync)
+    call_updateCourseEnrollmentAsync
+    ;;
+    createCourseFileAsync)
+    call_createCourseFileAsync
+    ;;
+    deleteCourseFileAsync)
+    call_deleteCourseFileAsync
+    ;;
+    getCourseFileByIdAsync)
+    call_getCourseFileByIdAsync
+    ;;
+    getCourseFilesAsync)
+    call_getCourseFilesAsync
+    ;;
+    getCourseFilesCountAsync)
+    call_getCourseFilesCountAsync
+    ;;
+    updateCourseFileAsync)
+    call_updateCourseFileAsync
+    ;;
+    createCourseForumAsync)
+    call_createCourseForumAsync
+    ;;
+    deleteCourseForumAsync)
+    call_deleteCourseForumAsync
+    ;;
+    getCourseForumByIdAsync)
+    call_getCourseForumByIdAsync
+    ;;
+    getCourseForumsAsync)
+    call_getCourseForumsAsync
+    ;;
+    getCourseForumsCountAsync)
+    call_getCourseForumsCountAsync
+    ;;
+    updateCourseForumAsync)
+    call_updateCourseForumAsync
+    ;;
+    createCourseHandoutAsync)
+    call_createCourseHandoutAsync
+    ;;
+    deleteCourseHandoutAsync)
+    call_deleteCourseHandoutAsync
+    ;;
+    getCourseHandoutByIdAsync)
+    call_getCourseHandoutByIdAsync
+    ;;
+    getCourseHandoutsAsync)
+    call_getCourseHandoutsAsync
+    ;;
+    getCourseHandoutsCountAsync)
+    call_getCourseHandoutsCountAsync
+    ;;
+    updateCourseHandoutAsync)
+    call_updateCourseHandoutAsync
+    ;;
+    createCourseLibraryAsync)
+    call_createCourseLibraryAsync
+    ;;
+    deleteCourseLibraryAsync)
+    call_deleteCourseLibraryAsync
+    ;;
+    getCourseLibrariesAsync)
+    call_getCourseLibrariesAsync
+    ;;
+    getCourseLibrariesCountAsync)
+    call_getCourseLibrariesCountAsync
+    ;;
+    getCourseLibraryByIdAsync)
+    call_getCourseLibraryByIdAsync
+    ;;
+    updateCourseLibraryAsync)
+    call_updateCourseLibraryAsync
+    ;;
+    createCoursePageAsync)
+    call_createCoursePageAsync
+    ;;
+    deleteCoursePageAsync)
+    call_deleteCoursePageAsync
+    ;;
+    getCoursePageByIdAsync)
+    call_getCoursePageByIdAsync
+    ;;
+    getCoursePagesAsync)
+    call_getCoursePagesAsync
+    ;;
+    getCoursePagesCountAsync)
+    call_getCoursePagesCountAsync
+    ;;
+    updateCoursePageAsync)
+    call_updateCoursePageAsync
+    ;;
+    createCourseProblemSetAsync)
+    call_createCourseProblemSetAsync
+    ;;
+    deleteCourseProblemSetAsync)
+    call_deleteCourseProblemSetAsync
+    ;;
+    getCourseProblemSetByIdAsync)
+    call_getCourseProblemSetByIdAsync
+    ;;
+    getCourseProblemSetsAsync)
+    call_getCourseProblemSetsAsync
+    ;;
+    getCourseProblemSetsCountAsync)
+    call_getCourseProblemSetsCountAsync
+    ;;
+    updateCourseProblemSetAsync)
+    call_updateCourseProblemSetAsync
+    ;;
+    createCourseSectionAsync)
+    call_createCourseSectionAsync
+    ;;
+    deleteCourseSectionAsync)
+    call_deleteCourseSectionAsync
+    ;;
+    getCourseSectionByIdAsync)
+    call_getCourseSectionByIdAsync
+    ;;
+    getCourseSectionsAsync)
+    call_getCourseSectionsAsync
+    ;;
+    getCourseSectionsCountAsync)
+    call_getCourseSectionsCountAsync
+    ;;
+    updateCourseSectionAsync)
+    call_updateCourseSectionAsync
+    ;;
+    createCourseUnitComponentAsync)
+    call_createCourseUnitComponentAsync
+    ;;
+    deleteCourseUnitComponentAsync)
+    call_deleteCourseUnitComponentAsync
+    ;;
+    getCourseUnitComponentByIdAsync)
+    call_getCourseUnitComponentByIdAsync
+    ;;
+    getCourseUnitComponentsAsync)
+    call_getCourseUnitComponentsAsync
+    ;;
+    getCourseUnitComponentsCountAsync)
+    call_getCourseUnitComponentsCountAsync
+    ;;
+    updateCourseUnitComponentAsync)
+    call_updateCourseUnitComponentAsync
+    ;;
+    createCourseUnitAsync)
+    call_createCourseUnitAsync
+    ;;
+    deleteCourseUnitAsync)
+    call_deleteCourseUnitAsync
+    ;;
+    getCourseUnitByIdAsync)
+    call_getCourseUnitByIdAsync
+    ;;
+    getCourseUnitsAsync)
+    call_getCourseUnitsAsync
+    ;;
+    getCourseUnitsCountAsync)
+    call_getCourseUnitsCountAsync
+    ;;
+    updateCourseUnitAsync)
+    call_updateCourseUnitAsync
+    ;;
+    createCourseUpdateAsync)
+    call_createCourseUpdateAsync
+    ;;
+    deleteCourseUpdateAsync)
+    call_deleteCourseUpdateAsync
+    ;;
+    getCourseUpdateByIdAsync)
+    call_getCourseUpdateByIdAsync
+    ;;
+    getCourseUpdatesAsync)
+    call_getCourseUpdatesAsync
+    ;;
+    getCourseUpdatesCountAsync)
+    call_getCourseUpdatesCountAsync
+    ;;
+    updateCourseUpdateAsync)
+    call_updateCourseUpdateAsync
+    ;;
+    createCourseWikiAsync)
+    call_createCourseWikiAsync
+    ;;
+    deleteCourseWikiAsync)
+    call_deleteCourseWikiAsync
+    ;;
+    getCourseWikiByIdAsync)
+    call_getCourseWikiByIdAsync
+    ;;
+    getCourseWikisAsync)
+    call_getCourseWikisAsync
+    ;;
+    getCourseWikisCountAsync)
+    call_getCourseWikisCountAsync
+    ;;
+    updateCourseWikiAsync)
+    call_updateCourseWikiAsync
+    ;;
+    createCourseAsync)
+    call_createCourseAsync
+    ;;
+    deleteCourseAsync)
+    call_deleteCourseAsync
+    ;;
+    getCourseArticlesByCourseWikiAsync)
+    call_getCourseArticlesByCourseWikiAsync
+    ;;
+    getCourseArticlesByCourseWikiCountAsync)
+    call_getCourseArticlesByCourseWikiCountAsync
+    ;;
+    getCourseAssignmentsByCourseAsync)
+    call_getCourseAssignmentsByCourseAsync
+    ;;
+    getCourseAssignmentsByCourseCountAsync)
+    call_getCourseAssignmentsByCourseCountAsync
+    ;;
+    getCourseByIdAsync)
+    call_getCourseByIdAsync
+    ;;
+    getCourseCategoriesByCourseAsync)
+    call_getCourseCategoriesByCourseAsync
+    ;;
+    getCourseCategoriesByCourseCountAsync)
+    call_getCourseCategoriesByCourseCountAsync
+    ;;
+    getCourseCohortsByCourseAsync)
+    call_getCourseCohortsByCourseAsync
+    ;;
+    getCourseCohortsByCourseCountAsync)
+    call_getCourseCohortsByCourseCountAsync
+    ;;
+    getCourseEnrollmentsByCourseAsync)
+    call_getCourseEnrollmentsByCourseAsync
+    ;;
+    getCourseFilesByCourseAsync)
+    call_getCourseFilesByCourseAsync
+    ;;
+    getCourseFilesByCourseCountAsync)
+    call_getCourseFilesByCourseCountAsync
+    ;;
+    getCourseForumsByCourseAsync)
+    call_getCourseForumsByCourseAsync
+    ;;
+    getCourseForumsByCourseCountAsync)
+    call_getCourseForumsByCourseCountAsync
+    ;;
+    getCourseHandoutsByCourseAsync)
+    call_getCourseHandoutsByCourseAsync
+    ;;
+    getCourseHandoutsByCourseCountAsync)
+    call_getCourseHandoutsByCourseCountAsync
+    ;;
+    getCourseLibrariesByCourseAsync)
+    call_getCourseLibrariesByCourseAsync
+    ;;
+    getCourseLibrariesByCourseCountAsync)
+    call_getCourseLibrariesByCourseCountAsync
+    ;;
+    getCoursePagesByCourseAsync)
+    call_getCoursePagesByCourseAsync
+    ;;
+    getCoursePagesByCourseCountAsync)
+    call_getCoursePagesByCourseCountAsync
+    ;;
+    getCourseProblemSetsByCourseAsync)
+    call_getCourseProblemSetsByCourseAsync
+    ;;
+    getCourseProblemSetsByCourseCountAsync)
+    call_getCourseProblemSetsByCourseCountAsync
+    ;;
+    getCourseSectionsByCourseAsync)
+    call_getCourseSectionsByCourseAsync
+    ;;
+    getCourseSectionsByCourseCountAsync)
+    call_getCourseSectionsByCourseCountAsync
+    ;;
+    getCourseUnitComponentsByCourseAsync)
+    call_getCourseUnitComponentsByCourseAsync
+    ;;
+    getCourseUnitComponentsByCourseCountAsync)
+    call_getCourseUnitComponentsByCourseCountAsync
+    ;;
+    getCourseUnitsBySectionAsync)
+    call_getCourseUnitsBySectionAsync
+    ;;
+    getCourseUnitsBySectionCountAsync)
+    call_getCourseUnitsBySectionCountAsync
+    ;;
+    getCourseUpdatesByCourseAsync)
+    call_getCourseUpdatesByCourseAsync
+    ;;
+    getCourseUpdatesByCourseCountAsync)
+    call_getCourseUpdatesByCourseCountAsync
+    ;;
+    getCourseWikisByCourseAsync)
+    call_getCourseWikisByCourseAsync
+    ;;
+    getCourseWikisByCourseCountAsync)
+    call_getCourseWikisByCourseCountAsync
+    ;;
+    getCoursesAsync)
+    call_getCoursesAsync
+    ;;
+    getCoursesCountAsync)
+    call_getCoursesCountAsync
+    ;;
+    getInstructorProfilesByCourseAsync)
+    call_getInstructorProfilesByCourseAsync
+    ;;
+    getInstructorProfilesByCourseCountAsync)
+    call_getInstructorProfilesByCourseCountAsync
+    ;;
+    getStudentProfilesByCourseAsync)
+    call_getStudentProfilesByCourseAsync
+    ;;
+    getStudentProfilesByCourseCountAsync)
+    call_getStudentProfilesByCourseCountAsync
+    ;;
+    updateCourseAsync)
+    call_updateCourseAsync
+    ;;
+    forgotPasswordPost)
+    call_forgotPasswordPost
+    ;;
+    healthGet)
+    call_healthGet
+    ;;
+    helloGet)
+    call_helloGet
+    ;;
+    loginPost)
+    call_loginPost
+    ;;
+    manage2faPost)
+    call_manage2faPost
+    ;;
+    manageInfoGet)
+    call_manageInfoGet
+    ;;
+    manageInfoPost)
+    call_manageInfoPost
+    ;;
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
+    ;;
+    refreshPost)
+    call_refreshPost
+    ;;
+    registerPost)
+    call_registerPost
+    ;;
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
+    ;;
+    resetPasswordPost)
+    call_resetPasswordPost
+    ;;
+    versionGet)
+    call_versionGet
+    ;;
+    apiV2LearningServiceInstructorProfilesCountGet)
+    call_apiV2LearningServiceInstructorProfilesCountGet
+    ;;
+    apiV2LearningServiceInstructorProfilesGet)
+    call_apiV2LearningServiceInstructorProfilesGet
+    ;;
+    apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete)
+    call_apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete
+    ;;
+    apiV2LearningServiceInstructorProfilesInstructorProfileIdGet)
+    call_apiV2LearningServiceInstructorProfilesInstructorProfileIdGet
+    ;;
+    apiV2LearningServiceInstructorProfilesInstructorProfileIdPut)
+    call_apiV2LearningServiceInstructorProfilesInstructorProfileIdPut
+    ;;
+    apiV2LearningServiceInstructorProfilesPost)
+    call_apiV2LearningServiceInstructorProfilesPost
+    ;;
+    apiV2LearningServiceStudentProfilesCountGet)
+    call_apiV2LearningServiceStudentProfilesCountGet
+    ;;
+    apiV2LearningServiceStudentProfilesGet)
+    call_apiV2LearningServiceStudentProfilesGet
+    ;;
+    apiV2LearningServiceStudentProfilesPost)
+    call_apiV2LearningServiceStudentProfilesPost
+    ;;
+    apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet)
+    call_apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet
+    ;;
+    apiV2LearningServiceStudentProfilesStudentProfileIdDelete)
+    call_apiV2LearningServiceStudentProfilesStudentProfileIdDelete
+    ;;
+    apiV2LearningServiceStudentProfilesStudentProfileIdGet)
+    call_apiV2LearningServiceStudentProfilesStudentProfileIdGet
+    ;;
+    apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet)
+    call_apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet
+    ;;
+    apiV2LearningServiceStudentProfilesStudentProfileIdPut)
+    call_apiV2LearningServiceStudentProfilesStudentProfileIdPut
+    ;;
+    *)
+    ERROR_MSG="ERROR: Unknown operation: $operation"
+    exit 1
+esac

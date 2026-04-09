@@ -4,23 +4,25 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2PaymentsServicePaymentsGet**](PaymentsApi.md#apiV2PaymentsServicePaymentsGet) | **GET** /api/v2/PaymentsService/Payments | 
-[**apiV2PaymentsServicePaymentsPaymentIdDelete**](PaymentsApi.md#apiV2PaymentsServicePaymentsPaymentIdDelete) | **DELETE** /api/v2/PaymentsService/Payments/{paymentId} | 
-[**apiV2PaymentsServicePaymentsPaymentIdDetailsGet**](PaymentsApi.md#apiV2PaymentsServicePaymentsPaymentIdDetailsGet) | **GET** /api/v2/PaymentsService/Payments/{paymentId}/Details | 
-[**apiV2PaymentsServicePaymentsPaymentIdGet**](PaymentsApi.md#apiV2PaymentsServicePaymentsPaymentIdGet) | **GET** /api/v2/PaymentsService/Payments/{paymentId} | 
-[**apiV2PaymentsServicePaymentsPaymentIdPut**](PaymentsApi.md#apiV2PaymentsServicePaymentsPaymentIdPut) | **PUT** /api/v2/PaymentsService/Payments/{paymentId} | 
-[**apiV2PaymentsServicePaymentsPost**](PaymentsApi.md#apiV2PaymentsServicePaymentsPost) | **POST** /api/v2/PaymentsService/Payments | 
+[**createPaymentAsync**](PaymentsApi.md#createPaymentAsync) | **POST** /api/v2/PaymentsService/Payments | Creates a new payment
+[**deletePaymentAsync**](PaymentsApi.md#deletePaymentAsync) | **DELETE** /api/v2/PaymentsService/Payments/{paymentId} | Deletes a payment
+[**getPaymentAsync**](PaymentsApi.md#getPaymentAsync) | **GET** /api/v2/PaymentsService/Payments/{paymentId}/Details | Gets a payment by ID (deprecated)
+[**getPaymentAsyncV2**](PaymentsApi.md#getPaymentAsyncV2) | **GET** /api/v2/PaymentsService/Payments/{paymentId} | Gets a payment by ID
+[**getPaymentsAsync**](PaymentsApi.md#getPaymentsAsync) | **GET** /api/v2/PaymentsService/Payments | Retrieves all payments
+[**updatePaymentAsync**](PaymentsApi.md#updatePaymentAsync) | **PUT** /api/v2/PaymentsService/Payments/{paymentId} | Updates a payment
 
 
 
-## apiV2PaymentsServicePaymentsGet
+## createPaymentAsync
 
+Creates a new payment
 
+Creates a new payment for the current tenant.
 
 ### Example
 
 ```bash
- apiV2PaymentsServicePaymentsGet  tenantId=value
+ createPaymentAsync  tenantId=value
 ```
 
 ### Parameters
@@ -29,31 +31,34 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **paymentCreateDto** | [**PaymentCreateDto**](PaymentCreateDto.md) |  | [optional]
 
 ### Return type
 
-[**PaymentDtoListEnvelope**](PaymentDtoListEnvelope.md)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2PaymentsServicePaymentsPaymentIdDelete
+## deletePaymentAsync
 
+Deletes a payment
 
+Deletes the specified payment.
 
 ### Example
 
 ```bash
- apiV2PaymentsServicePaymentsPaymentIdDelete  tenantId=value paymentId=value
+ deletePaymentAsync  tenantId=value paymentId=value
 ```
 
 ### Parameters
@@ -70,7 +75,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -80,14 +85,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2PaymentsServicePaymentsPaymentIdDetailsGet
+## getPaymentAsync
 
+Gets a payment by ID (deprecated)
 
+Retrieves a payment using the deprecated /Details route. Use GET {paymentId} instead.
 
 ### Example
 
 ```bash
- apiV2PaymentsServicePaymentsPaymentIdDetailsGet paymentId=value
+ getPaymentAsync paymentId=value
 ```
 
 ### Parameters
@@ -103,7 +110,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -113,14 +120,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2PaymentsServicePaymentsPaymentIdGet
+## getPaymentAsyncV2
 
+Gets a payment by ID
 
+Retrieves the details of a payment using its unique identifier.
 
 ### Example
 
 ```bash
- apiV2PaymentsServicePaymentsPaymentIdGet paymentId=value
+ getPaymentAsyncV2 paymentId=value
 ```
 
 ### Parameters
@@ -136,7 +145,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -146,14 +155,51 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2PaymentsServicePaymentsPaymentIdPut
+## getPaymentsAsync
 
+Retrieves all payments
 
+Gets all payments for the current tenant with OData support.
 
 ### Example
 
 ```bash
- apiV2PaymentsServicePaymentsPaymentIdPut  tenantId=value paymentId=value
+ getPaymentsAsync  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**PaymentDtoListEnvelope**](PaymentDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updatePaymentAsync
+
+Updates a payment
+
+Updates the specified payment.
+
+### Example
+
+```bash
+ updatePaymentAsync  tenantId=value paymentId=value
 ```
 
 ### Parameters
@@ -171,41 +217,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2PaymentsServicePaymentsPost
-
-
-
-### Example
-
-```bash
- apiV2PaymentsServicePaymentsPost  tenantId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **paymentCreateDto** | [**PaymentCreateDto**](PaymentCreateDto.md) |  | [optional]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

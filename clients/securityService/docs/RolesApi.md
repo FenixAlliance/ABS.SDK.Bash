@@ -4,30 +4,35 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2SecurityServiceRolesGet**](RolesApi.md#apiV2SecurityServiceRolesGet) | **GET** /api/v2/SecurityService/Roles | 
-[**apiV2SecurityServiceRolesPost**](RolesApi.md#apiV2SecurityServiceRolesPost) | **POST** /api/v2/SecurityService/Roles | 
-[**apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdDelete**](RolesApi.md#apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdDelete) | **DELETE** /api/v2/SecurityService/Roles/{securityRoleId}/Applications/{applicationId} | 
-[**apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdPost**](RolesApi.md#apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdPost) | **POST** /api/v2/SecurityService/Roles/{securityRoleId}/Applications/{applicationId} | 
-[**apiV2SecurityServiceRolesSecurityRoleIdDelete**](RolesApi.md#apiV2SecurityServiceRolesSecurityRoleIdDelete) | **DELETE** /api/v2/SecurityService/Roles/{securityRoleId} | 
-[**apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdDelete**](RolesApi.md#apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdDelete) | **DELETE** /api/v2/SecurityService/Roles/{securityRoleId}/Enrollments/{enrollmentId} | 
-[**apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdPost**](RolesApi.md#apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdPost) | **POST** /api/v2/SecurityService/Roles/{securityRoleId}/Enrollments/{enrollmentId} | 
-[**apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsGet**](RolesApi.md#apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsGet) | **GET** /api/v2/SecurityService/Roles/{securityRoleId}/Enrollments | 
-[**apiV2SecurityServiceRolesSecurityRoleIdGet**](RolesApi.md#apiV2SecurityServiceRolesSecurityRoleIdGet) | **GET** /api/v2/SecurityService/Roles/{securityRoleId} | 
-[**apiV2SecurityServiceRolesSecurityRoleIdPermissionsGet**](RolesApi.md#apiV2SecurityServiceRolesSecurityRoleIdPermissionsGet) | **GET** /api/v2/SecurityService/Roles/{securityRoleId}/Permissions | 
-[**apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdDelete**](RolesApi.md#apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdDelete) | **DELETE** /api/v2/SecurityService/Roles/{securityRoleId}/Permissions/{securityPermissionId} | 
-[**apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdPost**](RolesApi.md#apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdPost) | **POST** /api/v2/SecurityService/Roles/{securityRoleId}/Permissions/{securityPermissionId} | 
-[**apiV2SecurityServiceRolesSecurityRoleIdPut**](RolesApi.md#apiV2SecurityServiceRolesSecurityRoleIdPut) | **PUT** /api/v2/SecurityService/Roles/{securityRoleId} | 
+[**assignPermissionToRoleAsync**](RolesApi.md#assignPermissionToRoleAsync) | **POST** /api/v2/SecurityService/Roles/{securityRoleId}/Permissions/{securityPermissionId} | Assign a permission to a role
+[**assignRoleToBusinessApplicationAsync**](RolesApi.md#assignRoleToBusinessApplicationAsync) | **POST** /api/v2/SecurityService/Roles/{securityRoleId}/Applications/{applicationId} | Assign a role to a business application
+[**assignRoleToEnrollmentAsync**](RolesApi.md#assignRoleToEnrollmentAsync) | **POST** /api/v2/SecurityService/Roles/{securityRoleId}/Enrollments/{enrollmentId} | Assign a role to an enrollment
+[**createRoleAsync**](RolesApi.md#createRoleAsync) | **POST** /api/v2/SecurityService/Roles | Create a new role
+[**deleteRoleAsync**](RolesApi.md#deleteRoleAsync) | **DELETE** /api/v2/SecurityService/Roles/{securityRoleId} | Delete an existing role
+[**getApplicationsByRoleAsync**](RolesApi.md#getApplicationsByRoleAsync) | **GET** /api/v2/SecurityService/Roles/{securityRoleId}/Applications | Get applications by role
+[**getEnrollmentsByRoleAsync**](RolesApi.md#getEnrollmentsByRoleAsync) | **GET** /api/v2/SecurityService/Roles/{securityRoleId}/Enrollments | Get enrollments by role
+[**getRoleAsync**](RolesApi.md#getRoleAsync) | **GET** /api/v2/SecurityService/Roles/{securityRoleId} | Get role by ID
+[**getRolePermissionsAsync**](RolesApi.md#getRolePermissionsAsync) | **GET** /api/v2/SecurityService/Roles/{securityRoleId}/Permissions | Get permissions by role
+[**getRolesAsync**](RolesApi.md#getRolesAsync) | **GET** /api/v2/SecurityService/Roles | Get all roles
+[**getRolesByEnrollmentAsync**](RolesApi.md#getRolesByEnrollmentAsync) | **GET** /api/v2/SecurityService/Roles/ByEnrollment/{enrollmentId} | Get roles by enrollment
+[**getRolesCountAsync**](RolesApi.md#getRolesCountAsync) | **GET** /api/v2/SecurityService/Roles/Count | Get roles count
+[**revokePermissionFromRoleAsync**](RolesApi.md#revokePermissionFromRoleAsync) | **DELETE** /api/v2/SecurityService/Roles/{securityRoleId}/Permissions/{securityPermissionId} | Revoke a permission from a role
+[**revokeRoleFromBusinessApplicationAsync**](RolesApi.md#revokeRoleFromBusinessApplicationAsync) | **DELETE** /api/v2/SecurityService/Roles/{securityRoleId}/Applications/{applicationId} | Revoke a role from a business application
+[**revokeRoleFromEnrollmentAsync**](RolesApi.md#revokeRoleFromEnrollmentAsync) | **DELETE** /api/v2/SecurityService/Roles/{securityRoleId}/Enrollments/{enrollmentId} | Revoke a role from an enrollment
+[**updateRoleAsync**](RolesApi.md#updateRoleAsync) | **PUT** /api/v2/SecurityService/Roles/{securityRoleId} | Update an existing role
 
 
 
-## apiV2SecurityServiceRolesGet
+## assignPermissionToRoleAsync
 
+Assign a permission to a role
 
+Assigns a security permission to a security role.
 
 ### Example
 
 ```bash
- apiV2SecurityServiceRolesGet  tenantId=value  api-version=value x-api-version:value
+ assignPermissionToRoleAsync  tenantId=value securityRoleId=value securityPermissionId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -36,16 +41,18 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **securityRoleId** | **string** |  | [default to null]
+ **securityPermissionId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
 ### Return type
 
-[**SecurityRoleDtoListEnvelope**](SecurityRoleDtoListEnvelope.md)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -55,14 +62,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SecurityServiceRolesPost
+## assignRoleToBusinessApplicationAsync
 
+Assign a role to a business application
 
+Assigns a security role to a business application.
 
 ### Example
 
 ```bash
- apiV2SecurityServiceRolesPost  tenantId=value  api-version=value x-api-version:value
+ assignRoleToBusinessApplicationAsync  tenantId=value securityRoleId=value applicationId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -71,9 +80,10 @@ Name | Type | Description  | Notes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **securityRoleId** | **string** |  | [default to null]
+ **applicationId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
- **securityRoleCreateDto** | [**SecurityRoleCreateDto**](SecurityRoleCreateDto.md) |  | [optional]
 
 ### Return type
 
@@ -81,7 +91,84 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## assignRoleToEnrollmentAsync
+
+Assign a role to an enrollment
+
+Assigns a security role to a tenant enrollment.
+
+### Example
+
+```bash
+ assignRoleToEnrollmentAsync  tenantId=value securityRoleId=value enrollmentId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **securityRoleId** | **string** |  | [default to null]
+ **enrollmentId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## createRoleAsync
+
+Create a new role
+
+Creates a new security role for the specified tenant.
+
+### Example
+
+```bash
+ createRoleAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **securityRoleCreateDto** | [**SecurityRoleCreateDto**](SecurityRoleCreateDto.md) |  |
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
 
 ### HTTP request headers
 
@@ -91,88 +178,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdDelete
+## deleteRoleAsync
 
+Delete an existing role
 
-
-### Example
-
-```bash
- apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdDelete  tenantId=value securityRoleId=value applicationId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **securityRoleId** | **string** |  | [default to null]
- **applicationId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdPost
-
-
+Deletes an existing security role for the specified tenant.
 
 ### Example
 
 ```bash
- apiV2SecurityServiceRolesSecurityRoleIdApplicationsApplicationIdPost  tenantId=value securityRoleId=value applicationId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **securityRoleId** | **string** |  | [default to null]
- **applicationId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2SecurityServiceRolesSecurityRoleIdDelete
-
-
-
-### Example
-
-```bash
- apiV2SecurityServiceRolesSecurityRoleIdDelete  tenantId=value securityRoleId=value  api-version=value x-api-version:value
+ deleteRoleAsync  tenantId=value securityRoleId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -191,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -201,88 +216,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdDelete
+## getApplicationsByRoleAsync
 
+Get applications by role
 
-
-### Example
-
-```bash
- apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdDelete  tenantId=value securityRoleId=value enrollmentId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **securityRoleId** | **string** |  | [default to null]
- **enrollmentId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdPost
-
-
+Retrieves all business applications that have a specific role granted.
 
 ### Example
 
 ```bash
- apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsEnrollmentIdPost  tenantId=value securityRoleId=value enrollmentId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **securityRoleId** | **string** |  | [default to null]
- **enrollmentId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsGet
-
-
-
-### Example
-
-```bash
- apiV2SecurityServiceRolesSecurityRoleIdEnrollmentsGet  tenantId=value securityRoleId=value  api-version=value x-api-version:value
+ getApplicationsByRoleAsync  tenantId=value securityRoleId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -297,11 +240,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TenantEnrolmentDtoListEnvelope**](TenantEnrolmentDtoListEnvelope.md)
+[**BusinessApplicationSimpleDtoListEnvelope**](BusinessApplicationSimpleDtoListEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -311,14 +254,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SecurityServiceRolesSecurityRoleIdGet
+## getEnrollmentsByRoleAsync
 
+Get enrollments by role
 
+Retrieves all tenant enrollments that have a specific role.
 
 ### Example
 
 ```bash
- apiV2SecurityServiceRolesSecurityRoleIdGet  tenantId=value securityRoleId=value  api-version=value x-api-version:value
+ getEnrollmentsByRoleAsync  tenantId=value securityRoleId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -333,11 +278,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SecurityRoleDtoListEnvelope**](SecurityRoleDtoListEnvelope.md)
+[**TenantEnrollmentDtoListEnvelope**](TenantEnrollmentDtoListEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -347,14 +292,54 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SecurityServiceRolesSecurityRoleIdPermissionsGet
+## getRoleAsync
 
+Get role by ID
 
+Retrieves a specific security role by its ID.
 
 ### Example
 
 ```bash
- apiV2SecurityServiceRolesSecurityRoleIdPermissionsGet  tenantId=value securityRoleId=value  api-version=value x-api-version:value
+ getRoleAsync  tenantId=value securityRoleId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **securityRoleId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**SecurityRoleDtoEnvelope**](SecurityRoleDtoEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getRolePermissionsAsync
+
+Get permissions by role
+
+Retrieves all security permissions assigned to a specific role.
+
+### Example
+
+```bash
+ getRolePermissionsAsync  tenantId=value securityRoleId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -373,7 +358,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -383,14 +368,128 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdDelete
+## getRolesAsync
 
+Get all roles
 
+Retrieves all security roles for the specified tenant.
 
 ### Example
 
 ```bash
- apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdDelete  tenantId=value securityRoleId=value securityPermissionId=value  api-version=value x-api-version:value
+ getRolesAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**SecurityRoleDtoListEnvelope**](SecurityRoleDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getRolesByEnrollmentAsync
+
+Get roles by enrollment
+
+Retrieves all security roles granted to a specific enrollment.
+
+### Example
+
+```bash
+ getRolesByEnrollmentAsync  tenantId=value enrollmentId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **enrollmentId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**SecurityRoleDtoListEnvelope**](SecurityRoleDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getRolesCountAsync
+
+Get roles count
+
+Retrieves the count of security roles for the specified tenant.
+
+### Example
+
+```bash
+ getRolesCountAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## revokePermissionFromRoleAsync
+
+Revoke a permission from a role
+
+Revokes a security permission from a security role.
+
+### Example
+
+```bash
+ revokePermissionFromRoleAsync  tenantId=value securityRoleId=value securityPermissionId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -410,7 +509,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -420,14 +519,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdPost
+## revokeRoleFromBusinessApplicationAsync
 
+Revoke a role from a business application
 
+Revokes a security role from a business application.
 
 ### Example
 
 ```bash
- apiV2SecurityServiceRolesSecurityRoleIdPermissionsSecurityPermissionIdPost  tenantId=value securityRoleId=value securityPermissionId=value  api-version=value x-api-version:value
+ revokeRoleFromBusinessApplicationAsync  tenantId=value securityRoleId=value applicationId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -437,7 +538,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **securityRoleId** | **string** |  | [default to null]
- **securityPermissionId** | **string** |  | [default to null]
+ **applicationId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -447,7 +548,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -457,14 +558,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SecurityServiceRolesSecurityRoleIdPut
+## revokeRoleFromEnrollmentAsync
 
+Revoke a role from an enrollment
 
+Revokes a security role from a tenant enrollment.
 
 ### Example
 
 ```bash
- apiV2SecurityServiceRolesSecurityRoleIdPut  tenantId=value securityRoleId=value  api-version=value x-api-version:value
+ revokeRoleFromEnrollmentAsync  tenantId=value securityRoleId=value enrollmentId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -474,9 +577,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **securityRoleId** | **string** |  | [default to null]
+ **enrollmentId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
- **securityRoleUpdateDto** | [**SecurityRoleUpdateDto**](SecurityRoleUpdateDto.md) |  | [optional]
 
 ### Return type
 
@@ -484,7 +587,46 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateRoleAsync
+
+Update an existing role
+
+Updates an existing security role for the specified tenant.
+
+### Example
+
+```bash
+ updateRoleAsync  tenantId=value securityRoleId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **securityRoleId** | **string** |  | [default to null]
+ **securityRoleUpdateDto** | [**SecurityRoleUpdateDto**](SecurityRoleUpdateDto.md) |  |
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
 
 ### HTTP request headers
 

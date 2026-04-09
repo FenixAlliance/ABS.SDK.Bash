@@ -4,26 +4,30 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2SystemServiceUsersCountGet**](UsersApi.md#apiV2SystemServiceUsersCountGet) | **GET** /api/v2/SystemService/Users/Count | 
-[**apiV2SystemServiceUsersExtendedCountGet**](UsersApi.md#apiV2SystemServiceUsersExtendedCountGet) | **GET** /api/v2/SystemService/Users/Extended/Count | 
-[**apiV2SystemServiceUsersExtendedGet**](UsersApi.md#apiV2SystemServiceUsersExtendedGet) | **GET** /api/v2/SystemService/Users/Extended | 
-[**apiV2SystemServiceUsersGet**](UsersApi.md#apiV2SystemServiceUsersGet) | **GET** /api/v2/SystemService/Users | 
-[**apiV2SystemServiceUsersPost**](UsersApi.md#apiV2SystemServiceUsersPost) | **POST** /api/v2/SystemService/Users | 
-[**apiV2SystemServiceUsersUserIdDelete**](UsersApi.md#apiV2SystemServiceUsersUserIdDelete) | **DELETE** /api/v2/SystemService/Users/{userId} | 
-[**apiV2SystemServiceUsersUserIdExtendedGet**](UsersApi.md#apiV2SystemServiceUsersUserIdExtendedGet) | **GET** /api/v2/SystemService/Users/{userId}/Extended | 
-[**apiV2SystemServiceUsersUserIdPut**](UsersApi.md#apiV2SystemServiceUsersUserIdPut) | **PUT** /api/v2/SystemService/Users/{userId} | 
-[**getUserAsync**](UsersApi.md#getUserAsync) | **GET** /api/v2/SystemService/Users/{userId} | 
+[**adminPreviewUserEmailTemplate**](UsersApi.md#adminPreviewUserEmailTemplate) | **POST** /api/v2/SystemService/Users/{userId}/Emails/Preview | Preview the rendered email for a user.
+[**adminSendUserEmail**](UsersApi.md#adminSendUserEmail) | **POST** /api/v2/SystemService/Users/{userId}/Emails/Send | Send an email to a user.
+[**createAccountHolderAsync**](UsersApi.md#createAccountHolderAsync) | **POST** /api/v2/SystemService/Users | Create a new user
+[**deleteAccountHolderAsync**](UsersApi.md#deleteAccountHolderAsync) | **DELETE** /api/v2/SystemService/Users/{userId} | Delete a user
+[**getExtendedAccountHolderAsync**](UsersApi.md#getExtendedAccountHolderAsync) | **GET** /api/v2/SystemService/Users/{userId}/Extended | Retrieve an extended user by ID
+[**getExtendedUsersAsync**](UsersApi.md#getExtendedUsersAsync) | **GET** /api/v2/SystemService/Users/Extended | Retrieve a list of extended users
+[**getExtendedUsersCountAsync**](UsersApi.md#getExtendedUsersCountAsync) | **GET** /api/v2/SystemService/Users/Extended/Count | Get the count of extended users
+[**getUserAsync**](UsersApi.md#getUserAsync) | **GET** /api/v2/SystemService/Users/{userId} | Retrieve a user by ID
+[**getUsersAsync**](UsersApi.md#getUsersAsync) | **GET** /api/v2/SystemService/Users | Retrieve a list of users
+[**getUsersCountAsync**](UsersApi.md#getUsersCountAsync) | **GET** /api/v2/SystemService/Users/Count | Get the count of users
+[**updateAccountHolderAsync**](UsersApi.md#updateAccountHolderAsync) | **PUT** /api/v2/SystemService/Users/{userId} | Update a user
 
 
 
-## apiV2SystemServiceUsersCountGet
+## adminPreviewUserEmailTemplate
 
+Preview the rendered email for a user.
 
+This action is only available for users with the 'business_owner' role (global administrators).
 
 ### Example
 
 ```bash
- apiV2SystemServiceUsersCountGet  api-version=value x-api-version:value
+ adminPreviewUserEmailTemplate userId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -31,153 +35,18 @@ Method | HTTP request | Description
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **userId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **emailDispatchRequest** | [**EmailDispatchRequest**](EmailDispatchRequest.md) |  | [optional]
 
 ### Return type
 
-[**Int32Envelope**](Int32Envelope.md)
+(empty response body)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2SystemServiceUsersExtendedCountGet
-
-
-
-### Example
-
-```bash
- apiV2SystemServiceUsersExtendedCountGet  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**Int32Envelope**](Int32Envelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2SystemServiceUsersExtendedGet
-
-
-
-### Example
-
-```bash
- apiV2SystemServiceUsersExtendedGet  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**ExtendedUserDtoListEnvelope**](ExtendedUserDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2SystemServiceUsersGet
-
-
-
-### Example
-
-```bash
- apiV2SystemServiceUsersGet  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**UserDtoListEnvelope**](UserDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2SystemServiceUsersPost
-
-
-
-### Example
-
-```bash
- apiV2SystemServiceUsersPost  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
- **accountHolderCreateDto** | [**AccountHolderCreateDto**](AccountHolderCreateDto.md) |  | [optional]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -187,14 +56,91 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SystemServiceUsersUserIdDelete
+## adminSendUserEmail
 
+Send an email to a user.
 
+This action is only available for users with the 'business_owner' role (global administrators).
 
 ### Example
 
 ```bash
- apiV2SystemServiceUsersUserIdDelete userId=value  api-version=value x-api-version:value
+ adminSendUserEmail userId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **emailDispatchRequest** | [**EmailDispatchRequest**](EmailDispatchRequest.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## createAccountHolderAsync
+
+Create a new user
+
+This action is only available for users with the 'business_owner' role (global administrators).
+
+### Example
+
+```bash
+ createAccountHolderAsync  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **userCreateDto** | [**UserCreateDto**](UserCreateDto.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## deleteAccountHolderAsync
+
+Delete a user
+
+This action is only available for users with the 'business_owner' role (global administrators).
+
+### Example
+
+```bash
+ deleteAccountHolderAsync userId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -212,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -222,14 +168,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SystemServiceUsersUserIdExtendedGet
+## getExtendedAccountHolderAsync
 
+Retrieve an extended user by ID
 
+This action is only available for users with the 'business_owner' role (global administrators).
 
 ### Example
 
 ```bash
- apiV2SystemServiceUsersUserIdExtendedGet userId=value  api-version=value x-api-version:value
+ getExtendedAccountHolderAsync userId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -247,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -257,14 +205,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2SystemServiceUsersUserIdPut
+## getExtendedUsersAsync
 
+Retrieve a list of extended users
 
+This action is only available for users with the 'business_owner' role (global administrators).
 
 ### Example
 
 ```bash
- apiV2SystemServiceUsersUserIdPut userId=value  api-version=value x-api-version:value
+ getExtendedUsersAsync  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -272,22 +222,56 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
- **body** | **map** |  | [optional]
 
 ### Return type
 
-[**EmptyEnvelope**](EmptyEnvelope.md)
+[**ExtendedUserDtoListEnvelope**](ExtendedUserDtoListEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json, application/xml
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getExtendedUsersCountAsync
+
+Get the count of extended users
+
+This action is only available for users with the 'business_owner' role (global administrators).
+
+### Example
+
+```bash
+ getExtendedUsersCountAsync  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -295,7 +279,9 @@ Name | Type | Description  | Notes
 
 ## getUserAsync
 
+Retrieve a user by ID
 
+This action is only available for users with the 'business_owner' role (global administrators).
 
 ### Example
 
@@ -318,11 +304,121 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getUsersAsync
+
+Retrieve a list of users
+
+This action is only available for users with the 'business_owner' role (global administrators).
+
+### Example
+
+```bash
+ getUsersAsync  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**UserDtoListEnvelope**](UserDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getUsersCountAsync
+
+Get the count of users
+
+This action is only available for users with the 'business_owner' role (global administrators).
+
+### Example
+
+```bash
+ getUsersCountAsync  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateAccountHolderAsync
+
+Update a user
+
+This action is only available for users with the 'business_owner' role (global administrators).
+
+### Example
+
+```bash
+ updateAccountHolderAsync userId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **userUpdateDto** | [**UserUpdateDto**](UserUpdateDto.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

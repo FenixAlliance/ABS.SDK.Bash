@@ -69,43 +69,89 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2QuotesServiceQuotesCountGet"]=1
-    operations["apiV2QuotesServiceQuotesExtendedGet"]=1
-    operations["apiV2QuotesServiceQuotesGet"]=1
-    operations["apiV2QuotesServiceQuotesPost"]=1
-    operations["apiV2QuotesServiceQuotesQuoteIdCalculatePut"]=1
-    operations["apiV2QuotesServiceQuotesQuoteIdDelete"]=1
-    operations["apiV2QuotesServiceQuotesQuoteIdLinesCountGet"]=1
-    operations["apiV2QuotesServiceQuotesQuoteIdLinesGet"]=1
-    operations["apiV2QuotesServiceQuotesQuoteIdLinesPost"]=1
-    operations["apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdCalculatePut"]=1
-    operations["apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdDelete"]=1
-    operations["apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdGet"]=1
-    operations["apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdPut"]=1
-    operations["apiV2QuotesServiceQuotesQuoteIdPut"]=1
-    operations["getQuoteAsync"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["calculateQuote"]=1
+    operations["calculateQuoteLine"]=1
+    operations["closeQuote"]=1
+    operations["createOrderFromQuote"]=1
+    operations["createQuote"]=1
+    operations["createQuoteLine"]=1
+    operations["deleteQuote"]=1
+    operations["deleteQuoteLine"]=1
+    operations["getExtendedQuotes"]=1
+    operations["getQuote"]=1
+    operations["getQuoteLine"]=1
+    operations["getQuoteLines"]=1
+    operations["getQuoteLinesCount"]=1
+    operations["getQuotes"]=1
+    operations["getQuotesCount"]=1
+    operations["previewQuoteEmailTemplate"]=1
+    operations["quoteLineExists"]=1
+    operations["reopenQuote"]=1
+    operations["sendQuoteEmail"]=1
+    operations["updateQuote"]=1
+    operations["updateQuoteLine"]=1
+    operations["upsertQuoteLine"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2QuotesServiceQuotesCountGet"]="tenantId= "
-    operation_parameters["apiV2QuotesServiceQuotesExtendedGet"]="tenantId= "
-    operation_parameters["apiV2QuotesServiceQuotesGet"]="tenantId= "
-    operation_parameters["apiV2QuotesServiceQuotesPost"]="tenantId= "
-    operation_parameters["apiV2QuotesServiceQuotesQuoteIdCalculatePut"]="quoteId= tenantId= "
-    operation_parameters["apiV2QuotesServiceQuotesQuoteIdDelete"]="quoteId= tenantId= "
-    operation_parameters["apiV2QuotesServiceQuotesQuoteIdLinesCountGet"]="quoteId= tenantId= "
-    operation_parameters["apiV2QuotesServiceQuotesQuoteIdLinesGet"]="quoteId= tenantId= itemId= "
-    operation_parameters["apiV2QuotesServiceQuotesQuoteIdLinesPost"]="quoteId= tenantId= "
-    operation_parameters["apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdCalculatePut"]="quoteId= quoteLineId= tenantId= "
-    operation_parameters["apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdDelete"]="quoteId= quoteLineId= tenantId= "
-    operation_parameters["apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdGet"]="quoteId= quoteLineId= tenantId= "
-    operation_parameters["apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdPut"]="quoteId= quoteLineId= tenantId= "
-    operation_parameters["apiV2QuotesServiceQuotesQuoteIdPut"]="quoteId= tenantId= "
-    operation_parameters["getQuoteAsync"]="quoteId= tenantId= "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["calculateQuote"]="quoteId= tenantId= "
+    operation_parameters["calculateQuoteLine"]="quoteId= quoteLineId= tenantId= "
+    operation_parameters["closeQuote"]="quoteId= tenantId= "
+    operation_parameters["createOrderFromQuote"]="quoteId= tenantId= "
+    operation_parameters["createQuote"]="tenantId= "
+    operation_parameters["createQuoteLine"]="quoteId= tenantId= "
+    operation_parameters["deleteQuote"]="quoteId= tenantId= "
+    operation_parameters["deleteQuoteLine"]="quoteId= quoteLineId= tenantId= "
+    operation_parameters["getExtendedQuotes"]="tenantId= "
+    operation_parameters["getQuote"]="quoteId= tenantId= "
+    operation_parameters["getQuoteLine"]="quoteId= quoteLineId= tenantId= "
+    operation_parameters["getQuoteLines"]="quoteId= tenantId= itemId= "
+    operation_parameters["getQuoteLinesCount"]="quoteId= tenantId= "
+    operation_parameters["getQuotes"]="tenantId= "
+    operation_parameters["getQuotesCount"]="tenantId= "
+    operation_parameters["previewQuoteEmailTemplate"]="quoteId= tenantId= "
+    operation_parameters["quoteLineExists"]="quoteId= tenantId= quoteLineId= itemId= "
+    operation_parameters["reopenQuote"]="quoteId= tenantId= "
+    operation_parameters["sendQuoteEmail"]="quoteId= tenantId= "
+    operation_parameters["updateQuote"]="quoteId= tenantId= "
+    operation_parameters["updateQuoteLine"]="quoteId= quoteLineId= tenantId= "
+    operation_parameters["upsertQuoteLine"]="quoteId= quoteLineId= tenantId= "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

@@ -113,37 +113,56 @@ Class | Method | HTTP request | Description
 *AvatarsApi* | [**updateUserAvatar**](docs/AvatarsApi.md#updateuseravatar) | **POST** /api/v2/StorageService/Avatars/User | Update the avatar for the current user.
 *BlobsApi* | [**getBlobAsync**](docs/BlobsApi.md#getblobasync) | **GET** /api/v2/StorageService/Blobs/Single | 
 *BlobsApi* | [**getBlobsAsync**](docs/BlobsApi.md#getblobsasync) | **GET** /api/v2/StorageService/Blobs | 
+*FenixAllianceABPWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABPWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
+*FenixAllianceABPWebApi* | [**healthGet**](docs/FenixAllianceABPWebApi.md#healthget) | **GET** /health | 
+*FenixAllianceABPWebApi* | [**helloGet**](docs/FenixAllianceABPWebApi.md#helloget) | **GET** /hello | 
+*FenixAllianceABPWebApi* | [**loginPost**](docs/FenixAllianceABPWebApi.md#loginpost) | **POST** /login | 
+*FenixAllianceABPWebApi* | [**manage2faPost**](docs/FenixAllianceABPWebApi.md#manage2fapost) | **POST** /manage/2fa | 
+*FenixAllianceABPWebApi* | [**manageInfoGet**](docs/FenixAllianceABPWebApi.md#manageinfoget) | **GET** /manage/info | 
+*FenixAllianceABPWebApi* | [**manageInfoPost**](docs/FenixAllianceABPWebApi.md#manageinfopost) | **POST** /manage/info | 
+*FenixAllianceABPWebApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAllianceABPWebApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
+*FenixAllianceABPWebApi* | [**refreshPost**](docs/FenixAllianceABPWebApi.md#refreshpost) | **POST** /refresh | 
+*FenixAllianceABPWebApi* | [**registerPost**](docs/FenixAllianceABPWebApi.md#registerpost) | **POST** /register | 
+*FenixAllianceABPWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABPWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
+*FenixAllianceABPWebApi* | [**resetPasswordPost**](docs/FenixAllianceABPWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
+*FenixAllianceABPWebApi* | [**versionGet**](docs/FenixAllianceABPWebApi.md#versionget) | **GET** /version | 
 *FilesApi* | [**createFileAsync**](docs/FilesApi.md#createfileasync) | **POST** /api/v2/StorageService/Files | 
 *FilesApi* | [**deleteFileAsync**](docs/FilesApi.md#deletefileasync) | **DELETE** /api/v2/StorageService/Files/{fileId} | 
 *FilesApi* | [**downloadFileAsync**](docs/FilesApi.md#downloadfileasync) | **GET** /api/v2/StorageService/Files/{fileId}/Raw | 
 *FilesApi* | [**getFileAsync**](docs/FilesApi.md#getfileasync) | **GET** /api/v2/StorageService/Files/{fileId} | 
 *FilesApi* | [**getFilesAsync**](docs/FilesApi.md#getfilesasync) | **GET** /api/v2/StorageService/Files | 
 *FilesApi* | [**updateFileAsync**](docs/FilesApi.md#updatefileasync) | **PUT** /api/v2/StorageService/Files/{fileId} | 
-*RadzenEditorApi* | [**apiV2StorageServiceRadzenEditorUploadsIdPost**](docs/RadzenEditorApi.md#apiv2storageserviceradzeneditoruploadsidpost) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/{id} | 
-*RadzenEditorApi* | [**apiV2StorageServiceRadzenEditorUploadsImagePost**](docs/RadzenEditorApi.md#apiv2storageserviceradzeneditoruploadsimagepost) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/Image | 
-*RadzenEditorApi* | [**apiV2StorageServiceRadzenEditorUploadsMultiplePost**](docs/RadzenEditorApi.md#apiv2storageserviceradzeneditoruploadsmultiplepost) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/Multiple | 
-*RadzenEditorApi* | [**apiV2StorageServiceRadzenEditorUploadsSinglePost**](docs/RadzenEditorApi.md#apiv2storageserviceradzeneditoruploadssinglepost) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/Single | 
-*RadzenEditorApi* | [**apiV2StorageServiceRadzenEditorUploadsSpecificPost**](docs/RadzenEditorApi.md#apiv2storageserviceradzeneditoruploadsspecificpost) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/Specific | 
-*UploadsApi* | [**apiV2StorageServiceUploadsPost**](docs/UploadsApi.md#apiv2storageserviceuploadspost) | **POST** /api/v2/StorageService/Uploads | 
+*RadzenEditorApi* | [**image**](docs/RadzenEditorApi.md#image) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/Image | Upload an image file
+*RadzenEditorApi* | [**multiple**](docs/RadzenEditorApi.md#multiple) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/Multiple | Upload multiple files
+*RadzenEditorApi* | [**post**](docs/RadzenEditorApi.md#post) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/{id} | Upload files by ID
+*RadzenEditorApi* | [**single**](docs/RadzenEditorApi.md#single) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/Single | Upload a single file
+*RadzenEditorApi* | [**specific**](docs/RadzenEditorApi.md#specific) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/Specific | Upload a specific file
+*UploadsApi* | [**saveFileAsync**](docs/UploadsApi.md#savefileasync) | **POST** /api/v2/StorageService/Uploads | Upload a file
 
 
 ## Documentation For Models
 
+ - [AccessTokenResponse](docs/AccessTokenResponse.md)
  - [Blob](docs/Blob.md)
  - [BlobEnvelope](docs/BlobEnvelope.md)
  - [EmptyEnvelope](docs/EmptyEnvelope.md)
  - [ErrorEnvelope](docs/ErrorEnvelope.md)
  - [FileUploadDto](docs/FileUploadDto.md)
  - [FileUploadDtoEnvelope](docs/FileUploadDtoEnvelope.md)
+ - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
+ - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
+ - [InfoRequest](docs/InfoRequest.md)
+ - [InfoResponse](docs/InfoResponse.md)
+ - [LoginRequest](docs/LoginRequest.md)
+ - [RefreshRequest](docs/RefreshRequest.md)
+ - [RegisterRequest](docs/RegisterRequest.md)
+ - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)
+ - [ResetPasswordRequest](docs/ResetPasswordRequest.md)
+ - [TwoFactorRequest](docs/TwoFactorRequest.md)
+ - [TwoFactorResponse](docs/TwoFactorResponse.md)
 
 
 ## Documentation For Authorization
 
-
-## Bearer
-
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+ All endpoints do not require authorization.
 

@@ -297,22 +297,36 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2OrdersServiceOrdersCountGet[]" \
-            "apiV2OrdersServiceOrdersExtendedGet[]" \
-            "apiV2OrdersServiceOrdersOrderIdCalculatePut[]" \
-            "apiV2OrdersServiceOrdersOrderIdDelete[]" \
-            "apiV2OrdersServiceOrdersOrderIdLinesCountGet[]" \
-            "apiV2OrdersServiceOrdersOrderIdLinesGet[]" \
-            "apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut[]" \
-            "apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete[]" \
-            "apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet[]" \
-            "apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut[]" \
-            "apiV2OrdersServiceOrdersOrderIdLinesPost[]" \
-            "apiV2OrdersServiceOrdersOrderIdPut[]" \
-            "apiV2OrdersServiceOrdersPost[]" \
-            "apiV2OrdersServiceOrdersSubmitCartPost[]" \
-            "getOrderAsync[]" \
-            "getOrdersAsync[]" \
+            "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "calculateOrder[Calculates totals for an order.]" \
+            "calculateOrderLine[Calculates totals for an order line.]" \
+            "createOrder[Creates a new order.]" \
+            "createOrderLine[Creates a new order line.]" \
+            "deleteOrder[Deletes an order.]" \
+            "deleteOrderLine[Deletes an order line.]" \
+            "getExtendedOrders[Gets a list of extended orders for a tenant.]" \
+            "getOrder[Gets a specific order by ID.]" \
+            "getOrderLine[Gets a specific order line.]" \
+            "getOrderLines[Gets order lines for an order.]" \
+            "getOrderLinesCount[Gets the count of order lines for an order.]" \
+            "getOrders[Gets a list of orders for a tenant.]" \
+            "getOrdersCount[Gets the count of orders for a tenant.]" \
+            "previewOrderEmailTemplate[Preview the rendered email for an Order.]" \
+            "sendOrderEmail[Send a transactional email for an order.]" \
+            "submitCart[Submits a cart and creates an order.]" \
+            "updateOrder[Updates an existing order.]" \
+            "updateOrderLine[Updates an order line.]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -320,21 +334,148 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2OrdersServiceOrdersCountGet)
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      calculateOrder)
+        local -a _op_arguments
+        _op_arguments=(
+          "orderId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      calculateOrderLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "orderId=:[PATH] "
+"orderLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createOrder)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2OrdersServiceOrdersExtendedGet)
+      createOrderLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "orderId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteOrder)
+        local -a _op_arguments
+        _op_arguments=(
+          "orderId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteOrderLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "orderId=:[PATH] "
+"orderLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExtendedOrders)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2OrdersServiceOrdersOrderIdCalculatePut)
+      getOrder)
         local -a _op_arguments
         _op_arguments=(
           "orderId=:[PATH] "
@@ -342,23 +483,16 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2OrdersServiceOrdersOrderIdDelete)
+      getOrderLine)
         local -a _op_arguments
         _op_arguments=(
           "orderId=:[PATH] "
+"orderLineId=:[PATH] "
           "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2OrdersServiceOrdersOrderIdLinesCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "orderId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2OrdersServiceOrdersOrderIdLinesGet)
+      getOrderLines)
         local -a _op_arguments
         _op_arguments=(
           "orderId=:[PATH] "
@@ -367,43 +501,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut)
-        local -a _op_arguments
-        _op_arguments=(
-          "orderId=:[PATH] "
-"orderLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "orderId=:[PATH] "
-"orderLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "orderId=:[PATH] "
-"orderLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "orderId=:[PATH] "
-"orderLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2OrdersServiceOrdersOrderIdLinesPost)
+      getOrderLinesCount)
         local -a _op_arguments
         _op_arguments=(
           "orderId=:[PATH] "
@@ -411,29 +509,44 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2OrdersServiceOrdersOrderIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "orderId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2OrdersServiceOrdersPost)
+      getOrders)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2OrdersServiceOrdersSubmitCartPost)
+      getOrdersCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      previewOrderEmailTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "orderId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      sendOrderEmail)
+        local -a _op_arguments
+        _op_arguments=(
+          "orderId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      submitCart)
         local -a _op_arguments
         _op_arguments=(
                     "cartId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      getOrderAsync)
+      updateOrder)
         local -a _op_arguments
         _op_arguments=(
           "orderId=:[PATH] "
@@ -441,10 +554,12 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      getOrdersAsync)
+      updateOrderLine)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
+          "orderId=:[PATH] "
+"orderLineId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

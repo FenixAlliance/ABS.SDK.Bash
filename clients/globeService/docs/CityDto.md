@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 **timestamp** | **string** |  | [optional] [default to null]
 **name** | **string** |  | [optional] [default to null]
 **imageUrl** | **string** |  | [optional] [default to null]
-**stateID** | **string** |  | [optional] [default to null]
-**countryID** | **string** |  | [optional] [default to null]
+**stateId** | **string** |  | [optional] [default to null]
+**countryId** | **string** |  | [optional] [default to null]
 **latitude** | **string** |  | [optional] [default to null]
 **longitude** | **string** |  | [optional] [default to null]
 

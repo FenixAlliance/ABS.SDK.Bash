@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] [readonly] [default to null]
-**timestamp** | **string** |  | [optional] [readonly] [default to null]
+**id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **periodStartDate** | **string** |  | [optional] [default to null]
 **periodEndDate** | **string** |  | [optional] [default to null]
 **projectID** | **string** |  | [optional] [default to null]

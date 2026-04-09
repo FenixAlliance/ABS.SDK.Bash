@@ -4,19 +4,58 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2GlobeServiceCurrenciesCurrencyIdGet**](CurrenciesApi.md#apiV2GlobeServiceCurrenciesCurrencyIdGet) | **GET** /api/v2/GlobeService/Currencies/{currencyId} | 
-[**apiV2GlobeServiceCurrenciesGet**](CurrenciesApi.md#apiV2GlobeServiceCurrenciesGet) | **GET** /api/v2/GlobeService/Currencies | 
+[**countCurrenciesAsync**](CurrenciesApi.md#countCurrenciesAsync) | **GET** /api/v2/GlobeService/Currencies/Count | Count currencies
+[**getCurrencyByIdAsync**](CurrenciesApi.md#getCurrencyByIdAsync) | **GET** /api/v2/GlobeService/Currencies/{currencyId} | Get currency by ID
+[**getEnabledCurrenciesAsync**](CurrenciesApi.md#getEnabledCurrenciesAsync) | **GET** /api/v2/GlobeService/Currencies | Get all currencies
 
 
 
-## apiV2GlobeServiceCurrenciesCurrencyIdGet
+## countCurrenciesAsync
 
+Count currencies
 
+Returns the total number of enabled currencies, with optional OData filtering.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceCurrenciesCurrencyIdGet currencyId=value  api-version=value x-api-version:value
+ countCurrenciesAsync  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getCurrencyByIdAsync
+
+Get currency by ID
+
+Retrieves a single currency by its unique identifier.
+
+### Example
+
+```bash
+ getCurrencyByIdAsync currencyId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -34,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -44,14 +83,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2GlobeServiceCurrenciesGet
+## getEnabledCurrenciesAsync
 
+Get all currencies
 
+Retrieves the list of all enabled currencies with optional OData pagination and filtering.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceCurrenciesGet  api-version=value x-api-version:value
+ getEnabledCurrenciesAsync  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -68,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

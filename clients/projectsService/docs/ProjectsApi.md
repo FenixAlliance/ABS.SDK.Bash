@@ -4,35 +4,38 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2ProjectsServiceProjectsCountGet**](ProjectsApi.md#apiV2ProjectsServiceProjectsCountGet) | **GET** /api/v2/ProjectsService/Projects/Count | 
-[**apiV2ProjectsServiceProjectsGet**](ProjectsApi.md#apiV2ProjectsServiceProjectsGet) | **GET** /api/v2/ProjectsService/Projects | 
-[**apiV2ProjectsServiceProjectsPost**](ProjectsApi.md#apiV2ProjectsServiceProjectsPost) | **POST** /api/v2/ProjectsService/Projects | 
-[**apiV2ProjectsServiceProjectsProjectIdDelete**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdDelete) | **DELETE** /api/v2/ProjectsService/Projects/{projectId} | 
-[**apiV2ProjectsServiceProjectsProjectIdGet**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdGet) | **GET** /api/v2/ProjectsService/Projects/{projectId} | 
-[**apiV2ProjectsServiceProjectsProjectIdPeriodsGet**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdPeriodsGet) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Periods | 
-[**apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdDelete**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdDelete) | **DELETE** /api/v2/ProjectsService/Projects/{projectId}/Periods/{projectPeriodId} | 
-[**apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdPut**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdPut) | **PUT** /api/v2/ProjectsService/Projects/{projectId}/Periods/{projectPeriodId} | 
-[**apiV2ProjectsServiceProjectsProjectIdPut**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdPut) | **PUT** /api/v2/ProjectsService/Projects/{projectId} | 
-[**apiV2ProjectsServiceProjectsProjectIdTaskCategoriesCountGet**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdTaskCategoriesCountGet) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TaskCategories/Count | 
-[**apiV2ProjectsServiceProjectsProjectIdTaskCategoriesGet**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdTaskCategoriesGet) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TaskCategories | 
-[**apiV2ProjectsServiceProjectsProjectIdTasksCountGet**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdTasksCountGet) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Tasks/Count | 
-[**apiV2ProjectsServiceProjectsProjectIdTasksGet**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdTasksGet) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Tasks | 
-[**apiV2ProjectsServiceProjectsProjectIdTasksPost**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdTasksPost) | **POST** /api/v2/ProjectsService/Projects/{projectId}/Tasks | 
-[**apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdDelete**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdDelete) | **DELETE** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | 
-[**apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdPut**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdPut) | **PUT** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | 
-[**apiV2ProjectsServiceProjectsProjectIdTimeLogsCountGet**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdTimeLogsCountGet) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TimeLogs/Count | 
-[**apiV2ProjectsServiceProjectsProjectIdTimeLogsGet**](ProjectsApi.md#apiV2ProjectsServiceProjectsProjectIdTimeLogsGet) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TimeLogs | 
+[**createProjectAsync**](ProjectsApi.md#createProjectAsync) | **POST** /api/v2/ProjectsService/Projects | Creates a new project
+[**createProjectPeriodAsync**](ProjectsApi.md#createProjectPeriodAsync) | **POST** /api/v2/ProjectsService/Projects/{projectId}/Periods | Creates a project period
+[**createProjectTaskAsync**](ProjectsApi.md#createProjectTaskAsync) | **POST** /api/v2/ProjectsService/Projects/{projectId}/Tasks | Creates a project task
+[**deleteProjectAsync**](ProjectsApi.md#deleteProjectAsync) | **DELETE** /api/v2/ProjectsService/Projects/{projectId} | Deletes a project
+[**deleteProjectPeriodAsync**](ProjectsApi.md#deleteProjectPeriodAsync) | **DELETE** /api/v2/ProjectsService/Projects/{projectId}/Periods/{projectPeriodId} | Deletes a project period
+[**deleteProjectTaskAsync**](ProjectsApi.md#deleteProjectTaskAsync) | **DELETE** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | Deletes a project task
+[**getProjectByIdAsync**](ProjectsApi.md#getProjectByIdAsync) | **GET** /api/v2/ProjectsService/Projects/{projectId} | Gets a project by ID
+[**getProjectPeriodsAsync**](ProjectsApi.md#getProjectPeriodsAsync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Periods | Retrieves project periods
+[**getProjectTaskCategoriesAsync**](ProjectsApi.md#getProjectTaskCategoriesAsync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TaskCategories | Retrieves project task categories
+[**getProjectTaskCategoriesCountAsync**](ProjectsApi.md#getProjectTaskCategoriesCountAsync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TaskCategories/Count | Counts project task categories
+[**getProjectTasksAsync**](ProjectsApi.md#getProjectTasksAsync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Tasks | Retrieves project tasks
+[**getProjectTasksCountAsync**](ProjectsApi.md#getProjectTasksCountAsync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Tasks/Count | Counts project tasks
+[**getProjectTimeLogsAsync**](ProjectsApi.md#getProjectTimeLogsAsync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TimeLogs | Retrieves project time logs
+[**getProjectTimeLogsCountAsync**](ProjectsApi.md#getProjectTimeLogsCountAsync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TimeLogs/Count | Counts project time logs
+[**getProjectsByTenantIdAsync**](ProjectsApi.md#getProjectsByTenantIdAsync) | **GET** /api/v2/ProjectsService/Projects | Retrieves all projects
+[**getProjectsCountByTenantIdAsync**](ProjectsApi.md#getProjectsCountByTenantIdAsync) | **GET** /api/v2/ProjectsService/Projects/Count | Counts projects
+[**updateProjectAsync**](ProjectsApi.md#updateProjectAsync) | **PUT** /api/v2/ProjectsService/Projects/{projectId} | Updates a project
+[**updateProjectPeriodAsync**](ProjectsApi.md#updateProjectPeriodAsync) | **PUT** /api/v2/ProjectsService/Projects/{projectId}/Periods/{projectPeriodId} | Updates a project period
+[**updateProjectTaskAsync**](ProjectsApi.md#updateProjectTaskAsync) | **PUT** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | Updates a project task
 
 
 
-## apiV2ProjectsServiceProjectsCountGet
+## createProjectAsync
 
+Creates a new project
 
+Creates a new project for the current tenant.
 
 ### Example
 
 ```bash
- apiV2ProjectsServiceProjectsCountGet  tenantId=value  api-version=value x-api-version:value
+ createProjectAsync  tenantId=value
 ```
 
 ### Parameters
@@ -41,78 +44,6 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**Int32Envelope**](Int32Envelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsGet
-
-
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsGet  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**ProjectDtoListEnvelope**](ProjectDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsPost
-
-
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsPost  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
  **projectCreateDto** | [**ProjectCreateDto**](ProjectCreateDto.md) |  | [optional]
 
 ### Return type
@@ -121,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -131,14 +62,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2ProjectsServiceProjectsProjectIdDelete
+## createProjectPeriodAsync
 
+Creates a project period
 
+Creates a new period for the specified project.
 
 ### Example
 
 ```bash
- apiV2ProjectsServiceProjectsProjectIdDelete projectId=value  tenantId=value  api-version=value x-api-version:value
+ createProjectPeriodAsync projectId=value  tenantId=value
 ```
 
 ### Parameters
@@ -148,80 +81,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **projectId** | **string** |  | [default to null]
  **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsProjectIdGet
-
-
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsProjectIdGet projectId=value  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectId** | **string** |  | [default to null]
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**ProjectDtoEnvelope**](ProjectDtoEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsProjectIdPeriodsGet
-
-
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsProjectIdPeriodsGet projectId=value  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectId** | **string** |  | [default to null]
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
  **projectPeriodCreateDto** | [**ProjectPeriodCreateDto**](ProjectPeriodCreateDto.md) |  | [optional]
 
 ### Return type
@@ -230,7 +89,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -240,89 +99,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdDelete
+## createProjectTaskAsync
 
+Creates a project task
 
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdDelete projectId=value projectPeriodId=value  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectId** | **string** |  | [default to null]
- **projectPeriodId** | **string** |  | [default to null]
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdPut
-
-
+Creates a new task for the specified project.
 
 ### Example
 
 ```bash
- apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdPut projectId=value projectPeriodId=value  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectId** | **string** |  | [default to null]
- **projectPeriodId** | **string** |  | [default to null]
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
- **projectPeriodUpdateDto** | [**ProjectPeriodUpdateDto**](ProjectPeriodUpdateDto.md) |  | [optional]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsProjectIdPut
-
-
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsProjectIdPut projectId=value  tenantId=value  api-version=value x-api-version:value
+ createProjectTaskAsync projectId=value  tenantId=value
 ```
 
 ### Parameters
@@ -332,189 +118,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **projectId** | **string** |  | [default to null]
  **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
- **projectUpdateDto** | [**ProjectUpdateDto**](ProjectUpdateDto.md) |  | [optional]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsProjectIdTaskCategoriesCountGet
-
-
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsProjectIdTaskCategoriesCountGet projectId=value  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectId** | **string** |  | [default to null]
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**Int32Envelope**](Int32Envelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsProjectIdTaskCategoriesGet
-
-
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsProjectIdTaskCategoriesGet projectId=value  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectId** | **string** |  | [default to null]
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**TaskCategoryDtoListEnvelope**](TaskCategoryDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsProjectIdTasksCountGet
-
-
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsProjectIdTasksCountGet projectId=value  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectId** | **string** |  | [default to null]
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**Int32Envelope**](Int32Envelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsProjectIdTasksGet
-
-
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsProjectIdTasksGet projectId=value  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectId** | **string** |  | [default to null]
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**ProjectTaskDtoListEnvelope**](ProjectTaskDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsProjectIdTasksPost
-
-
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsProjectIdTasksPost projectId=value  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectId** | **string** |  | [default to null]
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
  **projectTaskCreateDto** | [**ProjectTaskCreateDto**](ProjectTaskCreateDto.md) |  | [optional]
 
 ### Return type
@@ -523,7 +126,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -533,14 +136,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdDelete
+## deleteProjectAsync
 
+Deletes a project
 
+Deletes the specified project.
 
 ### Example
 
 ```bash
- apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdDelete  tenantId=value projectId=value projectTaskId=value  api-version=value x-api-version:value
+ deleteProjectAsync projectId=value  tenantId=value
 ```
 
 ### Parameters
@@ -548,11 +153,8 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
  **projectId** | **string** |  | [default to null]
- **projectTaskId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
+ **tenantId** | **string** |  | [default to null]
 
 ### Return type
 
@@ -560,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -570,14 +172,523 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdPut
+## deleteProjectPeriodAsync
 
+Deletes a project period
 
+Deletes the specified period from a project.
 
 ### Example
 
 ```bash
- apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdPut projectId=value projectTaskId=value  tenantId=value  api-version=value x-api-version:value
+ deleteProjectPeriodAsync projectId=value projectPeriodId=value  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectId** | **string** |  | [default to null]
+ **projectPeriodId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## deleteProjectTaskAsync
+
+Deletes a project task
+
+Deletes the specified task from a project.
+
+### Example
+
+```bash
+ deleteProjectTaskAsync  tenantId=value projectId=value projectTaskId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **projectId** | **string** |  | [default to null]
+ **projectTaskId** | **string** |  | [default to null]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getProjectByIdAsync
+
+Gets a project by ID
+
+Retrieves the details of a project using its unique identifier.
+
+### Example
+
+```bash
+ getProjectByIdAsync projectId=value  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**ProjectDtoEnvelope**](ProjectDtoEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getProjectPeriodsAsync
+
+Retrieves project periods
+
+Gets all periods for a specific project.
+
+### Example
+
+```bash
+ getProjectPeriodsAsync projectId=value  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**ProjectPeriodDtoListEnvelope**](ProjectPeriodDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getProjectTaskCategoriesAsync
+
+Retrieves project task categories
+
+Gets all task categories for a specific project with OData support.
+
+### Example
+
+```bash
+ getProjectTaskCategoriesAsync projectId=value  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**TaskCategoryDtoListEnvelope**](TaskCategoryDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getProjectTaskCategoriesCountAsync
+
+Counts project task categories
+
+Gets the count of task categories for a specific project.
+
+### Example
+
+```bash
+ getProjectTaskCategoriesCountAsync projectId=value  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getProjectTasksAsync
+
+Retrieves project tasks
+
+Gets all tasks for a specific project with OData support.
+
+### Example
+
+```bash
+ getProjectTasksAsync projectId=value  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**ProjectTaskDtoListEnvelope**](ProjectTaskDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getProjectTasksCountAsync
+
+Counts project tasks
+
+Gets the count of tasks for a specific project.
+
+### Example
+
+```bash
+ getProjectTasksCountAsync projectId=value  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getProjectTimeLogsAsync
+
+Retrieves project time logs
+
+Gets all time log entries for a specific project with OData support.
+
+### Example
+
+```bash
+ getProjectTimeLogsAsync projectId=value  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**ProjectTimeLogDtoListEnvelope**](ProjectTimeLogDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getProjectTimeLogsCountAsync
+
+Counts project time logs
+
+Gets the count of time log entries for a specific project.
+
+### Example
+
+```bash
+ getProjectTimeLogsCountAsync projectId=value  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getProjectsByTenantIdAsync
+
+Retrieves all projects
+
+Gets all projects for the current tenant with OData support.
+
+### Example
+
+```bash
+ getProjectsByTenantIdAsync  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**ProjectDtoListEnvelope**](ProjectDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getProjectsCountByTenantIdAsync
+
+Counts projects
+
+Gets the count of projects for the current tenant.
+
+### Example
+
+```bash
+ getProjectsCountByTenantIdAsync  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateProjectAsync
+
+Updates a project
+
+Updates the specified project.
+
+### Example
+
+```bash
+ updateProjectAsync projectId=value  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
+ **projectUpdateDto** | [**ProjectUpdateDto**](ProjectUpdateDto.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateProjectPeriodAsync
+
+Updates a project period
+
+Updates the specified period for a project.
+
+### Example
+
+```bash
+ updateProjectPeriodAsync projectId=value projectPeriodId=value  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectId** | **string** |  | [default to null]
+ **projectPeriodId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
+ **projectPeriodUpdateDto** | [**ProjectPeriodUpdateDto**](ProjectPeriodUpdateDto.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateProjectTaskAsync
+
+Updates a project task
+
+Updates the specified task in a project.
+
+### Example
+
+```bash
+ updateProjectTaskAsync projectId=value projectTaskId=value  tenantId=value
 ```
 
 ### Parameters
@@ -588,8 +699,6 @@ Name | Type | Description  | Notes
  **projectId** | **string** |  | [default to null]
  **projectTaskId** | **string** |  | [default to null]
  **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
  **projectTaskUpdateDto** | [**ProjectTaskUpdateDto**](ProjectTaskUpdateDto.md) |  | [optional]
 
 ### Return type
@@ -598,83 +707,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsProjectIdTimeLogsCountGet
-
-
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsProjectIdTimeLogsCountGet projectId=value  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectId** | **string** |  | [default to null]
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**Int32Envelope**](Int32Envelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2ProjectsServiceProjectsProjectIdTimeLogsGet
-
-
-
-### Example
-
-```bash
- apiV2ProjectsServiceProjectsProjectIdTimeLogsGet projectId=value  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectId** | **string** |  | [default to null]
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**ProjectTimeLogDtoListEnvelope**](ProjectTimeLogDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

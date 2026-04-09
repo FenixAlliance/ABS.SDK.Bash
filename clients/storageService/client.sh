@@ -135,6 +135,19 @@ operation_parameters_minimum_occurrences["getBlobsAsync:::maxResults"]=0
 operation_parameters_minimum_occurrences["getBlobsAsync:::includeAttributes"]=0
 operation_parameters_minimum_occurrences["getBlobsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlobsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
 operation_parameters_minimum_occurrences["createFileAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["createFileAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createFileAsync:::x-api-version"]=0
@@ -182,43 +195,57 @@ operation_parameters_minimum_occurrences["updateFileAsync:::validResponse"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::parentFileUploadID"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::filePath"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::file"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsIdPost:::id"]=1
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsIdPost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsIdPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsIdPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsIdPost:::files"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsImagePost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsImagePost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsImagePost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsImagePost:::file"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsMultiplePost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsMultiplePost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsMultiplePost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsMultiplePost:::files"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsSinglePost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsSinglePost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsSinglePost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsSinglePost:::file"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsSpecificPost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsSpecificPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsSpecificPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceRadzenEditorUploadsSpecificPost:::file"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::notes"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::title"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::author"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::isFolder"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::fileName"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::abstract"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::keyWords"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::validResponse"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::parentFileUploadId"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::filePath"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::file"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::iD"]=0
-operation_parameters_minimum_occurrences["apiV2StorageServiceUploadsPost:::timestamp"]=0
+operation_parameters_minimum_occurrences["image:::tenantId"]=0
+operation_parameters_minimum_occurrences["image:::api-version"]=0
+operation_parameters_minimum_occurrences["image:::x-api-version"]=0
+operation_parameters_minimum_occurrences["image:::file"]=0
+operation_parameters_minimum_occurrences["multiple:::tenantId"]=0
+operation_parameters_minimum_occurrences["multiple:::api-version"]=0
+operation_parameters_minimum_occurrences["multiple:::x-api-version"]=0
+operation_parameters_minimum_occurrences["multiple:::files"]=0
+operation_parameters_minimum_occurrences["post:::id"]=1
+operation_parameters_minimum_occurrences["post:::tenantId"]=0
+operation_parameters_minimum_occurrences["post:::api-version"]=0
+operation_parameters_minimum_occurrences["post:::x-api-version"]=0
+operation_parameters_minimum_occurrences["post:::files"]=0
+operation_parameters_minimum_occurrences["single:::tenantId"]=0
+operation_parameters_minimum_occurrences["single:::api-version"]=0
+operation_parameters_minimum_occurrences["single:::x-api-version"]=0
+operation_parameters_minimum_occurrences["single:::file"]=0
+operation_parameters_minimum_occurrences["specific:::tenantId"]=0
+operation_parameters_minimum_occurrences["specific:::api-version"]=0
+operation_parameters_minimum_occurrences["specific:::x-api-version"]=0
+operation_parameters_minimum_occurrences["specific:::file"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::notes"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::title"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::author"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::isFolder"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::fileName"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::abstract"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::keyWords"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::validResponse"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::parentFileUploadId"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::filePath"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.content"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.sha256"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.createdAtUtc"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.userId.value"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.tenantId.value"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.enrollmentId.value"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.source"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.length"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.name"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.fileName"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.lastModified"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.size"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.contentType"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.contentDisposition"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::appFile.headers"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::id"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::timestamp"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -266,6 +293,19 @@ operation_parameters_maximum_occurrences["getBlobsAsync:::maxResults"]=0
 operation_parameters_maximum_occurrences["getBlobsAsync:::includeAttributes"]=0
 operation_parameters_maximum_occurrences["getBlobsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlobsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
 operation_parameters_maximum_occurrences["createFileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createFileAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createFileAsync:::x-api-version"]=0
@@ -313,43 +353,57 @@ operation_parameters_maximum_occurrences["updateFileAsync:::validResponse"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::parentFileUploadID"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::filePath"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::file"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsIdPost:::id"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsIdPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsIdPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsIdPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsIdPost:::files"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsImagePost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsImagePost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsImagePost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsImagePost:::file"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsMultiplePost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsMultiplePost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsMultiplePost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsMultiplePost:::files"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsSinglePost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsSinglePost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsSinglePost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsSinglePost:::file"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsSpecificPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsSpecificPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsSpecificPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceRadzenEditorUploadsSpecificPost:::file"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::notes"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::title"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::author"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::isFolder"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::fileName"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::abstract"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::keyWords"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::validResponse"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::parentFileUploadId"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::filePath"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::file"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::iD"]=0
-operation_parameters_maximum_occurrences["apiV2StorageServiceUploadsPost:::timestamp"]=0
+operation_parameters_maximum_occurrences["image:::tenantId"]=0
+operation_parameters_maximum_occurrences["image:::api-version"]=0
+operation_parameters_maximum_occurrences["image:::x-api-version"]=0
+operation_parameters_maximum_occurrences["image:::file"]=0
+operation_parameters_maximum_occurrences["multiple:::tenantId"]=0
+operation_parameters_maximum_occurrences["multiple:::api-version"]=0
+operation_parameters_maximum_occurrences["multiple:::x-api-version"]=0
+operation_parameters_maximum_occurrences["multiple:::files"]=0
+operation_parameters_maximum_occurrences["post:::id"]=0
+operation_parameters_maximum_occurrences["post:::tenantId"]=0
+operation_parameters_maximum_occurrences["post:::api-version"]=0
+operation_parameters_maximum_occurrences["post:::x-api-version"]=0
+operation_parameters_maximum_occurrences["post:::files"]=0
+operation_parameters_maximum_occurrences["single:::tenantId"]=0
+operation_parameters_maximum_occurrences["single:::api-version"]=0
+operation_parameters_maximum_occurrences["single:::x-api-version"]=0
+operation_parameters_maximum_occurrences["single:::file"]=0
+operation_parameters_maximum_occurrences["specific:::tenantId"]=0
+operation_parameters_maximum_occurrences["specific:::api-version"]=0
+operation_parameters_maximum_occurrences["specific:::x-api-version"]=0
+operation_parameters_maximum_occurrences["specific:::file"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::notes"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::title"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::author"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::isFolder"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::fileName"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::abstract"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::keyWords"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::validResponse"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::parentFileUploadId"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::filePath"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.content"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.sha256"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.createdAtUtc"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.userId.value"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.tenantId.value"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.enrollmentId.value"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.source"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.length"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.name"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.fileName"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.lastModified"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.size"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.contentType"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.contentDisposition"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::appFile.headers"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::id"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::timestamp"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
@@ -394,6 +448,19 @@ operation_parameters_collection_type["getBlobsAsync:::maxResults"]=""
 operation_parameters_collection_type["getBlobsAsync:::includeAttributes"]=""
 operation_parameters_collection_type["getBlobsAsync:::api-version"]=""
 operation_parameters_collection_type["getBlobsAsync:::x-api-version"]=""
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
 operation_parameters_collection_type["createFileAsync:::tenantId"]=""
 operation_parameters_collection_type["createFileAsync:::api-version"]=""
 operation_parameters_collection_type["createFileAsync:::x-api-version"]=""
@@ -441,43 +508,57 @@ operation_parameters_collection_type["updateFileAsync:::validResponse"]=""
 operation_parameters_collection_type["updateFileAsync:::parentFileUploadID"]=""
 operation_parameters_collection_type["updateFileAsync:::filePath"]=""
 operation_parameters_collection_type["updateFileAsync:::file"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsIdPost:::id"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsIdPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsIdPost:::api-version"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsIdPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsIdPost:::files"]=
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsImagePost:::tenantId"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsImagePost:::api-version"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsImagePost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsImagePost:::file"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsMultiplePost:::tenantId"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsMultiplePost:::api-version"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsMultiplePost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsMultiplePost:::files"]=
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsSinglePost:::tenantId"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsSinglePost:::api-version"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsSinglePost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsSinglePost:::file"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsSpecificPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsSpecificPost:::api-version"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsSpecificPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2StorageServiceRadzenEditorUploadsSpecificPost:::file"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::notes"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::title"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::author"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::isFolder"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::fileName"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::abstract"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::keyWords"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::validResponse"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::parentFileUploadId"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::filePath"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::file"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::iD"]=""
-operation_parameters_collection_type["apiV2StorageServiceUploadsPost:::timestamp"]=""
+operation_parameters_collection_type["image:::tenantId"]=""
+operation_parameters_collection_type["image:::api-version"]=""
+operation_parameters_collection_type["image:::x-api-version"]=""
+operation_parameters_collection_type["image:::file"]=""
+operation_parameters_collection_type["multiple:::tenantId"]=""
+operation_parameters_collection_type["multiple:::api-version"]=""
+operation_parameters_collection_type["multiple:::x-api-version"]=""
+operation_parameters_collection_type["multiple:::files"]=
+operation_parameters_collection_type["post:::id"]=""
+operation_parameters_collection_type["post:::tenantId"]=""
+operation_parameters_collection_type["post:::api-version"]=""
+operation_parameters_collection_type["post:::x-api-version"]=""
+operation_parameters_collection_type["post:::files"]=
+operation_parameters_collection_type["single:::tenantId"]=""
+operation_parameters_collection_type["single:::api-version"]=""
+operation_parameters_collection_type["single:::x-api-version"]=""
+operation_parameters_collection_type["single:::file"]=""
+operation_parameters_collection_type["specific:::tenantId"]=""
+operation_parameters_collection_type["specific:::api-version"]=""
+operation_parameters_collection_type["specific:::x-api-version"]=""
+operation_parameters_collection_type["specific:::file"]=""
+operation_parameters_collection_type["saveFileAsync:::tenantId"]=""
+operation_parameters_collection_type["saveFileAsync:::api-version"]=""
+operation_parameters_collection_type["saveFileAsync:::x-api-version"]=""
+operation_parameters_collection_type["saveFileAsync:::notes"]=""
+operation_parameters_collection_type["saveFileAsync:::title"]=""
+operation_parameters_collection_type["saveFileAsync:::author"]=""
+operation_parameters_collection_type["saveFileAsync:::isFolder"]=""
+operation_parameters_collection_type["saveFileAsync:::fileName"]=""
+operation_parameters_collection_type["saveFileAsync:::abstract"]=""
+operation_parameters_collection_type["saveFileAsync:::keyWords"]=""
+operation_parameters_collection_type["saveFileAsync:::validResponse"]=""
+operation_parameters_collection_type["saveFileAsync:::parentFileUploadId"]=""
+operation_parameters_collection_type["saveFileAsync:::filePath"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.content"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.sha256"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.createdAtUtc"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.userId.value"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.tenantId.value"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.enrollmentId.value"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.source"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.length"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.name"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.fileName"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.lastModified"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.size"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.contentType"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.contentDisposition"]=""
+operation_parameters_collection_type["saveFileAsync:::appFile.headers"]=
+operation_parameters_collection_type["saveFileAsync:::id"]=""
+operation_parameters_collection_type["saveFileAsync:::timestamp"]=""
 
 
 ##
@@ -498,9 +579,6 @@ host=""
 # The user credentials for basic authentication
 basic_auth_credential=""
 
-##
-# The user API key
-apikey_auth_credential=""
 
 ##
 # If true, the script will only output the actual cURL command that would be
@@ -603,23 +681,10 @@ lookup_mime_type() {
 ##############################################################################
 header_arguments_to_curl() {
     local headers_curl=""
-    local api_key_header=""
-    local api_key_header_in_cli=""
-    api_key_header="Authorization"
 
     for key in "${!header_arguments[@]}"; do
         headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
-        if [[ "${key}XX" == "${api_key_header}XX" ]]; then
-            api_key_header_in_cli="YES"
-        fi
     done
-    #
-    # If the api_key was not provided in the header, try one from the
-    # environment variable
-    #
-    if [[ -z $api_key_header_in_cli && -n $apikey_auth_credential ]]; then
-        headers_curl+="-H \"${api_key_header}: ${apikey_auth_credential}\""
-    fi
     headers_curl+=" "
 
     echo "${headers_curl}"
@@ -851,7 +916,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}StorageService command line client (API version 2.0.1.4089)${OFF}
+${BOLD}${WHITE}StorageService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -878,57 +943,70 @@ ${BOLD}${WHITE}Usage${OFF}
                                       JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
 
 EOF
-    echo -e "${BOLD}${WHITE}Authentication methods${OFF}"
-    echo -e ""
-    echo -e "  - ${BLUE}Api-key${OFF} - add '${RED}Authorization:<api-key>${OFF}' after ${YELLOW}<operation>${OFF}"
-    
-    echo ""
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
     echo -e "${BOLD}${WHITE}[avatars]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}getAvatar${OFF};Get the avatar for a given social profile. (AUTH)
-  ${CYAN}getContactAvatar${OFF};Get the avatar for a given contact. (AUTH)
-  ${CYAN}getCurrentUserAvatar${OFF};Get the avatar for the current user. (AUTH)
-  ${CYAN}getTenantAvatar${OFF};Get the avatar for a given tenant. (AUTH)
-  ${CYAN}getUserAvatar${OFF};Get the avatar for a given user. (AUTH)
-  ${CYAN}updateContactAvatar${OFF};Update the avatar for a given contact. (AUTH)
-  ${CYAN}updateTenantAvatar${OFF};Update the avatar for a given tenant. (AUTH)
-  ${CYAN}updateUserAvatar${OFF};Update the avatar for the current user. (AUTH)
+  ${CYAN}getAvatar${OFF};Get the avatar for a given social profile.
+  ${CYAN}getContactAvatar${OFF};Get the avatar for a given contact.
+  ${CYAN}getCurrentUserAvatar${OFF};Get the avatar for the current user.
+  ${CYAN}getTenantAvatar${OFF};Get the avatar for a given tenant.
+  ${CYAN}getUserAvatar${OFF};Get the avatar for a given user.
+  ${CYAN}updateContactAvatar${OFF};Update the avatar for a given contact.
+  ${CYAN}updateTenantAvatar${OFF};Update the avatar for a given tenant.
+  ${CYAN}updateUserAvatar${OFF};Update the avatar for the current user.
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[blobs]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}getBlobAsync${OFF}; (AUTH)
-  ${CYAN}getBlobsAsync${OFF}; (AUTH)
+  ${CYAN}getBlobAsync${OFF};
+  ${CYAN}getBlobsAsync${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[files]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}createFileAsync${OFF}; (AUTH)
-  ${CYAN}deleteFileAsync${OFF}; (AUTH)
-  ${CYAN}downloadFileAsync${OFF}; (AUTH)
-  ${CYAN}getFileAsync${OFF}; (AUTH)
-  ${CYAN}getFilesAsync${OFF}; (AUTH)
-  ${CYAN}updateFileAsync${OFF}; (AUTH)
+  ${CYAN}createFileAsync${OFF};
+  ${CYAN}deleteFileAsync${OFF};
+  ${CYAN}downloadFileAsync${OFF};
+  ${CYAN}getFileAsync${OFF};
+  ${CYAN}getFilesAsync${OFF};
+  ${CYAN}updateFileAsync${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[radzenEditor]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2StorageServiceRadzenEditorUploadsIdPost${OFF}; (AUTH)
-  ${CYAN}apiV2StorageServiceRadzenEditorUploadsImagePost${OFF}; (AUTH)
-  ${CYAN}apiV2StorageServiceRadzenEditorUploadsMultiplePost${OFF}; (AUTH)
-  ${CYAN}apiV2StorageServiceRadzenEditorUploadsSinglePost${OFF}; (AUTH)
-  ${CYAN}apiV2StorageServiceRadzenEditorUploadsSpecificPost${OFF}; (AUTH)
+  ${CYAN}image${OFF};Upload an image file
+  ${CYAN}multiple${OFF};Upload multiple files
+  ${CYAN}post${OFF};Upload files by ID
+  ${CYAN}single${OFF};Upload a single file
+  ${CYAN}specific${OFF};Upload a specific file
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[uploads]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2StorageServiceUploadsPost${OFF}; (AUTH)
+  ${CYAN}saveFileAsync${OFF};Upload a file
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -958,7 +1036,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}StorageService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}${WHITE}StorageService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -978,7 +1056,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}StorageService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}StorageService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
@@ -989,7 +1067,7 @@ print_version() {
 ##############################################################################
 print_getAvatar_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getAvatar - Get the avatar for a given social profile.${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getAvatar - Get the avatar for a given social profile.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1012,7 +1090,7 @@ print_getAvatar_help() {
 ##############################################################################
 print_getContactAvatar_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getContactAvatar - Get the avatar for a given contact.${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getContactAvatar - Get the avatar for a given contact.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1035,7 +1113,7 @@ print_getContactAvatar_help() {
 ##############################################################################
 print_getCurrentUserAvatar_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getCurrentUserAvatar - Get the avatar for the current user.${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCurrentUserAvatar - Get the avatar for the current user.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -1057,7 +1135,7 @@ print_getCurrentUserAvatar_help() {
 ##############################################################################
 print_getTenantAvatar_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getTenantAvatar - Get the avatar for a given tenant.${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getTenantAvatar - Get the avatar for a given tenant.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1080,7 +1158,7 @@ print_getTenantAvatar_help() {
 ##############################################################################
 print_getUserAvatar_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserAvatar - Get the avatar for a given user.${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserAvatar - Get the avatar for a given user.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1103,7 +1181,7 @@ print_getUserAvatar_help() {
 ##############################################################################
 print_updateContactAvatar_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateContactAvatar - Update the avatar for a given contact.${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateContactAvatar - Update the avatar for a given contact.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1130,7 +1208,7 @@ print_updateContactAvatar_help() {
 ##############################################################################
 print_updateTenantAvatar_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateTenantAvatar - Update the avatar for a given tenant.${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateTenantAvatar - Update the avatar for a given tenant.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1155,7 +1233,7 @@ print_updateTenantAvatar_help() {
 ##############################################################################
 print_updateUserAvatar_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateUserAvatar - Update the avatar for the current user.${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateUserAvatar - Update the avatar for the current user.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -1179,7 +1257,7 @@ print_updateUserAvatar_help() {
 ##############################################################################
 print_getBlobAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBlobAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBlobAsync - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1205,7 +1283,7 @@ print_getBlobAsync_help() {
 ##############################################################################
 print_getBlobsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBlobsAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBlobsAsync - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1236,12 +1314,247 @@ print_getBlobsAsync_help() {
 }
 ##############################################################################
 #
+# Print help for forgotPasswordPost operation
+#
+##############################################################################
+print_forgotPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for helloGet operation
+#
+##############################################################################
+print_helloGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for loginPost operation
+#
+##############################################################################
+print_loginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manage2faPost operation
+#
+##############################################################################
+print_manage2faPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createFileAsync operation
 #
 ##############################################################################
 print_createFileAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createFileAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createFileAsync - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1271,7 +1584,7 @@ print_createFileAsync_help() {
 ##############################################################################
 print_deleteFileAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteFileAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteFileAsync - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}fileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1302,7 +1615,7 @@ print_deleteFileAsync_help() {
 ##############################################################################
 print_downloadFileAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}downloadFileAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}downloadFileAsync - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}fileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1327,7 +1640,7 @@ print_downloadFileAsync_help() {
 ##############################################################################
 print_getFileAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getFileAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getFileAsync - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}fileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1352,7 +1665,7 @@ print_getFileAsync_help() {
 ##############################################################################
 print_getFilesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getFilesAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getFilesAsync - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1376,7 +1689,7 @@ print_getFilesAsync_help() {
 ##############################################################################
 print_updateFileAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateFileAsync - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateFileAsync - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}fileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1402,12 +1715,58 @@ print_updateFileAsync_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2StorageServiceRadzenEditorUploadsIdPost operation
+# Print help for image operation
 #
 ##############################################################################
-print_apiV2StorageServiceRadzenEditorUploadsIdPost_help() {
+print_image_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2StorageServiceRadzenEditorUploadsIdPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}image - Upload an image file${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Uploads an image file and returns its URL for editor embedding." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for multiple operation
+#
+##############################################################################
+print_multiple_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}multiple - Upload multiple files${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Uploads multiple files to tenant or user storage." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for post operation
+#
+##############################################################################
+print_post_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}post - Upload files by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Uploads files associated with a specific resource ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[integer]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1423,12 +1782,14 @@ print_apiV2StorageServiceRadzenEditorUploadsIdPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2StorageServiceRadzenEditorUploadsImagePost operation
+# Print help for single operation
 #
 ##############################################################################
-print_apiV2StorageServiceRadzenEditorUploadsImagePost_help() {
+print_single_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2StorageServiceRadzenEditorUploadsImagePost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}single - Upload a single file${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Uploads a single file to tenant or user storage." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1443,12 +1804,14 @@ print_apiV2StorageServiceRadzenEditorUploadsImagePost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2StorageServiceRadzenEditorUploadsMultiplePost operation
+# Print help for specific operation
 #
 ##############################################################################
-print_apiV2StorageServiceRadzenEditorUploadsMultiplePost_help() {
+print_specific_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2StorageServiceRadzenEditorUploadsMultiplePost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}specific - Upload a specific file${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Uploads a specific file to tenant or user storage." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1463,52 +1826,14 @@ print_apiV2StorageServiceRadzenEditorUploadsMultiplePost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2StorageServiceRadzenEditorUploadsSinglePost operation
+# Print help for saveFileAsync operation
 #
 ##############################################################################
-print_apiV2StorageServiceRadzenEditorUploadsSinglePost_help() {
+print_saveFileAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2StorageServiceRadzenEditorUploadsSinglePost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}saveFileAsync - Upload a file${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2StorageServiceRadzenEditorUploadsSpecificPost operation
-#
-##############################################################################
-print_apiV2StorageServiceRadzenEditorUploadsSpecificPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2StorageServiceRadzenEditorUploadsSpecificPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2StorageServiceUploadsPost operation
-#
-##############################################################################
-print_apiV2StorageServiceUploadsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2StorageServiceUploadsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "Uploads a file to tenant or user storage." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1538,7 +1863,7 @@ call_getAvatar() {
     local path_parameter_names=(socialProfileId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Avatars/{socialProfileId}" path_parameter_names query_parameter_names); then
@@ -1574,7 +1899,7 @@ call_getContactAvatar() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Avatars/Contact/{contactId}" path_parameter_names query_parameter_names); then
@@ -1610,7 +1935,7 @@ call_getCurrentUserAvatar() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Avatars/User" path_parameter_names query_parameter_names); then
@@ -1646,7 +1971,7 @@ call_getTenantAvatar() {
     local path_parameter_names=(tenantId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Avatars/Tenant/{tenantId}" path_parameter_names query_parameter_names); then
@@ -1682,7 +2007,7 @@ call_getUserAvatar() {
     local path_parameter_names=(userId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Avatars/User/{userId}" path_parameter_names query_parameter_names); then
@@ -1718,7 +2043,7 @@ call_updateContactAvatar() {
     local path_parameter_names=(contactId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Avatars/Contacts/{contactId}" path_parameter_names query_parameter_names); then
@@ -1755,7 +2080,7 @@ call_updateTenantAvatar() {
     local path_parameter_names=(tenantId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Avatars/Tenant/{tenantId}" path_parameter_names query_parameter_names); then
@@ -1792,7 +2117,7 @@ call_updateUserAvatar() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Avatars/User" path_parameter_names query_parameter_names); then
@@ -1829,7 +2154,7 @@ call_getBlobAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId filePath api-version  )
+    local query_parameter_names=(tenantId filePath api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Blobs/Single" path_parameter_names query_parameter_names); then
@@ -1865,10 +2190,814 @@ call_getBlobsAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId folderPath browseFilter filePrefix recurse maxResults includeAttributes api-version  )
+    local query_parameter_names=(tenantId folderPath browseFilter filePrefix recurse maxResults includeAttributes api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Blobs" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call forgotPasswordPost operation
+#
+##############################################################################
+call_forgotPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call helloGet operation
+#
+##############################################################################
+call_helloGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call loginPost operation
+#
+##############################################################################
+call_loginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(useCookies useSessionCookies)
+    local path
+
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoPost operation
+#
+##############################################################################
+call_manageInfoPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call refreshPost operation
+#
+##############################################################################
+call_refreshPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -1901,7 +3030,7 @@ call_createFileAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Files" path_parameter_names query_parameter_names); then
@@ -1938,7 +3067,7 @@ call_deleteFileAsync() {
     local path_parameter_names=(fileId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Files/{fileId}" path_parameter_names query_parameter_names); then
@@ -1974,7 +3103,7 @@ call_downloadFileAsync() {
     local path_parameter_names=(fileId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Files/{fileId}/Raw" path_parameter_names query_parameter_names); then
@@ -2010,7 +3139,7 @@ call_getFileAsync() {
     local path_parameter_names=(fileId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Files/{fileId}" path_parameter_names query_parameter_names); then
@@ -2046,7 +3175,7 @@ call_getFilesAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Files" path_parameter_names query_parameter_names); then
@@ -2082,7 +3211,7 @@ call_updateFileAsync() {
     local path_parameter_names=(fileId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Files/{fileId}" path_parameter_names query_parameter_names); then
@@ -2110,53 +3239,16 @@ call_updateFileAsync() {
 
 ##############################################################################
 #
-# Call apiV2StorageServiceRadzenEditorUploadsIdPost operation
+# Call image operation
 #
 ##############################################################################
-call_apiV2StorageServiceRadzenEditorUploadsIdPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(id)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/StorageService/RadzenEditor/Uploads/{id}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2StorageServiceRadzenEditorUploadsImagePost operation
-#
-##############################################################################
-call_apiV2StorageServiceRadzenEditorUploadsImagePost() {
+call_image() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/RadzenEditor/Uploads/Image" path_parameter_names query_parameter_names); then
@@ -2184,16 +3276,16 @@ call_apiV2StorageServiceRadzenEditorUploadsImagePost() {
 
 ##############################################################################
 #
-# Call apiV2StorageServiceRadzenEditorUploadsMultiplePost operation
+# Call multiple operation
 #
 ##############################################################################
-call_apiV2StorageServiceRadzenEditorUploadsMultiplePost() {
+call_multiple() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/RadzenEditor/Uploads/Multiple" path_parameter_names query_parameter_names); then
@@ -2221,16 +3313,53 @@ call_apiV2StorageServiceRadzenEditorUploadsMultiplePost() {
 
 ##############################################################################
 #
-# Call apiV2StorageServiceRadzenEditorUploadsSinglePost operation
+# Call post operation
 #
 ##############################################################################
-call_apiV2StorageServiceRadzenEditorUploadsSinglePost() {
+call_post() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/StorageService/RadzenEditor/Uploads/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call single operation
+#
+##############################################################################
+call_single() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/RadzenEditor/Uploads/Single" path_parameter_names query_parameter_names); then
@@ -2258,16 +3387,16 @@ call_apiV2StorageServiceRadzenEditorUploadsSinglePost() {
 
 ##############################################################################
 #
-# Call apiV2StorageServiceRadzenEditorUploadsSpecificPost operation
+# Call specific operation
 #
 ##############################################################################
-call_apiV2StorageServiceRadzenEditorUploadsSpecificPost() {
+call_specific() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/RadzenEditor/Uploads/Specific" path_parameter_names query_parameter_names); then
@@ -2295,16 +3424,16 @@ call_apiV2StorageServiceRadzenEditorUploadsSpecificPost() {
 
 ##############################################################################
 #
-# Call apiV2StorageServiceUploadsPost operation
+# Call saveFileAsync operation
 #
 ##############################################################################
-call_apiV2StorageServiceUploadsPost() {
+call_saveFileAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Uploads" path_parameter_names query_parameter_names); then
@@ -2457,6 +3586,45 @@ case $key in
     getBlobsAsync)
     operation="getBlobsAsync"
     ;;
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
+    ;;
+    healthGet)
+    operation="healthGet"
+    ;;
+    helloGet)
+    operation="helloGet"
+    ;;
+    loginPost)
+    operation="loginPost"
+    ;;
+    manage2faPost)
+    operation="manage2faPost"
+    ;;
+    manageInfoGet)
+    operation="manageInfoGet"
+    ;;
+    manageInfoPost)
+    operation="manageInfoPost"
+    ;;
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
+    ;;
+    refreshPost)
+    operation="refreshPost"
+    ;;
+    registerPost)
+    operation="registerPost"
+    ;;
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
+    ;;
+    resetPasswordPost)
+    operation="resetPasswordPost"
+    ;;
+    versionGet)
+    operation="versionGet"
+    ;;
     createFileAsync)
     operation="createFileAsync"
     ;;
@@ -2475,23 +3643,23 @@ case $key in
     updateFileAsync)
     operation="updateFileAsync"
     ;;
-    apiV2StorageServiceRadzenEditorUploadsIdPost)
-    operation="apiV2StorageServiceRadzenEditorUploadsIdPost"
+    image)
+    operation="image"
     ;;
-    apiV2StorageServiceRadzenEditorUploadsImagePost)
-    operation="apiV2StorageServiceRadzenEditorUploadsImagePost"
+    multiple)
+    operation="multiple"
     ;;
-    apiV2StorageServiceRadzenEditorUploadsMultiplePost)
-    operation="apiV2StorageServiceRadzenEditorUploadsMultiplePost"
+    post)
+    operation="post"
     ;;
-    apiV2StorageServiceRadzenEditorUploadsSinglePost)
-    operation="apiV2StorageServiceRadzenEditorUploadsSinglePost"
+    single)
+    operation="single"
     ;;
-    apiV2StorageServiceRadzenEditorUploadsSpecificPost)
-    operation="apiV2StorageServiceRadzenEditorUploadsSpecificPost"
+    specific)
+    operation="specific"
     ;;
-    apiV2StorageServiceUploadsPost)
-    operation="apiV2StorageServiceUploadsPost"
+    saveFileAsync)
+    operation="saveFileAsync"
     ;;
     *==*)
     # Parse body arguments and convert them into top level
@@ -2526,13 +3694,6 @@ case $key in
     # only after the operation argument
     if [[ "$operation" ]]; then
         IFS=':' read -r header_name header_value <<< "$key"
-        #
-        # If the header key is the same as the api_key expected by API in the
-        # header, override the ${apikey_auth_credential} variable
-        #
-        if [[ $header_name == "Authorization" ]]; then
-            apikey_auth_credential=$header_value
-        fi
         header_arguments[$header_name]=$header_value
     else
         curl_arguments+=" $key"
@@ -2617,6 +3778,45 @@ case $operation in
     getBlobsAsync)
     call_getBlobsAsync
     ;;
+    forgotPasswordPost)
+    call_forgotPasswordPost
+    ;;
+    healthGet)
+    call_healthGet
+    ;;
+    helloGet)
+    call_helloGet
+    ;;
+    loginPost)
+    call_loginPost
+    ;;
+    manage2faPost)
+    call_manage2faPost
+    ;;
+    manageInfoGet)
+    call_manageInfoGet
+    ;;
+    manageInfoPost)
+    call_manageInfoPost
+    ;;
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
+    ;;
+    refreshPost)
+    call_refreshPost
+    ;;
+    registerPost)
+    call_registerPost
+    ;;
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
+    ;;
+    resetPasswordPost)
+    call_resetPasswordPost
+    ;;
+    versionGet)
+    call_versionGet
+    ;;
     createFileAsync)
     call_createFileAsync
     ;;
@@ -2635,23 +3835,23 @@ case $operation in
     updateFileAsync)
     call_updateFileAsync
     ;;
-    apiV2StorageServiceRadzenEditorUploadsIdPost)
-    call_apiV2StorageServiceRadzenEditorUploadsIdPost
+    image)
+    call_image
     ;;
-    apiV2StorageServiceRadzenEditorUploadsImagePost)
-    call_apiV2StorageServiceRadzenEditorUploadsImagePost
+    multiple)
+    call_multiple
     ;;
-    apiV2StorageServiceRadzenEditorUploadsMultiplePost)
-    call_apiV2StorageServiceRadzenEditorUploadsMultiplePost
+    post)
+    call_post
     ;;
-    apiV2StorageServiceRadzenEditorUploadsSinglePost)
-    call_apiV2StorageServiceRadzenEditorUploadsSinglePost
+    single)
+    call_single
     ;;
-    apiV2StorageServiceRadzenEditorUploadsSpecificPost)
-    call_apiV2StorageServiceRadzenEditorUploadsSpecificPost
+    specific)
+    call_specific
     ;;
-    apiV2StorageServiceUploadsPost)
-    call_apiV2StorageServiceUploadsPost
+    saveFileAsync)
+    call_saveFileAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

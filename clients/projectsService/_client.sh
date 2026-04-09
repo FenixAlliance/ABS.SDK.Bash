@@ -297,32 +297,46 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2ProjectsServiceProjectsCountGet[]" \
-            "apiV2ProjectsServiceProjectsGet[]" \
-            "apiV2ProjectsServiceProjectsPost[]" \
-            "apiV2ProjectsServiceProjectsProjectIdDelete[]" \
-            "apiV2ProjectsServiceProjectsProjectIdGet[]" \
-            "apiV2ProjectsServiceProjectsProjectIdPeriodsGet[]" \
-            "apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdDelete[]" \
-            "apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdPut[]" \
-            "apiV2ProjectsServiceProjectsProjectIdPut[]" \
-            "apiV2ProjectsServiceProjectsProjectIdTaskCategoriesCountGet[]" \
-            "apiV2ProjectsServiceProjectsProjectIdTaskCategoriesGet[]" \
-            "apiV2ProjectsServiceProjectsProjectIdTasksCountGet[]" \
-            "apiV2ProjectsServiceProjectsProjectIdTasksGet[]" \
-            "apiV2ProjectsServiceProjectsProjectIdTasksPost[]" \
-            "apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdDelete[]" \
-            "apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdPut[]" \
-            "apiV2ProjectsServiceProjectsProjectIdTimeLogsCountGet[]" \
-            "apiV2ProjectsServiceProjectsProjectIdTimeLogsGet[]"             "apiV2ProjectsServiceTaskCategoriesGet[]" \
-            "apiV2ProjectsServiceTaskCategoriesPost[]" \
-            "apiV2ProjectsServiceTaskCategoriesTaskCategoryIdDelete[]" \
-            "apiV2ProjectsServiceTaskCategoriesTaskCategoryIdGet[]" \
-            "apiV2ProjectsServiceTaskCategoriesTaskCategoryIdPut[]" \
-            "apiV2ProjectsServiceTaskCategoriesTaskCategoryIdTypesGet[]"             "apiV2ProjectsServiceTaskTypesPost[]" \
-            "apiV2ProjectsServiceTaskTypesTaskTypeIdDelete[]" \
-            "apiV2ProjectsServiceTaskTypesTaskTypeIdGet[]" \
-            "apiV2ProjectsServiceTaskTypesTaskTypeIdPut[]" \
+            "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "createProjectAsync[Creates a new project]" \
+            "createProjectPeriodAsync[Creates a project period]" \
+            "createProjectTaskAsync[Creates a project task]" \
+            "deleteProjectAsync[Deletes a project]" \
+            "deleteProjectPeriodAsync[Deletes a project period]" \
+            "deleteProjectTaskAsync[Deletes a project task]" \
+            "getProjectByIdAsync[Gets a project by ID]" \
+            "getProjectPeriodsAsync[Retrieves project periods]" \
+            "getProjectTaskCategoriesAsync[Retrieves project task categories]" \
+            "getProjectTaskCategoriesCountAsync[Counts project task categories]" \
+            "getProjectTasksAsync[Retrieves project tasks]" \
+            "getProjectTasksCountAsync[Counts project tasks]" \
+            "getProjectTimeLogsAsync[Retrieves project time logs]" \
+            "getProjectTimeLogsCountAsync[Counts project time logs]" \
+            "getProjectsByTenantIdAsync[Retrieves all projects]" \
+            "getProjectsCountByTenantIdAsync[Counts projects]" \
+            "updateProjectAsync[Updates a project]" \
+            "updateProjectPeriodAsync[Updates a project period]" \
+            "updateProjectTaskAsync[Updates a project task]"             "countTenantTaskCategoriesAsync[Counts task categories]" \
+            "createTaskCategoryAsync[Creates a new task category]" \
+            "deleteTaskCategoryAsync[Deletes a task category]" \
+            "getTaskCategoryByIdAsync[Gets a task category by ID]" \
+            "getTaskCategoryTaskTypesAsync[Retrieves task types for a category]" \
+            "getTenantTaskCategoriesAsync[Retrieves all task categories]" \
+            "updateTaskCategoryAsync[Updates a task category]"             "createTaskTypeAsync[Creates a new task type]" \
+            "deleteTaskTypeAsync[Deletes a task type]" \
+            "getTaskTypeByIdAsync[Gets a task type by ID]" \
+            "updateTaskTypeAsync[Updates a task type]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -330,282 +344,326 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2ProjectsServiceProjectsCountGet)
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createProjectAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceProjectsGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2ProjectsServiceProjectsPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2ProjectsServiceProjectsProjectIdDelete)
+      createProjectPeriodAsync)
         local -a _op_arguments
         _op_arguments=(
           "projectId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceProjectsProjectIdGet)
+      createProjectTaskAsync)
         local -a _op_arguments
         _op_arguments=(
           "projectId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceProjectsProjectIdPeriodsGet)
+      deleteProjectAsync)
         local -a _op_arguments
         _op_arguments=(
           "projectId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdDelete)
+      deleteProjectPeriodAsync)
         local -a _op_arguments
         _op_arguments=(
           "projectId=:[PATH] "
 "projectPeriodId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdPut)
+      deleteProjectTaskAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+"projectTaskId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectPeriodsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTaskCategoriesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTaskCategoriesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTasksAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTasksCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTimeLogsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTimeLogsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectsByTenantIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectsCountByTenantIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateProjectAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateProjectPeriodAsync)
         local -a _op_arguments
         _op_arguments=(
           "projectId=:[PATH] "
 "projectPeriodId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceProjectsProjectIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "projectId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2ProjectsServiceProjectsProjectIdTaskCategoriesCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "projectId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2ProjectsServiceProjectsProjectIdTaskCategoriesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "projectId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2ProjectsServiceProjectsProjectIdTasksCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "projectId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2ProjectsServiceProjectsProjectIdTasksGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "projectId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2ProjectsServiceProjectsProjectIdTasksPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "projectId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdDelete)
+      updateProjectTaskAsync)
         local -a _op_arguments
         _op_arguments=(
           "projectId=:[PATH] "
 "projectTaskId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "projectId=:[PATH] "
-"projectTaskId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2ProjectsServiceProjectsProjectIdTimeLogsCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "projectId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2ProjectsServiceProjectsProjectIdTimeLogsGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "projectId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2ProjectsServiceTaskCategoriesGet)
+      countTenantTaskCategoriesAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceTaskCategoriesPost)
+      createTaskCategoryAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceTaskCategoriesTaskCategoryIdDelete)
+      deleteTaskCategoryAsync)
         local -a _op_arguments
         _op_arguments=(
           "taskCategoryId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceTaskCategoriesTaskCategoryIdGet)
+      getTaskCategoryByIdAsync)
         local -a _op_arguments
         _op_arguments=(
           "taskCategoryId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceTaskCategoriesTaskCategoryIdPut)
+      getTaskCategoryTaskTypesAsync)
         local -a _op_arguments
         _op_arguments=(
           "taskCategoryId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceTaskCategoriesTaskCategoryIdTypesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "taskCategoryId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2ProjectsServiceTaskTypesPost)
+      getTenantTaskCategoriesAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceTaskTypesTaskTypeIdDelete)
+      updateTaskCategoryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "taskCategoryId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createTaskTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteTaskTypeAsync)
         local -a _op_arguments
         _op_arguments=(
           "taskTypeId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceTaskTypesTaskTypeIdGet)
+      getTaskTypeByIdAsync)
         local -a _op_arguments
         _op_arguments=(
           "taskTypeId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2ProjectsServiceTaskTypesTaskTypeIdPut)
+      updateTaskTypeAsync)
         local -a _op_arguments
         _op_arguments=(
           "taskTypeId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
     esac

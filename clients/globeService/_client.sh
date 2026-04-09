@@ -297,19 +297,35 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2GlobeServiceCountriesCountryIdCallingCodesGet[]" \
-            "apiV2GlobeServiceCountriesCountryIdCurrenciesGet[]" \
-            "apiV2GlobeServiceCountriesCountryIdGet[]" \
-            "apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet[]" \
-            "apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet[]" \
-            "apiV2GlobeServiceCountriesCountryIdStatesGet[]" \
-            "apiV2GlobeServiceCountriesCountryIdTimezonesGet[]" \
-            "apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet[]" \
-            "apiV2GlobeServiceCountriesGet[]" \
-            "apiV2GlobeServiceCountriesSearchGet[]"             "apiV2GlobeServiceCurrenciesCurrencyIdGet[]" \
-            "apiV2GlobeServiceCurrenciesGet[]"             "apiV2GlobeServiceLanguagesGet[]" \
-            "apiV2GlobeServiceLanguagesLanguageIdGet[]"             "apiV2GlobalSystemMigratePost[]"             "apiV2GlobeServiceTimezonesGet[]" \
-            "apiV2GlobeServiceTimezonesTimeZoneIdGet[]" \
+            "countCountries[Count countries]" \
+            "getAllCountries[Get all countries]" \
+            "getCallingCodesByCountryIdAsync[Get calling codes for a country]" \
+            "getCitiesByCountryStateIdAsync[Get cities for a state]" \
+            "getCountryById[Get country by ID]" \
+            "getCountryStateByIdAsync[Get state by ID]" \
+            "getCountryStatesAsync[Get states for a country]" \
+            "getEnabledCurrenciesByCountryIdAsync[Get currencies for a country]" \
+            "getTimeZonesByCountryIdAsync[Get timezones for a country]" \
+            "getTopLevelDomainsByCountryIdAsync[Get top-level domains for a country]" \
+            "searchCountriesByNameAsync[Search countries by name]"             "countCurrenciesAsync[Count currencies]" \
+            "getCurrencyByIdAsync[Get currency by ID]" \
+            "getEnabledCurrenciesAsync[Get all currencies]"             "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "countLanguagesAsync[Count languages]" \
+            "getLanguageByIdAsync[Get language by ID]" \
+            "getLanguagesAsync[Get all languages]"             "countTimezonesAsync[Count timezones]" \
+            "getTimeZoneByIdAsync[Get timezone by ID]" \
+            "getTimeZonesAsync[Get all timezones]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -317,81 +333,7 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2GlobeServiceCountriesCountryIdCallingCodesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "countryId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2GlobeServiceCountriesCountryIdCurrenciesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "countryId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2GlobeServiceCountriesCountryIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "countryId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdCitiesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "countryStateId=:[PATH] "
-"countryId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2GlobeServiceCountriesCountryIdStatesCountryStateIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "countryStateId=:[PATH] "
-"countryId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2GlobeServiceCountriesCountryIdStatesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "countryId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2GlobeServiceCountriesCountryIdTimezonesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "countryId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2GlobeServiceCountriesCountryIdTopLevelDomainsGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "countryId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2GlobeServiceCountriesGet)
+      countCountries)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
@@ -399,7 +341,89 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2GlobeServiceCountriesSearchGet)
+      getAllCountries)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCallingCodesByCountryIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCitiesByCountryStateIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryStateId=:[PATH] "
+"countryId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCountryById)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCountryStateByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryStateId=:[PATH] "
+"countryId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCountryStatesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getEnabledCurrenciesByCountryIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTimeZonesByCountryIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTopLevelDomainsByCountryIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchCountriesByNameAsync)
         local -a _op_arguments
         _op_arguments=(
                     "countryName=:[QUERY] "
@@ -408,7 +432,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2GlobeServiceCurrenciesCurrencyIdGet)
+      countCurrenciesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCurrencyByIdAsync)
         local -a _op_arguments
         _op_arguments=(
           "currencyId=:[PATH] "
@@ -417,7 +449,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2GlobeServiceCurrenciesGet)
+      getEnabledCurrenciesAsync)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
@@ -425,7 +457,92 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2GlobeServiceLanguagesGet)
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countLanguagesAsync)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
@@ -433,7 +550,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2GlobeServiceLanguagesLanguageIdGet)
+      getLanguageByIdAsync)
         local -a _op_arguments
         _op_arguments=(
           "languageId=:[PATH] "
@@ -442,7 +559,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2GlobalSystemMigratePost)
+      getLanguagesAsync)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
@@ -450,7 +567,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2GlobeServiceTimezonesGet)
+      countTimezonesAsync)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
@@ -458,11 +575,19 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2GlobeServiceTimezonesTimeZoneIdGet)
+      getTimeZoneByIdAsync)
         local -a _op_arguments
         _op_arguments=(
           "timeZoneId=:[PATH] "
           "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTimeZonesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0

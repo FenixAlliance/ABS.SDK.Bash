@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **name** | **string** |  | [optional] [default to null]
 **fullName** | **string** |  | [optional] [readonly] [default to null]
 **description** | **string** |  | [optional] [default to null]
-**type** | **integer** |  | [optional] [default to null]
+**type** | **string** |  | [optional] [default to null]
 **configuration** | **string** |  | [optional] [default to null]
 **author** | **string** |  | [optional] [default to null]
 **authorUrl** | **string** |  | [optional] [default to null]

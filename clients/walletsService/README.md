@@ -103,6 +103,19 @@ All URIs are relative to **
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*FenixAllianceABPWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABPWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
+*FenixAllianceABPWebApi* | [**healthGet**](docs/FenixAllianceABPWebApi.md#healthget) | **GET** /health | 
+*FenixAllianceABPWebApi* | [**helloGet**](docs/FenixAllianceABPWebApi.md#helloget) | **GET** /hello | 
+*FenixAllianceABPWebApi* | [**loginPost**](docs/FenixAllianceABPWebApi.md#loginpost) | **POST** /login | 
+*FenixAllianceABPWebApi* | [**manage2faPost**](docs/FenixAllianceABPWebApi.md#manage2fapost) | **POST** /manage/2fa | 
+*FenixAllianceABPWebApi* | [**manageInfoGet**](docs/FenixAllianceABPWebApi.md#manageinfoget) | **GET** /manage/info | 
+*FenixAllianceABPWebApi* | [**manageInfoPost**](docs/FenixAllianceABPWebApi.md#manageinfopost) | **POST** /manage/info | 
+*FenixAllianceABPWebApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAllianceABPWebApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
+*FenixAllianceABPWebApi* | [**refreshPost**](docs/FenixAllianceABPWebApi.md#refreshpost) | **POST** /refresh | 
+*FenixAllianceABPWebApi* | [**registerPost**](docs/FenixAllianceABPWebApi.md#registerpost) | **POST** /register | 
+*FenixAllianceABPWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABPWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
+*FenixAllianceABPWebApi* | [**resetPasswordPost**](docs/FenixAllianceABPWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
+*FenixAllianceABPWebApi* | [**versionGet**](docs/FenixAllianceABPWebApi.md#versionget) | **GET** /version | 
 *WalletsApi* | [**createWalletLocationAsync**](docs/WalletsApi.md#createwalletlocationasync) | **POST** /api/v2/WalletsService/Wallets/{walletId}/Locations | Create Wallet Location
 *WalletsApi* | [**deleteWalletLocationAsync**](docs/WalletsApi.md#deletewalletlocationasync) | **DELETE** /api/v2/WalletsService/Wallets/{walletId}/Locations/{locationId} | Delete Wallet Location
 *WalletsApi* | [**getIncomingPaymentsAsync**](docs/WalletsApi.md#getincomingpaymentsasync) | **GET** /api/v2/WalletsService/Wallets/{walletId}/Payments/Incoming | Get Incoming Payments
@@ -129,12 +142,16 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [AccessTokenResponse](docs/AccessTokenResponse.md)
  - [ContactDto](docs/ContactDto.md)
- - [Currency](docs/Currency.md)
  - [EmptyEnvelope](docs/EmptyEnvelope.md)
  - [ErrorEnvelope](docs/ErrorEnvelope.md)
  - [ExtendedOrderDto](docs/ExtendedOrderDto.md)
  - [ExtendedOrderDtoListEnvelope](docs/ExtendedOrderDtoListEnvelope.md)
+ - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
+ - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
+ - [InfoRequest](docs/InfoRequest.md)
+ - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
  - [InvoiceDto](docs/InvoiceDto.md)
  - [InvoiceDtoListEnvelope](docs/InvoiceDtoListEnvelope.md)
@@ -143,13 +160,19 @@ Class | Method | HTTP request | Description
  - [LocationDtoEnvelope](docs/LocationDtoEnvelope.md)
  - [LocationDtoListEnvelope](docs/LocationDtoListEnvelope.md)
  - [LocationUpdateDto](docs/LocationUpdateDto.md)
- - [Money](docs/Money.md)
+ - [LoginRequest](docs/LoginRequest.md)
  - [OrderDto](docs/OrderDto.md)
  - [OrderDtoListEnvelope](docs/OrderDtoListEnvelope.md)
  - [PaymentDto](docs/PaymentDto.md)
  - [PaymentDtoListEnvelope](docs/PaymentDtoListEnvelope.md)
+ - [RefreshRequest](docs/RefreshRequest.md)
+ - [RegisterRequest](docs/RegisterRequest.md)
+ - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)
+ - [ResetPasswordRequest](docs/ResetPasswordRequest.md)
  - [TenantDto](docs/TenantDto.md)
- - [TenantEnrolmentDto](docs/TenantEnrolmentDto.md)
+ - [TenantEnrollmentDto](docs/TenantEnrollmentDto.md)
+ - [TwoFactorRequest](docs/TwoFactorRequest.md)
+ - [TwoFactorResponse](docs/TwoFactorResponse.md)
  - [UserDto](docs/UserDto.md)
  - [WalletDto](docs/WalletDto.md)
  - [WalletDtoEnvelope](docs/WalletDtoEnvelope.md)
@@ -157,11 +180,5 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Authorization
 
-
-## Bearer
-
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+ All endpoints do not require authorization.
 

@@ -4,4 +4,17 @@ README.md
 _client.sh
 client.sh
 client.sh.bash-completion
+docs/AccessTokenResponse.md
+docs/FenixAllianceABPWebApi.md
+docs/ForgotPasswordRequest.md
+docs/HttpValidationProblemDetails.md
+docs/InfoRequest.md
+docs/InfoResponse.md
+docs/LoginRequest.md
 docs/MarginsApi.md
+docs/RefreshRequest.md
+docs/RegisterRequest.md
+docs/ResendConfirmationEmailRequest.md
+docs/ResetPasswordRequest.md
+docs/TwoFactorRequest.md
+docs/TwoFactorResponse.md

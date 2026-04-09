@@ -297,47 +297,61 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2InvoicingServiceInvoicesCountGet[]" \
-            "apiV2InvoicingServiceInvoicesDiscountsAggregatePost[]" \
-            "apiV2InvoicingServiceInvoicesExtendedCountGet[]" \
-            "apiV2InvoicingServiceInvoicesExtendedGet[]" \
-            "apiV2InvoicingServiceInvoicesGet[]" \
-            "apiV2InvoicingServiceInvoicesGlobalSurchargesAggregatePost[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsCountGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsInvoiceAdjustmentIdDelete[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsInvoiceAdjustmentIdGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsInvoiceAdjustmentIdPut[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsPost[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdCalculatePut[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdDelete[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdExtendedGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdLinesCountGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdLinesGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdCalculatePut[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdDelete[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdPut[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesCountGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesInvoiceLineTaxIdDelete[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesInvoiceLineTaxIdPut[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesPost[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdLinesPost[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdPaymentsCountGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdPaymentsGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdPut[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdReferencesCountGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdReferencesGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdReferencesInvoiceReferenceIdDelete[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdReferencesInvoiceReferenceIdGet[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdReferencesInvoiceReferenceIdPut[]" \
-            "apiV2InvoicingServiceInvoicesInvoiceIdReferencesPost[]" \
-            "apiV2InvoicingServiceInvoicesPost[]" \
-            "apiV2InvoicingServiceInvoicesTaxBasesAggregatePost[]" \
-            "apiV2InvoicingServiceInvoicesTaxesAggregatePost[]" \
-            "apiV2InvoicingServiceInvoicesTotalsAggregatePost[]" \
-            "getInvoiceAsync[]" \
+            "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "aggregateInvoiceDiscounts[Aggregate invoice discounts.]" \
+            "aggregateInvoiceGlobalSurcharges[Aggregate invoice global surcharges.]" \
+            "aggregateInvoiceTaxBases[Aggregate invoice tax bases.]" \
+            "aggregateInvoiceTaxes[Aggregate invoice taxes.]" \
+            "aggregateInvoiceTotals[Aggregate invoice totals.]" \
+            "calculateInvoice[Calculate an invoice.]" \
+            "calculateInvoiceLine[Calculate an invoice line.]" \
+            "createInvoice[Create a new invoice.]" \
+            "createInvoiceAdjustment[Create a new invoice adjustment.]" \
+            "createInvoiceLine[Create a new invoice line.]" \
+            "createInvoiceLineTax[Create a new tax for an invoice line.]" \
+            "createInvoiceReference[Create a new invoice reference.]" \
+            "deleteInvoice[Delete an invoice.]" \
+            "deleteInvoiceAdjustment[Delete an invoice adjustment.]" \
+            "deleteInvoiceLine[Delete an invoice line.]" \
+            "deleteInvoiceLineTax[Delete a tax from an invoice line.]" \
+            "deleteInvoiceReference[Delete an invoice reference.]" \
+            "getExtendedInvoice[Get an extended invoice by ID.]" \
+            "getExtendedInvoices[Get a list of extended invoices.]" \
+            "getExtendedInvoicesCount[Get the count of extended invoices.]" \
+            "getInvoice[Get an invoice by ID.]" \
+            "getInvoiceAdjustment[Get an invoice adjustment by ID.]" \
+            "getInvoiceAdjustments[Get invoice adjustments.]" \
+            "getInvoiceAdjustmentsCount[Get the count of invoice adjustments.]" \
+            "getInvoiceLine[Get an invoice line by ID.]" \
+            "getInvoiceLineTaxes[Get taxes for an invoice line.]" \
+            "getInvoiceLineTaxesCount[Get the count of taxes for an invoice line.]" \
+            "getInvoiceLines[Get invoice lines.]" \
+            "getInvoiceLinesCount[Get the count of invoice lines.]" \
+            "getInvoicePayments[Get payments for an invoice.]" \
+            "getInvoicePaymentsCount[Get the count of payments for an invoice.]" \
+            "getInvoiceReference[Get an invoice reference by ID.]" \
+            "getInvoiceReferences[Get invoice references.]" \
+            "getInvoiceReferencesCount[Get the count of invoice references.]" \
+            "getInvoices[Get a list of invoices.]" \
+            "getInvoicesCount[Get the count of invoices.]" \
+            "previewInvoiceEmail[Preview the rendered email for an invoice.]" \
+            "sendInvoiceEmail[Send an invoice transactional email to recipients.]" \
+            "updateInvoice[Update an invoice.]" \
+            "updateInvoiceAdjustment[Update an invoice adjustment.]" \
+            "updateInvoiceLine[Update an invoice line.]" \
+            "updateInvoiceLineTax[Update a tax for an invoice line.]" \
+            "updateInvoiceReference[Update an invoice reference.]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -345,49 +359,127 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2InvoicingServiceInvoicesCountGet)
+      forgotPasswordPost)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesDiscountsAggregatePost)
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      aggregateInvoiceDiscounts)
         local -a _op_arguments
         _op_arguments=(
                     "currencyId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesExtendedCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesExtendedGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesGlobalSurchargesAggregatePost)
+      aggregateInvoiceGlobalSurcharges)
         local -a _op_arguments
         _op_arguments=(
                     "currencyId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsCountGet)
+      aggregateInvoiceTaxBases)
+        local -a _op_arguments
+        _op_arguments=(
+                    "currencyId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      aggregateInvoiceTaxes)
+        local -a _op_arguments
+        _op_arguments=(
+                    "currencyId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      aggregateInvoiceTotals)
+        local -a _op_arguments
+        _op_arguments=(
+                    "currencyId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      calculateInvoice)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
@@ -395,7 +487,23 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsGet)
+      calculateInvoiceLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createInvoice)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createInvoiceAdjustment)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
@@ -403,7 +511,40 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsInvoiceAdjustmentIdDelete)
+      createInvoiceLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createInvoiceLineTax)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createInvoiceReference)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteInvoice)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteInvoiceAdjustment)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
@@ -412,7 +553,65 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsInvoiceAdjustmentIdGet)
+      deleteInvoiceLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteInvoiceLineTax)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceLineId=:[PATH] "
+"invoiceLineTaxId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteInvoiceReference)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceReferenceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExtendedInvoice)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExtendedInvoices)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExtendedInvoicesCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getInvoice)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getInvoiceAdjustment)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
@@ -421,16 +620,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsInvoiceAdjustmentIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-"invoiceAdjustmentId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdAdjustmentsPost)
+      getInvoiceAdjustments)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
@@ -438,7 +628,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdCalculatePut)
+      getInvoiceAdjustmentsCount)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
@@ -446,31 +636,34 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdDelete)
+      getInvoiceLine)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
+"invoiceLineId=:[PATH] "
           "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdExtendedGet)
+      getInvoiceLineTaxes)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
+"invoiceLineId=:[PATH] "
           "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdLinesCountGet)
+      getInvoiceLineTaxesCount)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
+"invoiceLineId=:[PATH] "
           "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdLinesGet)
+      getInvoiceLines)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
@@ -479,90 +672,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdCalculatePut)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-"invoiceLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-"invoiceLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-"invoiceLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-"invoiceLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-"invoiceLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-"invoiceLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesInvoiceLineTaxIdDelete)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-"invoiceLineId=:[PATH] "
-"invoiceLineTaxId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesInvoiceLineTaxIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-"invoiceLineId=:[PATH] "
-"invoiceLineTaxId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdLinesInvoiceLineIdTaxesPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-"invoiceLineId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdLinesPost)
+      getInvoiceLinesCount)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
@@ -570,45 +680,21 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdPaymentsCountGet)
+      getInvoicePayments)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdPaymentsGet)
+      getInvoicePaymentsCount)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdReferencesCountGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdReferencesGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdReferencesInvoiceReferenceIdDelete)
+      getInvoiceReference)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
@@ -617,25 +703,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdReferencesInvoiceReferenceIdGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-"invoiceReferenceId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdReferencesInvoiceReferenceIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "invoiceId=:[PATH] "
-"invoiceReferenceId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesInvoiceIdReferencesPost)
+      getInvoiceReferences)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
@@ -643,38 +711,85 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesPost)
+      getInvoiceReferencesCount)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getInvoices)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesTaxBasesAggregatePost)
+      getInvoicesCount)
         local -a _op_arguments
         _op_arguments=(
-                    "currencyId=:[QUERY] "
+                    "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2InvoicingServiceInvoicesTaxesAggregatePost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "currencyId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2InvoicingServiceInvoicesTotalsAggregatePost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "currencyId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getInvoiceAsync)
+      previewInvoiceEmail)
         local -a _op_arguments
         _op_arguments=(
           "invoiceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      sendInvoiceEmail)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateInvoice)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateInvoiceAdjustment)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceAdjustmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateInvoiceLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateInvoiceLineTax)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceLineId=:[PATH] "
+"invoiceLineTaxId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateInvoiceReference)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceReferenceId=:[PATH] "
           "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0

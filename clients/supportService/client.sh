@@ -96,181 +96,205 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsCountGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsPost:::SupportEntitlementCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsPost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete:::supportEntitlementId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet:::supportEntitlementId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::supportEntitlementId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::SupportEntitlementUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsCountGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsPost:::SupportRequestAttachmentCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsPost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete:::supportRequestAttachmentId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet:::supportRequestAttachmentId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::supportRequestAttachmentId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::SupportRequestAttachmentUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsCountGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsPost:::SupportRequestCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsPost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet:::supportRequestId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet:::attachmentId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet:::supportRequestId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet:::supportRequestId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost:::supportRequestId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost:::SupportRequestAttachmentCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdDelete:::supportRequestId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdDelete:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdGet:::supportRequestId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::supportRequestId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::SupportRequestUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet:::supportRequestId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesCountGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesPost:::SupportTicketPriorityCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesPost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete:::supportTicketPriorityId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet:::supportTicketPriorityId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::supportTicketPriorityId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::SupportTicketPriorityUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesCountGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesPost:::SupportTicketTypeCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesPost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete:::supportTicketTypeId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet:::supportTicketTypeId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::supportTicketTypeId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::SupportTicketTypeUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsCountGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsCountGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsCountGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsGet:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsPost:::SupportTicketCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsPost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet:::supportTicketId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::supportTicketId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::SupportTicketConversationCreateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::supportTicketId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::supportTicketConversationId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet:::supportTicketId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet:::supportTicketConversationId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::supportTicketConversationId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::supportTicketId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::pageNumber"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::pageSize"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdDelete:::supportTicketId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdDelete:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdDelete:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdDelete:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdGet:::supportTicketId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::supportTicketId"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::SupportTicketUpdateDto"]=1
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::tenantId"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::api-version"]=0
-operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::x-api-version"]=0
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["createSupportEntitlementAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSupportEntitlementAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createSupportEntitlementAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSupportEntitlementAsync:::SupportEntitlementCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSupportEntitlementAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSupportEntitlementAsync:::supportEntitlementId"]=1
+operation_parameters_minimum_occurrences["deleteSupportEntitlementAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSupportEntitlementAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportEntitlementAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportEntitlementAsync:::supportEntitlementId"]=1
+operation_parameters_minimum_occurrences["getSupportEntitlementAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportEntitlementAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportEntitlementsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportEntitlementsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportEntitlementsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportEntitlementsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportEntitlementsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportEntitlementsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportEntitlementAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSupportEntitlementAsync:::supportEntitlementId"]=1
+operation_parameters_minimum_occurrences["updateSupportEntitlementAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportEntitlementAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportEntitlementAsync:::SupportEntitlementUpdateDto"]=0
+operation_parameters_minimum_occurrences["createSupportRequestAttachmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSupportRequestAttachmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createSupportRequestAttachmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSupportRequestAttachmentAsync:::SupportRequestAttachmentCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSupportRequestAttachmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSupportRequestAttachmentAsync:::supportRequestAttachmentId"]=1
+operation_parameters_minimum_occurrences["deleteSupportRequestAttachmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSupportRequestAttachmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentAsync:::supportRequestAttachmentId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportRequestAttachmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSupportRequestAttachmentAsync:::supportRequestAttachmentId"]=1
+operation_parameters_minimum_occurrences["updateSupportRequestAttachmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportRequestAttachmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportRequestAttachmentAsync:::SupportRequestAttachmentUpdateDto"]=0
+operation_parameters_minimum_occurrences["createSupportRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSupportRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createSupportRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSupportRequestAsync:::SupportRequestCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSupportRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSupportRequestAsync:::supportRequestId"]=1
+operation_parameters_minimum_occurrences["deleteSupportRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSupportRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAsync:::supportRequestId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentByRequest:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentByRequest:::supportRequestId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentByRequest:::attachmentId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentByRequest:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentByRequest:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsByRequest:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsByRequest:::supportRequestId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsByRequest:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsByRequest:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsCountByRequest:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsCountByRequest:::supportRequestId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsCountByRequest:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestAttachmentsCountByRequest:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestTicketsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestTicketsAsync:::supportRequestId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestTicketsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestTicketsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportRequestsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportRequestsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateSupportRequestToAttachmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateSupportRequestToAttachmentAsync:::supportRequestId"]=1
+operation_parameters_minimum_occurrences["relateSupportRequestToAttachmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["relateSupportRequestToAttachmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateSupportRequestToAttachmentAsync:::SupportRequestAttachmentCreateDto"]=0
+operation_parameters_minimum_occurrences["updateSupportRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSupportRequestAsync:::supportRequestId"]=1
+operation_parameters_minimum_occurrences["updateSupportRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportRequestAsync:::SupportRequestUpdateDto"]=0
+operation_parameters_minimum_occurrences["createSupportTicketPriorityAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSupportTicketPriorityAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createSupportTicketPriorityAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSupportTicketPriorityAsync:::SupportTicketPriorityCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSupportTicketPriorityAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSupportTicketPriorityAsync:::supportTicketPriorityId"]=1
+operation_parameters_minimum_occurrences["deleteSupportTicketPriorityAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSupportTicketPriorityAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketPrioritiesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketPrioritiesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketPrioritiesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketPrioritiesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketPrioritiesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketPrioritiesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketPriorityAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketPriorityAsync:::supportTicketPriorityId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketPriorityAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketPriorityAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportTicketPriorityAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSupportTicketPriorityAsync:::supportTicketPriorityId"]=1
+operation_parameters_minimum_occurrences["updateSupportTicketPriorityAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportTicketPriorityAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportTicketPriorityAsync:::SupportTicketPriorityUpdateDto"]=0
+operation_parameters_minimum_occurrences["createSupportTicketTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSupportTicketTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createSupportTicketTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSupportTicketTypeAsync:::SupportTicketTypeCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSupportTicketTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSupportTicketTypeAsync:::supportTicketTypeId"]=1
+operation_parameters_minimum_occurrences["deleteSupportTicketTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSupportTicketTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketTypeAsync:::supportTicketTypeId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketTypesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketTypesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketTypesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketTypesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketTypesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketTypesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportTicketTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSupportTicketTypeAsync:::supportTicketTypeId"]=1
+operation_parameters_minimum_occurrences["updateSupportTicketTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportTicketTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportTicketTypeAsync:::SupportTicketTypeUpdateDto"]=0
+operation_parameters_minimum_occurrences["createSupportTicketAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSupportTicketAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createSupportTicketAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSupportTicketAsync:::SupportTicketCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSupportTicketAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSupportTicketAsync:::supportTicketId"]=1
+operation_parameters_minimum_occurrences["deleteSupportTicketAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSupportTicketAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteSupportTicketConversationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSupportTicketConversationAsync:::supportTicketId"]=1
+operation_parameters_minimum_occurrences["deleteSupportTicketConversationAsync:::supportTicketConversationId"]=1
+operation_parameters_minimum_occurrences["deleteSupportTicketConversationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSupportTicketConversationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketAsync:::supportTicketId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketConversationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketConversationAsync:::supportTicketId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketConversationAsync:::supportTicketConversationId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketConversationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketConversationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketConversationMessagesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketConversationMessagesAsync:::supportTicketId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketConversationMessagesAsync:::supportTicketConversationId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketConversationMessagesAsync:::pageNumber"]=0
+operation_parameters_minimum_occurrences["getSupportTicketConversationMessagesAsync:::pageSize"]=0
+operation_parameters_minimum_occurrences["getSupportTicketConversationMessagesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketConversationMessagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketConversationsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketConversationsAsync:::supportTicketId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketConversationsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketConversationsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupportTicketsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupportTicketsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateSupportTicketToConversationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["relateSupportTicketToConversationAsync:::supportTicketId"]=1
+operation_parameters_minimum_occurrences["relateSupportTicketToConversationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["relateSupportTicketToConversationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["relateSupportTicketToConversationAsync:::SupportTicketConversationCreateDto"]=0
+operation_parameters_minimum_occurrences["updateSupportTicketAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSupportTicketAsync:::supportTicketId"]=1
+operation_parameters_minimum_occurrences["updateSupportTicketAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportTicketAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSupportTicketAsync:::SupportTicketUpdateDto"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -279,361 +303,409 @@ operation_parameters_minimum_occurrences["apiV2SupportServiceSupportTicketsSuppo
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsPost:::SupportEntitlementCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete:::supportEntitlementId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet:::supportEntitlementId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::supportEntitlementId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::SupportEntitlementUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsPost:::SupportRequestAttachmentCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete:::supportRequestAttachmentId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet:::supportRequestAttachmentId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::supportRequestAttachmentId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::SupportRequestAttachmentUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsPost:::SupportRequestCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet:::supportRequestId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet:::attachmentId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet:::supportRequestId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet:::supportRequestId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost:::supportRequestId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost:::SupportRequestAttachmentCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdDelete:::supportRequestId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdGet:::supportRequestId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::supportRequestId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::SupportRequestUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet:::supportRequestId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesPost:::SupportTicketPriorityCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete:::supportTicketPriorityId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet:::supportTicketPriorityId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::supportTicketPriorityId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::SupportTicketPriorityUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesPost:::SupportTicketTypeCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete:::supportTicketTypeId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet:::supportTicketTypeId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::supportTicketTypeId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::SupportTicketTypeUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsCountGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsCountGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsCountGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsPost:::SupportTicketCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet:::supportTicketId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::supportTicketId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::SupportTicketConversationCreateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::supportTicketId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::supportTicketConversationId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet:::supportTicketId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet:::supportTicketConversationId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::supportTicketConversationId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::supportTicketId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::pageNumber"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::pageSize"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdDelete:::supportTicketId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdDelete:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdDelete:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdDelete:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdGet:::supportTicketId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::supportTicketId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::SupportTicketUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::api-version"]=0
-operation_parameters_maximum_occurrences["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::x-api-version"]=0
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["createSupportEntitlementAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSupportEntitlementAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createSupportEntitlementAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSupportEntitlementAsync:::SupportEntitlementCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSupportEntitlementAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSupportEntitlementAsync:::supportEntitlementId"]=0
+operation_parameters_maximum_occurrences["deleteSupportEntitlementAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSupportEntitlementAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportEntitlementAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportEntitlementAsync:::supportEntitlementId"]=0
+operation_parameters_maximum_occurrences["getSupportEntitlementAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportEntitlementAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportEntitlementsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportEntitlementsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportEntitlementsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportEntitlementsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportEntitlementsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportEntitlementsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportEntitlementAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSupportEntitlementAsync:::supportEntitlementId"]=0
+operation_parameters_maximum_occurrences["updateSupportEntitlementAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportEntitlementAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportEntitlementAsync:::SupportEntitlementUpdateDto"]=0
+operation_parameters_maximum_occurrences["createSupportRequestAttachmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSupportRequestAttachmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createSupportRequestAttachmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSupportRequestAttachmentAsync:::SupportRequestAttachmentCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSupportRequestAttachmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSupportRequestAttachmentAsync:::supportRequestAttachmentId"]=0
+operation_parameters_maximum_occurrences["deleteSupportRequestAttachmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSupportRequestAttachmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentAsync:::supportRequestAttachmentId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportRequestAttachmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSupportRequestAttachmentAsync:::supportRequestAttachmentId"]=0
+operation_parameters_maximum_occurrences["updateSupportRequestAttachmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportRequestAttachmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportRequestAttachmentAsync:::SupportRequestAttachmentUpdateDto"]=0
+operation_parameters_maximum_occurrences["createSupportRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSupportRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createSupportRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSupportRequestAsync:::SupportRequestCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSupportRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSupportRequestAsync:::supportRequestId"]=0
+operation_parameters_maximum_occurrences["deleteSupportRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSupportRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAsync:::supportRequestId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentByRequest:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentByRequest:::supportRequestId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentByRequest:::attachmentId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentByRequest:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentByRequest:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsByRequest:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsByRequest:::supportRequestId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsByRequest:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsByRequest:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsCountByRequest:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsCountByRequest:::supportRequestId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsCountByRequest:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestAttachmentsCountByRequest:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestTicketsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestTicketsAsync:::supportRequestId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestTicketsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestTicketsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportRequestsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportRequestsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateSupportRequestToAttachmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateSupportRequestToAttachmentAsync:::supportRequestId"]=0
+operation_parameters_maximum_occurrences["relateSupportRequestToAttachmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["relateSupportRequestToAttachmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateSupportRequestToAttachmentAsync:::SupportRequestAttachmentCreateDto"]=0
+operation_parameters_maximum_occurrences["updateSupportRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSupportRequestAsync:::supportRequestId"]=0
+operation_parameters_maximum_occurrences["updateSupportRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportRequestAsync:::SupportRequestUpdateDto"]=0
+operation_parameters_maximum_occurrences["createSupportTicketPriorityAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSupportTicketPriorityAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createSupportTicketPriorityAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSupportTicketPriorityAsync:::SupportTicketPriorityCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketPriorityAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketPriorityAsync:::supportTicketPriorityId"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketPriorityAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketPriorityAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketPrioritiesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketPrioritiesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketPrioritiesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketPrioritiesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketPrioritiesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketPrioritiesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketPriorityAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketPriorityAsync:::supportTicketPriorityId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketPriorityAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketPriorityAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketPriorityAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketPriorityAsync:::supportTicketPriorityId"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketPriorityAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketPriorityAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketPriorityAsync:::SupportTicketPriorityUpdateDto"]=0
+operation_parameters_maximum_occurrences["createSupportTicketTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSupportTicketTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createSupportTicketTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSupportTicketTypeAsync:::SupportTicketTypeCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketTypeAsync:::supportTicketTypeId"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketTypeAsync:::supportTicketTypeId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketTypesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketTypesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketTypesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketTypesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketTypesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketTypesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketTypeAsync:::supportTicketTypeId"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketTypeAsync:::SupportTicketTypeUpdateDto"]=0
+operation_parameters_maximum_occurrences["createSupportTicketAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSupportTicketAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createSupportTicketAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSupportTicketAsync:::SupportTicketCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketAsync:::supportTicketId"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketConversationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketConversationAsync:::supportTicketId"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketConversationAsync:::supportTicketConversationId"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketConversationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSupportTicketConversationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketAsync:::supportTicketId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationAsync:::supportTicketId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationAsync:::supportTicketConversationId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationMessagesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationMessagesAsync:::supportTicketId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationMessagesAsync:::supportTicketConversationId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationMessagesAsync:::pageNumber"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationMessagesAsync:::pageSize"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationMessagesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationMessagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationsAsync:::supportTicketId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketConversationsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupportTicketsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupportTicketsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateSupportTicketToConversationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["relateSupportTicketToConversationAsync:::supportTicketId"]=0
+operation_parameters_maximum_occurrences["relateSupportTicketToConversationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["relateSupportTicketToConversationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["relateSupportTicketToConversationAsync:::SupportTicketConversationCreateDto"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketAsync:::supportTicketId"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSupportTicketAsync:::SupportTicketUpdateDto"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsPost:::SupportEntitlementCreateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete:::supportEntitlementId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet:::supportEntitlementId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::supportEntitlementId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::SupportEntitlementUpdateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsPost:::SupportRequestAttachmentCreateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete:::supportRequestAttachmentId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet:::supportRequestAttachmentId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::supportRequestAttachmentId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::SupportRequestAttachmentUpdateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsPost:::SupportRequestCreateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet:::supportRequestId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet:::attachmentId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet:::supportRequestId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet:::supportRequestId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost:::supportRequestId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost:::SupportRequestAttachmentCreateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdDelete:::supportRequestId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdGet:::supportRequestId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::supportRequestId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::SupportRequestUpdateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet:::supportRequestId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesPost:::SupportTicketPriorityCreateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesPost:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete:::supportTicketPriorityId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet:::supportTicketPriorityId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::supportTicketPriorityId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::SupportTicketPriorityUpdateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesPost:::SupportTicketTypeCreateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesPost:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete:::supportTicketTypeId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet:::supportTicketTypeId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::supportTicketTypeId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::SupportTicketTypeUpdateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsCountGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsCountGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsCountGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsPost:::SupportTicketCreateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet:::supportTicketId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::supportTicketId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::SupportTicketConversationCreateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::supportTicketId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::supportTicketConversationId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet:::supportTicketId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet:::supportTicketConversationId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::supportTicketConversationId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::supportTicketId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::pageNumber"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::pageSize"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdDelete:::supportTicketId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdDelete:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdDelete:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdDelete:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdGet:::supportTicketId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdGet:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdGet:::x-api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::supportTicketId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::SupportTicketUpdateDto"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::tenantId"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::api-version"]=""
-operation_parameters_collection_type["apiV2SupportServiceSupportTicketsSupportTicketIdPut:::x-api-version"]=""
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["createSupportEntitlementAsync:::tenantId"]=""
+operation_parameters_collection_type["createSupportEntitlementAsync:::api-version"]=""
+operation_parameters_collection_type["createSupportEntitlementAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSupportEntitlementAsync:::SupportEntitlementCreateDto"]=""
+operation_parameters_collection_type["deleteSupportEntitlementAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSupportEntitlementAsync:::supportEntitlementId"]=""
+operation_parameters_collection_type["deleteSupportEntitlementAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSupportEntitlementAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportEntitlementAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportEntitlementAsync:::supportEntitlementId"]=""
+operation_parameters_collection_type["getSupportEntitlementAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportEntitlementAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportEntitlementsAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportEntitlementsAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportEntitlementsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportEntitlementsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportEntitlementsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportEntitlementsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSupportEntitlementAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSupportEntitlementAsync:::supportEntitlementId"]=""
+operation_parameters_collection_type["updateSupportEntitlementAsync:::api-version"]=""
+operation_parameters_collection_type["updateSupportEntitlementAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSupportEntitlementAsync:::SupportEntitlementUpdateDto"]=""
+operation_parameters_collection_type["createSupportRequestAttachmentAsync:::tenantId"]=""
+operation_parameters_collection_type["createSupportRequestAttachmentAsync:::api-version"]=""
+operation_parameters_collection_type["createSupportRequestAttachmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSupportRequestAttachmentAsync:::SupportRequestAttachmentCreateDto"]=""
+operation_parameters_collection_type["deleteSupportRequestAttachmentAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSupportRequestAttachmentAsync:::supportRequestAttachmentId"]=""
+operation_parameters_collection_type["deleteSupportRequestAttachmentAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSupportRequestAttachmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentAsync:::supportRequestAttachmentId"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSupportRequestAttachmentAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSupportRequestAttachmentAsync:::supportRequestAttachmentId"]=""
+operation_parameters_collection_type["updateSupportRequestAttachmentAsync:::api-version"]=""
+operation_parameters_collection_type["updateSupportRequestAttachmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSupportRequestAttachmentAsync:::SupportRequestAttachmentUpdateDto"]=""
+operation_parameters_collection_type["createSupportRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["createSupportRequestAsync:::api-version"]=""
+operation_parameters_collection_type["createSupportRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSupportRequestAsync:::SupportRequestCreateDto"]=""
+operation_parameters_collection_type["deleteSupportRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSupportRequestAsync:::supportRequestId"]=""
+operation_parameters_collection_type["deleteSupportRequestAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSupportRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportRequestAsync:::supportRequestId"]=""
+operation_parameters_collection_type["getSupportRequestAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentByRequest:::tenantId"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentByRequest:::supportRequestId"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentByRequest:::attachmentId"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentByRequest:::api-version"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentByRequest:::x-api-version"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsByRequest:::tenantId"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsByRequest:::supportRequestId"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsByRequest:::api-version"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsByRequest:::x-api-version"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsCountByRequest:::tenantId"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsCountByRequest:::supportRequestId"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsCountByRequest:::api-version"]=""
+operation_parameters_collection_type["getSupportRequestAttachmentsCountByRequest:::x-api-version"]=""
+operation_parameters_collection_type["getSupportRequestTicketsAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportRequestTicketsAsync:::supportRequestId"]=""
+operation_parameters_collection_type["getSupportRequestTicketsAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportRequestTicketsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportRequestsAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportRequestsAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportRequestsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportRequestsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportRequestsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportRequestsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["relateSupportRequestToAttachmentAsync:::tenantId"]=""
+operation_parameters_collection_type["relateSupportRequestToAttachmentAsync:::supportRequestId"]=""
+operation_parameters_collection_type["relateSupportRequestToAttachmentAsync:::api-version"]=""
+operation_parameters_collection_type["relateSupportRequestToAttachmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["relateSupportRequestToAttachmentAsync:::SupportRequestAttachmentCreateDto"]=""
+operation_parameters_collection_type["updateSupportRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSupportRequestAsync:::supportRequestId"]=""
+operation_parameters_collection_type["updateSupportRequestAsync:::api-version"]=""
+operation_parameters_collection_type["updateSupportRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSupportRequestAsync:::SupportRequestUpdateDto"]=""
+operation_parameters_collection_type["createSupportTicketPriorityAsync:::tenantId"]=""
+operation_parameters_collection_type["createSupportTicketPriorityAsync:::api-version"]=""
+operation_parameters_collection_type["createSupportTicketPriorityAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSupportTicketPriorityAsync:::SupportTicketPriorityCreateDto"]=""
+operation_parameters_collection_type["deleteSupportTicketPriorityAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSupportTicketPriorityAsync:::supportTicketPriorityId"]=""
+operation_parameters_collection_type["deleteSupportTicketPriorityAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSupportTicketPriorityAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportTicketPrioritiesAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportTicketPrioritiesAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportTicketPrioritiesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportTicketPrioritiesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportTicketPrioritiesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportTicketPrioritiesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportTicketPriorityAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportTicketPriorityAsync:::supportTicketPriorityId"]=""
+operation_parameters_collection_type["getSupportTicketPriorityAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportTicketPriorityAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSupportTicketPriorityAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSupportTicketPriorityAsync:::supportTicketPriorityId"]=""
+operation_parameters_collection_type["updateSupportTicketPriorityAsync:::api-version"]=""
+operation_parameters_collection_type["updateSupportTicketPriorityAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSupportTicketPriorityAsync:::SupportTicketPriorityUpdateDto"]=""
+operation_parameters_collection_type["createSupportTicketTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["createSupportTicketTypeAsync:::api-version"]=""
+operation_parameters_collection_type["createSupportTicketTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSupportTicketTypeAsync:::SupportTicketTypeCreateDto"]=""
+operation_parameters_collection_type["deleteSupportTicketTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSupportTicketTypeAsync:::supportTicketTypeId"]=""
+operation_parameters_collection_type["deleteSupportTicketTypeAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSupportTicketTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportTicketTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportTicketTypeAsync:::supportTicketTypeId"]=""
+operation_parameters_collection_type["getSupportTicketTypeAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportTicketTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportTicketTypesAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportTicketTypesAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportTicketTypesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportTicketTypesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportTicketTypesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportTicketTypesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSupportTicketTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSupportTicketTypeAsync:::supportTicketTypeId"]=""
+operation_parameters_collection_type["updateSupportTicketTypeAsync:::api-version"]=""
+operation_parameters_collection_type["updateSupportTicketTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSupportTicketTypeAsync:::SupportTicketTypeUpdateDto"]=""
+operation_parameters_collection_type["createSupportTicketAsync:::tenantId"]=""
+operation_parameters_collection_type["createSupportTicketAsync:::api-version"]=""
+operation_parameters_collection_type["createSupportTicketAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSupportTicketAsync:::SupportTicketCreateDto"]=""
+operation_parameters_collection_type["deleteSupportTicketAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSupportTicketAsync:::supportTicketId"]=""
+operation_parameters_collection_type["deleteSupportTicketAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSupportTicketAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteSupportTicketConversationAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSupportTicketConversationAsync:::supportTicketId"]=""
+operation_parameters_collection_type["deleteSupportTicketConversationAsync:::supportTicketConversationId"]=""
+operation_parameters_collection_type["deleteSupportTicketConversationAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSupportTicketConversationAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportTicketAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportTicketAsync:::supportTicketId"]=""
+operation_parameters_collection_type["getSupportTicketAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportTicketAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportTicketConversationAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportTicketConversationAsync:::supportTicketId"]=""
+operation_parameters_collection_type["getSupportTicketConversationAsync:::supportTicketConversationId"]=""
+operation_parameters_collection_type["getSupportTicketConversationAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportTicketConversationAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportTicketConversationMessagesAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportTicketConversationMessagesAsync:::supportTicketId"]=""
+operation_parameters_collection_type["getSupportTicketConversationMessagesAsync:::supportTicketConversationId"]=""
+operation_parameters_collection_type["getSupportTicketConversationMessagesAsync:::pageNumber"]=""
+operation_parameters_collection_type["getSupportTicketConversationMessagesAsync:::pageSize"]=""
+operation_parameters_collection_type["getSupportTicketConversationMessagesAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportTicketConversationMessagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportTicketConversationsAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportTicketConversationsAsync:::supportTicketId"]=""
+operation_parameters_collection_type["getSupportTicketConversationsAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportTicketConversationsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportTicketsAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportTicketsAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportTicketsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupportTicketsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupportTicketsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSupportTicketsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["relateSupportTicketToConversationAsync:::tenantId"]=""
+operation_parameters_collection_type["relateSupportTicketToConversationAsync:::supportTicketId"]=""
+operation_parameters_collection_type["relateSupportTicketToConversationAsync:::api-version"]=""
+operation_parameters_collection_type["relateSupportTicketToConversationAsync:::x-api-version"]=""
+operation_parameters_collection_type["relateSupportTicketToConversationAsync:::SupportTicketConversationCreateDto"]=""
+operation_parameters_collection_type["updateSupportTicketAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSupportTicketAsync:::supportTicketId"]=""
+operation_parameters_collection_type["updateSupportTicketAsync:::api-version"]=""
+operation_parameters_collection_type["updateSupportTicketAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSupportTicketAsync:::SupportTicketUpdateDto"]=""
 
 
 ##
@@ -654,9 +726,6 @@ host=""
 # The user credentials for basic authentication
 basic_auth_credential=""
 
-##
-# The user API key
-apikey_auth_credential=""
 
 ##
 # If true, the script will only output the actual cURL command that would be
@@ -759,23 +828,10 @@ lookup_mime_type() {
 ##############################################################################
 header_arguments_to_curl() {
     local headers_curl=""
-    local api_key_header=""
-    local api_key_header_in_cli=""
-    api_key_header="Authorization"
 
     for key in "${!header_arguments[@]}"; do
         headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
-        if [[ "${key}XX" == "${api_key_header}XX" ]]; then
-            api_key_header_in_cli="YES"
-        fi
     done
-    #
-    # If the api_key was not provided in the header, try one from the
-    # environment variable
-    #
-    if [[ -z $api_key_header_in_cli && -n $apikey_auth_credential ]]; then
-        headers_curl+="-H \"${api_key_header}: ${apikey_auth_credential}\""
-    fi
     headers_curl+=" "
 
     echo "${headers_curl}"
@@ -1007,7 +1063,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}SupportService command line client (API version 2.0.1.4089)${OFF}
+${BOLD}${WHITE}SupportService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1034,86 +1090,99 @@ ${BOLD}${WHITE}Usage${OFF}
                                       JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
 
 EOF
-    echo -e "${BOLD}${WHITE}Authentication methods${OFF}"
-    echo -e ""
-    echo -e "  - ${BLUE}Api-key${OFF} - add '${RED}Authorization:<api-key>${OFF}' after ${YELLOW}<operation>${OFF}"
-    
-    echo ""
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[supportEntitlements]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2SupportServiceSupportEntitlementsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportEntitlementsGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportEntitlementsPost${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut${OFF}; (AUTH)
+  ${CYAN}createSupportEntitlementAsync${OFF};Create a new support entitlement
+  ${CYAN}deleteSupportEntitlementAsync${OFF};Delete a support entitlement
+  ${CYAN}getSupportEntitlementAsync${OFF};Retrieve a support entitlement by ID
+  ${CYAN}getSupportEntitlementsAsync${OFF};Retrieve a list of support entitlements
+  ${CYAN}getSupportEntitlementsCountAsync${OFF};Get the count of support entitlements
+  ${CYAN}updateSupportEntitlementAsync${OFF};Update a support entitlement
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[supportRequestAttachments]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2SupportServiceSupportRequestAttachmentsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestAttachmentsGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestAttachmentsPost${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut${OFF}; (AUTH)
+  ${CYAN}createSupportRequestAttachmentAsync${OFF};Create a new support request attachment
+  ${CYAN}deleteSupportRequestAttachmentAsync${OFF};Delete a support request attachment
+  ${CYAN}getSupportRequestAttachmentAsync${OFF};Retrieve a support request attachment by ID
+  ${CYAN}getSupportRequestAttachmentsAsync${OFF};Retrieve a list of support request attachments
+  ${CYAN}getSupportRequestAttachmentsCountAsync${OFF};Get the count of support request attachments
+  ${CYAN}updateSupportRequestAttachmentAsync${OFF};Update a support request attachment
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[supportRequests]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2SupportServiceSupportRequestsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestsGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestsPost${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestsSupportRequestIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestsSupportRequestIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestsSupportRequestIdPut${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet${OFF}; (AUTH)
+  ${CYAN}createSupportRequestAsync${OFF};Create a new support request
+  ${CYAN}deleteSupportRequestAsync${OFF};Delete a support request
+  ${CYAN}getSupportRequestAsync${OFF};Retrieve a support request by ID
+  ${CYAN}getSupportRequestAttachmentByRequest${OFF};Retrieve a specific attachment for a support request
+  ${CYAN}getSupportRequestAttachmentsByRequest${OFF};Retrieve attachments for a support request
+  ${CYAN}getSupportRequestAttachmentsCountByRequest${OFF};Get the count of attachments for a support request
+  ${CYAN}getSupportRequestTicketsAsync${OFF};Retrieve tickets for a support request
+  ${CYAN}getSupportRequestsAsync${OFF};Retrieve a list of support requests
+  ${CYAN}getSupportRequestsCountAsync${OFF};Get the count of support requests
+  ${CYAN}relateSupportRequestToAttachmentAsync${OFF};Add an attachment to a support request
+  ${CYAN}updateSupportRequestAsync${OFF};Update a support request
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[supportTicketPriorities]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2SupportServiceSupportTicketPrioritiesCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketPrioritiesGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketPrioritiesPost${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut${OFF}; (AUTH)
+  ${CYAN}createSupportTicketPriorityAsync${OFF};Create a new support ticket priority
+  ${CYAN}deleteSupportTicketPriorityAsync${OFF};Delete a support ticket priority
+  ${CYAN}getSupportTicketPrioritiesAsync${OFF};Retrieve a list of support ticket priorities
+  ${CYAN}getSupportTicketPrioritiesCountAsync${OFF};Get the count of support ticket priorities
+  ${CYAN}getSupportTicketPriorityAsync${OFF};Retrieve a support ticket priority by ID
+  ${CYAN}updateSupportTicketPriorityAsync${OFF};Update a support ticket priority
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[supportTicketTypes]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2SupportServiceSupportTicketTypesCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketTypesGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketTypesPost${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut${OFF}; (AUTH)
+  ${CYAN}createSupportTicketTypeAsync${OFF};Create a new support ticket type
+  ${CYAN}deleteSupportTicketTypeAsync${OFF};Delete a support ticket type
+  ${CYAN}getSupportTicketTypeAsync${OFF};Retrieve a support ticket type by ID
+  ${CYAN}getSupportTicketTypesAsync${OFF};Retrieve a list of support ticket types
+  ${CYAN}getSupportTicketTypesCountAsync${OFF};Get the count of support ticket types
+  ${CYAN}updateSupportTicketTypeAsync${OFF};Update a support ticket type
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[supportTickets]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2SupportServiceSupportTicketsCountGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketsGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketsPost${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketsSupportTicketIdDelete${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketsSupportTicketIdGet${OFF}; (AUTH)
-  ${CYAN}apiV2SupportServiceSupportTicketsSupportTicketIdPut${OFF}; (AUTH)
+  ${CYAN}createSupportTicketAsync${OFF};Create a new support ticket
+  ${CYAN}deleteSupportTicketAsync${OFF};Delete a support ticket
+  ${CYAN}deleteSupportTicketConversationAsync${OFF};Delete a conversation from a support ticket
+  ${CYAN}getSupportTicketAsync${OFF};Retrieve a support ticket by ID
+  ${CYAN}getSupportTicketConversationAsync${OFF};Retrieve a specific conversation for a support ticket
+  ${CYAN}getSupportTicketConversationMessagesAsync${OFF};Retrieve messages for a support ticket conversation
+  ${CYAN}getSupportTicketConversationsAsync${OFF};Retrieve conversations for a support ticket
+  ${CYAN}getSupportTicketsAsync${OFF};Retrieve a list of support tickets
+  ${CYAN}getSupportTicketsCountAsync${OFF};Get the count of support tickets
+  ${CYAN}relateSupportTicketToConversationAsync${OFF};Create a conversation for a support ticket
+  ${CYAN}updateSupportTicketAsync${OFF};Update a support ticket
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1143,7 +1212,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}SupportService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}${WHITE}SupportService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1163,25 +1232,264 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}SupportService command line client (API version 2.0.1.4089)${OFF}"
+    echo -e "${BOLD}SupportService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportEntitlementsCountGet operation
+# Print help for forgotPasswordPost operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportEntitlementsCountGet_help() {
+print_forgotPasswordPost_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportEntitlementsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for helloGet operation
+#
+##############################################################################
+print_helloGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for loginPost operation
+#
+##############################################################################
+print_loginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manage2faPost operation
+#
+##############################################################################
+print_manage2faPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createSupportEntitlementAsync operation
+#
+##############################################################################
+print_createSupportEntitlementAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createSupportEntitlementAsync - Create a new support entitlement${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new support entitlement for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1193,67 +1501,19 @@ print_apiV2SupportServiceSupportEntitlementsCountGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportEntitlementsGet operation
+# Print help for deleteSupportEntitlementAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportEntitlementsGet_help() {
+print_deleteSupportEntitlementAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportEntitlementsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteSupportEntitlementAsync - Delete a support entitlement${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a support entitlement by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportEntitlementsPost operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportEntitlementsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportEntitlementsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}supportEntitlementId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportEntitlementId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1268,14 +1528,18 @@ print_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet operation
+# Print help for getSupportEntitlementAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet_help() {
+print_getSupportEntitlementAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportEntitlementAsync - Retrieve a support entitlement by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single support entitlement by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportEntitlementId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportEntitlementId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1291,21 +1555,75 @@ print_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut operation
+# Print help for getSupportEntitlementsAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut_help() {
+print_getSupportEntitlementsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportEntitlementsAsync - Retrieve a list of support entitlements${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of support entitlements for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSupportEntitlementsCountAsync operation
+#
+##############################################################################
+print_getSupportEntitlementsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSupportEntitlementsCountAsync - Get the count of support entitlements${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of support entitlements for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSupportEntitlementAsync operation
+#
+##############################################################################
+print_updateSupportEntitlementAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSupportEntitlementAsync - Update a support entitlement${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing support entitlement by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportEntitlementId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportEntitlementId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -1318,19 +1636,23 @@ print_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportRequestAttachmentsCountGet operation
+# Print help for createSupportRequestAttachmentAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportRequestAttachmentsCountGet_help() {
+print_createSupportRequestAttachmentAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestAttachmentsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createSupportRequestAttachmentAsync - Create a new support request attachment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new support request attachment for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1342,89 +1664,18 @@ print_apiV2SupportServiceSupportRequestAttachmentsCountGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportRequestAttachmentsGet operation
+# Print help for deleteSupportRequestAttachmentAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportRequestAttachmentsGet_help() {
+print_deleteSupportRequestAttachmentAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestAttachmentsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteSupportRequestAttachmentAsync - Delete a support request attachment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a support request attachment by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportRequestAttachmentsPost operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportRequestAttachmentsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestAttachmentsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}supportRequestAttachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestAttachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}supportRequestAttachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestAttachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1440,43 +1691,19 @@ print_apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet_
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut operation
+# Print help for getSupportRequestAttachmentAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut_help() {
+print_getSupportRequestAttachmentAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportRequestAttachmentAsync - Retrieve a support request attachment by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single support request attachment by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportRequestAttachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestAttachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportRequestsCountGet operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportRequestsCountGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1491,15 +1718,17 @@ print_apiV2SupportServiceSupportRequestsCountGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportRequestsGet operation
+# Print help for getSupportRequestAttachmentsAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportRequestsGet_help() {
+print_getSupportRequestAttachmentsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportRequestAttachmentsAsync - Retrieve a list of support request attachments${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of support request attachments for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1515,20 +1744,49 @@ print_apiV2SupportServiceSupportRequestsGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportRequestsPost operation
+# Print help for getSupportRequestAttachmentsCountAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportRequestsPost_help() {
+print_getSupportRequestAttachmentsCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportRequestAttachmentsCountAsync - Get the count of support request attachments${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of support request attachments for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSupportRequestAttachmentAsync operation
+#
+##############################################################################
+print_updateSupportRequestAttachmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSupportRequestAttachmentAsync - Update a support request attachment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing support request attachment by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportRequestAttachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestAttachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -1536,19 +1794,105 @@ print_apiV2SupportServiceSupportRequestsPost_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet operation
+# Print help for createSupportRequestAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet_help() {
+print_createSupportRequestAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createSupportRequestAsync - Create a new support request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new support request for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSupportRequestAsync operation
+#
+##############################################################################
+print_deleteSupportRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSupportRequestAsync - Delete a support request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a support request by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSupportRequestAsync operation
+#
+##############################################################################
+print_getSupportRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSupportRequestAsync - Retrieve a support request by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single support request by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSupportRequestAttachmentByRequest operation
+#
+##############################################################################
+print_getSupportRequestAttachmentByRequest_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSupportRequestAttachmentByRequest - Retrieve a specific attachment for a support request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single attachment by its ID for a specific support request." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}attachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: attachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -1565,114 +1909,18 @@ print_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdG
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet operation
+# Print help for getSupportRequestAttachmentsByRequest operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet_help() {
+print_getSupportRequestAttachmentsByRequest_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportRequestAttachmentsByRequest - Retrieve attachments for a support request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the list of attachments associated with a specific support request." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}supportRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}supportRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}supportRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportRequestsSupportRequestIdDelete operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportRequestsSupportRequestIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestsSupportRequestIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}supportRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportRequestsSupportRequestIdGet operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportRequestsSupportRequestIdGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestsSupportRequestIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}supportRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1688,22 +1936,22 @@ print_apiV2SupportServiceSupportRequestsSupportRequestIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportRequestsSupportRequestIdPut operation
+# Print help for getSupportRequestAttachmentsCountByRequest operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportRequestsSupportRequestIdPut_help() {
+print_getSupportRequestAttachmentsCountByRequest_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestsSupportRequestIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportRequestAttachmentsCountByRequest - Get the count of attachments for a support request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of attachments for a specific support request." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1715,16 +1963,44 @@ print_apiV2SupportServiceSupportRequestsSupportRequestIdPut_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet operation
+# Print help for getSupportRequestTicketsAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet_help() {
+print_getSupportRequestTicketsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportRequestTicketsAsync - Retrieve tickets for a support request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the list of support tickets associated with a specific support request." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSupportRequestsAsync operation
+#
+##############################################################################
+print_getSupportRequestsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSupportRequestsAsync - Retrieve a list of support requests${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of support requests for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1740,15 +2016,17 @@ print_apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketPrioritiesCountGet operation
+# Print help for getSupportRequestsCountAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketPrioritiesCountGet_help() {
+print_getSupportRequestsCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketPrioritiesCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportRequestsCountAsync - Get the count of support requests${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of support requests for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1764,19 +2042,24 @@ print_apiV2SupportServiceSupportTicketPrioritiesCountGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketPrioritiesGet operation
+# Print help for relateSupportRequestToAttachmentAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketPrioritiesGet_help() {
+print_relateSupportRequestToAttachmentAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketPrioritiesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}relateSupportRequestToAttachmentAsync - Add an attachment to a support request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new attachment and associates it with the specified support request." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1788,46 +2071,24 @@ print_apiV2SupportServiceSupportTicketPrioritiesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketPrioritiesPost operation
+# Print help for updateSupportRequestAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketPrioritiesPost_help() {
+print_updateSupportRequestAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketPrioritiesPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateSupportRequestAsync - Update a support request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing support request by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}supportTicketPriorityId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketPriorityId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1839,14 +2100,46 @@ print_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete_he
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet operation
+# Print help for createSupportTicketPriorityAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet_help() {
+print_createSupportTicketPriorityAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createSupportTicketPriorityAsync - Create a new support ticket priority${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new support ticket priority for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSupportTicketPriorityAsync operation
+#
+##############################################################################
+print_deleteSupportTicketPriorityAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSupportTicketPriorityAsync - Delete a support ticket priority${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a support ticket priority by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportTicketPriorityId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketPriorityId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1862,43 +2155,71 @@ print_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet_help(
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut operation
+# Print help for getSupportTicketPrioritiesAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut_help() {
+print_getSupportTicketPrioritiesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportTicketPrioritiesAsync - Retrieve a list of support ticket priorities${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of support ticket priorities for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSupportTicketPrioritiesCountAsync operation
+#
+##############################################################################
+print_getSupportTicketPrioritiesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSupportTicketPrioritiesCountAsync - Get the count of support ticket priorities${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of support ticket priorities for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSupportTicketPriorityAsync operation
+#
+##############################################################################
+print_getSupportTicketPriorityAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSupportTicketPriorityAsync - Retrieve a support ticket priority by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single support ticket priority by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportTicketPriorityId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketPriorityId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportTicketTypesCountGet operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportTicketTypesCountGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketTypesCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1913,19 +2234,24 @@ print_apiV2SupportServiceSupportTicketTypesCountGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketTypesGet operation
+# Print help for updateSupportTicketPriorityAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketTypesGet_help() {
+print_updateSupportTicketPriorityAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketTypesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateSupportTicketPriorityAsync - Update a support ticket priority${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing support ticket priority by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportTicketPriorityId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketPriorityId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1937,46 +2263,23 @@ print_apiV2SupportServiceSupportTicketTypesGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketTypesPost operation
+# Print help for createSupportTicketTypeAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketTypesPost_help() {
+print_createSupportTicketTypeAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketTypesPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createSupportTicketTypeAsync - Create a new support ticket type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new support ticket type for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}supportTicketTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1988,14 +2291,18 @@ print_apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet operation
+# Print help for deleteSupportTicketTypeAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet_help() {
+print_deleteSupportTicketTypeAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteSupportTicketTypeAsync - Delete a support ticket type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a support ticket type by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportTicketTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2011,43 +2318,19 @@ print_apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut operation
+# Print help for getSupportTicketTypeAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut_help() {
+print_getSupportTicketTypeAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportTicketTypeAsync - Retrieve a support ticket type by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single support ticket type by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportTicketTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportTicketsCountGet operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportTicketsCountGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketsCountGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2062,15 +2345,17 @@ print_apiV2SupportServiceSupportTicketsCountGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketsGet operation
+# Print help for getSupportTicketTypesAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketsGet_help() {
+print_getSupportTicketTypesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportTicketTypesAsync - Retrieve a list of support ticket types${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of support ticket types for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2086,20 +2371,49 @@ print_apiV2SupportServiceSupportTicketsGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketsPost operation
+# Print help for getSupportTicketTypesCountAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketsPost_help() {
+print_getSupportTicketTypesCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportTicketTypesCountAsync - Get the count of support ticket types${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of support ticket types for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSupportTicketTypeAsync operation
+#
+##############################################################################
+print_updateSupportTicketTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSupportTicketTypeAsync - Update a support ticket type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing support ticket type by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportTicketTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -2107,19 +2421,51 @@ print_apiV2SupportServiceSupportTicketsPost_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet operation
+# Print help for createSupportTicketAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet_help() {
+print_createSupportTicketAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createSupportTicketAsync - Create a new support ticket${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new support ticket for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSupportTicketAsync operation
+#
+##############################################################################
+print_deleteSupportTicketAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSupportTicketAsync - Delete a support ticket${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a support ticket by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportTicketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2135,67 +2481,18 @@ print_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost operation
+# Print help for deleteSupportTicketConversationAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost_help() {
+print_deleteSupportTicketConversationAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteSupportTicketConversationAsync - Delete a conversation from a support ticket${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a specific conversation from a support ticket." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}supportTicketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}supportTicketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}supportTicketConversationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketConversationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}supportTicketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportTicketConversationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketConversationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -2212,16 +2509,75 @@ print_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicket
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet operation
+# Print help for getSupportTicketAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet_help() {
+print_getSupportTicketAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportTicketAsync - Retrieve a support ticket by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single support ticket by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}supportTicketConversationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketConversationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}supportTicketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSupportTicketConversationAsync operation
+#
+##############################################################################
+print_getSupportTicketConversationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSupportTicketConversationAsync - Retrieve a specific conversation for a support ticket${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single conversation by its ID for a specific support ticket." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportTicketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportTicketConversationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketConversationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSupportTicketConversationMessagesAsync operation
+#
+##############################################################################
+print_getSupportTicketConversationMessagesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSupportTicketConversationMessagesAsync - Retrieve messages for a support ticket conversation${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the list of messages within a specific conversation of a support ticket." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportTicketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportTicketConversationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketConversationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}pageNumber${OFF} ${BLUE}[integer]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: pageNumber=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}pageSize${OFF} ${BLUE}[integer]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: pageSize=value${OFF}" \
@@ -2240,39 +2596,18 @@ print_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicket
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketsSupportTicketIdDelete operation
+# Print help for getSupportTicketConversationsAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketsSupportTicketIdDelete_help() {
+print_getSupportTicketConversationsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketsSupportTicketIdDelete - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportTicketConversationsAsync - Retrieve conversations for a support ticket${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the list of conversations associated with a specific support ticket." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}supportTicketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2SupportServiceSupportTicketsSupportTicketIdGet operation
-#
-##############################################################################
-print_apiV2SupportServiceSupportTicketsSupportTicketIdGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketsSupportTicketIdGet - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}supportTicketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2288,21 +2623,104 @@ print_apiV2SupportServiceSupportTicketsSupportTicketIdGet_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2SupportServiceSupportTicketsSupportTicketIdPut operation
+# Print help for getSupportTicketsAsync operation
 #
 ##############################################################################
-print_apiV2SupportServiceSupportTicketsSupportTicketIdPut_help() {
+print_getSupportTicketsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2SupportServiceSupportTicketsSupportTicketIdPut - ${OFF}${BLUE}(AUTH - HEADER)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSupportTicketsAsync - Retrieve a list of support tickets${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of support tickets for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}supportTicketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSupportTicketsCountAsync operation
+#
+##############################################################################
+print_getSupportTicketsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSupportTicketsCountAsync - Get the count of support tickets${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of support tickets for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for relateSupportTicketToConversationAsync operation
+#
+##############################################################################
+print_relateSupportTicketToConversationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}relateSupportTicketToConversationAsync - Create a conversation for a support ticket${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new conversation and associates it with the specified support ticket." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportTicketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSupportTicketAsync operation
+#
+##############################################################################
+print_updateSupportTicketAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSupportTicketAsync - Update a support ticket${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing support ticket by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supportTicketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supportTicketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -2317,16 +2735,1004 @@ print_apiV2SupportServiceSupportTicketsSupportTicketIdPut_help() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportEntitlementsCountGet operation
+# Call forgotPasswordPost operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportEntitlementsCountGet() {
+call_forgotPasswordPost() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call helloGet operation
+#
+##############################################################################
+call_helloGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call loginPost operation
+#
+##############################################################################
+call_loginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(useCookies useSessionCookies)
+    local path
+
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoPost operation
+#
+##############################################################################
+call_manageInfoPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call refreshPost operation
+#
+##############################################################################
+call_refreshPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createSupportEntitlementAsync operation
+#
+##############################################################################
+call_createSupportEntitlementAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportEntitlements" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSupportEntitlementAsync operation
+#
+##############################################################################
+call_deleteSupportEntitlementAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportEntitlementId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportEntitlements/{supportEntitlementId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportEntitlementAsync operation
+#
+##############################################################################
+call_getSupportEntitlementAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportEntitlementId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportEntitlements/{supportEntitlementId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportEntitlementsAsync operation
+#
+##############################################################################
+call_getSupportEntitlementsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportEntitlements" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportEntitlementsCountAsync operation
+#
+##############################################################################
+call_getSupportEntitlementsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportEntitlements/Count" path_parameter_names query_parameter_names); then
@@ -2353,200 +3759,16 @@ call_apiV2SupportServiceSupportEntitlementsCountGet() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportEntitlementsGet operation
+# Call updateSupportEntitlementAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportEntitlementsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportEntitlements" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportEntitlementsPost operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportEntitlementsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportEntitlements" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete() {
+call_updateSupportEntitlementAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportEntitlementId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportEntitlements/{supportEntitlementId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportEntitlementId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportEntitlements/{supportEntitlementId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportEntitlementId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportEntitlements/{supportEntitlementId}" path_parameter_names query_parameter_names); then
@@ -2613,16 +3835,200 @@ call_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportRequestAttachmentsCountGet operation
+# Call createSupportRequestAttachmentAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportRequestAttachmentsCountGet() {
+call_createSupportRequestAttachmentAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequestAttachments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSupportRequestAttachmentAsync operation
+#
+##############################################################################
+call_deleteSupportRequestAttachmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportRequestAttachmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequestAttachments/{supportRequestAttachmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportRequestAttachmentAsync operation
+#
+##############################################################################
+call_getSupportRequestAttachmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportRequestAttachmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequestAttachments/{supportRequestAttachmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportRequestAttachmentsAsync operation
+#
+##############################################################################
+call_getSupportRequestAttachmentsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequestAttachments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportRequestAttachmentsCountAsync operation
+#
+##############################################################################
+call_getSupportRequestAttachmentsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportRequestAttachments/Count" path_parameter_names query_parameter_names); then
@@ -2649,200 +4055,16 @@ call_apiV2SupportServiceSupportRequestAttachmentsCountGet() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportRequestAttachmentsGet operation
+# Call updateSupportRequestAttachmentAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportRequestAttachmentsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequestAttachments" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportRequestAttachmentsPost operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportRequestAttachmentsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequestAttachments" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete() {
+call_updateSupportRequestAttachmentAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportRequestAttachmentId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequestAttachments/{supportRequestAttachmentId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportRequestAttachmentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequestAttachments/{supportRequestAttachmentId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportRequestAttachmentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportRequestAttachments/{supportRequestAttachmentId}" path_parameter_names query_parameter_names); then
@@ -2909,88 +4131,16 @@ call_apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut()
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportRequestsCountGet operation
+# Call createSupportRequestAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportRequestsCountGet() {
+call_createSupportRequestAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/Count" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportRequestsGet operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportRequestsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportRequestsPost operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportRequestsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests" path_parameter_names query_parameter_names); then
@@ -3057,16 +4207,88 @@ call_apiV2SupportServiceSupportRequestsPost() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet operation
+# Call deleteSupportRequestAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet() {
+call_deleteSupportRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportRequestAsync operation
+#
+##############################################################################
+call_getSupportRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportRequestAttachmentByRequest operation
+#
+##############################################################################
+call_getSupportRequestAttachmentByRequest() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportRequestId attachmentId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}/Attachments/{attachmentId}" path_parameter_names query_parameter_names); then
@@ -3093,16 +4315,52 @@ call_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGe
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet operation
+# Call getSupportRequestAttachmentsByRequest operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet() {
+call_getSupportRequestAttachmentsByRequest() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportRequestId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}/Attachments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportRequestAttachmentsCountByRequest operation
+#
+##############################################################################
+call_getSupportRequestAttachmentsCountByRequest() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}/Attachments/Count" path_parameter_names query_parameter_names); then
@@ -3129,276 +4387,16 @@ call_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet operation
+# Call getSupportRequestTicketsAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet() {
+call_getSupportRequestTicketsAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportRequestId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}/Attachments" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportRequestId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}/Attachments" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportRequestsSupportRequestIdDelete operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportRequestsSupportRequestIdDelete() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportRequestId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportRequestsSupportRequestIdGet operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportRequestsSupportRequestIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportRequestId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportRequestsSupportRequestIdPut operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportRequestsSupportRequestIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportRequestId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportRequestId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}/Tickets" path_parameter_names query_parameter_names); then
@@ -3425,16 +4423,388 @@ call_apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportTicketPrioritiesCountGet operation
+# Call getSupportRequestsAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportTicketPrioritiesCountGet() {
+call_getSupportRequestsAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportRequestsCountAsync operation
+#
+##############################################################################
+call_getSupportRequestsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateSupportRequestToAttachmentAsync operation
+#
+##############################################################################
+call_relateSupportRequestToAttachmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}/Attachments" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateSupportRequestAsync operation
+#
+##############################################################################
+call_updateSupportRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportRequests/{supportRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createSupportTicketPriorityAsync operation
+#
+##############################################################################
+call_createSupportTicketPriorityAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketPriorities" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSupportTicketPriorityAsync operation
+#
+##############################################################################
+call_deleteSupportTicketPriorityAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportTicketPriorityId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketPriorities/{supportTicketPriorityId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportTicketPrioritiesAsync operation
+#
+##############################################################################
+call_getSupportTicketPrioritiesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketPriorities" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportTicketPrioritiesCountAsync operation
+#
+##############################################################################
+call_getSupportTicketPrioritiesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketPriorities/Count" path_parameter_names query_parameter_names); then
@@ -3461,164 +4831,16 @@ call_apiV2SupportServiceSupportTicketPrioritiesCountGet() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportTicketPrioritiesGet operation
+# Call getSupportTicketPriorityAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportTicketPrioritiesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketPriorities" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportTicketPrioritiesPost operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportTicketPrioritiesPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketPriorities" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete() {
+call_getSupportTicketPriorityAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportTicketPriorityId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketPriorities/{supportTicketPriorityId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportTicketPriorityId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketPriorities/{supportTicketPriorityId}" path_parameter_names query_parameter_names); then
@@ -3645,16 +4867,16 @@ call_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut operation
+# Call updateSupportTicketPriorityAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut() {
+call_updateSupportTicketPriorityAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportTicketPriorityId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketPriorities/{supportTicketPriorityId}" path_parameter_names query_parameter_names); then
@@ -3721,16 +4943,200 @@ call_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportTicketTypesCountGet operation
+# Call createSupportTicketTypeAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportTicketTypesCountGet() {
+call_createSupportTicketTypeAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketTypes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSupportTicketTypeAsync operation
+#
+##############################################################################
+call_deleteSupportTicketTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportTicketTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketTypes/{supportTicketTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportTicketTypeAsync operation
+#
+##############################################################################
+call_getSupportTicketTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportTicketTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketTypes/{supportTicketTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportTicketTypesAsync operation
+#
+##############################################################################
+call_getSupportTicketTypesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketTypes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportTicketTypesCountAsync operation
+#
+##############################################################################
+call_getSupportTicketTypesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketTypes/Count" path_parameter_names query_parameter_names); then
@@ -3757,200 +5163,16 @@ call_apiV2SupportServiceSupportTicketTypesCountGet() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportTicketTypesGet operation
+# Call updateSupportTicketTypeAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportTicketTypesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketTypes" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportTicketTypesPost operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportTicketTypesPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketTypes" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete() {
+call_updateSupportTicketTypeAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportTicketTypeId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketTypes/{supportTicketTypeId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportTicketTypeId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketTypes/{supportTicketTypeId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportTicketTypeId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportTicketTypes/{supportTicketTypeId}" path_parameter_names query_parameter_names); then
@@ -4017,88 +5239,16 @@ call_apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportTicketsCountGet operation
+# Call createSupportTicketAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportTicketsCountGet() {
+call_createSupportTicketAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/Count" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportTicketsGet operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportTicketsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportTicketsPost operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportTicketsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets" path_parameter_names query_parameter_names); then
@@ -4165,23 +5315,23 @@ call_apiV2SupportServiceSupportTicketsPost() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet operation
+# Call deleteSupportTicketAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet() {
+call_deleteSupportTicketAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportTicketId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/{supportTicketId}/Conversations" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/{supportTicketId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
-    local method="GET"
+    local method="DELETE"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -4201,92 +5351,16 @@ call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost operation
+# Call deleteSupportTicketConversationAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportTicketId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/{supportTicketId}/Conversations" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete() {
+call_deleteSupportTicketConversationAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportTicketId supportTicketConversationId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/{supportTicketId}/Conversations/{supportTicketConversationId}" path_parameter_names query_parameter_names); then
@@ -4313,16 +5387,52 @@ call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketC
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet operation
+# Call getSupportTicketAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet() {
+call_getSupportTicketAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportTicketId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/{supportTicketId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportTicketConversationAsync operation
+#
+##############################################################################
+call_getSupportTicketConversationAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportTicketId supportTicketConversationId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/{supportTicketId}/Conversations/{supportTicketConversationId}" path_parameter_names query_parameter_names); then
@@ -4349,16 +5459,16 @@ call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketC
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet operation
+# Call getSupportTicketConversationMessagesAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet() {
+call_getSupportTicketConversationMessagesAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(supportTicketConversationId supportTicketId)
+    local path_parameter_names=(supportTicketId supportTicketConversationId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(pageNumber pageSize api-version  )
+    local query_parameter_names=(tenantId pageNumber pageSize api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/{supportTicketId}/Conversations/{supportTicketConversationId}/Messages" path_parameter_names query_parameter_names); then
@@ -4385,55 +5495,19 @@ call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketC
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportTicketsSupportTicketIdDelete operation
+# Call getSupportTicketConversationsAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportTicketsSupportTicketIdDelete() {
+call_getSupportTicketConversationsAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportTicketId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/{supportTicketId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2SupportServiceSupportTicketsSupportTicketIdGet operation
-#
-##############################################################################
-call_apiV2SupportServiceSupportTicketsSupportTicketIdGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(supportTicketId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version  )
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/{supportTicketId}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/{supportTicketId}/Conversations" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -4457,16 +5531,164 @@ call_apiV2SupportServiceSupportTicketsSupportTicketIdGet() {
 
 ##############################################################################
 #
-# Call apiV2SupportServiceSupportTicketsSupportTicketIdPut operation
+# Call getSupportTicketsAsync operation
 #
 ##############################################################################
-call_apiV2SupportServiceSupportTicketsSupportTicketIdPut() {
+call_getSupportTicketsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupportTicketsCountAsync operation
+#
+##############################################################################
+call_getSupportTicketsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call relateSupportTicketToConversationAsync operation
+#
+##############################################################################
+call_relateSupportTicketToConversationAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(supportTicketId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version  )
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/{supportTicketId}/Conversations" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateSupportTicketAsync operation
+#
+##############################################################################
+call_updateSupportTicketAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supportTicketId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SupportService/SupportTickets/{supportTicketId}" path_parameter_names query_parameter_names); then
@@ -4628,143 +5850,182 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
-    apiV2SupportServiceSupportEntitlementsCountGet)
-    operation="apiV2SupportServiceSupportEntitlementsCountGet"
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
     ;;
-    apiV2SupportServiceSupportEntitlementsGet)
-    operation="apiV2SupportServiceSupportEntitlementsGet"
+    healthGet)
+    operation="healthGet"
     ;;
-    apiV2SupportServiceSupportEntitlementsPost)
-    operation="apiV2SupportServiceSupportEntitlementsPost"
+    helloGet)
+    operation="helloGet"
     ;;
-    apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete)
-    operation="apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete"
+    loginPost)
+    operation="loginPost"
     ;;
-    apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet)
-    operation="apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet"
+    manage2faPost)
+    operation="manage2faPost"
     ;;
-    apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut)
-    operation="apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut"
+    manageInfoGet)
+    operation="manageInfoGet"
     ;;
-    apiV2SupportServiceSupportRequestAttachmentsCountGet)
-    operation="apiV2SupportServiceSupportRequestAttachmentsCountGet"
+    manageInfoPost)
+    operation="manageInfoPost"
     ;;
-    apiV2SupportServiceSupportRequestAttachmentsGet)
-    operation="apiV2SupportServiceSupportRequestAttachmentsGet"
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
     ;;
-    apiV2SupportServiceSupportRequestAttachmentsPost)
-    operation="apiV2SupportServiceSupportRequestAttachmentsPost"
+    refreshPost)
+    operation="refreshPost"
     ;;
-    apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete)
-    operation="apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete"
+    registerPost)
+    operation="registerPost"
     ;;
-    apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet)
-    operation="apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet"
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
     ;;
-    apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut)
-    operation="apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut"
+    resetPasswordPost)
+    operation="resetPasswordPost"
     ;;
-    apiV2SupportServiceSupportRequestsCountGet)
-    operation="apiV2SupportServiceSupportRequestsCountGet"
+    versionGet)
+    operation="versionGet"
     ;;
-    apiV2SupportServiceSupportRequestsGet)
-    operation="apiV2SupportServiceSupportRequestsGet"
+    createSupportEntitlementAsync)
+    operation="createSupportEntitlementAsync"
     ;;
-    apiV2SupportServiceSupportRequestsPost)
-    operation="apiV2SupportServiceSupportRequestsPost"
+    deleteSupportEntitlementAsync)
+    operation="deleteSupportEntitlementAsync"
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet)
-    operation="apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet"
+    getSupportEntitlementAsync)
+    operation="getSupportEntitlementAsync"
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet)
-    operation="apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet"
+    getSupportEntitlementsAsync)
+    operation="getSupportEntitlementsAsync"
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet)
-    operation="apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet"
+    getSupportEntitlementsCountAsync)
+    operation="getSupportEntitlementsCountAsync"
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost)
-    operation="apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost"
+    updateSupportEntitlementAsync)
+    operation="updateSupportEntitlementAsync"
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdDelete)
-    operation="apiV2SupportServiceSupportRequestsSupportRequestIdDelete"
+    createSupportRequestAttachmentAsync)
+    operation="createSupportRequestAttachmentAsync"
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdGet)
-    operation="apiV2SupportServiceSupportRequestsSupportRequestIdGet"
+    deleteSupportRequestAttachmentAsync)
+    operation="deleteSupportRequestAttachmentAsync"
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdPut)
-    operation="apiV2SupportServiceSupportRequestsSupportRequestIdPut"
+    getSupportRequestAttachmentAsync)
+    operation="getSupportRequestAttachmentAsync"
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet)
-    operation="apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet"
+    getSupportRequestAttachmentsAsync)
+    operation="getSupportRequestAttachmentsAsync"
     ;;
-    apiV2SupportServiceSupportTicketPrioritiesCountGet)
-    operation="apiV2SupportServiceSupportTicketPrioritiesCountGet"
+    getSupportRequestAttachmentsCountAsync)
+    operation="getSupportRequestAttachmentsCountAsync"
     ;;
-    apiV2SupportServiceSupportTicketPrioritiesGet)
-    operation="apiV2SupportServiceSupportTicketPrioritiesGet"
+    updateSupportRequestAttachmentAsync)
+    operation="updateSupportRequestAttachmentAsync"
     ;;
-    apiV2SupportServiceSupportTicketPrioritiesPost)
-    operation="apiV2SupportServiceSupportTicketPrioritiesPost"
+    createSupportRequestAsync)
+    operation="createSupportRequestAsync"
     ;;
-    apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete)
-    operation="apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete"
+    deleteSupportRequestAsync)
+    operation="deleteSupportRequestAsync"
     ;;
-    apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet)
-    operation="apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet"
+    getSupportRequestAsync)
+    operation="getSupportRequestAsync"
     ;;
-    apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut)
-    operation="apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut"
+    getSupportRequestAttachmentByRequest)
+    operation="getSupportRequestAttachmentByRequest"
     ;;
-    apiV2SupportServiceSupportTicketTypesCountGet)
-    operation="apiV2SupportServiceSupportTicketTypesCountGet"
+    getSupportRequestAttachmentsByRequest)
+    operation="getSupportRequestAttachmentsByRequest"
     ;;
-    apiV2SupportServiceSupportTicketTypesGet)
-    operation="apiV2SupportServiceSupportTicketTypesGet"
+    getSupportRequestAttachmentsCountByRequest)
+    operation="getSupportRequestAttachmentsCountByRequest"
     ;;
-    apiV2SupportServiceSupportTicketTypesPost)
-    operation="apiV2SupportServiceSupportTicketTypesPost"
+    getSupportRequestTicketsAsync)
+    operation="getSupportRequestTicketsAsync"
     ;;
-    apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete)
-    operation="apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete"
+    getSupportRequestsAsync)
+    operation="getSupportRequestsAsync"
     ;;
-    apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet)
-    operation="apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet"
+    getSupportRequestsCountAsync)
+    operation="getSupportRequestsCountAsync"
     ;;
-    apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut)
-    operation="apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut"
+    relateSupportRequestToAttachmentAsync)
+    operation="relateSupportRequestToAttachmentAsync"
     ;;
-    apiV2SupportServiceSupportTicketsCountGet)
-    operation="apiV2SupportServiceSupportTicketsCountGet"
+    updateSupportRequestAsync)
+    operation="updateSupportRequestAsync"
     ;;
-    apiV2SupportServiceSupportTicketsGet)
-    operation="apiV2SupportServiceSupportTicketsGet"
+    createSupportTicketPriorityAsync)
+    operation="createSupportTicketPriorityAsync"
     ;;
-    apiV2SupportServiceSupportTicketsPost)
-    operation="apiV2SupportServiceSupportTicketsPost"
+    deleteSupportTicketPriorityAsync)
+    operation="deleteSupportTicketPriorityAsync"
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet)
-    operation="apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet"
+    getSupportTicketPrioritiesAsync)
+    operation="getSupportTicketPrioritiesAsync"
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost)
-    operation="apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost"
+    getSupportTicketPrioritiesCountAsync)
+    operation="getSupportTicketPrioritiesCountAsync"
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete)
-    operation="apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete"
+    getSupportTicketPriorityAsync)
+    operation="getSupportTicketPriorityAsync"
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet)
-    operation="apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet"
+    updateSupportTicketPriorityAsync)
+    operation="updateSupportTicketPriorityAsync"
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet)
-    operation="apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet"
+    createSupportTicketTypeAsync)
+    operation="createSupportTicketTypeAsync"
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdDelete)
-    operation="apiV2SupportServiceSupportTicketsSupportTicketIdDelete"
+    deleteSupportTicketTypeAsync)
+    operation="deleteSupportTicketTypeAsync"
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdGet)
-    operation="apiV2SupportServiceSupportTicketsSupportTicketIdGet"
+    getSupportTicketTypeAsync)
+    operation="getSupportTicketTypeAsync"
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdPut)
-    operation="apiV2SupportServiceSupportTicketsSupportTicketIdPut"
+    getSupportTicketTypesAsync)
+    operation="getSupportTicketTypesAsync"
+    ;;
+    getSupportTicketTypesCountAsync)
+    operation="getSupportTicketTypesCountAsync"
+    ;;
+    updateSupportTicketTypeAsync)
+    operation="updateSupportTicketTypeAsync"
+    ;;
+    createSupportTicketAsync)
+    operation="createSupportTicketAsync"
+    ;;
+    deleteSupportTicketAsync)
+    operation="deleteSupportTicketAsync"
+    ;;
+    deleteSupportTicketConversationAsync)
+    operation="deleteSupportTicketConversationAsync"
+    ;;
+    getSupportTicketAsync)
+    operation="getSupportTicketAsync"
+    ;;
+    getSupportTicketConversationAsync)
+    operation="getSupportTicketConversationAsync"
+    ;;
+    getSupportTicketConversationMessagesAsync)
+    operation="getSupportTicketConversationMessagesAsync"
+    ;;
+    getSupportTicketConversationsAsync)
+    operation="getSupportTicketConversationsAsync"
+    ;;
+    getSupportTicketsAsync)
+    operation="getSupportTicketsAsync"
+    ;;
+    getSupportTicketsCountAsync)
+    operation="getSupportTicketsCountAsync"
+    ;;
+    relateSupportTicketToConversationAsync)
+    operation="relateSupportTicketToConversationAsync"
+    ;;
+    updateSupportTicketAsync)
+    operation="updateSupportTicketAsync"
     ;;
     *==*)
     # Parse body arguments and convert them into top level
@@ -4799,13 +6060,6 @@ case $key in
     # only after the operation argument
     if [[ "$operation" ]]; then
         IFS=':' read -r header_name header_value <<< "$key"
-        #
-        # If the header key is the same as the api_key expected by API in the
-        # header, override the ${apikey_auth_credential} variable
-        #
-        if [[ $header_name == "Authorization" ]]; then
-            apikey_auth_credential=$header_value
-        fi
         header_arguments[$header_name]=$header_value
     else
         curl_arguments+=" $key"
@@ -4860,143 +6114,182 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
-    apiV2SupportServiceSupportEntitlementsCountGet)
-    call_apiV2SupportServiceSupportEntitlementsCountGet
+    forgotPasswordPost)
+    call_forgotPasswordPost
     ;;
-    apiV2SupportServiceSupportEntitlementsGet)
-    call_apiV2SupportServiceSupportEntitlementsGet
+    healthGet)
+    call_healthGet
     ;;
-    apiV2SupportServiceSupportEntitlementsPost)
-    call_apiV2SupportServiceSupportEntitlementsPost
+    helloGet)
+    call_helloGet
     ;;
-    apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete)
-    call_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdDelete
+    loginPost)
+    call_loginPost
     ;;
-    apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet)
-    call_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdGet
+    manage2faPost)
+    call_manage2faPost
     ;;
-    apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut)
-    call_apiV2SupportServiceSupportEntitlementsSupportEntitlementIdPut
+    manageInfoGet)
+    call_manageInfoGet
     ;;
-    apiV2SupportServiceSupportRequestAttachmentsCountGet)
-    call_apiV2SupportServiceSupportRequestAttachmentsCountGet
+    manageInfoPost)
+    call_manageInfoPost
     ;;
-    apiV2SupportServiceSupportRequestAttachmentsGet)
-    call_apiV2SupportServiceSupportRequestAttachmentsGet
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
     ;;
-    apiV2SupportServiceSupportRequestAttachmentsPost)
-    call_apiV2SupportServiceSupportRequestAttachmentsPost
+    refreshPost)
+    call_refreshPost
     ;;
-    apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete)
-    call_apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdDelete
+    registerPost)
+    call_registerPost
     ;;
-    apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet)
-    call_apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdGet
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
     ;;
-    apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut)
-    call_apiV2SupportServiceSupportRequestAttachmentsSupportRequestAttachmentIdPut
+    resetPasswordPost)
+    call_resetPasswordPost
     ;;
-    apiV2SupportServiceSupportRequestsCountGet)
-    call_apiV2SupportServiceSupportRequestsCountGet
+    versionGet)
+    call_versionGet
     ;;
-    apiV2SupportServiceSupportRequestsGet)
-    call_apiV2SupportServiceSupportRequestsGet
+    createSupportEntitlementAsync)
+    call_createSupportEntitlementAsync
     ;;
-    apiV2SupportServiceSupportRequestsPost)
-    call_apiV2SupportServiceSupportRequestsPost
+    deleteSupportEntitlementAsync)
+    call_deleteSupportEntitlementAsync
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet)
-    call_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsAttachmentIdGet
+    getSupportEntitlementAsync)
+    call_getSupportEntitlementAsync
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet)
-    call_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsCountGet
+    getSupportEntitlementsAsync)
+    call_getSupportEntitlementsAsync
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet)
-    call_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsGet
+    getSupportEntitlementsCountAsync)
+    call_getSupportEntitlementsCountAsync
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost)
-    call_apiV2SupportServiceSupportRequestsSupportRequestIdAttachmentsPost
+    updateSupportEntitlementAsync)
+    call_updateSupportEntitlementAsync
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdDelete)
-    call_apiV2SupportServiceSupportRequestsSupportRequestIdDelete
+    createSupportRequestAttachmentAsync)
+    call_createSupportRequestAttachmentAsync
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdGet)
-    call_apiV2SupportServiceSupportRequestsSupportRequestIdGet
+    deleteSupportRequestAttachmentAsync)
+    call_deleteSupportRequestAttachmentAsync
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdPut)
-    call_apiV2SupportServiceSupportRequestsSupportRequestIdPut
+    getSupportRequestAttachmentAsync)
+    call_getSupportRequestAttachmentAsync
     ;;
-    apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet)
-    call_apiV2SupportServiceSupportRequestsSupportRequestIdTicketsGet
+    getSupportRequestAttachmentsAsync)
+    call_getSupportRequestAttachmentsAsync
     ;;
-    apiV2SupportServiceSupportTicketPrioritiesCountGet)
-    call_apiV2SupportServiceSupportTicketPrioritiesCountGet
+    getSupportRequestAttachmentsCountAsync)
+    call_getSupportRequestAttachmentsCountAsync
     ;;
-    apiV2SupportServiceSupportTicketPrioritiesGet)
-    call_apiV2SupportServiceSupportTicketPrioritiesGet
+    updateSupportRequestAttachmentAsync)
+    call_updateSupportRequestAttachmentAsync
     ;;
-    apiV2SupportServiceSupportTicketPrioritiesPost)
-    call_apiV2SupportServiceSupportTicketPrioritiesPost
+    createSupportRequestAsync)
+    call_createSupportRequestAsync
     ;;
-    apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete)
-    call_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdDelete
+    deleteSupportRequestAsync)
+    call_deleteSupportRequestAsync
     ;;
-    apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet)
-    call_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdGet
+    getSupportRequestAsync)
+    call_getSupportRequestAsync
     ;;
-    apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut)
-    call_apiV2SupportServiceSupportTicketPrioritiesSupportTicketPriorityIdPut
+    getSupportRequestAttachmentByRequest)
+    call_getSupportRequestAttachmentByRequest
     ;;
-    apiV2SupportServiceSupportTicketTypesCountGet)
-    call_apiV2SupportServiceSupportTicketTypesCountGet
+    getSupportRequestAttachmentsByRequest)
+    call_getSupportRequestAttachmentsByRequest
     ;;
-    apiV2SupportServiceSupportTicketTypesGet)
-    call_apiV2SupportServiceSupportTicketTypesGet
+    getSupportRequestAttachmentsCountByRequest)
+    call_getSupportRequestAttachmentsCountByRequest
     ;;
-    apiV2SupportServiceSupportTicketTypesPost)
-    call_apiV2SupportServiceSupportTicketTypesPost
+    getSupportRequestTicketsAsync)
+    call_getSupportRequestTicketsAsync
     ;;
-    apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete)
-    call_apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdDelete
+    getSupportRequestsAsync)
+    call_getSupportRequestsAsync
     ;;
-    apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet)
-    call_apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdGet
+    getSupportRequestsCountAsync)
+    call_getSupportRequestsCountAsync
     ;;
-    apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut)
-    call_apiV2SupportServiceSupportTicketTypesSupportTicketTypeIdPut
+    relateSupportRequestToAttachmentAsync)
+    call_relateSupportRequestToAttachmentAsync
     ;;
-    apiV2SupportServiceSupportTicketsCountGet)
-    call_apiV2SupportServiceSupportTicketsCountGet
+    updateSupportRequestAsync)
+    call_updateSupportRequestAsync
     ;;
-    apiV2SupportServiceSupportTicketsGet)
-    call_apiV2SupportServiceSupportTicketsGet
+    createSupportTicketPriorityAsync)
+    call_createSupportTicketPriorityAsync
     ;;
-    apiV2SupportServiceSupportTicketsPost)
-    call_apiV2SupportServiceSupportTicketsPost
+    deleteSupportTicketPriorityAsync)
+    call_deleteSupportTicketPriorityAsync
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet)
-    call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsGet
+    getSupportTicketPrioritiesAsync)
+    call_getSupportTicketPrioritiesAsync
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost)
-    call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsPost
+    getSupportTicketPrioritiesCountAsync)
+    call_getSupportTicketPrioritiesCountAsync
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete)
-    call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdDelete
+    getSupportTicketPriorityAsync)
+    call_getSupportTicketPriorityAsync
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet)
-    call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdGet
+    updateSupportTicketPriorityAsync)
+    call_updateSupportTicketPriorityAsync
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet)
-    call_apiV2SupportServiceSupportTicketsSupportTicketIdConversationsSupportTicketConversationIdMessagesGet
+    createSupportTicketTypeAsync)
+    call_createSupportTicketTypeAsync
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdDelete)
-    call_apiV2SupportServiceSupportTicketsSupportTicketIdDelete
+    deleteSupportTicketTypeAsync)
+    call_deleteSupportTicketTypeAsync
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdGet)
-    call_apiV2SupportServiceSupportTicketsSupportTicketIdGet
+    getSupportTicketTypeAsync)
+    call_getSupportTicketTypeAsync
     ;;
-    apiV2SupportServiceSupportTicketsSupportTicketIdPut)
-    call_apiV2SupportServiceSupportTicketsSupportTicketIdPut
+    getSupportTicketTypesAsync)
+    call_getSupportTicketTypesAsync
+    ;;
+    getSupportTicketTypesCountAsync)
+    call_getSupportTicketTypesCountAsync
+    ;;
+    updateSupportTicketTypeAsync)
+    call_updateSupportTicketTypeAsync
+    ;;
+    createSupportTicketAsync)
+    call_createSupportTicketAsync
+    ;;
+    deleteSupportTicketAsync)
+    call_deleteSupportTicketAsync
+    ;;
+    deleteSupportTicketConversationAsync)
+    call_deleteSupportTicketConversationAsync
+    ;;
+    getSupportTicketAsync)
+    call_getSupportTicketAsync
+    ;;
+    getSupportTicketConversationAsync)
+    call_getSupportTicketConversationAsync
+    ;;
+    getSupportTicketConversationMessagesAsync)
+    call_getSupportTicketConversationMessagesAsync
+    ;;
+    getSupportTicketConversationsAsync)
+    call_getSupportTicketConversationsAsync
+    ;;
+    getSupportTicketsAsync)
+    call_getSupportTicketsAsync
+    ;;
+    getSupportTicketsCountAsync)
+    call_getSupportTicketsCountAsync
+    ;;
+    relateSupportTicketToConversationAsync)
+    call_relateSupportTicketToConversationAsync
+    ;;
+    updateSupportTicketAsync)
+    call_updateSupportTicketAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

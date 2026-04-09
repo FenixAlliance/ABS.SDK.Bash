@@ -1,0 +1,445 @@
+#  completion                               -*- shell-script -*-
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !
+# ! Note:
+# !
+# ! THIS SCRIPT HAS BEEN AUTOMATICALLY GENERATED USING
+# ! openapi-generator (https://openapi-generator.tech)
+# ! FROM OPENAPI SPECIFICATION IN JSON.
+# !
+# ! Generator version: 7.9.0
+# !
+# !
+# ! System wide installation:
+# !
+# ! $ sudo cp .bash-completion /etc/bash-completion.d/
+# !
+# !
+# ! User home installation (add this line to .bash_profile):
+# !
+# ! [ -r ~/.bash-completion ] && source ~/.bash-completion
+# !
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+declare -A mime_type_abbreviations
+# text/*
+mime_type_abbreviations["text"]="text/plain"
+mime_type_abbreviations["html"]="text/html"
+mime_type_abbreviations["md"]="text/x-markdown"
+mime_type_abbreviations["csv"]="text/csv"
+mime_type_abbreviations["css"]="text/css"
+mime_type_abbreviations["rtf"]="text/rtf"
+# application/*
+mime_type_abbreviations["json"]="application/json"
+mime_type_abbreviations["xml"]="application/xml"
+mime_type_abbreviations["yaml"]="application/yaml"
+mime_type_abbreviations["js"]="application/javascript"
+mime_type_abbreviations["bin"]="application/octet-stream"
+mime_type_abbreviations["rdf"]="application/rdf+xml"
+# image/*
+mime_type_abbreviations["jpg"]="image/jpeg"
+mime_type_abbreviations["png"]="image/png"
+mime_type_abbreviations["gif"]="image/gif"
+mime_type_abbreviations["bmp"]="image/bmp"
+mime_type_abbreviations["tiff"]="image/tiff"
+
+
+#
+# Check if this is OSX, if so defined custom init_completion
+#
+if [[ `uname` =~ "Darwin" ]]; then
+    __osx_init_completion()
+    {
+        COMPREPLY=()
+        _get_comp_words_by_ref cur prev words cword
+    }
+fi
+
+_()
+{
+    local cur
+    local prev
+    local words
+    local cword
+
+    # The reference of currently selected REST operation
+    local operation=""
+
+    # The list of available operation in the REST service
+    # It's modelled as an associative array for efficient key lookup
+    declare -A operations
+    operations["countBlogPostsByAuthorAsync"]=1
+    operations["getBlogAuthorByIdAsync"]=1
+    operations["getBlogAuthorsAsync"]=1
+    operations["getBlogPostsByAuthorAsync"]=1
+    operations["countBlogPostCategoriesAsync"]=1
+    operations["createBlogPostCategoryAsync"]=1
+    operations["deleteBlogPostCategoryAsync"]=1
+    operations["getBlogPostCategoriesAsync"]=1
+    operations["getBlogPostCategoryByIdAsync"]=1
+    operations["updateBlogPostCategoryAsync"]=1
+    operations["createBlogPostTagAsync"]=1
+    operations["deleteBlogPostTagAsync"]=1
+    operations["getBlogPostTagByIdAsync"]=1
+    operations["getBlogPostTagsAsync"]=1
+    operations["updateBlogPostTagAsync"]=1
+    operations["createBlogPostAsync"]=1
+    operations["createCategoryForBlogPostAsync"]=1
+    operations["createCommentForBlogPostAsync"]=1
+    operations["createTagForBlogPostAsync"]=1
+    operations["deleteBlogPostAsync"]=1
+    operations["deleteCommentFromBlogPostAsync"]=1
+    operations["getBlogPostByIdAsync"]=1
+    operations["getBlogPostsAsync"]=1
+    operations["getBlogPostsCountAsync"]=1
+    operations["getCategoriesForBlogPostAsync"]=1
+    operations["getCommentsForBlogPostAsync"]=1
+    operations["getRepliesForCommentAsync"]=1
+    operations["getTagsForBlogPostAsync"]=1
+    operations["relateCategoryToBlogPostAsync"]=1
+    operations["relateTagToBlogPostAsync"]=1
+    operations["replyToCommentAsync"]=1
+    operations["unrelateCategoryFromBlogPostAsync"]=1
+    operations["unrelateTagFromBlogPostAsync"]=1
+    operations["updateBlogPostAsync"]=1
+    operations["getBusinessDomainByIdAsync"]=1
+    operations["getBusinessDomainsAsync"]=1
+    operations["getBusinessDomainsCountAsync"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["createWebPortalAsync"]=1
+    operations["deleteWebPortalAsync"]=1
+    operations["getCurrentWebPortalAsync"]=1
+    operations["getCurrentWebPortalOptionsAsync"]=1
+    operations["getRootWebPortalAsync"]=1
+    operations["getWebPortalByIdAsync"]=1
+    operations["getWebPortalOptionsAsync"]=1
+    operations["getWebPortalSettingsAsync"]=1
+    operations["initializeCurrentWebPortalAsync"]=1
+    operations["patchWebPortalAsync"]=1
+    operations["searchWebPortalAsync"]=1
+    operations["updateWebPortalAsync"]=1
+    operations["getLatestCurrencyRatesModelAsync"]=1
+    operations["countWebContentsAsync"]=1
+    operations["createWebContentAsync"]=1
+    operations["deleteWebContentAsync"]=1
+    operations["getWebContentByIdAsync"]=1
+    operations["getWebContentsAsync"]=1
+    operations["updateWebContentAsync"]=1
+    operations["createWebPageCategoryAsync"]=1
+    operations["deleteWebPageCategoryAsync"]=1
+    operations["getWebPageCategoriesAsync"]=1
+    operations["getWebPageCategoryByIdAsync"]=1
+    operations["updateWebPageCategoryAsync"]=1
+    operations["createWebPageTagAsync"]=1
+    operations["deleteWebPageTagAsync"]=1
+    operations["getWebPageTagByIdAsync"]=1
+    operations["getWebPageTagsAsync"]=1
+    operations["updateWebPageTagAsync"]=1
+    operations["countWebPagesAsync"]=1
+    operations["createWebPageAsync"]=1
+    operations["createWebPageCategoryRelationAsync"]=1
+    operations["createWebPageTagRelationAsync"]=1
+    operations["deleteWebPageAsync"]=1
+    operations["getCategoriesByWebPageAsync"]=1
+    operations["getTagsByWebPageAsync"]=1
+    operations["getWebPageByIdAsync"]=1
+    operations["getWebPagesAsync"]=1
+    operations["relateWebPageToCategoryAsync"]=1
+    operations["relateWebPageToTagAsync"]=1
+    operations["unrelateWebPageCategoryAsync"]=1
+    operations["unrelateWebPageTagAsync"]=1
+    operations["updateWebPageAsync"]=1
+    operations["countWebTemplatesAsync"]=1
+    operations["createWebTemplateAsync"]=1
+    operations["deleteWebTemplateAsync"]=1
+    operations["getWebTemplateByIdAsync"]=1
+    operations["getWebTemplatesAsync"]=1
+    operations["updateWebTemplateAsync"]=1
+
+    # An associative array of operations to their parameters
+    # Only include path, query and header parameters
+    declare -A operation_parameters
+    operation_parameters["countBlogPostsByAuthorAsync"]="authorId= api-version= x-api-version: "
+    operation_parameters["getBlogAuthorByIdAsync"]="authorId= api-version= x-api-version: "
+    operation_parameters["getBlogAuthorsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getBlogPostsByAuthorAsync"]="authorId= api-version= x-api-version: "
+    operation_parameters["countBlogPostCategoriesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createBlogPostCategoryAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteBlogPostCategoryAsync"]="blogPostCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBlogPostCategoriesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getBlogPostCategoryByIdAsync"]="blogPostCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateBlogPostCategoryAsync"]="blogPostCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["createBlogPostTagAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteBlogPostTagAsync"]="blogPostTagId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBlogPostTagByIdAsync"]="blogPostTagId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBlogPostTagsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateBlogPostTagAsync"]="blogPostTagId= tenantId= api-version= x-api-version: "
+    operation_parameters["createBlogPostAsync"]="tenantId= "
+    operation_parameters["createCategoryForBlogPostAsync"]="blogPostId= tenantId= "
+    operation_parameters["createCommentForBlogPostAsync"]="blogPostId= tenantId= "
+    operation_parameters["createTagForBlogPostAsync"]="blogPostId= tenantId= "
+    operation_parameters["deleteBlogPostAsync"]="blogPostId= tenantId= "
+    operation_parameters["deleteCommentFromBlogPostAsync"]="blogPostId= commentId= tenantId= "
+    operation_parameters["getBlogPostByIdAsync"]="blogPostId= "
+    operation_parameters["getBlogPostsAsync"]="tenantId= "
+    operation_parameters["getBlogPostsCountAsync"]="tenantId= "
+    operation_parameters["getCategoriesForBlogPostAsync"]="blogPostId= "
+    operation_parameters["getCommentsForBlogPostAsync"]="blogPostId= "
+    operation_parameters["getRepliesForCommentAsync"]="commentId= blogPostId= "
+    operation_parameters["getTagsForBlogPostAsync"]="blogPostId= "
+    operation_parameters["relateCategoryToBlogPostAsync"]="blogPostId= categoryId= tenantId= "
+    operation_parameters["relateTagToBlogPostAsync"]="blogPostId= tagId= tenantId= "
+    operation_parameters["replyToCommentAsync"]="blogPostId= commentId= tenantId= "
+    operation_parameters["unrelateCategoryFromBlogPostAsync"]="blogPostId= categoryId= tenantId= "
+    operation_parameters["unrelateTagFromBlogPostAsync"]="blogPostId= tagId= tenantId= "
+    operation_parameters["updateBlogPostAsync"]="blogPostId= tenantId= "
+    operation_parameters["getBusinessDomainByIdAsync"]="businessDomainId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBusinessDomainsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getBusinessDomainsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["createWebPortalAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteWebPortalAsync"]="portalId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCurrentWebPortalAsync"]="api-version= x-api-version: "
+    operation_parameters["getCurrentWebPortalOptionsAsync"]="api-version= x-api-version: "
+    operation_parameters["getRootWebPortalAsync"]="api-version= x-api-version: "
+    operation_parameters["getWebPortalByIdAsync"]="portalId= api-version= x-api-version: "
+    operation_parameters["getWebPortalOptionsAsync"]="portalId= api-version= x-api-version: "
+    operation_parameters["getWebPortalSettingsAsync"]="portalId= api-version= x-api-version: "
+    operation_parameters["initializeCurrentWebPortalAsync"]="api-version= x-api-version: "
+    operation_parameters["patchWebPortalAsync"]="portalId= tenantId= api-version= x-api-version: "
+    operation_parameters["searchWebPortalAsync"]="domain= api-version= x-api-version: "
+    operation_parameters["updateWebPortalAsync"]="portalId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLatestCurrencyRatesModelAsync"]="api-version= x-api-version: "
+    operation_parameters["countWebContentsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createWebContentAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteWebContentAsync"]="webContentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getWebContentByIdAsync"]="webContentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getWebContentsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateWebContentAsync"]="webContentId= tenantId= api-version= x-api-version: "
+    operation_parameters["createWebPageCategoryAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteWebPageCategoryAsync"]="webPageCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getWebPageCategoriesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getWebPageCategoryByIdAsync"]="webPageCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateWebPageCategoryAsync"]="webPageCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["createWebPageTagAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteWebPageTagAsync"]="webPageTagId= tenantId= api-version= x-api-version: "
+    operation_parameters["getWebPageTagByIdAsync"]="webPageTagId= tenantId= api-version= x-api-version: "
+    operation_parameters["getWebPageTagsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateWebPageTagAsync"]="webPageTagId= tenantId= api-version= x-api-version: "
+    operation_parameters["countWebPagesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createWebPageAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createWebPageCategoryRelationAsync"]="webPageId= tenantId= api-version= x-api-version: "
+    operation_parameters["createWebPageTagRelationAsync"]="webPageId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteWebPageAsync"]="webPageId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCategoriesByWebPageAsync"]="webPageId= api-version= x-api-version: "
+    operation_parameters["getTagsByWebPageAsync"]="webPageId= api-version= x-api-version: "
+    operation_parameters["getWebPageByIdAsync"]="webPageId= tenantId= api-version= x-api-version: "
+    operation_parameters["getWebPagesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["relateWebPageToCategoryAsync"]="webPageId= categoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["relateWebPageToTagAsync"]="webPageId= tagId= tenantId= api-version= x-api-version: "
+    operation_parameters["unrelateWebPageCategoryAsync"]="webPageId= categoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["unrelateWebPageTagAsync"]="webPageId= tagId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateWebPageAsync"]="webPageId= tenantId= api-version= x-api-version: "
+    operation_parameters["countWebTemplatesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createWebTemplateAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteWebTemplateAsync"]="webTemplateId= tenantId= api-version= x-api-version: "
+    operation_parameters["getWebTemplateByIdAsync"]="webTemplateId= tenantId= api-version= x-api-version: "
+    operation_parameters["getWebTemplatesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateWebTemplateAsync"]="webTemplateId= tenantId= api-version= x-api-version: "
+
+    # An associative array of possible values for enum parameters
+    declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+
+    #
+    # Check if this is OSX and use special __osx_init_completion function
+    #
+    if [[ `uname` =~ "Darwin" ]]; then
+        __osx_init_completion || return
+    else
+        _init_completion -s || return
+    fi
+
+
+    # Check if operation is already in the command line provided
+    for word in "${words[@]}"; do
+        if [[ -n $word && ${operations[$word]} ]]; then
+            operation="${word}"
+        fi
+    done
+
+    if [[ -z $operation ]]; then
+        case $prev in
+            --ciphers|--connect-timeout|-C|--continue-at|-F|--form|--form-string|\
+            --ftp-account|--ftp-alternative-to-user|-P|--ftp-port|-H|--header|-h|\
+            --help|--hostpubmd5|--keepalive-time|--krb|--limit-rate|--local-port|\
+            --mail-from|--mail-rcpt|--max-filesize|--max-redirs|-m|--max-time|\
+            --pass|--proto|--proto-redir|--proxy-user|--proxy1.0|-Q|--quote|-r|\
+            --range|-X|--request|--retry|--retry-delay|--retry-max-time|\
+            --socks5-gssapi-service|-t|--telnet-option|--tftp-blksize|-z|\
+            --time-cond|--url|-u|--user|-A|--user-agent|-V|--version|-w|\
+            --write-out|--resolve|--tlsuser|--tlspassword|--about)
+                return
+                ;;
+            -K|--config|-b|--cookie|-c|--cookie-jar|-D|--dump-header|--egd-file|\
+            --key|--libcurl|-o|--output|--random-file|-T|--upload-file|--trace|\
+            --trace-ascii|--netrc-file)
+                _filedir
+                return
+                ;;
+            --cacert|-E|--cert)
+                _filedir '@(c?(e)rt|cer|pem|der)'
+                return
+                ;;
+            --capath)
+                _filedir -d
+                return
+                ;;
+            --cert-type|--key-type)
+                COMPREPLY=( $( compgen -W 'DER PEM ENG' -- "$cur" ) )
+                return
+                ;;
+            --crlfile)
+                _filedir crl
+                return
+                ;;
+            -d|--data|--data-ascii|--data-binary|--data-urlencode)
+                if [[ $cur == \@* ]]; then
+                    cur=${cur:1}
+                    _filedir
+                    COMPREPLY=( "${COMPREPLY[@]/#/@}" )
+                fi
+                return
+                ;;
+            --delegation)
+                COMPREPLY=( $( compgen -W 'none policy always' -- "$cur" ) )
+                return
+                ;;
+            --engine)
+                COMPREPLY=( $( compgen -W 'list' -- "$cur" ) )
+                return
+                ;;
+            --ftp-method)
+                COMPREPLY=( $( compgen -W 'multicwd nocwd singlecwd' -- "$cur" ) )
+                return
+                ;;
+            --ftp-ssl-ccc-mode)
+                COMPREPLY=( $( compgen -W 'active passive' -- "$cur" ) )
+                return
+                ;;
+            --interface)
+                _available_interfaces -a
+                return
+                ;;
+            -x|--proxy|--socks4|--socks4a|--socks5|--socks5-hostname)
+                _known_hosts_real
+                return
+                ;;
+            --pubkey)
+                _filedir pub
+                return
+                ;;
+            --stderr)
+                COMPREPLY=( $( compgen -W '-' -- "$cur" ) )
+                _filedir
+                return
+                ;;
+            --tlsauthtype)
+                COMPREPLY=( $( compgen -W 'SRP' -- "$cur" ) )
+                return
+                ;;
+            --host)
+                COMPREPLY=( $( compgen -W 'http:// https://' -- "$cur" ) )
+                return
+                ;;
+            -ct|--content-type|-ac|--accept)
+                COMPREPLY=( $( compgen -W '${!mime_type_abbreviations[*]}' -- "$cur" ) )
+                return
+                ;;
+        esac
+    fi
+
+    #
+    # Complete the server address based on ~/.ssh/known_hosts
+    # and ~/.ssh/config
+    #
+    local prefix=${COMP_WORDS[COMP_CWORD-2]}
+    local colon=${COMP_WORDS[COMP_CWORD-1]}
+    if [[ "$colon" == ":" && ( $prefix == "https" || $prefix == "http" ) ]]; then
+        COMPREPLY=()
+        local comp_ssh_hosts=`[[ -f ~/.ssh/known_hosts ]] && \
+                              ( cat ~/.ssh/known_hosts | \
+                              grep '^[a-zA-Z0-9]' | \
+                              cut -f 1 -d ' ' | \
+                              sed -e s/,.*//g | \
+                              grep -v ^# | \
+                              uniq | \
+                              grep -v "\[" ) ;
+                              [[ -f ~/.ssh/config ]] && \
+                              ( cat ~/.ssh/config | \
+                              grep "^Host " | \
+                              awk '{print $2}' )`
+        COMPREPLY=( $( compgen -P '//' -W '${comp_ssh_hosts}' -- "${cur:2}") )
+        return
+    fi
+
+    #
+    # Complete the  and cURL's arguments
+    #
+    if [[ $cur == -* ]]; then
+        COMPREPLY=( $( compgen -W '$(_parse_help curl) $(_parse_help $1)' -- "$cur" ) )
+        return
+    fi
+
+    #
+    # If the argument starts with a letter this could be either an operation
+    # or an operation parameter
+    # When $cur is empty, suggest the list of operations by default
+    #
+    if [[ $cur =~ ^[A-Za-z_0-9]* ]]; then
+        # If operation has not been yet selected, suggest the list of operations
+        # otherwise suggest arguments of this operation as declared in the
+        # OpenAPI specification
+        if [[ -z $operation ]]; then
+            COMPREPLY=( $(compgen -W '${!operations[*]}' -- ${cur}) )
+        else
+            COMPREPLY=( $(compgen -W '${operation_parameters[$operation]}' -- ${cur}) )
+            compopt -o nospace
+        fi
+        return
+    fi
+
+} &&
+complete -F _ 
+
+# ex: ts=4 sw=4 et filetype=sh

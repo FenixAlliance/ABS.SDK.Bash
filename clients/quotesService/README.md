@@ -103,32 +103,61 @@ All URIs are relative to **
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*QuotesApi* | [**apiV2QuotesServiceQuotesCountGet**](docs/QuotesApi.md#apiv2quotesservicequotescountget) | **GET** /api/v2/QuotesService/Quotes/Count | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesExtendedGet**](docs/QuotesApi.md#apiv2quotesservicequotesextendedget) | **GET** /api/v2/QuotesService/Quotes/Extended | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesGet**](docs/QuotesApi.md#apiv2quotesservicequotesget) | **GET** /api/v2/QuotesService/Quotes | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesPost**](docs/QuotesApi.md#apiv2quotesservicequotespost) | **POST** /api/v2/QuotesService/Quotes | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesQuoteIdCalculatePut**](docs/QuotesApi.md#apiv2quotesservicequotesquoteidcalculateput) | **PUT** /api/v2/QuotesService/Quotes/{quoteId}/Calculate | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesQuoteIdDelete**](docs/QuotesApi.md#apiv2quotesservicequotesquoteiddelete) | **DELETE** /api/v2/QuotesService/Quotes/{quoteId} | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesQuoteIdLinesCountGet**](docs/QuotesApi.md#apiv2quotesservicequotesquoteidlinescountget) | **GET** /api/v2/QuotesService/Quotes/{quoteId}/Lines/Count | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesQuoteIdLinesGet**](docs/QuotesApi.md#apiv2quotesservicequotesquoteidlinesget) | **GET** /api/v2/QuotesService/Quotes/{quoteId}/Lines | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesQuoteIdLinesPost**](docs/QuotesApi.md#apiv2quotesservicequotesquoteidlinespost) | **POST** /api/v2/QuotesService/Quotes/{quoteId}/Lines | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdCalculatePut**](docs/QuotesApi.md#apiv2quotesservicequotesquoteidlinesquotelineidcalculateput) | **PUT** /api/v2/QuotesService/Quotes/{quoteId}/Lines/{quoteLineId}/Calculate | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdDelete**](docs/QuotesApi.md#apiv2quotesservicequotesquoteidlinesquotelineiddelete) | **DELETE** /api/v2/QuotesService/Quotes/{quoteId}/Lines/{quoteLineId} | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdGet**](docs/QuotesApi.md#apiv2quotesservicequotesquoteidlinesquotelineidget) | **GET** /api/v2/QuotesService/Quotes/{quoteId}/Lines/{quoteLineId} | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesQuoteIdLinesQuoteLineIdPut**](docs/QuotesApi.md#apiv2quotesservicequotesquoteidlinesquotelineidput) | **PUT** /api/v2/QuotesService/Quotes/{quoteId}/Lines/{quoteLineId} | 
-*QuotesApi* | [**apiV2QuotesServiceQuotesQuoteIdPut**](docs/QuotesApi.md#apiv2quotesservicequotesquoteidput) | **PUT** /api/v2/QuotesService/Quotes/{quoteId} | 
-*QuotesApi* | [**getQuoteAsync**](docs/QuotesApi.md#getquoteasync) | **GET** /api/v2/QuotesService/Quotes/{quoteId} | 
+*FenixAllianceABPWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABPWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
+*FenixAllianceABPWebApi* | [**healthGet**](docs/FenixAllianceABPWebApi.md#healthget) | **GET** /health | 
+*FenixAllianceABPWebApi* | [**helloGet**](docs/FenixAllianceABPWebApi.md#helloget) | **GET** /hello | 
+*FenixAllianceABPWebApi* | [**loginPost**](docs/FenixAllianceABPWebApi.md#loginpost) | **POST** /login | 
+*FenixAllianceABPWebApi* | [**manage2faPost**](docs/FenixAllianceABPWebApi.md#manage2fapost) | **POST** /manage/2fa | 
+*FenixAllianceABPWebApi* | [**manageInfoGet**](docs/FenixAllianceABPWebApi.md#manageinfoget) | **GET** /manage/info | 
+*FenixAllianceABPWebApi* | [**manageInfoPost**](docs/FenixAllianceABPWebApi.md#manageinfopost) | **POST** /manage/info | 
+*FenixAllianceABPWebApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAllianceABPWebApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
+*FenixAllianceABPWebApi* | [**refreshPost**](docs/FenixAllianceABPWebApi.md#refreshpost) | **POST** /refresh | 
+*FenixAllianceABPWebApi* | [**registerPost**](docs/FenixAllianceABPWebApi.md#registerpost) | **POST** /register | 
+*FenixAllianceABPWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABPWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
+*FenixAllianceABPWebApi* | [**resetPasswordPost**](docs/FenixAllianceABPWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
+*FenixAllianceABPWebApi* | [**versionGet**](docs/FenixAllianceABPWebApi.md#versionget) | **GET** /version | 
+*QuotesApi* | [**calculateQuote**](docs/QuotesApi.md#calculatequote) | **PUT** /api/v2/QuotesService/Quotes/{quoteId}/Calculate | Calculate a quote.
+*QuotesApi* | [**calculateQuoteLine**](docs/QuotesApi.md#calculatequoteline) | **PUT** /api/v2/QuotesService/Quotes/{quoteId}/Lines/{quoteLineId}/Calculate | Calculate a quote line.
+*QuotesApi* | [**closeQuote**](docs/QuotesApi.md#closequote) | **PUT** /api/v2/QuotesService/Quotes/{quoteId}/Close | Close a quote.
+*QuotesApi* | [**createOrderFromQuote**](docs/QuotesApi.md#createorderfromquote) | **POST** /api/v2/QuotesService/Quotes/{quoteId}/Orders | Create an order from a quote.
+*QuotesApi* | [**createQuote**](docs/QuotesApi.md#createquote) | **POST** /api/v2/QuotesService/Quotes | Create a new quote.
+*QuotesApi* | [**createQuoteLine**](docs/QuotesApi.md#createquoteline) | **POST** /api/v2/QuotesService/Quotes/{quoteId}/Lines | Create a new quote line.
+*QuotesApi* | [**deleteQuote**](docs/QuotesApi.md#deletequote) | **DELETE** /api/v2/QuotesService/Quotes/{quoteId} | Delete a quote.
+*QuotesApi* | [**deleteQuoteLine**](docs/QuotesApi.md#deletequoteline) | **DELETE** /api/v2/QuotesService/Quotes/{quoteId}/Lines/{quoteLineId} | Delete a quote line.
+*QuotesApi* | [**getExtendedQuotes**](docs/QuotesApi.md#getextendedquotes) | **GET** /api/v2/QuotesService/Quotes/Extended | Get a list of extended quotes.
+*QuotesApi* | [**getQuote**](docs/QuotesApi.md#getquote) | **GET** /api/v2/QuotesService/Quotes/{quoteId} | Get a quote by ID.
+*QuotesApi* | [**getQuoteLine**](docs/QuotesApi.md#getquoteline) | **GET** /api/v2/QuotesService/Quotes/{quoteId}/Lines/{quoteLineId} | Get a quote line by ID.
+*QuotesApi* | [**getQuoteLines**](docs/QuotesApi.md#getquotelines) | **GET** /api/v2/QuotesService/Quotes/{quoteId}/Lines | Get quote lines for a quote.
+*QuotesApi* | [**getQuoteLinesCount**](docs/QuotesApi.md#getquotelinescount) | **GET** /api/v2/QuotesService/Quotes/{quoteId}/Lines/Count | Get the count of quote lines.
+*QuotesApi* | [**getQuotes**](docs/QuotesApi.md#getquotes) | **GET** /api/v2/QuotesService/Quotes | Get a list of quotes.
+*QuotesApi* | [**getQuotesCount**](docs/QuotesApi.md#getquotescount) | **GET** /api/v2/QuotesService/Quotes/Count | Get the count of quotes.
+*QuotesApi* | [**previewQuoteEmailTemplate**](docs/QuotesApi.md#previewquoteemailtemplate) | **POST** /api/v2/QuotesService/Quotes/{quoteId}/Emails/Preview | Preview the rendered email for an invoice.
+*QuotesApi* | [**quoteLineExists**](docs/QuotesApi.md#quotelineexists) | **GET** /api/v2/QuotesService/Quotes/{quoteId}/Lines/Exists | Check if a quote line exists.
+*QuotesApi* | [**reopenQuote**](docs/QuotesApi.md#reopenquote) | **PUT** /api/v2/QuotesService/Quotes/{quoteId}/Reopen | Reopen a closed quote.
+*QuotesApi* | [**sendQuoteEmail**](docs/QuotesApi.md#sendquoteemail) | **POST** /api/v2/QuotesService/Quotes/{quoteId}/Emails/Send | Send a quote transactional email to recipients.
+*QuotesApi* | [**updateQuote**](docs/QuotesApi.md#updatequote) | **PUT** /api/v2/QuotesService/Quotes/{quoteId} | Update an existing quote.
+*QuotesApi* | [**updateQuoteLine**](docs/QuotesApi.md#updatequoteline) | **PUT** /api/v2/QuotesService/Quotes/{quoteId}/Lines/{quoteLineId} | Update a quote line.
+*QuotesApi* | [**upsertQuoteLine**](docs/QuotesApi.md#upsertquoteline) | **PUT** /api/v2/QuotesService/Quotes/{quoteId}/Lines/{quoteLineId}/Upsert | Upsert a quote line.
 
 
 ## Documentation For Models
 
+ - [AccessTokenResponse](docs/AccessTokenResponse.md)
+ - [BooleanEnvelope](docs/BooleanEnvelope.md)
  - [ContactDto](docs/ContactDto.md)
- - [Currency](docs/Currency.md)
+ - [CurrencyId](docs/CurrencyId.md)
+ - [EmailDispatchRequest](docs/EmailDispatchRequest.md)
  - [EmptyEnvelope](docs/EmptyEnvelope.md)
  - [ErrorEnvelope](docs/ErrorEnvelope.md)
  - [ExtendedQuoteDto](docs/ExtendedQuoteDto.md)
  - [ExtendedQuoteDtoListEnvelope](docs/ExtendedQuoteDtoListEnvelope.md)
+ - [ForexRates](docs/ForexRates.md)
+ - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
+ - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
+ - [InfoRequest](docs/InfoRequest.md)
+ - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
+ - [LoginRequest](docs/LoginRequest.md)
  - [Money](docs/Money.md)
  - [QuoteCreateDto](docs/QuoteCreateDto.md)
  - [QuoteDto](docs/QuoteDto.md)
@@ -139,19 +168,20 @@ Class | Method | HTTP request | Description
  - [QuoteLineDtoEnvelope](docs/QuoteLineDtoEnvelope.md)
  - [QuoteLineDtoListEnvelope](docs/QuoteLineDtoListEnvelope.md)
  - [QuoteLineUpdateDto](docs/QuoteLineUpdateDto.md)
+ - [QuoteLineUpsertDto](docs/QuoteLineUpsertDto.md)
  - [QuoteUpdateDto](docs/QuoteUpdateDto.md)
+ - [RefreshRequest](docs/RefreshRequest.md)
+ - [RegisterRequest](docs/RegisterRequest.md)
+ - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)
+ - [ResetPasswordRequest](docs/ResetPasswordRequest.md)
  - [TenantDto](docs/TenantDto.md)
- - [TenantEnrolmentDto](docs/TenantEnrolmentDto.md)
+ - [TenantEnrollmentDto](docs/TenantEnrollmentDto.md)
+ - [TwoFactorRequest](docs/TwoFactorRequest.md)
+ - [TwoFactorResponse](docs/TwoFactorResponse.md)
  - [UserDto](docs/UserDto.md)
 
 
 ## Documentation For Authorization
 
-
-## Bearer
-
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+ All endpoints do not require authorization.
 

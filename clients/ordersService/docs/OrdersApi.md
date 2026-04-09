@@ -4,33 +4,37 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2OrdersServiceOrdersCountGet**](OrdersApi.md#apiV2OrdersServiceOrdersCountGet) | **GET** /api/v2/OrdersService/Orders/Count | 
-[**apiV2OrdersServiceOrdersExtendedGet**](OrdersApi.md#apiV2OrdersServiceOrdersExtendedGet) | **GET** /api/v2/OrdersService/Orders/Extended | 
-[**apiV2OrdersServiceOrdersOrderIdCalculatePut**](OrdersApi.md#apiV2OrdersServiceOrdersOrderIdCalculatePut) | **PUT** /api/v2/OrdersService/Orders/{orderId}/Calculate | 
-[**apiV2OrdersServiceOrdersOrderIdDelete**](OrdersApi.md#apiV2OrdersServiceOrdersOrderIdDelete) | **DELETE** /api/v2/OrdersService/Orders/{orderId} | 
-[**apiV2OrdersServiceOrdersOrderIdLinesCountGet**](OrdersApi.md#apiV2OrdersServiceOrdersOrderIdLinesCountGet) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines/Count | 
-[**apiV2OrdersServiceOrdersOrderIdLinesGet**](OrdersApi.md#apiV2OrdersServiceOrdersOrderIdLinesGet) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines | 
-[**apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut**](OrdersApi.md#apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut) | **PUT** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId}/Calculate | 
-[**apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete**](OrdersApi.md#apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete) | **DELETE** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | 
-[**apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet**](OrdersApi.md#apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | 
-[**apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut**](OrdersApi.md#apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut) | **PUT** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | 
-[**apiV2OrdersServiceOrdersOrderIdLinesPost**](OrdersApi.md#apiV2OrdersServiceOrdersOrderIdLinesPost) | **POST** /api/v2/OrdersService/Orders/{orderId}/Lines | 
-[**apiV2OrdersServiceOrdersOrderIdPut**](OrdersApi.md#apiV2OrdersServiceOrdersOrderIdPut) | **PUT** /api/v2/OrdersService/Orders/{orderId} | 
-[**apiV2OrdersServiceOrdersPost**](OrdersApi.md#apiV2OrdersServiceOrdersPost) | **POST** /api/v2/OrdersService/Orders | 
-[**apiV2OrdersServiceOrdersSubmitCartPost**](OrdersApi.md#apiV2OrdersServiceOrdersSubmitCartPost) | **POST** /api/v2/OrdersService/Orders/SubmitCart | 
-[**getOrderAsync**](OrdersApi.md#getOrderAsync) | **GET** /api/v2/OrdersService/Orders/{orderId} | 
-[**getOrdersAsync**](OrdersApi.md#getOrdersAsync) | **GET** /api/v2/OrdersService/Orders | 
+[**calculateOrder**](OrdersApi.md#calculateOrder) | **PUT** /api/v2/OrdersService/Orders/{orderId}/Calculate | Calculates totals for an order.
+[**calculateOrderLine**](OrdersApi.md#calculateOrderLine) | **PUT** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId}/Calculate | Calculates totals for an order line.
+[**createOrder**](OrdersApi.md#createOrder) | **POST** /api/v2/OrdersService/Orders | Creates a new order.
+[**createOrderLine**](OrdersApi.md#createOrderLine) | **POST** /api/v2/OrdersService/Orders/{orderId}/Lines | Creates a new order line.
+[**deleteOrder**](OrdersApi.md#deleteOrder) | **DELETE** /api/v2/OrdersService/Orders/{orderId} | Deletes an order.
+[**deleteOrderLine**](OrdersApi.md#deleteOrderLine) | **DELETE** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | Deletes an order line.
+[**getExtendedOrders**](OrdersApi.md#getExtendedOrders) | **GET** /api/v2/OrdersService/Orders/Extended | Gets a list of extended orders for a tenant.
+[**getOrder**](OrdersApi.md#getOrder) | **GET** /api/v2/OrdersService/Orders/{orderId} | Gets a specific order by ID.
+[**getOrderLine**](OrdersApi.md#getOrderLine) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | Gets a specific order line.
+[**getOrderLines**](OrdersApi.md#getOrderLines) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines | Gets order lines for an order.
+[**getOrderLinesCount**](OrdersApi.md#getOrderLinesCount) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines/Count | Gets the count of order lines for an order.
+[**getOrders**](OrdersApi.md#getOrders) | **GET** /api/v2/OrdersService/Orders | Gets a list of orders for a tenant.
+[**getOrdersCount**](OrdersApi.md#getOrdersCount) | **GET** /api/v2/OrdersService/Orders/Count | Gets the count of orders for a tenant.
+[**previewOrderEmailTemplate**](OrdersApi.md#previewOrderEmailTemplate) | **POST** /api/v2/OrdersService/Orders/{orderId}/Emails/Preview | Preview the rendered email for an Order.
+[**sendOrderEmail**](OrdersApi.md#sendOrderEmail) | **POST** /api/v2/OrdersService/Orders/{orderId}/Emails/Send | Send a transactional email for an order.
+[**submitCart**](OrdersApi.md#submitCart) | **POST** /api/v2/OrdersService/Orders/SubmitCart | Submits a cart and creates an order.
+[**updateOrder**](OrdersApi.md#updateOrder) | **PUT** /api/v2/OrdersService/Orders/{orderId} | Updates an existing order.
+[**updateOrderLine**](OrdersApi.md#updateOrderLine) | **PUT** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | Updates an order line.
 
 
 
-## apiV2OrdersServiceOrdersCountGet
+## calculateOrder
 
+Calculates totals for an order.
 
+Performs calculation of totals and taxes for the specified order.
 
 ### Example
 
 ```bash
- apiV2OrdersServiceOrdersCountGet  tenantId=value
+ calculateOrder  tenantId=value orderId=value
 ```
 
 ### Parameters
@@ -39,14 +43,15 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **orderId** | **string** |  | [default to null]
 
 ### Return type
 
-[**Int32Envelope**](Int32Envelope.md)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -56,14 +61,199 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2OrdersServiceOrdersExtendedGet
+## calculateOrderLine
 
+Calculates totals for an order line.
 
+Performs calculation of totals and taxes for the specified order line.
 
 ### Example
 
 ```bash
- apiV2OrdersServiceOrdersExtendedGet  tenantId=value
+ calculateOrderLine  tenantId=value orderId=value orderLineId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **orderId** | **string** |  | [default to null]
+ **orderLineId** | **string** |  | [default to null]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## createOrder
+
+Creates a new order.
+
+Creates a new order for the specified tenant.
+
+### Example
+
+```bash
+ createOrder  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **orderCreateDto** | [**OrderCreateDto**](OrderCreateDto.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## createOrderLine
+
+Creates a new order line.
+
+Creates a new line (item) for the specified order.
+
+### Example
+
+```bash
+ createOrderLine  tenantId=value orderId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **orderId** | **string** |  | [default to null]
+ **orderLineCreateDto** | [**OrderLineCreateDto**](OrderLineCreateDto.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## deleteOrder
+
+Deletes an order.
+
+Deletes the specified order.
+
+### Example
+
+```bash
+ deleteOrder  tenantId=value orderId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **orderId** | **string** |  | [default to null]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## deleteOrderLine
+
+Deletes an order line.
+
+Deletes the specified order line.
+
+### Example
+
+```bash
+ deleteOrderLine  tenantId=value orderId=value orderLineId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **orderId** | **string** |  | [default to null]
+ **orderLineId** | **string** |  | [default to null]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getExtendedOrders
+
+Gets a list of extended orders for a tenant.
+
+Retrieves a list of extended order details for the specified tenant.
+
+### Example
+
+```bash
+ getExtendedOrders  tenantId=value
 ```
 
 ### Parameters
@@ -79,7 +269,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -89,14 +279,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2OrdersServiceOrdersOrderIdCalculatePut
+## getOrder
 
+Gets a specific order by ID.
 
+Retrieves the details of a specific order by its ID.
 
 ### Example
 
 ```bash
- apiV2OrdersServiceOrdersOrderIdCalculatePut  tenantId=value orderId=value
+ getOrder  tenantId=value orderId=value
 ```
 
 ### Parameters
@@ -109,11 +301,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmptyEnvelope**](EmptyEnvelope.md)
+[**OrderDtoEnvelope**](OrderDtoEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -123,187 +315,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2OrdersServiceOrdersOrderIdDelete
+## getOrderLine
 
+Gets a specific order line.
 
-
-### Example
-
-```bash
- apiV2OrdersServiceOrdersOrderIdDelete  tenantId=value orderId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **orderId** | **string** |  | [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2OrdersServiceOrdersOrderIdLinesCountGet
-
-
+Retrieves the details of a specific order line by its ID.
 
 ### Example
 
 ```bash
- apiV2OrdersServiceOrdersOrderIdLinesCountGet  tenantId=value orderId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **orderId** | **string** |  | [default to null]
-
-### Return type
-
-[**Int32Envelope**](Int32Envelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2OrdersServiceOrdersOrderIdLinesGet
-
-
-
-### Example
-
-```bash
- apiV2OrdersServiceOrdersOrderIdLinesGet  tenantId=value orderId=value  itemId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **orderId** | **string** |  | [default to null]
- **itemId** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**OrderLineDtoListEnvelope**](OrderLineDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut
-
-
-
-### Example
-
-```bash
- apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdCalculatePut  tenantId=value orderId=value orderLineId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **orderId** | **string** |  | [default to null]
- **orderLineId** | **string** |  | [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete
-
-
-
-### Example
-
-```bash
- apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdDelete  tenantId=value orderId=value orderLineId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **orderId** | **string** |  | [default to null]
- **orderLineId** | **string** |  | [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet
-
-
-
-### Example
-
-```bash
- apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdGet  tenantId=value orderId=value orderLineId=value
+ getOrderLine  tenantId=value orderId=value orderLineId=value
 ```
 
 ### Parameters
@@ -321,7 +342,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -331,14 +352,305 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut
+## getOrderLines
 
+Gets order lines for an order.
 
+Retrieves the lines (items) for the specified order.
 
 ### Example
 
 ```bash
- apiV2OrdersServiceOrdersOrderIdLinesOrderLineIdPut  tenantId=value orderId=value orderLineId=value
+ getOrderLines  tenantId=value orderId=value  itemId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **orderId** | **string** |  | [default to null]
+ **itemId** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**OrderLineDtoListEnvelope**](OrderLineDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getOrderLinesCount
+
+Gets the count of order lines for an order.
+
+Retrieves the total number of lines for the specified order.
+
+### Example
+
+```bash
+ getOrderLinesCount  tenantId=value orderId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **orderId** | **string** |  | [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getOrders
+
+Gets a list of orders for a tenant.
+
+Retrieves a list of orders for the specified tenant.
+
+### Example
+
+```bash
+ getOrders  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**OrderDtoListEnvelope**](OrderDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getOrdersCount
+
+Gets the count of orders for a tenant.
+
+Retrieves the total number of orders for the specified tenant.
+
+### Example
+
+```bash
+ getOrdersCount  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## previewOrderEmailTemplate
+
+Preview the rendered email for an Order.
+
+Previews the rendered email template for the specified order. Only users with the 'send_email' permission are permitted.
+
+### Example
+
+```bash
+ previewOrderEmailTemplate orderId=value  tenantId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
+ **emailDispatchRequest** | [**EmailDispatchRequest**](EmailDispatchRequest.md) |  | [optional]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: Not Applicable
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## sendOrderEmail
+
+Send a transactional email for an order.
+
+Sends a transactional email for the specified order. Only users with the 'send_email' permission are permitted.
+
+### Example
+
+```bash
+ sendOrderEmail  tenantId=value orderId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **orderId** | **string** |  | [default to null]
+ **emailDispatchRequest** | [**EmailDispatchRequest**](EmailDispatchRequest.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## submitCart
+
+Submits a cart and creates an order.
+
+Submits the specified cart and creates an order for the authenticated user.
+
+### Example
+
+```bash
+ submitCart  cartId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **cartId** | **string** |  | [default to null]
+
+### Return type
+
+[**OrderDtoEnvelope**](OrderDtoEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateOrder
+
+Updates an existing order.
+
+Updates the details of an existing order.
+
+### Example
+
+```bash
+ updateOrder  tenantId=value orderId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **orderId** | **string** |  | [default to null]
+ **orderUpdateDto** | [**OrderUpdateDto**](OrderUpdateDto.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateOrderLine
+
+Updates an order line.
+
+Updates the details of a specific order line.
+
+### Example
+
+```bash
+ updateOrderLine  tenantId=value orderId=value orderLineId=value
 ```
 
 ### Parameters
@@ -357,215 +669,11 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2OrdersServiceOrdersOrderIdLinesPost
-
-
-
-### Example
-
-```bash
- apiV2OrdersServiceOrdersOrderIdLinesPost  tenantId=value orderId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **orderId** | **string** |  | [default to null]
- **orderLineCreateDto** | [**OrderLineCreateDto**](OrderLineCreateDto.md) |  | [optional]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2OrdersServiceOrdersOrderIdPut
-
-
-
-### Example
-
-```bash
- apiV2OrdersServiceOrdersOrderIdPut  tenantId=value orderId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **orderId** | **string** |  | [default to null]
- **orderUpdateDto** | [**OrderUpdateDto**](OrderUpdateDto.md) |  | [optional]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2OrdersServiceOrdersPost
-
-
-
-### Example
-
-```bash
- apiV2OrdersServiceOrdersPost  tenantId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **orderCreateDto** | [**OrderCreateDto**](OrderCreateDto.md) |  | [optional]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2OrdersServiceOrdersSubmitCartPost
-
-
-
-### Example
-
-```bash
- apiV2OrdersServiceOrdersSubmitCartPost  cartId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **cartId** | **string** |  | [default to null]
-
-### Return type
-
-[**OrderDtoEnvelope**](OrderDtoEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## getOrderAsync
-
-
-
-### Example
-
-```bash
- getOrderAsync  tenantId=value orderId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **orderId** | **string** |  | [default to null]
-
-### Return type
-
-[**OrderDtoEnvelope**](OrderDtoEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## getOrdersAsync
-
-
-
-### Example
-
-```bash
- getOrdersAsync  tenantId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
-
-### Return type
-
-[**OrderDtoListEnvelope**](OrderDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

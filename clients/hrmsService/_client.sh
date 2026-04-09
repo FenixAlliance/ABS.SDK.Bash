@@ -297,27 +297,39 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "createEmployeeAsync[]" \
-            "deleteEmployeeAsync[]" \
-            "getEmployeeByIdAsync[]" \
-            "getEmployeesAsync[]" \
-            "getEmployeesCountAsync[]" \
-            "updateEmployeeAsync[]"             "createEmployerAsync[]" \
-            "deleteEmployerAsync[]" \
-            "getEmployerByIdAsync[]" \
-            "getEmployersAsync[]" \
-            "getEmployersCountAsync[]" \
-            "updateEmployerAsync[]"             "createGigAsync[]" \
-            "deleteGigAsync[]" \
-            "getGigByIdAsync[]" \
-            "getGigsAsync[]" \
-            "getGigsCountAsync[]" \
-            "updateGigAsync[]"             "createJobOfferAsync[]" \
-            "deleteJobOfferAsync[]" \
-            "getJobOfferByIdAsync[]" \
-            "getJobOffersAsync[]" \
-            "getJobOffersCountAsync[]" \
-            "updateJobOfferAsync[]" \
+            "createEmployeeAsync[Create an employee]" \
+            "deleteEmployeeAsync[Delete an employee]" \
+            "getEmployeeByIdAsync[Get employee by ID]" \
+            "getEmployeesAsync[Get employees]" \
+            "getEmployeesCountAsync[Count employees]" \
+            "updateEmployeeAsync[Update an employee]"             "createEmployerAsync[Create an employer]" \
+            "deleteEmployerAsync[Delete an employer]" \
+            "getEmployerByIdAsync[Get employer by ID]" \
+            "getEmployersAsync[Get employers]" \
+            "getEmployersCountAsync[Count employers]" \
+            "updateEmployerAsync[Update an employer]"             "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "createGigAsync[Create a gig]" \
+            "deleteGigAsync[Delete a gig]" \
+            "getGigByIdAsync[Get gig by ID]" \
+            "getGigsAsync[Get gigs]" \
+            "getGigsCountAsync[Count gigs]" \
+            "updateGigAsync[Update a gig]"             "createJobOfferAsync[Create a job offer]" \
+            "deleteJobOfferAsync[Delete a job offer]" \
+            "getJobOfferByIdAsync[Get job offer by ID]" \
+            "getJobOffersAsync[Get job offers]" \
+            "getJobOffersCountAsync[Count job offers]" \
+            "updateJobOfferAsync[Update a job offer]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -437,6 +449,91 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       createGigAsync)

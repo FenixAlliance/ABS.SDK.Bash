@@ -4,19 +4,22 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2GlobeServiceLanguagesGet**](LanguagesApi.md#apiV2GlobeServiceLanguagesGet) | **GET** /api/v2/GlobeService/Languages | 
-[**apiV2GlobeServiceLanguagesLanguageIdGet**](LanguagesApi.md#apiV2GlobeServiceLanguagesLanguageIdGet) | **GET** /api/v2/GlobeService/Languages/{languageId} | 
+[**countLanguagesAsync**](LanguagesApi.md#countLanguagesAsync) | **GET** /api/v2/GlobeService/Languages/Count | Count languages
+[**getLanguageByIdAsync**](LanguagesApi.md#getLanguageByIdAsync) | **GET** /api/v2/GlobeService/Languages/{languageId} | Get language by ID
+[**getLanguagesAsync**](LanguagesApi.md#getLanguagesAsync) | **GET** /api/v2/GlobeService/Languages | Get all languages
 
 
 
-## apiV2GlobeServiceLanguagesGet
+## countLanguagesAsync
 
+Count languages
 
+Returns the total number of supported languages, with optional OData filtering.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceLanguagesGet  api-version=value x-api-version:value
+ countLanguagesAsync  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -29,11 +32,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CountryLanguageDtoListEnvelope**](CountryLanguageDtoListEnvelope.md)
+[**Int32Envelope**](Int32Envelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -43,14 +46,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2GlobeServiceLanguagesLanguageIdGet
+## getLanguageByIdAsync
 
+Get language by ID
 
+Retrieves a single language by its unique identifier.
 
 ### Example
 
 ```bash
- apiV2GlobeServiceLanguagesLanguageIdGet languageId=value  api-version=value x-api-version:value
+ getLanguageByIdAsync languageId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -68,7 +73,43 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getLanguagesAsync
+
+Get all languages
+
+Retrieves the list of all supported languages with optional OData pagination and filtering.
+
+### Example
+
+```bash
+ getLanguagesAsync  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**CountryLanguageDtoListEnvelope**](CountryLanguageDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
 
 ### HTTP request headers
 

@@ -1,0 +1,569 @@
+#  completion                               -*- shell-script -*-
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !
+# ! Note:
+# !
+# ! THIS SCRIPT HAS BEEN AUTOMATICALLY GENERATED USING
+# ! openapi-generator (https://openapi-generator.tech)
+# ! FROM OPENAPI SPECIFICATION IN JSON.
+# !
+# ! Generator version: 7.9.0
+# !
+# !
+# ! System wide installation:
+# !
+# ! $ sudo cp .bash-completion /etc/bash-completion.d/
+# !
+# !
+# ! User home installation (add this line to .bash_profile):
+# !
+# ! [ -r ~/.bash-completion ] && source ~/.bash-completion
+# !
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+declare -A mime_type_abbreviations
+# text/*
+mime_type_abbreviations["text"]="text/plain"
+mime_type_abbreviations["html"]="text/html"
+mime_type_abbreviations["md"]="text/x-markdown"
+mime_type_abbreviations["csv"]="text/csv"
+mime_type_abbreviations["css"]="text/css"
+mime_type_abbreviations["rtf"]="text/rtf"
+# application/*
+mime_type_abbreviations["json"]="application/json"
+mime_type_abbreviations["xml"]="application/xml"
+mime_type_abbreviations["yaml"]="application/yaml"
+mime_type_abbreviations["js"]="application/javascript"
+mime_type_abbreviations["bin"]="application/octet-stream"
+mime_type_abbreviations["rdf"]="application/rdf+xml"
+# image/*
+mime_type_abbreviations["jpg"]="image/jpeg"
+mime_type_abbreviations["png"]="image/png"
+mime_type_abbreviations["gif"]="image/gif"
+mime_type_abbreviations["bmp"]="image/bmp"
+mime_type_abbreviations["tiff"]="image/tiff"
+
+
+#
+# Check if this is OSX, if so defined custom init_completion
+#
+if [[ `uname` =~ "Darwin" ]]; then
+    __osx_init_completion()
+    {
+        COMPREPLY=()
+        _get_comp_words_by_ref cur prev words cword
+    }
+fi
+
+_()
+{
+    local cur
+    local prev
+    local words
+    local cword
+
+    # The reference of currently selected REST operation
+    local operation=""
+
+    # The list of available operation in the REST service
+    # It's modelled as an associative array for efficient key lookup
+    declare -A operations
+    operations["createTenantDepartment"]=1
+    operations["deleteTenantDepartment"]=1
+    operations["getTenantDepartmentById"]=1
+    operations["getTenantDepartments"]=1
+    operations["getTenantDepartmentsCount"]=1
+    operations["updateTenantDepartment"]=1
+    operations["createTenantEmployeeEnrollment"]=1
+    operations["deleteTenantEmployeeEnrollment"]=1
+    operations["getTenantEmployeeEnrollmentById"]=1
+    operations["getTenantEmployeeEnrollments"]=1
+    operations["getTenantEmployeeEnrollmentsCount"]=1
+    operations["updateTenantEmployeeEnrollment"]=1
+    operations["createTenantEnrollment"]=1
+    operations["deleteTenantEnrollment"]=1
+    operations["getExtendedTenantEnrollments"]=1
+    operations["getExtendedTenantEnrollmentsCount"]=1
+    operations["getTenantEnrollmentById"]=1
+    operations["getTenantEnrollments"]=1
+    operations["getTenantEnrollmentsCount"]=1
+    operations["updateTenantEnrollment"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["createTenantIndustry"]=1
+    operations["deleteTenantIndustry"]=1
+    operations["getTenantIndustries"]=1
+    operations["getTenantIndustriesCount"]=1
+    operations["getTenantIndustryById"]=1
+    operations["updateTenantIndustry"]=1
+    operations["acceptTenantInvitation"]=1
+    operations["declineTenantInvitation"]=1
+    operations["deleteTenantInvitation"]=1
+    operations["getTenantInvitationById"]=1
+    operations["getTenantInvitations"]=1
+    operations["getTenantInvitationsCount"]=1
+    operations["sendTenantInvitation"]=1
+    operations["createTenantOption"]=1
+    operations["deleteTenantOption"]=1
+    operations["getTenantOptionById"]=1
+    operations["getTenantOptionByKey"]=1
+    operations["getTenantOptions"]=1
+    operations["getTenantOptionsCount"]=1
+    operations["updateTenantOption"]=1
+    operations["upsertTenantOption"]=1
+    operations["createTenantPosition"]=1
+    operations["deleteTenantPosition"]=1
+    operations["getTenantPositionById"]=1
+    operations["getTenantPositions"]=1
+    operations["getTenantPositionsCount"]=1
+    operations["updateTenantPosition"]=1
+    operations["createTenantSegment"]=1
+    operations["deleteTenantSegment"]=1
+    operations["getTenantSegmentById"]=1
+    operations["getTenantSegments"]=1
+    operations["getTenantSegmentsCount"]=1
+    operations["updateTenantSegment"]=1
+    operations["createTenantSize"]=1
+    operations["deleteTenantSize"]=1
+    operations["getTenantSizeById"]=1
+    operations["getTenantSizes"]=1
+    operations["getTenantSizesCount"]=1
+    operations["updateTenantSize"]=1
+    operations["createTenantTeamContactEnrollment"]=1
+    operations["deleteTenantTeamContactEnrollment"]=1
+    operations["getTenantTeamContactEnrollmentById"]=1
+    operations["getTenantTeamContactEnrollments"]=1
+    operations["getTenantTeamContactEnrollmentsCount"]=1
+    operations["updateTenantTeamContactEnrollment"]=1
+    operations["createTenantTeamProjectEnrollment"]=1
+    operations["deleteTenantTeamProjectEnrollment"]=1
+    operations["getTenantTeamProjectEnrollmentById"]=1
+    operations["getTenantTeamProjectEnrollments"]=1
+    operations["getTenantTeamProjectEnrollmentsCount"]=1
+    operations["updateTenantTeamProjectEnrollment"]=1
+    operations["createTenantTeamRecord"]=1
+    operations["deleteTenantTeamRecord"]=1
+    operations["getTenantTeamRecordById"]=1
+    operations["getTenantTeamRecords"]=1
+    operations["getTenantTeamRecordsCount"]=1
+    operations["updateTenantTeamRecord"]=1
+    operations["createTenantTeam"]=1
+    operations["deleteTenantTeam"]=1
+    operations["getTenantTeamById"]=1
+    operations["getTenantTeams"]=1
+    operations["getTenantTeamsCount"]=1
+    operations["updateTenantTeam"]=1
+    operations["assignLicenseAsync"]=1
+    operations["createTenantAsync"]=1
+    operations["deSelectTenantAsync"]=1
+    operations["deleteTenantAsync"]=1
+    operations["getAccessibleFeaturesAsync"]=1
+    operations["getCurrentTenantAsync"]=1
+    operations["getEnrollmentLicenseByIdAsync"]=1
+    operations["getEnrollmentLicensesAsync"]=1
+    operations["getEnrollmentPermissionsAsync"]=1
+    operations["getExtendedTenantAsync"]=1
+    operations["getExtendedTenantEnrollmentAsync"]=1
+    operations["getRootTenantAsync"]=1
+    operations["getTenantAsync"]=1
+    operations["getTenantAvatarAsync"]=1
+    operations["getTenantCartAsync"]=1
+    operations["getTenantEnrollmentAsync"]=1
+    operations["getTenantEnrollmentsAsync"]=1
+    operations["getTenantInvitationsAsync"]=1
+    operations["getTenantLicensesAsync"]=1
+    operations["getTenantNotificationsAsync"]=1
+    operations["getTenantNotificationsCountAsync"]=1
+    operations["getTenantPendingInvitationsAsync"]=1
+    operations["getTenantRedeemedInvitationsAsync"]=1
+    operations["getTenantRevokedInvitationsAsync"]=1
+    operations["getTenantSocialProfileAsync"]=1
+    operations["getTenantUsersAsync"]=1
+    operations["getTenantWalletAsync"]=1
+    operations["getTenantWebPortalsAsync"]=1
+    operations["patchTenantAsync"]=1
+    operations["revokeLicenseAsync"]=1
+    operations["selectTenantAsync"]=1
+    operations["updateAvatarAsync"]=1
+    operations["updateTenantAsync"]=1
+    operations["validateEnrollmentFeatureAccess"]=1
+    operations["validateEnrollmentPermissionsAsync"]=1
+    operations["createTenantTerritory"]=1
+    operations["deleteTenantTerritory"]=1
+    operations["getTenantTerritories"]=1
+    operations["getTenantTerritoriesCount"]=1
+    operations["getTenantTerritoryById"]=1
+    operations["updateTenantTerritory"]=1
+    operations["createTenantType"]=1
+    operations["deleteTenantType"]=1
+    operations["getTenantTypeById"]=1
+    operations["getTenantTypes"]=1
+    operations["getTenantTypesCount"]=1
+    operations["updateTenantType"]=1
+    operations["createUnitAsync"]=1
+    operations["createUnitGroupAsync"]=1
+    operations["deleteUnitAsync"]=1
+    operations["deleteUnitGroupAsync"]=1
+    operations["getUnitAsync"]=1
+    operations["getUnitGroupAsync"]=1
+    operations["getUnitGroupsAsync"]=1
+    operations["getUnitGroupsCountAsync"]=1
+    operations["getUnitsAsync"]=1
+    operations["getUnitsCountAsync"]=1
+    operations["updateUnitAsync"]=1
+    operations["updateUnitGroupAsync"]=1
+    operations["createTenantUnit"]=1
+    operations["deleteTenantUnit"]=1
+    operations["getTenantUnitById"]=1
+    operations["getTenantUnits"]=1
+    operations["getTenantUnitsCount"]=1
+    operations["updateTenantUnit"]=1
+
+    # An associative array of operations to their parameters
+    # Only include path, query and header parameters
+    declare -A operation_parameters
+    operation_parameters["createTenantDepartment"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantDepartment"]="tenantDepartmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantDepartmentById"]="tenantDepartmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantDepartments"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantDepartmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantDepartment"]="tenantDepartmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["createTenantEmployeeEnrollment"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantEmployeeEnrollment"]="tenantEmployeeEnrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantEmployeeEnrollmentById"]="tenantEmployeeEnrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantEmployeeEnrollments"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantEmployeeEnrollmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantEmployeeEnrollment"]="tenantEmployeeEnrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["createTenantEnrollment"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantEnrollment"]="enrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getExtendedTenantEnrollments"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getExtendedTenantEnrollmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantEnrollmentById"]="enrollmentId= tenantId= userId= api-version= x-api-version: "
+    operation_parameters["getTenantEnrollments"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantEnrollmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantEnrollment"]="enrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["createTenantIndustry"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantIndustry"]="tenantIndustryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantIndustries"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantIndustriesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantIndustryById"]="tenantIndustryId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantIndustry"]="tenantIndustryId= tenantId= api-version= x-api-version: "
+    operation_parameters["acceptTenantInvitation"]="invitationId= api-version= x-api-version: "
+    operation_parameters["declineTenantInvitation"]="invitationId= api-version= x-api-version: "
+    operation_parameters["deleteTenantInvitation"]="invitationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantInvitationById"]="invitationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantInvitations"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantInvitationsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["sendTenantInvitation"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createTenantOption"]="tenantId= key= portalId= api-version= x-api-version: "
+    operation_parameters["deleteTenantOption"]="optionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantOptionById"]="optionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantOptionByKey"]="key= tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["getTenantOptions"]="tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["getTenantOptionsCount"]="tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["updateTenantOption"]="optionId= tenantId= api-version= x-api-version: "
+    operation_parameters["upsertTenantOption"]="key= tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["createTenantPosition"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantPosition"]="tenantPositionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantPositionById"]="tenantPositionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantPositions"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantPositionsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantPosition"]="tenantPositionId= tenantId= api-version= x-api-version: "
+    operation_parameters["createTenantSegment"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantSegment"]="tenantSegmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantSegmentById"]="tenantSegmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantSegments"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantSegmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantSegment"]="tenantSegmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["createTenantSize"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantSize"]="tenantSizeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantSizeById"]="tenantSizeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantSizes"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantSizesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantSize"]="tenantSizeId= tenantId= api-version= x-api-version: "
+    operation_parameters["createTenantTeamContactEnrollment"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantTeamContactEnrollment"]="tenantTeamContactEnrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTeamContactEnrollmentById"]="tenantTeamContactEnrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTeamContactEnrollments"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTeamContactEnrollmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantTeamContactEnrollment"]="tenantTeamContactEnrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["createTenantTeamProjectEnrollment"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantTeamProjectEnrollment"]="tenantTeamProjectEnrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTeamProjectEnrollmentById"]="tenantTeamProjectEnrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTeamProjectEnrollments"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTeamProjectEnrollmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantTeamProjectEnrollment"]="tenantTeamProjectEnrollmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["createTenantTeamRecord"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantTeamRecord"]="tenantTeamRecordId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTeamRecordById"]="tenantTeamRecordId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTeamRecords"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTeamRecordsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantTeamRecord"]="tenantTeamRecordId= tenantId= api-version= x-api-version: "
+    operation_parameters["createTenantTeam"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantTeam"]="tenantTeamId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTeamById"]="tenantTeamId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTeams"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTeamsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantTeam"]="tenantTeamId= tenantId= api-version= x-api-version: "
+    operation_parameters["assignLicenseAsync"]="tenantId= enrollmentId= licenseId= api-version= x-api-version: "
+    operation_parameters["createTenantAsync"]="api-version= x-api-version: "
+    operation_parameters["deSelectTenantAsync"]="api-version= x-api-version: "
+    operation_parameters["deleteTenantAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getAccessibleFeaturesAsync"]="tenantId= enrollmentId= api-version= x-api-version: "
+    operation_parameters["getCurrentTenantAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getEnrollmentLicenseByIdAsync"]="tenantId= enrollmentId= licenseId= api-version= x-api-version: "
+    operation_parameters["getEnrollmentLicensesAsync"]="tenantId= enrollmentId= api-version= x-api-version: "
+    operation_parameters["getEnrollmentPermissionsAsync"]="tenantId= enrollmentId= api-version= x-api-version: "
+    operation_parameters["getExtendedTenantAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getExtendedTenantEnrollmentAsync"]="tenantId= enrollmentId= api-version= x-api-version: "
+    operation_parameters["getRootTenantAsync"]="api-version= x-api-version: "
+    operation_parameters["getTenantAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantAvatarAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantCartAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantEnrollmentAsync"]="tenantId= enrollmentId= api-version= x-api-version: "
+    operation_parameters["getTenantEnrollmentsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantInvitationsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantLicensesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantNotificationsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantNotificationsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantPendingInvitationsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantRedeemedInvitationsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantRevokedInvitationsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantSocialProfileAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantUsersAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantWalletAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantWebPortalsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["revokeLicenseAsync"]="tenantId= enrollmentId= licenseId= api-version= x-api-version: "
+    operation_parameters["selectTenantAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateAvatarAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["validateEnrollmentFeatureAccess"]="tenantId= enrollmentId= feature= api-version= x-api-version: "
+    operation_parameters["validateEnrollmentPermissionsAsync"]="tenantId= enrollmentId= roles= permissions= api-version= x-api-version: "
+    operation_parameters["createTenantTerritory"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantTerritory"]="tenantTerritoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTerritories"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTerritoriesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTerritoryById"]="tenantTerritoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantTerritory"]="tenantTerritoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["createTenantType"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantType"]="tenantTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTypeById"]="tenantTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTypes"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantTypesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantType"]="tenantTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["createUnitAsync"]="unitGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["createUnitGroupAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteUnitAsync"]="unitGroupId= unitId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteUnitGroupAsync"]="unitGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["getUnitAsync"]="unitGroupId= unitId= tenantId= api-version= x-api-version: "
+    operation_parameters["getUnitGroupAsync"]="unitGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["getUnitGroupsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getUnitGroupsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getUnitsAsync"]="unitGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["getUnitsCountAsync"]="unitGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateUnitAsync"]="unitGroupId= unitId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateUnitGroupAsync"]="unitGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["createTenantUnit"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTenantUnit"]="tenantUnitId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantUnitById"]="tenantUnitId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantUnits"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantUnitsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantUnit"]="tenantUnitId= tenantId= api-version= x-api-version: "
+
+    # An associative array of possible values for enum parameters
+    declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+
+    #
+    # Check if this is OSX and use special __osx_init_completion function
+    #
+    if [[ `uname` =~ "Darwin" ]]; then
+        __osx_init_completion || return
+    else
+        _init_completion -s || return
+    fi
+
+
+    # Check if operation is already in the command line provided
+    for word in "${words[@]}"; do
+        if [[ -n $word && ${operations[$word]} ]]; then
+            operation="${word}"
+        fi
+    done
+
+    if [[ -z $operation ]]; then
+        case $prev in
+            --ciphers|--connect-timeout|-C|--continue-at|-F|--form|--form-string|\
+            --ftp-account|--ftp-alternative-to-user|-P|--ftp-port|-H|--header|-h|\
+            --help|--hostpubmd5|--keepalive-time|--krb|--limit-rate|--local-port|\
+            --mail-from|--mail-rcpt|--max-filesize|--max-redirs|-m|--max-time|\
+            --pass|--proto|--proto-redir|--proxy-user|--proxy1.0|-Q|--quote|-r|\
+            --range|-X|--request|--retry|--retry-delay|--retry-max-time|\
+            --socks5-gssapi-service|-t|--telnet-option|--tftp-blksize|-z|\
+            --time-cond|--url|-u|--user|-A|--user-agent|-V|--version|-w|\
+            --write-out|--resolve|--tlsuser|--tlspassword|--about)
+                return
+                ;;
+            -K|--config|-b|--cookie|-c|--cookie-jar|-D|--dump-header|--egd-file|\
+            --key|--libcurl|-o|--output|--random-file|-T|--upload-file|--trace|\
+            --trace-ascii|--netrc-file)
+                _filedir
+                return
+                ;;
+            --cacert|-E|--cert)
+                _filedir '@(c?(e)rt|cer|pem|der)'
+                return
+                ;;
+            --capath)
+                _filedir -d
+                return
+                ;;
+            --cert-type|--key-type)
+                COMPREPLY=( $( compgen -W 'DER PEM ENG' -- "$cur" ) )
+                return
+                ;;
+            --crlfile)
+                _filedir crl
+                return
+                ;;
+            -d|--data|--data-ascii|--data-binary|--data-urlencode)
+                if [[ $cur == \@* ]]; then
+                    cur=${cur:1}
+                    _filedir
+                    COMPREPLY=( "${COMPREPLY[@]/#/@}" )
+                fi
+                return
+                ;;
+            --delegation)
+                COMPREPLY=( $( compgen -W 'none policy always' -- "$cur" ) )
+                return
+                ;;
+            --engine)
+                COMPREPLY=( $( compgen -W 'list' -- "$cur" ) )
+                return
+                ;;
+            --ftp-method)
+                COMPREPLY=( $( compgen -W 'multicwd nocwd singlecwd' -- "$cur" ) )
+                return
+                ;;
+            --ftp-ssl-ccc-mode)
+                COMPREPLY=( $( compgen -W 'active passive' -- "$cur" ) )
+                return
+                ;;
+            --interface)
+                _available_interfaces -a
+                return
+                ;;
+            -x|--proxy|--socks4|--socks4a|--socks5|--socks5-hostname)
+                _known_hosts_real
+                return
+                ;;
+            --pubkey)
+                _filedir pub
+                return
+                ;;
+            --stderr)
+                COMPREPLY=( $( compgen -W '-' -- "$cur" ) )
+                _filedir
+                return
+                ;;
+            --tlsauthtype)
+                COMPREPLY=( $( compgen -W 'SRP' -- "$cur" ) )
+                return
+                ;;
+            --host)
+                COMPREPLY=( $( compgen -W 'http:// https://' -- "$cur" ) )
+                return
+                ;;
+            -ct|--content-type|-ac|--accept)
+                COMPREPLY=( $( compgen -W '${!mime_type_abbreviations[*]}' -- "$cur" ) )
+                return
+                ;;
+        esac
+    fi
+
+    #
+    # Complete the server address based on ~/.ssh/known_hosts
+    # and ~/.ssh/config
+    #
+    local prefix=${COMP_WORDS[COMP_CWORD-2]}
+    local colon=${COMP_WORDS[COMP_CWORD-1]}
+    if [[ "$colon" == ":" && ( $prefix == "https" || $prefix == "http" ) ]]; then
+        COMPREPLY=()
+        local comp_ssh_hosts=`[[ -f ~/.ssh/known_hosts ]] && \
+                              ( cat ~/.ssh/known_hosts | \
+                              grep '^[a-zA-Z0-9]' | \
+                              cut -f 1 -d ' ' | \
+                              sed -e s/,.*//g | \
+                              grep -v ^# | \
+                              uniq | \
+                              grep -v "\[" ) ;
+                              [[ -f ~/.ssh/config ]] && \
+                              ( cat ~/.ssh/config | \
+                              grep "^Host " | \
+                              awk '{print $2}' )`
+        COMPREPLY=( $( compgen -P '//' -W '${comp_ssh_hosts}' -- "${cur:2}") )
+        return
+    fi
+
+    #
+    # Complete the  and cURL's arguments
+    #
+    if [[ $cur == -* ]]; then
+        COMPREPLY=( $( compgen -W '$(_parse_help curl) $(_parse_help $1)' -- "$cur" ) )
+        return
+    fi
+
+    #
+    # If the argument starts with a letter this could be either an operation
+    # or an operation parameter
+    # When $cur is empty, suggest the list of operations by default
+    #
+    if [[ $cur =~ ^[A-Za-z_0-9]* ]]; then
+        # If operation has not been yet selected, suggest the list of operations
+        # otherwise suggest arguments of this operation as declared in the
+        # OpenAPI specification
+        if [[ -z $operation ]]; then
+            COMPREPLY=( $(compgen -W '${!operations[*]}' -- ${cur}) )
+        else
+            COMPREPLY=( $(compgen -W '${operation_parameters[$operation]}' -- ${cur}) )
+            compopt -o nospace
+        fi
+        return
+    fi
+
+} &&
+complete -F _ 
+
+# ex: ts=4 sw=4 et filetype=sh

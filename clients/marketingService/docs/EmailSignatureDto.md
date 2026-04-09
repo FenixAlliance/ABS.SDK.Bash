@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
+**codeType** | **string** |  | [optional] [default to null]
 **order** | **integer** |  | [optional] [default to null]
 **slug** | **string** |  | [optional] [default to null]
 **name** | **string** |  | [optional] [default to null]
@@ -14,6 +15,7 @@ Name | Type | Description | Notes
 **description** | **string** |  | [optional] [default to null]
 **highlightImage** | **string** |  | [optional] [default to null]
 **canonicalUrl** | **string** |  | [optional] [default to null]
+**emitResult** | [**AnyType**](.md) |  | [optional] [default to null]
 **seoTitle** | **string** |  | [optional] [default to null]
 **seoKeyWords** | **string** |  | [optional] [default to null]
 **seoKeyPhrases** | **string** |  | [optional] [default to null]

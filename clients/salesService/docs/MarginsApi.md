@@ -4,18 +4,20 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2SalesServiceMarginsMarginIdDetailsGet**](MarginsApi.md#apiV2SalesServiceMarginsMarginIdDetailsGet) | **GET** /api/v2/SalesService/Margins/{marginId}/Details | 
+[**getQuoteAsync**](MarginsApi.md#getQuoteAsync) | **GET** /api/v2/SalesService/Margins/{marginId}/Details | Get margin details by ID
 
 
 
-## apiV2SalesServiceMarginsMarginIdDetailsGet
+## getQuoteAsync
 
+Get margin details by ID
 
+Retrieves the details of a specific sales margin by its ID.
 
 ### Example
 
 ```bash
- apiV2SalesServiceMarginsMarginIdDetailsGet marginId=value  api-version=value x-api-version:value
+ getQuoteAsync marginId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -33,7 +35,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

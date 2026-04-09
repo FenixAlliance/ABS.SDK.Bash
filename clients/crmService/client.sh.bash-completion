@@ -94,14 +94,37 @@ _()
     operations["getOrganizationRelatedIndividualsAsync"]=1
     operations["getOrganizationRelatedOrganizationsAsync"]=1
     operations["patchContactAsync"]=1
+    operations["previewContactEmailTemplate"]=1
+    operations["sendContactEmail"]=1
     operations["updateContactAsync"]=1
     operations["updateContactAvatarAsync"]=1
     operations["upsertTenantOntoAnotherTenantContactListAsync"]=1
     operations["upsertUserOntoAnotherTenantContactListAsync"]=1
-    operations["apiV2CrmServiceSyncMePost"]=1
-    operations["apiV2CrmServiceSyncPost"]=1
-    operations["apiV2CrmServiceSyncTenantPost"]=1
-    operations["apiV2CrmServiceSyncUserPost"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["createContactOption"]=1
+    operations["deleteContactOption"]=1
+    operations["getContactOptionById"]=1
+    operations["getContactOptionByKey"]=1
+    operations["getContactOptions"]=1
+    operations["getContactOptionsCount"]=1
+    operations["updateContactOption"]=1
+    operations["upsertContactOption"]=1
+    operations["syncCurrentHolderToCurrentTenantCrm"]=1
+    operations["syncCurrentHolderToTenantCrm"]=1
+    operations["syncHolderToTenantCrmAsync"]=1
+    operations["syncTenantToTenantCrm"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
@@ -131,17 +154,46 @@ _()
     operation_parameters["getOrganizationRelatedIndividualsAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["getOrganizationRelatedOrganizationsAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["patchContactAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["previewContactEmailTemplate"]="contactId= api-version= x-api-version: "
+    operation_parameters["sendContactEmail"]="contactId= api-version= x-api-version: "
     operation_parameters["updateContactAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["updateContactAvatarAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["upsertTenantOntoAnotherTenantContactListAsync"]="tenantId= relatedTenantId= api-version= x-api-version: "
     operation_parameters["upsertUserOntoAnotherTenantContactListAsync"]="tenantId= relatedUserId= api-version= x-api-version: "
-    operation_parameters["apiV2CrmServiceSyncMePost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2CrmServiceSyncPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2CrmServiceSyncTenantPost"]="tenantId= relatedTenantId= api-version= x-api-version: "
-    operation_parameters["apiV2CrmServiceSyncUserPost"]="tenantId= relatedUserId= api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["createContactOption"]="contactId= tenantId= key= portalId= api-version= x-api-version: "
+    operation_parameters["deleteContactOption"]="contactId= optionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactOptionById"]="contactId= optionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactOptionByKey"]="contactId= key= tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["getContactOptions"]="contactId= tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["getContactOptionsCount"]="contactId= tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["updateContactOption"]="contactId= optionId= tenantId= api-version= x-api-version: "
+    operation_parameters["upsertContactOption"]="contactId= key= tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["syncCurrentHolderToCurrentTenantCrm"]="tenantId= api-version= x-api-version: "
+    operation_parameters["syncCurrentHolderToTenantCrm"]="tenantId= api-version= x-api-version: "
+    operation_parameters["syncHolderToTenantCrmAsync"]="tenantId= relatedUserId= api-version= x-api-version: "
+    operation_parameters["syncTenantToTenantCrm"]="tenantId= relatedTenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

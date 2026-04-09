@@ -1,0 +1,15 @@
+# AssetTransferUpdateDto
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**serialList** | **string** |  | [optional] [default to null]
+**quantity** | **string** |  | [optional] [default to null]
+**serial** | **string** |  | [optional] [default to null]
+**destinationLocationId** | **string** |  | [optional] [default to null]
+**destinationContactId** | **string** |  | [optional] [default to null]
+**destinationDepartmentId** | **string** |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

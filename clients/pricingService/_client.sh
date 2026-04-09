@@ -297,31 +297,43 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2PricingServiceDiscountListsCountGet[]" \
-            "apiV2PricingServiceDiscountListsDiscountListIdDelete[]" \
-            "apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet[]" \
-            "apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete[]" \
-            "apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut[]" \
-            "apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet[]" \
-            "apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost[]" \
-            "apiV2PricingServiceDiscountListsDiscountListIdGet[]" \
-            "apiV2PricingServiceDiscountListsDiscountListIdPut[]" \
-            "apiV2PricingServiceDiscountListsGet[]" \
-            "apiV2PricingServiceDiscountListsPost[]" \
-            "getDiscountListEntry[]"             "apiV2PricingServicePriceListsCountGet[]" \
-            "apiV2PricingServicePriceListsGet[]" \
-            "apiV2PricingServicePriceListsPost[]" \
-            "apiV2PricingServicePriceListsPriceListIdDelete[]" \
-            "apiV2PricingServicePriceListsPriceListIdPricesPost[]" \
-            "apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete[]" \
-            "apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut[]" \
-            "apiV2PricingServicePriceListsPriceListIdPut[]" \
-            "getPriceListAsync[]" \
-            "getPriceListPriceAsync[]" \
-            "getPriceListPricesAsync[]"             "apiV2PricingServicePricesItemIdFinalPriceGet[]" \
-            "apiV2PricingServicePricesItemIdPriceGet[]" \
-            "apiV2PricingServicePricesItemIdTotalSavingsGet[]" \
-            "apiV2PricingServicePricesItemIdTotalTaxesGet[]" \
+            "createDiscountList[Creates a new discount list]" \
+            "createDiscountListEntry[Creates a discount list entry]" \
+            "deleteDiscountList[Deletes a discount list]" \
+            "deleteDiscountListEntry[Deletes a discount list entry]" \
+            "getDiscountList[Gets a discount list by ID]" \
+            "getDiscountListEntries[Retrieves discounts in a discount list]" \
+            "getDiscountListEntriesCount[Counts discounts in a discount list]" \
+            "getDiscountListEntry[Gets a discount list entry by ID]" \
+            "getDiscountLists[Retrieves all discount lists]" \
+            "getDiscountListsCount[Counts discount lists]" \
+            "updateDiscountList[Updates a discount list]" \
+            "updateDiscountListEntry[Updates a discount list entry]"             "forgotPasswordPost[]" \
+            "healthGet[]" \
+            "helloGet[]" \
+            "loginPost[]" \
+            "manage2faPost[]" \
+            "manageInfoGet[]" \
+            "manageInfoPost[]" \
+            "mapIdentityApiConfirmEmail[]" \
+            "refreshPost[]" \
+            "registerPost[]" \
+            "resendConfirmationEmailPost[]" \
+            "resetPasswordPost[]" \
+            "versionGet[]"             "createPriceListAsync[Creates a new price list]" \
+            "createPriceListPricesAsync[Creates a price list entry]" \
+            "deletePriceListAsync[Deletes a price list]" \
+            "deletePriceListPriceAsync[Deletes a price list entry]" \
+            "getPriceListAsync[Gets a price list by ID]" \
+            "getPriceListPriceAsync[Gets a price list entry by ID]" \
+            "getPriceListPricesAsync[Retrieves prices in a price list]" \
+            "getPriceListsAsync[Retrieves all price lists]" \
+            "getPriceListsCountAsync[Counts price lists]" \
+            "updatePriceListAsync[Updates a price list]" \
+            "updatePriceListPriceAsync[Updates a price list entry]"             "getFinalPrice[Gets the final price for an item]" \
+            "getPrice[Gets the calculated price for an item]" \
+            "getTotalSavingsInUsd[Gets total savings for an item]" \
+            "getTotalTaxesInUsd[Gets total taxes for an item]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -329,113 +341,60 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2PricingServiceDiscountListsCountGet)
+      createDiscountList)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServiceDiscountListsDiscountListIdDelete)
+      createDiscountListEntry)
         local -a _op_arguments
         _op_arguments=(
           "discountListId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServiceDiscountListsDiscountListIdDiscountsCountGet)
+      deleteDiscountList)
         local -a _op_arguments
         _op_arguments=(
           "discountListId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdDelete)
+      deleteDiscountListEntry)
         local -a _op_arguments
         _op_arguments=(
           "discountListId=:[PATH] "
 "discountListEntryId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServiceDiscountListsDiscountListIdDiscountsDiscountListEntryIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "discountListId=:[PATH] "
-"discountListEntryId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2PricingServiceDiscountListsDiscountListIdDiscountsGet)
+      getDiscountList)
         local -a _op_arguments
         _op_arguments=(
           "discountListId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServiceDiscountListsDiscountListIdDiscountsPost)
+      getDiscountListEntries)
         local -a _op_arguments
         _op_arguments=(
           "discountListId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServiceDiscountListsDiscountListIdGet)
+      getDiscountListEntriesCount)
         local -a _op_arguments
         _op_arguments=(
           "discountListId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2PricingServiceDiscountListsDiscountListIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "discountListId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2PricingServiceDiscountListsGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2PricingServiceDiscountListsPost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getDiscountListEntry)
@@ -444,88 +403,155 @@ case $state in
           "discountListId=:[PATH] "
 "discountListEntryId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServicePriceListsCountGet)
+      getDiscountLists)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServicePriceListsGet)
+      getDiscountListsCount)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServicePriceListsPost)
+      updateDiscountList)
+        local -a _op_arguments
+        _op_arguments=(
+          "discountListId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateDiscountListEntry)
+        local -a _op_arguments
+        _op_arguments=(
+          "discountListId=:[PATH] "
+"discountListEntryId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      forgotPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      healthGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      helloGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      loginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                    "useCookies=true:[QUERY] "
+          "useCookies=false:[QUERY] "
+"useSessionCookies=true:[QUERY] "
+          "useSessionCookies=false:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manage2faPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      manageInfoPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      mapIdentityApiConfirmEmail)
+        local -a _op_arguments
+        _op_arguments=(
+                    "userId=:[QUERY] "
+"code=:[QUERY] "
+"changedEmail=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      refreshPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      registerPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resendConfirmationEmailPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      resetPasswordPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      versionGet)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createPriceListAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServicePriceListsPriceListIdDelete)
+      createPriceListPricesAsync)
         local -a _op_arguments
         _op_arguments=(
           "priceListId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServicePriceListsPriceListIdPricesPost)
+      deletePriceListAsync)
         local -a _op_arguments
         _op_arguments=(
           "priceListId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServicePriceListsPriceListIdPricesPriceIdDelete)
+      deletePriceListPriceAsync)
         local -a _op_arguments
         _op_arguments=(
           "priceListId=:[PATH] "
 "priceId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2PricingServicePriceListsPriceListIdPricesPriceIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "priceListId=:[PATH] "
-"priceId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2PricingServicePriceListsPriceListIdPut)
-        local -a _op_arguments
-        _op_arguments=(
-          "priceListId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getPriceListAsync)
@@ -533,9 +559,7 @@ case $state in
         _op_arguments=(
           "priceListId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getPriceListPriceAsync)
@@ -544,9 +568,7 @@ case $state in
           "priceListId=:[PATH] "
 "priceId=:[PATH] "
           "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getPriceListPricesAsync)
@@ -555,12 +577,41 @@ case $state in
           "priceListId=:[PATH] "
           "tenantId=:[QUERY] "
 "itemId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServicePricesItemIdFinalPriceGet)
+      getPriceListsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPriceListsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePriceListAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "priceListId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePriceListPriceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "priceListId=:[PATH] "
+"priceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getFinalPrice)
         local -a _op_arguments
         _op_arguments=(
           "itemId=:[PATH] "
@@ -570,19 +621,20 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServicePricesItemIdPriceGet)
+      getPrice)
         local -a _op_arguments
         _op_arguments=(
           "itemId=:[PATH] "
           "priceListId=:[QUERY] "
 "discountsListId=:[QUERY] "
+"quantity=:[QUERY] "
 "currencyId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServicePricesItemIdTotalSavingsGet)
+      getTotalSavingsInUsd)
         local -a _op_arguments
         _op_arguments=(
           "itemId=:[PATH] "
@@ -592,7 +644,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2PricingServicePricesItemIdTotalTaxesGet)
+      getTotalTaxesInUsd)
         local -a _op_arguments
         _op_arguments=(
           "itemId=:[PATH] "

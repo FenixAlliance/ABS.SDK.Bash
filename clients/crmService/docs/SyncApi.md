@@ -4,21 +4,23 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2CrmServiceSyncMePost**](SyncApi.md#apiV2CrmServiceSyncMePost) | **POST** /api/v2/CrmService/Sync/Me | 
-[**apiV2CrmServiceSyncPost**](SyncApi.md#apiV2CrmServiceSyncPost) | **POST** /api/v2/CrmService/Sync | 
-[**apiV2CrmServiceSyncTenantPost**](SyncApi.md#apiV2CrmServiceSyncTenantPost) | **POST** /api/v2/CrmService/Sync/Tenant | 
-[**apiV2CrmServiceSyncUserPost**](SyncApi.md#apiV2CrmServiceSyncUserPost) | **POST** /api/v2/CrmService/Sync/User | 
+[**syncCurrentHolderToCurrentTenantCrm**](SyncApi.md#syncCurrentHolderToCurrentTenantCrm) | **POST** /api/v2/CrmService/Sync | Sync the current user into the current tenant&#39;s contact list
+[**syncCurrentHolderToTenantCrm**](SyncApi.md#syncCurrentHolderToTenantCrm) | **POST** /api/v2/CrmService/Sync/Me | Sync the current user into a tenant&#39;s contact list
+[**syncHolderToTenantCrmAsync**](SyncApi.md#syncHolderToTenantCrmAsync) | **POST** /api/v2/CrmService/Sync/User | Sync a user into a tenant&#39;s contact list
+[**syncTenantToTenantCrm**](SyncApi.md#syncTenantToTenantCrm) | **POST** /api/v2/CrmService/Sync/Tenant | Sync a tenant into another tenant&#39;s contact list
 
 
 
-## apiV2CrmServiceSyncMePost
+## syncCurrentHolderToCurrentTenantCrm
 
+Sync the current user into the current tenant's contact list
 
+Synchronizes the currently authenticated user into the current tenant's CRM contact list.
 
 ### Example
 
 ```bash
- apiV2CrmServiceSyncMePost  tenantId=value  api-version=value x-api-version:value
+ syncCurrentHolderToCurrentTenantCrm  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -32,11 +34,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ContactDtoListEnvelope**](ContactDtoListEnvelope.md)
+[**Envelope**](Envelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -46,14 +48,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2CrmServiceSyncPost
+## syncCurrentHolderToTenantCrm
 
+Sync the current user into a tenant's contact list
 
+Synchronizes the currently authenticated user into the specified tenant's CRM contact list.
 
 ### Example
 
 ```bash
- apiV2CrmServiceSyncPost  tenantId=value  api-version=value x-api-version:value
+ syncCurrentHolderToTenantCrm  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -67,11 +71,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ContactDtoListEnvelope**](ContactDtoListEnvelope.md)
+[**Envelope**](Envelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -81,14 +85,54 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2CrmServiceSyncTenantPost
+## syncHolderToTenantCrmAsync
 
+Sync a user into a tenant's contact list
 
+Synchronizes a specified user into the tenant's CRM contact list.
 
 ### Example
 
 ```bash
- apiV2CrmServiceSyncTenantPost  tenantId=value  relatedTenantId=value  api-version=value x-api-version:value
+ syncHolderToTenantCrmAsync  tenantId=value  relatedUserId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **relatedUserId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Envelope**](Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## syncTenantToTenantCrm
+
+Sync a tenant into another tenant's contact list
+
+Synchronizes a tenant into another tenant's CRM contact list.
+
+### Example
+
+```bash
+ syncTenantToTenantCrm  tenantId=value  relatedTenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -107,43 +151,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2CrmServiceSyncUserPost
-
-
-
-### Example
-
-```bash
- apiV2CrmServiceSyncUserPost  tenantId=value  relatedUserId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **relatedUserId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**ContactDtoListEnvelope**](ContactDtoListEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

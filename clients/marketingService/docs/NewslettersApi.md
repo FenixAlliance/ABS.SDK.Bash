@@ -4,23 +4,25 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2MarketingServiceNewslettersCountGet**](NewslettersApi.md#apiV2MarketingServiceNewslettersCountGet) | **GET** /api/v2/MarketingService/Newsletters/Count | 
-[**apiV2MarketingServiceNewslettersGet**](NewslettersApi.md#apiV2MarketingServiceNewslettersGet) | **GET** /api/v2/MarketingService/Newsletters | 
-[**apiV2MarketingServiceNewslettersNewsletterIdDelete**](NewslettersApi.md#apiV2MarketingServiceNewslettersNewsletterIdDelete) | **DELETE** /api/v2/MarketingService/Newsletters/{newsletterId} | 
-[**apiV2MarketingServiceNewslettersNewsletterIdGet**](NewslettersApi.md#apiV2MarketingServiceNewslettersNewsletterIdGet) | **GET** /api/v2/MarketingService/Newsletters/{newsletterId} | 
-[**apiV2MarketingServiceNewslettersNewsletterIdPut**](NewslettersApi.md#apiV2MarketingServiceNewslettersNewsletterIdPut) | **PUT** /api/v2/MarketingService/Newsletters/{newsletterId} | 
-[**apiV2MarketingServiceNewslettersPost**](NewslettersApi.md#apiV2MarketingServiceNewslettersPost) | **POST** /api/v2/MarketingService/Newsletters | 
+[**createNewsletterAsync**](NewslettersApi.md#createNewsletterAsync) | **POST** /api/v2/MarketingService/Newsletters | Create a newsletter
+[**deleteNewsletterAsync**](NewslettersApi.md#deleteNewsletterAsync) | **DELETE** /api/v2/MarketingService/Newsletters/{newsletterId} | Delete a newsletter
+[**getNewsletterDetailsAsync**](NewslettersApi.md#getNewsletterDetailsAsync) | **GET** /api/v2/MarketingService/Newsletters/{newsletterId} | Get newsletter by ID
+[**getNewsletterODataAsync**](NewslettersApi.md#getNewsletterODataAsync) | **GET** /api/v2/MarketingService/Newsletters | Get newsletters
+[**getNewslettersCountAsync**](NewslettersApi.md#getNewslettersCountAsync) | **GET** /api/v2/MarketingService/Newsletters/Count | Get newsletters count
+[**updateNewsletterAsync**](NewslettersApi.md#updateNewsletterAsync) | **PUT** /api/v2/MarketingService/Newsletters/{newsletterId} | Update a newsletter
 
 
 
-## apiV2MarketingServiceNewslettersCountGet
+## createNewsletterAsync
 
+Create a newsletter
 
+Creates a new newsletter for the specified tenant.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceNewslettersCountGet  tenantId=value  api-version=value x-api-version:value
+ createNewsletterAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -29,68 +31,36 @@ Method | HTTP request | Description
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **newsletterCreateDto** | [**NewsletterCreateDto**](NewsletterCreateDto.md) |  |
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
 ### Return type
 
-[**Int32Envelope**](Int32Envelope.md)
+[**EmptyEnvelope**](EmptyEnvelope.md)
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceNewslettersGet
+## deleteNewsletterAsync
 
+Delete a newsletter
 
-
-### Example
-
-```bash
- apiV2MarketingServiceNewslettersGet  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-(empty response body)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2MarketingServiceNewslettersNewsletterIdDelete
-
-
+Deletes a newsletter by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceNewslettersNewsletterIdDelete  tenantId=value newsletterId=value  api-version=value x-api-version:value
+ deleteNewsletterAsync  tenantId=value newsletterId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -109,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -119,14 +89,16 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceNewslettersNewsletterIdGet
+## getNewsletterDetailsAsync
 
+Get newsletter by ID
 
+Retrieves the details of a specific newsletter by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceNewslettersNewsletterIdGet  tenantId=value newsletterId=value  api-version=value x-api-version:value
+ getNewsletterDetailsAsync  tenantId=value newsletterId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -145,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 
@@ -155,14 +127,90 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## apiV2MarketingServiceNewslettersNewsletterIdPut
+## getNewsletterODataAsync
 
+Get newsletters
 
+Retrieves a collection of newsletters for the specified tenant using OData query options.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceNewslettersNewsletterIdPut  tenantId=value newsletterId=value  api-version=value x-api-version:value
+ getNewsletterODataAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getNewslettersCountAsync
+
+Get newsletters count
+
+Returns the count of newsletters for the specified tenant using OData query options.
+
+### Example
+
+```bash
+ getNewslettersCountAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## updateNewsletterAsync
+
+Update a newsletter
+
+Updates an existing newsletter by its ID.
+
+### Example
+
+```bash
+ updateNewsletterAsync  tenantId=value newsletterId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -182,43 +230,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, application/xml
-- **Accept**: application/json, application/xml
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2MarketingServiceNewslettersPost
-
-
-
-### Example
-
-```bash
- apiV2MarketingServiceNewslettersPost  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
- **newsletterCreateDto** | [**NewsletterCreateDto**](NewsletterCreateDto.md) |  |
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
-
-### Return type
-
-[**EmptyEnvelope**](EmptyEnvelope.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

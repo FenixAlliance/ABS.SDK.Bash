@@ -1,0 +1,861 @@
+#  completion                               -*- shell-script -*-
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !
+# ! Note:
+# !
+# ! THIS SCRIPT HAS BEEN AUTOMATICALLY GENERATED USING
+# ! openapi-generator (https://openapi-generator.tech)
+# ! FROM OPENAPI SPECIFICATION IN JSON.
+# !
+# ! Generator version: 7.9.0
+# !
+# !
+# ! System wide installation:
+# !
+# ! $ sudo cp .bash-completion /etc/bash-completion.d/
+# !
+# !
+# ! User home installation (add this line to .bash_profile):
+# !
+# ! [ -r ~/.bash-completion ] && source ~/.bash-completion
+# !
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+declare -A mime_type_abbreviations
+# text/*
+mime_type_abbreviations["text"]="text/plain"
+mime_type_abbreviations["html"]="text/html"
+mime_type_abbreviations["md"]="text/x-markdown"
+mime_type_abbreviations["csv"]="text/csv"
+mime_type_abbreviations["css"]="text/css"
+mime_type_abbreviations["rtf"]="text/rtf"
+# application/*
+mime_type_abbreviations["json"]="application/json"
+mime_type_abbreviations["xml"]="application/xml"
+mime_type_abbreviations["yaml"]="application/yaml"
+mime_type_abbreviations["js"]="application/javascript"
+mime_type_abbreviations["bin"]="application/octet-stream"
+mime_type_abbreviations["rdf"]="application/rdf+xml"
+# image/*
+mime_type_abbreviations["jpg"]="image/jpeg"
+mime_type_abbreviations["png"]="image/png"
+mime_type_abbreviations["gif"]="image/gif"
+mime_type_abbreviations["bmp"]="image/bmp"
+mime_type_abbreviations["tiff"]="image/tiff"
+
+
+#
+# Check if this is OSX, if so defined custom init_completion
+#
+if [[ `uname` =~ "Darwin" ]]; then
+    __osx_init_completion()
+    {
+        COMPREPLY=()
+        _get_comp_words_by_ref cur prev words cword
+    }
+fi
+
+_()
+{
+    local cur
+    local prev
+    local words
+    local cword
+
+    # The reference of currently selected REST operation
+    local operation=""
+
+    # The list of available operation in the REST service
+    # It's modelled as an associative array for efficient key lookup
+    declare -A operations
+    operations["createAccountGroup"]=1
+    operations["deleteAccountGroup"]=1
+    operations["getAccountGroup"]=1
+    operations["getAccountGroups"]=1
+    operations["getAccountGroupsCountAsync"]=1
+    operations["updateAccountGroup"]=1
+    operations["createAccountingPeriod"]=1
+    operations["deleteAccountingPeriod"]=1
+    operations["getAccountingPeriod"]=1
+    operations["getAccountingPeriods"]=1
+    operations["getAccountingPeriodsCountAsync"]=1
+    operations["updateAccountingPeriod"]=1
+    operations["balanceAccountAsync"]=1
+    operations["balanceRootAccountAsync"]=1
+    operations["createAccountAsync"]=1
+    operations["createAccountCreditAsync"]=1
+    operations["createAccountDebitAsync"]=1
+    operations["createAccountEntryAsync"]=1
+    operations["createAccountRelationAsync"]=1
+    operations["createAccountTypeAsync"]=1
+    operations["deleteAccountAsync"]=1
+    operations["deleteAccountEntryAsync"]=1
+    operations["deleteAccountRelationAsync"]=1
+    operations["deleteAccountTypeAsync"]=1
+    operations["getAccountAggregateAsync"]=1
+    operations["getAccountCreditsAsync"]=1
+    operations["getAccountCreditsCountAsync"]=1
+    operations["getAccountDebitsAsync"]=1
+    operations["getAccountDebitsCountAsync"]=1
+    operations["getAccountDetailsAsync"]=1
+    operations["getAccountEntriesAsync"]=1
+    operations["getAccountEntryAsync"]=1
+    operations["getAccountRelationsAsync"]=1
+    operations["getAccountRelationsCountAsync"]=1
+    operations["getAccountTypesAsync"]=1
+    operations["getAccountTypesCountAsync"]=1
+    operations["getAccountsAsync"]=1
+    operations["getAccountsCountAsync"]=1
+    operations["getChildAccountsAsync"]=1
+    operations["getCreditAccountEntriesAsync"]=1
+    operations["getDebitAccountEntriesAsync"]=1
+    operations["getRootAccountsAsync"]=1
+    operations["patchAccountAsync"]=1
+    operations["updateAccountAsync"]=1
+    operations["updateAccountEntryAsync"]=1
+    operations["updateAccountRelationAsync"]=1
+    operations["updateAccountTypeAsync"]=1
+    operations["createBank"]=1
+    operations["createBankAccount"]=1
+    operations["createBankGuarantee"]=1
+    operations["createBankTransaction"]=1
+    operations["deleteBank"]=1
+    operations["deleteBankAccount"]=1
+    operations["deleteBankGuarantee"]=1
+    operations["deleteBankTransaction"]=1
+    operations["getBank"]=1
+    operations["getBankAccount"]=1
+    operations["getBankAccounts"]=1
+    operations["getBankAccountsCount"]=1
+    operations["getBankGuarantee"]=1
+    operations["getBankGuarantees"]=1
+    operations["getBankGuaranteesCount"]=1
+    operations["getBankTransaction"]=1
+    operations["getBankTransactions"]=1
+    operations["getBankTransactionsCount"]=1
+    operations["getBanks"]=1
+    operations["getBanksCount"]=1
+    operations["updateBank"]=1
+    operations["updateBankAccount"]=1
+    operations["updateBankGuarantee"]=1
+    operations["updateBankTransaction"]=1
+    operations["createBillingProfileAsync"]=1
+    operations["deleteBillingProfileAsync"]=1
+    operations["getBillingProfileByIdAsync"]=1
+    operations["getBillingProfilesAsync"]=1
+    operations["getBillingProfilesCountAsync"]=1
+    operations["updateBillingProfileAsync"]=1
+    operations["createBudgetAccountEntryAsync"]=1
+    operations["createBudgetAsync"]=1
+    operations["deleteBudgetAccountEntryAsync"]=1
+    operations["deleteBudgetAsync"]=1
+    operations["getBudgetAccountEntriesCollectionAsync"]=1
+    operations["getBudgetAccountEntryAsync"]=1
+    operations["getBudgetDetailsAsync"]=1
+    operations["getBudgetsAsync"]=1
+    operations["updateBudgetAccountEntryAsync"]=1
+    operations["updateBudgetAsync"]=1
+    operations["createCommissionAsync"]=1
+    operations["createPaymentCommissionAsync"]=1
+    operations["deleteCommissionAsync"]=1
+    operations["deletePaymentCommissionAsync"]=1
+    operations["getCommissionAsync"]=1
+    operations["getCommissionsAsync"]=1
+    operations["getCommissionsCountAsync"]=1
+    operations["getPaymentCommissionAsync"]=1
+    operations["getPaymentCommissionsAsync"]=1
+    operations["getPaymentCommissionsCountAsync"]=1
+    operations["updateCommissionAsync"]=1
+    operations["updatePaymentCommissionAsync"]=1
+    operations["createCostCentre"]=1
+    operations["createCostCentreBudget"]=1
+    operations["createCostCentreGroup"]=1
+    operations["deleteCostCentre"]=1
+    operations["deleteCostCentreBudget"]=1
+    operations["deleteCostCentreGroup"]=1
+    operations["getCostCentre"]=1
+    operations["getCostCentreBudget"]=1
+    operations["getCostCentreBudgets"]=1
+    operations["getCostCentreGroup"]=1
+    operations["getCostCentreGroups"]=1
+    operations["getCostCentreGroupsCount"]=1
+    operations["getCostCentres"]=1
+    operations["getCostCentresCount"]=1
+    operations["updateCostCentre"]=1
+    operations["updateCostCentreBudget"]=1
+    operations["updateCostCentreGroup"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["createFinancialBookAsync"]=1
+    operations["deleteFinancialBookAsync"]=1
+    operations["getFinancialBookDetailsAsync"]=1
+    operations["getFinancialBooksAsync"]=1
+    operations["getFinancialBooksCountAsync"]=1
+    operations["updateFinancialBookAsync"]=1
+    operations["createFiscalAuthority"]=1
+    operations["deleteFiscalAuthority"]=1
+    operations["getFiscalAuthorities"]=1
+    operations["getFiscalAuthoritiesCount"]=1
+    operations["getFiscalAuthority"]=1
+    operations["updateFiscalAuthority"]=1
+    operations["createFiscalYear"]=1
+    operations["deleteFiscalYear"]=1
+    operations["getFiscalYear"]=1
+    operations["getFiscalYears"]=1
+    operations["getFiscalYearsCount"]=1
+    operations["updateFiscalYear"]=1
+    operations["createInvoiceEnumerationRange"]=1
+    operations["deleteInvoiceEnumerationRange"]=1
+    operations["getInvoiceEnumerationRange"]=1
+    operations["getInvoiceEnumerationRanges"]=1
+    operations["getInvoiceEnumerationRangesCount"]=1
+    operations["updateInvoiceEnumerationRange"]=1
+    operations["createFiscalIdentificationType"]=1
+    operations["deleteFiscalIdentificationType"]=1
+    operations["getFiscalIdentificationType"]=1
+    operations["getFiscalIdentificationTypes"]=1
+    operations["getFiscalIdentificationTypesCount"]=1
+    operations["updateFiscalIdentificationType"]=1
+    operations["createFiscalPeriod"]=1
+    operations["deleteFiscalPeriod"]=1
+    operations["getFiscalPeriod"]=1
+    operations["getFiscalPeriods"]=1
+    operations["getFiscalPeriodsCount"]=1
+    operations["updateFiscalPeriod"]=1
+    operations["createFiscalRegime"]=1
+    operations["deleteFiscalRegime"]=1
+    operations["getFiscalRegime"]=1
+    operations["getFiscalRegimes"]=1
+    operations["getFiscalRegimesCount"]=1
+    operations["updateFiscalRegime"]=1
+    operations["createFiscalResponsibility"]=1
+    operations["deleteFiscalResponsibility"]=1
+    operations["getFiscalResponsibilities"]=1
+    operations["getFiscalResponsibilitiesCount"]=1
+    operations["getFiscalResponsibility"]=1
+    operations["updateFiscalResponsibility"]=1
+    operations["createFiscalResponsibilityRecord"]=1
+    operations["deleteFiscalResponsibilityRecord"]=1
+    operations["getFiscalResponsibilityRecord"]=1
+    operations["getFiscalResponsibilityRecords"]=1
+    operations["getFiscalResponsibilityRecordsCount"]=1
+    operations["updateFiscalResponsibilityRecord"]=1
+    operations["createFiscalYearAsync"]=1
+    operations["deleteFiscalYearAsync"]=1
+    operations["getFiscalYearDetailsAsync"]=1
+    operations["getFiscalYearsAsync"]=1
+    operations["getFiscalYearsCountAsync"]=1
+    operations["updateFiscalYearAsync"]=1
+    operations["createGrantAsync"]=1
+    operations["deleteGrantAsync"]=1
+    operations["getGrantDetailsAsync"]=1
+    operations["getGrantsAsync"]=1
+    operations["getGrantsCountAsync"]=1
+    operations["updateGrantAsync"]=1
+    operations["createInvoiceEnumerationRangeAsync"]=1
+    operations["deleteInvoiceEnumerationRangeAsync"]=1
+    operations["getInvoiceEnumerationRangeDetailsAsync"]=1
+    operations["getInvoiceEnumerationRangesAsync"]=1
+    operations["updateInvoiceEnumerationRangeAsync"]=1
+    operations["createJournalTypeAsync"]=1
+    operations["deleteJournalTypeAsync"]=1
+    operations["getJournalTypeDetailsAsync"]=1
+    operations["getJournalTypesAsync"]=1
+    operations["getJournalTypesCountAsync"]=1
+    operations["updateJournalTypeAsync"]=1
+    operations["countJournalsAsync"]=1
+    operations["createJournalAsync"]=1
+    operations["createJournalEntryAsync"]=1
+    operations["deleteJournalAsync"]=1
+    operations["deleteJournalEntryAsync"]=1
+    operations["getJournalDetailsAsync"]=1
+    operations["getJournalEntriesAsync"]=1
+    operations["getJournalEntriesCountAsync"]=1
+    operations["getJournalsAsync"]=1
+    operations["updateJournalAsync"]=1
+    operations["updateJournalEntryAsync"]=1
+    operations["createLedgerTypeAsync"]=1
+    operations["deleteLedgerTypeAsync"]=1
+    operations["getLedgerTypeDetailsAsync"]=1
+    operations["getLedgerTypesAsync"]=1
+    operations["getLedgerTypesCountAsync"]=1
+    operations["updateLedgerTypeAsync"]=1
+    operations["createLedgerAsync"]=1
+    operations["deleteLedgerAsync"]=1
+    operations["getLedgerDetailsAsync"]=1
+    operations["getLedgersAsync"]=1
+    operations["getLedgersCountAsync"]=1
+    operations["updateLedgerAsync"]=1
+    operations["createLoanApplicationAsync"]=1
+    operations["createLoanAsync"]=1
+    operations["deleteLoanApplicationAsync"]=1
+    operations["deleteLoanAsync"]=1
+    operations["getLoanApplicationDetailsAsync"]=1
+    operations["getLoanApplicationsAsync"]=1
+    operations["getLoanApplicationsCountAsync"]=1
+    operations["getLoanDetailsAsync"]=1
+    operations["getLoansAsync"]=1
+    operations["getLoansCountAsync"]=1
+    operations["updateLoanApplicationAsync"]=1
+    operations["updateLoanAsync"]=1
+    operations["createReceiptAsync"]=1
+    operations["deleteReceiptAsync"]=1
+    operations["getReceiptDetailsAsync"]=1
+    operations["getReceiptsAsync"]=1
+    operations["getReceiptsCountAsync"]=1
+    operations["updateReceiptAsync"]=1
+    operations["createShareClass"]=1
+    operations["createShareIssuance"]=1
+    operations["createShareTransfer"]=1
+    operations["createShareTransferReason"]=1
+    operations["deleteShareClass"]=1
+    operations["deleteShareIssuance"]=1
+    operations["deleteShareTransfer"]=1
+    operations["deleteShareTransferReason"]=1
+    operations["getShareClass"]=1
+    operations["getShareClasses"]=1
+    operations["getShareClassesCount"]=1
+    operations["getShareIssuance"]=1
+    operations["getShareIssuances"]=1
+    operations["getShareIssuancesCount"]=1
+    operations["getShareTransfer"]=1
+    operations["getShareTransferReason"]=1
+    operations["getShareTransferReasons"]=1
+    operations["getShareTransferReasonsCount"]=1
+    operations["getShareTransfers"]=1
+    operations["getShareTransfersCount"]=1
+    operations["updateShareClass"]=1
+    operations["updateShareIssuance"]=1
+    operations["updateShareTransfer"]=1
+    operations["updateShareTransferReason"]=1
+    operations["createAppliedTaxPolicyRecord"]=1
+    operations["createItemTaxPolicyRecord"]=1
+    operations["createTaxPolicy"]=1
+    operations["deleteAppliedTaxPolicyRecord"]=1
+    operations["deleteItemTaxPolicyRecord"]=1
+    operations["deleteTaxPolicy"]=1
+    operations["getAppliedTaxPolicyRecord"]=1
+    operations["getAppliedTaxPolicyRecords"]=1
+    operations["getAppliedTaxPolicyRecordsCount"]=1
+    operations["getItemTaxPolicyRecord"]=1
+    operations["getItemTaxPolicyRecords"]=1
+    operations["getTaxPolicies"]=1
+    operations["getTaxPoliciesByAuthority"]=1
+    operations["getTaxPoliciesCount"]=1
+    operations["getTaxPolicy"]=1
+    operations["updateAppliedTaxPolicyRecord"]=1
+    operations["updateItemTaxPolicyRecord"]=1
+    operations["updateTaxPolicy"]=1
+    operations["createTaxRate"]=1
+    operations["deleteTaxRate"]=1
+    operations["getTaxRate"]=1
+    operations["getTaxRates"]=1
+    operations["getTaxRatesCount"]=1
+    operations["updateTaxRate"]=1
+    operations["createTransaction"]=1
+    operations["createTransactionCategory"]=1
+    operations["deleteTransaction"]=1
+    operations["deleteTransactionCategory"]=1
+    operations["getTransaction"]=1
+    operations["getTransactionCategories"]=1
+    operations["getTransactionCategoriesCount"]=1
+    operations["getTransactionCategory"]=1
+    operations["getTransactions"]=1
+    operations["getTransactionsCount"]=1
+    operations["updateTransaction"]=1
+    operations["updateTransactionCategory"]=1
+
+    # An associative array of operations to their parameters
+    # Only include path, query and header parameters
+    declare -A operation_parameters
+    operation_parameters["createAccountGroup"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteAccountGroup"]="accountGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountGroup"]="accountGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountGroups"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountGroupsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateAccountGroup"]="accountGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["createAccountingPeriod"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteAccountingPeriod"]="accountingPeriodId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountingPeriod"]="accountingPeriodId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountingPeriods"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountingPeriodsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateAccountingPeriod"]="accountingPeriodId= tenantId= api-version= x-api-version: "
+    operation_parameters["balanceAccountAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["balanceRootAccountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createAccountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createAccountCreditAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["createAccountDebitAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["createAccountEntryAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["createAccountRelationAsync"]="tenantId= accountId= api-version= x-api-version: "
+    operation_parameters["createAccountTypeAsync"]="tenantId= accountId= api-version= x-api-version: "
+    operation_parameters["deleteAccountAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteAccountEntryAsync"]="accountId= entryId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteAccountRelationAsync"]="accountRelationId= tenantId= accountId= api-version= x-api-version: "
+    operation_parameters["deleteAccountTypeAsync"]="accountTypeId= tenantId= accountId= api-version= x-api-version: "
+    operation_parameters["getAccountAggregateAsync"]="tenantId= currencyId= api-version= x-api-version: "
+    operation_parameters["getAccountCreditsAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountCreditsCountAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountDebitsAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountDebitsCountAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountDetailsAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountEntriesAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountEntryAsync"]="accountId= entryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountRelationsAsync"]="tenantId= accountId= api-version= x-api-version: "
+    operation_parameters["getAccountRelationsCountAsync"]="tenantId= accountId= api-version= x-api-version: "
+    operation_parameters["getAccountTypesAsync"]="tenantId= accountTypeId= api-version= x-api-version: "
+    operation_parameters["getAccountTypesCountAsync"]="tenantId= accountTypeId= api-version= x-api-version: "
+    operation_parameters["getAccountsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getChildAccountsAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCreditAccountEntriesAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["getDebitAccountEntriesAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["getRootAccountsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchAccountAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateAccountAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateAccountEntryAsync"]="accountId= entryId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateAccountRelationAsync"]="accountRelationId= tenantId= accountId= api-version= x-api-version: "
+    operation_parameters["updateAccountTypeAsync"]="accountTypeId= tenantId= accountId= api-version= x-api-version: "
+    operation_parameters["createBank"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createBankAccount"]="bankId= tenantId= api-version= x-api-version: "
+    operation_parameters["createBankGuarantee"]="bankId= tenantId= api-version= x-api-version: "
+    operation_parameters["createBankTransaction"]="bankId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteBank"]="bankId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteBankAccount"]="bankId= accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteBankGuarantee"]="bankId= guaranteeId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteBankTransaction"]="bankId= transactionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBank"]="bankId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBankAccount"]="bankId= accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBankAccounts"]="bankId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBankAccountsCount"]="bankId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBankGuarantee"]="bankId= guaranteeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBankGuarantees"]="bankId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBankGuaranteesCount"]="bankId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBankTransaction"]="bankId= transactionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBankTransactions"]="bankId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBankTransactionsCount"]="bankId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBanks"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getBanksCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateBank"]="bankId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateBankAccount"]="bankId= accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateBankGuarantee"]="bankId= guaranteeId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateBankTransaction"]="bankId= transactionId= tenantId= api-version= x-api-version: "
+    operation_parameters["createBillingProfileAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteBillingProfileAsync"]="billingProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBillingProfileByIdAsync"]="billingProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBillingProfilesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getBillingProfilesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateBillingProfileAsync"]="billingProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["createBudgetAccountEntryAsync"]="budgetId= tenantId= api-version= x-api-version: "
+    operation_parameters["createBudgetAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteBudgetAccountEntryAsync"]="budgetId= entryId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteBudgetAsync"]="budgetId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBudgetAccountEntriesCollectionAsync"]="budgetId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBudgetAccountEntryAsync"]="budgetId= entryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBudgetDetailsAsync"]="budgetId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBudgetsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateBudgetAccountEntryAsync"]="budgetId= entryId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateBudgetAsync"]="budgetId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCommissionAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createPaymentCommissionAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCommissionAsync"]="commissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["deletePaymentCommissionAsync"]="paymentCommissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCommissionAsync"]="commissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCommissionsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCommissionsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getPaymentCommissionAsync"]="paymentCommissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPaymentCommissionsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getPaymentCommissionsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCommissionAsync"]="commissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["updatePaymentCommissionAsync"]="paymentCommissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["createCostCentre"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createCostCentreBudget"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createCostCentreGroup"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCostCentre"]="costCentreId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCostCentreBudget"]="budgetId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteCostCentreGroup"]="groupId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCostCentre"]="costCentreId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCostCentreBudget"]="budgetId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCostCentreBudgets"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCostCentreGroup"]="groupId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCostCentreGroups"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCostCentreGroupsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCostCentres"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getCostCentresCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateCostCentre"]="costCentreId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateCostCentreBudget"]="budgetId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateCostCentreGroup"]="groupId= tenantId= api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["createFinancialBookAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteFinancialBookAsync"]="financialBookId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFinancialBookDetailsAsync"]="financialBookId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFinancialBooksAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getFinancialBooksCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateFinancialBookAsync"]="financialBookId= tenantId= api-version= x-api-version: "
+    operation_parameters["createFiscalAuthority"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteFiscalAuthority"]="authorityId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalAuthorities"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalAuthoritiesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalAuthority"]="authorityId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateFiscalAuthority"]="authorityId= tenantId= api-version= x-api-version: "
+    operation_parameters["createFiscalYear"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteFiscalYear"]="fiscalYearId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalYear"]="fiscalAuthorityId= fiscalYearId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalYears"]="authorityId= tenantId= fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["getFiscalYearsCount"]="fiscalAuthorityId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateFiscalYear"]="fiscalYearId= tenantId= api-version= x-api-version: "
+    operation_parameters["createInvoiceEnumerationRange"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteInvoiceEnumerationRange"]="enumerationRangeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getInvoiceEnumerationRange"]="fiscalAuthorityId= enumerationRangeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getInvoiceEnumerationRanges"]="authorityId= fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["getInvoiceEnumerationRangesCount"]="fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["updateInvoiceEnumerationRange"]="enumerationRangeId= tenantId= api-version= x-api-version: "
+    operation_parameters["createFiscalIdentificationType"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteFiscalIdentificationType"]="identificationTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalIdentificationType"]="fiscalAuthorityId= identificationTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalIdentificationTypes"]="authorityId= api-version= x-api-version: "
+    operation_parameters["getFiscalIdentificationTypesCount"]="authorityId= api-version= x-api-version: "
+    operation_parameters["updateFiscalIdentificationType"]="identificationTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["createFiscalPeriod"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteFiscalPeriod"]="fiscalPeriodId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalPeriod"]="fiscalAuthorityId= fiscalYearId= fiscalPeriodId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalPeriods"]="fiscalYearId= authorityId= tenantId= fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["getFiscalPeriodsCount"]="fiscalAuthorityId= fiscalYearId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateFiscalPeriod"]="fiscalPeriodId= tenantId= api-version= x-api-version: "
+    operation_parameters["createFiscalRegime"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteFiscalRegime"]="regimeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalRegime"]="fiscalAuthorityId= regimeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalRegimes"]="authorityId= fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["getFiscalRegimesCount"]="fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["updateFiscalRegime"]="regimeId= tenantId= api-version= x-api-version: "
+    operation_parameters["createFiscalResponsibility"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteFiscalResponsibility"]="fiscalResponsibilityId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalResponsibilities"]="authorityId= fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["getFiscalResponsibilitiesCount"]="fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["getFiscalResponsibility"]="fiscalAuthorityId= fiscalResponsibilityId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateFiscalResponsibility"]="fiscalResponsibilityId= tenantId= api-version= x-api-version: "
+    operation_parameters["createFiscalResponsibilityRecord"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteFiscalResponsibilityRecord"]="fiscalResponsibilityRecordId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalResponsibilityRecord"]="fiscalAuthorityId= fiscalResponsibilityId= fiscalResponsibilityRecordId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalResponsibilityRecords"]="fiscalAuthorityId= fiscalResponsibilityId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalResponsibilityRecordsCount"]="fiscalAuthorityId= fiscalResponsibilityId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateFiscalResponsibilityRecord"]="fiscalResponsibilityRecordId= tenantId= api-version= x-api-version: "
+    operation_parameters["createFiscalYearAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteFiscalYearAsync"]="fiscalYearId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalYearDetailsAsync"]="fiscalYearId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalYearsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalYearsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateFiscalYearAsync"]="fiscalYearId= tenantId= api-version= x-api-version: "
+    operation_parameters["createGrantAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteGrantAsync"]="grantId= tenantId= api-version= x-api-version: "
+    operation_parameters["getGrantDetailsAsync"]="grantId= tenantId= api-version= x-api-version: "
+    operation_parameters["getGrantsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getGrantsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateGrantAsync"]="grantId= tenantId= api-version= x-api-version: "
+    operation_parameters["createInvoiceEnumerationRangeAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteInvoiceEnumerationRangeAsync"]="rangeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getInvoiceEnumerationRangeDetailsAsync"]="rangeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getInvoiceEnumerationRangesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateInvoiceEnumerationRangeAsync"]="rangeId= tenantId= api-version= x-api-version: "
+    operation_parameters["createJournalTypeAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteJournalTypeAsync"]="journalTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJournalTypeDetailsAsync"]="journalTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJournalTypesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getJournalTypesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateJournalTypeAsync"]="journalTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["countJournalsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createJournalAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createJournalEntryAsync"]="journalId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteJournalAsync"]="journalId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteJournalEntryAsync"]="journalId= entryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJournalDetailsAsync"]="journalId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJournalEntriesAsync"]="journalId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJournalEntriesCountAsync"]="journalId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJournalsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateJournalAsync"]="journalId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateJournalEntryAsync"]="journalId= entryId= tenantId= api-version= x-api-version: "
+    operation_parameters["createLedgerTypeAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteLedgerTypeAsync"]="ledgerTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLedgerTypeDetailsAsync"]="ledgerTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLedgerTypesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getLedgerTypesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateLedgerTypeAsync"]="ledgerTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["createLedgerAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteLedgerAsync"]="ledgerId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLedgerDetailsAsync"]="ledgerId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLedgersAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getLedgersCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateLedgerAsync"]="ledgerId= tenantId= api-version= x-api-version: "
+    operation_parameters["createLoanApplicationAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createLoanAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteLoanApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteLoanAsync"]="loanId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLoanApplicationDetailsAsync"]="applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLoanApplicationsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getLoanApplicationsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getLoanDetailsAsync"]="loanId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLoansAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getLoansCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateLoanApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateLoanAsync"]="loanId= tenantId= api-version= x-api-version: "
+    operation_parameters["createReceiptAsync"]="tenantId= "
+    operation_parameters["deleteReceiptAsync"]="receiptId= tenantId= "
+    operation_parameters["getReceiptDetailsAsync"]="receiptId= tenantId= "
+    operation_parameters["getReceiptsAsync"]="tenantId= "
+    operation_parameters["getReceiptsCountAsync"]="tenantId= "
+    operation_parameters["updateReceiptAsync"]="receiptId= tenantId= "
+    operation_parameters["createShareClass"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createShareIssuance"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createShareTransfer"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createShareTransferReason"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteShareClass"]="shareClassId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteShareIssuance"]="issuanceId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteShareTransfer"]="transferId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteShareTransferReason"]="reasonId= tenantId= api-version= x-api-version: "
+    operation_parameters["getShareClass"]="shareClassId= tenantId= api-version= x-api-version: "
+    operation_parameters["getShareClasses"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getShareClassesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getShareIssuance"]="issuanceId= tenantId= api-version= x-api-version: "
+    operation_parameters["getShareIssuances"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getShareIssuancesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getShareTransfer"]="transferId= tenantId= api-version= x-api-version: "
+    operation_parameters["getShareTransferReason"]="reasonId= tenantId= api-version= x-api-version: "
+    operation_parameters["getShareTransferReasons"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getShareTransferReasonsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getShareTransfers"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getShareTransfersCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateShareClass"]="shareClassId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateShareIssuance"]="issuanceId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateShareTransfer"]="transferId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateShareTransferReason"]="reasonId= tenantId= api-version= x-api-version: "
+    operation_parameters["createAppliedTaxPolicyRecord"]="taxPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["createItemTaxPolicyRecord"]="taxPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["createTaxPolicy"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteAppliedTaxPolicyRecord"]="taxPolicyId= appliedTaxPolicyRecordId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemTaxPolicyRecord"]="taxPolicyId= itemTaxPolicyRecordId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTaxPolicy"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getAppliedTaxPolicyRecord"]="taxPolicyId= appliedTaxPolicyRecordId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAppliedTaxPolicyRecords"]="taxPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAppliedTaxPolicyRecordsCount"]="taxPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemTaxPolicyRecord"]="taxPolicyId= itemTaxPolicyRecordId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemTaxPolicyRecords"]="taxPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTaxPolicies"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTaxPoliciesByAuthority"]="authorityId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTaxPoliciesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTaxPolicy"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["updateAppliedTaxPolicyRecord"]="taxPolicyId= appliedTaxPolicyRecordId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateItemTaxPolicyRecord"]="taxPolicyId= itemTaxPolicyRecordId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateTaxPolicy"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["createTaxRate"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTaxRate"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getTaxRate"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getTaxRates"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTaxRatesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTaxRate"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["createTransaction"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createTransactionCategory"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTransaction"]="transactionId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTransactionCategory"]="categoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTransaction"]="transactionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTransactionCategories"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTransactionCategoriesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTransactionCategory"]="categoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["getTransactions"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTransactionsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTransaction"]="transactionId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateTransactionCategory"]="categoryId= tenantId= api-version= x-api-version: "
+
+    # An associative array of possible values for enum parameters
+    declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+
+    #
+    # Check if this is OSX and use special __osx_init_completion function
+    #
+    if [[ `uname` =~ "Darwin" ]]; then
+        __osx_init_completion || return
+    else
+        _init_completion -s || return
+    fi
+
+
+    # Check if operation is already in the command line provided
+    for word in "${words[@]}"; do
+        if [[ -n $word && ${operations[$word]} ]]; then
+            operation="${word}"
+        fi
+    done
+
+    if [[ -z $operation ]]; then
+        case $prev in
+            --ciphers|--connect-timeout|-C|--continue-at|-F|--form|--form-string|\
+            --ftp-account|--ftp-alternative-to-user|-P|--ftp-port|-H|--header|-h|\
+            --help|--hostpubmd5|--keepalive-time|--krb|--limit-rate|--local-port|\
+            --mail-from|--mail-rcpt|--max-filesize|--max-redirs|-m|--max-time|\
+            --pass|--proto|--proto-redir|--proxy-user|--proxy1.0|-Q|--quote|-r|\
+            --range|-X|--request|--retry|--retry-delay|--retry-max-time|\
+            --socks5-gssapi-service|-t|--telnet-option|--tftp-blksize|-z|\
+            --time-cond|--url|-u|--user|-A|--user-agent|-V|--version|-w|\
+            --write-out|--resolve|--tlsuser|--tlspassword|--about)
+                return
+                ;;
+            -K|--config|-b|--cookie|-c|--cookie-jar|-D|--dump-header|--egd-file|\
+            --key|--libcurl|-o|--output|--random-file|-T|--upload-file|--trace|\
+            --trace-ascii|--netrc-file)
+                _filedir
+                return
+                ;;
+            --cacert|-E|--cert)
+                _filedir '@(c?(e)rt|cer|pem|der)'
+                return
+                ;;
+            --capath)
+                _filedir -d
+                return
+                ;;
+            --cert-type|--key-type)
+                COMPREPLY=( $( compgen -W 'DER PEM ENG' -- "$cur" ) )
+                return
+                ;;
+            --crlfile)
+                _filedir crl
+                return
+                ;;
+            -d|--data|--data-ascii|--data-binary|--data-urlencode)
+                if [[ $cur == \@* ]]; then
+                    cur=${cur:1}
+                    _filedir
+                    COMPREPLY=( "${COMPREPLY[@]/#/@}" )
+                fi
+                return
+                ;;
+            --delegation)
+                COMPREPLY=( $( compgen -W 'none policy always' -- "$cur" ) )
+                return
+                ;;
+            --engine)
+                COMPREPLY=( $( compgen -W 'list' -- "$cur" ) )
+                return
+                ;;
+            --ftp-method)
+                COMPREPLY=( $( compgen -W 'multicwd nocwd singlecwd' -- "$cur" ) )
+                return
+                ;;
+            --ftp-ssl-ccc-mode)
+                COMPREPLY=( $( compgen -W 'active passive' -- "$cur" ) )
+                return
+                ;;
+            --interface)
+                _available_interfaces -a
+                return
+                ;;
+            -x|--proxy|--socks4|--socks4a|--socks5|--socks5-hostname)
+                _known_hosts_real
+                return
+                ;;
+            --pubkey)
+                _filedir pub
+                return
+                ;;
+            --stderr)
+                COMPREPLY=( $( compgen -W '-' -- "$cur" ) )
+                _filedir
+                return
+                ;;
+            --tlsauthtype)
+                COMPREPLY=( $( compgen -W 'SRP' -- "$cur" ) )
+                return
+                ;;
+            --host)
+                COMPREPLY=( $( compgen -W 'http:// https://' -- "$cur" ) )
+                return
+                ;;
+            -ct|--content-type|-ac|--accept)
+                COMPREPLY=( $( compgen -W '${!mime_type_abbreviations[*]}' -- "$cur" ) )
+                return
+                ;;
+        esac
+    fi
+
+    #
+    # Complete the server address based on ~/.ssh/known_hosts
+    # and ~/.ssh/config
+    #
+    local prefix=${COMP_WORDS[COMP_CWORD-2]}
+    local colon=${COMP_WORDS[COMP_CWORD-1]}
+    if [[ "$colon" == ":" && ( $prefix == "https" || $prefix == "http" ) ]]; then
+        COMPREPLY=()
+        local comp_ssh_hosts=`[[ -f ~/.ssh/known_hosts ]] && \
+                              ( cat ~/.ssh/known_hosts | \
+                              grep '^[a-zA-Z0-9]' | \
+                              cut -f 1 -d ' ' | \
+                              sed -e s/,.*//g | \
+                              grep -v ^# | \
+                              uniq | \
+                              grep -v "\[" ) ;
+                              [[ -f ~/.ssh/config ]] && \
+                              ( cat ~/.ssh/config | \
+                              grep "^Host " | \
+                              awk '{print $2}' )`
+        COMPREPLY=( $( compgen -P '//' -W '${comp_ssh_hosts}' -- "${cur:2}") )
+        return
+    fi
+
+    #
+    # Complete the  and cURL's arguments
+    #
+    if [[ $cur == -* ]]; then
+        COMPREPLY=( $( compgen -W '$(_parse_help curl) $(_parse_help $1)' -- "$cur" ) )
+        return
+    fi
+
+    #
+    # If the argument starts with a letter this could be either an operation
+    # or an operation parameter
+    # When $cur is empty, suggest the list of operations by default
+    #
+    if [[ $cur =~ ^[A-Za-z_0-9]* ]]; then
+        # If operation has not been yet selected, suggest the list of operations
+        # otherwise suggest arguments of this operation as declared in the
+        # OpenAPI specification
+        if [[ -z $operation ]]; then
+            COMPREPLY=( $(compgen -W '${!operations[*]}' -- ${cur}) )
+        else
+            COMPREPLY=( $(compgen -W '${operation_parameters[$operation]}' -- ${cur}) )
+            compopt -o nospace
+        fi
+        return
+    fi
+
+} &&
+complete -F _ 
+
+# ex: ts=4 sw=4 et filetype=sh

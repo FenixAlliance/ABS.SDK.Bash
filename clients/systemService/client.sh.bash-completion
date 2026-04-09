@@ -69,24 +69,45 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2SystemServiceAntiforgeryGetAndStoreTokensGet"]=1
-    operations["apiV2SystemServiceAntiforgeryIsRequestValidGet"]=1
-    operations["apiLicensingLicensesGeneratePost"]=1
-    operations["apiLicensingLicensesValidateAttributesGet"]=1
-    operations["apiLicensingLicensesValidateErrorsGet"]=1
-    operations["apiLicensingLicensesValidateGet"]=1
-    operations["apiV2SystemServiceLicensingLicensesGet"]=1
-    operations["apiV2SystemServiceLicensingLicensesLicenseIdAssignmentsGet"]=1
-    operations["apiV2SystemServiceLicensingLicensesLicenseIdAttributesGet"]=1
-    operations["apiV2SystemServiceLicensingLicensesLicenseIdFeaturesGet"]=1
-    operations["apiV2SystemServiceLicensingLicensesLicenseIdGet"]=1
-    operations["apiV2SystemServiceLicensingLicensesLicenseIdQuotaGet"]=1
-    operations["apiV2SystemServiceLicensingLicensesRedeemPost"]=1
-    operations["apiV2SystemServiceLicensingLicensesValidatePost"]=1
-    operations["apiV2SystemServiceMigrationsGet"]=1
-    operations["apiV2SystemServiceMigrationsMigratePost"]=1
+    operations["getAndStoreTokens"]=1
+    operations["isRequestValidAsync"]=1
+    operations["adminPreviewBasicEmailTemplate"]=1
+    operations["adminSendBasicEmail"]=1
+    operations["forgotPasswordPost"]=1
+    operations["healthGet"]=1
+    operations["helloGet"]=1
+    operations["loginPost"]=1
+    operations["manage2faPost"]=1
+    operations["manageInfoGet"]=1
+    operations["manageInfoPost"]=1
+    operations["mapIdentityApiConfirmEmail"]=1
+    operations["refreshPost"]=1
+    operations["registerPost"]=1
+    operations["resendConfirmationEmailPost"]=1
+    operations["resetPasswordPost"]=1
+    operations["versionGet"]=1
+    operations["getLicenseAssignmentsAsync"]=1
+    operations["getLicenseAttributesAsync"]=1
+    operations["getLicenseByIdAsync"]=1
+    operations["getLicenseFeaturesAsync"]=1
+    operations["getLicenseRecordsQuotaAsync"]=1
+    operations["getLicensesAsync"]=1
+    operations["redeemLicenseAsync"]=1
+    operations["validateLicenseAsync"]=1
+    operations["migrate"]=1
+    operations["migrations"]=1
     operations["getAllModules"]=1
     operations["getAvailableModules"]=1
+    operations["createSystemOption"]=1
+    operations["deleteSystemOption"]=1
+    operations["getSystemOptionById"]=1
+    operations["getSystemOptionByKey"]=1
+    operations["getSystemOptions"]=1
+    operations["getSystemOptionsCount"]=1
+    operations["updateSystemOption"]=1
+    operations["upsertSystemOption"]=1
+    operations["adminPreviewTenantEmail"]=1
+    operations["adminSendTenantEmail"]=1
     operations["createTenant"]=1
     operations["deleteTenant"]=1
     operations["getAllExtendedTenants"]=1
@@ -95,37 +116,60 @@ _()
     operations["getTenant"]=1
     operations["getTenantsCount"]=1
     operations["updateTenant"]=1
-    operations["apiV2SystemServiceUsersCountGet"]=1
-    operations["apiV2SystemServiceUsersExtendedCountGet"]=1
-    operations["apiV2SystemServiceUsersExtendedGet"]=1
-    operations["apiV2SystemServiceUsersGet"]=1
-    operations["apiV2SystemServiceUsersPost"]=1
-    operations["apiV2SystemServiceUsersUserIdDelete"]=1
-    operations["apiV2SystemServiceUsersUserIdExtendedGet"]=1
-    operations["apiV2SystemServiceUsersUserIdPut"]=1
+    operations["adminPreviewUserEmailTemplate"]=1
+    operations["adminSendUserEmail"]=1
+    operations["createAccountHolderAsync"]=1
+    operations["deleteAccountHolderAsync"]=1
+    operations["getExtendedAccountHolderAsync"]=1
+    operations["getExtendedUsersAsync"]=1
+    operations["getExtendedUsersCountAsync"]=1
     operations["getUserAsync"]=1
+    operations["getUsersAsync"]=1
+    operations["getUsersCountAsync"]=1
+    operations["updateAccountHolderAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2SystemServiceAntiforgeryGetAndStoreTokensGet"]="api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceAntiforgeryIsRequestValidGet"]="api-version= x-api-version: "
-    operation_parameters["apiLicensingLicensesGeneratePost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiLicensingLicensesValidateAttributesGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiLicensingLicensesValidateErrorsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiLicensingLicensesValidateGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceLicensingLicensesGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceLicensingLicensesLicenseIdAssignmentsGet"]="licenseId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceLicensingLicensesLicenseIdAttributesGet"]="licenseId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceLicensingLicensesLicenseIdFeaturesGet"]="licenseId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceLicensingLicensesLicenseIdGet"]="licenseId= api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceLicensingLicensesLicenseIdQuotaGet"]="licenseId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceLicensingLicensesRedeemPost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceLicensingLicensesValidatePost"]="api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceMigrationsGet"]="pending= api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceMigrationsMigratePost"]="api-version= x-api-version: "
+    operation_parameters["getAndStoreTokens"]="api-version= x-api-version: "
+    operation_parameters["isRequestValidAsync"]="api-version= x-api-version: "
+    operation_parameters["adminPreviewBasicEmailTemplate"]="api-version= x-api-version: "
+    operation_parameters["adminSendBasicEmail"]="api-version= x-api-version: "
+    operation_parameters["forgotPasswordPost"]=""
+    operation_parameters["healthGet"]=""
+    operation_parameters["helloGet"]=""
+    operation_parameters["loginPost"]="useCookies= useSessionCookies= "
+    operation_parameters["manage2faPost"]=""
+    operation_parameters["manageInfoGet"]=""
+    operation_parameters["manageInfoPost"]=""
+    operation_parameters["mapIdentityApiConfirmEmail"]="userId= code= changedEmail= "
+    operation_parameters["refreshPost"]=""
+    operation_parameters["registerPost"]=""
+    operation_parameters["resendConfirmationEmailPost"]=""
+    operation_parameters["resetPasswordPost"]=""
+    operation_parameters["versionGet"]=""
+    operation_parameters["getLicenseAssignmentsAsync"]="licenseId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLicenseAttributesAsync"]="licenseId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLicenseByIdAsync"]="licenseId= api-version= x-api-version: "
+    operation_parameters["getLicenseFeaturesAsync"]="licenseId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLicenseRecordsQuotaAsync"]="licenseId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLicensesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["redeemLicenseAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["validateLicenseAsync"]="api-version= x-api-version: "
+    operation_parameters["migrate"]="api-version= x-api-version: "
+    operation_parameters["migrations"]="pending= api-version= x-api-version: "
     operation_parameters["getAllModules"]="tenantId= api-version= x-api-version: "
     operation_parameters["getAvailableModules"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createSystemOption"]="key= portalId= api-version= x-api-version: "
+    operation_parameters["deleteSystemOption"]="optionId= api-version= x-api-version: "
+    operation_parameters["getSystemOptionById"]="optionId= api-version= x-api-version: "
+    operation_parameters["getSystemOptionByKey"]="key= portalId= api-version= x-api-version: "
+    operation_parameters["getSystemOptions"]="portalId= api-version= x-api-version: "
+    operation_parameters["getSystemOptionsCount"]="portalId= api-version= x-api-version: "
+    operation_parameters["updateSystemOption"]="optionId= api-version= x-api-version: "
+    operation_parameters["upsertSystemOption"]="key= portalId= api-version= x-api-version: "
+    operation_parameters["adminPreviewTenantEmail"]="tenantId= api-version= x-api-version: "
+    operation_parameters["adminSendTenantEmail"]="tenantId= api-version= x-api-version: "
     operation_parameters["createTenant"]="api-version= x-api-version: "
     operation_parameters["deleteTenant"]="tenantId= api-version= x-api-version: "
     operation_parameters["getAllExtendedTenants"]="api-version= x-api-version: "
@@ -134,21 +178,29 @@ _()
     operation_parameters["getTenant"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantsCount"]="api-version= x-api-version: "
     operation_parameters["updateTenant"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceUsersCountGet"]="api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceUsersExtendedCountGet"]="api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceUsersExtendedGet"]="api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceUsersGet"]="api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceUsersPost"]="api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceUsersUserIdDelete"]="userId= api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceUsersUserIdExtendedGet"]="userId= api-version= x-api-version: "
-    operation_parameters["apiV2SystemServiceUsersUserIdPut"]="userId= api-version= x-api-version: "
+    operation_parameters["adminPreviewUserEmailTemplate"]="userId= api-version= x-api-version: "
+    operation_parameters["adminSendUserEmail"]="userId= api-version= x-api-version: "
+    operation_parameters["createAccountHolderAsync"]="api-version= x-api-version: "
+    operation_parameters["deleteAccountHolderAsync"]="userId= api-version= x-api-version: "
+    operation_parameters["getExtendedAccountHolderAsync"]="userId= api-version= x-api-version: "
+    operation_parameters["getExtendedUsersAsync"]="api-version= x-api-version: "
+    operation_parameters["getExtendedUsersCountAsync"]="api-version= x-api-version: "
     operation_parameters["getUserAsync"]="userId= api-version= x-api-version: "
+    operation_parameters["getUsersAsync"]="api-version= x-api-version: "
+    operation_parameters["getUsersCountAsync"]="api-version= x-api-version: "
+    operation_parameters["updateAccountHolderAsync"]="userId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
-    operation_parameters_enum_values["apiV2SystemServiceMigrationsGet::pending"]="true false"
-    operation_parameters_enum_values["apiV2SystemServiceMigrationsGet::pending"]="true false"
-    operation_parameters_enum_values["apiV2SystemServiceMigrationsGet::pending"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useCookies"]="true false"
+    operation_parameters_enum_values["loginPost::useSessionCookies"]="true false"
+    operation_parameters_enum_values["migrations::pending"]="true false"
+    operation_parameters_enum_values["migrations::pending"]="true false"
+    operation_parameters_enum_values["migrations::pending"]="true false"
 
     #
     # Check if this is OSX and use special __osx_init_completion function

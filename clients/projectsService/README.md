@@ -103,46 +103,69 @@ All URIs are relative to **
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsCountGet**](docs/ProjectsApi.md#apiv2projectsserviceprojectscountget) | **GET** /api/v2/ProjectsService/Projects/Count | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsGet**](docs/ProjectsApi.md#apiv2projectsserviceprojectsget) | **GET** /api/v2/ProjectsService/Projects | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsPost**](docs/ProjectsApi.md#apiv2projectsserviceprojectspost) | **POST** /api/v2/ProjectsService/Projects | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdDelete**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectiddelete) | **DELETE** /api/v2/ProjectsService/Projects/{projectId} | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdGet**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidget) | **GET** /api/v2/ProjectsService/Projects/{projectId} | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdPeriodsGet**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidperiodsget) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Periods | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdDelete**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidperiodsprojectperiodiddelete) | **DELETE** /api/v2/ProjectsService/Projects/{projectId}/Periods/{projectPeriodId} | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdPeriodsProjectPeriodIdPut**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidperiodsprojectperiodidput) | **PUT** /api/v2/ProjectsService/Projects/{projectId}/Periods/{projectPeriodId} | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdPut**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidput) | **PUT** /api/v2/ProjectsService/Projects/{projectId} | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdTaskCategoriesCountGet**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidtaskcategoriescountget) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TaskCategories/Count | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdTaskCategoriesGet**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidtaskcategoriesget) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TaskCategories | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdTasksCountGet**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidtaskscountget) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Tasks/Count | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdTasksGet**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidtasksget) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Tasks | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdTasksPost**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidtaskspost) | **POST** /api/v2/ProjectsService/Projects/{projectId}/Tasks | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdDelete**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidtasksprojecttaskiddelete) | **DELETE** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdTasksProjectTaskIdPut**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidtasksprojecttaskidput) | **PUT** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdTimeLogsCountGet**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidtimelogscountget) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TimeLogs/Count | 
-*ProjectsApi* | [**apiV2ProjectsServiceProjectsProjectIdTimeLogsGet**](docs/ProjectsApi.md#apiv2projectsserviceprojectsprojectidtimelogsget) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TimeLogs | 
-*TaskCategoriesApi* | [**apiV2ProjectsServiceTaskCategoriesGet**](docs/TaskCategoriesApi.md#apiv2projectsservicetaskcategoriesget) | **GET** /api/v2/ProjectsService/TaskCategories | 
-*TaskCategoriesApi* | [**apiV2ProjectsServiceTaskCategoriesPost**](docs/TaskCategoriesApi.md#apiv2projectsservicetaskcategoriespost) | **POST** /api/v2/ProjectsService/TaskCategories | 
-*TaskCategoriesApi* | [**apiV2ProjectsServiceTaskCategoriesTaskCategoryIdDelete**](docs/TaskCategoriesApi.md#apiv2projectsservicetaskcategoriestaskcategoryiddelete) | **DELETE** /api/v2/ProjectsService/TaskCategories/{taskCategoryId} | 
-*TaskCategoriesApi* | [**apiV2ProjectsServiceTaskCategoriesTaskCategoryIdGet**](docs/TaskCategoriesApi.md#apiv2projectsservicetaskcategoriestaskcategoryidget) | **GET** /api/v2/ProjectsService/TaskCategories/{taskCategoryId} | 
-*TaskCategoriesApi* | [**apiV2ProjectsServiceTaskCategoriesTaskCategoryIdPut**](docs/TaskCategoriesApi.md#apiv2projectsservicetaskcategoriestaskcategoryidput) | **PUT** /api/v2/ProjectsService/TaskCategories/{taskCategoryId} | 
-*TaskCategoriesApi* | [**apiV2ProjectsServiceTaskCategoriesTaskCategoryIdTypesGet**](docs/TaskCategoriesApi.md#apiv2projectsservicetaskcategoriestaskcategoryidtypesget) | **GET** /api/v2/ProjectsService/TaskCategories/{taskCategoryId}/Types | 
-*TaskTypesApi* | [**apiV2ProjectsServiceTaskTypesPost**](docs/TaskTypesApi.md#apiv2projectsservicetasktypespost) | **POST** /api/v2/ProjectsService/TaskTypes | 
-*TaskTypesApi* | [**apiV2ProjectsServiceTaskTypesTaskTypeIdDelete**](docs/TaskTypesApi.md#apiv2projectsservicetasktypestasktypeiddelete) | **DELETE** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | 
-*TaskTypesApi* | [**apiV2ProjectsServiceTaskTypesTaskTypeIdGet**](docs/TaskTypesApi.md#apiv2projectsservicetasktypestasktypeidget) | **GET** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | 
-*TaskTypesApi* | [**apiV2ProjectsServiceTaskTypesTaskTypeIdPut**](docs/TaskTypesApi.md#apiv2projectsservicetasktypestasktypeidput) | **PUT** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | 
+*FenixAllianceABPWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABPWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
+*FenixAllianceABPWebApi* | [**healthGet**](docs/FenixAllianceABPWebApi.md#healthget) | **GET** /health | 
+*FenixAllianceABPWebApi* | [**helloGet**](docs/FenixAllianceABPWebApi.md#helloget) | **GET** /hello | 
+*FenixAllianceABPWebApi* | [**loginPost**](docs/FenixAllianceABPWebApi.md#loginpost) | **POST** /login | 
+*FenixAllianceABPWebApi* | [**manage2faPost**](docs/FenixAllianceABPWebApi.md#manage2fapost) | **POST** /manage/2fa | 
+*FenixAllianceABPWebApi* | [**manageInfoGet**](docs/FenixAllianceABPWebApi.md#manageinfoget) | **GET** /manage/info | 
+*FenixAllianceABPWebApi* | [**manageInfoPost**](docs/FenixAllianceABPWebApi.md#manageinfopost) | **POST** /manage/info | 
+*FenixAllianceABPWebApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAllianceABPWebApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
+*FenixAllianceABPWebApi* | [**refreshPost**](docs/FenixAllianceABPWebApi.md#refreshpost) | **POST** /refresh | 
+*FenixAllianceABPWebApi* | [**registerPost**](docs/FenixAllianceABPWebApi.md#registerpost) | **POST** /register | 
+*FenixAllianceABPWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABPWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
+*FenixAllianceABPWebApi* | [**resetPasswordPost**](docs/FenixAllianceABPWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
+*FenixAllianceABPWebApi* | [**versionGet**](docs/FenixAllianceABPWebApi.md#versionget) | **GET** /version | 
+*ProjectsApi* | [**createProjectAsync**](docs/ProjectsApi.md#createprojectasync) | **POST** /api/v2/ProjectsService/Projects | Creates a new project
+*ProjectsApi* | [**createProjectPeriodAsync**](docs/ProjectsApi.md#createprojectperiodasync) | **POST** /api/v2/ProjectsService/Projects/{projectId}/Periods | Creates a project period
+*ProjectsApi* | [**createProjectTaskAsync**](docs/ProjectsApi.md#createprojecttaskasync) | **POST** /api/v2/ProjectsService/Projects/{projectId}/Tasks | Creates a project task
+*ProjectsApi* | [**deleteProjectAsync**](docs/ProjectsApi.md#deleteprojectasync) | **DELETE** /api/v2/ProjectsService/Projects/{projectId} | Deletes a project
+*ProjectsApi* | [**deleteProjectPeriodAsync**](docs/ProjectsApi.md#deleteprojectperiodasync) | **DELETE** /api/v2/ProjectsService/Projects/{projectId}/Periods/{projectPeriodId} | Deletes a project period
+*ProjectsApi* | [**deleteProjectTaskAsync**](docs/ProjectsApi.md#deleteprojecttaskasync) | **DELETE** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | Deletes a project task
+*ProjectsApi* | [**getProjectByIdAsync**](docs/ProjectsApi.md#getprojectbyidasync) | **GET** /api/v2/ProjectsService/Projects/{projectId} | Gets a project by ID
+*ProjectsApi* | [**getProjectPeriodsAsync**](docs/ProjectsApi.md#getprojectperiodsasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Periods | Retrieves project periods
+*ProjectsApi* | [**getProjectTaskCategoriesAsync**](docs/ProjectsApi.md#getprojecttaskcategoriesasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TaskCategories | Retrieves project task categories
+*ProjectsApi* | [**getProjectTaskCategoriesCountAsync**](docs/ProjectsApi.md#getprojecttaskcategoriescountasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TaskCategories/Count | Counts project task categories
+*ProjectsApi* | [**getProjectTasksAsync**](docs/ProjectsApi.md#getprojecttasksasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Tasks | Retrieves project tasks
+*ProjectsApi* | [**getProjectTasksCountAsync**](docs/ProjectsApi.md#getprojecttaskscountasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Tasks/Count | Counts project tasks
+*ProjectsApi* | [**getProjectTimeLogsAsync**](docs/ProjectsApi.md#getprojecttimelogsasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TimeLogs | Retrieves project time logs
+*ProjectsApi* | [**getProjectTimeLogsCountAsync**](docs/ProjectsApi.md#getprojecttimelogscountasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TimeLogs/Count | Counts project time logs
+*ProjectsApi* | [**getProjectsByTenantIdAsync**](docs/ProjectsApi.md#getprojectsbytenantidasync) | **GET** /api/v2/ProjectsService/Projects | Retrieves all projects
+*ProjectsApi* | [**getProjectsCountByTenantIdAsync**](docs/ProjectsApi.md#getprojectscountbytenantidasync) | **GET** /api/v2/ProjectsService/Projects/Count | Counts projects
+*ProjectsApi* | [**updateProjectAsync**](docs/ProjectsApi.md#updateprojectasync) | **PUT** /api/v2/ProjectsService/Projects/{projectId} | Updates a project
+*ProjectsApi* | [**updateProjectPeriodAsync**](docs/ProjectsApi.md#updateprojectperiodasync) | **PUT** /api/v2/ProjectsService/Projects/{projectId}/Periods/{projectPeriodId} | Updates a project period
+*ProjectsApi* | [**updateProjectTaskAsync**](docs/ProjectsApi.md#updateprojecttaskasync) | **PUT** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | Updates a project task
+*TaskCategoriesApi* | [**countTenantTaskCategoriesAsync**](docs/TaskCategoriesApi.md#counttenanttaskcategoriesasync) | **GET** /api/v2/ProjectsService/TaskCategories/Count | Counts task categories
+*TaskCategoriesApi* | [**createTaskCategoryAsync**](docs/TaskCategoriesApi.md#createtaskcategoryasync) | **POST** /api/v2/ProjectsService/TaskCategories | Creates a new task category
+*TaskCategoriesApi* | [**deleteTaskCategoryAsync**](docs/TaskCategoriesApi.md#deletetaskcategoryasync) | **DELETE** /api/v2/ProjectsService/TaskCategories/{taskCategoryId} | Deletes a task category
+*TaskCategoriesApi* | [**getTaskCategoryByIdAsync**](docs/TaskCategoriesApi.md#gettaskcategorybyidasync) | **GET** /api/v2/ProjectsService/TaskCategories/{taskCategoryId} | Gets a task category by ID
+*TaskCategoriesApi* | [**getTaskCategoryTaskTypesAsync**](docs/TaskCategoriesApi.md#gettaskcategorytasktypesasync) | **GET** /api/v2/ProjectsService/TaskCategories/{taskCategoryId}/Types | Retrieves task types for a category
+*TaskCategoriesApi* | [**getTenantTaskCategoriesAsync**](docs/TaskCategoriesApi.md#gettenanttaskcategoriesasync) | **GET** /api/v2/ProjectsService/TaskCategories | Retrieves all task categories
+*TaskCategoriesApi* | [**updateTaskCategoryAsync**](docs/TaskCategoriesApi.md#updatetaskcategoryasync) | **PUT** /api/v2/ProjectsService/TaskCategories/{taskCategoryId} | Updates a task category
+*TaskTypesApi* | [**createTaskTypeAsync**](docs/TaskTypesApi.md#createtasktypeasync) | **POST** /api/v2/ProjectsService/TaskTypes | Creates a new task type
+*TaskTypesApi* | [**deleteTaskTypeAsync**](docs/TaskTypesApi.md#deletetasktypeasync) | **DELETE** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | Deletes a task type
+*TaskTypesApi* | [**getTaskTypeByIdAsync**](docs/TaskTypesApi.md#gettasktypebyidasync) | **GET** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | Gets a task type by ID
+*TaskTypesApi* | [**updateTaskTypeAsync**](docs/TaskTypesApi.md#updatetasktypeasync) | **PUT** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | Updates a task type
 
 
 ## Documentation For Models
 
+ - [AccessTokenResponse](docs/AccessTokenResponse.md)
  - [EmptyEnvelope](docs/EmptyEnvelope.md)
  - [ErrorEnvelope](docs/ErrorEnvelope.md)
+ - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
+ - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
+ - [InfoRequest](docs/InfoRequest.md)
+ - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
+ - [LoginRequest](docs/LoginRequest.md)
  - [ProjectCreateDto](docs/ProjectCreateDto.md)
  - [ProjectDto](docs/ProjectDto.md)
  - [ProjectDtoEnvelope](docs/ProjectDtoEnvelope.md)
  - [ProjectDtoListEnvelope](docs/ProjectDtoListEnvelope.md)
  - [ProjectPeriodCreateDto](docs/ProjectPeriodCreateDto.md)
+ - [ProjectPeriodDto](docs/ProjectPeriodDto.md)
+ - [ProjectPeriodDtoListEnvelope](docs/ProjectPeriodDtoListEnvelope.md)
  - [ProjectPeriodUpdateDto](docs/ProjectPeriodUpdateDto.md)
  - [ProjectTaskCreateDto](docs/ProjectTaskCreateDto.md)
  - [ProjectTaskDto](docs/ProjectTaskDto.md)
@@ -151,6 +174,10 @@ Class | Method | HTTP request | Description
  - [ProjectTimeLogDto](docs/ProjectTimeLogDto.md)
  - [ProjectTimeLogDtoListEnvelope](docs/ProjectTimeLogDtoListEnvelope.md)
  - [ProjectUpdateDto](docs/ProjectUpdateDto.md)
+ - [RefreshRequest](docs/RefreshRequest.md)
+ - [RegisterRequest](docs/RegisterRequest.md)
+ - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)
+ - [ResetPasswordRequest](docs/ResetPasswordRequest.md)
  - [TaskCategoryCreateDto](docs/TaskCategoryCreateDto.md)
  - [TaskCategoryDto](docs/TaskCategoryDto.md)
  - [TaskCategoryDtoListEnvelope](docs/TaskCategoryDtoListEnvelope.md)
@@ -158,15 +185,11 @@ Class | Method | HTTP request | Description
  - [TaskTypeCreateDto](docs/TaskTypeCreateDto.md)
  - [TaskTypeDto](docs/TaskTypeDto.md)
  - [TaskTypeUpdateDto](docs/TaskTypeUpdateDto.md)
+ - [TwoFactorRequest](docs/TwoFactorRequest.md)
+ - [TwoFactorResponse](docs/TwoFactorResponse.md)
 
 
 ## Documentation For Authorization
 
-
-## Bearer
-
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+ All endpoints do not require authorization.
 

@@ -4,18 +4,20 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2MarketingServiceTrackingPixelsPixelIdGet**](TrackingPixelsApi.md#apiV2MarketingServiceTrackingPixelsPixelIdGet) | **GET** /api/v2/MarketingService/TrackingPixels/{pixelId} | 
+[**getTrackingPixelAsync**](TrackingPixelsApi.md#getTrackingPixelAsync) | **GET** /api/v2/MarketingService/TrackingPixels/{pixelId} | Get a tracking pixel
 
 
 
-## apiV2MarketingServiceTrackingPixelsPixelIdGet
+## getTrackingPixelAsync
 
+Get a tracking pixel
 
+Retrieves a tracking pixel by its ID.
 
 ### Example
 
 ```bash
- apiV2MarketingServiceTrackingPixelsPixelIdGet pixelId=value  api-version=value x-api-version:value
+ getTrackingPixelAsync pixelId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -33,7 +35,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Bearer](../README.md#Bearer)
+No authorization required
 
 ### HTTP request headers
 

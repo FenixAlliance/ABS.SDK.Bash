@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] [readonly] [default to null]
-**timestamp** | **string** |  | [optional] [readonly] [default to null]
+**id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **topic** | **string** |  | [optional] [default to null]
 **closed** | **boolean** |  | [optional] [default to null]
 **closedTimestamp** | **string** |  | [optional] [default to null]
