@@ -10,7 +10,6 @@ Name | Type | Description | Notes
 **description** | **string** |  | [optional] [default to null]
 **imageURL** | **string** |  | [optional] [default to null]
 **googleCategoryTaxonomy** | **string** |  | [optional] [default to null]
-**businessID** | **string** |  | [default to null]
 **itemCategoryID** | **string** |  | [default to null]
 **itemGoogleCategoryID** | **string** |  | [optional] [default to null]
 

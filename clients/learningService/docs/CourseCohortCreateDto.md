@@ -7,7 +7,6 @@ Name | Type | Description | Notes
 **timestamp** | **string** |  | [optional] [default to null]
 **name** | **string** |  | [default to null]
 **courseID** | **string** |  | [default to null]
-**businessID** | **string** |  | [default to null]
 **startDateTime** | **string** |  | [optional] [default to null]
 **endDateTime** | **string** |  | [optional] [default to null]
 **expectedStartDateTime** | **string** |  | [optional] [default to null]

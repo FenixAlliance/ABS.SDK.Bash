@@ -15,8 +15,6 @@ Name | Type | Description | Notes
 **validResponse** | **boolean** |  | [optional] [default to null]
 **parentFileUploadId** | **string** |  | [optional] [default to null]
 **filePath** | **string** |  | [optional] [default to null]
-**businessID** | **string** |  | [optional] [default to null]
-**businessProfileRecordID** | **string** |  | [optional] [default to null]
 **metadata** | **string** |  | [optional] [default to null]
 **supportRequestID** | **string** |  | [optional] [default to null]
 

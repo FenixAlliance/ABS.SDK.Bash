@@ -8,7 +8,6 @@ Name | Type | Description | Notes
 **title** | **string** |  | [default to null]
 **description** | **string** |  | [optional] [default to null]
 **courseID** | **string** |  | [default to null]
-**businessID** | **string** |  | [default to null]
 **courseUnitID** | **string** |  | [optional] [default to null]
 **releaseDateTime** | **string** |  | [optional] [default to null]
 

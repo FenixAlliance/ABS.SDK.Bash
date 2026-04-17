@@ -6,7 +6,6 @@ Name | Type | Description | Notes
 **name** | **string** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
 **disabled** | **boolean** |  | [optional] [default to null]
-**businessProfileRecordID** | **string** |  | [optional] [default to null]
 **organizationProfileID** | **string** |  | [optional] [default to null]
 **parentDepartmentID** | **string** |  | [optional] [default to null]
 

@@ -10,7 +10,6 @@ Name | Type | Description | Notes
 **content** | **string** |  | [optional] [default to null]
 **courseID** | **string** |  | [default to null]
 **courseSectionID** | **string** |  | [default to null]
-**businessID** | **string** |  | [default to null]
 **courseContentGroupID** | **string** |  | [optional] [default to null]
 **releaseDateTime** | **string** |  | [optional] [default to null]
 

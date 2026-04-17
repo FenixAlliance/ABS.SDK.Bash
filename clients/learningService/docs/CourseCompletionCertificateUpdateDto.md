@@ -5,8 +5,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **studentProfileID** | **string** |  | [optional] [default to null]
 **courseEnrollmentID** | **string** |  | [optional] [default to null]
-**businessID** | **string** |  | [optional] [default to null]
-**businessProfileRecordID** | **string** |  | [optional] [default to null]
 **courseCompletionCertificateTemplateID** | **string** |  | [optional] [default to null]
 **courseID** | **string** |  | [optional] [default to null]
 

@@ -5,8 +5,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
-**businessID** | **string** |  | [default to null]
-**businessProfileRecordID** | **string** |  | [default to null]
 **businessTeamID** | **string** |  | [default to null]
 **projectID** | **string** |  | [default to null]
 

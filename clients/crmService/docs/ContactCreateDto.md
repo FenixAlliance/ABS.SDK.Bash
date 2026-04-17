@@ -5,7 +5,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [default to null]
 **type** | **string** |  | [default to null]
 **firstName** | **string** |  | [default to null]
 **lastName** | **string** |  | [optional] [default to null]

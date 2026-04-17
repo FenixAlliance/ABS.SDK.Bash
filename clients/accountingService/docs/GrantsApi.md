@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
  **grantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
- **grantUpdateDto** | [**GrantUpdateDto**](GrantUpdateDto.md) |  | [optional]
+ **body** | **map** |  | [optional]
 
 ### Return type
 

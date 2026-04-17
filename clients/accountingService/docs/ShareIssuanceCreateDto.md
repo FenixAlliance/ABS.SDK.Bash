@@ -5,8 +5,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
-**enrollmentId** | **string** |  | [optional] [default to null]
 **unitPrice** | **integer** |  | [optional] [default to null]
 **quantity** | **integer** |  | [optional] [default to null]
 **currencyId** | **string** |  | [optional] [default to null]

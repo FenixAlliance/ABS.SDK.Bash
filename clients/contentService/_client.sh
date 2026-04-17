@@ -305,7 +305,8 @@ case $state in
             "deleteBlogPostCategoryAsync[Delete a blog post category]" \
             "getBlogPostCategoriesAsync[Get blog post categories]" \
             "getBlogPostCategoryByIdAsync[Get blog post category by ID]" \
-            "updateBlogPostCategoryAsync[Update a blog post category]"             "createBlogPostTagAsync[Create a blog post tag]" \
+            "updateBlogPostCategoryAsync[Update a blog post category]"             "countBlogPostTagsAsync[Count blog post tags]" \
+            "createBlogPostTagAsync[Create a blog post tag]" \
             "deleteBlogPostTagAsync[Delete a blog post tag]" \
             "getBlogPostTagByIdAsync[Get blog post tag by ID]" \
             "getBlogPostTagsAsync[Get blog post tags]" \
@@ -341,10 +342,12 @@ case $state in
             "registerPost[]" \
             "resendConfirmationEmailPost[]" \
             "resetPasswordPost[]" \
-            "versionGet[]"             "createWebPortalAsync[Create a new web portal]" \
+            "versionGet[]"             "countPortalsAsync[Count portals]" \
+            "createWebPortalAsync[Create a new web portal]" \
             "deleteWebPortalAsync[Delete a web portal]" \
             "getCurrentWebPortalAsync[Get the current portal]" \
             "getCurrentWebPortalOptionsAsync[Get the current portal's options]" \
+            "getPortalsAsync[Get portals]" \
             "getRootWebPortalAsync[Get the root portal]" \
             "getWebPortalByIdAsync[Get a web portal by its ID]" \
             "getWebPortalOptionsAsync[Get a web portal's options by its ID]" \
@@ -357,11 +360,13 @@ case $state in
             "deleteWebContentAsync[Delete a web content]" \
             "getWebContentByIdAsync[Get web content by ID]" \
             "getWebContentsAsync[Get web contents]" \
-            "updateWebContentAsync[Update a web content]"             "createWebPageCategoryAsync[Create a web page category]" \
+            "updateWebContentAsync[Update a web content]"             "countWebPageCategoriesAsync[Count web page categories]" \
+            "createWebPageCategoryAsync[Create a web page category]" \
             "deleteWebPageCategoryAsync[Delete a web page category]" \
             "getWebPageCategoriesAsync[Get web page categories]" \
             "getWebPageCategoryByIdAsync[Get web page category by ID]" \
-            "updateWebPageCategoryAsync[Update a web page category]"             "createWebPageTagAsync[Create a web page tag]" \
+            "updateWebPageCategoryAsync[Update a web page category]"             "countWebPageTagsAsync[Count web page tags]" \
+            "createWebPageTagAsync[Create a web page tag]" \
             "deleteWebPageTagAsync[Delete a web page tag]" \
             "getWebPageTagByIdAsync[Get web page tag by ID]" \
             "getWebPageTagsAsync[Get web page tags]" \
@@ -479,6 +484,15 @@ case $state in
         _op_arguments=(
           "blogPostCategoryId=:[PATH] "
           "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countBlogPostTagsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -796,6 +810,15 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      countPortalsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createWebPortalAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -827,6 +850,15 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPortalsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -968,6 +1000,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      countWebPageCategoriesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createWebPageCategoryAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1011,6 +1052,15 @@ case $state in
         _op_arguments=(
           "webPageCategoryId=:[PATH] "
           "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countWebPageTagsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

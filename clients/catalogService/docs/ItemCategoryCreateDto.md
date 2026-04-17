@@ -8,8 +8,6 @@ Name | Type | Description | Notes
 **title** | **string** |  | [default to null]
 **description** | **string** |  | [optional] [default to null]
 **imageURL** | **string** |  | [optional] [default to null]
-**businessID** | **string** |  | [default to null]
-**businessProfileRecordID** | **string** |  | [optional] [default to null]
 **parentItemCategoryID** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

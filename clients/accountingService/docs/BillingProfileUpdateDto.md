@@ -4,7 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **contactId** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
 **taxId** | **string** |  | [optional] [default to null]
 **phone** | **string** |  | [optional] [default to null]
 **email** | **string** |  | [optional] [default to null]

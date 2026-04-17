@@ -7,8 +7,6 @@ Name | Type | Description | Notes
 **timestamp** | **string** |  | [optional] [default to null]
 **studentProfileID** | **string** |  | [default to null]
 **courseEnrollmentID** | **string** |  | [default to null]
-**businessID** | **string** |  | [optional] [default to null]
-**businessProfileRecordID** | **string** |  | [optional] [default to null]
 **courseCompletionCertificateTemplateID** | **string** |  | [optional] [default to null]
 **courseID** | **string** |  | [optional] [default to null]
 

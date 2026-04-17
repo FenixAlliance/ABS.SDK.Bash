@@ -4,8 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
-**enrollmentId** | **string** |  | [optional] [default to null]
 **dateStart** | **string** |  | [optional] [default to null]
 **dateEnd** | **string** |  | [optional] [default to null]
 

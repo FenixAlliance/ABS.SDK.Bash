@@ -9,7 +9,6 @@ Name | Type | Description | Notes
 **icon** | **string** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
 **courseID** | **string** |  | [default to null]
-**businessID** | **string** |  | [default to null]
 **releaseDateTime** | **string** |  | [optional] [default to null]
 **hideFromStudents** | **boolean** |  | [optional] [default to null]
 

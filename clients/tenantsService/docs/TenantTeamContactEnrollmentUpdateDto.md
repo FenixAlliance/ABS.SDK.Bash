@@ -3,8 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**businessID** | **string** |  | [optional] [default to null]
-**businessProfileRecordID** | **string** |  | [optional] [default to null]
 **businessTeamID** | **string** |  | [optional] [default to null]
 **contactID** | **string** |  | [optional] [default to null]
 

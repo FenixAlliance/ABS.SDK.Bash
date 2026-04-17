@@ -14,8 +14,6 @@ Name | Type | Description | Notes
 **unitId** | **string** |  | [optional] [default to null]
 **transactionCategoryId** | **string** |  | [optional] [default to null]
 **currencyId** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
-**enrollmentId** | **string** |  | [optional] [default to null]
 **bankProfileId** | **string** |  | [optional] [default to null]
 **bankAccountId** | **string** |  | [optional] [default to null]
 

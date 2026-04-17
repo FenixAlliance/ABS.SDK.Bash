@@ -9,8 +9,6 @@ Name | Type | Description | Notes
 **addedPercent** | **float** |  | [optional] [default to null]
 **addedAmount** | **float** |  | [optional] [default to null]
 **taxComission** | **float** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
-**enrollmentId** | **string** |  | [optional] [default to null]
 **salaryId** | **string** |  | [optional] [default to null]
 **emisorWalletAccountId** | **string** |  | [optional] [default to null]
 **receiverWalletAccountId** | **string** |  | [optional] [default to null]

@@ -18,8 +18,6 @@ Name | Type | Description | Notes
 **contactEmail** | **string** |  | [optional] [default to null]
 **privacyPolicyURL** | **string** |  | [optional] [default to null]
 **termsAndConditionsURL** | **string** |  | [optional] [default to null]
-**businessID** | **string** |  | [optional] [default to null]
-**businessProfileRecordID** | **string** |  | [optional] [default to null]
 **requireHttps** | **boolean** |  | [optional] [default to null]
 **requireAppSecret** | **boolean** |  | [optional] [default to null]
 **enableClientOauthLogin** | **boolean** |  | [optional] [default to null]

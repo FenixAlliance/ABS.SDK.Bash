@@ -131,6 +131,9 @@ operation_parameters_minimum_occurrences["updateBlogPostCategoryAsync:::blogPost
 operation_parameters_minimum_occurrences["updateBlogPostCategoryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateBlogPostCategoryAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateBlogPostCategoryAsync:::BlogPostCategoryUpdateDto"]=0
+operation_parameters_minimum_occurrences["countBlogPostTagsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countBlogPostTagsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countBlogPostTagsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createBlogPostTagAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createBlogPostTagAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createBlogPostTagAsync:::x-api-version"]=0
@@ -217,6 +220,9 @@ operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
 operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
 operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["countPortalsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countPortalsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countPortalsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createWebPortalAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createWebPortalAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createWebPortalAsync:::x-api-version"]=0
@@ -229,6 +235,9 @@ operation_parameters_minimum_occurrences["getCurrentWebPortalAsync:::api-version
 operation_parameters_minimum_occurrences["getCurrentWebPortalAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getCurrentWebPortalOptionsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCurrentWebPortalOptionsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPortalsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPortalsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getPortalsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getRootWebPortalAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRootWebPortalAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getWebPortalByIdAsync:::portalId"]=1
@@ -280,6 +289,9 @@ operation_parameters_minimum_occurrences["updateWebContentAsync:::webContentId"]
 operation_parameters_minimum_occurrences["updateWebContentAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateWebContentAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateWebContentAsync:::WebContentUpdateDto"]=0
+operation_parameters_minimum_occurrences["countWebPageCategoriesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countWebPageCategoriesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countWebPageCategoriesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createWebPageCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createWebPageCategoryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createWebPageCategoryAsync:::x-api-version"]=0
@@ -300,6 +312,9 @@ operation_parameters_minimum_occurrences["updateWebPageCategoryAsync:::webPageCa
 operation_parameters_minimum_occurrences["updateWebPageCategoryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateWebPageCategoryAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateWebPageCategoryAsync:::WebPageCategoryUpdateDto"]=0
+operation_parameters_minimum_occurrences["countWebPageTagsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countWebPageTagsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countWebPageTagsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createWebPageTagAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createWebPageTagAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createWebPageTagAsync:::x-api-version"]=0
@@ -445,6 +460,9 @@ operation_parameters_maximum_occurrences["updateBlogPostCategoryAsync:::blogPost
 operation_parameters_maximum_occurrences["updateBlogPostCategoryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateBlogPostCategoryAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateBlogPostCategoryAsync:::BlogPostCategoryUpdateDto"]=0
+operation_parameters_maximum_occurrences["countBlogPostTagsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["countBlogPostTagsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countBlogPostTagsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createBlogPostTagAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createBlogPostTagAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createBlogPostTagAsync:::x-api-version"]=0
@@ -531,6 +549,9 @@ operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
 operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
 operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["countPortalsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["countPortalsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countPortalsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createWebPortalAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createWebPortalAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createWebPortalAsync:::x-api-version"]=0
@@ -543,6 +564,9 @@ operation_parameters_maximum_occurrences["getCurrentWebPortalAsync:::api-version
 operation_parameters_maximum_occurrences["getCurrentWebPortalAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getCurrentWebPortalOptionsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCurrentWebPortalOptionsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPortalsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPortalsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getPortalsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getRootWebPortalAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRootWebPortalAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getWebPortalByIdAsync:::portalId"]=0
@@ -594,6 +618,9 @@ operation_parameters_maximum_occurrences["updateWebContentAsync:::webContentId"]
 operation_parameters_maximum_occurrences["updateWebContentAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateWebContentAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateWebContentAsync:::WebContentUpdateDto"]=0
+operation_parameters_maximum_occurrences["countWebPageCategoriesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["countWebPageCategoriesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countWebPageCategoriesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createWebPageCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createWebPageCategoryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createWebPageCategoryAsync:::x-api-version"]=0
@@ -614,6 +641,9 @@ operation_parameters_maximum_occurrences["updateWebPageCategoryAsync:::webPageCa
 operation_parameters_maximum_occurrences["updateWebPageCategoryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateWebPageCategoryAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateWebPageCategoryAsync:::WebPageCategoryUpdateDto"]=0
+operation_parameters_maximum_occurrences["countWebPageTagsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["countWebPageTagsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countWebPageTagsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createWebPageTagAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createWebPageTagAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createWebPageTagAsync:::x-api-version"]=0
@@ -756,6 +786,9 @@ operation_parameters_collection_type["updateBlogPostCategoryAsync:::blogPostCate
 operation_parameters_collection_type["updateBlogPostCategoryAsync:::api-version"]=""
 operation_parameters_collection_type["updateBlogPostCategoryAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateBlogPostCategoryAsync:::BlogPostCategoryUpdateDto"]=""
+operation_parameters_collection_type["countBlogPostTagsAsync:::tenantId"]=""
+operation_parameters_collection_type["countBlogPostTagsAsync:::api-version"]=""
+operation_parameters_collection_type["countBlogPostTagsAsync:::x-api-version"]=""
 operation_parameters_collection_type["createBlogPostTagAsync:::tenantId"]=""
 operation_parameters_collection_type["createBlogPostTagAsync:::api-version"]=""
 operation_parameters_collection_type["createBlogPostTagAsync:::x-api-version"]=""
@@ -842,6 +875,9 @@ operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
 operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
 operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["countPortalsAsync:::tenantId"]=""
+operation_parameters_collection_type["countPortalsAsync:::api-version"]=""
+operation_parameters_collection_type["countPortalsAsync:::x-api-version"]=""
 operation_parameters_collection_type["createWebPortalAsync:::tenantId"]=""
 operation_parameters_collection_type["createWebPortalAsync:::api-version"]=""
 operation_parameters_collection_type["createWebPortalAsync:::x-api-version"]=""
@@ -854,6 +890,9 @@ operation_parameters_collection_type["getCurrentWebPortalAsync:::api-version"]="
 operation_parameters_collection_type["getCurrentWebPortalAsync:::x-api-version"]=""
 operation_parameters_collection_type["getCurrentWebPortalOptionsAsync:::api-version"]=""
 operation_parameters_collection_type["getCurrentWebPortalOptionsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPortalsAsync:::tenantId"]=""
+operation_parameters_collection_type["getPortalsAsync:::api-version"]=""
+operation_parameters_collection_type["getPortalsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getRootWebPortalAsync:::api-version"]=""
 operation_parameters_collection_type["getRootWebPortalAsync:::x-api-version"]=""
 operation_parameters_collection_type["getWebPortalByIdAsync:::portalId"]=""
@@ -905,6 +944,9 @@ operation_parameters_collection_type["updateWebContentAsync:::webContentId"]=""
 operation_parameters_collection_type["updateWebContentAsync:::api-version"]=""
 operation_parameters_collection_type["updateWebContentAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateWebContentAsync:::WebContentUpdateDto"]=""
+operation_parameters_collection_type["countWebPageCategoriesAsync:::tenantId"]=""
+operation_parameters_collection_type["countWebPageCategoriesAsync:::api-version"]=""
+operation_parameters_collection_type["countWebPageCategoriesAsync:::x-api-version"]=""
 operation_parameters_collection_type["createWebPageCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["createWebPageCategoryAsync:::api-version"]=""
 operation_parameters_collection_type["createWebPageCategoryAsync:::x-api-version"]=""
@@ -925,6 +967,9 @@ operation_parameters_collection_type["updateWebPageCategoryAsync:::webPageCatego
 operation_parameters_collection_type["updateWebPageCategoryAsync:::api-version"]=""
 operation_parameters_collection_type["updateWebPageCategoryAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateWebPageCategoryAsync:::WebPageCategoryUpdateDto"]=""
+operation_parameters_collection_type["countWebPageTagsAsync:::tenantId"]=""
+operation_parameters_collection_type["countWebPageTagsAsync:::api-version"]=""
+operation_parameters_collection_type["countWebPageTagsAsync:::x-api-version"]=""
 operation_parameters_collection_type["createWebPageTagAsync:::tenantId"]=""
 operation_parameters_collection_type["createWebPageTagAsync:::api-version"]=""
 operation_parameters_collection_type["createWebPageTagAsync:::x-api-version"]=""
@@ -1435,6 +1480,7 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[blogPostTags]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}countBlogPostTagsAsync${OFF};Count blog post tags
   ${CYAN}createBlogPostTagAsync${OFF};Create a blog post tag
   ${CYAN}deleteBlogPostTagAsync${OFF};Delete a blog post tag
   ${CYAN}getBlogPostTagByIdAsync${OFF};Get blog post tag by ID
@@ -1495,10 +1541,12 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[portals]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}countPortalsAsync${OFF};Count portals
   ${CYAN}createWebPortalAsync${OFF};Create a new web portal
   ${CYAN}deleteWebPortalAsync${OFF};Delete a web portal
   ${CYAN}getCurrentWebPortalAsync${OFF};Get the current portal
   ${CYAN}getCurrentWebPortalOptionsAsync${OFF};Get the current portal's options
+  ${CYAN}getPortalsAsync${OFF};Get portals
   ${CYAN}getRootWebPortalAsync${OFF};Get the root portal
   ${CYAN}getWebPortalByIdAsync${OFF};Get a web portal by its ID
   ${CYAN}getWebPortalOptionsAsync${OFF};Get a web portal's options by its ID
@@ -1529,6 +1577,7 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[webPageCategories]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}countWebPageCategoriesAsync${OFF};Count web page categories
   ${CYAN}createWebPageCategoryAsync${OFF};Create a web page category
   ${CYAN}deleteWebPageCategoryAsync${OFF};Delete a web page category
   ${CYAN}getWebPageCategoriesAsync${OFF};Get web page categories
@@ -1539,6 +1588,7 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[webPageTags]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}countWebPageTagsAsync${OFF};Count web page tags
   ${CYAN}createWebPageTagAsync${OFF};Create a web page tag
   ${CYAN}deleteWebPageTagAsync${OFF};Delete a web page tag
   ${CYAN}getWebPageTagByIdAsync${OFF};Get web page tag by ID
@@ -1874,6 +1924,32 @@ print_updateBlogPostCategoryAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countBlogPostTagsAsync operation
+#
+##############################################################################
+print_countBlogPostTagsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countBlogPostTagsAsync - Count blog post tags${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all blog post tags for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2798,6 +2874,32 @@ print_versionGet_help() {
 }
 ##############################################################################
 #
+# Print help for countPortalsAsync operation
+#
+##############################################################################
+print_countPortalsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countPortalsAsync - Count portals${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all portals for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createWebPortalAsync operation
 #
 ##############################################################################
@@ -2887,6 +2989,32 @@ print_getCurrentWebPortalOptionsAsync_help() {
     echo -e "Get the current portal's options for the current user." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPortalsAsync operation
+#
+##############################################################################
+print_getPortalsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPortalsAsync - Get portals${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all portals for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3293,6 +3421,32 @@ print_updateWebContentAsync_help() {
 }
 ##############################################################################
 #
+# Print help for countWebPageCategoriesAsync operation
+#
+##############################################################################
+print_countWebPageCategoriesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countWebPageCategoriesAsync - Count web page categories${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all web page categories for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createWebPageCategoryAsync operation
 #
 ##############################################################################
@@ -3419,6 +3573,32 @@ print_updateWebPageCategoryAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countWebPageTagsAsync operation
+#
+##############################################################################
+print_countWebPageTagsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countWebPageTagsAsync - Count web page tags${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all web page tags for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4522,6 +4702,42 @@ call_updateBlogPostCategoryAsync() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
+    fi
+}
+
+##############################################################################
+#
+# Call countBlogPostTagsAsync operation
+#
+##############################################################################
+call_countBlogPostTagsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/BlogPostTags/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -6623,6 +6839,42 @@ call_versionGet() {
 
 ##############################################################################
 #
+# Call countPortalsAsync operation
+#
+##############################################################################
+call_countPortalsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/Portals/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call createWebPortalAsync operation
 #
 ##############################################################################
@@ -6784,6 +7036,42 @@ call_getCurrentWebPortalOptionsAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/ContentService/Portals/Current/Options" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPortalsAsync operation
+#
+##############################################################################
+call_getPortalsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/Portals" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -7507,6 +7795,42 @@ call_updateWebContentAsync() {
 
 ##############################################################################
 #
+# Call countWebPageCategoriesAsync operation
+#
+##############################################################################
+call_countWebPageCategoriesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebPageCategories/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call createWebPageCategoryAsync operation
 #
 ##############################################################################
@@ -7762,6 +8086,42 @@ call_updateWebPageCategoryAsync() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
+    fi
+}
+
+##############################################################################
+#
+# Call countWebPageTagsAsync operation
+#
+##############################################################################
+call_countWebPageTagsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebPageTags/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -9112,6 +9472,9 @@ case $key in
     updateBlogPostCategoryAsync)
     operation="updateBlogPostCategoryAsync"
     ;;
+    countBlogPostTagsAsync)
+    operation="countBlogPostTagsAsync"
+    ;;
     createBlogPostTagAsync)
     operation="createBlogPostTagAsync"
     ;;
@@ -9232,6 +9595,9 @@ case $key in
     versionGet)
     operation="versionGet"
     ;;
+    countPortalsAsync)
+    operation="countPortalsAsync"
+    ;;
     createWebPortalAsync)
     operation="createWebPortalAsync"
     ;;
@@ -9243,6 +9609,9 @@ case $key in
     ;;
     getCurrentWebPortalOptionsAsync)
     operation="getCurrentWebPortalOptionsAsync"
+    ;;
+    getPortalsAsync)
+    operation="getPortalsAsync"
     ;;
     getRootWebPortalAsync)
     operation="getRootWebPortalAsync"
@@ -9289,6 +9658,9 @@ case $key in
     updateWebContentAsync)
     operation="updateWebContentAsync"
     ;;
+    countWebPageCategoriesAsync)
+    operation="countWebPageCategoriesAsync"
+    ;;
     createWebPageCategoryAsync)
     operation="createWebPageCategoryAsync"
     ;;
@@ -9303,6 +9675,9 @@ case $key in
     ;;
     updateWebPageCategoryAsync)
     operation="updateWebPageCategoryAsync"
+    ;;
+    countWebPageTagsAsync)
+    operation="countWebPageTagsAsync"
     ;;
     createWebPageTagAsync)
     operation="createWebPageTagAsync"
@@ -9496,6 +9871,9 @@ case $operation in
     updateBlogPostCategoryAsync)
     call_updateBlogPostCategoryAsync
     ;;
+    countBlogPostTagsAsync)
+    call_countBlogPostTagsAsync
+    ;;
     createBlogPostTagAsync)
     call_createBlogPostTagAsync
     ;;
@@ -9616,6 +9994,9 @@ case $operation in
     versionGet)
     call_versionGet
     ;;
+    countPortalsAsync)
+    call_countPortalsAsync
+    ;;
     createWebPortalAsync)
     call_createWebPortalAsync
     ;;
@@ -9627,6 +10008,9 @@ case $operation in
     ;;
     getCurrentWebPortalOptionsAsync)
     call_getCurrentWebPortalOptionsAsync
+    ;;
+    getPortalsAsync)
+    call_getPortalsAsync
     ;;
     getRootWebPortalAsync)
     call_getRootWebPortalAsync
@@ -9673,6 +10057,9 @@ case $operation in
     updateWebContentAsync)
     call_updateWebContentAsync
     ;;
+    countWebPageCategoriesAsync)
+    call_countWebPageCategoriesAsync
+    ;;
     createWebPageCategoryAsync)
     call_createWebPageCategoryAsync
     ;;
@@ -9687,6 +10074,9 @@ case $operation in
     ;;
     updateWebPageCategoryAsync)
     call_updateWebPageCategoryAsync
+    ;;
+    countWebPageTagsAsync)
+    call_countWebPageTagsAsync
     ;;
     createWebPageTagAsync)
     call_createWebPageTagAsync

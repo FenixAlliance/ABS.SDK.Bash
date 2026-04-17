@@ -1,4 +1,3 @@
-.openapi-generator-ignore
 Dockerfile
 README.md
 _client.sh
@@ -157,6 +156,7 @@ docs/WebPagesApi.md
 docs/WebPortalCreateDto.md
 docs/WebPortalDto.md
 docs/WebPortalDtoEnvelope.md
+docs/WebPortalDtoListEnvelope.md
 docs/WebPortalUpdateDto.md
 docs/WebTemplateCreateDto.md
 docs/WebTemplateDto.md

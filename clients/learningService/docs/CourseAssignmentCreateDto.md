@@ -10,7 +10,6 @@ Name | Type | Description | Notes
 **instructions** | **string** |  | [optional] [default to null]
 **points** | **float** |  | [optional] [default to null]
 **courseID** | **string** |  | [default to null]
-**businessID** | **string** |  | [default to null]
 **courseUnitID** | **string** |  | [optional] [default to null]
 **courseCohortID** | **string** |  | [optional] [default to null]
 **courseAssignmentTypeID** | **string** |  | [optional] [default to null]

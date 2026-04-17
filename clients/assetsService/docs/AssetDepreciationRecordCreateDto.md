@@ -3,6 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **assetId** | **string** |  | [optional] [default to null]
 **assetDepreciationPolicyId** | **string** |  | [optional] [default to null]
 **depreciationAmount** | **float** |  | [optional] [default to null]

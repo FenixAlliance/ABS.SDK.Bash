@@ -414,7 +414,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **applicationId** | **string** |  | [default to null]
- **loanApplicationUpdateDto** | [**LoanApplicationUpdateDto**](LoanApplicationUpdateDto.md) |  |
+ **body** | **map** |  |
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 

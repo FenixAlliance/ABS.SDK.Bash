@@ -6,7 +6,6 @@ Name | Type | Description | Notes
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
 **name** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
 **fiscalYearId** | **string** |  | [optional] [default to null]
 **costCentreId** | **string** |  | [optional] [default to null]
 

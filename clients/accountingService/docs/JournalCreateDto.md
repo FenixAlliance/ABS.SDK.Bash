@@ -8,8 +8,6 @@ Name | Type | Description | Notes
 **name** | **string** |  | [default to null]
 **description** | **string** |  | [optional] [default to null]
 **dateTime** | **string** |  | [optional] [default to null]
-**tenantID** | **string** |  | [optional] [default to null]
-**enrollmentID** | **string** |  | [optional] [default to null]
 **parentJournalID** | **string** |  | [optional] [default to null]
 **journalTypeID** | **string** |  | [optional] [default to null]
 **ledgerID** | **string** |  | [optional] [default to null]

@@ -6,8 +6,6 @@ Name | Type | Description | Notes
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
 **name** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
-**enrollmentId** | **string** |  | [optional] [default to null]
 **dateStart** | **string** |  | [optional] [default to null]
 **dateEnd** | **string** |  | [optional] [default to null]
 

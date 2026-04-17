@@ -5,8 +5,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
-**enrollmentId** | **string** |  | [optional] [default to null]
 **title** | **string** |  | [optional] [default to null]
 **code** | **string** |  | [optional] [default to null]
 **published** | **boolean** |  | [optional] [default to null]

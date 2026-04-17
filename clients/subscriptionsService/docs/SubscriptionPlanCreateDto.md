@@ -35,7 +35,6 @@ Name | Type | Description | Notes
 **pattern** | **string** |  | [optional] [default to null]
 **features** | **string** |  | [optional] [default to null]
 **material** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
 **permalink** | **string** |  | [optional] [default to null]
 **brandName** | **string** |  | [optional] [default to null]
 **variations** | **string** |  | [optional] [default to null]

@@ -12,7 +12,6 @@ Name | Type | Description | Notes
 **releaseDateTime** | **string** |  | [optional] [default to null]
 **courseID** | **string** |  | [default to null]
 **courseUnitID** | **string** |  | [optional] [default to null]
-**businessID** | **string** |  | [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

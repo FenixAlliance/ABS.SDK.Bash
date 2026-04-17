@@ -12,8 +12,6 @@ Name | Type | Description | Notes
 **modifiedOn** | **string** |  | [optional] [default to null]
 **lastUsedOn** | **string** |  | [optional] [default to null]
 **currencyId** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
-**enrollmentId** | **string** |  | [optional] [default to null]
 **marketingListType** | **string** |  | [optional] [default to null]
 **marketingListTarget** | **string** |  | [optional] [default to null]
 

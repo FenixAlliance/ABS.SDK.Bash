@@ -15,7 +15,6 @@ Name | Type | Description | Notes
 **stateId** | **string** |  | [optional] [default to null]
 **postalCode** | **string** |  | [optional] [default to null]
 **countryId** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
 **longitude** | **float** |  | [optional] [default to null]
 **latitude** | **float** |  | [optional] [default to null]
 **isRoutable** | **boolean** |  | [optional] [default to null]

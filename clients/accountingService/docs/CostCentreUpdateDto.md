@@ -7,7 +7,6 @@ Name | Type | Description | Notes
 **disabled** | **boolean** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
 **costCentreType** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
 **costCentresGroupId** | **string** |  | [optional] [default to null]
 **parentCostCentreId** | **string** |  | [optional] [default to null]
 

@@ -26,8 +26,6 @@ Name | Type | Description | Notes
 **customState** | **string** |  | [optional] [default to null]
 **customCity** | **string** |  | [optional] [default to null]
 **cityId** | **string** |  | [optional] [default to null]
-**enrollmentId** | **string** |  | [optional] [default to null]
-**tenantId** | **string** |  | [optional] [default to null]
 **zero** | **boolean** |  | [optional] [default to null]
 **reduced** | **boolean** |  | [optional] [default to null]
 **withholding** | **boolean** |  | [optional] [default to null]

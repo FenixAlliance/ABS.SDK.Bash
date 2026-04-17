@@ -79,6 +79,7 @@ _()
     operations["getBlogPostCategoriesAsync"]=1
     operations["getBlogPostCategoryByIdAsync"]=1
     operations["updateBlogPostCategoryAsync"]=1
+    operations["countBlogPostTagsAsync"]=1
     operations["createBlogPostTagAsync"]=1
     operations["deleteBlogPostTagAsync"]=1
     operations["getBlogPostTagByIdAsync"]=1
@@ -119,10 +120,12 @@ _()
     operations["resendConfirmationEmailPost"]=1
     operations["resetPasswordPost"]=1
     operations["versionGet"]=1
+    operations["countPortalsAsync"]=1
     operations["createWebPortalAsync"]=1
     operations["deleteWebPortalAsync"]=1
     operations["getCurrentWebPortalAsync"]=1
     operations["getCurrentWebPortalOptionsAsync"]=1
+    operations["getPortalsAsync"]=1
     operations["getRootWebPortalAsync"]=1
     operations["getWebPortalByIdAsync"]=1
     operations["getWebPortalOptionsAsync"]=1
@@ -138,11 +141,13 @@ _()
     operations["getWebContentByIdAsync"]=1
     operations["getWebContentsAsync"]=1
     operations["updateWebContentAsync"]=1
+    operations["countWebPageCategoriesAsync"]=1
     operations["createWebPageCategoryAsync"]=1
     operations["deleteWebPageCategoryAsync"]=1
     operations["getWebPageCategoriesAsync"]=1
     operations["getWebPageCategoryByIdAsync"]=1
     operations["updateWebPageCategoryAsync"]=1
+    operations["countWebPageTagsAsync"]=1
     operations["createWebPageTagAsync"]=1
     operations["deleteWebPageTagAsync"]=1
     operations["getWebPageTagByIdAsync"]=1
@@ -182,6 +187,7 @@ _()
     operation_parameters["getBlogPostCategoriesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getBlogPostCategoryByIdAsync"]="blogPostCategoryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateBlogPostCategoryAsync"]="blogPostCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["countBlogPostTagsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createBlogPostTagAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteBlogPostTagAsync"]="blogPostTagId= tenantId= api-version= x-api-version: "
     operation_parameters["getBlogPostTagByIdAsync"]="blogPostTagId= tenantId= api-version= x-api-version: "
@@ -222,10 +228,12 @@ _()
     operation_parameters["resendConfirmationEmailPost"]=""
     operation_parameters["resetPasswordPost"]=""
     operation_parameters["versionGet"]=""
+    operation_parameters["countPortalsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createWebPortalAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteWebPortalAsync"]="portalId= tenantId= api-version= x-api-version: "
     operation_parameters["getCurrentWebPortalAsync"]="api-version= x-api-version: "
     operation_parameters["getCurrentWebPortalOptionsAsync"]="api-version= x-api-version: "
+    operation_parameters["getPortalsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getRootWebPortalAsync"]="api-version= x-api-version: "
     operation_parameters["getWebPortalByIdAsync"]="portalId= api-version= x-api-version: "
     operation_parameters["getWebPortalOptionsAsync"]="portalId= api-version= x-api-version: "
@@ -241,11 +249,13 @@ _()
     operation_parameters["getWebContentByIdAsync"]="webContentId= tenantId= api-version= x-api-version: "
     operation_parameters["getWebContentsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateWebContentAsync"]="webContentId= tenantId= api-version= x-api-version: "
+    operation_parameters["countWebPageCategoriesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createWebPageCategoryAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteWebPageCategoryAsync"]="webPageCategoryId= tenantId= api-version= x-api-version: "
     operation_parameters["getWebPageCategoriesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getWebPageCategoryByIdAsync"]="webPageCategoryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateWebPageCategoryAsync"]="webPageCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["countWebPageTagsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createWebPageTagAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteWebPageTagAsync"]="webPageTagId= tenantId= api-version= x-api-version: "
     operation_parameters["getWebPageTagByIdAsync"]="webPageTagId= tenantId= api-version= x-api-version: "
