@@ -62,8 +62,8 @@ Name | Type | Description | Notes
 **socialProfileId** | **string** |  | [optional] [default to null]
 **parentWebContentId** | **string** |  | [optional] [default to null]
 **parentWebContentVersionId** | **string** |  | [optional] [default to null]
-**blogPostCategoryID** | **string** |  | [optional] [default to null]
-**webTemplateID** | **string** |  | [optional] [default to null]
+**blogPostCategoryId** | **string** |  | [optional] [default to null]
+**webTemplateId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
