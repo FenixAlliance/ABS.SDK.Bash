@@ -305,7 +305,11 @@ case $state in
             "updateContactAvatar[Update the avatar for a given contact.]" \
             "updateTenantAvatar[Update the avatar for a given tenant.]" \
             "updateUserAvatar[Update the avatar for the current user.]"             "getBlobAsync[]" \
-            "getBlobsAsync[]"             "forgotPasswordPost[]" \
+            "getBlobsAsync[]"             "accountLogoutPost[]" \
+            "accountManageDownloadPersonalDataPost[]" \
+            "accountManageLinkExternalLoginPost[]" \
+            "accountPerformExternalLoginPost[]" \
+            "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
             "loginPost[]" \
@@ -430,6 +434,30 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountLogoutPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountManageDownloadPersonalDataPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountManageLinkExternalLoginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountPerformExternalLoginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)

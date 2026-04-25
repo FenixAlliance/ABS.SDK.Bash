@@ -11,7 +11,7 @@ docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
 docs/ExtendedOrderDto.md
 docs/ExtendedOrderDtoListEnvelope.md
-docs/FenixAllianceABPWebApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForexRates.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md

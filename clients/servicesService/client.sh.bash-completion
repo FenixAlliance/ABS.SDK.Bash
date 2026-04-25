@@ -69,6 +69,10 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["accountLogoutPost"]=1
+    operations["accountManageDownloadPersonalDataPost"]=1
+    operations["accountManageLinkExternalLoginPost"]=1
+    operations["accountPerformExternalLoginPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -124,6 +128,10 @@ _()
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["accountLogoutPost"]=""
+    operation_parameters["accountManageDownloadPersonalDataPost"]=""
+    operation_parameters["accountManageLinkExternalLoginPost"]=""
+    operation_parameters["accountPerformExternalLoginPost"]=""
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""

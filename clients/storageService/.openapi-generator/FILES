@@ -10,7 +10,7 @@ docs/BlobEnvelope.md
 docs/BlobsApi.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
-docs/FenixAllianceABPWebApi.md
+docs/FenixAllianceABSWebApi.md
 docs/FileUploadDto.md
 docs/FileUploadDtoEnvelope.md
 docs/FilesApi.md

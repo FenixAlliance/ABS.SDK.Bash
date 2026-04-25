@@ -75,6 +75,10 @@ _()
     operations["getBusinessApplicationsAsync"]=1
     operations["getBusinessApplicationsCountAsync"]=1
     operations["updateBusinessApplicationAsync"]=1
+    operations["accountLogoutPost"]=1
+    operations["accountManageDownloadPersonalDataPost"]=1
+    operations["accountManageLinkExternalLoginPost"]=1
+    operations["accountPerformExternalLoginPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -147,6 +151,10 @@ _()
     operation_parameters["getBusinessApplicationsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getBusinessApplicationsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateBusinessApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["accountLogoutPost"]=""
+    operation_parameters["accountManageDownloadPersonalDataPost"]=""
+    operation_parameters["accountManageLinkExternalLoginPost"]=""
+    operation_parameters["accountPerformExternalLoginPost"]=""
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
