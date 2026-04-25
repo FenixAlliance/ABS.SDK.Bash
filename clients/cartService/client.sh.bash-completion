@@ -115,6 +115,10 @@ _()
     operations["getItemToCompareRecord"]=1
     operations["getItemToCompareRecords"]=1
     operations["removeItemFromCompareTable"]=1
+    operations["accountLogoutPost"]=1
+    operations["accountManageDownloadPersonalDataPost"]=1
+    operations["accountManageLinkExternalLoginPost"]=1
+    operations["accountPerformExternalLoginPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -200,6 +204,10 @@ _()
     operation_parameters["getItemToCompareRecord"]="recordId= api-version= x-api-version: "
     operation_parameters["getItemToCompareRecords"]="cartId= api-version= x-api-version: "
     operation_parameters["removeItemFromCompareTable"]="recordId= api-version= x-api-version: "
+    operation_parameters["accountLogoutPost"]=""
+    operation_parameters["accountManageDownloadPersonalDataPost"]=""
+    operation_parameters["accountManageLinkExternalLoginPost"]=""
+    operation_parameters["accountPerformExternalLoginPost"]=""
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""

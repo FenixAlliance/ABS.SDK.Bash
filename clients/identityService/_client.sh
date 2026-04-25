@@ -301,7 +301,11 @@ case $state in
             "getGrantedEnrollmentPermissions[Get granted permissions for an application role]" \
             "getGrantedTenantPermissions[Get granted tenant permissions for an application]" \
             "getGrantedTenantRoles[Get granted tenant roles for an application]" \
-            "getRequiredPermissions[Get required permissions for an application]"             "isAuthenticated[Check if user is authenticated]"             "forgotPasswordPost[]" \
+            "getRequiredPermissions[Get required permissions for an application]"             "isAuthenticated[Check if user is authenticated]"             "accountLogoutPost[]" \
+            "accountManageDownloadPersonalDataPost[]" \
+            "accountManageLinkExternalLoginPost[]" \
+            "accountPerformExternalLoginPost[]" \
+            "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
             "loginPost[]" \
@@ -383,6 +387,30 @@ case $state in
                     "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountLogoutPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountManageDownloadPersonalDataPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountManageLinkExternalLoginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountPerformExternalLoginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)

@@ -10,7 +10,7 @@ docs/ExchangeApi.md
 docs/ExchangeRate.md
 docs/ExchangeRateEnvelope.md
 docs/ExchangeVApi.md
-docs/FenixAllianceABPWebApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForexRatesDto.md
 docs/ForexRatesDtoEnvelope.md
 docs/ForgotPasswordRequest.md

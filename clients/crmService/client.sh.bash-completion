@@ -100,6 +100,10 @@ _()
     operations["updateContactAvatarAsync"]=1
     operations["upsertTenantOntoAnotherTenantContactListAsync"]=1
     operations["upsertUserOntoAnotherTenantContactListAsync"]=1
+    operations["accountLogoutPost"]=1
+    operations["accountManageDownloadPersonalDataPost"]=1
+    operations["accountManageLinkExternalLoginPost"]=1
+    operations["accountPerformExternalLoginPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -160,6 +164,10 @@ _()
     operation_parameters["updateContactAvatarAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["upsertTenantOntoAnotherTenantContactListAsync"]="tenantId= relatedTenantId= api-version= x-api-version: "
     operation_parameters["upsertUserOntoAnotherTenantContactListAsync"]="tenantId= relatedUserId= api-version= x-api-version: "
+    operation_parameters["accountLogoutPost"]=""
+    operation_parameters["accountManageDownloadPersonalDataPost"]=""
+    operation_parameters["accountManageLinkExternalLoginPost"]=""
+    operation_parameters["accountPerformExternalLoginPost"]=""
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""

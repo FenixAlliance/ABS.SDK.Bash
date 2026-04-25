@@ -110,6 +110,10 @@ operation_parameters_minimum_occurrences["exchangeAmountHistoricalV3Async:::date
 operation_parameters_minimum_occurrences["exchangeAmountV3Async:::amount"]=1
 operation_parameters_minimum_occurrences["exchangeAmountV3Async:::sourceCurrencyId"]=1
 operation_parameters_minimum_occurrences["exchangeAmountV3Async:::targetCurrencyId"]=1
+operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
+operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
+operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -157,6 +161,10 @@ operation_parameters_maximum_occurrences["exchangeAmountHistoricalV3Async:::date
 operation_parameters_maximum_occurrences["exchangeAmountV3Async:::amount"]=0
 operation_parameters_maximum_occurrences["exchangeAmountV3Async:::sourceCurrencyId"]=0
 operation_parameters_maximum_occurrences["exchangeAmountV3Async:::targetCurrencyId"]=0
+operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
+operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
+operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -201,6 +209,10 @@ operation_parameters_collection_type["exchangeAmountHistoricalV3Async:::date"]="
 operation_parameters_collection_type["exchangeAmountV3Async:::amount"]=""
 operation_parameters_collection_type["exchangeAmountV3Async:::sourceCurrencyId"]=""
 operation_parameters_collection_type["exchangeAmountV3Async:::targetCurrencyId"]=""
+operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
+operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
+operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
+operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -626,8 +638,12 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABPWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}accountLogoutPost${OFF};
+  ${CYAN}accountManageDownloadPersonalDataPost${OFF};
+  ${CYAN}accountManageLinkExternalLoginPost${OFF};
+  ${CYAN}accountPerformExternalLoginPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -812,6 +828,65 @@ print_exchangeAmountV3Async_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for accountLogoutPost operation
+#
+##############################################################################
+print_accountLogoutPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}accountLogoutPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for accountManageDownloadPersonalDataPost operation
+#
+##############################################################################
+print_accountManageDownloadPersonalDataPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}accountManageDownloadPersonalDataPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for accountManageLinkExternalLoginPost operation
+#
+##############################################################################
+print_accountManageLinkExternalLoginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}accountManageLinkExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for accountPerformExternalLoginPost operation
+#
+##############################################################################
+print_accountPerformExternalLoginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -1295,6 +1370,153 @@ call_exchangeAmountV3Async() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call accountLogoutPost operation
+#
+##############################################################################
+call_accountLogoutPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/Account/Logout" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call accountManageDownloadPersonalDataPost operation
+#
+##############################################################################
+call_accountManageDownloadPersonalDataPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/Account/Manage/DownloadPersonalData" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call accountManageLinkExternalLoginPost operation
+#
+##############################################################################
+call_accountManageLinkExternalLoginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/Account/Manage/LinkExternalLogin" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call accountPerformExternalLoginPost operation
+#
+##############################################################################
+call_accountPerformExternalLoginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/Account/PerformExternalLogin" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -2355,6 +2577,18 @@ case $key in
     exchangeAmountV3Async)
     operation="exchangeAmountV3Async"
     ;;
+    accountLogoutPost)
+    operation="accountLogoutPost"
+    ;;
+    accountManageDownloadPersonalDataPost)
+    operation="accountManageDownloadPersonalDataPost"
+    ;;
+    accountManageLinkExternalLoginPost)
+    operation="accountManageLinkExternalLoginPost"
+    ;;
+    accountPerformExternalLoginPost)
+    operation="accountPerformExternalLoginPost"
+    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -2504,6 +2738,18 @@ case $operation in
     ;;
     exchangeAmountV3Async)
     call_exchangeAmountV3Async
+    ;;
+    accountLogoutPost)
+    call_accountLogoutPost
+    ;;
+    accountManageDownloadPersonalDataPost)
+    call_accountManageDownloadPersonalDataPost
+    ;;
+    accountManageLinkExternalLoginPost)
+    call_accountManageLinkExternalLoginPost
+    ;;
+    accountPerformExternalLoginPost)
+    call_accountPerformExternalLoginPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

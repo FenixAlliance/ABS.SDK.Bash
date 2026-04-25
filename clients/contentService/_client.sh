@@ -330,7 +330,11 @@ case $state in
             "unrelateTagFromBlogPostAsync[Remove a tag from a blog post]" \
             "updateBlogPostAsync[Update a blog post]"             "getBusinessDomainByIdAsync[Get business domain by ID]" \
             "getBusinessDomainsAsync[Get business domains]" \
-            "getBusinessDomainsCountAsync[Get business domains count]"             "forgotPasswordPost[]" \
+            "getBusinessDomainsCountAsync[Get business domains count]"             "accountLogoutPost[]" \
+            "accountManageDownloadPersonalDataPost[]" \
+            "accountManageLinkExternalLoginPost[]" \
+            "accountPerformExternalLoginPost[]" \
+            "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
             "loginPost[]" \
@@ -723,6 +727,30 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountLogoutPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountManageDownloadPersonalDataPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountManageLinkExternalLoginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountPerformExternalLoginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)

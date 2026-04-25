@@ -217,6 +217,10 @@ _()
     operations["getStudentProfilesByCourseAsync"]=1
     operations["getStudentProfilesByCourseCountAsync"]=1
     operations["updateCourseAsync"]=1
+    operations["accountLogoutPost"]=1
+    operations["accountManageDownloadPersonalDataPost"]=1
+    operations["accountManageLinkExternalLoginPost"]=1
+    operations["accountPerformExternalLoginPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -396,6 +400,10 @@ _()
     operation_parameters["getStudentProfilesByCourseAsync"]="courseId= api-version= x-api-version: "
     operation_parameters["getStudentProfilesByCourseCountAsync"]="courseId= api-version= x-api-version: "
     operation_parameters["updateCourseAsync"]="courseId= tenantId= api-version= x-api-version: "
+    operation_parameters["accountLogoutPost"]=""
+    operation_parameters["accountManageDownloadPersonalDataPost"]=""
+    operation_parameters["accountManageLinkExternalLoginPost"]=""
+    operation_parameters["accountPerformExternalLoginPost"]=""
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""

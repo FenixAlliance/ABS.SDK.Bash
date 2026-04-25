@@ -73,6 +73,10 @@ _()
     operations["exchangeAmountHistoricalAsync"]=1
     operations["exchangeAmountHistoricalV3Async"]=1
     operations["exchangeAmountV3Async"]=1
+    operations["accountLogoutPost"]=1
+    operations["accountManageDownloadPersonalDataPost"]=1
+    operations["accountManageLinkExternalLoginPost"]=1
+    operations["accountPerformExternalLoginPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -98,6 +102,10 @@ _()
     operation_parameters["exchangeAmountHistoricalAsync"]="amount= sourceCurrencyId= targetCurrencyId= date= "
     operation_parameters["exchangeAmountHistoricalV3Async"]="amount= sourceCurrencyId= targetCurrencyId= date= "
     operation_parameters["exchangeAmountV3Async"]="amount= sourceCurrencyId= targetCurrencyId= "
+    operation_parameters["accountLogoutPost"]=""
+    operation_parameters["accountManageDownloadPersonalDataPost"]=""
+    operation_parameters["accountManageLinkExternalLoginPost"]=""
+    operation_parameters["accountPerformExternalLoginPost"]=""
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""

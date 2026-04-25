@@ -427,7 +427,11 @@ case $state in
             "getInstructorProfilesByCourseCountAsync[Get instructor profiles by course count]" \
             "getStudentProfilesByCourseAsync[Get student profiles by course]" \
             "getStudentProfilesByCourseCountAsync[Get student profiles by course count]" \
-            "updateCourseAsync[Update a course]"             "forgotPasswordPost[]" \
+            "updateCourseAsync[Update a course]"             "accountLogoutPost[]" \
+            "accountManageDownloadPersonalDataPost[]" \
+            "accountManageLinkExternalLoginPost[]" \
+            "accountPerformExternalLoginPost[]" \
+            "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
             "loginPost[]" \
@@ -1836,6 +1840,30 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountLogoutPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountManageDownloadPersonalDataPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountManageLinkExternalLoginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountPerformExternalLoginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)

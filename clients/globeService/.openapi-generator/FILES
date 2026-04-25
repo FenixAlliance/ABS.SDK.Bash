@@ -25,7 +25,7 @@ docs/CurrencyDto.md
 docs/CurrencyDtoEnvelope.md
 docs/CurrencyDtoListEnvelope.md
 docs/ErrorEnvelope.md
-docs/FenixAllianceABPWebApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/InfoRequest.md

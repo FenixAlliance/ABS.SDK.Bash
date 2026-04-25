@@ -341,7 +341,11 @@ case $state in
             "wishListExistsAsync[Assesses if a WishList exists]"             "addItemToCompareTableAsync[Add an item to the compare table]" \
             "getItemToCompareRecord[Get compare record details]" \
             "getItemToCompareRecords[Get items to compare in a cart]" \
-            "removeItemFromCompareTable[Remove an item from the compare table]"             "forgotPasswordPost[]" \
+            "removeItemFromCompareTable[Remove an item from the compare table]"             "accountLogoutPost[]" \
+            "accountManageDownloadPersonalDataPost[]" \
+            "accountManageLinkExternalLoginPost[]" \
+            "accountPerformExternalLoginPost[]" \
+            "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
             "loginPost[]" \
@@ -820,6 +824,30 @@ case $state in
           "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountLogoutPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountManageDownloadPersonalDataPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountManageLinkExternalLoginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      accountPerformExternalLoginPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)
