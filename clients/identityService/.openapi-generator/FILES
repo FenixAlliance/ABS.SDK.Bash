@@ -5,7 +5,7 @@ client.sh
 client.sh.bash-completion
 docs/AccessTokenResponse.md
 docs/ApplicationsApi.md
-docs/AuthorizationResult.md
+docs/AuthResult.md
 docs/AuthorizationResultEnvelope.md
 docs/CheckerApi.md
 docs/ErrorEnvelope.md
