@@ -107,6 +107,7 @@ _()
     operations["getBusinessDomainByIdAsync"]=1
     operations["getBusinessDomainsAsync"]=1
     operations["getBusinessDomainsCountAsync"]=1
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -177,6 +178,12 @@ _()
     operations["getWebTemplateByIdAsync"]=1
     operations["getWebTemplatesAsync"]=1
     operations["updateWebTemplateAsync"]=1
+    operations["createWebsiteThemeAsync"]=1
+    operations["deleteWebsiteThemeAsync"]=1
+    operations["getWebsiteThemeByIdAsync"]=1
+    operations["getWebsiteThemesAsync"]=1
+    operations["getWebsiteThemesCountAsync"]=1
+    operations["updateWebsiteThemeAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
@@ -219,6 +226,7 @@ _()
     operation_parameters["getBusinessDomainByIdAsync"]="businessDomainId= tenantId= api-version= x-api-version: "
     operation_parameters["getBusinessDomainsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getBusinessDomainsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
@@ -289,6 +297,12 @@ _()
     operation_parameters["getWebTemplateByIdAsync"]="webTemplateId= tenantId= api-version= x-api-version: "
     operation_parameters["getWebTemplatesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateWebTemplateAsync"]="webTemplateId= tenantId= api-version= x-api-version: "
+    operation_parameters["createWebsiteThemeAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteWebsiteThemeAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getWebsiteThemeByIdAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getWebsiteThemesAsync"]="tenantId= oDataQueryOptions= api-version= x-api-version: "
+    operation_parameters["getWebsiteThemesCountAsync"]="tenantId= oDataQueryOptions= api-version= x-api-version: "
+    operation_parameters["updateWebsiteThemeAsync"]="id= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values

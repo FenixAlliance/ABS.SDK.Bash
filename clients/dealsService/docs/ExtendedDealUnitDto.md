@@ -30,6 +30,7 @@ Name | Type | Description | Notes
 **taxCalculationMethod** | **string** |  | [optional] [default to null]
 **costCalculationMethod** | **string** |  | [optional] [default to null]
 **forexRate** | **float** |  | [optional] [default to null]
+**forexRatesSnapshot** | **string** |  | [optional] [default to null]
 **currencyId** | **string** |  | [optional] [default to null]
 **totalDetail** | **float** |  | [optional] [default to null]
 **totalDetailCurrencyId** | **string** |  | [optional] [default to null]

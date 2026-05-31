@@ -96,6 +96,9 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -113,6 +116,167 @@ operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
 operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
 operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["createInquiryRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createInquiryRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createInquiryRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createInquiryRequestAsync:::InquiryRequestCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteInquiryRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteInquiryRequestAsync:::inquiryRequestId"]=1
+operation_parameters_minimum_occurrences["deleteInquiryRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteInquiryRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getInquiryRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getInquiryRequestAsync:::inquiryRequestId"]=1
+operation_parameters_minimum_occurrences["getInquiryRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getInquiryRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getInquiryRequestsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getInquiryRequestsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getInquiryRequestsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getInquiryRequestsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getInquiryRequestsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getInquiryRequestsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateInquiryRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateInquiryRequestAsync:::inquiryRequestId"]=1
+operation_parameters_minimum_occurrences["updateInquiryRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateInquiryRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateInquiryRequestAsync:::InquiryRequestUpdateDto"]=0
+operation_parameters_minimum_occurrences["createKnowledgeArticleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createKnowledgeArticleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createKnowledgeArticleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createKnowledgeArticleAsync:::KnowledgeArticleCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteKnowledgeArticleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteKnowledgeArticleAsync:::knowledgeArticleId"]=1
+operation_parameters_minimum_occurrences["deleteKnowledgeArticleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteKnowledgeArticleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getKnowledgeArticleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getKnowledgeArticleAsync:::knowledgeArticleId"]=1
+operation_parameters_minimum_occurrences["getKnowledgeArticleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getKnowledgeArticleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getKnowledgeArticlesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getKnowledgeArticlesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getKnowledgeArticlesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getKnowledgeArticlesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getKnowledgeArticlesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getKnowledgeArticlesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateKnowledgeArticleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateKnowledgeArticleAsync:::knowledgeArticleId"]=1
+operation_parameters_minimum_occurrences["updateKnowledgeArticleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateKnowledgeArticleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateKnowledgeArticleAsync:::KnowledgeArticleUpdateDto"]=0
+operation_parameters_minimum_occurrences["createMaintenanceVisitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createMaintenanceVisitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createMaintenanceVisitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createMaintenanceVisitAsync:::MaintenanceVisitCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteMaintenanceVisitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteMaintenanceVisitAsync:::maintenanceVisitId"]=1
+operation_parameters_minimum_occurrences["deleteMaintenanceVisitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteMaintenanceVisitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMaintenanceVisitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMaintenanceVisitAsync:::maintenanceVisitId"]=1
+operation_parameters_minimum_occurrences["getMaintenanceVisitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMaintenanceVisitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMaintenanceVisitsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMaintenanceVisitsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMaintenanceVisitsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMaintenanceVisitsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMaintenanceVisitsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMaintenanceVisitsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateMaintenanceVisitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateMaintenanceVisitAsync:::maintenanceVisitId"]=1
+operation_parameters_minimum_occurrences["updateMaintenanceVisitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateMaintenanceVisitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateMaintenanceVisitAsync:::body"]=0
+operation_parameters_minimum_occurrences["createRefundPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createRefundPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createRefundPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createRefundPolicyAsync:::ItemRefundPolicyCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteRefundPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteRefundPolicyAsync:::refundPolicyId"]=1
+operation_parameters_minimum_occurrences["deleteRefundPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteRefundPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRefundPoliciesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRefundPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRefundPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRefundPoliciesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRefundPoliciesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRefundPoliciesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRefundPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRefundPolicyAsync:::refundPolicyId"]=1
+operation_parameters_minimum_occurrences["getRefundPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRefundPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateRefundPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateRefundPolicyAsync:::refundPolicyId"]=1
+operation_parameters_minimum_occurrences["updateRefundPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateRefundPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateRefundPolicyAsync:::ItemRefundPolicyUpdateDto"]=0
+operation_parameters_minimum_occurrences["createRefundRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createRefundRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createRefundRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createRefundRequestAsync:::RefundRequestCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteRefundRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteRefundRequestAsync:::refundRequestId"]=1
+operation_parameters_minimum_occurrences["deleteRefundRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteRefundRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRefundRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRefundRequestAsync:::refundRequestId"]=1
+operation_parameters_minimum_occurrences["getRefundRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRefundRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRefundRequestsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRefundRequestsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRefundRequestsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRefundRequestsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRefundRequestsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRefundRequestsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateRefundRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateRefundRequestAsync:::refundRequestId"]=1
+operation_parameters_minimum_occurrences["updateRefundRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateRefundRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateRefundRequestAsync:::RefundRequestUpdateDto"]=0
+operation_parameters_minimum_occurrences["createReturnPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createReturnPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createReturnPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createReturnPolicyAsync:::ItemReturnPolicyCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteReturnPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteReturnPolicyAsync:::returnPolicyId"]=1
+operation_parameters_minimum_occurrences["deleteReturnPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteReturnPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getReturnPoliciesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getReturnPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getReturnPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getReturnPoliciesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getReturnPoliciesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getReturnPoliciesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getReturnPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getReturnPolicyAsync:::returnPolicyId"]=1
+operation_parameters_minimum_occurrences["getReturnPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getReturnPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateReturnPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateReturnPolicyAsync:::returnPolicyId"]=1
+operation_parameters_minimum_occurrences["updateReturnPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateReturnPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateReturnPolicyAsync:::ItemReturnPolicyUpdateDto"]=0
+operation_parameters_minimum_occurrences["createReturnRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createReturnRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createReturnRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createReturnRequestAsync:::ReturnRequestCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteReturnRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteReturnRequestAsync:::returnRequestId"]=1
+operation_parameters_minimum_occurrences["deleteReturnRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteReturnRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getReturnRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getReturnRequestAsync:::returnRequestId"]=1
+operation_parameters_minimum_occurrences["getReturnRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getReturnRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getReturnRequestsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getReturnRequestsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getReturnRequestsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getReturnRequestsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getReturnRequestsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getReturnRequestsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateReturnRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateReturnRequestAsync:::returnRequestId"]=1
+operation_parameters_minimum_occurrences["updateReturnRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateReturnRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateReturnRequestAsync:::ReturnRequestUpdateDto"]=0
 operation_parameters_minimum_occurrences["createSupportEntitlementAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createSupportEntitlementAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createSupportEntitlementAsync:::x-api-version"]=0
@@ -299,6 +463,52 @@ operation_parameters_minimum_occurrences["updateSupportTicketAsync:::supportTick
 operation_parameters_minimum_occurrences["updateSupportTicketAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateSupportTicketAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateSupportTicketAsync:::SupportTicketUpdateDto"]=0
+operation_parameters_minimum_occurrences["createWarrantyPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createWarrantyPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createWarrantyPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createWarrantyPolicyAsync:::ItemWarrantyPolicyCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteWarrantyPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteWarrantyPolicyAsync:::warrantyPolicyId"]=1
+operation_parameters_minimum_occurrences["deleteWarrantyPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteWarrantyPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWarrantyPoliciesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWarrantyPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWarrantyPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWarrantyPoliciesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWarrantyPoliciesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWarrantyPoliciesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWarrantyPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWarrantyPolicyAsync:::warrantyPolicyId"]=1
+operation_parameters_minimum_occurrences["getWarrantyPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWarrantyPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateWarrantyPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateWarrantyPolicyAsync:::warrantyPolicyId"]=1
+operation_parameters_minimum_occurrences["updateWarrantyPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateWarrantyPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateWarrantyPolicyAsync:::ItemWarrantyPolicyUpdateDto"]=0
+operation_parameters_minimum_occurrences["createWarrantyRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createWarrantyRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createWarrantyRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createWarrantyRequestAsync:::WarrantyRequestCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteWarrantyRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteWarrantyRequestAsync:::warrantyRequestId"]=1
+operation_parameters_minimum_occurrences["deleteWarrantyRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteWarrantyRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWarrantyRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWarrantyRequestAsync:::warrantyRequestId"]=1
+operation_parameters_minimum_occurrences["getWarrantyRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWarrantyRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWarrantyRequestsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWarrantyRequestsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWarrantyRequestsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWarrantyRequestsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWarrantyRequestsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWarrantyRequestsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateWarrantyRequestAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateWarrantyRequestAsync:::warrantyRequestId"]=1
+operation_parameters_minimum_occurrences["updateWarrantyRequestAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateWarrantyRequestAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateWarrantyRequestAsync:::WarrantyRequestUpdateDto"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -307,6 +517,9 @@ operation_parameters_minimum_occurrences["updateSupportTicketAsync:::SupportTick
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -324,6 +537,167 @@ operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
 operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
 operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["createInquiryRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createInquiryRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createInquiryRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createInquiryRequestAsync:::InquiryRequestCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteInquiryRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteInquiryRequestAsync:::inquiryRequestId"]=0
+operation_parameters_maximum_occurrences["deleteInquiryRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteInquiryRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getInquiryRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getInquiryRequestAsync:::inquiryRequestId"]=0
+operation_parameters_maximum_occurrences["getInquiryRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getInquiryRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getInquiryRequestsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getInquiryRequestsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getInquiryRequestsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getInquiryRequestsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getInquiryRequestsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getInquiryRequestsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateInquiryRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateInquiryRequestAsync:::inquiryRequestId"]=0
+operation_parameters_maximum_occurrences["updateInquiryRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateInquiryRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateInquiryRequestAsync:::InquiryRequestUpdateDto"]=0
+operation_parameters_maximum_occurrences["createKnowledgeArticleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createKnowledgeArticleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createKnowledgeArticleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createKnowledgeArticleAsync:::KnowledgeArticleCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteKnowledgeArticleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteKnowledgeArticleAsync:::knowledgeArticleId"]=0
+operation_parameters_maximum_occurrences["deleteKnowledgeArticleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteKnowledgeArticleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getKnowledgeArticleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getKnowledgeArticleAsync:::knowledgeArticleId"]=0
+operation_parameters_maximum_occurrences["getKnowledgeArticleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getKnowledgeArticleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getKnowledgeArticlesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getKnowledgeArticlesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getKnowledgeArticlesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getKnowledgeArticlesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getKnowledgeArticlesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getKnowledgeArticlesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateKnowledgeArticleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateKnowledgeArticleAsync:::knowledgeArticleId"]=0
+operation_parameters_maximum_occurrences["updateKnowledgeArticleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateKnowledgeArticleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateKnowledgeArticleAsync:::KnowledgeArticleUpdateDto"]=0
+operation_parameters_maximum_occurrences["createMaintenanceVisitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createMaintenanceVisitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createMaintenanceVisitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createMaintenanceVisitAsync:::MaintenanceVisitCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteMaintenanceVisitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteMaintenanceVisitAsync:::maintenanceVisitId"]=0
+operation_parameters_maximum_occurrences["deleteMaintenanceVisitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteMaintenanceVisitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMaintenanceVisitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMaintenanceVisitAsync:::maintenanceVisitId"]=0
+operation_parameters_maximum_occurrences["getMaintenanceVisitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMaintenanceVisitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMaintenanceVisitsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMaintenanceVisitsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMaintenanceVisitsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMaintenanceVisitsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMaintenanceVisitsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMaintenanceVisitsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateMaintenanceVisitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateMaintenanceVisitAsync:::maintenanceVisitId"]=0
+operation_parameters_maximum_occurrences["updateMaintenanceVisitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateMaintenanceVisitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateMaintenanceVisitAsync:::body"]=0
+operation_parameters_maximum_occurrences["createRefundPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createRefundPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createRefundPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createRefundPolicyAsync:::ItemRefundPolicyCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteRefundPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteRefundPolicyAsync:::refundPolicyId"]=0
+operation_parameters_maximum_occurrences["deleteRefundPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteRefundPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRefundPoliciesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRefundPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRefundPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRefundPoliciesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRefundPoliciesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRefundPoliciesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRefundPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRefundPolicyAsync:::refundPolicyId"]=0
+operation_parameters_maximum_occurrences["getRefundPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRefundPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateRefundPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateRefundPolicyAsync:::refundPolicyId"]=0
+operation_parameters_maximum_occurrences["updateRefundPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateRefundPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateRefundPolicyAsync:::ItemRefundPolicyUpdateDto"]=0
+operation_parameters_maximum_occurrences["createRefundRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createRefundRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createRefundRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createRefundRequestAsync:::RefundRequestCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteRefundRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteRefundRequestAsync:::refundRequestId"]=0
+operation_parameters_maximum_occurrences["deleteRefundRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteRefundRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRefundRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRefundRequestAsync:::refundRequestId"]=0
+operation_parameters_maximum_occurrences["getRefundRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRefundRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRefundRequestsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRefundRequestsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRefundRequestsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRefundRequestsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRefundRequestsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRefundRequestsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateRefundRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateRefundRequestAsync:::refundRequestId"]=0
+operation_parameters_maximum_occurrences["updateRefundRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateRefundRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateRefundRequestAsync:::RefundRequestUpdateDto"]=0
+operation_parameters_maximum_occurrences["createReturnPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createReturnPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createReturnPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createReturnPolicyAsync:::ItemReturnPolicyCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteReturnPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteReturnPolicyAsync:::returnPolicyId"]=0
+operation_parameters_maximum_occurrences["deleteReturnPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteReturnPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getReturnPoliciesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getReturnPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getReturnPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getReturnPoliciesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getReturnPoliciesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getReturnPoliciesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getReturnPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getReturnPolicyAsync:::returnPolicyId"]=0
+operation_parameters_maximum_occurrences["getReturnPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getReturnPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateReturnPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateReturnPolicyAsync:::returnPolicyId"]=0
+operation_parameters_maximum_occurrences["updateReturnPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateReturnPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateReturnPolicyAsync:::ItemReturnPolicyUpdateDto"]=0
+operation_parameters_maximum_occurrences["createReturnRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createReturnRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createReturnRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createReturnRequestAsync:::ReturnRequestCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteReturnRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteReturnRequestAsync:::returnRequestId"]=0
+operation_parameters_maximum_occurrences["deleteReturnRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteReturnRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getReturnRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getReturnRequestAsync:::returnRequestId"]=0
+operation_parameters_maximum_occurrences["getReturnRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getReturnRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getReturnRequestsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getReturnRequestsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getReturnRequestsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getReturnRequestsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getReturnRequestsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getReturnRequestsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateReturnRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateReturnRequestAsync:::returnRequestId"]=0
+operation_parameters_maximum_occurrences["updateReturnRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateReturnRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateReturnRequestAsync:::ReturnRequestUpdateDto"]=0
 operation_parameters_maximum_occurrences["createSupportEntitlementAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createSupportEntitlementAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createSupportEntitlementAsync:::x-api-version"]=0
@@ -510,11 +884,60 @@ operation_parameters_maximum_occurrences["updateSupportTicketAsync:::supportTick
 operation_parameters_maximum_occurrences["updateSupportTicketAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateSupportTicketAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateSupportTicketAsync:::SupportTicketUpdateDto"]=0
+operation_parameters_maximum_occurrences["createWarrantyPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createWarrantyPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createWarrantyPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createWarrantyPolicyAsync:::ItemWarrantyPolicyCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteWarrantyPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteWarrantyPolicyAsync:::warrantyPolicyId"]=0
+operation_parameters_maximum_occurrences["deleteWarrantyPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteWarrantyPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWarrantyPoliciesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWarrantyPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWarrantyPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWarrantyPoliciesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWarrantyPoliciesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWarrantyPoliciesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWarrantyPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWarrantyPolicyAsync:::warrantyPolicyId"]=0
+operation_parameters_maximum_occurrences["getWarrantyPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWarrantyPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateWarrantyPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateWarrantyPolicyAsync:::warrantyPolicyId"]=0
+operation_parameters_maximum_occurrences["updateWarrantyPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateWarrantyPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateWarrantyPolicyAsync:::ItemWarrantyPolicyUpdateDto"]=0
+operation_parameters_maximum_occurrences["createWarrantyRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createWarrantyRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createWarrantyRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createWarrantyRequestAsync:::WarrantyRequestCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteWarrantyRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteWarrantyRequestAsync:::warrantyRequestId"]=0
+operation_parameters_maximum_occurrences["deleteWarrantyRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteWarrantyRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWarrantyRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWarrantyRequestAsync:::warrantyRequestId"]=0
+operation_parameters_maximum_occurrences["getWarrantyRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWarrantyRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWarrantyRequestsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWarrantyRequestsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWarrantyRequestsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWarrantyRequestsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWarrantyRequestsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWarrantyRequestsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateWarrantyRequestAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateWarrantyRequestAsync:::warrantyRequestId"]=0
+operation_parameters_maximum_occurrences["updateWarrantyRequestAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateWarrantyRequestAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateWarrantyRequestAsync:::WarrantyRequestUpdateDto"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
@@ -532,6 +955,167 @@ operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
 operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
 operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["createInquiryRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["createInquiryRequestAsync:::api-version"]=""
+operation_parameters_collection_type["createInquiryRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["createInquiryRequestAsync:::InquiryRequestCreateDto"]=""
+operation_parameters_collection_type["deleteInquiryRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteInquiryRequestAsync:::inquiryRequestId"]=""
+operation_parameters_collection_type["deleteInquiryRequestAsync:::api-version"]=""
+operation_parameters_collection_type["deleteInquiryRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["getInquiryRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["getInquiryRequestAsync:::inquiryRequestId"]=""
+operation_parameters_collection_type["getInquiryRequestAsync:::api-version"]=""
+operation_parameters_collection_type["getInquiryRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["getInquiryRequestsAsync:::tenantId"]=""
+operation_parameters_collection_type["getInquiryRequestsAsync:::api-version"]=""
+operation_parameters_collection_type["getInquiryRequestsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getInquiryRequestsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getInquiryRequestsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getInquiryRequestsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateInquiryRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["updateInquiryRequestAsync:::inquiryRequestId"]=""
+operation_parameters_collection_type["updateInquiryRequestAsync:::api-version"]=""
+operation_parameters_collection_type["updateInquiryRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateInquiryRequestAsync:::InquiryRequestUpdateDto"]=""
+operation_parameters_collection_type["createKnowledgeArticleAsync:::tenantId"]=""
+operation_parameters_collection_type["createKnowledgeArticleAsync:::api-version"]=""
+operation_parameters_collection_type["createKnowledgeArticleAsync:::x-api-version"]=""
+operation_parameters_collection_type["createKnowledgeArticleAsync:::KnowledgeArticleCreateDto"]=""
+operation_parameters_collection_type["deleteKnowledgeArticleAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteKnowledgeArticleAsync:::knowledgeArticleId"]=""
+operation_parameters_collection_type["deleteKnowledgeArticleAsync:::api-version"]=""
+operation_parameters_collection_type["deleteKnowledgeArticleAsync:::x-api-version"]=""
+operation_parameters_collection_type["getKnowledgeArticleAsync:::tenantId"]=""
+operation_parameters_collection_type["getKnowledgeArticleAsync:::knowledgeArticleId"]=""
+operation_parameters_collection_type["getKnowledgeArticleAsync:::api-version"]=""
+operation_parameters_collection_type["getKnowledgeArticleAsync:::x-api-version"]=""
+operation_parameters_collection_type["getKnowledgeArticlesAsync:::tenantId"]=""
+operation_parameters_collection_type["getKnowledgeArticlesAsync:::api-version"]=""
+operation_parameters_collection_type["getKnowledgeArticlesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getKnowledgeArticlesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getKnowledgeArticlesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getKnowledgeArticlesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateKnowledgeArticleAsync:::tenantId"]=""
+operation_parameters_collection_type["updateKnowledgeArticleAsync:::knowledgeArticleId"]=""
+operation_parameters_collection_type["updateKnowledgeArticleAsync:::api-version"]=""
+operation_parameters_collection_type["updateKnowledgeArticleAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateKnowledgeArticleAsync:::KnowledgeArticleUpdateDto"]=""
+operation_parameters_collection_type["createMaintenanceVisitAsync:::tenantId"]=""
+operation_parameters_collection_type["createMaintenanceVisitAsync:::api-version"]=""
+operation_parameters_collection_type["createMaintenanceVisitAsync:::x-api-version"]=""
+operation_parameters_collection_type["createMaintenanceVisitAsync:::MaintenanceVisitCreateDto"]=""
+operation_parameters_collection_type["deleteMaintenanceVisitAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteMaintenanceVisitAsync:::maintenanceVisitId"]=""
+operation_parameters_collection_type["deleteMaintenanceVisitAsync:::api-version"]=""
+operation_parameters_collection_type["deleteMaintenanceVisitAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMaintenanceVisitAsync:::tenantId"]=""
+operation_parameters_collection_type["getMaintenanceVisitAsync:::maintenanceVisitId"]=""
+operation_parameters_collection_type["getMaintenanceVisitAsync:::api-version"]=""
+operation_parameters_collection_type["getMaintenanceVisitAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMaintenanceVisitsAsync:::tenantId"]=""
+operation_parameters_collection_type["getMaintenanceVisitsAsync:::api-version"]=""
+operation_parameters_collection_type["getMaintenanceVisitsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMaintenanceVisitsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getMaintenanceVisitsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getMaintenanceVisitsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateMaintenanceVisitAsync:::tenantId"]=""
+operation_parameters_collection_type["updateMaintenanceVisitAsync:::maintenanceVisitId"]=""
+operation_parameters_collection_type["updateMaintenanceVisitAsync:::api-version"]=""
+operation_parameters_collection_type["updateMaintenanceVisitAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateMaintenanceVisitAsync:::body"]=""
+operation_parameters_collection_type["createRefundPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["createRefundPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["createRefundPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["createRefundPolicyAsync:::ItemRefundPolicyCreateDto"]=""
+operation_parameters_collection_type["deleteRefundPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteRefundPolicyAsync:::refundPolicyId"]=""
+operation_parameters_collection_type["deleteRefundPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["deleteRefundPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRefundPoliciesAsync:::tenantId"]=""
+operation_parameters_collection_type["getRefundPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["getRefundPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRefundPoliciesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getRefundPoliciesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getRefundPoliciesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRefundPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["getRefundPolicyAsync:::refundPolicyId"]=""
+operation_parameters_collection_type["getRefundPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["getRefundPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateRefundPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["updateRefundPolicyAsync:::refundPolicyId"]=""
+operation_parameters_collection_type["updateRefundPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["updateRefundPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateRefundPolicyAsync:::ItemRefundPolicyUpdateDto"]=""
+operation_parameters_collection_type["createRefundRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["createRefundRequestAsync:::api-version"]=""
+operation_parameters_collection_type["createRefundRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["createRefundRequestAsync:::RefundRequestCreateDto"]=""
+operation_parameters_collection_type["deleteRefundRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteRefundRequestAsync:::refundRequestId"]=""
+operation_parameters_collection_type["deleteRefundRequestAsync:::api-version"]=""
+operation_parameters_collection_type["deleteRefundRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRefundRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["getRefundRequestAsync:::refundRequestId"]=""
+operation_parameters_collection_type["getRefundRequestAsync:::api-version"]=""
+operation_parameters_collection_type["getRefundRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRefundRequestsAsync:::tenantId"]=""
+operation_parameters_collection_type["getRefundRequestsAsync:::api-version"]=""
+operation_parameters_collection_type["getRefundRequestsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRefundRequestsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getRefundRequestsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getRefundRequestsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateRefundRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["updateRefundRequestAsync:::refundRequestId"]=""
+operation_parameters_collection_type["updateRefundRequestAsync:::api-version"]=""
+operation_parameters_collection_type["updateRefundRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateRefundRequestAsync:::RefundRequestUpdateDto"]=""
+operation_parameters_collection_type["createReturnPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["createReturnPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["createReturnPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["createReturnPolicyAsync:::ItemReturnPolicyCreateDto"]=""
+operation_parameters_collection_type["deleteReturnPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteReturnPolicyAsync:::returnPolicyId"]=""
+operation_parameters_collection_type["deleteReturnPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["deleteReturnPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["getReturnPoliciesAsync:::tenantId"]=""
+operation_parameters_collection_type["getReturnPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["getReturnPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getReturnPoliciesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getReturnPoliciesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getReturnPoliciesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getReturnPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["getReturnPolicyAsync:::returnPolicyId"]=""
+operation_parameters_collection_type["getReturnPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["getReturnPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateReturnPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["updateReturnPolicyAsync:::returnPolicyId"]=""
+operation_parameters_collection_type["updateReturnPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["updateReturnPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateReturnPolicyAsync:::ItemReturnPolicyUpdateDto"]=""
+operation_parameters_collection_type["createReturnRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["createReturnRequestAsync:::api-version"]=""
+operation_parameters_collection_type["createReturnRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["createReturnRequestAsync:::ReturnRequestCreateDto"]=""
+operation_parameters_collection_type["deleteReturnRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteReturnRequestAsync:::returnRequestId"]=""
+operation_parameters_collection_type["deleteReturnRequestAsync:::api-version"]=""
+operation_parameters_collection_type["deleteReturnRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["getReturnRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["getReturnRequestAsync:::returnRequestId"]=""
+operation_parameters_collection_type["getReturnRequestAsync:::api-version"]=""
+operation_parameters_collection_type["getReturnRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["getReturnRequestsAsync:::tenantId"]=""
+operation_parameters_collection_type["getReturnRequestsAsync:::api-version"]=""
+operation_parameters_collection_type["getReturnRequestsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getReturnRequestsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getReturnRequestsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getReturnRequestsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateReturnRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["updateReturnRequestAsync:::returnRequestId"]=""
+operation_parameters_collection_type["updateReturnRequestAsync:::api-version"]=""
+operation_parameters_collection_type["updateReturnRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateReturnRequestAsync:::ReturnRequestUpdateDto"]=""
 operation_parameters_collection_type["createSupportEntitlementAsync:::tenantId"]=""
 operation_parameters_collection_type["createSupportEntitlementAsync:::api-version"]=""
 operation_parameters_collection_type["createSupportEntitlementAsync:::x-api-version"]=""
@@ -718,6 +1302,52 @@ operation_parameters_collection_type["updateSupportTicketAsync:::supportTicketId
 operation_parameters_collection_type["updateSupportTicketAsync:::api-version"]=""
 operation_parameters_collection_type["updateSupportTicketAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateSupportTicketAsync:::SupportTicketUpdateDto"]=""
+operation_parameters_collection_type["createWarrantyPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["createWarrantyPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["createWarrantyPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["createWarrantyPolicyAsync:::ItemWarrantyPolicyCreateDto"]=""
+operation_parameters_collection_type["deleteWarrantyPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteWarrantyPolicyAsync:::warrantyPolicyId"]=""
+operation_parameters_collection_type["deleteWarrantyPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["deleteWarrantyPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWarrantyPoliciesAsync:::tenantId"]=""
+operation_parameters_collection_type["getWarrantyPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["getWarrantyPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWarrantyPoliciesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getWarrantyPoliciesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getWarrantyPoliciesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWarrantyPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["getWarrantyPolicyAsync:::warrantyPolicyId"]=""
+operation_parameters_collection_type["getWarrantyPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["getWarrantyPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateWarrantyPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["updateWarrantyPolicyAsync:::warrantyPolicyId"]=""
+operation_parameters_collection_type["updateWarrantyPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["updateWarrantyPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateWarrantyPolicyAsync:::ItemWarrantyPolicyUpdateDto"]=""
+operation_parameters_collection_type["createWarrantyRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["createWarrantyRequestAsync:::api-version"]=""
+operation_parameters_collection_type["createWarrantyRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["createWarrantyRequestAsync:::WarrantyRequestCreateDto"]=""
+operation_parameters_collection_type["deleteWarrantyRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteWarrantyRequestAsync:::warrantyRequestId"]=""
+operation_parameters_collection_type["deleteWarrantyRequestAsync:::api-version"]=""
+operation_parameters_collection_type["deleteWarrantyRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWarrantyRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["getWarrantyRequestAsync:::warrantyRequestId"]=""
+operation_parameters_collection_type["getWarrantyRequestAsync:::api-version"]=""
+operation_parameters_collection_type["getWarrantyRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWarrantyRequestsAsync:::tenantId"]=""
+operation_parameters_collection_type["getWarrantyRequestsAsync:::api-version"]=""
+operation_parameters_collection_type["getWarrantyRequestsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWarrantyRequestsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getWarrantyRequestsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getWarrantyRequestsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateWarrantyRequestAsync:::tenantId"]=""
+operation_parameters_collection_type["updateWarrantyRequestAsync:::warrantyRequestId"]=""
+operation_parameters_collection_type["updateWarrantyRequestAsync:::api-version"]=""
+operation_parameters_collection_type["updateWarrantyRequestAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateWarrantyRequestAsync:::WarrantyRequestUpdateDto"]=""
 
 
 ##
@@ -1075,7 +1705,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}SupportService command line client (API version 2.0.0.0)${OFF}
+${BOLD}${WHITE}SupportService command line client (API version 2.1.2.5401)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1104,7 +1734,13 @@ ${BOLD}${WHITE}Usage${OFF}
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -1123,6 +1759,83 @@ read -r -d '' ops <<EOF
   ${CYAN}resendConfirmationEmailPost${OFF};
   ${CYAN}resetPasswordPost${OFF};
   ${CYAN}versionGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[inquiryRequests]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createInquiryRequestAsync${OFF};Create an inquiry request
+  ${CYAN}deleteInquiryRequestAsync${OFF};Delete an inquiry request
+  ${CYAN}getInquiryRequestAsync${OFF};Retrieve an inquiry request by ID
+  ${CYAN}getInquiryRequestsAsync${OFF};Retrieve inquiry requests
+  ${CYAN}getInquiryRequestsCountAsync${OFF};Get inquiry requests count
+  ${CYAN}updateInquiryRequestAsync${OFF};Update an inquiry request
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[knowledgeArticles]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createKnowledgeArticleAsync${OFF};Create a knowledge article
+  ${CYAN}deleteKnowledgeArticleAsync${OFF};Delete a knowledge article
+  ${CYAN}getKnowledgeArticleAsync${OFF};Retrieve a knowledge article by ID
+  ${CYAN}getKnowledgeArticlesAsync${OFF};Retrieve knowledge articles
+  ${CYAN}getKnowledgeArticlesCountAsync${OFF};Get knowledge articles count
+  ${CYAN}updateKnowledgeArticleAsync${OFF};Update a knowledge article
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[maintenanceVisits]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createMaintenanceVisitAsync${OFF};Create a maintenance visit
+  ${CYAN}deleteMaintenanceVisitAsync${OFF};Delete a maintenance visit
+  ${CYAN}getMaintenanceVisitAsync${OFF};Retrieve a maintenance visit by ID
+  ${CYAN}getMaintenanceVisitsAsync${OFF};Retrieve maintenance visits
+  ${CYAN}getMaintenanceVisitsCountAsync${OFF};Get maintenance visits count
+  ${CYAN}updateMaintenanceVisitAsync${OFF};Update a maintenance visit
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[refundPolicies]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createRefundPolicyAsync${OFF};Create a new refund policy
+  ${CYAN}deleteRefundPolicyAsync${OFF};Delete a refund policy
+  ${CYAN}getRefundPoliciesAsync${OFF};Retrieve a list of refund policies
+  ${CYAN}getRefundPoliciesCountAsync${OFF};Get the count of refund policies
+  ${CYAN}getRefundPolicyAsync${OFF};Retrieve a refund policy by ID
+  ${CYAN}updateRefundPolicyAsync${OFF};Update a refund policy
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[refundRequests]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createRefundRequestAsync${OFF};Create a refund request
+  ${CYAN}deleteRefundRequestAsync${OFF};Delete a refund request
+  ${CYAN}getRefundRequestAsync${OFF};Retrieve a refund request by ID
+  ${CYAN}getRefundRequestsAsync${OFF};Retrieve refund requests
+  ${CYAN}getRefundRequestsCountAsync${OFF};Get refund requests count
+  ${CYAN}updateRefundRequestAsync${OFF};Update a refund request
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[returnPolicies]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createReturnPolicyAsync${OFF};Create a new return policy
+  ${CYAN}deleteReturnPolicyAsync${OFF};Delete a return policy
+  ${CYAN}getReturnPoliciesAsync${OFF};Retrieve a list of return policies
+  ${CYAN}getReturnPoliciesCountAsync${OFF};Get the count of return policies
+  ${CYAN}getReturnPolicyAsync${OFF};Retrieve a return policy by ID
+  ${CYAN}updateReturnPolicyAsync${OFF};Update a return policy
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[returnRequests]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createReturnRequestAsync${OFF};Create a return request
+  ${CYAN}deleteReturnRequestAsync${OFF};Delete a return request
+  ${CYAN}getReturnRequestAsync${OFF};Retrieve a return request by ID
+  ${CYAN}getReturnRequestsAsync${OFF};Retrieve return requests
+  ${CYAN}getReturnRequestsCountAsync${OFF};Get return requests count
+  ${CYAN}updateReturnRequestAsync${OFF};Update a return request
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1202,12 +1915,34 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[warrantyPolicies]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createWarrantyPolicyAsync${OFF};Create a new warranty policy
+  ${CYAN}deleteWarrantyPolicyAsync${OFF};Delete a warranty policy
+  ${CYAN}getWarrantyPoliciesAsync${OFF};Retrieve a list of warranty policies
+  ${CYAN}getWarrantyPoliciesCountAsync${OFF};Get the count of warranty policies
+  ${CYAN}getWarrantyPolicyAsync${OFF};Retrieve a warranty policy by ID
+  ${CYAN}updateWarrantyPolicyAsync${OFF};Update a warranty policy
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[warrantyRequests]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createWarrantyRequestAsync${OFF};Create a warranty request
+  ${CYAN}deleteWarrantyRequestAsync${OFF};Delete a warranty request
+  ${CYAN}getWarrantyRequestAsync${OFF};Retrieve a warranty request by ID
+  ${CYAN}getWarrantyRequestsAsync${OFF};Retrieve warranty requests
+  ${CYAN}getWarrantyRequestsCountAsync${OFF};Get warranty requests count
+  ${CYAN}updateWarrantyRequestAsync${OFF};Update a warranty request
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}Options${OFF}"
     echo -e "  -h,--help\\t\\t\\t\\tPrint this help"
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -1228,7 +1963,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}SupportService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}${WHITE}SupportService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1248,10 +1983,35 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}SupportService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}SupportService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
 }
 
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
 ##############################################################################
 #
 # Print help for accountLogoutPost operation
@@ -1540,6 +2300,943 @@ print_resetPasswordPost_help() {
 print_versionGet_help() {
     echo ""
     echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createInquiryRequestAsync operation
+#
+##############################################################################
+print_createInquiryRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createInquiryRequestAsync - Create an inquiry request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteInquiryRequestAsync operation
+#
+##############################################################################
+print_deleteInquiryRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteInquiryRequestAsync - Delete an inquiry request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}inquiryRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: inquiryRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getInquiryRequestAsync operation
+#
+##############################################################################
+print_getInquiryRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getInquiryRequestAsync - Retrieve an inquiry request by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}inquiryRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: inquiryRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getInquiryRequestsAsync operation
+#
+##############################################################################
+print_getInquiryRequestsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getInquiryRequestsAsync - Retrieve inquiry requests${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getInquiryRequestsCountAsync operation
+#
+##############################################################################
+print_getInquiryRequestsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getInquiryRequestsCountAsync - Get inquiry requests count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateInquiryRequestAsync operation
+#
+##############################################################################
+print_updateInquiryRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateInquiryRequestAsync - Update an inquiry request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}inquiryRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: inquiryRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createKnowledgeArticleAsync operation
+#
+##############################################################################
+print_createKnowledgeArticleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createKnowledgeArticleAsync - Create a knowledge article${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteKnowledgeArticleAsync operation
+#
+##############################################################################
+print_deleteKnowledgeArticleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteKnowledgeArticleAsync - Delete a knowledge article${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}knowledgeArticleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: knowledgeArticleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getKnowledgeArticleAsync operation
+#
+##############################################################################
+print_getKnowledgeArticleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getKnowledgeArticleAsync - Retrieve a knowledge article by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}knowledgeArticleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: knowledgeArticleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getKnowledgeArticlesAsync operation
+#
+##############################################################################
+print_getKnowledgeArticlesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getKnowledgeArticlesAsync - Retrieve knowledge articles${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getKnowledgeArticlesCountAsync operation
+#
+##############################################################################
+print_getKnowledgeArticlesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getKnowledgeArticlesCountAsync - Get knowledge articles count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateKnowledgeArticleAsync operation
+#
+##############################################################################
+print_updateKnowledgeArticleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateKnowledgeArticleAsync - Update a knowledge article${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}knowledgeArticleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: knowledgeArticleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createMaintenanceVisitAsync operation
+#
+##############################################################################
+print_createMaintenanceVisitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createMaintenanceVisitAsync - Create a maintenance visit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteMaintenanceVisitAsync operation
+#
+##############################################################################
+print_deleteMaintenanceVisitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteMaintenanceVisitAsync - Delete a maintenance visit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}maintenanceVisitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: maintenanceVisitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMaintenanceVisitAsync operation
+#
+##############################################################################
+print_getMaintenanceVisitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMaintenanceVisitAsync - Retrieve a maintenance visit by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}maintenanceVisitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: maintenanceVisitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMaintenanceVisitsAsync operation
+#
+##############################################################################
+print_getMaintenanceVisitsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMaintenanceVisitsAsync - Retrieve maintenance visits${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMaintenanceVisitsCountAsync operation
+#
+##############################################################################
+print_getMaintenanceVisitsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMaintenanceVisitsCountAsync - Get maintenance visits count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateMaintenanceVisitAsync operation
+#
+##############################################################################
+print_updateMaintenanceVisitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateMaintenanceVisitAsync - Update a maintenance visit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}maintenanceVisitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: maintenanceVisitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createRefundPolicyAsync operation
+#
+##############################################################################
+print_createRefundPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createRefundPolicyAsync - Create a new refund policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteRefundPolicyAsync operation
+#
+##############################################################################
+print_deleteRefundPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteRefundPolicyAsync - Delete a refund policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}refundPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: refundPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRefundPoliciesAsync operation
+#
+##############################################################################
+print_getRefundPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRefundPoliciesAsync - Retrieve a list of refund policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRefundPoliciesCountAsync operation
+#
+##############################################################################
+print_getRefundPoliciesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRefundPoliciesCountAsync - Get the count of refund policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRefundPolicyAsync operation
+#
+##############################################################################
+print_getRefundPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRefundPolicyAsync - Retrieve a refund policy by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}refundPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: refundPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateRefundPolicyAsync operation
+#
+##############################################################################
+print_updateRefundPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateRefundPolicyAsync - Update a refund policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}refundPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: refundPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createRefundRequestAsync operation
+#
+##############################################################################
+print_createRefundRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createRefundRequestAsync - Create a refund request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteRefundRequestAsync operation
+#
+##############################################################################
+print_deleteRefundRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteRefundRequestAsync - Delete a refund request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}refundRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: refundRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRefundRequestAsync operation
+#
+##############################################################################
+print_getRefundRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRefundRequestAsync - Retrieve a refund request by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}refundRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: refundRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRefundRequestsAsync operation
+#
+##############################################################################
+print_getRefundRequestsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRefundRequestsAsync - Retrieve refund requests${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRefundRequestsCountAsync operation
+#
+##############################################################################
+print_getRefundRequestsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRefundRequestsCountAsync - Get refund requests count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateRefundRequestAsync operation
+#
+##############################################################################
+print_updateRefundRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateRefundRequestAsync - Update a refund request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}refundRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: refundRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createReturnPolicyAsync operation
+#
+##############################################################################
+print_createReturnPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createReturnPolicyAsync - Create a new return policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteReturnPolicyAsync operation
+#
+##############################################################################
+print_deleteReturnPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteReturnPolicyAsync - Delete a return policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}returnPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: returnPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getReturnPoliciesAsync operation
+#
+##############################################################################
+print_getReturnPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getReturnPoliciesAsync - Retrieve a list of return policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getReturnPoliciesCountAsync operation
+#
+##############################################################################
+print_getReturnPoliciesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getReturnPoliciesCountAsync - Get the count of return policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getReturnPolicyAsync operation
+#
+##############################################################################
+print_getReturnPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getReturnPolicyAsync - Retrieve a return policy by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}returnPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: returnPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateReturnPolicyAsync operation
+#
+##############################################################################
+print_updateReturnPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateReturnPolicyAsync - Update a return policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}returnPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: returnPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createReturnRequestAsync operation
+#
+##############################################################################
+print_createReturnRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createReturnRequestAsync - Create a return request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteReturnRequestAsync operation
+#
+##############################################################################
+print_deleteReturnRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteReturnRequestAsync - Delete a return request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}returnRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: returnRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getReturnRequestAsync operation
+#
+##############################################################################
+print_getReturnRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getReturnRequestAsync - Retrieve a return request by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}returnRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: returnRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getReturnRequestsAsync operation
+#
+##############################################################################
+print_getReturnRequestsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getReturnRequestsAsync - Retrieve return requests${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getReturnRequestsCountAsync operation
+#
+##############################################################################
+print_getReturnRequestsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getReturnRequestsCountAsync - Get return requests count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateReturnRequestAsync operation
+#
+##############################################################################
+print_updateReturnRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateReturnRequestAsync - Update a return request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}returnRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: returnRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -2806,7 +4503,321 @@ print_updateSupportTicketAsync_help() {
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
+##############################################################################
+#
+# Print help for createWarrantyPolicyAsync operation
+#
+##############################################################################
+print_createWarrantyPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createWarrantyPolicyAsync - Create a new warranty policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteWarrantyPolicyAsync operation
+#
+##############################################################################
+print_deleteWarrantyPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteWarrantyPolicyAsync - Delete a warranty policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}warrantyPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: warrantyPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWarrantyPoliciesAsync operation
+#
+##############################################################################
+print_getWarrantyPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWarrantyPoliciesAsync - Retrieve a list of warranty policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWarrantyPoliciesCountAsync operation
+#
+##############################################################################
+print_getWarrantyPoliciesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWarrantyPoliciesCountAsync - Get the count of warranty policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWarrantyPolicyAsync operation
+#
+##############################################################################
+print_getWarrantyPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWarrantyPolicyAsync - Retrieve a warranty policy by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}warrantyPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: warrantyPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateWarrantyPolicyAsync operation
+#
+##############################################################################
+print_updateWarrantyPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateWarrantyPolicyAsync - Update a warranty policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}warrantyPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: warrantyPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createWarrantyRequestAsync operation
+#
+##############################################################################
+print_createWarrantyRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createWarrantyRequestAsync - Create a warranty request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteWarrantyRequestAsync operation
+#
+##############################################################################
+print_deleteWarrantyRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteWarrantyRequestAsync - Delete a warranty request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}warrantyRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: warrantyRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWarrantyRequestAsync operation
+#
+##############################################################################
+print_getWarrantyRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWarrantyRequestAsync - Retrieve a warranty request by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}warrantyRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: warrantyRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWarrantyRequestsAsync operation
+#
+##############################################################################
+print_getWarrantyRequestsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWarrantyRequestsAsync - Retrieve warranty requests${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWarrantyRequestsCountAsync operation
+#
+##############################################################################
+print_getWarrantyRequestsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWarrantyRequestsCountAsync - Get warranty requests count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateWarrantyRequestAsync operation
+#
+##############################################################################
+print_updateWarrantyRequestAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateWarrantyRequestAsync - Update a warranty request${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}warrantyRequestId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: warrantyRequestId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
 
+
+##############################################################################
+#
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
 
 ##############################################################################
 #
@@ -3756,6 +5767,2078 @@ call_versionGet() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createInquiryRequestAsync operation
+#
+##############################################################################
+call_createInquiryRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/InquiryRequests" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteInquiryRequestAsync operation
+#
+##############################################################################
+call_deleteInquiryRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(inquiryRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/InquiryRequests/{inquiryRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getInquiryRequestAsync operation
+#
+##############################################################################
+call_getInquiryRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(inquiryRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/InquiryRequests/{inquiryRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getInquiryRequestsAsync operation
+#
+##############################################################################
+call_getInquiryRequestsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/InquiryRequests" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getInquiryRequestsCountAsync operation
+#
+##############################################################################
+call_getInquiryRequestsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/InquiryRequests/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateInquiryRequestAsync operation
+#
+##############################################################################
+call_updateInquiryRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(inquiryRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/InquiryRequests/{inquiryRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createKnowledgeArticleAsync operation
+#
+##############################################################################
+call_createKnowledgeArticleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/KnowledgeArticles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteKnowledgeArticleAsync operation
+#
+##############################################################################
+call_deleteKnowledgeArticleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(knowledgeArticleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/KnowledgeArticles/{knowledgeArticleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getKnowledgeArticleAsync operation
+#
+##############################################################################
+call_getKnowledgeArticleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(knowledgeArticleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/KnowledgeArticles/{knowledgeArticleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getKnowledgeArticlesAsync operation
+#
+##############################################################################
+call_getKnowledgeArticlesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/KnowledgeArticles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getKnowledgeArticlesCountAsync operation
+#
+##############################################################################
+call_getKnowledgeArticlesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/KnowledgeArticles/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateKnowledgeArticleAsync operation
+#
+##############################################################################
+call_updateKnowledgeArticleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(knowledgeArticleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/KnowledgeArticles/{knowledgeArticleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createMaintenanceVisitAsync operation
+#
+##############################################################################
+call_createMaintenanceVisitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/MaintenanceVisits" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteMaintenanceVisitAsync operation
+#
+##############################################################################
+call_deleteMaintenanceVisitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(maintenanceVisitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/MaintenanceVisits/{maintenanceVisitId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMaintenanceVisitAsync operation
+#
+##############################################################################
+call_getMaintenanceVisitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(maintenanceVisitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/MaintenanceVisits/{maintenanceVisitId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMaintenanceVisitsAsync operation
+#
+##############################################################################
+call_getMaintenanceVisitsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/MaintenanceVisits" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMaintenanceVisitsCountAsync operation
+#
+##############################################################################
+call_getMaintenanceVisitsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/MaintenanceVisits/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateMaintenanceVisitAsync operation
+#
+##############################################################################
+call_updateMaintenanceVisitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(maintenanceVisitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/MaintenanceVisits/{maintenanceVisitId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createRefundPolicyAsync operation
+#
+##############################################################################
+call_createRefundPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/RefundPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteRefundPolicyAsync operation
+#
+##############################################################################
+call_deleteRefundPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(refundPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/RefundPolicies/{refundPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRefundPoliciesAsync operation
+#
+##############################################################################
+call_getRefundPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/RefundPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRefundPoliciesCountAsync operation
+#
+##############################################################################
+call_getRefundPoliciesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/RefundPolicies/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRefundPolicyAsync operation
+#
+##############################################################################
+call_getRefundPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(refundPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/RefundPolicies/{refundPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateRefundPolicyAsync operation
+#
+##############################################################################
+call_updateRefundPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(refundPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/RefundPolicies/{refundPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createRefundRequestAsync operation
+#
+##############################################################################
+call_createRefundRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/RefundRequests" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteRefundRequestAsync operation
+#
+##############################################################################
+call_deleteRefundRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(refundRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/RefundRequests/{refundRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRefundRequestAsync operation
+#
+##############################################################################
+call_getRefundRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(refundRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/RefundRequests/{refundRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRefundRequestsAsync operation
+#
+##############################################################################
+call_getRefundRequestsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/RefundRequests" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRefundRequestsCountAsync operation
+#
+##############################################################################
+call_getRefundRequestsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/RefundRequests/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateRefundRequestAsync operation
+#
+##############################################################################
+call_updateRefundRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(refundRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/RefundRequests/{refundRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createReturnPolicyAsync operation
+#
+##############################################################################
+call_createReturnPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/ReturnPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteReturnPolicyAsync operation
+#
+##############################################################################
+call_deleteReturnPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(returnPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/ReturnPolicies/{returnPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getReturnPoliciesAsync operation
+#
+##############################################################################
+call_getReturnPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/ReturnPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getReturnPoliciesCountAsync operation
+#
+##############################################################################
+call_getReturnPoliciesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/ReturnPolicies/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getReturnPolicyAsync operation
+#
+##############################################################################
+call_getReturnPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(returnPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/ReturnPolicies/{returnPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateReturnPolicyAsync operation
+#
+##############################################################################
+call_updateReturnPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(returnPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/ReturnPolicies/{returnPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createReturnRequestAsync operation
+#
+##############################################################################
+call_createReturnRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/ReturnRequests" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteReturnRequestAsync operation
+#
+##############################################################################
+call_deleteReturnRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(returnRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/ReturnRequests/{returnRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getReturnRequestAsync operation
+#
+##############################################################################
+call_getReturnRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(returnRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/ReturnRequests/{returnRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getReturnRequestsAsync operation
+#
+##############################################################################
+call_getReturnRequestsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/ReturnRequests" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getReturnRequestsCountAsync operation
+#
+##############################################################################
+call_getReturnRequestsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/ReturnRequests/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateReturnRequestAsync operation
+#
+##############################################################################
+call_updateReturnRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(returnRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/ReturnRequests/{returnRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5975,6 +10058,598 @@ call_updateSupportTicketAsync() {
     fi
 }
 
+##############################################################################
+#
+# Call createWarrantyPolicyAsync operation
+#
+##############################################################################
+call_createWarrantyPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/WarrantyPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteWarrantyPolicyAsync operation
+#
+##############################################################################
+call_deleteWarrantyPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(warrantyPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/WarrantyPolicies/{warrantyPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWarrantyPoliciesAsync operation
+#
+##############################################################################
+call_getWarrantyPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/WarrantyPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWarrantyPoliciesCountAsync operation
+#
+##############################################################################
+call_getWarrantyPoliciesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/WarrantyPolicies/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWarrantyPolicyAsync operation
+#
+##############################################################################
+call_getWarrantyPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(warrantyPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/WarrantyPolicies/{warrantyPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateWarrantyPolicyAsync operation
+#
+##############################################################################
+call_updateWarrantyPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(warrantyPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/WarrantyPolicies/{warrantyPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createWarrantyRequestAsync operation
+#
+##############################################################################
+call_createWarrantyRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/WarrantyRequests" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteWarrantyRequestAsync operation
+#
+##############################################################################
+call_deleteWarrantyRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(warrantyRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/WarrantyRequests/{warrantyRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWarrantyRequestAsync operation
+#
+##############################################################################
+call_getWarrantyRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(warrantyRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/WarrantyRequests/{warrantyRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWarrantyRequestsAsync operation
+#
+##############################################################################
+call_getWarrantyRequestsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/WarrantyRequests" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWarrantyRequestsCountAsync operation
+#
+##############################################################################
+call_getWarrantyRequestsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/WarrantyRequests/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateWarrantyRequestAsync operation
+#
+##############################################################################
+call_updateWarrantyRequestAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(warrantyRequestId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SupportService/WarrantyRequests/{warrantyRequestId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
 
 
 ##############################################################################
@@ -6072,6 +10747,9 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
+    ;;
     accountLogoutPost)
     operation="accountLogoutPost"
     ;;
@@ -6122,6 +10800,132 @@ case $key in
     ;;
     versionGet)
     operation="versionGet"
+    ;;
+    createInquiryRequestAsync)
+    operation="createInquiryRequestAsync"
+    ;;
+    deleteInquiryRequestAsync)
+    operation="deleteInquiryRequestAsync"
+    ;;
+    getInquiryRequestAsync)
+    operation="getInquiryRequestAsync"
+    ;;
+    getInquiryRequestsAsync)
+    operation="getInquiryRequestsAsync"
+    ;;
+    getInquiryRequestsCountAsync)
+    operation="getInquiryRequestsCountAsync"
+    ;;
+    updateInquiryRequestAsync)
+    operation="updateInquiryRequestAsync"
+    ;;
+    createKnowledgeArticleAsync)
+    operation="createKnowledgeArticleAsync"
+    ;;
+    deleteKnowledgeArticleAsync)
+    operation="deleteKnowledgeArticleAsync"
+    ;;
+    getKnowledgeArticleAsync)
+    operation="getKnowledgeArticleAsync"
+    ;;
+    getKnowledgeArticlesAsync)
+    operation="getKnowledgeArticlesAsync"
+    ;;
+    getKnowledgeArticlesCountAsync)
+    operation="getKnowledgeArticlesCountAsync"
+    ;;
+    updateKnowledgeArticleAsync)
+    operation="updateKnowledgeArticleAsync"
+    ;;
+    createMaintenanceVisitAsync)
+    operation="createMaintenanceVisitAsync"
+    ;;
+    deleteMaintenanceVisitAsync)
+    operation="deleteMaintenanceVisitAsync"
+    ;;
+    getMaintenanceVisitAsync)
+    operation="getMaintenanceVisitAsync"
+    ;;
+    getMaintenanceVisitsAsync)
+    operation="getMaintenanceVisitsAsync"
+    ;;
+    getMaintenanceVisitsCountAsync)
+    operation="getMaintenanceVisitsCountAsync"
+    ;;
+    updateMaintenanceVisitAsync)
+    operation="updateMaintenanceVisitAsync"
+    ;;
+    createRefundPolicyAsync)
+    operation="createRefundPolicyAsync"
+    ;;
+    deleteRefundPolicyAsync)
+    operation="deleteRefundPolicyAsync"
+    ;;
+    getRefundPoliciesAsync)
+    operation="getRefundPoliciesAsync"
+    ;;
+    getRefundPoliciesCountAsync)
+    operation="getRefundPoliciesCountAsync"
+    ;;
+    getRefundPolicyAsync)
+    operation="getRefundPolicyAsync"
+    ;;
+    updateRefundPolicyAsync)
+    operation="updateRefundPolicyAsync"
+    ;;
+    createRefundRequestAsync)
+    operation="createRefundRequestAsync"
+    ;;
+    deleteRefundRequestAsync)
+    operation="deleteRefundRequestAsync"
+    ;;
+    getRefundRequestAsync)
+    operation="getRefundRequestAsync"
+    ;;
+    getRefundRequestsAsync)
+    operation="getRefundRequestsAsync"
+    ;;
+    getRefundRequestsCountAsync)
+    operation="getRefundRequestsCountAsync"
+    ;;
+    updateRefundRequestAsync)
+    operation="updateRefundRequestAsync"
+    ;;
+    createReturnPolicyAsync)
+    operation="createReturnPolicyAsync"
+    ;;
+    deleteReturnPolicyAsync)
+    operation="deleteReturnPolicyAsync"
+    ;;
+    getReturnPoliciesAsync)
+    operation="getReturnPoliciesAsync"
+    ;;
+    getReturnPoliciesCountAsync)
+    operation="getReturnPoliciesCountAsync"
+    ;;
+    getReturnPolicyAsync)
+    operation="getReturnPolicyAsync"
+    ;;
+    updateReturnPolicyAsync)
+    operation="updateReturnPolicyAsync"
+    ;;
+    createReturnRequestAsync)
+    operation="createReturnRequestAsync"
+    ;;
+    deleteReturnRequestAsync)
+    operation="deleteReturnRequestAsync"
+    ;;
+    getReturnRequestAsync)
+    operation="getReturnRequestAsync"
+    ;;
+    getReturnRequestsAsync)
+    operation="getReturnRequestsAsync"
+    ;;
+    getReturnRequestsCountAsync)
+    operation="getReturnRequestsCountAsync"
+    ;;
+    updateReturnRequestAsync)
+    operation="updateReturnRequestAsync"
     ;;
     createSupportEntitlementAsync)
     operation="createSupportEntitlementAsync"
@@ -6261,6 +11065,42 @@ case $key in
     updateSupportTicketAsync)
     operation="updateSupportTicketAsync"
     ;;
+    createWarrantyPolicyAsync)
+    operation="createWarrantyPolicyAsync"
+    ;;
+    deleteWarrantyPolicyAsync)
+    operation="deleteWarrantyPolicyAsync"
+    ;;
+    getWarrantyPoliciesAsync)
+    operation="getWarrantyPoliciesAsync"
+    ;;
+    getWarrantyPoliciesCountAsync)
+    operation="getWarrantyPoliciesCountAsync"
+    ;;
+    getWarrantyPolicyAsync)
+    operation="getWarrantyPolicyAsync"
+    ;;
+    updateWarrantyPolicyAsync)
+    operation="updateWarrantyPolicyAsync"
+    ;;
+    createWarrantyRequestAsync)
+    operation="createWarrantyRequestAsync"
+    ;;
+    deleteWarrantyRequestAsync)
+    operation="deleteWarrantyRequestAsync"
+    ;;
+    getWarrantyRequestAsync)
+    operation="getWarrantyRequestAsync"
+    ;;
+    getWarrantyRequestsAsync)
+    operation="getWarrantyRequestsAsync"
+    ;;
+    getWarrantyRequestsCountAsync)
+    operation="getWarrantyRequestsCountAsync"
+    ;;
+    updateWarrantyRequestAsync)
+    operation="updateWarrantyRequestAsync"
+    ;;
     *==*)
     # Parse body arguments and convert them into top level
     # JSON properties passed in the body content as strings
@@ -6348,6 +11188,9 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
+    ;;
     accountLogoutPost)
     call_accountLogoutPost
     ;;
@@ -6398,6 +11241,132 @@ case $operation in
     ;;
     versionGet)
     call_versionGet
+    ;;
+    createInquiryRequestAsync)
+    call_createInquiryRequestAsync
+    ;;
+    deleteInquiryRequestAsync)
+    call_deleteInquiryRequestAsync
+    ;;
+    getInquiryRequestAsync)
+    call_getInquiryRequestAsync
+    ;;
+    getInquiryRequestsAsync)
+    call_getInquiryRequestsAsync
+    ;;
+    getInquiryRequestsCountAsync)
+    call_getInquiryRequestsCountAsync
+    ;;
+    updateInquiryRequestAsync)
+    call_updateInquiryRequestAsync
+    ;;
+    createKnowledgeArticleAsync)
+    call_createKnowledgeArticleAsync
+    ;;
+    deleteKnowledgeArticleAsync)
+    call_deleteKnowledgeArticleAsync
+    ;;
+    getKnowledgeArticleAsync)
+    call_getKnowledgeArticleAsync
+    ;;
+    getKnowledgeArticlesAsync)
+    call_getKnowledgeArticlesAsync
+    ;;
+    getKnowledgeArticlesCountAsync)
+    call_getKnowledgeArticlesCountAsync
+    ;;
+    updateKnowledgeArticleAsync)
+    call_updateKnowledgeArticleAsync
+    ;;
+    createMaintenanceVisitAsync)
+    call_createMaintenanceVisitAsync
+    ;;
+    deleteMaintenanceVisitAsync)
+    call_deleteMaintenanceVisitAsync
+    ;;
+    getMaintenanceVisitAsync)
+    call_getMaintenanceVisitAsync
+    ;;
+    getMaintenanceVisitsAsync)
+    call_getMaintenanceVisitsAsync
+    ;;
+    getMaintenanceVisitsCountAsync)
+    call_getMaintenanceVisitsCountAsync
+    ;;
+    updateMaintenanceVisitAsync)
+    call_updateMaintenanceVisitAsync
+    ;;
+    createRefundPolicyAsync)
+    call_createRefundPolicyAsync
+    ;;
+    deleteRefundPolicyAsync)
+    call_deleteRefundPolicyAsync
+    ;;
+    getRefundPoliciesAsync)
+    call_getRefundPoliciesAsync
+    ;;
+    getRefundPoliciesCountAsync)
+    call_getRefundPoliciesCountAsync
+    ;;
+    getRefundPolicyAsync)
+    call_getRefundPolicyAsync
+    ;;
+    updateRefundPolicyAsync)
+    call_updateRefundPolicyAsync
+    ;;
+    createRefundRequestAsync)
+    call_createRefundRequestAsync
+    ;;
+    deleteRefundRequestAsync)
+    call_deleteRefundRequestAsync
+    ;;
+    getRefundRequestAsync)
+    call_getRefundRequestAsync
+    ;;
+    getRefundRequestsAsync)
+    call_getRefundRequestsAsync
+    ;;
+    getRefundRequestsCountAsync)
+    call_getRefundRequestsCountAsync
+    ;;
+    updateRefundRequestAsync)
+    call_updateRefundRequestAsync
+    ;;
+    createReturnPolicyAsync)
+    call_createReturnPolicyAsync
+    ;;
+    deleteReturnPolicyAsync)
+    call_deleteReturnPolicyAsync
+    ;;
+    getReturnPoliciesAsync)
+    call_getReturnPoliciesAsync
+    ;;
+    getReturnPoliciesCountAsync)
+    call_getReturnPoliciesCountAsync
+    ;;
+    getReturnPolicyAsync)
+    call_getReturnPolicyAsync
+    ;;
+    updateReturnPolicyAsync)
+    call_updateReturnPolicyAsync
+    ;;
+    createReturnRequestAsync)
+    call_createReturnRequestAsync
+    ;;
+    deleteReturnRequestAsync)
+    call_deleteReturnRequestAsync
+    ;;
+    getReturnRequestAsync)
+    call_getReturnRequestAsync
+    ;;
+    getReturnRequestsAsync)
+    call_getReturnRequestsAsync
+    ;;
+    getReturnRequestsCountAsync)
+    call_getReturnRequestsCountAsync
+    ;;
+    updateReturnRequestAsync)
+    call_updateReturnRequestAsync
     ;;
     createSupportEntitlementAsync)
     call_createSupportEntitlementAsync
@@ -6536,6 +11505,42 @@ case $operation in
     ;;
     updateSupportTicketAsync)
     call_updateSupportTicketAsync
+    ;;
+    createWarrantyPolicyAsync)
+    call_createWarrantyPolicyAsync
+    ;;
+    deleteWarrantyPolicyAsync)
+    call_deleteWarrantyPolicyAsync
+    ;;
+    getWarrantyPoliciesAsync)
+    call_getWarrantyPoliciesAsync
+    ;;
+    getWarrantyPoliciesCountAsync)
+    call_getWarrantyPoliciesCountAsync
+    ;;
+    getWarrantyPolicyAsync)
+    call_getWarrantyPolicyAsync
+    ;;
+    updateWarrantyPolicyAsync)
+    call_updateWarrantyPolicyAsync
+    ;;
+    createWarrantyRequestAsync)
+    call_createWarrantyRequestAsync
+    ;;
+    deleteWarrantyRequestAsync)
+    call_deleteWarrantyRequestAsync
+    ;;
+    getWarrantyRequestAsync)
+    call_getWarrantyRequestAsync
+    ;;
+    getWarrantyRequestsAsync)
+    call_getWarrantyRequestsAsync
+    ;;
+    getWarrantyRequestsCountAsync)
+    call_getWarrantyRequestsCountAsync
+    ;;
+    updateWarrantyRequestAsync)
+    call_updateWarrantyRequestAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

@@ -30,7 +30,7 @@ Creates a new fiscal regime for a fiscal authority.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
  **fiscalRegimeCreateDto** | [**FiscalRegimeCreateDto**](FiscalRegimeCreateDto.md) |  | [optional]
@@ -68,7 +68,7 @@ Deletes a fiscal regime identified by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **regimeId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -106,7 +106,7 @@ Retrieves a specific fiscal regime by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **regimeId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
@@ -137,7 +137,7 @@ Retrieves all fiscal regimes for the specified fiscal authority.
 ### Example
 
 ```bash
- getFiscalRegimes  fiscalAuthorityId=value authorityId=value  api-version=value x-api-version:value
+ getFiscalRegimes  tenantId=value  fiscalAuthorityId=value authorityId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -145,6 +145,7 @@ Retrieves all fiscal regimes for the specified fiscal authority.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **authorityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
@@ -175,7 +176,7 @@ Returns the total count of fiscal regimes for the specified fiscal authority.
 ### Example
 
 ```bash
- getFiscalRegimesCount fiscalAuthorityId=value  api-version=value x-api-version:value
+ getFiscalRegimesCount  tenantId=value fiscalAuthorityId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -183,6 +184,7 @@ Returns the total count of fiscal regimes for the specified fiscal authority.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -220,7 +222,7 @@ Updates an existing fiscal regime identified by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **regimeId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]

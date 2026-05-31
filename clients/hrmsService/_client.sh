@@ -297,7 +297,27 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "createEmployeeAsync[Create an employee]" \
+            "createAppraisalStageAsync[Create an appraisal stage]" \
+            "deleteAppraisalStageAsync[Delete an appraisal stage]" \
+            "getAppraisalStageByIdAsync[Get appraisal stage by ID]" \
+            "getAppraisalStagesAsync[Get appraisal stages]" \
+            "getAppraisalStagesCountAsync[Count appraisal stages]" \
+            "updateAppraisalStageAsync[Update an appraisal stage]"             "createAppraisalWorkflowAsync[Create an appraisal workflow]" \
+            "deleteAppraisalWorkflowAsync[Delete an appraisal workflow]" \
+            "getAppraisalWorkflowByIdAsync[Get appraisal workflow by ID]" \
+            "getAppraisalWorkflowsAsync[Get appraisal workflows]" \
+            "getAppraisalWorkflowsCountAsync[Count appraisal workflows]" \
+            "updateAppraisalWorkflowAsync[Update an appraisal workflow]"             "apiV2AiServiceCompletionsCompleteGet[]"             "createEmployeeAppraisalSessionAsync[Create an employee appraisal session]" \
+            "deleteEmployeeAppraisalSessionAsync[Delete an employee appraisal session]" \
+            "getEmployeeAppraisalSessionByIdAsync[Get employee appraisal session by ID]" \
+            "getEmployeeAppraisalSessionsAsync[Get employee appraisal sessions]" \
+            "getEmployeeAppraisalSessionsCountAsync[Count employee appraisal sessions]" \
+            "updateEmployeeAppraisalSessionAsync[Update an employee appraisal session]"             "createEmployeeTypeAsync[Create an employee type]" \
+            "deleteEmployeeTypeAsync[Delete an employee type]" \
+            "getEmployeeTypeByIdAsync[Get employee type by ID]" \
+            "getEmployeeTypesAsync[Get employee types]" \
+            "getEmployeeTypesCountAsync[Count employee types]" \
+            "updateEmployeeTypeAsync[Update an employee type]"             "createEmployeeAsync[Create an employee]" \
             "deleteEmployeeAsync[Delete an employee]" \
             "getEmployeeByIdAsync[Get employee by ID]" \
             "getEmployeesAsync[Get employees]" \
@@ -333,7 +353,67 @@ case $state in
             "getJobOfferByIdAsync[Get job offer by ID]" \
             "getJobOffersAsync[Get job offers]" \
             "getJobOffersCountAsync[Count job offers]" \
-            "updateJobOfferAsync[Update a job offer]" \
+            "updateJobOfferAsync[Update a job offer]"             "createJobTitleAsync[Create a job title]" \
+            "deleteJobTitleAsync[Delete a job title]" \
+            "getJobTitleByIdAsync[Get job title by ID]" \
+            "getJobTitlesAsync[Get job titles]" \
+            "getJobTitlesCountAsync[Count job titles]" \
+            "updateJobTitleAsync[Update a job title]"             "createLeaveApplicationAsync[Create a leave application]" \
+            "deleteLeaveApplicationAsync[Delete a leave application]" \
+            "getLeaveApplicationByIdAsync[Get leave application by ID]" \
+            "getLeaveApplicationsAsync[Get leave applications]" \
+            "getLeaveApplicationsCountAsync[Count leave applications]" \
+            "updateLeaveApplicationAsync[Update a leave application]"             "createLeaveTypeAsync[Create a leave type]" \
+            "deleteLeaveTypeAsync[Delete a leave type]" \
+            "getLeaveTypeByIdAsync[Get leave type by ID]" \
+            "getLeaveTypesAsync[Get leave types]" \
+            "getLeaveTypesCountAsync[Count leave types]" \
+            "updateLeaveTypeAsync[Update a leave type]"             "createPayrollPeriodAsync[Create a payroll period]" \
+            "deletePayrollPeriodAsync[Delete a payroll period]" \
+            "getPayrollPeriodByIdAsync[Get payroll period by ID]" \
+            "getPayrollPeriodsAsync[Get payroll periods]" \
+            "getPayrollPeriodsCountAsync[Count payroll periods]" \
+            "updatePayrollPeriodAsync[Update a payroll period]"             "createPayrollAsync[Create a payroll]" \
+            "deletePayrollAsync[Delete a payroll]" \
+            "getPayrollByIdAsync[Get payroll by ID]" \
+            "getPayrollsAsync[Get payrolls]" \
+            "getPayrollsCountAsync[Count payrolls]" \
+            "updatePayrollAsync[Update a payroll]"             "createSalaryAsync[Create a salary]" \
+            "deleteSalaryAsync[Delete a salary]" \
+            "getSalariesAsync[Get salaries]" \
+            "getSalariesCountAsync[Count salaries]" \
+            "getSalaryByIdAsync[Get salary by ID]" \
+            "updateSalaryAsync[Update a salary]"             "createScheduleAsync[Create a schedule]" \
+            "deleteScheduleAsync[Delete a schedule]" \
+            "getScheduleByIdAsync[Get schedule by ID]" \
+            "getSchedulesAsync[Get schedules]" \
+            "getSchedulesCountAsync[Count schedules]" \
+            "updateScheduleAsync[Update a schedule]"             "createShiftAsync[Create a shift]" \
+            "deleteShiftAsync[Delete a shift]" \
+            "getShiftByIdAsync[Get shift by ID]" \
+            "getShiftsAsync[Get shifts]" \
+            "getShiftsCountAsync[Count shifts]" \
+            "updateShiftAsync[Update a shift]"             "createTimeIntervalAsync[Create a time interval]" \
+            "deleteTimeIntervalAsync[Delete a time interval]" \
+            "getTimeIntervalByIdAsync[Get time interval by ID]" \
+            "getTimeIntervalsAsync[Get time intervals]" \
+            "getTimeIntervalsCountAsync[Count time intervals]" \
+            "updateTimeIntervalAsync[Update a time interval]"             "createTrainingProgramCourseAsync[Create a training program course]" \
+            "deleteTrainingProgramCourseAsync[Delete a training program course]" \
+            "getTrainingProgramCourseByIdAsync[Get training program course by ID]" \
+            "getTrainingProgramCoursesAsync[Get training program courses]" \
+            "getTrainingProgramCoursesCountAsync[Count training program courses]" \
+            "updateTrainingProgramCourseAsync[Update a training program course]"             "createTrainingProgramEventAsync[Create a training program event]" \
+            "deleteTrainingProgramEventAsync[Delete a training program event]" \
+            "getTrainingProgramEventByIdAsync[Get training program event by ID]" \
+            "getTrainingProgramEventsAsync[Get training program events]" \
+            "getTrainingProgramEventsCountAsync[Count training program events]" \
+            "updateTrainingProgramEventAsync[Update a training program event]"             "createTrainingProgramAsync[Create a training program]" \
+            "deleteTrainingProgramAsync[Delete a training program]" \
+            "getTrainingProgramByIdAsync[Get training program by ID]" \
+            "getTrainingProgramsAsync[Get training programs]" \
+            "getTrainingProgramsCountAsync[Count training programs]" \
+            "updateTrainingProgramAsync[Update a training program]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -341,6 +421,243 @@ case $state in
     ;;
   args)
     case $line[1] in
+      createAppraisalStageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteAppraisalStageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "stageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getAppraisalStageByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "stageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getAppraisalStagesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getAppraisalStagesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateAppraisalStageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "stageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createAppraisalWorkflowAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteAppraisalWorkflowAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "workflowId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getAppraisalWorkflowByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "workflowId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getAppraisalWorkflowsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getAppraisalWorkflowsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateAppraisalWorkflowAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "workflowId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createEmployeeAppraisalSessionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteEmployeeAppraisalSessionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "sessionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getEmployeeAppraisalSessionByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "sessionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getEmployeeAppraisalSessionsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getEmployeeAppraisalSessionsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateEmployeeAppraisalSessionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "sessionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createEmployeeTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteEmployeeTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "employeeTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getEmployeeTypeByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "employeeTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getEmployeeTypesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getEmployeeTypesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateEmployeeTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "employeeTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createEmployeeAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -672,6 +989,690 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "jobOfferId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createJobTitleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteJobTitleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "jobTitleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getJobTitleByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "jobTitleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getJobTitlesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getJobTitlesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateJobTitleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "jobTitleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createLeaveApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteLeaveApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "leaveApplicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLeaveApplicationByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "leaveApplicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLeaveApplicationsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLeaveApplicationsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateLeaveApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "leaveApplicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createLeaveTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteLeaveTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "leaveTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLeaveTypeByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "leaveTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLeaveTypesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLeaveTypesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateLeaveTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "leaveTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createPayrollPeriodAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deletePayrollPeriodAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "periodId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPayrollPeriodByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "periodId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPayrollPeriodsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPayrollPeriodsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePayrollPeriodAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "periodId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createPayrollAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deletePayrollAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "payrollId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPayrollByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "payrollId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPayrollsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPayrollsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePayrollAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "payrollId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createSalaryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteSalaryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "salaryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSalariesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSalariesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSalaryByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "salaryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateSalaryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "salaryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createScheduleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteScheduleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "scheduleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getScheduleByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "scheduleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSchedulesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSchedulesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateScheduleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "scheduleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createShiftAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteShiftAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "shiftId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShiftByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "shiftId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShiftsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShiftsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateShiftAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "shiftId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createTimeIntervalAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteTimeIntervalAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "timeIntervalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTimeIntervalByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "timeIntervalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTimeIntervalsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTimeIntervalsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateTimeIntervalAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "timeIntervalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createTrainingProgramCourseAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteTrainingProgramCourseAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "courseId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTrainingProgramCourseByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "courseId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTrainingProgramCoursesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTrainingProgramCoursesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateTrainingProgramCourseAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "courseId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createTrainingProgramEventAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteTrainingProgramEventAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "eventId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTrainingProgramEventByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "eventId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTrainingProgramEventsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTrainingProgramEventsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateTrainingProgramEventAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "eventId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createTrainingProgramAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteTrainingProgramAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "programId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTrainingProgramByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "programId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTrainingProgramsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTrainingProgramsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateTrainingProgramAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "programId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "

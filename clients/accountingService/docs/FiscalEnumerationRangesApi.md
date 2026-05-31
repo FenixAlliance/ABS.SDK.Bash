@@ -30,7 +30,7 @@ Creates a new invoice enumeration range for a fiscal authority.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
  **invoiceEnumerationRangeCreateDto** | [**InvoiceEnumerationRangeCreateDto**](InvoiceEnumerationRangeCreateDto.md) |  | [optional]
@@ -68,7 +68,7 @@ Deletes an invoice enumeration range identified by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **enumerationRangeId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -106,7 +106,7 @@ Retrieves a specific invoice enumeration range by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **enumerationRangeId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
@@ -137,7 +137,7 @@ Retrieves all invoice enumeration ranges for the specified fiscal authority.
 ### Example
 
 ```bash
- getInvoiceEnumerationRanges  fiscalAuthorityId=value authorityId=value  api-version=value x-api-version:value
+ getInvoiceEnumerationRanges  tenantId=value  fiscalAuthorityId=value authorityId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -145,6 +145,7 @@ Retrieves all invoice enumeration ranges for the specified fiscal authority.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **authorityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
@@ -175,7 +176,7 @@ Returns the total count of invoice enumeration ranges for the specified fiscal a
 ### Example
 
 ```bash
- getInvoiceEnumerationRangesCount fiscalAuthorityId=value  api-version=value x-api-version:value
+ getInvoiceEnumerationRangesCount  tenantId=value fiscalAuthorityId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -183,6 +184,7 @@ Returns the total count of invoice enumeration ranges for the specified fiscal a
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -220,7 +222,7 @@ Updates an existing invoice enumeration range identified by its unique identifie
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **enumerationRangeId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]

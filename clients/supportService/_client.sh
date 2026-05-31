@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "accountLogoutPost[]" \
+            "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -313,7 +313,42 @@ case $state in
             "registerPost[]" \
             "resendConfirmationEmailPost[]" \
             "resetPasswordPost[]" \
-            "versionGet[]"             "createSupportEntitlementAsync[Create a new support entitlement]" \
+            "versionGet[]"             "createInquiryRequestAsync[Create an inquiry request]" \
+            "deleteInquiryRequestAsync[Delete an inquiry request]" \
+            "getInquiryRequestAsync[Retrieve an inquiry request by ID]" \
+            "getInquiryRequestsAsync[Retrieve inquiry requests]" \
+            "getInquiryRequestsCountAsync[Get inquiry requests count]" \
+            "updateInquiryRequestAsync[Update an inquiry request]"             "createKnowledgeArticleAsync[Create a knowledge article]" \
+            "deleteKnowledgeArticleAsync[Delete a knowledge article]" \
+            "getKnowledgeArticleAsync[Retrieve a knowledge article by ID]" \
+            "getKnowledgeArticlesAsync[Retrieve knowledge articles]" \
+            "getKnowledgeArticlesCountAsync[Get knowledge articles count]" \
+            "updateKnowledgeArticleAsync[Update a knowledge article]"             "createMaintenanceVisitAsync[Create a maintenance visit]" \
+            "deleteMaintenanceVisitAsync[Delete a maintenance visit]" \
+            "getMaintenanceVisitAsync[Retrieve a maintenance visit by ID]" \
+            "getMaintenanceVisitsAsync[Retrieve maintenance visits]" \
+            "getMaintenanceVisitsCountAsync[Get maintenance visits count]" \
+            "updateMaintenanceVisitAsync[Update a maintenance visit]"             "createRefundPolicyAsync[Create a new refund policy]" \
+            "deleteRefundPolicyAsync[Delete a refund policy]" \
+            "getRefundPoliciesAsync[Retrieve a list of refund policies]" \
+            "getRefundPoliciesCountAsync[Get the count of refund policies]" \
+            "getRefundPolicyAsync[Retrieve a refund policy by ID]" \
+            "updateRefundPolicyAsync[Update a refund policy]"             "createRefundRequestAsync[Create a refund request]" \
+            "deleteRefundRequestAsync[Delete a refund request]" \
+            "getRefundRequestAsync[Retrieve a refund request by ID]" \
+            "getRefundRequestsAsync[Retrieve refund requests]" \
+            "getRefundRequestsCountAsync[Get refund requests count]" \
+            "updateRefundRequestAsync[Update a refund request]"             "createReturnPolicyAsync[Create a new return policy]" \
+            "deleteReturnPolicyAsync[Delete a return policy]" \
+            "getReturnPoliciesAsync[Retrieve a list of return policies]" \
+            "getReturnPoliciesCountAsync[Get the count of return policies]" \
+            "getReturnPolicyAsync[Retrieve a return policy by ID]" \
+            "updateReturnPolicyAsync[Update a return policy]"             "createReturnRequestAsync[Create a return request]" \
+            "deleteReturnRequestAsync[Delete a return request]" \
+            "getReturnRequestAsync[Retrieve a return request by ID]" \
+            "getReturnRequestsAsync[Retrieve return requests]" \
+            "getReturnRequestsCountAsync[Get return requests count]" \
+            "updateReturnRequestAsync[Update a return request]"             "createSupportEntitlementAsync[Create a new support entitlement]" \
             "deleteSupportEntitlementAsync[Delete a support entitlement]" \
             "getSupportEntitlementAsync[Retrieve a support entitlement by ID]" \
             "getSupportEntitlementsAsync[Retrieve a list of support entitlements]" \
@@ -353,7 +388,17 @@ case $state in
             "getSupportTicketsAsync[Retrieve a list of support tickets]" \
             "getSupportTicketsCountAsync[Get the count of support tickets]" \
             "relateSupportTicketToConversationAsync[Create a conversation for a support ticket]" \
-            "updateSupportTicketAsync[Update a support ticket]" \
+            "updateSupportTicketAsync[Update a support ticket]"             "createWarrantyPolicyAsync[Create a new warranty policy]" \
+            "deleteWarrantyPolicyAsync[Delete a warranty policy]" \
+            "getWarrantyPoliciesAsync[Retrieve a list of warranty policies]" \
+            "getWarrantyPoliciesCountAsync[Get the count of warranty policies]" \
+            "getWarrantyPolicyAsync[Retrieve a warranty policy by ID]" \
+            "updateWarrantyPolicyAsync[Update a warranty policy]"             "createWarrantyRequestAsync[Create a warranty request]" \
+            "deleteWarrantyRequestAsync[Delete a warranty request]" \
+            "getWarrantyRequestAsync[Retrieve a warranty request by ID]" \
+            "getWarrantyRequestsAsync[Retrieve warranty requests]" \
+            "getWarrantyRequestsCountAsync[Get warranty requests count]" \
+            "updateWarrantyRequestAsync[Update a warranty request]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -361,6 +406,15 @@ case $state in
     ;;
   args)
     case $line[1] in
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       accountLogoutPost)
         local -a _op_arguments
         _op_arguments=(
@@ -468,6 +522,405 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createInquiryRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteInquiryRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "inquiryRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getInquiryRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "inquiryRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getInquiryRequestsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getInquiryRequestsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateInquiryRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "inquiryRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createKnowledgeArticleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteKnowledgeArticleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "knowledgeArticleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getKnowledgeArticleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "knowledgeArticleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getKnowledgeArticlesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getKnowledgeArticlesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateKnowledgeArticleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "knowledgeArticleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createMaintenanceVisitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteMaintenanceVisitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "maintenanceVisitId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMaintenanceVisitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "maintenanceVisitId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMaintenanceVisitsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMaintenanceVisitsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateMaintenanceVisitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "maintenanceVisitId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createRefundPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteRefundPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "refundPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRefundPoliciesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRefundPoliciesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRefundPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "refundPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateRefundPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "refundPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createRefundRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteRefundRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "refundRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRefundRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "refundRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRefundRequestsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRefundRequestsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateRefundRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "refundRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createReturnPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteReturnPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "returnPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getReturnPoliciesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getReturnPoliciesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getReturnPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "returnPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateReturnPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "returnPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createReturnRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteReturnRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "returnRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getReturnRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "returnRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getReturnRequestsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getReturnRequestsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateReturnRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "returnRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       createSupportEntitlementAsync)
@@ -912,6 +1365,120 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "supportTicketId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createWarrantyPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteWarrantyPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "warrantyPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWarrantyPoliciesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWarrantyPoliciesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWarrantyPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "warrantyPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateWarrantyPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "warrantyPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createWarrantyRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteWarrantyRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "warrantyRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWarrantyRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "warrantyRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWarrantyRequestsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWarrantyRequestsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateWarrantyRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "warrantyRequestId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "

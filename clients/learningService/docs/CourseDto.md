@@ -166,6 +166,20 @@ Name | Type | Description | Notes
 **selectedShipmentPolicies** | **array[string]** |  | [optional] [default to null]
 **selectedAttributesOptions** | **array[string]** |  | [optional] [default to null]
 **selectedSellingMarginPolicies** | **array[string]** |  | [optional] [default to null]
+**code** | **string** |  | [optional] [default to null]
+**version** | **string** |  | [optional] [default to null]
+**courseCategoryID** | **string** |  | [optional] [default to null]
+**courseCategoryName** | **string** |  | [optional] [default to null]
+**instructorProfileID** | **string** |  | [optional] [default to null]
+**instructorProfileName** | **string** |  | [optional] [default to null]
+**maxCourseEnrollments** | **integer** |  | [optional] [default to null]
+**totalEffortInWeeks** | **integer** |  | [optional] [default to null]
+**totalHoursPerWeek** | **integer** |  | [optional] [default to null]
+**totalEffortInHours** | **integer** |  | [optional] [default to null]
+**startDateTime** | **string** |  | [optional] [default to null]
+**endDateTime** | **string** |  | [optional] [default to null]
+**inscriptionsStartDateTime** | **string** |  | [optional] [default to null]
+**inscriptionsEndDateTime** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

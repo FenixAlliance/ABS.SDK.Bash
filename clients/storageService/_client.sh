@@ -305,7 +305,7 @@ case $state in
             "updateContactAvatar[Update the avatar for a given contact.]" \
             "updateTenantAvatar[Update the avatar for a given tenant.]" \
             "updateUserAvatar[Update the avatar for the current user.]"             "getBlobAsync[]" \
-            "getBlobsAsync[]"             "accountLogoutPost[]" \
+            "getBlobsAsync[]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -434,6 +434,15 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       accountLogoutPost)

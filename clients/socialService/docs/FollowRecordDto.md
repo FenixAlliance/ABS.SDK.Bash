@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **type** | **string** |  | [optional] [default to null]
 **followerId** | **string** |  | [optional] [default to null]
 **followedId** | **string** |  | [optional] [default to null]

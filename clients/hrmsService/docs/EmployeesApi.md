@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
  **employeeId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
- **body** | **map** |  | [optional]
+ **employeeProfileUpdateDto** | [**EmployeeProfileUpdateDto**](EmployeeProfileUpdateDto.md) |  | [optional]
 
 ### Return type
 

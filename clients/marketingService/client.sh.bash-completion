@@ -69,6 +69,7 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["createEmailGroupAsync"]=1
     operations["deleteEmailGroupAsync"]=1
     operations["getEmailGroupDetailsAsync"]=1
@@ -104,12 +105,24 @@ _()
     operations["resendConfirmationEmailPost"]=1
     operations["resetPasswordPost"]=1
     operations["versionGet"]=1
+    operations["createMarketingAreaAsync"]=1
+    operations["deleteMarketingAreaAsync"]=1
+    operations["getMarketingAreaByIdAsync"]=1
+    operations["getMarketingAreasAsync"]=1
+    operations["getMarketingAreasCountAsync"]=1
+    operations["updateMarketingAreaAsync"]=1
     operations["createMarketingCampaignAsync"]=1
     operations["deleteMarketingCampaignAsync"]=1
     operations["getMarketingCampaignDetailsAsync"]=1
     operations["getMarketingCampaignODataAsync"]=1
     operations["getMarketingCampaignsCountAsync"]=1
     operations["updateMarketingCampaignAsync"]=1
+    operations["createMarketingLeadAsync"]=1
+    operations["deleteMarketingLeadAsync"]=1
+    operations["getMarketingLeadDetailsAsync"]=1
+    operations["getMarketingLeadsCountAsync"]=1
+    operations["getMarketingLeadsODataAsync"]=1
+    operations["updateMarketingLeadAsync"]=1
     operations["createMarketingListAsync"]=1
     operations["deleteMarketingListAsync"]=1
     operations["getMarketingListDetailsAsync"]=1
@@ -139,6 +152,7 @@ _()
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["createEmailGroupAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteEmailGroupAsync"]="emailgroupId= tenantId= api-version= x-api-version: "
     operation_parameters["getEmailGroupDetailsAsync"]="emailgroupId= tenantId= api-version= x-api-version: "
@@ -174,12 +188,24 @@ _()
     operation_parameters["resendConfirmationEmailPost"]=""
     operation_parameters["resetPasswordPost"]=""
     operation_parameters["versionGet"]=""
+    operation_parameters["createMarketingAreaAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteMarketingAreaAsync"]="marketingAreaId= tenantId= api-version= x-api-version: "
+    operation_parameters["getMarketingAreaByIdAsync"]="marketingAreaId= tenantId= api-version= x-api-version: "
+    operation_parameters["getMarketingAreasAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getMarketingAreasCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateMarketingAreaAsync"]="marketingAreaId= tenantId= api-version= x-api-version: "
     operation_parameters["createMarketingCampaignAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteMarketingCampaignAsync"]="marketingcampaignId= tenantId= api-version= x-api-version: "
     operation_parameters["getMarketingCampaignDetailsAsync"]="marketingcampaignId= tenantId= api-version= x-api-version: "
     operation_parameters["getMarketingCampaignODataAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getMarketingCampaignsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateMarketingCampaignAsync"]="marketingcampaignId= tenantId= api-version= x-api-version: "
+    operation_parameters["createMarketingLeadAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteMarketingLeadAsync"]="marketingLeadId= tenantId= api-version= x-api-version: "
+    operation_parameters["getMarketingLeadDetailsAsync"]="marketingLeadId= tenantId= api-version= x-api-version: "
+    operation_parameters["getMarketingLeadsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getMarketingLeadsODataAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateMarketingLeadAsync"]="marketingLeadId= tenantId= api-version= x-api-version: "
     operation_parameters["createMarketingListAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteMarketingListAsync"]="marketinglistId= tenantId= api-version= x-api-version: "
     operation_parameters["getMarketingListDetailsAsync"]="marketinglistId= tenantId= api-version= x-api-version: "

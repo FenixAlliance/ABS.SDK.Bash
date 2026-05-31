@@ -30,7 +30,7 @@ Creates a new fiscal period associated with a fiscal year.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
  **fiscalPeriodCreateDto** | [**FiscalPeriodCreateDto**](FiscalPeriodCreateDto.md) |  | [optional]
@@ -68,7 +68,7 @@ Deletes a fiscal period identified by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalPeriodId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -106,7 +106,7 @@ Retrieves a specific fiscal period by its unique identifier within a fiscal year
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **fiscalYearId** | **string** |  | [default to null]
  **fiscalPeriodId** | **string** |  | [default to null]
@@ -146,7 +146,7 @@ Retrieves all fiscal periods for the specified fiscal year within a fiscal autho
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **fiscalYearId** | **string** |  | [default to null]
  **authorityId** | **string** |  | [default to null]
@@ -186,7 +186,7 @@ Returns the total count of fiscal periods for the specified fiscal year.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **fiscalYearId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
@@ -225,7 +225,7 @@ Updates an existing fiscal period identified by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalPeriodId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]

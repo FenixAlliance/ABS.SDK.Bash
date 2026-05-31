@@ -92,7 +92,7 @@ Counts the number of tags associated with a specific stock item.
 ### Example
 
 ```bash
- countStockItemTagsByItemId itemId=value  api-version=value x-api-version:value
+ countStockItemTagsByItemId  tenantId=value itemId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -100,6 +100,7 @@ Counts the number of tags associated with a specific stock item.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **itemId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -1253,7 +1254,7 @@ Retrieves a specific tag by ID for a stock item.
 ### Example
 
 ```bash
- getStockItemTagById itemId=value itemTagId=value  api-version=value x-api-version:value
+ getStockItemTagById  tenantId=value itemId=value itemTagId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -1261,6 +1262,7 @@ Retrieves a specific tag by ID for a stock item.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **itemId** | **string** |  | [default to null]
  **itemTagId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
@@ -1291,7 +1293,7 @@ Retrieves all tags associated with a specific stock item.
 ### Example
 
 ```bash
- getStockItemTagsByItemId itemId=value  api-version=value x-api-version:value
+ getStockItemTagsByItemId  tenantId=value itemId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -1299,6 +1301,7 @@ Retrieves all tags associated with a specific stock item.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **itemId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -1403,7 +1406,7 @@ Retrieves a specific type by ID for a stock item.
 ### Example
 
 ```bash
- getStockItemTypeById itemId=value itemTypeId=value  api-version=value x-api-version:value
+ getStockItemTypeById  tenantId=value itemId=value itemTypeId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -1411,6 +1414,7 @@ Retrieves a specific type by ID for a stock item.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **itemId** | **string** |  | [default to null]
  **itemTypeId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
@@ -1441,7 +1445,7 @@ Retrieves all types associated with a specific stock item.
 ### Example
 
 ```bash
- getStockItemTypesByItemId itemId=value  api-version=value x-api-version:value
+ getStockItemTypesByItemId  tenantId=value itemId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -1449,6 +1453,7 @@ Retrieves all types associated with a specific stock item.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **itemId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]

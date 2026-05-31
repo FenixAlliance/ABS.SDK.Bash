@@ -21,7 +21,7 @@ Counts all tax policies for a specific item.
 ### Example
 
 ```bash
- countItemTaxPoliciesAsync  itemId=value  api-version=value x-api-version:value
+ countItemTaxPoliciesAsync  tenantId=value  itemId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -29,6 +29,7 @@ Counts all tax policies for a specific item.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [optional] [default to null]
  **itemId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -58,7 +59,7 @@ Retrieves all tax policies for a specific item.
 ### Example
 
 ```bash
- getItemTaxPoliciesAsync  itemId=value  api-version=value x-api-version:value
+ getItemTaxPoliciesAsync  tenantId=value  itemId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -66,6 +67,7 @@ Retrieves all tax policies for a specific item.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [optional] [default to null]
  **itemId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -95,7 +97,7 @@ Retrieves a specific tax policy for an item.
 ### Example
 
 ```bash
- getItemTaxPolicyByIdAsync itemTaxPolicyId=value  itemId=value  api-version=value x-api-version:value
+ getItemTaxPolicyByIdAsync itemTaxPolicyId=value  tenantId=value  itemId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -104,6 +106,7 @@ Retrieves a specific tax policy for an item.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **itemTaxPolicyId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **itemId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]

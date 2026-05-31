@@ -123,6 +123,7 @@ _()
     operations["updateAssetRepair"]=1
     operations["updateAssetTransfer"]=1
     operations["updateAssetValueAmend"]=1
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -198,6 +199,7 @@ _()
     operation_parameters["updateAssetRepair"]="assetId= repairId= tenantId= "
     operation_parameters["updateAssetTransfer"]="assetId= transferId= tenantId= "
     operation_parameters["updateAssetValueAmend"]="assetId= amendId= tenantId= "
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""

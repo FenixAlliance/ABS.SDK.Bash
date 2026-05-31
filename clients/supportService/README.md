@@ -103,23 +103,66 @@ All URIs are relative to **
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*FenixAllianceABSWebApi* | [**accountLogoutPost**](docs/FenixAllianceABSWebApi.md#accountlogoutpost) | **POST** /Account/Logout | 
-*FenixAllianceABSWebApi* | [**accountManageDownloadPersonalDataPost**](docs/FenixAllianceABSWebApi.md#accountmanagedownloadpersonaldatapost) | **POST** /Account/Manage/DownloadPersonalData | 
-*FenixAllianceABSWebApi* | [**accountManageLinkExternalLoginPost**](docs/FenixAllianceABSWebApi.md#accountmanagelinkexternalloginpost) | **POST** /Account/Manage/LinkExternalLogin | 
-*FenixAllianceABSWebApi* | [**accountPerformExternalLoginPost**](docs/FenixAllianceABSWebApi.md#accountperformexternalloginpost) | **POST** /Account/PerformExternalLogin | 
-*FenixAllianceABSWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABSWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
-*FenixAllianceABSWebApi* | [**healthGet**](docs/FenixAllianceABSWebApi.md#healthget) | **GET** /health | 
-*FenixAllianceABSWebApi* | [**helloGet**](docs/FenixAllianceABSWebApi.md#helloget) | **GET** /hello | 
-*FenixAllianceABSWebApi* | [**loginPost**](docs/FenixAllianceABSWebApi.md#loginpost) | **POST** /login | 
-*FenixAllianceABSWebApi* | [**manage2faPost**](docs/FenixAllianceABSWebApi.md#manage2fapost) | **POST** /manage/2fa | 
-*FenixAllianceABSWebApi* | [**manageInfoGet**](docs/FenixAllianceABSWebApi.md#manageinfoget) | **GET** /manage/info | 
-*FenixAllianceABSWebApi* | [**manageInfoPost**](docs/FenixAllianceABSWebApi.md#manageinfopost) | **POST** /manage/info | 
-*FenixAllianceABSWebApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAllianceABSWebApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
-*FenixAllianceABSWebApi* | [**refreshPost**](docs/FenixAllianceABSWebApi.md#refreshpost) | **POST** /refresh | 
-*FenixAllianceABSWebApi* | [**registerPost**](docs/FenixAllianceABSWebApi.md#registerpost) | **POST** /register | 
-*FenixAllianceABSWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABSWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
-*FenixAllianceABSWebApi* | [**resetPasswordPost**](docs/FenixAllianceABSWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
-*FenixAllianceABSWebApi* | [**versionGet**](docs/FenixAllianceABSWebApi.md#versionget) | **GET** /version | 
+*CompletionsApi* | [**apiV2AiServiceCompletionsCompleteGet**](docs/CompletionsApi.md#apiv2aiservicecompletionscompleteget) | **GET** /api/v2/AiService/Completions/Complete | 
+*FenixAlliancePortalsWebsiteApi* | [**accountLogoutPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountlogoutpost) | **POST** /Account/Logout | 
+*FenixAlliancePortalsWebsiteApi* | [**accountManageDownloadPersonalDataPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountmanagedownloadpersonaldatapost) | **POST** /Account/Manage/DownloadPersonalData | 
+*FenixAlliancePortalsWebsiteApi* | [**accountManageLinkExternalLoginPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountmanagelinkexternalloginpost) | **POST** /Account/Manage/LinkExternalLogin | 
+*FenixAlliancePortalsWebsiteApi* | [**accountPerformExternalLoginPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountperformexternalloginpost) | **POST** /Account/PerformExternalLogin | 
+*FenixAlliancePortalsWebsiteApi* | [**forgotPasswordPost**](docs/FenixAlliancePortalsWebsiteApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
+*FenixAlliancePortalsWebsiteApi* | [**healthGet**](docs/FenixAlliancePortalsWebsiteApi.md#healthget) | **GET** /health | 
+*FenixAlliancePortalsWebsiteApi* | [**helloGet**](docs/FenixAlliancePortalsWebsiteApi.md#helloget) | **GET** /hello | 
+*FenixAlliancePortalsWebsiteApi* | [**loginPost**](docs/FenixAlliancePortalsWebsiteApi.md#loginpost) | **POST** /login | 
+*FenixAlliancePortalsWebsiteApi* | [**manage2faPost**](docs/FenixAlliancePortalsWebsiteApi.md#manage2fapost) | **POST** /manage/2fa | 
+*FenixAlliancePortalsWebsiteApi* | [**manageInfoGet**](docs/FenixAlliancePortalsWebsiteApi.md#manageinfoget) | **GET** /manage/info | 
+*FenixAlliancePortalsWebsiteApi* | [**manageInfoPost**](docs/FenixAlliancePortalsWebsiteApi.md#manageinfopost) | **POST** /manage/info | 
+*FenixAlliancePortalsWebsiteApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAlliancePortalsWebsiteApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
+*FenixAlliancePortalsWebsiteApi* | [**refreshPost**](docs/FenixAlliancePortalsWebsiteApi.md#refreshpost) | **POST** /refresh | 
+*FenixAlliancePortalsWebsiteApi* | [**registerPost**](docs/FenixAlliancePortalsWebsiteApi.md#registerpost) | **POST** /register | 
+*FenixAlliancePortalsWebsiteApi* | [**resendConfirmationEmailPost**](docs/FenixAlliancePortalsWebsiteApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
+*FenixAlliancePortalsWebsiteApi* | [**resetPasswordPost**](docs/FenixAlliancePortalsWebsiteApi.md#resetpasswordpost) | **POST** /resetPassword | 
+*FenixAlliancePortalsWebsiteApi* | [**versionGet**](docs/FenixAlliancePortalsWebsiteApi.md#versionget) | **GET** /version | 
+*InquiryRequestsApi* | [**createInquiryRequestAsync**](docs/InquiryRequestsApi.md#createinquiryrequestasync) | **POST** /api/v2/SupportService/InquiryRequests | Create an inquiry request
+*InquiryRequestsApi* | [**deleteInquiryRequestAsync**](docs/InquiryRequestsApi.md#deleteinquiryrequestasync) | **DELETE** /api/v2/SupportService/InquiryRequests/{inquiryRequestId} | Delete an inquiry request
+*InquiryRequestsApi* | [**getInquiryRequestAsync**](docs/InquiryRequestsApi.md#getinquiryrequestasync) | **GET** /api/v2/SupportService/InquiryRequests/{inquiryRequestId} | Retrieve an inquiry request by ID
+*InquiryRequestsApi* | [**getInquiryRequestsAsync**](docs/InquiryRequestsApi.md#getinquiryrequestsasync) | **GET** /api/v2/SupportService/InquiryRequests | Retrieve inquiry requests
+*InquiryRequestsApi* | [**getInquiryRequestsCountAsync**](docs/InquiryRequestsApi.md#getinquiryrequestscountasync) | **GET** /api/v2/SupportService/InquiryRequests/Count | Get inquiry requests count
+*InquiryRequestsApi* | [**updateInquiryRequestAsync**](docs/InquiryRequestsApi.md#updateinquiryrequestasync) | **PUT** /api/v2/SupportService/InquiryRequests/{inquiryRequestId} | Update an inquiry request
+*KnowledgeArticlesApi* | [**createKnowledgeArticleAsync**](docs/KnowledgeArticlesApi.md#createknowledgearticleasync) | **POST** /api/v2/SupportService/KnowledgeArticles | Create a knowledge article
+*KnowledgeArticlesApi* | [**deleteKnowledgeArticleAsync**](docs/KnowledgeArticlesApi.md#deleteknowledgearticleasync) | **DELETE** /api/v2/SupportService/KnowledgeArticles/{knowledgeArticleId} | Delete a knowledge article
+*KnowledgeArticlesApi* | [**getKnowledgeArticleAsync**](docs/KnowledgeArticlesApi.md#getknowledgearticleasync) | **GET** /api/v2/SupportService/KnowledgeArticles/{knowledgeArticleId} | Retrieve a knowledge article by ID
+*KnowledgeArticlesApi* | [**getKnowledgeArticlesAsync**](docs/KnowledgeArticlesApi.md#getknowledgearticlesasync) | **GET** /api/v2/SupportService/KnowledgeArticles | Retrieve knowledge articles
+*KnowledgeArticlesApi* | [**getKnowledgeArticlesCountAsync**](docs/KnowledgeArticlesApi.md#getknowledgearticlescountasync) | **GET** /api/v2/SupportService/KnowledgeArticles/Count | Get knowledge articles count
+*KnowledgeArticlesApi* | [**updateKnowledgeArticleAsync**](docs/KnowledgeArticlesApi.md#updateknowledgearticleasync) | **PUT** /api/v2/SupportService/KnowledgeArticles/{knowledgeArticleId} | Update a knowledge article
+*MaintenanceVisitsApi* | [**createMaintenanceVisitAsync**](docs/MaintenanceVisitsApi.md#createmaintenancevisitasync) | **POST** /api/v2/SupportService/MaintenanceVisits | Create a maintenance visit
+*MaintenanceVisitsApi* | [**deleteMaintenanceVisitAsync**](docs/MaintenanceVisitsApi.md#deletemaintenancevisitasync) | **DELETE** /api/v2/SupportService/MaintenanceVisits/{maintenanceVisitId} | Delete a maintenance visit
+*MaintenanceVisitsApi* | [**getMaintenanceVisitAsync**](docs/MaintenanceVisitsApi.md#getmaintenancevisitasync) | **GET** /api/v2/SupportService/MaintenanceVisits/{maintenanceVisitId} | Retrieve a maintenance visit by ID
+*MaintenanceVisitsApi* | [**getMaintenanceVisitsAsync**](docs/MaintenanceVisitsApi.md#getmaintenancevisitsasync) | **GET** /api/v2/SupportService/MaintenanceVisits | Retrieve maintenance visits
+*MaintenanceVisitsApi* | [**getMaintenanceVisitsCountAsync**](docs/MaintenanceVisitsApi.md#getmaintenancevisitscountasync) | **GET** /api/v2/SupportService/MaintenanceVisits/Count | Get maintenance visits count
+*MaintenanceVisitsApi* | [**updateMaintenanceVisitAsync**](docs/MaintenanceVisitsApi.md#updatemaintenancevisitasync) | **PUT** /api/v2/SupportService/MaintenanceVisits/{maintenanceVisitId} | Update a maintenance visit
+*RefundPoliciesApi* | [**createRefundPolicyAsync**](docs/RefundPoliciesApi.md#createrefundpolicyasync) | **POST** /api/v2/SupportService/RefundPolicies | Create a new refund policy
+*RefundPoliciesApi* | [**deleteRefundPolicyAsync**](docs/RefundPoliciesApi.md#deleterefundpolicyasync) | **DELETE** /api/v2/SupportService/RefundPolicies/{refundPolicyId} | Delete a refund policy
+*RefundPoliciesApi* | [**getRefundPoliciesAsync**](docs/RefundPoliciesApi.md#getrefundpoliciesasync) | **GET** /api/v2/SupportService/RefundPolicies | Retrieve a list of refund policies
+*RefundPoliciesApi* | [**getRefundPoliciesCountAsync**](docs/RefundPoliciesApi.md#getrefundpoliciescountasync) | **GET** /api/v2/SupportService/RefundPolicies/Count | Get the count of refund policies
+*RefundPoliciesApi* | [**getRefundPolicyAsync**](docs/RefundPoliciesApi.md#getrefundpolicyasync) | **GET** /api/v2/SupportService/RefundPolicies/{refundPolicyId} | Retrieve a refund policy by ID
+*RefundPoliciesApi* | [**updateRefundPolicyAsync**](docs/RefundPoliciesApi.md#updaterefundpolicyasync) | **PUT** /api/v2/SupportService/RefundPolicies/{refundPolicyId} | Update a refund policy
+*RefundRequestsApi* | [**createRefundRequestAsync**](docs/RefundRequestsApi.md#createrefundrequestasync) | **POST** /api/v2/SupportService/RefundRequests | Create a refund request
+*RefundRequestsApi* | [**deleteRefundRequestAsync**](docs/RefundRequestsApi.md#deleterefundrequestasync) | **DELETE** /api/v2/SupportService/RefundRequests/{refundRequestId} | Delete a refund request
+*RefundRequestsApi* | [**getRefundRequestAsync**](docs/RefundRequestsApi.md#getrefundrequestasync) | **GET** /api/v2/SupportService/RefundRequests/{refundRequestId} | Retrieve a refund request by ID
+*RefundRequestsApi* | [**getRefundRequestsAsync**](docs/RefundRequestsApi.md#getrefundrequestsasync) | **GET** /api/v2/SupportService/RefundRequests | Retrieve refund requests
+*RefundRequestsApi* | [**getRefundRequestsCountAsync**](docs/RefundRequestsApi.md#getrefundrequestscountasync) | **GET** /api/v2/SupportService/RefundRequests/Count | Get refund requests count
+*RefundRequestsApi* | [**updateRefundRequestAsync**](docs/RefundRequestsApi.md#updaterefundrequestasync) | **PUT** /api/v2/SupportService/RefundRequests/{refundRequestId} | Update a refund request
+*ReturnPoliciesApi* | [**createReturnPolicyAsync**](docs/ReturnPoliciesApi.md#createreturnpolicyasync) | **POST** /api/v2/SupportService/ReturnPolicies | Create a new return policy
+*ReturnPoliciesApi* | [**deleteReturnPolicyAsync**](docs/ReturnPoliciesApi.md#deletereturnpolicyasync) | **DELETE** /api/v2/SupportService/ReturnPolicies/{returnPolicyId} | Delete a return policy
+*ReturnPoliciesApi* | [**getReturnPoliciesAsync**](docs/ReturnPoliciesApi.md#getreturnpoliciesasync) | **GET** /api/v2/SupportService/ReturnPolicies | Retrieve a list of return policies
+*ReturnPoliciesApi* | [**getReturnPoliciesCountAsync**](docs/ReturnPoliciesApi.md#getreturnpoliciescountasync) | **GET** /api/v2/SupportService/ReturnPolicies/Count | Get the count of return policies
+*ReturnPoliciesApi* | [**getReturnPolicyAsync**](docs/ReturnPoliciesApi.md#getreturnpolicyasync) | **GET** /api/v2/SupportService/ReturnPolicies/{returnPolicyId} | Retrieve a return policy by ID
+*ReturnPoliciesApi* | [**updateReturnPolicyAsync**](docs/ReturnPoliciesApi.md#updatereturnpolicyasync) | **PUT** /api/v2/SupportService/ReturnPolicies/{returnPolicyId} | Update a return policy
+*ReturnRequestsApi* | [**createReturnRequestAsync**](docs/ReturnRequestsApi.md#createreturnrequestasync) | **POST** /api/v2/SupportService/ReturnRequests | Create a return request
+*ReturnRequestsApi* | [**deleteReturnRequestAsync**](docs/ReturnRequestsApi.md#deletereturnrequestasync) | **DELETE** /api/v2/SupportService/ReturnRequests/{returnRequestId} | Delete a return request
+*ReturnRequestsApi* | [**getReturnRequestAsync**](docs/ReturnRequestsApi.md#getreturnrequestasync) | **GET** /api/v2/SupportService/ReturnRequests/{returnRequestId} | Retrieve a return request by ID
+*ReturnRequestsApi* | [**getReturnRequestsAsync**](docs/ReturnRequestsApi.md#getreturnrequestsasync) | **GET** /api/v2/SupportService/ReturnRequests | Retrieve return requests
+*ReturnRequestsApi* | [**getReturnRequestsCountAsync**](docs/ReturnRequestsApi.md#getreturnrequestscountasync) | **GET** /api/v2/SupportService/ReturnRequests/Count | Get return requests count
+*ReturnRequestsApi* | [**updateReturnRequestAsync**](docs/ReturnRequestsApi.md#updatereturnrequestasync) | **PUT** /api/v2/SupportService/ReturnRequests/{returnRequestId} | Update a return request
 *SupportEntitlementsApi* | [**createSupportEntitlementAsync**](docs/SupportEntitlementsApi.md#createsupportentitlementasync) | **POST** /api/v2/SupportService/SupportEntitlements | Create a new support entitlement
 *SupportEntitlementsApi* | [**deleteSupportEntitlementAsync**](docs/SupportEntitlementsApi.md#deletesupportentitlementasync) | **DELETE** /api/v2/SupportService/SupportEntitlements/{supportEntitlementId} | Delete a support entitlement
 *SupportEntitlementsApi* | [**getSupportEntitlementAsync**](docs/SupportEntitlementsApi.md#getsupportentitlementasync) | **GET** /api/v2/SupportService/SupportEntitlements/{supportEntitlementId} | Retrieve a support entitlement by ID
@@ -166,6 +209,18 @@ Class | Method | HTTP request | Description
 *SupportTicketsApi* | [**getSupportTicketsCountAsync**](docs/SupportTicketsApi.md#getsupportticketscountasync) | **GET** /api/v2/SupportService/SupportTickets/Count | Get the count of support tickets
 *SupportTicketsApi* | [**relateSupportTicketToConversationAsync**](docs/SupportTicketsApi.md#relatesupporttickettoconversationasync) | **POST** /api/v2/SupportService/SupportTickets/{supportTicketId}/Conversations | Create a conversation for a support ticket
 *SupportTicketsApi* | [**updateSupportTicketAsync**](docs/SupportTicketsApi.md#updatesupportticketasync) | **PUT** /api/v2/SupportService/SupportTickets/{supportTicketId} | Update a support ticket
+*WarrantyPoliciesApi* | [**createWarrantyPolicyAsync**](docs/WarrantyPoliciesApi.md#createwarrantypolicyasync) | **POST** /api/v2/SupportService/WarrantyPolicies | Create a new warranty policy
+*WarrantyPoliciesApi* | [**deleteWarrantyPolicyAsync**](docs/WarrantyPoliciesApi.md#deletewarrantypolicyasync) | **DELETE** /api/v2/SupportService/WarrantyPolicies/{warrantyPolicyId} | Delete a warranty policy
+*WarrantyPoliciesApi* | [**getWarrantyPoliciesAsync**](docs/WarrantyPoliciesApi.md#getwarrantypoliciesasync) | **GET** /api/v2/SupportService/WarrantyPolicies | Retrieve a list of warranty policies
+*WarrantyPoliciesApi* | [**getWarrantyPoliciesCountAsync**](docs/WarrantyPoliciesApi.md#getwarrantypoliciescountasync) | **GET** /api/v2/SupportService/WarrantyPolicies/Count | Get the count of warranty policies
+*WarrantyPoliciesApi* | [**getWarrantyPolicyAsync**](docs/WarrantyPoliciesApi.md#getwarrantypolicyasync) | **GET** /api/v2/SupportService/WarrantyPolicies/{warrantyPolicyId} | Retrieve a warranty policy by ID
+*WarrantyPoliciesApi* | [**updateWarrantyPolicyAsync**](docs/WarrantyPoliciesApi.md#updatewarrantypolicyasync) | **PUT** /api/v2/SupportService/WarrantyPolicies/{warrantyPolicyId} | Update a warranty policy
+*WarrantyRequestsApi* | [**createWarrantyRequestAsync**](docs/WarrantyRequestsApi.md#createwarrantyrequestasync) | **POST** /api/v2/SupportService/WarrantyRequests | Create a warranty request
+*WarrantyRequestsApi* | [**deleteWarrantyRequestAsync**](docs/WarrantyRequestsApi.md#deletewarrantyrequestasync) | **DELETE** /api/v2/SupportService/WarrantyRequests/{warrantyRequestId} | Delete a warranty request
+*WarrantyRequestsApi* | [**getWarrantyRequestAsync**](docs/WarrantyRequestsApi.md#getwarrantyrequestasync) | **GET** /api/v2/SupportService/WarrantyRequests/{warrantyRequestId} | Retrieve a warranty request by ID
+*WarrantyRequestsApi* | [**getWarrantyRequestsAsync**](docs/WarrantyRequestsApi.md#getwarrantyrequestsasync) | **GET** /api/v2/SupportService/WarrantyRequests | Retrieve warranty requests
+*WarrantyRequestsApi* | [**getWarrantyRequestsCountAsync**](docs/WarrantyRequestsApi.md#getwarrantyrequestscountasync) | **GET** /api/v2/SupportService/WarrantyRequests/Count | Get warranty requests count
+*WarrantyRequestsApi* | [**updateWarrantyRequestAsync**](docs/WarrantyRequestsApi.md#updatewarrantyrequestasync) | **PUT** /api/v2/SupportService/WarrantyRequests/{warrantyRequestId} | Update a warranty request
 
 
 ## Documentation For Models
@@ -177,14 +232,53 @@ Class | Method | HTTP request | Description
  - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
  - [InfoRequest](docs/InfoRequest.md)
  - [InfoResponse](docs/InfoResponse.md)
+ - [InquiryRequestCreateDto](docs/InquiryRequestCreateDto.md)
+ - [InquiryRequestDto](docs/InquiryRequestDto.md)
+ - [InquiryRequestDtoEnvelope](docs/InquiryRequestDtoEnvelope.md)
+ - [InquiryRequestDtoListEnvelope](docs/InquiryRequestDtoListEnvelope.md)
+ - [InquiryRequestUpdateDto](docs/InquiryRequestUpdateDto.md)
  - [Int32Envelope](docs/Int32Envelope.md)
+ - [ItemRefundPolicyCreateDto](docs/ItemRefundPolicyCreateDto.md)
+ - [ItemRefundPolicyDto](docs/ItemRefundPolicyDto.md)
+ - [ItemRefundPolicyDtoEnvelope](docs/ItemRefundPolicyDtoEnvelope.md)
+ - [ItemRefundPolicyDtoListEnvelope](docs/ItemRefundPolicyDtoListEnvelope.md)
+ - [ItemRefundPolicyUpdateDto](docs/ItemRefundPolicyUpdateDto.md)
+ - [ItemReturnPolicyCreateDto](docs/ItemReturnPolicyCreateDto.md)
+ - [ItemReturnPolicyDto](docs/ItemReturnPolicyDto.md)
+ - [ItemReturnPolicyDtoEnvelope](docs/ItemReturnPolicyDtoEnvelope.md)
+ - [ItemReturnPolicyDtoListEnvelope](docs/ItemReturnPolicyDtoListEnvelope.md)
+ - [ItemReturnPolicyUpdateDto](docs/ItemReturnPolicyUpdateDto.md)
+ - [ItemWarrantyPolicyCreateDto](docs/ItemWarrantyPolicyCreateDto.md)
+ - [ItemWarrantyPolicyDto](docs/ItemWarrantyPolicyDto.md)
+ - [ItemWarrantyPolicyDtoEnvelope](docs/ItemWarrantyPolicyDtoEnvelope.md)
+ - [ItemWarrantyPolicyDtoListEnvelope](docs/ItemWarrantyPolicyDtoListEnvelope.md)
+ - [ItemWarrantyPolicyUpdateDto](docs/ItemWarrantyPolicyUpdateDto.md)
+ - [KnowledgeArticleCreateDto](docs/KnowledgeArticleCreateDto.md)
+ - [KnowledgeArticleDto](docs/KnowledgeArticleDto.md)
+ - [KnowledgeArticleDtoEnvelope](docs/KnowledgeArticleDtoEnvelope.md)
+ - [KnowledgeArticleDtoListEnvelope](docs/KnowledgeArticleDtoListEnvelope.md)
+ - [KnowledgeArticleUpdateDto](docs/KnowledgeArticleUpdateDto.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [MaintenanceVisitCreateDto](docs/MaintenanceVisitCreateDto.md)
+ - [MaintenanceVisitDto](docs/MaintenanceVisitDto.md)
+ - [MaintenanceVisitDtoEnvelope](docs/MaintenanceVisitDtoEnvelope.md)
+ - [MaintenanceVisitDtoListEnvelope](docs/MaintenanceVisitDtoListEnvelope.md)
  - [PrivateMessageDto](docs/PrivateMessageDto.md)
  - [PrivateMessageDtoListEnvelope](docs/PrivateMessageDtoListEnvelope.md)
  - [RefreshRequest](docs/RefreshRequest.md)
+ - [RefundRequestCreateDto](docs/RefundRequestCreateDto.md)
+ - [RefundRequestDto](docs/RefundRequestDto.md)
+ - [RefundRequestDtoEnvelope](docs/RefundRequestDtoEnvelope.md)
+ - [RefundRequestDtoListEnvelope](docs/RefundRequestDtoListEnvelope.md)
+ - [RefundRequestUpdateDto](docs/RefundRequestUpdateDto.md)
  - [RegisterRequest](docs/RegisterRequest.md)
  - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)
  - [ResetPasswordRequest](docs/ResetPasswordRequest.md)
+ - [ReturnRequestCreateDto](docs/ReturnRequestCreateDto.md)
+ - [ReturnRequestDto](docs/ReturnRequestDto.md)
+ - [ReturnRequestDtoEnvelope](docs/ReturnRequestDtoEnvelope.md)
+ - [ReturnRequestDtoListEnvelope](docs/ReturnRequestDtoListEnvelope.md)
+ - [ReturnRequestUpdateDto](docs/ReturnRequestUpdateDto.md)
  - [SupportEntitlementCreateDto](docs/SupportEntitlementCreateDto.md)
  - [SupportEntitlementDto](docs/SupportEntitlementDto.md)
  - [SupportEntitlementDtoEnvelope](docs/SupportEntitlementDtoEnvelope.md)
@@ -221,6 +315,11 @@ Class | Method | HTTP request | Description
  - [SupportTicketUpdateDto](docs/SupportTicketUpdateDto.md)
  - [TwoFactorRequest](docs/TwoFactorRequest.md)
  - [TwoFactorResponse](docs/TwoFactorResponse.md)
+ - [WarrantyRequestCreateDto](docs/WarrantyRequestCreateDto.md)
+ - [WarrantyRequestDto](docs/WarrantyRequestDto.md)
+ - [WarrantyRequestDtoEnvelope](docs/WarrantyRequestDtoEnvelope.md)
+ - [WarrantyRequestDtoListEnvelope](docs/WarrantyRequestDtoListEnvelope.md)
+ - [WarrantyRequestUpdateDto](docs/WarrantyRequestUpdateDto.md)
 
 
 ## Documentation For Authorization

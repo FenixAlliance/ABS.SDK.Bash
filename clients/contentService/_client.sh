@@ -330,7 +330,7 @@ case $state in
             "unrelateTagFromBlogPostAsync[Remove a tag from a blog post]" \
             "updateBlogPostAsync[Update a blog post]"             "getBusinessDomainByIdAsync[Get business domain by ID]" \
             "getBusinessDomainsAsync[Get business domains]" \
-            "getBusinessDomainsCountAsync[Get business domains count]"             "accountLogoutPost[]" \
+            "getBusinessDomainsCountAsync[Get business domains count]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -392,7 +392,12 @@ case $state in
             "deleteWebTemplateAsync[Delete a web template]" \
             "getWebTemplateByIdAsync[Get web template by ID]" \
             "getWebTemplatesAsync[Get web templates]" \
-            "updateWebTemplateAsync[Update a web template]" \
+            "updateWebTemplateAsync[Update a web template]"             "createWebsiteThemeAsync[Create a new website theme]" \
+            "deleteWebsiteThemeAsync[Delete a website theme]" \
+            "getWebsiteThemeByIdAsync[Get website theme by ID]" \
+            "getWebsiteThemesAsync[Get all website themes]" \
+            "getWebsiteThemesCountAsync[Get website themes count]" \
+            "updateWebsiteThemeAsync[Update a website theme]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -727,6 +732,15 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       accountLogoutPost)
@@ -1332,6 +1346,65 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "webTemplateId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createWebsiteThemeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteWebsiteThemeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWebsiteThemeByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWebsiteThemesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"oDataQueryOptions=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWebsiteThemesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"oDataQueryOptions=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateWebsiteThemeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "

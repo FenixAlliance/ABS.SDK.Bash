@@ -5,13 +5,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
-**authorized** | **boolean** |  | [optional] [default to null]
+**type** | **string** |  | [optional] [default to null]
+**contactId** | **string** |  | [optional] [default to null]
 **about** | **string** |  | [optional] [default to null]
-**verified** | **boolean** |  | [optional] [default to null]
-**submitted** | **boolean** |  | [optional] [default to null]
 **avatarUrl** | **string** |  | [optional] [default to null]
-**qualifiedName** | **string** |  | [optional] [default to null]
-**verificationTimestamp** | **string** |  | [optional] [default to null]
 **data** | **string** |  | [optional] [default to null]
 **dataLabel** | **string** |  | [optional] [default to null]
 **data1** | **string** |  | [optional] [default to null]
@@ -32,6 +29,7 @@ Name | Type | Description | Notes
 **data8Label** | **string** |  | [optional] [default to null]
 **data9** | **string** |  | [optional] [default to null]
 **data9Label** | **string** |  | [optional] [default to null]
+**authorized** | **boolean** |  | [optional] [default to null]
 **contactID** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

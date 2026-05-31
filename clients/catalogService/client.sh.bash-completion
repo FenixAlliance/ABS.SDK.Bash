@@ -69,6 +69,7 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -91,6 +92,12 @@ _()
     operations["getItemAttachmentByIdAsync"]=1
     operations["getItemAttachmentsAsync"]=1
     operations["updateItemAttachmentAsync"]=1
+    operations["createItemAttributeOptionAsync"]=1
+    operations["deleteItemAttributeOptionAsync"]=1
+    operations["getItemAttributeOptionByIdAsync"]=1
+    operations["getItemAttributeOptionsAsync"]=1
+    operations["getItemAttributeOptionsCountAsync"]=1
+    operations["updateItemAttributeOptionAsync"]=1
     operations["countItemAttributesAsync"]=1
     operations["createItemAttributeAsync"]=1
     operations["deleteItemAttributeAsync"]=1
@@ -102,12 +109,24 @@ _()
     operations["getItemBrandByIdAsync"]=1
     operations["getItemBrandsAsync"]=1
     operations["updateItemBrandAsync"]=1
+    operations["createItemBundleAsync"]=1
+    operations["deleteItemBundleAsync"]=1
+    operations["getItemBundleByIdAsync"]=1
+    operations["getItemBundlesAsync"]=1
+    operations["getItemBundlesCountAsync"]=1
+    operations["updateItemBundleAsync"]=1
     operations["countItemCategoriesAsync"]=1
     operations["createItemCategoryAsync"]=1
     operations["deleteItemCategoryAsync"]=1
     operations["getItemCategoriesAsync"]=1
     operations["getItemCategoryByIdAsync"]=1
     operations["updateItemCategoryAsync"]=1
+    operations["createItemFamilyAsync"]=1
+    operations["deleteItemFamilyAsync"]=1
+    operations["getItemFamiliesAsync"]=1
+    operations["getItemFamiliesCountAsync"]=1
+    operations["getItemFamilyByIdAsync"]=1
+    operations["updateItemFamilyAsync"]=1
     operations["getAllItemGoogleCategoriesAsync"]=1
     operations["getChildrenItemGoogleCategoriesByIdAsync"]=1
     operations["getItemGoogleCategoriesAsync"]=1
@@ -246,15 +265,11 @@ _()
     operations["getMerchantById"]=1
     operations["getMerchants"]=1
     operations["getMerchantsCount"]=1
-    operations["createPricingRule"]=1
-    operations["deletePricingRule"]=1
-    operations["getPricingRuleById"]=1
-    operations["getPricingRules"]=1
-    operations["updatePricingRule"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
@@ -274,26 +289,44 @@ _()
     operation_parameters["versionGet"]=""
     operation_parameters["createItemAttachmentAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteItemAttachmentAsync"]="itemAttachmentId= tenantId= api-version= x-api-version: "
-    operation_parameters["getItemAttachmentByIdAsync"]="itemAttachmentId= api-version= x-api-version: "
+    operation_parameters["getItemAttachmentByIdAsync"]="itemAttachmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getItemAttachmentsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateItemAttachmentAsync"]="itemAttachmentId= tenantId= api-version= x-api-version: "
+    operation_parameters["createItemAttributeOptionAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemAttributeOptionAsync"]="itemAttributeOptionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemAttributeOptionByIdAsync"]="itemAttributeOptionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemAttributeOptionsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getItemAttributeOptionsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateItemAttributeOptionAsync"]="itemAttributeOptionId= tenantId= api-version= x-api-version: "
     operation_parameters["countItemAttributesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createItemAttributeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteItemAttributeAsync"]="itemAttributeId= tenantId= api-version= x-api-version: "
-    operation_parameters["getItemAttributeByIdAsync"]="itemAttributeId= api-version= x-api-version: "
+    operation_parameters["getItemAttributeByIdAsync"]="itemAttributeId= tenantId= api-version= x-api-version: "
     operation_parameters["getItemAttributesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateItemAttributeAsync"]="itemAttributeId= tenantId= api-version= x-api-version: "
     operation_parameters["createItemBrandAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteItemBrandAsync"]="itemBrandId= tenantId= api-version= x-api-version: "
-    operation_parameters["getItemBrandByIdAsync"]="itemBrandId= api-version= x-api-version: "
+    operation_parameters["getItemBrandByIdAsync"]="itemBrandId= tenantId= api-version= x-api-version: "
     operation_parameters["getItemBrandsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateItemBrandAsync"]="itemBrandId= tenantId= api-version= x-api-version: "
+    operation_parameters["createItemBundleAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemBundleAsync"]="itemBundleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemBundleByIdAsync"]="itemBundleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemBundlesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getItemBundlesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateItemBundleAsync"]="itemBundleId= tenantId= api-version= x-api-version: "
     operation_parameters["countItemCategoriesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createItemCategoryAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteItemCategoryAsync"]="itemCategoryId= tenantId= api-version= x-api-version: "
     operation_parameters["getItemCategoriesAsync"]="tenantId= api-version= x-api-version: "
-    operation_parameters["getItemCategoryByIdAsync"]="itemCategoryId= api-version= x-api-version: "
+    operation_parameters["getItemCategoryByIdAsync"]="itemCategoryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateItemCategoryAsync"]="itemCategoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["createItemFamilyAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteItemFamilyAsync"]="itemFamilyId= tenantId= api-version= x-api-version: "
+    operation_parameters["getItemFamiliesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getItemFamiliesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getItemFamilyByIdAsync"]="itemFamilyId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateItemFamilyAsync"]="itemFamilyId= tenantId= api-version= x-api-version: "
     operation_parameters["getAllItemGoogleCategoriesAsync"]="api-version= x-api-version: "
     operation_parameters["getChildrenItemGoogleCategoriesByIdAsync"]="itemCategoryId= api-version= x-api-version: "
     operation_parameters["getItemGoogleCategoriesAsync"]="api-version= x-api-version: "
@@ -304,56 +337,56 @@ _()
     operation_parameters["mapItemGoogleCategoriesTreeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createItemImageAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteItemImageAsync"]="itemImageId= tenantId= api-version= x-api-version: "
-    operation_parameters["getItemImageByIdAsync"]="itemImageId= api-version= x-api-version: "
+    operation_parameters["getItemImageByIdAsync"]="itemImageId= tenantId= api-version= x-api-version: "
     operation_parameters["getItemImagesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateItemImageAsync"]="itemImageId= tenantId= api-version= x-api-version: "
     operation_parameters["createItemQuestionAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteItemQuestionAsync"]="itemQuestionId= tenantId= api-version= x-api-version: "
-    operation_parameters["getItemQuestionByIdAsync"]="itemQuestionId= api-version= x-api-version: "
+    operation_parameters["getItemQuestionByIdAsync"]="itemQuestionId= tenantId= api-version= x-api-version: "
     operation_parameters["getItemQuestionsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateItemQuestionAsync"]="itemQuestionId= tenantId= api-version= x-api-version: "
-    operation_parameters["countItemRefundPoliciesAsync"]="itemId= api-version= x-api-version: "
-    operation_parameters["getItemRefundPoliciesAsync"]="itemId= api-version= x-api-version: "
-    operation_parameters["getItemRefundPolicyByIdAsync"]="itemRefundPolicyId= itemId= api-version= x-api-version: "
+    operation_parameters["countItemRefundPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["getItemRefundPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["getItemRefundPolicyByIdAsync"]="itemRefundPolicyId= tenantId= itemId= api-version= x-api-version: "
     operation_parameters["relateItemToRefundPolicyAsync"]="tenantId= itemId= refundPolicyId= api-version= x-api-version: "
     operation_parameters["removeRefundPolicyFromItemAsync"]="itemRefundPolicyId= tenantId= itemId= api-version= x-api-version: "
-    operation_parameters["countItemReturnPoliciesAsync"]="itemId= api-version= x-api-version: "
-    operation_parameters["getItemReturnPoliciesAsync"]="itemId= api-version= x-api-version: "
-    operation_parameters["getItemReturnPolicyByIdAsync"]="itemReturnPolicyId= itemId= api-version= x-api-version: "
+    operation_parameters["countItemReturnPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["getItemReturnPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["getItemReturnPolicyByIdAsync"]="itemReturnPolicyId= tenantId= itemId= api-version= x-api-version: "
     operation_parameters["relateItemToReturnPolicyAsync"]="tenantId= itemId= returnPolicyId= api-version= x-api-version: "
     operation_parameters["removeReturnPolicyFromItemAsync"]="itemReturnPolicyId= tenantId= itemId= api-version= x-api-version: "
     operation_parameters["createItemReviewAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteItemReviewAsync"]="itemReviewId= tenantId= api-version= x-api-version: "
-    operation_parameters["getItemReviewByIdAsync"]="itemReviewId= api-version= x-api-version: "
+    operation_parameters["getItemReviewByIdAsync"]="itemReviewId= tenantId= api-version= x-api-version: "
     operation_parameters["getItemReviewsAsync"]="itemId= api-version= x-api-version: "
     operation_parameters["updateItemReviewAsync"]="itemReviewId= tenantId= api-version= x-api-version: "
-    operation_parameters["countItemShippingPoliciesAsync"]="itemId= api-version= x-api-version: "
-    operation_parameters["getItemShippingPoliciesAsync"]="itemId= api-version= x-api-version: "
-    operation_parameters["getItemShippingPolicyByIdAsync"]="itemShippingPolicyId= itemId= api-version= x-api-version: "
+    operation_parameters["countItemShippingPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["getItemShippingPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["getItemShippingPolicyByIdAsync"]="itemShippingPolicyId= tenantId= itemId= api-version= x-api-version: "
     operation_parameters["relateItemToShippingPolicyAsync"]="tenantId= itemId= shippingPolicyId= api-version= x-api-version: "
     operation_parameters["removeShippingPolicyFromItemAsync"]="itemShippingPolicyId= tenantId= itemId= api-version= x-api-version: "
     operation_parameters["createItemTagAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteItemTagAsync"]="itemTagId= tenantId= api-version= x-api-version: "
-    operation_parameters["getItemTagByIdAsync"]="itemTagId= api-version= x-api-version: "
+    operation_parameters["getItemTagByIdAsync"]="itemTagId= tenantId= api-version= x-api-version: "
     operation_parameters["getItemTagsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateItemTagAsync"]="itemTagId= tenantId= api-version= x-api-version: "
-    operation_parameters["countItemTaxPoliciesAsync"]="itemId= api-version= x-api-version: "
-    operation_parameters["getItemTaxPoliciesAsync"]="itemId= api-version= x-api-version: "
-    operation_parameters["getItemTaxPolicyByIdAsync"]="itemTaxPolicyId= itemId= api-version= x-api-version: "
+    operation_parameters["countItemTaxPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["getItemTaxPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["getItemTaxPolicyByIdAsync"]="itemTaxPolicyId= tenantId= itemId= api-version= x-api-version: "
     operation_parameters["relateItemToTaxPolicyAsync"]="tenantId= itemId= taxPolicyId= api-version= x-api-version: "
     operation_parameters["removeTaxPolicyFromItemAsync"]="itemTaxPolicyId= tenantId= itemId= api-version= x-api-version: "
     operation_parameters["countItemTypesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createItemTypeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteItemTypeAsync"]="itemTypeID= tenantId= api-version= x-api-version: "
-    operation_parameters["getItemTypeByIdAsync"]="itemTypeID= api-version= x-api-version: "
+    operation_parameters["getItemTypeByIdAsync"]="itemTypeID= tenantId= api-version= x-api-version: "
     operation_parameters["getItemTypesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateItemTypeAsync"]="itemTypeID= tenantId= api-version= x-api-version: "
-    operation_parameters["countItemWarrantyPoliciesAsync"]="itemId= api-version= x-api-version: "
-    operation_parameters["getItemWarrantyPoliciesAsync"]="itemId= api-version= x-api-version: "
-    operation_parameters["getItemWarrantyPolicyByIdAsync"]="itemWarrantyPolicyId= itemId= api-version= x-api-version: "
+    operation_parameters["countItemWarrantyPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["getItemWarrantyPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["getItemWarrantyPolicyByIdAsync"]="itemWarrantyPolicyId= tenantId= itemId= api-version= x-api-version: "
     operation_parameters["relateItemToWarrantyPolicyAsync"]="tenantId= itemId= warrantyPolicyId= api-version= x-api-version: "
     operation_parameters["removeWarrantyPolicyFromItemAsync"]="itemWarrantyPolicyId= tenantId= itemId= api-version= x-api-version: "
-    operation_parameters["countStockItemTagsByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["countStockItemTagsByItemId"]="itemId= tenantId= api-version= x-api-version: "
     operation_parameters["countStockItemsByBusiness"]="tenantId= api-version= x-api-version: "
     operation_parameters["createStockItem"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteStockItem"]="itemId= tenantId= api-version= x-api-version: "
@@ -384,12 +417,12 @@ _()
     operation_parameters["getStockItemReviewsByItemId"]="itemId= api-version= x-api-version: "
     operation_parameters["getStockItemShippingPoliciesByItemId"]="itemId= api-version= x-api-version: "
     operation_parameters["getStockItemShippingPolicyById"]="itemId= itemShippingPolicyId= api-version= x-api-version: "
-    operation_parameters["getStockItemTagById"]="itemId= itemTagId= api-version= x-api-version: "
-    operation_parameters["getStockItemTagsByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemTagById"]="itemId= itemTagId= tenantId= api-version= x-api-version: "
+    operation_parameters["getStockItemTagsByItemId"]="itemId= tenantId= api-version= x-api-version: "
     operation_parameters["getStockItemTaxPoliciesByItemId"]="itemId= api-version= x-api-version: "
     operation_parameters["getStockItemTaxPolicyById"]="itemId= itemTaxPolicyId= api-version= x-api-version: "
-    operation_parameters["getStockItemTypeById"]="itemId= itemTypeId= api-version= x-api-version: "
-    operation_parameters["getStockItemTypesByItemId"]="itemId= api-version= x-api-version: "
+    operation_parameters["getStockItemTypeById"]="itemId= itemTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getStockItemTypesByItemId"]="itemId= tenantId= api-version= x-api-version: "
     operation_parameters["getStockItemWarrantyPoliciesByItemId"]="itemId= api-version= x-api-version: "
     operation_parameters["getStockItemWarrantyPolicyById"]="itemId= itemWarrantyPolicyId= api-version= x-api-version: "
     operation_parameters["getStockItemsOdataMaxPrice"]="tenantId= api-version= x-api-version: "
@@ -432,11 +465,6 @@ _()
     operation_parameters["getMerchantById"]="merchantId= api-version= x-api-version: "
     operation_parameters["getMerchants"]="api-version= x-api-version: "
     operation_parameters["getMerchantsCount"]="api-version= x-api-version: "
-    operation_parameters["createPricingRule"]="tenantId= api-version= x-api-version: "
-    operation_parameters["deletePricingRule"]="pricingRuleId= tenantId= api-version= x-api-version: "
-    operation_parameters["getPricingRuleById"]="pricingRuleId= api-version= x-api-version: "
-    operation_parameters["getPricingRules"]="tenantId= api-version= x-api-version: "
-    operation_parameters["updatePricingRule"]="tenantId= pricingRuleId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values

@@ -297,7 +297,18 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "accountLogoutPost[]" \
+            "createBillOfLadingAsync[Create a bill of lading]" \
+            "createBillOfLadingLineAsync[Create a bill of lading line]" \
+            "deleteBillOfLadingAsync[Delete a bill of lading]" \
+            "deleteBillOfLadingLineAsync[Delete a bill of lading line]" \
+            "getBillOfLadingByIdAsync[Get bill of lading by ID]" \
+            "getBillOfLadingLineByIdAsync[Get bill of lading line by ID]" \
+            "getBillOfLadingLinesAsync[Get bill of lading lines]" \
+            "getBillOfLadingLinesCountAsync[Get bill of lading lines count]" \
+            "getBillsOfLadingAsync[Get all bills of lading]" \
+            "getBillsOfLadingCountAsync[Get bills of lading count]" \
+            "updateBillOfLadingAsync[Update a bill of lading]" \
+            "updateBillOfLadingLineAsync[Update a bill of lading line]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -313,7 +324,47 @@ case $state in
             "registerPost[]" \
             "resendConfirmationEmailPost[]" \
             "resetPasswordPost[]" \
-            "versionGet[]"             "getShipmentsAsync[Retrieve a list of shipments]" \
+            "versionGet[]"             "createItemShippingPolicyAsync[Create an item shipping policy]" \
+            "deleteItemShippingPolicyAsync[Delete an item shipping policy]" \
+            "getItemShippingPoliciesAsync[Get all item shipping policies]" \
+            "getItemShippingPoliciesCountAsync[Get item shipping policies count]" \
+            "getItemShippingPolicyByIdAsync[Get item shipping policy by ID]" \
+            "updateItemShippingPolicyAsync[Update an item shipping policy]"             "createShipmentAsync[Create a shipment]" \
+            "deleteShipmentAsync[Delete a shipment]" \
+            "getShipmentByIdAsync[Get shipment by ID]" \
+            "getShipmentsAsync[Get all shipments]" \
+            "getShipmentsCountAsync[Get shipments count]" \
+            "updateShipmentAsync[Update a shipment]"             "createShippingClassAsync[Create a shipping class]" \
+            "deleteShippingClassAsync[Delete a shipping class]" \
+            "getShippingClassByIdAsync[Get shipping class by ID]" \
+            "getShippingClassesAsync[Get all shipping classes]" \
+            "getShippingClassesCountAsync[Get shipping classes count]" \
+            "updateShippingClassAsync[Update a shipping class]"             "createShippingCourierAsync[Create a shipping courier]" \
+            "deleteShippingCourierAsync[Delete a shipping courier]" \
+            "getShippingCourierByIdAsync[Get shipping courier by ID]" \
+            "getShippingCouriersAsync[Get all shipping couriers]" \
+            "getShippingCouriersCountAsync[Get shipping couriers count]" \
+            "updateShippingCourierAsync[Update a shipping courier]"             "createShippingLabelAsync[Create a shipping label]" \
+            "deleteShippingLabelAsync[Delete a shipping label]" \
+            "getShippingLabelByIdAsync[Get shipping label by ID]" \
+            "getShippingLabelsAsync[Get all shipping labels]" \
+            "getShippingLabelsCountAsync[Get shipping labels count]" \
+            "updateShippingLabelAsync[Update a shipping label]"             "createShippingMethodAsync[Create a shipping method]" \
+            "deleteShippingMethodAsync[Delete a shipping method]" \
+            "getShippingMethodByIdAsync[Get shipping method by ID]" \
+            "getShippingMethodsAsync[Get all shipping methods]" \
+            "getShippingMethodsCountAsync[Get shipping methods count]" \
+            "updateShippingMethodAsync[Update a shipping method]"             "createShippingRegionAsync[Create a shipping region]" \
+            "deleteShippingRegionAsync[Delete a shipping region]" \
+            "getShippingRegionByIdAsync[Get shipping region by ID]" \
+            "getShippingRegionsAsync[Get all shipping regions]" \
+            "getShippingRegionsCountAsync[Get shipping regions count]" \
+            "updateShippingRegionAsync[Update a shipping region]"             "createShippingZoneAsync[Create a shipping zone]" \
+            "deleteShippingZoneAsync[Delete a shipping zone]" \
+            "getShippingZoneByIdAsync[Get shipping zone by ID]" \
+            "getShippingZonesAsync[Get all shipping zones]" \
+            "getShippingZonesCountAsync[Get shipping zones count]" \
+            "updateShippingZoneAsync[Update a shipping zone]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -321,6 +372,135 @@ case $state in
     ;;
   args)
     case $line[1] in
+      createBillOfLadingAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createBillOfLadingLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billOfLadingId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteBillOfLadingAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billOfLadingId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteBillOfLadingLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billOfLadingId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBillOfLadingByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billOfLadingId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBillOfLadingLineByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billOfLadingId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBillOfLadingLinesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billOfLadingId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBillOfLadingLinesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billOfLadingId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBillsOfLadingAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBillsOfLadingCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateBillOfLadingAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billOfLadingId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateBillOfLadingLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billOfLadingId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       accountLogoutPost)
         local -a _op_arguments
         _op_arguments=(
@@ -430,10 +610,457 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      createItemShippingPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteItemShippingPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "policyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemShippingPoliciesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemShippingPoliciesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemShippingPolicyByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "policyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateItemShippingPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "policyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createShipmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteShipmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "shipmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShipmentByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "shipmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getShipmentsAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShipmentsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateShipmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "shipmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createShippingClassAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteShippingClassAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "classId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingClassByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "classId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingClassesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingClassesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateShippingClassAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "classId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createShippingCourierAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteShippingCourierAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "courierId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingCourierByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "courierId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingCouriersAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingCouriersCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateShippingCourierAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "courierId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createShippingLabelAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteShippingLabelAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "labelId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingLabelByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "labelId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingLabelsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingLabelsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateShippingLabelAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "labelId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createShippingMethodAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteShippingMethodAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "methodId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingMethodByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "methodId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingMethodsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingMethodsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateShippingMethodAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "methodId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createShippingRegionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteShippingRegionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "regionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingRegionByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "regionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingRegionsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingRegionsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateShippingRegionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "regionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createShippingZoneAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteShippingZoneAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "zoneId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingZoneByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "zoneId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingZonesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShippingZonesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateShippingZoneAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "zoneId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

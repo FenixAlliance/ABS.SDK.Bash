@@ -23,6 +23,7 @@ Method | HTTP request | Description
 [**getFollowersAsync**](SocialProfilesApi.md#getFollowersAsync) | **GET** /api/v2/SocialService/SocialProfiles/{socialProfileId}/Followers | Get Followers
 [**getFollowsAsync**](SocialProfilesApi.md#getFollowsAsync) | **GET** /api/v2/SocialService/SocialProfiles/{socialProfileId}/Follows | Get Follows
 [**getMessagesAsync**](SocialProfilesApi.md#getMessagesAsync) | **GET** /api/v2/SocialService/SocialProfiles/{conversationId}/Messages | Get Messages
+[**getNotificationByIdAsync**](SocialProfilesApi.md#getNotificationByIdAsync) | **GET** /api/v2/SocialService/SocialProfiles/{socialProfileId}/Notifications/{notificationId} | Get Notification
 [**getNotificationsAsync**](SocialProfilesApi.md#getNotificationsAsync) | **GET** /api/v2/SocialService/SocialProfiles/{socialProfileId}/Notifications | Get Notifications
 [**getSocialProfileAsync**](SocialProfilesApi.md#getSocialProfileAsync) | **GET** /api/v2/SocialService/SocialProfiles/{socialProfileId} | Get Social Profile
 [**getSocialProfilesAsync**](SocialProfilesApi.md#getSocialProfilesAsync) | **GET** /api/v2/SocialService/SocialProfiles | Get Social Profiles
@@ -225,7 +226,7 @@ Count messages for a conversation.
 ### Example
 
 ```bash
- countMessagesAsync conversationId=value  api-version=value x-api-version:value
+ countMessagesAsync  socialProfileId=value conversationId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -233,6 +234,7 @@ Count messages for a conversation.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **socialProfileId** | **string** |  | [default to null]
  **conversationId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -712,7 +714,7 @@ Get a list of messages for a conversation.
 ### Example
 
 ```bash
- getMessagesAsync conversationId=value  api-version=value x-api-version:value
+ getMessagesAsync  socialProfileId=value conversationId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -720,6 +722,7 @@ Get a list of messages for a conversation.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **socialProfileId** | **string** |  | [default to null]
  **conversationId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -727,6 +730,44 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**PrivateMessageDtoListEnvelope**](PrivateMessageDtoListEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getNotificationByIdAsync
+
+Get Notification
+
+Get a notification by ID for a social profile.
+
+### Example
+
+```bash
+ getNotificationByIdAsync socialProfileId=value notificationId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **socialProfileId** | **string** |  | [default to null]
+ **notificationId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**NotificationDtoEnvelope**](NotificationDtoEnvelope.md)
 
 ### Authorization
 

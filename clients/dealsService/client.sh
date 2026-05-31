@@ -96,6 +96,9 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["createDealUnitFlowAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createDealUnitFlowAsync:::DealUnitFlowCreateDto"]=0
 operation_parameters_minimum_occurrences["createDealUnitFlowStageAsync:::tenantId"]=1
@@ -178,18 +181,6 @@ operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
 operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
 operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
-operation_parameters_minimum_occurrences["countSalesLiteraturesAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["createSalesLiteratureAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["createSalesLiteratureAsync:::SalesLiteratureCreateDto"]=0
-operation_parameters_minimum_occurrences["deleteSalesLiteratureAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["deleteSalesLiteratureAsync:::salesLiteratureId"]=1
-operation_parameters_minimum_occurrences["getExtendedSalesLiteraturesAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getSalesLiteratureAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getSalesLiteratureAsync:::salesLiteratureId"]=1
-operation_parameters_minimum_occurrences["getSalesLiteraturesAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["updateSalesLiteratureAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["updateSalesLiteratureAsync:::salesLiteratureId"]=1
-operation_parameters_minimum_occurrences["updateSalesLiteratureAsync:::SalesLiteratureUpdateDto"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -198,6 +189,9 @@ operation_parameters_minimum_occurrences["updateSalesLiteratureAsync:::SalesLite
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["createDealUnitFlowAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createDealUnitFlowAsync:::DealUnitFlowCreateDto"]=0
 operation_parameters_maximum_occurrences["createDealUnitFlowStageAsync:::tenantId"]=0
@@ -280,23 +274,14 @@ operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
 operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
 operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
-operation_parameters_maximum_occurrences["countSalesLiteraturesAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["createSalesLiteratureAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["createSalesLiteratureAsync:::SalesLiteratureCreateDto"]=0
-operation_parameters_maximum_occurrences["deleteSalesLiteratureAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["deleteSalesLiteratureAsync:::salesLiteratureId"]=0
-operation_parameters_maximum_occurrences["getExtendedSalesLiteraturesAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getSalesLiteratureAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getSalesLiteratureAsync:::salesLiteratureId"]=0
-operation_parameters_maximum_occurrences["getSalesLiteraturesAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["updateSalesLiteratureAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["updateSalesLiteratureAsync:::salesLiteratureId"]=0
-operation_parameters_maximum_occurrences["updateSalesLiteratureAsync:::SalesLiteratureUpdateDto"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["createDealUnitFlowAsync:::tenantId"]=""
 operation_parameters_collection_type["createDealUnitFlowAsync:::DealUnitFlowCreateDto"]=""
 operation_parameters_collection_type["createDealUnitFlowStageAsync:::tenantId"]=""
@@ -379,18 +364,6 @@ operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
 operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
 operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
-operation_parameters_collection_type["countSalesLiteraturesAsync:::tenantId"]=""
-operation_parameters_collection_type["createSalesLiteratureAsync:::tenantId"]=""
-operation_parameters_collection_type["createSalesLiteratureAsync:::SalesLiteratureCreateDto"]=""
-operation_parameters_collection_type["deleteSalesLiteratureAsync:::tenantId"]=""
-operation_parameters_collection_type["deleteSalesLiteratureAsync:::salesLiteratureId"]=""
-operation_parameters_collection_type["getExtendedSalesLiteraturesAsync:::tenantId"]=""
-operation_parameters_collection_type["getSalesLiteratureAsync:::tenantId"]=""
-operation_parameters_collection_type["getSalesLiteratureAsync:::salesLiteratureId"]=""
-operation_parameters_collection_type["getSalesLiteraturesAsync:::tenantId"]=""
-operation_parameters_collection_type["updateSalesLiteratureAsync:::tenantId"]=""
-operation_parameters_collection_type["updateSalesLiteratureAsync:::salesLiteratureId"]=""
-operation_parameters_collection_type["updateSalesLiteratureAsync:::SalesLiteratureUpdateDto"]=""
 
 
 ##
@@ -748,7 +721,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}DealsService command line client (API version 2.0.0.0)${OFF}
+${BOLD}${WHITE}DealsService command line client (API version 2.1.2.5401)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -776,6 +749,12 @@ ${BOLD}${WHITE}Usage${OFF}
 
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[dealUnitFlows]${OFF}"
 read -r -d '' ops <<EOF
@@ -815,7 +794,7 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -837,24 +816,12 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[salesLiteratures]${OFF}"
-read -r -d '' ops <<EOF
-  ${CYAN}countSalesLiteraturesAsync${OFF};Get sales literatures count
-  ${CYAN}createSalesLiteratureAsync${OFF};Create a sales literature
-  ${CYAN}deleteSalesLiteratureAsync${OFF};Delete a sales literature
-  ${CYAN}getExtendedSalesLiteraturesAsync${OFF};Get extended sales literatures
-  ${CYAN}getSalesLiteratureAsync${OFF};Get sales literature by ID
-  ${CYAN}getSalesLiteraturesAsync${OFF};Get sales literatures
-  ${CYAN}updateSalesLiteratureAsync${OFF};Update a sales literature
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
     echo -e "${BOLD}${WHITE}Options${OFF}"
     echo -e "  -h,--help\\t\\t\\t\\tPrint this help"
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -875,7 +842,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}DealsService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}${WHITE}DealsService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -895,10 +862,35 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}DealsService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}DealsService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
 }
 
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
 ##############################################################################
 #
 # Print help for createDealUnitFlowAsync operation
@@ -1827,161 +1819,43 @@ print_versionGet_help() {
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
-##############################################################################
-#
-# Print help for countSalesLiteraturesAsync operation
-#
-##############################################################################
-print_countSalesLiteraturesAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}countSalesLiteraturesAsync - Get sales literatures count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Returns the total count of sales literatures for the specified tenant with OData filter support." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for createSalesLiteratureAsync operation
-#
-##############################################################################
-print_createSalesLiteratureAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}createSalesLiteratureAsync - Create a sales literature${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Creates a new sales literature for the specified tenant." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for deleteSalesLiteratureAsync operation
-#
-##############################################################################
-print_deleteSalesLiteratureAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}deleteSalesLiteratureAsync - Delete a sales literature${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Deletes an existing sales literature by its unique identifier." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}salesLiteratureId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: salesLiteratureId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getExtendedSalesLiteraturesAsync operation
-#
-##############################################################################
-print_getExtendedSalesLiteraturesAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getExtendedSalesLiteraturesAsync - Get extended sales literatures${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Retrieves a list of sales literatures with extended details for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getSalesLiteratureAsync operation
-#
-##############################################################################
-print_getSalesLiteratureAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getSalesLiteratureAsync - Get sales literature by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Retrieves a single sales literature by its unique identifier." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}salesLiteratureId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: salesLiteratureId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getSalesLiteraturesAsync operation
-#
-##############################################################################
-print_getSalesLiteraturesAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getSalesLiteraturesAsync - Get sales literatures${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Retrieves a list of sales literatures for the specified tenant with OData query support." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for updateSalesLiteratureAsync operation
-#
-##############################################################################
-print_updateSalesLiteratureAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}updateSalesLiteratureAsync - Update a sales literature${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Updates an existing sales literature by its unique identifier." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}salesLiteratureId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: salesLiteratureId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
 
+
+##############################################################################
+#
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
 
 ##############################################################################
 #
@@ -4262,338 +4136,6 @@ call_versionGet() {
     fi
 }
 
-##############################################################################
-#
-# Call countSalesLiteraturesAsync operation
-#
-##############################################################################
-call_countSalesLiteraturesAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures/Count" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call createSalesLiteratureAsync operation
-#
-##############################################################################
-call_createSalesLiteratureAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call deleteSalesLiteratureAsync operation
-#
-##############################################################################
-call_deleteSalesLiteratureAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(salesLiteratureId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures/{salesLiteratureId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getExtendedSalesLiteraturesAsync operation
-#
-##############################################################################
-call_getExtendedSalesLiteraturesAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures/Extended" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getSalesLiteratureAsync operation
-#
-##############################################################################
-call_getSalesLiteratureAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(salesLiteratureId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures/{salesLiteratureId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getSalesLiteraturesAsync operation
-#
-##############################################################################
-call_getSalesLiteraturesAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call updateSalesLiteratureAsync operation
-#
-##############################################################################
-call_updateSalesLiteratureAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(salesLiteratureId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/DealsService/SalesLiteratures/{salesLiteratureId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
 
 
 ##############################################################################
@@ -4690,6 +4232,9 @@ case $key in
         BOLD=""
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
+    ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
     ;;
     createDealUnitFlowAsync)
     operation="createDealUnitFlowAsync"
@@ -4826,27 +4371,6 @@ case $key in
     versionGet)
     operation="versionGet"
     ;;
-    countSalesLiteraturesAsync)
-    operation="countSalesLiteraturesAsync"
-    ;;
-    createSalesLiteratureAsync)
-    operation="createSalesLiteratureAsync"
-    ;;
-    deleteSalesLiteratureAsync)
-    operation="deleteSalesLiteratureAsync"
-    ;;
-    getExtendedSalesLiteraturesAsync)
-    operation="getExtendedSalesLiteraturesAsync"
-    ;;
-    getSalesLiteratureAsync)
-    operation="getSalesLiteratureAsync"
-    ;;
-    getSalesLiteraturesAsync)
-    operation="getSalesLiteraturesAsync"
-    ;;
-    updateSalesLiteratureAsync)
-    operation="updateSalesLiteratureAsync"
-    ;;
     *==*)
     # Parse body arguments and convert them into top level
     # JSON properties passed in the body content as strings
@@ -4934,6 +4458,9 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
+    ;;
     createDealUnitFlowAsync)
     call_createDealUnitFlowAsync
     ;;
@@ -5068,27 +4595,6 @@ case $operation in
     ;;
     versionGet)
     call_versionGet
-    ;;
-    countSalesLiteraturesAsync)
-    call_countSalesLiteraturesAsync
-    ;;
-    createSalesLiteratureAsync)
-    call_createSalesLiteratureAsync
-    ;;
-    deleteSalesLiteratureAsync)
-    call_deleteSalesLiteratureAsync
-    ;;
-    getExtendedSalesLiteraturesAsync)
-    call_getExtendedSalesLiteraturesAsync
-    ;;
-    getSalesLiteratureAsync)
-    call_getSalesLiteratureAsync
-    ;;
-    getSalesLiteraturesAsync)
-    call_getSalesLiteraturesAsync
-    ;;
-    updateSalesLiteratureAsync)
-    call_updateSalesLiteratureAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

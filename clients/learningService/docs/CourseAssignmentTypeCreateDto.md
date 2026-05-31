@@ -1,0 +1,17 @@
+# CourseAssignmentTypeCreateDto
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
+**name** | **string** |  | [default to null]
+**abbreviation** | **string** |  | [optional] [default to null]
+**weight** | **float** |  | [optional] [default to null]
+**quantity** | **integer** |  | [optional] [default to null]
+**excluded** | **integer** |  | [optional] [default to null]
+**courseID** | **string** |  | [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

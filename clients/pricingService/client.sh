@@ -96,6 +96,9 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["createDiscountList:::tenantId"]=1
 operation_parameters_minimum_occurrences["createDiscountList:::DiscountListCreateDto"]=0
 operation_parameters_minimum_occurrences["createDiscountListEntry:::tenantId"]=1
@@ -187,6 +190,52 @@ operation_parameters_minimum_occurrences["getTotalTaxesInUsd:::itemId"]=1
 operation_parameters_minimum_occurrences["getTotalTaxesInUsd:::currencyId"]=0
 operation_parameters_minimum_occurrences["getTotalTaxesInUsd:::api-version"]=0
 operation_parameters_minimum_occurrences["getTotalTaxesInUsd:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createPricingRule:::tenantId"]=1
+operation_parameters_minimum_occurrences["createPricingRule:::api-version"]=0
+operation_parameters_minimum_occurrences["createPricingRule:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createPricingRule:::PricingRuleCreateDto"]=0
+operation_parameters_minimum_occurrences["deletePricingRule:::tenantId"]=1
+operation_parameters_minimum_occurrences["deletePricingRule:::pricingRuleId"]=1
+operation_parameters_minimum_occurrences["deletePricingRule:::api-version"]=0
+operation_parameters_minimum_occurrences["deletePricingRule:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPricingRuleById:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPricingRuleById:::pricingRuleId"]=1
+operation_parameters_minimum_occurrences["getPricingRuleById:::api-version"]=0
+operation_parameters_minimum_occurrences["getPricingRuleById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPricingRules:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPricingRules:::api-version"]=0
+operation_parameters_minimum_occurrences["getPricingRules:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPricingRulesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPricingRulesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getPricingRulesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updatePricingRule:::tenantId"]=1
+operation_parameters_minimum_occurrences["updatePricingRule:::pricingRuleId"]=1
+operation_parameters_minimum_occurrences["updatePricingRule:::api-version"]=0
+operation_parameters_minimum_occurrences["updatePricingRule:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updatePricingRule:::PricingRuleUpdateDto"]=0
+operation_parameters_minimum_occurrences["createRoundingPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createRoundingPolicyAsync:::RoundingPolicyCreateDto"]=1
+operation_parameters_minimum_occurrences["createRoundingPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createRoundingPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteRoundingPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteRoundingPolicyAsync:::roundingPolicyId"]=1
+operation_parameters_minimum_occurrences["deleteRoundingPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteRoundingPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRoundingPoliciesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRoundingPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRoundingPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRoundingPoliciesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRoundingPoliciesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRoundingPoliciesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRoundingPolicyByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRoundingPolicyByIdAsync:::roundingPolicyId"]=1
+operation_parameters_minimum_occurrences["getRoundingPolicyByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRoundingPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateRoundingPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateRoundingPolicyAsync:::roundingPolicyId"]=1
+operation_parameters_minimum_occurrences["updateRoundingPolicyAsync:::RoundingPolicyUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateRoundingPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateRoundingPolicyAsync:::x-api-version"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -195,6 +244,9 @@ operation_parameters_minimum_occurrences["getTotalTaxesInUsd:::x-api-version"]=0
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["createDiscountList:::tenantId"]=0
 operation_parameters_maximum_occurrences["createDiscountList:::DiscountListCreateDto"]=0
 operation_parameters_maximum_occurrences["createDiscountListEntry:::tenantId"]=0
@@ -286,11 +338,60 @@ operation_parameters_maximum_occurrences["getTotalTaxesInUsd:::itemId"]=0
 operation_parameters_maximum_occurrences["getTotalTaxesInUsd:::currencyId"]=0
 operation_parameters_maximum_occurrences["getTotalTaxesInUsd:::api-version"]=0
 operation_parameters_maximum_occurrences["getTotalTaxesInUsd:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createPricingRule:::tenantId"]=0
+operation_parameters_maximum_occurrences["createPricingRule:::api-version"]=0
+operation_parameters_maximum_occurrences["createPricingRule:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createPricingRule:::PricingRuleCreateDto"]=0
+operation_parameters_maximum_occurrences["deletePricingRule:::tenantId"]=0
+operation_parameters_maximum_occurrences["deletePricingRule:::pricingRuleId"]=0
+operation_parameters_maximum_occurrences["deletePricingRule:::api-version"]=0
+operation_parameters_maximum_occurrences["deletePricingRule:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPricingRuleById:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPricingRuleById:::pricingRuleId"]=0
+operation_parameters_maximum_occurrences["getPricingRuleById:::api-version"]=0
+operation_parameters_maximum_occurrences["getPricingRuleById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPricingRules:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPricingRules:::api-version"]=0
+operation_parameters_maximum_occurrences["getPricingRules:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPricingRulesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPricingRulesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getPricingRulesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updatePricingRule:::tenantId"]=0
+operation_parameters_maximum_occurrences["updatePricingRule:::pricingRuleId"]=0
+operation_parameters_maximum_occurrences["updatePricingRule:::api-version"]=0
+operation_parameters_maximum_occurrences["updatePricingRule:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updatePricingRule:::PricingRuleUpdateDto"]=0
+operation_parameters_maximum_occurrences["createRoundingPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createRoundingPolicyAsync:::RoundingPolicyCreateDto"]=0
+operation_parameters_maximum_occurrences["createRoundingPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createRoundingPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteRoundingPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteRoundingPolicyAsync:::roundingPolicyId"]=0
+operation_parameters_maximum_occurrences["deleteRoundingPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteRoundingPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRoundingPoliciesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRoundingPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRoundingPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRoundingPoliciesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRoundingPoliciesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRoundingPoliciesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRoundingPolicyByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRoundingPolicyByIdAsync:::roundingPolicyId"]=0
+operation_parameters_maximum_occurrences["getRoundingPolicyByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRoundingPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateRoundingPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateRoundingPolicyAsync:::roundingPolicyId"]=0
+operation_parameters_maximum_occurrences["updateRoundingPolicyAsync:::RoundingPolicyUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateRoundingPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateRoundingPolicyAsync:::x-api-version"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["createDiscountList:::tenantId"]=""
 operation_parameters_collection_type["createDiscountList:::DiscountListCreateDto"]=""
 operation_parameters_collection_type["createDiscountListEntry:::tenantId"]=""
@@ -382,6 +483,52 @@ operation_parameters_collection_type["getTotalTaxesInUsd:::itemId"]=""
 operation_parameters_collection_type["getTotalTaxesInUsd:::currencyId"]=""
 operation_parameters_collection_type["getTotalTaxesInUsd:::api-version"]=""
 operation_parameters_collection_type["getTotalTaxesInUsd:::x-api-version"]=""
+operation_parameters_collection_type["createPricingRule:::tenantId"]=""
+operation_parameters_collection_type["createPricingRule:::api-version"]=""
+operation_parameters_collection_type["createPricingRule:::x-api-version"]=""
+operation_parameters_collection_type["createPricingRule:::PricingRuleCreateDto"]=""
+operation_parameters_collection_type["deletePricingRule:::tenantId"]=""
+operation_parameters_collection_type["deletePricingRule:::pricingRuleId"]=""
+operation_parameters_collection_type["deletePricingRule:::api-version"]=""
+operation_parameters_collection_type["deletePricingRule:::x-api-version"]=""
+operation_parameters_collection_type["getPricingRuleById:::tenantId"]=""
+operation_parameters_collection_type["getPricingRuleById:::pricingRuleId"]=""
+operation_parameters_collection_type["getPricingRuleById:::api-version"]=""
+operation_parameters_collection_type["getPricingRuleById:::x-api-version"]=""
+operation_parameters_collection_type["getPricingRules:::tenantId"]=""
+operation_parameters_collection_type["getPricingRules:::api-version"]=""
+operation_parameters_collection_type["getPricingRules:::x-api-version"]=""
+operation_parameters_collection_type["getPricingRulesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getPricingRulesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getPricingRulesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updatePricingRule:::tenantId"]=""
+operation_parameters_collection_type["updatePricingRule:::pricingRuleId"]=""
+operation_parameters_collection_type["updatePricingRule:::api-version"]=""
+operation_parameters_collection_type["updatePricingRule:::x-api-version"]=""
+operation_parameters_collection_type["updatePricingRule:::PricingRuleUpdateDto"]=""
+operation_parameters_collection_type["createRoundingPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["createRoundingPolicyAsync:::RoundingPolicyCreateDto"]=""
+operation_parameters_collection_type["createRoundingPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["createRoundingPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteRoundingPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteRoundingPolicyAsync:::roundingPolicyId"]=""
+operation_parameters_collection_type["deleteRoundingPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["deleteRoundingPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRoundingPoliciesAsync:::tenantId"]=""
+operation_parameters_collection_type["getRoundingPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["getRoundingPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRoundingPoliciesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getRoundingPoliciesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getRoundingPoliciesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRoundingPolicyByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getRoundingPolicyByIdAsync:::roundingPolicyId"]=""
+operation_parameters_collection_type["getRoundingPolicyByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getRoundingPolicyByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateRoundingPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["updateRoundingPolicyAsync:::roundingPolicyId"]=""
+operation_parameters_collection_type["updateRoundingPolicyAsync:::RoundingPolicyUpdateDto"]=""
+operation_parameters_collection_type["updateRoundingPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["updateRoundingPolicyAsync:::x-api-version"]=""
 
 
 ##
@@ -739,7 +886,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}PricingService command line client (API version 2.0.0.0)${OFF}
+${BOLD}${WHITE}PricingService command line client (API version 2.1.2.5401)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -768,6 +915,12 @@ ${BOLD}${WHITE}Usage${OFF}
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[discountLists]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}createDiscountList${OFF};Creates a new discount list
@@ -785,7 +938,7 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -832,12 +985,34 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[pricingRules]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createPricingRule${OFF};Create a new pricing rule
+  ${CYAN}deletePricingRule${OFF};Delete a pricing rule
+  ${CYAN}getPricingRuleById${OFF};Get pricing rule by ID
+  ${CYAN}getPricingRules${OFF};Get all pricing rules
+  ${CYAN}getPricingRulesCountAsync${OFF};Counts pricing rules
+  ${CYAN}updatePricingRule${OFF};Update a pricing rule
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[roundingPolicies]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createRoundingPolicyAsync${OFF};Creates a rounding policy
+  ${CYAN}deleteRoundingPolicyAsync${OFF};Deletes a rounding policy
+  ${CYAN}getRoundingPoliciesAsync${OFF};Gets all rounding policies
+  ${CYAN}getRoundingPoliciesCountAsync${OFF};Counts rounding policies
+  ${CYAN}getRoundingPolicyByIdAsync${OFF};Gets a rounding policy by ID
+  ${CYAN}updateRoundingPolicyAsync${OFF};Updates a rounding policy
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}Options${OFF}"
     echo -e "  -h,--help\\t\\t\\t\\tPrint this help"
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -858,7 +1033,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}PricingService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}${WHITE}PricingService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -878,10 +1053,35 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}PricingService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}PricingService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
 }
 
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
 ##############################################################################
 #
 # Print help for createDiscountList operation
@@ -1854,7 +2054,368 @@ print_getTotalTaxesInUsd_help() {
     code=404
     echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
+##############################################################################
+#
+# Print help for createPricingRule operation
+#
+##############################################################################
+print_createPricingRule_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createPricingRule - Create a new pricing rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new pricing rule for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deletePricingRule operation
+#
+##############################################################################
+print_deletePricingRule_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deletePricingRule - Delete a pricing rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a pricing rule for the specified tenant and rule ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pricingRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pricingRuleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPricingRuleById operation
+#
+##############################################################################
+print_getPricingRuleById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPricingRuleById - Get pricing rule by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a pricing rule by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pricingRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pricingRuleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPricingRules operation
+#
+##############################################################################
+print_getPricingRules_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPricingRules - Get all pricing rules${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all pricing rules for the specified tenant, with optional OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPricingRulesCountAsync operation
+#
+##############################################################################
+print_getPricingRulesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPricingRulesCountAsync - Counts pricing rules${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets the count of pricing rules for the current tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updatePricingRule operation
+#
+##############################################################################
+print_updatePricingRule_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updatePricingRule - Update a pricing rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing pricing rule for the specified tenant and rule ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pricingRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: pricingRuleId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createRoundingPolicyAsync operation
+#
+##############################################################################
+print_createRoundingPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createRoundingPolicyAsync - Creates a rounding policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new rounding policy for the current tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteRoundingPolicyAsync operation
+#
+##############################################################################
+print_deleteRoundingPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteRoundingPolicyAsync - Deletes a rounding policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes the specified rounding policy." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}roundingPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: roundingPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRoundingPoliciesAsync operation
+#
+##############################################################################
+print_getRoundingPoliciesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRoundingPoliciesAsync - Gets all rounding policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all rounding policies for the current tenant with OData support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRoundingPoliciesCountAsync operation
+#
+##############################################################################
+print_getRoundingPoliciesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRoundingPoliciesCountAsync - Counts rounding policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets the count of rounding policies for the current tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRoundingPolicyByIdAsync operation
+#
+##############################################################################
+print_getRoundingPolicyByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRoundingPolicyByIdAsync - Gets a rounding policy by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a rounding policy using its unique ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}roundingPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: roundingPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateRoundingPolicyAsync operation
+#
+##############################################################################
+print_updateRoundingPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateRoundingPolicyAsync - Updates a rounding policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the specified rounding policy." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}roundingPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: roundingPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
 
+
+##############################################################################
+#
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
 
 ##############################################################################
 #
@@ -4099,6 +4660,598 @@ call_getTotalTaxesInUsd() {
     fi
 }
 
+##############################################################################
+#
+# Call createPricingRule operation
+#
+##############################################################################
+call_createPricingRule() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PricingRules" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deletePricingRule operation
+#
+##############################################################################
+call_deletePricingRule() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pricingRuleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PricingRules/{pricingRuleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPricingRuleById operation
+#
+##############################################################################
+call_getPricingRuleById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pricingRuleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PricingRules/{pricingRuleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPricingRules operation
+#
+##############################################################################
+call_getPricingRules() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PricingRules" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPricingRulesCountAsync operation
+#
+##############################################################################
+call_getPricingRulesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PricingRules/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updatePricingRule operation
+#
+##############################################################################
+call_updatePricingRule() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId pricingRuleId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PricingRules/Update" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createRoundingPolicyAsync operation
+#
+##############################################################################
+call_createRoundingPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/RoundingPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteRoundingPolicyAsync operation
+#
+##############################################################################
+call_deleteRoundingPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(roundingPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/RoundingPolicies/{roundingPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRoundingPoliciesAsync operation
+#
+##############################################################################
+call_getRoundingPoliciesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/RoundingPolicies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRoundingPoliciesCountAsync operation
+#
+##############################################################################
+call_getRoundingPoliciesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/RoundingPolicies/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRoundingPolicyByIdAsync operation
+#
+##############################################################################
+call_getRoundingPolicyByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(roundingPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/RoundingPolicies/{roundingPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateRoundingPolicyAsync operation
+#
+##############################################################################
+call_updateRoundingPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(roundingPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/RoundingPolicies/{roundingPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
 
 
 ##############################################################################
@@ -4195,6 +5348,9 @@ case $key in
         BOLD=""
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
+    ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
     ;;
     createDiscountList)
     operation="createDiscountList"
@@ -4328,6 +5484,42 @@ case $key in
     getTotalTaxesInUsd)
     operation="getTotalTaxesInUsd"
     ;;
+    createPricingRule)
+    operation="createPricingRule"
+    ;;
+    deletePricingRule)
+    operation="deletePricingRule"
+    ;;
+    getPricingRuleById)
+    operation="getPricingRuleById"
+    ;;
+    getPricingRules)
+    operation="getPricingRules"
+    ;;
+    getPricingRulesCountAsync)
+    operation="getPricingRulesCountAsync"
+    ;;
+    updatePricingRule)
+    operation="updatePricingRule"
+    ;;
+    createRoundingPolicyAsync)
+    operation="createRoundingPolicyAsync"
+    ;;
+    deleteRoundingPolicyAsync)
+    operation="deleteRoundingPolicyAsync"
+    ;;
+    getRoundingPoliciesAsync)
+    operation="getRoundingPoliciesAsync"
+    ;;
+    getRoundingPoliciesCountAsync)
+    operation="getRoundingPoliciesCountAsync"
+    ;;
+    getRoundingPolicyByIdAsync)
+    operation="getRoundingPolicyByIdAsync"
+    ;;
+    updateRoundingPolicyAsync)
+    operation="updateRoundingPolicyAsync"
+    ;;
     *==*)
     # Parse body arguments and convert them into top level
     # JSON properties passed in the body content as strings
@@ -4415,6 +5607,9 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
+    ;;
     createDiscountList)
     call_createDiscountList
     ;;
@@ -4546,6 +5741,42 @@ case $operation in
     ;;
     getTotalTaxesInUsd)
     call_getTotalTaxesInUsd
+    ;;
+    createPricingRule)
+    call_createPricingRule
+    ;;
+    deletePricingRule)
+    call_deletePricingRule
+    ;;
+    getPricingRuleById)
+    call_getPricingRuleById
+    ;;
+    getPricingRules)
+    call_getPricingRules
+    ;;
+    getPricingRulesCountAsync)
+    call_getPricingRulesCountAsync
+    ;;
+    updatePricingRule)
+    call_updatePricingRule
+    ;;
+    createRoundingPolicyAsync)
+    call_createRoundingPolicyAsync
+    ;;
+    deleteRoundingPolicyAsync)
+    call_deleteRoundingPolicyAsync
+    ;;
+    getRoundingPoliciesAsync)
+    call_getRoundingPoliciesAsync
+    ;;
+    getRoundingPoliciesCountAsync)
+    call_getRoundingPoliciesCountAsync
+    ;;
+    getRoundingPolicyByIdAsync)
+    call_getRoundingPolicyByIdAsync
+    ;;
+    updateRoundingPolicyAsync)
+    call_updateRoundingPolicyAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

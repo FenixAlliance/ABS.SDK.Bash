@@ -97,7 +97,7 @@ Retrieves a specific item tag by its ID.
 ### Example
 
 ```bash
- getItemTagByIdAsync itemTagId=value  api-version=value x-api-version:value
+ getItemTagByIdAsync itemTagId=value  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -106,6 +106,7 @@ Retrieves a specific item tag by its ID.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **itemTagId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -142,7 +143,7 @@ Retrieves all item tags for the specified tenant using OData query options.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 

@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "accountLogoutPost[]" \
+            "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -368,6 +368,7 @@ case $state in
             "getFollowersAsync[Get Followers]" \
             "getFollowsAsync[Get Follows]" \
             "getMessagesAsync[Get Messages]" \
+            "getNotificationByIdAsync[Get Notification]" \
             "getNotificationsAsync[Get Notifications]" \
             "getSocialProfileAsync[Get Social Profile]" \
             "getSocialProfilesAsync[Get Social Profiles]" \
@@ -380,6 +381,15 @@ case $state in
     ;;
   args)
     case $line[1] in
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       accountLogoutPost)
         local -a _op_arguments
         _op_arguments=(
@@ -593,6 +603,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"socialProfileId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -603,6 +614,7 @@ case $state in
         _op_arguments=(
           "socialGroupId=:[PATH] "
           "tenantId=:[QUERY] "
+"socialProfileId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -632,6 +644,7 @@ case $state in
         _op_arguments=(
           "socialGroupId=:[PATH] "
           "tenantId=:[QUERY] "
+"socialProfileId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -928,7 +941,8 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "conversationId=:[PATH] "
-          "api-version=:[QUERY] "
+          "socialProfileId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -1049,6 +1063,17 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "conversationId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getNotificationByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialProfileId=:[PATH] "
+"notificationId=:[PATH] "
           "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

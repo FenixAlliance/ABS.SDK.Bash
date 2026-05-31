@@ -4,7 +4,9 @@ _client.sh
 client.sh
 client.sh.bash-completion
 docs/AccessTokenResponse.md
-docs/FenixAllianceABSWebApi.md
+docs/CompletionsApi.md
+docs/ErrorEnvelope.md
+docs/FenixAlliancePortalsWebsiteApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/InfoRequest.md

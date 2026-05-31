@@ -29,6 +29,7 @@ Name | Type | Description | Notes
 **customerNotes** | **string** |  | [optional] [default to null]
 **taxCalculationMethod** | **string** |  | [optional] [default to null]
 **forexRate** | **float** |  | [optional] [default to null]
+**forexRatesSnapshot** | **string** |  | [optional] [default to null]
 **currencyId** | **string** |  | [optional] [default to null]
 **totalDetail** | **float** |  | [optional] [default to null]
 **totalDetailCurrencyId** | **string** |  | [optional] [default to null]

@@ -30,7 +30,7 @@ Creates a new fiscal responsibility record for a fiscal responsibility.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
  **fiscalResponsibilityRecordCreateDto** | [**FiscalResponsibilityRecordCreateDto**](FiscalResponsibilityRecordCreateDto.md) |  | [optional]
@@ -68,7 +68,7 @@ Deletes a fiscal responsibility record identified by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalResponsibilityRecordId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -106,7 +106,7 @@ Retrieves a specific fiscal responsibility record by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **fiscalResponsibilityId** | **string** |  | [default to null]
  **fiscalResponsibilityRecordId** | **string** |  | [default to null]
@@ -146,7 +146,7 @@ Retrieves all fiscal responsibility records for the specified fiscal responsibil
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **fiscalResponsibilityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
@@ -185,7 +185,7 @@ Returns the total count of fiscal responsibility records for the specified fisca
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **fiscalResponsibilityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
@@ -224,7 +224,7 @@ Updates an existing fiscal responsibility record identified by its unique identi
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalResponsibilityRecordId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]

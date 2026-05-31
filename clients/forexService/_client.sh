@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "exchangeAmountAsync[Exchange currency at latest rates]" \
+            "apiV2AiServiceCompletionsCompleteGet[]"             "exchangeAmountAsync[Exchange currency at latest rates]" \
             "exchangeAmountHistoricalAsync[Exchange currency at historical rates]"             "exchangeAmountHistoricalV3Async[Exchange currency at historical rates (v3)]" \
             "exchangeAmountV3Async[Exchange currency at latest rates (v3)]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
@@ -326,6 +326,15 @@ case $state in
     ;;
   args)
     case $line[1] in
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       exchangeAmountAsync)
         local -a _op_arguments
         _op_arguments=(

@@ -96,8 +96,27 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_minimum_occurrences["countCallingCodesByCountryAsync:::countryId"]=1
+operation_parameters_minimum_occurrences["countCallingCodesByCountryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countCallingCodesByCountryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countCitiesByStateAsync:::countryStateId"]=1
+operation_parameters_minimum_occurrences["countCitiesByStateAsync:::countryId"]=1
+operation_parameters_minimum_occurrences["countCitiesByStateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countCitiesByStateAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["countCountries:::api-version"]=0
 operation_parameters_minimum_occurrences["countCountries:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countCountryStatesAsync:::countryId"]=1
+operation_parameters_minimum_occurrences["countCountryStatesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countCountryStatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countTimezonesByCountryAsync:::countryId"]=1
+operation_parameters_minimum_occurrences["countTimezonesByCountryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countTimezonesByCountryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countTopLevelDomainsByCountryAsync:::countryId"]=1
+operation_parameters_minimum_occurrences["countTopLevelDomainsByCountryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countTopLevelDomainsByCountryAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getAllCountries:::api-version"]=0
 operation_parameters_minimum_occurrences["getAllCountries:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getCallingCodesByCountryIdAsync:::countryId"]=1
@@ -160,6 +179,8 @@ operation_parameters_minimum_occurrences["getLanguageByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLanguageByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getLanguagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLanguagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2GlobalSystemMigratePost:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2GlobalSystemMigratePost:::x-api-version"]=0
 operation_parameters_minimum_occurrences["countTimezonesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countTimezonesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTimeZoneByIdAsync:::timeZoneId"]=1
@@ -175,8 +196,27 @@ operation_parameters_minimum_occurrences["getTimeZonesAsync:::x-api-version"]=0
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_maximum_occurrences["countCallingCodesByCountryAsync:::countryId"]=0
+operation_parameters_maximum_occurrences["countCallingCodesByCountryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countCallingCodesByCountryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countCitiesByStateAsync:::countryStateId"]=0
+operation_parameters_maximum_occurrences["countCitiesByStateAsync:::countryId"]=0
+operation_parameters_maximum_occurrences["countCitiesByStateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countCitiesByStateAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["countCountries:::api-version"]=0
 operation_parameters_maximum_occurrences["countCountries:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countCountryStatesAsync:::countryId"]=0
+operation_parameters_maximum_occurrences["countCountryStatesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countCountryStatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countTimezonesByCountryAsync:::countryId"]=0
+operation_parameters_maximum_occurrences["countTimezonesByCountryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countTimezonesByCountryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countTopLevelDomainsByCountryAsync:::countryId"]=0
+operation_parameters_maximum_occurrences["countTopLevelDomainsByCountryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countTopLevelDomainsByCountryAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getAllCountries:::api-version"]=0
 operation_parameters_maximum_occurrences["getAllCountries:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getCallingCodesByCountryIdAsync:::countryId"]=0
@@ -239,6 +279,8 @@ operation_parameters_maximum_occurrences["getLanguageByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLanguageByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getLanguagesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLanguagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2GlobalSystemMigratePost:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2GlobalSystemMigratePost:::x-api-version"]=0
 operation_parameters_maximum_occurrences["countTimezonesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countTimezonesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTimeZoneByIdAsync:::timeZoneId"]=0
@@ -251,8 +293,27 @@ operation_parameters_maximum_occurrences["getTimeZonesAsync:::x-api-version"]=0
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
+operation_parameters_collection_type["countCallingCodesByCountryAsync:::countryId"]=""
+operation_parameters_collection_type["countCallingCodesByCountryAsync:::api-version"]=""
+operation_parameters_collection_type["countCallingCodesByCountryAsync:::x-api-version"]=""
+operation_parameters_collection_type["countCitiesByStateAsync:::countryStateId"]=""
+operation_parameters_collection_type["countCitiesByStateAsync:::countryId"]=""
+operation_parameters_collection_type["countCitiesByStateAsync:::api-version"]=""
+operation_parameters_collection_type["countCitiesByStateAsync:::x-api-version"]=""
 operation_parameters_collection_type["countCountries:::api-version"]=""
 operation_parameters_collection_type["countCountries:::x-api-version"]=""
+operation_parameters_collection_type["countCountryStatesAsync:::countryId"]=""
+operation_parameters_collection_type["countCountryStatesAsync:::api-version"]=""
+operation_parameters_collection_type["countCountryStatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countTimezonesByCountryAsync:::countryId"]=""
+operation_parameters_collection_type["countTimezonesByCountryAsync:::api-version"]=""
+operation_parameters_collection_type["countTimezonesByCountryAsync:::x-api-version"]=""
+operation_parameters_collection_type["countTopLevelDomainsByCountryAsync:::countryId"]=""
+operation_parameters_collection_type["countTopLevelDomainsByCountryAsync:::api-version"]=""
+operation_parameters_collection_type["countTopLevelDomainsByCountryAsync:::x-api-version"]=""
 operation_parameters_collection_type["getAllCountries:::api-version"]=""
 operation_parameters_collection_type["getAllCountries:::x-api-version"]=""
 operation_parameters_collection_type["getCallingCodesByCountryIdAsync:::countryId"]=""
@@ -315,6 +376,8 @@ operation_parameters_collection_type["getLanguageByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getLanguageByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getLanguagesAsync:::api-version"]=""
 operation_parameters_collection_type["getLanguagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["apiV2GlobalSystemMigratePost:::api-version"]=""
+operation_parameters_collection_type["apiV2GlobalSystemMigratePost:::x-api-version"]=""
 operation_parameters_collection_type["countTimezonesAsync:::api-version"]=""
 operation_parameters_collection_type["countTimezonesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getTimeZoneByIdAsync:::timeZoneId"]=""
@@ -679,7 +742,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}GlobeService command line client (API version 2.0.0.0)${OFF}
+${BOLD}${WHITE}GlobeService command line client (API version 2.1.2.5401)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -708,9 +771,20 @@ ${BOLD}${WHITE}Usage${OFF}
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[countries]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}countCallingCodesByCountryAsync${OFF};Count calling codes for a country
+  ${CYAN}countCitiesByStateAsync${OFF};Count cities for a state
   ${CYAN}countCountries${OFF};Count countries
+  ${CYAN}countCountryStatesAsync${OFF};Count states for a country
+  ${CYAN}countTimezonesByCountryAsync${OFF};Count timezones for a country
+  ${CYAN}countTopLevelDomainsByCountryAsync${OFF};Count top-level domains for a country
   ${CYAN}getAllCountries${OFF};Get all countries
   ${CYAN}getCallingCodesByCountryIdAsync${OFF};Get calling codes for a country
   ${CYAN}getCitiesByCountryStateIdAsync${OFF};Get cities for a state
@@ -732,7 +806,7 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -762,6 +836,12 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[migrations]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2GlobalSystemMigratePost${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[timezones]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}countTimezonesAsync${OFF};Count timezones
@@ -775,7 +855,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -796,7 +876,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}GlobeService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}${WHITE}GlobeService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -816,10 +896,86 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}GlobeService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}GlobeService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
 }
 
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countCallingCodesByCountryAsync operation
+#
+##############################################################################
+print_countCallingCodesByCountryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countCallingCodesByCountryAsync - Count calling codes for a country${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total number of calling codes for the specified country, with optional OData filtering." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countCitiesByStateAsync operation
+#
+##############################################################################
+print_countCitiesByStateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countCitiesByStateAsync - Count cities for a state${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total number of cities for the specified state, with optional OData filtering." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}countryStateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryStateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
 ##############################################################################
 #
 # Print help for countCountries operation
@@ -832,6 +988,81 @@ print_countCountries_help() {
     echo -e "Returns the total number of countries, with optional OData filtering." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countCountryStatesAsync operation
+#
+##############################################################################
+print_countCountryStatesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countCountryStatesAsync - Count states for a country${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total number of states or provinces for the specified country, with optional OData filtering." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countTimezonesByCountryAsync operation
+#
+##############################################################################
+print_countTimezonesByCountryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countTimezonesByCountryAsync - Count timezones for a country${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total number of timezones for the specified country, with optional OData filtering." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countTopLevelDomainsByCountryAsync operation
+#
+##############################################################################
+print_countTopLevelDomainsByCountryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countTopLevelDomainsByCountryAsync - Count top-level domains for a country${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total number of top-level domains for the specified country, with optional OData filtering." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}countryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: countryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1538,6 +1769,28 @@ print_getLanguagesAsync_help() {
 }
 ##############################################################################
 #
+# Print help for apiV2GlobalSystemMigratePost operation
+#
+##############################################################################
+print_apiV2GlobalSystemMigratePost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2GlobalSystemMigratePost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=500
+    echo -e "${result_color_table[${code:0:1}]}  500;Internal Server Error${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for countTimezonesAsync operation
 #
 ##############################################################################
@@ -1613,6 +1866,114 @@ print_getTimeZonesAsync_help() {
 
 ##############################################################################
 #
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countCallingCodesByCountryAsync operation
+#
+##############################################################################
+call_countCallingCodesByCountryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/CallingCodes/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countCitiesByStateAsync operation
+#
+##############################################################################
+call_countCitiesByStateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryStateId countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/States/{countryStateId}/Cities/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call countCountries operation
 #
 ##############################################################################
@@ -1626,6 +1987,114 @@ call_countCountries() {
     local path
 
     if ! path=$(build_request_path "/api/v2/GlobeService/Countries/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countCountryStatesAsync operation
+#
+##############################################################################
+call_countCountryStatesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/States/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countTimezonesByCountryAsync operation
+#
+##############################################################################
+call_countTimezonesByCountryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/Timezones/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countTopLevelDomainsByCountryAsync operation
+#
+##############################################################################
+call_countTopLevelDomainsByCountryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(countryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/GlobeService/Countries/{countryId}/TopLevelDomains/Count" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3176,6 +3645,42 @@ call_getLanguagesAsync() {
 
 ##############################################################################
 #
+# Call apiV2GlobalSystemMigratePost operation
+#
+##############################################################################
+call_apiV2GlobalSystemMigratePost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/Global/System/Migrate" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call countTimezonesAsync operation
 #
 ##############################################################################
@@ -3379,8 +3884,26 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
+    ;;
+    countCallingCodesByCountryAsync)
+    operation="countCallingCodesByCountryAsync"
+    ;;
+    countCitiesByStateAsync)
+    operation="countCitiesByStateAsync"
+    ;;
     countCountries)
     operation="countCountries"
+    ;;
+    countCountryStatesAsync)
+    operation="countCountryStatesAsync"
+    ;;
+    countTimezonesByCountryAsync)
+    operation="countTimezonesByCountryAsync"
+    ;;
+    countTopLevelDomainsByCountryAsync)
+    operation="countTopLevelDomainsByCountryAsync"
     ;;
     getAllCountries)
     operation="getAllCountries"
@@ -3481,6 +4004,9 @@ case $key in
     getLanguagesAsync)
     operation="getLanguagesAsync"
     ;;
+    apiV2GlobalSystemMigratePost)
+    operation="apiV2GlobalSystemMigratePost"
+    ;;
     countTimezonesAsync)
     operation="countTimezonesAsync"
     ;;
@@ -3577,8 +4103,26 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
+    ;;
+    countCallingCodesByCountryAsync)
+    call_countCallingCodesByCountryAsync
+    ;;
+    countCitiesByStateAsync)
+    call_countCitiesByStateAsync
+    ;;
     countCountries)
     call_countCountries
+    ;;
+    countCountryStatesAsync)
+    call_countCountryStatesAsync
+    ;;
+    countTimezonesByCountryAsync)
+    call_countTimezonesByCountryAsync
+    ;;
+    countTopLevelDomainsByCountryAsync)
+    call_countTopLevelDomainsByCountryAsync
     ;;
     getAllCountries)
     call_getAllCountries
@@ -3678,6 +4222,9 @@ case $operation in
     ;;
     getLanguagesAsync)
     call_getLanguagesAsync
+    ;;
+    apiV2GlobalSystemMigratePost)
+    call_apiV2GlobalSystemMigratePost
     ;;
     countTimezonesAsync)
     call_countTimezonesAsync

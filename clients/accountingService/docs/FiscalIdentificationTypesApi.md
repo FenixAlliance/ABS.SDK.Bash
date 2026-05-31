@@ -30,7 +30,7 @@ Creates a new fiscal identification type for a fiscal authority.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
  **fiscalIdentificationTypeCreateDto** | [**FiscalIdentificationTypeCreateDto**](FiscalIdentificationTypeCreateDto.md) |  | [optional]
@@ -68,7 +68,7 @@ Deletes a fiscal identification type identified by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **identificationTypeId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -106,7 +106,7 @@ Retrieves a specific fiscal identification type by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **identificationTypeId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
@@ -137,7 +137,7 @@ Retrieves all fiscal identification types for the specified fiscal authority.
 ### Example
 
 ```bash
- getFiscalIdentificationTypes authorityId=value  api-version=value x-api-version:value
+ getFiscalIdentificationTypes  tenantId=value authorityId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -145,6 +145,7 @@ Retrieves all fiscal identification types for the specified fiscal authority.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **authorityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -174,7 +175,7 @@ Returns the total count of fiscal identification types for the specified fiscal 
 ### Example
 
 ```bash
- getFiscalIdentificationTypesCount authorityId=value  api-version=value x-api-version:value
+ getFiscalIdentificationTypesCount  tenantId=value authorityId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -182,6 +183,7 @@ Returns the total count of fiscal identification types for the specified fiscal 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **authorityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -219,7 +221,7 @@ Updates an existing fiscal identification type identified by its unique identifi
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **identificationTypeId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]

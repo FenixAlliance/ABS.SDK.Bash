@@ -69,6 +69,7 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -133,6 +134,7 @@ _()
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
@@ -150,11 +152,11 @@ _()
     operation_parameters["resendConfirmationEmailPost"]=""
     operation_parameters["resetPasswordPost"]=""
     operation_parameters["versionGet"]=""
-    operation_parameters["aggregateInvoiceDiscounts"]="currencyId= "
-    operation_parameters["aggregateInvoiceGlobalSurcharges"]="currencyId= "
-    operation_parameters["aggregateInvoiceTaxBases"]="currencyId= "
-    operation_parameters["aggregateInvoiceTaxes"]="currencyId= "
-    operation_parameters["aggregateInvoiceTotals"]="currencyId= "
+    operation_parameters["aggregateInvoiceDiscounts"]="tenantId= currencyId= "
+    operation_parameters["aggregateInvoiceGlobalSurcharges"]="tenantId= currencyId= "
+    operation_parameters["aggregateInvoiceTaxBases"]="tenantId= currencyId= "
+    operation_parameters["aggregateInvoiceTaxes"]="tenantId= currencyId= "
+    operation_parameters["aggregateInvoiceTotals"]="tenantId= currencyId= "
     operation_parameters["calculateInvoice"]="invoiceId= tenantId= "
     operation_parameters["calculateInvoiceLine"]="invoiceId= invoiceLineId= tenantId= "
     operation_parameters["createInvoice"]="tenantId= "
@@ -179,8 +181,8 @@ _()
     operation_parameters["getInvoiceLineTaxesCount"]="invoiceId= invoiceLineId= tenantId= "
     operation_parameters["getInvoiceLines"]="invoiceId= tenantId= itemId= "
     operation_parameters["getInvoiceLinesCount"]="invoiceId= tenantId= "
-    operation_parameters["getInvoicePayments"]="invoiceId= "
-    operation_parameters["getInvoicePaymentsCount"]="invoiceId= "
+    operation_parameters["getInvoicePayments"]="invoiceId= tenantId= "
+    operation_parameters["getInvoicePaymentsCount"]="invoiceId= tenantId= "
     operation_parameters["getInvoiceReference"]="invoiceId= invoiceReferenceId= tenantId= "
     operation_parameters["getInvoiceReferences"]="invoiceId= tenantId= "
     operation_parameters["getInvoiceReferencesCount"]="invoiceId= tenantId= "

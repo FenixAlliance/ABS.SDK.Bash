@@ -103,38 +103,91 @@ All URIs are relative to **
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*FenixAllianceABSWebApi* | [**accountLogoutPost**](docs/FenixAllianceABSWebApi.md#accountlogoutpost) | **POST** /Account/Logout | 
-*FenixAllianceABSWebApi* | [**accountManageDownloadPersonalDataPost**](docs/FenixAllianceABSWebApi.md#accountmanagedownloadpersonaldatapost) | **POST** /Account/Manage/DownloadPersonalData | 
-*FenixAllianceABSWebApi* | [**accountManageLinkExternalLoginPost**](docs/FenixAllianceABSWebApi.md#accountmanagelinkexternalloginpost) | **POST** /Account/Manage/LinkExternalLogin | 
-*FenixAllianceABSWebApi* | [**accountPerformExternalLoginPost**](docs/FenixAllianceABSWebApi.md#accountperformexternalloginpost) | **POST** /Account/PerformExternalLogin | 
-*FenixAllianceABSWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABSWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
-*FenixAllianceABSWebApi* | [**healthGet**](docs/FenixAllianceABSWebApi.md#healthget) | **GET** /health | 
-*FenixAllianceABSWebApi* | [**helloGet**](docs/FenixAllianceABSWebApi.md#helloget) | **GET** /hello | 
-*FenixAllianceABSWebApi* | [**loginPost**](docs/FenixAllianceABSWebApi.md#loginpost) | **POST** /login | 
-*FenixAllianceABSWebApi* | [**manage2faPost**](docs/FenixAllianceABSWebApi.md#manage2fapost) | **POST** /manage/2fa | 
-*FenixAllianceABSWebApi* | [**manageInfoGet**](docs/FenixAllianceABSWebApi.md#manageinfoget) | **GET** /manage/info | 
-*FenixAllianceABSWebApi* | [**manageInfoPost**](docs/FenixAllianceABSWebApi.md#manageinfopost) | **POST** /manage/info | 
-*FenixAllianceABSWebApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAllianceABSWebApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
-*FenixAllianceABSWebApi* | [**refreshPost**](docs/FenixAllianceABSWebApi.md#refreshpost) | **POST** /refresh | 
-*FenixAllianceABSWebApi* | [**registerPost**](docs/FenixAllianceABSWebApi.md#registerpost) | **POST** /register | 
-*FenixAllianceABSWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABSWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
-*FenixAllianceABSWebApi* | [**resetPasswordPost**](docs/FenixAllianceABSWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
-*FenixAllianceABSWebApi* | [**versionGet**](docs/FenixAllianceABSWebApi.md#versionget) | **GET** /version | 
+*CompletionsApi* | [**apiV2AiServiceCompletionsCompleteGet**](docs/CompletionsApi.md#apiv2aiservicecompletionscompleteget) | **GET** /api/v2/AiService/Completions/Complete | 
+*FenixAlliancePortalsWebsiteApi* | [**accountLogoutPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountlogoutpost) | **POST** /Account/Logout | 
+*FenixAlliancePortalsWebsiteApi* | [**accountManageDownloadPersonalDataPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountmanagedownloadpersonaldatapost) | **POST** /Account/Manage/DownloadPersonalData | 
+*FenixAlliancePortalsWebsiteApi* | [**accountManageLinkExternalLoginPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountmanagelinkexternalloginpost) | **POST** /Account/Manage/LinkExternalLogin | 
+*FenixAlliancePortalsWebsiteApi* | [**accountPerformExternalLoginPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountperformexternalloginpost) | **POST** /Account/PerformExternalLogin | 
+*FenixAlliancePortalsWebsiteApi* | [**forgotPasswordPost**](docs/FenixAlliancePortalsWebsiteApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
+*FenixAlliancePortalsWebsiteApi* | [**healthGet**](docs/FenixAlliancePortalsWebsiteApi.md#healthget) | **GET** /health | 
+*FenixAlliancePortalsWebsiteApi* | [**helloGet**](docs/FenixAlliancePortalsWebsiteApi.md#helloget) | **GET** /hello | 
+*FenixAlliancePortalsWebsiteApi* | [**loginPost**](docs/FenixAlliancePortalsWebsiteApi.md#loginpost) | **POST** /login | 
+*FenixAlliancePortalsWebsiteApi* | [**manage2faPost**](docs/FenixAlliancePortalsWebsiteApi.md#manage2fapost) | **POST** /manage/2fa | 
+*FenixAlliancePortalsWebsiteApi* | [**manageInfoGet**](docs/FenixAlliancePortalsWebsiteApi.md#manageinfoget) | **GET** /manage/info | 
+*FenixAlliancePortalsWebsiteApi* | [**manageInfoPost**](docs/FenixAlliancePortalsWebsiteApi.md#manageinfopost) | **POST** /manage/info | 
+*FenixAlliancePortalsWebsiteApi* | [**mapIdentityApiConfirmEmail**](docs/FenixAlliancePortalsWebsiteApi.md#mapidentityapiconfirmemail) | **GET** /confirmEmail | 
+*FenixAlliancePortalsWebsiteApi* | [**refreshPost**](docs/FenixAlliancePortalsWebsiteApi.md#refreshpost) | **POST** /refresh | 
+*FenixAlliancePortalsWebsiteApi* | [**registerPost**](docs/FenixAlliancePortalsWebsiteApi.md#registerpost) | **POST** /register | 
+*FenixAlliancePortalsWebsiteApi* | [**resendConfirmationEmailPost**](docs/FenixAlliancePortalsWebsiteApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
+*FenixAlliancePortalsWebsiteApi* | [**resetPasswordPost**](docs/FenixAlliancePortalsWebsiteApi.md#resetpasswordpost) | **POST** /resetPassword | 
+*FenixAlliancePortalsWebsiteApi* | [**versionGet**](docs/FenixAlliancePortalsWebsiteApi.md#versionget) | **GET** /version | 
+*LoyaltyProgramsApi* | [**countLoyaltyProgramsAsync**](docs/LoyaltyProgramsApi.md#countloyaltyprogramsasync) | **GET** /api/v2/SalesService/LoyaltyPrograms/Count | Get loyalty programs count
+*LoyaltyProgramsApi* | [**createLoyaltyProgramAsync**](docs/LoyaltyProgramsApi.md#createloyaltyprogramasync) | **POST** /api/v2/SalesService/LoyaltyPrograms | Create a loyalty program
+*LoyaltyProgramsApi* | [**deleteLoyaltyProgramAsync**](docs/LoyaltyProgramsApi.md#deleteloyaltyprogramasync) | **DELETE** /api/v2/SalesService/LoyaltyPrograms/{loyaltyProgramId} | Delete a loyalty program
+*LoyaltyProgramsApi* | [**getLoyaltyProgramAsync**](docs/LoyaltyProgramsApi.md#getloyaltyprogramasync) | **GET** /api/v2/SalesService/LoyaltyPrograms/{loyaltyProgramId} | Get loyalty program by ID
+*LoyaltyProgramsApi* | [**getLoyaltyProgramsAsync**](docs/LoyaltyProgramsApi.md#getloyaltyprogramsasync) | **GET** /api/v2/SalesService/LoyaltyPrograms | Get loyalty programs
+*LoyaltyProgramsApi* | [**updateLoyaltyProgramAsync**](docs/LoyaltyProgramsApi.md#updateloyaltyprogramasync) | **PUT** /api/v2/SalesService/LoyaltyPrograms/{loyaltyProgramId} | Update a loyalty program
 *MarginsApi* | [**getQuoteAsync**](docs/MarginsApi.md#getquoteasync) | **GET** /api/v2/SalesService/Margins/{marginId}/Details | Get margin details by ID
+*PointOfSalesApi* | [**countPointOfSalesAsync**](docs/PointOfSalesApi.md#countpointofsalesasync) | **GET** /api/v2/SalesService/PointOfSales/Count | Get point of sales count
+*PointOfSalesApi* | [**createPointOfSaleAsync**](docs/PointOfSalesApi.md#createpointofsaleasync) | **POST** /api/v2/SalesService/PointOfSales | Create a point of sale
+*PointOfSalesApi* | [**deletePointOfSaleAsync**](docs/PointOfSalesApi.md#deletepointofsaleasync) | **DELETE** /api/v2/SalesService/PointOfSales/{pointOfSaleId} | Delete a point of sale
+*PointOfSalesApi* | [**getPointOfSaleAsync**](docs/PointOfSalesApi.md#getpointofsaleasync) | **GET** /api/v2/SalesService/PointOfSales/{pointOfSaleId} | Get point of sale by ID
+*PointOfSalesApi* | [**getPointOfSalesAsync**](docs/PointOfSalesApi.md#getpointofsalesasync) | **GET** /api/v2/SalesService/PointOfSales | Get point of sales
+*PointOfSalesApi* | [**updatePointOfSaleAsync**](docs/PointOfSalesApi.md#updatepointofsaleasync) | **PUT** /api/v2/SalesService/PointOfSales/{pointOfSaleId} | Update a point of sale
+*SalesLiteraturesApi* | [**countSalesLiteraturesAsync**](docs/SalesLiteraturesApi.md#countsalesliteraturesasync) | **GET** /api/v2/SalesService/SalesLiteratures/Count | Get sales literatures count
+*SalesLiteraturesApi* | [**createSalesLiteratureAsync**](docs/SalesLiteraturesApi.md#createsalesliteratureasync) | **POST** /api/v2/SalesService/SalesLiteratures | Create a sales literature
+*SalesLiteraturesApi* | [**deleteSalesLiteratureAsync**](docs/SalesLiteraturesApi.md#deletesalesliteratureasync) | **DELETE** /api/v2/SalesService/SalesLiteratures/{salesLiteratureId} | Delete a sales literature
+*SalesLiteraturesApi* | [**getExtendedSalesLiteraturesAsync**](docs/SalesLiteraturesApi.md#getextendedsalesliteraturesasync) | **GET** /api/v2/SalesService/SalesLiteratures/Extended | Get extended sales literatures
+*SalesLiteraturesApi* | [**getSalesLiteratureAsync**](docs/SalesLiteraturesApi.md#getsalesliteratureasync) | **GET** /api/v2/SalesService/SalesLiteratures/{salesLiteratureId} | Get sales literature by ID
+*SalesLiteraturesApi* | [**getSalesLiteraturesAsync**](docs/SalesLiteraturesApi.md#getsalesliteraturesasync) | **GET** /api/v2/SalesService/SalesLiteratures | Get sales literatures
+*SalesLiteraturesApi* | [**updateSalesLiteratureAsync**](docs/SalesLiteraturesApi.md#updatesalesliteratureasync) | **PUT** /api/v2/SalesService/SalesLiteratures/{salesLiteratureId} | Update a sales literature
+*StoresApi* | [**countStoresAsync**](docs/StoresApi.md#countstoresasync) | **GET** /api/v2/SalesService/Stores/Count | Get stores count
+*StoresApi* | [**createStoreAsync**](docs/StoresApi.md#createstoreasync) | **POST** /api/v2/SalesService/Stores | Create a store
+*StoresApi* | [**deleteStoreAsync**](docs/StoresApi.md#deletestoreasync) | **DELETE** /api/v2/SalesService/Stores/{storeId} | Delete a store
+*StoresApi* | [**getStoreAsync**](docs/StoresApi.md#getstoreasync) | **GET** /api/v2/SalesService/Stores/{storeId} | Get store by ID
+*StoresApi* | [**getStoresAsync**](docs/StoresApi.md#getstoresasync) | **GET** /api/v2/SalesService/Stores | Get stores
+*StoresApi* | [**updateStoreAsync**](docs/StoresApi.md#updatestoreasync) | **PUT** /api/v2/SalesService/Stores/{storeId} | Update a store
 
 
 ## Documentation For Models
 
  - [AccessTokenResponse](docs/AccessTokenResponse.md)
+ - [EmptyEnvelope](docs/EmptyEnvelope.md)
+ - [ErrorEnvelope](docs/ErrorEnvelope.md)
+ - [ExtendedSalesLiteratureDto](docs/ExtendedSalesLiteratureDto.md)
+ - [ExtendedSalesLiteratureDtoListEnvelope](docs/ExtendedSalesLiteratureDtoListEnvelope.md)
  - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
  - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
  - [InfoRequest](docs/InfoRequest.md)
  - [InfoResponse](docs/InfoResponse.md)
+ - [Int32Envelope](docs/Int32Envelope.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [LoyaltyProgramCreateDto](docs/LoyaltyProgramCreateDto.md)
+ - [LoyaltyProgramDto](docs/LoyaltyProgramDto.md)
+ - [LoyaltyProgramDtoEnvelope](docs/LoyaltyProgramDtoEnvelope.md)
+ - [LoyaltyProgramDtoListEnvelope](docs/LoyaltyProgramDtoListEnvelope.md)
+ - [LoyaltyProgramUpdateDto](docs/LoyaltyProgramUpdateDto.md)
+ - [PointOfSaleCreateDto](docs/PointOfSaleCreateDto.md)
+ - [PointOfSaleDto](docs/PointOfSaleDto.md)
+ - [PointOfSaleDtoEnvelope](docs/PointOfSaleDtoEnvelope.md)
+ - [PointOfSaleDtoListEnvelope](docs/PointOfSaleDtoListEnvelope.md)
+ - [PointOfSaleUpdateDto](docs/PointOfSaleUpdateDto.md)
  - [RefreshRequest](docs/RefreshRequest.md)
  - [RegisterRequest](docs/RegisterRequest.md)
  - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)
  - [ResetPasswordRequest](docs/ResetPasswordRequest.md)
+ - [SalesLiteratureCreateDto](docs/SalesLiteratureCreateDto.md)
+ - [SalesLiteratureDto](docs/SalesLiteratureDto.md)
+ - [SalesLiteratureDtoEnvelope](docs/SalesLiteratureDtoEnvelope.md)
+ - [SalesLiteratureDtoListEnvelope](docs/SalesLiteratureDtoListEnvelope.md)
+ - [SalesLiteratureTypeDto](docs/SalesLiteratureTypeDto.md)
+ - [SalesLiteratureUpdateDto](docs/SalesLiteratureUpdateDto.md)
+ - [StoreCreateDto](docs/StoreCreateDto.md)
+ - [StoreDto](docs/StoreDto.md)
+ - [StoreDtoEnvelope](docs/StoreDtoEnvelope.md)
+ - [StoreDtoListEnvelope](docs/StoreDtoListEnvelope.md)
+ - [StoreUpdateDto](docs/StoreUpdateDto.md)
+ - [TenantDto](docs/TenantDto.md)
  - [TwoFactorRequest](docs/TwoFactorRequest.md)
  - [TwoFactorResponse](docs/TwoFactorResponse.md)
 

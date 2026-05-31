@@ -301,7 +301,7 @@ case $state in
             "getGrantedEnrollmentPermissions[Get granted permissions for an application role]" \
             "getGrantedTenantPermissions[Get granted tenant permissions for an application]" \
             "getGrantedTenantRoles[Get granted tenant roles for an application]" \
-            "getRequiredPermissions[Get required permissions for an application]"             "isAuthenticated[Check if user is authenticated]"             "accountLogoutPost[]" \
+            "getRequiredPermissions[Get required permissions for an application]"             "isAuthenticated[Check if user is authenticated]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -387,6 +387,15 @@ case $state in
                     "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       accountLogoutPost)

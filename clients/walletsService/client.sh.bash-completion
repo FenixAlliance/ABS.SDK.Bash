@@ -69,6 +69,7 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -86,8 +87,14 @@ _()
     operations["resendConfirmationEmailPost"]=1
     operations["resetPasswordPost"]=1
     operations["versionGet"]=1
+    operations["createWalletBankAccountAsync"]=1
     operations["createWalletLocationAsync"]=1
+    operations["createWalletPaymentAsync"]=1
+    operations["createWalletTokenAsync"]=1
+    operations["createWalletWithdrawRequestAsync"]=1
+    operations["deleteWalletBankAccountAsync"]=1
     operations["deleteWalletLocationAsync"]=1
+    operations["deleteWalletTokenAsync"]=1
     operations["getIncomingPaymentsAsync"]=1
     operations["getIncomingPaymentsCountAsync"]=1
     operations["getIncomingWalletInvoicesAsync"]=1
@@ -96,6 +103,11 @@ _()
     operations["getOutgoingPaymentsCountAsync"]=1
     operations["getOutgoingWalletInvoicesAsync"]=1
     operations["getOutgoingWalletInvoicesCountAsync"]=1
+    operations["getWalletBankAccountAsync"]=1
+    operations["getWalletBankAccountsAsync"]=1
+    operations["getWalletBankAccountsCountAsync"]=1
+    operations["getWalletChargebacksAsync"]=1
+    operations["getWalletChargebacksCountAsync"]=1
     operations["getWalletDetailsAsync"]=1
     operations["getWalletExtendedOrdersAsync"]=1
     operations["getWalletInvoicesAsync"]=1
@@ -107,11 +119,25 @@ _()
     operations["getWalletOrdersCountAsync"]=1
     operations["getWalletPaymentsAsync"]=1
     operations["getWalletPaymentsCountAsync"]=1
+    operations["getWalletQuotesAsync"]=1
+    operations["getWalletQuotesCountAsync"]=1
+    operations["getWalletRefundsAsync"]=1
+    operations["getWalletRefundsCountAsync"]=1
+    operations["getWalletTokenAsync"]=1
+    operations["getWalletTokensAsync"]=1
+    operations["getWalletTokensCountAsync"]=1
+    operations["getWalletWithdrawRequestsAsync"]=1
+    operations["getWalletWithdrawRequestsCountAsync"]=1
+    operations["getWalletWithdrawsAsync"]=1
+    operations["getWalletWithdrawsCountAsync"]=1
+    operations["updateWalletBankAccountAsync"]=1
     operations["updateWalletLocationAsync"]=1
+    operations["updateWalletTokenAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
@@ -129,8 +155,14 @@ _()
     operation_parameters["resendConfirmationEmailPost"]=""
     operation_parameters["resetPasswordPost"]=""
     operation_parameters["versionGet"]=""
+    operation_parameters["createWalletBankAccountAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["createWalletLocationAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["createWalletPaymentAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["createWalletTokenAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["createWalletWithdrawRequestAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["deleteWalletBankAccountAsync"]="walletId= bankAccountId= api-version= x-api-version: "
     operation_parameters["deleteWalletLocationAsync"]="walletId= locationId= api-version= x-api-version: "
+    operation_parameters["deleteWalletTokenAsync"]="walletId= tokenId= api-version= x-api-version: "
     operation_parameters["getIncomingPaymentsAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getIncomingPaymentsCountAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getIncomingWalletInvoicesAsync"]="walletId= api-version= x-api-version: "
@@ -139,6 +171,11 @@ _()
     operation_parameters["getOutgoingPaymentsCountAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getOutgoingWalletInvoicesAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getOutgoingWalletInvoicesCountAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletBankAccountAsync"]="walletId= bankAccountId= api-version= x-api-version: "
+    operation_parameters["getWalletBankAccountsAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletBankAccountsCountAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletChargebacksAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletChargebacksCountAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getWalletDetailsAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getWalletExtendedOrdersAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getWalletInvoicesAsync"]="walletId= api-version= x-api-version: "
@@ -150,7 +187,20 @@ _()
     operation_parameters["getWalletOrdersCountAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getWalletPaymentsAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getWalletPaymentsCountAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletQuotesAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletQuotesCountAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletRefundsAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletRefundsCountAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletTokenAsync"]="walletId= tokenId= api-version= x-api-version: "
+    operation_parameters["getWalletTokensAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletTokensCountAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletWithdrawRequestsAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletWithdrawRequestsCountAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletWithdrawsAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getWalletWithdrawsCountAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["updateWalletBankAccountAsync"]="walletId= bankAccountId= api-version= x-api-version: "
     operation_parameters["updateWalletLocationAsync"]="walletId= locationId= api-version= x-api-version: "
+    operation_parameters["updateWalletTokenAsync"]="walletId= tokenId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values

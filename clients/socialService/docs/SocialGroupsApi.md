@@ -59,7 +59,7 @@ Creates a new social group for the specified tenant.
 ### Example
 
 ```bash
- createSocialGroupAsync  tenantId=value  api-version=value x-api-version:value
+ createSocialGroupAsync  tenantId=value  socialProfileId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -68,6 +68,7 @@ Creates a new social group for the specified tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **socialProfileId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
  **socialGroupCreateDto** | [**SocialGroupCreateDto**](SocialGroupCreateDto.md) |  | [optional]
@@ -97,7 +98,7 @@ Deletes a social group for the specified tenant.
 ### Example
 
 ```bash
- deleteSocialGroupAsync  tenantId=value socialGroupId=value  api-version=value x-api-version:value
+ deleteSocialGroupAsync  tenantId=value  socialProfileId=value socialGroupId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -106,6 +107,7 @@ Deletes a social group for the specified tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **socialProfileId** | **string** |  | [default to null]
  **socialGroupId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -210,7 +212,7 @@ Updates an existing social group for the specified tenant.
 ### Example
 
 ```bash
- updateSocialGroupAsync  tenantId=value socialGroupId=value  api-version=value x-api-version:value
+ updateSocialGroupAsync  tenantId=value  socialProfileId=value socialGroupId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -219,6 +221,7 @@ Updates an existing social group for the specified tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **socialProfileId** | **string** |  | [default to null]
  **socialGroupId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]

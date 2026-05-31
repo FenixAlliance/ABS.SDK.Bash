@@ -97,7 +97,7 @@ Retrieves a specific item review by its ID.
 ### Example
 
 ```bash
- getItemReviewByIdAsync itemReviewId=value  api-version=value x-api-version:value
+ getItemReviewByIdAsync itemReviewId=value  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -106,6 +106,7 @@ Retrieves a specific item review by its ID.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **itemReviewId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 

@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "createDiscountList[Creates a new discount list]" \
+            "apiV2AiServiceCompletionsCompleteGet[]"             "createDiscountList[Creates a new discount list]" \
             "createDiscountListEntry[Creates a discount list entry]" \
             "deleteDiscountList[Deletes a discount list]" \
             "deleteDiscountListEntry[Deletes a discount list entry]" \
@@ -337,7 +337,17 @@ case $state in
             "updatePriceListPriceAsync[Updates a price list entry]"             "getFinalPrice[Gets the final price for an item]" \
             "getPrice[Gets the calculated price for an item]" \
             "getTotalSavingsInUsd[Gets total savings for an item]" \
-            "getTotalTaxesInUsd[Gets total taxes for an item]" \
+            "getTotalTaxesInUsd[Gets total taxes for an item]"             "createPricingRule[Create a new pricing rule]" \
+            "deletePricingRule[Delete a pricing rule]" \
+            "getPricingRuleById[Get pricing rule by ID]" \
+            "getPricingRules[Get all pricing rules]" \
+            "getPricingRulesCountAsync[Counts pricing rules]" \
+            "updatePricingRule[Update a pricing rule]"             "createRoundingPolicyAsync[Creates a rounding policy]" \
+            "deleteRoundingPolicyAsync[Deletes a rounding policy]" \
+            "getRoundingPoliciesAsync[Gets all rounding policies]" \
+            "getRoundingPoliciesCountAsync[Counts rounding policies]" \
+            "getRoundingPolicyByIdAsync[Gets a rounding policy by ID]" \
+            "updateRoundingPolicyAsync[Updates a rounding policy]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -345,6 +355,15 @@ case $state in
     ;;
   args)
     case $line[1] in
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createDiscountList)
         local -a _op_arguments
         _op_arguments=(
@@ -677,6 +696,120 @@ case $state in
         _op_arguments=(
           "itemId=:[PATH] "
           "currencyId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createPricingRule)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deletePricingRule)
+        local -a _op_arguments
+        _op_arguments=(
+          "pricingRuleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPricingRuleById)
+        local -a _op_arguments
+        _op_arguments=(
+          "pricingRuleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPricingRules)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPricingRulesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePricingRule)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"pricingRuleId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createRoundingPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteRoundingPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "roundingPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRoundingPoliciesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRoundingPoliciesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRoundingPolicyByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "roundingPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateRoundingPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "roundingPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

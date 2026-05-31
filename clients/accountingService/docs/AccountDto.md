@@ -19,6 +19,10 @@ Name | Type | Description | Notes
 **accountTypeId** | **string** |  | [optional] [default to null]
 **debitsBalance** | **float** |  | [optional] [default to null]
 **creditsBalance** | **float** |  | [optional] [default to null]
+**balanceInUsd** | **float** |  | [optional] [default to null]
+**debitsBalanceInUsd** | **float** |  | [optional] [default to null]
+**creditsBalanceInUsd** | **float** |  | [optional] [default to null]
+**forexRate** | **float** |  | [optional] [default to null]
 **parentAccountId** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]
 **enrollmentId** | **string** |  | [optional] [default to null]
@@ -27,6 +31,9 @@ Name | Type | Description | Notes
 **balanceAmount** | [**Money**](Money.md) |  | [optional] [default to null]
 **creditsBalanceAmount** | [**Money**](Money.md) |  | [optional] [default to null]
 **debitsBalanceAmount** | [**Money**](Money.md) |  | [optional] [default to null]
+**balanceAmountInUsd** | [**Money**](Money.md) |  | [optional] [default to null]
+**debitsBalanceAmountInUsd** | [**Money**](Money.md) |  | [optional] [default to null]
+**creditsBalanceAmountInUsd** | [**Money**](Money.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -283,7 +283,7 @@ Retrieves a specific course by its ID.
 ### Example
 
 ```bash
- getCourseByIdAsync  tenantId=value courseId=value  api-version=value x-api-version:value
+ getCourseByIdAsync courseId=value  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -291,8 +291,8 @@ Retrieves a specific course by its ID.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
  **courseId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 

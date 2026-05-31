@@ -297,12 +297,22 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "createCourseArticleAsync[Create a new course article]" \
+            "apiV2AiServiceCompletionsCompleteGet[]"             "createCourseArticleAsync[Create a new course article]" \
             "deleteCourseArticleAsync[Delete a course article]" \
             "getCourseArticleByIdAsync[Get course article by ID]" \
             "getCourseArticlesAsync[Get all course articles]" \
             "getCourseArticlesCountAsync[Get course articles count]" \
-            "updateCourseArticleAsync[Update a course article]"             "createCourseAssignmentAsync[Create a new course assignment]" \
+            "updateCourseArticleAsync[Update a course article]"             "createCourseAssignmentComponentAsync[Create a course assignment component]" \
+            "deleteCourseAssignmentComponentAsync[Delete a course assignment component]" \
+            "getCourseAssignmentComponentByIdAsync[Get course assignment component by ID]" \
+            "getCourseAssignmentComponentsAsync[Get all course assignment components]" \
+            "getCourseAssignmentComponentsCountAsync[Get course assignment components count]" \
+            "updateCourseAssignmentComponentAsync[Update a course assignment component]"             "createCourseAssignmentTypeAsync[Create a course assignment type]" \
+            "deleteCourseAssignmentTypeAsync[Delete a course assignment type]" \
+            "getCourseAssignmentTypeByIdAsync[Get course assignment type by ID]" \
+            "getCourseAssignmentTypesAsync[Get all course assignment types]" \
+            "getCourseAssignmentTypesCountAsync[Get course assignment types count]" \
+            "updateCourseAssignmentTypeAsync[Update a course assignment type]"             "createCourseAssignmentAsync[Create a new course assignment]" \
             "deleteCourseAssignmentAsync[Delete a course assignment]" \
             "getCourseAssignmentByIdAsync[Get course assignment by ID]" \
             "getCourseAssignmentsAsync[Get all course assignments]" \
@@ -319,14 +329,23 @@ case $state in
             "getCourseCertificateAsync[Get course certificate by ID]" \
             "getCourseCertificateTemplateAsync[Get certificate template by ID]" \
             "getCourseCertificateTemplatesAsync[Get all certificate templates]" \
+            "getCourseCertificateTemplatesCountAsync[Get certificate templates count]" \
             "getCourseCertificatesAsync[Get all course certificates]" \
             "getCourseCertificatesCountAsync[Get course certificates count]" \
-            "updateCourseCertificateAsync[Update a course certificate]"             "createCourseCohortAsync[Create a new course cohort]" \
+            "updateCourseCertificateAsync[Update a course certificate]" \
+            "updateCourseCertificateTemplateAsync[Update a certificate template]"             "createCourseCohortAsync[Create a new course cohort]" \
             "deleteCourseCohortAsync[Delete a course cohort]" \
             "getCourseCohortByIdAsync[Get course cohort by ID]" \
             "getCourseCohortsAsync[Get all course cohorts]" \
             "getCourseCohortsCountAsync[Get course cohorts count]" \
-            "updateCourseCohortAsync[Update a course cohort]"             "createCourseEnrollmentAsync[Create a new course enrollment]" \
+            "updateCourseCohortAsync[Update a course cohort]"             "createCourseContentGroupAsync[Create a new course content group]" \
+            "deleteCourseContentGroupAsync[Delete a course content group]" \
+            "getCourseContentGroupByIdAsync[Get course content group by ID]" \
+            "getCourseContentGroupsAsync[Get all course content groups]" \
+            "getCourseContentGroupsByCourseAsync[Get course content groups by course]" \
+            "getCourseContentGroupsByCourseCountAsync[Get course content groups count by course]" \
+            "getCourseContentGroupsCountAsync[Get course content groups count]" \
+            "updateCourseContentGroupAsync[Update a course content group]"             "createCourseEnrollmentAsync[Create a new course enrollment]" \
             "deleteCourseEnrollmentAsync[Delete a course enrollment]" \
             "getCourseEnrollmentAsync[Get course enrollment by ID]" \
             "getEnrollmentsAsync[Get all course enrollments]" \
@@ -342,7 +361,12 @@ case $state in
             "getCourseForumByIdAsync[Get course forum by ID]" \
             "getCourseForumsAsync[Get all course forums]" \
             "getCourseForumsCountAsync[Get course forums count]" \
-            "updateCourseForumAsync[Update a course forum]"             "createCourseHandoutAsync[Create a course handout]" \
+            "updateCourseForumAsync[Update a course forum]"             "createCourseGradingRubricAsync[Create a course grading rubric]" \
+            "deleteCourseGradingRubricAsync[Delete a course grading rubric]" \
+            "getCourseGradingRubricByIdAsync[Get course grading rubric by ID]" \
+            "getCourseGradingRubricsAsync[Get all course grading rubrics]" \
+            "getCourseGradingRubricsCountAsync[Get course grading rubrics count]" \
+            "updateCourseGradingRubricAsync[Update a course grading rubric]"             "createCourseHandoutAsync[Create a course handout]" \
             "deleteCourseHandoutAsync[Delete a course handout]" \
             "getCourseHandoutByIdAsync[Get course handout by ID]" \
             "getCourseHandoutsAsync[Get all course handouts]" \
@@ -367,7 +391,12 @@ case $state in
             "getCourseSectionByIdAsync[Get course section by ID]" \
             "getCourseSectionsAsync[Get all course sections]" \
             "getCourseSectionsCountAsync[Get course sections count]" \
-            "updateCourseSectionAsync[Update a course section]"             "createCourseUnitComponentAsync[Create a new course unit component]" \
+            "updateCourseSectionAsync[Update a course section]"             "createCourseTeamMembershipAsync[Create a course team membership]" \
+            "deleteCourseTeamMembershipAsync[Delete a course team membership]" \
+            "getCourseTeamMembershipByIdAsync[Get course team membership by ID]" \
+            "getCourseTeamMembershipsAsync[Get all course team memberships]" \
+            "getCourseTeamMembershipsCountAsync[Get course team memberships count]" \
+            "updateCourseTeamMembershipAsync[Update a course team membership]"             "createCourseUnitComponentAsync[Create a new course unit component]" \
             "deleteCourseUnitComponentAsync[Delete a course unit component]" \
             "getCourseUnitComponentByIdAsync[Get course unit component by ID]" \
             "getCourseUnitComponentsAsync[Get all course unit components]" \
@@ -448,7 +477,21 @@ case $state in
             "apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete[]" \
             "apiV2LearningServiceInstructorProfilesInstructorProfileIdGet[]" \
             "apiV2LearningServiceInstructorProfilesInstructorProfileIdPut[]" \
-            "apiV2LearningServiceInstructorProfilesPost[]"             "apiV2LearningServiceStudentProfilesCountGet[]" \
+            "apiV2LearningServiceInstructorProfilesPost[]"             "getMyAverageScoreAsync[Get current user's average score]" \
+            "getMyCertificatesAsync[Get current user's completion certificates]" \
+            "getMyCertificatesCountAsync[Get current user's certificates count]" \
+            "getMyEnrollmentsAsync[Get current user's course enrollments]" \
+            "getMyEnrollmentsCountAsync[Get current user's enrollment count]" \
+            "getMyHoursCompletedAsync[Get current user's completed hours]" \
+            "getMyInstructorCoursesAsync[Get current user's instructor courses]" \
+            "getMyInstructorCoursesCountAsync[Get current user's instructor courses count]" \
+            "getMyInstructorProfilesAsync[Get current user's instructor profiles]" \
+            "getMyInstructorProfilesCountAsync[Get current user's instructor profiles count]" \
+            "getMyPendingTaskCountAsync[Get current user's pending task count]" \
+            "getMyStudentCoursesAsync[Get current user's enrolled courses]" \
+            "getMyStudentCoursesCountAsync[Get current user's enrolled courses count]" \
+            "getMyStudentProfilesAsync[Get current user's student profiles]" \
+            "getMyStudentProfilesCountAsync[Get current user's student profiles count]"             "apiV2LearningServiceStudentProfilesCountGet[]" \
             "apiV2LearningServiceStudentProfilesGet[]" \
             "apiV2LearningServiceStudentProfilesPost[]" \
             "apiV2LearningServiceStudentProfilesStudentProfileIdAverageGet[]" \
@@ -463,6 +506,15 @@ case $state in
     ;;
   args)
     case $line[1] in
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createCourseArticleAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -513,6 +565,118 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "articleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createCourseAssignmentComponentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteCourseAssignmentComponentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "componentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseAssignmentComponentByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "componentId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseAssignmentComponentsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseAssignmentComponentsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateCourseAssignmentComponentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "componentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createCourseAssignmentTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteCourseAssignmentTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "assignmentTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseAssignmentTypeByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "assignmentTypeId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseAssignmentTypesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseAssignmentTypesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateCourseAssignmentTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "assignmentTypeId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -698,6 +862,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getCourseCertificateTemplatesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getCourseCertificatesAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -720,6 +893,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "courseCertificateId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateCourseCertificateTemplateAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "courseCertificateTemplateId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -776,6 +959,80 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "cohortId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createCourseContentGroupAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteCourseContentGroupAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "groupId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseContentGroupByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "groupId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseContentGroupsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseContentGroupsByCourseAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "courseId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseContentGroupsByCourseCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "courseId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseContentGroupsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateCourseContentGroupAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "groupId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -955,6 +1212,62 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "forumId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createCourseGradingRubricAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteCourseGradingRubricAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "rubricId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseGradingRubricByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "rubricId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseGradingRubricsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseGradingRubricsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateCourseGradingRubricAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "rubricId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -1235,6 +1548,62 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "sectionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createCourseTeamMembershipAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteCourseTeamMembershipAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "membershipId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseTeamMembershipByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "membershipId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseTeamMembershipsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCourseTeamMembershipsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateCourseTeamMembershipAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "membershipId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -2004,6 +2373,126 @@ case $state in
         _op_arguments=(
                     "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyAverageScoreAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyCertificatesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyCertificatesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyEnrollmentsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyEnrollmentsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyHoursCompletedAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyInstructorCoursesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyInstructorCoursesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyInstructorProfilesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyInstructorProfilesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyPendingTaskCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyStudentCoursesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyStudentCoursesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyStudentProfilesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMyStudentProfilesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0

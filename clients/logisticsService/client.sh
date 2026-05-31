@@ -96,6 +96,99 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["addAirwayBillLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["addAirwayBillLineAsync:::billId"]=1
+operation_parameters_minimum_occurrences["addAirwayBillLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["addAirwayBillLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["addAirwayBillLineAsync:::WaybillLineCreateDto"]=0
+operation_parameters_minimum_occurrences["cancelAirwayBillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["cancelAirwayBillAsync:::billId"]=1
+operation_parameters_minimum_occurrences["cancelAirwayBillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["cancelAirwayBillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createAirwayBillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createAirwayBillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createAirwayBillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createAirwayBillAsync:::AirwayBillCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteAirwayBillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteAirwayBillAsync:::billId"]=1
+operation_parameters_minimum_occurrences["deleteAirwayBillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteAirwayBillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAirwayBillByIdAsync:::billId"]=1
+operation_parameters_minimum_occurrences["getAirwayBillByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillLinesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAirwayBillLinesAsync:::billId"]=1
+operation_parameters_minimum_occurrences["getAirwayBillLinesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillLinesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillLinesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAirwayBillLinesCountAsync:::billId"]=1
+operation_parameters_minimum_occurrences["getAirwayBillLinesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillLinesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAirwayBillsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAirwayBillsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["issueAirwayBillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["issueAirwayBillAsync:::billId"]=1
+operation_parameters_minimum_occurrences["issueAirwayBillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["issueAirwayBillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["markAirwayBillArrivedAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["markAirwayBillArrivedAsync:::billId"]=1
+operation_parameters_minimum_occurrences["markAirwayBillArrivedAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["markAirwayBillArrivedAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["markAirwayBillDeliveredAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["markAirwayBillDeliveredAsync:::billId"]=1
+operation_parameters_minimum_occurrences["markAirwayBillDeliveredAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["markAirwayBillDeliveredAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["markAirwayBillInTransitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["markAirwayBillInTransitAsync:::billId"]=1
+operation_parameters_minimum_occurrences["markAirwayBillInTransitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["markAirwayBillInTransitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeAirwayBillLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeAirwayBillLineAsync:::billId"]=1
+operation_parameters_minimum_occurrences["removeAirwayBillLineAsync:::lineId"]=1
+operation_parameters_minimum_occurrences["removeAirwayBillLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["removeAirwayBillLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateAirwayBillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateAirwayBillAsync:::billId"]=1
+operation_parameters_minimum_occurrences["updateAirwayBillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateAirwayBillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateAirwayBillAsync:::AirwayBillUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateAirwayBillLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateAirwayBillLineAsync:::billId"]=1
+operation_parameters_minimum_occurrences["updateAirwayBillLineAsync:::lineId"]=1
+operation_parameters_minimum_occurrences["updateAirwayBillLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateAirwayBillLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateAirwayBillLineAsync:::WaybillLineUpdateDto"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_minimum_occurrences["createDeliveryNoteAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createDeliveryNoteAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createDeliveryNoteAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createDeliveryNoteAsync:::DeliveryNoteCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteDeliveryNoteAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteDeliveryNoteAsync:::deliveryNoteId"]=1
+operation_parameters_minimum_occurrences["deleteDeliveryNoteAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteDeliveryNoteAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getDeliveryNoteByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDeliveryNoteByIdAsync:::deliveryNoteId"]=1
+operation_parameters_minimum_occurrences["getDeliveryNoteByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getDeliveryNoteByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getDeliveryNotesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDeliveryNotesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getDeliveryNotesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getDeliveryNotesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDeliveryNotesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getDeliveryNotesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateDeliveryNoteAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateDeliveryNoteAsync:::deliveryNoteId"]=1
+operation_parameters_minimum_occurrences["updateDeliveryNoteAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateDeliveryNoteAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateDeliveryNoteAsync:::DeliveryNoteUpdateDto"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -113,9 +206,716 @@ operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
 operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
 operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
-operation_parameters_minimum_occurrences["getContactsAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getContactsAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getContactsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemPackingSlipAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemPackingSlipAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemPackingSlipAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemPackingSlipAsync:::ItemPackingSlipCreateDto"]=0
+operation_parameters_minimum_occurrences["createItemPackingSlipEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemPackingSlipEntryAsync:::packingSlipId"]=1
+operation_parameters_minimum_occurrences["createItemPackingSlipEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemPackingSlipEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemPackingSlipEntryAsync:::ItemPackingSlipEntryCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemPackingSlipAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemPackingSlipAsync:::packingSlipId"]=1
+operation_parameters_minimum_occurrences["deleteItemPackingSlipAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemPackingSlipAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemPackingSlipEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemPackingSlipEntryAsync:::packingSlipId"]=1
+operation_parameters_minimum_occurrences["deleteItemPackingSlipEntryAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["deleteItemPackingSlipEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemPackingSlipEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemPackingSlipByIdAsync:::packingSlipId"]=1
+operation_parameters_minimum_occurrences["getItemPackingSlipByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipEntriesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemPackingSlipEntriesAsync:::packingSlipId"]=1
+operation_parameters_minimum_occurrences["getItemPackingSlipEntriesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipEntriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipEntriesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemPackingSlipEntriesCountAsync:::packingSlipId"]=1
+operation_parameters_minimum_occurrences["getItemPackingSlipEntriesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipEntriesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipEntryByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemPackingSlipEntryByIdAsync:::packingSlipId"]=1
+operation_parameters_minimum_occurrences["getItemPackingSlipEntryByIdAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["getItemPackingSlipEntryByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipEntryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemPackingSlipsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemPackingSlipsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemPackingSlipAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemPackingSlipAsync:::packingSlipId"]=1
+operation_parameters_minimum_occurrences["updateItemPackingSlipAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemPackingSlipAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemPackingSlipAsync:::ItemPackingSlipUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateItemPackingSlipEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemPackingSlipEntryAsync:::packingSlipId"]=1
+operation_parameters_minimum_occurrences["updateItemPackingSlipEntryAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["updateItemPackingSlipEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemPackingSlipEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemPackingSlipEntryAsync:::ItemPackingSlipEntryUpdateDto"]=0
+operation_parameters_minimum_occurrences["createItemPickListAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemPickListAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemPickListAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemPickListAsync:::ItemPickListCreateDto"]=0
+operation_parameters_minimum_occurrences["createItemPickListEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemPickListEntryAsync:::pickListId"]=1
+operation_parameters_minimum_occurrences["createItemPickListEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemPickListEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemPickListEntryAsync:::ItemPickListEntryCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemPickListAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemPickListAsync:::pickListId"]=1
+operation_parameters_minimum_occurrences["deleteItemPickListAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemPickListAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemPickListEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemPickListEntryAsync:::pickListId"]=1
+operation_parameters_minimum_occurrences["deleteItemPickListEntryAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["deleteItemPickListEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemPickListEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemPickListByIdAsync:::pickListId"]=1
+operation_parameters_minimum_occurrences["getItemPickListByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListEntriesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemPickListEntriesAsync:::pickListId"]=1
+operation_parameters_minimum_occurrences["getItemPickListEntriesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListEntriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListEntriesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemPickListEntriesCountAsync:::pickListId"]=1
+operation_parameters_minimum_occurrences["getItemPickListEntriesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListEntriesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListEntryByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemPickListEntryByIdAsync:::pickListId"]=1
+operation_parameters_minimum_occurrences["getItemPickListEntryByIdAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["getItemPickListEntryByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListEntryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemPickListsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemPickListsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemPickListAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemPickListAsync:::pickListId"]=1
+operation_parameters_minimum_occurrences["updateItemPickListAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemPickListAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemPickListAsync:::ItemPickListUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateItemPickListEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemPickListEntryAsync:::pickListId"]=1
+operation_parameters_minimum_occurrences["updateItemPickListEntryAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["updateItemPickListEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemPickListEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemPickListEntryAsync:::ItemPickListEntryUpdateDto"]=0
+operation_parameters_minimum_occurrences["createItemRestockAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemRestockAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemRestockAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemRestockAsync:::ItemRestockCreateDto"]=0
+operation_parameters_minimum_occurrences["createItemRestockEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemRestockEntryAsync:::restockId"]=1
+operation_parameters_minimum_occurrences["createItemRestockEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemRestockEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemRestockEntryAsync:::ItemRestockEntryCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemRestockAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemRestockAsync:::restockId"]=1
+operation_parameters_minimum_occurrences["deleteItemRestockAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemRestockAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemRestockEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemRestockEntryAsync:::restockId"]=1
+operation_parameters_minimum_occurrences["deleteItemRestockEntryAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["deleteItemRestockEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemRestockEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestockByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemRestockByIdAsync:::restockId"]=1
+operation_parameters_minimum_occurrences["getItemRestockByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestockByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestockEntriesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemRestockEntriesAsync:::restockId"]=1
+operation_parameters_minimum_occurrences["getItemRestockEntriesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestockEntriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestockEntriesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemRestockEntriesCountAsync:::restockId"]=1
+operation_parameters_minimum_occurrences["getItemRestockEntriesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestockEntriesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestockEntryByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemRestockEntryByIdAsync:::restockId"]=1
+operation_parameters_minimum_occurrences["getItemRestockEntryByIdAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["getItemRestockEntryByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestockEntryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestocksAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemRestocksAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestocksAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestocksCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemRestocksCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestocksCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemRestockAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemRestockAsync:::restockId"]=1
+operation_parameters_minimum_occurrences["updateItemRestockAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemRestockAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemRestockAsync:::ItemRestockUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateItemRestockEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemRestockEntryAsync:::restockId"]=1
+operation_parameters_minimum_occurrences["updateItemRestockEntryAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["updateItemRestockEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemRestockEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemRestockEntryAsync:::ItemRestockEntryUpdateDto"]=0
+operation_parameters_minimum_occurrences["createItemRetainSampleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemRetainSampleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemRetainSampleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemRetainSampleAsync:::ItemRetainSampleCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemRetainSampleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemRetainSampleAsync:::retainSampleId"]=1
+operation_parameters_minimum_occurrences["deleteItemRetainSampleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemRetainSampleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRetainSampleByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemRetainSampleByIdAsync:::retainSampleId"]=1
+operation_parameters_minimum_occurrences["getItemRetainSampleByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemRetainSampleByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRetainSamplesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemRetainSamplesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemRetainSamplesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRetainSamplesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemRetainSamplesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemRetainSamplesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemRetainSampleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemRetainSampleAsync:::retainSampleId"]=1
+operation_parameters_minimum_occurrences["updateItemRetainSampleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemRetainSampleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemRetainSampleAsync:::ItemRetainSampleUpdateDto"]=0
+operation_parameters_minimum_occurrences["createPortAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createPortAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createPortAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createPortAsync:::PortCreateDto"]=0
+operation_parameters_minimum_occurrences["deletePortAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deletePortAsync:::portId"]=1
+operation_parameters_minimum_occurrences["deletePortAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deletePortAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPortByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPortByIdAsync:::portId"]=1
+operation_parameters_minimum_occurrences["getPortByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getPortByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPortsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPortsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getPortsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPortsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPortsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getPortsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updatePortAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updatePortAsync:::portId"]=1
+operation_parameters_minimum_occurrences["updatePortAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updatePortAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updatePortAsync:::PortUpdateDto"]=0
+operation_parameters_minimum_occurrences["addProofOfDeliveryLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["addProofOfDeliveryLineAsync:::podId"]=1
+operation_parameters_minimum_occurrences["addProofOfDeliveryLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["addProofOfDeliveryLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["addProofOfDeliveryLineAsync:::ProofOfDeliveryLineCreateDto"]=0
+operation_parameters_minimum_occurrences["attachDeliveryNoteAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["attachDeliveryNoteAsync:::podId"]=1
+operation_parameters_minimum_occurrences["attachDeliveryNoteAsync:::noteId"]=1
+operation_parameters_minimum_occurrences["attachDeliveryNoteAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["attachDeliveryNoteAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createProofOfDeliveryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createProofOfDeliveryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createProofOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createProofOfDeliveryAsync:::ProofOfDeliveryCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteProofOfDeliveryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteProofOfDeliveryAsync:::podId"]=1
+operation_parameters_minimum_occurrences["deleteProofOfDeliveryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteProofOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["detachDeliveryNoteAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["detachDeliveryNoteAsync:::podId"]=1
+operation_parameters_minimum_occurrences["detachDeliveryNoteAsync:::noteId"]=1
+operation_parameters_minimum_occurrences["detachDeliveryNoteAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["detachDeliveryNoteAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["disputeProofOfDeliveryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["disputeProofOfDeliveryAsync:::podId"]=1
+operation_parameters_minimum_occurrences["disputeProofOfDeliveryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["disputeProofOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["disputeProofOfDeliveryAsync:::DisputeProofOfDeliveryRequest"]=0
+operation_parameters_minimum_occurrences["getProofOfDeliveryByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProofOfDeliveryByIdAsync:::podId"]=1
+operation_parameters_minimum_occurrences["getProofOfDeliveryByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProofOfDeliveryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProofOfDeliveryDeliveryNotesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProofOfDeliveryDeliveryNotesAsync:::podId"]=1
+operation_parameters_minimum_occurrences["getProofOfDeliveryDeliveryNotesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProofOfDeliveryDeliveryNotesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProofOfDeliveryDeliveryNotesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProofOfDeliveryDeliveryNotesCountAsync:::podId"]=1
+operation_parameters_minimum_occurrences["getProofOfDeliveryDeliveryNotesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProofOfDeliveryDeliveryNotesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProofOfDeliveryLinesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProofOfDeliveryLinesAsync:::podId"]=1
+operation_parameters_minimum_occurrences["getProofOfDeliveryLinesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProofOfDeliveryLinesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProofOfDeliveryLinesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProofOfDeliveryLinesCountAsync:::podId"]=1
+operation_parameters_minimum_occurrences["getProofOfDeliveryLinesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProofOfDeliveryLinesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProofsOfDeliveryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProofsOfDeliveryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProofsOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProofsOfDeliveryCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProofsOfDeliveryCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProofsOfDeliveryCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["rejectProofOfDeliveryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["rejectProofOfDeliveryAsync:::podId"]=1
+operation_parameters_minimum_occurrences["rejectProofOfDeliveryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["rejectProofOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["rejectProofOfDeliveryAsync:::RejectProofOfDeliveryRequest"]=0
+operation_parameters_minimum_occurrences["removeProofOfDeliveryLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeProofOfDeliveryLineAsync:::podId"]=1
+operation_parameters_minimum_occurrences["removeProofOfDeliveryLineAsync:::lineId"]=1
+operation_parameters_minimum_occurrences["removeProofOfDeliveryLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["removeProofOfDeliveryLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["signProofOfDeliveryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["signProofOfDeliveryAsync:::podId"]=1
+operation_parameters_minimum_occurrences["signProofOfDeliveryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["signProofOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["signProofOfDeliveryAsync:::SignProofOfDeliveryRequest"]=0
+operation_parameters_minimum_occurrences["updateProofOfDeliveryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateProofOfDeliveryAsync:::podId"]=1
+operation_parameters_minimum_occurrences["updateProofOfDeliveryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateProofOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProofOfDeliveryAsync:::ProofOfDeliveryUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateProofOfDeliveryLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateProofOfDeliveryLineAsync:::podId"]=1
+operation_parameters_minimum_occurrences["updateProofOfDeliveryLineAsync:::lineId"]=1
+operation_parameters_minimum_occurrences["updateProofOfDeliveryLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateProofOfDeliveryLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProofOfDeliveryLineAsync:::ProofOfDeliveryLineUpdateDto"]=0
+operation_parameters_minimum_occurrences["addRailWaybillLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["addRailWaybillLineAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["addRailWaybillLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["addRailWaybillLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["addRailWaybillLineAsync:::WaybillLineCreateDto"]=0
+operation_parameters_minimum_occurrences["cancelRailWaybillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["cancelRailWaybillAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["cancelRailWaybillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["cancelRailWaybillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createRailWaybillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createRailWaybillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createRailWaybillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createRailWaybillAsync:::RailWaybillCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteRailWaybillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteRailWaybillAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["deleteRailWaybillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteRailWaybillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRailWaybillByIdAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["getRailWaybillByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillLinesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRailWaybillLinesAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["getRailWaybillLinesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillLinesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillLinesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRailWaybillLinesCountAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["getRailWaybillLinesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillLinesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRailWaybillsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRailWaybillsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["issueRailWaybillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["issueRailWaybillAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["issueRailWaybillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["issueRailWaybillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["markRailWaybillDeliveredAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["markRailWaybillDeliveredAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["markRailWaybillDeliveredAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["markRailWaybillDeliveredAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["markRailWaybillInTransitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["markRailWaybillInTransitAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["markRailWaybillInTransitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["markRailWaybillInTransitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeRailWaybillLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeRailWaybillLineAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["removeRailWaybillLineAsync:::lineId"]=1
+operation_parameters_minimum_occurrences["removeRailWaybillLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["removeRailWaybillLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateRailWaybillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateRailWaybillAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["updateRailWaybillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateRailWaybillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateRailWaybillAsync:::RailWaybillUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateRailWaybillLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateRailWaybillLineAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["updateRailWaybillLineAsync:::lineId"]=1
+operation_parameters_minimum_occurrences["updateRailWaybillLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateRailWaybillLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateRailWaybillLineAsync:::WaybillLineUpdateDto"]=0
+operation_parameters_minimum_occurrences["addRoadWaybillLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["addRoadWaybillLineAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["addRoadWaybillLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["addRoadWaybillLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["addRoadWaybillLineAsync:::WaybillLineCreateDto"]=0
+operation_parameters_minimum_occurrences["cancelRoadWaybillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["cancelRoadWaybillAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["cancelRoadWaybillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["cancelRoadWaybillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createRoadWaybillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createRoadWaybillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createRoadWaybillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createRoadWaybillAsync:::RoadWaybillCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteRoadWaybillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteRoadWaybillAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["deleteRoadWaybillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteRoadWaybillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["disputeRoadWaybillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["disputeRoadWaybillAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["disputeRoadWaybillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["disputeRoadWaybillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRoadWaybillByIdAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["getRoadWaybillByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillLinesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRoadWaybillLinesAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["getRoadWaybillLinesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillLinesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillLinesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRoadWaybillLinesCountAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["getRoadWaybillLinesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillLinesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRoadWaybillsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRoadWaybillsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["issueRoadWaybillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["issueRoadWaybillAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["issueRoadWaybillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["issueRoadWaybillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["markRoadWaybillDeliveredAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["markRoadWaybillDeliveredAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["markRoadWaybillDeliveredAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["markRoadWaybillDeliveredAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["markRoadWaybillInTransitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["markRoadWaybillInTransitAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["markRoadWaybillInTransitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["markRoadWaybillInTransitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeRoadWaybillLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeRoadWaybillLineAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["removeRoadWaybillLineAsync:::lineId"]=1
+operation_parameters_minimum_occurrences["removeRoadWaybillLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["removeRoadWaybillLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateRoadWaybillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateRoadWaybillAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["updateRoadWaybillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateRoadWaybillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateRoadWaybillAsync:::RoadWaybillUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateRoadWaybillLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateRoadWaybillLineAsync:::waybillId"]=1
+operation_parameters_minimum_occurrences["updateRoadWaybillLineAsync:::lineId"]=1
+operation_parameters_minimum_occurrences["updateRoadWaybillLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateRoadWaybillLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateRoadWaybillLineAsync:::WaybillLineUpdateDto"]=0
+operation_parameters_minimum_occurrences["addSeawayBillLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["addSeawayBillLineAsync:::billId"]=1
+operation_parameters_minimum_occurrences["addSeawayBillLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["addSeawayBillLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["addSeawayBillLineAsync:::WaybillLineCreateDto"]=0
+operation_parameters_minimum_occurrences["cancelSeawayBillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["cancelSeawayBillAsync:::billId"]=1
+operation_parameters_minimum_occurrences["cancelSeawayBillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["cancelSeawayBillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSeawayBillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSeawayBillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createSeawayBillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSeawayBillAsync:::SeawayBillCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSeawayBillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSeawayBillAsync:::billId"]=1
+operation_parameters_minimum_occurrences["deleteSeawayBillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSeawayBillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSeawayBillByIdAsync:::billId"]=1
+operation_parameters_minimum_occurrences["getSeawayBillByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillLinesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSeawayBillLinesAsync:::billId"]=1
+operation_parameters_minimum_occurrences["getSeawayBillLinesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillLinesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillLinesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSeawayBillLinesCountAsync:::billId"]=1
+operation_parameters_minimum_occurrences["getSeawayBillLinesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillLinesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSeawayBillsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSeawayBillsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["issueSeawayBillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["issueSeawayBillAsync:::billId"]=1
+operation_parameters_minimum_occurrences["issueSeawayBillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["issueSeawayBillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["markSeawayBillArrivedAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["markSeawayBillArrivedAsync:::billId"]=1
+operation_parameters_minimum_occurrences["markSeawayBillArrivedAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["markSeawayBillArrivedAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["markSeawayBillInTransitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["markSeawayBillInTransitAsync:::billId"]=1
+operation_parameters_minimum_occurrences["markSeawayBillInTransitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["markSeawayBillInTransitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["releaseSeawayBillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["releaseSeawayBillAsync:::billId"]=1
+operation_parameters_minimum_occurrences["releaseSeawayBillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["releaseSeawayBillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["removeSeawayBillLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["removeSeawayBillLineAsync:::billId"]=1
+operation_parameters_minimum_occurrences["removeSeawayBillLineAsync:::lineId"]=1
+operation_parameters_minimum_occurrences["removeSeawayBillLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["removeSeawayBillLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSeawayBillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSeawayBillAsync:::billId"]=1
+operation_parameters_minimum_occurrences["updateSeawayBillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSeawayBillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSeawayBillAsync:::SeawayBillUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateSeawayBillLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSeawayBillLineAsync:::billId"]=1
+operation_parameters_minimum_occurrences["updateSeawayBillLineAsync:::lineId"]=1
+operation_parameters_minimum_occurrences["updateSeawayBillLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSeawayBillLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSeawayBillLineAsync:::WaybillLineUpdateDto"]=0
+operation_parameters_minimum_occurrences["createSupplierProfileAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSupplierProfileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createSupplierProfileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSupplierProfileAsync:::SupplierProfileCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSupplierProfileAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSupplierProfileAsync:::supplierProfileId"]=1
+operation_parameters_minimum_occurrences["deleteSupplierProfileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSupplierProfileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupplierProfileByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupplierProfileByIdAsync:::supplierProfileId"]=1
+operation_parameters_minimum_occurrences["getSupplierProfileByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupplierProfileByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupplierProfilesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupplierProfilesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupplierProfilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupplierProfilesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSupplierProfilesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSupplierProfilesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSupplierProfileAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSupplierProfileAsync:::supplierProfileId"]=1
+operation_parameters_minimum_occurrences["updateSupplierProfileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSupplierProfileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSupplierProfileAsync:::SupplierProfileUpdateDto"]=0
+operation_parameters_minimum_occurrences["activateTruckDriverAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["activateTruckDriverAsync:::driverId"]=1
+operation_parameters_minimum_occurrences["activateTruckDriverAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["activateTruckDriverAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createTruckDriverAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createTruckDriverAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createTruckDriverAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createTruckDriverAsync:::TruckDriverCreateDto"]=0
+operation_parameters_minimum_occurrences["deactivateTruckDriverAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deactivateTruckDriverAsync:::driverId"]=1
+operation_parameters_minimum_occurrences["deactivateTruckDriverAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deactivateTruckDriverAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteTruckDriverAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteTruckDriverAsync:::driverId"]=1
+operation_parameters_minimum_occurrences["deleteTruckDriverAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteTruckDriverAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTruckDriverByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTruckDriverByIdAsync:::driverId"]=1
+operation_parameters_minimum_occurrences["getTruckDriverByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTruckDriverByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTruckDriversAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTruckDriversAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTruckDriversAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTruckDriversCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTruckDriversCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTruckDriversCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateTruckDriverAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateTruckDriverAsync:::driverId"]=1
+operation_parameters_minimum_occurrences["updateTruckDriverAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateTruckDriverAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateTruckDriverAsync:::TruckDriverUpdateDto"]=0
+operation_parameters_minimum_occurrences["arriveTripAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["arriveTripAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["arriveTripAsync:::tripId"]=1
+operation_parameters_minimum_occurrences["arriveTripAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["arriveTripAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["cancelTripAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["cancelTripAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["cancelTripAsync:::tripId"]=1
+operation_parameters_minimum_occurrences["cancelTripAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["cancelTripAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createTruckAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createTruckAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createTruckAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createTruckAsync:::TruckCreateDto"]=0
+operation_parameters_minimum_occurrences["createTruckTripAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createTruckTripAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["createTruckTripAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createTruckTripAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createTruckTripAsync:::TruckTripCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteTruckAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteTruckAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["deleteTruckAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteTruckAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteTruckTripAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteTruckTripAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["deleteTruckTripAsync:::tripId"]=1
+operation_parameters_minimum_occurrences["deleteTruckTripAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteTruckTripAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deliverTripAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deliverTripAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["deliverTripAsync:::tripId"]=1
+operation_parameters_minimum_occurrences["deliverTripAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deliverTripAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["departTripAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["departTripAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["departTripAsync:::tripId"]=1
+operation_parameters_minimum_occurrences["departTripAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["departTripAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["dispatchTripAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["dispatchTripAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["dispatchTripAsync:::tripId"]=1
+operation_parameters_minimum_occurrences["dispatchTripAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["dispatchTripAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTruckByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTruckByIdAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["getTruckByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTruckByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTruckTripsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTruckTripsAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["getTruckTripsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTruckTripsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTruckTripsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTruckTripsCountAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["getTruckTripsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTruckTripsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTrucksAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTrucksAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTrucksAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTrucksCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTrucksCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTrucksCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateTruckAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateTruckAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["updateTruckAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateTruckAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateTruckAsync:::TruckUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateTruckTripAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateTruckTripAsync:::truckId"]=1
+operation_parameters_minimum_occurrences["updateTruckTripAsync:::tripId"]=1
+operation_parameters_minimum_occurrences["updateTruckTripAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateTruckTripAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateTruckTripAsync:::TruckTripUpdateDto"]=0
+operation_parameters_minimum_occurrences["createVesselAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createVesselAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createVesselAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createVesselAsync:::VesselCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteVesselAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteVesselAsync:::vesselId"]=1
+operation_parameters_minimum_occurrences["deleteVesselAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteVesselAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVesselByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getVesselByIdAsync:::vesselId"]=1
+operation_parameters_minimum_occurrences["getVesselByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getVesselByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVesselsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getVesselsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getVesselsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVesselsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getVesselsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getVesselsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateVesselAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateVesselAsync:::vesselId"]=1
+operation_parameters_minimum_occurrences["updateVesselAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateVesselAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateVesselAsync:::VesselUpdateDto"]=0
+operation_parameters_minimum_occurrences["cancelVoyageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["cancelVoyageAsync:::voyageId"]=1
+operation_parameters_minimum_occurrences["cancelVoyageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["cancelVoyageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["completeVoyageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["completeVoyageAsync:::voyageId"]=1
+operation_parameters_minimum_occurrences["completeVoyageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["completeVoyageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createVoyageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createVoyageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createVoyageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createVoyageAsync:::VoyageCreateDto"]=0
+operation_parameters_minimum_occurrences["createVoyagePortCallAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createVoyagePortCallAsync:::voyageId"]=1
+operation_parameters_minimum_occurrences["createVoyagePortCallAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createVoyagePortCallAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createVoyagePortCallAsync:::VoyagePortCallCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteVoyageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteVoyageAsync:::voyageId"]=1
+operation_parameters_minimum_occurrences["deleteVoyageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteVoyageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteVoyagePortCallAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteVoyagePortCallAsync:::voyageId"]=1
+operation_parameters_minimum_occurrences["deleteVoyagePortCallAsync:::portCallId"]=1
+operation_parameters_minimum_occurrences["deleteVoyagePortCallAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteVoyagePortCallAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVoyageByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getVoyageByIdAsync:::voyageId"]=1
+operation_parameters_minimum_occurrences["getVoyageByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getVoyageByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVoyagePortCallsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getVoyagePortCallsAsync:::voyageId"]=1
+operation_parameters_minimum_occurrences["getVoyagePortCallsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getVoyagePortCallsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVoyagePortCallsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getVoyagePortCallsCountAsync:::voyageId"]=1
+operation_parameters_minimum_occurrences["getVoyagePortCallsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getVoyagePortCallsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVoyagesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getVoyagesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getVoyagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVoyagesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getVoyagesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getVoyagesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["startVoyageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["startVoyageAsync:::voyageId"]=1
+operation_parameters_minimum_occurrences["startVoyageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["startVoyageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateVoyageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateVoyageAsync:::voyageId"]=1
+operation_parameters_minimum_occurrences["updateVoyageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateVoyageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateVoyageAsync:::VoyageUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateVoyagePortCallAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateVoyagePortCallAsync:::voyageId"]=1
+operation_parameters_minimum_occurrences["updateVoyagePortCallAsync:::portCallId"]=1
+operation_parameters_minimum_occurrences["updateVoyagePortCallAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateVoyagePortCallAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateVoyagePortCallAsync:::VoyagePortCallUpdateDto"]=0
+operation_parameters_minimum_occurrences["createWarehouseAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createWarehouseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createWarehouseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createWarehouseAsync:::WarehouseCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteWarehouseAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteWarehouseAsync:::warehouseId"]=1
+operation_parameters_minimum_occurrences["deleteWarehouseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteWarehouseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWarehouseByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWarehouseByIdAsync:::warehouseId"]=1
+operation_parameters_minimum_occurrences["getWarehouseByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWarehouseByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWarehousesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWarehousesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWarehousesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWarehousesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWarehousesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWarehousesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateWarehouseAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateWarehouseAsync:::warehouseId"]=1
+operation_parameters_minimum_occurrences["updateWarehouseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateWarehouseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateWarehouseAsync:::WarehouseUpdateDto"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -124,6 +924,99 @@ operation_parameters_minimum_occurrences["getContactsAsync:::x-api-version"]=0
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["addAirwayBillLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["addAirwayBillLineAsync:::billId"]=0
+operation_parameters_maximum_occurrences["addAirwayBillLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["addAirwayBillLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["addAirwayBillLineAsync:::WaybillLineCreateDto"]=0
+operation_parameters_maximum_occurrences["cancelAirwayBillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["cancelAirwayBillAsync:::billId"]=0
+operation_parameters_maximum_occurrences["cancelAirwayBillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["cancelAirwayBillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createAirwayBillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createAirwayBillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createAirwayBillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createAirwayBillAsync:::AirwayBillCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteAirwayBillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteAirwayBillAsync:::billId"]=0
+operation_parameters_maximum_occurrences["deleteAirwayBillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteAirwayBillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAirwayBillByIdAsync:::billId"]=0
+operation_parameters_maximum_occurrences["getAirwayBillByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillLinesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAirwayBillLinesAsync:::billId"]=0
+operation_parameters_maximum_occurrences["getAirwayBillLinesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillLinesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillLinesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAirwayBillLinesCountAsync:::billId"]=0
+operation_parameters_maximum_occurrences["getAirwayBillLinesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillLinesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAirwayBillsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAirwayBillsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["issueAirwayBillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["issueAirwayBillAsync:::billId"]=0
+operation_parameters_maximum_occurrences["issueAirwayBillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["issueAirwayBillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["markAirwayBillArrivedAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["markAirwayBillArrivedAsync:::billId"]=0
+operation_parameters_maximum_occurrences["markAirwayBillArrivedAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["markAirwayBillArrivedAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["markAirwayBillDeliveredAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["markAirwayBillDeliveredAsync:::billId"]=0
+operation_parameters_maximum_occurrences["markAirwayBillDeliveredAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["markAirwayBillDeliveredAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["markAirwayBillInTransitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["markAirwayBillInTransitAsync:::billId"]=0
+operation_parameters_maximum_occurrences["markAirwayBillInTransitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["markAirwayBillInTransitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeAirwayBillLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeAirwayBillLineAsync:::billId"]=0
+operation_parameters_maximum_occurrences["removeAirwayBillLineAsync:::lineId"]=0
+operation_parameters_maximum_occurrences["removeAirwayBillLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["removeAirwayBillLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateAirwayBillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateAirwayBillAsync:::billId"]=0
+operation_parameters_maximum_occurrences["updateAirwayBillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateAirwayBillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateAirwayBillAsync:::AirwayBillUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateAirwayBillLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateAirwayBillLineAsync:::billId"]=0
+operation_parameters_maximum_occurrences["updateAirwayBillLineAsync:::lineId"]=0
+operation_parameters_maximum_occurrences["updateAirwayBillLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateAirwayBillLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateAirwayBillLineAsync:::WaybillLineUpdateDto"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_maximum_occurrences["createDeliveryNoteAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createDeliveryNoteAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createDeliveryNoteAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createDeliveryNoteAsync:::DeliveryNoteCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteDeliveryNoteAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteDeliveryNoteAsync:::deliveryNoteId"]=0
+operation_parameters_maximum_occurrences["deleteDeliveryNoteAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteDeliveryNoteAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getDeliveryNoteByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDeliveryNoteByIdAsync:::deliveryNoteId"]=0
+operation_parameters_maximum_occurrences["getDeliveryNoteByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getDeliveryNoteByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getDeliveryNotesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDeliveryNotesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getDeliveryNotesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getDeliveryNotesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDeliveryNotesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getDeliveryNotesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateDeliveryNoteAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateDeliveryNoteAsync:::deliveryNoteId"]=0
+operation_parameters_maximum_occurrences["updateDeliveryNoteAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateDeliveryNoteAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateDeliveryNoteAsync:::DeliveryNoteUpdateDto"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -141,14 +1034,814 @@ operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
 operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
 operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
-operation_parameters_maximum_occurrences["getContactsAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getContactsAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getContactsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemPackingSlipAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemPackingSlipAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemPackingSlipAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemPackingSlipAsync:::ItemPackingSlipCreateDto"]=0
+operation_parameters_maximum_occurrences["createItemPackingSlipEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemPackingSlipEntryAsync:::packingSlipId"]=0
+operation_parameters_maximum_occurrences["createItemPackingSlipEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemPackingSlipEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemPackingSlipEntryAsync:::ItemPackingSlipEntryCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemPackingSlipAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemPackingSlipAsync:::packingSlipId"]=0
+operation_parameters_maximum_occurrences["deleteItemPackingSlipAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemPackingSlipAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemPackingSlipEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemPackingSlipEntryAsync:::packingSlipId"]=0
+operation_parameters_maximum_occurrences["deleteItemPackingSlipEntryAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["deleteItemPackingSlipEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemPackingSlipEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipByIdAsync:::packingSlipId"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntriesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntriesAsync:::packingSlipId"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntriesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntriesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntriesCountAsync:::packingSlipId"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntriesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntriesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntryByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntryByIdAsync:::packingSlipId"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntryByIdAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntryByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemPackingSlipAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemPackingSlipAsync:::packingSlipId"]=0
+operation_parameters_maximum_occurrences["updateItemPackingSlipAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemPackingSlipAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemPackingSlipAsync:::ItemPackingSlipUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateItemPackingSlipEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemPackingSlipEntryAsync:::packingSlipId"]=0
+operation_parameters_maximum_occurrences["updateItemPackingSlipEntryAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["updateItemPackingSlipEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemPackingSlipEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemPackingSlipEntryAsync:::ItemPackingSlipEntryUpdateDto"]=0
+operation_parameters_maximum_occurrences["createItemPickListAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemPickListAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemPickListAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemPickListAsync:::ItemPickListCreateDto"]=0
+operation_parameters_maximum_occurrences["createItemPickListEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemPickListEntryAsync:::pickListId"]=0
+operation_parameters_maximum_occurrences["createItemPickListEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemPickListEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemPickListEntryAsync:::ItemPickListEntryCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemPickListAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemPickListAsync:::pickListId"]=0
+operation_parameters_maximum_occurrences["deleteItemPickListAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemPickListAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemPickListEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemPickListEntryAsync:::pickListId"]=0
+operation_parameters_maximum_occurrences["deleteItemPickListEntryAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["deleteItemPickListEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemPickListEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemPickListByIdAsync:::pickListId"]=0
+operation_parameters_maximum_occurrences["getItemPickListByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntriesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntriesAsync:::pickListId"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntriesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntriesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntriesCountAsync:::pickListId"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntriesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntriesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntryByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntryByIdAsync:::pickListId"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntryByIdAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntryByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemPickListsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemPickListsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemPickListAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemPickListAsync:::pickListId"]=0
+operation_parameters_maximum_occurrences["updateItemPickListAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemPickListAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemPickListAsync:::ItemPickListUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateItemPickListEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemPickListEntryAsync:::pickListId"]=0
+operation_parameters_maximum_occurrences["updateItemPickListEntryAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["updateItemPickListEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemPickListEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemPickListEntryAsync:::ItemPickListEntryUpdateDto"]=0
+operation_parameters_maximum_occurrences["createItemRestockAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemRestockAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemRestockAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemRestockAsync:::ItemRestockCreateDto"]=0
+operation_parameters_maximum_occurrences["createItemRestockEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemRestockEntryAsync:::restockId"]=0
+operation_parameters_maximum_occurrences["createItemRestockEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemRestockEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemRestockEntryAsync:::ItemRestockEntryCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemRestockAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemRestockAsync:::restockId"]=0
+operation_parameters_maximum_occurrences["deleteItemRestockAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemRestockAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemRestockEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemRestockEntryAsync:::restockId"]=0
+operation_parameters_maximum_occurrences["deleteItemRestockEntryAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["deleteItemRestockEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemRestockEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestockByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemRestockByIdAsync:::restockId"]=0
+operation_parameters_maximum_occurrences["getItemRestockByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestockByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntriesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntriesAsync:::restockId"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntriesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntriesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntriesCountAsync:::restockId"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntriesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntriesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntryByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntryByIdAsync:::restockId"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntryByIdAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntryByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestocksAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemRestocksAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestocksAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestocksCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemRestocksCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestocksCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemRestockAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemRestockAsync:::restockId"]=0
+operation_parameters_maximum_occurrences["updateItemRestockAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemRestockAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemRestockAsync:::ItemRestockUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateItemRestockEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemRestockEntryAsync:::restockId"]=0
+operation_parameters_maximum_occurrences["updateItemRestockEntryAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["updateItemRestockEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemRestockEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemRestockEntryAsync:::ItemRestockEntryUpdateDto"]=0
+operation_parameters_maximum_occurrences["createItemRetainSampleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemRetainSampleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemRetainSampleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemRetainSampleAsync:::ItemRetainSampleCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemRetainSampleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemRetainSampleAsync:::retainSampleId"]=0
+operation_parameters_maximum_occurrences["deleteItemRetainSampleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemRetainSampleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRetainSampleByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemRetainSampleByIdAsync:::retainSampleId"]=0
+operation_parameters_maximum_occurrences["getItemRetainSampleByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemRetainSampleByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRetainSamplesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemRetainSamplesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemRetainSamplesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRetainSamplesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemRetainSamplesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemRetainSamplesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemRetainSampleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemRetainSampleAsync:::retainSampleId"]=0
+operation_parameters_maximum_occurrences["updateItemRetainSampleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemRetainSampleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemRetainSampleAsync:::ItemRetainSampleUpdateDto"]=0
+operation_parameters_maximum_occurrences["createPortAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createPortAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createPortAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createPortAsync:::PortCreateDto"]=0
+operation_parameters_maximum_occurrences["deletePortAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deletePortAsync:::portId"]=0
+operation_parameters_maximum_occurrences["deletePortAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deletePortAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPortByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPortByIdAsync:::portId"]=0
+operation_parameters_maximum_occurrences["getPortByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getPortByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPortsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPortsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getPortsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPortsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPortsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getPortsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updatePortAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updatePortAsync:::portId"]=0
+operation_parameters_maximum_occurrences["updatePortAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updatePortAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updatePortAsync:::PortUpdateDto"]=0
+operation_parameters_maximum_occurrences["addProofOfDeliveryLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["addProofOfDeliveryLineAsync:::podId"]=0
+operation_parameters_maximum_occurrences["addProofOfDeliveryLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["addProofOfDeliveryLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["addProofOfDeliveryLineAsync:::ProofOfDeliveryLineCreateDto"]=0
+operation_parameters_maximum_occurrences["attachDeliveryNoteAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["attachDeliveryNoteAsync:::podId"]=0
+operation_parameters_maximum_occurrences["attachDeliveryNoteAsync:::noteId"]=0
+operation_parameters_maximum_occurrences["attachDeliveryNoteAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["attachDeliveryNoteAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createProofOfDeliveryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createProofOfDeliveryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createProofOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createProofOfDeliveryAsync:::ProofOfDeliveryCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteProofOfDeliveryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteProofOfDeliveryAsync:::podId"]=0
+operation_parameters_maximum_occurrences["deleteProofOfDeliveryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteProofOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["detachDeliveryNoteAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["detachDeliveryNoteAsync:::podId"]=0
+operation_parameters_maximum_occurrences["detachDeliveryNoteAsync:::noteId"]=0
+operation_parameters_maximum_occurrences["detachDeliveryNoteAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["detachDeliveryNoteAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["disputeProofOfDeliveryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["disputeProofOfDeliveryAsync:::podId"]=0
+operation_parameters_maximum_occurrences["disputeProofOfDeliveryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["disputeProofOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["disputeProofOfDeliveryAsync:::DisputeProofOfDeliveryRequest"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryByIdAsync:::podId"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryDeliveryNotesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryDeliveryNotesAsync:::podId"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryDeliveryNotesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryDeliveryNotesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryDeliveryNotesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryDeliveryNotesCountAsync:::podId"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryDeliveryNotesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryDeliveryNotesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryLinesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryLinesAsync:::podId"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryLinesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryLinesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryLinesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryLinesCountAsync:::podId"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryLinesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryLinesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProofsOfDeliveryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProofsOfDeliveryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProofsOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProofsOfDeliveryCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProofsOfDeliveryCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProofsOfDeliveryCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["rejectProofOfDeliveryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["rejectProofOfDeliveryAsync:::podId"]=0
+operation_parameters_maximum_occurrences["rejectProofOfDeliveryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["rejectProofOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["rejectProofOfDeliveryAsync:::RejectProofOfDeliveryRequest"]=0
+operation_parameters_maximum_occurrences["removeProofOfDeliveryLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeProofOfDeliveryLineAsync:::podId"]=0
+operation_parameters_maximum_occurrences["removeProofOfDeliveryLineAsync:::lineId"]=0
+operation_parameters_maximum_occurrences["removeProofOfDeliveryLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["removeProofOfDeliveryLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["signProofOfDeliveryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["signProofOfDeliveryAsync:::podId"]=0
+operation_parameters_maximum_occurrences["signProofOfDeliveryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["signProofOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["signProofOfDeliveryAsync:::SignProofOfDeliveryRequest"]=0
+operation_parameters_maximum_occurrences["updateProofOfDeliveryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateProofOfDeliveryAsync:::podId"]=0
+operation_parameters_maximum_occurrences["updateProofOfDeliveryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateProofOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProofOfDeliveryAsync:::ProofOfDeliveryUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateProofOfDeliveryLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateProofOfDeliveryLineAsync:::podId"]=0
+operation_parameters_maximum_occurrences["updateProofOfDeliveryLineAsync:::lineId"]=0
+operation_parameters_maximum_occurrences["updateProofOfDeliveryLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateProofOfDeliveryLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProofOfDeliveryLineAsync:::ProofOfDeliveryLineUpdateDto"]=0
+operation_parameters_maximum_occurrences["addRailWaybillLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["addRailWaybillLineAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["addRailWaybillLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["addRailWaybillLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["addRailWaybillLineAsync:::WaybillLineCreateDto"]=0
+operation_parameters_maximum_occurrences["cancelRailWaybillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["cancelRailWaybillAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["cancelRailWaybillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["cancelRailWaybillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createRailWaybillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createRailWaybillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createRailWaybillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createRailWaybillAsync:::RailWaybillCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteRailWaybillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteRailWaybillAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["deleteRailWaybillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteRailWaybillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRailWaybillByIdAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["getRailWaybillByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillLinesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRailWaybillLinesAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["getRailWaybillLinesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillLinesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillLinesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRailWaybillLinesCountAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["getRailWaybillLinesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillLinesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRailWaybillsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRailWaybillsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["issueRailWaybillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["issueRailWaybillAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["issueRailWaybillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["issueRailWaybillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["markRailWaybillDeliveredAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["markRailWaybillDeliveredAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["markRailWaybillDeliveredAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["markRailWaybillDeliveredAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["markRailWaybillInTransitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["markRailWaybillInTransitAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["markRailWaybillInTransitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["markRailWaybillInTransitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeRailWaybillLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeRailWaybillLineAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["removeRailWaybillLineAsync:::lineId"]=0
+operation_parameters_maximum_occurrences["removeRailWaybillLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["removeRailWaybillLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateRailWaybillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateRailWaybillAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["updateRailWaybillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateRailWaybillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateRailWaybillAsync:::RailWaybillUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateRailWaybillLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateRailWaybillLineAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["updateRailWaybillLineAsync:::lineId"]=0
+operation_parameters_maximum_occurrences["updateRailWaybillLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateRailWaybillLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateRailWaybillLineAsync:::WaybillLineUpdateDto"]=0
+operation_parameters_maximum_occurrences["addRoadWaybillLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["addRoadWaybillLineAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["addRoadWaybillLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["addRoadWaybillLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["addRoadWaybillLineAsync:::WaybillLineCreateDto"]=0
+operation_parameters_maximum_occurrences["cancelRoadWaybillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["cancelRoadWaybillAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["cancelRoadWaybillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["cancelRoadWaybillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createRoadWaybillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createRoadWaybillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createRoadWaybillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createRoadWaybillAsync:::RoadWaybillCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteRoadWaybillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteRoadWaybillAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["deleteRoadWaybillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteRoadWaybillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["disputeRoadWaybillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["disputeRoadWaybillAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["disputeRoadWaybillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["disputeRoadWaybillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillByIdAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillLinesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillLinesAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillLinesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillLinesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillLinesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillLinesCountAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillLinesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillLinesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["issueRoadWaybillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["issueRoadWaybillAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["issueRoadWaybillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["issueRoadWaybillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["markRoadWaybillDeliveredAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["markRoadWaybillDeliveredAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["markRoadWaybillDeliveredAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["markRoadWaybillDeliveredAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["markRoadWaybillInTransitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["markRoadWaybillInTransitAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["markRoadWaybillInTransitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["markRoadWaybillInTransitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeRoadWaybillLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeRoadWaybillLineAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["removeRoadWaybillLineAsync:::lineId"]=0
+operation_parameters_maximum_occurrences["removeRoadWaybillLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["removeRoadWaybillLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateRoadWaybillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateRoadWaybillAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["updateRoadWaybillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateRoadWaybillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateRoadWaybillAsync:::RoadWaybillUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateRoadWaybillLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateRoadWaybillLineAsync:::waybillId"]=0
+operation_parameters_maximum_occurrences["updateRoadWaybillLineAsync:::lineId"]=0
+operation_parameters_maximum_occurrences["updateRoadWaybillLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateRoadWaybillLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateRoadWaybillLineAsync:::WaybillLineUpdateDto"]=0
+operation_parameters_maximum_occurrences["addSeawayBillLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["addSeawayBillLineAsync:::billId"]=0
+operation_parameters_maximum_occurrences["addSeawayBillLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["addSeawayBillLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["addSeawayBillLineAsync:::WaybillLineCreateDto"]=0
+operation_parameters_maximum_occurrences["cancelSeawayBillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["cancelSeawayBillAsync:::billId"]=0
+operation_parameters_maximum_occurrences["cancelSeawayBillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["cancelSeawayBillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSeawayBillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSeawayBillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createSeawayBillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSeawayBillAsync:::SeawayBillCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSeawayBillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSeawayBillAsync:::billId"]=0
+operation_parameters_maximum_occurrences["deleteSeawayBillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSeawayBillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSeawayBillByIdAsync:::billId"]=0
+operation_parameters_maximum_occurrences["getSeawayBillByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillLinesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSeawayBillLinesAsync:::billId"]=0
+operation_parameters_maximum_occurrences["getSeawayBillLinesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillLinesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillLinesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSeawayBillLinesCountAsync:::billId"]=0
+operation_parameters_maximum_occurrences["getSeawayBillLinesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillLinesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSeawayBillsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSeawayBillsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["issueSeawayBillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["issueSeawayBillAsync:::billId"]=0
+operation_parameters_maximum_occurrences["issueSeawayBillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["issueSeawayBillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["markSeawayBillArrivedAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["markSeawayBillArrivedAsync:::billId"]=0
+operation_parameters_maximum_occurrences["markSeawayBillArrivedAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["markSeawayBillArrivedAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["markSeawayBillInTransitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["markSeawayBillInTransitAsync:::billId"]=0
+operation_parameters_maximum_occurrences["markSeawayBillInTransitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["markSeawayBillInTransitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["releaseSeawayBillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["releaseSeawayBillAsync:::billId"]=0
+operation_parameters_maximum_occurrences["releaseSeawayBillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["releaseSeawayBillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["removeSeawayBillLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["removeSeawayBillLineAsync:::billId"]=0
+operation_parameters_maximum_occurrences["removeSeawayBillLineAsync:::lineId"]=0
+operation_parameters_maximum_occurrences["removeSeawayBillLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["removeSeawayBillLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSeawayBillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSeawayBillAsync:::billId"]=0
+operation_parameters_maximum_occurrences["updateSeawayBillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSeawayBillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSeawayBillAsync:::SeawayBillUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateSeawayBillLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSeawayBillLineAsync:::billId"]=0
+operation_parameters_maximum_occurrences["updateSeawayBillLineAsync:::lineId"]=0
+operation_parameters_maximum_occurrences["updateSeawayBillLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSeawayBillLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSeawayBillLineAsync:::WaybillLineUpdateDto"]=0
+operation_parameters_maximum_occurrences["createSupplierProfileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSupplierProfileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createSupplierProfileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSupplierProfileAsync:::SupplierProfileCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSupplierProfileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSupplierProfileAsync:::supplierProfileId"]=0
+operation_parameters_maximum_occurrences["deleteSupplierProfileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSupplierProfileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupplierProfileByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupplierProfileByIdAsync:::supplierProfileId"]=0
+operation_parameters_maximum_occurrences["getSupplierProfileByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupplierProfileByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupplierProfilesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupplierProfilesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupplierProfilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupplierProfilesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSupplierProfilesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSupplierProfilesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSupplierProfileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSupplierProfileAsync:::supplierProfileId"]=0
+operation_parameters_maximum_occurrences["updateSupplierProfileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSupplierProfileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSupplierProfileAsync:::SupplierProfileUpdateDto"]=0
+operation_parameters_maximum_occurrences["activateTruckDriverAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["activateTruckDriverAsync:::driverId"]=0
+operation_parameters_maximum_occurrences["activateTruckDriverAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["activateTruckDriverAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createTruckDriverAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createTruckDriverAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createTruckDriverAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createTruckDriverAsync:::TruckDriverCreateDto"]=0
+operation_parameters_maximum_occurrences["deactivateTruckDriverAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deactivateTruckDriverAsync:::driverId"]=0
+operation_parameters_maximum_occurrences["deactivateTruckDriverAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deactivateTruckDriverAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteTruckDriverAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteTruckDriverAsync:::driverId"]=0
+operation_parameters_maximum_occurrences["deleteTruckDriverAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteTruckDriverAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTruckDriverByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTruckDriverByIdAsync:::driverId"]=0
+operation_parameters_maximum_occurrences["getTruckDriverByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTruckDriverByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTruckDriversAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTruckDriversAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTruckDriversAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTruckDriversCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTruckDriversCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTruckDriversCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateTruckDriverAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateTruckDriverAsync:::driverId"]=0
+operation_parameters_maximum_occurrences["updateTruckDriverAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateTruckDriverAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateTruckDriverAsync:::TruckDriverUpdateDto"]=0
+operation_parameters_maximum_occurrences["arriveTripAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["arriveTripAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["arriveTripAsync:::tripId"]=0
+operation_parameters_maximum_occurrences["arriveTripAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["arriveTripAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["cancelTripAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["cancelTripAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["cancelTripAsync:::tripId"]=0
+operation_parameters_maximum_occurrences["cancelTripAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["cancelTripAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createTruckAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createTruckAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createTruckAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createTruckAsync:::TruckCreateDto"]=0
+operation_parameters_maximum_occurrences["createTruckTripAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createTruckTripAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["createTruckTripAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createTruckTripAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createTruckTripAsync:::TruckTripCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteTruckAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteTruckAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["deleteTruckAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteTruckAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteTruckTripAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteTruckTripAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["deleteTruckTripAsync:::tripId"]=0
+operation_parameters_maximum_occurrences["deleteTruckTripAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteTruckTripAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deliverTripAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deliverTripAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["deliverTripAsync:::tripId"]=0
+operation_parameters_maximum_occurrences["deliverTripAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deliverTripAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["departTripAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["departTripAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["departTripAsync:::tripId"]=0
+operation_parameters_maximum_occurrences["departTripAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["departTripAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["dispatchTripAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["dispatchTripAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["dispatchTripAsync:::tripId"]=0
+operation_parameters_maximum_occurrences["dispatchTripAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["dispatchTripAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTruckByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTruckByIdAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["getTruckByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTruckByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTruckTripsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTruckTripsAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["getTruckTripsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTruckTripsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTruckTripsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTruckTripsCountAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["getTruckTripsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTruckTripsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTrucksAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTrucksAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTrucksAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTrucksCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTrucksCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTrucksCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateTruckAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateTruckAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["updateTruckAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateTruckAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateTruckAsync:::TruckUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateTruckTripAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateTruckTripAsync:::truckId"]=0
+operation_parameters_maximum_occurrences["updateTruckTripAsync:::tripId"]=0
+operation_parameters_maximum_occurrences["updateTruckTripAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateTruckTripAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateTruckTripAsync:::TruckTripUpdateDto"]=0
+operation_parameters_maximum_occurrences["createVesselAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createVesselAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createVesselAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createVesselAsync:::VesselCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteVesselAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteVesselAsync:::vesselId"]=0
+operation_parameters_maximum_occurrences["deleteVesselAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteVesselAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVesselByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getVesselByIdAsync:::vesselId"]=0
+operation_parameters_maximum_occurrences["getVesselByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getVesselByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVesselsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getVesselsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getVesselsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVesselsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getVesselsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getVesselsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateVesselAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateVesselAsync:::vesselId"]=0
+operation_parameters_maximum_occurrences["updateVesselAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateVesselAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateVesselAsync:::VesselUpdateDto"]=0
+operation_parameters_maximum_occurrences["cancelVoyageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["cancelVoyageAsync:::voyageId"]=0
+operation_parameters_maximum_occurrences["cancelVoyageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["cancelVoyageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["completeVoyageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["completeVoyageAsync:::voyageId"]=0
+operation_parameters_maximum_occurrences["completeVoyageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["completeVoyageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createVoyageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createVoyageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createVoyageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createVoyageAsync:::VoyageCreateDto"]=0
+operation_parameters_maximum_occurrences["createVoyagePortCallAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createVoyagePortCallAsync:::voyageId"]=0
+operation_parameters_maximum_occurrences["createVoyagePortCallAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createVoyagePortCallAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createVoyagePortCallAsync:::VoyagePortCallCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteVoyageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteVoyageAsync:::voyageId"]=0
+operation_parameters_maximum_occurrences["deleteVoyageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteVoyageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteVoyagePortCallAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteVoyagePortCallAsync:::voyageId"]=0
+operation_parameters_maximum_occurrences["deleteVoyagePortCallAsync:::portCallId"]=0
+operation_parameters_maximum_occurrences["deleteVoyagePortCallAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteVoyagePortCallAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVoyageByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getVoyageByIdAsync:::voyageId"]=0
+operation_parameters_maximum_occurrences["getVoyageByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getVoyageByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVoyagePortCallsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getVoyagePortCallsAsync:::voyageId"]=0
+operation_parameters_maximum_occurrences["getVoyagePortCallsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getVoyagePortCallsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVoyagePortCallsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getVoyagePortCallsCountAsync:::voyageId"]=0
+operation_parameters_maximum_occurrences["getVoyagePortCallsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getVoyagePortCallsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVoyagesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getVoyagesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getVoyagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVoyagesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getVoyagesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getVoyagesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["startVoyageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["startVoyageAsync:::voyageId"]=0
+operation_parameters_maximum_occurrences["startVoyageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["startVoyageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateVoyageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateVoyageAsync:::voyageId"]=0
+operation_parameters_maximum_occurrences["updateVoyageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateVoyageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateVoyageAsync:::VoyageUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateVoyagePortCallAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateVoyagePortCallAsync:::voyageId"]=0
+operation_parameters_maximum_occurrences["updateVoyagePortCallAsync:::portCallId"]=0
+operation_parameters_maximum_occurrences["updateVoyagePortCallAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateVoyagePortCallAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateVoyagePortCallAsync:::VoyagePortCallUpdateDto"]=0
+operation_parameters_maximum_occurrences["createWarehouseAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createWarehouseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createWarehouseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createWarehouseAsync:::WarehouseCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteWarehouseAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteWarehouseAsync:::warehouseId"]=0
+operation_parameters_maximum_occurrences["deleteWarehouseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteWarehouseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWarehouseByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWarehouseByIdAsync:::warehouseId"]=0
+operation_parameters_maximum_occurrences["getWarehouseByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWarehouseByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWarehousesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWarehousesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWarehousesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWarehousesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWarehousesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWarehousesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateWarehouseAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateWarehouseAsync:::warehouseId"]=0
+operation_parameters_maximum_occurrences["updateWarehouseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateWarehouseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateWarehouseAsync:::WarehouseUpdateDto"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
+operation_parameters_collection_type["addAirwayBillLineAsync:::tenantId"]=""
+operation_parameters_collection_type["addAirwayBillLineAsync:::billId"]=""
+operation_parameters_collection_type["addAirwayBillLineAsync:::api-version"]=""
+operation_parameters_collection_type["addAirwayBillLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["addAirwayBillLineAsync:::WaybillLineCreateDto"]=""
+operation_parameters_collection_type["cancelAirwayBillAsync:::tenantId"]=""
+operation_parameters_collection_type["cancelAirwayBillAsync:::billId"]=""
+operation_parameters_collection_type["cancelAirwayBillAsync:::api-version"]=""
+operation_parameters_collection_type["cancelAirwayBillAsync:::x-api-version"]=""
+operation_parameters_collection_type["createAirwayBillAsync:::tenantId"]=""
+operation_parameters_collection_type["createAirwayBillAsync:::api-version"]=""
+operation_parameters_collection_type["createAirwayBillAsync:::x-api-version"]=""
+operation_parameters_collection_type["createAirwayBillAsync:::AirwayBillCreateDto"]=""
+operation_parameters_collection_type["deleteAirwayBillAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteAirwayBillAsync:::billId"]=""
+operation_parameters_collection_type["deleteAirwayBillAsync:::api-version"]=""
+operation_parameters_collection_type["deleteAirwayBillAsync:::x-api-version"]=""
+operation_parameters_collection_type["getAirwayBillByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getAirwayBillByIdAsync:::billId"]=""
+operation_parameters_collection_type["getAirwayBillByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getAirwayBillByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getAirwayBillLinesAsync:::tenantId"]=""
+operation_parameters_collection_type["getAirwayBillLinesAsync:::billId"]=""
+operation_parameters_collection_type["getAirwayBillLinesAsync:::api-version"]=""
+operation_parameters_collection_type["getAirwayBillLinesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getAirwayBillLinesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getAirwayBillLinesCountAsync:::billId"]=""
+operation_parameters_collection_type["getAirwayBillLinesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getAirwayBillLinesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getAirwayBillsAsync:::tenantId"]=""
+operation_parameters_collection_type["getAirwayBillsAsync:::api-version"]=""
+operation_parameters_collection_type["getAirwayBillsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getAirwayBillsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getAirwayBillsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getAirwayBillsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["issueAirwayBillAsync:::tenantId"]=""
+operation_parameters_collection_type["issueAirwayBillAsync:::billId"]=""
+operation_parameters_collection_type["issueAirwayBillAsync:::api-version"]=""
+operation_parameters_collection_type["issueAirwayBillAsync:::x-api-version"]=""
+operation_parameters_collection_type["markAirwayBillArrivedAsync:::tenantId"]=""
+operation_parameters_collection_type["markAirwayBillArrivedAsync:::billId"]=""
+operation_parameters_collection_type["markAirwayBillArrivedAsync:::api-version"]=""
+operation_parameters_collection_type["markAirwayBillArrivedAsync:::x-api-version"]=""
+operation_parameters_collection_type["markAirwayBillDeliveredAsync:::tenantId"]=""
+operation_parameters_collection_type["markAirwayBillDeliveredAsync:::billId"]=""
+operation_parameters_collection_type["markAirwayBillDeliveredAsync:::api-version"]=""
+operation_parameters_collection_type["markAirwayBillDeliveredAsync:::x-api-version"]=""
+operation_parameters_collection_type["markAirwayBillInTransitAsync:::tenantId"]=""
+operation_parameters_collection_type["markAirwayBillInTransitAsync:::billId"]=""
+operation_parameters_collection_type["markAirwayBillInTransitAsync:::api-version"]=""
+operation_parameters_collection_type["markAirwayBillInTransitAsync:::x-api-version"]=""
+operation_parameters_collection_type["removeAirwayBillLineAsync:::tenantId"]=""
+operation_parameters_collection_type["removeAirwayBillLineAsync:::billId"]=""
+operation_parameters_collection_type["removeAirwayBillLineAsync:::lineId"]=""
+operation_parameters_collection_type["removeAirwayBillLineAsync:::api-version"]=""
+operation_parameters_collection_type["removeAirwayBillLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateAirwayBillAsync:::tenantId"]=""
+operation_parameters_collection_type["updateAirwayBillAsync:::billId"]=""
+operation_parameters_collection_type["updateAirwayBillAsync:::api-version"]=""
+operation_parameters_collection_type["updateAirwayBillAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateAirwayBillAsync:::AirwayBillUpdateDto"]=""
+operation_parameters_collection_type["updateAirwayBillLineAsync:::tenantId"]=""
+operation_parameters_collection_type["updateAirwayBillLineAsync:::billId"]=""
+operation_parameters_collection_type["updateAirwayBillLineAsync:::lineId"]=""
+operation_parameters_collection_type["updateAirwayBillLineAsync:::api-version"]=""
+operation_parameters_collection_type["updateAirwayBillLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateAirwayBillLineAsync:::WaybillLineUpdateDto"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
+operation_parameters_collection_type["createDeliveryNoteAsync:::tenantId"]=""
+operation_parameters_collection_type["createDeliveryNoteAsync:::api-version"]=""
+operation_parameters_collection_type["createDeliveryNoteAsync:::x-api-version"]=""
+operation_parameters_collection_type["createDeliveryNoteAsync:::DeliveryNoteCreateDto"]=""
+operation_parameters_collection_type["deleteDeliveryNoteAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteDeliveryNoteAsync:::deliveryNoteId"]=""
+operation_parameters_collection_type["deleteDeliveryNoteAsync:::api-version"]=""
+operation_parameters_collection_type["deleteDeliveryNoteAsync:::x-api-version"]=""
+operation_parameters_collection_type["getDeliveryNoteByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getDeliveryNoteByIdAsync:::deliveryNoteId"]=""
+operation_parameters_collection_type["getDeliveryNoteByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getDeliveryNoteByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getDeliveryNotesAsync:::tenantId"]=""
+operation_parameters_collection_type["getDeliveryNotesAsync:::api-version"]=""
+operation_parameters_collection_type["getDeliveryNotesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getDeliveryNotesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getDeliveryNotesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getDeliveryNotesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateDeliveryNoteAsync:::tenantId"]=""
+operation_parameters_collection_type["updateDeliveryNoteAsync:::deliveryNoteId"]=""
+operation_parameters_collection_type["updateDeliveryNoteAsync:::api-version"]=""
+operation_parameters_collection_type["updateDeliveryNoteAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateDeliveryNoteAsync:::DeliveryNoteUpdateDto"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
@@ -166,9 +1859,716 @@ operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
 operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
 operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
-operation_parameters_collection_type["getContactsAsync:::tenantId"]=""
-operation_parameters_collection_type["getContactsAsync:::api-version"]=""
-operation_parameters_collection_type["getContactsAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemPackingSlipAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemPackingSlipAsync:::api-version"]=""
+operation_parameters_collection_type["createItemPackingSlipAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemPackingSlipAsync:::ItemPackingSlipCreateDto"]=""
+operation_parameters_collection_type["createItemPackingSlipEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemPackingSlipEntryAsync:::packingSlipId"]=""
+operation_parameters_collection_type["createItemPackingSlipEntryAsync:::api-version"]=""
+operation_parameters_collection_type["createItemPackingSlipEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemPackingSlipEntryAsync:::ItemPackingSlipEntryCreateDto"]=""
+operation_parameters_collection_type["deleteItemPackingSlipAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemPackingSlipAsync:::packingSlipId"]=""
+operation_parameters_collection_type["deleteItemPackingSlipAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemPackingSlipAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteItemPackingSlipEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemPackingSlipEntryAsync:::packingSlipId"]=""
+operation_parameters_collection_type["deleteItemPackingSlipEntryAsync:::entryId"]=""
+operation_parameters_collection_type["deleteItemPackingSlipEntryAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemPackingSlipEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemPackingSlipByIdAsync:::packingSlipId"]=""
+operation_parameters_collection_type["getItemPackingSlipByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipEntriesAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemPackingSlipEntriesAsync:::packingSlipId"]=""
+operation_parameters_collection_type["getItemPackingSlipEntriesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipEntriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipEntriesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemPackingSlipEntriesCountAsync:::packingSlipId"]=""
+operation_parameters_collection_type["getItemPackingSlipEntriesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipEntriesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipEntryByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemPackingSlipEntryByIdAsync:::packingSlipId"]=""
+operation_parameters_collection_type["getItemPackingSlipEntryByIdAsync:::entryId"]=""
+operation_parameters_collection_type["getItemPackingSlipEntryByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipEntryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipsAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemPackingSlipsAsync:::api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemPackingSlipsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemPackingSlipAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemPackingSlipAsync:::packingSlipId"]=""
+operation_parameters_collection_type["updateItemPackingSlipAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemPackingSlipAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemPackingSlipAsync:::ItemPackingSlipUpdateDto"]=""
+operation_parameters_collection_type["updateItemPackingSlipEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemPackingSlipEntryAsync:::packingSlipId"]=""
+operation_parameters_collection_type["updateItemPackingSlipEntryAsync:::entryId"]=""
+operation_parameters_collection_type["updateItemPackingSlipEntryAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemPackingSlipEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemPackingSlipEntryAsync:::ItemPackingSlipEntryUpdateDto"]=""
+operation_parameters_collection_type["createItemPickListAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemPickListAsync:::api-version"]=""
+operation_parameters_collection_type["createItemPickListAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemPickListAsync:::ItemPickListCreateDto"]=""
+operation_parameters_collection_type["createItemPickListEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemPickListEntryAsync:::pickListId"]=""
+operation_parameters_collection_type["createItemPickListEntryAsync:::api-version"]=""
+operation_parameters_collection_type["createItemPickListEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemPickListEntryAsync:::ItemPickListEntryCreateDto"]=""
+operation_parameters_collection_type["deleteItemPickListAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemPickListAsync:::pickListId"]=""
+operation_parameters_collection_type["deleteItemPickListAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemPickListAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteItemPickListEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemPickListEntryAsync:::pickListId"]=""
+operation_parameters_collection_type["deleteItemPickListEntryAsync:::entryId"]=""
+operation_parameters_collection_type["deleteItemPickListEntryAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemPickListEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPickListByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemPickListByIdAsync:::pickListId"]=""
+operation_parameters_collection_type["getItemPickListByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemPickListByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPickListEntriesAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemPickListEntriesAsync:::pickListId"]=""
+operation_parameters_collection_type["getItemPickListEntriesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemPickListEntriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPickListEntriesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemPickListEntriesCountAsync:::pickListId"]=""
+operation_parameters_collection_type["getItemPickListEntriesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getItemPickListEntriesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPickListEntryByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemPickListEntryByIdAsync:::pickListId"]=""
+operation_parameters_collection_type["getItemPickListEntryByIdAsync:::entryId"]=""
+operation_parameters_collection_type["getItemPickListEntryByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemPickListEntryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPickListsAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemPickListsAsync:::api-version"]=""
+operation_parameters_collection_type["getItemPickListsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPickListsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemPickListsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getItemPickListsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemPickListAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemPickListAsync:::pickListId"]=""
+operation_parameters_collection_type["updateItemPickListAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemPickListAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemPickListAsync:::ItemPickListUpdateDto"]=""
+operation_parameters_collection_type["updateItemPickListEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemPickListEntryAsync:::pickListId"]=""
+operation_parameters_collection_type["updateItemPickListEntryAsync:::entryId"]=""
+operation_parameters_collection_type["updateItemPickListEntryAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemPickListEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemPickListEntryAsync:::ItemPickListEntryUpdateDto"]=""
+operation_parameters_collection_type["createItemRestockAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemRestockAsync:::api-version"]=""
+operation_parameters_collection_type["createItemRestockAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemRestockAsync:::ItemRestockCreateDto"]=""
+operation_parameters_collection_type["createItemRestockEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemRestockEntryAsync:::restockId"]=""
+operation_parameters_collection_type["createItemRestockEntryAsync:::api-version"]=""
+operation_parameters_collection_type["createItemRestockEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemRestockEntryAsync:::ItemRestockEntryCreateDto"]=""
+operation_parameters_collection_type["deleteItemRestockAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemRestockAsync:::restockId"]=""
+operation_parameters_collection_type["deleteItemRestockAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemRestockAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteItemRestockEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemRestockEntryAsync:::restockId"]=""
+operation_parameters_collection_type["deleteItemRestockEntryAsync:::entryId"]=""
+operation_parameters_collection_type["deleteItemRestockEntryAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemRestockEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRestockByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemRestockByIdAsync:::restockId"]=""
+operation_parameters_collection_type["getItemRestockByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemRestockByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRestockEntriesAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemRestockEntriesAsync:::restockId"]=""
+operation_parameters_collection_type["getItemRestockEntriesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemRestockEntriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRestockEntriesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemRestockEntriesCountAsync:::restockId"]=""
+operation_parameters_collection_type["getItemRestockEntriesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getItemRestockEntriesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRestockEntryByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemRestockEntryByIdAsync:::restockId"]=""
+operation_parameters_collection_type["getItemRestockEntryByIdAsync:::entryId"]=""
+operation_parameters_collection_type["getItemRestockEntryByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemRestockEntryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRestocksAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemRestocksAsync:::api-version"]=""
+operation_parameters_collection_type["getItemRestocksAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRestocksCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemRestocksCountAsync:::api-version"]=""
+operation_parameters_collection_type["getItemRestocksCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemRestockAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemRestockAsync:::restockId"]=""
+operation_parameters_collection_type["updateItemRestockAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemRestockAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemRestockAsync:::ItemRestockUpdateDto"]=""
+operation_parameters_collection_type["updateItemRestockEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemRestockEntryAsync:::restockId"]=""
+operation_parameters_collection_type["updateItemRestockEntryAsync:::entryId"]=""
+operation_parameters_collection_type["updateItemRestockEntryAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemRestockEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemRestockEntryAsync:::ItemRestockEntryUpdateDto"]=""
+operation_parameters_collection_type["createItemRetainSampleAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemRetainSampleAsync:::api-version"]=""
+operation_parameters_collection_type["createItemRetainSampleAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemRetainSampleAsync:::ItemRetainSampleCreateDto"]=""
+operation_parameters_collection_type["deleteItemRetainSampleAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemRetainSampleAsync:::retainSampleId"]=""
+operation_parameters_collection_type["deleteItemRetainSampleAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemRetainSampleAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRetainSampleByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemRetainSampleByIdAsync:::retainSampleId"]=""
+operation_parameters_collection_type["getItemRetainSampleByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemRetainSampleByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRetainSamplesAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemRetainSamplesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemRetainSamplesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRetainSamplesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemRetainSamplesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getItemRetainSamplesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemRetainSampleAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemRetainSampleAsync:::retainSampleId"]=""
+operation_parameters_collection_type["updateItemRetainSampleAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemRetainSampleAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemRetainSampleAsync:::ItemRetainSampleUpdateDto"]=""
+operation_parameters_collection_type["createPortAsync:::tenantId"]=""
+operation_parameters_collection_type["createPortAsync:::api-version"]=""
+operation_parameters_collection_type["createPortAsync:::x-api-version"]=""
+operation_parameters_collection_type["createPortAsync:::PortCreateDto"]=""
+operation_parameters_collection_type["deletePortAsync:::tenantId"]=""
+operation_parameters_collection_type["deletePortAsync:::portId"]=""
+operation_parameters_collection_type["deletePortAsync:::api-version"]=""
+operation_parameters_collection_type["deletePortAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPortByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getPortByIdAsync:::portId"]=""
+operation_parameters_collection_type["getPortByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getPortByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPortsAsync:::tenantId"]=""
+operation_parameters_collection_type["getPortsAsync:::api-version"]=""
+operation_parameters_collection_type["getPortsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPortsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getPortsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getPortsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updatePortAsync:::tenantId"]=""
+operation_parameters_collection_type["updatePortAsync:::portId"]=""
+operation_parameters_collection_type["updatePortAsync:::api-version"]=""
+operation_parameters_collection_type["updatePortAsync:::x-api-version"]=""
+operation_parameters_collection_type["updatePortAsync:::PortUpdateDto"]=""
+operation_parameters_collection_type["addProofOfDeliveryLineAsync:::tenantId"]=""
+operation_parameters_collection_type["addProofOfDeliveryLineAsync:::podId"]=""
+operation_parameters_collection_type["addProofOfDeliveryLineAsync:::api-version"]=""
+operation_parameters_collection_type["addProofOfDeliveryLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["addProofOfDeliveryLineAsync:::ProofOfDeliveryLineCreateDto"]=""
+operation_parameters_collection_type["attachDeliveryNoteAsync:::tenantId"]=""
+operation_parameters_collection_type["attachDeliveryNoteAsync:::podId"]=""
+operation_parameters_collection_type["attachDeliveryNoteAsync:::noteId"]=""
+operation_parameters_collection_type["attachDeliveryNoteAsync:::api-version"]=""
+operation_parameters_collection_type["attachDeliveryNoteAsync:::x-api-version"]=""
+operation_parameters_collection_type["createProofOfDeliveryAsync:::tenantId"]=""
+operation_parameters_collection_type["createProofOfDeliveryAsync:::api-version"]=""
+operation_parameters_collection_type["createProofOfDeliveryAsync:::x-api-version"]=""
+operation_parameters_collection_type["createProofOfDeliveryAsync:::ProofOfDeliveryCreateDto"]=""
+operation_parameters_collection_type["deleteProofOfDeliveryAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteProofOfDeliveryAsync:::podId"]=""
+operation_parameters_collection_type["deleteProofOfDeliveryAsync:::api-version"]=""
+operation_parameters_collection_type["deleteProofOfDeliveryAsync:::x-api-version"]=""
+operation_parameters_collection_type["detachDeliveryNoteAsync:::tenantId"]=""
+operation_parameters_collection_type["detachDeliveryNoteAsync:::podId"]=""
+operation_parameters_collection_type["detachDeliveryNoteAsync:::noteId"]=""
+operation_parameters_collection_type["detachDeliveryNoteAsync:::api-version"]=""
+operation_parameters_collection_type["detachDeliveryNoteAsync:::x-api-version"]=""
+operation_parameters_collection_type["disputeProofOfDeliveryAsync:::tenantId"]=""
+operation_parameters_collection_type["disputeProofOfDeliveryAsync:::podId"]=""
+operation_parameters_collection_type["disputeProofOfDeliveryAsync:::api-version"]=""
+operation_parameters_collection_type["disputeProofOfDeliveryAsync:::x-api-version"]=""
+operation_parameters_collection_type["disputeProofOfDeliveryAsync:::DisputeProofOfDeliveryRequest"]=""
+operation_parameters_collection_type["getProofOfDeliveryByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getProofOfDeliveryByIdAsync:::podId"]=""
+operation_parameters_collection_type["getProofOfDeliveryByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getProofOfDeliveryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProofOfDeliveryDeliveryNotesAsync:::tenantId"]=""
+operation_parameters_collection_type["getProofOfDeliveryDeliveryNotesAsync:::podId"]=""
+operation_parameters_collection_type["getProofOfDeliveryDeliveryNotesAsync:::api-version"]=""
+operation_parameters_collection_type["getProofOfDeliveryDeliveryNotesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProofOfDeliveryDeliveryNotesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getProofOfDeliveryDeliveryNotesCountAsync:::podId"]=""
+operation_parameters_collection_type["getProofOfDeliveryDeliveryNotesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getProofOfDeliveryDeliveryNotesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProofOfDeliveryLinesAsync:::tenantId"]=""
+operation_parameters_collection_type["getProofOfDeliveryLinesAsync:::podId"]=""
+operation_parameters_collection_type["getProofOfDeliveryLinesAsync:::api-version"]=""
+operation_parameters_collection_type["getProofOfDeliveryLinesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProofOfDeliveryLinesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getProofOfDeliveryLinesCountAsync:::podId"]=""
+operation_parameters_collection_type["getProofOfDeliveryLinesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getProofOfDeliveryLinesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProofsOfDeliveryAsync:::tenantId"]=""
+operation_parameters_collection_type["getProofsOfDeliveryAsync:::api-version"]=""
+operation_parameters_collection_type["getProofsOfDeliveryAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProofsOfDeliveryCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getProofsOfDeliveryCountAsync:::api-version"]=""
+operation_parameters_collection_type["getProofsOfDeliveryCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["rejectProofOfDeliveryAsync:::tenantId"]=""
+operation_parameters_collection_type["rejectProofOfDeliveryAsync:::podId"]=""
+operation_parameters_collection_type["rejectProofOfDeliveryAsync:::api-version"]=""
+operation_parameters_collection_type["rejectProofOfDeliveryAsync:::x-api-version"]=""
+operation_parameters_collection_type["rejectProofOfDeliveryAsync:::RejectProofOfDeliveryRequest"]=""
+operation_parameters_collection_type["removeProofOfDeliveryLineAsync:::tenantId"]=""
+operation_parameters_collection_type["removeProofOfDeliveryLineAsync:::podId"]=""
+operation_parameters_collection_type["removeProofOfDeliveryLineAsync:::lineId"]=""
+operation_parameters_collection_type["removeProofOfDeliveryLineAsync:::api-version"]=""
+operation_parameters_collection_type["removeProofOfDeliveryLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["signProofOfDeliveryAsync:::tenantId"]=""
+operation_parameters_collection_type["signProofOfDeliveryAsync:::podId"]=""
+operation_parameters_collection_type["signProofOfDeliveryAsync:::api-version"]=""
+operation_parameters_collection_type["signProofOfDeliveryAsync:::x-api-version"]=""
+operation_parameters_collection_type["signProofOfDeliveryAsync:::SignProofOfDeliveryRequest"]=""
+operation_parameters_collection_type["updateProofOfDeliveryAsync:::tenantId"]=""
+operation_parameters_collection_type["updateProofOfDeliveryAsync:::podId"]=""
+operation_parameters_collection_type["updateProofOfDeliveryAsync:::api-version"]=""
+operation_parameters_collection_type["updateProofOfDeliveryAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateProofOfDeliveryAsync:::ProofOfDeliveryUpdateDto"]=""
+operation_parameters_collection_type["updateProofOfDeliveryLineAsync:::tenantId"]=""
+operation_parameters_collection_type["updateProofOfDeliveryLineAsync:::podId"]=""
+operation_parameters_collection_type["updateProofOfDeliveryLineAsync:::lineId"]=""
+operation_parameters_collection_type["updateProofOfDeliveryLineAsync:::api-version"]=""
+operation_parameters_collection_type["updateProofOfDeliveryLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateProofOfDeliveryLineAsync:::ProofOfDeliveryLineUpdateDto"]=""
+operation_parameters_collection_type["addRailWaybillLineAsync:::tenantId"]=""
+operation_parameters_collection_type["addRailWaybillLineAsync:::waybillId"]=""
+operation_parameters_collection_type["addRailWaybillLineAsync:::api-version"]=""
+operation_parameters_collection_type["addRailWaybillLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["addRailWaybillLineAsync:::WaybillLineCreateDto"]=""
+operation_parameters_collection_type["cancelRailWaybillAsync:::tenantId"]=""
+operation_parameters_collection_type["cancelRailWaybillAsync:::waybillId"]=""
+operation_parameters_collection_type["cancelRailWaybillAsync:::api-version"]=""
+operation_parameters_collection_type["cancelRailWaybillAsync:::x-api-version"]=""
+operation_parameters_collection_type["createRailWaybillAsync:::tenantId"]=""
+operation_parameters_collection_type["createRailWaybillAsync:::api-version"]=""
+operation_parameters_collection_type["createRailWaybillAsync:::x-api-version"]=""
+operation_parameters_collection_type["createRailWaybillAsync:::RailWaybillCreateDto"]=""
+operation_parameters_collection_type["deleteRailWaybillAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteRailWaybillAsync:::waybillId"]=""
+operation_parameters_collection_type["deleteRailWaybillAsync:::api-version"]=""
+operation_parameters_collection_type["deleteRailWaybillAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRailWaybillByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getRailWaybillByIdAsync:::waybillId"]=""
+operation_parameters_collection_type["getRailWaybillByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getRailWaybillByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRailWaybillLinesAsync:::tenantId"]=""
+operation_parameters_collection_type["getRailWaybillLinesAsync:::waybillId"]=""
+operation_parameters_collection_type["getRailWaybillLinesAsync:::api-version"]=""
+operation_parameters_collection_type["getRailWaybillLinesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRailWaybillLinesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getRailWaybillLinesCountAsync:::waybillId"]=""
+operation_parameters_collection_type["getRailWaybillLinesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getRailWaybillLinesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRailWaybillsAsync:::tenantId"]=""
+operation_parameters_collection_type["getRailWaybillsAsync:::api-version"]=""
+operation_parameters_collection_type["getRailWaybillsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRailWaybillsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getRailWaybillsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getRailWaybillsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["issueRailWaybillAsync:::tenantId"]=""
+operation_parameters_collection_type["issueRailWaybillAsync:::waybillId"]=""
+operation_parameters_collection_type["issueRailWaybillAsync:::api-version"]=""
+operation_parameters_collection_type["issueRailWaybillAsync:::x-api-version"]=""
+operation_parameters_collection_type["markRailWaybillDeliveredAsync:::tenantId"]=""
+operation_parameters_collection_type["markRailWaybillDeliveredAsync:::waybillId"]=""
+operation_parameters_collection_type["markRailWaybillDeliveredAsync:::api-version"]=""
+operation_parameters_collection_type["markRailWaybillDeliveredAsync:::x-api-version"]=""
+operation_parameters_collection_type["markRailWaybillInTransitAsync:::tenantId"]=""
+operation_parameters_collection_type["markRailWaybillInTransitAsync:::waybillId"]=""
+operation_parameters_collection_type["markRailWaybillInTransitAsync:::api-version"]=""
+operation_parameters_collection_type["markRailWaybillInTransitAsync:::x-api-version"]=""
+operation_parameters_collection_type["removeRailWaybillLineAsync:::tenantId"]=""
+operation_parameters_collection_type["removeRailWaybillLineAsync:::waybillId"]=""
+operation_parameters_collection_type["removeRailWaybillLineAsync:::lineId"]=""
+operation_parameters_collection_type["removeRailWaybillLineAsync:::api-version"]=""
+operation_parameters_collection_type["removeRailWaybillLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateRailWaybillAsync:::tenantId"]=""
+operation_parameters_collection_type["updateRailWaybillAsync:::waybillId"]=""
+operation_parameters_collection_type["updateRailWaybillAsync:::api-version"]=""
+operation_parameters_collection_type["updateRailWaybillAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateRailWaybillAsync:::RailWaybillUpdateDto"]=""
+operation_parameters_collection_type["updateRailWaybillLineAsync:::tenantId"]=""
+operation_parameters_collection_type["updateRailWaybillLineAsync:::waybillId"]=""
+operation_parameters_collection_type["updateRailWaybillLineAsync:::lineId"]=""
+operation_parameters_collection_type["updateRailWaybillLineAsync:::api-version"]=""
+operation_parameters_collection_type["updateRailWaybillLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateRailWaybillLineAsync:::WaybillLineUpdateDto"]=""
+operation_parameters_collection_type["addRoadWaybillLineAsync:::tenantId"]=""
+operation_parameters_collection_type["addRoadWaybillLineAsync:::waybillId"]=""
+operation_parameters_collection_type["addRoadWaybillLineAsync:::api-version"]=""
+operation_parameters_collection_type["addRoadWaybillLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["addRoadWaybillLineAsync:::WaybillLineCreateDto"]=""
+operation_parameters_collection_type["cancelRoadWaybillAsync:::tenantId"]=""
+operation_parameters_collection_type["cancelRoadWaybillAsync:::waybillId"]=""
+operation_parameters_collection_type["cancelRoadWaybillAsync:::api-version"]=""
+operation_parameters_collection_type["cancelRoadWaybillAsync:::x-api-version"]=""
+operation_parameters_collection_type["createRoadWaybillAsync:::tenantId"]=""
+operation_parameters_collection_type["createRoadWaybillAsync:::api-version"]=""
+operation_parameters_collection_type["createRoadWaybillAsync:::x-api-version"]=""
+operation_parameters_collection_type["createRoadWaybillAsync:::RoadWaybillCreateDto"]=""
+operation_parameters_collection_type["deleteRoadWaybillAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteRoadWaybillAsync:::waybillId"]=""
+operation_parameters_collection_type["deleteRoadWaybillAsync:::api-version"]=""
+operation_parameters_collection_type["deleteRoadWaybillAsync:::x-api-version"]=""
+operation_parameters_collection_type["disputeRoadWaybillAsync:::tenantId"]=""
+operation_parameters_collection_type["disputeRoadWaybillAsync:::waybillId"]=""
+operation_parameters_collection_type["disputeRoadWaybillAsync:::api-version"]=""
+operation_parameters_collection_type["disputeRoadWaybillAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRoadWaybillByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getRoadWaybillByIdAsync:::waybillId"]=""
+operation_parameters_collection_type["getRoadWaybillByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getRoadWaybillByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRoadWaybillLinesAsync:::tenantId"]=""
+operation_parameters_collection_type["getRoadWaybillLinesAsync:::waybillId"]=""
+operation_parameters_collection_type["getRoadWaybillLinesAsync:::api-version"]=""
+operation_parameters_collection_type["getRoadWaybillLinesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRoadWaybillLinesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getRoadWaybillLinesCountAsync:::waybillId"]=""
+operation_parameters_collection_type["getRoadWaybillLinesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getRoadWaybillLinesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRoadWaybillsAsync:::tenantId"]=""
+operation_parameters_collection_type["getRoadWaybillsAsync:::api-version"]=""
+operation_parameters_collection_type["getRoadWaybillsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRoadWaybillsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getRoadWaybillsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getRoadWaybillsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["issueRoadWaybillAsync:::tenantId"]=""
+operation_parameters_collection_type["issueRoadWaybillAsync:::waybillId"]=""
+operation_parameters_collection_type["issueRoadWaybillAsync:::api-version"]=""
+operation_parameters_collection_type["issueRoadWaybillAsync:::x-api-version"]=""
+operation_parameters_collection_type["markRoadWaybillDeliveredAsync:::tenantId"]=""
+operation_parameters_collection_type["markRoadWaybillDeliveredAsync:::waybillId"]=""
+operation_parameters_collection_type["markRoadWaybillDeliveredAsync:::api-version"]=""
+operation_parameters_collection_type["markRoadWaybillDeliveredAsync:::x-api-version"]=""
+operation_parameters_collection_type["markRoadWaybillInTransitAsync:::tenantId"]=""
+operation_parameters_collection_type["markRoadWaybillInTransitAsync:::waybillId"]=""
+operation_parameters_collection_type["markRoadWaybillInTransitAsync:::api-version"]=""
+operation_parameters_collection_type["markRoadWaybillInTransitAsync:::x-api-version"]=""
+operation_parameters_collection_type["removeRoadWaybillLineAsync:::tenantId"]=""
+operation_parameters_collection_type["removeRoadWaybillLineAsync:::waybillId"]=""
+operation_parameters_collection_type["removeRoadWaybillLineAsync:::lineId"]=""
+operation_parameters_collection_type["removeRoadWaybillLineAsync:::api-version"]=""
+operation_parameters_collection_type["removeRoadWaybillLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateRoadWaybillAsync:::tenantId"]=""
+operation_parameters_collection_type["updateRoadWaybillAsync:::waybillId"]=""
+operation_parameters_collection_type["updateRoadWaybillAsync:::api-version"]=""
+operation_parameters_collection_type["updateRoadWaybillAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateRoadWaybillAsync:::RoadWaybillUpdateDto"]=""
+operation_parameters_collection_type["updateRoadWaybillLineAsync:::tenantId"]=""
+operation_parameters_collection_type["updateRoadWaybillLineAsync:::waybillId"]=""
+operation_parameters_collection_type["updateRoadWaybillLineAsync:::lineId"]=""
+operation_parameters_collection_type["updateRoadWaybillLineAsync:::api-version"]=""
+operation_parameters_collection_type["updateRoadWaybillLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateRoadWaybillLineAsync:::WaybillLineUpdateDto"]=""
+operation_parameters_collection_type["addSeawayBillLineAsync:::tenantId"]=""
+operation_parameters_collection_type["addSeawayBillLineAsync:::billId"]=""
+operation_parameters_collection_type["addSeawayBillLineAsync:::api-version"]=""
+operation_parameters_collection_type["addSeawayBillLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["addSeawayBillLineAsync:::WaybillLineCreateDto"]=""
+operation_parameters_collection_type["cancelSeawayBillAsync:::tenantId"]=""
+operation_parameters_collection_type["cancelSeawayBillAsync:::billId"]=""
+operation_parameters_collection_type["cancelSeawayBillAsync:::api-version"]=""
+operation_parameters_collection_type["cancelSeawayBillAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSeawayBillAsync:::tenantId"]=""
+operation_parameters_collection_type["createSeawayBillAsync:::api-version"]=""
+operation_parameters_collection_type["createSeawayBillAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSeawayBillAsync:::SeawayBillCreateDto"]=""
+operation_parameters_collection_type["deleteSeawayBillAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSeawayBillAsync:::billId"]=""
+operation_parameters_collection_type["deleteSeawayBillAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSeawayBillAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSeawayBillByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getSeawayBillByIdAsync:::billId"]=""
+operation_parameters_collection_type["getSeawayBillByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getSeawayBillByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSeawayBillLinesAsync:::tenantId"]=""
+operation_parameters_collection_type["getSeawayBillLinesAsync:::billId"]=""
+operation_parameters_collection_type["getSeawayBillLinesAsync:::api-version"]=""
+operation_parameters_collection_type["getSeawayBillLinesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSeawayBillLinesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getSeawayBillLinesCountAsync:::billId"]=""
+operation_parameters_collection_type["getSeawayBillLinesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSeawayBillLinesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSeawayBillsAsync:::tenantId"]=""
+operation_parameters_collection_type["getSeawayBillsAsync:::api-version"]=""
+operation_parameters_collection_type["getSeawayBillsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSeawayBillsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getSeawayBillsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSeawayBillsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["issueSeawayBillAsync:::tenantId"]=""
+operation_parameters_collection_type["issueSeawayBillAsync:::billId"]=""
+operation_parameters_collection_type["issueSeawayBillAsync:::api-version"]=""
+operation_parameters_collection_type["issueSeawayBillAsync:::x-api-version"]=""
+operation_parameters_collection_type["markSeawayBillArrivedAsync:::tenantId"]=""
+operation_parameters_collection_type["markSeawayBillArrivedAsync:::billId"]=""
+operation_parameters_collection_type["markSeawayBillArrivedAsync:::api-version"]=""
+operation_parameters_collection_type["markSeawayBillArrivedAsync:::x-api-version"]=""
+operation_parameters_collection_type["markSeawayBillInTransitAsync:::tenantId"]=""
+operation_parameters_collection_type["markSeawayBillInTransitAsync:::billId"]=""
+operation_parameters_collection_type["markSeawayBillInTransitAsync:::api-version"]=""
+operation_parameters_collection_type["markSeawayBillInTransitAsync:::x-api-version"]=""
+operation_parameters_collection_type["releaseSeawayBillAsync:::tenantId"]=""
+operation_parameters_collection_type["releaseSeawayBillAsync:::billId"]=""
+operation_parameters_collection_type["releaseSeawayBillAsync:::api-version"]=""
+operation_parameters_collection_type["releaseSeawayBillAsync:::x-api-version"]=""
+operation_parameters_collection_type["removeSeawayBillLineAsync:::tenantId"]=""
+operation_parameters_collection_type["removeSeawayBillLineAsync:::billId"]=""
+operation_parameters_collection_type["removeSeawayBillLineAsync:::lineId"]=""
+operation_parameters_collection_type["removeSeawayBillLineAsync:::api-version"]=""
+operation_parameters_collection_type["removeSeawayBillLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSeawayBillAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSeawayBillAsync:::billId"]=""
+operation_parameters_collection_type["updateSeawayBillAsync:::api-version"]=""
+operation_parameters_collection_type["updateSeawayBillAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSeawayBillAsync:::SeawayBillUpdateDto"]=""
+operation_parameters_collection_type["updateSeawayBillLineAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSeawayBillLineAsync:::billId"]=""
+operation_parameters_collection_type["updateSeawayBillLineAsync:::lineId"]=""
+operation_parameters_collection_type["updateSeawayBillLineAsync:::api-version"]=""
+operation_parameters_collection_type["updateSeawayBillLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSeawayBillLineAsync:::WaybillLineUpdateDto"]=""
+operation_parameters_collection_type["createSupplierProfileAsync:::tenantId"]=""
+operation_parameters_collection_type["createSupplierProfileAsync:::api-version"]=""
+operation_parameters_collection_type["createSupplierProfileAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSupplierProfileAsync:::SupplierProfileCreateDto"]=""
+operation_parameters_collection_type["deleteSupplierProfileAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSupplierProfileAsync:::supplierProfileId"]=""
+operation_parameters_collection_type["deleteSupplierProfileAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSupplierProfileAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupplierProfileByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupplierProfileByIdAsync:::supplierProfileId"]=""
+operation_parameters_collection_type["getSupplierProfileByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getSupplierProfileByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupplierProfilesAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupplierProfilesAsync:::api-version"]=""
+operation_parameters_collection_type["getSupplierProfilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupplierProfilesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getSupplierProfilesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSupplierProfilesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSupplierProfileAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSupplierProfileAsync:::supplierProfileId"]=""
+operation_parameters_collection_type["updateSupplierProfileAsync:::api-version"]=""
+operation_parameters_collection_type["updateSupplierProfileAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSupplierProfileAsync:::SupplierProfileUpdateDto"]=""
+operation_parameters_collection_type["activateTruckDriverAsync:::tenantId"]=""
+operation_parameters_collection_type["activateTruckDriverAsync:::driverId"]=""
+operation_parameters_collection_type["activateTruckDriverAsync:::api-version"]=""
+operation_parameters_collection_type["activateTruckDriverAsync:::x-api-version"]=""
+operation_parameters_collection_type["createTruckDriverAsync:::tenantId"]=""
+operation_parameters_collection_type["createTruckDriverAsync:::api-version"]=""
+operation_parameters_collection_type["createTruckDriverAsync:::x-api-version"]=""
+operation_parameters_collection_type["createTruckDriverAsync:::TruckDriverCreateDto"]=""
+operation_parameters_collection_type["deactivateTruckDriverAsync:::tenantId"]=""
+operation_parameters_collection_type["deactivateTruckDriverAsync:::driverId"]=""
+operation_parameters_collection_type["deactivateTruckDriverAsync:::api-version"]=""
+operation_parameters_collection_type["deactivateTruckDriverAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteTruckDriverAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteTruckDriverAsync:::driverId"]=""
+operation_parameters_collection_type["deleteTruckDriverAsync:::api-version"]=""
+operation_parameters_collection_type["deleteTruckDriverAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTruckDriverByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getTruckDriverByIdAsync:::driverId"]=""
+operation_parameters_collection_type["getTruckDriverByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getTruckDriverByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTruckDriversAsync:::tenantId"]=""
+operation_parameters_collection_type["getTruckDriversAsync:::api-version"]=""
+operation_parameters_collection_type["getTruckDriversAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTruckDriversCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getTruckDriversCountAsync:::api-version"]=""
+operation_parameters_collection_type["getTruckDriversCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateTruckDriverAsync:::tenantId"]=""
+operation_parameters_collection_type["updateTruckDriverAsync:::driverId"]=""
+operation_parameters_collection_type["updateTruckDriverAsync:::api-version"]=""
+operation_parameters_collection_type["updateTruckDriverAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateTruckDriverAsync:::TruckDriverUpdateDto"]=""
+operation_parameters_collection_type["arriveTripAsync:::tenantId"]=""
+operation_parameters_collection_type["arriveTripAsync:::truckId"]=""
+operation_parameters_collection_type["arriveTripAsync:::tripId"]=""
+operation_parameters_collection_type["arriveTripAsync:::api-version"]=""
+operation_parameters_collection_type["arriveTripAsync:::x-api-version"]=""
+operation_parameters_collection_type["cancelTripAsync:::tenantId"]=""
+operation_parameters_collection_type["cancelTripAsync:::truckId"]=""
+operation_parameters_collection_type["cancelTripAsync:::tripId"]=""
+operation_parameters_collection_type["cancelTripAsync:::api-version"]=""
+operation_parameters_collection_type["cancelTripAsync:::x-api-version"]=""
+operation_parameters_collection_type["createTruckAsync:::tenantId"]=""
+operation_parameters_collection_type["createTruckAsync:::api-version"]=""
+operation_parameters_collection_type["createTruckAsync:::x-api-version"]=""
+operation_parameters_collection_type["createTruckAsync:::TruckCreateDto"]=""
+operation_parameters_collection_type["createTruckTripAsync:::tenantId"]=""
+operation_parameters_collection_type["createTruckTripAsync:::truckId"]=""
+operation_parameters_collection_type["createTruckTripAsync:::api-version"]=""
+operation_parameters_collection_type["createTruckTripAsync:::x-api-version"]=""
+operation_parameters_collection_type["createTruckTripAsync:::TruckTripCreateDto"]=""
+operation_parameters_collection_type["deleteTruckAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteTruckAsync:::truckId"]=""
+operation_parameters_collection_type["deleteTruckAsync:::api-version"]=""
+operation_parameters_collection_type["deleteTruckAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteTruckTripAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteTruckTripAsync:::truckId"]=""
+operation_parameters_collection_type["deleteTruckTripAsync:::tripId"]=""
+operation_parameters_collection_type["deleteTruckTripAsync:::api-version"]=""
+operation_parameters_collection_type["deleteTruckTripAsync:::x-api-version"]=""
+operation_parameters_collection_type["deliverTripAsync:::tenantId"]=""
+operation_parameters_collection_type["deliverTripAsync:::truckId"]=""
+operation_parameters_collection_type["deliverTripAsync:::tripId"]=""
+operation_parameters_collection_type["deliverTripAsync:::api-version"]=""
+operation_parameters_collection_type["deliverTripAsync:::x-api-version"]=""
+operation_parameters_collection_type["departTripAsync:::tenantId"]=""
+operation_parameters_collection_type["departTripAsync:::truckId"]=""
+operation_parameters_collection_type["departTripAsync:::tripId"]=""
+operation_parameters_collection_type["departTripAsync:::api-version"]=""
+operation_parameters_collection_type["departTripAsync:::x-api-version"]=""
+operation_parameters_collection_type["dispatchTripAsync:::tenantId"]=""
+operation_parameters_collection_type["dispatchTripAsync:::truckId"]=""
+operation_parameters_collection_type["dispatchTripAsync:::tripId"]=""
+operation_parameters_collection_type["dispatchTripAsync:::api-version"]=""
+operation_parameters_collection_type["dispatchTripAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTruckByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getTruckByIdAsync:::truckId"]=""
+operation_parameters_collection_type["getTruckByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getTruckByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTruckTripsAsync:::tenantId"]=""
+operation_parameters_collection_type["getTruckTripsAsync:::truckId"]=""
+operation_parameters_collection_type["getTruckTripsAsync:::api-version"]=""
+operation_parameters_collection_type["getTruckTripsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTruckTripsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getTruckTripsCountAsync:::truckId"]=""
+operation_parameters_collection_type["getTruckTripsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getTruckTripsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTrucksAsync:::tenantId"]=""
+operation_parameters_collection_type["getTrucksAsync:::api-version"]=""
+operation_parameters_collection_type["getTrucksAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTrucksCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getTrucksCountAsync:::api-version"]=""
+operation_parameters_collection_type["getTrucksCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateTruckAsync:::tenantId"]=""
+operation_parameters_collection_type["updateTruckAsync:::truckId"]=""
+operation_parameters_collection_type["updateTruckAsync:::api-version"]=""
+operation_parameters_collection_type["updateTruckAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateTruckAsync:::TruckUpdateDto"]=""
+operation_parameters_collection_type["updateTruckTripAsync:::tenantId"]=""
+operation_parameters_collection_type["updateTruckTripAsync:::truckId"]=""
+operation_parameters_collection_type["updateTruckTripAsync:::tripId"]=""
+operation_parameters_collection_type["updateTruckTripAsync:::api-version"]=""
+operation_parameters_collection_type["updateTruckTripAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateTruckTripAsync:::TruckTripUpdateDto"]=""
+operation_parameters_collection_type["createVesselAsync:::tenantId"]=""
+operation_parameters_collection_type["createVesselAsync:::api-version"]=""
+operation_parameters_collection_type["createVesselAsync:::x-api-version"]=""
+operation_parameters_collection_type["createVesselAsync:::VesselCreateDto"]=""
+operation_parameters_collection_type["deleteVesselAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteVesselAsync:::vesselId"]=""
+operation_parameters_collection_type["deleteVesselAsync:::api-version"]=""
+operation_parameters_collection_type["deleteVesselAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVesselByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getVesselByIdAsync:::vesselId"]=""
+operation_parameters_collection_type["getVesselByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getVesselByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVesselsAsync:::tenantId"]=""
+operation_parameters_collection_type["getVesselsAsync:::api-version"]=""
+operation_parameters_collection_type["getVesselsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVesselsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getVesselsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getVesselsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateVesselAsync:::tenantId"]=""
+operation_parameters_collection_type["updateVesselAsync:::vesselId"]=""
+operation_parameters_collection_type["updateVesselAsync:::api-version"]=""
+operation_parameters_collection_type["updateVesselAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateVesselAsync:::VesselUpdateDto"]=""
+operation_parameters_collection_type["cancelVoyageAsync:::tenantId"]=""
+operation_parameters_collection_type["cancelVoyageAsync:::voyageId"]=""
+operation_parameters_collection_type["cancelVoyageAsync:::api-version"]=""
+operation_parameters_collection_type["cancelVoyageAsync:::x-api-version"]=""
+operation_parameters_collection_type["completeVoyageAsync:::tenantId"]=""
+operation_parameters_collection_type["completeVoyageAsync:::voyageId"]=""
+operation_parameters_collection_type["completeVoyageAsync:::api-version"]=""
+operation_parameters_collection_type["completeVoyageAsync:::x-api-version"]=""
+operation_parameters_collection_type["createVoyageAsync:::tenantId"]=""
+operation_parameters_collection_type["createVoyageAsync:::api-version"]=""
+operation_parameters_collection_type["createVoyageAsync:::x-api-version"]=""
+operation_parameters_collection_type["createVoyageAsync:::VoyageCreateDto"]=""
+operation_parameters_collection_type["createVoyagePortCallAsync:::tenantId"]=""
+operation_parameters_collection_type["createVoyagePortCallAsync:::voyageId"]=""
+operation_parameters_collection_type["createVoyagePortCallAsync:::api-version"]=""
+operation_parameters_collection_type["createVoyagePortCallAsync:::x-api-version"]=""
+operation_parameters_collection_type["createVoyagePortCallAsync:::VoyagePortCallCreateDto"]=""
+operation_parameters_collection_type["deleteVoyageAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteVoyageAsync:::voyageId"]=""
+operation_parameters_collection_type["deleteVoyageAsync:::api-version"]=""
+operation_parameters_collection_type["deleteVoyageAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteVoyagePortCallAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteVoyagePortCallAsync:::voyageId"]=""
+operation_parameters_collection_type["deleteVoyagePortCallAsync:::portCallId"]=""
+operation_parameters_collection_type["deleteVoyagePortCallAsync:::api-version"]=""
+operation_parameters_collection_type["deleteVoyagePortCallAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVoyageByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getVoyageByIdAsync:::voyageId"]=""
+operation_parameters_collection_type["getVoyageByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getVoyageByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVoyagePortCallsAsync:::tenantId"]=""
+operation_parameters_collection_type["getVoyagePortCallsAsync:::voyageId"]=""
+operation_parameters_collection_type["getVoyagePortCallsAsync:::api-version"]=""
+operation_parameters_collection_type["getVoyagePortCallsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVoyagePortCallsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getVoyagePortCallsCountAsync:::voyageId"]=""
+operation_parameters_collection_type["getVoyagePortCallsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getVoyagePortCallsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVoyagesAsync:::tenantId"]=""
+operation_parameters_collection_type["getVoyagesAsync:::api-version"]=""
+operation_parameters_collection_type["getVoyagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVoyagesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getVoyagesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getVoyagesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["startVoyageAsync:::tenantId"]=""
+operation_parameters_collection_type["startVoyageAsync:::voyageId"]=""
+operation_parameters_collection_type["startVoyageAsync:::api-version"]=""
+operation_parameters_collection_type["startVoyageAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateVoyageAsync:::tenantId"]=""
+operation_parameters_collection_type["updateVoyageAsync:::voyageId"]=""
+operation_parameters_collection_type["updateVoyageAsync:::api-version"]=""
+operation_parameters_collection_type["updateVoyageAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateVoyageAsync:::VoyageUpdateDto"]=""
+operation_parameters_collection_type["updateVoyagePortCallAsync:::tenantId"]=""
+operation_parameters_collection_type["updateVoyagePortCallAsync:::voyageId"]=""
+operation_parameters_collection_type["updateVoyagePortCallAsync:::portCallId"]=""
+operation_parameters_collection_type["updateVoyagePortCallAsync:::api-version"]=""
+operation_parameters_collection_type["updateVoyagePortCallAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateVoyagePortCallAsync:::VoyagePortCallUpdateDto"]=""
+operation_parameters_collection_type["createWarehouseAsync:::tenantId"]=""
+operation_parameters_collection_type["createWarehouseAsync:::api-version"]=""
+operation_parameters_collection_type["createWarehouseAsync:::x-api-version"]=""
+operation_parameters_collection_type["createWarehouseAsync:::WarehouseCreateDto"]=""
+operation_parameters_collection_type["deleteWarehouseAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteWarehouseAsync:::warehouseId"]=""
+operation_parameters_collection_type["deleteWarehouseAsync:::api-version"]=""
+operation_parameters_collection_type["deleteWarehouseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWarehouseByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getWarehouseByIdAsync:::warehouseId"]=""
+operation_parameters_collection_type["getWarehouseByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getWarehouseByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWarehousesAsync:::tenantId"]=""
+operation_parameters_collection_type["getWarehousesAsync:::api-version"]=""
+operation_parameters_collection_type["getWarehousesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWarehousesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getWarehousesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getWarehousesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateWarehouseAsync:::tenantId"]=""
+operation_parameters_collection_type["updateWarehouseAsync:::warehouseId"]=""
+operation_parameters_collection_type["updateWarehouseAsync:::api-version"]=""
+operation_parameters_collection_type["updateWarehouseAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateWarehouseAsync:::WarehouseUpdateDto"]=""
 
 
 ##
@@ -526,7 +2926,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}LogisticsService command line client (API version 2.0.0.0)${OFF}
+${BOLD}${WHITE}LogisticsService command line client (API version 2.1.2.5401)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -555,7 +2955,45 @@ ${BOLD}${WHITE}Usage${OFF}
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[airwayBills]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}addAirwayBillLineAsync${OFF};Add a line to airway bill
+  ${CYAN}cancelAirwayBillAsync${OFF};Cancel an airway bill
+  ${CYAN}createAirwayBillAsync${OFF};Create an airway bill
+  ${CYAN}deleteAirwayBillAsync${OFF};Delete an airway bill
+  ${CYAN}getAirwayBillByIdAsync${OFF};Get airway bill by ID
+  ${CYAN}getAirwayBillLinesAsync${OFF};Get airway bill lines
+  ${CYAN}getAirwayBillLinesCountAsync${OFF};Get airway bill lines count
+  ${CYAN}getAirwayBillsAsync${OFF};Get all airway bills
+  ${CYAN}getAirwayBillsCountAsync${OFF};Get airway bills count
+  ${CYAN}issueAirwayBillAsync${OFF};Issue an airway bill
+  ${CYAN}markAirwayBillArrivedAsync${OFF};Mark airway bill arrived
+  ${CYAN}markAirwayBillDeliveredAsync${OFF};Mark airway bill delivered
+  ${CYAN}markAirwayBillInTransitAsync${OFF};Mark airway bill in transit
+  ${CYAN}removeAirwayBillLineAsync${OFF};Remove an airway bill line
+  ${CYAN}updateAirwayBillAsync${OFF};Update an airway bill
+  ${CYAN}updateAirwayBillLineAsync${OFF};Update an airway bill line
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[deliveryNotes]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createDeliveryNoteAsync${OFF};Create a delivery note
+  ${CYAN}deleteDeliveryNoteAsync${OFF};Delete a delivery note
+  ${CYAN}getDeliveryNoteByIdAsync${OFF};Get delivery note by ID
+  ${CYAN}getDeliveryNotesAsync${OFF};Get all delivery notes
+  ${CYAN}getDeliveryNotesCountAsync${OFF};Get delivery notes count
+  ${CYAN}updateDeliveryNoteAsync${OFF};Update a delivery note
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -577,9 +3015,247 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[stock]${OFF}"
+    echo -e "${BOLD}${WHITE}[itemPackingSlips]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}getContactsAsync${OFF};Get all stock-related contacts
+  ${CYAN}createItemPackingSlipAsync${OFF};Create an item packing slip
+  ${CYAN}createItemPackingSlipEntryAsync${OFF};Create a packing slip entry
+  ${CYAN}deleteItemPackingSlipAsync${OFF};Delete an item packing slip
+  ${CYAN}deleteItemPackingSlipEntryAsync${OFF};Delete a packing slip entry
+  ${CYAN}getItemPackingSlipByIdAsync${OFF};Get item packing slip by ID
+  ${CYAN}getItemPackingSlipEntriesAsync${OFF};Get packing slip entries
+  ${CYAN}getItemPackingSlipEntriesCountAsync${OFF};Get packing slip entries count
+  ${CYAN}getItemPackingSlipEntryByIdAsync${OFF};Get packing slip entry by ID
+  ${CYAN}getItemPackingSlipsAsync${OFF};Get all item packing slips
+  ${CYAN}getItemPackingSlipsCountAsync${OFF};Get item packing slips count
+  ${CYAN}updateItemPackingSlipAsync${OFF};Update an item packing slip
+  ${CYAN}updateItemPackingSlipEntryAsync${OFF};Update a packing slip entry
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemPickLists]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createItemPickListAsync${OFF};Create an item pick list
+  ${CYAN}createItemPickListEntryAsync${OFF};Create a pick list entry
+  ${CYAN}deleteItemPickListAsync${OFF};Delete an item pick list
+  ${CYAN}deleteItemPickListEntryAsync${OFF};Delete a pick list entry
+  ${CYAN}getItemPickListByIdAsync${OFF};Get item pick list by ID
+  ${CYAN}getItemPickListEntriesAsync${OFF};Get pick list entries
+  ${CYAN}getItemPickListEntriesCountAsync${OFF};Get pick list entries count
+  ${CYAN}getItemPickListEntryByIdAsync${OFF};Get pick list entry by ID
+  ${CYAN}getItemPickListsAsync${OFF};Get all item pick lists
+  ${CYAN}getItemPickListsCountAsync${OFF};Get item pick lists count
+  ${CYAN}updateItemPickListAsync${OFF};Update an item pick list
+  ${CYAN}updateItemPickListEntryAsync${OFF};Update a pick list entry
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemRestocks]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createItemRestockAsync${OFF};Create an item restock
+  ${CYAN}createItemRestockEntryAsync${OFF};Create a restock entry
+  ${CYAN}deleteItemRestockAsync${OFF};Delete an item restock
+  ${CYAN}deleteItemRestockEntryAsync${OFF};Delete a restock entry
+  ${CYAN}getItemRestockByIdAsync${OFF};Get item restock by ID
+  ${CYAN}getItemRestockEntriesAsync${OFF};Get restock entries
+  ${CYAN}getItemRestockEntriesCountAsync${OFF};Get restock entries count
+  ${CYAN}getItemRestockEntryByIdAsync${OFF};Get restock entry by ID
+  ${CYAN}getItemRestocksAsync${OFF};Get all item restocks
+  ${CYAN}getItemRestocksCountAsync${OFF};Get item restocks count
+  ${CYAN}updateItemRestockAsync${OFF};Update an item restock
+  ${CYAN}updateItemRestockEntryAsync${OFF};Update a restock entry
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemRetainSamples]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createItemRetainSampleAsync${OFF};Create an item retain sample
+  ${CYAN}deleteItemRetainSampleAsync${OFF};Delete an item retain sample
+  ${CYAN}getItemRetainSampleByIdAsync${OFF};Get item retain sample by ID
+  ${CYAN}getItemRetainSamplesAsync${OFF};Get all item retain samples
+  ${CYAN}getItemRetainSamplesCountAsync${OFF};Get item retain samples count
+  ${CYAN}updateItemRetainSampleAsync${OFF};Update an item retain sample
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[ports]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createPortAsync${OFF};Create a port
+  ${CYAN}deletePortAsync${OFF};Delete a port
+  ${CYAN}getPortByIdAsync${OFF};Get port by ID
+  ${CYAN}getPortsAsync${OFF};Get all ports
+  ${CYAN}getPortsCountAsync${OFF};Get ports count
+  ${CYAN}updatePortAsync${OFF};Update a port
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[proofsOfDelivery]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}addProofOfDeliveryLineAsync${OFF};Add a line to proof of delivery
+  ${CYAN}attachDeliveryNoteAsync${OFF};Attach a delivery note
+  ${CYAN}createProofOfDeliveryAsync${OFF};Create a proof of delivery
+  ${CYAN}deleteProofOfDeliveryAsync${OFF};Delete a proof of delivery
+  ${CYAN}detachDeliveryNoteAsync${OFF};Detach a delivery note
+  ${CYAN}disputeProofOfDeliveryAsync${OFF};Dispute a proof of delivery
+  ${CYAN}getProofOfDeliveryByIdAsync${OFF};Get proof of delivery by ID
+  ${CYAN}getProofOfDeliveryDeliveryNotesAsync${OFF};Get attached delivery notes
+  ${CYAN}getProofOfDeliveryDeliveryNotesCountAsync${OFF};Get delivery notes count
+  ${CYAN}getProofOfDeliveryLinesAsync${OFF};Get proof of delivery lines
+  ${CYAN}getProofOfDeliveryLinesCountAsync${OFF};Get proof of delivery lines count
+  ${CYAN}getProofsOfDeliveryAsync${OFF};Get all proofs of delivery
+  ${CYAN}getProofsOfDeliveryCountAsync${OFF};Get proofs of delivery count
+  ${CYAN}rejectProofOfDeliveryAsync${OFF};Reject a proof of delivery
+  ${CYAN}removeProofOfDeliveryLineAsync${OFF};Remove a proof of delivery line
+  ${CYAN}signProofOfDeliveryAsync${OFF};Sign a proof of delivery
+  ${CYAN}updateProofOfDeliveryAsync${OFF};Update a proof of delivery
+  ${CYAN}updateProofOfDeliveryLineAsync${OFF};Update a proof of delivery line
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[railWaybills]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}addRailWaybillLineAsync${OFF};Add a line to rail waybill
+  ${CYAN}cancelRailWaybillAsync${OFF};Cancel a rail waybill
+  ${CYAN}createRailWaybillAsync${OFF};Create a rail waybill
+  ${CYAN}deleteRailWaybillAsync${OFF};Delete a rail waybill
+  ${CYAN}getRailWaybillByIdAsync${OFF};Get rail waybill by ID
+  ${CYAN}getRailWaybillLinesAsync${OFF};Get rail waybill lines
+  ${CYAN}getRailWaybillLinesCountAsync${OFF};Get rail waybill lines count
+  ${CYAN}getRailWaybillsAsync${OFF};Get all rail waybills
+  ${CYAN}getRailWaybillsCountAsync${OFF};Get rail waybills count
+  ${CYAN}issueRailWaybillAsync${OFF};Issue a rail waybill
+  ${CYAN}markRailWaybillDeliveredAsync${OFF};Mark rail waybill delivered
+  ${CYAN}markRailWaybillInTransitAsync${OFF};Mark rail waybill in transit
+  ${CYAN}removeRailWaybillLineAsync${OFF};Remove a rail waybill line
+  ${CYAN}updateRailWaybillAsync${OFF};Update a rail waybill
+  ${CYAN}updateRailWaybillLineAsync${OFF};Update a rail waybill line
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[roadWaybills]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}addRoadWaybillLineAsync${OFF};Add a line to road waybill
+  ${CYAN}cancelRoadWaybillAsync${OFF};Cancel a road waybill
+  ${CYAN}createRoadWaybillAsync${OFF};Create a road waybill
+  ${CYAN}deleteRoadWaybillAsync${OFF};Delete a road waybill
+  ${CYAN}disputeRoadWaybillAsync${OFF};Dispute a road waybill
+  ${CYAN}getRoadWaybillByIdAsync${OFF};Get road waybill by ID
+  ${CYAN}getRoadWaybillLinesAsync${OFF};Get road waybill lines
+  ${CYAN}getRoadWaybillLinesCountAsync${OFF};Get road waybill lines count
+  ${CYAN}getRoadWaybillsAsync${OFF};Get all road waybills
+  ${CYAN}getRoadWaybillsCountAsync${OFF};Get road waybills count
+  ${CYAN}issueRoadWaybillAsync${OFF};Issue a road waybill
+  ${CYAN}markRoadWaybillDeliveredAsync${OFF};Mark road waybill delivered
+  ${CYAN}markRoadWaybillInTransitAsync${OFF};Mark road waybill in transit
+  ${CYAN}removeRoadWaybillLineAsync${OFF};Remove a road waybill line
+  ${CYAN}updateRoadWaybillAsync${OFF};Update a road waybill
+  ${CYAN}updateRoadWaybillLineAsync${OFF};Update a road waybill line
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[seawayBills]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}addSeawayBillLineAsync${OFF};Add a line to seaway bill
+  ${CYAN}cancelSeawayBillAsync${OFF};Cancel a seaway bill
+  ${CYAN}createSeawayBillAsync${OFF};Create a seaway bill
+  ${CYAN}deleteSeawayBillAsync${OFF};Delete a seaway bill
+  ${CYAN}getSeawayBillByIdAsync${OFF};Get seaway bill by ID
+  ${CYAN}getSeawayBillLinesAsync${OFF};Get seaway bill lines
+  ${CYAN}getSeawayBillLinesCountAsync${OFF};Get seaway bill lines count
+  ${CYAN}getSeawayBillsAsync${OFF};Get all seaway bills
+  ${CYAN}getSeawayBillsCountAsync${OFF};Get seaway bills count
+  ${CYAN}issueSeawayBillAsync${OFF};Issue a seaway bill
+  ${CYAN}markSeawayBillArrivedAsync${OFF};Mark seaway bill arrived
+  ${CYAN}markSeawayBillInTransitAsync${OFF};Mark seaway bill in transit
+  ${CYAN}releaseSeawayBillAsync${OFF};Release a seaway bill
+  ${CYAN}removeSeawayBillLineAsync${OFF};Remove a seaway bill line
+  ${CYAN}updateSeawayBillAsync${OFF};Update a seaway bill
+  ${CYAN}updateSeawayBillLineAsync${OFF};Update a seaway bill line
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[supplierProfiles]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createSupplierProfileAsync${OFF};Create a supplier profile
+  ${CYAN}deleteSupplierProfileAsync${OFF};Delete a supplier profile
+  ${CYAN}getSupplierProfileByIdAsync${OFF};Get supplier profile by ID
+  ${CYAN}getSupplierProfilesAsync${OFF};Get all supplier profiles
+  ${CYAN}getSupplierProfilesCountAsync${OFF};Get supplier profiles count
+  ${CYAN}updateSupplierProfileAsync${OFF};Update a supplier profile
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[truckDrivers]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}activateTruckDriverAsync${OFF};Activate a truck driver
+  ${CYAN}createTruckDriverAsync${OFF};Create a truck driver
+  ${CYAN}deactivateTruckDriverAsync${OFF};Deactivate a truck driver
+  ${CYAN}deleteTruckDriverAsync${OFF};Delete a truck driver
+  ${CYAN}getTruckDriverByIdAsync${OFF};Get truck driver by ID
+  ${CYAN}getTruckDriversAsync${OFF};Get all truck drivers
+  ${CYAN}getTruckDriversCountAsync${OFF};Get truck drivers count
+  ${CYAN}updateTruckDriverAsync${OFF};Update a truck driver
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[trucks]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}arriveTripAsync${OFF};Arrive a trip
+  ${CYAN}cancelTripAsync${OFF};Cancel a trip
+  ${CYAN}createTruckAsync${OFF};Create a truck
+  ${CYAN}createTruckTripAsync${OFF};Create a truck trip
+  ${CYAN}deleteTruckAsync${OFF};Delete a truck
+  ${CYAN}deleteTruckTripAsync${OFF};Delete a truck trip
+  ${CYAN}deliverTripAsync${OFF};Deliver a trip
+  ${CYAN}departTripAsync${OFF};Depart a trip
+  ${CYAN}dispatchTripAsync${OFF};Dispatch a trip
+  ${CYAN}getTruckByIdAsync${OFF};Get truck by ID
+  ${CYAN}getTruckTripsAsync${OFF};Get truck trips
+  ${CYAN}getTruckTripsCountAsync${OFF};Get truck trips count
+  ${CYAN}getTrucksAsync${OFF};Get all trucks
+  ${CYAN}getTrucksCountAsync${OFF};Get trucks count
+  ${CYAN}updateTruckAsync${OFF};Update a truck
+  ${CYAN}updateTruckTripAsync${OFF};Update a truck trip
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[vessels]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createVesselAsync${OFF};Create a vessel
+  ${CYAN}deleteVesselAsync${OFF};Delete a vessel
+  ${CYAN}getVesselByIdAsync${OFF};Get vessel by ID
+  ${CYAN}getVesselsAsync${OFF};Get all vessels
+  ${CYAN}getVesselsCountAsync${OFF};Get vessels count
+  ${CYAN}updateVesselAsync${OFF};Update a vessel
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[voyages]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}cancelVoyageAsync${OFF};Cancel a voyage
+  ${CYAN}completeVoyageAsync${OFF};Complete a voyage
+  ${CYAN}createVoyageAsync${OFF};Create a voyage
+  ${CYAN}createVoyagePortCallAsync${OFF};Create a port call
+  ${CYAN}deleteVoyageAsync${OFF};Delete a voyage
+  ${CYAN}deleteVoyagePortCallAsync${OFF};Delete a port call
+  ${CYAN}getVoyageByIdAsync${OFF};Get voyage by ID
+  ${CYAN}getVoyagePortCallsAsync${OFF};Get voyage port calls
+  ${CYAN}getVoyagePortCallsCountAsync${OFF};Get voyage port calls count
+  ${CYAN}getVoyagesAsync${OFF};Get all voyages
+  ${CYAN}getVoyagesCountAsync${OFF};Get voyages count
+  ${CYAN}startVoyageAsync${OFF};Start a voyage
+  ${CYAN}updateVoyageAsync${OFF};Update a voyage
+  ${CYAN}updateVoyagePortCallAsync${OFF};Update a port call
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[warehouses]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createWarehouseAsync${OFF};Create a warehouse
+  ${CYAN}deleteWarehouseAsync${OFF};Delete a warehouse
+  ${CYAN}getWarehouseByIdAsync${OFF};Get warehouse by ID
+  ${CYAN}getWarehousesAsync${OFF};Get all warehouses
+  ${CYAN}getWarehousesCountAsync${OFF};Get warehouses count
+  ${CYAN}updateWarehouseAsync${OFF};Update a warehouse
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -588,7 +3264,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -609,7 +3285,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}LogisticsService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}${WHITE}LogisticsService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -629,10 +3305,595 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}LogisticsService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}LogisticsService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
 }
 
+##############################################################################
+#
+# Print help for addAirwayBillLineAsync operation
+#
+##############################################################################
+print_addAirwayBillLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}addAirwayBillLineAsync - Add a line to airway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Adds a new line to an airway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for cancelAirwayBillAsync operation
+#
+##############################################################################
+print_cancelAirwayBillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}cancelAirwayBillAsync - Cancel an airway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Cancels an airway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createAirwayBillAsync operation
+#
+##############################################################################
+print_createAirwayBillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createAirwayBillAsync - Create an airway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new airway bill for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteAirwayBillAsync operation
+#
+##############################################################################
+print_deleteAirwayBillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteAirwayBillAsync - Delete an airway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an airway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getAirwayBillByIdAsync operation
+#
+##############################################################################
+print_getAirwayBillByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getAirwayBillByIdAsync - Get airway bill by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific airway bill by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getAirwayBillLinesAsync operation
+#
+##############################################################################
+print_getAirwayBillLinesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getAirwayBillLinesAsync - Get airway bill lines${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all lines for a specific airway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getAirwayBillLinesCountAsync operation
+#
+##############################################################################
+print_getAirwayBillLinesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getAirwayBillLinesCountAsync - Get airway bill lines count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of lines for a specific airway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getAirwayBillsAsync operation
+#
+##############################################################################
+print_getAirwayBillsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getAirwayBillsAsync - Get all airway bills${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all airway bills for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getAirwayBillsCountAsync operation
+#
+##############################################################################
+print_getAirwayBillsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getAirwayBillsCountAsync - Get airway bills count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of airway bills for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for issueAirwayBillAsync operation
+#
+##############################################################################
+print_issueAirwayBillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}issueAirwayBillAsync - Issue an airway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Issues an airway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for markAirwayBillArrivedAsync operation
+#
+##############################################################################
+print_markAirwayBillArrivedAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}markAirwayBillArrivedAsync - Mark airway bill arrived${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks an airway bill as arrived." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for markAirwayBillDeliveredAsync operation
+#
+##############################################################################
+print_markAirwayBillDeliveredAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}markAirwayBillDeliveredAsync - Mark airway bill delivered${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks an airway bill as delivered." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for markAirwayBillInTransitAsync operation
+#
+##############################################################################
+print_markAirwayBillInTransitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}markAirwayBillInTransitAsync - Mark airway bill in transit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks an airway bill as in transit." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeAirwayBillLineAsync operation
+#
+##############################################################################
+print_removeAirwayBillLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeAirwayBillLineAsync - Remove an airway bill line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a line from an airway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}lineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: lineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateAirwayBillAsync operation
+#
+##############################################################################
+print_updateAirwayBillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateAirwayBillAsync - Update an airway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing airway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateAirwayBillLineAsync operation
+#
+##############################################################################
+print_updateAirwayBillLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateAirwayBillLineAsync - Update an airway bill line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing line on an airway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}lineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: lineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createDeliveryNoteAsync operation
+#
+##############################################################################
+print_createDeliveryNoteAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createDeliveryNoteAsync - Create a delivery note${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new delivery note." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteDeliveryNoteAsync operation
+#
+##############################################################################
+print_deleteDeliveryNoteAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteDeliveryNoteAsync - Delete a delivery note${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a delivery note." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}deliveryNoteId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: deliveryNoteId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDeliveryNoteByIdAsync operation
+#
+##############################################################################
+print_getDeliveryNoteByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDeliveryNoteByIdAsync - Get delivery note by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific delivery note." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}deliveryNoteId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: deliveryNoteId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDeliveryNotesAsync operation
+#
+##############################################################################
+print_getDeliveryNotesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDeliveryNotesAsync - Get all delivery notes${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all delivery notes for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDeliveryNotesCountAsync operation
+#
+##############################################################################
+print_getDeliveryNotesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDeliveryNotesCountAsync - Get delivery notes count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of delivery notes." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateDeliveryNoteAsync operation
+#
+##############################################################################
+print_updateDeliveryNoteAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateDeliveryNoteAsync - Update a delivery note${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing delivery note." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}deliveryNoteId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: deliveryNoteId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
 ##############################################################################
 #
 # Print help for accountLogoutPost operation
@@ -929,14 +4190,215 @@ print_versionGet_help() {
 }
 ##############################################################################
 #
-# Print help for getContactsAsync operation
+# Print help for createItemPackingSlipAsync operation
 #
 ##############################################################################
-print_getContactsAsync_help() {
+print_createItemPackingSlipAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getContactsAsync - Get all stock-related contacts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createItemPackingSlipAsync - Create an item packing slip${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Retrieves all business-owned contacts related to stock and logistics for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e "Creates a new item packing slip." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemPackingSlipEntryAsync operation
+#
+##############################################################################
+print_createItemPackingSlipEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemPackingSlipEntryAsync - Create a packing slip entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new packing slip entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}packingSlipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: packingSlipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemPackingSlipAsync operation
+#
+##############################################################################
+print_deleteItemPackingSlipAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemPackingSlipAsync - Delete an item packing slip${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item packing slip." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}packingSlipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: packingSlipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemPackingSlipEntryAsync operation
+#
+##############################################################################
+print_deleteItemPackingSlipEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemPackingSlipEntryAsync - Delete a packing slip entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a packing slip entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}packingSlipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: packingSlipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemPackingSlipByIdAsync operation
+#
+##############################################################################
+print_getItemPackingSlipByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemPackingSlipByIdAsync - Get item packing slip by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item packing slip." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}packingSlipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: packingSlipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemPackingSlipEntriesAsync operation
+#
+##############################################################################
+print_getItemPackingSlipEntriesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemPackingSlipEntriesAsync - Get packing slip entries${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all entries for the specified packing slip." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}packingSlipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: packingSlipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemPackingSlipEntriesCountAsync operation
+#
+##############################################################################
+print_getItemPackingSlipEntriesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemPackingSlipEntriesCountAsync - Get packing slip entries count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of packing slip entries." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}packingSlipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: packingSlipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemPackingSlipEntryByIdAsync operation
+#
+##############################################################################
+print_getItemPackingSlipEntryByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemPackingSlipEntryByIdAsync - Get packing slip entry by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific packing slip entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}packingSlipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: packingSlipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemPackingSlipsAsync operation
+#
+##############################################################################
+print_getItemPackingSlipsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemPackingSlipsAsync - Get all item packing slips${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item packing slips for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -953,7 +4415,5166 @@ print_getContactsAsync_help() {
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
+##############################################################################
+#
+# Print help for getItemPackingSlipsCountAsync operation
+#
+##############################################################################
+print_getItemPackingSlipsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemPackingSlipsCountAsync - Get item packing slips count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of item packing slips." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemPackingSlipAsync operation
+#
+##############################################################################
+print_updateItemPackingSlipAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemPackingSlipAsync - Update an item packing slip${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item packing slip." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}packingSlipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: packingSlipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemPackingSlipEntryAsync operation
+#
+##############################################################################
+print_updateItemPackingSlipEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemPackingSlipEntryAsync - Update a packing slip entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing packing slip entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}packingSlipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: packingSlipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemPickListAsync operation
+#
+##############################################################################
+print_createItemPickListAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemPickListAsync - Create an item pick list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item pick list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemPickListEntryAsync operation
+#
+##############################################################################
+print_createItemPickListEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemPickListEntryAsync - Create a pick list entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new pick list entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pickListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pickListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemPickListAsync operation
+#
+##############################################################################
+print_deleteItemPickListAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemPickListAsync - Delete an item pick list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item pick list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pickListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pickListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemPickListEntryAsync operation
+#
+##############################################################################
+print_deleteItemPickListEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemPickListEntryAsync - Delete a pick list entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a pick list entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pickListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pickListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemPickListByIdAsync operation
+#
+##############################################################################
+print_getItemPickListByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemPickListByIdAsync - Get item pick list by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item pick list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pickListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pickListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemPickListEntriesAsync operation
+#
+##############################################################################
+print_getItemPickListEntriesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemPickListEntriesAsync - Get pick list entries${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all entries for the specified pick list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pickListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pickListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemPickListEntriesCountAsync operation
+#
+##############################################################################
+print_getItemPickListEntriesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemPickListEntriesCountAsync - Get pick list entries count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of pick list entries." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pickListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pickListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemPickListEntryByIdAsync operation
+#
+##############################################################################
+print_getItemPickListEntryByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemPickListEntryByIdAsync - Get pick list entry by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific pick list entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pickListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pickListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemPickListsAsync operation
+#
+##############################################################################
+print_getItemPickListsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemPickListsAsync - Get all item pick lists${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item pick lists for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemPickListsCountAsync operation
+#
+##############################################################################
+print_getItemPickListsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemPickListsCountAsync - Get item pick lists count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of item pick lists." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemPickListAsync operation
+#
+##############################################################################
+print_updateItemPickListAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemPickListAsync - Update an item pick list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item pick list." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pickListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pickListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemPickListEntryAsync operation
+#
+##############################################################################
+print_updateItemPickListEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemPickListEntryAsync - Update a pick list entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing pick list entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pickListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pickListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemRestockAsync operation
+#
+##############################################################################
+print_createItemRestockAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemRestockAsync - Create an item restock${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item restock." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemRestockEntryAsync operation
+#
+##############################################################################
+print_createItemRestockEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemRestockEntryAsync - Create a restock entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new restock entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}restockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: restockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemRestockAsync operation
+#
+##############################################################################
+print_deleteItemRestockAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemRestockAsync - Delete an item restock${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item restock." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}restockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: restockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemRestockEntryAsync operation
+#
+##############################################################################
+print_deleteItemRestockEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemRestockEntryAsync - Delete a restock entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a restock entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}restockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: restockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemRestockByIdAsync operation
+#
+##############################################################################
+print_getItemRestockByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemRestockByIdAsync - Get item restock by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item restock." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}restockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: restockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemRestockEntriesAsync operation
+#
+##############################################################################
+print_getItemRestockEntriesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemRestockEntriesAsync - Get restock entries${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all entries for the specified restock." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}restockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: restockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemRestockEntriesCountAsync operation
+#
+##############################################################################
+print_getItemRestockEntriesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemRestockEntriesCountAsync - Get restock entries count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of restock entries." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}restockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: restockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemRestockEntryByIdAsync operation
+#
+##############################################################################
+print_getItemRestockEntryByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemRestockEntryByIdAsync - Get restock entry by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific restock entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}restockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: restockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemRestocksAsync operation
+#
+##############################################################################
+print_getItemRestocksAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemRestocksAsync - Get all item restocks${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item restocks for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemRestocksCountAsync operation
+#
+##############################################################################
+print_getItemRestocksCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemRestocksCountAsync - Get item restocks count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of item restocks." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemRestockAsync operation
+#
+##############################################################################
+print_updateItemRestockAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemRestockAsync - Update an item restock${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item restock." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}restockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: restockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemRestockEntryAsync operation
+#
+##############################################################################
+print_updateItemRestockEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemRestockEntryAsync - Update a restock entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing restock entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}restockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: restockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemRetainSampleAsync operation
+#
+##############################################################################
+print_createItemRetainSampleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemRetainSampleAsync - Create an item retain sample${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item retain sample." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemRetainSampleAsync operation
+#
+##############################################################################
+print_deleteItemRetainSampleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemRetainSampleAsync - Delete an item retain sample${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item retain sample." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}retainSampleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: retainSampleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemRetainSampleByIdAsync operation
+#
+##############################################################################
+print_getItemRetainSampleByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemRetainSampleByIdAsync - Get item retain sample by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item retain sample." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}retainSampleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: retainSampleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemRetainSamplesAsync operation
+#
+##############################################################################
+print_getItemRetainSamplesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemRetainSamplesAsync - Get all item retain samples${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item retain samples for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemRetainSamplesCountAsync operation
+#
+##############################################################################
+print_getItemRetainSamplesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemRetainSamplesCountAsync - Get item retain samples count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of item retain samples." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemRetainSampleAsync operation
+#
+##############################################################################
+print_updateItemRetainSampleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemRetainSampleAsync - Update an item retain sample${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item retain sample." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}retainSampleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: retainSampleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createPortAsync operation
+#
+##############################################################################
+print_createPortAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createPortAsync - Create a port${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new port for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deletePortAsync operation
+#
+##############################################################################
+print_deletePortAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deletePortAsync - Delete a port${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a port." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPortByIdAsync operation
+#
+##############################################################################
+print_getPortByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPortByIdAsync - Get port by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific port by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPortsAsync operation
+#
+##############################################################################
+print_getPortsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPortsAsync - Get all ports${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all ports for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPortsCountAsync operation
+#
+##############################################################################
+print_getPortsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPortsCountAsync - Get ports count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of ports for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updatePortAsync operation
+#
+##############################################################################
+print_updatePortAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updatePortAsync - Update a port${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing port." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for addProofOfDeliveryLineAsync operation
+#
+##############################################################################
+print_addProofOfDeliveryLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}addProofOfDeliveryLineAsync - Add a line to proof of delivery${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Adds a new line to a proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for attachDeliveryNoteAsync operation
+#
+##############################################################################
+print_attachDeliveryNoteAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}attachDeliveryNoteAsync - Attach a delivery note${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Attaches a delivery note to a proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}noteId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: noteId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createProofOfDeliveryAsync operation
+#
+##############################################################################
+print_createProofOfDeliveryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createProofOfDeliveryAsync - Create a proof of delivery${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new proof of delivery for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteProofOfDeliveryAsync operation
+#
+##############################################################################
+print_deleteProofOfDeliveryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteProofOfDeliveryAsync - Delete a proof of delivery${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for detachDeliveryNoteAsync operation
+#
+##############################################################################
+print_detachDeliveryNoteAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}detachDeliveryNoteAsync - Detach a delivery note${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Detaches a delivery note from a proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}noteId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: noteId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for disputeProofOfDeliveryAsync operation
+#
+##############################################################################
+print_disputeProofOfDeliveryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}disputeProofOfDeliveryAsync - Dispute a proof of delivery${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Disputes a proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProofOfDeliveryByIdAsync operation
+#
+##############################################################################
+print_getProofOfDeliveryByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProofOfDeliveryByIdAsync - Get proof of delivery by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific proof of delivery by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProofOfDeliveryDeliveryNotesAsync operation
+#
+##############################################################################
+print_getProofOfDeliveryDeliveryNotesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProofOfDeliveryDeliveryNotesAsync - Get attached delivery notes${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all delivery notes attached to a proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProofOfDeliveryDeliveryNotesCountAsync operation
+#
+##############################################################################
+print_getProofOfDeliveryDeliveryNotesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProofOfDeliveryDeliveryNotesCountAsync - Get delivery notes count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of delivery notes attached to a proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProofOfDeliveryLinesAsync operation
+#
+##############################################################################
+print_getProofOfDeliveryLinesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProofOfDeliveryLinesAsync - Get proof of delivery lines${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all lines for a specific proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProofOfDeliveryLinesCountAsync operation
+#
+##############################################################################
+print_getProofOfDeliveryLinesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProofOfDeliveryLinesCountAsync - Get proof of delivery lines count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of lines for a specific proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProofsOfDeliveryAsync operation
+#
+##############################################################################
+print_getProofsOfDeliveryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProofsOfDeliveryAsync - Get all proofs of delivery${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all proofs of delivery for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProofsOfDeliveryCountAsync operation
+#
+##############################################################################
+print_getProofsOfDeliveryCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProofsOfDeliveryCountAsync - Get proofs of delivery count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of proofs of delivery for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for rejectProofOfDeliveryAsync operation
+#
+##############################################################################
+print_rejectProofOfDeliveryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}rejectProofOfDeliveryAsync - Reject a proof of delivery${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Rejects a proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeProofOfDeliveryLineAsync operation
+#
+##############################################################################
+print_removeProofOfDeliveryLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeProofOfDeliveryLineAsync - Remove a proof of delivery line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a line from a proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}lineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: lineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for signProofOfDeliveryAsync operation
+#
+##############################################################################
+print_signProofOfDeliveryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}signProofOfDeliveryAsync - Sign a proof of delivery${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Signs a proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateProofOfDeliveryAsync operation
+#
+##############################################################################
+print_updateProofOfDeliveryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateProofOfDeliveryAsync - Update a proof of delivery${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateProofOfDeliveryLineAsync operation
+#
+##############################################################################
+print_updateProofOfDeliveryLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateProofOfDeliveryLineAsync - Update a proof of delivery line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing line on a proof of delivery." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}podId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: podId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}lineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: lineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for addRailWaybillLineAsync operation
+#
+##############################################################################
+print_addRailWaybillLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}addRailWaybillLineAsync - Add a line to rail waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Adds a new line to a rail waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for cancelRailWaybillAsync operation
+#
+##############################################################################
+print_cancelRailWaybillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}cancelRailWaybillAsync - Cancel a rail waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Cancels a rail waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createRailWaybillAsync operation
+#
+##############################################################################
+print_createRailWaybillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createRailWaybillAsync - Create a rail waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new rail waybill for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteRailWaybillAsync operation
+#
+##############################################################################
+print_deleteRailWaybillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteRailWaybillAsync - Delete a rail waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a rail waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRailWaybillByIdAsync operation
+#
+##############################################################################
+print_getRailWaybillByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRailWaybillByIdAsync - Get rail waybill by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific rail waybill by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRailWaybillLinesAsync operation
+#
+##############################################################################
+print_getRailWaybillLinesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRailWaybillLinesAsync - Get rail waybill lines${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all lines for a specific rail waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRailWaybillLinesCountAsync operation
+#
+##############################################################################
+print_getRailWaybillLinesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRailWaybillLinesCountAsync - Get rail waybill lines count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of lines for a specific rail waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRailWaybillsAsync operation
+#
+##############################################################################
+print_getRailWaybillsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRailWaybillsAsync - Get all rail waybills${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all rail waybills for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRailWaybillsCountAsync operation
+#
+##############################################################################
+print_getRailWaybillsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRailWaybillsCountAsync - Get rail waybills count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of rail waybills for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for issueRailWaybillAsync operation
+#
+##############################################################################
+print_issueRailWaybillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}issueRailWaybillAsync - Issue a rail waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Issues a rail waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for markRailWaybillDeliveredAsync operation
+#
+##############################################################################
+print_markRailWaybillDeliveredAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}markRailWaybillDeliveredAsync - Mark rail waybill delivered${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks a rail waybill as delivered." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for markRailWaybillInTransitAsync operation
+#
+##############################################################################
+print_markRailWaybillInTransitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}markRailWaybillInTransitAsync - Mark rail waybill in transit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks a rail waybill as in transit." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeRailWaybillLineAsync operation
+#
+##############################################################################
+print_removeRailWaybillLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeRailWaybillLineAsync - Remove a rail waybill line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a line from a rail waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}lineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: lineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateRailWaybillAsync operation
+#
+##############################################################################
+print_updateRailWaybillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateRailWaybillAsync - Update a rail waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing rail waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateRailWaybillLineAsync operation
+#
+##############################################################################
+print_updateRailWaybillLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateRailWaybillLineAsync - Update a rail waybill line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing line on a rail waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}lineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: lineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for addRoadWaybillLineAsync operation
+#
+##############################################################################
+print_addRoadWaybillLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}addRoadWaybillLineAsync - Add a line to road waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Adds a new line to a road waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for cancelRoadWaybillAsync operation
+#
+##############################################################################
+print_cancelRoadWaybillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}cancelRoadWaybillAsync - Cancel a road waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Cancels a road waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createRoadWaybillAsync operation
+#
+##############################################################################
+print_createRoadWaybillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createRoadWaybillAsync - Create a road waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new road waybill for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteRoadWaybillAsync operation
+#
+##############################################################################
+print_deleteRoadWaybillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteRoadWaybillAsync - Delete a road waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a road waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for disputeRoadWaybillAsync operation
+#
+##############################################################################
+print_disputeRoadWaybillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}disputeRoadWaybillAsync - Dispute a road waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Disputes a road waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRoadWaybillByIdAsync operation
+#
+##############################################################################
+print_getRoadWaybillByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRoadWaybillByIdAsync - Get road waybill by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific road waybill by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRoadWaybillLinesAsync operation
+#
+##############################################################################
+print_getRoadWaybillLinesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRoadWaybillLinesAsync - Get road waybill lines${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all lines for a specific road waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRoadWaybillLinesCountAsync operation
+#
+##############################################################################
+print_getRoadWaybillLinesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRoadWaybillLinesCountAsync - Get road waybill lines count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of lines for a specific road waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRoadWaybillsAsync operation
+#
+##############################################################################
+print_getRoadWaybillsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRoadWaybillsAsync - Get all road waybills${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all road waybills for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRoadWaybillsCountAsync operation
+#
+##############################################################################
+print_getRoadWaybillsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRoadWaybillsCountAsync - Get road waybills count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of road waybills for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for issueRoadWaybillAsync operation
+#
+##############################################################################
+print_issueRoadWaybillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}issueRoadWaybillAsync - Issue a road waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Issues a road waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for markRoadWaybillDeliveredAsync operation
+#
+##############################################################################
+print_markRoadWaybillDeliveredAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}markRoadWaybillDeliveredAsync - Mark road waybill delivered${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks a road waybill as delivered." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for markRoadWaybillInTransitAsync operation
+#
+##############################################################################
+print_markRoadWaybillInTransitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}markRoadWaybillInTransitAsync - Mark road waybill in transit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks a road waybill as in transit." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeRoadWaybillLineAsync operation
+#
+##############################################################################
+print_removeRoadWaybillLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeRoadWaybillLineAsync - Remove a road waybill line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a line from a road waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}lineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: lineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateRoadWaybillAsync operation
+#
+##############################################################################
+print_updateRoadWaybillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateRoadWaybillAsync - Update a road waybill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing road waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateRoadWaybillLineAsync operation
+#
+##############################################################################
+print_updateRoadWaybillLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateRoadWaybillLineAsync - Update a road waybill line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing line on a road waybill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}waybillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: waybillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}lineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: lineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for addSeawayBillLineAsync operation
+#
+##############################################################################
+print_addSeawayBillLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}addSeawayBillLineAsync - Add a line to seaway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Adds a new line to a seaway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for cancelSeawayBillAsync operation
+#
+##############################################################################
+print_cancelSeawayBillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}cancelSeawayBillAsync - Cancel a seaway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Cancels a seaway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createSeawayBillAsync operation
+#
+##############################################################################
+print_createSeawayBillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createSeawayBillAsync - Create a seaway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new seaway bill for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSeawayBillAsync operation
+#
+##############################################################################
+print_deleteSeawayBillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSeawayBillAsync - Delete a seaway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a seaway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSeawayBillByIdAsync operation
+#
+##############################################################################
+print_getSeawayBillByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSeawayBillByIdAsync - Get seaway bill by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific seaway bill by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSeawayBillLinesAsync operation
+#
+##############################################################################
+print_getSeawayBillLinesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSeawayBillLinesAsync - Get seaway bill lines${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all lines for a specific seaway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSeawayBillLinesCountAsync operation
+#
+##############################################################################
+print_getSeawayBillLinesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSeawayBillLinesCountAsync - Get seaway bill lines count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of lines for a specific seaway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSeawayBillsAsync operation
+#
+##############################################################################
+print_getSeawayBillsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSeawayBillsAsync - Get all seaway bills${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all seaway bills for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSeawayBillsCountAsync operation
+#
+##############################################################################
+print_getSeawayBillsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSeawayBillsCountAsync - Get seaway bills count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of seaway bills for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for issueSeawayBillAsync operation
+#
+##############################################################################
+print_issueSeawayBillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}issueSeawayBillAsync - Issue a seaway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Issues a seaway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for markSeawayBillArrivedAsync operation
+#
+##############################################################################
+print_markSeawayBillArrivedAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}markSeawayBillArrivedAsync - Mark seaway bill arrived${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks a seaway bill as arrived." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for markSeawayBillInTransitAsync operation
+#
+##############################################################################
+print_markSeawayBillInTransitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}markSeawayBillInTransitAsync - Mark seaway bill in transit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks a seaway bill as in transit." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for releaseSeawayBillAsync operation
+#
+##############################################################################
+print_releaseSeawayBillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}releaseSeawayBillAsync - Release a seaway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Releases a seaway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeSeawayBillLineAsync operation
+#
+##############################################################################
+print_removeSeawayBillLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeSeawayBillLineAsync - Remove a seaway bill line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a line from a seaway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}lineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: lineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSeawayBillAsync operation
+#
+##############################################################################
+print_updateSeawayBillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSeawayBillAsync - Update a seaway bill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing seaway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSeawayBillLineAsync operation
+#
+##############################################################################
+print_updateSeawayBillLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSeawayBillLineAsync - Update a seaway bill line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing line on a seaway bill." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}lineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: lineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createSupplierProfileAsync operation
+#
+##############################################################################
+print_createSupplierProfileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createSupplierProfileAsync - Create a supplier profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new supplier profile for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSupplierProfileAsync operation
+#
+##############################################################################
+print_deleteSupplierProfileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSupplierProfileAsync - Delete a supplier profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a supplier profile." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supplierProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supplierProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSupplierProfileByIdAsync operation
+#
+##############################################################################
+print_getSupplierProfileByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSupplierProfileByIdAsync - Get supplier profile by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific supplier profile by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supplierProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supplierProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSupplierProfilesAsync operation
+#
+##############################################################################
+print_getSupplierProfilesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSupplierProfilesAsync - Get all supplier profiles${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all supplier profiles for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSupplierProfilesCountAsync operation
+#
+##############################################################################
+print_getSupplierProfilesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSupplierProfilesCountAsync - Get supplier profiles count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of supplier profiles for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSupplierProfileAsync operation
+#
+##############################################################################
+print_updateSupplierProfileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSupplierProfileAsync - Update a supplier profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing supplier profile." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}supplierProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: supplierProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for activateTruckDriverAsync operation
+#
+##############################################################################
+print_activateTruckDriverAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}activateTruckDriverAsync - Activate a truck driver${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Activates a truck driver." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}driverId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: driverId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createTruckDriverAsync operation
+#
+##############################################################################
+print_createTruckDriverAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createTruckDriverAsync - Create a truck driver${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new truck driver for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deactivateTruckDriverAsync operation
+#
+##############################################################################
+print_deactivateTruckDriverAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deactivateTruckDriverAsync - Deactivate a truck driver${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deactivates a truck driver." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}driverId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: driverId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteTruckDriverAsync operation
+#
+##############################################################################
+print_deleteTruckDriverAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteTruckDriverAsync - Delete a truck driver${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a truck driver." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}driverId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: driverId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTruckDriverByIdAsync operation
+#
+##############################################################################
+print_getTruckDriverByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTruckDriverByIdAsync - Get truck driver by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific truck driver by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}driverId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: driverId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTruckDriversAsync operation
+#
+##############################################################################
+print_getTruckDriversAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTruckDriversAsync - Get all truck drivers${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all truck drivers for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTruckDriversCountAsync operation
+#
+##############################################################################
+print_getTruckDriversCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTruckDriversCountAsync - Get truck drivers count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of truck drivers for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateTruckDriverAsync operation
+#
+##############################################################################
+print_updateTruckDriverAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateTruckDriverAsync - Update a truck driver${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing truck driver." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}driverId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: driverId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for arriveTripAsync operation
+#
+##############################################################################
+print_arriveTripAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}arriveTripAsync - Arrive a trip${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks a truck trip as arrived." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tripId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tripId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for cancelTripAsync operation
+#
+##############################################################################
+print_cancelTripAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}cancelTripAsync - Cancel a trip${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Cancels a truck trip." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tripId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tripId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createTruckAsync operation
+#
+##############################################################################
+print_createTruckAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createTruckAsync - Create a truck${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new truck for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createTruckTripAsync operation
+#
+##############################################################################
+print_createTruckTripAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createTruckTripAsync - Create a truck trip${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new trip for a truck." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteTruckAsync operation
+#
+##############################################################################
+print_deleteTruckAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteTruckAsync - Delete a truck${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a truck." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteTruckTripAsync operation
+#
+##############################################################################
+print_deleteTruckTripAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteTruckTripAsync - Delete a truck trip${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a truck trip." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tripId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tripId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deliverTripAsync operation
+#
+##############################################################################
+print_deliverTripAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deliverTripAsync - Deliver a trip${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks a truck trip as delivered." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tripId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tripId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for departTripAsync operation
+#
+##############################################################################
+print_departTripAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}departTripAsync - Depart a trip${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks a truck trip as departed." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tripId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tripId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for dispatchTripAsync operation
+#
+##############################################################################
+print_dispatchTripAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}dispatchTripAsync - Dispatch a trip${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Dispatches a truck trip." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tripId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tripId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTruckByIdAsync operation
+#
+##############################################################################
+print_getTruckByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTruckByIdAsync - Get truck by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific truck by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTruckTripsAsync operation
+#
+##############################################################################
+print_getTruckTripsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTruckTripsAsync - Get truck trips${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all trips for a specific truck." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTruckTripsCountAsync operation
+#
+##############################################################################
+print_getTruckTripsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTruckTripsCountAsync - Get truck trips count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of trips for a specific truck." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTrucksAsync operation
+#
+##############################################################################
+print_getTrucksAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTrucksAsync - Get all trucks${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all trucks for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTrucksCountAsync operation
+#
+##############################################################################
+print_getTrucksCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTrucksCountAsync - Get trucks count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of trucks for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateTruckAsync operation
+#
+##############################################################################
+print_updateTruckAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateTruckAsync - Update a truck${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing truck." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateTruckTripAsync operation
+#
+##############################################################################
+print_updateTruckTripAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateTruckTripAsync - Update a truck trip${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing truck trip." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}truckId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: truckId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tripId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tripId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createVesselAsync operation
+#
+##############################################################################
+print_createVesselAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createVesselAsync - Create a vessel${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new vessel for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteVesselAsync operation
+#
+##############################################################################
+print_deleteVesselAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteVesselAsync - Delete a vessel${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a vessel." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}vesselId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: vesselId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getVesselByIdAsync operation
+#
+##############################################################################
+print_getVesselByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getVesselByIdAsync - Get vessel by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific vessel by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}vesselId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: vesselId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getVesselsAsync operation
+#
+##############################################################################
+print_getVesselsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getVesselsAsync - Get all vessels${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all vessels for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getVesselsCountAsync operation
+#
+##############################################################################
+print_getVesselsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getVesselsCountAsync - Get vessels count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of vessels for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateVesselAsync operation
+#
+##############################################################################
+print_updateVesselAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateVesselAsync - Update a vessel${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing vessel." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}vesselId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: vesselId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for cancelVoyageAsync operation
+#
+##############################################################################
+print_cancelVoyageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}cancelVoyageAsync - Cancel a voyage${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Cancels a voyage." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}voyageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: voyageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for completeVoyageAsync operation
+#
+##############################################################################
+print_completeVoyageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}completeVoyageAsync - Complete a voyage${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks a voyage as completed." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}voyageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: voyageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createVoyageAsync operation
+#
+##############################################################################
+print_createVoyageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createVoyageAsync - Create a voyage${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new voyage for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createVoyagePortCallAsync operation
+#
+##############################################################################
+print_createVoyagePortCallAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createVoyagePortCallAsync - Create a port call${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new port call for a voyage." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}voyageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: voyageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteVoyageAsync operation
+#
+##############################################################################
+print_deleteVoyageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteVoyageAsync - Delete a voyage${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a voyage." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}voyageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: voyageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteVoyagePortCallAsync operation
+#
+##############################################################################
+print_deleteVoyagePortCallAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteVoyagePortCallAsync - Delete a port call${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a port call." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}voyageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: voyageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portCallId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portCallId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getVoyageByIdAsync operation
+#
+##############################################################################
+print_getVoyageByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getVoyageByIdAsync - Get voyage by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific voyage by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}voyageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: voyageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getVoyagePortCallsAsync operation
+#
+##############################################################################
+print_getVoyagePortCallsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getVoyagePortCallsAsync - Get voyage port calls${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all port calls for a specific voyage." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}voyageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: voyageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getVoyagePortCallsCountAsync operation
+#
+##############################################################################
+print_getVoyagePortCallsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getVoyagePortCallsCountAsync - Get voyage port calls count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of port calls for a specific voyage." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}voyageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: voyageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getVoyagesAsync operation
+#
+##############################################################################
+print_getVoyagesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getVoyagesAsync - Get all voyages${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all voyages for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getVoyagesCountAsync operation
+#
+##############################################################################
+print_getVoyagesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getVoyagesCountAsync - Get voyages count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of voyages for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for startVoyageAsync operation
+#
+##############################################################################
+print_startVoyageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}startVoyageAsync - Start a voyage${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Starts a voyage." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}voyageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: voyageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateVoyageAsync operation
+#
+##############################################################################
+print_updateVoyageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateVoyageAsync - Update a voyage${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing voyage." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}voyageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: voyageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateVoyagePortCallAsync operation
+#
+##############################################################################
+print_updateVoyagePortCallAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateVoyagePortCallAsync - Update a port call${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing port call." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}voyageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: voyageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portCallId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portCallId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createWarehouseAsync operation
+#
+##############################################################################
+print_createWarehouseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createWarehouseAsync - Create a warehouse${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new warehouse." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteWarehouseAsync operation
+#
+##############################################################################
+print_deleteWarehouseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteWarehouseAsync - Delete a warehouse${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a warehouse." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}warehouseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: warehouseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWarehouseByIdAsync operation
+#
+##############################################################################
+print_getWarehouseByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWarehouseByIdAsync - Get warehouse by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific warehouse." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}warehouseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: warehouseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWarehousesAsync operation
+#
+##############################################################################
+print_getWarehousesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWarehousesAsync - Get all warehouses${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all warehouses for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWarehousesCountAsync operation
+#
+##############################################################################
+print_getWarehousesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWarehousesCountAsync - Get warehouses count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of warehouses." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateWarehouseAsync operation
+#
+##############################################################################
+print_updateWarehouseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateWarehouseAsync - Update a warehouse${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing warehouse." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}warehouseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: warehouseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
 
+
+##############################################################################
+#
+# Call addAirwayBillLineAsync operation
+#
+##############################################################################
+call_addAirwayBillLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}/Lines" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call cancelAirwayBillAsync operation
+#
+##############################################################################
+call_cancelAirwayBillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}/Cancel" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createAirwayBillAsync operation
+#
+##############################################################################
+call_createAirwayBillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteAirwayBillAsync operation
+#
+##############################################################################
+call_deleteAirwayBillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getAirwayBillByIdAsync operation
+#
+##############################################################################
+call_getAirwayBillByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getAirwayBillLinesAsync operation
+#
+##############################################################################
+call_getAirwayBillLinesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}/Lines" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getAirwayBillLinesCountAsync operation
+#
+##############################################################################
+call_getAirwayBillLinesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}/Lines/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getAirwayBillsAsync operation
+#
+##############################################################################
+call_getAirwayBillsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getAirwayBillsCountAsync operation
+#
+##############################################################################
+call_getAirwayBillsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call issueAirwayBillAsync operation
+#
+##############################################################################
+call_issueAirwayBillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}/Issue" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call markAirwayBillArrivedAsync operation
+#
+##############################################################################
+call_markAirwayBillArrivedAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}/MarkArrived" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call markAirwayBillDeliveredAsync operation
+#
+##############################################################################
+call_markAirwayBillDeliveredAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}/MarkDelivered" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call markAirwayBillInTransitAsync operation
+#
+##############################################################################
+call_markAirwayBillInTransitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}/MarkInTransit" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeAirwayBillLineAsync operation
+#
+##############################################################################
+call_removeAirwayBillLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId lineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}/Lines/{lineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateAirwayBillAsync operation
+#
+##############################################################################
+call_updateAirwayBillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateAirwayBillLineAsync operation
+#
+##############################################################################
+call_updateAirwayBillLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId lineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/AirwayBills/{billId}/Lines/{lineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createDeliveryNoteAsync operation
+#
+##############################################################################
+call_createDeliveryNoteAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/DeliveryNotes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteDeliveryNoteAsync operation
+#
+##############################################################################
+call_deleteDeliveryNoteAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(deliveryNoteId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/DeliveryNotes/{deliveryNoteId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDeliveryNoteByIdAsync operation
+#
+##############################################################################
+call_getDeliveryNoteByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(deliveryNoteId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/DeliveryNotes/{deliveryNoteId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDeliveryNotesAsync operation
+#
+##############################################################################
+call_getDeliveryNotesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/DeliveryNotes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDeliveryNotesCountAsync operation
+#
+##############################################################################
+call_getDeliveryNotesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/DeliveryNotes/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateDeliveryNoteAsync operation
+#
+##############################################################################
+call_updateDeliveryNoteAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(deliveryNoteId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/DeliveryNotes/{deliveryNoteId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
 
 ##############################################################################
 #
@@ -1908,10 +10529,10 @@ call_versionGet() {
 
 ##############################################################################
 #
-# Call getContactsAsync operation
+# Call createItemPackingSlipAsync operation
 #
 ##############################################################################
-call_getContactsAsync() {
+call_createItemPackingSlipAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
@@ -1920,7 +10541,231 @@ call_getContactsAsync() {
     local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/LogisticsService/Stock" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPackingSlips" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createItemPackingSlipEntryAsync operation
+#
+##############################################################################
+call_createItemPackingSlipEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(packingSlipId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPackingSlips/{packingSlipId}/Entries" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemPackingSlipAsync operation
+#
+##############################################################################
+call_deleteItemPackingSlipAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(packingSlipId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPackingSlips/{packingSlipId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemPackingSlipEntryAsync operation
+#
+##############################################################################
+call_deleteItemPackingSlipEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(packingSlipId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPackingSlips/{packingSlipId}/Entries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemPackingSlipByIdAsync operation
+#
+##############################################################################
+call_getItemPackingSlipByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(packingSlipId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPackingSlips/{packingSlipId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -1939,6 +10784,7870 @@ call_getContactsAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemPackingSlipEntriesAsync operation
+#
+##############################################################################
+call_getItemPackingSlipEntriesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(packingSlipId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPackingSlips/{packingSlipId}/Entries" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemPackingSlipEntriesCountAsync operation
+#
+##############################################################################
+call_getItemPackingSlipEntriesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(packingSlipId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPackingSlips/{packingSlipId}/Entries/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemPackingSlipEntryByIdAsync operation
+#
+##############################################################################
+call_getItemPackingSlipEntryByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(packingSlipId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPackingSlips/{packingSlipId}/Entries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemPackingSlipsAsync operation
+#
+##############################################################################
+call_getItemPackingSlipsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPackingSlips" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemPackingSlipsCountAsync operation
+#
+##############################################################################
+call_getItemPackingSlipsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPackingSlips/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemPackingSlipAsync operation
+#
+##############################################################################
+call_updateItemPackingSlipAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(packingSlipId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPackingSlips/{packingSlipId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemPackingSlipEntryAsync operation
+#
+##############################################################################
+call_updateItemPackingSlipEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(packingSlipId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPackingSlips/{packingSlipId}/Entries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createItemPickListAsync operation
+#
+##############################################################################
+call_createItemPickListAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPickLists" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createItemPickListEntryAsync operation
+#
+##############################################################################
+call_createItemPickListEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pickListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPickLists/{pickListId}/Entries" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemPickListAsync operation
+#
+##############################################################################
+call_deleteItemPickListAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pickListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPickLists/{pickListId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemPickListEntryAsync operation
+#
+##############################################################################
+call_deleteItemPickListEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pickListId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPickLists/{pickListId}/Entries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemPickListByIdAsync operation
+#
+##############################################################################
+call_getItemPickListByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pickListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPickLists/{pickListId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemPickListEntriesAsync operation
+#
+##############################################################################
+call_getItemPickListEntriesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pickListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPickLists/{pickListId}/Entries" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemPickListEntriesCountAsync operation
+#
+##############################################################################
+call_getItemPickListEntriesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pickListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPickLists/{pickListId}/Entries/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemPickListEntryByIdAsync operation
+#
+##############################################################################
+call_getItemPickListEntryByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pickListId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPickLists/{pickListId}/Entries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemPickListsAsync operation
+#
+##############################################################################
+call_getItemPickListsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPickLists" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemPickListsCountAsync operation
+#
+##############################################################################
+call_getItemPickListsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPickLists/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemPickListAsync operation
+#
+##############################################################################
+call_updateItemPickListAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pickListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPickLists/{pickListId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemPickListEntryAsync operation
+#
+##############################################################################
+call_updateItemPickListEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pickListId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemPickLists/{pickListId}/Entries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createItemRestockAsync operation
+#
+##############################################################################
+call_createItemRestockAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRestocks" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createItemRestockEntryAsync operation
+#
+##############################################################################
+call_createItemRestockEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(restockId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRestocks/{restockId}/Entries" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemRestockAsync operation
+#
+##############################################################################
+call_deleteItemRestockAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(restockId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRestocks/{restockId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemRestockEntryAsync operation
+#
+##############################################################################
+call_deleteItemRestockEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(restockId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRestocks/{restockId}/Entries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemRestockByIdAsync operation
+#
+##############################################################################
+call_getItemRestockByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(restockId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRestocks/{restockId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemRestockEntriesAsync operation
+#
+##############################################################################
+call_getItemRestockEntriesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(restockId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRestocks/{restockId}/Entries" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemRestockEntriesCountAsync operation
+#
+##############################################################################
+call_getItemRestockEntriesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(restockId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRestocks/{restockId}/Entries/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemRestockEntryByIdAsync operation
+#
+##############################################################################
+call_getItemRestockEntryByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(restockId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRestocks/{restockId}/Entries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemRestocksAsync operation
+#
+##############################################################################
+call_getItemRestocksAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRestocks" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemRestocksCountAsync operation
+#
+##############################################################################
+call_getItemRestocksCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRestocks/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemRestockAsync operation
+#
+##############################################################################
+call_updateItemRestockAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(restockId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRestocks/{restockId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemRestockEntryAsync operation
+#
+##############################################################################
+call_updateItemRestockEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(restockId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRestocks/{restockId}/Entries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createItemRetainSampleAsync operation
+#
+##############################################################################
+call_createItemRetainSampleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRetainSamples" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemRetainSampleAsync operation
+#
+##############################################################################
+call_deleteItemRetainSampleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(retainSampleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRetainSamples/{retainSampleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemRetainSampleByIdAsync operation
+#
+##############################################################################
+call_getItemRetainSampleByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(retainSampleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRetainSamples/{retainSampleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemRetainSamplesAsync operation
+#
+##############################################################################
+call_getItemRetainSamplesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRetainSamples" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemRetainSamplesCountAsync operation
+#
+##############################################################################
+call_getItemRetainSamplesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRetainSamples/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemRetainSampleAsync operation
+#
+##############################################################################
+call_updateItemRetainSampleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(retainSampleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ItemRetainSamples/{retainSampleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createPortAsync operation
+#
+##############################################################################
+call_createPortAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Ports" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deletePortAsync operation
+#
+##############################################################################
+call_deletePortAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(portId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Ports/{portId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPortByIdAsync operation
+#
+##############################################################################
+call_getPortByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(portId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Ports/{portId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPortsAsync operation
+#
+##############################################################################
+call_getPortsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Ports" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPortsCountAsync operation
+#
+##############################################################################
+call_getPortsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Ports/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updatePortAsync operation
+#
+##############################################################################
+call_updatePortAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(portId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Ports/{portId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call addProofOfDeliveryLineAsync operation
+#
+##############################################################################
+call_addProofOfDeliveryLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}/Lines" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call attachDeliveryNoteAsync operation
+#
+##############################################################################
+call_attachDeliveryNoteAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId noteId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}/DeliveryNotes/{noteId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createProofOfDeliveryAsync operation
+#
+##############################################################################
+call_createProofOfDeliveryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteProofOfDeliveryAsync operation
+#
+##############################################################################
+call_deleteProofOfDeliveryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call detachDeliveryNoteAsync operation
+#
+##############################################################################
+call_detachDeliveryNoteAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId noteId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}/DeliveryNotes/{noteId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call disputeProofOfDeliveryAsync operation
+#
+##############################################################################
+call_disputeProofOfDeliveryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}/Dispute" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getProofOfDeliveryByIdAsync operation
+#
+##############################################################################
+call_getProofOfDeliveryByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProofOfDeliveryDeliveryNotesAsync operation
+#
+##############################################################################
+call_getProofOfDeliveryDeliveryNotesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}/DeliveryNotes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProofOfDeliveryDeliveryNotesCountAsync operation
+#
+##############################################################################
+call_getProofOfDeliveryDeliveryNotesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}/DeliveryNotes/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProofOfDeliveryLinesAsync operation
+#
+##############################################################################
+call_getProofOfDeliveryLinesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}/Lines" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProofOfDeliveryLinesCountAsync operation
+#
+##############################################################################
+call_getProofOfDeliveryLinesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}/Lines/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProofsOfDeliveryAsync operation
+#
+##############################################################################
+call_getProofsOfDeliveryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProofsOfDeliveryCountAsync operation
+#
+##############################################################################
+call_getProofsOfDeliveryCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call rejectProofOfDeliveryAsync operation
+#
+##############################################################################
+call_rejectProofOfDeliveryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}/Reject" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call removeProofOfDeliveryLineAsync operation
+#
+##############################################################################
+call_removeProofOfDeliveryLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId lineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}/Lines/{lineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call signProofOfDeliveryAsync operation
+#
+##############################################################################
+call_signProofOfDeliveryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}/Sign" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateProofOfDeliveryAsync operation
+#
+##############################################################################
+call_updateProofOfDeliveryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateProofOfDeliveryLineAsync operation
+#
+##############################################################################
+call_updateProofOfDeliveryLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(podId lineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/ProofsOfDelivery/{podId}/Lines/{lineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call addRailWaybillLineAsync operation
+#
+##############################################################################
+call_addRailWaybillLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/{waybillId}/Lines" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call cancelRailWaybillAsync operation
+#
+##############################################################################
+call_cancelRailWaybillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/{waybillId}/Cancel" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createRailWaybillAsync operation
+#
+##############################################################################
+call_createRailWaybillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteRailWaybillAsync operation
+#
+##############################################################################
+call_deleteRailWaybillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/{waybillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRailWaybillByIdAsync operation
+#
+##############################################################################
+call_getRailWaybillByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/{waybillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRailWaybillLinesAsync operation
+#
+##############################################################################
+call_getRailWaybillLinesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/{waybillId}/Lines" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRailWaybillLinesCountAsync operation
+#
+##############################################################################
+call_getRailWaybillLinesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/{waybillId}/Lines/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRailWaybillsAsync operation
+#
+##############################################################################
+call_getRailWaybillsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRailWaybillsCountAsync operation
+#
+##############################################################################
+call_getRailWaybillsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call issueRailWaybillAsync operation
+#
+##############################################################################
+call_issueRailWaybillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/{waybillId}/Issue" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call markRailWaybillDeliveredAsync operation
+#
+##############################################################################
+call_markRailWaybillDeliveredAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/{waybillId}/MarkDelivered" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call markRailWaybillInTransitAsync operation
+#
+##############################################################################
+call_markRailWaybillInTransitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/{waybillId}/MarkInTransit" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeRailWaybillLineAsync operation
+#
+##############################################################################
+call_removeRailWaybillLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId lineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/{waybillId}/Lines/{lineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateRailWaybillAsync operation
+#
+##############################################################################
+call_updateRailWaybillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/{waybillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateRailWaybillLineAsync operation
+#
+##############################################################################
+call_updateRailWaybillLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId lineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RailWaybills/{waybillId}/Lines/{lineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call addRoadWaybillLineAsync operation
+#
+##############################################################################
+call_addRoadWaybillLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}/Lines" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call cancelRoadWaybillAsync operation
+#
+##############################################################################
+call_cancelRoadWaybillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}/Cancel" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createRoadWaybillAsync operation
+#
+##############################################################################
+call_createRoadWaybillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteRoadWaybillAsync operation
+#
+##############################################################################
+call_deleteRoadWaybillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call disputeRoadWaybillAsync operation
+#
+##############################################################################
+call_disputeRoadWaybillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}/Dispute" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRoadWaybillByIdAsync operation
+#
+##############################################################################
+call_getRoadWaybillByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRoadWaybillLinesAsync operation
+#
+##############################################################################
+call_getRoadWaybillLinesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}/Lines" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRoadWaybillLinesCountAsync operation
+#
+##############################################################################
+call_getRoadWaybillLinesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}/Lines/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRoadWaybillsAsync operation
+#
+##############################################################################
+call_getRoadWaybillsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRoadWaybillsCountAsync operation
+#
+##############################################################################
+call_getRoadWaybillsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call issueRoadWaybillAsync operation
+#
+##############################################################################
+call_issueRoadWaybillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}/Issue" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call markRoadWaybillDeliveredAsync operation
+#
+##############################################################################
+call_markRoadWaybillDeliveredAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}/MarkDelivered" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call markRoadWaybillInTransitAsync operation
+#
+##############################################################################
+call_markRoadWaybillInTransitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}/MarkInTransit" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeRoadWaybillLineAsync operation
+#
+##############################################################################
+call_removeRoadWaybillLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId lineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}/Lines/{lineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateRoadWaybillAsync operation
+#
+##############################################################################
+call_updateRoadWaybillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateRoadWaybillLineAsync operation
+#
+##############################################################################
+call_updateRoadWaybillLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(waybillId lineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/RoadWaybills/{waybillId}/Lines/{lineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call addSeawayBillLineAsync operation
+#
+##############################################################################
+call_addSeawayBillLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}/Lines" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call cancelSeawayBillAsync operation
+#
+##############################################################################
+call_cancelSeawayBillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}/Cancel" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createSeawayBillAsync operation
+#
+##############################################################################
+call_createSeawayBillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSeawayBillAsync operation
+#
+##############################################################################
+call_deleteSeawayBillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSeawayBillByIdAsync operation
+#
+##############################################################################
+call_getSeawayBillByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSeawayBillLinesAsync operation
+#
+##############################################################################
+call_getSeawayBillLinesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}/Lines" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSeawayBillLinesCountAsync operation
+#
+##############################################################################
+call_getSeawayBillLinesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}/Lines/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSeawayBillsAsync operation
+#
+##############################################################################
+call_getSeawayBillsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSeawayBillsCountAsync operation
+#
+##############################################################################
+call_getSeawayBillsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call issueSeawayBillAsync operation
+#
+##############################################################################
+call_issueSeawayBillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}/Issue" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call markSeawayBillArrivedAsync operation
+#
+##############################################################################
+call_markSeawayBillArrivedAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}/MarkArrived" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call markSeawayBillInTransitAsync operation
+#
+##############################################################################
+call_markSeawayBillInTransitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}/MarkInTransit" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call releaseSeawayBillAsync operation
+#
+##############################################################################
+call_releaseSeawayBillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}/Release" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeSeawayBillLineAsync operation
+#
+##############################################################################
+call_removeSeawayBillLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId lineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}/Lines/{lineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateSeawayBillAsync operation
+#
+##############################################################################
+call_updateSeawayBillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateSeawayBillLineAsync operation
+#
+##############################################################################
+call_updateSeawayBillLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billId lineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SeawayBills/{billId}/Lines/{lineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createSupplierProfileAsync operation
+#
+##############################################################################
+call_createSupplierProfileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SupplierProfiles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSupplierProfileAsync operation
+#
+##############################################################################
+call_deleteSupplierProfileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supplierProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SupplierProfiles/{supplierProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupplierProfileByIdAsync operation
+#
+##############################################################################
+call_getSupplierProfileByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supplierProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SupplierProfiles/{supplierProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupplierProfilesAsync operation
+#
+##############################################################################
+call_getSupplierProfilesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SupplierProfiles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSupplierProfilesCountAsync operation
+#
+##############################################################################
+call_getSupplierProfilesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SupplierProfiles/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateSupplierProfileAsync operation
+#
+##############################################################################
+call_updateSupplierProfileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(supplierProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/SupplierProfiles/{supplierProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call activateTruckDriverAsync operation
+#
+##############################################################################
+call_activateTruckDriverAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(driverId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/TruckDrivers/{driverId}/Activate" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createTruckDriverAsync operation
+#
+##############################################################################
+call_createTruckDriverAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/TruckDrivers" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deactivateTruckDriverAsync operation
+#
+##############################################################################
+call_deactivateTruckDriverAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(driverId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/TruckDrivers/{driverId}/Deactivate" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteTruckDriverAsync operation
+#
+##############################################################################
+call_deleteTruckDriverAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(driverId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/TruckDrivers/{driverId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTruckDriverByIdAsync operation
+#
+##############################################################################
+call_getTruckDriverByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(driverId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/TruckDrivers/{driverId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTruckDriversAsync operation
+#
+##############################################################################
+call_getTruckDriversAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/TruckDrivers" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTruckDriversCountAsync operation
+#
+##############################################################################
+call_getTruckDriversCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/TruckDrivers/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateTruckDriverAsync operation
+#
+##############################################################################
+call_updateTruckDriverAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(driverId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/TruckDrivers/{driverId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call arriveTripAsync operation
+#
+##############################################################################
+call_arriveTripAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId tripId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId}/Arrive" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call cancelTripAsync operation
+#
+##############################################################################
+call_cancelTripAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId tripId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId}/Cancel" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createTruckAsync operation
+#
+##############################################################################
+call_createTruckAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createTruckTripAsync operation
+#
+##############################################################################
+call_createTruckTripAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}/Trips" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteTruckAsync operation
+#
+##############################################################################
+call_deleteTruckAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteTruckTripAsync operation
+#
+##############################################################################
+call_deleteTruckTripAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId tripId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deliverTripAsync operation
+#
+##############################################################################
+call_deliverTripAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId tripId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId}/Deliver" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call departTripAsync operation
+#
+##############################################################################
+call_departTripAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId tripId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId}/Depart" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call dispatchTripAsync operation
+#
+##############################################################################
+call_dispatchTripAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId tripId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId}/Dispatch" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTruckByIdAsync operation
+#
+##############################################################################
+call_getTruckByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTruckTripsAsync operation
+#
+##############################################################################
+call_getTruckTripsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}/Trips" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTruckTripsCountAsync operation
+#
+##############################################################################
+call_getTruckTripsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}/Trips/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTrucksAsync operation
+#
+##############################################################################
+call_getTrucksAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTrucksCountAsync operation
+#
+##############################################################################
+call_getTrucksCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateTruckAsync operation
+#
+##############################################################################
+call_updateTruckAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateTruckTripAsync operation
+#
+##############################################################################
+call_updateTruckTripAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(truckId tripId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createVesselAsync operation
+#
+##############################################################################
+call_createVesselAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Vessels" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteVesselAsync operation
+#
+##############################################################################
+call_deleteVesselAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(vesselId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Vessels/{vesselId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getVesselByIdAsync operation
+#
+##############################################################################
+call_getVesselByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(vesselId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Vessels/{vesselId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getVesselsAsync operation
+#
+##############################################################################
+call_getVesselsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Vessels" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getVesselsCountAsync operation
+#
+##############################################################################
+call_getVesselsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Vessels/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateVesselAsync operation
+#
+##############################################################################
+call_updateVesselAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(vesselId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Vessels/{vesselId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call cancelVoyageAsync operation
+#
+##############################################################################
+call_cancelVoyageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(voyageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages/{voyageId}/Cancel" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call completeVoyageAsync operation
+#
+##############################################################################
+call_completeVoyageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(voyageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages/{voyageId}/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createVoyageAsync operation
+#
+##############################################################################
+call_createVoyageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createVoyagePortCallAsync operation
+#
+##############################################################################
+call_createVoyagePortCallAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(voyageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages/{voyageId}/PortCalls" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteVoyageAsync operation
+#
+##############################################################################
+call_deleteVoyageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(voyageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages/{voyageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteVoyagePortCallAsync operation
+#
+##############################################################################
+call_deleteVoyagePortCallAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(voyageId portCallId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages/{voyageId}/PortCalls/{portCallId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getVoyageByIdAsync operation
+#
+##############################################################################
+call_getVoyageByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(voyageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages/{voyageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getVoyagePortCallsAsync operation
+#
+##############################################################################
+call_getVoyagePortCallsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(voyageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages/{voyageId}/PortCalls" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getVoyagePortCallsCountAsync operation
+#
+##############################################################################
+call_getVoyagePortCallsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(voyageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages/{voyageId}/PortCalls/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getVoyagesAsync operation
+#
+##############################################################################
+call_getVoyagesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getVoyagesCountAsync operation
+#
+##############################################################################
+call_getVoyagesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call startVoyageAsync operation
+#
+##############################################################################
+call_startVoyageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(voyageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages/{voyageId}/Start" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateVoyageAsync operation
+#
+##############################################################################
+call_updateVoyageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(voyageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages/{voyageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateVoyagePortCallAsync operation
+#
+##############################################################################
+call_updateVoyagePortCallAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(voyageId portCallId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Voyages/{voyageId}/PortCalls/{portCallId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createWarehouseAsync operation
+#
+##############################################################################
+call_createWarehouseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Warehouses" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteWarehouseAsync operation
+#
+##############################################################################
+call_deleteWarehouseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(warehouseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Warehouses/{warehouseId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWarehouseByIdAsync operation
+#
+##############################################################################
+call_getWarehouseByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(warehouseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Warehouses/{warehouseId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWarehousesAsync operation
+#
+##############################################################################
+call_getWarehousesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Warehouses" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWarehousesCountAsync operation
+#
+##############################################################################
+call_getWarehousesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Warehouses/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateWarehouseAsync operation
+#
+##############################################################################
+call_updateWarehouseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(warehouseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LogisticsService/Warehouses/{warehouseId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2039,6 +18748,75 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
+    addAirwayBillLineAsync)
+    operation="addAirwayBillLineAsync"
+    ;;
+    cancelAirwayBillAsync)
+    operation="cancelAirwayBillAsync"
+    ;;
+    createAirwayBillAsync)
+    operation="createAirwayBillAsync"
+    ;;
+    deleteAirwayBillAsync)
+    operation="deleteAirwayBillAsync"
+    ;;
+    getAirwayBillByIdAsync)
+    operation="getAirwayBillByIdAsync"
+    ;;
+    getAirwayBillLinesAsync)
+    operation="getAirwayBillLinesAsync"
+    ;;
+    getAirwayBillLinesCountAsync)
+    operation="getAirwayBillLinesCountAsync"
+    ;;
+    getAirwayBillsAsync)
+    operation="getAirwayBillsAsync"
+    ;;
+    getAirwayBillsCountAsync)
+    operation="getAirwayBillsCountAsync"
+    ;;
+    issueAirwayBillAsync)
+    operation="issueAirwayBillAsync"
+    ;;
+    markAirwayBillArrivedAsync)
+    operation="markAirwayBillArrivedAsync"
+    ;;
+    markAirwayBillDeliveredAsync)
+    operation="markAirwayBillDeliveredAsync"
+    ;;
+    markAirwayBillInTransitAsync)
+    operation="markAirwayBillInTransitAsync"
+    ;;
+    removeAirwayBillLineAsync)
+    operation="removeAirwayBillLineAsync"
+    ;;
+    updateAirwayBillAsync)
+    operation="updateAirwayBillAsync"
+    ;;
+    updateAirwayBillLineAsync)
+    operation="updateAirwayBillLineAsync"
+    ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
+    ;;
+    createDeliveryNoteAsync)
+    operation="createDeliveryNoteAsync"
+    ;;
+    deleteDeliveryNoteAsync)
+    operation="deleteDeliveryNoteAsync"
+    ;;
+    getDeliveryNoteByIdAsync)
+    operation="getDeliveryNoteByIdAsync"
+    ;;
+    getDeliveryNotesAsync)
+    operation="getDeliveryNotesAsync"
+    ;;
+    getDeliveryNotesCountAsync)
+    operation="getDeliveryNotesCountAsync"
+    ;;
+    updateDeliveryNoteAsync)
+    operation="updateDeliveryNoteAsync"
+    ;;
     accountLogoutPost)
     operation="accountLogoutPost"
     ;;
@@ -2090,8 +18868,512 @@ case $key in
     versionGet)
     operation="versionGet"
     ;;
-    getContactsAsync)
-    operation="getContactsAsync"
+    createItemPackingSlipAsync)
+    operation="createItemPackingSlipAsync"
+    ;;
+    createItemPackingSlipEntryAsync)
+    operation="createItemPackingSlipEntryAsync"
+    ;;
+    deleteItemPackingSlipAsync)
+    operation="deleteItemPackingSlipAsync"
+    ;;
+    deleteItemPackingSlipEntryAsync)
+    operation="deleteItemPackingSlipEntryAsync"
+    ;;
+    getItemPackingSlipByIdAsync)
+    operation="getItemPackingSlipByIdAsync"
+    ;;
+    getItemPackingSlipEntriesAsync)
+    operation="getItemPackingSlipEntriesAsync"
+    ;;
+    getItemPackingSlipEntriesCountAsync)
+    operation="getItemPackingSlipEntriesCountAsync"
+    ;;
+    getItemPackingSlipEntryByIdAsync)
+    operation="getItemPackingSlipEntryByIdAsync"
+    ;;
+    getItemPackingSlipsAsync)
+    operation="getItemPackingSlipsAsync"
+    ;;
+    getItemPackingSlipsCountAsync)
+    operation="getItemPackingSlipsCountAsync"
+    ;;
+    updateItemPackingSlipAsync)
+    operation="updateItemPackingSlipAsync"
+    ;;
+    updateItemPackingSlipEntryAsync)
+    operation="updateItemPackingSlipEntryAsync"
+    ;;
+    createItemPickListAsync)
+    operation="createItemPickListAsync"
+    ;;
+    createItemPickListEntryAsync)
+    operation="createItemPickListEntryAsync"
+    ;;
+    deleteItemPickListAsync)
+    operation="deleteItemPickListAsync"
+    ;;
+    deleteItemPickListEntryAsync)
+    operation="deleteItemPickListEntryAsync"
+    ;;
+    getItemPickListByIdAsync)
+    operation="getItemPickListByIdAsync"
+    ;;
+    getItemPickListEntriesAsync)
+    operation="getItemPickListEntriesAsync"
+    ;;
+    getItemPickListEntriesCountAsync)
+    operation="getItemPickListEntriesCountAsync"
+    ;;
+    getItemPickListEntryByIdAsync)
+    operation="getItemPickListEntryByIdAsync"
+    ;;
+    getItemPickListsAsync)
+    operation="getItemPickListsAsync"
+    ;;
+    getItemPickListsCountAsync)
+    operation="getItemPickListsCountAsync"
+    ;;
+    updateItemPickListAsync)
+    operation="updateItemPickListAsync"
+    ;;
+    updateItemPickListEntryAsync)
+    operation="updateItemPickListEntryAsync"
+    ;;
+    createItemRestockAsync)
+    operation="createItemRestockAsync"
+    ;;
+    createItemRestockEntryAsync)
+    operation="createItemRestockEntryAsync"
+    ;;
+    deleteItemRestockAsync)
+    operation="deleteItemRestockAsync"
+    ;;
+    deleteItemRestockEntryAsync)
+    operation="deleteItemRestockEntryAsync"
+    ;;
+    getItemRestockByIdAsync)
+    operation="getItemRestockByIdAsync"
+    ;;
+    getItemRestockEntriesAsync)
+    operation="getItemRestockEntriesAsync"
+    ;;
+    getItemRestockEntriesCountAsync)
+    operation="getItemRestockEntriesCountAsync"
+    ;;
+    getItemRestockEntryByIdAsync)
+    operation="getItemRestockEntryByIdAsync"
+    ;;
+    getItemRestocksAsync)
+    operation="getItemRestocksAsync"
+    ;;
+    getItemRestocksCountAsync)
+    operation="getItemRestocksCountAsync"
+    ;;
+    updateItemRestockAsync)
+    operation="updateItemRestockAsync"
+    ;;
+    updateItemRestockEntryAsync)
+    operation="updateItemRestockEntryAsync"
+    ;;
+    createItemRetainSampleAsync)
+    operation="createItemRetainSampleAsync"
+    ;;
+    deleteItemRetainSampleAsync)
+    operation="deleteItemRetainSampleAsync"
+    ;;
+    getItemRetainSampleByIdAsync)
+    operation="getItemRetainSampleByIdAsync"
+    ;;
+    getItemRetainSamplesAsync)
+    operation="getItemRetainSamplesAsync"
+    ;;
+    getItemRetainSamplesCountAsync)
+    operation="getItemRetainSamplesCountAsync"
+    ;;
+    updateItemRetainSampleAsync)
+    operation="updateItemRetainSampleAsync"
+    ;;
+    createPortAsync)
+    operation="createPortAsync"
+    ;;
+    deletePortAsync)
+    operation="deletePortAsync"
+    ;;
+    getPortByIdAsync)
+    operation="getPortByIdAsync"
+    ;;
+    getPortsAsync)
+    operation="getPortsAsync"
+    ;;
+    getPortsCountAsync)
+    operation="getPortsCountAsync"
+    ;;
+    updatePortAsync)
+    operation="updatePortAsync"
+    ;;
+    addProofOfDeliveryLineAsync)
+    operation="addProofOfDeliveryLineAsync"
+    ;;
+    attachDeliveryNoteAsync)
+    operation="attachDeliveryNoteAsync"
+    ;;
+    createProofOfDeliveryAsync)
+    operation="createProofOfDeliveryAsync"
+    ;;
+    deleteProofOfDeliveryAsync)
+    operation="deleteProofOfDeliveryAsync"
+    ;;
+    detachDeliveryNoteAsync)
+    operation="detachDeliveryNoteAsync"
+    ;;
+    disputeProofOfDeliveryAsync)
+    operation="disputeProofOfDeliveryAsync"
+    ;;
+    getProofOfDeliveryByIdAsync)
+    operation="getProofOfDeliveryByIdAsync"
+    ;;
+    getProofOfDeliveryDeliveryNotesAsync)
+    operation="getProofOfDeliveryDeliveryNotesAsync"
+    ;;
+    getProofOfDeliveryDeliveryNotesCountAsync)
+    operation="getProofOfDeliveryDeliveryNotesCountAsync"
+    ;;
+    getProofOfDeliveryLinesAsync)
+    operation="getProofOfDeliveryLinesAsync"
+    ;;
+    getProofOfDeliveryLinesCountAsync)
+    operation="getProofOfDeliveryLinesCountAsync"
+    ;;
+    getProofsOfDeliveryAsync)
+    operation="getProofsOfDeliveryAsync"
+    ;;
+    getProofsOfDeliveryCountAsync)
+    operation="getProofsOfDeliveryCountAsync"
+    ;;
+    rejectProofOfDeliveryAsync)
+    operation="rejectProofOfDeliveryAsync"
+    ;;
+    removeProofOfDeliveryLineAsync)
+    operation="removeProofOfDeliveryLineAsync"
+    ;;
+    signProofOfDeliveryAsync)
+    operation="signProofOfDeliveryAsync"
+    ;;
+    updateProofOfDeliveryAsync)
+    operation="updateProofOfDeliveryAsync"
+    ;;
+    updateProofOfDeliveryLineAsync)
+    operation="updateProofOfDeliveryLineAsync"
+    ;;
+    addRailWaybillLineAsync)
+    operation="addRailWaybillLineAsync"
+    ;;
+    cancelRailWaybillAsync)
+    operation="cancelRailWaybillAsync"
+    ;;
+    createRailWaybillAsync)
+    operation="createRailWaybillAsync"
+    ;;
+    deleteRailWaybillAsync)
+    operation="deleteRailWaybillAsync"
+    ;;
+    getRailWaybillByIdAsync)
+    operation="getRailWaybillByIdAsync"
+    ;;
+    getRailWaybillLinesAsync)
+    operation="getRailWaybillLinesAsync"
+    ;;
+    getRailWaybillLinesCountAsync)
+    operation="getRailWaybillLinesCountAsync"
+    ;;
+    getRailWaybillsAsync)
+    operation="getRailWaybillsAsync"
+    ;;
+    getRailWaybillsCountAsync)
+    operation="getRailWaybillsCountAsync"
+    ;;
+    issueRailWaybillAsync)
+    operation="issueRailWaybillAsync"
+    ;;
+    markRailWaybillDeliveredAsync)
+    operation="markRailWaybillDeliveredAsync"
+    ;;
+    markRailWaybillInTransitAsync)
+    operation="markRailWaybillInTransitAsync"
+    ;;
+    removeRailWaybillLineAsync)
+    operation="removeRailWaybillLineAsync"
+    ;;
+    updateRailWaybillAsync)
+    operation="updateRailWaybillAsync"
+    ;;
+    updateRailWaybillLineAsync)
+    operation="updateRailWaybillLineAsync"
+    ;;
+    addRoadWaybillLineAsync)
+    operation="addRoadWaybillLineAsync"
+    ;;
+    cancelRoadWaybillAsync)
+    operation="cancelRoadWaybillAsync"
+    ;;
+    createRoadWaybillAsync)
+    operation="createRoadWaybillAsync"
+    ;;
+    deleteRoadWaybillAsync)
+    operation="deleteRoadWaybillAsync"
+    ;;
+    disputeRoadWaybillAsync)
+    operation="disputeRoadWaybillAsync"
+    ;;
+    getRoadWaybillByIdAsync)
+    operation="getRoadWaybillByIdAsync"
+    ;;
+    getRoadWaybillLinesAsync)
+    operation="getRoadWaybillLinesAsync"
+    ;;
+    getRoadWaybillLinesCountAsync)
+    operation="getRoadWaybillLinesCountAsync"
+    ;;
+    getRoadWaybillsAsync)
+    operation="getRoadWaybillsAsync"
+    ;;
+    getRoadWaybillsCountAsync)
+    operation="getRoadWaybillsCountAsync"
+    ;;
+    issueRoadWaybillAsync)
+    operation="issueRoadWaybillAsync"
+    ;;
+    markRoadWaybillDeliveredAsync)
+    operation="markRoadWaybillDeliveredAsync"
+    ;;
+    markRoadWaybillInTransitAsync)
+    operation="markRoadWaybillInTransitAsync"
+    ;;
+    removeRoadWaybillLineAsync)
+    operation="removeRoadWaybillLineAsync"
+    ;;
+    updateRoadWaybillAsync)
+    operation="updateRoadWaybillAsync"
+    ;;
+    updateRoadWaybillLineAsync)
+    operation="updateRoadWaybillLineAsync"
+    ;;
+    addSeawayBillLineAsync)
+    operation="addSeawayBillLineAsync"
+    ;;
+    cancelSeawayBillAsync)
+    operation="cancelSeawayBillAsync"
+    ;;
+    createSeawayBillAsync)
+    operation="createSeawayBillAsync"
+    ;;
+    deleteSeawayBillAsync)
+    operation="deleteSeawayBillAsync"
+    ;;
+    getSeawayBillByIdAsync)
+    operation="getSeawayBillByIdAsync"
+    ;;
+    getSeawayBillLinesAsync)
+    operation="getSeawayBillLinesAsync"
+    ;;
+    getSeawayBillLinesCountAsync)
+    operation="getSeawayBillLinesCountAsync"
+    ;;
+    getSeawayBillsAsync)
+    operation="getSeawayBillsAsync"
+    ;;
+    getSeawayBillsCountAsync)
+    operation="getSeawayBillsCountAsync"
+    ;;
+    issueSeawayBillAsync)
+    operation="issueSeawayBillAsync"
+    ;;
+    markSeawayBillArrivedAsync)
+    operation="markSeawayBillArrivedAsync"
+    ;;
+    markSeawayBillInTransitAsync)
+    operation="markSeawayBillInTransitAsync"
+    ;;
+    releaseSeawayBillAsync)
+    operation="releaseSeawayBillAsync"
+    ;;
+    removeSeawayBillLineAsync)
+    operation="removeSeawayBillLineAsync"
+    ;;
+    updateSeawayBillAsync)
+    operation="updateSeawayBillAsync"
+    ;;
+    updateSeawayBillLineAsync)
+    operation="updateSeawayBillLineAsync"
+    ;;
+    createSupplierProfileAsync)
+    operation="createSupplierProfileAsync"
+    ;;
+    deleteSupplierProfileAsync)
+    operation="deleteSupplierProfileAsync"
+    ;;
+    getSupplierProfileByIdAsync)
+    operation="getSupplierProfileByIdAsync"
+    ;;
+    getSupplierProfilesAsync)
+    operation="getSupplierProfilesAsync"
+    ;;
+    getSupplierProfilesCountAsync)
+    operation="getSupplierProfilesCountAsync"
+    ;;
+    updateSupplierProfileAsync)
+    operation="updateSupplierProfileAsync"
+    ;;
+    activateTruckDriverAsync)
+    operation="activateTruckDriverAsync"
+    ;;
+    createTruckDriverAsync)
+    operation="createTruckDriverAsync"
+    ;;
+    deactivateTruckDriverAsync)
+    operation="deactivateTruckDriverAsync"
+    ;;
+    deleteTruckDriverAsync)
+    operation="deleteTruckDriverAsync"
+    ;;
+    getTruckDriverByIdAsync)
+    operation="getTruckDriverByIdAsync"
+    ;;
+    getTruckDriversAsync)
+    operation="getTruckDriversAsync"
+    ;;
+    getTruckDriversCountAsync)
+    operation="getTruckDriversCountAsync"
+    ;;
+    updateTruckDriverAsync)
+    operation="updateTruckDriverAsync"
+    ;;
+    arriveTripAsync)
+    operation="arriveTripAsync"
+    ;;
+    cancelTripAsync)
+    operation="cancelTripAsync"
+    ;;
+    createTruckAsync)
+    operation="createTruckAsync"
+    ;;
+    createTruckTripAsync)
+    operation="createTruckTripAsync"
+    ;;
+    deleteTruckAsync)
+    operation="deleteTruckAsync"
+    ;;
+    deleteTruckTripAsync)
+    operation="deleteTruckTripAsync"
+    ;;
+    deliverTripAsync)
+    operation="deliverTripAsync"
+    ;;
+    departTripAsync)
+    operation="departTripAsync"
+    ;;
+    dispatchTripAsync)
+    operation="dispatchTripAsync"
+    ;;
+    getTruckByIdAsync)
+    operation="getTruckByIdAsync"
+    ;;
+    getTruckTripsAsync)
+    operation="getTruckTripsAsync"
+    ;;
+    getTruckTripsCountAsync)
+    operation="getTruckTripsCountAsync"
+    ;;
+    getTrucksAsync)
+    operation="getTrucksAsync"
+    ;;
+    getTrucksCountAsync)
+    operation="getTrucksCountAsync"
+    ;;
+    updateTruckAsync)
+    operation="updateTruckAsync"
+    ;;
+    updateTruckTripAsync)
+    operation="updateTruckTripAsync"
+    ;;
+    createVesselAsync)
+    operation="createVesselAsync"
+    ;;
+    deleteVesselAsync)
+    operation="deleteVesselAsync"
+    ;;
+    getVesselByIdAsync)
+    operation="getVesselByIdAsync"
+    ;;
+    getVesselsAsync)
+    operation="getVesselsAsync"
+    ;;
+    getVesselsCountAsync)
+    operation="getVesselsCountAsync"
+    ;;
+    updateVesselAsync)
+    operation="updateVesselAsync"
+    ;;
+    cancelVoyageAsync)
+    operation="cancelVoyageAsync"
+    ;;
+    completeVoyageAsync)
+    operation="completeVoyageAsync"
+    ;;
+    createVoyageAsync)
+    operation="createVoyageAsync"
+    ;;
+    createVoyagePortCallAsync)
+    operation="createVoyagePortCallAsync"
+    ;;
+    deleteVoyageAsync)
+    operation="deleteVoyageAsync"
+    ;;
+    deleteVoyagePortCallAsync)
+    operation="deleteVoyagePortCallAsync"
+    ;;
+    getVoyageByIdAsync)
+    operation="getVoyageByIdAsync"
+    ;;
+    getVoyagePortCallsAsync)
+    operation="getVoyagePortCallsAsync"
+    ;;
+    getVoyagePortCallsCountAsync)
+    operation="getVoyagePortCallsCountAsync"
+    ;;
+    getVoyagesAsync)
+    operation="getVoyagesAsync"
+    ;;
+    getVoyagesCountAsync)
+    operation="getVoyagesCountAsync"
+    ;;
+    startVoyageAsync)
+    operation="startVoyageAsync"
+    ;;
+    updateVoyageAsync)
+    operation="updateVoyageAsync"
+    ;;
+    updateVoyagePortCallAsync)
+    operation="updateVoyagePortCallAsync"
+    ;;
+    createWarehouseAsync)
+    operation="createWarehouseAsync"
+    ;;
+    deleteWarehouseAsync)
+    operation="deleteWarehouseAsync"
+    ;;
+    getWarehouseByIdAsync)
+    operation="getWarehouseByIdAsync"
+    ;;
+    getWarehousesAsync)
+    operation="getWarehousesAsync"
+    ;;
+    getWarehousesCountAsync)
+    operation="getWarehousesCountAsync"
+    ;;
+    updateWarehouseAsync)
+    operation="updateWarehouseAsync"
     ;;
     *==*)
     # Parse body arguments and convert them into top level
@@ -2180,6 +19462,75 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
+    addAirwayBillLineAsync)
+    call_addAirwayBillLineAsync
+    ;;
+    cancelAirwayBillAsync)
+    call_cancelAirwayBillAsync
+    ;;
+    createAirwayBillAsync)
+    call_createAirwayBillAsync
+    ;;
+    deleteAirwayBillAsync)
+    call_deleteAirwayBillAsync
+    ;;
+    getAirwayBillByIdAsync)
+    call_getAirwayBillByIdAsync
+    ;;
+    getAirwayBillLinesAsync)
+    call_getAirwayBillLinesAsync
+    ;;
+    getAirwayBillLinesCountAsync)
+    call_getAirwayBillLinesCountAsync
+    ;;
+    getAirwayBillsAsync)
+    call_getAirwayBillsAsync
+    ;;
+    getAirwayBillsCountAsync)
+    call_getAirwayBillsCountAsync
+    ;;
+    issueAirwayBillAsync)
+    call_issueAirwayBillAsync
+    ;;
+    markAirwayBillArrivedAsync)
+    call_markAirwayBillArrivedAsync
+    ;;
+    markAirwayBillDeliveredAsync)
+    call_markAirwayBillDeliveredAsync
+    ;;
+    markAirwayBillInTransitAsync)
+    call_markAirwayBillInTransitAsync
+    ;;
+    removeAirwayBillLineAsync)
+    call_removeAirwayBillLineAsync
+    ;;
+    updateAirwayBillAsync)
+    call_updateAirwayBillAsync
+    ;;
+    updateAirwayBillLineAsync)
+    call_updateAirwayBillLineAsync
+    ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
+    ;;
+    createDeliveryNoteAsync)
+    call_createDeliveryNoteAsync
+    ;;
+    deleteDeliveryNoteAsync)
+    call_deleteDeliveryNoteAsync
+    ;;
+    getDeliveryNoteByIdAsync)
+    call_getDeliveryNoteByIdAsync
+    ;;
+    getDeliveryNotesAsync)
+    call_getDeliveryNotesAsync
+    ;;
+    getDeliveryNotesCountAsync)
+    call_getDeliveryNotesCountAsync
+    ;;
+    updateDeliveryNoteAsync)
+    call_updateDeliveryNoteAsync
+    ;;
     accountLogoutPost)
     call_accountLogoutPost
     ;;
@@ -2231,8 +19582,512 @@ case $operation in
     versionGet)
     call_versionGet
     ;;
-    getContactsAsync)
-    call_getContactsAsync
+    createItemPackingSlipAsync)
+    call_createItemPackingSlipAsync
+    ;;
+    createItemPackingSlipEntryAsync)
+    call_createItemPackingSlipEntryAsync
+    ;;
+    deleteItemPackingSlipAsync)
+    call_deleteItemPackingSlipAsync
+    ;;
+    deleteItemPackingSlipEntryAsync)
+    call_deleteItemPackingSlipEntryAsync
+    ;;
+    getItemPackingSlipByIdAsync)
+    call_getItemPackingSlipByIdAsync
+    ;;
+    getItemPackingSlipEntriesAsync)
+    call_getItemPackingSlipEntriesAsync
+    ;;
+    getItemPackingSlipEntriesCountAsync)
+    call_getItemPackingSlipEntriesCountAsync
+    ;;
+    getItemPackingSlipEntryByIdAsync)
+    call_getItemPackingSlipEntryByIdAsync
+    ;;
+    getItemPackingSlipsAsync)
+    call_getItemPackingSlipsAsync
+    ;;
+    getItemPackingSlipsCountAsync)
+    call_getItemPackingSlipsCountAsync
+    ;;
+    updateItemPackingSlipAsync)
+    call_updateItemPackingSlipAsync
+    ;;
+    updateItemPackingSlipEntryAsync)
+    call_updateItemPackingSlipEntryAsync
+    ;;
+    createItemPickListAsync)
+    call_createItemPickListAsync
+    ;;
+    createItemPickListEntryAsync)
+    call_createItemPickListEntryAsync
+    ;;
+    deleteItemPickListAsync)
+    call_deleteItemPickListAsync
+    ;;
+    deleteItemPickListEntryAsync)
+    call_deleteItemPickListEntryAsync
+    ;;
+    getItemPickListByIdAsync)
+    call_getItemPickListByIdAsync
+    ;;
+    getItemPickListEntriesAsync)
+    call_getItemPickListEntriesAsync
+    ;;
+    getItemPickListEntriesCountAsync)
+    call_getItemPickListEntriesCountAsync
+    ;;
+    getItemPickListEntryByIdAsync)
+    call_getItemPickListEntryByIdAsync
+    ;;
+    getItemPickListsAsync)
+    call_getItemPickListsAsync
+    ;;
+    getItemPickListsCountAsync)
+    call_getItemPickListsCountAsync
+    ;;
+    updateItemPickListAsync)
+    call_updateItemPickListAsync
+    ;;
+    updateItemPickListEntryAsync)
+    call_updateItemPickListEntryAsync
+    ;;
+    createItemRestockAsync)
+    call_createItemRestockAsync
+    ;;
+    createItemRestockEntryAsync)
+    call_createItemRestockEntryAsync
+    ;;
+    deleteItemRestockAsync)
+    call_deleteItemRestockAsync
+    ;;
+    deleteItemRestockEntryAsync)
+    call_deleteItemRestockEntryAsync
+    ;;
+    getItemRestockByIdAsync)
+    call_getItemRestockByIdAsync
+    ;;
+    getItemRestockEntriesAsync)
+    call_getItemRestockEntriesAsync
+    ;;
+    getItemRestockEntriesCountAsync)
+    call_getItemRestockEntriesCountAsync
+    ;;
+    getItemRestockEntryByIdAsync)
+    call_getItemRestockEntryByIdAsync
+    ;;
+    getItemRestocksAsync)
+    call_getItemRestocksAsync
+    ;;
+    getItemRestocksCountAsync)
+    call_getItemRestocksCountAsync
+    ;;
+    updateItemRestockAsync)
+    call_updateItemRestockAsync
+    ;;
+    updateItemRestockEntryAsync)
+    call_updateItemRestockEntryAsync
+    ;;
+    createItemRetainSampleAsync)
+    call_createItemRetainSampleAsync
+    ;;
+    deleteItemRetainSampleAsync)
+    call_deleteItemRetainSampleAsync
+    ;;
+    getItemRetainSampleByIdAsync)
+    call_getItemRetainSampleByIdAsync
+    ;;
+    getItemRetainSamplesAsync)
+    call_getItemRetainSamplesAsync
+    ;;
+    getItemRetainSamplesCountAsync)
+    call_getItemRetainSamplesCountAsync
+    ;;
+    updateItemRetainSampleAsync)
+    call_updateItemRetainSampleAsync
+    ;;
+    createPortAsync)
+    call_createPortAsync
+    ;;
+    deletePortAsync)
+    call_deletePortAsync
+    ;;
+    getPortByIdAsync)
+    call_getPortByIdAsync
+    ;;
+    getPortsAsync)
+    call_getPortsAsync
+    ;;
+    getPortsCountAsync)
+    call_getPortsCountAsync
+    ;;
+    updatePortAsync)
+    call_updatePortAsync
+    ;;
+    addProofOfDeliveryLineAsync)
+    call_addProofOfDeliveryLineAsync
+    ;;
+    attachDeliveryNoteAsync)
+    call_attachDeliveryNoteAsync
+    ;;
+    createProofOfDeliveryAsync)
+    call_createProofOfDeliveryAsync
+    ;;
+    deleteProofOfDeliveryAsync)
+    call_deleteProofOfDeliveryAsync
+    ;;
+    detachDeliveryNoteAsync)
+    call_detachDeliveryNoteAsync
+    ;;
+    disputeProofOfDeliveryAsync)
+    call_disputeProofOfDeliveryAsync
+    ;;
+    getProofOfDeliveryByIdAsync)
+    call_getProofOfDeliveryByIdAsync
+    ;;
+    getProofOfDeliveryDeliveryNotesAsync)
+    call_getProofOfDeliveryDeliveryNotesAsync
+    ;;
+    getProofOfDeliveryDeliveryNotesCountAsync)
+    call_getProofOfDeliveryDeliveryNotesCountAsync
+    ;;
+    getProofOfDeliveryLinesAsync)
+    call_getProofOfDeliveryLinesAsync
+    ;;
+    getProofOfDeliveryLinesCountAsync)
+    call_getProofOfDeliveryLinesCountAsync
+    ;;
+    getProofsOfDeliveryAsync)
+    call_getProofsOfDeliveryAsync
+    ;;
+    getProofsOfDeliveryCountAsync)
+    call_getProofsOfDeliveryCountAsync
+    ;;
+    rejectProofOfDeliveryAsync)
+    call_rejectProofOfDeliveryAsync
+    ;;
+    removeProofOfDeliveryLineAsync)
+    call_removeProofOfDeliveryLineAsync
+    ;;
+    signProofOfDeliveryAsync)
+    call_signProofOfDeliveryAsync
+    ;;
+    updateProofOfDeliveryAsync)
+    call_updateProofOfDeliveryAsync
+    ;;
+    updateProofOfDeliveryLineAsync)
+    call_updateProofOfDeliveryLineAsync
+    ;;
+    addRailWaybillLineAsync)
+    call_addRailWaybillLineAsync
+    ;;
+    cancelRailWaybillAsync)
+    call_cancelRailWaybillAsync
+    ;;
+    createRailWaybillAsync)
+    call_createRailWaybillAsync
+    ;;
+    deleteRailWaybillAsync)
+    call_deleteRailWaybillAsync
+    ;;
+    getRailWaybillByIdAsync)
+    call_getRailWaybillByIdAsync
+    ;;
+    getRailWaybillLinesAsync)
+    call_getRailWaybillLinesAsync
+    ;;
+    getRailWaybillLinesCountAsync)
+    call_getRailWaybillLinesCountAsync
+    ;;
+    getRailWaybillsAsync)
+    call_getRailWaybillsAsync
+    ;;
+    getRailWaybillsCountAsync)
+    call_getRailWaybillsCountAsync
+    ;;
+    issueRailWaybillAsync)
+    call_issueRailWaybillAsync
+    ;;
+    markRailWaybillDeliveredAsync)
+    call_markRailWaybillDeliveredAsync
+    ;;
+    markRailWaybillInTransitAsync)
+    call_markRailWaybillInTransitAsync
+    ;;
+    removeRailWaybillLineAsync)
+    call_removeRailWaybillLineAsync
+    ;;
+    updateRailWaybillAsync)
+    call_updateRailWaybillAsync
+    ;;
+    updateRailWaybillLineAsync)
+    call_updateRailWaybillLineAsync
+    ;;
+    addRoadWaybillLineAsync)
+    call_addRoadWaybillLineAsync
+    ;;
+    cancelRoadWaybillAsync)
+    call_cancelRoadWaybillAsync
+    ;;
+    createRoadWaybillAsync)
+    call_createRoadWaybillAsync
+    ;;
+    deleteRoadWaybillAsync)
+    call_deleteRoadWaybillAsync
+    ;;
+    disputeRoadWaybillAsync)
+    call_disputeRoadWaybillAsync
+    ;;
+    getRoadWaybillByIdAsync)
+    call_getRoadWaybillByIdAsync
+    ;;
+    getRoadWaybillLinesAsync)
+    call_getRoadWaybillLinesAsync
+    ;;
+    getRoadWaybillLinesCountAsync)
+    call_getRoadWaybillLinesCountAsync
+    ;;
+    getRoadWaybillsAsync)
+    call_getRoadWaybillsAsync
+    ;;
+    getRoadWaybillsCountAsync)
+    call_getRoadWaybillsCountAsync
+    ;;
+    issueRoadWaybillAsync)
+    call_issueRoadWaybillAsync
+    ;;
+    markRoadWaybillDeliveredAsync)
+    call_markRoadWaybillDeliveredAsync
+    ;;
+    markRoadWaybillInTransitAsync)
+    call_markRoadWaybillInTransitAsync
+    ;;
+    removeRoadWaybillLineAsync)
+    call_removeRoadWaybillLineAsync
+    ;;
+    updateRoadWaybillAsync)
+    call_updateRoadWaybillAsync
+    ;;
+    updateRoadWaybillLineAsync)
+    call_updateRoadWaybillLineAsync
+    ;;
+    addSeawayBillLineAsync)
+    call_addSeawayBillLineAsync
+    ;;
+    cancelSeawayBillAsync)
+    call_cancelSeawayBillAsync
+    ;;
+    createSeawayBillAsync)
+    call_createSeawayBillAsync
+    ;;
+    deleteSeawayBillAsync)
+    call_deleteSeawayBillAsync
+    ;;
+    getSeawayBillByIdAsync)
+    call_getSeawayBillByIdAsync
+    ;;
+    getSeawayBillLinesAsync)
+    call_getSeawayBillLinesAsync
+    ;;
+    getSeawayBillLinesCountAsync)
+    call_getSeawayBillLinesCountAsync
+    ;;
+    getSeawayBillsAsync)
+    call_getSeawayBillsAsync
+    ;;
+    getSeawayBillsCountAsync)
+    call_getSeawayBillsCountAsync
+    ;;
+    issueSeawayBillAsync)
+    call_issueSeawayBillAsync
+    ;;
+    markSeawayBillArrivedAsync)
+    call_markSeawayBillArrivedAsync
+    ;;
+    markSeawayBillInTransitAsync)
+    call_markSeawayBillInTransitAsync
+    ;;
+    releaseSeawayBillAsync)
+    call_releaseSeawayBillAsync
+    ;;
+    removeSeawayBillLineAsync)
+    call_removeSeawayBillLineAsync
+    ;;
+    updateSeawayBillAsync)
+    call_updateSeawayBillAsync
+    ;;
+    updateSeawayBillLineAsync)
+    call_updateSeawayBillLineAsync
+    ;;
+    createSupplierProfileAsync)
+    call_createSupplierProfileAsync
+    ;;
+    deleteSupplierProfileAsync)
+    call_deleteSupplierProfileAsync
+    ;;
+    getSupplierProfileByIdAsync)
+    call_getSupplierProfileByIdAsync
+    ;;
+    getSupplierProfilesAsync)
+    call_getSupplierProfilesAsync
+    ;;
+    getSupplierProfilesCountAsync)
+    call_getSupplierProfilesCountAsync
+    ;;
+    updateSupplierProfileAsync)
+    call_updateSupplierProfileAsync
+    ;;
+    activateTruckDriverAsync)
+    call_activateTruckDriverAsync
+    ;;
+    createTruckDriverAsync)
+    call_createTruckDriverAsync
+    ;;
+    deactivateTruckDriverAsync)
+    call_deactivateTruckDriverAsync
+    ;;
+    deleteTruckDriverAsync)
+    call_deleteTruckDriverAsync
+    ;;
+    getTruckDriverByIdAsync)
+    call_getTruckDriverByIdAsync
+    ;;
+    getTruckDriversAsync)
+    call_getTruckDriversAsync
+    ;;
+    getTruckDriversCountAsync)
+    call_getTruckDriversCountAsync
+    ;;
+    updateTruckDriverAsync)
+    call_updateTruckDriverAsync
+    ;;
+    arriveTripAsync)
+    call_arriveTripAsync
+    ;;
+    cancelTripAsync)
+    call_cancelTripAsync
+    ;;
+    createTruckAsync)
+    call_createTruckAsync
+    ;;
+    createTruckTripAsync)
+    call_createTruckTripAsync
+    ;;
+    deleteTruckAsync)
+    call_deleteTruckAsync
+    ;;
+    deleteTruckTripAsync)
+    call_deleteTruckTripAsync
+    ;;
+    deliverTripAsync)
+    call_deliverTripAsync
+    ;;
+    departTripAsync)
+    call_departTripAsync
+    ;;
+    dispatchTripAsync)
+    call_dispatchTripAsync
+    ;;
+    getTruckByIdAsync)
+    call_getTruckByIdAsync
+    ;;
+    getTruckTripsAsync)
+    call_getTruckTripsAsync
+    ;;
+    getTruckTripsCountAsync)
+    call_getTruckTripsCountAsync
+    ;;
+    getTrucksAsync)
+    call_getTrucksAsync
+    ;;
+    getTrucksCountAsync)
+    call_getTrucksCountAsync
+    ;;
+    updateTruckAsync)
+    call_updateTruckAsync
+    ;;
+    updateTruckTripAsync)
+    call_updateTruckTripAsync
+    ;;
+    createVesselAsync)
+    call_createVesselAsync
+    ;;
+    deleteVesselAsync)
+    call_deleteVesselAsync
+    ;;
+    getVesselByIdAsync)
+    call_getVesselByIdAsync
+    ;;
+    getVesselsAsync)
+    call_getVesselsAsync
+    ;;
+    getVesselsCountAsync)
+    call_getVesselsCountAsync
+    ;;
+    updateVesselAsync)
+    call_updateVesselAsync
+    ;;
+    cancelVoyageAsync)
+    call_cancelVoyageAsync
+    ;;
+    completeVoyageAsync)
+    call_completeVoyageAsync
+    ;;
+    createVoyageAsync)
+    call_createVoyageAsync
+    ;;
+    createVoyagePortCallAsync)
+    call_createVoyagePortCallAsync
+    ;;
+    deleteVoyageAsync)
+    call_deleteVoyageAsync
+    ;;
+    deleteVoyagePortCallAsync)
+    call_deleteVoyagePortCallAsync
+    ;;
+    getVoyageByIdAsync)
+    call_getVoyageByIdAsync
+    ;;
+    getVoyagePortCallsAsync)
+    call_getVoyagePortCallsAsync
+    ;;
+    getVoyagePortCallsCountAsync)
+    call_getVoyagePortCallsCountAsync
+    ;;
+    getVoyagesAsync)
+    call_getVoyagesAsync
+    ;;
+    getVoyagesCountAsync)
+    call_getVoyagesCountAsync
+    ;;
+    startVoyageAsync)
+    call_startVoyageAsync
+    ;;
+    updateVoyageAsync)
+    call_updateVoyageAsync
+    ;;
+    updateVoyagePortCallAsync)
+    call_updateVoyagePortCallAsync
+    ;;
+    createWarehouseAsync)
+    call_createWarehouseAsync
+    ;;
+    deleteWarehouseAsync)
+    call_deleteWarehouseAsync
+    ;;
+    getWarehouseByIdAsync)
+    call_getWarehouseByIdAsync
+    ;;
+    getWarehousesAsync)
+    call_getWarehousesAsync
+    ;;
+    getWarehousesCountAsync)
+    call_getWarehousesCountAsync
+    ;;
+    updateWarehouseAsync)
+    call_updateWarehouseAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

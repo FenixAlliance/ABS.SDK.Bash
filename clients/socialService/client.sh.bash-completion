@@ -69,6 +69,7 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -144,6 +145,7 @@ _()
     operations["getFollowersAsync"]=1
     operations["getFollowsAsync"]=1
     operations["getMessagesAsync"]=1
+    operations["getNotificationByIdAsync"]=1
     operations["getNotificationsAsync"]=1
     operations["getSocialProfileAsync"]=1
     operations["getSocialProfilesAsync"]=1
@@ -153,6 +155,7 @@ _()
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
@@ -180,11 +183,11 @@ _()
     operation_parameters["getNotificationsCountAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["updateFeedPostAsync"]="socialFeedId= feedPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["countSocialGroupsAsync"]="tenantId= api-version= x-api-version: "
-    operation_parameters["createSocialGroupAsync"]="tenantId= api-version= x-api-version: "
-    operation_parameters["deleteSocialGroupAsync"]="socialGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["createSocialGroupAsync"]="tenantId= socialProfileId= api-version= x-api-version: "
+    operation_parameters["deleteSocialGroupAsync"]="socialGroupId= tenantId= socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialGroupByIdAsync"]="socialGroupId= tenantId= api-version= x-api-version: "
     operation_parameters["getSocialGroupsAsync"]="tenantId= api-version= x-api-version: "
-    operation_parameters["updateSocialGroupAsync"]="socialGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateSocialGroupAsync"]="socialGroupId= tenantId= socialProfileId= api-version= x-api-version: "
     operation_parameters["createSocialPostAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["createSocialPostAttachmentAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["createSocialPostCommentAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
@@ -214,7 +217,7 @@ _()
     operation_parameters["countFollowerProfilesAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["countFollowersAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["countFollowsAsync"]="socialProfileId= api-version= x-api-version: "
-    operation_parameters["countMessagesAsync"]="conversationId= api-version= x-api-version: "
+    operation_parameters["countMessagesAsync"]="conversationId= socialProfileId= api-version= x-api-version: "
     operation_parameters["countNotificationsAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["countSocialProfilesAsync"]="api-version= x-api-version: "
     operation_parameters["createConversationAsync"]="socialProfileId= api-version= x-api-version: "
@@ -227,7 +230,8 @@ _()
     operation_parameters["getFollowerProfilesAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["getFollowersAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["getFollowsAsync"]="socialProfileId= api-version= x-api-version: "
-    operation_parameters["getMessagesAsync"]="conversationId= api-version= x-api-version: "
+    operation_parameters["getMessagesAsync"]="conversationId= socialProfileId= api-version= x-api-version: "
+    operation_parameters["getNotificationByIdAsync"]="socialProfileId= notificationId= api-version= x-api-version: "
     operation_parameters["getNotificationsAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialProfileAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialProfilesAsync"]="api-version= x-api-version: "

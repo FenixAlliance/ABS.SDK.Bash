@@ -96,6 +96,9 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -122,9 +125,10 @@ operation_parameters_minimum_occurrences["deleteItemAttachmentAsync:::itemAttach
 operation_parameters_minimum_occurrences["deleteItemAttachmentAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteItemAttachmentAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemAttachmentByIdAsync:::itemAttachmentId"]=1
+operation_parameters_minimum_occurrences["getItemAttachmentByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemAttachmentByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemAttachmentByIdAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getItemAttachmentsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemAttachmentsAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemAttachmentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemAttachmentsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::tenantId"]=1
@@ -132,7 +136,30 @@ operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::itemAttach
 operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::ItemAttachmentUpdateDto"]=0
-operation_parameters_minimum_occurrences["countItemAttributesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemAttributeOptionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemAttributeOptionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemAttributeOptionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemAttributeOptionAsync:::ItemAttributeOptionCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemAttributeOptionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemAttributeOptionAsync:::itemAttributeOptionId"]=1
+operation_parameters_minimum_occurrences["deleteItemAttributeOptionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemAttributeOptionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttributeOptionByIdAsync:::itemAttributeOptionId"]=1
+operation_parameters_minimum_occurrences["getItemAttributeOptionByIdAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getItemAttributeOptionByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttributeOptionByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttributeOptionsAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getItemAttributeOptionsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttributeOptionsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttributeOptionsCountAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getItemAttributeOptionsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemAttributeOptionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemAttributeOptionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemAttributeOptionAsync:::itemAttributeOptionId"]=1
+operation_parameters_minimum_occurrences["updateItemAttributeOptionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemAttributeOptionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemAttributeOptionAsync:::ItemAttributeOptionUpdateDto"]=0
+operation_parameters_minimum_occurrences["countItemAttributesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["countItemAttributesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countItemAttributesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createItemAttributeAsync:::tenantId"]=1
@@ -144,9 +171,10 @@ operation_parameters_minimum_occurrences["deleteItemAttributeAsync:::itemAttribu
 operation_parameters_minimum_occurrences["deleteItemAttributeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteItemAttributeAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemAttributeByIdAsync:::itemAttributeId"]=1
+operation_parameters_minimum_occurrences["getItemAttributeByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemAttributeByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemAttributeByIdAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getItemAttributesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemAttributesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemAttributesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemAttributesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemAttributeAsync:::tenantId"]=1
@@ -163,9 +191,10 @@ operation_parameters_minimum_occurrences["deleteItemBrandAsync:::itemBrandId"]=1
 operation_parameters_minimum_occurrences["deleteItemBrandAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteItemBrandAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemBrandByIdAsync:::itemBrandId"]=1
+operation_parameters_minimum_occurrences["getItemBrandByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemBrandByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemBrandByIdAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getItemBrandsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemBrandsAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemBrandsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemBrandsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemBrandAsync:::tenantId"]=1
@@ -173,7 +202,30 @@ operation_parameters_minimum_occurrences["updateItemBrandAsync:::itemBrandId"]=1
 operation_parameters_minimum_occurrences["updateItemBrandAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateItemBrandAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemBrandAsync:::ItemBrandUpdateDto"]=0
-operation_parameters_minimum_occurrences["countItemCategoriesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemBundleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemBundleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemBundleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemBundleAsync:::ItemBundleCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemBundleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemBundleAsync:::itemBundleId"]=1
+operation_parameters_minimum_occurrences["deleteItemBundleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemBundleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemBundleByIdAsync:::itemBundleId"]=1
+operation_parameters_minimum_occurrences["getItemBundleByIdAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getItemBundleByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemBundleByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemBundlesAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getItemBundlesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemBundlesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemBundlesCountAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getItemBundlesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemBundlesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemBundleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemBundleAsync:::itemBundleId"]=1
+operation_parameters_minimum_occurrences["updateItemBundleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemBundleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemBundleAsync:::ItemBundleUpdateDto"]=0
+operation_parameters_minimum_occurrences["countItemCategoriesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["countItemCategoriesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countItemCategoriesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createItemCategoryAsync:::tenantId"]=1
@@ -184,10 +236,11 @@ operation_parameters_minimum_occurrences["deleteItemCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["deleteItemCategoryAsync:::itemCategoryId"]=1
 operation_parameters_minimum_occurrences["deleteItemCategoryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteItemCategoryAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getItemCategoriesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemCategoriesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemCategoriesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemCategoriesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemCategoryByIdAsync:::itemCategoryId"]=1
+operation_parameters_minimum_occurrences["getItemCategoryByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemCategoryByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemCategoryByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemCategoryAsync:::tenantId"]=1
@@ -195,6 +248,29 @@ operation_parameters_minimum_occurrences["updateItemCategoryAsync:::itemCategory
 operation_parameters_minimum_occurrences["updateItemCategoryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateItemCategoryAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemCategoryAsync:::ItemCategoryUpdateDto"]=0
+operation_parameters_minimum_occurrences["createItemFamilyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createItemFamilyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createItemFamilyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createItemFamilyAsync:::ItemFamilyCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteItemFamilyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteItemFamilyAsync:::itemFamilyId"]=1
+operation_parameters_minimum_occurrences["deleteItemFamilyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteItemFamilyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemFamiliesAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getItemFamiliesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemFamiliesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemFamiliesCountAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getItemFamiliesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemFamiliesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemFamilyByIdAsync:::itemFamilyId"]=1
+operation_parameters_minimum_occurrences["getItemFamilyByIdAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getItemFamilyByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getItemFamilyByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemFamilyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateItemFamilyAsync:::itemFamilyId"]=1
+operation_parameters_minimum_occurrences["updateItemFamilyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateItemFamilyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateItemFamilyAsync:::ItemFamilyUpdateDto"]=0
 operation_parameters_minimum_occurrences["getAllItemGoogleCategoriesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getAllItemGoogleCategoriesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getChildrenItemGoogleCategoriesByIdAsync:::itemCategoryId"]=1
@@ -223,9 +299,10 @@ operation_parameters_minimum_occurrences["deleteItemImageAsync:::itemImageId"]=1
 operation_parameters_minimum_occurrences["deleteItemImageAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteItemImageAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemImageByIdAsync:::itemImageId"]=1
+operation_parameters_minimum_occurrences["getItemImageByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemImageByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemImageByIdAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getItemImagesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemImagesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemImagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemImagesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemImageAsync:::tenantId"]=1
@@ -242,9 +319,10 @@ operation_parameters_minimum_occurrences["deleteItemQuestionAsync:::itemQuestion
 operation_parameters_minimum_occurrences["deleteItemQuestionAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteItemQuestionAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemQuestionByIdAsync:::itemQuestionId"]=1
+operation_parameters_minimum_occurrences["getItemQuestionByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemQuestionByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemQuestionByIdAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getItemQuestionsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemQuestionsAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemQuestionsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemQuestionsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemQuestionAsync:::tenantId"]=1
@@ -252,13 +330,16 @@ operation_parameters_minimum_occurrences["updateItemQuestionAsync:::itemQuestion
 operation_parameters_minimum_occurrences["updateItemQuestionAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateItemQuestionAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemQuestionAsync:::ItemQuestionUpdateDto"]=0
+operation_parameters_minimum_occurrences["countItemRefundPoliciesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["countItemRefundPoliciesAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["countItemRefundPoliciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countItemRefundPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRefundPoliciesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemRefundPoliciesAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["getItemRefundPoliciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemRefundPoliciesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemRefundPolicyByIdAsync:::itemRefundPolicyId"]=1
+operation_parameters_minimum_occurrences["getItemRefundPolicyByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemRefundPolicyByIdAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["getItemRefundPolicyByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemRefundPolicyByIdAsync:::x-api-version"]=0
@@ -272,13 +353,16 @@ operation_parameters_minimum_occurrences["removeRefundPolicyFromItemAsync:::item
 operation_parameters_minimum_occurrences["removeRefundPolicyFromItemAsync:::itemRefundPolicyId"]=1
 operation_parameters_minimum_occurrences["removeRefundPolicyFromItemAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["removeRefundPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countItemReturnPoliciesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["countItemReturnPoliciesAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["countItemReturnPoliciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countItemReturnPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemReturnPoliciesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemReturnPoliciesAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["getItemReturnPoliciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemReturnPoliciesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemReturnPolicyByIdAsync:::itemReturnPolicyId"]=1
+operation_parameters_minimum_occurrences["getItemReturnPolicyByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemReturnPolicyByIdAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["getItemReturnPolicyByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemReturnPolicyByIdAsync:::x-api-version"]=0
@@ -301,6 +385,7 @@ operation_parameters_minimum_occurrences["deleteItemReviewAsync:::itemReviewId"]
 operation_parameters_minimum_occurrences["deleteItemReviewAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteItemReviewAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemReviewByIdAsync:::itemReviewId"]=1
+operation_parameters_minimum_occurrences["getItemReviewByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemReviewByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemReviewByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemReviewsAsync:::itemId"]=1
@@ -311,13 +396,16 @@ operation_parameters_minimum_occurrences["updateItemReviewAsync:::itemReviewId"]
 operation_parameters_minimum_occurrences["updateItemReviewAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateItemReviewAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemReviewAsync:::ItemReviewUpdateDto"]=0
+operation_parameters_minimum_occurrences["countItemShippingPoliciesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["countItemShippingPoliciesAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["countItemShippingPoliciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countItemShippingPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemShippingPoliciesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemShippingPoliciesAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["getItemShippingPoliciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemShippingPoliciesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::itemShippingPolicyId"]=1
+operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::x-api-version"]=0
@@ -340,9 +428,10 @@ operation_parameters_minimum_occurrences["deleteItemTagAsync:::itemTagId"]=1
 operation_parameters_minimum_occurrences["deleteItemTagAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteItemTagAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemTagByIdAsync:::itemTagId"]=1
+operation_parameters_minimum_occurrences["getItemTagByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemTagByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemTagByIdAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getItemTagsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemTagsAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemTagsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemTagsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemTagAsync:::tenantId"]=1
@@ -350,13 +439,16 @@ operation_parameters_minimum_occurrences["updateItemTagAsync:::itemTagId"]=1
 operation_parameters_minimum_occurrences["updateItemTagAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateItemTagAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemTagAsync:::ItemTagUpdateDto"]=0
+operation_parameters_minimum_occurrences["countItemTaxPoliciesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["countItemTaxPoliciesAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["countItemTaxPoliciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countItemTaxPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemTaxPoliciesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemTaxPoliciesAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["getItemTaxPoliciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemTaxPoliciesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemTaxPolicyByIdAsync:::itemTaxPolicyId"]=1
+operation_parameters_minimum_occurrences["getItemTaxPolicyByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemTaxPolicyByIdAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["getItemTaxPolicyByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemTaxPolicyByIdAsync:::x-api-version"]=0
@@ -370,7 +462,7 @@ operation_parameters_minimum_occurrences["removeTaxPolicyFromItemAsync:::itemId"
 operation_parameters_minimum_occurrences["removeTaxPolicyFromItemAsync:::itemTaxPolicyId"]=1
 operation_parameters_minimum_occurrences["removeTaxPolicyFromItemAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["removeTaxPolicyFromItemAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["countItemTypesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countItemTypesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["countItemTypesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countItemTypesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createItemTypeAsync:::tenantId"]=1
@@ -382,9 +474,10 @@ operation_parameters_minimum_occurrences["deleteItemTypeAsync:::itemTypeID"]=1
 operation_parameters_minimum_occurrences["deleteItemTypeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteItemTypeAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemTypeByIdAsync:::itemTypeID"]=1
+operation_parameters_minimum_occurrences["getItemTypeByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemTypeByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemTypeByIdAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getItemTypesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getItemTypesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemTypesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemTypesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemTypeAsync:::tenantId"]=1
@@ -392,13 +485,16 @@ operation_parameters_minimum_occurrences["updateItemTypeAsync:::itemTypeID"]=1
 operation_parameters_minimum_occurrences["updateItemTypeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateItemTypeAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateItemTypeAsync:::ItemTypeUpdateDto"]=0
+operation_parameters_minimum_occurrences["countItemWarrantyPoliciesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["countItemWarrantyPoliciesAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["countItemWarrantyPoliciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countItemWarrantyPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemWarrantyPoliciesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemWarrantyPoliciesAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["getItemWarrantyPoliciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemWarrantyPoliciesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getItemWarrantyPolicyByIdAsync:::itemWarrantyPolicyId"]=1
+operation_parameters_minimum_occurrences["getItemWarrantyPolicyByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemWarrantyPolicyByIdAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["getItemWarrantyPolicyByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemWarrantyPolicyByIdAsync:::x-api-version"]=0
@@ -412,6 +508,7 @@ operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::it
 operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::itemWarrantyPolicyId"]=1
 operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countStockItemTagsByItemId:::tenantId"]=1
 operation_parameters_minimum_occurrences["countStockItemTagsByItemId:::itemId"]=1
 operation_parameters_minimum_occurrences["countStockItemTagsByItemId:::api-version"]=0
 operation_parameters_minimum_occurrences["countStockItemTagsByItemId:::x-api-version"]=0
@@ -519,10 +616,12 @@ operation_parameters_minimum_occurrences["getStockItemShippingPolicyById:::itemI
 operation_parameters_minimum_occurrences["getStockItemShippingPolicyById:::itemShippingPolicyId"]=1
 operation_parameters_minimum_occurrences["getStockItemShippingPolicyById:::api-version"]=0
 operation_parameters_minimum_occurrences["getStockItemShippingPolicyById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTagById:::tenantId"]=1
 operation_parameters_minimum_occurrences["getStockItemTagById:::itemId"]=1
 operation_parameters_minimum_occurrences["getStockItemTagById:::itemTagId"]=1
 operation_parameters_minimum_occurrences["getStockItemTagById:::api-version"]=0
 operation_parameters_minimum_occurrences["getStockItemTagById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTagsByItemId:::tenantId"]=1
 operation_parameters_minimum_occurrences["getStockItemTagsByItemId:::itemId"]=1
 operation_parameters_minimum_occurrences["getStockItemTagsByItemId:::api-version"]=0
 operation_parameters_minimum_occurrences["getStockItemTagsByItemId:::x-api-version"]=0
@@ -533,10 +632,12 @@ operation_parameters_minimum_occurrences["getStockItemTaxPolicyById:::itemId"]=1
 operation_parameters_minimum_occurrences["getStockItemTaxPolicyById:::itemTaxPolicyId"]=1
 operation_parameters_minimum_occurrences["getStockItemTaxPolicyById:::api-version"]=0
 operation_parameters_minimum_occurrences["getStockItemTaxPolicyById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTypeById:::tenantId"]=1
 operation_parameters_minimum_occurrences["getStockItemTypeById:::itemId"]=1
 operation_parameters_minimum_occurrences["getStockItemTypeById:::itemTypeId"]=1
 operation_parameters_minimum_occurrences["getStockItemTypeById:::api-version"]=0
 operation_parameters_minimum_occurrences["getStockItemTypeById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getStockItemTypesByItemId:::tenantId"]=1
 operation_parameters_minimum_occurrences["getStockItemTypesByItemId:::itemId"]=1
 operation_parameters_minimum_occurrences["getStockItemTypesByItemId:::api-version"]=0
 operation_parameters_minimum_occurrences["getStockItemTypesByItemId:::x-api-version"]=0
@@ -730,25 +831,6 @@ operation_parameters_minimum_occurrences["getMerchants:::api-version"]=0
 operation_parameters_minimum_occurrences["getMerchants:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getMerchantsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getMerchantsCount:::x-api-version"]=0
-operation_parameters_minimum_occurrences["createPricingRule:::tenantId"]=1
-operation_parameters_minimum_occurrences["createPricingRule:::api-version"]=0
-operation_parameters_minimum_occurrences["createPricingRule:::x-api-version"]=0
-operation_parameters_minimum_occurrences["createPricingRule:::PricingRuleCreateDto"]=0
-operation_parameters_minimum_occurrences["deletePricingRule:::tenantId"]=1
-operation_parameters_minimum_occurrences["deletePricingRule:::pricingRuleId"]=1
-operation_parameters_minimum_occurrences["deletePricingRule:::api-version"]=0
-operation_parameters_minimum_occurrences["deletePricingRule:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getPricingRuleById:::pricingRuleId"]=1
-operation_parameters_minimum_occurrences["getPricingRuleById:::api-version"]=0
-operation_parameters_minimum_occurrences["getPricingRuleById:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getPricingRules:::tenantId"]=1
-operation_parameters_minimum_occurrences["getPricingRules:::api-version"]=0
-operation_parameters_minimum_occurrences["getPricingRules:::x-api-version"]=0
-operation_parameters_minimum_occurrences["updatePricingRule:::tenantId"]=1
-operation_parameters_minimum_occurrences["updatePricingRule:::pricingRuleId"]=1
-operation_parameters_minimum_occurrences["updatePricingRule:::api-version"]=0
-operation_parameters_minimum_occurrences["updatePricingRule:::x-api-version"]=0
-operation_parameters_minimum_occurrences["updatePricingRule:::PricingRuleUpdateDto"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -757,6 +839,9 @@ operation_parameters_minimum_occurrences["updatePricingRule:::PricingRuleUpdateD
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -783,6 +868,7 @@ operation_parameters_maximum_occurrences["deleteItemAttachmentAsync:::itemAttach
 operation_parameters_maximum_occurrences["deleteItemAttachmentAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteItemAttachmentAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemAttachmentByIdAsync:::itemAttachmentId"]=0
+operation_parameters_maximum_occurrences["getItemAttachmentByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemAttachmentByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemAttachmentByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemAttachmentsAsync:::tenantId"]=0
@@ -793,6 +879,29 @@ operation_parameters_maximum_occurrences["updateItemAttachmentAsync:::itemAttach
 operation_parameters_maximum_occurrences["updateItemAttachmentAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateItemAttachmentAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateItemAttachmentAsync:::ItemAttachmentUpdateDto"]=0
+operation_parameters_maximum_occurrences["createItemAttributeOptionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemAttributeOptionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemAttributeOptionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemAttributeOptionAsync:::ItemAttributeOptionCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemAttributeOptionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemAttributeOptionAsync:::itemAttributeOptionId"]=0
+operation_parameters_maximum_occurrences["deleteItemAttributeOptionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemAttributeOptionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttributeOptionByIdAsync:::itemAttributeOptionId"]=0
+operation_parameters_maximum_occurrences["getItemAttributeOptionByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemAttributeOptionByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttributeOptionByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttributeOptionsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemAttributeOptionsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttributeOptionsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttributeOptionsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemAttributeOptionsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemAttributeOptionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemAttributeOptionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemAttributeOptionAsync:::itemAttributeOptionId"]=0
+operation_parameters_maximum_occurrences["updateItemAttributeOptionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemAttributeOptionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemAttributeOptionAsync:::ItemAttributeOptionUpdateDto"]=0
 operation_parameters_maximum_occurrences["countItemAttributesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countItemAttributesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countItemAttributesAsync:::x-api-version"]=0
@@ -805,6 +914,7 @@ operation_parameters_maximum_occurrences["deleteItemAttributeAsync:::itemAttribu
 operation_parameters_maximum_occurrences["deleteItemAttributeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteItemAttributeAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemAttributeByIdAsync:::itemAttributeId"]=0
+operation_parameters_maximum_occurrences["getItemAttributeByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemAttributeByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemAttributeByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemAttributesAsync:::tenantId"]=0
@@ -824,6 +934,7 @@ operation_parameters_maximum_occurrences["deleteItemBrandAsync:::itemBrandId"]=0
 operation_parameters_maximum_occurrences["deleteItemBrandAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteItemBrandAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemBrandByIdAsync:::itemBrandId"]=0
+operation_parameters_maximum_occurrences["getItemBrandByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemBrandByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemBrandByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemBrandsAsync:::tenantId"]=0
@@ -834,6 +945,29 @@ operation_parameters_maximum_occurrences["updateItemBrandAsync:::itemBrandId"]=0
 operation_parameters_maximum_occurrences["updateItemBrandAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateItemBrandAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateItemBrandAsync:::ItemBrandUpdateDto"]=0
+operation_parameters_maximum_occurrences["createItemBundleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemBundleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemBundleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemBundleAsync:::ItemBundleCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemBundleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemBundleAsync:::itemBundleId"]=0
+operation_parameters_maximum_occurrences["deleteItemBundleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemBundleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemBundleByIdAsync:::itemBundleId"]=0
+operation_parameters_maximum_occurrences["getItemBundleByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemBundleByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemBundleByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemBundlesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemBundlesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemBundlesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemBundlesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemBundlesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemBundlesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemBundleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemBundleAsync:::itemBundleId"]=0
+operation_parameters_maximum_occurrences["updateItemBundleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemBundleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemBundleAsync:::ItemBundleUpdateDto"]=0
 operation_parameters_maximum_occurrences["countItemCategoriesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countItemCategoriesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countItemCategoriesAsync:::x-api-version"]=0
@@ -849,6 +983,7 @@ operation_parameters_maximum_occurrences["getItemCategoriesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemCategoriesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemCategoriesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemCategoryByIdAsync:::itemCategoryId"]=0
+operation_parameters_maximum_occurrences["getItemCategoryByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemCategoryByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemCategoryByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateItemCategoryAsync:::tenantId"]=0
@@ -856,6 +991,29 @@ operation_parameters_maximum_occurrences["updateItemCategoryAsync:::itemCategory
 operation_parameters_maximum_occurrences["updateItemCategoryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateItemCategoryAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateItemCategoryAsync:::ItemCategoryUpdateDto"]=0
+operation_parameters_maximum_occurrences["createItemFamilyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createItemFamilyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createItemFamilyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createItemFamilyAsync:::ItemFamilyCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteItemFamilyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteItemFamilyAsync:::itemFamilyId"]=0
+operation_parameters_maximum_occurrences["deleteItemFamilyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteItemFamilyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemFamiliesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemFamiliesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemFamiliesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemFamiliesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemFamiliesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemFamiliesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemFamilyByIdAsync:::itemFamilyId"]=0
+operation_parameters_maximum_occurrences["getItemFamilyByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getItemFamilyByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getItemFamilyByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemFamilyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateItemFamilyAsync:::itemFamilyId"]=0
+operation_parameters_maximum_occurrences["updateItemFamilyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateItemFamilyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateItemFamilyAsync:::ItemFamilyUpdateDto"]=0
 operation_parameters_maximum_occurrences["getAllItemGoogleCategoriesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getAllItemGoogleCategoriesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getChildrenItemGoogleCategoriesByIdAsync:::itemCategoryId"]=0
@@ -884,6 +1042,7 @@ operation_parameters_maximum_occurrences["deleteItemImageAsync:::itemImageId"]=0
 operation_parameters_maximum_occurrences["deleteItemImageAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteItemImageAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemImageByIdAsync:::itemImageId"]=0
+operation_parameters_maximum_occurrences["getItemImageByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemImageByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemImageByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemImagesAsync:::tenantId"]=0
@@ -903,6 +1062,7 @@ operation_parameters_maximum_occurrences["deleteItemQuestionAsync:::itemQuestion
 operation_parameters_maximum_occurrences["deleteItemQuestionAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteItemQuestionAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemQuestionByIdAsync:::itemQuestionId"]=0
+operation_parameters_maximum_occurrences["getItemQuestionByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemQuestionByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemQuestionByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemQuestionsAsync:::tenantId"]=0
@@ -913,13 +1073,16 @@ operation_parameters_maximum_occurrences["updateItemQuestionAsync:::itemQuestion
 operation_parameters_maximum_occurrences["updateItemQuestionAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateItemQuestionAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateItemQuestionAsync:::ItemQuestionUpdateDto"]=0
+operation_parameters_maximum_occurrences["countItemRefundPoliciesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countItemRefundPoliciesAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["countItemRefundPoliciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countItemRefundPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRefundPoliciesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemRefundPoliciesAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["getItemRefundPoliciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemRefundPoliciesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemRefundPolicyByIdAsync:::itemRefundPolicyId"]=0
+operation_parameters_maximum_occurrences["getItemRefundPolicyByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemRefundPolicyByIdAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["getItemRefundPolicyByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemRefundPolicyByIdAsync:::x-api-version"]=0
@@ -933,13 +1096,16 @@ operation_parameters_maximum_occurrences["removeRefundPolicyFromItemAsync:::item
 operation_parameters_maximum_occurrences["removeRefundPolicyFromItemAsync:::itemRefundPolicyId"]=0
 operation_parameters_maximum_occurrences["removeRefundPolicyFromItemAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["removeRefundPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countItemReturnPoliciesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countItemReturnPoliciesAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["countItemReturnPoliciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countItemReturnPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemReturnPoliciesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemReturnPoliciesAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["getItemReturnPoliciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemReturnPoliciesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemReturnPolicyByIdAsync:::itemReturnPolicyId"]=0
+operation_parameters_maximum_occurrences["getItemReturnPolicyByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemReturnPolicyByIdAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["getItemReturnPolicyByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemReturnPolicyByIdAsync:::x-api-version"]=0
@@ -962,6 +1128,7 @@ operation_parameters_maximum_occurrences["deleteItemReviewAsync:::itemReviewId"]
 operation_parameters_maximum_occurrences["deleteItemReviewAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteItemReviewAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemReviewByIdAsync:::itemReviewId"]=0
+operation_parameters_maximum_occurrences["getItemReviewByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemReviewByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemReviewByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemReviewsAsync:::itemId"]=0
@@ -972,13 +1139,16 @@ operation_parameters_maximum_occurrences["updateItemReviewAsync:::itemReviewId"]
 operation_parameters_maximum_occurrences["updateItemReviewAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateItemReviewAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateItemReviewAsync:::ItemReviewUpdateDto"]=0
+operation_parameters_maximum_occurrences["countItemShippingPoliciesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countItemShippingPoliciesAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["countItemShippingPoliciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countItemShippingPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemShippingPoliciesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemShippingPoliciesAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["getItemShippingPoliciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemShippingPoliciesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::itemShippingPolicyId"]=0
+operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::x-api-version"]=0
@@ -1001,6 +1171,7 @@ operation_parameters_maximum_occurrences["deleteItemTagAsync:::itemTagId"]=0
 operation_parameters_maximum_occurrences["deleteItemTagAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteItemTagAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemTagByIdAsync:::itemTagId"]=0
+operation_parameters_maximum_occurrences["getItemTagByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemTagByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemTagByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemTagsAsync:::tenantId"]=0
@@ -1011,13 +1182,16 @@ operation_parameters_maximum_occurrences["updateItemTagAsync:::itemTagId"]=0
 operation_parameters_maximum_occurrences["updateItemTagAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateItemTagAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateItemTagAsync:::ItemTagUpdateDto"]=0
+operation_parameters_maximum_occurrences["countItemTaxPoliciesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countItemTaxPoliciesAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["countItemTaxPoliciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countItemTaxPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemTaxPoliciesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemTaxPoliciesAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["getItemTaxPoliciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemTaxPoliciesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemTaxPolicyByIdAsync:::itemTaxPolicyId"]=0
+operation_parameters_maximum_occurrences["getItemTaxPolicyByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemTaxPolicyByIdAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["getItemTaxPolicyByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemTaxPolicyByIdAsync:::x-api-version"]=0
@@ -1043,6 +1217,7 @@ operation_parameters_maximum_occurrences["deleteItemTypeAsync:::itemTypeID"]=0
 operation_parameters_maximum_occurrences["deleteItemTypeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteItemTypeAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemTypeByIdAsync:::itemTypeID"]=0
+operation_parameters_maximum_occurrences["getItemTypeByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemTypeByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemTypeByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemTypesAsync:::tenantId"]=0
@@ -1053,13 +1228,16 @@ operation_parameters_maximum_occurrences["updateItemTypeAsync:::itemTypeID"]=0
 operation_parameters_maximum_occurrences["updateItemTypeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateItemTypeAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateItemTypeAsync:::ItemTypeUpdateDto"]=0
+operation_parameters_maximum_occurrences["countItemWarrantyPoliciesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countItemWarrantyPoliciesAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["countItemWarrantyPoliciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countItemWarrantyPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemWarrantyPoliciesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemWarrantyPoliciesAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["getItemWarrantyPoliciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemWarrantyPoliciesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getItemWarrantyPolicyByIdAsync:::itemWarrantyPolicyId"]=0
+operation_parameters_maximum_occurrences["getItemWarrantyPolicyByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemWarrantyPolicyByIdAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["getItemWarrantyPolicyByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemWarrantyPolicyByIdAsync:::x-api-version"]=0
@@ -1073,6 +1251,7 @@ operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::it
 operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::itemWarrantyPolicyId"]=0
 operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countStockItemTagsByItemId:::tenantId"]=0
 operation_parameters_maximum_occurrences["countStockItemTagsByItemId:::itemId"]=0
 operation_parameters_maximum_occurrences["countStockItemTagsByItemId:::api-version"]=0
 operation_parameters_maximum_occurrences["countStockItemTagsByItemId:::x-api-version"]=0
@@ -1180,10 +1359,12 @@ operation_parameters_maximum_occurrences["getStockItemShippingPolicyById:::itemI
 operation_parameters_maximum_occurrences["getStockItemShippingPolicyById:::itemShippingPolicyId"]=0
 operation_parameters_maximum_occurrences["getStockItemShippingPolicyById:::api-version"]=0
 operation_parameters_maximum_occurrences["getStockItemShippingPolicyById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTagById:::tenantId"]=0
 operation_parameters_maximum_occurrences["getStockItemTagById:::itemId"]=0
 operation_parameters_maximum_occurrences["getStockItemTagById:::itemTagId"]=0
 operation_parameters_maximum_occurrences["getStockItemTagById:::api-version"]=0
 operation_parameters_maximum_occurrences["getStockItemTagById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTagsByItemId:::tenantId"]=0
 operation_parameters_maximum_occurrences["getStockItemTagsByItemId:::itemId"]=0
 operation_parameters_maximum_occurrences["getStockItemTagsByItemId:::api-version"]=0
 operation_parameters_maximum_occurrences["getStockItemTagsByItemId:::x-api-version"]=0
@@ -1194,10 +1375,12 @@ operation_parameters_maximum_occurrences["getStockItemTaxPolicyById:::itemId"]=0
 operation_parameters_maximum_occurrences["getStockItemTaxPolicyById:::itemTaxPolicyId"]=0
 operation_parameters_maximum_occurrences["getStockItemTaxPolicyById:::api-version"]=0
 operation_parameters_maximum_occurrences["getStockItemTaxPolicyById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTypeById:::tenantId"]=0
 operation_parameters_maximum_occurrences["getStockItemTypeById:::itemId"]=0
 operation_parameters_maximum_occurrences["getStockItemTypeById:::itemTypeId"]=0
 operation_parameters_maximum_occurrences["getStockItemTypeById:::api-version"]=0
 operation_parameters_maximum_occurrences["getStockItemTypeById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getStockItemTypesByItemId:::tenantId"]=0
 operation_parameters_maximum_occurrences["getStockItemTypesByItemId:::itemId"]=0
 operation_parameters_maximum_occurrences["getStockItemTypesByItemId:::api-version"]=0
 operation_parameters_maximum_occurrences["getStockItemTypesByItemId:::x-api-version"]=0
@@ -1391,30 +1574,14 @@ operation_parameters_maximum_occurrences["getMerchants:::api-version"]=0
 operation_parameters_maximum_occurrences["getMerchants:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getMerchantsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getMerchantsCount:::x-api-version"]=0
-operation_parameters_maximum_occurrences["createPricingRule:::tenantId"]=0
-operation_parameters_maximum_occurrences["createPricingRule:::api-version"]=0
-operation_parameters_maximum_occurrences["createPricingRule:::x-api-version"]=0
-operation_parameters_maximum_occurrences["createPricingRule:::PricingRuleCreateDto"]=0
-operation_parameters_maximum_occurrences["deletePricingRule:::tenantId"]=0
-operation_parameters_maximum_occurrences["deletePricingRule:::pricingRuleId"]=0
-operation_parameters_maximum_occurrences["deletePricingRule:::api-version"]=0
-operation_parameters_maximum_occurrences["deletePricingRule:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getPricingRuleById:::pricingRuleId"]=0
-operation_parameters_maximum_occurrences["getPricingRuleById:::api-version"]=0
-operation_parameters_maximum_occurrences["getPricingRuleById:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getPricingRules:::tenantId"]=0
-operation_parameters_maximum_occurrences["getPricingRules:::api-version"]=0
-operation_parameters_maximum_occurrences["getPricingRules:::x-api-version"]=0
-operation_parameters_maximum_occurrences["updatePricingRule:::tenantId"]=0
-operation_parameters_maximum_occurrences["updatePricingRule:::pricingRuleId"]=0
-operation_parameters_maximum_occurrences["updatePricingRule:::api-version"]=0
-operation_parameters_maximum_occurrences["updatePricingRule:::x-api-version"]=0
-operation_parameters_maximum_occurrences["updatePricingRule:::PricingRuleUpdateDto"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
@@ -1441,6 +1608,7 @@ operation_parameters_collection_type["deleteItemAttachmentAsync:::itemAttachment
 operation_parameters_collection_type["deleteItemAttachmentAsync:::api-version"]=""
 operation_parameters_collection_type["deleteItemAttachmentAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemAttachmentByIdAsync:::itemAttachmentId"]=""
+operation_parameters_collection_type["getItemAttachmentByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemAttachmentByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemAttachmentByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemAttachmentsAsync:::tenantId"]=""
@@ -1451,6 +1619,29 @@ operation_parameters_collection_type["updateItemAttachmentAsync:::itemAttachment
 operation_parameters_collection_type["updateItemAttachmentAsync:::api-version"]=""
 operation_parameters_collection_type["updateItemAttachmentAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateItemAttachmentAsync:::ItemAttachmentUpdateDto"]=""
+operation_parameters_collection_type["createItemAttributeOptionAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemAttributeOptionAsync:::api-version"]=""
+operation_parameters_collection_type["createItemAttributeOptionAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemAttributeOptionAsync:::ItemAttributeOptionCreateDto"]=""
+operation_parameters_collection_type["deleteItemAttributeOptionAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemAttributeOptionAsync:::itemAttributeOptionId"]=""
+operation_parameters_collection_type["deleteItemAttributeOptionAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemAttributeOptionAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemAttributeOptionByIdAsync:::itemAttributeOptionId"]=""
+operation_parameters_collection_type["getItemAttributeOptionByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemAttributeOptionByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemAttributeOptionByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemAttributeOptionsAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemAttributeOptionsAsync:::api-version"]=""
+operation_parameters_collection_type["getItemAttributeOptionsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemAttributeOptionsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemAttributeOptionsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getItemAttributeOptionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemAttributeOptionAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemAttributeOptionAsync:::itemAttributeOptionId"]=""
+operation_parameters_collection_type["updateItemAttributeOptionAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemAttributeOptionAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemAttributeOptionAsync:::ItemAttributeOptionUpdateDto"]=""
 operation_parameters_collection_type["countItemAttributesAsync:::tenantId"]=""
 operation_parameters_collection_type["countItemAttributesAsync:::api-version"]=""
 operation_parameters_collection_type["countItemAttributesAsync:::x-api-version"]=""
@@ -1463,6 +1654,7 @@ operation_parameters_collection_type["deleteItemAttributeAsync:::itemAttributeId
 operation_parameters_collection_type["deleteItemAttributeAsync:::api-version"]=""
 operation_parameters_collection_type["deleteItemAttributeAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemAttributeByIdAsync:::itemAttributeId"]=""
+operation_parameters_collection_type["getItemAttributeByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemAttributeByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemAttributeByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemAttributesAsync:::tenantId"]=""
@@ -1482,6 +1674,7 @@ operation_parameters_collection_type["deleteItemBrandAsync:::itemBrandId"]=""
 operation_parameters_collection_type["deleteItemBrandAsync:::api-version"]=""
 operation_parameters_collection_type["deleteItemBrandAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemBrandByIdAsync:::itemBrandId"]=""
+operation_parameters_collection_type["getItemBrandByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemBrandByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemBrandByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemBrandsAsync:::tenantId"]=""
@@ -1492,6 +1685,29 @@ operation_parameters_collection_type["updateItemBrandAsync:::itemBrandId"]=""
 operation_parameters_collection_type["updateItemBrandAsync:::api-version"]=""
 operation_parameters_collection_type["updateItemBrandAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateItemBrandAsync:::ItemBrandUpdateDto"]=""
+operation_parameters_collection_type["createItemBundleAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemBundleAsync:::api-version"]=""
+operation_parameters_collection_type["createItemBundleAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemBundleAsync:::ItemBundleCreateDto"]=""
+operation_parameters_collection_type["deleteItemBundleAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemBundleAsync:::itemBundleId"]=""
+operation_parameters_collection_type["deleteItemBundleAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemBundleAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemBundleByIdAsync:::itemBundleId"]=""
+operation_parameters_collection_type["getItemBundleByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemBundleByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemBundleByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemBundlesAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemBundlesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemBundlesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemBundlesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemBundlesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getItemBundlesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemBundleAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemBundleAsync:::itemBundleId"]=""
+operation_parameters_collection_type["updateItemBundleAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemBundleAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemBundleAsync:::ItemBundleUpdateDto"]=""
 operation_parameters_collection_type["countItemCategoriesAsync:::tenantId"]=""
 operation_parameters_collection_type["countItemCategoriesAsync:::api-version"]=""
 operation_parameters_collection_type["countItemCategoriesAsync:::x-api-version"]=""
@@ -1507,6 +1723,7 @@ operation_parameters_collection_type["getItemCategoriesAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemCategoriesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemCategoriesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemCategoryByIdAsync:::itemCategoryId"]=""
+operation_parameters_collection_type["getItemCategoryByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemCategoryByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemCategoryByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateItemCategoryAsync:::tenantId"]=""
@@ -1514,6 +1731,29 @@ operation_parameters_collection_type["updateItemCategoryAsync:::itemCategoryId"]
 operation_parameters_collection_type["updateItemCategoryAsync:::api-version"]=""
 operation_parameters_collection_type["updateItemCategoryAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateItemCategoryAsync:::ItemCategoryUpdateDto"]=""
+operation_parameters_collection_type["createItemFamilyAsync:::tenantId"]=""
+operation_parameters_collection_type["createItemFamilyAsync:::api-version"]=""
+operation_parameters_collection_type["createItemFamilyAsync:::x-api-version"]=""
+operation_parameters_collection_type["createItemFamilyAsync:::ItemFamilyCreateDto"]=""
+operation_parameters_collection_type["deleteItemFamilyAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteItemFamilyAsync:::itemFamilyId"]=""
+operation_parameters_collection_type["deleteItemFamilyAsync:::api-version"]=""
+operation_parameters_collection_type["deleteItemFamilyAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemFamiliesAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemFamiliesAsync:::api-version"]=""
+operation_parameters_collection_type["getItemFamiliesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemFamiliesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemFamiliesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getItemFamiliesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemFamilyByIdAsync:::itemFamilyId"]=""
+operation_parameters_collection_type["getItemFamilyByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getItemFamilyByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getItemFamilyByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemFamilyAsync:::tenantId"]=""
+operation_parameters_collection_type["updateItemFamilyAsync:::itemFamilyId"]=""
+operation_parameters_collection_type["updateItemFamilyAsync:::api-version"]=""
+operation_parameters_collection_type["updateItemFamilyAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateItemFamilyAsync:::ItemFamilyUpdateDto"]=""
 operation_parameters_collection_type["getAllItemGoogleCategoriesAsync:::api-version"]=""
 operation_parameters_collection_type["getAllItemGoogleCategoriesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getChildrenItemGoogleCategoriesByIdAsync:::itemCategoryId"]=""
@@ -1542,6 +1782,7 @@ operation_parameters_collection_type["deleteItemImageAsync:::itemImageId"]=""
 operation_parameters_collection_type["deleteItemImageAsync:::api-version"]=""
 operation_parameters_collection_type["deleteItemImageAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemImageByIdAsync:::itemImageId"]=""
+operation_parameters_collection_type["getItemImageByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemImageByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemImageByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemImagesAsync:::tenantId"]=""
@@ -1561,6 +1802,7 @@ operation_parameters_collection_type["deleteItemQuestionAsync:::itemQuestionId"]
 operation_parameters_collection_type["deleteItemQuestionAsync:::api-version"]=""
 operation_parameters_collection_type["deleteItemQuestionAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemQuestionByIdAsync:::itemQuestionId"]=""
+operation_parameters_collection_type["getItemQuestionByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemQuestionByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemQuestionByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemQuestionsAsync:::tenantId"]=""
@@ -1571,13 +1813,16 @@ operation_parameters_collection_type["updateItemQuestionAsync:::itemQuestionId"]
 operation_parameters_collection_type["updateItemQuestionAsync:::api-version"]=""
 operation_parameters_collection_type["updateItemQuestionAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateItemQuestionAsync:::ItemQuestionUpdateDto"]=""
+operation_parameters_collection_type["countItemRefundPoliciesAsync:::tenantId"]=""
 operation_parameters_collection_type["countItemRefundPoliciesAsync:::itemId"]=""
 operation_parameters_collection_type["countItemRefundPoliciesAsync:::api-version"]=""
 operation_parameters_collection_type["countItemRefundPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRefundPoliciesAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemRefundPoliciesAsync:::itemId"]=""
 operation_parameters_collection_type["getItemRefundPoliciesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemRefundPoliciesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemRefundPolicyByIdAsync:::itemRefundPolicyId"]=""
+operation_parameters_collection_type["getItemRefundPolicyByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemRefundPolicyByIdAsync:::itemId"]=""
 operation_parameters_collection_type["getItemRefundPolicyByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemRefundPolicyByIdAsync:::x-api-version"]=""
@@ -1591,13 +1836,16 @@ operation_parameters_collection_type["removeRefundPolicyFromItemAsync:::itemId"]
 operation_parameters_collection_type["removeRefundPolicyFromItemAsync:::itemRefundPolicyId"]=""
 operation_parameters_collection_type["removeRefundPolicyFromItemAsync:::api-version"]=""
 operation_parameters_collection_type["removeRefundPolicyFromItemAsync:::x-api-version"]=""
+operation_parameters_collection_type["countItemReturnPoliciesAsync:::tenantId"]=""
 operation_parameters_collection_type["countItemReturnPoliciesAsync:::itemId"]=""
 operation_parameters_collection_type["countItemReturnPoliciesAsync:::api-version"]=""
 operation_parameters_collection_type["countItemReturnPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemReturnPoliciesAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemReturnPoliciesAsync:::itemId"]=""
 operation_parameters_collection_type["getItemReturnPoliciesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemReturnPoliciesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemReturnPolicyByIdAsync:::itemReturnPolicyId"]=""
+operation_parameters_collection_type["getItemReturnPolicyByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemReturnPolicyByIdAsync:::itemId"]=""
 operation_parameters_collection_type["getItemReturnPolicyByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemReturnPolicyByIdAsync:::x-api-version"]=""
@@ -1620,6 +1868,7 @@ operation_parameters_collection_type["deleteItemReviewAsync:::itemReviewId"]=""
 operation_parameters_collection_type["deleteItemReviewAsync:::api-version"]=""
 operation_parameters_collection_type["deleteItemReviewAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemReviewByIdAsync:::itemReviewId"]=""
+operation_parameters_collection_type["getItemReviewByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemReviewByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemReviewByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemReviewsAsync:::itemId"]=""
@@ -1630,13 +1879,16 @@ operation_parameters_collection_type["updateItemReviewAsync:::itemReviewId"]=""
 operation_parameters_collection_type["updateItemReviewAsync:::api-version"]=""
 operation_parameters_collection_type["updateItemReviewAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateItemReviewAsync:::ItemReviewUpdateDto"]=""
+operation_parameters_collection_type["countItemShippingPoliciesAsync:::tenantId"]=""
 operation_parameters_collection_type["countItemShippingPoliciesAsync:::itemId"]=""
 operation_parameters_collection_type["countItemShippingPoliciesAsync:::api-version"]=""
 operation_parameters_collection_type["countItemShippingPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemShippingPoliciesAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemShippingPoliciesAsync:::itemId"]=""
 operation_parameters_collection_type["getItemShippingPoliciesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemShippingPoliciesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::itemShippingPolicyId"]=""
+operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::itemId"]=""
 operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::x-api-version"]=""
@@ -1659,6 +1911,7 @@ operation_parameters_collection_type["deleteItemTagAsync:::itemTagId"]=""
 operation_parameters_collection_type["deleteItemTagAsync:::api-version"]=""
 operation_parameters_collection_type["deleteItemTagAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemTagByIdAsync:::itemTagId"]=""
+operation_parameters_collection_type["getItemTagByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemTagByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemTagByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemTagsAsync:::tenantId"]=""
@@ -1669,13 +1922,16 @@ operation_parameters_collection_type["updateItemTagAsync:::itemTagId"]=""
 operation_parameters_collection_type["updateItemTagAsync:::api-version"]=""
 operation_parameters_collection_type["updateItemTagAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateItemTagAsync:::ItemTagUpdateDto"]=""
+operation_parameters_collection_type["countItemTaxPoliciesAsync:::tenantId"]=""
 operation_parameters_collection_type["countItemTaxPoliciesAsync:::itemId"]=""
 operation_parameters_collection_type["countItemTaxPoliciesAsync:::api-version"]=""
 operation_parameters_collection_type["countItemTaxPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemTaxPoliciesAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemTaxPoliciesAsync:::itemId"]=""
 operation_parameters_collection_type["getItemTaxPoliciesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemTaxPoliciesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemTaxPolicyByIdAsync:::itemTaxPolicyId"]=""
+operation_parameters_collection_type["getItemTaxPolicyByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemTaxPolicyByIdAsync:::itemId"]=""
 operation_parameters_collection_type["getItemTaxPolicyByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemTaxPolicyByIdAsync:::x-api-version"]=""
@@ -1701,6 +1957,7 @@ operation_parameters_collection_type["deleteItemTypeAsync:::itemTypeID"]=""
 operation_parameters_collection_type["deleteItemTypeAsync:::api-version"]=""
 operation_parameters_collection_type["deleteItemTypeAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemTypeByIdAsync:::itemTypeID"]=""
+operation_parameters_collection_type["getItemTypeByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemTypeByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemTypeByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemTypesAsync:::tenantId"]=""
@@ -1711,13 +1968,16 @@ operation_parameters_collection_type["updateItemTypeAsync:::itemTypeID"]=""
 operation_parameters_collection_type["updateItemTypeAsync:::api-version"]=""
 operation_parameters_collection_type["updateItemTypeAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateItemTypeAsync:::ItemTypeUpdateDto"]=""
+operation_parameters_collection_type["countItemWarrantyPoliciesAsync:::tenantId"]=""
 operation_parameters_collection_type["countItemWarrantyPoliciesAsync:::itemId"]=""
 operation_parameters_collection_type["countItemWarrantyPoliciesAsync:::api-version"]=""
 operation_parameters_collection_type["countItemWarrantyPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemWarrantyPoliciesAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemWarrantyPoliciesAsync:::itemId"]=""
 operation_parameters_collection_type["getItemWarrantyPoliciesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemWarrantyPoliciesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemWarrantyPolicyByIdAsync:::itemWarrantyPolicyId"]=""
+operation_parameters_collection_type["getItemWarrantyPolicyByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemWarrantyPolicyByIdAsync:::itemId"]=""
 operation_parameters_collection_type["getItemWarrantyPolicyByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemWarrantyPolicyByIdAsync:::x-api-version"]=""
@@ -1731,6 +1991,7 @@ operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::itemId
 operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::itemWarrantyPolicyId"]=""
 operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::api-version"]=""
 operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::x-api-version"]=""
+operation_parameters_collection_type["countStockItemTagsByItemId:::tenantId"]=""
 operation_parameters_collection_type["countStockItemTagsByItemId:::itemId"]=""
 operation_parameters_collection_type["countStockItemTagsByItemId:::api-version"]=""
 operation_parameters_collection_type["countStockItemTagsByItemId:::x-api-version"]=""
@@ -1838,10 +2099,12 @@ operation_parameters_collection_type["getStockItemShippingPolicyById:::itemId"]=
 operation_parameters_collection_type["getStockItemShippingPolicyById:::itemShippingPolicyId"]=""
 operation_parameters_collection_type["getStockItemShippingPolicyById:::api-version"]=""
 operation_parameters_collection_type["getStockItemShippingPolicyById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemTagById:::tenantId"]=""
 operation_parameters_collection_type["getStockItemTagById:::itemId"]=""
 operation_parameters_collection_type["getStockItemTagById:::itemTagId"]=""
 operation_parameters_collection_type["getStockItemTagById:::api-version"]=""
 operation_parameters_collection_type["getStockItemTagById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemTagsByItemId:::tenantId"]=""
 operation_parameters_collection_type["getStockItemTagsByItemId:::itemId"]=""
 operation_parameters_collection_type["getStockItemTagsByItemId:::api-version"]=""
 operation_parameters_collection_type["getStockItemTagsByItemId:::x-api-version"]=""
@@ -1852,10 +2115,12 @@ operation_parameters_collection_type["getStockItemTaxPolicyById:::itemId"]=""
 operation_parameters_collection_type["getStockItemTaxPolicyById:::itemTaxPolicyId"]=""
 operation_parameters_collection_type["getStockItemTaxPolicyById:::api-version"]=""
 operation_parameters_collection_type["getStockItemTaxPolicyById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemTypeById:::tenantId"]=""
 operation_parameters_collection_type["getStockItemTypeById:::itemId"]=""
 operation_parameters_collection_type["getStockItemTypeById:::itemTypeId"]=""
 operation_parameters_collection_type["getStockItemTypeById:::api-version"]=""
 operation_parameters_collection_type["getStockItemTypeById:::x-api-version"]=""
+operation_parameters_collection_type["getStockItemTypesByItemId:::tenantId"]=""
 operation_parameters_collection_type["getStockItemTypesByItemId:::itemId"]=""
 operation_parameters_collection_type["getStockItemTypesByItemId:::api-version"]=""
 operation_parameters_collection_type["getStockItemTypesByItemId:::x-api-version"]=""
@@ -2049,25 +2314,6 @@ operation_parameters_collection_type["getMerchants:::api-version"]=""
 operation_parameters_collection_type["getMerchants:::x-api-version"]=""
 operation_parameters_collection_type["getMerchantsCount:::api-version"]=""
 operation_parameters_collection_type["getMerchantsCount:::x-api-version"]=""
-operation_parameters_collection_type["createPricingRule:::tenantId"]=""
-operation_parameters_collection_type["createPricingRule:::api-version"]=""
-operation_parameters_collection_type["createPricingRule:::x-api-version"]=""
-operation_parameters_collection_type["createPricingRule:::PricingRuleCreateDto"]=""
-operation_parameters_collection_type["deletePricingRule:::tenantId"]=""
-operation_parameters_collection_type["deletePricingRule:::pricingRuleId"]=""
-operation_parameters_collection_type["deletePricingRule:::api-version"]=""
-operation_parameters_collection_type["deletePricingRule:::x-api-version"]=""
-operation_parameters_collection_type["getPricingRuleById:::pricingRuleId"]=""
-operation_parameters_collection_type["getPricingRuleById:::api-version"]=""
-operation_parameters_collection_type["getPricingRuleById:::x-api-version"]=""
-operation_parameters_collection_type["getPricingRules:::tenantId"]=""
-operation_parameters_collection_type["getPricingRules:::api-version"]=""
-operation_parameters_collection_type["getPricingRules:::x-api-version"]=""
-operation_parameters_collection_type["updatePricingRule:::tenantId"]=""
-operation_parameters_collection_type["updatePricingRule:::pricingRuleId"]=""
-operation_parameters_collection_type["updatePricingRule:::api-version"]=""
-operation_parameters_collection_type["updatePricingRule:::x-api-version"]=""
-operation_parameters_collection_type["updatePricingRule:::PricingRuleUpdateDto"]=""
 
 
 ##
@@ -2425,7 +2671,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}CatalogService command line client (API version 2.0.0.0)${OFF}
+${BOLD}${WHITE}CatalogService command line client (API version 2.1.2.5401)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -2454,7 +2700,13 @@ ${BOLD}${WHITE}Usage${OFF}
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -2486,6 +2738,17 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[itemAttributeOptions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createItemAttributeOptionAsync${OFF};Create a new item attribute option
+  ${CYAN}deleteItemAttributeOptionAsync${OFF};Delete an item attribute option
+  ${CYAN}getItemAttributeOptionByIdAsync${OFF};Get item attribute option by ID
+  ${CYAN}getItemAttributeOptionsAsync${OFF};Get all item attribute options
+  ${CYAN}getItemAttributeOptionsCountAsync${OFF};Get item attribute options count
+  ${CYAN}updateItemAttributeOptionAsync${OFF};Update an item attribute option
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[itemAttributes]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}countItemAttributesAsync${OFF};Count item attributes
@@ -2507,6 +2770,17 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[itemBundles]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createItemBundleAsync${OFF};Create a new item bundle
+  ${CYAN}deleteItemBundleAsync${OFF};Delete an item bundle
+  ${CYAN}getItemBundleByIdAsync${OFF};Get item bundle by ID
+  ${CYAN}getItemBundlesAsync${OFF};Get all item bundles
+  ${CYAN}getItemBundlesCountAsync${OFF};Get item bundles count
+  ${CYAN}updateItemBundleAsync${OFF};Update an item bundle
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[itemCategories]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}countItemCategoriesAsync${OFF};Count item categories
@@ -2515,6 +2789,17 @@ read -r -d '' ops <<EOF
   ${CYAN}getItemCategoriesAsync${OFF};Get all item categories
   ${CYAN}getItemCategoryByIdAsync${OFF};Get item category by ID
   ${CYAN}updateItemCategoryAsync${OFF};Update an item category
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[itemFamilies]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createItemFamilyAsync${OFF};Create a new item family
+  ${CYAN}deleteItemFamilyAsync${OFF};Delete an item family
+  ${CYAN}getItemFamiliesAsync${OFF};Get all item families
+  ${CYAN}getItemFamiliesCountAsync${OFF};Get item families count
+  ${CYAN}getItemFamilyByIdAsync${OFF};Get item family by ID
+  ${CYAN}updateItemFamilyAsync${OFF};Update an item family
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -2721,22 +3006,12 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[pricingRules]${OFF}"
-read -r -d '' ops <<EOF
-  ${CYAN}createPricingRule${OFF};Create a new pricing rule
-  ${CYAN}deletePricingRule${OFF};Delete a pricing rule
-  ${CYAN}getPricingRuleById${OFF};Get pricing rule by ID
-  ${CYAN}getPricingRules${OFF};Get all pricing rules
-  ${CYAN}updatePricingRule${OFF};Update a pricing rule
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
     echo -e "${BOLD}${WHITE}Options${OFF}"
     echo -e "  -h,--help\\t\\t\\t\\tPrint this help"
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -2757,7 +3032,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}CatalogService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}${WHITE}CatalogService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -2777,10 +3052,35 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}CatalogService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}CatalogService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
 }
 
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
 ##############################################################################
 #
 # Print help for accountLogoutPost operation
@@ -3143,6 +3443,8 @@ print_getItemAttachmentByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemAttachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3167,7 +3469,7 @@ print_getItemAttachmentsAsync_help() {
     echo -e "Retrieves all item attachments for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3212,6 +3514,169 @@ print_updateItemAttachmentAsync_help() {
 }
 ##############################################################################
 #
+# Print help for createItemAttributeOptionAsync operation
+#
+##############################################################################
+print_createItemAttributeOptionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemAttributeOptionAsync - Create a new item attribute option${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item attribute option for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemAttributeOptionAsync operation
+#
+##############################################################################
+print_deleteItemAttributeOptionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemAttributeOptionAsync - Delete an item attribute option${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item attribute option for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttributeOptionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttributeOptionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemAttributeOptionByIdAsync operation
+#
+##############################################################################
+print_getItemAttributeOptionByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemAttributeOptionByIdAsync - Get item attribute option by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item attribute option by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemAttributeOptionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttributeOptionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemAttributeOptionsAsync operation
+#
+##############################################################################
+print_getItemAttributeOptionsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemAttributeOptionsAsync - Get all item attribute options${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item attribute options for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemAttributeOptionsCountAsync operation
+#
+##############################################################################
+print_getItemAttributeOptionsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemAttributeOptionsCountAsync - Get item attribute options count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of item attribute options for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemAttributeOptionAsync operation
+#
+##############################################################################
+print_updateItemAttributeOptionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemAttributeOptionAsync - Update an item attribute option${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item attribute option for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttributeOptionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttributeOptionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for countItemAttributesAsync operation
 #
 ##############################################################################
@@ -3222,7 +3687,7 @@ print_countItemAttributesAsync_help() {
     echo -e "Counts all item attributes for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3304,6 +3769,8 @@ print_getItemAttributeByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemAttributeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttributeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3328,7 +3795,7 @@ print_getItemAttributesAsync_help() {
     echo -e "Retrieves all item attributes for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3439,6 +3906,8 @@ print_getItemBrandByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemBrandId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemBrandId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3463,7 +3932,7 @@ print_getItemBrandsAsync_help() {
     echo -e "Retrieves all item brands for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3508,6 +3977,169 @@ print_updateItemBrandAsync_help() {
 }
 ##############################################################################
 #
+# Print help for createItemBundleAsync operation
+#
+##############################################################################
+print_createItemBundleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemBundleAsync - Create a new item bundle${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item bundle for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemBundleAsync operation
+#
+##############################################################################
+print_deleteItemBundleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemBundleAsync - Delete an item bundle${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item bundle for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemBundleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemBundleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemBundleByIdAsync operation
+#
+##############################################################################
+print_getItemBundleByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemBundleByIdAsync - Get item bundle by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item bundle by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemBundleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemBundleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemBundlesAsync operation
+#
+##############################################################################
+print_getItemBundlesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemBundlesAsync - Get all item bundles${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item bundles for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemBundlesCountAsync operation
+#
+##############################################################################
+print_getItemBundlesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemBundlesCountAsync - Get item bundles count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of item bundles for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemBundleAsync operation
+#
+##############################################################################
+print_updateItemBundleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemBundleAsync - Update an item bundle${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item bundle for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemBundleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemBundleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for countItemCategoriesAsync operation
 #
 ##############################################################################
@@ -3518,7 +4150,7 @@ print_countItemCategoriesAsync_help() {
     echo -e "Counts all item categories for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3599,7 +4231,7 @@ print_getItemCategoriesAsync_help() {
     echo -e "Retrieves all item categories for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3626,6 +4258,8 @@ print_getItemCategoryByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3653,6 +4287,169 @@ print_updateItemCategoryAsync_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createItemFamilyAsync operation
+#
+##############################################################################
+print_createItemFamilyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createItemFamilyAsync - Create a new item family${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new item family for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteItemFamilyAsync operation
+#
+##############################################################################
+print_deleteItemFamilyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteItemFamilyAsync - Delete an item family${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an item family for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemFamilyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemFamilyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemFamiliesAsync operation
+#
+##############################################################################
+print_getItemFamiliesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemFamiliesAsync - Get all item families${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all item families for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemFamiliesCountAsync operation
+#
+##############################################################################
+print_getItemFamiliesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemFamiliesCountAsync - Get item families count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of item families for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getItemFamilyByIdAsync operation
+#
+##############################################################################
+print_getItemFamilyByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getItemFamilyByIdAsync - Get item family by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific item family by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}itemFamilyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemFamilyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateItemFamilyAsync operation
+#
+##############################################################################
+print_updateItemFamilyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateItemFamilyAsync - Update an item family${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing item family for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemFamilyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemFamilyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3931,6 +4728,8 @@ print_getItemImageByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemImageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemImageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3955,7 +4754,7 @@ print_getItemImagesAsync_help() {
     echo -e "Retrieves all item images for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -4066,6 +4865,8 @@ print_getItemQuestionByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemQuestionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemQuestionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -4090,7 +4891,7 @@ print_getItemQuestionsAsync_help() {
     echo -e "Retrieves all item questions for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -4145,6 +4946,8 @@ print_countItemRefundPoliciesAsync_help() {
     echo -e "Counts all refund policies for a specific item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -4171,6 +4974,8 @@ print_getItemRefundPoliciesAsync_help() {
     echo -e "Retrieves all refund policies for a specific item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -4198,6 +5003,8 @@ print_getItemRefundPolicyByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemRefundPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemRefundPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -4283,6 +5090,8 @@ print_countItemReturnPoliciesAsync_help() {
     echo -e "Counts all return policies for a specific item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -4309,6 +5118,8 @@ print_getItemReturnPoliciesAsync_help() {
     echo -e "Retrieves all return policies for a specific item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -4336,6 +5147,8 @@ print_getItemReturnPolicyByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemReturnPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReturnPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -4477,6 +5290,8 @@ print_getItemReviewByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemReviewId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReviewId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -4556,6 +5371,8 @@ print_countItemShippingPoliciesAsync_help() {
     echo -e "Counts all shipping policies for a specific item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -4582,6 +5399,8 @@ print_getItemShippingPoliciesAsync_help() {
     echo -e "Retrieves all shipping policies for a specific item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -4609,6 +5428,8 @@ print_getItemShippingPolicyByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemShippingPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemShippingPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -4750,6 +5571,8 @@ print_getItemTagByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemTagId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTagId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -4774,7 +5597,7 @@ print_getItemTagsAsync_help() {
     echo -e "Retrieves all item tags for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -4829,6 +5652,8 @@ print_countItemTaxPoliciesAsync_help() {
     echo -e "Counts all tax policies for a specific item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -4855,6 +5680,8 @@ print_getItemTaxPoliciesAsync_help() {
     echo -e "Retrieves all tax policies for a specific item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -4882,6 +5709,8 @@ print_getItemTaxPolicyByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemTaxPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTaxPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -4967,7 +5796,7 @@ print_countItemTypesAsync_help() {
     echo -e "Counts all item types for the specified tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5049,6 +5878,8 @@ print_getItemTypeByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemTypeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTypeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5073,7 +5904,7 @@ print_getItemTypesAsync_help() {
     echo -e "Retrieves all item types for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5128,6 +5959,8 @@ print_countItemWarrantyPoliciesAsync_help() {
     echo -e "Counts all warranty policies for a specific item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -5154,6 +5987,8 @@ print_getItemWarrantyPoliciesAsync_help() {
     echo -e "Retrieves all warranty policies for a specific item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -5181,6 +6016,8 @@ print_getItemWarrantyPolicyByIdAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}itemWarrantyPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemWarrantyPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -5266,6 +6103,8 @@ print_countStockItemTagsByItemId_help() {
     echo -e "Counts the number of tags associated with a specific stock item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6057,6 +6896,8 @@ print_getStockItemTagById_help() {
     echo -e "Retrieves a specific tag by ID for a stock item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemTagId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTagId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -6083,6 +6924,8 @@ print_getStockItemTagsByItemId_help() {
     echo -e "Retrieves all tags associated with a specific stock item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6159,6 +7002,8 @@ print_getStockItemTypeById_help() {
     echo -e "Retrieves a specific type by ID for a stock item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -6185,6 +7030,8 @@ print_getStockItemTypesByItemId_help() {
     echo -e "Retrieves all types associated with a specific stock item." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7348,143 +8195,43 @@ print_getMerchantsCount_help() {
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
-##############################################################################
-#
-# Print help for createPricingRule operation
-#
-##############################################################################
-print_createPricingRule_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}createPricingRule - Create a new pricing rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Creates a new pricing rule for the specified tenant." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for deletePricingRule operation
-#
-##############################################################################
-print_deletePricingRule_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}deletePricingRule - Delete a pricing rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Deletes a pricing rule for the specified tenant and rule ID." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}pricingRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pricingRuleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getPricingRuleById operation
-#
-##############################################################################
-print_getPricingRuleById_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getPricingRuleById - Get pricing rule by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Retrieves a pricing rule by its unique identifier." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}pricingRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pricingRuleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getPricingRules operation
-#
-##############################################################################
-print_getPricingRules_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getPricingRules - Get all pricing rules${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Retrieves all pricing rules for the specified tenant, with optional OData query options." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for updatePricingRule operation
-#
-##############################################################################
-print_updatePricingRule_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}updatePricingRule - Update a pricing rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Updates an existing pricing rule for the specified tenant and rule ID." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}pricingRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: pricingRuleId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
 
+
+##############################################################################
+#
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
 
 ##############################################################################
 #
@@ -8560,7 +9307,7 @@ call_getItemAttachmentByIdAsync() {
     local path_parameter_names=(itemAttachmentId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttachments/{itemAttachmentId}" path_parameter_names query_parameter_names); then
@@ -8636,6 +9383,302 @@ call_updateItemAttachmentAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttachments/{itemAttachmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createItemAttributeOptionAsync operation
+#
+##############################################################################
+call_createItemAttributeOptionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributeOptions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemAttributeOptionAsync operation
+#
+##############################################################################
+call_deleteItemAttributeOptionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemAttributeOptionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributeOptions/{itemAttributeOptionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemAttributeOptionByIdAsync operation
+#
+##############################################################################
+call_getItemAttributeOptionByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemAttributeOptionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributeOptions/{itemAttributeOptionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemAttributeOptionsAsync operation
+#
+##############################################################################
+call_getItemAttributeOptionsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributeOptions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemAttributeOptionsCountAsync operation
+#
+##############################################################################
+call_getItemAttributeOptionsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributeOptions/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemAttributeOptionAsync operation
+#
+##############################################################################
+call_updateItemAttributeOptionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemAttributeOptionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributeOptions/{itemAttributeOptionId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -8856,7 +9899,7 @@ call_getItemAttributeByIdAsync() {
     local path_parameter_names=(itemAttributeId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributes/{itemAttributeId}" path_parameter_names query_parameter_names); then
@@ -9116,7 +10159,7 @@ call_getItemBrandByIdAsync() {
     local path_parameter_names=(itemBrandId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemBrands/{itemBrandId}" path_parameter_names query_parameter_names); then
@@ -9192,6 +10235,302 @@ call_updateItemBrandAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemBrands/{itemBrandId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createItemBundleAsync operation
+#
+##############################################################################
+call_createItemBundleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBundles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemBundleAsync operation
+#
+##############################################################################
+call_deleteItemBundleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemBundleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBundles/{itemBundleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemBundleByIdAsync operation
+#
+##############################################################################
+call_getItemBundleByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemBundleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBundles/{itemBundleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemBundlesAsync operation
+#
+##############################################################################
+call_getItemBundlesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBundles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemBundlesCountAsync operation
+#
+##############################################################################
+call_getItemBundlesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBundles/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemBundleAsync operation
+#
+##############################################################################
+call_updateItemBundleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemBundleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBundles/{itemBundleId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -9448,7 +10787,7 @@ call_getItemCategoryByIdAsync() {
     local path_parameter_names=(itemCategoryId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemCategories/{itemCategoryId}" path_parameter_names query_parameter_names); then
@@ -9488,6 +10827,302 @@ call_updateItemCategoryAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemCategories/{itemCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createItemFamilyAsync operation
+#
+##############################################################################
+call_createItemFamilyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemFamilies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteItemFamilyAsync operation
+#
+##############################################################################
+call_deleteItemFamilyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemFamilyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemFamilies/{itemFamilyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemFamiliesAsync operation
+#
+##############################################################################
+call_getItemFamiliesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemFamilies" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemFamiliesCountAsync operation
+#
+##############################################################################
+call_getItemFamiliesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemFamilies/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getItemFamilyByIdAsync operation
+#
+##############################################################################
+call_getItemFamilyByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemFamilyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemFamilies/{itemFamilyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateItemFamilyAsync operation
+#
+##############################################################################
+call_updateItemFamilyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemFamilyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemFamilies/{itemFamilyId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -9960,7 +11595,7 @@ call_getItemImageByIdAsync() {
     local path_parameter_names=(itemImageId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemImages/{itemImageId}" path_parameter_names query_parameter_names); then
@@ -10220,7 +11855,7 @@ call_getItemQuestionByIdAsync() {
     local path_parameter_names=(itemQuestionId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemQuestions/{itemQuestionId}" path_parameter_names query_parameter_names); then
@@ -10368,7 +12003,7 @@ call_countItemRefundPoliciesAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemRefundPolicies/Count" path_parameter_names query_parameter_names); then
@@ -10404,7 +12039,7 @@ call_getItemRefundPoliciesAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemRefundPolicies" path_parameter_names query_parameter_names); then
@@ -10440,7 +12075,7 @@ call_getItemRefundPolicyByIdAsync() {
     local path_parameter_names=(itemRefundPolicyId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemRefundPolicies/{itemRefundPolicyId}" path_parameter_names query_parameter_names); then
@@ -10548,7 +12183,7 @@ call_countItemReturnPoliciesAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemReturnPolicies/Count" path_parameter_names query_parameter_names); then
@@ -10584,7 +12219,7 @@ call_getItemReturnPoliciesAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemReturnPolicies" path_parameter_names query_parameter_names); then
@@ -10620,7 +12255,7 @@ call_getItemReturnPolicyByIdAsync() {
     local path_parameter_names=(itemReturnPolicyId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemReturnPolicies/{itemReturnPolicyId}" path_parameter_names query_parameter_names); then
@@ -10840,7 +12475,7 @@ call_getItemReviewByIdAsync() {
     local path_parameter_names=(itemReviewId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemReviews/{itemReviewId}" path_parameter_names query_parameter_names); then
@@ -10988,7 +12623,7 @@ call_countItemShippingPoliciesAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemShippingPolicies/Count" path_parameter_names query_parameter_names); then
@@ -11024,7 +12659,7 @@ call_getItemShippingPoliciesAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemShippingPolicies" path_parameter_names query_parameter_names); then
@@ -11060,7 +12695,7 @@ call_getItemShippingPolicyByIdAsync() {
     local path_parameter_names=(itemShippingPolicyId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemShippingPolicies/{itemShippingPolicyId}" path_parameter_names query_parameter_names); then
@@ -11280,7 +12915,7 @@ call_getItemTagByIdAsync() {
     local path_parameter_names=(itemTagId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemTags/{itemTagId}" path_parameter_names query_parameter_names); then
@@ -11428,7 +13063,7 @@ call_countItemTaxPoliciesAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemTaxPolicies/Count" path_parameter_names query_parameter_names); then
@@ -11464,7 +13099,7 @@ call_getItemTaxPoliciesAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemTaxPolicies" path_parameter_names query_parameter_names); then
@@ -11500,7 +13135,7 @@ call_getItemTaxPolicyByIdAsync() {
     local path_parameter_names=(itemTaxPolicyId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemTaxPolicies/{itemTaxPolicyId}" path_parameter_names query_parameter_names); then
@@ -11756,7 +13391,7 @@ call_getItemTypeByIdAsync() {
     local path_parameter_names=(itemTypeID)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemTypes/{itemTypeID}" path_parameter_names query_parameter_names); then
@@ -11904,7 +13539,7 @@ call_countItemWarrantyPoliciesAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemWarrantyPolicies/Count" path_parameter_names query_parameter_names); then
@@ -11940,7 +13575,7 @@ call_getItemWarrantyPoliciesAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemWarrantyPolicies" path_parameter_names query_parameter_names); then
@@ -11976,7 +13611,7 @@ call_getItemWarrantyPolicyByIdAsync() {
     local path_parameter_names=(itemWarrantyPolicyId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(itemId api-version)
+    local query_parameter_names=(tenantId itemId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/ItemWarrantyPolicies/{itemWarrantyPolicyId}" path_parameter_names query_parameter_names); then
@@ -12084,7 +13719,7 @@ call_countStockItemTagsByItemId() {
     local path_parameter_names=(itemId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Tags/Count" path_parameter_names query_parameter_names); then
@@ -13240,7 +14875,7 @@ call_getStockItemTagById() {
     local path_parameter_names=(itemId itemTagId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Tags/{itemTagId}" path_parameter_names query_parameter_names); then
@@ -13276,7 +14911,7 @@ call_getStockItemTagsByItemId() {
     local path_parameter_names=(itemId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Tags" path_parameter_names query_parameter_names); then
@@ -13384,7 +15019,7 @@ call_getStockItemTypeById() {
     local path_parameter_names=(itemId itemTypeId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Types/{itemTypeId}" path_parameter_names query_parameter_names); then
@@ -13420,7 +15055,7 @@ call_getStockItemTypesByItemId() {
     local path_parameter_names=(itemId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}/Types" path_parameter_names query_parameter_names); then
@@ -15118,266 +16753,6 @@ call_getMerchantsCount() {
     fi
 }
 
-##############################################################################
-#
-# Call createPricingRule operation
-#
-##############################################################################
-call_createPricingRule() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/CatalogService/PricingRules" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call deletePricingRule operation
-#
-##############################################################################
-call_deletePricingRule() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(pricingRuleId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/CatalogService/PricingRules/{pricingRuleId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getPricingRuleById operation
-#
-##############################################################################
-call_getPricingRuleById() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(pricingRuleId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/CatalogService/PricingRules/{pricingRuleId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getPricingRules operation
-#
-##############################################################################
-call_getPricingRules() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/CatalogService/PricingRules" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call updatePricingRule operation
-#
-##############################################################################
-call_updatePricingRule() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId pricingRuleId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/CatalogService/PricingRules/Update" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
 
 
 ##############################################################################
@@ -15475,6 +16850,9 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
+    ;;
     accountLogoutPost)
     operation="accountLogoutPost"
     ;;
@@ -15541,6 +16919,24 @@ case $key in
     updateItemAttachmentAsync)
     operation="updateItemAttachmentAsync"
     ;;
+    createItemAttributeOptionAsync)
+    operation="createItemAttributeOptionAsync"
+    ;;
+    deleteItemAttributeOptionAsync)
+    operation="deleteItemAttributeOptionAsync"
+    ;;
+    getItemAttributeOptionByIdAsync)
+    operation="getItemAttributeOptionByIdAsync"
+    ;;
+    getItemAttributeOptionsAsync)
+    operation="getItemAttributeOptionsAsync"
+    ;;
+    getItemAttributeOptionsCountAsync)
+    operation="getItemAttributeOptionsCountAsync"
+    ;;
+    updateItemAttributeOptionAsync)
+    operation="updateItemAttributeOptionAsync"
+    ;;
     countItemAttributesAsync)
     operation="countItemAttributesAsync"
     ;;
@@ -15574,6 +16970,24 @@ case $key in
     updateItemBrandAsync)
     operation="updateItemBrandAsync"
     ;;
+    createItemBundleAsync)
+    operation="createItemBundleAsync"
+    ;;
+    deleteItemBundleAsync)
+    operation="deleteItemBundleAsync"
+    ;;
+    getItemBundleByIdAsync)
+    operation="getItemBundleByIdAsync"
+    ;;
+    getItemBundlesAsync)
+    operation="getItemBundlesAsync"
+    ;;
+    getItemBundlesCountAsync)
+    operation="getItemBundlesCountAsync"
+    ;;
+    updateItemBundleAsync)
+    operation="updateItemBundleAsync"
+    ;;
     countItemCategoriesAsync)
     operation="countItemCategoriesAsync"
     ;;
@@ -15591,6 +17005,24 @@ case $key in
     ;;
     updateItemCategoryAsync)
     operation="updateItemCategoryAsync"
+    ;;
+    createItemFamilyAsync)
+    operation="createItemFamilyAsync"
+    ;;
+    deleteItemFamilyAsync)
+    operation="deleteItemFamilyAsync"
+    ;;
+    getItemFamiliesAsync)
+    operation="getItemFamiliesAsync"
+    ;;
+    getItemFamiliesCountAsync)
+    operation="getItemFamiliesCountAsync"
+    ;;
+    getItemFamilyByIdAsync)
+    operation="getItemFamilyByIdAsync"
+    ;;
+    updateItemFamilyAsync)
+    operation="updateItemFamilyAsync"
     ;;
     getAllItemGoogleCategoriesAsync)
     operation="getAllItemGoogleCategoriesAsync"
@@ -16006,21 +17438,6 @@ case $key in
     getMerchantsCount)
     operation="getMerchantsCount"
     ;;
-    createPricingRule)
-    operation="createPricingRule"
-    ;;
-    deletePricingRule)
-    operation="deletePricingRule"
-    ;;
-    getPricingRuleById)
-    operation="getPricingRuleById"
-    ;;
-    getPricingRules)
-    operation="getPricingRules"
-    ;;
-    updatePricingRule)
-    operation="updatePricingRule"
-    ;;
     *==*)
     # Parse body arguments and convert them into top level
     # JSON properties passed in the body content as strings
@@ -16108,6 +17525,9 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
+    ;;
     accountLogoutPost)
     call_accountLogoutPost
     ;;
@@ -16174,6 +17594,24 @@ case $operation in
     updateItemAttachmentAsync)
     call_updateItemAttachmentAsync
     ;;
+    createItemAttributeOptionAsync)
+    call_createItemAttributeOptionAsync
+    ;;
+    deleteItemAttributeOptionAsync)
+    call_deleteItemAttributeOptionAsync
+    ;;
+    getItemAttributeOptionByIdAsync)
+    call_getItemAttributeOptionByIdAsync
+    ;;
+    getItemAttributeOptionsAsync)
+    call_getItemAttributeOptionsAsync
+    ;;
+    getItemAttributeOptionsCountAsync)
+    call_getItemAttributeOptionsCountAsync
+    ;;
+    updateItemAttributeOptionAsync)
+    call_updateItemAttributeOptionAsync
+    ;;
     countItemAttributesAsync)
     call_countItemAttributesAsync
     ;;
@@ -16207,6 +17645,24 @@ case $operation in
     updateItemBrandAsync)
     call_updateItemBrandAsync
     ;;
+    createItemBundleAsync)
+    call_createItemBundleAsync
+    ;;
+    deleteItemBundleAsync)
+    call_deleteItemBundleAsync
+    ;;
+    getItemBundleByIdAsync)
+    call_getItemBundleByIdAsync
+    ;;
+    getItemBundlesAsync)
+    call_getItemBundlesAsync
+    ;;
+    getItemBundlesCountAsync)
+    call_getItemBundlesCountAsync
+    ;;
+    updateItemBundleAsync)
+    call_updateItemBundleAsync
+    ;;
     countItemCategoriesAsync)
     call_countItemCategoriesAsync
     ;;
@@ -16224,6 +17680,24 @@ case $operation in
     ;;
     updateItemCategoryAsync)
     call_updateItemCategoryAsync
+    ;;
+    createItemFamilyAsync)
+    call_createItemFamilyAsync
+    ;;
+    deleteItemFamilyAsync)
+    call_deleteItemFamilyAsync
+    ;;
+    getItemFamiliesAsync)
+    call_getItemFamiliesAsync
+    ;;
+    getItemFamiliesCountAsync)
+    call_getItemFamiliesCountAsync
+    ;;
+    getItemFamilyByIdAsync)
+    call_getItemFamilyByIdAsync
+    ;;
+    updateItemFamilyAsync)
+    call_updateItemFamilyAsync
     ;;
     getAllItemGoogleCategoriesAsync)
     call_getAllItemGoogleCategoriesAsync
@@ -16638,21 +18112,6 @@ case $operation in
     ;;
     getMerchantsCount)
     call_getMerchantsCount
-    ;;
-    createPricingRule)
-    call_createPricingRule
-    ;;
-    deletePricingRule)
-    call_deletePricingRule
-    ;;
-    getPricingRuleById)
-    call_getPricingRuleById
-    ;;
-    getPricingRules)
-    call_getPricingRules
-    ;;
-    updatePricingRule)
-    call_updatePricingRule
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

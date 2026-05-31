@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **applicationType** | **string** |  | [optional] [default to null]
 **clientId** | **string** |  | [optional] [default to null]
 **concurrencyToken** | **string** |  | [optional] [default to null]

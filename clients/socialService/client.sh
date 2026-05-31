@@ -96,6 +96,9 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -156,10 +159,12 @@ operation_parameters_minimum_occurrences["countSocialGroupsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countSocialGroupsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countSocialGroupsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createSocialGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSocialGroupAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["createSocialGroupAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createSocialGroupAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createSocialGroupAsync:::SocialGroupCreateDto"]=0
 operation_parameters_minimum_occurrences["deleteSocialGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSocialGroupAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["deleteSocialGroupAsync:::socialGroupId"]=1
 operation_parameters_minimum_occurrences["deleteSocialGroupAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteSocialGroupAsync:::x-api-version"]=0
@@ -171,6 +176,7 @@ operation_parameters_minimum_occurrences["getSocialGroupsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSocialGroupsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialGroupsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSocialGroupAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::socialGroupId"]=1
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::x-api-version"]=0
@@ -296,6 +302,7 @@ operation_parameters_minimum_occurrences["countFollowersAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["countFollowsAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["countFollowsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countFollowsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countMessagesAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["countMessagesAsync:::conversationId"]=1
 operation_parameters_minimum_occurrences["countMessagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countMessagesAsync:::x-api-version"]=0
@@ -341,9 +348,14 @@ operation_parameters_minimum_occurrences["getFollowersAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getFollowsAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getFollowsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFollowsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMessagesAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getMessagesAsync:::conversationId"]=1
 operation_parameters_minimum_occurrences["getMessagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getMessagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getNotificationByIdAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["getNotificationByIdAsync:::notificationId"]=1
+operation_parameters_minimum_occurrences["getNotificationByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getNotificationByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getNotificationsAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getNotificationsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getNotificationsAsync:::x-api-version"]=0
@@ -370,6 +382,9 @@ operation_parameters_minimum_occurrences["updateMessageAsync:::PrivateMessageUpd
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -430,10 +445,12 @@ operation_parameters_maximum_occurrences["countSocialGroupsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countSocialGroupsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countSocialGroupsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createSocialGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSocialGroupAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["createSocialGroupAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createSocialGroupAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createSocialGroupAsync:::SocialGroupCreateDto"]=0
 operation_parameters_maximum_occurrences["deleteSocialGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSocialGroupAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["deleteSocialGroupAsync:::socialGroupId"]=0
 operation_parameters_maximum_occurrences["deleteSocialGroupAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteSocialGroupAsync:::x-api-version"]=0
@@ -445,6 +462,7 @@ operation_parameters_maximum_occurrences["getSocialGroupsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSocialGroupsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialGroupsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSocialGroupAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::socialGroupId"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::x-api-version"]=0
@@ -570,6 +588,7 @@ operation_parameters_maximum_occurrences["countFollowersAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["countFollowsAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["countFollowsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countFollowsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countMessagesAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["countMessagesAsync:::conversationId"]=0
 operation_parameters_maximum_occurrences["countMessagesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countMessagesAsync:::x-api-version"]=0
@@ -615,9 +634,14 @@ operation_parameters_maximum_occurrences["getFollowersAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getFollowsAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getFollowsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFollowsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMessagesAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getMessagesAsync:::conversationId"]=0
 operation_parameters_maximum_occurrences["getMessagesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getMessagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getNotificationByIdAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["getNotificationByIdAsync:::notificationId"]=0
+operation_parameters_maximum_occurrences["getNotificationByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getNotificationByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getNotificationsAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getNotificationsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getNotificationsAsync:::x-api-version"]=0
@@ -641,6 +665,9 @@ operation_parameters_maximum_occurrences["updateMessageAsync:::PrivateMessageUpd
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
@@ -701,10 +728,12 @@ operation_parameters_collection_type["countSocialGroupsAsync:::tenantId"]=""
 operation_parameters_collection_type["countSocialGroupsAsync:::api-version"]=""
 operation_parameters_collection_type["countSocialGroupsAsync:::x-api-version"]=""
 operation_parameters_collection_type["createSocialGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["createSocialGroupAsync:::socialProfileId"]=""
 operation_parameters_collection_type["createSocialGroupAsync:::api-version"]=""
 operation_parameters_collection_type["createSocialGroupAsync:::x-api-version"]=""
 operation_parameters_collection_type["createSocialGroupAsync:::SocialGroupCreateDto"]=""
 operation_parameters_collection_type["deleteSocialGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSocialGroupAsync:::socialProfileId"]=""
 operation_parameters_collection_type["deleteSocialGroupAsync:::socialGroupId"]=""
 operation_parameters_collection_type["deleteSocialGroupAsync:::api-version"]=""
 operation_parameters_collection_type["deleteSocialGroupAsync:::x-api-version"]=""
@@ -716,6 +745,7 @@ operation_parameters_collection_type["getSocialGroupsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSocialGroupsAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialGroupsAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateSocialGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSocialGroupAsync:::socialProfileId"]=""
 operation_parameters_collection_type["updateSocialGroupAsync:::socialGroupId"]=""
 operation_parameters_collection_type["updateSocialGroupAsync:::api-version"]=""
 operation_parameters_collection_type["updateSocialGroupAsync:::x-api-version"]=""
@@ -841,6 +871,7 @@ operation_parameters_collection_type["countFollowersAsync:::x-api-version"]=""
 operation_parameters_collection_type["countFollowsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["countFollowsAsync:::api-version"]=""
 operation_parameters_collection_type["countFollowsAsync:::x-api-version"]=""
+operation_parameters_collection_type["countMessagesAsync:::socialProfileId"]=""
 operation_parameters_collection_type["countMessagesAsync:::conversationId"]=""
 operation_parameters_collection_type["countMessagesAsync:::api-version"]=""
 operation_parameters_collection_type["countMessagesAsync:::x-api-version"]=""
@@ -886,9 +917,14 @@ operation_parameters_collection_type["getFollowersAsync:::x-api-version"]=""
 operation_parameters_collection_type["getFollowsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getFollowsAsync:::api-version"]=""
 operation_parameters_collection_type["getFollowsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMessagesAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getMessagesAsync:::conversationId"]=""
 operation_parameters_collection_type["getMessagesAsync:::api-version"]=""
 operation_parameters_collection_type["getMessagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getNotificationByIdAsync:::socialProfileId"]=""
+operation_parameters_collection_type["getNotificationByIdAsync:::notificationId"]=""
+operation_parameters_collection_type["getNotificationByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getNotificationByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getNotificationsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getNotificationsAsync:::api-version"]=""
 operation_parameters_collection_type["getNotificationsAsync:::x-api-version"]=""
@@ -1264,7 +1300,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}SocialService command line client (API version 2.0.0.0)${OFF}
+${BOLD}${WHITE}SocialService command line client (API version 2.1.2.5401)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1293,7 +1329,13 @@ ${BOLD}${WHITE}Usage${OFF}
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -1390,6 +1432,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getFollowersAsync${OFF};Get Followers
   ${CYAN}getFollowsAsync${OFF};Get Follows
   ${CYAN}getMessagesAsync${OFF};Get Messages
+  ${CYAN}getNotificationByIdAsync${OFF};Get Notification
   ${CYAN}getNotificationsAsync${OFF};Get Notifications
   ${CYAN}getSocialProfileAsync${OFF};Get Social Profile
   ${CYAN}getSocialProfilesAsync${OFF};Get Social Profiles
@@ -1403,7 +1446,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -1424,7 +1467,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}SocialService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}${WHITE}SocialService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1444,10 +1487,35 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}SocialService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}SocialService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
 }
 
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
 ##############################################################################
 #
 # Print help for accountLogoutPost operation
@@ -2030,6 +2098,8 @@ print_createSocialGroupAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2057,6 +2127,8 @@ print_deleteSocialGroupAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}socialGroupId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialGroupId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -2137,6 +2209,8 @@ print_updateSocialGroupAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}socialGroupId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialGroupId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -2952,6 +3026,8 @@ print_countMessagesAsync_help() {
     echo -e "Count messages for a conversation." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: conversationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3287,7 +3363,35 @@ print_getMessagesAsync_help() {
     echo -e "Get a list of messages for a conversation." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: conversationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getNotificationByIdAsync operation
+#
+##############################################################################
+print_getNotificationByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getNotificationByIdAsync - Get Notification${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get a notification by ID for a social profile." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}notificationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: notificationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3431,6 +3535,42 @@ print_updateMessageAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 
+
+##############################################################################
+#
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
 
 ##############################################################################
 #
@@ -4834,7 +4974,7 @@ call_createSocialGroupAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
+    local query_parameter_names=(tenantId socialProfileId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SocialService/SocialGroups" path_parameter_names query_parameter_names); then
@@ -4910,7 +5050,7 @@ call_deleteSocialGroupAsync() {
     local path_parameter_names=(socialGroupId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
+    local query_parameter_names=(tenantId socialProfileId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SocialService/SocialGroups/{socialGroupId}" path_parameter_names query_parameter_names); then
@@ -5018,7 +5158,7 @@ call_updateSocialGroupAsync() {
     local path_parameter_names=(socialGroupId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
+    local query_parameter_names=(tenantId socialProfileId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SocialService/SocialGroups/{socialGroupId}" path_parameter_names query_parameter_names); then
@@ -6458,7 +6598,7 @@ call_countMessagesAsync() {
     local path_parameter_names=(conversationId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(socialProfileId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SocialService/SocialProfiles/{conversationId}/Messages/Count" path_parameter_names query_parameter_names); then
@@ -7006,10 +7146,46 @@ call_getMessagesAsync() {
     local path_parameter_names=(conversationId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(socialProfileId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SocialService/SocialProfiles/{conversationId}/Messages" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getNotificationByIdAsync operation
+#
+##############################################################################
+call_getNotificationByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialProfileId notificationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/SocialProfiles/{socialProfileId}/Notifications/{notificationId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -7348,6 +7524,9 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
+    ;;
     accountLogoutPost)
     operation="accountLogoutPost"
     ;;
@@ -7573,6 +7752,9 @@ case $key in
     getMessagesAsync)
     operation="getMessagesAsync"
     ;;
+    getNotificationByIdAsync)
+    operation="getNotificationByIdAsync"
+    ;;
     getNotificationsAsync)
     operation="getNotificationsAsync"
     ;;
@@ -7675,6 +7857,9 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
+    ;;
     accountLogoutPost)
     call_accountLogoutPost
     ;;
@@ -7899,6 +8084,9 @@ case $operation in
     ;;
     getMessagesAsync)
     call_getMessagesAsync
+    ;;
+    getNotificationByIdAsync)
+    call_getNotificationByIdAsync
     ;;
     getNotificationsAsync)
     call_getNotificationsAsync

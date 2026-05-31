@@ -100,6 +100,46 @@ operation_parameters_minimum_occurrences["getAndStoreTokens:::api-version"]=0
 operation_parameters_minimum_occurrences["getAndStoreTokens:::x-api-version"]=0
 operation_parameters_minimum_occurrences["isRequestValidAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["isRequestValidAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteSystemCart:::cartId"]=1
+operation_parameters_minimum_occurrences["deleteSystemCart:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSystemCart:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemCartById:::cartId"]=1
+operation_parameters_minimum_occurrences["getSystemCartById:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemCartById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemCarts:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemCarts:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemCartsCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemCartsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_minimum_occurrences["createSystemContactOption:::contactId"]=1
+operation_parameters_minimum_occurrences["createSystemContactOption:::key"]=1
+operation_parameters_minimum_occurrences["createSystemContactOption:::portalId"]=0
+operation_parameters_minimum_occurrences["createSystemContactOption:::api-version"]=0
+operation_parameters_minimum_occurrences["createSystemContactOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSystemContactOption:::OptionCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSystemContactOption:::contactId"]=1
+operation_parameters_minimum_occurrences["deleteSystemContactOption:::optionId"]=1
+operation_parameters_minimum_occurrences["deleteSystemContactOption:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSystemContactOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemContactOptionById:::contactId"]=1
+operation_parameters_minimum_occurrences["getSystemContactOptionById:::optionId"]=1
+operation_parameters_minimum_occurrences["getSystemContactOptionById:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemContactOptionById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemContactOptions:::contactId"]=1
+operation_parameters_minimum_occurrences["getSystemContactOptions:::portalId"]=0
+operation_parameters_minimum_occurrences["getSystemContactOptions:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemContactOptions:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::contactId"]=1
+operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::portalId"]=0
+operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSystemContactOption:::contactId"]=1
+operation_parameters_minimum_occurrences["updateSystemContactOption:::optionId"]=1
+operation_parameters_minimum_occurrences["updateSystemContactOption:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSystemContactOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSystemContactOption:::OptionUpdateDto"]=0
 operation_parameters_minimum_occurrences["adminPreviewBasicEmailTemplate:::api-version"]=0
 operation_parameters_minimum_occurrences["adminPreviewBasicEmailTemplate:::x-api-version"]=0
 operation_parameters_minimum_occurrences["adminPreviewBasicEmailTemplate:::ObjectEmailDispatchRequest"]=0
@@ -123,23 +163,50 @@ operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
 operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
 operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
-operation_parameters_minimum_occurrences["getLicenseAssignmentsAsync:::licenseId"]=1
+operation_parameters_minimum_occurrences["deleteSystemIPLookup:::ipLookupId"]=1
+operation_parameters_minimum_occurrences["deleteSystemIPLookup:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSystemIPLookup:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemIPLookupById:::ipLookupId"]=1
+operation_parameters_minimum_occurrences["getSystemIPLookupById:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemIPLookupById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemIPLookups:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemIPLookups:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemIPLookupsCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemIPLookupsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiLicensingLicensesGeneratePost:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiLicensingLicensesGeneratePost:::api-version"]=0
+operation_parameters_minimum_occurrences["apiLicensingLicensesGeneratePost:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiLicensingLicensesGeneratePost:::LicenseKeyRequest"]=0
+operation_parameters_minimum_occurrences["apiLicensingLicensesValidateAttributesGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiLicensingLicensesValidateAttributesGet:::api-version"]=0
+operation_parameters_minimum_occurrences["apiLicensingLicensesValidateAttributesGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiLicensingLicensesValidateAttributesGet:::LicenseKey"]=0
+operation_parameters_minimum_occurrences["apiLicensingLicensesValidateErrorsGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiLicensingLicensesValidateErrorsGet:::api-version"]=0
+operation_parameters_minimum_occurrences["apiLicensingLicensesValidateErrorsGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiLicensingLicensesValidateErrorsGet:::LicenseKey"]=0
+operation_parameters_minimum_occurrences["apiLicensingLicensesValidateGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiLicensingLicensesValidateGet:::api-version"]=0
+operation_parameters_minimum_occurrences["apiLicensingLicensesValidateGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiLicensingLicensesValidateGet:::LicenseKey"]=0
 operation_parameters_minimum_occurrences["getLicenseAssignmentsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getLicenseAssignmentsAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getLicenseAssignmentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseAssignmentsAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLicenseByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicenseByIdAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getLicenseByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseByIdAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getLicenseRecordsQuotaAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getLicenseRecordsQuotaAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getLicenseRecordsQuotaAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getLicenseRecordsQuotaAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseRecordsQuotaAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getLicensesAsync:::tenantId"]=0
@@ -193,6 +260,52 @@ operation_parameters_minimum_occurrences["upsertSystemOption:::portalId"]=0
 operation_parameters_minimum_occurrences["upsertSystemOption:::api-version"]=0
 operation_parameters_minimum_occurrences["upsertSystemOption:::x-api-version"]=0
 operation_parameters_minimum_occurrences["upsertSystemOption:::OptionUpdateDto"]=0
+operation_parameters_minimum_occurrences["getSystemOverview:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemOverview:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSystemPortal:::api-version"]=0
+operation_parameters_minimum_occurrences["createSystemPortal:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSystemPortal:::WebPortalCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSystemPortal:::portalId"]=1
+operation_parameters_minimum_occurrences["deleteSystemPortal:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSystemPortal:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemPortalById:::portalId"]=1
+operation_parameters_minimum_occurrences["getSystemPortalById:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemPortalById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemPortals:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemPortals:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemPortalsCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemPortalsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSystemPortal:::portalId"]=1
+operation_parameters_minimum_occurrences["updateSystemPortal:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSystemPortal:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSystemPortal:::WebPortalUpdateDto"]=0
+operation_parameters_minimum_occurrences["createSystemTenantOption:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSystemTenantOption:::key"]=1
+operation_parameters_minimum_occurrences["createSystemTenantOption:::portalId"]=0
+operation_parameters_minimum_occurrences["createSystemTenantOption:::api-version"]=0
+operation_parameters_minimum_occurrences["createSystemTenantOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSystemTenantOption:::OptionCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSystemTenantOption:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSystemTenantOption:::optionId"]=1
+operation_parameters_minimum_occurrences["deleteSystemTenantOption:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSystemTenantOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemTenantOptionById:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSystemTenantOptionById:::optionId"]=1
+operation_parameters_minimum_occurrences["getSystemTenantOptionById:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemTenantOptionById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemTenantOptions:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSystemTenantOptions:::portalId"]=0
+operation_parameters_minimum_occurrences["getSystemTenantOptions:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemTenantOptions:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::portalId"]=0
+operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSystemTenantOption:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSystemTenantOption:::optionId"]=1
+operation_parameters_minimum_occurrences["updateSystemTenantOption:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSystemTenantOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSystemTenantOption:::OptionUpdateDto"]=0
 operation_parameters_minimum_occurrences["adminPreviewTenantEmail:::tenantId"]=1
 operation_parameters_minimum_occurrences["adminPreviewTenantEmail:::api-version"]=0
 operation_parameters_minimum_occurrences["adminPreviewTenantEmail:::x-api-version"]=0
@@ -222,6 +335,33 @@ operation_parameters_minimum_occurrences["updateTenant:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenant:::api-version"]=0
 operation_parameters_minimum_occurrences["updateTenant:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateTenant:::TenantUpdateDto"]=0
+operation_parameters_minimum_occurrences["createSystemUserOption:::userId"]=1
+operation_parameters_minimum_occurrences["createSystemUserOption:::key"]=1
+operation_parameters_minimum_occurrences["createSystemUserOption:::portalId"]=0
+operation_parameters_minimum_occurrences["createSystemUserOption:::api-version"]=0
+operation_parameters_minimum_occurrences["createSystemUserOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSystemUserOption:::OptionCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSystemUserOption:::userId"]=1
+operation_parameters_minimum_occurrences["deleteSystemUserOption:::optionId"]=1
+operation_parameters_minimum_occurrences["deleteSystemUserOption:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSystemUserOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemUserOptionById:::userId"]=1
+operation_parameters_minimum_occurrences["getSystemUserOptionById:::optionId"]=1
+operation_parameters_minimum_occurrences["getSystemUserOptionById:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemUserOptionById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemUserOptions:::userId"]=1
+operation_parameters_minimum_occurrences["getSystemUserOptions:::portalId"]=0
+operation_parameters_minimum_occurrences["getSystemUserOptions:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemUserOptions:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::userId"]=1
+operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::portalId"]=0
+operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSystemUserOption:::userId"]=1
+operation_parameters_minimum_occurrences["updateSystemUserOption:::optionId"]=1
+operation_parameters_minimum_occurrences["updateSystemUserOption:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSystemUserOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSystemUserOption:::OptionUpdateDto"]=0
 operation_parameters_minimum_occurrences["adminPreviewUserEmailTemplate:::userId"]=1
 operation_parameters_minimum_occurrences["adminPreviewUserEmailTemplate:::api-version"]=0
 operation_parameters_minimum_occurrences["adminPreviewUserEmailTemplate:::x-api-version"]=0
@@ -266,6 +406,46 @@ operation_parameters_maximum_occurrences["getAndStoreTokens:::api-version"]=0
 operation_parameters_maximum_occurrences["getAndStoreTokens:::x-api-version"]=0
 operation_parameters_maximum_occurrences["isRequestValidAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["isRequestValidAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteSystemCart:::cartId"]=0
+operation_parameters_maximum_occurrences["deleteSystemCart:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSystemCart:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemCartById:::cartId"]=0
+operation_parameters_maximum_occurrences["getSystemCartById:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemCartById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemCarts:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemCarts:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemCartsCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemCartsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_maximum_occurrences["createSystemContactOption:::contactId"]=0
+operation_parameters_maximum_occurrences["createSystemContactOption:::key"]=0
+operation_parameters_maximum_occurrences["createSystemContactOption:::portalId"]=0
+operation_parameters_maximum_occurrences["createSystemContactOption:::api-version"]=0
+operation_parameters_maximum_occurrences["createSystemContactOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSystemContactOption:::OptionCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSystemContactOption:::contactId"]=0
+operation_parameters_maximum_occurrences["deleteSystemContactOption:::optionId"]=0
+operation_parameters_maximum_occurrences["deleteSystemContactOption:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSystemContactOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptionById:::contactId"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptionById:::optionId"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptionById:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptionById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptions:::contactId"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptions:::portalId"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptions:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptions:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::contactId"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::portalId"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSystemContactOption:::contactId"]=0
+operation_parameters_maximum_occurrences["updateSystemContactOption:::optionId"]=0
+operation_parameters_maximum_occurrences["updateSystemContactOption:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSystemContactOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSystemContactOption:::OptionUpdateDto"]=0
 operation_parameters_maximum_occurrences["adminPreviewBasicEmailTemplate:::api-version"]=0
 operation_parameters_maximum_occurrences["adminPreviewBasicEmailTemplate:::x-api-version"]=0
 operation_parameters_maximum_occurrences["adminPreviewBasicEmailTemplate:::ObjectEmailDispatchRequest"]=0
@@ -289,23 +469,50 @@ operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
 operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
 operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
-operation_parameters_maximum_occurrences["getLicenseAssignmentsAsync:::licenseId"]=0
+operation_parameters_maximum_occurrences["deleteSystemIPLookup:::ipLookupId"]=0
+operation_parameters_maximum_occurrences["deleteSystemIPLookup:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSystemIPLookup:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemIPLookupById:::ipLookupId"]=0
+operation_parameters_maximum_occurrences["getSystemIPLookupById:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemIPLookupById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemIPLookups:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemIPLookups:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemIPLookupsCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemIPLookupsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesGeneratePost:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesGeneratePost:::api-version"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesGeneratePost:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesGeneratePost:::LicenseKeyRequest"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesValidateAttributesGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesValidateAttributesGet:::api-version"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesValidateAttributesGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesValidateAttributesGet:::LicenseKey"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesValidateErrorsGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesValidateErrorsGet:::api-version"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesValidateErrorsGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesValidateErrorsGet:::LicenseKey"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesValidateGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesValidateGet:::api-version"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesValidateGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiLicensingLicensesValidateGet:::LicenseKey"]=0
 operation_parameters_maximum_occurrences["getLicenseAssignmentsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getLicenseAssignmentsAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getLicenseAssignmentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseAssignmentsAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLicenseByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicenseByIdAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getLicenseByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseByIdAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getLicenseRecordsQuotaAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getLicenseRecordsQuotaAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getLicenseRecordsQuotaAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getLicenseRecordsQuotaAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseRecordsQuotaAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getLicensesAsync:::tenantId"]=0
@@ -359,6 +566,52 @@ operation_parameters_maximum_occurrences["upsertSystemOption:::portalId"]=0
 operation_parameters_maximum_occurrences["upsertSystemOption:::api-version"]=0
 operation_parameters_maximum_occurrences["upsertSystemOption:::x-api-version"]=0
 operation_parameters_maximum_occurrences["upsertSystemOption:::OptionUpdateDto"]=0
+operation_parameters_maximum_occurrences["getSystemOverview:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemOverview:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSystemPortal:::api-version"]=0
+operation_parameters_maximum_occurrences["createSystemPortal:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSystemPortal:::WebPortalCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSystemPortal:::portalId"]=0
+operation_parameters_maximum_occurrences["deleteSystemPortal:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSystemPortal:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemPortalById:::portalId"]=0
+operation_parameters_maximum_occurrences["getSystemPortalById:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemPortalById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemPortals:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemPortals:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemPortalsCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemPortalsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSystemPortal:::portalId"]=0
+operation_parameters_maximum_occurrences["updateSystemPortal:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSystemPortal:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSystemPortal:::WebPortalUpdateDto"]=0
+operation_parameters_maximum_occurrences["createSystemTenantOption:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSystemTenantOption:::key"]=0
+operation_parameters_maximum_occurrences["createSystemTenantOption:::portalId"]=0
+operation_parameters_maximum_occurrences["createSystemTenantOption:::api-version"]=0
+operation_parameters_maximum_occurrences["createSystemTenantOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSystemTenantOption:::OptionCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSystemTenantOption:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSystemTenantOption:::optionId"]=0
+operation_parameters_maximum_occurrences["deleteSystemTenantOption:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSystemTenantOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptionById:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptionById:::optionId"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptionById:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptionById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptions:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptions:::portalId"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptions:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptions:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::portalId"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSystemTenantOption:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSystemTenantOption:::optionId"]=0
+operation_parameters_maximum_occurrences["updateSystemTenantOption:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSystemTenantOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSystemTenantOption:::OptionUpdateDto"]=0
 operation_parameters_maximum_occurrences["adminPreviewTenantEmail:::tenantId"]=0
 operation_parameters_maximum_occurrences["adminPreviewTenantEmail:::api-version"]=0
 operation_parameters_maximum_occurrences["adminPreviewTenantEmail:::x-api-version"]=0
@@ -388,6 +641,33 @@ operation_parameters_maximum_occurrences["updateTenant:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenant:::api-version"]=0
 operation_parameters_maximum_occurrences["updateTenant:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateTenant:::TenantUpdateDto"]=0
+operation_parameters_maximum_occurrences["createSystemUserOption:::userId"]=0
+operation_parameters_maximum_occurrences["createSystemUserOption:::key"]=0
+operation_parameters_maximum_occurrences["createSystemUserOption:::portalId"]=0
+operation_parameters_maximum_occurrences["createSystemUserOption:::api-version"]=0
+operation_parameters_maximum_occurrences["createSystemUserOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSystemUserOption:::OptionCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSystemUserOption:::userId"]=0
+operation_parameters_maximum_occurrences["deleteSystemUserOption:::optionId"]=0
+operation_parameters_maximum_occurrences["deleteSystemUserOption:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSystemUserOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptionById:::userId"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptionById:::optionId"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptionById:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptionById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptions:::userId"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptions:::portalId"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptions:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptions:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::userId"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::portalId"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSystemUserOption:::userId"]=0
+operation_parameters_maximum_occurrences["updateSystemUserOption:::optionId"]=0
+operation_parameters_maximum_occurrences["updateSystemUserOption:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSystemUserOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSystemUserOption:::OptionUpdateDto"]=0
 operation_parameters_maximum_occurrences["adminPreviewUserEmailTemplate:::userId"]=0
 operation_parameters_maximum_occurrences["adminPreviewUserEmailTemplate:::api-version"]=0
 operation_parameters_maximum_occurrences["adminPreviewUserEmailTemplate:::x-api-version"]=0
@@ -429,6 +709,46 @@ operation_parameters_collection_type["getAndStoreTokens:::api-version"]=""
 operation_parameters_collection_type["getAndStoreTokens:::x-api-version"]=""
 operation_parameters_collection_type["isRequestValidAsync:::api-version"]=""
 operation_parameters_collection_type["isRequestValidAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteSystemCart:::cartId"]=""
+operation_parameters_collection_type["deleteSystemCart:::api-version"]=""
+operation_parameters_collection_type["deleteSystemCart:::x-api-version"]=""
+operation_parameters_collection_type["getSystemCartById:::cartId"]=""
+operation_parameters_collection_type["getSystemCartById:::api-version"]=""
+operation_parameters_collection_type["getSystemCartById:::x-api-version"]=""
+operation_parameters_collection_type["getSystemCarts:::api-version"]=""
+operation_parameters_collection_type["getSystemCarts:::x-api-version"]=""
+operation_parameters_collection_type["getSystemCartsCount:::api-version"]=""
+operation_parameters_collection_type["getSystemCartsCount:::x-api-version"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
+operation_parameters_collection_type["createSystemContactOption:::contactId"]=""
+operation_parameters_collection_type["createSystemContactOption:::key"]=""
+operation_parameters_collection_type["createSystemContactOption:::portalId"]=""
+operation_parameters_collection_type["createSystemContactOption:::api-version"]=""
+operation_parameters_collection_type["createSystemContactOption:::x-api-version"]=""
+operation_parameters_collection_type["createSystemContactOption:::OptionCreateDto"]=""
+operation_parameters_collection_type["deleteSystemContactOption:::contactId"]=""
+operation_parameters_collection_type["deleteSystemContactOption:::optionId"]=""
+operation_parameters_collection_type["deleteSystemContactOption:::api-version"]=""
+operation_parameters_collection_type["deleteSystemContactOption:::x-api-version"]=""
+operation_parameters_collection_type["getSystemContactOptionById:::contactId"]=""
+operation_parameters_collection_type["getSystemContactOptionById:::optionId"]=""
+operation_parameters_collection_type["getSystemContactOptionById:::api-version"]=""
+operation_parameters_collection_type["getSystemContactOptionById:::x-api-version"]=""
+operation_parameters_collection_type["getSystemContactOptions:::contactId"]=""
+operation_parameters_collection_type["getSystemContactOptions:::portalId"]=""
+operation_parameters_collection_type["getSystemContactOptions:::api-version"]=""
+operation_parameters_collection_type["getSystemContactOptions:::x-api-version"]=""
+operation_parameters_collection_type["getSystemContactOptionsCount:::contactId"]=""
+operation_parameters_collection_type["getSystemContactOptionsCount:::portalId"]=""
+operation_parameters_collection_type["getSystemContactOptionsCount:::api-version"]=""
+operation_parameters_collection_type["getSystemContactOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["updateSystemContactOption:::contactId"]=""
+operation_parameters_collection_type["updateSystemContactOption:::optionId"]=""
+operation_parameters_collection_type["updateSystemContactOption:::api-version"]=""
+operation_parameters_collection_type["updateSystemContactOption:::x-api-version"]=""
+operation_parameters_collection_type["updateSystemContactOption:::OptionUpdateDto"]=""
 operation_parameters_collection_type["adminPreviewBasicEmailTemplate:::api-version"]=""
 operation_parameters_collection_type["adminPreviewBasicEmailTemplate:::x-api-version"]=""
 operation_parameters_collection_type["adminPreviewBasicEmailTemplate:::ObjectEmailDispatchRequest"]=""
@@ -452,23 +772,50 @@ operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
 operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
 operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
-operation_parameters_collection_type["getLicenseAssignmentsAsync:::licenseId"]=""
+operation_parameters_collection_type["deleteSystemIPLookup:::ipLookupId"]=""
+operation_parameters_collection_type["deleteSystemIPLookup:::api-version"]=""
+operation_parameters_collection_type["deleteSystemIPLookup:::x-api-version"]=""
+operation_parameters_collection_type["getSystemIPLookupById:::ipLookupId"]=""
+operation_parameters_collection_type["getSystemIPLookupById:::api-version"]=""
+operation_parameters_collection_type["getSystemIPLookupById:::x-api-version"]=""
+operation_parameters_collection_type["getSystemIPLookups:::api-version"]=""
+operation_parameters_collection_type["getSystemIPLookups:::x-api-version"]=""
+operation_parameters_collection_type["getSystemIPLookupsCount:::api-version"]=""
+operation_parameters_collection_type["getSystemIPLookupsCount:::x-api-version"]=""
+operation_parameters_collection_type["apiLicensingLicensesGeneratePost:::tenantId"]=""
+operation_parameters_collection_type["apiLicensingLicensesGeneratePost:::api-version"]=""
+operation_parameters_collection_type["apiLicensingLicensesGeneratePost:::x-api-version"]=""
+operation_parameters_collection_type["apiLicensingLicensesGeneratePost:::LicenseKeyRequest"]=""
+operation_parameters_collection_type["apiLicensingLicensesValidateAttributesGet:::tenantId"]=""
+operation_parameters_collection_type["apiLicensingLicensesValidateAttributesGet:::api-version"]=""
+operation_parameters_collection_type["apiLicensingLicensesValidateAttributesGet:::x-api-version"]=""
+operation_parameters_collection_type["apiLicensingLicensesValidateAttributesGet:::LicenseKey"]=""
+operation_parameters_collection_type["apiLicensingLicensesValidateErrorsGet:::tenantId"]=""
+operation_parameters_collection_type["apiLicensingLicensesValidateErrorsGet:::api-version"]=""
+operation_parameters_collection_type["apiLicensingLicensesValidateErrorsGet:::x-api-version"]=""
+operation_parameters_collection_type["apiLicensingLicensesValidateErrorsGet:::LicenseKey"]=""
+operation_parameters_collection_type["apiLicensingLicensesValidateGet:::tenantId"]=""
+operation_parameters_collection_type["apiLicensingLicensesValidateGet:::api-version"]=""
+operation_parameters_collection_type["apiLicensingLicensesValidateGet:::x-api-version"]=""
+operation_parameters_collection_type["apiLicensingLicensesValidateGet:::LicenseKey"]=""
 operation_parameters_collection_type["getLicenseAssignmentsAsync:::tenantId"]=""
+operation_parameters_collection_type["getLicenseAssignmentsAsync:::licenseId"]=""
 operation_parameters_collection_type["getLicenseAssignmentsAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseAssignmentsAsync:::x-api-version"]=""
-operation_parameters_collection_type["getLicenseAttributesAsync:::licenseId"]=""
 operation_parameters_collection_type["getLicenseAttributesAsync:::tenantId"]=""
+operation_parameters_collection_type["getLicenseAttributesAsync:::licenseId"]=""
 operation_parameters_collection_type["getLicenseAttributesAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseAttributesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLicenseByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicenseByIdAsync:::licenseId"]=""
 operation_parameters_collection_type["getLicenseByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseByIdAsync:::x-api-version"]=""
-operation_parameters_collection_type["getLicenseFeaturesAsync:::licenseId"]=""
 operation_parameters_collection_type["getLicenseFeaturesAsync:::tenantId"]=""
+operation_parameters_collection_type["getLicenseFeaturesAsync:::licenseId"]=""
 operation_parameters_collection_type["getLicenseFeaturesAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseFeaturesAsync:::x-api-version"]=""
-operation_parameters_collection_type["getLicenseRecordsQuotaAsync:::licenseId"]=""
 operation_parameters_collection_type["getLicenseRecordsQuotaAsync:::tenantId"]=""
+operation_parameters_collection_type["getLicenseRecordsQuotaAsync:::licenseId"]=""
 operation_parameters_collection_type["getLicenseRecordsQuotaAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseRecordsQuotaAsync:::x-api-version"]=""
 operation_parameters_collection_type["getLicensesAsync:::tenantId"]=""
@@ -522,6 +869,52 @@ operation_parameters_collection_type["upsertSystemOption:::portalId"]=""
 operation_parameters_collection_type["upsertSystemOption:::api-version"]=""
 operation_parameters_collection_type["upsertSystemOption:::x-api-version"]=""
 operation_parameters_collection_type["upsertSystemOption:::OptionUpdateDto"]=""
+operation_parameters_collection_type["getSystemOverview:::api-version"]=""
+operation_parameters_collection_type["getSystemOverview:::x-api-version"]=""
+operation_parameters_collection_type["createSystemPortal:::api-version"]=""
+operation_parameters_collection_type["createSystemPortal:::x-api-version"]=""
+operation_parameters_collection_type["createSystemPortal:::WebPortalCreateDto"]=""
+operation_parameters_collection_type["deleteSystemPortal:::portalId"]=""
+operation_parameters_collection_type["deleteSystemPortal:::api-version"]=""
+operation_parameters_collection_type["deleteSystemPortal:::x-api-version"]=""
+operation_parameters_collection_type["getSystemPortalById:::portalId"]=""
+operation_parameters_collection_type["getSystemPortalById:::api-version"]=""
+operation_parameters_collection_type["getSystemPortalById:::x-api-version"]=""
+operation_parameters_collection_type["getSystemPortals:::api-version"]=""
+operation_parameters_collection_type["getSystemPortals:::x-api-version"]=""
+operation_parameters_collection_type["getSystemPortalsCount:::api-version"]=""
+operation_parameters_collection_type["getSystemPortalsCount:::x-api-version"]=""
+operation_parameters_collection_type["updateSystemPortal:::portalId"]=""
+operation_parameters_collection_type["updateSystemPortal:::api-version"]=""
+operation_parameters_collection_type["updateSystemPortal:::x-api-version"]=""
+operation_parameters_collection_type["updateSystemPortal:::WebPortalUpdateDto"]=""
+operation_parameters_collection_type["createSystemTenantOption:::tenantId"]=""
+operation_parameters_collection_type["createSystemTenantOption:::key"]=""
+operation_parameters_collection_type["createSystemTenantOption:::portalId"]=""
+operation_parameters_collection_type["createSystemTenantOption:::api-version"]=""
+operation_parameters_collection_type["createSystemTenantOption:::x-api-version"]=""
+operation_parameters_collection_type["createSystemTenantOption:::OptionCreateDto"]=""
+operation_parameters_collection_type["deleteSystemTenantOption:::tenantId"]=""
+operation_parameters_collection_type["deleteSystemTenantOption:::optionId"]=""
+operation_parameters_collection_type["deleteSystemTenantOption:::api-version"]=""
+operation_parameters_collection_type["deleteSystemTenantOption:::x-api-version"]=""
+operation_parameters_collection_type["getSystemTenantOptionById:::tenantId"]=""
+operation_parameters_collection_type["getSystemTenantOptionById:::optionId"]=""
+operation_parameters_collection_type["getSystemTenantOptionById:::api-version"]=""
+operation_parameters_collection_type["getSystemTenantOptionById:::x-api-version"]=""
+operation_parameters_collection_type["getSystemTenantOptions:::tenantId"]=""
+operation_parameters_collection_type["getSystemTenantOptions:::portalId"]=""
+operation_parameters_collection_type["getSystemTenantOptions:::api-version"]=""
+operation_parameters_collection_type["getSystemTenantOptions:::x-api-version"]=""
+operation_parameters_collection_type["getSystemTenantOptionsCount:::tenantId"]=""
+operation_parameters_collection_type["getSystemTenantOptionsCount:::portalId"]=""
+operation_parameters_collection_type["getSystemTenantOptionsCount:::api-version"]=""
+operation_parameters_collection_type["getSystemTenantOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["updateSystemTenantOption:::tenantId"]=""
+operation_parameters_collection_type["updateSystemTenantOption:::optionId"]=""
+operation_parameters_collection_type["updateSystemTenantOption:::api-version"]=""
+operation_parameters_collection_type["updateSystemTenantOption:::x-api-version"]=""
+operation_parameters_collection_type["updateSystemTenantOption:::OptionUpdateDto"]=""
 operation_parameters_collection_type["adminPreviewTenantEmail:::tenantId"]=""
 operation_parameters_collection_type["adminPreviewTenantEmail:::api-version"]=""
 operation_parameters_collection_type["adminPreviewTenantEmail:::x-api-version"]=""
@@ -551,6 +944,33 @@ operation_parameters_collection_type["updateTenant:::tenantId"]=""
 operation_parameters_collection_type["updateTenant:::api-version"]=""
 operation_parameters_collection_type["updateTenant:::x-api-version"]=""
 operation_parameters_collection_type["updateTenant:::TenantUpdateDto"]=""
+operation_parameters_collection_type["createSystemUserOption:::userId"]=""
+operation_parameters_collection_type["createSystemUserOption:::key"]=""
+operation_parameters_collection_type["createSystemUserOption:::portalId"]=""
+operation_parameters_collection_type["createSystemUserOption:::api-version"]=""
+operation_parameters_collection_type["createSystemUserOption:::x-api-version"]=""
+operation_parameters_collection_type["createSystemUserOption:::OptionCreateDto"]=""
+operation_parameters_collection_type["deleteSystemUserOption:::userId"]=""
+operation_parameters_collection_type["deleteSystemUserOption:::optionId"]=""
+operation_parameters_collection_type["deleteSystemUserOption:::api-version"]=""
+operation_parameters_collection_type["deleteSystemUserOption:::x-api-version"]=""
+operation_parameters_collection_type["getSystemUserOptionById:::userId"]=""
+operation_parameters_collection_type["getSystemUserOptionById:::optionId"]=""
+operation_parameters_collection_type["getSystemUserOptionById:::api-version"]=""
+operation_parameters_collection_type["getSystemUserOptionById:::x-api-version"]=""
+operation_parameters_collection_type["getSystemUserOptions:::userId"]=""
+operation_parameters_collection_type["getSystemUserOptions:::portalId"]=""
+operation_parameters_collection_type["getSystemUserOptions:::api-version"]=""
+operation_parameters_collection_type["getSystemUserOptions:::x-api-version"]=""
+operation_parameters_collection_type["getSystemUserOptionsCount:::userId"]=""
+operation_parameters_collection_type["getSystemUserOptionsCount:::portalId"]=""
+operation_parameters_collection_type["getSystemUserOptionsCount:::api-version"]=""
+operation_parameters_collection_type["getSystemUserOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["updateSystemUserOption:::userId"]=""
+operation_parameters_collection_type["updateSystemUserOption:::optionId"]=""
+operation_parameters_collection_type["updateSystemUserOption:::api-version"]=""
+operation_parameters_collection_type["updateSystemUserOption:::x-api-version"]=""
+operation_parameters_collection_type["updateSystemUserOption:::OptionUpdateDto"]=""
 operation_parameters_collection_type["adminPreviewUserEmailTemplate:::userId"]=""
 operation_parameters_collection_type["adminPreviewUserEmailTemplate:::api-version"]=""
 operation_parameters_collection_type["adminPreviewUserEmailTemplate:::x-api-version"]=""
@@ -940,7 +1360,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}SystemService command line client (API version 2.0.0.0)${OFF}
+${BOLD}${WHITE}SystemService command line client (API version 2.1.2.5401)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -976,6 +1396,32 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[carts]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}deleteSystemCart${OFF};Delete a system cart
+  ${CYAN}getSystemCartById${OFF};Retrieve a single system cart by its ID
+  ${CYAN}getSystemCarts${OFF};Retrieve a list of system carts
+  ${CYAN}getSystemCartsCount${OFF};Get the count of system carts
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[contactOptions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createSystemContactOption${OFF};Create a new contact option (admin)
+  ${CYAN}deleteSystemContactOption${OFF};Delete a contact option (admin)
+  ${CYAN}getSystemContactOptionById${OFF};Retrieve a single contact option by its ID (admin)
+  ${CYAN}getSystemContactOptions${OFF};Retrieve a list of contact options (admin)
+  ${CYAN}getSystemContactOptionsCount${OFF};Get the count of contact options (admin)
+  ${CYAN}updateSystemContactOption${OFF};Update a contact option (admin)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[emails]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}adminPreviewBasicEmailTemplate${OFF};Preview a rendered basic email template.
@@ -983,7 +1429,7 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -1002,6 +1448,24 @@ read -r -d '' ops <<EOF
   ${CYAN}resendConfirmationEmailPost${OFF};
   ${CYAN}resetPasswordPost${OFF};
   ${CYAN}versionGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[iPLookups]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}deleteSystemIPLookup${OFF};Delete a system IP lookup
+  ${CYAN}getSystemIPLookupById${OFF};Retrieve a single system IP lookup by its ID
+  ${CYAN}getSystemIPLookups${OFF};Retrieve a list of system IP lookups
+  ${CYAN}getSystemIPLookupsCount${OFF};Get the count of system IP lookups
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[licenses]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiLicensingLicensesGeneratePost${OFF};
+  ${CYAN}apiLicensingLicensesValidateAttributesGet${OFF};
+  ${CYAN}apiLicensingLicensesValidateErrorsGet${OFF};
+  ${CYAN}apiLicensingLicensesValidateGet${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1045,10 +1509,38 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[overview]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}getSystemOverview${OFF};Get system overview information
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[portals]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createSystemPortal${OFF};Create a new system portal
+  ${CYAN}deleteSystemPortal${OFF};Delete a system portal
+  ${CYAN}getSystemPortalById${OFF};Retrieve a single system portal by its ID
+  ${CYAN}getSystemPortals${OFF};Retrieve a list of system portals
+  ${CYAN}getSystemPortalsCount${OFF};Get the count of system portals
+  ${CYAN}updateSystemPortal${OFF};Update a system portal
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[tenantOptions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createSystemTenantOption${OFF};Create a new tenant option (admin)
+  ${CYAN}deleteSystemTenantOption${OFF};Delete a tenant option (admin)
+  ${CYAN}getSystemTenantOptionById${OFF};Retrieve a single tenant option by its ID (admin)
+  ${CYAN}getSystemTenantOptions${OFF};Retrieve a list of tenant options (admin)
+  ${CYAN}getSystemTenantOptionsCount${OFF};Get the count of tenant options (admin)
+  ${CYAN}updateSystemTenantOption${OFF};Update a tenant option (admin)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[tenants]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}adminPreviewTenantEmail${OFF};Preview the rendered email for a user.
-  ${CYAN}adminSendTenantEmail${OFF};Send an email to a user.
+  ${CYAN}adminPreviewTenantEmail${OFF};Preview the rendered email for a tenant.
+  ${CYAN}adminSendTenantEmail${OFF};Send an email to a tenant.
   ${CYAN}createTenant${OFF};Create a new tenant.
   ${CYAN}deleteTenant${OFF};Delete a specific tenant by ID.
   ${CYAN}getAllExtendedTenants${OFF};Get all extended tenants available on this suite server instance.
@@ -1057,6 +1549,17 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenant${OFF};Get a specific tenant by ID.
   ${CYAN}getTenantsCount${OFF};Get the total count of tenants available on this suite server instance.
   ${CYAN}updateTenant${OFF};Update a specific tenant by ID.
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[userOptions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createSystemUserOption${OFF};Create a new user option (admin)
+  ${CYAN}deleteSystemUserOption${OFF};Delete a user option (admin)
+  ${CYAN}getSystemUserOptionById${OFF};Retrieve a single user option by its ID (admin)
+  ${CYAN}getSystemUserOptions${OFF};Retrieve a list of user options (admin)
+  ${CYAN}getSystemUserOptionsCount${OFF};Get the count of user options (admin)
+  ${CYAN}updateSystemUserOption${OFF};Update a user option (admin)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1081,7 +1584,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -1102,7 +1605,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}SystemService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}${WHITE}SystemService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1122,7 +1625,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}SystemService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}SystemService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
 }
 
@@ -1163,6 +1666,294 @@ print_isRequestValidAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSystemCart operation
+#
+##############################################################################
+print_deleteSystemCart_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSystemCart - Delete a system cart${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Delete a system cart by its ID" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}cartId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: cartId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemCartById operation
+#
+##############################################################################
+print_getSystemCartById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemCartById - Retrieve a single system cart by its ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieve a single system cart by its ID" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}cartId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: cartId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemCarts operation
+#
+##############################################################################
+print_getSystemCarts_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemCarts - Retrieve a list of system carts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieve a list of all carts in the system" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemCartsCount operation
+#
+##############################################################################
+print_getSystemCartsCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemCartsCount - Get the count of system carts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get the count of all carts in the system" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createSystemContactOption operation
+#
+##############################################################################
+print_createSystemContactOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createSystemContactOption - Create a new contact option (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to create an option for any contact" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}key${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: key=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSystemContactOption operation
+#
+##############################################################################
+print_deleteSystemContactOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSystemContactOption - Delete a contact option (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to delete an option for any contact" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemContactOptionById operation
+#
+##############################################################################
+print_getSystemContactOptionById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemContactOptionById - Retrieve a single contact option by its ID (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to retrieve a single option for any contact" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemContactOptions operation
+#
+##############################################################################
+print_getSystemContactOptions_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemContactOptions - Retrieve a list of contact options (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to retrieve options for any contact" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemContactOptionsCount operation
+#
+##############################################################################
+print_getSystemContactOptionsCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemContactOptionsCount - Get the count of contact options (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to get the count of options for any contact" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSystemContactOption operation
+#
+##############################################################################
+print_updateSystemContactOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSystemContactOption - Update a contact option (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to update an option for any contact" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -1510,6 +2301,208 @@ print_versionGet_help() {
 }
 ##############################################################################
 #
+# Print help for deleteSystemIPLookup operation
+#
+##############################################################################
+print_deleteSystemIPLookup_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSystemIPLookup - Delete a system IP lookup${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Delete a system IP lookup by its ID" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}ipLookupId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: ipLookupId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemIPLookupById operation
+#
+##############################################################################
+print_getSystemIPLookupById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemIPLookupById - Retrieve a single system IP lookup by its ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieve a single system IP lookup by its ID" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}ipLookupId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: ipLookupId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemIPLookups operation
+#
+##############################################################################
+print_getSystemIPLookups_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemIPLookups - Retrieve a list of system IP lookups${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieve a list of all IP lookups in the system" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemIPLookupsCount operation
+#
+##############################################################################
+print_getSystemIPLookupsCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemIPLookupsCount - Get the count of system IP lookups${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get the count of all IP lookups in the system" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiLicensingLicensesGeneratePost operation
+#
+##############################################################################
+print_apiLicensingLicensesGeneratePost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiLicensingLicensesGeneratePost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiLicensingLicensesValidateAttributesGet operation
+#
+##############################################################################
+print_apiLicensingLicensesValidateAttributesGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiLicensingLicensesValidateAttributesGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiLicensingLicensesValidateErrorsGet operation
+#
+##############################################################################
+print_apiLicensingLicensesValidateErrorsGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiLicensingLicensesValidateErrorsGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiLicensingLicensesValidateGet operation
+#
+##############################################################################
+print_apiLicensingLicensesValidateGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiLicensingLicensesValidateGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getLicenseAssignmentsAsync operation
 #
 ##############################################################################
@@ -1520,9 +2513,9 @@ print_getLicenseAssignmentsAsync_help() {
     echo -e "Retrieves all license assignments for a given license." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1545,9 +2538,9 @@ print_getLicenseAttributesAsync_help() {
     echo -e "Retrieves all additional attributes for a given license." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1570,6 +2563,8 @@ print_getLicenseByIdAsync_help() {
     echo -e "Retrieves a single suite license by its unique identifier." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1593,9 +2588,9 @@ print_getLicenseFeaturesAsync_help() {
     echo -e "Retrieves all features for a given license." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1618,9 +2613,9 @@ print_getLicenseRecordsQuotaAsync_help() {
     echo -e "Retrieves the record quota for a given license." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2020,14 +3015,354 @@ print_upsertSystemOption_help() {
 }
 ##############################################################################
 #
+# Print help for getSystemOverview operation
+#
+##############################################################################
+print_getSystemOverview_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemOverview - Get system overview information${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns runtime, memory, and entity count information for the system" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createSystemPortal operation
+#
+##############################################################################
+print_createSystemPortal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createSystemPortal - Create a new system portal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Create a new web portal in the system" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSystemPortal operation
+#
+##############################################################################
+print_deleteSystemPortal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSystemPortal - Delete a system portal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Delete a web portal from the system" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemPortalById operation
+#
+##############################################################################
+print_getSystemPortalById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemPortalById - Retrieve a single system portal by its ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieve a single system portal by its ID" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemPortals operation
+#
+##############################################################################
+print_getSystemPortals_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemPortals - Retrieve a list of system portals${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieve a list of all web portals in the system" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemPortalsCount operation
+#
+##############################################################################
+print_getSystemPortalsCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemPortalsCount - Get the count of system portals${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get the count of all web portals in the system" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSystemPortal operation
+#
+##############################################################################
+print_updateSystemPortal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSystemPortal - Update a system portal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Update an existing web portal in the system" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createSystemTenantOption operation
+#
+##############################################################################
+print_createSystemTenantOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createSystemTenantOption - Create a new tenant option (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to create an option for any tenant" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}key${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: key=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSystemTenantOption operation
+#
+##############################################################################
+print_deleteSystemTenantOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSystemTenantOption - Delete a tenant option (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to delete an option for any tenant" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemTenantOptionById operation
+#
+##############################################################################
+print_getSystemTenantOptionById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemTenantOptionById - Retrieve a single tenant option by its ID (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to retrieve a single option for any tenant" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemTenantOptions operation
+#
+##############################################################################
+print_getSystemTenantOptions_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemTenantOptions - Retrieve a list of tenant options (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to retrieve options for any tenant" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemTenantOptionsCount operation
+#
+##############################################################################
+print_getSystemTenantOptionsCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemTenantOptionsCount - Get the count of tenant options (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to get the count of options for any tenant" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSystemTenantOption operation
+#
+##############################################################################
+print_updateSystemTenantOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSystemTenantOption - Update a tenant option (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to update an option for any tenant" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for adminPreviewTenantEmail operation
 #
 ##############################################################################
 print_adminPreviewTenantEmail_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}adminPreviewTenantEmail - Preview the rendered email for a user.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}adminPreviewTenantEmail - Preview the rendered email for a tenant.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2048,9 +3383,9 @@ print_adminPreviewTenantEmail_help() {
 ##############################################################################
 print_adminSendTenantEmail_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}adminSendTenantEmail - Send an email to a user.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}adminSendTenantEmail - Send an email to a tenant.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2265,6 +3600,171 @@ print_updateTenant_help() {
 }
 ##############################################################################
 #
+# Print help for createSystemUserOption operation
+#
+##############################################################################
+print_createSystemUserOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createSystemUserOption - Create a new user option (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to create an option for any user" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}key${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: key=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSystemUserOption operation
+#
+##############################################################################
+print_deleteSystemUserOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSystemUserOption - Delete a user option (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to delete an option for any user" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemUserOptionById operation
+#
+##############################################################################
+print_getSystemUserOptionById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemUserOptionById - Retrieve a single user option by its ID (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to retrieve a single option for any user" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemUserOptions operation
+#
+##############################################################################
+print_getSystemUserOptions_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemUserOptions - Retrieve a list of user options (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to retrieve options for any user" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemUserOptionsCount operation
+#
+##############################################################################
+print_getSystemUserOptionsCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemUserOptionsCount - Get the count of user options (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to get the count of options for any user" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: portalId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSystemUserOption operation
+#
+##############################################################################
+print_updateSystemUserOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSystemUserOption - Update a user option (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to update an option for any user" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for adminPreviewUserEmailTemplate operation
 #
 ##############################################################################
@@ -2272,7 +3772,7 @@ print_adminPreviewUserEmailTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}adminPreviewUserEmailTemplate - Preview the rendered email for a user.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2297,7 +3797,7 @@ print_adminSendUserEmail_help() {
     echo ""
     echo -e "${BOLD}${WHITE}adminSendUserEmail - Send an email to a user.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2324,7 +3824,7 @@ print_createAccountHolderAsync_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createAccountHolderAsync - Create a new user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -2350,7 +3850,7 @@ print_deleteAccountHolderAsync_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteAccountHolderAsync - Delete a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2375,7 +3875,7 @@ print_getExtendedAccountHolderAsync_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getExtendedAccountHolderAsync - Retrieve an extended user by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2400,7 +3900,7 @@ print_getExtendedUsersAsync_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getExtendedUsersAsync - Retrieve a list of extended users${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -2424,7 +3924,7 @@ print_getExtendedUsersCountAsync_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getExtendedUsersCountAsync - Get the count of extended users${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -2448,7 +3948,7 @@ print_getUserAsync_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserAsync - Retrieve a user by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2473,7 +3973,7 @@ print_getUsersAsync_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsersAsync - Retrieve a list of users${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -2497,7 +3997,7 @@ print_getUsersCountAsync_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsersCountAsync - Get the count of users${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -2521,7 +4021,7 @@ print_updateAccountHolderAsync_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateAccountHolderAsync - Update a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This action is only available for users with the 'business_owner' role (global administrators)." | paste -sd' ' | fold -sw 80
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2610,6 +4110,482 @@ call_isRequestValidAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSystemCart operation
+#
+##############################################################################
+call_deleteSystemCart() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(cartId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Carts/{cartId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemCartById operation
+#
+##############################################################################
+call_getSystemCartById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(cartId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Carts/{cartId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemCarts operation
+#
+##############################################################################
+call_getSystemCarts() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Carts" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemCartsCount operation
+#
+##############################################################################
+call_getSystemCartsCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Carts/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createSystemContactOption operation
+#
+##############################################################################
+call_createSystemContactOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(key portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Contacts/{contactId}/Options" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSystemContactOption operation
+#
+##############################################################################
+call_deleteSystemContactOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Contacts/{contactId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemContactOptionById operation
+#
+##############################################################################
+call_getSystemContactOptionById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Contacts/{contactId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemContactOptions operation
+#
+##############################################################################
+call_getSystemContactOptions() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Contacts/{contactId}/Options" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemContactOptionsCount operation
+#
+##############################################################################
+call_getSystemContactOptionsCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Contacts/{contactId}/Options/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateSystemContactOption operation
+#
+##############################################################################
+call_updateSystemContactOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Contacts/{contactId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3718,6 +5694,454 @@ call_versionGet() {
 
 ##############################################################################
 #
+# Call deleteSystemIPLookup operation
+#
+##############################################################################
+call_deleteSystemIPLookup() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(ipLookupId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/IPLookups/{ipLookupId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemIPLookupById operation
+#
+##############################################################################
+call_getSystemIPLookupById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(ipLookupId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/IPLookups/{ipLookupId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemIPLookups operation
+#
+##############################################################################
+call_getSystemIPLookups() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/IPLookups" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemIPLookupsCount operation
+#
+##############################################################################
+call_getSystemIPLookupsCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/IPLookups/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiLicensingLicensesGeneratePost operation
+#
+##############################################################################
+call_apiLicensingLicensesGeneratePost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/Licensing/Licenses/Generate" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call apiLicensingLicensesValidateAttributesGet operation
+#
+##############################################################################
+call_apiLicensingLicensesValidateAttributesGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/Licensing/Licenses/Validate/Attributes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call apiLicensingLicensesValidateErrorsGet operation
+#
+##############################################################################
+call_apiLicensingLicensesValidateErrorsGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/Licensing/Licenses/Validate/Errors" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call apiLicensingLicensesValidateGet operation
+#
+##############################################################################
+call_apiLicensingLicensesValidateGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/Licensing/Licenses/Validate" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call getLicenseAssignmentsAsync operation
 #
 ##############################################################################
@@ -3799,7 +6223,7 @@ call_getLicenseByIdAsync() {
     local path_parameter_names=(licenseId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SystemService/Licensing/Licenses/{licenseId}" path_parameter_names query_parameter_names); then
@@ -4720,6 +7144,634 @@ call_upsertSystemOption() {
 
 ##############################################################################
 #
+# Call getSystemOverview operation
+#
+##############################################################################
+call_getSystemOverview() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Overview" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createSystemPortal operation
+#
+##############################################################################
+call_createSystemPortal() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Portals" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSystemPortal operation
+#
+##############################################################################
+call_deleteSystemPortal() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(portalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Portals/{portalId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemPortalById operation
+#
+##############################################################################
+call_getSystemPortalById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(portalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Portals/{portalId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemPortals operation
+#
+##############################################################################
+call_getSystemPortals() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Portals" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemPortalsCount operation
+#
+##############################################################################
+call_getSystemPortalsCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Portals/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateSystemPortal operation
+#
+##############################################################################
+call_updateSystemPortal() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(portalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Portals/{portalId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createSystemTenantOption operation
+#
+##############################################################################
+call_createSystemTenantOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(key portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Tenants/{tenantId}/Options" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSystemTenantOption operation
+#
+##############################################################################
+call_deleteSystemTenantOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Tenants/{tenantId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemTenantOptionById operation
+#
+##############################################################################
+call_getSystemTenantOptionById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Tenants/{tenantId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemTenantOptions operation
+#
+##############################################################################
+call_getSystemTenantOptions() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Tenants/{tenantId}/Options" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemTenantOptionsCount operation
+#
+##############################################################################
+call_getSystemTenantOptionsCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Tenants/{tenantId}/Options/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateSystemTenantOption operation
+#
+##############################################################################
+call_updateSystemTenantOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Tenants/{tenantId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call adminPreviewTenantEmail operation
 #
 ##############################################################################
@@ -5177,6 +8229,302 @@ call_updateTenant() {
     local path
 
     if ! path=$(build_request_path "/api/v2/SystemService/Tenants/{tenantId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createSystemUserOption operation
+#
+##############################################################################
+call_createSystemUserOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(userId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(key portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Users/{userId}/Options" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSystemUserOption operation
+#
+##############################################################################
+call_deleteSystemUserOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(userId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Users/{userId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemUserOptionById operation
+#
+##############################################################################
+call_getSystemUserOptionById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(userId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Users/{userId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemUserOptions operation
+#
+##############################################################################
+call_getSystemUserOptions() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(userId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Users/{userId}/Options" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemUserOptionsCount operation
+#
+##############################################################################
+call_getSystemUserOptionsCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(userId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(portalId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Users/{userId}/Options/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateSystemUserOption operation
+#
+##############################################################################
+call_updateSystemUserOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(userId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Users/{userId}/Options/{optionId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -5897,6 +9245,39 @@ case $key in
     isRequestValidAsync)
     operation="isRequestValidAsync"
     ;;
+    deleteSystemCart)
+    operation="deleteSystemCart"
+    ;;
+    getSystemCartById)
+    operation="getSystemCartById"
+    ;;
+    getSystemCarts)
+    operation="getSystemCarts"
+    ;;
+    getSystemCartsCount)
+    operation="getSystemCartsCount"
+    ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
+    ;;
+    createSystemContactOption)
+    operation="createSystemContactOption"
+    ;;
+    deleteSystemContactOption)
+    operation="deleteSystemContactOption"
+    ;;
+    getSystemContactOptionById)
+    operation="getSystemContactOptionById"
+    ;;
+    getSystemContactOptions)
+    operation="getSystemContactOptions"
+    ;;
+    getSystemContactOptionsCount)
+    operation="getSystemContactOptionsCount"
+    ;;
+    updateSystemContactOption)
+    operation="updateSystemContactOption"
+    ;;
     adminPreviewBasicEmailTemplate)
     operation="adminPreviewBasicEmailTemplate"
     ;;
@@ -5953,6 +9334,30 @@ case $key in
     ;;
     versionGet)
     operation="versionGet"
+    ;;
+    deleteSystemIPLookup)
+    operation="deleteSystemIPLookup"
+    ;;
+    getSystemIPLookupById)
+    operation="getSystemIPLookupById"
+    ;;
+    getSystemIPLookups)
+    operation="getSystemIPLookups"
+    ;;
+    getSystemIPLookupsCount)
+    operation="getSystemIPLookupsCount"
+    ;;
+    apiLicensingLicensesGeneratePost)
+    operation="apiLicensingLicensesGeneratePost"
+    ;;
+    apiLicensingLicensesValidateAttributesGet)
+    operation="apiLicensingLicensesValidateAttributesGet"
+    ;;
+    apiLicensingLicensesValidateErrorsGet)
+    operation="apiLicensingLicensesValidateErrorsGet"
+    ;;
+    apiLicensingLicensesValidateGet)
+    operation="apiLicensingLicensesValidateGet"
     ;;
     getLicenseAssignmentsAsync)
     operation="getLicenseAssignmentsAsync"
@@ -6014,6 +9419,45 @@ case $key in
     upsertSystemOption)
     operation="upsertSystemOption"
     ;;
+    getSystemOverview)
+    operation="getSystemOverview"
+    ;;
+    createSystemPortal)
+    operation="createSystemPortal"
+    ;;
+    deleteSystemPortal)
+    operation="deleteSystemPortal"
+    ;;
+    getSystemPortalById)
+    operation="getSystemPortalById"
+    ;;
+    getSystemPortals)
+    operation="getSystemPortals"
+    ;;
+    getSystemPortalsCount)
+    operation="getSystemPortalsCount"
+    ;;
+    updateSystemPortal)
+    operation="updateSystemPortal"
+    ;;
+    createSystemTenantOption)
+    operation="createSystemTenantOption"
+    ;;
+    deleteSystemTenantOption)
+    operation="deleteSystemTenantOption"
+    ;;
+    getSystemTenantOptionById)
+    operation="getSystemTenantOptionById"
+    ;;
+    getSystemTenantOptions)
+    operation="getSystemTenantOptions"
+    ;;
+    getSystemTenantOptionsCount)
+    operation="getSystemTenantOptionsCount"
+    ;;
+    updateSystemTenantOption)
+    operation="updateSystemTenantOption"
+    ;;
     adminPreviewTenantEmail)
     operation="adminPreviewTenantEmail"
     ;;
@@ -6043,6 +9487,24 @@ case $key in
     ;;
     updateTenant)
     operation="updateTenant"
+    ;;
+    createSystemUserOption)
+    operation="createSystemUserOption"
+    ;;
+    deleteSystemUserOption)
+    operation="deleteSystemUserOption"
+    ;;
+    getSystemUserOptionById)
+    operation="getSystemUserOptionById"
+    ;;
+    getSystemUserOptions)
+    operation="getSystemUserOptions"
+    ;;
+    getSystemUserOptionsCount)
+    operation="getSystemUserOptionsCount"
+    ;;
+    updateSystemUserOption)
+    operation="updateSystemUserOption"
     ;;
     adminPreviewUserEmailTemplate)
     operation="adminPreviewUserEmailTemplate"
@@ -6170,6 +9632,39 @@ case $operation in
     isRequestValidAsync)
     call_isRequestValidAsync
     ;;
+    deleteSystemCart)
+    call_deleteSystemCart
+    ;;
+    getSystemCartById)
+    call_getSystemCartById
+    ;;
+    getSystemCarts)
+    call_getSystemCarts
+    ;;
+    getSystemCartsCount)
+    call_getSystemCartsCount
+    ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
+    ;;
+    createSystemContactOption)
+    call_createSystemContactOption
+    ;;
+    deleteSystemContactOption)
+    call_deleteSystemContactOption
+    ;;
+    getSystemContactOptionById)
+    call_getSystemContactOptionById
+    ;;
+    getSystemContactOptions)
+    call_getSystemContactOptions
+    ;;
+    getSystemContactOptionsCount)
+    call_getSystemContactOptionsCount
+    ;;
+    updateSystemContactOption)
+    call_updateSystemContactOption
+    ;;
     adminPreviewBasicEmailTemplate)
     call_adminPreviewBasicEmailTemplate
     ;;
@@ -6226,6 +9721,30 @@ case $operation in
     ;;
     versionGet)
     call_versionGet
+    ;;
+    deleteSystemIPLookup)
+    call_deleteSystemIPLookup
+    ;;
+    getSystemIPLookupById)
+    call_getSystemIPLookupById
+    ;;
+    getSystemIPLookups)
+    call_getSystemIPLookups
+    ;;
+    getSystemIPLookupsCount)
+    call_getSystemIPLookupsCount
+    ;;
+    apiLicensingLicensesGeneratePost)
+    call_apiLicensingLicensesGeneratePost
+    ;;
+    apiLicensingLicensesValidateAttributesGet)
+    call_apiLicensingLicensesValidateAttributesGet
+    ;;
+    apiLicensingLicensesValidateErrorsGet)
+    call_apiLicensingLicensesValidateErrorsGet
+    ;;
+    apiLicensingLicensesValidateGet)
+    call_apiLicensingLicensesValidateGet
     ;;
     getLicenseAssignmentsAsync)
     call_getLicenseAssignmentsAsync
@@ -6287,6 +9806,45 @@ case $operation in
     upsertSystemOption)
     call_upsertSystemOption
     ;;
+    getSystemOverview)
+    call_getSystemOverview
+    ;;
+    createSystemPortal)
+    call_createSystemPortal
+    ;;
+    deleteSystemPortal)
+    call_deleteSystemPortal
+    ;;
+    getSystemPortalById)
+    call_getSystemPortalById
+    ;;
+    getSystemPortals)
+    call_getSystemPortals
+    ;;
+    getSystemPortalsCount)
+    call_getSystemPortalsCount
+    ;;
+    updateSystemPortal)
+    call_updateSystemPortal
+    ;;
+    createSystemTenantOption)
+    call_createSystemTenantOption
+    ;;
+    deleteSystemTenantOption)
+    call_deleteSystemTenantOption
+    ;;
+    getSystemTenantOptionById)
+    call_getSystemTenantOptionById
+    ;;
+    getSystemTenantOptions)
+    call_getSystemTenantOptions
+    ;;
+    getSystemTenantOptionsCount)
+    call_getSystemTenantOptionsCount
+    ;;
+    updateSystemTenantOption)
+    call_updateSystemTenantOption
+    ;;
     adminPreviewTenantEmail)
     call_adminPreviewTenantEmail
     ;;
@@ -6316,6 +9874,24 @@ case $operation in
     ;;
     updateTenant)
     call_updateTenant
+    ;;
+    createSystemUserOption)
+    call_createSystemUserOption
+    ;;
+    deleteSystemUserOption)
+    call_deleteSystemUserOption
+    ;;
+    getSystemUserOptionById)
+    call_getSystemUserOptionById
+    ;;
+    getSystemUserOptions)
+    call_getSystemUserOptions
+    ;;
+    getSystemUserOptionsCount)
+    call_getSystemUserOptionsCount
+    ;;
+    updateSystemUserOption)
+    call_updateSystemUserOption
     ;;
     adminPreviewUserEmailTemplate)
     call_adminPreviewUserEmailTemplate

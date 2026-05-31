@@ -69,7 +69,13 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
+    operations["countCallingCodesByCountryAsync"]=1
+    operations["countCitiesByStateAsync"]=1
     operations["countCountries"]=1
+    operations["countCountryStatesAsync"]=1
+    operations["countTimezonesByCountryAsync"]=1
+    operations["countTopLevelDomainsByCountryAsync"]=1
     operations["getAllCountries"]=1
     operations["getCallingCodesByCountryIdAsync"]=1
     operations["getCitiesByCountryStateIdAsync"]=1
@@ -103,6 +109,7 @@ _()
     operations["countLanguagesAsync"]=1
     operations["getLanguageByIdAsync"]=1
     operations["getLanguagesAsync"]=1
+    operations["apiV2GlobalSystemMigratePost"]=1
     operations["countTimezonesAsync"]=1
     operations["getTimeZoneByIdAsync"]=1
     operations["getTimeZonesAsync"]=1
@@ -110,7 +117,13 @@ _()
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
+    operation_parameters["countCallingCodesByCountryAsync"]="countryId= api-version= x-api-version: "
+    operation_parameters["countCitiesByStateAsync"]="countryStateId= countryId= api-version= x-api-version: "
     operation_parameters["countCountries"]="api-version= x-api-version: "
+    operation_parameters["countCountryStatesAsync"]="countryId= api-version= x-api-version: "
+    operation_parameters["countTimezonesByCountryAsync"]="countryId= api-version= x-api-version: "
+    operation_parameters["countTopLevelDomainsByCountryAsync"]="countryId= api-version= x-api-version: "
     operation_parameters["getAllCountries"]="api-version= x-api-version: "
     operation_parameters["getCallingCodesByCountryIdAsync"]="countryId= api-version= x-api-version: "
     operation_parameters["getCitiesByCountryStateIdAsync"]="countryStateId= countryId= api-version= x-api-version: "
@@ -144,6 +157,7 @@ _()
     operation_parameters["countLanguagesAsync"]="api-version= x-api-version: "
     operation_parameters["getLanguageByIdAsync"]="languageId= api-version= x-api-version: "
     operation_parameters["getLanguagesAsync"]="api-version= x-api-version: "
+    operation_parameters["apiV2GlobalSystemMigratePost"]="api-version= x-api-version: "
     operation_parameters["countTimezonesAsync"]="api-version= x-api-version: "
     operation_parameters["getTimeZoneByIdAsync"]="timeZoneId= api-version= x-api-version: "
     operation_parameters["getTimeZonesAsync"]="api-version= x-api-version: "

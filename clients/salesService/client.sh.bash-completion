@@ -69,6 +69,7 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -86,11 +87,37 @@ _()
     operations["resendConfirmationEmailPost"]=1
     operations["resetPasswordPost"]=1
     operations["versionGet"]=1
+    operations["countLoyaltyProgramsAsync"]=1
+    operations["createLoyaltyProgramAsync"]=1
+    operations["deleteLoyaltyProgramAsync"]=1
+    operations["getLoyaltyProgramAsync"]=1
+    operations["getLoyaltyProgramsAsync"]=1
+    operations["updateLoyaltyProgramAsync"]=1
     operations["getQuoteAsync"]=1
+    operations["countPointOfSalesAsync"]=1
+    operations["createPointOfSaleAsync"]=1
+    operations["deletePointOfSaleAsync"]=1
+    operations["getPointOfSaleAsync"]=1
+    operations["getPointOfSalesAsync"]=1
+    operations["updatePointOfSaleAsync"]=1
+    operations["countSalesLiteraturesAsync"]=1
+    operations["createSalesLiteratureAsync"]=1
+    operations["deleteSalesLiteratureAsync"]=1
+    operations["getExtendedSalesLiteraturesAsync"]=1
+    operations["getSalesLiteratureAsync"]=1
+    operations["getSalesLiteraturesAsync"]=1
+    operations["updateSalesLiteratureAsync"]=1
+    operations["countStoresAsync"]=1
+    operations["createStoreAsync"]=1
+    operations["deleteStoreAsync"]=1
+    operations["getStoreAsync"]=1
+    operations["getStoresAsync"]=1
+    operations["updateStoreAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
@@ -108,7 +135,32 @@ _()
     operation_parameters["resendConfirmationEmailPost"]=""
     operation_parameters["resetPasswordPost"]=""
     operation_parameters["versionGet"]=""
+    operation_parameters["countLoyaltyProgramsAsync"]="tenantId= "
+    operation_parameters["createLoyaltyProgramAsync"]="tenantId= "
+    operation_parameters["deleteLoyaltyProgramAsync"]="loyaltyProgramId= tenantId= "
+    operation_parameters["getLoyaltyProgramAsync"]="loyaltyProgramId= tenantId= "
+    operation_parameters["getLoyaltyProgramsAsync"]="tenantId= "
+    operation_parameters["updateLoyaltyProgramAsync"]="loyaltyProgramId= tenantId= "
     operation_parameters["getQuoteAsync"]="marginId= api-version= x-api-version: "
+    operation_parameters["countPointOfSalesAsync"]="tenantId= "
+    operation_parameters["createPointOfSaleAsync"]="tenantId= "
+    operation_parameters["deletePointOfSaleAsync"]="pointOfSaleId= tenantId= "
+    operation_parameters["getPointOfSaleAsync"]="pointOfSaleId= tenantId= "
+    operation_parameters["getPointOfSalesAsync"]="tenantId= "
+    operation_parameters["updatePointOfSaleAsync"]="pointOfSaleId= tenantId= "
+    operation_parameters["countSalesLiteraturesAsync"]="tenantId= "
+    operation_parameters["createSalesLiteratureAsync"]="tenantId= "
+    operation_parameters["deleteSalesLiteratureAsync"]="salesLiteratureId= tenantId= "
+    operation_parameters["getExtendedSalesLiteraturesAsync"]="tenantId= "
+    operation_parameters["getSalesLiteratureAsync"]="salesLiteratureId= tenantId= "
+    operation_parameters["getSalesLiteraturesAsync"]="tenantId= "
+    operation_parameters["updateSalesLiteratureAsync"]="salesLiteratureId= tenantId= "
+    operation_parameters["countStoresAsync"]="tenantId= "
+    operation_parameters["createStoreAsync"]="tenantId= "
+    operation_parameters["deleteStoreAsync"]="storeId= tenantId= "
+    operation_parameters["getStoreAsync"]="storeId= tenantId= "
+    operation_parameters["getStoresAsync"]="tenantId= "
+    operation_parameters["updateStoreAsync"]="storeId= tenantId= "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values

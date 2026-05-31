@@ -71,6 +71,17 @@ _()
     declare -A operations
     operations["getAndStoreTokens"]=1
     operations["isRequestValidAsync"]=1
+    operations["deleteSystemCart"]=1
+    operations["getSystemCartById"]=1
+    operations["getSystemCarts"]=1
+    operations["getSystemCartsCount"]=1
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
+    operations["createSystemContactOption"]=1
+    operations["deleteSystemContactOption"]=1
+    operations["getSystemContactOptionById"]=1
+    operations["getSystemContactOptions"]=1
+    operations["getSystemContactOptionsCount"]=1
+    operations["updateSystemContactOption"]=1
     operations["adminPreviewBasicEmailTemplate"]=1
     operations["adminSendBasicEmail"]=1
     operations["accountLogoutPost"]=1
@@ -90,6 +101,14 @@ _()
     operations["resendConfirmationEmailPost"]=1
     operations["resetPasswordPost"]=1
     operations["versionGet"]=1
+    operations["deleteSystemIPLookup"]=1
+    operations["getSystemIPLookupById"]=1
+    operations["getSystemIPLookups"]=1
+    operations["getSystemIPLookupsCount"]=1
+    operations["apiLicensingLicensesGeneratePost"]=1
+    operations["apiLicensingLicensesValidateAttributesGet"]=1
+    operations["apiLicensingLicensesValidateErrorsGet"]=1
+    operations["apiLicensingLicensesValidateGet"]=1
     operations["getLicenseAssignmentsAsync"]=1
     operations["getLicenseAttributesAsync"]=1
     operations["getLicenseByIdAsync"]=1
@@ -110,6 +129,19 @@ _()
     operations["getSystemOptionsCount"]=1
     operations["updateSystemOption"]=1
     operations["upsertSystemOption"]=1
+    operations["getSystemOverview"]=1
+    operations["createSystemPortal"]=1
+    operations["deleteSystemPortal"]=1
+    operations["getSystemPortalById"]=1
+    operations["getSystemPortals"]=1
+    operations["getSystemPortalsCount"]=1
+    operations["updateSystemPortal"]=1
+    operations["createSystemTenantOption"]=1
+    operations["deleteSystemTenantOption"]=1
+    operations["getSystemTenantOptionById"]=1
+    operations["getSystemTenantOptions"]=1
+    operations["getSystemTenantOptionsCount"]=1
+    operations["updateSystemTenantOption"]=1
     operations["adminPreviewTenantEmail"]=1
     operations["adminSendTenantEmail"]=1
     operations["createTenant"]=1
@@ -120,6 +152,12 @@ _()
     operations["getTenant"]=1
     operations["getTenantsCount"]=1
     operations["updateTenant"]=1
+    operations["createSystemUserOption"]=1
+    operations["deleteSystemUserOption"]=1
+    operations["getSystemUserOptionById"]=1
+    operations["getSystemUserOptions"]=1
+    operations["getSystemUserOptionsCount"]=1
+    operations["updateSystemUserOption"]=1
     operations["adminPreviewUserEmailTemplate"]=1
     operations["adminSendUserEmail"]=1
     operations["createAccountHolderAsync"]=1
@@ -137,6 +175,17 @@ _()
     declare -A operation_parameters
     operation_parameters["getAndStoreTokens"]="api-version= x-api-version: "
     operation_parameters["isRequestValidAsync"]="api-version= x-api-version: "
+    operation_parameters["deleteSystemCart"]="cartId= api-version= x-api-version: "
+    operation_parameters["getSystemCartById"]="cartId= api-version= x-api-version: "
+    operation_parameters["getSystemCarts"]="api-version= x-api-version: "
+    operation_parameters["getSystemCartsCount"]="api-version= x-api-version: "
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
+    operation_parameters["createSystemContactOption"]="contactId= key= portalId= api-version= x-api-version: "
+    operation_parameters["deleteSystemContactOption"]="contactId= optionId= api-version= x-api-version: "
+    operation_parameters["getSystemContactOptionById"]="contactId= optionId= api-version= x-api-version: "
+    operation_parameters["getSystemContactOptions"]="contactId= portalId= api-version= x-api-version: "
+    operation_parameters["getSystemContactOptionsCount"]="contactId= portalId= api-version= x-api-version: "
+    operation_parameters["updateSystemContactOption"]="contactId= optionId= api-version= x-api-version: "
     operation_parameters["adminPreviewBasicEmailTemplate"]="api-version= x-api-version: "
     operation_parameters["adminSendBasicEmail"]="api-version= x-api-version: "
     operation_parameters["accountLogoutPost"]=""
@@ -156,9 +205,17 @@ _()
     operation_parameters["resendConfirmationEmailPost"]=""
     operation_parameters["resetPasswordPost"]=""
     operation_parameters["versionGet"]=""
+    operation_parameters["deleteSystemIPLookup"]="ipLookupId= api-version= x-api-version: "
+    operation_parameters["getSystemIPLookupById"]="ipLookupId= api-version= x-api-version: "
+    operation_parameters["getSystemIPLookups"]="api-version= x-api-version: "
+    operation_parameters["getSystemIPLookupsCount"]="api-version= x-api-version: "
+    operation_parameters["apiLicensingLicensesGeneratePost"]="tenantId= api-version= x-api-version: "
+    operation_parameters["apiLicensingLicensesValidateAttributesGet"]="tenantId= api-version= x-api-version: "
+    operation_parameters["apiLicensingLicensesValidateErrorsGet"]="tenantId= api-version= x-api-version: "
+    operation_parameters["apiLicensingLicensesValidateGet"]="tenantId= api-version= x-api-version: "
     operation_parameters["getLicenseAssignmentsAsync"]="licenseId= tenantId= api-version= x-api-version: "
     operation_parameters["getLicenseAttributesAsync"]="licenseId= tenantId= api-version= x-api-version: "
-    operation_parameters["getLicenseByIdAsync"]="licenseId= api-version= x-api-version: "
+    operation_parameters["getLicenseByIdAsync"]="licenseId= tenantId= api-version= x-api-version: "
     operation_parameters["getLicenseFeaturesAsync"]="licenseId= tenantId= api-version= x-api-version: "
     operation_parameters["getLicenseRecordsQuotaAsync"]="licenseId= tenantId= api-version= x-api-version: "
     operation_parameters["getLicensesAsync"]="tenantId= api-version= x-api-version: "
@@ -176,6 +233,19 @@ _()
     operation_parameters["getSystemOptionsCount"]="portalId= api-version= x-api-version: "
     operation_parameters["updateSystemOption"]="optionId= api-version= x-api-version: "
     operation_parameters["upsertSystemOption"]="key= portalId= api-version= x-api-version: "
+    operation_parameters["getSystemOverview"]="api-version= x-api-version: "
+    operation_parameters["createSystemPortal"]="api-version= x-api-version: "
+    operation_parameters["deleteSystemPortal"]="portalId= api-version= x-api-version: "
+    operation_parameters["getSystemPortalById"]="portalId= api-version= x-api-version: "
+    operation_parameters["getSystemPortals"]="api-version= x-api-version: "
+    operation_parameters["getSystemPortalsCount"]="api-version= x-api-version: "
+    operation_parameters["updateSystemPortal"]="portalId= api-version= x-api-version: "
+    operation_parameters["createSystemTenantOption"]="tenantId= key= portalId= api-version= x-api-version: "
+    operation_parameters["deleteSystemTenantOption"]="tenantId= optionId= api-version= x-api-version: "
+    operation_parameters["getSystemTenantOptionById"]="tenantId= optionId= api-version= x-api-version: "
+    operation_parameters["getSystemTenantOptions"]="tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["getSystemTenantOptionsCount"]="tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["updateSystemTenantOption"]="tenantId= optionId= api-version= x-api-version: "
     operation_parameters["adminPreviewTenantEmail"]="tenantId= api-version= x-api-version: "
     operation_parameters["adminSendTenantEmail"]="tenantId= api-version= x-api-version: "
     operation_parameters["createTenant"]="api-version= x-api-version: "
@@ -186,6 +256,12 @@ _()
     operation_parameters["getTenant"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantsCount"]="api-version= x-api-version: "
     operation_parameters["updateTenant"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createSystemUserOption"]="userId= key= portalId= api-version= x-api-version: "
+    operation_parameters["deleteSystemUserOption"]="userId= optionId= api-version= x-api-version: "
+    operation_parameters["getSystemUserOptionById"]="userId= optionId= api-version= x-api-version: "
+    operation_parameters["getSystemUserOptions"]="userId= portalId= api-version= x-api-version: "
+    operation_parameters["getSystemUserOptionsCount"]="userId= portalId= api-version= x-api-version: "
+    operation_parameters["updateSystemUserOption"]="userId= optionId= api-version= x-api-version: "
     operation_parameters["adminPreviewUserEmailTemplate"]="userId= api-version= x-api-version: "
     operation_parameters["adminSendUserEmail"]="userId= api-version= x-api-version: "
     operation_parameters["createAccountHolderAsync"]="api-version= x-api-version: "

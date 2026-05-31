@@ -96,6 +96,9 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["createEmailGroupAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createEmailGroupAsync:::EmailGroupCreateDto"]=1
 operation_parameters_minimum_occurrences["createEmailGroupAsync:::api-version"]=0
@@ -182,6 +185,29 @@ operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
 operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
 operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["createMarketingAreaAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createMarketingAreaAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createMarketingAreaAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createMarketingAreaAsync:::MarketingAreaCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteMarketingAreaAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteMarketingAreaAsync:::marketingAreaId"]=1
+operation_parameters_minimum_occurrences["deleteMarketingAreaAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteMarketingAreaAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingAreaByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMarketingAreaByIdAsync:::marketingAreaId"]=1
+operation_parameters_minimum_occurrences["getMarketingAreaByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingAreaByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingAreasAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMarketingAreasAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingAreasAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingAreasCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMarketingAreasCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingAreasCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateMarketingAreaAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateMarketingAreaAsync:::marketingAreaId"]=1
+operation_parameters_minimum_occurrences["updateMarketingAreaAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateMarketingAreaAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateMarketingAreaAsync:::MarketingAreaUpdateDto"]=0
 operation_parameters_minimum_occurrences["createMarketingCampaignAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createMarketingCampaignAsync:::MarketingCampaignCreateDto"]=1
 operation_parameters_minimum_occurrences["createMarketingCampaignAsync:::api-version"]=0
@@ -205,6 +231,29 @@ operation_parameters_minimum_occurrences["updateMarketingCampaignAsync:::marketi
 operation_parameters_minimum_occurrences["updateMarketingCampaignAsync:::MarketingCampaignUpdateDto"]=1
 operation_parameters_minimum_occurrences["updateMarketingCampaignAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateMarketingCampaignAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createMarketingLeadAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createMarketingLeadAsync:::MarketingLeadCreateDto"]=1
+operation_parameters_minimum_occurrences["createMarketingLeadAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createMarketingLeadAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteMarketingLeadAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteMarketingLeadAsync:::marketingLeadId"]=1
+operation_parameters_minimum_occurrences["deleteMarketingLeadAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteMarketingLeadAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingLeadDetailsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMarketingLeadDetailsAsync:::marketingLeadId"]=1
+operation_parameters_minimum_occurrences["getMarketingLeadDetailsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingLeadDetailsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingLeadsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMarketingLeadsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingLeadsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingLeadsODataAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMarketingLeadsODataAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMarketingLeadsODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateMarketingLeadAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateMarketingLeadAsync:::marketingLeadId"]=1
+operation_parameters_minimum_occurrences["updateMarketingLeadAsync:::MarketingLeadUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateMarketingLeadAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateMarketingLeadAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createMarketingListAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createMarketingListAsync:::MarketingListCreateDto"]=1
 operation_parameters_minimum_occurrences["createMarketingListAsync:::api-version"]=0
@@ -308,6 +357,9 @@ operation_parameters_minimum_occurrences["getTrackingPixelAsync:::x-api-version"
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["createEmailGroupAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createEmailGroupAsync:::EmailGroupCreateDto"]=0
 operation_parameters_maximum_occurrences["createEmailGroupAsync:::api-version"]=0
@@ -394,6 +446,29 @@ operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
 operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
 operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["createMarketingAreaAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createMarketingAreaAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createMarketingAreaAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createMarketingAreaAsync:::MarketingAreaCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteMarketingAreaAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteMarketingAreaAsync:::marketingAreaId"]=0
+operation_parameters_maximum_occurrences["deleteMarketingAreaAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteMarketingAreaAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingAreaByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMarketingAreaByIdAsync:::marketingAreaId"]=0
+operation_parameters_maximum_occurrences["getMarketingAreaByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingAreaByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingAreasAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMarketingAreasAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingAreasAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingAreasCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMarketingAreasCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingAreasCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateMarketingAreaAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateMarketingAreaAsync:::marketingAreaId"]=0
+operation_parameters_maximum_occurrences["updateMarketingAreaAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateMarketingAreaAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateMarketingAreaAsync:::MarketingAreaUpdateDto"]=0
 operation_parameters_maximum_occurrences["createMarketingCampaignAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createMarketingCampaignAsync:::MarketingCampaignCreateDto"]=0
 operation_parameters_maximum_occurrences["createMarketingCampaignAsync:::api-version"]=0
@@ -417,6 +492,29 @@ operation_parameters_maximum_occurrences["updateMarketingCampaignAsync:::marketi
 operation_parameters_maximum_occurrences["updateMarketingCampaignAsync:::MarketingCampaignUpdateDto"]=0
 operation_parameters_maximum_occurrences["updateMarketingCampaignAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateMarketingCampaignAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createMarketingLeadAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createMarketingLeadAsync:::MarketingLeadCreateDto"]=0
+operation_parameters_maximum_occurrences["createMarketingLeadAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createMarketingLeadAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteMarketingLeadAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteMarketingLeadAsync:::marketingLeadId"]=0
+operation_parameters_maximum_occurrences["deleteMarketingLeadAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteMarketingLeadAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingLeadDetailsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMarketingLeadDetailsAsync:::marketingLeadId"]=0
+operation_parameters_maximum_occurrences["getMarketingLeadDetailsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingLeadDetailsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingLeadsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMarketingLeadsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingLeadsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingLeadsODataAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMarketingLeadsODataAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMarketingLeadsODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateMarketingLeadAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateMarketingLeadAsync:::marketingLeadId"]=0
+operation_parameters_maximum_occurrences["updateMarketingLeadAsync:::MarketingLeadUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateMarketingLeadAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateMarketingLeadAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createMarketingListAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createMarketingListAsync:::MarketingListCreateDto"]=0
 operation_parameters_maximum_occurrences["createMarketingListAsync:::api-version"]=0
@@ -517,6 +615,9 @@ operation_parameters_maximum_occurrences["getTrackingPixelAsync:::x-api-version"
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["createEmailGroupAsync:::tenantId"]=""
 operation_parameters_collection_type["createEmailGroupAsync:::EmailGroupCreateDto"]=""
 operation_parameters_collection_type["createEmailGroupAsync:::api-version"]=""
@@ -603,6 +704,29 @@ operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
 operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
 operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["createMarketingAreaAsync:::tenantId"]=""
+operation_parameters_collection_type["createMarketingAreaAsync:::api-version"]=""
+operation_parameters_collection_type["createMarketingAreaAsync:::x-api-version"]=""
+operation_parameters_collection_type["createMarketingAreaAsync:::MarketingAreaCreateDto"]=""
+operation_parameters_collection_type["deleteMarketingAreaAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteMarketingAreaAsync:::marketingAreaId"]=""
+operation_parameters_collection_type["deleteMarketingAreaAsync:::api-version"]=""
+operation_parameters_collection_type["deleteMarketingAreaAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMarketingAreaByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getMarketingAreaByIdAsync:::marketingAreaId"]=""
+operation_parameters_collection_type["getMarketingAreaByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getMarketingAreaByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMarketingAreasAsync:::tenantId"]=""
+operation_parameters_collection_type["getMarketingAreasAsync:::api-version"]=""
+operation_parameters_collection_type["getMarketingAreasAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMarketingAreasCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getMarketingAreasCountAsync:::api-version"]=""
+operation_parameters_collection_type["getMarketingAreasCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateMarketingAreaAsync:::tenantId"]=""
+operation_parameters_collection_type["updateMarketingAreaAsync:::marketingAreaId"]=""
+operation_parameters_collection_type["updateMarketingAreaAsync:::api-version"]=""
+operation_parameters_collection_type["updateMarketingAreaAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateMarketingAreaAsync:::MarketingAreaUpdateDto"]=""
 operation_parameters_collection_type["createMarketingCampaignAsync:::tenantId"]=""
 operation_parameters_collection_type["createMarketingCampaignAsync:::MarketingCampaignCreateDto"]=""
 operation_parameters_collection_type["createMarketingCampaignAsync:::api-version"]=""
@@ -626,6 +750,29 @@ operation_parameters_collection_type["updateMarketingCampaignAsync:::marketingca
 operation_parameters_collection_type["updateMarketingCampaignAsync:::MarketingCampaignUpdateDto"]=""
 operation_parameters_collection_type["updateMarketingCampaignAsync:::api-version"]=""
 operation_parameters_collection_type["updateMarketingCampaignAsync:::x-api-version"]=""
+operation_parameters_collection_type["createMarketingLeadAsync:::tenantId"]=""
+operation_parameters_collection_type["createMarketingLeadAsync:::MarketingLeadCreateDto"]=""
+operation_parameters_collection_type["createMarketingLeadAsync:::api-version"]=""
+operation_parameters_collection_type["createMarketingLeadAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteMarketingLeadAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteMarketingLeadAsync:::marketingLeadId"]=""
+operation_parameters_collection_type["deleteMarketingLeadAsync:::api-version"]=""
+operation_parameters_collection_type["deleteMarketingLeadAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMarketingLeadDetailsAsync:::tenantId"]=""
+operation_parameters_collection_type["getMarketingLeadDetailsAsync:::marketingLeadId"]=""
+operation_parameters_collection_type["getMarketingLeadDetailsAsync:::api-version"]=""
+operation_parameters_collection_type["getMarketingLeadDetailsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMarketingLeadsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getMarketingLeadsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getMarketingLeadsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMarketingLeadsODataAsync:::tenantId"]=""
+operation_parameters_collection_type["getMarketingLeadsODataAsync:::api-version"]=""
+operation_parameters_collection_type["getMarketingLeadsODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateMarketingLeadAsync:::tenantId"]=""
+operation_parameters_collection_type["updateMarketingLeadAsync:::marketingLeadId"]=""
+operation_parameters_collection_type["updateMarketingLeadAsync:::MarketingLeadUpdateDto"]=""
+operation_parameters_collection_type["updateMarketingLeadAsync:::api-version"]=""
+operation_parameters_collection_type["updateMarketingLeadAsync:::x-api-version"]=""
 operation_parameters_collection_type["createMarketingListAsync:::tenantId"]=""
 operation_parameters_collection_type["createMarketingListAsync:::MarketingListCreateDto"]=""
 operation_parameters_collection_type["createMarketingListAsync:::api-version"]=""
@@ -1078,7 +1225,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}MarketingService command line client (API version 2.0.0.0)${OFF}
+${BOLD}${WHITE}MarketingService command line client (API version 2.1.2.5401)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1106,6 +1253,12 @@ ${BOLD}${WHITE}Usage${OFF}
 
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[emailGroups]${OFF}"
 read -r -d '' ops <<EOF
@@ -1140,7 +1293,7 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -1162,6 +1315,17 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[marketingAreas]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createMarketingAreaAsync${OFF};Create a marketing area
+  ${CYAN}deleteMarketingAreaAsync${OFF};Delete a marketing area
+  ${CYAN}getMarketingAreaByIdAsync${OFF};Get marketing area by ID
+  ${CYAN}getMarketingAreasAsync${OFF};Get marketing areas
+  ${CYAN}getMarketingAreasCountAsync${OFF};Count marketing areas
+  ${CYAN}updateMarketingAreaAsync${OFF};Update a marketing area
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[marketingCampaigns]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}createMarketingCampaignAsync${OFF};Create a marketing campaign
@@ -1170,6 +1334,17 @@ read -r -d '' ops <<EOF
   ${CYAN}getMarketingCampaignODataAsync${OFF};Get marketing campaigns
   ${CYAN}getMarketingCampaignsCountAsync${OFF};Get marketing campaigns count
   ${CYAN}updateMarketingCampaignAsync${OFF};Update a marketing campaign
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[marketingLeads]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createMarketingLeadAsync${OFF};Create a marketing lead
+  ${CYAN}deleteMarketingLeadAsync${OFF};Delete a marketing lead
+  ${CYAN}getMarketingLeadDetailsAsync${OFF};Get marketing lead by ID
+  ${CYAN}getMarketingLeadsCountAsync${OFF};Get marketing leads count
+  ${CYAN}getMarketingLeadsODataAsync${OFF};Get marketing leads
+  ${CYAN}updateMarketingLeadAsync${OFF};Update a marketing lead
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1228,7 +1403,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -1249,7 +1424,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}MarketingService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}${WHITE}MarketingService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1269,10 +1444,35 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}MarketingService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}MarketingService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
 }
 
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
 ##############################################################################
 #
 # Print help for createEmailGroupAsync operation
@@ -2088,6 +2288,175 @@ print_versionGet_help() {
 }
 ##############################################################################
 #
+# Print help for createMarketingAreaAsync operation
+#
+##############################################################################
+print_createMarketingAreaAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createMarketingAreaAsync - Create a marketing area${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new marketing area for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteMarketingAreaAsync operation
+#
+##############################################################################
+print_deleteMarketingAreaAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteMarketingAreaAsync - Delete a marketing area${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a marketing area for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}marketingAreaId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: marketingAreaId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMarketingAreaByIdAsync operation
+#
+##############################################################################
+print_getMarketingAreaByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMarketingAreaByIdAsync - Get marketing area by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific marketing area by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}marketingAreaId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: marketingAreaId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMarketingAreasAsync operation
+#
+##############################################################################
+print_getMarketingAreasAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMarketingAreasAsync - Get marketing areas${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves marketing areas for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMarketingAreasCountAsync operation
+#
+##############################################################################
+print_getMarketingAreasCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMarketingAreasCountAsync - Count marketing areas${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts marketing areas for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateMarketingAreaAsync operation
+#
+##############################################################################
+print_updateMarketingAreaAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateMarketingAreaAsync - Update a marketing area${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing marketing area for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}marketingAreaId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: marketingAreaId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createMarketingCampaignAsync operation
 #
 ##############################################################################
@@ -2256,6 +2625,135 @@ print_updateMarketingCampaignAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createMarketingLeadAsync operation
+#
+##############################################################################
+print_createMarketingLeadAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createMarketingLeadAsync - Create a marketing lead${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteMarketingLeadAsync operation
+#
+##############################################################################
+print_deleteMarketingLeadAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteMarketingLeadAsync - Delete a marketing lead${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}marketingLeadId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: marketingLeadId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMarketingLeadDetailsAsync operation
+#
+##############################################################################
+print_getMarketingLeadDetailsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMarketingLeadDetailsAsync - Get marketing lead by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}marketingLeadId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: marketingLeadId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMarketingLeadsCountAsync operation
+#
+##############################################################################
+print_getMarketingLeadsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMarketingLeadsCountAsync - Get marketing leads count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMarketingLeadsODataAsync operation
+#
+##############################################################################
+print_getMarketingLeadsODataAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMarketingLeadsODataAsync - Get marketing leads${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a collection of marketing leads for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateMarketingLeadAsync operation
+#
+##############################################################################
+print_updateMarketingLeadAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateMarketingLeadAsync - Update a marketing lead${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}marketingLeadId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: marketingLeadId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -2973,6 +3471,42 @@ print_getTrackingPixelAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 
+
+##############################################################################
+#
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
 
 ##############################################################################
 #
@@ -4815,6 +5349,302 @@ call_versionGet() {
 
 ##############################################################################
 #
+# Call createMarketingAreaAsync operation
+#
+##############################################################################
+call_createMarketingAreaAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingAreas" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteMarketingAreaAsync operation
+#
+##############################################################################
+call_deleteMarketingAreaAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketingAreaId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingAreas/{marketingAreaId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMarketingAreaByIdAsync operation
+#
+##############################################################################
+call_getMarketingAreaByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketingAreaId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingAreas/{marketingAreaId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMarketingAreasAsync operation
+#
+##############################################################################
+call_getMarketingAreasAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingAreas" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMarketingAreasCountAsync operation
+#
+##############################################################################
+call_getMarketingAreasCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingAreas/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateMarketingAreaAsync operation
+#
+##############################################################################
+call_updateMarketingAreaAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketingAreaId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingAreas/{marketingAreaId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call createMarketingCampaignAsync operation
 #
 ##############################################################################
@@ -5048,6 +5878,302 @@ call_updateMarketingCampaignAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createMarketingLeadAsync operation
+#
+##############################################################################
+call_createMarketingLeadAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLeads" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteMarketingLeadAsync operation
+#
+##############################################################################
+call_deleteMarketingLeadAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketingLeadId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLeads/{marketingLeadId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMarketingLeadDetailsAsync operation
+#
+##############################################################################
+call_getMarketingLeadDetailsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketingLeadId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLeads/{marketingLeadId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMarketingLeadsCountAsync operation
+#
+##############################################################################
+call_getMarketingLeadsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLeads/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMarketingLeadsODataAsync operation
+#
+##############################################################################
+call_getMarketingLeadsODataAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLeads" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateMarketingLeadAsync operation
+#
+##############################################################################
+call_updateMarketingLeadAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketingLeadId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLeads/{marketingLeadId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -6426,6 +7552,9 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
+    ;;
     createEmailGroupAsync)
     operation="createEmailGroupAsync"
     ;;
@@ -6531,6 +7660,24 @@ case $key in
     versionGet)
     operation="versionGet"
     ;;
+    createMarketingAreaAsync)
+    operation="createMarketingAreaAsync"
+    ;;
+    deleteMarketingAreaAsync)
+    operation="deleteMarketingAreaAsync"
+    ;;
+    getMarketingAreaByIdAsync)
+    operation="getMarketingAreaByIdAsync"
+    ;;
+    getMarketingAreasAsync)
+    operation="getMarketingAreasAsync"
+    ;;
+    getMarketingAreasCountAsync)
+    operation="getMarketingAreasCountAsync"
+    ;;
+    updateMarketingAreaAsync)
+    operation="updateMarketingAreaAsync"
+    ;;
     createMarketingCampaignAsync)
     operation="createMarketingCampaignAsync"
     ;;
@@ -6548,6 +7695,24 @@ case $key in
     ;;
     updateMarketingCampaignAsync)
     operation="updateMarketingCampaignAsync"
+    ;;
+    createMarketingLeadAsync)
+    operation="createMarketingLeadAsync"
+    ;;
+    deleteMarketingLeadAsync)
+    operation="deleteMarketingLeadAsync"
+    ;;
+    getMarketingLeadDetailsAsync)
+    operation="getMarketingLeadDetailsAsync"
+    ;;
+    getMarketingLeadsCountAsync)
+    operation="getMarketingLeadsCountAsync"
+    ;;
+    getMarketingLeadsODataAsync)
+    operation="getMarketingLeadsODataAsync"
+    ;;
+    updateMarketingLeadAsync)
+    operation="updateMarketingLeadAsync"
     ;;
     createMarketingListAsync)
     operation="createMarketingListAsync"
@@ -6711,6 +7876,9 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
+    ;;
     createEmailGroupAsync)
     call_createEmailGroupAsync
     ;;
@@ -6816,6 +7984,24 @@ case $operation in
     versionGet)
     call_versionGet
     ;;
+    createMarketingAreaAsync)
+    call_createMarketingAreaAsync
+    ;;
+    deleteMarketingAreaAsync)
+    call_deleteMarketingAreaAsync
+    ;;
+    getMarketingAreaByIdAsync)
+    call_getMarketingAreaByIdAsync
+    ;;
+    getMarketingAreasAsync)
+    call_getMarketingAreasAsync
+    ;;
+    getMarketingAreasCountAsync)
+    call_getMarketingAreasCountAsync
+    ;;
+    updateMarketingAreaAsync)
+    call_updateMarketingAreaAsync
+    ;;
     createMarketingCampaignAsync)
     call_createMarketingCampaignAsync
     ;;
@@ -6833,6 +8019,24 @@ case $operation in
     ;;
     updateMarketingCampaignAsync)
     call_updateMarketingCampaignAsync
+    ;;
+    createMarketingLeadAsync)
+    call_createMarketingLeadAsync
+    ;;
+    deleteMarketingLeadAsync)
+    call_deleteMarketingLeadAsync
+    ;;
+    getMarketingLeadDetailsAsync)
+    call_getMarketingLeadDetailsAsync
+    ;;
+    getMarketingLeadsCountAsync)
+    call_getMarketingLeadsCountAsync
+    ;;
+    getMarketingLeadsODataAsync)
+    call_getMarketingLeadsODataAsync
+    ;;
+    updateMarketingLeadAsync)
+    call_updateMarketingLeadAsync
     ;;
     createMarketingListAsync)
     call_createMarketingListAsync

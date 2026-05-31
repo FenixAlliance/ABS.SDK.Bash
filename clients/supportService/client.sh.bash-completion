@@ -69,6 +69,7 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -86,6 +87,48 @@ _()
     operations["resendConfirmationEmailPost"]=1
     operations["resetPasswordPost"]=1
     operations["versionGet"]=1
+    operations["createInquiryRequestAsync"]=1
+    operations["deleteInquiryRequestAsync"]=1
+    operations["getInquiryRequestAsync"]=1
+    operations["getInquiryRequestsAsync"]=1
+    operations["getInquiryRequestsCountAsync"]=1
+    operations["updateInquiryRequestAsync"]=1
+    operations["createKnowledgeArticleAsync"]=1
+    operations["deleteKnowledgeArticleAsync"]=1
+    operations["getKnowledgeArticleAsync"]=1
+    operations["getKnowledgeArticlesAsync"]=1
+    operations["getKnowledgeArticlesCountAsync"]=1
+    operations["updateKnowledgeArticleAsync"]=1
+    operations["createMaintenanceVisitAsync"]=1
+    operations["deleteMaintenanceVisitAsync"]=1
+    operations["getMaintenanceVisitAsync"]=1
+    operations["getMaintenanceVisitsAsync"]=1
+    operations["getMaintenanceVisitsCountAsync"]=1
+    operations["updateMaintenanceVisitAsync"]=1
+    operations["createRefundPolicyAsync"]=1
+    operations["deleteRefundPolicyAsync"]=1
+    operations["getRefundPoliciesAsync"]=1
+    operations["getRefundPoliciesCountAsync"]=1
+    operations["getRefundPolicyAsync"]=1
+    operations["updateRefundPolicyAsync"]=1
+    operations["createRefundRequestAsync"]=1
+    operations["deleteRefundRequestAsync"]=1
+    operations["getRefundRequestAsync"]=1
+    operations["getRefundRequestsAsync"]=1
+    operations["getRefundRequestsCountAsync"]=1
+    operations["updateRefundRequestAsync"]=1
+    operations["createReturnPolicyAsync"]=1
+    operations["deleteReturnPolicyAsync"]=1
+    operations["getReturnPoliciesAsync"]=1
+    operations["getReturnPoliciesCountAsync"]=1
+    operations["getReturnPolicyAsync"]=1
+    operations["updateReturnPolicyAsync"]=1
+    operations["createReturnRequestAsync"]=1
+    operations["deleteReturnRequestAsync"]=1
+    operations["getReturnRequestAsync"]=1
+    operations["getReturnRequestsAsync"]=1
+    operations["getReturnRequestsCountAsync"]=1
+    operations["updateReturnRequestAsync"]=1
     operations["createSupportEntitlementAsync"]=1
     operations["deleteSupportEntitlementAsync"]=1
     operations["getSupportEntitlementAsync"]=1
@@ -132,10 +175,23 @@ _()
     operations["getSupportTicketsCountAsync"]=1
     operations["relateSupportTicketToConversationAsync"]=1
     operations["updateSupportTicketAsync"]=1
+    operations["createWarrantyPolicyAsync"]=1
+    operations["deleteWarrantyPolicyAsync"]=1
+    operations["getWarrantyPoliciesAsync"]=1
+    operations["getWarrantyPoliciesCountAsync"]=1
+    operations["getWarrantyPolicyAsync"]=1
+    operations["updateWarrantyPolicyAsync"]=1
+    operations["createWarrantyRequestAsync"]=1
+    operations["deleteWarrantyRequestAsync"]=1
+    operations["getWarrantyRequestAsync"]=1
+    operations["getWarrantyRequestsAsync"]=1
+    operations["getWarrantyRequestsCountAsync"]=1
+    operations["updateWarrantyRequestAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
@@ -153,6 +209,48 @@ _()
     operation_parameters["resendConfirmationEmailPost"]=""
     operation_parameters["resetPasswordPost"]=""
     operation_parameters["versionGet"]=""
+    operation_parameters["createInquiryRequestAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteInquiryRequestAsync"]="inquiryRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getInquiryRequestAsync"]="inquiryRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getInquiryRequestsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getInquiryRequestsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateInquiryRequestAsync"]="inquiryRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["createKnowledgeArticleAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteKnowledgeArticleAsync"]="knowledgeArticleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getKnowledgeArticleAsync"]="knowledgeArticleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getKnowledgeArticlesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getKnowledgeArticlesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateKnowledgeArticleAsync"]="knowledgeArticleId= tenantId= api-version= x-api-version: "
+    operation_parameters["createMaintenanceVisitAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteMaintenanceVisitAsync"]="maintenanceVisitId= tenantId= api-version= x-api-version: "
+    operation_parameters["getMaintenanceVisitAsync"]="maintenanceVisitId= tenantId= api-version= x-api-version: "
+    operation_parameters["getMaintenanceVisitsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getMaintenanceVisitsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateMaintenanceVisitAsync"]="maintenanceVisitId= tenantId= api-version= x-api-version: "
+    operation_parameters["createRefundPolicyAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteRefundPolicyAsync"]="refundPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["getRefundPoliciesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getRefundPoliciesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getRefundPolicyAsync"]="refundPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateRefundPolicyAsync"]="refundPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["createRefundRequestAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteRefundRequestAsync"]="refundRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getRefundRequestAsync"]="refundRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getRefundRequestsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getRefundRequestsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateRefundRequestAsync"]="refundRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["createReturnPolicyAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteReturnPolicyAsync"]="returnPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["getReturnPoliciesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getReturnPoliciesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getReturnPolicyAsync"]="returnPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateReturnPolicyAsync"]="returnPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["createReturnRequestAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteReturnRequestAsync"]="returnRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getReturnRequestAsync"]="returnRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getReturnRequestsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getReturnRequestsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateReturnRequestAsync"]="returnRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["createSupportEntitlementAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteSupportEntitlementAsync"]="supportEntitlementId= tenantId= api-version= x-api-version: "
     operation_parameters["getSupportEntitlementAsync"]="supportEntitlementId= tenantId= api-version= x-api-version: "
@@ -199,6 +297,18 @@ _()
     operation_parameters["getSupportTicketsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["relateSupportTicketToConversationAsync"]="supportTicketId= tenantId= api-version= x-api-version: "
     operation_parameters["updateSupportTicketAsync"]="supportTicketId= tenantId= api-version= x-api-version: "
+    operation_parameters["createWarrantyPolicyAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteWarrantyPolicyAsync"]="warrantyPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["getWarrantyPoliciesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getWarrantyPoliciesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getWarrantyPolicyAsync"]="warrantyPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateWarrantyPolicyAsync"]="warrantyPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["createWarrantyRequestAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteWarrantyRequestAsync"]="warrantyRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getWarrantyRequestAsync"]="warrantyRequestId= tenantId= api-version= x-api-version: "
+    operation_parameters["getWarrantyRequestsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getWarrantyRequestsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateWarrantyRequestAsync"]="warrantyRequestId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values

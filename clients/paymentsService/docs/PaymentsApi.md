@@ -94,7 +94,7 @@ Retrieves a payment using the deprecated /Details route. Use GET {paymentId} ins
 ### Example
 
 ```bash
- getPaymentAsync paymentId=value
+ getPaymentAsync  tenantId=value paymentId=value
 ```
 
 ### Parameters
@@ -102,6 +102,7 @@ Retrieves a payment using the deprecated /Details route. Use GET {paymentId} ins
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **paymentId** | **string** |  | [default to null]
 
 ### Return type
@@ -129,7 +130,7 @@ Retrieves the details of a payment using its unique identifier.
 ### Example
 
 ```bash
- getPaymentAsyncV2 paymentId=value
+ getPaymentAsyncV2  tenantId=value paymentId=value
 ```
 
 ### Parameters
@@ -137,6 +138,7 @@ Retrieves the details of a payment using its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **paymentId** | **string** |  | [default to null]
 
 ### Return type

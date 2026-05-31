@@ -96,6 +96,9 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -113,14 +116,19 @@ operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
 operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
 operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["aggregateInvoiceDiscounts:::tenantId"]=1
 operation_parameters_minimum_occurrences["aggregateInvoiceDiscounts:::request_body"]=1
 operation_parameters_minimum_occurrences["aggregateInvoiceDiscounts:::currencyId"]=0
+operation_parameters_minimum_occurrences["aggregateInvoiceGlobalSurcharges:::tenantId"]=1
 operation_parameters_minimum_occurrences["aggregateInvoiceGlobalSurcharges:::request_body"]=1
 operation_parameters_minimum_occurrences["aggregateInvoiceGlobalSurcharges:::currencyId"]=0
+operation_parameters_minimum_occurrences["aggregateInvoiceTaxBases:::tenantId"]=1
 operation_parameters_minimum_occurrences["aggregateInvoiceTaxBases:::request_body"]=1
 operation_parameters_minimum_occurrences["aggregateInvoiceTaxBases:::currencyId"]=0
+operation_parameters_minimum_occurrences["aggregateInvoiceTaxes:::tenantId"]=1
 operation_parameters_minimum_occurrences["aggregateInvoiceTaxes:::request_body"]=1
 operation_parameters_minimum_occurrences["aggregateInvoiceTaxes:::currencyId"]=0
+operation_parameters_minimum_occurrences["aggregateInvoiceTotals:::tenantId"]=1
 operation_parameters_minimum_occurrences["aggregateInvoiceTotals:::request_body"]=1
 operation_parameters_minimum_occurrences["aggregateInvoiceTotals:::currencyId"]=0
 operation_parameters_minimum_occurrences["calculateInvoice:::tenantId"]=1
@@ -185,7 +193,9 @@ operation_parameters_minimum_occurrences["getInvoiceLines:::invoiceId"]=1
 operation_parameters_minimum_occurrences["getInvoiceLines:::itemId"]=0
 operation_parameters_minimum_occurrences["getInvoiceLinesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceLinesCount:::invoiceId"]=1
+operation_parameters_minimum_occurrences["getInvoicePayments:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoicePayments:::invoiceId"]=1
+operation_parameters_minimum_occurrences["getInvoicePaymentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoicePaymentsCount:::invoiceId"]=1
 operation_parameters_minimum_occurrences["getInvoiceReference:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceReference:::invoiceId"]=1
@@ -230,6 +240,9 @@ operation_parameters_minimum_occurrences["updateInvoiceReference:::InvoiceRefere
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -247,14 +260,19 @@ operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
 operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
 operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["aggregateInvoiceDiscounts:::tenantId"]=0
 operation_parameters_maximum_occurrences["aggregateInvoiceDiscounts:::request_body"]=0
 operation_parameters_maximum_occurrences["aggregateInvoiceDiscounts:::currencyId"]=0
+operation_parameters_maximum_occurrences["aggregateInvoiceGlobalSurcharges:::tenantId"]=0
 operation_parameters_maximum_occurrences["aggregateInvoiceGlobalSurcharges:::request_body"]=0
 operation_parameters_maximum_occurrences["aggregateInvoiceGlobalSurcharges:::currencyId"]=0
+operation_parameters_maximum_occurrences["aggregateInvoiceTaxBases:::tenantId"]=0
 operation_parameters_maximum_occurrences["aggregateInvoiceTaxBases:::request_body"]=0
 operation_parameters_maximum_occurrences["aggregateInvoiceTaxBases:::currencyId"]=0
+operation_parameters_maximum_occurrences["aggregateInvoiceTaxes:::tenantId"]=0
 operation_parameters_maximum_occurrences["aggregateInvoiceTaxes:::request_body"]=0
 operation_parameters_maximum_occurrences["aggregateInvoiceTaxes:::currencyId"]=0
+operation_parameters_maximum_occurrences["aggregateInvoiceTotals:::tenantId"]=0
 operation_parameters_maximum_occurrences["aggregateInvoiceTotals:::request_body"]=0
 operation_parameters_maximum_occurrences["aggregateInvoiceTotals:::currencyId"]=0
 operation_parameters_maximum_occurrences["calculateInvoice:::tenantId"]=0
@@ -319,7 +337,9 @@ operation_parameters_maximum_occurrences["getInvoiceLines:::invoiceId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLines:::itemId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLinesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLinesCount:::invoiceId"]=0
+operation_parameters_maximum_occurrences["getInvoicePayments:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoicePayments:::invoiceId"]=0
+operation_parameters_maximum_occurrences["getInvoicePaymentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoicePaymentsCount:::invoiceId"]=0
 operation_parameters_maximum_occurrences["getInvoiceReference:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceReference:::invoiceId"]=0
@@ -361,6 +381,9 @@ operation_parameters_maximum_occurrences["updateInvoiceReference:::InvoiceRefere
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
@@ -378,14 +401,19 @@ operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
 operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
 operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["aggregateInvoiceDiscounts:::tenantId"]=""
 operation_parameters_collection_type["aggregateInvoiceDiscounts:::request_body"]=
 operation_parameters_collection_type["aggregateInvoiceDiscounts:::currencyId"]=""
+operation_parameters_collection_type["aggregateInvoiceGlobalSurcharges:::tenantId"]=""
 operation_parameters_collection_type["aggregateInvoiceGlobalSurcharges:::request_body"]=
 operation_parameters_collection_type["aggregateInvoiceGlobalSurcharges:::currencyId"]=""
+operation_parameters_collection_type["aggregateInvoiceTaxBases:::tenantId"]=""
 operation_parameters_collection_type["aggregateInvoiceTaxBases:::request_body"]=
 operation_parameters_collection_type["aggregateInvoiceTaxBases:::currencyId"]=""
+operation_parameters_collection_type["aggregateInvoiceTaxes:::tenantId"]=""
 operation_parameters_collection_type["aggregateInvoiceTaxes:::request_body"]=
 operation_parameters_collection_type["aggregateInvoiceTaxes:::currencyId"]=""
+operation_parameters_collection_type["aggregateInvoiceTotals:::tenantId"]=""
 operation_parameters_collection_type["aggregateInvoiceTotals:::request_body"]=
 operation_parameters_collection_type["aggregateInvoiceTotals:::currencyId"]=""
 operation_parameters_collection_type["calculateInvoice:::tenantId"]=""
@@ -450,7 +478,9 @@ operation_parameters_collection_type["getInvoiceLines:::invoiceId"]=""
 operation_parameters_collection_type["getInvoiceLines:::itemId"]=""
 operation_parameters_collection_type["getInvoiceLinesCount:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceLinesCount:::invoiceId"]=""
+operation_parameters_collection_type["getInvoicePayments:::tenantId"]=""
 operation_parameters_collection_type["getInvoicePayments:::invoiceId"]=""
+operation_parameters_collection_type["getInvoicePaymentsCount:::tenantId"]=""
 operation_parameters_collection_type["getInvoicePaymentsCount:::invoiceId"]=""
 operation_parameters_collection_type["getInvoiceReference:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceReference:::invoiceId"]=""
@@ -844,7 +874,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}InvoicingService command line client (API version 2.0.0.0)${OFF}
+${BOLD}${WHITE}InvoicingService command line client (API version 2.1.2.5401)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -873,7 +903,13 @@ ${BOLD}${WHITE}Usage${OFF}
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -948,7 +984,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -969,7 +1005,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}InvoicingService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}${WHITE}InvoicingService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -989,10 +1025,35 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}InvoicingService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}InvoicingService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
 }
 
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
 ##############################################################################
 #
 # Print help for accountLogoutPost operation
@@ -1299,6 +1360,8 @@ print_aggregateInvoiceDiscounts_help() {
     echo -e "Aggregates the discounts for the specified invoices." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1320,6 +1383,8 @@ print_aggregateInvoiceGlobalSurcharges_help() {
     echo -e "Aggregates the global surcharges for the specified invoices." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1341,6 +1406,8 @@ print_aggregateInvoiceTaxBases_help() {
     echo -e "Aggregates the tax bases for the specified invoices." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1362,6 +1429,8 @@ print_aggregateInvoiceTaxes_help() {
     echo -e "Aggregates the taxes for the specified invoices." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1383,6 +1452,8 @@ print_aggregateInvoiceTotals_help() {
     echo -e "Aggregates the totals for the specified invoices." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1918,6 +1989,8 @@ print_getInvoicePayments_help() {
     echo -e "Retrieves the list of payments related to the specified invoice." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -1936,6 +2009,8 @@ print_getInvoicePaymentsCount_help() {
     echo -e "Retrieves the total count of payments for the specified invoice." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -2207,6 +2282,42 @@ print_updateInvoiceReference_help() {
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 
+
+##############################################################################
+#
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
 
 ##############################################################################
 #
@@ -3170,7 +3281,7 @@ call_aggregateInvoiceDiscounts() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(currencyId)
+    local query_parameter_names=(tenantId currencyId)
     local path
 
     if ! path=$(build_request_path "/api/v2/InvoicingService/Invoices/DiscountsAggregate" path_parameter_names query_parameter_names); then
@@ -3246,7 +3357,7 @@ call_aggregateInvoiceGlobalSurcharges() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(currencyId)
+    local query_parameter_names=(tenantId currencyId)
     local path
 
     if ! path=$(build_request_path "/api/v2/InvoicingService/Invoices/GlobalSurchargesAggregate" path_parameter_names query_parameter_names); then
@@ -3322,7 +3433,7 @@ call_aggregateInvoiceTaxBases() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(currencyId)
+    local query_parameter_names=(tenantId currencyId)
     local path
 
     if ! path=$(build_request_path "/api/v2/InvoicingService/Invoices/TaxBasesAggregate" path_parameter_names query_parameter_names); then
@@ -3398,7 +3509,7 @@ call_aggregateInvoiceTaxes() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(currencyId)
+    local query_parameter_names=(tenantId currencyId)
     local path
 
     if ! path=$(build_request_path "/api/v2/InvoicingService/Invoices/TaxesAggregate" path_parameter_names query_parameter_names); then
@@ -3474,7 +3585,7 @@ call_aggregateInvoiceTotals() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(currencyId)
+    local query_parameter_names=(tenantId currencyId)
     local path
 
     if ! path=$(build_request_path "/api/v2/InvoicingService/Invoices/TotalsAggregate" path_parameter_names query_parameter_names); then
@@ -4614,7 +4725,7 @@ call_getInvoicePayments() {
     local path_parameter_names=(invoiceId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=()
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/InvoicingService/Invoices/{invoiceId}/Payments" path_parameter_names query_parameter_names); then
@@ -4650,7 +4761,7 @@ call_getInvoicePaymentsCount() {
     local path_parameter_names=(invoiceId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=()
+    local query_parameter_names=(tenantId)
     local path
 
     if ! path=$(build_request_path "/api/v2/InvoicingService/Invoices/{invoiceId}/Payments/Count" path_parameter_names query_parameter_names); then
@@ -5484,6 +5595,9 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
+    ;;
     accountLogoutPost)
     operation="accountLogoutPost"
     ;;
@@ -5751,6 +5865,9 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
+    ;;
     accountLogoutPost)
     call_accountLogoutPost
     ;;

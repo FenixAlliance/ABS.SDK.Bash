@@ -302,7 +302,9 @@ case $state in
             "getBusinessApplicationByIdAsync[Get business application by ID]" \
             "getBusinessApplicationsAsync[Get all business applications]" \
             "getBusinessApplicationsCountAsync[Get business applications count]" \
-            "updateBusinessApplicationAsync[Update an existing business application]"             "accountLogoutPost[]" \
+            "getPermissionsByApplicationAsync[Get permissions by application]" \
+            "getRolesByApplicationAsync[Get roles by application]" \
+            "updateBusinessApplicationAsync[Update an existing business application]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -415,6 +417,26 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getPermissionsByApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRolesByApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateBusinessApplicationAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -423,6 +445,15 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       accountLogoutPost)

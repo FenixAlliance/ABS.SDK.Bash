@@ -59,7 +59,7 @@ Aggregates the discounts for the specified invoices.
 ### Example
 
 ```bash
- aggregateInvoiceDiscounts  currencyId=value
+ aggregateInvoiceDiscounts  tenantId=value  currencyId=value
 ```
 
 ### Parameters
@@ -67,6 +67,7 @@ Aggregates the discounts for the specified invoices.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **requestBody** | [**array[string]**](string.md) |  |
  **currencyId** | **string** |  | [optional] [default to null]
 
@@ -95,7 +96,7 @@ Aggregates the global surcharges for the specified invoices.
 ### Example
 
 ```bash
- aggregateInvoiceGlobalSurcharges  currencyId=value
+ aggregateInvoiceGlobalSurcharges  tenantId=value  currencyId=value
 ```
 
 ### Parameters
@@ -103,6 +104,7 @@ Aggregates the global surcharges for the specified invoices.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **requestBody** | [**array[string]**](string.md) |  |
  **currencyId** | **string** |  | [optional] [default to null]
 
@@ -131,7 +133,7 @@ Aggregates the tax bases for the specified invoices.
 ### Example
 
 ```bash
- aggregateInvoiceTaxBases  currencyId=value
+ aggregateInvoiceTaxBases  tenantId=value  currencyId=value
 ```
 
 ### Parameters
@@ -139,6 +141,7 @@ Aggregates the tax bases for the specified invoices.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **requestBody** | [**array[string]**](string.md) |  |
  **currencyId** | **string** |  | [optional] [default to null]
 
@@ -167,7 +170,7 @@ Aggregates the taxes for the specified invoices.
 ### Example
 
 ```bash
- aggregateInvoiceTaxes  currencyId=value
+ aggregateInvoiceTaxes  tenantId=value  currencyId=value
 ```
 
 ### Parameters
@@ -175,6 +178,7 @@ Aggregates the taxes for the specified invoices.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **requestBody** | [**array[string]**](string.md) |  |
  **currencyId** | **string** |  | [optional] [default to null]
 
@@ -203,7 +207,7 @@ Aggregates the totals for the specified invoices.
 ### Example
 
 ```bash
- aggregateInvoiceTotals  currencyId=value
+ aggregateInvoiceTotals  tenantId=value  currencyId=value
 ```
 
 ### Parameters
@@ -211,6 +215,7 @@ Aggregates the totals for the specified invoices.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **requestBody** | [**array[string]**](string.md) |  |
  **currencyId** | **string** |  | [optional] [default to null]
 
@@ -1117,7 +1122,7 @@ Retrieves the list of payments related to the specified invoice.
 ### Example
 
 ```bash
- getInvoicePayments invoiceId=value
+ getInvoicePayments  tenantId=value invoiceId=value
 ```
 
 ### Parameters
@@ -1125,6 +1130,7 @@ Retrieves the list of payments related to the specified invoice.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **invoiceId** | **string** |  | [default to null]
 
 ### Return type
@@ -1152,7 +1158,7 @@ Retrieves the total count of payments for the specified invoice.
 ### Example
 
 ```bash
- getInvoicePaymentsCount invoiceId=value
+ getInvoicePaymentsCount  tenantId=value invoiceId=value
 ```
 
 ### Parameters
@@ -1160,6 +1166,7 @@ Retrieves the total count of payments for the specified invoice.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **invoiceId** | **string** |  | [default to null]
 
 ### Return type

@@ -30,7 +30,7 @@ Counts all item categories for the specified tenant.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -143,7 +143,7 @@ Retrieves all item categories for the specified tenant using OData query options
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -172,7 +172,7 @@ Retrieves a specific item category by its ID.
 ### Example
 
 ```bash
- getItemCategoryByIdAsync itemCategoryId=value  api-version=value x-api-version:value
+ getItemCategoryByIdAsync itemCategoryId=value  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -181,6 +181,7 @@ Retrieves a specific item category by its ID.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **itemCategoryId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 

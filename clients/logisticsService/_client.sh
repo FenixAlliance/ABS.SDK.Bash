@@ -297,7 +297,27 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "accountLogoutPost[]" \
+            "addAirwayBillLineAsync[Add a line to airway bill]" \
+            "cancelAirwayBillAsync[Cancel an airway bill]" \
+            "createAirwayBillAsync[Create an airway bill]" \
+            "deleteAirwayBillAsync[Delete an airway bill]" \
+            "getAirwayBillByIdAsync[Get airway bill by ID]" \
+            "getAirwayBillLinesAsync[Get airway bill lines]" \
+            "getAirwayBillLinesCountAsync[Get airway bill lines count]" \
+            "getAirwayBillsAsync[Get all airway bills]" \
+            "getAirwayBillsCountAsync[Get airway bills count]" \
+            "issueAirwayBillAsync[Issue an airway bill]" \
+            "markAirwayBillArrivedAsync[Mark airway bill arrived]" \
+            "markAirwayBillDeliveredAsync[Mark airway bill delivered]" \
+            "markAirwayBillInTransitAsync[Mark airway bill in transit]" \
+            "removeAirwayBillLineAsync[Remove an airway bill line]" \
+            "updateAirwayBillAsync[Update an airway bill]" \
+            "updateAirwayBillLineAsync[Update an airway bill line]"             "apiV2AiServiceCompletionsCompleteGet[]"             "createDeliveryNoteAsync[Create a delivery note]" \
+            "deleteDeliveryNoteAsync[Delete a delivery note]" \
+            "getDeliveryNoteByIdAsync[Get delivery note by ID]" \
+            "getDeliveryNotesAsync[Get all delivery notes]" \
+            "getDeliveryNotesCountAsync[Get delivery notes count]" \
+            "updateDeliveryNoteAsync[Update a delivery note]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -313,7 +333,161 @@ case $state in
             "registerPost[]" \
             "resendConfirmationEmailPost[]" \
             "resetPasswordPost[]" \
-            "versionGet[]"             "getContactsAsync[Get all stock-related contacts]" \
+            "versionGet[]"             "createItemPackingSlipAsync[Create an item packing slip]" \
+            "createItemPackingSlipEntryAsync[Create a packing slip entry]" \
+            "deleteItemPackingSlipAsync[Delete an item packing slip]" \
+            "deleteItemPackingSlipEntryAsync[Delete a packing slip entry]" \
+            "getItemPackingSlipByIdAsync[Get item packing slip by ID]" \
+            "getItemPackingSlipEntriesAsync[Get packing slip entries]" \
+            "getItemPackingSlipEntriesCountAsync[Get packing slip entries count]" \
+            "getItemPackingSlipEntryByIdAsync[Get packing slip entry by ID]" \
+            "getItemPackingSlipsAsync[Get all item packing slips]" \
+            "getItemPackingSlipsCountAsync[Get item packing slips count]" \
+            "updateItemPackingSlipAsync[Update an item packing slip]" \
+            "updateItemPackingSlipEntryAsync[Update a packing slip entry]"             "createItemPickListAsync[Create an item pick list]" \
+            "createItemPickListEntryAsync[Create a pick list entry]" \
+            "deleteItemPickListAsync[Delete an item pick list]" \
+            "deleteItemPickListEntryAsync[Delete a pick list entry]" \
+            "getItemPickListByIdAsync[Get item pick list by ID]" \
+            "getItemPickListEntriesAsync[Get pick list entries]" \
+            "getItemPickListEntriesCountAsync[Get pick list entries count]" \
+            "getItemPickListEntryByIdAsync[Get pick list entry by ID]" \
+            "getItemPickListsAsync[Get all item pick lists]" \
+            "getItemPickListsCountAsync[Get item pick lists count]" \
+            "updateItemPickListAsync[Update an item pick list]" \
+            "updateItemPickListEntryAsync[Update a pick list entry]"             "createItemRestockAsync[Create an item restock]" \
+            "createItemRestockEntryAsync[Create a restock entry]" \
+            "deleteItemRestockAsync[Delete an item restock]" \
+            "deleteItemRestockEntryAsync[Delete a restock entry]" \
+            "getItemRestockByIdAsync[Get item restock by ID]" \
+            "getItemRestockEntriesAsync[Get restock entries]" \
+            "getItemRestockEntriesCountAsync[Get restock entries count]" \
+            "getItemRestockEntryByIdAsync[Get restock entry by ID]" \
+            "getItemRestocksAsync[Get all item restocks]" \
+            "getItemRestocksCountAsync[Get item restocks count]" \
+            "updateItemRestockAsync[Update an item restock]" \
+            "updateItemRestockEntryAsync[Update a restock entry]"             "createItemRetainSampleAsync[Create an item retain sample]" \
+            "deleteItemRetainSampleAsync[Delete an item retain sample]" \
+            "getItemRetainSampleByIdAsync[Get item retain sample by ID]" \
+            "getItemRetainSamplesAsync[Get all item retain samples]" \
+            "getItemRetainSamplesCountAsync[Get item retain samples count]" \
+            "updateItemRetainSampleAsync[Update an item retain sample]"             "createPortAsync[Create a port]" \
+            "deletePortAsync[Delete a port]" \
+            "getPortByIdAsync[Get port by ID]" \
+            "getPortsAsync[Get all ports]" \
+            "getPortsCountAsync[Get ports count]" \
+            "updatePortAsync[Update a port]"             "addProofOfDeliveryLineAsync[Add a line to proof of delivery]" \
+            "attachDeliveryNoteAsync[Attach a delivery note]" \
+            "createProofOfDeliveryAsync[Create a proof of delivery]" \
+            "deleteProofOfDeliveryAsync[Delete a proof of delivery]" \
+            "detachDeliveryNoteAsync[Detach a delivery note]" \
+            "disputeProofOfDeliveryAsync[Dispute a proof of delivery]" \
+            "getProofOfDeliveryByIdAsync[Get proof of delivery by ID]" \
+            "getProofOfDeliveryDeliveryNotesAsync[Get attached delivery notes]" \
+            "getProofOfDeliveryDeliveryNotesCountAsync[Get delivery notes count]" \
+            "getProofOfDeliveryLinesAsync[Get proof of delivery lines]" \
+            "getProofOfDeliveryLinesCountAsync[Get proof of delivery lines count]" \
+            "getProofsOfDeliveryAsync[Get all proofs of delivery]" \
+            "getProofsOfDeliveryCountAsync[Get proofs of delivery count]" \
+            "rejectProofOfDeliveryAsync[Reject a proof of delivery]" \
+            "removeProofOfDeliveryLineAsync[Remove a proof of delivery line]" \
+            "signProofOfDeliveryAsync[Sign a proof of delivery]" \
+            "updateProofOfDeliveryAsync[Update a proof of delivery]" \
+            "updateProofOfDeliveryLineAsync[Update a proof of delivery line]"             "addRailWaybillLineAsync[Add a line to rail waybill]" \
+            "cancelRailWaybillAsync[Cancel a rail waybill]" \
+            "createRailWaybillAsync[Create a rail waybill]" \
+            "deleteRailWaybillAsync[Delete a rail waybill]" \
+            "getRailWaybillByIdAsync[Get rail waybill by ID]" \
+            "getRailWaybillLinesAsync[Get rail waybill lines]" \
+            "getRailWaybillLinesCountAsync[Get rail waybill lines count]" \
+            "getRailWaybillsAsync[Get all rail waybills]" \
+            "getRailWaybillsCountAsync[Get rail waybills count]" \
+            "issueRailWaybillAsync[Issue a rail waybill]" \
+            "markRailWaybillDeliveredAsync[Mark rail waybill delivered]" \
+            "markRailWaybillInTransitAsync[Mark rail waybill in transit]" \
+            "removeRailWaybillLineAsync[Remove a rail waybill line]" \
+            "updateRailWaybillAsync[Update a rail waybill]" \
+            "updateRailWaybillLineAsync[Update a rail waybill line]"             "addRoadWaybillLineAsync[Add a line to road waybill]" \
+            "cancelRoadWaybillAsync[Cancel a road waybill]" \
+            "createRoadWaybillAsync[Create a road waybill]" \
+            "deleteRoadWaybillAsync[Delete a road waybill]" \
+            "disputeRoadWaybillAsync[Dispute a road waybill]" \
+            "getRoadWaybillByIdAsync[Get road waybill by ID]" \
+            "getRoadWaybillLinesAsync[Get road waybill lines]" \
+            "getRoadWaybillLinesCountAsync[Get road waybill lines count]" \
+            "getRoadWaybillsAsync[Get all road waybills]" \
+            "getRoadWaybillsCountAsync[Get road waybills count]" \
+            "issueRoadWaybillAsync[Issue a road waybill]" \
+            "markRoadWaybillDeliveredAsync[Mark road waybill delivered]" \
+            "markRoadWaybillInTransitAsync[Mark road waybill in transit]" \
+            "removeRoadWaybillLineAsync[Remove a road waybill line]" \
+            "updateRoadWaybillAsync[Update a road waybill]" \
+            "updateRoadWaybillLineAsync[Update a road waybill line]"             "addSeawayBillLineAsync[Add a line to seaway bill]" \
+            "cancelSeawayBillAsync[Cancel a seaway bill]" \
+            "createSeawayBillAsync[Create a seaway bill]" \
+            "deleteSeawayBillAsync[Delete a seaway bill]" \
+            "getSeawayBillByIdAsync[Get seaway bill by ID]" \
+            "getSeawayBillLinesAsync[Get seaway bill lines]" \
+            "getSeawayBillLinesCountAsync[Get seaway bill lines count]" \
+            "getSeawayBillsAsync[Get all seaway bills]" \
+            "getSeawayBillsCountAsync[Get seaway bills count]" \
+            "issueSeawayBillAsync[Issue a seaway bill]" \
+            "markSeawayBillArrivedAsync[Mark seaway bill arrived]" \
+            "markSeawayBillInTransitAsync[Mark seaway bill in transit]" \
+            "releaseSeawayBillAsync[Release a seaway bill]" \
+            "removeSeawayBillLineAsync[Remove a seaway bill line]" \
+            "updateSeawayBillAsync[Update a seaway bill]" \
+            "updateSeawayBillLineAsync[Update a seaway bill line]"             "createSupplierProfileAsync[Create a supplier profile]" \
+            "deleteSupplierProfileAsync[Delete a supplier profile]" \
+            "getSupplierProfileByIdAsync[Get supplier profile by ID]" \
+            "getSupplierProfilesAsync[Get all supplier profiles]" \
+            "getSupplierProfilesCountAsync[Get supplier profiles count]" \
+            "updateSupplierProfileAsync[Update a supplier profile]"             "activateTruckDriverAsync[Activate a truck driver]" \
+            "createTruckDriverAsync[Create a truck driver]" \
+            "deactivateTruckDriverAsync[Deactivate a truck driver]" \
+            "deleteTruckDriverAsync[Delete a truck driver]" \
+            "getTruckDriverByIdAsync[Get truck driver by ID]" \
+            "getTruckDriversAsync[Get all truck drivers]" \
+            "getTruckDriversCountAsync[Get truck drivers count]" \
+            "updateTruckDriverAsync[Update a truck driver]"             "arriveTripAsync[Arrive a trip]" \
+            "cancelTripAsync[Cancel a trip]" \
+            "createTruckAsync[Create a truck]" \
+            "createTruckTripAsync[Create a truck trip]" \
+            "deleteTruckAsync[Delete a truck]" \
+            "deleteTruckTripAsync[Delete a truck trip]" \
+            "deliverTripAsync[Deliver a trip]" \
+            "departTripAsync[Depart a trip]" \
+            "dispatchTripAsync[Dispatch a trip]" \
+            "getTruckByIdAsync[Get truck by ID]" \
+            "getTruckTripsAsync[Get truck trips]" \
+            "getTruckTripsCountAsync[Get truck trips count]" \
+            "getTrucksAsync[Get all trucks]" \
+            "getTrucksCountAsync[Get trucks count]" \
+            "updateTruckAsync[Update a truck]" \
+            "updateTruckTripAsync[Update a truck trip]"             "createVesselAsync[Create a vessel]" \
+            "deleteVesselAsync[Delete a vessel]" \
+            "getVesselByIdAsync[Get vessel by ID]" \
+            "getVesselsAsync[Get all vessels]" \
+            "getVesselsCountAsync[Get vessels count]" \
+            "updateVesselAsync[Update a vessel]"             "cancelVoyageAsync[Cancel a voyage]" \
+            "completeVoyageAsync[Complete a voyage]" \
+            "createVoyageAsync[Create a voyage]" \
+            "createVoyagePortCallAsync[Create a port call]" \
+            "deleteVoyageAsync[Delete a voyage]" \
+            "deleteVoyagePortCallAsync[Delete a port call]" \
+            "getVoyageByIdAsync[Get voyage by ID]" \
+            "getVoyagePortCallsAsync[Get voyage port calls]" \
+            "getVoyagePortCallsCountAsync[Get voyage port calls count]" \
+            "getVoyagesAsync[Get all voyages]" \
+            "getVoyagesCountAsync[Get voyages count]" \
+            "startVoyageAsync[Start a voyage]" \
+            "updateVoyageAsync[Update a voyage]" \
+            "updateVoyagePortCallAsync[Update a port call]"             "createWarehouseAsync[Create a warehouse]" \
+            "deleteWarehouseAsync[Delete a warehouse]" \
+            "getWarehouseByIdAsync[Get warehouse by ID]" \
+            "getWarehousesAsync[Get all warehouses]" \
+            "getWarehousesCountAsync[Get warehouses count]" \
+            "updateWarehouseAsync[Update a warehouse]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -321,6 +495,231 @@ case $state in
     ;;
   args)
     case $line[1] in
+      addAirwayBillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      cancelAirwayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createAirwayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteAirwayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getAirwayBillByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getAirwayBillLinesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getAirwayBillLinesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getAirwayBillsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getAirwayBillsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      issueAirwayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      markAirwayBillArrivedAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      markAirwayBillDeliveredAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      markAirwayBillInTransitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      removeAirwayBillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateAirwayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateAirwayBillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createDeliveryNoteAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteDeliveryNoteAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "deliveryNoteId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDeliveryNoteByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "deliveryNoteId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDeliveryNotesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDeliveryNotesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateDeliveryNoteAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "deliveryNoteId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       accountLogoutPost)
         local -a _op_arguments
         _op_arguments=(
@@ -430,10 +829,1674 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      getContactsAsync)
+      createItemPackingSlipAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createItemPackingSlipEntryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "packingSlipId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteItemPackingSlipAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "packingSlipId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteItemPackingSlipEntryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "packingSlipId=:[PATH] "
+"entryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemPackingSlipByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "packingSlipId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemPackingSlipEntriesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "packingSlipId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemPackingSlipEntriesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "packingSlipId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemPackingSlipEntryByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "packingSlipId=:[PATH] "
+"entryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemPackingSlipsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemPackingSlipsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateItemPackingSlipAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "packingSlipId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateItemPackingSlipEntryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "packingSlipId=:[PATH] "
+"entryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createItemPickListAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createItemPickListEntryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pickListId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteItemPickListAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pickListId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteItemPickListEntryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pickListId=:[PATH] "
+"entryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemPickListByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pickListId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemPickListEntriesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pickListId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemPickListEntriesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pickListId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemPickListEntryByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pickListId=:[PATH] "
+"entryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemPickListsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemPickListsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateItemPickListAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pickListId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateItemPickListEntryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pickListId=:[PATH] "
+"entryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createItemRestockAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createItemRestockEntryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "restockId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteItemRestockAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "restockId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteItemRestockEntryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "restockId=:[PATH] "
+"entryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemRestockByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "restockId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemRestockEntriesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "restockId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemRestockEntriesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "restockId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemRestockEntryByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "restockId=:[PATH] "
+"entryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemRestocksAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemRestocksCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateItemRestockAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "restockId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateItemRestockEntryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "restockId=:[PATH] "
+"entryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createItemRetainSampleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteItemRetainSampleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "retainSampleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemRetainSampleByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "retainSampleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemRetainSamplesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getItemRetainSamplesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateItemRetainSampleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "retainSampleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createPortAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deletePortAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "portId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPortByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "portId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPortsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPortsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePortAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "portId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      addProofOfDeliveryLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      attachDeliveryNoteAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+"noteId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createProofOfDeliveryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteProofOfDeliveryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      detachDeliveryNoteAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+"noteId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      disputeProofOfDeliveryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProofOfDeliveryByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProofOfDeliveryDeliveryNotesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProofOfDeliveryDeliveryNotesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProofOfDeliveryLinesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProofOfDeliveryLinesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProofsOfDeliveryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProofsOfDeliveryCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      rejectProofOfDeliveryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      removeProofOfDeliveryLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      signProofOfDeliveryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateProofOfDeliveryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateProofOfDeliveryLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      addRailWaybillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      cancelRailWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createRailWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteRailWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRailWaybillByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRailWaybillLinesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRailWaybillLinesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRailWaybillsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRailWaybillsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      issueRailWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      markRailWaybillDeliveredAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      markRailWaybillInTransitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      removeRailWaybillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateRailWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateRailWaybillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      addRoadWaybillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      cancelRoadWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createRoadWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteRoadWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      disputeRoadWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRoadWaybillByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRoadWaybillLinesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRoadWaybillLinesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRoadWaybillsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getRoadWaybillsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      issueRoadWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      markRoadWaybillDeliveredAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      markRoadWaybillInTransitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      removeRoadWaybillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateRoadWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateRoadWaybillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      addSeawayBillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      cancelSeawayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createSeawayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteSeawayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSeawayBillByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSeawayBillLinesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSeawayBillLinesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSeawayBillsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSeawayBillsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      issueSeawayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      markSeawayBillArrivedAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      markSeawayBillInTransitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      releaseSeawayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      removeSeawayBillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateSeawayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateSeawayBillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createSupplierProfileAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteSupplierProfileAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supplierProfileId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSupplierProfileByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supplierProfileId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSupplierProfilesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSupplierProfilesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateSupplierProfileAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supplierProfileId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      activateTruckDriverAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "driverId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createTruckDriverAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deactivateTruckDriverAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "driverId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteTruckDriverAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "driverId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTruckDriverByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "driverId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTruckDriversAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTruckDriversCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateTruckDriverAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "driverId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      arriveTripAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+"tripId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      cancelTripAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+"tripId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createTruckAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createTruckTripAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteTruckAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteTruckTripAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+"tripId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deliverTripAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+"tripId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      departTripAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+"tripId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      dispatchTripAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+"tripId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTruckByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTruckTripsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTruckTripsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTrucksAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTrucksCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateTruckAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateTruckTripAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+"tripId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createVesselAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteVesselAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "vesselId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getVesselByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "vesselId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getVesselsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getVesselsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateVesselAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "vesselId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      cancelVoyageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      completeVoyageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createVoyageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createVoyagePortCallAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteVoyageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteVoyagePortCallAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+"portCallId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getVoyageByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getVoyagePortCallsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getVoyagePortCallsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getVoyagesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getVoyagesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      startVoyageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateVoyageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateVoyagePortCallAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+"portCallId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createWarehouseAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteWarehouseAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "warehouseId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWarehouseByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "warehouseId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWarehousesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWarehousesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateWarehouseAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "warehouseId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

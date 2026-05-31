@@ -69,6 +69,7 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["createDiscountList"]=1
     operations["createDiscountListEntry"]=1
     operations["deleteDiscountList"]=1
@@ -113,10 +114,23 @@ _()
     operations["getPrice"]=1
     operations["getTotalSavingsInUsd"]=1
     operations["getTotalTaxesInUsd"]=1
+    operations["createPricingRule"]=1
+    operations["deletePricingRule"]=1
+    operations["getPricingRuleById"]=1
+    operations["getPricingRules"]=1
+    operations["getPricingRulesCountAsync"]=1
+    operations["updatePricingRule"]=1
+    operations["createRoundingPolicyAsync"]=1
+    operations["deleteRoundingPolicyAsync"]=1
+    operations["getRoundingPoliciesAsync"]=1
+    operations["getRoundingPoliciesCountAsync"]=1
+    operations["getRoundingPolicyByIdAsync"]=1
+    operations["updateRoundingPolicyAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["createDiscountList"]="tenantId= "
     operation_parameters["createDiscountListEntry"]="discountListId= tenantId= "
     operation_parameters["deleteDiscountList"]="discountListId= tenantId= "
@@ -161,6 +175,18 @@ _()
     operation_parameters["getPrice"]="itemId= priceListId= discountsListId= quantity= currencyId= api-version= x-api-version: "
     operation_parameters["getTotalSavingsInUsd"]="itemId= currencyId= api-version= x-api-version: "
     operation_parameters["getTotalTaxesInUsd"]="itemId= currencyId= api-version= x-api-version: "
+    operation_parameters["createPricingRule"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deletePricingRule"]="pricingRuleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPricingRuleById"]="pricingRuleId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPricingRules"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getPricingRulesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updatePricingRule"]="tenantId= pricingRuleId= api-version= x-api-version: "
+    operation_parameters["createRoundingPolicyAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteRoundingPolicyAsync"]="roundingPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["getRoundingPoliciesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getRoundingPoliciesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getRoundingPolicyByIdAsync"]="roundingPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateRoundingPolicyAsync"]="roundingPolicyId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values

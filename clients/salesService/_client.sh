@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "accountLogoutPost[]" \
+            "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -313,7 +313,28 @@ case $state in
             "registerPost[]" \
             "resendConfirmationEmailPost[]" \
             "resetPasswordPost[]" \
-            "versionGet[]"             "getQuoteAsync[Get margin details by ID]" \
+            "versionGet[]"             "countLoyaltyProgramsAsync[Get loyalty programs count]" \
+            "createLoyaltyProgramAsync[Create a loyalty program]" \
+            "deleteLoyaltyProgramAsync[Delete a loyalty program]" \
+            "getLoyaltyProgramAsync[Get loyalty program by ID]" \
+            "getLoyaltyProgramsAsync[Get loyalty programs]" \
+            "updateLoyaltyProgramAsync[Update a loyalty program]"             "getQuoteAsync[Get margin details by ID]"             "countPointOfSalesAsync[Get point of sales count]" \
+            "createPointOfSaleAsync[Create a point of sale]" \
+            "deletePointOfSaleAsync[Delete a point of sale]" \
+            "getPointOfSaleAsync[Get point of sale by ID]" \
+            "getPointOfSalesAsync[Get point of sales]" \
+            "updatePointOfSaleAsync[Update a point of sale]"             "countSalesLiteraturesAsync[Get sales literatures count]" \
+            "createSalesLiteratureAsync[Create a sales literature]" \
+            "deleteSalesLiteratureAsync[Delete a sales literature]" \
+            "getExtendedSalesLiteraturesAsync[Get extended sales literatures]" \
+            "getSalesLiteratureAsync[Get sales literature by ID]" \
+            "getSalesLiteraturesAsync[Get sales literatures]" \
+            "updateSalesLiteratureAsync[Update a sales literature]"             "countStoresAsync[Get stores count]" \
+            "createStoreAsync[Create a store]" \
+            "deleteStoreAsync[Delete a store]" \
+            "getStoreAsync[Get store by ID]" \
+            "getStoresAsync[Get stores]" \
+            "updateStoreAsync[Update a store]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -321,6 +342,15 @@ case $state in
     ;;
   args)
     case $line[1] in
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       accountLogoutPost)
         local -a _op_arguments
         _op_arguments=(
@@ -430,6 +460,51 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      countLoyaltyProgramsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createLoyaltyProgramAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteLoyaltyProgramAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "loyaltyProgramId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLoyaltyProgramAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "loyaltyProgramId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLoyaltyProgramsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateLoyaltyProgramAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "loyaltyProgramId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getQuoteAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -437,6 +512,148 @@ case $state in
           "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countPointOfSalesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createPointOfSaleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deletePointOfSaleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pointOfSaleId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPointOfSaleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pointOfSaleId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPointOfSalesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePointOfSaleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pointOfSaleId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countSalesLiteraturesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createSalesLiteratureAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteSalesLiteratureAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "salesLiteratureId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExtendedSalesLiteraturesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSalesLiteratureAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "salesLiteratureId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSalesLiteraturesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateSalesLiteratureAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "salesLiteratureId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countStoresAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createStoreAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteStoreAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "storeId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getStoreAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "storeId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getStoresAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateStoreAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "storeId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
     esac

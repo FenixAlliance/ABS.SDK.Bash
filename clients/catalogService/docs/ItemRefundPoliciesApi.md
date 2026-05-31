@@ -21,7 +21,7 @@ Counts all refund policies for a specific item.
 ### Example
 
 ```bash
- countItemRefundPoliciesAsync  itemId=value  api-version=value x-api-version:value
+ countItemRefundPoliciesAsync  tenantId=value  itemId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -29,6 +29,7 @@ Counts all refund policies for a specific item.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [optional] [default to null]
  **itemId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -58,7 +59,7 @@ Retrieves all refund policies for a specific item.
 ### Example
 
 ```bash
- getItemRefundPoliciesAsync  itemId=value  api-version=value x-api-version:value
+ getItemRefundPoliciesAsync  tenantId=value  itemId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -66,6 +67,7 @@ Retrieves all refund policies for a specific item.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [optional] [default to null]
  **itemId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -95,7 +97,7 @@ Retrieves a specific refund policy for an item.
 ### Example
 
 ```bash
- getItemRefundPolicyByIdAsync itemRefundPolicyId=value  itemId=value  api-version=value x-api-version:value
+ getItemRefundPolicyByIdAsync itemRefundPolicyId=value  tenantId=value  itemId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -104,6 +106,7 @@ Retrieves a specific refund policy for an item.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **itemRefundPolicyId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **itemId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]

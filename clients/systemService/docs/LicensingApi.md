@@ -24,7 +24,7 @@ Retrieves all license assignments for a given license.
 ### Example
 
 ```bash
- getLicenseAssignmentsAsync licenseId=value  tenantId=value  api-version=value x-api-version:value
+ getLicenseAssignmentsAsync  tenantId=value licenseId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -32,8 +32,8 @@ Retrieves all license assignments for a given license.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **licenseId** | **string** |  | [default to null]
  **tenantId** | **string** |  | [default to null]
+ **licenseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -62,7 +62,7 @@ Retrieves all additional attributes for a given license.
 ### Example
 
 ```bash
- getLicenseAttributesAsync licenseId=value  tenantId=value  api-version=value x-api-version:value
+ getLicenseAttributesAsync  tenantId=value licenseId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -70,8 +70,8 @@ Retrieves all additional attributes for a given license.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **licenseId** | **string** |  | [default to null]
  **tenantId** | **string** |  | [default to null]
+ **licenseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -100,7 +100,7 @@ Retrieves a single suite license by its unique identifier.
 ### Example
 
 ```bash
- getLicenseByIdAsync licenseId=value  api-version=value x-api-version:value
+ getLicenseByIdAsync  tenantId=value licenseId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -108,6 +108,7 @@ Retrieves a single suite license by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **licenseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -137,7 +138,7 @@ Retrieves all features for a given license.
 ### Example
 
 ```bash
- getLicenseFeaturesAsync licenseId=value  tenantId=value  api-version=value x-api-version:value
+ getLicenseFeaturesAsync  tenantId=value licenseId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -145,8 +146,8 @@ Retrieves all features for a given license.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **licenseId** | **string** |  | [default to null]
  **tenantId** | **string** |  | [default to null]
+ **licenseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -175,7 +176,7 @@ Retrieves the record quota for a given license.
 ### Example
 
 ```bash
- getLicenseRecordsQuotaAsync licenseId=value  tenantId=value  api-version=value x-api-version:value
+ getLicenseRecordsQuotaAsync  tenantId=value licenseId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -183,8 +184,8 @@ Retrieves the record quota for a given license.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **licenseId** | **string** |  | [default to null]
  **tenantId** | **string** |  | [default to null]
+ **licenseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 

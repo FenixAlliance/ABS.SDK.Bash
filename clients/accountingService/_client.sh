@@ -307,7 +307,8 @@ case $state in
             "getAccountingPeriod[Gets the current tenant accounting period]" \
             "getAccountingPeriods[Get all accounting periods for a tenant]" \
             "getAccountingPeriodsCountAsync[Gets the current tenant accounting periods count]" \
-            "updateAccountingPeriod[Updates an existing accounting period]"             "balanceAccountAsync[Balance account]" \
+            "updateAccountingPeriod[Updates an existing accounting period]"             "aggregateAccountsBalanceAsync[Aggregate accounts balance]" \
+            "balanceAccountAsync[Balance account]" \
             "balanceRootAccountAsync[Balance root account]" \
             "createAccountAsync[Get root accounts]" \
             "createAccountCreditAsync[Create account credit]" \
@@ -329,19 +330,23 @@ case $state in
             "getAccountEntryAsync[Get account entry]" \
             "getAccountRelationsAsync[Get account relations]" \
             "getAccountRelationsCountAsync[Get account relations count]" \
+            "getAccountTypeByIdAsync[Get account type by ID]" \
             "getAccountTypesAsync[Get account types]" \
             "getAccountTypesCountAsync[Get account types count]" \
             "getAccountsAsync[Creates a new account]" \
             "getAccountsCountAsync[Get the number of accounts]" \
+            "getChartsOfAccountsAsync[Get charts of accounts]" \
             "getChildAccountsAsync[Get child accounts]" \
             "getCreditAccountEntriesAsync[Get credit account entries]" \
             "getDebitAccountEntriesAsync[Get debit account entries]" \
             "getRootAccountsAsync[Get root accounts]" \
             "patchAccountAsync[Patch an account]" \
+            "seedChartOfAccountsAsync[Seed chart of accounts]" \
             "updateAccountAsync[Update an account]" \
             "updateAccountEntryAsync[Update account entry]" \
             "updateAccountRelationAsync[Update account relation]" \
-            "updateAccountTypeAsync[Update account type]"             "createBank[Creates a new bank]" \
+            "updateAccountTypeAsync[Update account type]"             "getBankProfiles[Get all bank profiles for a tenant]" \
+            "getBankProfilesCount[Get bank profiles count]"             "createBank[Creates a new bank]" \
             "createBankAccount[Creates a new bank account]" \
             "createBankGuarantee[Creates a new bank guarantee]" \
             "createBankTransaction[Creates a new bank transaction]" \
@@ -364,7 +369,11 @@ case $state in
             "updateBank[Updates a bank]" \
             "updateBankAccount[Updates a bank account]" \
             "updateBankGuarantee[Updates a bank guarantee]" \
-            "updateBankTransaction[Updates a bank transaction]"             "createBillingProfileAsync[Creates a new billing profile]" \
+            "updateBankTransaction[Updates a bank transaction]"             "createBillableLineTax[Create a new tax for a billable line.]" \
+            "deleteBillableLineTax[Delete a tax from a billable line.]" \
+            "getBillableLineTaxes[Get taxes for a billable line.]" \
+            "getBillableLineTaxesCount[Get the count of taxes for a billable line.]" \
+            "updateBillableLineTax[Update a tax for a billable line.]"             "createBillingProfileAsync[Creates a new billing profile]" \
             "deleteBillingProfileAsync[Deletes a billing profile]" \
             "getBillingProfileByIdAsync[Gets a billing profile by id]" \
             "getBillingProfilesAsync[Gets all billing profiles]" \
@@ -377,6 +386,7 @@ case $state in
             "getBudgetAccountEntryAsync[Gets a budget account entry by id]" \
             "getBudgetDetailsAsync[Gets a budget by id]" \
             "getBudgetsAsync[Gets all budgets]" \
+            "getBudgetsCountAsync[Get the count of budgets]" \
             "updateBudgetAccountEntryAsync[Updates a budget account entry]" \
             "updateBudgetAsync[Updates a budget]"             "createCommissionAsync[Create a commission]" \
             "createPaymentCommissionAsync[Create a payment commission]" \
@@ -389,7 +399,7 @@ case $state in
             "getPaymentCommissionsAsync[Get all payment commissions for a tenant]" \
             "getPaymentCommissionsCountAsync[Get the count of payment commissions for a tenant]" \
             "updateCommissionAsync[Update a commission]" \
-            "updatePaymentCommissionAsync[Update a payment commission]"             "createCostCentre[Create a cost centre]" \
+            "updatePaymentCommissionAsync[Update a payment commission]"             "apiV2AiServiceCompletionsCompleteGet[]"             "createCostCentre[Create a cost centre]" \
             "createCostCentreBudget[Create a cost centre budget]" \
             "createCostCentreGroup[Create a cost centre group]" \
             "deleteCostCentre[Delete a cost centre]" \
@@ -405,7 +415,17 @@ case $state in
             "getCostCentresCount[Get the count of cost centres for a tenant]" \
             "updateCostCentre[Update a cost centre]" \
             "updateCostCentreBudget[Update a cost centre budget]" \
-            "updateCostCentreGroup[Update a cost centre group]"             "accountLogoutPost[]" \
+            "updateCostCentreGroup[Update a cost centre group]"             "createExpenseClaim[Create an expense claim]" \
+            "deleteExpenseClaim[Delete an expense claim]" \
+            "getExpenseClaim[Get an expense claim by id]" \
+            "getExpenseClaims[Get all expense claims for a tenant]" \
+            "getExpenseClaimsCount[Get the count of expense claims for a tenant]" \
+            "updateExpenseClaim[Update an expense claim]"             "createExpenseType[Create an expense type]" \
+            "deleteExpenseType[Delete an expense type]" \
+            "getExpenseType[Get an expense type by id]" \
+            "getExpenseTypes[Get all expense types for a tenant]" \
+            "getExpenseTypesCount[Get the count of expense types for a tenant]" \
+            "updateExpenseType[Update an expense type]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -485,7 +505,9 @@ case $state in
             "getJournalTypeDetailsAsync[Retrieves a journal type by ID]" \
             "getJournalTypesAsync[Retrieves all journal types]" \
             "getJournalTypesCountAsync[Counts journal types]" \
-            "updateJournalTypeAsync[Updates an existing journal type]"             "countJournalsAsync[Count journals]" \
+            "updateJournalTypeAsync[Updates an existing journal type]"             "aggregateJournalEntryCreditsAsync[Aggregate journal entry credits]" \
+            "aggregateJournalEntryDebitsAsync[Aggregate journal entry debits]" \
+            "countJournalsAsync[Count journals]" \
             "createJournalAsync[Create journal]" \
             "createJournalEntryAsync[Create journal entry]" \
             "deleteJournalAsync[Delete journal]" \
@@ -507,16 +529,22 @@ case $state in
             "getLedgersCountAsync[Counts ledgers]" \
             "updateLedgerAsync[Updates a ledger]"             "createLoanApplicationAsync[Creates a loan application]" \
             "createLoanAsync[Creates a new loan]" \
+            "createLoanTypeAsync[Creates a loan type]" \
             "deleteLoanApplicationAsync[Deletes a loan application]" \
             "deleteLoanAsync[Deletes a loan]" \
+            "deleteLoanTypeAsync[Deletes a loan type]" \
             "getLoanApplicationDetailsAsync[Gets a loan application by ID]" \
             "getLoanApplicationsAsync[Gets all loan applications]" \
             "getLoanApplicationsCountAsync[Counts loan applications]" \
             "getLoanDetailsAsync[Gets a loan by ID]" \
+            "getLoanTypeByIdAsync[Gets a loan type by ID]" \
+            "getLoanTypesAsync[Gets all loan types]" \
+            "getLoanTypesCountAsync[Counts loan types]" \
             "getLoansAsync[Gets all loans]" \
             "getLoansCountAsync[Counts loans]" \
             "updateLoanApplicationAsync[Updates a loan application]" \
-            "updateLoanAsync[Updates a loan]"             "createReceiptAsync[Creates a new receipt]" \
+            "updateLoanAsync[Updates a loan]" \
+            "updateLoanTypeAsync[Updates a loan type]"             "createReceiptAsync[Creates a new receipt]" \
             "deleteReceiptAsync[Deletes a receipt]" \
             "getReceiptDetailsAsync[Gets details of a receipt]" \
             "getReceiptsAsync[Retrieves tenant receipts]" \
@@ -544,7 +572,12 @@ case $state in
             "updateShareClass[Updates an existing share class]" \
             "updateShareIssuance[Updates an existing share issuance]" \
             "updateShareTransfer[Updates an existing share transfer]" \
-            "updateShareTransferReason[Updates an existing share transfer reason]"             "createAppliedTaxPolicyRecord[Create an applied tax policy record]" \
+            "updateShareTransferReason[Updates an existing share transfer reason]"             "createTaxClass[Create a tax class]" \
+            "deleteTaxClass[Delete a tax class]" \
+            "getTaxClass[Get tax class by ID]" \
+            "getTaxClasses[Get all tax classes for a tenant]" \
+            "getTaxClassesCount[Get tax classes count]" \
+            "updateTaxClass[Update a tax class]"             "createAppliedTaxPolicyRecord[Create an applied tax policy record]" \
             "createItemTaxPolicyRecord[Create an item tax policy record]" \
             "createTaxPolicy[Create a tax policy]" \
             "deleteAppliedTaxPolicyRecord[Delete an applied tax policy record]" \
@@ -699,6 +732,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      aggregateAccountsBalanceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"currencyId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       balanceAccountAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -771,7 +814,6 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"accountId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -814,7 +856,6 @@ case $state in
         _op_arguments=(
           "accountTypeId=:[PATH] "
           "tenantId=:[QUERY] "
-"accountId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -921,11 +962,20 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getAccountTypeByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "accountTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getAccountTypesAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"accountTypeId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -935,7 +985,6 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"accountTypeId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -955,6 +1004,14 @@ case $state in
         _op_arguments=(
                     "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getChartsOfAccountsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -1008,6 +1065,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      seedChartOfAccountsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateAccountAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1045,7 +1111,24 @@ case $state in
         _op_arguments=(
           "accountTypeId=:[PATH] "
           "tenantId=:[QUERY] "
-"accountId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBankProfiles)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBankProfilesCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1297,6 +1380,58 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      createBillableLineTax)
+        local -a _op_arguments
+        _op_arguments=(
+          "billableLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteBillableLineTax)
+        local -a _op_arguments
+        _op_arguments=(
+          "billableLineId=:[PATH] "
+"taxId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBillableLineTaxes)
+        local -a _op_arguments
+        _op_arguments=(
+          "billableLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBillableLineTaxesCount)
+        local -a _op_arguments
+        _op_arguments=(
+          "billableLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateBillableLineTax)
+        local -a _op_arguments
+        _op_arguments=(
+          "billableLineId=:[PATH] "
+"taxId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createBillingProfileAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1426,6 +1561,15 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getBudgetsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBudgetsCountAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -1567,6 +1711,15 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       createCostCentre)
@@ -1725,6 +1878,120 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "groupId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createExpenseClaim)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteExpenseClaim)
+        local -a _op_arguments
+        _op_arguments=(
+          "expenseClaimId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExpenseClaim)
+        local -a _op_arguments
+        _op_arguments=(
+          "expenseClaimId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExpenseClaims)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExpenseClaimsCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateExpenseClaim)
+        local -a _op_arguments
+        _op_arguments=(
+          "expenseClaimId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createExpenseType)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteExpenseType)
+        local -a _op_arguments
+        _op_arguments=(
+          "expenseTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExpenseType)
+        local -a _op_arguments
+        _op_arguments=(
+          "expenseTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExpenseTypes)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExpenseTypesCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateExpenseType)
+        local -a _op_arguments
+        _op_arguments=(
+          "expenseTypeId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -2049,7 +2316,8 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "authorityId=:[PATH] "
-          "fiscalAuthorityId=:[QUERY] "
+          "tenantId=:[QUERY] "
+"fiscalAuthorityId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -2059,7 +2327,8 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "fiscalAuthorityId=:[PATH] "
-          "api-version=:[QUERY] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -2108,7 +2377,8 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "authorityId=:[PATH] "
-          "api-version=:[QUERY] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -2117,7 +2387,8 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "authorityId=:[PATH] "
-          "api-version=:[QUERY] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -2230,7 +2501,8 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "authorityId=:[PATH] "
-          "fiscalAuthorityId=:[QUERY] "
+          "tenantId=:[QUERY] "
+"fiscalAuthorityId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -2240,7 +2512,8 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "fiscalAuthorityId=:[PATH] "
-          "api-version=:[QUERY] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -2278,7 +2551,8 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "authorityId=:[PATH] "
-          "fiscalAuthorityId=:[QUERY] "
+          "tenantId=:[QUERY] "
+"fiscalAuthorityId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -2288,7 +2562,8 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "fiscalAuthorityId=:[PATH] "
-          "api-version=:[QUERY] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -2596,6 +2871,28 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      aggregateJournalEntryCreditsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "journalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"currencyId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      aggregateJournalEntryDebitsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "journalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"currencyId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       countJournalsAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -2837,6 +3134,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      createLoanTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       deleteLoanApplicationAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -2851,6 +3157,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "loanId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteLoanTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "loanTypeId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -2895,6 +3211,34 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getLoanTypeByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "loanTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLoanTypesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLoanTypesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getLoansAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -2927,6 +3271,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "loanId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateLoanTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "loanTypeId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -3200,6 +3554,63 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "reasonId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createTaxClass)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteTaxClass)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTaxClass)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTaxClasses)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTaxClassesCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateTaxClass)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "

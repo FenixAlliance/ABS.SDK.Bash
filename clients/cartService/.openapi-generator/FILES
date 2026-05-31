@@ -11,17 +11,16 @@ docs/CartDtoEnvelope.md
 docs/CartUpdateRequest.md
 docs/CartsApi.md
 docs/CompareApi.md
+docs/CompletionsApi.md
 docs/CountryDto.md
 docs/CountryDtoEnvelope.md
 docs/CountrySwitchRequest.md
 docs/CurrencyDto.md
 docs/CurrencyDtoEnvelope.md
-docs/CurrencyId.md
 docs/CurrencySwitchRequest.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
-docs/FenixAllianceABSWebApi.md
-docs/ForexRates.md
+docs/FenixAlliancePortalsWebsiteApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/InfoRequest.md
@@ -35,7 +34,6 @@ docs/ItemToCompareCartRecordDto.md
 docs/ItemToCompareCartRecordDtoEnvelope.md
 docs/ItemToCompareCartRecordDtoListEnvelope.md
 docs/LoginRequest.md
-docs/Money.md
 docs/NewWishListRequest.md
 docs/ProductToWishListRequest.md
 docs/RecordsApi.md

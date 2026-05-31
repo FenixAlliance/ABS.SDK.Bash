@@ -207,6 +207,9 @@ operation_parameters_minimum_occurrences["getBusinessDomainsAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getBusinessDomainsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBusinessDomainsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessDomainsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -421,6 +424,31 @@ operation_parameters_minimum_occurrences["updateWebTemplateAsync:::webTemplateId
 operation_parameters_minimum_occurrences["updateWebTemplateAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateWebTemplateAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateWebTemplateAsync:::WebTemplateUpdateDto"]=0
+operation_parameters_minimum_occurrences["createWebsiteThemeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createWebsiteThemeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createWebsiteThemeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createWebsiteThemeAsync:::WebsiteThemeCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteWebsiteThemeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteWebsiteThemeAsync:::id"]=1
+operation_parameters_minimum_occurrences["deleteWebsiteThemeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteWebsiteThemeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebsiteThemeByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWebsiteThemeByIdAsync:::id"]=1
+operation_parameters_minimum_occurrences["getWebsiteThemeByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWebsiteThemeByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebsiteThemesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWebsiteThemesAsync:::oDataQueryOptions"]=0
+operation_parameters_minimum_occurrences["getWebsiteThemesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWebsiteThemesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::oDataQueryOptions"]=0
+operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateWebsiteThemeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateWebsiteThemeAsync:::id"]=1
+operation_parameters_minimum_occurrences["updateWebsiteThemeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateWebsiteThemeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateWebsiteThemeAsync:::WebsiteThemeUpdateDto"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -540,6 +568,9 @@ operation_parameters_maximum_occurrences["getBusinessDomainsAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getBusinessDomainsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBusinessDomainsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessDomainsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -754,6 +785,31 @@ operation_parameters_maximum_occurrences["updateWebTemplateAsync:::webTemplateId
 operation_parameters_maximum_occurrences["updateWebTemplateAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateWebTemplateAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateWebTemplateAsync:::WebTemplateUpdateDto"]=0
+operation_parameters_maximum_occurrences["createWebsiteThemeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createWebsiteThemeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createWebsiteThemeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createWebsiteThemeAsync:::WebsiteThemeCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteWebsiteThemeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteWebsiteThemeAsync:::id"]=0
+operation_parameters_maximum_occurrences["deleteWebsiteThemeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteWebsiteThemeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemeByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemeByIdAsync:::id"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemeByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemeByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemesAsync:::oDataQueryOptions"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::oDataQueryOptions"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateWebsiteThemeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateWebsiteThemeAsync:::id"]=0
+operation_parameters_maximum_occurrences["updateWebsiteThemeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateWebsiteThemeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateWebsiteThemeAsync:::WebsiteThemeUpdateDto"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
@@ -870,6 +926,9 @@ operation_parameters_collection_type["getBusinessDomainsAsync:::x-api-version"]=
 operation_parameters_collection_type["getBusinessDomainsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getBusinessDomainsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getBusinessDomainsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
@@ -1084,6 +1143,31 @@ operation_parameters_collection_type["updateWebTemplateAsync:::webTemplateId"]="
 operation_parameters_collection_type["updateWebTemplateAsync:::api-version"]=""
 operation_parameters_collection_type["updateWebTemplateAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateWebTemplateAsync:::WebTemplateUpdateDto"]=""
+operation_parameters_collection_type["createWebsiteThemeAsync:::tenantId"]=""
+operation_parameters_collection_type["createWebsiteThemeAsync:::api-version"]=""
+operation_parameters_collection_type["createWebsiteThemeAsync:::x-api-version"]=""
+operation_parameters_collection_type["createWebsiteThemeAsync:::WebsiteThemeCreateDto"]=""
+operation_parameters_collection_type["deleteWebsiteThemeAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteWebsiteThemeAsync:::id"]=""
+operation_parameters_collection_type["deleteWebsiteThemeAsync:::api-version"]=""
+operation_parameters_collection_type["deleteWebsiteThemeAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebsiteThemeByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getWebsiteThemeByIdAsync:::id"]=""
+operation_parameters_collection_type["getWebsiteThemeByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getWebsiteThemeByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebsiteThemesAsync:::tenantId"]=""
+operation_parameters_collection_type["getWebsiteThemesAsync:::oDataQueryOptions"]=""
+operation_parameters_collection_type["getWebsiteThemesAsync:::api-version"]=""
+operation_parameters_collection_type["getWebsiteThemesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebsiteThemesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getWebsiteThemesCountAsync:::oDataQueryOptions"]=""
+operation_parameters_collection_type["getWebsiteThemesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getWebsiteThemesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateWebsiteThemeAsync:::tenantId"]=""
+operation_parameters_collection_type["updateWebsiteThemeAsync:::id"]=""
+operation_parameters_collection_type["updateWebsiteThemeAsync:::api-version"]=""
+operation_parameters_collection_type["updateWebsiteThemeAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateWebsiteThemeAsync:::WebsiteThemeUpdateDto"]=""
 
 
 ##
@@ -1441,7 +1525,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}ContentService command line client (API version 2.0.0.0)${OFF}
+${BOLD}${WHITE}ContentService command line client (API version 2.1.2.5401)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1533,7 +1617,13 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -1643,12 +1733,23 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[websiteThemes]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createWebsiteThemeAsync${OFF};Create a new website theme
+  ${CYAN}deleteWebsiteThemeAsync${OFF};Delete a website theme
+  ${CYAN}getWebsiteThemeByIdAsync${OFF};Get website theme by ID
+  ${CYAN}getWebsiteThemesAsync${OFF};Get all website themes
+  ${CYAN}getWebsiteThemesCountAsync${OFF};Get website themes count
+  ${CYAN}updateWebsiteThemeAsync${OFF};Update a website theme
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}Options${OFF}"
     echo -e "  -h,--help\\t\\t\\t\\tPrint this help"
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -1669,7 +1770,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}ContentService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}${WHITE}ContentService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1689,7 +1790,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}ContentService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}ContentService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
 }
 
@@ -2644,6 +2745,31 @@ print_getBusinessDomainsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4335,6 +4461,169 @@ print_updateWebTemplateAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createWebsiteThemeAsync operation
+#
+##############################################################################
+print_createWebsiteThemeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createWebsiteThemeAsync - Create a new website theme${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new website theme for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteWebsiteThemeAsync operation
+#
+##############################################################################
+print_deleteWebsiteThemeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteWebsiteThemeAsync - Delete a website theme${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a website theme for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWebsiteThemeByIdAsync operation
+#
+##############################################################################
+print_getWebsiteThemeByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWebsiteThemeByIdAsync - Get website theme by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific website theme by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWebsiteThemesAsync operation
+#
+##############################################################################
+print_getWebsiteThemesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWebsiteThemesAsync - Get all website themes${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all website themes for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[WebsiteThemeDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWebsiteThemesCountAsync operation
+#
+##############################################################################
+print_getWebsiteThemesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWebsiteThemesCountAsync - Get website themes count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of website themes for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[WebsiteThemeDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateWebsiteThemeAsync operation
+#
+##############################################################################
+print_updateWebsiteThemeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateWebsiteThemeAsync - Update a website theme${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing website theme for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -6087,6 +6376,42 @@ call_getBusinessDomainsCountAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/ContentService/BusinessDomains/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -9567,6 +9892,302 @@ call_updateWebTemplateAsync() {
     fi
 }
 
+##############################################################################
+#
+# Call createWebsiteThemeAsync operation
+#
+##############################################################################
+call_createWebsiteThemeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebsiteThemes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteWebsiteThemeAsync operation
+#
+##############################################################################
+call_deleteWebsiteThemeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebsiteThemes/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWebsiteThemeByIdAsync operation
+#
+##############################################################################
+call_getWebsiteThemeByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebsiteThemes/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWebsiteThemesAsync operation
+#
+##############################################################################
+call_getWebsiteThemesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebsiteThemes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWebsiteThemesCountAsync operation
+#
+##############################################################################
+call_getWebsiteThemesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebsiteThemes/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateWebsiteThemeAsync operation
+#
+##############################################################################
+call_updateWebsiteThemeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebsiteThemes/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
 
 
 ##############################################################################
@@ -9778,6 +10399,9 @@ case $key in
     getBusinessDomainsCountAsync)
     operation="getBusinessDomainsCountAsync"
     ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
+    ;;
     accountLogoutPost)
     operation="accountLogoutPost"
     ;;
@@ -9988,6 +10612,24 @@ case $key in
     updateWebTemplateAsync)
     operation="updateWebTemplateAsync"
     ;;
+    createWebsiteThemeAsync)
+    operation="createWebsiteThemeAsync"
+    ;;
+    deleteWebsiteThemeAsync)
+    operation="deleteWebsiteThemeAsync"
+    ;;
+    getWebsiteThemeByIdAsync)
+    operation="getWebsiteThemeByIdAsync"
+    ;;
+    getWebsiteThemesAsync)
+    operation="getWebsiteThemesAsync"
+    ;;
+    getWebsiteThemesCountAsync)
+    operation="getWebsiteThemesCountAsync"
+    ;;
+    updateWebsiteThemeAsync)
+    operation="updateWebsiteThemeAsync"
+    ;;
     *==*)
     # Parse body arguments and convert them into top level
     # JSON properties passed in the body content as strings
@@ -10188,6 +10830,9 @@ case $operation in
     ;;
     getBusinessDomainsCountAsync)
     call_getBusinessDomainsCountAsync
+    ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
     ;;
     accountLogoutPost)
     call_accountLogoutPost
@@ -10398,6 +11043,24 @@ case $operation in
     ;;
     updateWebTemplateAsync)
     call_updateWebTemplateAsync
+    ;;
+    createWebsiteThemeAsync)
+    call_createWebsiteThemeAsync
+    ;;
+    deleteWebsiteThemeAsync)
+    call_deleteWebsiteThemeAsync
+    ;;
+    getWebsiteThemeByIdAsync)
+    call_getWebsiteThemeByIdAsync
+    ;;
+    getWebsiteThemesAsync)
+    call_getWebsiteThemesAsync
+    ;;
+    getWebsiteThemesCountAsync)
+    call_getWebsiteThemesCountAsync
+    ;;
+    updateWebsiteThemeAsync)
+    call_updateWebsiteThemeAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

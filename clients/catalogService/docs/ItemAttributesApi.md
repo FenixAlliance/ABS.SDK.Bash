@@ -30,7 +30,7 @@ Counts all item attributes for the specified tenant.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -135,7 +135,7 @@ Retrieves a specific item attribute by its ID.
 ### Example
 
 ```bash
- getItemAttributeByIdAsync itemAttributeId=value  api-version=value x-api-version:value
+ getItemAttributeByIdAsync itemAttributeId=value  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -144,6 +144,7 @@ Retrieves a specific item attribute by its ID.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **itemAttributeId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -180,7 +181,7 @@ Retrieves all item attributes for the specified tenant using OData query options
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 

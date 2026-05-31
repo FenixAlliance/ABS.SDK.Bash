@@ -97,7 +97,7 @@ Retrieves a specific item attachment by its ID.
 ### Example
 
 ```bash
- getItemAttachmentByIdAsync itemAttachmentId=value  api-version=value x-api-version:value
+ getItemAttachmentByIdAsync itemAttachmentId=value  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -106,6 +106,7 @@ Retrieves a specific item attachment by its ID.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **itemAttachmentId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -142,7 +143,7 @@ Retrieves all item attachments for the specified tenant using OData query option
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [default to null]
+ **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 

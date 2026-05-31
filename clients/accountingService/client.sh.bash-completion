@@ -81,6 +81,7 @@ _()
     operations["getAccountingPeriods"]=1
     operations["getAccountingPeriodsCountAsync"]=1
     operations["updateAccountingPeriod"]=1
+    operations["aggregateAccountsBalanceAsync"]=1
     operations["balanceAccountAsync"]=1
     operations["balanceRootAccountAsync"]=1
     operations["createAccountAsync"]=1
@@ -103,19 +104,24 @@ _()
     operations["getAccountEntryAsync"]=1
     operations["getAccountRelationsAsync"]=1
     operations["getAccountRelationsCountAsync"]=1
+    operations["getAccountTypeByIdAsync"]=1
     operations["getAccountTypesAsync"]=1
     operations["getAccountTypesCountAsync"]=1
     operations["getAccountsAsync"]=1
     operations["getAccountsCountAsync"]=1
+    operations["getChartsOfAccountsAsync"]=1
     operations["getChildAccountsAsync"]=1
     operations["getCreditAccountEntriesAsync"]=1
     operations["getDebitAccountEntriesAsync"]=1
     operations["getRootAccountsAsync"]=1
     operations["patchAccountAsync"]=1
+    operations["seedChartOfAccountsAsync"]=1
     operations["updateAccountAsync"]=1
     operations["updateAccountEntryAsync"]=1
     operations["updateAccountRelationAsync"]=1
     operations["updateAccountTypeAsync"]=1
+    operations["getBankProfiles"]=1
+    operations["getBankProfilesCount"]=1
     operations["createBank"]=1
     operations["createBankAccount"]=1
     operations["createBankGuarantee"]=1
@@ -140,6 +146,11 @@ _()
     operations["updateBankAccount"]=1
     operations["updateBankGuarantee"]=1
     operations["updateBankTransaction"]=1
+    operations["createBillableLineTax"]=1
+    operations["deleteBillableLineTax"]=1
+    operations["getBillableLineTaxes"]=1
+    operations["getBillableLineTaxesCount"]=1
+    operations["updateBillableLineTax"]=1
     operations["createBillingProfileAsync"]=1
     operations["deleteBillingProfileAsync"]=1
     operations["getBillingProfileByIdAsync"]=1
@@ -154,6 +165,7 @@ _()
     operations["getBudgetAccountEntryAsync"]=1
     operations["getBudgetDetailsAsync"]=1
     operations["getBudgetsAsync"]=1
+    operations["getBudgetsCountAsync"]=1
     operations["updateBudgetAccountEntryAsync"]=1
     operations["updateBudgetAsync"]=1
     operations["createCommissionAsync"]=1
@@ -168,6 +180,7 @@ _()
     operations["getPaymentCommissionsCountAsync"]=1
     operations["updateCommissionAsync"]=1
     operations["updatePaymentCommissionAsync"]=1
+    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["createCostCentre"]=1
     operations["createCostCentreBudget"]=1
     operations["createCostCentreGroup"]=1
@@ -185,6 +198,18 @@ _()
     operations["updateCostCentre"]=1
     operations["updateCostCentreBudget"]=1
     operations["updateCostCentreGroup"]=1
+    operations["createExpenseClaim"]=1
+    operations["deleteExpenseClaim"]=1
+    operations["getExpenseClaim"]=1
+    operations["getExpenseClaims"]=1
+    operations["getExpenseClaimsCount"]=1
+    operations["updateExpenseClaim"]=1
+    operations["createExpenseType"]=1
+    operations["deleteExpenseType"]=1
+    operations["getExpenseType"]=1
+    operations["getExpenseTypes"]=1
+    operations["getExpenseTypesCount"]=1
+    operations["updateExpenseType"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -279,6 +304,8 @@ _()
     operations["getJournalTypesAsync"]=1
     operations["getJournalTypesCountAsync"]=1
     operations["updateJournalTypeAsync"]=1
+    operations["aggregateJournalEntryCreditsAsync"]=1
+    operations["aggregateJournalEntryDebitsAsync"]=1
     operations["countJournalsAsync"]=1
     operations["createJournalAsync"]=1
     operations["createJournalEntryAsync"]=1
@@ -304,16 +331,22 @@ _()
     operations["updateLedgerAsync"]=1
     operations["createLoanApplicationAsync"]=1
     operations["createLoanAsync"]=1
+    operations["createLoanTypeAsync"]=1
     operations["deleteLoanApplicationAsync"]=1
     operations["deleteLoanAsync"]=1
+    operations["deleteLoanTypeAsync"]=1
     operations["getLoanApplicationDetailsAsync"]=1
     operations["getLoanApplicationsAsync"]=1
     operations["getLoanApplicationsCountAsync"]=1
     operations["getLoanDetailsAsync"]=1
+    operations["getLoanTypeByIdAsync"]=1
+    operations["getLoanTypesAsync"]=1
+    operations["getLoanTypesCountAsync"]=1
     operations["getLoansAsync"]=1
     operations["getLoansCountAsync"]=1
     operations["updateLoanApplicationAsync"]=1
     operations["updateLoanAsync"]=1
+    operations["updateLoanTypeAsync"]=1
     operations["createReceiptAsync"]=1
     operations["deleteReceiptAsync"]=1
     operations["getReceiptDetailsAsync"]=1
@@ -344,6 +377,12 @@ _()
     operations["updateShareIssuance"]=1
     operations["updateShareTransfer"]=1
     operations["updateShareTransferReason"]=1
+    operations["createTaxClass"]=1
+    operations["deleteTaxClass"]=1
+    operations["getTaxClass"]=1
+    operations["getTaxClasses"]=1
+    operations["getTaxClassesCount"]=1
+    operations["updateTaxClass"]=1
     operations["createAppliedTaxPolicyRecord"]=1
     operations["createItemTaxPolicyRecord"]=1
     operations["createTaxPolicy"]=1
@@ -396,6 +435,7 @@ _()
     operation_parameters["getAccountingPeriods"]="tenantId= api-version= x-api-version: "
     operation_parameters["getAccountingPeriodsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateAccountingPeriod"]="accountingPeriodId= tenantId= api-version= x-api-version: "
+    operation_parameters["aggregateAccountsBalanceAsync"]="tenantId= currencyId= api-version= x-api-version: "
     operation_parameters["balanceAccountAsync"]="accountId= tenantId= api-version= x-api-version: "
     operation_parameters["balanceRootAccountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createAccountAsync"]="tenantId= api-version= x-api-version: "
@@ -403,11 +443,11 @@ _()
     operation_parameters["createAccountDebitAsync"]="accountId= tenantId= api-version= x-api-version: "
     operation_parameters["createAccountEntryAsync"]="accountId= tenantId= api-version= x-api-version: "
     operation_parameters["createAccountRelationAsync"]="tenantId= accountId= api-version= x-api-version: "
-    operation_parameters["createAccountTypeAsync"]="tenantId= accountId= api-version= x-api-version: "
+    operation_parameters["createAccountTypeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteAccountAsync"]="accountId= tenantId= api-version= x-api-version: "
     operation_parameters["deleteAccountEntryAsync"]="accountId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["deleteAccountRelationAsync"]="accountRelationId= tenantId= accountId= api-version= x-api-version: "
-    operation_parameters["deleteAccountTypeAsync"]="accountTypeId= tenantId= accountId= api-version= x-api-version: "
+    operation_parameters["deleteAccountTypeAsync"]="accountTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["getAccountAggregateAsync"]="tenantId= currencyId= api-version= x-api-version: "
     operation_parameters["getAccountCreditsAsync"]="accountId= tenantId= api-version= x-api-version: "
     operation_parameters["getAccountCreditsCountAsync"]="accountId= tenantId= api-version= x-api-version: "
@@ -418,19 +458,24 @@ _()
     operation_parameters["getAccountEntryAsync"]="accountId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["getAccountRelationsAsync"]="tenantId= accountId= api-version= x-api-version: "
     operation_parameters["getAccountRelationsCountAsync"]="tenantId= accountId= api-version= x-api-version: "
-    operation_parameters["getAccountTypesAsync"]="tenantId= accountTypeId= api-version= x-api-version: "
-    operation_parameters["getAccountTypesCountAsync"]="tenantId= accountTypeId= api-version= x-api-version: "
+    operation_parameters["getAccountTypeByIdAsync"]="accountTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountTypesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getAccountTypesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getAccountsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getAccountsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getChartsOfAccountsAsync"]="api-version= x-api-version: "
     operation_parameters["getChildAccountsAsync"]="accountId= tenantId= api-version= x-api-version: "
     operation_parameters["getCreditAccountEntriesAsync"]="accountId= tenantId= api-version= x-api-version: "
     operation_parameters["getDebitAccountEntriesAsync"]="accountId= tenantId= api-version= x-api-version: "
     operation_parameters["getRootAccountsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchAccountAsync"]="accountId= tenantId= api-version= x-api-version: "
+    operation_parameters["seedChartOfAccountsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateAccountAsync"]="accountId= tenantId= api-version= x-api-version: "
     operation_parameters["updateAccountEntryAsync"]="accountId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateAccountRelationAsync"]="accountRelationId= tenantId= accountId= api-version= x-api-version: "
-    operation_parameters["updateAccountTypeAsync"]="accountTypeId= tenantId= accountId= api-version= x-api-version: "
+    operation_parameters["updateAccountTypeAsync"]="accountTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBankProfiles"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getBankProfilesCount"]="tenantId= api-version= x-api-version: "
     operation_parameters["createBank"]="tenantId= api-version= x-api-version: "
     operation_parameters["createBankAccount"]="bankId= tenantId= api-version= x-api-version: "
     operation_parameters["createBankGuarantee"]="bankId= tenantId= api-version= x-api-version: "
@@ -455,6 +500,11 @@ _()
     operation_parameters["updateBankAccount"]="bankId= accountId= tenantId= api-version= x-api-version: "
     operation_parameters["updateBankGuarantee"]="bankId= guaranteeId= tenantId= api-version= x-api-version: "
     operation_parameters["updateBankTransaction"]="bankId= transactionId= tenantId= api-version= x-api-version: "
+    operation_parameters["createBillableLineTax"]="billableLineId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteBillableLineTax"]="billableLineId= taxId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBillableLineTaxes"]="billableLineId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBillableLineTaxesCount"]="billableLineId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateBillableLineTax"]="billableLineId= taxId= tenantId= api-version= x-api-version: "
     operation_parameters["createBillingProfileAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteBillingProfileAsync"]="billingProfileId= tenantId= api-version= x-api-version: "
     operation_parameters["getBillingProfileByIdAsync"]="billingProfileId= tenantId= api-version= x-api-version: "
@@ -469,6 +519,7 @@ _()
     operation_parameters["getBudgetAccountEntryAsync"]="budgetId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["getBudgetDetailsAsync"]="budgetId= tenantId= api-version= x-api-version: "
     operation_parameters["getBudgetsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getBudgetsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateBudgetAccountEntryAsync"]="budgetId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateBudgetAsync"]="budgetId= tenantId= api-version= x-api-version: "
     operation_parameters["createCommissionAsync"]="tenantId= api-version= x-api-version: "
@@ -483,6 +534,7 @@ _()
     operation_parameters["getPaymentCommissionsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateCommissionAsync"]="commissionId= tenantId= api-version= x-api-version: "
     operation_parameters["updatePaymentCommissionAsync"]="paymentCommissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["createCostCentre"]="tenantId= api-version= x-api-version: "
     operation_parameters["createCostCentreBudget"]="tenantId= api-version= x-api-version: "
     operation_parameters["createCostCentreGroup"]="tenantId= api-version= x-api-version: "
@@ -500,6 +552,18 @@ _()
     operation_parameters["updateCostCentre"]="costCentreId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCostCentreBudget"]="budgetId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCostCentreGroup"]="groupId= tenantId= api-version= x-api-version: "
+    operation_parameters["createExpenseClaim"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteExpenseClaim"]="expenseClaimId= tenantId= api-version= x-api-version: "
+    operation_parameters["getExpenseClaim"]="expenseClaimId= tenantId= api-version= x-api-version: "
+    operation_parameters["getExpenseClaims"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getExpenseClaimsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateExpenseClaim"]="expenseClaimId= tenantId= api-version= x-api-version: "
+    operation_parameters["createExpenseType"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteExpenseType"]="expenseTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getExpenseType"]="expenseTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getExpenseTypes"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getExpenseTypesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateExpenseType"]="expenseTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
@@ -538,14 +602,14 @@ _()
     operation_parameters["createInvoiceEnumerationRange"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteInvoiceEnumerationRange"]="enumerationRangeId= tenantId= api-version= x-api-version: "
     operation_parameters["getInvoiceEnumerationRange"]="fiscalAuthorityId= enumerationRangeId= tenantId= api-version= x-api-version: "
-    operation_parameters["getInvoiceEnumerationRanges"]="authorityId= fiscalAuthorityId= api-version= x-api-version: "
-    operation_parameters["getInvoiceEnumerationRangesCount"]="fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["getInvoiceEnumerationRanges"]="authorityId= tenantId= fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["getInvoiceEnumerationRangesCount"]="fiscalAuthorityId= tenantId= api-version= x-api-version: "
     operation_parameters["updateInvoiceEnumerationRange"]="enumerationRangeId= tenantId= api-version= x-api-version: "
     operation_parameters["createFiscalIdentificationType"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteFiscalIdentificationType"]="identificationTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["getFiscalIdentificationType"]="fiscalAuthorityId= identificationTypeId= tenantId= api-version= x-api-version: "
-    operation_parameters["getFiscalIdentificationTypes"]="authorityId= api-version= x-api-version: "
-    operation_parameters["getFiscalIdentificationTypesCount"]="authorityId= api-version= x-api-version: "
+    operation_parameters["getFiscalIdentificationTypes"]="authorityId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFiscalIdentificationTypesCount"]="authorityId= tenantId= api-version= x-api-version: "
     operation_parameters["updateFiscalIdentificationType"]="identificationTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["createFiscalPeriod"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteFiscalPeriod"]="fiscalPeriodId= tenantId= api-version= x-api-version: "
@@ -556,13 +620,13 @@ _()
     operation_parameters["createFiscalRegime"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteFiscalRegime"]="regimeId= tenantId= api-version= x-api-version: "
     operation_parameters["getFiscalRegime"]="fiscalAuthorityId= regimeId= tenantId= api-version= x-api-version: "
-    operation_parameters["getFiscalRegimes"]="authorityId= fiscalAuthorityId= api-version= x-api-version: "
-    operation_parameters["getFiscalRegimesCount"]="fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["getFiscalRegimes"]="authorityId= tenantId= fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["getFiscalRegimesCount"]="fiscalAuthorityId= tenantId= api-version= x-api-version: "
     operation_parameters["updateFiscalRegime"]="regimeId= tenantId= api-version= x-api-version: "
     operation_parameters["createFiscalResponsibility"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteFiscalResponsibility"]="fiscalResponsibilityId= tenantId= api-version= x-api-version: "
-    operation_parameters["getFiscalResponsibilities"]="authorityId= fiscalAuthorityId= api-version= x-api-version: "
-    operation_parameters["getFiscalResponsibilitiesCount"]="fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["getFiscalResponsibilities"]="authorityId= tenantId= fiscalAuthorityId= api-version= x-api-version: "
+    operation_parameters["getFiscalResponsibilitiesCount"]="fiscalAuthorityId= tenantId= api-version= x-api-version: "
     operation_parameters["getFiscalResponsibility"]="fiscalAuthorityId= fiscalResponsibilityId= tenantId= api-version= x-api-version: "
     operation_parameters["updateFiscalResponsibility"]="fiscalResponsibilityId= tenantId= api-version= x-api-version: "
     operation_parameters["createFiscalResponsibilityRecord"]="tenantId= api-version= x-api-version: "
@@ -594,6 +658,8 @@ _()
     operation_parameters["getJournalTypesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getJournalTypesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateJournalTypeAsync"]="journalTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["aggregateJournalEntryCreditsAsync"]="journalId= tenantId= currencyId= api-version= x-api-version: "
+    operation_parameters["aggregateJournalEntryDebitsAsync"]="journalId= tenantId= currencyId= api-version= x-api-version: "
     operation_parameters["countJournalsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createJournalAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createJournalEntryAsync"]="journalId= tenantId= api-version= x-api-version: "
@@ -619,16 +685,22 @@ _()
     operation_parameters["updateLedgerAsync"]="ledgerId= tenantId= api-version= x-api-version: "
     operation_parameters["createLoanApplicationAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createLoanAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createLoanTypeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteLoanApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["deleteLoanAsync"]="loanId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteLoanTypeAsync"]="loanTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["getLoanApplicationDetailsAsync"]="applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["getLoanApplicationsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getLoanApplicationsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getLoanDetailsAsync"]="loanId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLoanTypeByIdAsync"]="loanTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getLoanTypesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getLoanTypesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getLoansAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getLoansCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateLoanApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["updateLoanAsync"]="loanId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateLoanTypeAsync"]="loanTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["createReceiptAsync"]="tenantId= "
     operation_parameters["deleteReceiptAsync"]="receiptId= tenantId= "
     operation_parameters["getReceiptDetailsAsync"]="receiptId= tenantId= "
@@ -659,6 +731,12 @@ _()
     operation_parameters["updateShareIssuance"]="issuanceId= tenantId= api-version= x-api-version: "
     operation_parameters["updateShareTransfer"]="transferId= tenantId= api-version= x-api-version: "
     operation_parameters["updateShareTransferReason"]="reasonId= tenantId= api-version= x-api-version: "
+    operation_parameters["createTaxClass"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteTaxClass"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getTaxClass"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getTaxClasses"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTaxClassesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTaxClass"]="id= tenantId= api-version= x-api-version: "
     operation_parameters["createAppliedTaxPolicyRecord"]="taxPolicyId= tenantId= api-version= x-api-version: "
     operation_parameters["createItemTaxPolicyRecord"]="taxPolicyId= tenantId= api-version= x-api-version: "
     operation_parameters["createTaxPolicy"]="tenantId= api-version= x-api-version: "

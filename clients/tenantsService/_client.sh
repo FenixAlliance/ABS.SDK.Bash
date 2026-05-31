@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "createTenantDepartment[Create a new tenant department]" \
+            "apiV2AiServiceCompletionsCompleteGet[]"             "createTenantDepartment[Create a new tenant department]" \
             "deleteTenantDepartment[Delete a tenant department]" \
             "getTenantDepartmentById[Retrieve a single tenant department by its ID]" \
             "getTenantDepartments[Retrieve a list of tenant departments]" \
@@ -451,6 +451,15 @@ case $state in
     ;;
   args)
     case $line[1] in
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createTenantDepartment)
         local -a _op_arguments
         _op_arguments=(

@@ -114,11 +114,22 @@ operation_parameters_minimum_occurrences["getBusinessApplicationsAsync:::x-api-v
 operation_parameters_minimum_occurrences["getBusinessApplicationsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBusinessApplicationsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessApplicationsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPermissionsByApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPermissionsByApplicationAsync:::applicationId"]=1
+operation_parameters_minimum_occurrences["getPermissionsByApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getPermissionsByApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRolesByApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRolesByApplicationAsync:::applicationId"]=1
+operation_parameters_minimum_occurrences["getRolesByApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRolesByApplicationAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateBusinessApplicationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBusinessApplicationAsync:::applicationId"]=1
 operation_parameters_minimum_occurrences["updateBusinessApplicationAsync:::BusinessApplicationUpdateDto"]=1
 operation_parameters_minimum_occurrences["updateBusinessApplicationAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateBusinessApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -359,11 +370,22 @@ operation_parameters_maximum_occurrences["getBusinessApplicationsAsync:::x-api-v
 operation_parameters_maximum_occurrences["getBusinessApplicationsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBusinessApplicationsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessApplicationsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPermissionsByApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPermissionsByApplicationAsync:::applicationId"]=0
+operation_parameters_maximum_occurrences["getPermissionsByApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getPermissionsByApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRolesByApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRolesByApplicationAsync:::applicationId"]=0
+operation_parameters_maximum_occurrences["getRolesByApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRolesByApplicationAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateBusinessApplicationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBusinessApplicationAsync:::applicationId"]=0
 operation_parameters_maximum_occurrences["updateBusinessApplicationAsync:::BusinessApplicationUpdateDto"]=0
 operation_parameters_maximum_occurrences["updateBusinessApplicationAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateBusinessApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -601,11 +623,22 @@ operation_parameters_collection_type["getBusinessApplicationsAsync:::x-api-versi
 operation_parameters_collection_type["getBusinessApplicationsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getBusinessApplicationsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getBusinessApplicationsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPermissionsByApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["getPermissionsByApplicationAsync:::applicationId"]=""
+operation_parameters_collection_type["getPermissionsByApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["getPermissionsByApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRolesByApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["getRolesByApplicationAsync:::applicationId"]=""
+operation_parameters_collection_type["getRolesByApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["getRolesByApplicationAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateBusinessApplicationAsync:::tenantId"]=""
 operation_parameters_collection_type["updateBusinessApplicationAsync:::applicationId"]=""
 operation_parameters_collection_type["updateBusinessApplicationAsync:::BusinessApplicationUpdateDto"]=""
 operation_parameters_collection_type["updateBusinessApplicationAsync:::api-version"]=""
 operation_parameters_collection_type["updateBusinessApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
@@ -1177,7 +1210,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}SecurityService command line client (API version 2.0.0.0)${OFF}
+${BOLD}${WHITE}SecurityService command line client (API version 2.1.2.5401)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1213,11 +1246,19 @@ read -r -d '' ops <<EOF
   ${CYAN}getBusinessApplicationByIdAsync${OFF};Get business application by ID
   ${CYAN}getBusinessApplicationsAsync${OFF};Get all business applications
   ${CYAN}getBusinessApplicationsCountAsync${OFF};Get business applications count
+  ${CYAN}getPermissionsByApplicationAsync${OFF};Get permissions by application
+  ${CYAN}getRolesByApplicationAsync${OFF};Get roles by application
   ${CYAN}updateBusinessApplicationAsync${OFF};Update an existing business application
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -1328,7 +1369,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -1349,7 +1390,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}SecurityService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}${WHITE}SecurityService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1369,7 +1410,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}SecurityService command line client (API version 2.0.0.0)${OFF}"
+    echo -e "${BOLD}SecurityService command line client (API version 2.1.2.5401)${OFF}"
     echo ""
 }
 
@@ -1513,6 +1554,60 @@ print_getBusinessApplicationsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for getPermissionsByApplicationAsync operation
+#
+##############################################################################
+print_getPermissionsByApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPermissionsByApplicationAsync - Get permissions by application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all security permissions granted to a specific business application." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}applicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: applicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRolesByApplicationAsync operation
+#
+##############################################################################
+print_getRolesByApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRolesByApplicationAsync - Get roles by application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all security roles granted to a specific business application." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}applicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: applicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateBusinessApplicationAsync operation
 #
 ##############################################################################
@@ -1539,6 +1634,31 @@ print_updateBusinessApplicationAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3434,6 +3554,78 @@ call_getBusinessApplicationsCountAsync() {
 
 ##############################################################################
 #
+# Call getPermissionsByApplicationAsync operation
+#
+##############################################################################
+call_getPermissionsByApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(applicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/Applications/{applicationId}/Permissions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRolesByApplicationAsync operation
+#
+##############################################################################
+call_getRolesByApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(applicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/Applications/{applicationId}/Roles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call updateBusinessApplicationAsync operation
 #
 ##############################################################################
@@ -3505,6 +3697,42 @@ call_updateBusinessApplicationAsync() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -6575,8 +6803,17 @@ case $key in
     getBusinessApplicationsCountAsync)
     operation="getBusinessApplicationsCountAsync"
     ;;
+    getPermissionsByApplicationAsync)
+    operation="getPermissionsByApplicationAsync"
+    ;;
+    getRolesByApplicationAsync)
+    operation="getRolesByApplicationAsync"
+    ;;
     updateBusinessApplicationAsync)
     operation="updateBusinessApplicationAsync"
+    ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
     ;;
     accountLogoutPost)
     operation="accountLogoutPost"
@@ -6878,8 +7115,17 @@ case $operation in
     getBusinessApplicationsCountAsync)
     call_getBusinessApplicationsCountAsync
     ;;
+    getPermissionsByApplicationAsync)
+    call_getPermissionsByApplicationAsync
+    ;;
+    getRolesByApplicationAsync)
+    call_getRolesByApplicationAsync
+    ;;
     updateBusinessApplicationAsync)
     call_updateBusinessApplicationAsync
+    ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
     ;;
     accountLogoutPost)
     call_accountLogoutPost

@@ -30,7 +30,7 @@ Creates a new fiscal responsibility for a fiscal authority.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
  **fiscalResponsibilityCreateDto** | [**FiscalResponsibilityCreateDto**](FiscalResponsibilityCreateDto.md) |  | [optional]
@@ -68,7 +68,7 @@ Deletes a fiscal responsibility identified by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalResponsibilityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -98,7 +98,7 @@ Retrieves all fiscal responsibilities for the specified fiscal authority.
 ### Example
 
 ```bash
- getFiscalResponsibilities  fiscalAuthorityId=value authorityId=value  api-version=value x-api-version:value
+ getFiscalResponsibilities  tenantId=value  fiscalAuthorityId=value authorityId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -106,6 +106,7 @@ Retrieves all fiscal responsibilities for the specified fiscal authority.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **authorityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
@@ -136,7 +137,7 @@ Returns the total count of fiscal responsibilities for the specified fiscal auth
 ### Example
 
 ```bash
- getFiscalResponsibilitiesCount fiscalAuthorityId=value  api-version=value x-api-version:value
+ getFiscalResponsibilitiesCount  tenantId=value fiscalAuthorityId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -144,6 +145,7 @@ Returns the total count of fiscal responsibilities for the specified fiscal auth
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
@@ -181,7 +183,7 @@ Retrieves a specific fiscal responsibility by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalAuthorityId** | **string** |  | [default to null]
  **fiscalResponsibilityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
@@ -220,7 +222,7 @@ Updates an existing fiscal responsibility identified by its unique identifier.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | [**map**](.md) |  | [default to null]
+ **tenantId** | **string** |  | [default to null]
  **fiscalResponsibilityId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]

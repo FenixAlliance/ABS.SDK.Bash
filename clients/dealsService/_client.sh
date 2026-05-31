@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "createDealUnitFlowAsync[Create a deal unit flow]" \
+            "apiV2AiServiceCompletionsCompleteGet[]"             "createDealUnitFlowAsync[Create a deal unit flow]" \
             "createDealUnitFlowStageAsync[Create a deal unit flow stage]" \
             "deleteDealUnitFlowAsync[Delete a deal unit flow]" \
             "deleteDealUnitFlowStageAsync[Delete a deal unit flow stage]" \
@@ -339,13 +339,7 @@ case $state in
             "registerPost[]" \
             "resendConfirmationEmailPost[]" \
             "resetPasswordPost[]" \
-            "versionGet[]"             "countSalesLiteraturesAsync[Get sales literatures count]" \
-            "createSalesLiteratureAsync[Create a sales literature]" \
-            "deleteSalesLiteratureAsync[Delete a sales literature]" \
-            "getExtendedSalesLiteraturesAsync[Get extended sales literatures]" \
-            "getSalesLiteratureAsync[Get sales literature by ID]" \
-            "getSalesLiteraturesAsync[Get sales literatures]" \
-            "updateSalesLiteratureAsync[Update a sales literature]" \
+            "versionGet[]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -353,6 +347,15 @@ case $state in
     ;;
   args)
     case $line[1] in
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createDealUnitFlowAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -685,58 +688,6 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      countSalesLiteraturesAsync)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      createSalesLiteratureAsync)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      deleteSalesLiteratureAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "salesLiteratureId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getExtendedSalesLiteraturesAsync)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getSalesLiteratureAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "salesLiteratureId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getSalesLiteraturesAsync)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      updateSalesLiteratureAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "salesLiteratureId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
     esac

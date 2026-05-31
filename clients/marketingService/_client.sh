@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "createEmailGroupAsync[Create an email group]" \
+            "apiV2AiServiceCompletionsCompleteGet[]"             "createEmailGroupAsync[Create an email group]" \
             "deleteEmailGroupAsync[Delete an email group]" \
             "getEmailGroupDetailsAsync[Get email group by ID]" \
             "getEmailGroupsCountAsync[Get email groups count]" \
@@ -328,12 +328,22 @@ case $state in
             "registerPost[]" \
             "resendConfirmationEmailPost[]" \
             "resetPasswordPost[]" \
-            "versionGet[]"             "createMarketingCampaignAsync[Create a marketing campaign]" \
+            "versionGet[]"             "createMarketingAreaAsync[Create a marketing area]" \
+            "deleteMarketingAreaAsync[Delete a marketing area]" \
+            "getMarketingAreaByIdAsync[Get marketing area by ID]" \
+            "getMarketingAreasAsync[Get marketing areas]" \
+            "getMarketingAreasCountAsync[Count marketing areas]" \
+            "updateMarketingAreaAsync[Update a marketing area]"             "createMarketingCampaignAsync[Create a marketing campaign]" \
             "deleteMarketingCampaignAsync[Delete a marketing campaign]" \
             "getMarketingCampaignDetailsAsync[Get marketing campaign by ID]" \
             "getMarketingCampaignODataAsync[Get marketing campaigns]" \
             "getMarketingCampaignsCountAsync[Get marketing campaigns count]" \
-            "updateMarketingCampaignAsync[Update a marketing campaign]"             "createMarketingListAsync[Create a marketing list]" \
+            "updateMarketingCampaignAsync[Update a marketing campaign]"             "createMarketingLeadAsync[Create a marketing lead]" \
+            "deleteMarketingLeadAsync[Delete a marketing lead]" \
+            "getMarketingLeadDetailsAsync[Get marketing lead by ID]" \
+            "getMarketingLeadsCountAsync[Get marketing leads count]" \
+            "getMarketingLeadsODataAsync[Get marketing leads]" \
+            "updateMarketingLeadAsync[Update a marketing lead]"             "createMarketingListAsync[Create a marketing list]" \
             "deleteMarketingListAsync[Delete a marketing list]" \
             "getMarketingListDetailsAsync[Get marketing list by ID]" \
             "getMarketingListODataAsync[Get marketing lists]" \
@@ -361,6 +371,15 @@ case $state in
     ;;
   args)
     case $line[1] in
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createEmailGroupAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -641,6 +660,63 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      createMarketingAreaAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteMarketingAreaAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "marketingAreaId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMarketingAreaByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "marketingAreaId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMarketingAreasAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMarketingAreasCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateMarketingAreaAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "marketingAreaId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createMarketingCampaignAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -692,6 +768,63 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "marketingcampaignId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createMarketingLeadAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteMarketingLeadAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "marketingLeadId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMarketingLeadDetailsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "marketingLeadId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMarketingLeadsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMarketingLeadsODataAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateMarketingLeadAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "marketingLeadId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "

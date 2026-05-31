@@ -29,6 +29,7 @@ Name | Type | Description | Notes
 **swaggerSpecs** | [**array[ISwaggerSpec]**](ISwaggerSpec.md) |  | [optional] [default to null]
 **url** | **string** |  | [optional] [default to null]
 **assemblyPaths** | **array[string]** |  | [optional] [default to null]
+**requiredPermissions** | **array[string]** |  | [optional] [readonly] [default to null]
 **markedForDeletion** | **boolean** |  | [optional] [default to null]
 **version** | **string** |  | [optional] [default to null]
 

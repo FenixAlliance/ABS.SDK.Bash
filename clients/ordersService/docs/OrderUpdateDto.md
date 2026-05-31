@@ -3,6 +3,15 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**closed** | **boolean** |  | [optional] [default to null]
+**title** | **string** |  | [optional] [default to null]
+**userId** | **string** |  | [optional] [default to null]
+**priceListId** | **string** |  | [optional] [default to null]
+**description** | **string** |  | [optional] [default to null]
+**individualId** | **string** |  | [optional] [default to null]
+**paymentTermId** | **string** |  | [optional] [default to null]
+**organizationId** | **string** |  | [optional] [default to null]
+**receiverTenantId** | **string** |  | [optional] [default to null]
 **firstName** | **string** |  | [optional] [default to null]
 **lastName** | **string** |  | [optional] [default to null]
 **companyName** | **string** |  | [optional] [default to null]
@@ -16,6 +25,8 @@ Name | Type | Description | Notes
 **billingLocationId** | **string** |  | [optional] [default to null]
 **shippingLocationId** | **string** |  | [optional] [default to null]
 **shippingMethodId** | **string** |  | [optional] [default to null]
+**forexRate** | **float** |  | [optional] [default to null]
+**currencyId** | **string** |  | [optional] [default to null]
 **totalDetail** | **float** |  | [optional] [default to null]
 **totalDetailCurrencyId** | **string** |  | [optional] [default to null]
 **totalProfit** | **float** |  | [optional] [default to null]
@@ -43,22 +54,11 @@ Name | Type | Description | Notes
 **costCalculationMethod** | **string** |  | [optional] [default to null]
 **taxCalculationMethod** | **string** |  | [optional] [default to null]
 **cartId** | **string** |  | [optional] [default to null]
-**userId** | **string** |  | [optional] [default to null]
-**forexRate** | **float** |  | [optional] [default to null]
-**currencyId** | **string** |  | [optional] [default to null]
-**individualId** | **string** |  | [optional] [default to null]
-**organizationId** | **string** |  | [optional] [default to null]
 **totalAmountInUsd** | **float** |  | [optional] [default to null]
 **totalTaxesInUsd** | **float** |  | [optional] [default to null]
-**receiverTenantId** | **string** |  | [optional] [default to null]
-**closed** | **boolean** |  | [optional] [default to null]
-**priceListId** | **string** |  | [optional] [default to null]
-**paymentTermId** | **string** |  | [optional] [default to null]
 **quoteStatus** | **string** |  | [optional] [default to null]
 **effectiveTo** | **string** |  | [optional] [default to null]
 **effectiveFrom** | **string** |  | [optional] [default to null]
-**description** | **string** |  | [optional] [default to null]
-**title** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

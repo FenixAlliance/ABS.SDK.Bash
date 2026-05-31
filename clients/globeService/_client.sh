@@ -297,7 +297,12 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
+            "apiV2AiServiceCompletionsCompleteGet[]"             "countCallingCodesByCountryAsync[Count calling codes for a country]" \
+            "countCitiesByStateAsync[Count cities for a state]" \
             "countCountries[Count countries]" \
+            "countCountryStatesAsync[Count states for a country]" \
+            "countTimezonesByCountryAsync[Count timezones for a country]" \
+            "countTopLevelDomainsByCountryAsync[Count top-level domains for a country]" \
             "getAllCountries[Get all countries]" \
             "getCallingCodesByCountryIdAsync[Get calling codes for a country]" \
             "getCitiesByCountryStateIdAsync[Get cities for a state]" \
@@ -327,7 +332,7 @@ case $state in
             "resetPasswordPost[]" \
             "versionGet[]"             "countLanguagesAsync[Count languages]" \
             "getLanguageByIdAsync[Get language by ID]" \
-            "getLanguagesAsync[Get all languages]"             "countTimezonesAsync[Count timezones]" \
+            "getLanguagesAsync[Get all languages]"             "apiV2GlobalSystemMigratePost[]"             "countTimezonesAsync[Count timezones]" \
             "getTimeZoneByIdAsync[Get timezone by ID]" \
             "getTimeZonesAsync[Get all timezones]" \
 
@@ -337,10 +342,65 @@ case $state in
     ;;
   args)
     case $line[1] in
+      apiV2AiServiceCompletionsCompleteGet)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"conversationId=:[QUERY] "
+"message=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countCallingCodesByCountryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countCitiesByStateAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryStateId=:[PATH] "
+"countryId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       countCountries)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countCountryStatesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countTimezonesByCountryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countTopLevelDomainsByCountryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "countryId=:[PATH] "
+          "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -588,6 +648,14 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getLanguagesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2GlobalSystemMigratePost)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
