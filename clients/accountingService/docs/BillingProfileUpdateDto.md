@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **duns** | **string** |  | [optional] [default to null]
 **isPublicCompany** | **boolean** |  | [optional] [default to null]
 **isFactaCustomer** | **boolean** |  | [optional] [default to null]
+**taxPayerType** | **string** |  | [optional] [default to null]
 **countryId** | **string** |  | [optional] [default to null]
 **stateId** | **string** |  | [optional] [default to null]
 **cityId** | **string** |  | [optional] [default to null]

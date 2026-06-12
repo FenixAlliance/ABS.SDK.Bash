@@ -114,6 +114,11 @@ operation_parameters_minimum_occurrences["getAccountGroups:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getAccountGroupsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAccountGroupsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getAccountGroupsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAccountGroupAsync:::accountGroupId"]=1
+operation_parameters_minimum_occurrences["patchAccountGroupAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountGroupAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountGroupAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateAccountGroup:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateAccountGroup:::accountGroupId"]=1
 operation_parameters_minimum_occurrences["updateAccountGroup:::api-version"]=0
@@ -137,6 +142,11 @@ operation_parameters_minimum_occurrences["getAccountingPeriods:::x-api-version"]
 operation_parameters_minimum_occurrences["getAccountingPeriodsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAccountingPeriodsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getAccountingPeriodsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountingPeriodAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAccountingPeriodAsync:::accountingPeriodId"]=1
+operation_parameters_minimum_occurrences["patchAccountingPeriodAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountingPeriodAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountingPeriodAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateAccountingPeriod:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateAccountingPeriod:::accountingPeriodId"]=1
 operation_parameters_minimum_occurrences["updateAccountingPeriod:::api-version"]=0
@@ -279,6 +289,23 @@ operation_parameters_minimum_occurrences["patchAccountAsync:::accountId"]=1
 operation_parameters_minimum_occurrences["patchAccountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchAccountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchAccountAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAccountEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAccountEntryAsync:::accountId"]=1
+operation_parameters_minimum_occurrences["patchAccountEntryAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["patchAccountEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountEntryAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAccountRelationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAccountRelationAsync:::accountRelationId"]=1
+operation_parameters_minimum_occurrences["patchAccountRelationAsync:::accountId"]=1
+operation_parameters_minimum_occurrences["patchAccountRelationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountRelationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountRelationAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAccountTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAccountTypeAsync:::accountTypeId"]=1
+operation_parameters_minimum_occurrences["patchAccountTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountTypeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["seedChartOfAccountsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["seedChartOfAccountsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["seedChartOfAccountsAsync:::x-api-version"]=0
@@ -398,6 +425,29 @@ operation_parameters_minimum_occurrences["getBanks:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getBanksCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBanksCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getBanksCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBank:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBank:::bankId"]=1
+operation_parameters_minimum_occurrences["patchBank:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBank:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBank:::Operation"]=0
+operation_parameters_minimum_occurrences["patchBankAccount:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBankAccount:::bankId"]=1
+operation_parameters_minimum_occurrences["patchBankAccount:::accountId"]=1
+operation_parameters_minimum_occurrences["patchBankAccount:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBankAccount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBankAccount:::Operation"]=0
+operation_parameters_minimum_occurrences["patchBankGuarantee:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBankGuarantee:::bankId"]=1
+operation_parameters_minimum_occurrences["patchBankGuarantee:::guaranteeId"]=1
+operation_parameters_minimum_occurrences["patchBankGuarantee:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBankGuarantee:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBankGuarantee:::Operation"]=0
+operation_parameters_minimum_occurrences["patchBankTransaction:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBankTransaction:::bankId"]=1
+operation_parameters_minimum_occurrences["patchBankTransaction:::transactionId"]=1
+operation_parameters_minimum_occurrences["patchBankTransaction:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBankTransaction:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBankTransaction:::Operation"]=0
 operation_parameters_minimum_occurrences["updateBank:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBank:::bankId"]=1
 operation_parameters_minimum_occurrences["updateBank:::api-version"]=0
@@ -439,6 +489,12 @@ operation_parameters_minimum_occurrences["getBillableLineTaxesCount:::tenantId"]
 operation_parameters_minimum_occurrences["getBillableLineTaxesCount:::billableLineId"]=1
 operation_parameters_minimum_occurrences["getBillableLineTaxesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getBillableLineTaxesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBillableLineTaxAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBillableLineTaxAsync:::billableLineId"]=1
+operation_parameters_minimum_occurrences["patchBillableLineTaxAsync:::taxId"]=1
+operation_parameters_minimum_occurrences["patchBillableLineTaxAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBillableLineTaxAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBillableLineTaxAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateBillableLineTax:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBillableLineTax:::billableLineId"]=1
 operation_parameters_minimum_occurrences["updateBillableLineTax:::taxId"]=1
@@ -463,6 +519,11 @@ operation_parameters_minimum_occurrences["getBillingProfilesAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getBillingProfilesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBillingProfilesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBillingProfilesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBillingProfileAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBillingProfileAsync:::billingProfileId"]=1
+operation_parameters_minimum_occurrences["patchBillingProfileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBillingProfileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBillingProfileAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateBillingProfileAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBillingProfileAsync:::billingProfileId"]=1
 operation_parameters_minimum_occurrences["updateBillingProfileAsync:::BillingProfileUpdateDto"]=1
@@ -505,6 +566,17 @@ operation_parameters_minimum_occurrences["getBudgetsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getBudgetsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBudgetsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBudgetsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBudgetAccountEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBudgetAccountEntryAsync:::budgetId"]=1
+operation_parameters_minimum_occurrences["patchBudgetAccountEntryAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["patchBudgetAccountEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBudgetAccountEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBudgetAccountEntryAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchBudgetAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBudgetAsync:::budgetId"]=1
+operation_parameters_minimum_occurrences["patchBudgetAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBudgetAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBudgetAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateBudgetAccountEntryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBudgetAccountEntryAsync:::budgetId"]=1
 operation_parameters_minimum_occurrences["updateBudgetAccountEntryAsync:::entryId"]=1
@@ -552,6 +624,16 @@ operation_parameters_minimum_occurrences["getPaymentCommissionsAsync:::x-api-ver
 operation_parameters_minimum_occurrences["getPaymentCommissionsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPaymentCommissionsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPaymentCommissionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCommissionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCommissionAsync:::commissionId"]=1
+operation_parameters_minimum_occurrences["patchCommissionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCommissionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCommissionAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchPaymentCommissionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPaymentCommissionAsync:::paymentCommissionId"]=1
+operation_parameters_minimum_occurrences["patchPaymentCommissionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchPaymentCommissionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchPaymentCommissionAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCommissionAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCommissionAsync:::commissionId"]=1
 operation_parameters_minimum_occurrences["updateCommissionAsync:::CommissionUpdateDto"]=1
@@ -616,6 +698,21 @@ operation_parameters_minimum_occurrences["getCostCentres:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getCostCentresCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCostCentresCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getCostCentresCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCostCentre:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCostCentre:::costCentreId"]=1
+operation_parameters_minimum_occurrences["patchCostCentre:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCostCentre:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCostCentre:::Operation"]=0
+operation_parameters_minimum_occurrences["patchCostCentreBudget:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCostCentreBudget:::budgetId"]=1
+operation_parameters_minimum_occurrences["patchCostCentreBudget:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCostCentreBudget:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCostCentreBudget:::Operation"]=0
+operation_parameters_minimum_occurrences["patchCostCentreGroup:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCostCentreGroup:::groupId"]=1
+operation_parameters_minimum_occurrences["patchCostCentreGroup:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCostCentreGroup:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCostCentreGroup:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCostCentre:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCostCentre:::costCentreId"]=1
 operation_parameters_minimum_occurrences["updateCostCentre:::CostCentreUpdateDto"]=1
@@ -649,6 +746,11 @@ operation_parameters_minimum_occurrences["getExpenseClaims:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getExpenseClaimsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getExpenseClaimsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getExpenseClaimsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchExpenseClaim:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchExpenseClaim:::expenseClaimId"]=1
+operation_parameters_minimum_occurrences["patchExpenseClaim:::api-version"]=0
+operation_parameters_minimum_occurrences["patchExpenseClaim:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchExpenseClaim:::Operation"]=0
 operation_parameters_minimum_occurrences["updateExpenseClaim:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateExpenseClaim:::expenseClaimId"]=1
 operation_parameters_minimum_occurrences["updateExpenseClaim:::ExpenseClaimUpdateDto"]=1
@@ -672,6 +774,11 @@ operation_parameters_minimum_occurrences["getExpenseTypes:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getExpenseTypesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getExpenseTypesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getExpenseTypesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchExpenseType:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchExpenseType:::expenseTypeId"]=1
+operation_parameters_minimum_occurrences["patchExpenseType:::api-version"]=0
+operation_parameters_minimum_occurrences["patchExpenseType:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchExpenseType:::Operation"]=0
 operation_parameters_minimum_occurrences["updateExpenseType:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateExpenseType:::expenseTypeId"]=1
 operation_parameters_minimum_occurrences["updateExpenseType:::ExpenseTypeUpdateDto"]=1
@@ -712,6 +819,11 @@ operation_parameters_minimum_occurrences["getFinancialBooksAsync:::x-api-version
 operation_parameters_minimum_occurrences["getFinancialBooksCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getFinancialBooksCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFinancialBooksCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFinancialBookAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchFinancialBookAsync:::financialBookId"]=1
+operation_parameters_minimum_occurrences["patchFinancialBookAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchFinancialBookAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFinancialBookAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateFinancialBookAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateFinancialBookAsync:::financialBookId"]=1
 operation_parameters_minimum_occurrences["updateFinancialBookAsync:::FinancialBookUpdateDto"]=1
@@ -735,6 +847,11 @@ operation_parameters_minimum_occurrences["getFiscalAuthority:::tenantId"]=1
 operation_parameters_minimum_occurrences["getFiscalAuthority:::authorityId"]=1
 operation_parameters_minimum_occurrences["getFiscalAuthority:::api-version"]=0
 operation_parameters_minimum_occurrences["getFiscalAuthority:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalAuthorityAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchFiscalAuthorityAsync:::authorityId"]=1
+operation_parameters_minimum_occurrences["patchFiscalAuthorityAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalAuthorityAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalAuthorityAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateFiscalAuthority:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateFiscalAuthority:::authorityId"]=1
 operation_parameters_minimum_occurrences["updateFiscalAuthority:::api-version"]=0
@@ -762,6 +879,11 @@ operation_parameters_minimum_occurrences["getFiscalYearsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getFiscalYearsCount:::fiscalAuthorityId"]=1
 operation_parameters_minimum_occurrences["getFiscalYearsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getFiscalYearsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalAuthorityYearAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchFiscalAuthorityYearAsync:::fiscalYearId"]=1
+operation_parameters_minimum_occurrences["patchFiscalAuthorityYearAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalAuthorityYearAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalAuthorityYearAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateFiscalYear:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateFiscalYear:::fiscalYearId"]=1
 operation_parameters_minimum_occurrences["updateFiscalYear:::api-version"]=0
@@ -789,6 +911,11 @@ operation_parameters_minimum_occurrences["getInvoiceEnumerationRangesCount:::ten
 operation_parameters_minimum_occurrences["getInvoiceEnumerationRangesCount:::fiscalAuthorityId"]=1
 operation_parameters_minimum_occurrences["getInvoiceEnumerationRangesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getInvoiceEnumerationRangesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalEnumerationRangeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchFiscalEnumerationRangeAsync:::enumerationRangeId"]=1
+operation_parameters_minimum_occurrences["patchFiscalEnumerationRangeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalEnumerationRangeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalEnumerationRangeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateInvoiceEnumerationRange:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateInvoiceEnumerationRange:::enumerationRangeId"]=1
 operation_parameters_minimum_occurrences["updateInvoiceEnumerationRange:::api-version"]=0
@@ -815,6 +942,11 @@ operation_parameters_minimum_occurrences["getFiscalIdentificationTypesCount:::te
 operation_parameters_minimum_occurrences["getFiscalIdentificationTypesCount:::authorityId"]=1
 operation_parameters_minimum_occurrences["getFiscalIdentificationTypesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getFiscalIdentificationTypesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalIdentificationTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchFiscalIdentificationTypeAsync:::identificationTypeId"]=1
+operation_parameters_minimum_occurrences["patchFiscalIdentificationTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalIdentificationTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalIdentificationTypeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateFiscalIdentificationType:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateFiscalIdentificationType:::identificationTypeId"]=1
 operation_parameters_minimum_occurrences["updateFiscalIdentificationType:::api-version"]=0
@@ -845,6 +977,11 @@ operation_parameters_minimum_occurrences["getFiscalPeriodsCount:::fiscalAuthorit
 operation_parameters_minimum_occurrences["getFiscalPeriodsCount:::fiscalYearId"]=1
 operation_parameters_minimum_occurrences["getFiscalPeriodsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getFiscalPeriodsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalPeriodAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchFiscalPeriodAsync:::fiscalPeriodId"]=1
+operation_parameters_minimum_occurrences["patchFiscalPeriodAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalPeriodAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalPeriodAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateFiscalPeriod:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateFiscalPeriod:::fiscalPeriodId"]=1
 operation_parameters_minimum_occurrences["updateFiscalPeriod:::api-version"]=0
@@ -872,6 +1009,11 @@ operation_parameters_minimum_occurrences["getFiscalRegimesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getFiscalRegimesCount:::fiscalAuthorityId"]=1
 operation_parameters_minimum_occurrences["getFiscalRegimesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getFiscalRegimesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalRegimeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchFiscalRegimeAsync:::regimeId"]=1
+operation_parameters_minimum_occurrences["patchFiscalRegimeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalRegimeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalRegimeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateFiscalRegime:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateFiscalRegime:::regimeId"]=1
 operation_parameters_minimum_occurrences["updateFiscalRegime:::api-version"]=0
@@ -899,6 +1041,11 @@ operation_parameters_minimum_occurrences["getFiscalResponsibility:::fiscalAuthor
 operation_parameters_minimum_occurrences["getFiscalResponsibility:::fiscalResponsibilityId"]=1
 operation_parameters_minimum_occurrences["getFiscalResponsibility:::api-version"]=0
 operation_parameters_minimum_occurrences["getFiscalResponsibility:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalResponsibilityAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchFiscalResponsibilityAsync:::fiscalResponsibilityId"]=1
+operation_parameters_minimum_occurrences["patchFiscalResponsibilityAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalResponsibilityAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalResponsibilityAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateFiscalResponsibility:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateFiscalResponsibility:::fiscalResponsibilityId"]=1
 operation_parameters_minimum_occurrences["updateFiscalResponsibility:::api-version"]=0
@@ -928,6 +1075,11 @@ operation_parameters_minimum_occurrences["getFiscalResponsibilityRecordsCount:::
 operation_parameters_minimum_occurrences["getFiscalResponsibilityRecordsCount:::fiscalResponsibilityId"]=1
 operation_parameters_minimum_occurrences["getFiscalResponsibilityRecordsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getFiscalResponsibilityRecordsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalResponsibilityRecordAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchFiscalResponsibilityRecordAsync:::fiscalResponsibilityRecordId"]=1
+operation_parameters_minimum_occurrences["patchFiscalResponsibilityRecordAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalResponsibilityRecordAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalResponsibilityRecordAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateFiscalResponsibilityRecord:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateFiscalResponsibilityRecord:::fiscalResponsibilityRecordId"]=1
 operation_parameters_minimum_occurrences["updateFiscalResponsibilityRecord:::api-version"]=0
@@ -951,6 +1103,11 @@ operation_parameters_minimum_occurrences["getFiscalYearsAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getFiscalYearsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getFiscalYearsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFiscalYearsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalYearAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchFiscalYearAsync:::fiscalYearId"]=1
+operation_parameters_minimum_occurrences["patchFiscalYearAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalYearAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFiscalYearAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateFiscalYearAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateFiscalYearAsync:::fiscalYearId"]=1
 operation_parameters_minimum_occurrences["updateFiscalYearAsync:::api-version"]=0
@@ -974,6 +1131,11 @@ operation_parameters_minimum_occurrences["getGrantsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getGrantsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getGrantsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getGrantsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchGrantAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchGrantAsync:::grantId"]=1
+operation_parameters_minimum_occurrences["patchGrantAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchGrantAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchGrantAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateGrantAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateGrantAsync:::grantId"]=1
 operation_parameters_minimum_occurrences["updateGrantAsync:::api-version"]=0
@@ -994,6 +1156,11 @@ operation_parameters_minimum_occurrences["getInvoiceEnumerationRangeDetailsAsync
 operation_parameters_minimum_occurrences["getInvoiceEnumerationRangesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceEnumerationRangesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getInvoiceEnumerationRangesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchInvoiceEnumerationRangeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceEnumerationRangeAsync:::rangeId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceEnumerationRangeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchInvoiceEnumerationRangeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchInvoiceEnumerationRangeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateInvoiceEnumerationRangeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateInvoiceEnumerationRangeAsync:::rangeId"]=1
 operation_parameters_minimum_occurrences["updateInvoiceEnumerationRangeAsync:::api-version"]=0
@@ -1017,6 +1184,11 @@ operation_parameters_minimum_occurrences["getJournalTypesAsync:::x-api-version"]
 operation_parameters_minimum_occurrences["getJournalTypesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getJournalTypesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getJournalTypesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJournalTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchJournalTypeAsync:::journalTypeId"]=1
+operation_parameters_minimum_occurrences["patchJournalTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchJournalTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJournalTypeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateJournalTypeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateJournalTypeAsync:::journalTypeId"]=1
 operation_parameters_minimum_occurrences["updateJournalTypeAsync:::api-version"]=0
@@ -1068,6 +1240,17 @@ operation_parameters_minimum_occurrences["getJournalEntriesCountAsync:::x-api-ve
 operation_parameters_minimum_occurrences["getJournalsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getJournalsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getJournalsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJournalAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchJournalAsync:::journalId"]=1
+operation_parameters_minimum_occurrences["patchJournalAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchJournalAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJournalAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchJournalEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchJournalEntryAsync:::journalId"]=1
+operation_parameters_minimum_occurrences["patchJournalEntryAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["patchJournalEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchJournalEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJournalEntryAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateJournalAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateJournalAsync:::journalId"]=1
 operation_parameters_minimum_occurrences["updateJournalAsync:::api-version"]=0
@@ -1097,6 +1280,11 @@ operation_parameters_minimum_occurrences["getLedgerTypesAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getLedgerTypesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLedgerTypesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLedgerTypesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchLedgerTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchLedgerTypeAsync:::ledgerTypeId"]=1
+operation_parameters_minimum_occurrences["patchLedgerTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchLedgerTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchLedgerTypeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateLedgerTypeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateLedgerTypeAsync:::ledgerTypeId"]=1
 operation_parameters_minimum_occurrences["updateLedgerTypeAsync:::api-version"]=0
@@ -1120,6 +1308,11 @@ operation_parameters_minimum_occurrences["getLedgersAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getLedgersCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLedgersCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLedgersCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchLedgerAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchLedgerAsync:::ledgerId"]=1
+operation_parameters_minimum_occurrences["patchLedgerAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchLedgerAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchLedgerAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateLedgerAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateLedgerAsync:::ledgerId"]=1
 operation_parameters_minimum_occurrences["updateLedgerAsync:::api-version"]=0
@@ -1179,6 +1372,21 @@ operation_parameters_minimum_occurrences["getLoansAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getLoansCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLoansCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLoansCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchLoanApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchLoanApplicationAsync:::applicationId"]=1
+operation_parameters_minimum_occurrences["patchLoanApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchLoanApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchLoanApplicationAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchLoanAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchLoanAsync:::loanId"]=1
+operation_parameters_minimum_occurrences["patchLoanAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchLoanAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchLoanAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchLoanTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchLoanTypeAsync:::loanTypeId"]=1
+operation_parameters_minimum_occurrences["patchLoanTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchLoanTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchLoanTypeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateLoanApplicationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateLoanApplicationAsync:::applicationId"]=1
 operation_parameters_minimum_occurrences["updateLoanApplicationAsync:::body"]=1
@@ -1202,6 +1410,9 @@ operation_parameters_minimum_occurrences["getReceiptDetailsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getReceiptDetailsAsync:::receiptId"]=1
 operation_parameters_minimum_occurrences["getReceiptsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getReceiptsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchReceiptAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchReceiptAsync:::receiptId"]=1
+operation_parameters_minimum_occurrences["patchReceiptAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateReceiptAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateReceiptAsync:::receiptId"]=1
 operation_parameters_minimum_occurrences["updateReceiptAsync:::ReceiptUpdateDto"]=1
@@ -1277,6 +1488,26 @@ operation_parameters_minimum_occurrences["getShareTransfers:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getShareTransfersCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getShareTransfersCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getShareTransfersCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShareClass:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchShareClass:::shareClassId"]=1
+operation_parameters_minimum_occurrences["patchShareClass:::api-version"]=0
+operation_parameters_minimum_occurrences["patchShareClass:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShareClass:::Operation"]=0
+operation_parameters_minimum_occurrences["patchShareIssuance:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchShareIssuance:::issuanceId"]=1
+operation_parameters_minimum_occurrences["patchShareIssuance:::api-version"]=0
+operation_parameters_minimum_occurrences["patchShareIssuance:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShareIssuance:::Operation"]=0
+operation_parameters_minimum_occurrences["patchShareTransfer:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchShareTransfer:::transferId"]=1
+operation_parameters_minimum_occurrences["patchShareTransfer:::api-version"]=0
+operation_parameters_minimum_occurrences["patchShareTransfer:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShareTransfer:::Operation"]=0
+operation_parameters_minimum_occurrences["patchShareTransferReason:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchShareTransferReason:::reasonId"]=1
+operation_parameters_minimum_occurrences["patchShareTransferReason:::api-version"]=0
+operation_parameters_minimum_occurrences["patchShareTransferReason:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShareTransferReason:::Operation"]=0
 operation_parameters_minimum_occurrences["updateShareClass:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateShareClass:::shareClassId"]=1
 operation_parameters_minimum_occurrences["updateShareClass:::api-version"]=0
@@ -1315,6 +1546,11 @@ operation_parameters_minimum_occurrences["getTaxClasses:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTaxClassesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTaxClassesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTaxClassesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTaxClass:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTaxClass:::id"]=1
+operation_parameters_minimum_occurrences["patchTaxClass:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTaxClass:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTaxClass:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTaxClass:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTaxClass:::id"]=1
 operation_parameters_minimum_occurrences["updateTaxClass:::api-version"]=0
@@ -1384,6 +1620,23 @@ operation_parameters_minimum_occurrences["getTaxPolicy:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTaxPolicy:::id"]=1
 operation_parameters_minimum_occurrences["getTaxPolicy:::api-version"]=0
 operation_parameters_minimum_occurrences["getTaxPolicy:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchAppliedTaxPolicyRecord:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAppliedTaxPolicyRecord:::taxPolicyId"]=1
+operation_parameters_minimum_occurrences["patchAppliedTaxPolicyRecord:::appliedTaxPolicyRecordId"]=1
+operation_parameters_minimum_occurrences["patchAppliedTaxPolicyRecord:::api-version"]=0
+operation_parameters_minimum_occurrences["patchAppliedTaxPolicyRecord:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchAppliedTaxPolicyRecord:::Operation"]=0
+operation_parameters_minimum_occurrences["patchItemTaxPolicyRecord:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemTaxPolicyRecord:::taxPolicyId"]=1
+operation_parameters_minimum_occurrences["patchItemTaxPolicyRecord:::itemTaxPolicyRecordId"]=1
+operation_parameters_minimum_occurrences["patchItemTaxPolicyRecord:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemTaxPolicyRecord:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemTaxPolicyRecord:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTaxPolicy:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTaxPolicy:::id"]=1
+operation_parameters_minimum_occurrences["patchTaxPolicy:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTaxPolicy:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTaxPolicy:::Operation"]=0
 operation_parameters_minimum_occurrences["updateAppliedTaxPolicyRecord:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateAppliedTaxPolicyRecord:::taxPolicyId"]=1
 operation_parameters_minimum_occurrences["updateAppliedTaxPolicyRecord:::appliedTaxPolicyRecordId"]=1
@@ -1419,6 +1672,11 @@ operation_parameters_minimum_occurrences["getTaxRates:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTaxRatesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTaxRatesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTaxRatesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTaxRate:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTaxRate:::id"]=1
+operation_parameters_minimum_occurrences["patchTaxRate:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTaxRate:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTaxRate:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTaxRate:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTaxRate:::id"]=1
 operation_parameters_minimum_occurrences["updateTaxRate:::api-version"]=0
@@ -1460,6 +1718,16 @@ operation_parameters_minimum_occurrences["getTransactions:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTransactionsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTransactionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTransactionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTransaction:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTransaction:::transactionId"]=1
+operation_parameters_minimum_occurrences["patchTransaction:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTransaction:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTransaction:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTransactionCategory:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTransactionCategory:::categoryId"]=1
+operation_parameters_minimum_occurrences["patchTransactionCategory:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTransactionCategory:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTransactionCategory:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTransaction:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTransaction:::transactionId"]=1
 operation_parameters_minimum_occurrences["updateTransaction:::api-version"]=0
@@ -1496,6 +1764,11 @@ operation_parameters_maximum_occurrences["getAccountGroups:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getAccountGroupsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAccountGroupsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getAccountGroupsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAccountGroupAsync:::accountGroupId"]=0
+operation_parameters_maximum_occurrences["patchAccountGroupAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountGroupAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountGroupAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateAccountGroup:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateAccountGroup:::accountGroupId"]=0
 operation_parameters_maximum_occurrences["updateAccountGroup:::api-version"]=0
@@ -1519,6 +1792,11 @@ operation_parameters_maximum_occurrences["getAccountingPeriods:::x-api-version"]
 operation_parameters_maximum_occurrences["getAccountingPeriodsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAccountingPeriodsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getAccountingPeriodsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountingPeriodAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAccountingPeriodAsync:::accountingPeriodId"]=0
+operation_parameters_maximum_occurrences["patchAccountingPeriodAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountingPeriodAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountingPeriodAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateAccountingPeriod:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateAccountingPeriod:::accountingPeriodId"]=0
 operation_parameters_maximum_occurrences["updateAccountingPeriod:::api-version"]=0
@@ -1661,6 +1939,23 @@ operation_parameters_maximum_occurrences["patchAccountAsync:::accountId"]=0
 operation_parameters_maximum_occurrences["patchAccountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchAccountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchAccountAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAccountEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAccountEntryAsync:::accountId"]=0
+operation_parameters_maximum_occurrences["patchAccountEntryAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["patchAccountEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountEntryAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAccountRelationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAccountRelationAsync:::accountRelationId"]=0
+operation_parameters_maximum_occurrences["patchAccountRelationAsync:::accountId"]=0
+operation_parameters_maximum_occurrences["patchAccountRelationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountRelationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountRelationAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAccountTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAccountTypeAsync:::accountTypeId"]=0
+operation_parameters_maximum_occurrences["patchAccountTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountTypeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["seedChartOfAccountsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["seedChartOfAccountsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["seedChartOfAccountsAsync:::x-api-version"]=0
@@ -1780,6 +2075,29 @@ operation_parameters_maximum_occurrences["getBanks:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getBanksCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBanksCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getBanksCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBank:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBank:::bankId"]=0
+operation_parameters_maximum_occurrences["patchBank:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBank:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBank:::Operation"]=0
+operation_parameters_maximum_occurrences["patchBankAccount:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBankAccount:::bankId"]=0
+operation_parameters_maximum_occurrences["patchBankAccount:::accountId"]=0
+operation_parameters_maximum_occurrences["patchBankAccount:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBankAccount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBankAccount:::Operation"]=0
+operation_parameters_maximum_occurrences["patchBankGuarantee:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBankGuarantee:::bankId"]=0
+operation_parameters_maximum_occurrences["patchBankGuarantee:::guaranteeId"]=0
+operation_parameters_maximum_occurrences["patchBankGuarantee:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBankGuarantee:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBankGuarantee:::Operation"]=0
+operation_parameters_maximum_occurrences["patchBankTransaction:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBankTransaction:::bankId"]=0
+operation_parameters_maximum_occurrences["patchBankTransaction:::transactionId"]=0
+operation_parameters_maximum_occurrences["patchBankTransaction:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBankTransaction:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBankTransaction:::Operation"]=0
 operation_parameters_maximum_occurrences["updateBank:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBank:::bankId"]=0
 operation_parameters_maximum_occurrences["updateBank:::api-version"]=0
@@ -1821,6 +2139,12 @@ operation_parameters_maximum_occurrences["getBillableLineTaxesCount:::tenantId"]
 operation_parameters_maximum_occurrences["getBillableLineTaxesCount:::billableLineId"]=0
 operation_parameters_maximum_occurrences["getBillableLineTaxesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getBillableLineTaxesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBillableLineTaxAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBillableLineTaxAsync:::billableLineId"]=0
+operation_parameters_maximum_occurrences["patchBillableLineTaxAsync:::taxId"]=0
+operation_parameters_maximum_occurrences["patchBillableLineTaxAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBillableLineTaxAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBillableLineTaxAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateBillableLineTax:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBillableLineTax:::billableLineId"]=0
 operation_parameters_maximum_occurrences["updateBillableLineTax:::taxId"]=0
@@ -1845,6 +2169,11 @@ operation_parameters_maximum_occurrences["getBillingProfilesAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getBillingProfilesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBillingProfilesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBillingProfilesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBillingProfileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBillingProfileAsync:::billingProfileId"]=0
+operation_parameters_maximum_occurrences["patchBillingProfileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBillingProfileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBillingProfileAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateBillingProfileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBillingProfileAsync:::billingProfileId"]=0
 operation_parameters_maximum_occurrences["updateBillingProfileAsync:::BillingProfileUpdateDto"]=0
@@ -1887,6 +2216,17 @@ operation_parameters_maximum_occurrences["getBudgetsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getBudgetsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBudgetsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBudgetsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBudgetAccountEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBudgetAccountEntryAsync:::budgetId"]=0
+operation_parameters_maximum_occurrences["patchBudgetAccountEntryAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["patchBudgetAccountEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBudgetAccountEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBudgetAccountEntryAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchBudgetAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBudgetAsync:::budgetId"]=0
+operation_parameters_maximum_occurrences["patchBudgetAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBudgetAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBudgetAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateBudgetAccountEntryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBudgetAccountEntryAsync:::budgetId"]=0
 operation_parameters_maximum_occurrences["updateBudgetAccountEntryAsync:::entryId"]=0
@@ -1934,6 +2274,16 @@ operation_parameters_maximum_occurrences["getPaymentCommissionsAsync:::x-api-ver
 operation_parameters_maximum_occurrences["getPaymentCommissionsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPaymentCommissionsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPaymentCommissionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCommissionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCommissionAsync:::commissionId"]=0
+operation_parameters_maximum_occurrences["patchCommissionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCommissionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCommissionAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchPaymentCommissionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPaymentCommissionAsync:::paymentCommissionId"]=0
+operation_parameters_maximum_occurrences["patchPaymentCommissionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchPaymentCommissionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchPaymentCommissionAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCommissionAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCommissionAsync:::commissionId"]=0
 operation_parameters_maximum_occurrences["updateCommissionAsync:::CommissionUpdateDto"]=0
@@ -1998,6 +2348,21 @@ operation_parameters_maximum_occurrences["getCostCentres:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getCostCentresCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCostCentresCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getCostCentresCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCostCentre:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCostCentre:::costCentreId"]=0
+operation_parameters_maximum_occurrences["patchCostCentre:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCostCentre:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCostCentre:::Operation"]=0
+operation_parameters_maximum_occurrences["patchCostCentreBudget:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCostCentreBudget:::budgetId"]=0
+operation_parameters_maximum_occurrences["patchCostCentreBudget:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCostCentreBudget:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCostCentreBudget:::Operation"]=0
+operation_parameters_maximum_occurrences["patchCostCentreGroup:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCostCentreGroup:::groupId"]=0
+operation_parameters_maximum_occurrences["patchCostCentreGroup:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCostCentreGroup:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCostCentreGroup:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCostCentre:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCostCentre:::costCentreId"]=0
 operation_parameters_maximum_occurrences["updateCostCentre:::CostCentreUpdateDto"]=0
@@ -2031,6 +2396,11 @@ operation_parameters_maximum_occurrences["getExpenseClaims:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getExpenseClaimsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getExpenseClaimsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getExpenseClaimsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchExpenseClaim:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchExpenseClaim:::expenseClaimId"]=0
+operation_parameters_maximum_occurrences["patchExpenseClaim:::api-version"]=0
+operation_parameters_maximum_occurrences["patchExpenseClaim:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchExpenseClaim:::Operation"]=0
 operation_parameters_maximum_occurrences["updateExpenseClaim:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateExpenseClaim:::expenseClaimId"]=0
 operation_parameters_maximum_occurrences["updateExpenseClaim:::ExpenseClaimUpdateDto"]=0
@@ -2054,6 +2424,11 @@ operation_parameters_maximum_occurrences["getExpenseTypes:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getExpenseTypesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getExpenseTypesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getExpenseTypesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchExpenseType:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchExpenseType:::expenseTypeId"]=0
+operation_parameters_maximum_occurrences["patchExpenseType:::api-version"]=0
+operation_parameters_maximum_occurrences["patchExpenseType:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchExpenseType:::Operation"]=0
 operation_parameters_maximum_occurrences["updateExpenseType:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateExpenseType:::expenseTypeId"]=0
 operation_parameters_maximum_occurrences["updateExpenseType:::ExpenseTypeUpdateDto"]=0
@@ -2094,6 +2469,11 @@ operation_parameters_maximum_occurrences["getFinancialBooksAsync:::x-api-version
 operation_parameters_maximum_occurrences["getFinancialBooksCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getFinancialBooksCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFinancialBooksCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFinancialBookAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchFinancialBookAsync:::financialBookId"]=0
+operation_parameters_maximum_occurrences["patchFinancialBookAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchFinancialBookAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFinancialBookAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateFinancialBookAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateFinancialBookAsync:::financialBookId"]=0
 operation_parameters_maximum_occurrences["updateFinancialBookAsync:::FinancialBookUpdateDto"]=0
@@ -2117,6 +2497,11 @@ operation_parameters_maximum_occurrences["getFiscalAuthority:::tenantId"]=0
 operation_parameters_maximum_occurrences["getFiscalAuthority:::authorityId"]=0
 operation_parameters_maximum_occurrences["getFiscalAuthority:::api-version"]=0
 operation_parameters_maximum_occurrences["getFiscalAuthority:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalAuthorityAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchFiscalAuthorityAsync:::authorityId"]=0
+operation_parameters_maximum_occurrences["patchFiscalAuthorityAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalAuthorityAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalAuthorityAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateFiscalAuthority:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateFiscalAuthority:::authorityId"]=0
 operation_parameters_maximum_occurrences["updateFiscalAuthority:::api-version"]=0
@@ -2144,6 +2529,11 @@ operation_parameters_maximum_occurrences["getFiscalYearsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getFiscalYearsCount:::fiscalAuthorityId"]=0
 operation_parameters_maximum_occurrences["getFiscalYearsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getFiscalYearsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalAuthorityYearAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchFiscalAuthorityYearAsync:::fiscalYearId"]=0
+operation_parameters_maximum_occurrences["patchFiscalAuthorityYearAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalAuthorityYearAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalAuthorityYearAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateFiscalYear:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateFiscalYear:::fiscalYearId"]=0
 operation_parameters_maximum_occurrences["updateFiscalYear:::api-version"]=0
@@ -2171,6 +2561,11 @@ operation_parameters_maximum_occurrences["getInvoiceEnumerationRangesCount:::ten
 operation_parameters_maximum_occurrences["getInvoiceEnumerationRangesCount:::fiscalAuthorityId"]=0
 operation_parameters_maximum_occurrences["getInvoiceEnumerationRangesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getInvoiceEnumerationRangesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalEnumerationRangeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchFiscalEnumerationRangeAsync:::enumerationRangeId"]=0
+operation_parameters_maximum_occurrences["patchFiscalEnumerationRangeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalEnumerationRangeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalEnumerationRangeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateInvoiceEnumerationRange:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateInvoiceEnumerationRange:::enumerationRangeId"]=0
 operation_parameters_maximum_occurrences["updateInvoiceEnumerationRange:::api-version"]=0
@@ -2197,6 +2592,11 @@ operation_parameters_maximum_occurrences["getFiscalIdentificationTypesCount:::te
 operation_parameters_maximum_occurrences["getFiscalIdentificationTypesCount:::authorityId"]=0
 operation_parameters_maximum_occurrences["getFiscalIdentificationTypesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getFiscalIdentificationTypesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalIdentificationTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchFiscalIdentificationTypeAsync:::identificationTypeId"]=0
+operation_parameters_maximum_occurrences["patchFiscalIdentificationTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalIdentificationTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalIdentificationTypeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateFiscalIdentificationType:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateFiscalIdentificationType:::identificationTypeId"]=0
 operation_parameters_maximum_occurrences["updateFiscalIdentificationType:::api-version"]=0
@@ -2227,6 +2627,11 @@ operation_parameters_maximum_occurrences["getFiscalPeriodsCount:::fiscalAuthorit
 operation_parameters_maximum_occurrences["getFiscalPeriodsCount:::fiscalYearId"]=0
 operation_parameters_maximum_occurrences["getFiscalPeriodsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getFiscalPeriodsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalPeriodAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchFiscalPeriodAsync:::fiscalPeriodId"]=0
+operation_parameters_maximum_occurrences["patchFiscalPeriodAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalPeriodAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalPeriodAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateFiscalPeriod:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateFiscalPeriod:::fiscalPeriodId"]=0
 operation_parameters_maximum_occurrences["updateFiscalPeriod:::api-version"]=0
@@ -2254,6 +2659,11 @@ operation_parameters_maximum_occurrences["getFiscalRegimesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getFiscalRegimesCount:::fiscalAuthorityId"]=0
 operation_parameters_maximum_occurrences["getFiscalRegimesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getFiscalRegimesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalRegimeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchFiscalRegimeAsync:::regimeId"]=0
+operation_parameters_maximum_occurrences["patchFiscalRegimeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalRegimeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalRegimeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateFiscalRegime:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateFiscalRegime:::regimeId"]=0
 operation_parameters_maximum_occurrences["updateFiscalRegime:::api-version"]=0
@@ -2281,6 +2691,11 @@ operation_parameters_maximum_occurrences["getFiscalResponsibility:::fiscalAuthor
 operation_parameters_maximum_occurrences["getFiscalResponsibility:::fiscalResponsibilityId"]=0
 operation_parameters_maximum_occurrences["getFiscalResponsibility:::api-version"]=0
 operation_parameters_maximum_occurrences["getFiscalResponsibility:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalResponsibilityAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchFiscalResponsibilityAsync:::fiscalResponsibilityId"]=0
+operation_parameters_maximum_occurrences["patchFiscalResponsibilityAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalResponsibilityAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalResponsibilityAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateFiscalResponsibility:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateFiscalResponsibility:::fiscalResponsibilityId"]=0
 operation_parameters_maximum_occurrences["updateFiscalResponsibility:::api-version"]=0
@@ -2310,6 +2725,11 @@ operation_parameters_maximum_occurrences["getFiscalResponsibilityRecordsCount:::
 operation_parameters_maximum_occurrences["getFiscalResponsibilityRecordsCount:::fiscalResponsibilityId"]=0
 operation_parameters_maximum_occurrences["getFiscalResponsibilityRecordsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getFiscalResponsibilityRecordsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalResponsibilityRecordAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchFiscalResponsibilityRecordAsync:::fiscalResponsibilityRecordId"]=0
+operation_parameters_maximum_occurrences["patchFiscalResponsibilityRecordAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalResponsibilityRecordAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalResponsibilityRecordAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateFiscalResponsibilityRecord:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateFiscalResponsibilityRecord:::fiscalResponsibilityRecordId"]=0
 operation_parameters_maximum_occurrences["updateFiscalResponsibilityRecord:::api-version"]=0
@@ -2333,6 +2753,11 @@ operation_parameters_maximum_occurrences["getFiscalYearsAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getFiscalYearsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getFiscalYearsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFiscalYearsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalYearAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchFiscalYearAsync:::fiscalYearId"]=0
+operation_parameters_maximum_occurrences["patchFiscalYearAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalYearAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFiscalYearAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateFiscalYearAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateFiscalYearAsync:::fiscalYearId"]=0
 operation_parameters_maximum_occurrences["updateFiscalYearAsync:::api-version"]=0
@@ -2356,6 +2781,11 @@ operation_parameters_maximum_occurrences["getGrantsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getGrantsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getGrantsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getGrantsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchGrantAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchGrantAsync:::grantId"]=0
+operation_parameters_maximum_occurrences["patchGrantAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchGrantAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchGrantAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateGrantAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateGrantAsync:::grantId"]=0
 operation_parameters_maximum_occurrences["updateGrantAsync:::api-version"]=0
@@ -2376,6 +2806,11 @@ operation_parameters_maximum_occurrences["getInvoiceEnumerationRangeDetailsAsync
 operation_parameters_maximum_occurrences["getInvoiceEnumerationRangesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceEnumerationRangesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getInvoiceEnumerationRangesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchInvoiceEnumerationRangeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceEnumerationRangeAsync:::rangeId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceEnumerationRangeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchInvoiceEnumerationRangeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchInvoiceEnumerationRangeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateInvoiceEnumerationRangeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateInvoiceEnumerationRangeAsync:::rangeId"]=0
 operation_parameters_maximum_occurrences["updateInvoiceEnumerationRangeAsync:::api-version"]=0
@@ -2399,6 +2834,11 @@ operation_parameters_maximum_occurrences["getJournalTypesAsync:::x-api-version"]
 operation_parameters_maximum_occurrences["getJournalTypesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getJournalTypesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getJournalTypesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJournalTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchJournalTypeAsync:::journalTypeId"]=0
+operation_parameters_maximum_occurrences["patchJournalTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchJournalTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJournalTypeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateJournalTypeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateJournalTypeAsync:::journalTypeId"]=0
 operation_parameters_maximum_occurrences["updateJournalTypeAsync:::api-version"]=0
@@ -2450,6 +2890,17 @@ operation_parameters_maximum_occurrences["getJournalEntriesCountAsync:::x-api-ve
 operation_parameters_maximum_occurrences["getJournalsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getJournalsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getJournalsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJournalAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchJournalAsync:::journalId"]=0
+operation_parameters_maximum_occurrences["patchJournalAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchJournalAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJournalAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchJournalEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchJournalEntryAsync:::journalId"]=0
+operation_parameters_maximum_occurrences["patchJournalEntryAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["patchJournalEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchJournalEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJournalEntryAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateJournalAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateJournalAsync:::journalId"]=0
 operation_parameters_maximum_occurrences["updateJournalAsync:::api-version"]=0
@@ -2479,6 +2930,11 @@ operation_parameters_maximum_occurrences["getLedgerTypesAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getLedgerTypesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLedgerTypesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLedgerTypesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchLedgerTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchLedgerTypeAsync:::ledgerTypeId"]=0
+operation_parameters_maximum_occurrences["patchLedgerTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchLedgerTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchLedgerTypeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateLedgerTypeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateLedgerTypeAsync:::ledgerTypeId"]=0
 operation_parameters_maximum_occurrences["updateLedgerTypeAsync:::api-version"]=0
@@ -2502,6 +2958,11 @@ operation_parameters_maximum_occurrences["getLedgersAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getLedgersCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLedgersCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLedgersCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchLedgerAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchLedgerAsync:::ledgerId"]=0
+operation_parameters_maximum_occurrences["patchLedgerAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchLedgerAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchLedgerAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateLedgerAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateLedgerAsync:::ledgerId"]=0
 operation_parameters_maximum_occurrences["updateLedgerAsync:::api-version"]=0
@@ -2561,6 +3022,21 @@ operation_parameters_maximum_occurrences["getLoansAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getLoansCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLoansCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLoansCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchLoanApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchLoanApplicationAsync:::applicationId"]=0
+operation_parameters_maximum_occurrences["patchLoanApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchLoanApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchLoanApplicationAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchLoanAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchLoanAsync:::loanId"]=0
+operation_parameters_maximum_occurrences["patchLoanAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchLoanAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchLoanAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchLoanTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchLoanTypeAsync:::loanTypeId"]=0
+operation_parameters_maximum_occurrences["patchLoanTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchLoanTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchLoanTypeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateLoanApplicationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateLoanApplicationAsync:::applicationId"]=0
 operation_parameters_maximum_occurrences["updateLoanApplicationAsync:::body"]=0
@@ -2584,6 +3060,9 @@ operation_parameters_maximum_occurrences["getReceiptDetailsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getReceiptDetailsAsync:::receiptId"]=0
 operation_parameters_maximum_occurrences["getReceiptsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getReceiptsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchReceiptAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchReceiptAsync:::receiptId"]=0
+operation_parameters_maximum_occurrences["patchReceiptAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateReceiptAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateReceiptAsync:::receiptId"]=0
 operation_parameters_maximum_occurrences["updateReceiptAsync:::ReceiptUpdateDto"]=0
@@ -2659,6 +3138,26 @@ operation_parameters_maximum_occurrences["getShareTransfers:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getShareTransfersCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getShareTransfersCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getShareTransfersCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShareClass:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchShareClass:::shareClassId"]=0
+operation_parameters_maximum_occurrences["patchShareClass:::api-version"]=0
+operation_parameters_maximum_occurrences["patchShareClass:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShareClass:::Operation"]=0
+operation_parameters_maximum_occurrences["patchShareIssuance:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchShareIssuance:::issuanceId"]=0
+operation_parameters_maximum_occurrences["patchShareIssuance:::api-version"]=0
+operation_parameters_maximum_occurrences["patchShareIssuance:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShareIssuance:::Operation"]=0
+operation_parameters_maximum_occurrences["patchShareTransfer:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchShareTransfer:::transferId"]=0
+operation_parameters_maximum_occurrences["patchShareTransfer:::api-version"]=0
+operation_parameters_maximum_occurrences["patchShareTransfer:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShareTransfer:::Operation"]=0
+operation_parameters_maximum_occurrences["patchShareTransferReason:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchShareTransferReason:::reasonId"]=0
+operation_parameters_maximum_occurrences["patchShareTransferReason:::api-version"]=0
+operation_parameters_maximum_occurrences["patchShareTransferReason:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShareTransferReason:::Operation"]=0
 operation_parameters_maximum_occurrences["updateShareClass:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateShareClass:::shareClassId"]=0
 operation_parameters_maximum_occurrences["updateShareClass:::api-version"]=0
@@ -2697,6 +3196,11 @@ operation_parameters_maximum_occurrences["getTaxClasses:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTaxClassesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTaxClassesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTaxClassesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTaxClass:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTaxClass:::id"]=0
+operation_parameters_maximum_occurrences["patchTaxClass:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTaxClass:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTaxClass:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTaxClass:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTaxClass:::id"]=0
 operation_parameters_maximum_occurrences["updateTaxClass:::api-version"]=0
@@ -2766,6 +3270,23 @@ operation_parameters_maximum_occurrences["getTaxPolicy:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTaxPolicy:::id"]=0
 operation_parameters_maximum_occurrences["getTaxPolicy:::api-version"]=0
 operation_parameters_maximum_occurrences["getTaxPolicy:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchAppliedTaxPolicyRecord:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAppliedTaxPolicyRecord:::taxPolicyId"]=0
+operation_parameters_maximum_occurrences["patchAppliedTaxPolicyRecord:::appliedTaxPolicyRecordId"]=0
+operation_parameters_maximum_occurrences["patchAppliedTaxPolicyRecord:::api-version"]=0
+operation_parameters_maximum_occurrences["patchAppliedTaxPolicyRecord:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchAppliedTaxPolicyRecord:::Operation"]=0
+operation_parameters_maximum_occurrences["patchItemTaxPolicyRecord:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemTaxPolicyRecord:::taxPolicyId"]=0
+operation_parameters_maximum_occurrences["patchItemTaxPolicyRecord:::itemTaxPolicyRecordId"]=0
+operation_parameters_maximum_occurrences["patchItemTaxPolicyRecord:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemTaxPolicyRecord:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemTaxPolicyRecord:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTaxPolicy:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTaxPolicy:::id"]=0
+operation_parameters_maximum_occurrences["patchTaxPolicy:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTaxPolicy:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTaxPolicy:::Operation"]=0
 operation_parameters_maximum_occurrences["updateAppliedTaxPolicyRecord:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateAppliedTaxPolicyRecord:::taxPolicyId"]=0
 operation_parameters_maximum_occurrences["updateAppliedTaxPolicyRecord:::appliedTaxPolicyRecordId"]=0
@@ -2801,6 +3322,11 @@ operation_parameters_maximum_occurrences["getTaxRates:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTaxRatesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTaxRatesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTaxRatesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTaxRate:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTaxRate:::id"]=0
+operation_parameters_maximum_occurrences["patchTaxRate:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTaxRate:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTaxRate:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTaxRate:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTaxRate:::id"]=0
 operation_parameters_maximum_occurrences["updateTaxRate:::api-version"]=0
@@ -2842,6 +3368,16 @@ operation_parameters_maximum_occurrences["getTransactions:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTransactionsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTransactionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTransactionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTransaction:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTransaction:::transactionId"]=0
+operation_parameters_maximum_occurrences["patchTransaction:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTransaction:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTransaction:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTransactionCategory:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTransactionCategory:::categoryId"]=0
+operation_parameters_maximum_occurrences["patchTransactionCategory:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTransactionCategory:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTransactionCategory:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTransaction:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTransaction:::transactionId"]=0
 operation_parameters_maximum_occurrences["updateTransaction:::api-version"]=0
@@ -2875,6 +3411,11 @@ operation_parameters_collection_type["getAccountGroups:::x-api-version"]=""
 operation_parameters_collection_type["getAccountGroupsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getAccountGroupsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getAccountGroupsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchAccountGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["patchAccountGroupAsync:::accountGroupId"]=""
+operation_parameters_collection_type["patchAccountGroupAsync:::api-version"]=""
+operation_parameters_collection_type["patchAccountGroupAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchAccountGroupAsync:::Operation"]=
 operation_parameters_collection_type["updateAccountGroup:::tenantId"]=""
 operation_parameters_collection_type["updateAccountGroup:::accountGroupId"]=""
 operation_parameters_collection_type["updateAccountGroup:::api-version"]=""
@@ -2898,6 +3439,11 @@ operation_parameters_collection_type["getAccountingPeriods:::x-api-version"]=""
 operation_parameters_collection_type["getAccountingPeriodsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getAccountingPeriodsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getAccountingPeriodsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchAccountingPeriodAsync:::tenantId"]=""
+operation_parameters_collection_type["patchAccountingPeriodAsync:::accountingPeriodId"]=""
+operation_parameters_collection_type["patchAccountingPeriodAsync:::api-version"]=""
+operation_parameters_collection_type["patchAccountingPeriodAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchAccountingPeriodAsync:::Operation"]=
 operation_parameters_collection_type["updateAccountingPeriod:::tenantId"]=""
 operation_parameters_collection_type["updateAccountingPeriod:::accountingPeriodId"]=""
 operation_parameters_collection_type["updateAccountingPeriod:::api-version"]=""
@@ -3040,6 +3586,23 @@ operation_parameters_collection_type["patchAccountAsync:::accountId"]=""
 operation_parameters_collection_type["patchAccountAsync:::api-version"]=""
 operation_parameters_collection_type["patchAccountAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchAccountAsync:::Operation"]=
+operation_parameters_collection_type["patchAccountEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["patchAccountEntryAsync:::accountId"]=""
+operation_parameters_collection_type["patchAccountEntryAsync:::entryId"]=""
+operation_parameters_collection_type["patchAccountEntryAsync:::api-version"]=""
+operation_parameters_collection_type["patchAccountEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchAccountEntryAsync:::Operation"]=
+operation_parameters_collection_type["patchAccountRelationAsync:::tenantId"]=""
+operation_parameters_collection_type["patchAccountRelationAsync:::accountRelationId"]=""
+operation_parameters_collection_type["patchAccountRelationAsync:::accountId"]=""
+operation_parameters_collection_type["patchAccountRelationAsync:::api-version"]=""
+operation_parameters_collection_type["patchAccountRelationAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchAccountRelationAsync:::Operation"]=
+operation_parameters_collection_type["patchAccountTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchAccountTypeAsync:::accountTypeId"]=""
+operation_parameters_collection_type["patchAccountTypeAsync:::api-version"]=""
+operation_parameters_collection_type["patchAccountTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchAccountTypeAsync:::Operation"]=
 operation_parameters_collection_type["seedChartOfAccountsAsync:::tenantId"]=""
 operation_parameters_collection_type["seedChartOfAccountsAsync:::api-version"]=""
 operation_parameters_collection_type["seedChartOfAccountsAsync:::x-api-version"]=""
@@ -3159,6 +3722,29 @@ operation_parameters_collection_type["getBanks:::x-api-version"]=""
 operation_parameters_collection_type["getBanksCount:::tenantId"]=""
 operation_parameters_collection_type["getBanksCount:::api-version"]=""
 operation_parameters_collection_type["getBanksCount:::x-api-version"]=""
+operation_parameters_collection_type["patchBank:::tenantId"]=""
+operation_parameters_collection_type["patchBank:::bankId"]=""
+operation_parameters_collection_type["patchBank:::api-version"]=""
+operation_parameters_collection_type["patchBank:::x-api-version"]=""
+operation_parameters_collection_type["patchBank:::Operation"]=
+operation_parameters_collection_type["patchBankAccount:::tenantId"]=""
+operation_parameters_collection_type["patchBankAccount:::bankId"]=""
+operation_parameters_collection_type["patchBankAccount:::accountId"]=""
+operation_parameters_collection_type["patchBankAccount:::api-version"]=""
+operation_parameters_collection_type["patchBankAccount:::x-api-version"]=""
+operation_parameters_collection_type["patchBankAccount:::Operation"]=
+operation_parameters_collection_type["patchBankGuarantee:::tenantId"]=""
+operation_parameters_collection_type["patchBankGuarantee:::bankId"]=""
+operation_parameters_collection_type["patchBankGuarantee:::guaranteeId"]=""
+operation_parameters_collection_type["patchBankGuarantee:::api-version"]=""
+operation_parameters_collection_type["patchBankGuarantee:::x-api-version"]=""
+operation_parameters_collection_type["patchBankGuarantee:::Operation"]=
+operation_parameters_collection_type["patchBankTransaction:::tenantId"]=""
+operation_parameters_collection_type["patchBankTransaction:::bankId"]=""
+operation_parameters_collection_type["patchBankTransaction:::transactionId"]=""
+operation_parameters_collection_type["patchBankTransaction:::api-version"]=""
+operation_parameters_collection_type["patchBankTransaction:::x-api-version"]=""
+operation_parameters_collection_type["patchBankTransaction:::Operation"]=
 operation_parameters_collection_type["updateBank:::tenantId"]=""
 operation_parameters_collection_type["updateBank:::bankId"]=""
 operation_parameters_collection_type["updateBank:::api-version"]=""
@@ -3200,6 +3786,12 @@ operation_parameters_collection_type["getBillableLineTaxesCount:::tenantId"]=""
 operation_parameters_collection_type["getBillableLineTaxesCount:::billableLineId"]=""
 operation_parameters_collection_type["getBillableLineTaxesCount:::api-version"]=""
 operation_parameters_collection_type["getBillableLineTaxesCount:::x-api-version"]=""
+operation_parameters_collection_type["patchBillableLineTaxAsync:::tenantId"]=""
+operation_parameters_collection_type["patchBillableLineTaxAsync:::billableLineId"]=""
+operation_parameters_collection_type["patchBillableLineTaxAsync:::taxId"]=""
+operation_parameters_collection_type["patchBillableLineTaxAsync:::api-version"]=""
+operation_parameters_collection_type["patchBillableLineTaxAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBillableLineTaxAsync:::Operation"]=
 operation_parameters_collection_type["updateBillableLineTax:::tenantId"]=""
 operation_parameters_collection_type["updateBillableLineTax:::billableLineId"]=""
 operation_parameters_collection_type["updateBillableLineTax:::taxId"]=""
@@ -3224,6 +3816,11 @@ operation_parameters_collection_type["getBillingProfilesAsync:::x-api-version"]=
 operation_parameters_collection_type["getBillingProfilesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getBillingProfilesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getBillingProfilesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBillingProfileAsync:::tenantId"]=""
+operation_parameters_collection_type["patchBillingProfileAsync:::billingProfileId"]=""
+operation_parameters_collection_type["patchBillingProfileAsync:::api-version"]=""
+operation_parameters_collection_type["patchBillingProfileAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBillingProfileAsync:::Operation"]=
 operation_parameters_collection_type["updateBillingProfileAsync:::tenantId"]=""
 operation_parameters_collection_type["updateBillingProfileAsync:::billingProfileId"]=""
 operation_parameters_collection_type["updateBillingProfileAsync:::BillingProfileUpdateDto"]=""
@@ -3266,6 +3863,17 @@ operation_parameters_collection_type["getBudgetsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getBudgetsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getBudgetsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getBudgetsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBudgetAccountEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["patchBudgetAccountEntryAsync:::budgetId"]=""
+operation_parameters_collection_type["patchBudgetAccountEntryAsync:::entryId"]=""
+operation_parameters_collection_type["patchBudgetAccountEntryAsync:::api-version"]=""
+operation_parameters_collection_type["patchBudgetAccountEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBudgetAccountEntryAsync:::Operation"]=
+operation_parameters_collection_type["patchBudgetAsync:::tenantId"]=""
+operation_parameters_collection_type["patchBudgetAsync:::budgetId"]=""
+operation_parameters_collection_type["patchBudgetAsync:::api-version"]=""
+operation_parameters_collection_type["patchBudgetAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBudgetAsync:::Operation"]=
 operation_parameters_collection_type["updateBudgetAccountEntryAsync:::tenantId"]=""
 operation_parameters_collection_type["updateBudgetAccountEntryAsync:::budgetId"]=""
 operation_parameters_collection_type["updateBudgetAccountEntryAsync:::entryId"]=""
@@ -3313,6 +3921,16 @@ operation_parameters_collection_type["getPaymentCommissionsAsync:::x-api-version
 operation_parameters_collection_type["getPaymentCommissionsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getPaymentCommissionsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getPaymentCommissionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCommissionAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCommissionAsync:::commissionId"]=""
+operation_parameters_collection_type["patchCommissionAsync:::api-version"]=""
+operation_parameters_collection_type["patchCommissionAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCommissionAsync:::Operation"]=
+operation_parameters_collection_type["patchPaymentCommissionAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPaymentCommissionAsync:::paymentCommissionId"]=""
+operation_parameters_collection_type["patchPaymentCommissionAsync:::api-version"]=""
+operation_parameters_collection_type["patchPaymentCommissionAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchPaymentCommissionAsync:::Operation"]=
 operation_parameters_collection_type["updateCommissionAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCommissionAsync:::commissionId"]=""
 operation_parameters_collection_type["updateCommissionAsync:::CommissionUpdateDto"]=""
@@ -3377,6 +3995,21 @@ operation_parameters_collection_type["getCostCentres:::x-api-version"]=""
 operation_parameters_collection_type["getCostCentresCount:::tenantId"]=""
 operation_parameters_collection_type["getCostCentresCount:::api-version"]=""
 operation_parameters_collection_type["getCostCentresCount:::x-api-version"]=""
+operation_parameters_collection_type["patchCostCentre:::tenantId"]=""
+operation_parameters_collection_type["patchCostCentre:::costCentreId"]=""
+operation_parameters_collection_type["patchCostCentre:::api-version"]=""
+operation_parameters_collection_type["patchCostCentre:::x-api-version"]=""
+operation_parameters_collection_type["patchCostCentre:::Operation"]=
+operation_parameters_collection_type["patchCostCentreBudget:::tenantId"]=""
+operation_parameters_collection_type["patchCostCentreBudget:::budgetId"]=""
+operation_parameters_collection_type["patchCostCentreBudget:::api-version"]=""
+operation_parameters_collection_type["patchCostCentreBudget:::x-api-version"]=""
+operation_parameters_collection_type["patchCostCentreBudget:::Operation"]=
+operation_parameters_collection_type["patchCostCentreGroup:::tenantId"]=""
+operation_parameters_collection_type["patchCostCentreGroup:::groupId"]=""
+operation_parameters_collection_type["patchCostCentreGroup:::api-version"]=""
+operation_parameters_collection_type["patchCostCentreGroup:::x-api-version"]=""
+operation_parameters_collection_type["patchCostCentreGroup:::Operation"]=
 operation_parameters_collection_type["updateCostCentre:::tenantId"]=""
 operation_parameters_collection_type["updateCostCentre:::costCentreId"]=""
 operation_parameters_collection_type["updateCostCentre:::CostCentreUpdateDto"]=""
@@ -3410,6 +4043,11 @@ operation_parameters_collection_type["getExpenseClaims:::x-api-version"]=""
 operation_parameters_collection_type["getExpenseClaimsCount:::tenantId"]=""
 operation_parameters_collection_type["getExpenseClaimsCount:::api-version"]=""
 operation_parameters_collection_type["getExpenseClaimsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchExpenseClaim:::tenantId"]=""
+operation_parameters_collection_type["patchExpenseClaim:::expenseClaimId"]=""
+operation_parameters_collection_type["patchExpenseClaim:::api-version"]=""
+operation_parameters_collection_type["patchExpenseClaim:::x-api-version"]=""
+operation_parameters_collection_type["patchExpenseClaim:::Operation"]=
 operation_parameters_collection_type["updateExpenseClaim:::tenantId"]=""
 operation_parameters_collection_type["updateExpenseClaim:::expenseClaimId"]=""
 operation_parameters_collection_type["updateExpenseClaim:::ExpenseClaimUpdateDto"]=""
@@ -3433,6 +4071,11 @@ operation_parameters_collection_type["getExpenseTypes:::x-api-version"]=""
 operation_parameters_collection_type["getExpenseTypesCount:::tenantId"]=""
 operation_parameters_collection_type["getExpenseTypesCount:::api-version"]=""
 operation_parameters_collection_type["getExpenseTypesCount:::x-api-version"]=""
+operation_parameters_collection_type["patchExpenseType:::tenantId"]=""
+operation_parameters_collection_type["patchExpenseType:::expenseTypeId"]=""
+operation_parameters_collection_type["patchExpenseType:::api-version"]=""
+operation_parameters_collection_type["patchExpenseType:::x-api-version"]=""
+operation_parameters_collection_type["patchExpenseType:::Operation"]=
 operation_parameters_collection_type["updateExpenseType:::tenantId"]=""
 operation_parameters_collection_type["updateExpenseType:::expenseTypeId"]=""
 operation_parameters_collection_type["updateExpenseType:::ExpenseTypeUpdateDto"]=""
@@ -3473,6 +4116,11 @@ operation_parameters_collection_type["getFinancialBooksAsync:::x-api-version"]="
 operation_parameters_collection_type["getFinancialBooksCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getFinancialBooksCountAsync:::api-version"]=""
 operation_parameters_collection_type["getFinancialBooksCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFinancialBookAsync:::tenantId"]=""
+operation_parameters_collection_type["patchFinancialBookAsync:::financialBookId"]=""
+operation_parameters_collection_type["patchFinancialBookAsync:::api-version"]=""
+operation_parameters_collection_type["patchFinancialBookAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFinancialBookAsync:::Operation"]=
 operation_parameters_collection_type["updateFinancialBookAsync:::tenantId"]=""
 operation_parameters_collection_type["updateFinancialBookAsync:::financialBookId"]=""
 operation_parameters_collection_type["updateFinancialBookAsync:::FinancialBookUpdateDto"]=""
@@ -3496,6 +4144,11 @@ operation_parameters_collection_type["getFiscalAuthority:::tenantId"]=""
 operation_parameters_collection_type["getFiscalAuthority:::authorityId"]=""
 operation_parameters_collection_type["getFiscalAuthority:::api-version"]=""
 operation_parameters_collection_type["getFiscalAuthority:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalAuthorityAsync:::tenantId"]=""
+operation_parameters_collection_type["patchFiscalAuthorityAsync:::authorityId"]=""
+operation_parameters_collection_type["patchFiscalAuthorityAsync:::api-version"]=""
+operation_parameters_collection_type["patchFiscalAuthorityAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalAuthorityAsync:::Operation"]=
 operation_parameters_collection_type["updateFiscalAuthority:::tenantId"]=""
 operation_parameters_collection_type["updateFiscalAuthority:::authorityId"]=""
 operation_parameters_collection_type["updateFiscalAuthority:::api-version"]=""
@@ -3523,6 +4176,11 @@ operation_parameters_collection_type["getFiscalYearsCount:::tenantId"]=""
 operation_parameters_collection_type["getFiscalYearsCount:::fiscalAuthorityId"]=""
 operation_parameters_collection_type["getFiscalYearsCount:::api-version"]=""
 operation_parameters_collection_type["getFiscalYearsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalAuthorityYearAsync:::tenantId"]=""
+operation_parameters_collection_type["patchFiscalAuthorityYearAsync:::fiscalYearId"]=""
+operation_parameters_collection_type["patchFiscalAuthorityYearAsync:::api-version"]=""
+operation_parameters_collection_type["patchFiscalAuthorityYearAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalAuthorityYearAsync:::Operation"]=
 operation_parameters_collection_type["updateFiscalYear:::tenantId"]=""
 operation_parameters_collection_type["updateFiscalYear:::fiscalYearId"]=""
 operation_parameters_collection_type["updateFiscalYear:::api-version"]=""
@@ -3550,6 +4208,11 @@ operation_parameters_collection_type["getInvoiceEnumerationRangesCount:::tenantI
 operation_parameters_collection_type["getInvoiceEnumerationRangesCount:::fiscalAuthorityId"]=""
 operation_parameters_collection_type["getInvoiceEnumerationRangesCount:::api-version"]=""
 operation_parameters_collection_type["getInvoiceEnumerationRangesCount:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalEnumerationRangeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchFiscalEnumerationRangeAsync:::enumerationRangeId"]=""
+operation_parameters_collection_type["patchFiscalEnumerationRangeAsync:::api-version"]=""
+operation_parameters_collection_type["patchFiscalEnumerationRangeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalEnumerationRangeAsync:::Operation"]=
 operation_parameters_collection_type["updateInvoiceEnumerationRange:::tenantId"]=""
 operation_parameters_collection_type["updateInvoiceEnumerationRange:::enumerationRangeId"]=""
 operation_parameters_collection_type["updateInvoiceEnumerationRange:::api-version"]=""
@@ -3576,6 +4239,11 @@ operation_parameters_collection_type["getFiscalIdentificationTypesCount:::tenant
 operation_parameters_collection_type["getFiscalIdentificationTypesCount:::authorityId"]=""
 operation_parameters_collection_type["getFiscalIdentificationTypesCount:::api-version"]=""
 operation_parameters_collection_type["getFiscalIdentificationTypesCount:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalIdentificationTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchFiscalIdentificationTypeAsync:::identificationTypeId"]=""
+operation_parameters_collection_type["patchFiscalIdentificationTypeAsync:::api-version"]=""
+operation_parameters_collection_type["patchFiscalIdentificationTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalIdentificationTypeAsync:::Operation"]=
 operation_parameters_collection_type["updateFiscalIdentificationType:::tenantId"]=""
 operation_parameters_collection_type["updateFiscalIdentificationType:::identificationTypeId"]=""
 operation_parameters_collection_type["updateFiscalIdentificationType:::api-version"]=""
@@ -3606,6 +4274,11 @@ operation_parameters_collection_type["getFiscalPeriodsCount:::fiscalAuthorityId"
 operation_parameters_collection_type["getFiscalPeriodsCount:::fiscalYearId"]=""
 operation_parameters_collection_type["getFiscalPeriodsCount:::api-version"]=""
 operation_parameters_collection_type["getFiscalPeriodsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalPeriodAsync:::tenantId"]=""
+operation_parameters_collection_type["patchFiscalPeriodAsync:::fiscalPeriodId"]=""
+operation_parameters_collection_type["patchFiscalPeriodAsync:::api-version"]=""
+operation_parameters_collection_type["patchFiscalPeriodAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalPeriodAsync:::Operation"]=
 operation_parameters_collection_type["updateFiscalPeriod:::tenantId"]=""
 operation_parameters_collection_type["updateFiscalPeriod:::fiscalPeriodId"]=""
 operation_parameters_collection_type["updateFiscalPeriod:::api-version"]=""
@@ -3633,6 +4306,11 @@ operation_parameters_collection_type["getFiscalRegimesCount:::tenantId"]=""
 operation_parameters_collection_type["getFiscalRegimesCount:::fiscalAuthorityId"]=""
 operation_parameters_collection_type["getFiscalRegimesCount:::api-version"]=""
 operation_parameters_collection_type["getFiscalRegimesCount:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalRegimeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchFiscalRegimeAsync:::regimeId"]=""
+operation_parameters_collection_type["patchFiscalRegimeAsync:::api-version"]=""
+operation_parameters_collection_type["patchFiscalRegimeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalRegimeAsync:::Operation"]=
 operation_parameters_collection_type["updateFiscalRegime:::tenantId"]=""
 operation_parameters_collection_type["updateFiscalRegime:::regimeId"]=""
 operation_parameters_collection_type["updateFiscalRegime:::api-version"]=""
@@ -3660,6 +4338,11 @@ operation_parameters_collection_type["getFiscalResponsibility:::fiscalAuthorityI
 operation_parameters_collection_type["getFiscalResponsibility:::fiscalResponsibilityId"]=""
 operation_parameters_collection_type["getFiscalResponsibility:::api-version"]=""
 operation_parameters_collection_type["getFiscalResponsibility:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalResponsibilityAsync:::tenantId"]=""
+operation_parameters_collection_type["patchFiscalResponsibilityAsync:::fiscalResponsibilityId"]=""
+operation_parameters_collection_type["patchFiscalResponsibilityAsync:::api-version"]=""
+operation_parameters_collection_type["patchFiscalResponsibilityAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalResponsibilityAsync:::Operation"]=
 operation_parameters_collection_type["updateFiscalResponsibility:::tenantId"]=""
 operation_parameters_collection_type["updateFiscalResponsibility:::fiscalResponsibilityId"]=""
 operation_parameters_collection_type["updateFiscalResponsibility:::api-version"]=""
@@ -3689,6 +4372,11 @@ operation_parameters_collection_type["getFiscalResponsibilityRecordsCount:::fisc
 operation_parameters_collection_type["getFiscalResponsibilityRecordsCount:::fiscalResponsibilityId"]=""
 operation_parameters_collection_type["getFiscalResponsibilityRecordsCount:::api-version"]=""
 operation_parameters_collection_type["getFiscalResponsibilityRecordsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalResponsibilityRecordAsync:::tenantId"]=""
+operation_parameters_collection_type["patchFiscalResponsibilityRecordAsync:::fiscalResponsibilityRecordId"]=""
+operation_parameters_collection_type["patchFiscalResponsibilityRecordAsync:::api-version"]=""
+operation_parameters_collection_type["patchFiscalResponsibilityRecordAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalResponsibilityRecordAsync:::Operation"]=
 operation_parameters_collection_type["updateFiscalResponsibilityRecord:::tenantId"]=""
 operation_parameters_collection_type["updateFiscalResponsibilityRecord:::fiscalResponsibilityRecordId"]=""
 operation_parameters_collection_type["updateFiscalResponsibilityRecord:::api-version"]=""
@@ -3712,6 +4400,11 @@ operation_parameters_collection_type["getFiscalYearsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getFiscalYearsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getFiscalYearsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getFiscalYearsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalYearAsync:::tenantId"]=""
+operation_parameters_collection_type["patchFiscalYearAsync:::fiscalYearId"]=""
+operation_parameters_collection_type["patchFiscalYearAsync:::api-version"]=""
+operation_parameters_collection_type["patchFiscalYearAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFiscalYearAsync:::Operation"]=
 operation_parameters_collection_type["updateFiscalYearAsync:::tenantId"]=""
 operation_parameters_collection_type["updateFiscalYearAsync:::fiscalYearId"]=""
 operation_parameters_collection_type["updateFiscalYearAsync:::api-version"]=""
@@ -3735,6 +4428,11 @@ operation_parameters_collection_type["getGrantsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getGrantsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getGrantsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getGrantsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchGrantAsync:::tenantId"]=""
+operation_parameters_collection_type["patchGrantAsync:::grantId"]=""
+operation_parameters_collection_type["patchGrantAsync:::api-version"]=""
+operation_parameters_collection_type["patchGrantAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchGrantAsync:::Operation"]=
 operation_parameters_collection_type["updateGrantAsync:::tenantId"]=""
 operation_parameters_collection_type["updateGrantAsync:::grantId"]=""
 operation_parameters_collection_type["updateGrantAsync:::api-version"]=""
@@ -3755,6 +4453,11 @@ operation_parameters_collection_type["getInvoiceEnumerationRangeDetailsAsync:::x
 operation_parameters_collection_type["getInvoiceEnumerationRangesAsync:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceEnumerationRangesAsync:::api-version"]=""
 operation_parameters_collection_type["getInvoiceEnumerationRangesAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchInvoiceEnumerationRangeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchInvoiceEnumerationRangeAsync:::rangeId"]=""
+operation_parameters_collection_type["patchInvoiceEnumerationRangeAsync:::api-version"]=""
+operation_parameters_collection_type["patchInvoiceEnumerationRangeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchInvoiceEnumerationRangeAsync:::Operation"]=
 operation_parameters_collection_type["updateInvoiceEnumerationRangeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateInvoiceEnumerationRangeAsync:::rangeId"]=""
 operation_parameters_collection_type["updateInvoiceEnumerationRangeAsync:::api-version"]=""
@@ -3778,6 +4481,11 @@ operation_parameters_collection_type["getJournalTypesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getJournalTypesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getJournalTypesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getJournalTypesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJournalTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchJournalTypeAsync:::journalTypeId"]=""
+operation_parameters_collection_type["patchJournalTypeAsync:::api-version"]=""
+operation_parameters_collection_type["patchJournalTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJournalTypeAsync:::Operation"]=
 operation_parameters_collection_type["updateJournalTypeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateJournalTypeAsync:::journalTypeId"]=""
 operation_parameters_collection_type["updateJournalTypeAsync:::api-version"]=""
@@ -3829,6 +4537,17 @@ operation_parameters_collection_type["getJournalEntriesCountAsync:::x-api-versio
 operation_parameters_collection_type["getJournalsAsync:::tenantId"]=""
 operation_parameters_collection_type["getJournalsAsync:::api-version"]=""
 operation_parameters_collection_type["getJournalsAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJournalAsync:::tenantId"]=""
+operation_parameters_collection_type["patchJournalAsync:::journalId"]=""
+operation_parameters_collection_type["patchJournalAsync:::api-version"]=""
+operation_parameters_collection_type["patchJournalAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJournalAsync:::Operation"]=
+operation_parameters_collection_type["patchJournalEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["patchJournalEntryAsync:::journalId"]=""
+operation_parameters_collection_type["patchJournalEntryAsync:::entryId"]=""
+operation_parameters_collection_type["patchJournalEntryAsync:::api-version"]=""
+operation_parameters_collection_type["patchJournalEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJournalEntryAsync:::Operation"]=
 operation_parameters_collection_type["updateJournalAsync:::tenantId"]=""
 operation_parameters_collection_type["updateJournalAsync:::journalId"]=""
 operation_parameters_collection_type["updateJournalAsync:::api-version"]=""
@@ -3858,6 +4577,11 @@ operation_parameters_collection_type["getLedgerTypesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getLedgerTypesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getLedgerTypesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getLedgerTypesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchLedgerTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchLedgerTypeAsync:::ledgerTypeId"]=""
+operation_parameters_collection_type["patchLedgerTypeAsync:::api-version"]=""
+operation_parameters_collection_type["patchLedgerTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchLedgerTypeAsync:::Operation"]=
 operation_parameters_collection_type["updateLedgerTypeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateLedgerTypeAsync:::ledgerTypeId"]=""
 operation_parameters_collection_type["updateLedgerTypeAsync:::api-version"]=""
@@ -3881,6 +4605,11 @@ operation_parameters_collection_type["getLedgersAsync:::x-api-version"]=""
 operation_parameters_collection_type["getLedgersCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getLedgersCountAsync:::api-version"]=""
 operation_parameters_collection_type["getLedgersCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchLedgerAsync:::tenantId"]=""
+operation_parameters_collection_type["patchLedgerAsync:::ledgerId"]=""
+operation_parameters_collection_type["patchLedgerAsync:::api-version"]=""
+operation_parameters_collection_type["patchLedgerAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchLedgerAsync:::Operation"]=
 operation_parameters_collection_type["updateLedgerAsync:::tenantId"]=""
 operation_parameters_collection_type["updateLedgerAsync:::ledgerId"]=""
 operation_parameters_collection_type["updateLedgerAsync:::api-version"]=""
@@ -3940,6 +4669,21 @@ operation_parameters_collection_type["getLoansAsync:::x-api-version"]=""
 operation_parameters_collection_type["getLoansCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getLoansCountAsync:::api-version"]=""
 operation_parameters_collection_type["getLoansCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchLoanApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["patchLoanApplicationAsync:::applicationId"]=""
+operation_parameters_collection_type["patchLoanApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["patchLoanApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchLoanApplicationAsync:::Operation"]=
+operation_parameters_collection_type["patchLoanAsync:::tenantId"]=""
+operation_parameters_collection_type["patchLoanAsync:::loanId"]=""
+operation_parameters_collection_type["patchLoanAsync:::api-version"]=""
+operation_parameters_collection_type["patchLoanAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchLoanAsync:::Operation"]=
+operation_parameters_collection_type["patchLoanTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchLoanTypeAsync:::loanTypeId"]=""
+operation_parameters_collection_type["patchLoanTypeAsync:::api-version"]=""
+operation_parameters_collection_type["patchLoanTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchLoanTypeAsync:::Operation"]=
 operation_parameters_collection_type["updateLoanApplicationAsync:::tenantId"]=""
 operation_parameters_collection_type["updateLoanApplicationAsync:::applicationId"]=""
 operation_parameters_collection_type["updateLoanApplicationAsync:::body"]=""
@@ -3963,6 +4707,9 @@ operation_parameters_collection_type["getReceiptDetailsAsync:::tenantId"]=""
 operation_parameters_collection_type["getReceiptDetailsAsync:::receiptId"]=""
 operation_parameters_collection_type["getReceiptsAsync:::tenantId"]=""
 operation_parameters_collection_type["getReceiptsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["patchReceiptAsync:::tenantId"]=""
+operation_parameters_collection_type["patchReceiptAsync:::receiptId"]=""
+operation_parameters_collection_type["patchReceiptAsync:::Operation"]=
 operation_parameters_collection_type["updateReceiptAsync:::tenantId"]=""
 operation_parameters_collection_type["updateReceiptAsync:::receiptId"]=""
 operation_parameters_collection_type["updateReceiptAsync:::ReceiptUpdateDto"]=""
@@ -4038,6 +4785,26 @@ operation_parameters_collection_type["getShareTransfers:::x-api-version"]=""
 operation_parameters_collection_type["getShareTransfersCount:::tenantId"]=""
 operation_parameters_collection_type["getShareTransfersCount:::api-version"]=""
 operation_parameters_collection_type["getShareTransfersCount:::x-api-version"]=""
+operation_parameters_collection_type["patchShareClass:::tenantId"]=""
+operation_parameters_collection_type["patchShareClass:::shareClassId"]=""
+operation_parameters_collection_type["patchShareClass:::api-version"]=""
+operation_parameters_collection_type["patchShareClass:::x-api-version"]=""
+operation_parameters_collection_type["patchShareClass:::Operation"]=
+operation_parameters_collection_type["patchShareIssuance:::tenantId"]=""
+operation_parameters_collection_type["patchShareIssuance:::issuanceId"]=""
+operation_parameters_collection_type["patchShareIssuance:::api-version"]=""
+operation_parameters_collection_type["patchShareIssuance:::x-api-version"]=""
+operation_parameters_collection_type["patchShareIssuance:::Operation"]=
+operation_parameters_collection_type["patchShareTransfer:::tenantId"]=""
+operation_parameters_collection_type["patchShareTransfer:::transferId"]=""
+operation_parameters_collection_type["patchShareTransfer:::api-version"]=""
+operation_parameters_collection_type["patchShareTransfer:::x-api-version"]=""
+operation_parameters_collection_type["patchShareTransfer:::Operation"]=
+operation_parameters_collection_type["patchShareTransferReason:::tenantId"]=""
+operation_parameters_collection_type["patchShareTransferReason:::reasonId"]=""
+operation_parameters_collection_type["patchShareTransferReason:::api-version"]=""
+operation_parameters_collection_type["patchShareTransferReason:::x-api-version"]=""
+operation_parameters_collection_type["patchShareTransferReason:::Operation"]=
 operation_parameters_collection_type["updateShareClass:::tenantId"]=""
 operation_parameters_collection_type["updateShareClass:::shareClassId"]=""
 operation_parameters_collection_type["updateShareClass:::api-version"]=""
@@ -4076,6 +4843,11 @@ operation_parameters_collection_type["getTaxClasses:::x-api-version"]=""
 operation_parameters_collection_type["getTaxClassesCount:::tenantId"]=""
 operation_parameters_collection_type["getTaxClassesCount:::api-version"]=""
 operation_parameters_collection_type["getTaxClassesCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTaxClass:::tenantId"]=""
+operation_parameters_collection_type["patchTaxClass:::id"]=""
+operation_parameters_collection_type["patchTaxClass:::api-version"]=""
+operation_parameters_collection_type["patchTaxClass:::x-api-version"]=""
+operation_parameters_collection_type["patchTaxClass:::Operation"]=
 operation_parameters_collection_type["updateTaxClass:::tenantId"]=""
 operation_parameters_collection_type["updateTaxClass:::id"]=""
 operation_parameters_collection_type["updateTaxClass:::api-version"]=""
@@ -4145,6 +4917,23 @@ operation_parameters_collection_type["getTaxPolicy:::tenantId"]=""
 operation_parameters_collection_type["getTaxPolicy:::id"]=""
 operation_parameters_collection_type["getTaxPolicy:::api-version"]=""
 operation_parameters_collection_type["getTaxPolicy:::x-api-version"]=""
+operation_parameters_collection_type["patchAppliedTaxPolicyRecord:::tenantId"]=""
+operation_parameters_collection_type["patchAppliedTaxPolicyRecord:::taxPolicyId"]=""
+operation_parameters_collection_type["patchAppliedTaxPolicyRecord:::appliedTaxPolicyRecordId"]=""
+operation_parameters_collection_type["patchAppliedTaxPolicyRecord:::api-version"]=""
+operation_parameters_collection_type["patchAppliedTaxPolicyRecord:::x-api-version"]=""
+operation_parameters_collection_type["patchAppliedTaxPolicyRecord:::Operation"]=
+operation_parameters_collection_type["patchItemTaxPolicyRecord:::tenantId"]=""
+operation_parameters_collection_type["patchItemTaxPolicyRecord:::taxPolicyId"]=""
+operation_parameters_collection_type["patchItemTaxPolicyRecord:::itemTaxPolicyRecordId"]=""
+operation_parameters_collection_type["patchItemTaxPolicyRecord:::api-version"]=""
+operation_parameters_collection_type["patchItemTaxPolicyRecord:::x-api-version"]=""
+operation_parameters_collection_type["patchItemTaxPolicyRecord:::Operation"]=
+operation_parameters_collection_type["patchTaxPolicy:::tenantId"]=""
+operation_parameters_collection_type["patchTaxPolicy:::id"]=""
+operation_parameters_collection_type["patchTaxPolicy:::api-version"]=""
+operation_parameters_collection_type["patchTaxPolicy:::x-api-version"]=""
+operation_parameters_collection_type["patchTaxPolicy:::Operation"]=
 operation_parameters_collection_type["updateAppliedTaxPolicyRecord:::tenantId"]=""
 operation_parameters_collection_type["updateAppliedTaxPolicyRecord:::taxPolicyId"]=""
 operation_parameters_collection_type["updateAppliedTaxPolicyRecord:::appliedTaxPolicyRecordId"]=""
@@ -4180,6 +4969,11 @@ operation_parameters_collection_type["getTaxRates:::x-api-version"]=""
 operation_parameters_collection_type["getTaxRatesCount:::tenantId"]=""
 operation_parameters_collection_type["getTaxRatesCount:::api-version"]=""
 operation_parameters_collection_type["getTaxRatesCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTaxRate:::tenantId"]=""
+operation_parameters_collection_type["patchTaxRate:::id"]=""
+operation_parameters_collection_type["patchTaxRate:::api-version"]=""
+operation_parameters_collection_type["patchTaxRate:::x-api-version"]=""
+operation_parameters_collection_type["patchTaxRate:::Operation"]=
 operation_parameters_collection_type["updateTaxRate:::tenantId"]=""
 operation_parameters_collection_type["updateTaxRate:::id"]=""
 operation_parameters_collection_type["updateTaxRate:::api-version"]=""
@@ -4221,6 +5015,16 @@ operation_parameters_collection_type["getTransactions:::x-api-version"]=""
 operation_parameters_collection_type["getTransactionsCount:::tenantId"]=""
 operation_parameters_collection_type["getTransactionsCount:::api-version"]=""
 operation_parameters_collection_type["getTransactionsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTransaction:::tenantId"]=""
+operation_parameters_collection_type["patchTransaction:::transactionId"]=""
+operation_parameters_collection_type["patchTransaction:::api-version"]=""
+operation_parameters_collection_type["patchTransaction:::x-api-version"]=""
+operation_parameters_collection_type["patchTransaction:::Operation"]=
+operation_parameters_collection_type["patchTransactionCategory:::tenantId"]=""
+operation_parameters_collection_type["patchTransactionCategory:::categoryId"]=""
+operation_parameters_collection_type["patchTransactionCategory:::api-version"]=""
+operation_parameters_collection_type["patchTransactionCategory:::x-api-version"]=""
+operation_parameters_collection_type["patchTransactionCategory:::Operation"]=
 operation_parameters_collection_type["updateTransaction:::tenantId"]=""
 operation_parameters_collection_type["updateTransaction:::transactionId"]=""
 operation_parameters_collection_type["updateTransaction:::api-version"]=""
@@ -4588,7 +5392,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}AccountingService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}AccountingService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -4624,6 +5428,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getAccountGroup${OFF};Gets the current tenant account group
   ${CYAN}getAccountGroups${OFF};Gets the current tenant account groups
   ${CYAN}getAccountGroupsCountAsync${OFF};Gets the current tenant accounts count
+  ${CYAN}patchAccountGroupAsync${OFF};Patch an account group
   ${CYAN}updateAccountGroup${OFF};Updates an existing account group
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4635,6 +5440,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getAccountingPeriod${OFF};Gets the current tenant accounting period
   ${CYAN}getAccountingPeriods${OFF};Get all accounting periods for a tenant
   ${CYAN}getAccountingPeriodsCountAsync${OFF};Gets the current tenant accounting periods count
+  ${CYAN}patchAccountingPeriodAsync${OFF};Patch an accounting period
   ${CYAN}updateAccountingPeriod${OFF};Updates an existing accounting period
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4675,6 +5481,9 @@ read -r -d '' ops <<EOF
   ${CYAN}getDebitAccountEntriesAsync${OFF};Get debit account entries
   ${CYAN}getRootAccountsAsync${OFF};Get root accounts
   ${CYAN}patchAccountAsync${OFF};Patch an account
+  ${CYAN}patchAccountEntryAsync${OFF};Patch account entry
+  ${CYAN}patchAccountRelationAsync${OFF};Patch account relation
+  ${CYAN}patchAccountTypeAsync${OFF};Patch account type
   ${CYAN}seedChartOfAccountsAsync${OFF};Seed chart of accounts
   ${CYAN}updateAccountAsync${OFF};Update an account
   ${CYAN}updateAccountEntryAsync${OFF};Update account entry
@@ -4712,6 +5521,10 @@ read -r -d '' ops <<EOF
   ${CYAN}getBankTransactionsCount${OFF};Gets the current tenant bank transactions count
   ${CYAN}getBanks${OFF};Gets the current tenant banks
   ${CYAN}getBanksCount${OFF};Gets the current tenant banks count
+  ${CYAN}patchBank${OFF};Patches a bank
+  ${CYAN}patchBankAccount${OFF};Patches a bank account
+  ${CYAN}patchBankGuarantee${OFF};Patches a bank guarantee
+  ${CYAN}patchBankTransaction${OFF};Patches a bank transaction
   ${CYAN}updateBank${OFF};Updates a bank
   ${CYAN}updateBankAccount${OFF};Updates a bank account
   ${CYAN}updateBankGuarantee${OFF};Updates a bank guarantee
@@ -4725,6 +5538,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteBillableLineTax${OFF};Delete a tax from a billable line.
   ${CYAN}getBillableLineTaxes${OFF};Get taxes for a billable line.
   ${CYAN}getBillableLineTaxesCount${OFF};Get the count of taxes for a billable line.
+  ${CYAN}patchBillableLineTaxAsync${OFF};Patch a billable line tax
   ${CYAN}updateBillableLineTax${OFF};Update a tax for a billable line.
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4736,6 +5550,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getBillingProfileByIdAsync${OFF};Gets a billing profile by id
   ${CYAN}getBillingProfilesAsync${OFF};Gets all billing profiles
   ${CYAN}getBillingProfilesCountAsync${OFF};Gets the count of billing profiles
+  ${CYAN}patchBillingProfileAsync${OFF};Patch a billing profile
   ${CYAN}updateBillingProfileAsync${OFF};Updates an existing billing profile
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4751,6 +5566,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getBudgetDetailsAsync${OFF};Gets a budget by id
   ${CYAN}getBudgetsAsync${OFF};Gets all budgets
   ${CYAN}getBudgetsCountAsync${OFF};Get the count of budgets
+  ${CYAN}patchBudgetAccountEntryAsync${OFF};Patches a budget account entry
+  ${CYAN}patchBudgetAsync${OFF};Patches a budget
   ${CYAN}updateBudgetAccountEntryAsync${OFF};Updates a budget account entry
   ${CYAN}updateBudgetAsync${OFF};Updates a budget
 EOF
@@ -4768,6 +5585,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getPaymentCommissionAsync${OFF};Get a payment commission by id
   ${CYAN}getPaymentCommissionsAsync${OFF};Get all payment commissions for a tenant
   ${CYAN}getPaymentCommissionsCountAsync${OFF};Get the count of payment commissions for a tenant
+  ${CYAN}patchCommissionAsync${OFF};Patch a commission
+  ${CYAN}patchPaymentCommissionAsync${OFF};Patch a payment commission
   ${CYAN}updateCommissionAsync${OFF};Update a commission
   ${CYAN}updatePaymentCommissionAsync${OFF};Update a payment commission
 EOF
@@ -4795,6 +5614,9 @@ read -r -d '' ops <<EOF
   ${CYAN}getCostCentreGroupsCount${OFF};Get the count of cost centre groups for a tenant
   ${CYAN}getCostCentres${OFF};Get all cost centres for a tenant
   ${CYAN}getCostCentresCount${OFF};Get the count of cost centres for a tenant
+  ${CYAN}patchCostCentre${OFF};Patch a cost centre
+  ${CYAN}patchCostCentreBudget${OFF};Patch a cost centre budget
+  ${CYAN}patchCostCentreGroup${OFF};Patch a cost centre group
   ${CYAN}updateCostCentre${OFF};Update a cost centre
   ${CYAN}updateCostCentreBudget${OFF};Update a cost centre budget
   ${CYAN}updateCostCentreGroup${OFF};Update a cost centre group
@@ -4808,6 +5630,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getExpenseClaim${OFF};Get an expense claim by id
   ${CYAN}getExpenseClaims${OFF};Get all expense claims for a tenant
   ${CYAN}getExpenseClaimsCount${OFF};Get the count of expense claims for a tenant
+  ${CYAN}patchExpenseClaim${OFF};Patch an expense claim
   ${CYAN}updateExpenseClaim${OFF};Update an expense claim
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4819,6 +5642,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getExpenseType${OFF};Get an expense type by id
   ${CYAN}getExpenseTypes${OFF};Get all expense types for a tenant
   ${CYAN}getExpenseTypesCount${OFF};Get the count of expense types for a tenant
+  ${CYAN}patchExpenseType${OFF};Patch an expense type
   ${CYAN}updateExpenseType${OFF};Update an expense type
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4852,6 +5676,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getFinancialBookDetailsAsync${OFF};Gets the details of a specific financial book
   ${CYAN}getFinancialBooksAsync${OFF};Get all financial books for a tenant
   ${CYAN}getFinancialBooksCountAsync${OFF};Get the count of financial books
+  ${CYAN}patchFinancialBookAsync${OFF};Patch a financial book
   ${CYAN}updateFinancialBookAsync${OFF};Updates an existing financial book
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4863,6 +5688,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getFiscalAuthorities${OFF};Get fiscal authorities
   ${CYAN}getFiscalAuthoritiesCount${OFF};Get fiscal authorities count
   ${CYAN}getFiscalAuthority${OFF};Get fiscal authority by ID
+  ${CYAN}patchFiscalAuthorityAsync${OFF};Patch a fiscal authority
   ${CYAN}updateFiscalAuthority${OFF};Update a fiscal authority
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4874,6 +5700,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getFiscalYear${OFF};Get fiscal year by ID for an authority
   ${CYAN}getFiscalYears${OFF};Get fiscal years for an authority
   ${CYAN}getFiscalYearsCount${OFF};Get fiscal years count for an authority
+  ${CYAN}patchFiscalAuthorityYearAsync${OFF};Patch a fiscal authority year
   ${CYAN}updateFiscalYear${OFF};Update a fiscal year
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4885,6 +5712,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getInvoiceEnumerationRange${OFF};Get invoice enumeration range by ID
   ${CYAN}getInvoiceEnumerationRanges${OFF};Get invoice enumeration ranges for an authority
   ${CYAN}getInvoiceEnumerationRangesCount${OFF};Get invoice enumeration ranges count
+  ${CYAN}patchFiscalEnumerationRangeAsync${OFF};Patch an invoice enumeration range
   ${CYAN}updateInvoiceEnumerationRange${OFF};Update an invoice enumeration range
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4896,6 +5724,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getFiscalIdentificationType${OFF};Get fiscal identification type by ID
   ${CYAN}getFiscalIdentificationTypes${OFF};Get fiscal identification types for an authority
   ${CYAN}getFiscalIdentificationTypesCount${OFF};Get fiscal identification types count
+  ${CYAN}patchFiscalIdentificationTypeAsync${OFF};Patch a fiscal identification type
   ${CYAN}updateFiscalIdentificationType${OFF};Update a fiscal identification type
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4907,6 +5736,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getFiscalPeriod${OFF};Get fiscal period by ID
   ${CYAN}getFiscalPeriods${OFF};Get fiscal periods for a fiscal year
   ${CYAN}getFiscalPeriodsCount${OFF};Get fiscal periods count
+  ${CYAN}patchFiscalPeriodAsync${OFF};Patch a fiscal period
   ${CYAN}updateFiscalPeriod${OFF};Update a fiscal period
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4918,6 +5748,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getFiscalRegime${OFF};Get fiscal regime by ID
   ${CYAN}getFiscalRegimes${OFF};Get fiscal regimes for an authority
   ${CYAN}getFiscalRegimesCount${OFF};Get fiscal regimes count
+  ${CYAN}patchFiscalRegimeAsync${OFF};Patch a fiscal regime
   ${CYAN}updateFiscalRegime${OFF};Update a fiscal regime
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4929,6 +5760,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getFiscalResponsibilities${OFF};Get fiscal responsibilities for an authority
   ${CYAN}getFiscalResponsibilitiesCount${OFF};Get fiscal responsibilities count
   ${CYAN}getFiscalResponsibility${OFF};Get fiscal responsibility by ID
+  ${CYAN}patchFiscalResponsibilityAsync${OFF};Patch a fiscal responsibility
   ${CYAN}updateFiscalResponsibility${OFF};Update a fiscal responsibility
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4940,6 +5772,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getFiscalResponsibilityRecord${OFF};Get fiscal responsibility record by ID
   ${CYAN}getFiscalResponsibilityRecords${OFF};Get fiscal responsibility records
   ${CYAN}getFiscalResponsibilityRecordsCount${OFF};Get fiscal responsibility records count
+  ${CYAN}patchFiscalResponsibilityRecordAsync${OFF};Patch a fiscal responsibility record
   ${CYAN}updateFiscalResponsibilityRecord${OFF};Update a fiscal responsibility record
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4951,6 +5784,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getFiscalYearDetailsAsync${OFF};Get fiscal year by ID
   ${CYAN}getFiscalYearsAsync${OFF};Get all fiscal years
   ${CYAN}getFiscalYearsCountAsync${OFF};Count fiscal years
+  ${CYAN}patchFiscalYearAsync${OFF};Patch a fiscal year
   ${CYAN}updateFiscalYearAsync${OFF};Update fiscal year
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4962,6 +5796,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getGrantDetailsAsync${OFF};Get grant by ID
   ${CYAN}getGrantsAsync${OFF};Get all grants
   ${CYAN}getGrantsCountAsync${OFF};Count grants
+  ${CYAN}patchGrantAsync${OFF};Patch a grant
   ${CYAN}updateGrantAsync${OFF};Update grant
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4972,6 +5807,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteInvoiceEnumerationRangeAsync${OFF};Delete an invoice enumeration range
   ${CYAN}getInvoiceEnumerationRangeDetailsAsync${OFF};Get invoice enumeration range by ID
   ${CYAN}getInvoiceEnumerationRangesAsync${OFF};Get all invoice enumeration ranges
+  ${CYAN}patchInvoiceEnumerationRangeAsync${OFF};Patch an invoice enumeration range
   ${CYAN}updateInvoiceEnumerationRangeAsync${OFF};Update an invoice enumeration range
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4983,6 +5819,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getJournalTypeDetailsAsync${OFF};Retrieves a journal type by ID
   ${CYAN}getJournalTypesAsync${OFF};Retrieves all journal types
   ${CYAN}getJournalTypesCountAsync${OFF};Counts journal types
+  ${CYAN}patchJournalTypeAsync${OFF};Patch a journal type
   ${CYAN}updateJournalTypeAsync${OFF};Updates an existing journal type
 EOF
 echo "  $ops" | column -t -s ';'
@@ -5000,6 +5837,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getJournalEntriesAsync${OFF};Get journal entries
   ${CYAN}getJournalEntriesCountAsync${OFF};Count journal entries
   ${CYAN}getJournalsAsync${OFF};Get all journals
+  ${CYAN}patchJournalAsync${OFF};Patch a journal
+  ${CYAN}patchJournalEntryAsync${OFF};Patch a journal entry
   ${CYAN}updateJournalAsync${OFF};Update journal
   ${CYAN}updateJournalEntryAsync${OFF};Update journal entry
 EOF
@@ -5012,6 +5851,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getLedgerTypeDetailsAsync${OFF};Gets a ledger type by ID
   ${CYAN}getLedgerTypesAsync${OFF};Retrieves all ledger types
   ${CYAN}getLedgerTypesCountAsync${OFF};Counts ledger types
+  ${CYAN}patchLedgerTypeAsync${OFF};Patches a ledger type
   ${CYAN}updateLedgerTypeAsync${OFF};Updates a ledger type
 EOF
 echo "  $ops" | column -t -s ';'
@@ -5023,6 +5863,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getLedgerDetailsAsync${OFF};Gets a ledger by ID
   ${CYAN}getLedgersAsync${OFF};Retrieves all ledgers
   ${CYAN}getLedgersCountAsync${OFF};Counts ledgers
+  ${CYAN}patchLedgerAsync${OFF};Patches a ledger
   ${CYAN}updateLedgerAsync${OFF};Updates a ledger
 EOF
 echo "  $ops" | column -t -s ';'
@@ -5044,6 +5885,9 @@ read -r -d '' ops <<EOF
   ${CYAN}getLoanTypesCountAsync${OFF};Counts loan types
   ${CYAN}getLoansAsync${OFF};Gets all loans
   ${CYAN}getLoansCountAsync${OFF};Counts loans
+  ${CYAN}patchLoanApplicationAsync${OFF};Patches a loan application
+  ${CYAN}patchLoanAsync${OFF};Patches a loan
+  ${CYAN}patchLoanTypeAsync${OFF};Patches a loan type
   ${CYAN}updateLoanApplicationAsync${OFF};Updates a loan application
   ${CYAN}updateLoanAsync${OFF};Updates a loan
   ${CYAN}updateLoanTypeAsync${OFF};Updates a loan type
@@ -5057,6 +5901,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getReceiptDetailsAsync${OFF};Gets details of a receipt
   ${CYAN}getReceiptsAsync${OFF};Retrieves tenant receipts
   ${CYAN}getReceiptsCountAsync${OFF};Gets count of tenant receipts
+  ${CYAN}patchReceiptAsync${OFF};Patches a receipt
   ${CYAN}updateReceiptAsync${OFF};Updates a receipt
 EOF
 echo "  $ops" | column -t -s ';'
@@ -5083,6 +5928,10 @@ read -r -d '' ops <<EOF
   ${CYAN}getShareTransferReasonsCount${OFF};Gets the current tenant share transfer reasons count
   ${CYAN}getShareTransfers${OFF};Gets the current tenant share transfers
   ${CYAN}getShareTransfersCount${OFF};Gets the current tenant share transfers count
+  ${CYAN}patchShareClass${OFF};Patches a share class
+  ${CYAN}patchShareIssuance${OFF};Patches a share issuance
+  ${CYAN}patchShareTransfer${OFF};Patches a share transfer
+  ${CYAN}patchShareTransferReason${OFF};Patches a share transfer reason
   ${CYAN}updateShareClass${OFF};Updates an existing share class
   ${CYAN}updateShareIssuance${OFF};Updates an existing share issuance
   ${CYAN}updateShareTransfer${OFF};Updates an existing share transfer
@@ -5097,6 +5946,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTaxClass${OFF};Get tax class by ID
   ${CYAN}getTaxClasses${OFF};Get all tax classes for a tenant
   ${CYAN}getTaxClassesCount${OFF};Get tax classes count
+  ${CYAN}patchTaxClass${OFF};Patch a tax class
   ${CYAN}updateTaxClass${OFF};Update a tax class
 EOF
 echo "  $ops" | column -t -s ';'
@@ -5118,6 +5968,9 @@ read -r -d '' ops <<EOF
   ${CYAN}getTaxPoliciesByAuthority${OFF};Get tax policies by fiscal authority
   ${CYAN}getTaxPoliciesCount${OFF};Get tax policies count
   ${CYAN}getTaxPolicy${OFF};Get tax policy by ID
+  ${CYAN}patchAppliedTaxPolicyRecord${OFF};Patch an applied tax policy record
+  ${CYAN}patchItemTaxPolicyRecord${OFF};Patch an item tax policy record
+  ${CYAN}patchTaxPolicy${OFF};Patch a tax policy
   ${CYAN}updateAppliedTaxPolicyRecord${OFF};Update an applied tax policy record
   ${CYAN}updateItemTaxPolicyRecord${OFF};Update an item tax policy record
   ${CYAN}updateTaxPolicy${OFF};Update a tax policy
@@ -5131,6 +5984,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTaxRate${OFF};Get tax rate by ID
   ${CYAN}getTaxRates${OFF};Get all tax rates for a tenant
   ${CYAN}getTaxRatesCount${OFF};Get tax rates count
+  ${CYAN}patchTaxRate${OFF};Patch a tax rate
   ${CYAN}updateTaxRate${OFF};Update a tax rate
 EOF
 echo "  $ops" | column -t -s ';'
@@ -5147,6 +6001,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getTransactionCategory${OFF};Get transaction category by ID
   ${CYAN}getTransactions${OFF};Get all transactions for a tenant
   ${CYAN}getTransactionsCount${OFF};Get transactions count
+  ${CYAN}patchTransaction${OFF};Patch a transaction
+  ${CYAN}patchTransactionCategory${OFF};Patch a transaction category
   ${CYAN}updateTransaction${OFF};Update a transaction
   ${CYAN}updateTransactionCategory${OFF};Update a transaction category
 EOF
@@ -5178,7 +6034,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}AccountingService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}AccountingService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -5198,7 +6054,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}AccountingService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}AccountingService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -5331,6 +6187,35 @@ print_getAccountGroupsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchAccountGroupAsync operation
+#
+##############################################################################
+print_patchAccountGroupAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAccountGroupAsync - Patch an account group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an account group." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}accountGroupId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: accountGroupId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5502,6 +6387,35 @@ print_getAccountingPeriodsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchAccountingPeriodAsync operation
+#
+##############################################################################
+print_patchAccountingPeriodAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAccountingPeriodAsync - Patch an accounting period${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an accounting period." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}accountingPeriodId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: accountingPeriodId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6480,6 +7394,96 @@ print_patchAccountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchAccountEntryAsync operation
+#
+##############################################################################
+print_patchAccountEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAccountEntryAsync - Patch account entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch account entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}accountId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: accountId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchAccountRelationAsync operation
+#
+##############################################################################
+print_patchAccountRelationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAccountRelationAsync - Patch account relation${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch account relation." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}accountRelationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: accountRelationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}accountId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: accountId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchAccountTypeAsync operation
+#
+##############################################################################
+print_patchAccountTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAccountTypeAsync - Patch account type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch account type." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}accountTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: accountTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for seedChartOfAccountsAsync operation
 #
 ##############################################################################
@@ -7248,6 +8252,141 @@ print_getBanksCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchBank operation
+#
+##############################################################################
+print_patchBank_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBank - Patches a bank${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially update a bank using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}bankId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: bankId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchBankAccount operation
+#
+##############################################################################
+print_patchBankAccount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBankAccount - Patches a bank account${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially update a bank account using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}bankId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: bankId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}accountId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: accountId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchBankGuarantee operation
+#
+##############################################################################
+print_patchBankGuarantee_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBankGuarantee - Patches a bank guarantee${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially update a bank guarantee using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}bankId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: bankId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}guaranteeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: guaranteeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchBankTransaction operation
+#
+##############################################################################
+print_patchBankTransaction_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBankTransaction - Patches a bank transaction${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially update a bank transaction using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}bankId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: bankId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}transactionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: transactionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateBank operation
 #
 ##############################################################################
@@ -7472,6 +8611,36 @@ print_getBillableLineTaxesCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchBillableLineTaxAsync operation
+#
+##############################################################################
+print_patchBillableLineTaxAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBillableLineTaxAsync - Patch a billable line tax${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a billable line tax." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billableLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billableLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}taxId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: taxId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateBillableLineTax operation
 #
 ##############################################################################
@@ -7607,6 +8776,35 @@ print_getBillingProfilesCountAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchBillingProfileAsync operation
+#
+##############################################################################
+print_patchBillingProfileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBillingProfileAsync - Patch a billing profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a billing profile." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billingProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billingProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -7880,6 +9078,69 @@ print_getBudgetsCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchBudgetAccountEntryAsync operation
+#
+##############################################################################
+print_patchBudgetAccountEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBudgetAccountEntryAsync - Patches a budget account entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially update a budget account entry using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}budgetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: budgetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchBudgetAsync operation
+#
+##############################################################################
+print_patchBudgetAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBudgetAsync - Patches a budget${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially update a budget using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}budgetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: budgetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -8199,6 +9460,64 @@ print_getPaymentCommissionsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCommissionAsync operation
+#
+##############################################################################
+print_patchCommissionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCommissionAsync - Patch a commission${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing commission." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}commissionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: commissionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchPaymentCommissionAsync operation
+#
+##############################################################################
+print_patchPaymentCommissionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchPaymentCommissionAsync - Patch a payment commission${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing payment commission." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}paymentCommissionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: paymentCommissionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -8669,6 +9988,93 @@ print_getCostCentresCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchCostCentre operation
+#
+##############################################################################
+print_patchCostCentre_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCostCentre - Patch a cost centre${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing cost centre." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}costCentreId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: costCentreId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCostCentreBudget operation
+#
+##############################################################################
+print_patchCostCentreBudget_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCostCentreBudget - Patch a cost centre budget${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing cost centre budget." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}budgetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: budgetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCostCentreGroup operation
+#
+##############################################################################
+print_patchCostCentreGroup_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCostCentreGroup - Patch a cost centre group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing cost centre group." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}groupId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: groupId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCostCentre operation
 #
 ##############################################################################
@@ -8890,6 +10296,35 @@ print_getExpenseClaimsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchExpenseClaim operation
+#
+##############################################################################
+print_patchExpenseClaim_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchExpenseClaim - Patch an expense claim${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing expense claim." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}expenseClaimId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: expenseClaimId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateExpenseClaim operation
 #
 ##############################################################################
@@ -9042,6 +10477,35 @@ print_getExpenseTypesCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchExpenseType operation
+#
+##############################################################################
+print_patchExpenseType_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchExpenseType - Patch an expense type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing expense type." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}expenseTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: expenseTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -9520,6 +10984,35 @@ print_getFinancialBooksCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchFinancialBookAsync operation
+#
+##############################################################################
+print_patchFinancialBookAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchFinancialBookAsync - Patch a financial book${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a financial book." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}financialBookId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: financialBookId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateFinancialBookAsync operation
 #
 ##############################################################################
@@ -9674,6 +11167,35 @@ print_getFiscalAuthority_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchFiscalAuthorityAsync operation
+#
+##############################################################################
+print_patchFiscalAuthorityAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchFiscalAuthorityAsync - Patch a fiscal authority${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a fiscal authority." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}authorityId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: authorityId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -9853,6 +11375,35 @@ print_getFiscalYearsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchFiscalAuthorityYearAsync operation
+#
+##############################################################################
+print_patchFiscalAuthorityYearAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchFiscalAuthorityYearAsync - Patch a fiscal authority year${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a fiscal authority year." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}fiscalYearId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fiscalYearId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateFiscalYear operation
 #
 ##############################################################################
@@ -10021,6 +11572,35 @@ print_getInvoiceEnumerationRangesCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchFiscalEnumerationRangeAsync operation
+#
+##############################################################################
+print_patchFiscalEnumerationRangeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchFiscalEnumerationRangeAsync - Patch an invoice enumeration range${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an invoice enumeration range." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}enumerationRangeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: enumerationRangeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateInvoiceEnumerationRange operation
 #
 ##############################################################################
@@ -10176,6 +11756,35 @@ print_getFiscalIdentificationTypesCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchFiscalIdentificationTypeAsync operation
+#
+##############################################################################
+print_patchFiscalIdentificationTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchFiscalIdentificationTypeAsync - Patch a fiscal identification type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a fiscal identification type." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}identificationTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: identificationTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -10358,6 +11967,35 @@ print_getFiscalPeriodsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchFiscalPeriodAsync operation
+#
+##############################################################################
+print_patchFiscalPeriodAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchFiscalPeriodAsync - Patch a fiscal period${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a fiscal period." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}fiscalPeriodId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fiscalPeriodId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateFiscalPeriod operation
 #
 ##############################################################################
@@ -10526,6 +12164,35 @@ print_getFiscalRegimesCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchFiscalRegimeAsync operation
+#
+##############################################################################
+print_patchFiscalRegimeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchFiscalRegimeAsync - Patch a fiscal regime${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a fiscal regime." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}regimeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: regimeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateFiscalRegime operation
 #
 ##############################################################################
@@ -10683,6 +12350,35 @@ print_getFiscalResponsibility_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchFiscalResponsibilityAsync operation
+#
+##############################################################################
+print_patchFiscalResponsibilityAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchFiscalResponsibilityAsync - Patch a fiscal responsibility${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a fiscal responsibility." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}fiscalResponsibilityId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fiscalResponsibilityId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -10863,6 +12559,35 @@ print_getFiscalResponsibilityRecordsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchFiscalResponsibilityRecordAsync operation
+#
+##############################################################################
+print_patchFiscalResponsibilityRecordAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchFiscalResponsibilityRecordAsync - Patch a fiscal responsibility record${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a fiscal responsibility record." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}fiscalResponsibilityRecordId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fiscalResponsibilityRecordId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateFiscalResponsibilityRecord operation
 #
 ##############################################################################
@@ -11006,6 +12731,35 @@ print_getFiscalYearsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchFiscalYearAsync operation
+#
+##############################################################################
+print_patchFiscalYearAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchFiscalYearAsync - Patch a fiscal year${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a fiscal year." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}fiscalYearId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fiscalYearId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateFiscalYearAsync operation
 #
 ##############################################################################
@@ -11140,6 +12894,35 @@ print_getGrantsCountAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchGrantAsync operation
+#
+##############################################################################
+print_patchGrantAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchGrantAsync - Patch a grant${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a grant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}grantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: grantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -11286,6 +13069,35 @@ print_getInvoiceEnumerationRangesAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchInvoiceEnumerationRangeAsync operation
+#
+##############################################################################
+print_patchInvoiceEnumerationRangeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchInvoiceEnumerationRangeAsync - Patch an invoice enumeration range${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an invoice enumeration range." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}rangeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: rangeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateInvoiceEnumerationRangeAsync operation
 #
 ##############################################################################
@@ -11426,6 +13238,35 @@ print_getJournalTypesCountAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchJournalTypeAsync operation
+#
+##############################################################################
+print_patchJournalTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchJournalTypeAsync - Patch a journal type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a journal type." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}journalTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: journalTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -11759,6 +13600,65 @@ print_getJournalsAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchJournalAsync operation
+#
+##############################################################################
+print_patchJournalAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchJournalAsync - Patch a journal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a journal." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}journalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: journalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchJournalEntryAsync operation
+#
+##############################################################################
+print_patchJournalEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchJournalEntryAsync - Patch a journal entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a journal entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}journalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: journalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateJournalAsync operation
 #
 ##############################################################################
@@ -11952,6 +13852,35 @@ print_getLedgerTypesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchLedgerTypeAsync operation
+#
+##############################################################################
+print_patchLedgerTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchLedgerTypeAsync - Patches a ledger type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified ledger type using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}ledgerTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: ledgerTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateLedgerTypeAsync operation
 #
 ##############################################################################
@@ -12104,6 +14033,35 @@ print_getLedgersCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchLedgerAsync operation
+#
+##############################################################################
+print_patchLedgerAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchLedgerAsync - Patches a ledger${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patches the specified ledger." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}ledgerId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: ledgerId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -12546,6 +14504,93 @@ print_getLoansCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchLoanApplicationAsync operation
+#
+##############################################################################
+print_patchLoanApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchLoanApplicationAsync - Patches a loan application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified loan application using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}applicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: applicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchLoanAsync operation
+#
+##############################################################################
+print_patchLoanAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchLoanAsync - Patches a loan${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified loan using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}loanId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: loanId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchLoanTypeAsync operation
+#
+##############################################################################
+print_patchLoanTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchLoanTypeAsync - Patches a loan type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified loan type using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}loanTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: loanTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateLoanApplicationAsync operation
 #
 ##############################################################################
@@ -12729,6 +14774,32 @@ print_getReceiptsCountAsync_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchReceiptAsync operation
+#
+##############################################################################
+print_patchReceiptAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchReceiptAsync - Patches a receipt${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified receipt using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}receiptId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: receiptId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -13306,6 +15377,122 @@ print_getShareTransfersCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchShareClass operation
+#
+##############################################################################
+print_patchShareClass_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchShareClass - Patches a share class${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a share class using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}shareClassId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: shareClassId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchShareIssuance operation
+#
+##############################################################################
+print_patchShareIssuance_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchShareIssuance - Patches a share issuance${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a share issuance using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}issuanceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: issuanceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchShareTransfer operation
+#
+##############################################################################
+print_patchShareTransfer_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchShareTransfer - Patches a share transfer${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a share transfer using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}transferId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: transferId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchShareTransferReason operation
+#
+##############################################################################
+print_patchShareTransferReason_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchShareTransferReason - Patches a share transfer reason${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a share transfer reason using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}reasonId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: reasonId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateShareClass operation
 #
 ##############################################################################
@@ -13569,6 +15756,35 @@ print_getTaxClassesCount_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTaxClass operation
+#
+##############################################################################
+print_patchTaxClass_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTaxClass - Patch a tax class${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing tax class identified by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -14013,6 +16229,95 @@ print_getTaxPolicy_help() {
 }
 ##############################################################################
 #
+# Print help for patchAppliedTaxPolicyRecord operation
+#
+##############################################################################
+print_patchAppliedTaxPolicyRecord_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAppliedTaxPolicyRecord - Patch an applied tax policy record${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing applied tax policy record identified by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}taxPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: taxPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}appliedTaxPolicyRecordId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: appliedTaxPolicyRecordId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchItemTaxPolicyRecord operation
+#
+##############################################################################
+print_patchItemTaxPolicyRecord_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemTaxPolicyRecord - Patch an item tax policy record${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item tax policy record identified by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}taxPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: taxPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTaxPolicyRecordId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTaxPolicyRecordId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTaxPolicy operation
+#
+##############################################################################
+print_patchTaxPolicy_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTaxPolicy - Patch a tax policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing tax policy identified by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateAppliedTaxPolicyRecord operation
 #
 ##############################################################################
@@ -14233,6 +16538,35 @@ print_getTaxRatesCount_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTaxRate operation
+#
+##############################################################################
+print_patchTaxRate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTaxRate - Patch a tax rate${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing tax rate identified by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -14545,6 +16879,64 @@ print_getTransactionsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchTransaction operation
+#
+##############################################################################
+print_patchTransaction_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTransaction - Patch a transaction${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing transaction identified by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}transactionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: transactionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTransactionCategory operation
+#
+##############################################################################
+print_patchTransactionCategory_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTransactionCategory - Patch a transaction category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing transaction category identified by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}categoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: categoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTransaction operation
 #
 ##############################################################################
@@ -14824,6 +17216,82 @@ call_getAccountGroupsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchAccountGroupAsync operation
+#
+##############################################################################
+call_patchAccountGroupAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(accountGroupId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/AccountGroups/{accountGroupId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -15120,6 +17588,82 @@ call_getAccountingPeriodsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchAccountingPeriodAsync operation
+#
+##############################################################################
+call_patchAccountingPeriodAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(accountingPeriodId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/AccountingPeriods/{accountingPeriodId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -16745,6 +19289,234 @@ call_patchAccountAsync() {
 
 ##############################################################################
 #
+# Call patchAccountEntryAsync operation
+#
+##############################################################################
+call_patchAccountEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(accountId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Accounts/{accountId}/Entries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchAccountRelationAsync operation
+#
+##############################################################################
+call_patchAccountRelationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(accountRelationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId accountId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Accounts/Relations/{accountRelationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchAccountTypeAsync operation
+#
+##############################################################################
+call_patchAccountTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(accountTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Accounts/Types/{accountTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call seedChartOfAccountsAsync operation
 #
 ##############################################################################
@@ -18077,6 +20849,310 @@ call_getBanksCount() {
 
 ##############################################################################
 #
+# Call patchBank operation
+#
+##############################################################################
+call_patchBank() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(bankId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Banking/{bankId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchBankAccount operation
+#
+##############################################################################
+call_patchBankAccount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(bankId accountId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Banking/{bankId}/Accounts/{accountId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchBankGuarantee operation
+#
+##############################################################################
+call_patchBankGuarantee() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(bankId guaranteeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Banking/{bankId}/Guarantees/{guaranteeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchBankTransaction operation
+#
+##############################################################################
+call_patchBankTransaction() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(bankId transactionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Banking/{bankId}/Transactions/{transactionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateBank operation
 #
 ##############################################################################
@@ -18565,6 +21641,82 @@ call_getBillableLineTaxesCount() {
 
 ##############################################################################
 #
+# Call patchBillableLineTaxAsync operation
+#
+##############################################################################
+call_patchBillableLineTaxAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billableLineId taxId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/BillableLines/{billableLineId}/Taxes/{taxId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateBillableLineTax operation
 #
 ##############################################################################
@@ -18856,6 +22008,82 @@ call_getBillingProfilesCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchBillingProfileAsync operation
+#
+##############################################################################
+call_patchBillingProfileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billingProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/BillingProfiles/{billingProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -19336,6 +22564,158 @@ call_getBudgetsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchBudgetAccountEntryAsync operation
+#
+##############################################################################
+call_patchBudgetAccountEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(budgetId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Budgets/{budgetId}/AccountEntries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchBudgetAsync operation
+#
+##############################################################################
+call_patchBudgetAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(budgetId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Budgets/{budgetId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -19928,6 +23308,158 @@ call_getPaymentCommissionsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCommissionAsync operation
+#
+##############################################################################
+call_patchCommissionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(commissionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Commissions/Commissions/{commissionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchPaymentCommissionAsync operation
+#
+##############################################################################
+call_patchPaymentCommissionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(paymentCommissionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Commissions/PaymentCommissions/{paymentCommissionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -20745,6 +24277,234 @@ call_getCostCentresCount() {
 
 ##############################################################################
 #
+# Call patchCostCentre operation
+#
+##############################################################################
+call_patchCostCentre() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(costCentreId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/CostCentres/{costCentreId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchCostCentreBudget operation
+#
+##############################################################################
+call_patchCostCentreBudget() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(budgetId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/CostCentres/CostCentreBudgets/{budgetId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchCostCentreGroup operation
+#
+##############################################################################
+call_patchCostCentreGroup() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(groupId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/CostCentres/CostCentreGroups/{groupId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCostCentre operation
 #
 ##############################################################################
@@ -21193,6 +24953,82 @@ call_getExpenseClaimsCount() {
 
 ##############################################################################
 #
+# Call patchExpenseClaim operation
+#
+##############################################################################
+call_patchExpenseClaim() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(expenseClaimId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/ExpenseClaims/{expenseClaimId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateExpenseClaim operation
 #
 ##############################################################################
@@ -21484,6 +25320,82 @@ call_getExpenseTypesCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchExpenseType operation
+#
+##############################################################################
+call_patchExpenseType() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(expenseTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/ExpenseTypes/{expenseTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -22736,6 +26648,82 @@ call_getFinancialBooksCountAsync() {
 
 ##############################################################################
 #
+# Call patchFinancialBookAsync operation
+#
+##############################################################################
+call_patchFinancialBookAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(financialBookId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/FinancialBooks/{financialBookId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateFinancialBookAsync operation
 #
 ##############################################################################
@@ -23027,6 +27015,82 @@ call_getFiscalAuthority() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchFiscalAuthorityAsync operation
+#
+##############################################################################
+call_patchFiscalAuthorityAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(authorityId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Fiscals/Authorities/{authorityId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -23328,6 +27392,82 @@ call_getFiscalYearsCount() {
 
 ##############################################################################
 #
+# Call patchFiscalAuthorityYearAsync operation
+#
+##############################################################################
+call_patchFiscalAuthorityYearAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(fiscalYearId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Fiscals/Authorities/FiscalYears/{fiscalYearId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateFiscalYear operation
 #
 ##############################################################################
@@ -23619,6 +27759,82 @@ call_getInvoiceEnumerationRangesCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchFiscalEnumerationRangeAsync operation
+#
+##############################################################################
+call_patchFiscalEnumerationRangeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(enumerationRangeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Fiscals/Authorities/EnumerationRanges/{enumerationRangeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -23920,6 +28136,82 @@ call_getFiscalIdentificationTypesCount() {
 
 ##############################################################################
 #
+# Call patchFiscalIdentificationTypeAsync operation
+#
+##############################################################################
+call_patchFiscalIdentificationTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(identificationTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Fiscals/Authorities/IdentificationTypes/{identificationTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateFiscalIdentificationType operation
 #
 ##############################################################################
@@ -24211,6 +28503,82 @@ call_getFiscalPeriodsCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchFiscalPeriodAsync operation
+#
+##############################################################################
+call_patchFiscalPeriodAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(fiscalPeriodId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/{fiscalPeriodId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -24512,6 +28880,82 @@ call_getFiscalRegimesCount() {
 
 ##############################################################################
 #
+# Call patchFiscalRegimeAsync operation
+#
+##############################################################################
+call_patchFiscalRegimeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(regimeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Fiscals/Authorities/FiscalRegimes/{regimeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateFiscalRegime operation
 #
 ##############################################################################
@@ -24803,6 +29247,82 @@ call_getFiscalResponsibility() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchFiscalResponsibilityAsync operation
+#
+##############################################################################
+call_patchFiscalResponsibilityAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(fiscalResponsibilityId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilities/{fiscalResponsibilityId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -25104,6 +29624,82 @@ call_getFiscalResponsibilityRecordsCount() {
 
 ##############################################################################
 #
+# Call patchFiscalResponsibilityRecordAsync operation
+#
+##############################################################################
+call_patchFiscalResponsibilityRecordAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(fiscalResponsibilityRecordId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilityRecords/{fiscalResponsibilityRecordId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateFiscalResponsibilityRecord operation
 #
 ##############################################################################
@@ -25395,6 +29991,82 @@ call_getFiscalYearsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchFiscalYearAsync operation
+#
+##############################################################################
+call_patchFiscalYearAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(fiscalYearId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/FiscalYears/{fiscalYearId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -25696,6 +30368,82 @@ call_getGrantsCountAsync() {
 
 ##############################################################################
 #
+# Call patchGrantAsync operation
+#
+##############################################################################
+call_patchGrantAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(grantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Grants/{grantId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateGrantAsync operation
 #
 ##############################################################################
@@ -25951,6 +30699,82 @@ call_getInvoiceEnumerationRangesAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchInvoiceEnumerationRangeAsync operation
+#
+##############################################################################
+call_patchInvoiceEnumerationRangeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(rangeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/InvoiceEnumerationRanges/{rangeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -26247,6 +31071,82 @@ call_getJournalTypesCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchJournalTypeAsync operation
+#
+##############################################################################
+call_patchJournalTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(journalTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/JournalTypes/{journalTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -26804,6 +31704,158 @@ call_getJournalsAsync() {
 
 ##############################################################################
 #
+# Call patchJournalAsync operation
+#
+##############################################################################
+call_patchJournalAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(journalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Journals/{journalId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchJournalEntryAsync operation
+#
+##############################################################################
+call_patchJournalEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(journalId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Journals/{journalId}/Entries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateJournalAsync operation
 #
 ##############################################################################
@@ -27176,6 +32228,82 @@ call_getLedgerTypesCountAsync() {
 
 ##############################################################################
 #
+# Call patchLedgerTypeAsync operation
+#
+##############################################################################
+call_patchLedgerTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(ledgerTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/LedgerTypes/{ledgerTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateLedgerTypeAsync operation
 #
 ##############################################################################
@@ -27467,6 +32595,82 @@ call_getLedgersCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchLedgerAsync operation
+#
+##############################################################################
+call_patchLedgerAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(ledgerId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Ledgers/{ledgerId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -28208,6 +33412,234 @@ call_getLoansCountAsync() {
 
 ##############################################################################
 #
+# Call patchLoanApplicationAsync operation
+#
+##############################################################################
+call_patchLoanApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(applicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Loans/Applications/{applicationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchLoanAsync operation
+#
+##############################################################################
+call_patchLoanAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(loanId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Loans/{loanId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchLoanTypeAsync operation
+#
+##############################################################################
+call_patchLoanTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(loanTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Loans/Types/{loanTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateLoanApplicationAsync operation
 #
 ##############################################################################
@@ -28651,6 +34083,82 @@ call_getReceiptsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchReceiptAsync operation
+#
+##############################################################################
+call_patchReceiptAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(receiptId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Receipts/{receiptId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -29612,6 +35120,310 @@ call_getShareTransfersCount() {
 
 ##############################################################################
 #
+# Call patchShareClass operation
+#
+##############################################################################
+call_patchShareClass() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(shareClassId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Shares/Classes/{shareClassId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchShareIssuance operation
+#
+##############################################################################
+call_patchShareIssuance() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(issuanceId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Shares/Issuances/{issuanceId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchShareTransfer operation
+#
+##############################################################################
+call_patchShareTransfer() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(transferId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Shares/Transfers/{transferId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchShareTransferReason operation
+#
+##############################################################################
+call_patchShareTransferReason() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(reasonId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Shares/TransferReasons/{reasonId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateShareClass operation
 #
 ##############################################################################
@@ -30131,6 +35943,82 @@ call_getTaxClassesCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchTaxClass operation
+#
+##############################################################################
+call_patchTaxClass() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/TaxClasses/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -30872,6 +36760,234 @@ call_getTaxPolicy() {
 
 ##############################################################################
 #
+# Call patchAppliedTaxPolicyRecord operation
+#
+##############################################################################
+call_patchAppliedTaxPolicyRecord() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(taxPolicyId appliedTaxPolicyRecordId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/TaxPolicies/{taxPolicyId}/AppliedTaxPolicyRecords/{appliedTaxPolicyRecordId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchItemTaxPolicyRecord operation
+#
+##############################################################################
+call_patchItemTaxPolicyRecord() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(taxPolicyId itemTaxPolicyRecordId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/TaxPolicies/{taxPolicyId}/ItemTaxPolicyRecords/{itemTaxPolicyRecordId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchTaxPolicy operation
+#
+##############################################################################
+call_patchTaxPolicy() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/TaxPolicies/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateAppliedTaxPolicyRecord operation
 #
 ##############################################################################
@@ -31315,6 +37431,82 @@ call_getTaxRatesCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchTaxRate operation
+#
+##############################################################################
+call_patchTaxRate() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/TaxRates/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -31836,6 +38028,158 @@ call_getTransactionsCount() {
 
 ##############################################################################
 #
+# Call patchTransaction operation
+#
+##############################################################################
+call_patchTransaction() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(transactionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Transactions/{transactionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchTransactionCategory operation
+#
+##############################################################################
+call_patchTransactionCategory() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(categoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Transactions/Categories/{categoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTransaction operation
 #
 ##############################################################################
@@ -32098,6 +38442,9 @@ case $key in
     getAccountGroupsCountAsync)
     operation="getAccountGroupsCountAsync"
     ;;
+    patchAccountGroupAsync)
+    operation="patchAccountGroupAsync"
+    ;;
     updateAccountGroup)
     operation="updateAccountGroup"
     ;;
@@ -32115,6 +38462,9 @@ case $key in
     ;;
     getAccountingPeriodsCountAsync)
     operation="getAccountingPeriodsCountAsync"
+    ;;
+    patchAccountingPeriodAsync)
+    operation="patchAccountingPeriodAsync"
     ;;
     updateAccountingPeriod)
     operation="updateAccountingPeriod"
@@ -32221,6 +38571,15 @@ case $key in
     patchAccountAsync)
     operation="patchAccountAsync"
     ;;
+    patchAccountEntryAsync)
+    operation="patchAccountEntryAsync"
+    ;;
+    patchAccountRelationAsync)
+    operation="patchAccountRelationAsync"
+    ;;
+    patchAccountTypeAsync)
+    operation="patchAccountTypeAsync"
+    ;;
     seedChartOfAccountsAsync)
     operation="seedChartOfAccountsAsync"
     ;;
@@ -32302,6 +38661,18 @@ case $key in
     getBanksCount)
     operation="getBanksCount"
     ;;
+    patchBank)
+    operation="patchBank"
+    ;;
+    patchBankAccount)
+    operation="patchBankAccount"
+    ;;
+    patchBankGuarantee)
+    operation="patchBankGuarantee"
+    ;;
+    patchBankTransaction)
+    operation="patchBankTransaction"
+    ;;
     updateBank)
     operation="updateBank"
     ;;
@@ -32326,6 +38697,9 @@ case $key in
     getBillableLineTaxesCount)
     operation="getBillableLineTaxesCount"
     ;;
+    patchBillableLineTaxAsync)
+    operation="patchBillableLineTaxAsync"
+    ;;
     updateBillableLineTax)
     operation="updateBillableLineTax"
     ;;
@@ -32343,6 +38717,9 @@ case $key in
     ;;
     getBillingProfilesCountAsync)
     operation="getBillingProfilesCountAsync"
+    ;;
+    patchBillingProfileAsync)
+    operation="patchBillingProfileAsync"
     ;;
     updateBillingProfileAsync)
     operation="updateBillingProfileAsync"
@@ -32373,6 +38750,12 @@ case $key in
     ;;
     getBudgetsCountAsync)
     operation="getBudgetsCountAsync"
+    ;;
+    patchBudgetAccountEntryAsync)
+    operation="patchBudgetAccountEntryAsync"
+    ;;
+    patchBudgetAsync)
+    operation="patchBudgetAsync"
     ;;
     updateBudgetAccountEntryAsync)
     operation="updateBudgetAccountEntryAsync"
@@ -32409,6 +38792,12 @@ case $key in
     ;;
     getPaymentCommissionsCountAsync)
     operation="getPaymentCommissionsCountAsync"
+    ;;
+    patchCommissionAsync)
+    operation="patchCommissionAsync"
+    ;;
+    patchPaymentCommissionAsync)
+    operation="patchPaymentCommissionAsync"
     ;;
     updateCommissionAsync)
     operation="updateCommissionAsync"
@@ -32461,6 +38850,15 @@ case $key in
     getCostCentresCount)
     operation="getCostCentresCount"
     ;;
+    patchCostCentre)
+    operation="patchCostCentre"
+    ;;
+    patchCostCentreBudget)
+    operation="patchCostCentreBudget"
+    ;;
+    patchCostCentreGroup)
+    operation="patchCostCentreGroup"
+    ;;
     updateCostCentre)
     operation="updateCostCentre"
     ;;
@@ -32485,6 +38883,9 @@ case $key in
     getExpenseClaimsCount)
     operation="getExpenseClaimsCount"
     ;;
+    patchExpenseClaim)
+    operation="patchExpenseClaim"
+    ;;
     updateExpenseClaim)
     operation="updateExpenseClaim"
     ;;
@@ -32502,6 +38903,9 @@ case $key in
     ;;
     getExpenseTypesCount)
     operation="getExpenseTypesCount"
+    ;;
+    patchExpenseType)
+    operation="patchExpenseType"
     ;;
     updateExpenseType)
     operation="updateExpenseType"
@@ -32572,6 +38976,9 @@ case $key in
     getFinancialBooksCountAsync)
     operation="getFinancialBooksCountAsync"
     ;;
+    patchFinancialBookAsync)
+    operation="patchFinancialBookAsync"
+    ;;
     updateFinancialBookAsync)
     operation="updateFinancialBookAsync"
     ;;
@@ -32589,6 +38996,9 @@ case $key in
     ;;
     getFiscalAuthority)
     operation="getFiscalAuthority"
+    ;;
+    patchFiscalAuthorityAsync)
+    operation="patchFiscalAuthorityAsync"
     ;;
     updateFiscalAuthority)
     operation="updateFiscalAuthority"
@@ -32608,6 +39018,9 @@ case $key in
     getFiscalYearsCount)
     operation="getFiscalYearsCount"
     ;;
+    patchFiscalAuthorityYearAsync)
+    operation="patchFiscalAuthorityYearAsync"
+    ;;
     updateFiscalYear)
     operation="updateFiscalYear"
     ;;
@@ -32625,6 +39038,9 @@ case $key in
     ;;
     getInvoiceEnumerationRangesCount)
     operation="getInvoiceEnumerationRangesCount"
+    ;;
+    patchFiscalEnumerationRangeAsync)
+    operation="patchFiscalEnumerationRangeAsync"
     ;;
     updateInvoiceEnumerationRange)
     operation="updateInvoiceEnumerationRange"
@@ -32644,6 +39060,9 @@ case $key in
     getFiscalIdentificationTypesCount)
     operation="getFiscalIdentificationTypesCount"
     ;;
+    patchFiscalIdentificationTypeAsync)
+    operation="patchFiscalIdentificationTypeAsync"
+    ;;
     updateFiscalIdentificationType)
     operation="updateFiscalIdentificationType"
     ;;
@@ -32661,6 +39080,9 @@ case $key in
     ;;
     getFiscalPeriodsCount)
     operation="getFiscalPeriodsCount"
+    ;;
+    patchFiscalPeriodAsync)
+    operation="patchFiscalPeriodAsync"
     ;;
     updateFiscalPeriod)
     operation="updateFiscalPeriod"
@@ -32680,6 +39102,9 @@ case $key in
     getFiscalRegimesCount)
     operation="getFiscalRegimesCount"
     ;;
+    patchFiscalRegimeAsync)
+    operation="patchFiscalRegimeAsync"
+    ;;
     updateFiscalRegime)
     operation="updateFiscalRegime"
     ;;
@@ -32697,6 +39122,9 @@ case $key in
     ;;
     getFiscalResponsibility)
     operation="getFiscalResponsibility"
+    ;;
+    patchFiscalResponsibilityAsync)
+    operation="patchFiscalResponsibilityAsync"
     ;;
     updateFiscalResponsibility)
     operation="updateFiscalResponsibility"
@@ -32716,6 +39144,9 @@ case $key in
     getFiscalResponsibilityRecordsCount)
     operation="getFiscalResponsibilityRecordsCount"
     ;;
+    patchFiscalResponsibilityRecordAsync)
+    operation="patchFiscalResponsibilityRecordAsync"
+    ;;
     updateFiscalResponsibilityRecord)
     operation="updateFiscalResponsibilityRecord"
     ;;
@@ -32733,6 +39164,9 @@ case $key in
     ;;
     getFiscalYearsCountAsync)
     operation="getFiscalYearsCountAsync"
+    ;;
+    patchFiscalYearAsync)
+    operation="patchFiscalYearAsync"
     ;;
     updateFiscalYearAsync)
     operation="updateFiscalYearAsync"
@@ -32752,6 +39186,9 @@ case $key in
     getGrantsCountAsync)
     operation="getGrantsCountAsync"
     ;;
+    patchGrantAsync)
+    operation="patchGrantAsync"
+    ;;
     updateGrantAsync)
     operation="updateGrantAsync"
     ;;
@@ -32766,6 +39203,9 @@ case $key in
     ;;
     getInvoiceEnumerationRangesAsync)
     operation="getInvoiceEnumerationRangesAsync"
+    ;;
+    patchInvoiceEnumerationRangeAsync)
+    operation="patchInvoiceEnumerationRangeAsync"
     ;;
     updateInvoiceEnumerationRangeAsync)
     operation="updateInvoiceEnumerationRangeAsync"
@@ -32784,6 +39224,9 @@ case $key in
     ;;
     getJournalTypesCountAsync)
     operation="getJournalTypesCountAsync"
+    ;;
+    patchJournalTypeAsync)
+    operation="patchJournalTypeAsync"
     ;;
     updateJournalTypeAsync)
     operation="updateJournalTypeAsync"
@@ -32821,6 +39264,12 @@ case $key in
     getJournalsAsync)
     operation="getJournalsAsync"
     ;;
+    patchJournalAsync)
+    operation="patchJournalAsync"
+    ;;
+    patchJournalEntryAsync)
+    operation="patchJournalEntryAsync"
+    ;;
     updateJournalAsync)
     operation="updateJournalAsync"
     ;;
@@ -32842,6 +39291,9 @@ case $key in
     getLedgerTypesCountAsync)
     operation="getLedgerTypesCountAsync"
     ;;
+    patchLedgerTypeAsync)
+    operation="patchLedgerTypeAsync"
+    ;;
     updateLedgerTypeAsync)
     operation="updateLedgerTypeAsync"
     ;;
@@ -32859,6 +39311,9 @@ case $key in
     ;;
     getLedgersCountAsync)
     operation="getLedgersCountAsync"
+    ;;
+    patchLedgerAsync)
+    operation="patchLedgerAsync"
     ;;
     updateLedgerAsync)
     operation="updateLedgerAsync"
@@ -32908,6 +39363,15 @@ case $key in
     getLoansCountAsync)
     operation="getLoansCountAsync"
     ;;
+    patchLoanApplicationAsync)
+    operation="patchLoanApplicationAsync"
+    ;;
+    patchLoanAsync)
+    operation="patchLoanAsync"
+    ;;
+    patchLoanTypeAsync)
+    operation="patchLoanTypeAsync"
+    ;;
     updateLoanApplicationAsync)
     operation="updateLoanApplicationAsync"
     ;;
@@ -32931,6 +39395,9 @@ case $key in
     ;;
     getReceiptsCountAsync)
     operation="getReceiptsCountAsync"
+    ;;
+    patchReceiptAsync)
+    operation="patchReceiptAsync"
     ;;
     updateReceiptAsync)
     operation="updateReceiptAsync"
@@ -32995,6 +39462,18 @@ case $key in
     getShareTransfersCount)
     operation="getShareTransfersCount"
     ;;
+    patchShareClass)
+    operation="patchShareClass"
+    ;;
+    patchShareIssuance)
+    operation="patchShareIssuance"
+    ;;
+    patchShareTransfer)
+    operation="patchShareTransfer"
+    ;;
+    patchShareTransferReason)
+    operation="patchShareTransferReason"
+    ;;
     updateShareClass)
     operation="updateShareClass"
     ;;
@@ -33021,6 +39500,9 @@ case $key in
     ;;
     getTaxClassesCount)
     operation="getTaxClassesCount"
+    ;;
+    patchTaxClass)
+    operation="patchTaxClass"
     ;;
     updateTaxClass)
     operation="updateTaxClass"
@@ -33070,6 +39552,15 @@ case $key in
     getTaxPolicy)
     operation="getTaxPolicy"
     ;;
+    patchAppliedTaxPolicyRecord)
+    operation="patchAppliedTaxPolicyRecord"
+    ;;
+    patchItemTaxPolicyRecord)
+    operation="patchItemTaxPolicyRecord"
+    ;;
+    patchTaxPolicy)
+    operation="patchTaxPolicy"
+    ;;
     updateAppliedTaxPolicyRecord)
     operation="updateAppliedTaxPolicyRecord"
     ;;
@@ -33093,6 +39584,9 @@ case $key in
     ;;
     getTaxRatesCount)
     operation="getTaxRatesCount"
+    ;;
+    patchTaxRate)
+    operation="patchTaxRate"
     ;;
     updateTaxRate)
     operation="updateTaxRate"
@@ -33126,6 +39620,12 @@ case $key in
     ;;
     getTransactionsCount)
     operation="getTransactionsCount"
+    ;;
+    patchTransaction)
+    operation="patchTransaction"
+    ;;
+    patchTransactionCategory)
+    operation="patchTransactionCategory"
     ;;
     updateTransaction)
     operation="updateTransaction"
@@ -33235,6 +39735,9 @@ case $operation in
     getAccountGroupsCountAsync)
     call_getAccountGroupsCountAsync
     ;;
+    patchAccountGroupAsync)
+    call_patchAccountGroupAsync
+    ;;
     updateAccountGroup)
     call_updateAccountGroup
     ;;
@@ -33252,6 +39755,9 @@ case $operation in
     ;;
     getAccountingPeriodsCountAsync)
     call_getAccountingPeriodsCountAsync
+    ;;
+    patchAccountingPeriodAsync)
+    call_patchAccountingPeriodAsync
     ;;
     updateAccountingPeriod)
     call_updateAccountingPeriod
@@ -33358,6 +39864,15 @@ case $operation in
     patchAccountAsync)
     call_patchAccountAsync
     ;;
+    patchAccountEntryAsync)
+    call_patchAccountEntryAsync
+    ;;
+    patchAccountRelationAsync)
+    call_patchAccountRelationAsync
+    ;;
+    patchAccountTypeAsync)
+    call_patchAccountTypeAsync
+    ;;
     seedChartOfAccountsAsync)
     call_seedChartOfAccountsAsync
     ;;
@@ -33439,6 +39954,18 @@ case $operation in
     getBanksCount)
     call_getBanksCount
     ;;
+    patchBank)
+    call_patchBank
+    ;;
+    patchBankAccount)
+    call_patchBankAccount
+    ;;
+    patchBankGuarantee)
+    call_patchBankGuarantee
+    ;;
+    patchBankTransaction)
+    call_patchBankTransaction
+    ;;
     updateBank)
     call_updateBank
     ;;
@@ -33463,6 +39990,9 @@ case $operation in
     getBillableLineTaxesCount)
     call_getBillableLineTaxesCount
     ;;
+    patchBillableLineTaxAsync)
+    call_patchBillableLineTaxAsync
+    ;;
     updateBillableLineTax)
     call_updateBillableLineTax
     ;;
@@ -33480,6 +40010,9 @@ case $operation in
     ;;
     getBillingProfilesCountAsync)
     call_getBillingProfilesCountAsync
+    ;;
+    patchBillingProfileAsync)
+    call_patchBillingProfileAsync
     ;;
     updateBillingProfileAsync)
     call_updateBillingProfileAsync
@@ -33510,6 +40043,12 @@ case $operation in
     ;;
     getBudgetsCountAsync)
     call_getBudgetsCountAsync
+    ;;
+    patchBudgetAccountEntryAsync)
+    call_patchBudgetAccountEntryAsync
+    ;;
+    patchBudgetAsync)
+    call_patchBudgetAsync
     ;;
     updateBudgetAccountEntryAsync)
     call_updateBudgetAccountEntryAsync
@@ -33546,6 +40085,12 @@ case $operation in
     ;;
     getPaymentCommissionsCountAsync)
     call_getPaymentCommissionsCountAsync
+    ;;
+    patchCommissionAsync)
+    call_patchCommissionAsync
+    ;;
+    patchPaymentCommissionAsync)
+    call_patchPaymentCommissionAsync
     ;;
     updateCommissionAsync)
     call_updateCommissionAsync
@@ -33598,6 +40143,15 @@ case $operation in
     getCostCentresCount)
     call_getCostCentresCount
     ;;
+    patchCostCentre)
+    call_patchCostCentre
+    ;;
+    patchCostCentreBudget)
+    call_patchCostCentreBudget
+    ;;
+    patchCostCentreGroup)
+    call_patchCostCentreGroup
+    ;;
     updateCostCentre)
     call_updateCostCentre
     ;;
@@ -33622,6 +40176,9 @@ case $operation in
     getExpenseClaimsCount)
     call_getExpenseClaimsCount
     ;;
+    patchExpenseClaim)
+    call_patchExpenseClaim
+    ;;
     updateExpenseClaim)
     call_updateExpenseClaim
     ;;
@@ -33639,6 +40196,9 @@ case $operation in
     ;;
     getExpenseTypesCount)
     call_getExpenseTypesCount
+    ;;
+    patchExpenseType)
+    call_patchExpenseType
     ;;
     updateExpenseType)
     call_updateExpenseType
@@ -33709,6 +40269,9 @@ case $operation in
     getFinancialBooksCountAsync)
     call_getFinancialBooksCountAsync
     ;;
+    patchFinancialBookAsync)
+    call_patchFinancialBookAsync
+    ;;
     updateFinancialBookAsync)
     call_updateFinancialBookAsync
     ;;
@@ -33726,6 +40289,9 @@ case $operation in
     ;;
     getFiscalAuthority)
     call_getFiscalAuthority
+    ;;
+    patchFiscalAuthorityAsync)
+    call_patchFiscalAuthorityAsync
     ;;
     updateFiscalAuthority)
     call_updateFiscalAuthority
@@ -33745,6 +40311,9 @@ case $operation in
     getFiscalYearsCount)
     call_getFiscalYearsCount
     ;;
+    patchFiscalAuthorityYearAsync)
+    call_patchFiscalAuthorityYearAsync
+    ;;
     updateFiscalYear)
     call_updateFiscalYear
     ;;
@@ -33762,6 +40331,9 @@ case $operation in
     ;;
     getInvoiceEnumerationRangesCount)
     call_getInvoiceEnumerationRangesCount
+    ;;
+    patchFiscalEnumerationRangeAsync)
+    call_patchFiscalEnumerationRangeAsync
     ;;
     updateInvoiceEnumerationRange)
     call_updateInvoiceEnumerationRange
@@ -33781,6 +40353,9 @@ case $operation in
     getFiscalIdentificationTypesCount)
     call_getFiscalIdentificationTypesCount
     ;;
+    patchFiscalIdentificationTypeAsync)
+    call_patchFiscalIdentificationTypeAsync
+    ;;
     updateFiscalIdentificationType)
     call_updateFiscalIdentificationType
     ;;
@@ -33798,6 +40373,9 @@ case $operation in
     ;;
     getFiscalPeriodsCount)
     call_getFiscalPeriodsCount
+    ;;
+    patchFiscalPeriodAsync)
+    call_patchFiscalPeriodAsync
     ;;
     updateFiscalPeriod)
     call_updateFiscalPeriod
@@ -33817,6 +40395,9 @@ case $operation in
     getFiscalRegimesCount)
     call_getFiscalRegimesCount
     ;;
+    patchFiscalRegimeAsync)
+    call_patchFiscalRegimeAsync
+    ;;
     updateFiscalRegime)
     call_updateFiscalRegime
     ;;
@@ -33834,6 +40415,9 @@ case $operation in
     ;;
     getFiscalResponsibility)
     call_getFiscalResponsibility
+    ;;
+    patchFiscalResponsibilityAsync)
+    call_patchFiscalResponsibilityAsync
     ;;
     updateFiscalResponsibility)
     call_updateFiscalResponsibility
@@ -33853,6 +40437,9 @@ case $operation in
     getFiscalResponsibilityRecordsCount)
     call_getFiscalResponsibilityRecordsCount
     ;;
+    patchFiscalResponsibilityRecordAsync)
+    call_patchFiscalResponsibilityRecordAsync
+    ;;
     updateFiscalResponsibilityRecord)
     call_updateFiscalResponsibilityRecord
     ;;
@@ -33870,6 +40457,9 @@ case $operation in
     ;;
     getFiscalYearsCountAsync)
     call_getFiscalYearsCountAsync
+    ;;
+    patchFiscalYearAsync)
+    call_patchFiscalYearAsync
     ;;
     updateFiscalYearAsync)
     call_updateFiscalYearAsync
@@ -33889,6 +40479,9 @@ case $operation in
     getGrantsCountAsync)
     call_getGrantsCountAsync
     ;;
+    patchGrantAsync)
+    call_patchGrantAsync
+    ;;
     updateGrantAsync)
     call_updateGrantAsync
     ;;
@@ -33903,6 +40496,9 @@ case $operation in
     ;;
     getInvoiceEnumerationRangesAsync)
     call_getInvoiceEnumerationRangesAsync
+    ;;
+    patchInvoiceEnumerationRangeAsync)
+    call_patchInvoiceEnumerationRangeAsync
     ;;
     updateInvoiceEnumerationRangeAsync)
     call_updateInvoiceEnumerationRangeAsync
@@ -33921,6 +40517,9 @@ case $operation in
     ;;
     getJournalTypesCountAsync)
     call_getJournalTypesCountAsync
+    ;;
+    patchJournalTypeAsync)
+    call_patchJournalTypeAsync
     ;;
     updateJournalTypeAsync)
     call_updateJournalTypeAsync
@@ -33958,6 +40557,12 @@ case $operation in
     getJournalsAsync)
     call_getJournalsAsync
     ;;
+    patchJournalAsync)
+    call_patchJournalAsync
+    ;;
+    patchJournalEntryAsync)
+    call_patchJournalEntryAsync
+    ;;
     updateJournalAsync)
     call_updateJournalAsync
     ;;
@@ -33979,6 +40584,9 @@ case $operation in
     getLedgerTypesCountAsync)
     call_getLedgerTypesCountAsync
     ;;
+    patchLedgerTypeAsync)
+    call_patchLedgerTypeAsync
+    ;;
     updateLedgerTypeAsync)
     call_updateLedgerTypeAsync
     ;;
@@ -33996,6 +40604,9 @@ case $operation in
     ;;
     getLedgersCountAsync)
     call_getLedgersCountAsync
+    ;;
+    patchLedgerAsync)
+    call_patchLedgerAsync
     ;;
     updateLedgerAsync)
     call_updateLedgerAsync
@@ -34045,6 +40656,15 @@ case $operation in
     getLoansCountAsync)
     call_getLoansCountAsync
     ;;
+    patchLoanApplicationAsync)
+    call_patchLoanApplicationAsync
+    ;;
+    patchLoanAsync)
+    call_patchLoanAsync
+    ;;
+    patchLoanTypeAsync)
+    call_patchLoanTypeAsync
+    ;;
     updateLoanApplicationAsync)
     call_updateLoanApplicationAsync
     ;;
@@ -34068,6 +40688,9 @@ case $operation in
     ;;
     getReceiptsCountAsync)
     call_getReceiptsCountAsync
+    ;;
+    patchReceiptAsync)
+    call_patchReceiptAsync
     ;;
     updateReceiptAsync)
     call_updateReceiptAsync
@@ -34132,6 +40755,18 @@ case $operation in
     getShareTransfersCount)
     call_getShareTransfersCount
     ;;
+    patchShareClass)
+    call_patchShareClass
+    ;;
+    patchShareIssuance)
+    call_patchShareIssuance
+    ;;
+    patchShareTransfer)
+    call_patchShareTransfer
+    ;;
+    patchShareTransferReason)
+    call_patchShareTransferReason
+    ;;
     updateShareClass)
     call_updateShareClass
     ;;
@@ -34158,6 +40793,9 @@ case $operation in
     ;;
     getTaxClassesCount)
     call_getTaxClassesCount
+    ;;
+    patchTaxClass)
+    call_patchTaxClass
     ;;
     updateTaxClass)
     call_updateTaxClass
@@ -34207,6 +40845,15 @@ case $operation in
     getTaxPolicy)
     call_getTaxPolicy
     ;;
+    patchAppliedTaxPolicyRecord)
+    call_patchAppliedTaxPolicyRecord
+    ;;
+    patchItemTaxPolicyRecord)
+    call_patchItemTaxPolicyRecord
+    ;;
+    patchTaxPolicy)
+    call_patchTaxPolicy
+    ;;
     updateAppliedTaxPolicyRecord)
     call_updateAppliedTaxPolicyRecord
     ;;
@@ -34230,6 +40877,9 @@ case $operation in
     ;;
     getTaxRatesCount)
     call_getTaxRatesCount
+    ;;
+    patchTaxRate)
+    call_patchTaxRate
     ;;
     updateTaxRate)
     call_updateTaxRate
@@ -34263,6 +40913,12 @@ case $operation in
     ;;
     getTransactionsCount)
     call_getTransactionsCount
+    ;;
+    patchTransaction)
+    call_patchTransaction
+    ;;
+    patchTransactionCategory)
+    call_patchTransactionCategory
     ;;
     updateTransaction)
     call_updateTransaction

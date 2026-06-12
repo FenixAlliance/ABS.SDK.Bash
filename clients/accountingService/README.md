@@ -108,12 +108,14 @@ Class | Method | HTTP request | Description
 *AccountGroupsApi* | [**getAccountGroup**](docs/AccountGroupsApi.md#getaccountgroup) | **GET** /api/v2/AccountingService/AccountGroups/{accountGroupId} | Gets the current tenant account group
 *AccountGroupsApi* | [**getAccountGroups**](docs/AccountGroupsApi.md#getaccountgroups) | **GET** /api/v2/AccountingService/AccountGroups | Gets the current tenant account groups
 *AccountGroupsApi* | [**getAccountGroupsCountAsync**](docs/AccountGroupsApi.md#getaccountgroupscountasync) | **GET** /api/v2/AccountingService/AccountGroups/Count | Gets the current tenant accounts count
+*AccountGroupsApi* | [**patchAccountGroupAsync**](docs/AccountGroupsApi.md#patchaccountgroupasync) | **PATCH** /api/v2/AccountingService/AccountGroups/{accountGroupId} | Patch an account group
 *AccountGroupsApi* | [**updateAccountGroup**](docs/AccountGroupsApi.md#updateaccountgroup) | **PUT** /api/v2/AccountingService/AccountGroups/{accountGroupId} | Updates an existing account group
 *AccountingPeriodsApi* | [**createAccountingPeriod**](docs/AccountingPeriodsApi.md#createaccountingperiod) | **POST** /api/v2/AccountingService/AccountingPeriods | Creates a new accounting period
 *AccountingPeriodsApi* | [**deleteAccountingPeriod**](docs/AccountingPeriodsApi.md#deleteaccountingperiod) | **DELETE** /api/v2/AccountingService/AccountingPeriods/{accountingPeriodId} | Deletes an existing accounting period
 *AccountingPeriodsApi* | [**getAccountingPeriod**](docs/AccountingPeriodsApi.md#getaccountingperiod) | **GET** /api/v2/AccountingService/AccountingPeriods/{accountingPeriodId} | Gets the current tenant accounting period
 *AccountingPeriodsApi* | [**getAccountingPeriods**](docs/AccountingPeriodsApi.md#getaccountingperiods) | **GET** /api/v2/AccountingService/AccountingPeriods | Get all accounting periods for a tenant
 *AccountingPeriodsApi* | [**getAccountingPeriodsCountAsync**](docs/AccountingPeriodsApi.md#getaccountingperiodscountasync) | **GET** /api/v2/AccountingService/AccountingPeriods/Count | Gets the current tenant accounting periods count
+*AccountingPeriodsApi* | [**patchAccountingPeriodAsync**](docs/AccountingPeriodsApi.md#patchaccountingperiodasync) | **PATCH** /api/v2/AccountingService/AccountingPeriods/{accountingPeriodId} | Patch an accounting period
 *AccountingPeriodsApi* | [**updateAccountingPeriod**](docs/AccountingPeriodsApi.md#updateaccountingperiod) | **PUT** /api/v2/AccountingService/AccountingPeriods/{accountingPeriodId} | Updates an existing accounting period
 *AccountsApi* | [**aggregateAccountsBalanceAsync**](docs/AccountsApi.md#aggregateaccountsbalanceasync) | **GET** /api/v2/AccountingService/Accounts/Aggregate/Balance | Aggregate accounts balance
 *AccountsApi* | [**balanceAccountAsync**](docs/AccountsApi.md#balanceaccountasync) | **POST** /api/v2/AccountingService/Accounts/{accountId}/Balance | Balance account
@@ -149,6 +151,9 @@ Class | Method | HTTP request | Description
 *AccountsApi* | [**getDebitAccountEntriesAsync**](docs/AccountsApi.md#getdebitaccountentriesasync) | **GET** /api/v2/AccountingService/Accounts/{accountId}/Entries/Debit | Get debit account entries
 *AccountsApi* | [**getRootAccountsAsync**](docs/AccountsApi.md#getrootaccountsasync) | **GET** /api/v2/AccountingService/Accounts/Root | Get root accounts
 *AccountsApi* | [**patchAccountAsync**](docs/AccountsApi.md#patchaccountasync) | **PATCH** /api/v2/AccountingService/Accounts/{accountId} | Patch an account
+*AccountsApi* | [**patchAccountEntryAsync**](docs/AccountsApi.md#patchaccountentryasync) | **PATCH** /api/v2/AccountingService/Accounts/{accountId}/Entries/{entryId} | Patch account entry
+*AccountsApi* | [**patchAccountRelationAsync**](docs/AccountsApi.md#patchaccountrelationasync) | **PATCH** /api/v2/AccountingService/Accounts/Relations/{accountRelationId} | Patch account relation
+*AccountsApi* | [**patchAccountTypeAsync**](docs/AccountsApi.md#patchaccounttypeasync) | **PATCH** /api/v2/AccountingService/Accounts/Types/{accountTypeId} | Patch account type
 *AccountsApi* | [**seedChartOfAccountsAsync**](docs/AccountsApi.md#seedchartofaccountsasync) | **POST** /api/v2/AccountingService/Accounts/ChartsOfAccounts/Seed | Seed chart of accounts
 *AccountsApi* | [**updateAccountAsync**](docs/AccountsApi.md#updateaccountasync) | **PUT** /api/v2/AccountingService/Accounts/{accountId} | Update an account
 *AccountsApi* | [**updateAccountEntryAsync**](docs/AccountsApi.md#updateaccountentryasync) | **PUT** /api/v2/AccountingService/Accounts/{accountId}/Entries/{entryId} | Update account entry
@@ -176,6 +181,10 @@ Class | Method | HTTP request | Description
 *BankingApi* | [**getBankTransactionsCount**](docs/BankingApi.md#getbanktransactionscount) | **GET** /api/v2/AccountingService/Banking/{bankId}/Transactions/Count | Gets the current tenant bank transactions count
 *BankingApi* | [**getBanks**](docs/BankingApi.md#getbanks) | **GET** /api/v2/AccountingService/Banking | Gets the current tenant banks
 *BankingApi* | [**getBanksCount**](docs/BankingApi.md#getbankscount) | **GET** /api/v2/AccountingService/Banking/Count | Gets the current tenant banks count
+*BankingApi* | [**patchBank**](docs/BankingApi.md#patchbank) | **PATCH** /api/v2/AccountingService/Banking/{bankId} | Patches a bank
+*BankingApi* | [**patchBankAccount**](docs/BankingApi.md#patchbankaccount) | **PATCH** /api/v2/AccountingService/Banking/{bankId}/Accounts/{accountId} | Patches a bank account
+*BankingApi* | [**patchBankGuarantee**](docs/BankingApi.md#patchbankguarantee) | **PATCH** /api/v2/AccountingService/Banking/{bankId}/Guarantees/{guaranteeId} | Patches a bank guarantee
+*BankingApi* | [**patchBankTransaction**](docs/BankingApi.md#patchbanktransaction) | **PATCH** /api/v2/AccountingService/Banking/{bankId}/Transactions/{transactionId} | Patches a bank transaction
 *BankingApi* | [**updateBank**](docs/BankingApi.md#updatebank) | **PUT** /api/v2/AccountingService/Banking/{bankId} | Updates a bank
 *BankingApi* | [**updateBankAccount**](docs/BankingApi.md#updatebankaccount) | **PUT** /api/v2/AccountingService/Banking/{bankId}/Accounts/{accountId} | Updates a bank account
 *BankingApi* | [**updateBankGuarantee**](docs/BankingApi.md#updatebankguarantee) | **PUT** /api/v2/AccountingService/Banking/{bankId}/Guarantees/{guaranteeId} | Updates a bank guarantee
@@ -184,12 +193,14 @@ Class | Method | HTTP request | Description
 *BillableLineTaxesApi* | [**deleteBillableLineTax**](docs/BillableLineTaxesApi.md#deletebillablelinetax) | **DELETE** /api/v2/AccountingService/BillableLines/{billableLineId}/Taxes/{taxId} | Delete a tax from a billable line.
 *BillableLineTaxesApi* | [**getBillableLineTaxes**](docs/BillableLineTaxesApi.md#getbillablelinetaxes) | **GET** /api/v2/AccountingService/BillableLines/{billableLineId}/Taxes | Get taxes for a billable line.
 *BillableLineTaxesApi* | [**getBillableLineTaxesCount**](docs/BillableLineTaxesApi.md#getbillablelinetaxescount) | **GET** /api/v2/AccountingService/BillableLines/{billableLineId}/Taxes/Count | Get the count of taxes for a billable line.
+*BillableLineTaxesApi* | [**patchBillableLineTaxAsync**](docs/BillableLineTaxesApi.md#patchbillablelinetaxasync) | **PATCH** /api/v2/AccountingService/BillableLines/{billableLineId}/Taxes/{taxId} | Patch a billable line tax
 *BillableLineTaxesApi* | [**updateBillableLineTax**](docs/BillableLineTaxesApi.md#updatebillablelinetax) | **PUT** /api/v2/AccountingService/BillableLines/{billableLineId}/Taxes/{taxId} | Update a tax for a billable line.
 *BillingProfilesApi* | [**createBillingProfileAsync**](docs/BillingProfilesApi.md#createbillingprofileasync) | **POST** /api/v2/AccountingService/BillingProfiles | Creates a new billing profile
 *BillingProfilesApi* | [**deleteBillingProfileAsync**](docs/BillingProfilesApi.md#deletebillingprofileasync) | **DELETE** /api/v2/AccountingService/BillingProfiles/{billingProfileId} | Deletes a billing profile
 *BillingProfilesApi* | [**getBillingProfileByIdAsync**](docs/BillingProfilesApi.md#getbillingprofilebyidasync) | **GET** /api/v2/AccountingService/BillingProfiles/{billingProfileId} | Gets a billing profile by id
 *BillingProfilesApi* | [**getBillingProfilesAsync**](docs/BillingProfilesApi.md#getbillingprofilesasync) | **GET** /api/v2/AccountingService/BillingProfiles | Gets all billing profiles
 *BillingProfilesApi* | [**getBillingProfilesCountAsync**](docs/BillingProfilesApi.md#getbillingprofilescountasync) | **GET** /api/v2/AccountingService/BillingProfiles/Count | Gets the count of billing profiles
+*BillingProfilesApi* | [**patchBillingProfileAsync**](docs/BillingProfilesApi.md#patchbillingprofileasync) | **PATCH** /api/v2/AccountingService/BillingProfiles/{billingProfileId} | Patch a billing profile
 *BillingProfilesApi* | [**updateBillingProfileAsync**](docs/BillingProfilesApi.md#updatebillingprofileasync) | **PUT** /api/v2/AccountingService/BillingProfiles/{billingProfileId} | Updates an existing billing profile
 *BudgetsApi* | [**createBudgetAccountEntryAsync**](docs/BudgetsApi.md#createbudgetaccountentryasync) | **POST** /api/v2/AccountingService/Budgets/{budgetId}/AccountEntries | Creates a budget account entry
 *BudgetsApi* | [**createBudgetAsync**](docs/BudgetsApi.md#createbudgetasync) | **POST** /api/v2/AccountingService/Budgets | Creates a budget
@@ -200,6 +211,8 @@ Class | Method | HTTP request | Description
 *BudgetsApi* | [**getBudgetDetailsAsync**](docs/BudgetsApi.md#getbudgetdetailsasync) | **GET** /api/v2/AccountingService/Budgets/{budgetId} | Gets a budget by id
 *BudgetsApi* | [**getBudgetsAsync**](docs/BudgetsApi.md#getbudgetsasync) | **GET** /api/v2/AccountingService/Budgets | Gets all budgets
 *BudgetsApi* | [**getBudgetsCountAsync**](docs/BudgetsApi.md#getbudgetscountasync) | **GET** /api/v2/AccountingService/Budgets/Count | Get the count of budgets
+*BudgetsApi* | [**patchBudgetAccountEntryAsync**](docs/BudgetsApi.md#patchbudgetaccountentryasync) | **PATCH** /api/v2/AccountingService/Budgets/{budgetId}/AccountEntries/{entryId} | Patches a budget account entry
+*BudgetsApi* | [**patchBudgetAsync**](docs/BudgetsApi.md#patchbudgetasync) | **PATCH** /api/v2/AccountingService/Budgets/{budgetId} | Patches a budget
 *BudgetsApi* | [**updateBudgetAccountEntryAsync**](docs/BudgetsApi.md#updatebudgetaccountentryasync) | **PUT** /api/v2/AccountingService/Budgets/{budgetId}/AccountEntries/{entryId} | Updates a budget account entry
 *BudgetsApi* | [**updateBudgetAsync**](docs/BudgetsApi.md#updatebudgetasync) | **PUT** /api/v2/AccountingService/Budgets/{budgetId} | Updates a budget
 *CommissionsApi* | [**createCommissionAsync**](docs/CommissionsApi.md#createcommissionasync) | **POST** /api/v2/AccountingService/Commissions/Commissions | Create a commission
@@ -212,6 +225,8 @@ Class | Method | HTTP request | Description
 *CommissionsApi* | [**getPaymentCommissionAsync**](docs/CommissionsApi.md#getpaymentcommissionasync) | **GET** /api/v2/AccountingService/Commissions/PaymentCommissions/{paymentCommissionId} | Get a payment commission by id
 *CommissionsApi* | [**getPaymentCommissionsAsync**](docs/CommissionsApi.md#getpaymentcommissionsasync) | **GET** /api/v2/AccountingService/Commissions/PaymentCommissions | Get all payment commissions for a tenant
 *CommissionsApi* | [**getPaymentCommissionsCountAsync**](docs/CommissionsApi.md#getpaymentcommissionscountasync) | **GET** /api/v2/AccountingService/Commissions/PaymentCommissions/Count | Get the count of payment commissions for a tenant
+*CommissionsApi* | [**patchCommissionAsync**](docs/CommissionsApi.md#patchcommissionasync) | **PATCH** /api/v2/AccountingService/Commissions/Commissions/{commissionId} | Patch a commission
+*CommissionsApi* | [**patchPaymentCommissionAsync**](docs/CommissionsApi.md#patchpaymentcommissionasync) | **PATCH** /api/v2/AccountingService/Commissions/PaymentCommissions/{paymentCommissionId} | Patch a payment commission
 *CommissionsApi* | [**updateCommissionAsync**](docs/CommissionsApi.md#updatecommissionasync) | **PUT** /api/v2/AccountingService/Commissions/Commissions/{commissionId} | Update a commission
 *CommissionsApi* | [**updatePaymentCommissionAsync**](docs/CommissionsApi.md#updatepaymentcommissionasync) | **PUT** /api/v2/AccountingService/Commissions/PaymentCommissions/{paymentCommissionId} | Update a payment commission
 *CompletionsApi* | [**apiV2AiServiceCompletionsCompleteGet**](docs/CompletionsApi.md#apiv2aiservicecompletionscompleteget) | **GET** /api/v2/AiService/Completions/Complete | 
@@ -229,6 +244,9 @@ Class | Method | HTTP request | Description
 *CostCentresApi* | [**getCostCentreGroupsCount**](docs/CostCentresApi.md#getcostcentregroupscount) | **GET** /api/v2/AccountingService/CostCentres/CostCentreGroups/Count | Get the count of cost centre groups for a tenant
 *CostCentresApi* | [**getCostCentres**](docs/CostCentresApi.md#getcostcentres) | **GET** /api/v2/AccountingService/CostCentres | Get all cost centres for a tenant
 *CostCentresApi* | [**getCostCentresCount**](docs/CostCentresApi.md#getcostcentrescount) | **GET** /api/v2/AccountingService/CostCentres/Count | Get the count of cost centres for a tenant
+*CostCentresApi* | [**patchCostCentre**](docs/CostCentresApi.md#patchcostcentre) | **PATCH** /api/v2/AccountingService/CostCentres/{costCentreId} | Patch a cost centre
+*CostCentresApi* | [**patchCostCentreBudget**](docs/CostCentresApi.md#patchcostcentrebudget) | **PATCH** /api/v2/AccountingService/CostCentres/CostCentreBudgets/{budgetId} | Patch a cost centre budget
+*CostCentresApi* | [**patchCostCentreGroup**](docs/CostCentresApi.md#patchcostcentregroup) | **PATCH** /api/v2/AccountingService/CostCentres/CostCentreGroups/{groupId} | Patch a cost centre group
 *CostCentresApi* | [**updateCostCentre**](docs/CostCentresApi.md#updatecostcentre) | **PUT** /api/v2/AccountingService/CostCentres/{costCentreId} | Update a cost centre
 *CostCentresApi* | [**updateCostCentreBudget**](docs/CostCentresApi.md#updatecostcentrebudget) | **PUT** /api/v2/AccountingService/CostCentres/CostCentreBudgets/{budgetId} | Update a cost centre budget
 *CostCentresApi* | [**updateCostCentreGroup**](docs/CostCentresApi.md#updatecostcentregroup) | **PUT** /api/v2/AccountingService/CostCentres/CostCentreGroups/{groupId} | Update a cost centre group
@@ -237,12 +255,14 @@ Class | Method | HTTP request | Description
 *ExpenseClaimsApi* | [**getExpenseClaim**](docs/ExpenseClaimsApi.md#getexpenseclaim) | **GET** /api/v2/AccountingService/ExpenseClaims/{expenseClaimId} | Get an expense claim by id
 *ExpenseClaimsApi* | [**getExpenseClaims**](docs/ExpenseClaimsApi.md#getexpenseclaims) | **GET** /api/v2/AccountingService/ExpenseClaims | Get all expense claims for a tenant
 *ExpenseClaimsApi* | [**getExpenseClaimsCount**](docs/ExpenseClaimsApi.md#getexpenseclaimscount) | **GET** /api/v2/AccountingService/ExpenseClaims/Count | Get the count of expense claims for a tenant
+*ExpenseClaimsApi* | [**patchExpenseClaim**](docs/ExpenseClaimsApi.md#patchexpenseclaim) | **PATCH** /api/v2/AccountingService/ExpenseClaims/{expenseClaimId} | Patch an expense claim
 *ExpenseClaimsApi* | [**updateExpenseClaim**](docs/ExpenseClaimsApi.md#updateexpenseclaim) | **PUT** /api/v2/AccountingService/ExpenseClaims/{expenseClaimId} | Update an expense claim
 *ExpenseTypesApi* | [**createExpenseType**](docs/ExpenseTypesApi.md#createexpensetype) | **POST** /api/v2/AccountingService/ExpenseTypes | Create an expense type
 *ExpenseTypesApi* | [**deleteExpenseType**](docs/ExpenseTypesApi.md#deleteexpensetype) | **DELETE** /api/v2/AccountingService/ExpenseTypes/{expenseTypeId} | Delete an expense type
 *ExpenseTypesApi* | [**getExpenseType**](docs/ExpenseTypesApi.md#getexpensetype) | **GET** /api/v2/AccountingService/ExpenseTypes/{expenseTypeId} | Get an expense type by id
 *ExpenseTypesApi* | [**getExpenseTypes**](docs/ExpenseTypesApi.md#getexpensetypes) | **GET** /api/v2/AccountingService/ExpenseTypes | Get all expense types for a tenant
 *ExpenseTypesApi* | [**getExpenseTypesCount**](docs/ExpenseTypesApi.md#getexpensetypescount) | **GET** /api/v2/AccountingService/ExpenseTypes/Count | Get the count of expense types for a tenant
+*ExpenseTypesApi* | [**patchExpenseType**](docs/ExpenseTypesApi.md#patchexpensetype) | **PATCH** /api/v2/AccountingService/ExpenseTypes/{expenseTypeId} | Patch an expense type
 *ExpenseTypesApi* | [**updateExpenseType**](docs/ExpenseTypesApi.md#updateexpensetype) | **PUT** /api/v2/AccountingService/ExpenseTypes/{expenseTypeId} | Update an expense type
 *FenixAlliancePortalsWebsiteApi* | [**accountLogoutPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountlogoutpost) | **POST** /Account/Logout | 
 *FenixAlliancePortalsWebsiteApi* | [**accountManageDownloadPersonalDataPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountmanagedownloadpersonaldatapost) | **POST** /Account/Manage/DownloadPersonalData | 
@@ -266,77 +286,90 @@ Class | Method | HTTP request | Description
 *FinancialBooksApi* | [**getFinancialBookDetailsAsync**](docs/FinancialBooksApi.md#getfinancialbookdetailsasync) | **GET** /api/v2/AccountingService/FinancialBooks/{financialBookId} | Gets the details of a specific financial book
 *FinancialBooksApi* | [**getFinancialBooksAsync**](docs/FinancialBooksApi.md#getfinancialbooksasync) | **GET** /api/v2/AccountingService/FinancialBooks | Get all financial books for a tenant
 *FinancialBooksApi* | [**getFinancialBooksCountAsync**](docs/FinancialBooksApi.md#getfinancialbookscountasync) | **GET** /api/v2/AccountingService/FinancialBooks/Count | Get the count of financial books
+*FinancialBooksApi* | [**patchFinancialBookAsync**](docs/FinancialBooksApi.md#patchfinancialbookasync) | **PATCH** /api/v2/AccountingService/FinancialBooks/{financialBookId} | Patch a financial book
 *FinancialBooksApi* | [**updateFinancialBookAsync**](docs/FinancialBooksApi.md#updatefinancialbookasync) | **PUT** /api/v2/AccountingService/FinancialBooks/{financialBookId} | Updates an existing financial book
 *FiscalAuthoritiesApi* | [**createFiscalAuthority**](docs/FiscalAuthoritiesApi.md#createfiscalauthority) | **POST** /api/v2/AccountingService/Fiscals/Authorities | Create a fiscal authority
 *FiscalAuthoritiesApi* | [**deleteFiscalAuthority**](docs/FiscalAuthoritiesApi.md#deletefiscalauthority) | **DELETE** /api/v2/AccountingService/Fiscals/Authorities/{authorityId} | Delete a fiscal authority
 *FiscalAuthoritiesApi* | [**getFiscalAuthorities**](docs/FiscalAuthoritiesApi.md#getfiscalauthorities) | **GET** /api/v2/AccountingService/Fiscals/Authorities | Get fiscal authorities
 *FiscalAuthoritiesApi* | [**getFiscalAuthoritiesCount**](docs/FiscalAuthoritiesApi.md#getfiscalauthoritiescount) | **GET** /api/v2/AccountingService/Fiscals/Authorities/Count | Get fiscal authorities count
 *FiscalAuthoritiesApi* | [**getFiscalAuthority**](docs/FiscalAuthoritiesApi.md#getfiscalauthority) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{authorityId} | Get fiscal authority by ID
+*FiscalAuthoritiesApi* | [**patchFiscalAuthorityAsync**](docs/FiscalAuthoritiesApi.md#patchfiscalauthorityasync) | **PATCH** /api/v2/AccountingService/Fiscals/Authorities/{authorityId} | Patch a fiscal authority
 *FiscalAuthoritiesApi* | [**updateFiscalAuthority**](docs/FiscalAuthoritiesApi.md#updatefiscalauthority) | **PUT** /api/v2/AccountingService/Fiscals/Authorities/{authorityId} | Update a fiscal authority
 *FiscalAuthorityYearsApi* | [**createFiscalYear**](docs/FiscalAuthorityYearsApi.md#createfiscalyear) | **POST** /api/v2/AccountingService/Fiscals/Authorities/FiscalYears | Create a fiscal year
 *FiscalAuthorityYearsApi* | [**deleteFiscalYear**](docs/FiscalAuthorityYearsApi.md#deletefiscalyear) | **DELETE** /api/v2/AccountingService/Fiscals/Authorities/FiscalYears/{fiscalYearId} | Delete a fiscal year
 *FiscalAuthorityYearsApi* | [**getFiscalYear**](docs/FiscalAuthorityYearsApi.md#getfiscalyear) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/FiscalYears/{fiscalYearId} | Get fiscal year by ID for an authority
 *FiscalAuthorityYearsApi* | [**getFiscalYears**](docs/FiscalAuthorityYearsApi.md#getfiscalyears) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{authorityId}/FiscalYears | Get fiscal years for an authority
 *FiscalAuthorityYearsApi* | [**getFiscalYearsCount**](docs/FiscalAuthorityYearsApi.md#getfiscalyearscount) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/FiscalYears/Count | Get fiscal years count for an authority
+*FiscalAuthorityYearsApi* | [**patchFiscalAuthorityYearAsync**](docs/FiscalAuthorityYearsApi.md#patchfiscalauthorityyearasync) | **PATCH** /api/v2/AccountingService/Fiscals/Authorities/FiscalYears/{fiscalYearId} | Patch a fiscal authority year
 *FiscalAuthorityYearsApi* | [**updateFiscalYear**](docs/FiscalAuthorityYearsApi.md#updatefiscalyear) | **PUT** /api/v2/AccountingService/Fiscals/Authorities/FiscalYears/{fiscalYearId} | Update a fiscal year
 *FiscalEnumerationRangesApi* | [**createInvoiceEnumerationRange**](docs/FiscalEnumerationRangesApi.md#createinvoiceenumerationrange) | **POST** /api/v2/AccountingService/Fiscals/Authorities/EnumerationRanges | Create an invoice enumeration range
 *FiscalEnumerationRangesApi* | [**deleteInvoiceEnumerationRange**](docs/FiscalEnumerationRangesApi.md#deleteinvoiceenumerationrange) | **DELETE** /api/v2/AccountingService/Fiscals/Authorities/EnumerationRanges/{enumerationRangeId} | Delete an invoice enumeration range
 *FiscalEnumerationRangesApi* | [**getInvoiceEnumerationRange**](docs/FiscalEnumerationRangesApi.md#getinvoiceenumerationrange) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/EnumerationRanges/{enumerationRangeId} | Get invoice enumeration range by ID
 *FiscalEnumerationRangesApi* | [**getInvoiceEnumerationRanges**](docs/FiscalEnumerationRangesApi.md#getinvoiceenumerationranges) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{authorityId}/EnumerationRanges | Get invoice enumeration ranges for an authority
 *FiscalEnumerationRangesApi* | [**getInvoiceEnumerationRangesCount**](docs/FiscalEnumerationRangesApi.md#getinvoiceenumerationrangescount) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/EnumerationRanges/Count | Get invoice enumeration ranges count
+*FiscalEnumerationRangesApi* | [**patchFiscalEnumerationRangeAsync**](docs/FiscalEnumerationRangesApi.md#patchfiscalenumerationrangeasync) | **PATCH** /api/v2/AccountingService/Fiscals/Authorities/EnumerationRanges/{enumerationRangeId} | Patch an invoice enumeration range
 *FiscalEnumerationRangesApi* | [**updateInvoiceEnumerationRange**](docs/FiscalEnumerationRangesApi.md#updateinvoiceenumerationrange) | **PUT** /api/v2/AccountingService/Fiscals/Authorities/EnumerationRanges/{enumerationRangeId} | Update an invoice enumeration range
 *FiscalIdentificationTypesApi* | [**createFiscalIdentificationType**](docs/FiscalIdentificationTypesApi.md#createfiscalidentificationtype) | **POST** /api/v2/AccountingService/Fiscals/Authorities/IdentificationTypes | Create a fiscal identification type
 *FiscalIdentificationTypesApi* | [**deleteFiscalIdentificationType**](docs/FiscalIdentificationTypesApi.md#deletefiscalidentificationtype) | **DELETE** /api/v2/AccountingService/Fiscals/Authorities/IdentificationTypes/{identificationTypeId} | Delete a fiscal identification type
 *FiscalIdentificationTypesApi* | [**getFiscalIdentificationType**](docs/FiscalIdentificationTypesApi.md#getfiscalidentificationtype) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/IdentificationTypes/{identificationTypeId} | Get fiscal identification type by ID
 *FiscalIdentificationTypesApi* | [**getFiscalIdentificationTypes**](docs/FiscalIdentificationTypesApi.md#getfiscalidentificationtypes) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{authorityId}/IdentificationTypes | Get fiscal identification types for an authority
 *FiscalIdentificationTypesApi* | [**getFiscalIdentificationTypesCount**](docs/FiscalIdentificationTypesApi.md#getfiscalidentificationtypescount) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{authorityId}/IdentificationTypes/Count | Get fiscal identification types count
+*FiscalIdentificationTypesApi* | [**patchFiscalIdentificationTypeAsync**](docs/FiscalIdentificationTypesApi.md#patchfiscalidentificationtypeasync) | **PATCH** /api/v2/AccountingService/Fiscals/Authorities/IdentificationTypes/{identificationTypeId} | Patch a fiscal identification type
 *FiscalIdentificationTypesApi* | [**updateFiscalIdentificationType**](docs/FiscalIdentificationTypesApi.md#updatefiscalidentificationtype) | **PUT** /api/v2/AccountingService/Fiscals/Authorities/IdentificationTypes/{identificationTypeId} | Update a fiscal identification type
 *FiscalPeriodsApi* | [**createFiscalPeriod**](docs/FiscalPeriodsApi.md#createfiscalperiod) | **POST** /api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods | Create a fiscal period
 *FiscalPeriodsApi* | [**deleteFiscalPeriod**](docs/FiscalPeriodsApi.md#deletefiscalperiod) | **DELETE** /api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/{fiscalPeriodId} | Delete a fiscal period
 *FiscalPeriodsApi* | [**getFiscalPeriod**](docs/FiscalPeriodsApi.md#getfiscalperiod) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/FiscalYears/{fiscalYearId}/FiscalPeriods/{fiscalPeriodId} | Get fiscal period by ID
 *FiscalPeriodsApi* | [**getFiscalPeriods**](docs/FiscalPeriodsApi.md#getfiscalperiods) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{authorityId}/FiscalYears/{fiscalYearId}/FiscalPeriods | Get fiscal periods for a fiscal year
 *FiscalPeriodsApi* | [**getFiscalPeriodsCount**](docs/FiscalPeriodsApi.md#getfiscalperiodscount) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/FiscalYears/{fiscalYearId}/FiscalPeriods/Count | Get fiscal periods count
+*FiscalPeriodsApi* | [**patchFiscalPeriodAsync**](docs/FiscalPeriodsApi.md#patchfiscalperiodasync) | **PATCH** /api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/{fiscalPeriodId} | Patch a fiscal period
 *FiscalPeriodsApi* | [**updateFiscalPeriod**](docs/FiscalPeriodsApi.md#updatefiscalperiod) | **PUT** /api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/{fiscalPeriodId} | Update a fiscal period
 *FiscalRegimesApi* | [**createFiscalRegime**](docs/FiscalRegimesApi.md#createfiscalregime) | **POST** /api/v2/AccountingService/Fiscals/Authorities/FiscalRegimes | Create a fiscal regime
 *FiscalRegimesApi* | [**deleteFiscalRegime**](docs/FiscalRegimesApi.md#deletefiscalregime) | **DELETE** /api/v2/AccountingService/Fiscals/Authorities/FiscalRegimes/{regimeId} | Delete a fiscal regime
 *FiscalRegimesApi* | [**getFiscalRegime**](docs/FiscalRegimesApi.md#getfiscalregime) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/FiscalRegimes/{regimeId} | Get fiscal regime by ID
 *FiscalRegimesApi* | [**getFiscalRegimes**](docs/FiscalRegimesApi.md#getfiscalregimes) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{authorityId}/FiscalRegimes | Get fiscal regimes for an authority
 *FiscalRegimesApi* | [**getFiscalRegimesCount**](docs/FiscalRegimesApi.md#getfiscalregimescount) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/FiscalRegimes/Count | Get fiscal regimes count
+*FiscalRegimesApi* | [**patchFiscalRegimeAsync**](docs/FiscalRegimesApi.md#patchfiscalregimeasync) | **PATCH** /api/v2/AccountingService/Fiscals/Authorities/FiscalRegimes/{regimeId} | Patch a fiscal regime
 *FiscalRegimesApi* | [**updateFiscalRegime**](docs/FiscalRegimesApi.md#updatefiscalregime) | **PUT** /api/v2/AccountingService/Fiscals/Authorities/FiscalRegimes/{regimeId} | Update a fiscal regime
 *FiscalResponsibilitiesApi* | [**createFiscalResponsibility**](docs/FiscalResponsibilitiesApi.md#createfiscalresponsibility) | **POST** /api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilities | Create a fiscal responsibility
 *FiscalResponsibilitiesApi* | [**deleteFiscalResponsibility**](docs/FiscalResponsibilitiesApi.md#deletefiscalresponsibility) | **DELETE** /api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilities/{fiscalResponsibilityId} | Delete a fiscal responsibility
 *FiscalResponsibilitiesApi* | [**getFiscalResponsibilities**](docs/FiscalResponsibilitiesApi.md#getfiscalresponsibilities) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{authorityId}/FiscalResponsibilities | Get fiscal responsibilities for an authority
 *FiscalResponsibilitiesApi* | [**getFiscalResponsibilitiesCount**](docs/FiscalResponsibilitiesApi.md#getfiscalresponsibilitiescount) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/FiscalResponsibilities/Count | Get fiscal responsibilities count
 *FiscalResponsibilitiesApi* | [**getFiscalResponsibility**](docs/FiscalResponsibilitiesApi.md#getfiscalresponsibility) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/FiscalResponsibilities/{fiscalResponsibilityId} | Get fiscal responsibility by ID
+*FiscalResponsibilitiesApi* | [**patchFiscalResponsibilityAsync**](docs/FiscalResponsibilitiesApi.md#patchfiscalresponsibilityasync) | **PATCH** /api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilities/{fiscalResponsibilityId} | Patch a fiscal responsibility
 *FiscalResponsibilitiesApi* | [**updateFiscalResponsibility**](docs/FiscalResponsibilitiesApi.md#updatefiscalresponsibility) | **PUT** /api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilities/{fiscalResponsibilityId} | Update a fiscal responsibility
 *FiscalResponsibilityRecordsApi* | [**createFiscalResponsibilityRecord**](docs/FiscalResponsibilityRecordsApi.md#createfiscalresponsibilityrecord) | **POST** /api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilityRecords | Create a fiscal responsibility record
 *FiscalResponsibilityRecordsApi* | [**deleteFiscalResponsibilityRecord**](docs/FiscalResponsibilityRecordsApi.md#deletefiscalresponsibilityrecord) | **DELETE** /api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilityRecords/{fiscalResponsibilityRecordId} | Delete a fiscal responsibility record
 *FiscalResponsibilityRecordsApi* | [**getFiscalResponsibilityRecord**](docs/FiscalResponsibilityRecordsApi.md#getfiscalresponsibilityrecord) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/FiscalResponsibilities/{fiscalResponsibilityId}/FiscalResponsibilityRecords/{fiscalResponsibilityRecordId} | Get fiscal responsibility record by ID
 *FiscalResponsibilityRecordsApi* | [**getFiscalResponsibilityRecords**](docs/FiscalResponsibilityRecordsApi.md#getfiscalresponsibilityrecords) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/FiscalResponsibilities/{fiscalResponsibilityId}/FiscalResponsibilityRecords | Get fiscal responsibility records
 *FiscalResponsibilityRecordsApi* | [**getFiscalResponsibilityRecordsCount**](docs/FiscalResponsibilityRecordsApi.md#getfiscalresponsibilityrecordscount) | **GET** /api/v2/AccountingService/Fiscals/Authorities/{fiscalAuthorityId}/FiscalResponsibilities/{fiscalResponsibilityId}/FiscalResponsibilityRecords/Count | Get fiscal responsibility records count
+*FiscalResponsibilityRecordsApi* | [**patchFiscalResponsibilityRecordAsync**](docs/FiscalResponsibilityRecordsApi.md#patchfiscalresponsibilityrecordasync) | **PATCH** /api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilityRecords/{fiscalResponsibilityRecordId} | Patch a fiscal responsibility record
 *FiscalResponsibilityRecordsApi* | [**updateFiscalResponsibilityRecord**](docs/FiscalResponsibilityRecordsApi.md#updatefiscalresponsibilityrecord) | **PUT** /api/v2/AccountingService/Fiscals/Authorities/FiscalResponsibilityRecords/{fiscalResponsibilityRecordId} | Update a fiscal responsibility record
 *FiscalYearsApi* | [**createFiscalYearAsync**](docs/FiscalYearsApi.md#createfiscalyearasync) | **POST** /api/v2/AccountingService/FiscalYears | Create fiscal year
 *FiscalYearsApi* | [**deleteFiscalYearAsync**](docs/FiscalYearsApi.md#deletefiscalyearasync) | **DELETE** /api/v2/AccountingService/FiscalYears/{fiscalYearId} | Delete fiscal year
 *FiscalYearsApi* | [**getFiscalYearDetailsAsync**](docs/FiscalYearsApi.md#getfiscalyeardetailsasync) | **GET** /api/v2/AccountingService/FiscalYears/{fiscalYearId} | Get fiscal year by ID
 *FiscalYearsApi* | [**getFiscalYearsAsync**](docs/FiscalYearsApi.md#getfiscalyearsasync) | **GET** /api/v2/AccountingService/FiscalYears | Get all fiscal years
 *FiscalYearsApi* | [**getFiscalYearsCountAsync**](docs/FiscalYearsApi.md#getfiscalyearscountasync) | **GET** /api/v2/AccountingService/FiscalYears/Count | Count fiscal years
+*FiscalYearsApi* | [**patchFiscalYearAsync**](docs/FiscalYearsApi.md#patchfiscalyearasync) | **PATCH** /api/v2/AccountingService/FiscalYears/{fiscalYearId} | Patch a fiscal year
 *FiscalYearsApi* | [**updateFiscalYearAsync**](docs/FiscalYearsApi.md#updatefiscalyearasync) | **PUT** /api/v2/AccountingService/FiscalYears/{fiscalYearId} | Update fiscal year
 *GrantsApi* | [**createGrantAsync**](docs/GrantsApi.md#creategrantasync) | **POST** /api/v2/AccountingService/Grants | Create grant
 *GrantsApi* | [**deleteGrantAsync**](docs/GrantsApi.md#deletegrantasync) | **DELETE** /api/v2/AccountingService/Grants/{grantId} | Delete grant
 *GrantsApi* | [**getGrantDetailsAsync**](docs/GrantsApi.md#getgrantdetailsasync) | **GET** /api/v2/AccountingService/Grants/{grantId} | Get grant by ID
 *GrantsApi* | [**getGrantsAsync**](docs/GrantsApi.md#getgrantsasync) | **GET** /api/v2/AccountingService/Grants | Get all grants
 *GrantsApi* | [**getGrantsCountAsync**](docs/GrantsApi.md#getgrantscountasync) | **GET** /api/v2/AccountingService/Grants/Count | Count grants
+*GrantsApi* | [**patchGrantAsync**](docs/GrantsApi.md#patchgrantasync) | **PATCH** /api/v2/AccountingService/Grants/{grantId} | Patch a grant
 *GrantsApi* | [**updateGrantAsync**](docs/GrantsApi.md#updategrantasync) | **PUT** /api/v2/AccountingService/Grants/{grantId} | Update grant
 *InvoiceEnumerationRangesApi* | [**createInvoiceEnumerationRangeAsync**](docs/InvoiceEnumerationRangesApi.md#createinvoiceenumerationrangeasync) | **POST** /api/v2/AccountingService/InvoiceEnumerationRanges | Create a new invoice enumeration range
 *InvoiceEnumerationRangesApi* | [**deleteInvoiceEnumerationRangeAsync**](docs/InvoiceEnumerationRangesApi.md#deleteinvoiceenumerationrangeasync) | **DELETE** /api/v2/AccountingService/InvoiceEnumerationRanges/{rangeId} | Delete an invoice enumeration range
 *InvoiceEnumerationRangesApi* | [**getInvoiceEnumerationRangeDetailsAsync**](docs/InvoiceEnumerationRangesApi.md#getinvoiceenumerationrangedetailsasync) | **GET** /api/v2/AccountingService/InvoiceEnumerationRanges/{rangeId} | Get invoice enumeration range by ID
 *InvoiceEnumerationRangesApi* | [**getInvoiceEnumerationRangesAsync**](docs/InvoiceEnumerationRangesApi.md#getinvoiceenumerationrangesasync) | **GET** /api/v2/AccountingService/InvoiceEnumerationRanges | Get all invoice enumeration ranges
+*InvoiceEnumerationRangesApi* | [**patchInvoiceEnumerationRangeAsync**](docs/InvoiceEnumerationRangesApi.md#patchinvoiceenumerationrangeasync) | **PATCH** /api/v2/AccountingService/InvoiceEnumerationRanges/{rangeId} | Patch an invoice enumeration range
 *InvoiceEnumerationRangesApi* | [**updateInvoiceEnumerationRangeAsync**](docs/InvoiceEnumerationRangesApi.md#updateinvoiceenumerationrangeasync) | **PUT** /api/v2/AccountingService/InvoiceEnumerationRanges/{rangeId} | Update an invoice enumeration range
 *JournalTypesApi* | [**createJournalTypeAsync**](docs/JournalTypesApi.md#createjournaltypeasync) | **POST** /api/v2/AccountingService/JournalTypes | Creates a new journal type
 *JournalTypesApi* | [**deleteJournalTypeAsync**](docs/JournalTypesApi.md#deletejournaltypeasync) | **DELETE** /api/v2/AccountingService/JournalTypes/{journalTypeId} | Deletes a journal type
 *JournalTypesApi* | [**getJournalTypeDetailsAsync**](docs/JournalTypesApi.md#getjournaltypedetailsasync) | **GET** /api/v2/AccountingService/JournalTypes/{journalTypeId} | Retrieves a journal type by ID
 *JournalTypesApi* | [**getJournalTypesAsync**](docs/JournalTypesApi.md#getjournaltypesasync) | **GET** /api/v2/AccountingService/JournalTypes | Retrieves all journal types
 *JournalTypesApi* | [**getJournalTypesCountAsync**](docs/JournalTypesApi.md#getjournaltypescountasync) | **GET** /api/v2/AccountingService/JournalTypes/Count | Counts journal types
+*JournalTypesApi* | [**patchJournalTypeAsync**](docs/JournalTypesApi.md#patchjournaltypeasync) | **PATCH** /api/v2/AccountingService/JournalTypes/{journalTypeId} | Patch a journal type
 *JournalTypesApi* | [**updateJournalTypeAsync**](docs/JournalTypesApi.md#updatejournaltypeasync) | **PUT** /api/v2/AccountingService/JournalTypes/{journalTypeId} | Updates an existing journal type
 *JournalsApi* | [**aggregateJournalEntryCreditsAsync**](docs/JournalsApi.md#aggregatejournalentrycreditsasync) | **GET** /api/v2/AccountingService/Journals/{journalId}/Entries/Aggregate/Credits | Aggregate journal entry credits
 *JournalsApi* | [**aggregateJournalEntryDebitsAsync**](docs/JournalsApi.md#aggregatejournalentrydebitsasync) | **GET** /api/v2/AccountingService/Journals/{journalId}/Entries/Aggregate/Debits | Aggregate journal entry debits
@@ -349,6 +382,8 @@ Class | Method | HTTP request | Description
 *JournalsApi* | [**getJournalEntriesAsync**](docs/JournalsApi.md#getjournalentriesasync) | **GET** /api/v2/AccountingService/Journals/{journalId}/Entries | Get journal entries
 *JournalsApi* | [**getJournalEntriesCountAsync**](docs/JournalsApi.md#getjournalentriescountasync) | **GET** /api/v2/AccountingService/Journals/{journalId}/Entries/Count | Count journal entries
 *JournalsApi* | [**getJournalsAsync**](docs/JournalsApi.md#getjournalsasync) | **GET** /api/v2/AccountingService/Journals | Get all journals
+*JournalsApi* | [**patchJournalAsync**](docs/JournalsApi.md#patchjournalasync) | **PATCH** /api/v2/AccountingService/Journals/{journalId} | Patch a journal
+*JournalsApi* | [**patchJournalEntryAsync**](docs/JournalsApi.md#patchjournalentryasync) | **PATCH** /api/v2/AccountingService/Journals/{journalId}/Entries/{entryId} | Patch a journal entry
 *JournalsApi* | [**updateJournalAsync**](docs/JournalsApi.md#updatejournalasync) | **PUT** /api/v2/AccountingService/Journals/{journalId} | Update journal
 *JournalsApi* | [**updateJournalEntryAsync**](docs/JournalsApi.md#updatejournalentryasync) | **PUT** /api/v2/AccountingService/Journals/{journalId}/Entries/{entryId} | Update journal entry
 *LedgerTypesApi* | [**createLedgerTypeAsync**](docs/LedgerTypesApi.md#createledgertypeasync) | **POST** /api/v2/AccountingService/LedgerTypes | Creates a new ledger type
@@ -356,12 +391,14 @@ Class | Method | HTTP request | Description
 *LedgerTypesApi* | [**getLedgerTypeDetailsAsync**](docs/LedgerTypesApi.md#getledgertypedetailsasync) | **GET** /api/v2/AccountingService/LedgerTypes/{ledgerTypeId} | Gets a ledger type by ID
 *LedgerTypesApi* | [**getLedgerTypesAsync**](docs/LedgerTypesApi.md#getledgertypesasync) | **GET** /api/v2/AccountingService/LedgerTypes | Retrieves all ledger types
 *LedgerTypesApi* | [**getLedgerTypesCountAsync**](docs/LedgerTypesApi.md#getledgertypescountasync) | **GET** /api/v2/AccountingService/LedgerTypes/Count | Counts ledger types
+*LedgerTypesApi* | [**patchLedgerTypeAsync**](docs/LedgerTypesApi.md#patchledgertypeasync) | **PATCH** /api/v2/AccountingService/LedgerTypes/{ledgerTypeId} | Patches a ledger type
 *LedgerTypesApi* | [**updateLedgerTypeAsync**](docs/LedgerTypesApi.md#updateledgertypeasync) | **PUT** /api/v2/AccountingService/LedgerTypes/{ledgerTypeId} | Updates a ledger type
 *LedgersApi* | [**createLedgerAsync**](docs/LedgersApi.md#createledgerasync) | **POST** /api/v2/AccountingService/Ledgers | Creates a new ledger
 *LedgersApi* | [**deleteLedgerAsync**](docs/LedgersApi.md#deleteledgerasync) | **DELETE** /api/v2/AccountingService/Ledgers/{ledgerId} | Deletes a ledger
 *LedgersApi* | [**getLedgerDetailsAsync**](docs/LedgersApi.md#getledgerdetailsasync) | **GET** /api/v2/AccountingService/Ledgers/{ledgerId} | Gets a ledger by ID
 *LedgersApi* | [**getLedgersAsync**](docs/LedgersApi.md#getledgersasync) | **GET** /api/v2/AccountingService/Ledgers | Retrieves all ledgers
 *LedgersApi* | [**getLedgersCountAsync**](docs/LedgersApi.md#getledgerscountasync) | **GET** /api/v2/AccountingService/Ledgers/Count | Counts ledgers
+*LedgersApi* | [**patchLedgerAsync**](docs/LedgersApi.md#patchledgerasync) | **PATCH** /api/v2/AccountingService/Ledgers/{ledgerId} | Patches a ledger
 *LedgersApi* | [**updateLedgerAsync**](docs/LedgersApi.md#updateledgerasync) | **PUT** /api/v2/AccountingService/Ledgers/{ledgerId} | Updates a ledger
 *LoansApi* | [**createLoanApplicationAsync**](docs/LoansApi.md#createloanapplicationasync) | **POST** /api/v2/AccountingService/Loans/Applications | Creates a loan application
 *LoansApi* | [**createLoanAsync**](docs/LoansApi.md#createloanasync) | **POST** /api/v2/AccountingService/Loans | Creates a new loan
@@ -378,6 +415,9 @@ Class | Method | HTTP request | Description
 *LoansApi* | [**getLoanTypesCountAsync**](docs/LoansApi.md#getloantypescountasync) | **GET** /api/v2/AccountingService/Loans/Types/Count | Counts loan types
 *LoansApi* | [**getLoansAsync**](docs/LoansApi.md#getloansasync) | **GET** /api/v2/AccountingService/Loans | Gets all loans
 *LoansApi* | [**getLoansCountAsync**](docs/LoansApi.md#getloanscountasync) | **GET** /api/v2/AccountingService/Loans/Count | Counts loans
+*LoansApi* | [**patchLoanApplicationAsync**](docs/LoansApi.md#patchloanapplicationasync) | **PATCH** /api/v2/AccountingService/Loans/Applications/{applicationId} | Patches a loan application
+*LoansApi* | [**patchLoanAsync**](docs/LoansApi.md#patchloanasync) | **PATCH** /api/v2/AccountingService/Loans/{loanId} | Patches a loan
+*LoansApi* | [**patchLoanTypeAsync**](docs/LoansApi.md#patchloantypeasync) | **PATCH** /api/v2/AccountingService/Loans/Types/{loanTypeId} | Patches a loan type
 *LoansApi* | [**updateLoanApplicationAsync**](docs/LoansApi.md#updateloanapplicationasync) | **PUT** /api/v2/AccountingService/Loans/Applications/{applicationId} | Updates a loan application
 *LoansApi* | [**updateLoanAsync**](docs/LoansApi.md#updateloanasync) | **PUT** /api/v2/AccountingService/Loans/{loanId} | Updates a loan
 *LoansApi* | [**updateLoanTypeAsync**](docs/LoansApi.md#updateloantypeasync) | **PUT** /api/v2/AccountingService/Loans/Types/{loanTypeId} | Updates a loan type
@@ -386,6 +426,7 @@ Class | Method | HTTP request | Description
 *ReceiptsApi* | [**getReceiptDetailsAsync**](docs/ReceiptsApi.md#getreceiptdetailsasync) | **GET** /api/v2/AccountingService/Receipts/{receiptId} | Gets details of a receipt
 *ReceiptsApi* | [**getReceiptsAsync**](docs/ReceiptsApi.md#getreceiptsasync) | **GET** /api/v2/AccountingService/Receipts | Retrieves tenant receipts
 *ReceiptsApi* | [**getReceiptsCountAsync**](docs/ReceiptsApi.md#getreceiptscountasync) | **GET** /api/v2/AccountingService/Receipts/Count | Gets count of tenant receipts
+*ReceiptsApi* | [**patchReceiptAsync**](docs/ReceiptsApi.md#patchreceiptasync) | **PATCH** /api/v2/AccountingService/Receipts/{receiptId} | Patches a receipt
 *ReceiptsApi* | [**updateReceiptAsync**](docs/ReceiptsApi.md#updatereceiptasync) | **PUT** /api/v2/AccountingService/Receipts/{receiptId} | Updates a receipt
 *SharesApi* | [**createShareClass**](docs/SharesApi.md#createshareclass) | **POST** /api/v2/AccountingService/Shares/Classes | Creates a new share class
 *SharesApi* | [**createShareIssuance**](docs/SharesApi.md#createshareissuance) | **POST** /api/v2/AccountingService/Shares/Issuances | Creates a new share issuance
@@ -407,6 +448,10 @@ Class | Method | HTTP request | Description
 *SharesApi* | [**getShareTransferReasonsCount**](docs/SharesApi.md#getsharetransferreasonscount) | **GET** /api/v2/AccountingService/Shares/TransferReasons/Count | Gets the current tenant share transfer reasons count
 *SharesApi* | [**getShareTransfers**](docs/SharesApi.md#getsharetransfers) | **GET** /api/v2/AccountingService/Shares/Transfers | Gets the current tenant share transfers
 *SharesApi* | [**getShareTransfersCount**](docs/SharesApi.md#getsharetransferscount) | **GET** /api/v2/AccountingService/Shares/Transfers/Count | Gets the current tenant share transfers count
+*SharesApi* | [**patchShareClass**](docs/SharesApi.md#patchshareclass) | **PATCH** /api/v2/AccountingService/Shares/Classes/{shareClassId} | Patches a share class
+*SharesApi* | [**patchShareIssuance**](docs/SharesApi.md#patchshareissuance) | **PATCH** /api/v2/AccountingService/Shares/Issuances/{issuanceId} | Patches a share issuance
+*SharesApi* | [**patchShareTransfer**](docs/SharesApi.md#patchsharetransfer) | **PATCH** /api/v2/AccountingService/Shares/Transfers/{transferId} | Patches a share transfer
+*SharesApi* | [**patchShareTransferReason**](docs/SharesApi.md#patchsharetransferreason) | **PATCH** /api/v2/AccountingService/Shares/TransferReasons/{reasonId} | Patches a share transfer reason
 *SharesApi* | [**updateShareClass**](docs/SharesApi.md#updateshareclass) | **PUT** /api/v2/AccountingService/Shares/Classes/{shareClassId} | Updates an existing share class
 *SharesApi* | [**updateShareIssuance**](docs/SharesApi.md#updateshareissuance) | **PUT** /api/v2/AccountingService/Shares/Issuances/{issuanceId} | Updates an existing share issuance
 *SharesApi* | [**updateShareTransfer**](docs/SharesApi.md#updatesharetransfer) | **PUT** /api/v2/AccountingService/Shares/Transfers/{transferId} | Updates an existing share transfer
@@ -416,6 +461,7 @@ Class | Method | HTTP request | Description
 *TaxClassesApi* | [**getTaxClass**](docs/TaxClassesApi.md#gettaxclass) | **GET** /api/v2/AccountingService/TaxClasses/{id} | Get tax class by ID
 *TaxClassesApi* | [**getTaxClasses**](docs/TaxClassesApi.md#gettaxclasses) | **GET** /api/v2/AccountingService/TaxClasses | Get all tax classes for a tenant
 *TaxClassesApi* | [**getTaxClassesCount**](docs/TaxClassesApi.md#gettaxclassescount) | **GET** /api/v2/AccountingService/TaxClasses/Count | Get tax classes count
+*TaxClassesApi* | [**patchTaxClass**](docs/TaxClassesApi.md#patchtaxclass) | **PATCH** /api/v2/AccountingService/TaxClasses/{id} | Patch a tax class
 *TaxClassesApi* | [**updateTaxClass**](docs/TaxClassesApi.md#updatetaxclass) | **PUT** /api/v2/AccountingService/TaxClasses/{id} | Update a tax class
 *TaxPoliciesApi* | [**createAppliedTaxPolicyRecord**](docs/TaxPoliciesApi.md#createappliedtaxpolicyrecord) | **POST** /api/v2/AccountingService/TaxPolicies/{taxPolicyId}/AppliedTaxPolicyRecords | Create an applied tax policy record
 *TaxPoliciesApi* | [**createItemTaxPolicyRecord**](docs/TaxPoliciesApi.md#createitemtaxpolicyrecord) | **POST** /api/v2/AccountingService/TaxPolicies/{taxPolicyId}/ItemTaxPolicyRecords | Create an item tax policy record
@@ -432,6 +478,9 @@ Class | Method | HTTP request | Description
 *TaxPoliciesApi* | [**getTaxPoliciesByAuthority**](docs/TaxPoliciesApi.md#gettaxpoliciesbyauthority) | **GET** /api/v2/AccountingService/TaxPolicies/ByAuthority/{authorityId} | Get tax policies by fiscal authority
 *TaxPoliciesApi* | [**getTaxPoliciesCount**](docs/TaxPoliciesApi.md#gettaxpoliciescount) | **GET** /api/v2/AccountingService/TaxPolicies/Count | Get tax policies count
 *TaxPoliciesApi* | [**getTaxPolicy**](docs/TaxPoliciesApi.md#gettaxpolicy) | **GET** /api/v2/AccountingService/TaxPolicies/{id} | Get tax policy by ID
+*TaxPoliciesApi* | [**patchAppliedTaxPolicyRecord**](docs/TaxPoliciesApi.md#patchappliedtaxpolicyrecord) | **PATCH** /api/v2/AccountingService/TaxPolicies/{taxPolicyId}/AppliedTaxPolicyRecords/{appliedTaxPolicyRecordId} | Patch an applied tax policy record
+*TaxPoliciesApi* | [**patchItemTaxPolicyRecord**](docs/TaxPoliciesApi.md#patchitemtaxpolicyrecord) | **PATCH** /api/v2/AccountingService/TaxPolicies/{taxPolicyId}/ItemTaxPolicyRecords/{itemTaxPolicyRecordId} | Patch an item tax policy record
+*TaxPoliciesApi* | [**patchTaxPolicy**](docs/TaxPoliciesApi.md#patchtaxpolicy) | **PATCH** /api/v2/AccountingService/TaxPolicies/{id} | Patch a tax policy
 *TaxPoliciesApi* | [**updateAppliedTaxPolicyRecord**](docs/TaxPoliciesApi.md#updateappliedtaxpolicyrecord) | **PUT** /api/v2/AccountingService/TaxPolicies/{taxPolicyId}/AppliedTaxPolicyRecords/{appliedTaxPolicyRecordId} | Update an applied tax policy record
 *TaxPoliciesApi* | [**updateItemTaxPolicyRecord**](docs/TaxPoliciesApi.md#updateitemtaxpolicyrecord) | **PUT** /api/v2/AccountingService/TaxPolicies/{taxPolicyId}/ItemTaxPolicyRecords/{itemTaxPolicyRecordId} | Update an item tax policy record
 *TaxPoliciesApi* | [**updateTaxPolicy**](docs/TaxPoliciesApi.md#updatetaxpolicy) | **PUT** /api/v2/AccountingService/TaxPolicies/{id} | Update a tax policy
@@ -440,6 +489,7 @@ Class | Method | HTTP request | Description
 *TaxRatesApi* | [**getTaxRate**](docs/TaxRatesApi.md#gettaxrate) | **GET** /api/v2/AccountingService/TaxRates/{id} | Get tax rate by ID
 *TaxRatesApi* | [**getTaxRates**](docs/TaxRatesApi.md#gettaxrates) | **GET** /api/v2/AccountingService/TaxRates | Get all tax rates for a tenant
 *TaxRatesApi* | [**getTaxRatesCount**](docs/TaxRatesApi.md#gettaxratescount) | **GET** /api/v2/AccountingService/TaxRates/Count | Get tax rates count
+*TaxRatesApi* | [**patchTaxRate**](docs/TaxRatesApi.md#patchtaxrate) | **PATCH** /api/v2/AccountingService/TaxRates/{id} | Patch a tax rate
 *TaxRatesApi* | [**updateTaxRate**](docs/TaxRatesApi.md#updatetaxrate) | **PUT** /api/v2/AccountingService/TaxRates/{id} | Update a tax rate
 *TransactionsApi* | [**createTransaction**](docs/TransactionsApi.md#createtransaction) | **POST** /api/v2/AccountingService/Transactions | Create a transaction
 *TransactionsApi* | [**createTransactionCategory**](docs/TransactionsApi.md#createtransactioncategory) | **POST** /api/v2/AccountingService/Transactions/Categories | Create a transaction category
@@ -451,6 +501,8 @@ Class | Method | HTTP request | Description
 *TransactionsApi* | [**getTransactionCategory**](docs/TransactionsApi.md#gettransactioncategory) | **GET** /api/v2/AccountingService/Transactions/Categories/{categoryId} | Get transaction category by ID
 *TransactionsApi* | [**getTransactions**](docs/TransactionsApi.md#gettransactions) | **GET** /api/v2/AccountingService/Transactions | Get all transactions for a tenant
 *TransactionsApi* | [**getTransactionsCount**](docs/TransactionsApi.md#gettransactionscount) | **GET** /api/v2/AccountingService/Transactions/Count | Get transactions count
+*TransactionsApi* | [**patchTransaction**](docs/TransactionsApi.md#patchtransaction) | **PATCH** /api/v2/AccountingService/Transactions/{transactionId} | Patch a transaction
+*TransactionsApi* | [**patchTransactionCategory**](docs/TransactionsApi.md#patchtransactioncategory) | **PATCH** /api/v2/AccountingService/Transactions/Categories/{categoryId} | Patch a transaction category
 *TransactionsApi* | [**updateTransaction**](docs/TransactionsApi.md#updatetransaction) | **PUT** /api/v2/AccountingService/Transactions/{transactionId} | Update a transaction
 *TransactionsApi* | [**updateTransactionCategory**](docs/TransactionsApi.md#updatetransactioncategory) | **PUT** /api/v2/AccountingService/Transactions/Categories/{categoryId} | Update a transaction category
 

@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getTaxRate**](TaxRatesApi.md#getTaxRate) | **GET** /api/v2/AccountingService/TaxRates/{id} | Get tax rate by ID
 [**getTaxRates**](TaxRatesApi.md#getTaxRates) | **GET** /api/v2/AccountingService/TaxRates | Get all tax rates for a tenant
 [**getTaxRatesCount**](TaxRatesApi.md#getTaxRatesCount) | **GET** /api/v2/AccountingService/TaxRates/Count | Get tax rates count
+[**patchTaxRate**](TaxRatesApi.md#patchTaxRate) | **PATCH** /api/v2/AccountingService/TaxRates/{id} | Patch a tax rate
 [**updateTaxRate**](TaxRatesApi.md#updateTaxRate) | **PUT** /api/v2/AccountingService/TaxRates/{id} | Update a tax rate
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchTaxRate
+
+Patch a tax rate
+
+Partially updates an existing tax rate identified by its unique identifier.
+
+### Example
+
+```bash
+ patchTaxRate  tenantId=value id=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **id** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

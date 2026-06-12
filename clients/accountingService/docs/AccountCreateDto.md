@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **path** | **string** |  | [optional] [default to null]
 **prefix** | **string** |  | [optional] [default to null]
 **currencyId** | **string** |  | [default to null]
+**contactId** | **string** |  | [optional] [default to null]
 **accountTypeId** | **string** |  | [optional] [default to null]
 **parentAccountId** | **string** |  | [optional] [default to null]
 **accountCategory** | **string** |  | [default to null]

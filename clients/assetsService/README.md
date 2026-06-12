@@ -108,18 +108,21 @@ Class | Method | HTTP request | Description
 *AssetCategoriesApi* | [**getAssetCategories**](docs/AssetCategoriesApi.md#getassetcategories) | **GET** /api/v2/AssetsService/AssetCategories | Gets all asset categories for the current tenant
 *AssetCategoriesApi* | [**getAssetCategoriesCount**](docs/AssetCategoriesApi.md#getassetcategoriescount) | **GET** /api/v2/AssetsService/AssetCategories/count | Gets the count of asset categories
 *AssetCategoriesApi* | [**getAssetCategory**](docs/AssetCategoriesApi.md#getassetcategory) | **GET** /api/v2/AssetsService/AssetCategories/{categoryId} | Gets a specific asset category
+*AssetCategoriesApi* | [**patchAssetCategory**](docs/AssetCategoriesApi.md#patchassetcategory) | **PATCH** /api/v2/AssetsService/AssetCategories/{categoryId} | Partially updates an existing asset category
 *AssetCategoriesApi* | [**updateAssetCategory**](docs/AssetCategoriesApi.md#updateassetcategory) | **PUT** /api/v2/AssetsService/AssetCategories/{categoryId} | Updates an existing asset category
 *AssetTransfersApi* | [**createAssetTransferAsync**](docs/AssetTransfersApi.md#createassettransferasync) | **POST** /api/v2/AssetsService/AssetTransfers | Creates a new asset transfer
 *AssetTransfersApi* | [**deleteAssetTransferAsync**](docs/AssetTransfersApi.md#deleteassettransferasync) | **DELETE** /api/v2/AssetsService/AssetTransfers/{transferId} | Deletes an asset transfer
 *AssetTransfersApi* | [**getAssetTransferAsync**](docs/AssetTransfersApi.md#getassettransferasync) | **GET** /api/v2/AssetsService/AssetTransfers/{transferId} | Gets a single asset transfer by ID
 *AssetTransfersApi* | [**getAssetTransfersAsync**](docs/AssetTransfersApi.md#getassettransfersasync) | **GET** /api/v2/AssetsService/AssetTransfers | Gets a list of asset transfers
 *AssetTransfersApi* | [**getAssetTransfersCountAsync**](docs/AssetTransfersApi.md#getassettransferscountasync) | **GET** /api/v2/AssetsService/AssetTransfers/Count | Gets the count of asset transfers
+*AssetTransfersApi* | [**patchAssetTransferAsync**](docs/AssetTransfersApi.md#patchassettransferasync) | **PATCH** /api/v2/AssetsService/AssetTransfers/{transferId} | Partially updates an existing asset transfer
 *AssetTransfersApi* | [**updateAssetTransferAsync**](docs/AssetTransfersApi.md#updateassettransferasync) | **PUT** /api/v2/AssetsService/AssetTransfers/{transferId} | Updates an existing asset transfer
 *AssetTypesApi* | [**createAssetType**](docs/AssetTypesApi.md#createassettype) | **POST** /api/v2/AssetsService/AssetTypes | Creates a new asset type
 *AssetTypesApi* | [**deleteAssetType**](docs/AssetTypesApi.md#deleteassettype) | **DELETE** /api/v2/AssetsService/AssetTypes/{typeId} | Deletes an asset type
 *AssetTypesApi* | [**getAssetType**](docs/AssetTypesApi.md#getassettype) | **GET** /api/v2/AssetsService/AssetTypes/{typeId} | Gets a specific asset type
 *AssetTypesApi* | [**getAssetTypes**](docs/AssetTypesApi.md#getassettypes) | **GET** /api/v2/AssetsService/AssetTypes | Gets all asset types for the current tenant
 *AssetTypesApi* | [**getAssetTypesCount**](docs/AssetTypesApi.md#getassettypescount) | **GET** /api/v2/AssetsService/AssetTypes/count | Gets the count of asset types
+*AssetTypesApi* | [**patchAssetType**](docs/AssetTypesApi.md#patchassettype) | **PATCH** /api/v2/AssetsService/AssetTypes/{typeId} | Partially updates an existing asset type
 *AssetTypesApi* | [**updateAssetType**](docs/AssetTypesApi.md#updateassettype) | **PUT** /api/v2/AssetsService/AssetTypes/{typeId} | Updates an existing asset type
 *AssetsApi* | [**createAsset**](docs/AssetsApi.md#createasset) | **POST** /api/v2/AssetsService/Assets | Creates a new asset
 *AssetsApi* | [**createAssetAssetCategory**](docs/AssetsApi.md#createassetassetcategory) | **POST** /api/v2/AssetsService/Assets/Categories | Creates a new asset category
@@ -151,6 +154,12 @@ Class | Method | HTTP request | Description
 *AssetsApi* | [**getAssetValueAmendsCount**](docs/AssetsApi.md#getassetvalueamendscount) | **GET** /api/v2/AssetsService/Assets/{assetId}/ValueAmends/Count | Gets count of value amendments for a specific asset
 *AssetsApi* | [**getAssets**](docs/AssetsApi.md#getassets) | **GET** /api/v2/AssetsService/Assets | Gets all assets for the current tenant
 *AssetsApi* | [**getAssetsCount**](docs/AssetsApi.md#getassetscount) | **GET** /api/v2/AssetsService/Assets/count | Gets the count of assets
+*AssetsApi* | [**patchAsset**](docs/AssetsApi.md#patchasset) | **PATCH** /api/v2/AssetsService/Assets/{assetId} | Partially updates an existing asset
+*AssetsApi* | [**patchAssetAssetCategory**](docs/AssetsApi.md#patchassetassetcategory) | **PATCH** /api/v2/AssetsService/Assets/Categories/{categoryId} | Partially updates an existing asset category
+*AssetsApi* | [**patchAssetDepreciationRecord**](docs/AssetsApi.md#patchassetdepreciationrecord) | **PATCH** /api/v2/AssetsService/Assets/{assetId}/DepreciationRecords/{recordId} | Partially updates a depreciation record for an asset
+*AssetsApi* | [**patchAssetRepair**](docs/AssetsApi.md#patchassetrepair) | **PATCH** /api/v2/AssetsService/Assets/{assetId}/Repairs/{repairId} | Partially updates a repair for an asset
+*AssetsApi* | [**patchAssetTransfer**](docs/AssetsApi.md#patchassettransfer) | **PATCH** /api/v2/AssetsService/Assets/{assetId}/Transfers/{transferId} | Partially updates a transfer for an asset
+*AssetsApi* | [**patchAssetValueAmend**](docs/AssetsApi.md#patchassetvalueamend) | **PATCH** /api/v2/AssetsService/Assets/{assetId}/ValueAmends/{amendId} | Partially updates a value amendment for an asset
 *AssetsApi* | [**updateAsset**](docs/AssetsApi.md#updateasset) | **PUT** /api/v2/AssetsService/Assets/{assetId} | Updates an existing asset
 *AssetsApi* | [**updateAssetAssetCategory**](docs/AssetsApi.md#updateassetassetcategory) | **PUT** /api/v2/AssetsService/Assets/Categories/{categoryId} | Updates an existing asset category
 *AssetsApi* | [**updateAssetDepreciationRecord**](docs/AssetsApi.md#updateassetdepreciationrecord) | **PUT** /api/v2/AssetsService/Assets/{assetId}/DepreciationRecords/{recordId} | Updates a depreciation record for an asset
@@ -223,6 +232,7 @@ Class | Method | HTTP request | Description
  - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [Operation](docs/Operation.md)
  - [RefreshRequest](docs/RefreshRequest.md)
  - [RegisterRequest](docs/RegisterRequest.md)
  - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)

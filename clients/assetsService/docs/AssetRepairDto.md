@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **map** |  | [optional] [default to null]
+**id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
-**businessId** | **map** |  | [optional] [default to null]
-**businessProfileRecordId** | **map** |  | [optional] [default to null]
-**assetId** | **map** |  | [optional] [default to null]
+**tenantId** | **string** |  | [optional] [default to null]
+**enrollmentId** | **string** |  | [optional] [default to null]
+**assetId** | **string** |  | [optional] [default to null]
 **assetName** | **string** |  | [optional] [default to null]
 **repairStatus** | **string** |  | [optional] [default to null]
 **scheduledDate** | **string** |  | [optional] [default to null]

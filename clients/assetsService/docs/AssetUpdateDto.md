@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
-**assetType** | **string** |  | [optional] [default to null]
+**assetClass** | **string** |  | [optional] [default to null]
 **assetOwner** | **string** |  | [optional] [default to null]
 **calculateDepreciation** | **boolean** |  | [optional] [default to null]
 **allowMonthlyDepreciation** | **boolean** |  | [optional] [default to null]
@@ -13,8 +13,8 @@ Name | Type | Description | Notes
 **purchaseDate** | **string** |  | [optional] [default to null]
 **purchasePrice** | **float** |  | [optional] [default to null]
 **currencyId** | **string** |  | [optional] [default to null]
-**currencyCode** | **string** |  | [optional] [default to null]
 **itemId** | **string** |  | [optional] [default to null]
+**assetTypeId** | **string** |  | [optional] [default to null]
 **assetCategoryId** | **string** |  | [optional] [default to null]
 **purchaseInvoiceId** | **string** |  | [optional] [default to null]
 **purchaseReceiptId** | **string** |  | [optional] [default to null]

@@ -104,6 +104,9 @@ operation_parameters_minimum_occurrences["getAssetCategories:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetCategoriesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetCategory:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetCategory:::categoryId"]=1
+operation_parameters_minimum_occurrences["patchAssetCategory:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAssetCategory:::categoryId"]=1
+operation_parameters_minimum_occurrences["patchAssetCategory:::Operation"]=0
 operation_parameters_minimum_occurrences["updateAssetCategory:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateAssetCategory:::categoryId"]=1
 operation_parameters_minimum_occurrences["updateAssetCategory:::AssetCategoryUpdateDto"]=0
@@ -115,6 +118,9 @@ operation_parameters_minimum_occurrences["getAssetTransferAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetTransferAsync:::transferId"]=1
 operation_parameters_minimum_occurrences["getAssetTransfersAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetTransfersCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAssetTransferAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAssetTransferAsync:::transferId"]=1
+operation_parameters_minimum_occurrences["patchAssetTransferAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateAssetTransferAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateAssetTransferAsync:::transferId"]=1
 operation_parameters_minimum_occurrences["updateAssetTransferAsync:::AssetTransferUpdateDto"]=0
@@ -126,6 +132,9 @@ operation_parameters_minimum_occurrences["getAssetType:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetType:::typeId"]=1
 operation_parameters_minimum_occurrences["getAssetTypes:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetTypesCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAssetType:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAssetType:::typeId"]=1
+operation_parameters_minimum_occurrences["patchAssetType:::Operation"]=0
 operation_parameters_minimum_occurrences["updateAssetType:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateAssetType:::typeId"]=1
 operation_parameters_minimum_occurrences["updateAssetType:::AssetTypeUpdateDto"]=0
@@ -197,6 +206,28 @@ operation_parameters_minimum_occurrences["getAssetValueAmendsCount:::tenantId"]=
 operation_parameters_minimum_occurrences["getAssetValueAmendsCount:::assetId"]=1
 operation_parameters_minimum_occurrences["getAssets:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetsCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAsset:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAsset:::assetId"]=1
+operation_parameters_minimum_occurrences["patchAsset:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetAssetCategory:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAssetAssetCategory:::categoryId"]=1
+operation_parameters_minimum_occurrences["patchAssetAssetCategory:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetDepreciationRecord:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAssetDepreciationRecord:::assetId"]=1
+operation_parameters_minimum_occurrences["patchAssetDepreciationRecord:::recordId"]=1
+operation_parameters_minimum_occurrences["patchAssetDepreciationRecord:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetRepair:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAssetRepair:::assetId"]=1
+operation_parameters_minimum_occurrences["patchAssetRepair:::repairId"]=1
+operation_parameters_minimum_occurrences["patchAssetRepair:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetTransfer:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAssetTransfer:::assetId"]=1
+operation_parameters_minimum_occurrences["patchAssetTransfer:::transferId"]=1
+operation_parameters_minimum_occurrences["patchAssetTransfer:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetValueAmend:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchAssetValueAmend:::assetId"]=1
+operation_parameters_minimum_occurrences["patchAssetValueAmend:::amendId"]=1
+operation_parameters_minimum_occurrences["patchAssetValueAmend:::Operation"]=0
 operation_parameters_minimum_occurrences["updateAsset:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateAsset:::assetId"]=1
 operation_parameters_minimum_occurrences["updateAsset:::AssetUpdateDto"]=0
@@ -255,6 +286,9 @@ operation_parameters_maximum_occurrences["getAssetCategories:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetCategoriesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetCategory:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetCategory:::categoryId"]=0
+operation_parameters_maximum_occurrences["patchAssetCategory:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAssetCategory:::categoryId"]=0
+operation_parameters_maximum_occurrences["patchAssetCategory:::Operation"]=0
 operation_parameters_maximum_occurrences["updateAssetCategory:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateAssetCategory:::categoryId"]=0
 operation_parameters_maximum_occurrences["updateAssetCategory:::AssetCategoryUpdateDto"]=0
@@ -266,6 +300,9 @@ operation_parameters_maximum_occurrences["getAssetTransferAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetTransferAsync:::transferId"]=0
 operation_parameters_maximum_occurrences["getAssetTransfersAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetTransfersCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAssetTransferAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAssetTransferAsync:::transferId"]=0
+operation_parameters_maximum_occurrences["patchAssetTransferAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateAssetTransferAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateAssetTransferAsync:::transferId"]=0
 operation_parameters_maximum_occurrences["updateAssetTransferAsync:::AssetTransferUpdateDto"]=0
@@ -277,6 +314,9 @@ operation_parameters_maximum_occurrences["getAssetType:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetType:::typeId"]=0
 operation_parameters_maximum_occurrences["getAssetTypes:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetTypesCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAssetType:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAssetType:::typeId"]=0
+operation_parameters_maximum_occurrences["patchAssetType:::Operation"]=0
 operation_parameters_maximum_occurrences["updateAssetType:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateAssetType:::typeId"]=0
 operation_parameters_maximum_occurrences["updateAssetType:::AssetTypeUpdateDto"]=0
@@ -348,6 +388,28 @@ operation_parameters_maximum_occurrences["getAssetValueAmendsCount:::tenantId"]=
 operation_parameters_maximum_occurrences["getAssetValueAmendsCount:::assetId"]=0
 operation_parameters_maximum_occurrences["getAssets:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetsCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAsset:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAsset:::assetId"]=0
+operation_parameters_maximum_occurrences["patchAsset:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetAssetCategory:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAssetAssetCategory:::categoryId"]=0
+operation_parameters_maximum_occurrences["patchAssetAssetCategory:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetDepreciationRecord:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAssetDepreciationRecord:::assetId"]=0
+operation_parameters_maximum_occurrences["patchAssetDepreciationRecord:::recordId"]=0
+operation_parameters_maximum_occurrences["patchAssetDepreciationRecord:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetRepair:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAssetRepair:::assetId"]=0
+operation_parameters_maximum_occurrences["patchAssetRepair:::repairId"]=0
+operation_parameters_maximum_occurrences["patchAssetRepair:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetTransfer:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAssetTransfer:::assetId"]=0
+operation_parameters_maximum_occurrences["patchAssetTransfer:::transferId"]=0
+operation_parameters_maximum_occurrences["patchAssetTransfer:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetValueAmend:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchAssetValueAmend:::assetId"]=0
+operation_parameters_maximum_occurrences["patchAssetValueAmend:::amendId"]=0
+operation_parameters_maximum_occurrences["patchAssetValueAmend:::Operation"]=0
 operation_parameters_maximum_occurrences["updateAsset:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateAsset:::assetId"]=0
 operation_parameters_maximum_occurrences["updateAsset:::AssetUpdateDto"]=0
@@ -403,6 +465,9 @@ operation_parameters_collection_type["getAssetCategories:::tenantId"]=""
 operation_parameters_collection_type["getAssetCategoriesCount:::tenantId"]=""
 operation_parameters_collection_type["getAssetCategory:::tenantId"]=""
 operation_parameters_collection_type["getAssetCategory:::categoryId"]=""
+operation_parameters_collection_type["patchAssetCategory:::tenantId"]=""
+operation_parameters_collection_type["patchAssetCategory:::categoryId"]=""
+operation_parameters_collection_type["patchAssetCategory:::Operation"]=
 operation_parameters_collection_type["updateAssetCategory:::tenantId"]=""
 operation_parameters_collection_type["updateAssetCategory:::categoryId"]=""
 operation_parameters_collection_type["updateAssetCategory:::AssetCategoryUpdateDto"]=""
@@ -414,6 +479,9 @@ operation_parameters_collection_type["getAssetTransferAsync:::tenantId"]=""
 operation_parameters_collection_type["getAssetTransferAsync:::transferId"]=""
 operation_parameters_collection_type["getAssetTransfersAsync:::tenantId"]=""
 operation_parameters_collection_type["getAssetTransfersCountAsync:::tenantId"]=""
+operation_parameters_collection_type["patchAssetTransferAsync:::tenantId"]=""
+operation_parameters_collection_type["patchAssetTransferAsync:::transferId"]=""
+operation_parameters_collection_type["patchAssetTransferAsync:::Operation"]=
 operation_parameters_collection_type["updateAssetTransferAsync:::tenantId"]=""
 operation_parameters_collection_type["updateAssetTransferAsync:::transferId"]=""
 operation_parameters_collection_type["updateAssetTransferAsync:::AssetTransferUpdateDto"]=""
@@ -425,6 +493,9 @@ operation_parameters_collection_type["getAssetType:::tenantId"]=""
 operation_parameters_collection_type["getAssetType:::typeId"]=""
 operation_parameters_collection_type["getAssetTypes:::tenantId"]=""
 operation_parameters_collection_type["getAssetTypesCount:::tenantId"]=""
+operation_parameters_collection_type["patchAssetType:::tenantId"]=""
+operation_parameters_collection_type["patchAssetType:::typeId"]=""
+operation_parameters_collection_type["patchAssetType:::Operation"]=
 operation_parameters_collection_type["updateAssetType:::tenantId"]=""
 operation_parameters_collection_type["updateAssetType:::typeId"]=""
 operation_parameters_collection_type["updateAssetType:::AssetTypeUpdateDto"]=""
@@ -496,6 +567,28 @@ operation_parameters_collection_type["getAssetValueAmendsCount:::tenantId"]=""
 operation_parameters_collection_type["getAssetValueAmendsCount:::assetId"]=""
 operation_parameters_collection_type["getAssets:::tenantId"]=""
 operation_parameters_collection_type["getAssetsCount:::tenantId"]=""
+operation_parameters_collection_type["patchAsset:::tenantId"]=""
+operation_parameters_collection_type["patchAsset:::assetId"]=""
+operation_parameters_collection_type["patchAsset:::Operation"]=
+operation_parameters_collection_type["patchAssetAssetCategory:::tenantId"]=""
+operation_parameters_collection_type["patchAssetAssetCategory:::categoryId"]=""
+operation_parameters_collection_type["patchAssetAssetCategory:::Operation"]=
+operation_parameters_collection_type["patchAssetDepreciationRecord:::tenantId"]=""
+operation_parameters_collection_type["patchAssetDepreciationRecord:::assetId"]=""
+operation_parameters_collection_type["patchAssetDepreciationRecord:::recordId"]=""
+operation_parameters_collection_type["patchAssetDepreciationRecord:::Operation"]=
+operation_parameters_collection_type["patchAssetRepair:::tenantId"]=""
+operation_parameters_collection_type["patchAssetRepair:::assetId"]=""
+operation_parameters_collection_type["patchAssetRepair:::repairId"]=""
+operation_parameters_collection_type["patchAssetRepair:::Operation"]=
+operation_parameters_collection_type["patchAssetTransfer:::tenantId"]=""
+operation_parameters_collection_type["patchAssetTransfer:::assetId"]=""
+operation_parameters_collection_type["patchAssetTransfer:::transferId"]=""
+operation_parameters_collection_type["patchAssetTransfer:::Operation"]=
+operation_parameters_collection_type["patchAssetValueAmend:::tenantId"]=""
+operation_parameters_collection_type["patchAssetValueAmend:::assetId"]=""
+operation_parameters_collection_type["patchAssetValueAmend:::amendId"]=""
+operation_parameters_collection_type["patchAssetValueAmend:::Operation"]=
 operation_parameters_collection_type["updateAsset:::tenantId"]=""
 operation_parameters_collection_type["updateAsset:::assetId"]=""
 operation_parameters_collection_type["updateAsset:::AssetUpdateDto"]=""
@@ -895,7 +988,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}AssetsService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}AssetsService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -931,6 +1024,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getAssetCategories${OFF};Gets all asset categories for the current tenant
   ${CYAN}getAssetCategoriesCount${OFF};Gets the count of asset categories
   ${CYAN}getAssetCategory${OFF};Gets a specific asset category
+  ${CYAN}patchAssetCategory${OFF};Partially updates an existing asset category
   ${CYAN}updateAssetCategory${OFF};Updates an existing asset category
 EOF
 echo "  $ops" | column -t -s ';'
@@ -942,6 +1036,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getAssetTransferAsync${OFF};Gets a single asset transfer by ID
   ${CYAN}getAssetTransfersAsync${OFF};Gets a list of asset transfers
   ${CYAN}getAssetTransfersCountAsync${OFF};Gets the count of asset transfers
+  ${CYAN}patchAssetTransferAsync${OFF};Partially updates an existing asset transfer
   ${CYAN}updateAssetTransferAsync${OFF};Updates an existing asset transfer
 EOF
 echo "  $ops" | column -t -s ';'
@@ -953,6 +1048,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getAssetType${OFF};Gets a specific asset type
   ${CYAN}getAssetTypes${OFF};Gets all asset types for the current tenant
   ${CYAN}getAssetTypesCount${OFF};Gets the count of asset types
+  ${CYAN}patchAssetType${OFF};Partially updates an existing asset type
   ${CYAN}updateAssetType${OFF};Updates an existing asset type
 EOF
 echo "  $ops" | column -t -s ';'
@@ -989,6 +1085,12 @@ read -r -d '' ops <<EOF
   ${CYAN}getAssetValueAmendsCount${OFF};Gets count of value amendments for a specific asset
   ${CYAN}getAssets${OFF};Gets all assets for the current tenant
   ${CYAN}getAssetsCount${OFF};Gets the count of assets
+  ${CYAN}patchAsset${OFF};Partially updates an existing asset
+  ${CYAN}patchAssetAssetCategory${OFF};Partially updates an existing asset category
+  ${CYAN}patchAssetDepreciationRecord${OFF};Partially updates a depreciation record for an asset
+  ${CYAN}patchAssetRepair${OFF};Partially updates a repair for an asset
+  ${CYAN}patchAssetTransfer${OFF};Partially updates a transfer for an asset
+  ${CYAN}patchAssetValueAmend${OFF};Partially updates a value amendment for an asset
   ${CYAN}updateAsset${OFF};Updates an existing asset
   ${CYAN}updateAssetAssetCategory${OFF};Updates an existing asset category
   ${CYAN}updateAssetDepreciationRecord${OFF};Updates a depreciation record for an asset
@@ -1052,7 +1154,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}AssetsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}AssetsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1072,7 +1174,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}AssetsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}AssetsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1192,6 +1294,36 @@ print_getAssetCategory_help() {
     echo -e "  * ${GREEN}categoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: categoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchAssetCategory operation
+#
+##############################################################################
+print_patchAssetCategory_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAssetCategory - Partially updates an existing asset category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Applies a JSON Patch document to an existing asset category for the authenticated tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}categoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: categoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=403
@@ -1352,6 +1484,36 @@ print_getAssetTransfersCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchAssetTransferAsync operation
+#
+##############################################################################
+print_patchAssetTransferAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAssetTransferAsync - Partially updates an existing asset transfer${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Applies a JSON Patch document to an existing asset transfer for the authenticated tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}transferId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: transferId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateAssetTransferAsync operation
 #
 ##############################################################################
@@ -1498,6 +1660,36 @@ print_getAssetTypesCount_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=403
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchAssetType operation
+#
+##############################################################################
+print_patchAssetType_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAssetType - Partially updates an existing asset type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Applies a JSON Patch document to an existing asset type for the authenticated tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}typeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: typeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -2279,6 +2471,190 @@ print_getAssetsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchAsset operation
+#
+##############################################################################
+print_patchAsset_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAsset - Partially updates an existing asset${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Applies a JSON Patch document to an existing asset for the authenticated tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchAssetAssetCategory operation
+#
+##############################################################################
+print_patchAssetAssetCategory_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAssetAssetCategory - Partially updates an existing asset category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Applies a JSON Patch document to an existing asset category for the authenticated tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}categoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: categoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchAssetDepreciationRecord operation
+#
+##############################################################################
+print_patchAssetDepreciationRecord_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAssetDepreciationRecord - Partially updates a depreciation record for an asset${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Applies a JSON Patch document to an existing depreciation record for the specified asset." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}recordId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: recordId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchAssetRepair operation
+#
+##############################################################################
+print_patchAssetRepair_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAssetRepair - Partially updates a repair for an asset${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Applies a JSON Patch document to an existing repair record for the specified asset." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}repairId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: repairId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchAssetTransfer operation
+#
+##############################################################################
+print_patchAssetTransfer_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAssetTransfer - Partially updates a transfer for an asset${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Applies a JSON Patch document to an existing transfer record for the specified asset." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}transferId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: transferId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchAssetValueAmend operation
+#
+##############################################################################
+print_patchAssetValueAmend_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAssetValueAmend - Partially updates a value amendment for an asset${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Applies a JSON Patch document to an existing value amendment record for the specified asset." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}amendId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: amendId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateAsset operation
 #
 ##############################################################################
@@ -2988,6 +3364,82 @@ call_getAssetCategory() {
 
 ##############################################################################
 #
+# Call patchAssetCategory operation
+#
+##############################################################################
+call_patchAssetCategory() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(categoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AssetsService/AssetCategories/{categoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateAssetCategory operation
 #
 ##############################################################################
@@ -3284,6 +3736,82 @@ call_getAssetTransfersCountAsync() {
 
 ##############################################################################
 #
+# Call patchAssetTransferAsync operation
+#
+##############################################################################
+call_patchAssetTransferAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(transferId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AssetsService/AssetTransfers/{transferId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateAssetTransferAsync operation
 #
 ##############################################################################
@@ -3575,6 +4103,82 @@ call_getAssetTypesCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchAssetType operation
+#
+##############################################################################
+call_patchAssetType() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(typeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AssetsService/AssetTypes/{typeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4971,6 +5575,462 @@ call_getAssetsCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchAsset operation
+#
+##############################################################################
+call_patchAsset() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(assetId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AssetsService/Assets/{assetId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchAssetAssetCategory operation
+#
+##############################################################################
+call_patchAssetAssetCategory() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(categoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AssetsService/Assets/Categories/{categoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchAssetDepreciationRecord operation
+#
+##############################################################################
+call_patchAssetDepreciationRecord() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(assetId recordId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AssetsService/Assets/{assetId}/DepreciationRecords/{recordId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchAssetRepair operation
+#
+##############################################################################
+call_patchAssetRepair() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(assetId repairId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AssetsService/Assets/{assetId}/Repairs/{repairId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchAssetTransfer operation
+#
+##############################################################################
+call_patchAssetTransfer() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(assetId transferId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AssetsService/Assets/{assetId}/Transfers/{transferId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchAssetValueAmend operation
+#
+##############################################################################
+call_patchAssetValueAmend() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(assetId amendId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AssetsService/Assets/{assetId}/ValueAmends/{amendId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6529,6 +7589,9 @@ case $key in
     getAssetCategory)
     operation="getAssetCategory"
     ;;
+    patchAssetCategory)
+    operation="patchAssetCategory"
+    ;;
     updateAssetCategory)
     operation="updateAssetCategory"
     ;;
@@ -6547,6 +7610,9 @@ case $key in
     getAssetTransfersCountAsync)
     operation="getAssetTransfersCountAsync"
     ;;
+    patchAssetTransferAsync)
+    operation="patchAssetTransferAsync"
+    ;;
     updateAssetTransferAsync)
     operation="updateAssetTransferAsync"
     ;;
@@ -6564,6 +7630,9 @@ case $key in
     ;;
     getAssetTypesCount)
     operation="getAssetTypesCount"
+    ;;
+    patchAssetType)
+    operation="patchAssetType"
     ;;
     updateAssetType)
     operation="updateAssetType"
@@ -6657,6 +7726,24 @@ case $key in
     ;;
     getAssetsCount)
     operation="getAssetsCount"
+    ;;
+    patchAsset)
+    operation="patchAsset"
+    ;;
+    patchAssetAssetCategory)
+    operation="patchAssetAssetCategory"
+    ;;
+    patchAssetDepreciationRecord)
+    operation="patchAssetDepreciationRecord"
+    ;;
+    patchAssetRepair)
+    operation="patchAssetRepair"
+    ;;
+    patchAssetTransfer)
+    operation="patchAssetTransfer"
+    ;;
+    patchAssetValueAmend)
+    operation="patchAssetValueAmend"
     ;;
     updateAsset)
     operation="updateAsset"
@@ -6832,6 +7919,9 @@ case $operation in
     getAssetCategory)
     call_getAssetCategory
     ;;
+    patchAssetCategory)
+    call_patchAssetCategory
+    ;;
     updateAssetCategory)
     call_updateAssetCategory
     ;;
@@ -6850,6 +7940,9 @@ case $operation in
     getAssetTransfersCountAsync)
     call_getAssetTransfersCountAsync
     ;;
+    patchAssetTransferAsync)
+    call_patchAssetTransferAsync
+    ;;
     updateAssetTransferAsync)
     call_updateAssetTransferAsync
     ;;
@@ -6867,6 +7960,9 @@ case $operation in
     ;;
     getAssetTypesCount)
     call_getAssetTypesCount
+    ;;
+    patchAssetType)
+    call_patchAssetType
     ;;
     updateAssetType)
     call_updateAssetType
@@ -6960,6 +8056,24 @@ case $operation in
     ;;
     getAssetsCount)
     call_getAssetsCount
+    ;;
+    patchAsset)
+    call_patchAsset
+    ;;
+    patchAssetAssetCategory)
+    call_patchAssetAssetCategory
+    ;;
+    patchAssetDepreciationRecord)
+    call_patchAssetDepreciationRecord
+    ;;
+    patchAssetRepair)
+    call_patchAssetRepair
+    ;;
+    patchAssetTransfer)
+    call_patchAssetTransfer
+    ;;
+    patchAssetValueAmend)
+    call_patchAssetValueAmend
     ;;
     updateAsset)
     call_updateAsset

@@ -302,16 +302,19 @@ case $state in
             "getAssetCategories[Gets all asset categories for the current tenant]" \
             "getAssetCategoriesCount[Gets the count of asset categories]" \
             "getAssetCategory[Gets a specific asset category]" \
+            "patchAssetCategory[Partially updates an existing asset category]" \
             "updateAssetCategory[Updates an existing asset category]"             "createAssetTransferAsync[Creates a new asset transfer]" \
             "deleteAssetTransferAsync[Deletes an asset transfer]" \
             "getAssetTransferAsync[Gets a single asset transfer by ID]" \
             "getAssetTransfersAsync[Gets a list of asset transfers]" \
             "getAssetTransfersCountAsync[Gets the count of asset transfers]" \
+            "patchAssetTransferAsync[Partially updates an existing asset transfer]" \
             "updateAssetTransferAsync[Updates an existing asset transfer]"             "createAssetType[Creates a new asset type]" \
             "deleteAssetType[Deletes an asset type]" \
             "getAssetType[Gets a specific asset type]" \
             "getAssetTypes[Gets all asset types for the current tenant]" \
             "getAssetTypesCount[Gets the count of asset types]" \
+            "patchAssetType[Partially updates an existing asset type]" \
             "updateAssetType[Updates an existing asset type]"             "createAsset[Creates a new asset]" \
             "createAssetAssetCategory[Creates a new asset category]" \
             "createAssetDepreciationRecord[Creates a new depreciation record for an asset]" \
@@ -342,6 +345,12 @@ case $state in
             "getAssetValueAmendsCount[Gets count of value amendments for a specific asset]" \
             "getAssets[Gets all assets for the current tenant]" \
             "getAssetsCount[Gets the count of assets]" \
+            "patchAsset[Partially updates an existing asset]" \
+            "patchAssetAssetCategory[Partially updates an existing asset category]" \
+            "patchAssetDepreciationRecord[Partially updates a depreciation record for an asset]" \
+            "patchAssetRepair[Partially updates a repair for an asset]" \
+            "patchAssetTransfer[Partially updates a transfer for an asset]" \
+            "patchAssetValueAmend[Partially updates a value amendment for an asset]" \
             "updateAsset[Updates an existing asset]" \
             "updateAssetAssetCategory[Updates an existing asset category]" \
             "updateAssetDepreciationRecord[Updates a depreciation record for an asset]" \
@@ -408,6 +417,14 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchAssetCategory)
+        local -a _op_arguments
+        _op_arguments=(
+          "categoryId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateAssetCategory)
         local -a _op_arguments
         _op_arguments=(
@@ -453,6 +470,14 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchAssetTransferAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "transferId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateAssetTransferAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -495,6 +520,14 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchAssetType)
+        local -a _op_arguments
+        _op_arguments=(
+          "typeId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -745,6 +778,58 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchAsset)
+        local -a _op_arguments
+        _op_arguments=(
+          "assetId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchAssetAssetCategory)
+        local -a _op_arguments
+        _op_arguments=(
+          "categoryId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchAssetDepreciationRecord)
+        local -a _op_arguments
+        _op_arguments=(
+          "assetId=:[PATH] "
+"recordId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchAssetRepair)
+        local -a _op_arguments
+        _op_arguments=(
+          "assetId=:[PATH] "
+"repairId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchAssetTransfer)
+        local -a _op_arguments
+        _op_arguments=(
+          "assetId=:[PATH] "
+"transferId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchAssetValueAmend)
+        local -a _op_arguments
+        _op_arguments=(
+          "assetId=:[PATH] "
+"amendId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

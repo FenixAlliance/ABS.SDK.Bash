@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **receiverWalletAccountId** | **string** |  | [optional] [default to null]
 **emisorContactId** | **string** |  | [optional] [default to null]
 **receiverContactId** | **string** |  | [optional] [default to null]
-**paymentID** | **string** |  | [optional] [default to null]
+**paymentId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

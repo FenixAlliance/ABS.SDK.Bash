@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **prefix** | **string** |  | [optional] [default to null]
 **balance** | **float** |  | [optional] [default to null]
 **currencyId** | **string** |  | [optional] [default to null]
+**contactId** | **string** |  | [optional] [default to null]
 **accountType** | **string** |  | [optional] [default to null]
 **qualifiedName** | **string** |  | [optional] [default to null]
 **accountTypeId** | **string** |  | [optional] [default to null]

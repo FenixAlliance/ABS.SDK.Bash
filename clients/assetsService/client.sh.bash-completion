@@ -74,18 +74,21 @@ _()
     operations["getAssetCategories"]=1
     operations["getAssetCategoriesCount"]=1
     operations["getAssetCategory"]=1
+    operations["patchAssetCategory"]=1
     operations["updateAssetCategory"]=1
     operations["createAssetTransferAsync"]=1
     operations["deleteAssetTransferAsync"]=1
     operations["getAssetTransferAsync"]=1
     operations["getAssetTransfersAsync"]=1
     operations["getAssetTransfersCountAsync"]=1
+    operations["patchAssetTransferAsync"]=1
     operations["updateAssetTransferAsync"]=1
     operations["createAssetType"]=1
     operations["deleteAssetType"]=1
     operations["getAssetType"]=1
     operations["getAssetTypes"]=1
     operations["getAssetTypesCount"]=1
+    operations["patchAssetType"]=1
     operations["updateAssetType"]=1
     operations["createAsset"]=1
     operations["createAssetAssetCategory"]=1
@@ -117,6 +120,12 @@ _()
     operations["getAssetValueAmendsCount"]=1
     operations["getAssets"]=1
     operations["getAssetsCount"]=1
+    operations["patchAsset"]=1
+    operations["patchAssetAssetCategory"]=1
+    operations["patchAssetDepreciationRecord"]=1
+    operations["patchAssetRepair"]=1
+    operations["patchAssetTransfer"]=1
+    operations["patchAssetValueAmend"]=1
     operations["updateAsset"]=1
     operations["updateAssetAssetCategory"]=1
     operations["updateAssetDepreciationRecord"]=1
@@ -150,18 +159,21 @@ _()
     operation_parameters["getAssetCategories"]="tenantId= "
     operation_parameters["getAssetCategoriesCount"]="tenantId= "
     operation_parameters["getAssetCategory"]="categoryId= tenantId= "
+    operation_parameters["patchAssetCategory"]="categoryId= tenantId= "
     operation_parameters["updateAssetCategory"]="categoryId= tenantId= "
     operation_parameters["createAssetTransferAsync"]="tenantId= "
     operation_parameters["deleteAssetTransferAsync"]="transferId= tenantId= "
     operation_parameters["getAssetTransferAsync"]="transferId= tenantId= "
     operation_parameters["getAssetTransfersAsync"]="tenantId= "
     operation_parameters["getAssetTransfersCountAsync"]="tenantId= "
+    operation_parameters["patchAssetTransferAsync"]="transferId= tenantId= "
     operation_parameters["updateAssetTransferAsync"]="transferId= tenantId= "
     operation_parameters["createAssetType"]="tenantId= "
     operation_parameters["deleteAssetType"]="typeId= tenantId= "
     operation_parameters["getAssetType"]="typeId= tenantId= "
     operation_parameters["getAssetTypes"]="tenantId= "
     operation_parameters["getAssetTypesCount"]="tenantId= "
+    operation_parameters["patchAssetType"]="typeId= tenantId= "
     operation_parameters["updateAssetType"]="typeId= tenantId= "
     operation_parameters["createAsset"]="tenantId= "
     operation_parameters["createAssetAssetCategory"]="tenantId= "
@@ -193,6 +205,12 @@ _()
     operation_parameters["getAssetValueAmendsCount"]="assetId= tenantId= "
     operation_parameters["getAssets"]="tenantId= "
     operation_parameters["getAssetsCount"]="tenantId= "
+    operation_parameters["patchAsset"]="assetId= tenantId= "
+    operation_parameters["patchAssetAssetCategory"]="categoryId= tenantId= "
+    operation_parameters["patchAssetDepreciationRecord"]="assetId= recordId= tenantId= "
+    operation_parameters["patchAssetRepair"]="assetId= repairId= tenantId= "
+    operation_parameters["patchAssetTransfer"]="assetId= transferId= tenantId= "
+    operation_parameters["patchAssetValueAmend"]="assetId= amendId= tenantId= "
     operation_parameters["updateAsset"]="assetId= tenantId= "
     operation_parameters["updateAssetAssetCategory"]="categoryId= tenantId= "
     operation_parameters["updateAssetDepreciationRecord"]="assetId= recordId= tenantId= "

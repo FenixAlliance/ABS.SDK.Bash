@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
-**businessId** | **string** |  | [optional] [default to null]
-**businessProfileRecordId** | **string** |  | [optional] [default to null]
+**tenantId** | **string** |  | [optional] [default to null]
+**enrollmentId** | **string** |  | [optional] [default to null]
 **assetId** | **string** |  | [optional] [default to null]
 **assetName** | **string** |  | [optional] [default to null]
 **isRootTransfer** | **boolean** |  | [optional] [default to null]

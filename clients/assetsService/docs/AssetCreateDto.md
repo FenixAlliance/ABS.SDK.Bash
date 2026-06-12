@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **purchasePrice** | **float** |  | [optional] [default to null]
 **currencyId** | **string** |  | [optional] [default to null]
 **itemId** | **string** |  | [optional] [default to null]
+**assetTypeId** | **string** |  | [optional] [default to null]
 **assetCategoryId** | **string** |  | [optional] [default to null]
 **purchaseInvoiceId** | **string** |  | [optional] [default to null]
 **purchaseReceiptId** | **string** |  | [optional] [default to null]

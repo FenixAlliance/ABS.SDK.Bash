@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getTaxClass**](TaxClassesApi.md#getTaxClass) | **GET** /api/v2/AccountingService/TaxClasses/{id} | Get tax class by ID
 [**getTaxClasses**](TaxClassesApi.md#getTaxClasses) | **GET** /api/v2/AccountingService/TaxClasses | Get all tax classes for a tenant
 [**getTaxClassesCount**](TaxClassesApi.md#getTaxClassesCount) | **GET** /api/v2/AccountingService/TaxClasses/Count | Get tax classes count
+[**patchTaxClass**](TaxClassesApi.md#patchTaxClass) | **PATCH** /api/v2/AccountingService/TaxClasses/{id} | Patch a tax class
 [**updateTaxClass**](TaxClassesApi.md#updateTaxClass) | **PUT** /api/v2/AccountingService/TaxClasses/{id} | Update a tax class
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchTaxClass
+
+Patch a tax class
+
+Partially updates an existing tax class identified by its unique identifier.
+
+### Example
+
+```bash
+ patchTaxClass  tenantId=value id=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **id** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
