@@ -8,8 +8,10 @@ Name | Type | Description | Notes
 **read** | **boolean** |  | [optional] [default to null]
 **icon** | **string** |  | [optional] [default to null]
 **message** | **string** |  | [optional] [default to null]
+**imageUrl** | **string** |  | [optional] [default to null]
 **redirectUrl** | **string** |  | [optional] [default to null]
-**socialProfileID** | **string** |  | [optional] [default to null]
+**type** | **string** |  | [optional] [default to null]
+**socialProfileId** | **string** |  | [optional] [default to null]
 **readTimestamp** | **string** |  | [optional] [default to null]
 **issuedTimestamp** | **string** |  | [optional] [default to null]
 

@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getTenantTerritories**](TerritoriesApi.md#getTenantTerritories) | **GET** /api/v2/TenantsService/Territories | Retrieve a list of tenant territories
 [**getTenantTerritoriesCount**](TerritoriesApi.md#getTenantTerritoriesCount) | **GET** /api/v2/TenantsService/Territories/Count | Get the count of tenant territories
 [**getTenantTerritoryById**](TerritoriesApi.md#getTenantTerritoryById) | **GET** /api/v2/TenantsService/Territories/{tenantTerritoryId} | Retrieve a single tenant territory by its ID
+[**patchTenantTerritory**](TerritoriesApi.md#patchTenantTerritory) | **PATCH** /api/v2/TenantsService/Territories/{tenantTerritoryId} | Patch a tenant territory
 [**updateTenantTerritory**](TerritoriesApi.md#updateTenantTerritory) | **PUT** /api/v2/TenantsService/Territories/{tenantTerritoryId} | Update a tenant territory
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchTenantTerritory
+
+Patch a tenant territory
+
+Patch a tenant territory
+
+### Example
+
+```bash
+ patchTenantTerritory  tenantId=value tenantTerritoryId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **tenantTerritoryId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

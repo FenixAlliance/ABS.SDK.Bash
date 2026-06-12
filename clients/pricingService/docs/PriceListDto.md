@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **startDate** | **string** |  | [optional] [default to null]
 **endDate** | **string** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
+**context** | **string** |  | [optional] [default to null]
 **currencyId** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]
 **unitId** | **string** |  | [optional] [default to null]

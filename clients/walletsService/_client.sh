@@ -356,6 +356,8 @@ case $state in
             "getWalletWithdrawRequestsCountAsync[Get Wallet Withdraw Requests Count]" \
             "getWalletWithdrawsAsync[Get Wallet Withdraws]" \
             "getWalletWithdrawsCountAsync[Get Wallet Withdraws Count]" \
+            "patchWalletBankAccountAsync[Patch Wallet Bank Account]" \
+            "patchWalletTokenAsync[Patch Wallet Token]" \
             "updateWalletBankAccountAsync[Update Wallet Bank Account]" \
             "updateWalletLocationAsync[Update Wallet Location]" \
             "updateWalletTokenAsync[Update Wallet Token]" \
@@ -872,6 +874,26 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "walletId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchWalletBankAccountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "walletId=:[PATH] "
+"bankAccountId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchWalletTokenAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "walletId=:[PATH] "
+"tokenId=:[PATH] "
           "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

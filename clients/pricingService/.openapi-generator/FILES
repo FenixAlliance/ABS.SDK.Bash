@@ -35,6 +35,7 @@ docs/ItemPriceUpdateDto.md
 docs/LoginRequest.md
 docs/Money.md
 docs/MoneyEnvelope.md
+docs/Operation.md
 docs/PriceListCreateDto.md
 docs/PriceListDto.md
 docs/PriceListDtoEnvelope.md

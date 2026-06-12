@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**deleteLoyaltyProgramAsync**](LoyaltyProgramsApi.md#deleteLoyaltyProgramAsync) | **DELETE** /api/v2/SalesService/LoyaltyPrograms/{loyaltyProgramId} | Delete a loyalty program
 [**getLoyaltyProgramAsync**](LoyaltyProgramsApi.md#getLoyaltyProgramAsync) | **GET** /api/v2/SalesService/LoyaltyPrograms/{loyaltyProgramId} | Get loyalty program by ID
 [**getLoyaltyProgramsAsync**](LoyaltyProgramsApi.md#getLoyaltyProgramsAsync) | **GET** /api/v2/SalesService/LoyaltyPrograms | Get loyalty programs
+[**patchLoyaltyProgramAsync**](LoyaltyProgramsApi.md#patchLoyaltyProgramAsync) | **PATCH** /api/v2/SalesService/LoyaltyPrograms/{loyaltyProgramId} | Patch a loyalty program
 [**updateLoyaltyProgramAsync**](LoyaltyProgramsApi.md#updateLoyaltyProgramAsync) | **PUT** /api/v2/SalesService/LoyaltyPrograms/{loyaltyProgramId} | Update a loyalty program
 
 
@@ -186,6 +187,43 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchLoyaltyProgramAsync
+
+Patch a loyalty program
+
+Partially updates an existing loyalty program using a JSON Patch document.
+
+### Example
+
+```bash
+ patchLoyaltyProgramAsync  tenantId=value loyaltyProgramId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **loyaltyProgramId** | **string** |  | [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

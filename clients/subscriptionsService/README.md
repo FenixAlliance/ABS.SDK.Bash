@@ -126,18 +126,21 @@ Class | Method | HTTP request | Description
 *SubscriptionPlansApi* | [**getSubscriptionPlanByIdAsync**](docs/SubscriptionPlansApi.md#getsubscriptionplanbyidasync) | **GET** /api/v2/SubscriptionsService/SubscriptionPlans/{planId} | Get a subscription plan by ID
 *SubscriptionPlansApi* | [**getSubscriptionPlansAsync**](docs/SubscriptionPlansApi.md#getsubscriptionplansasync) | **GET** /api/v2/SubscriptionsService/SubscriptionPlans | Get all subscription plans
 *SubscriptionPlansApi* | [**getSubscriptionPlansCountAsync**](docs/SubscriptionPlansApi.md#getsubscriptionplanscountasync) | **GET** /api/v2/SubscriptionsService/SubscriptionPlans/Count | Get subscription plans count
+*SubscriptionPlansApi* | [**patchSubscriptionPlanAsync**](docs/SubscriptionPlansApi.md#patchsubscriptionplanasync) | **PATCH** /api/v2/SubscriptionsService/SubscriptionPlans/{planId} | Patch a subscription plan
 *SubscriptionPlansApi* | [**updateSubscriptionPlanAsync**](docs/SubscriptionPlansApi.md#updatesubscriptionplanasync) | **PUT** /api/v2/SubscriptionsService/SubscriptionPlans/{planId} | Update a subscription plan
 *SubscriptionsApi* | [**createSubscriptionAsync**](docs/SubscriptionsApi.md#createsubscriptionasync) | **POST** /api/v2/SubscriptionsService/Subscriptions | Create a subscription
 *SubscriptionsApi* | [**deleteSubscriptionAsync**](docs/SubscriptionsApi.md#deletesubscriptionasync) | **DELETE** /api/v2/SubscriptionsService/Subscriptions/{subscriptionId} | Delete a subscription
 *SubscriptionsApi* | [**getSubscriptionByIdAsync**](docs/SubscriptionsApi.md#getsubscriptionbyidasync) | **GET** /api/v2/SubscriptionsService/Subscriptions/{subscriptionId} | Get a subscription by ID
 *SubscriptionsApi* | [**getSubscriptionsAsync**](docs/SubscriptionsApi.md#getsubscriptionsasync) | **GET** /api/v2/SubscriptionsService/Subscriptions | Get all subscriptions
 *SubscriptionsApi* | [**getSubscriptionsCountAsync**](docs/SubscriptionsApi.md#getsubscriptionscountasync) | **GET** /api/v2/SubscriptionsService/Subscriptions/Count | Get subscriptions count
+*SubscriptionsApi* | [**patchSubscriptionAsync**](docs/SubscriptionsApi.md#patchsubscriptionasync) | **PATCH** /api/v2/SubscriptionsService/Subscriptions/{subscriptionId} | Patch a subscription
 *SubscriptionsApi* | [**updateSubscriptionAsync**](docs/SubscriptionsApi.md#updatesubscriptionasync) | **PUT** /api/v2/SubscriptionsService/Subscriptions/{subscriptionId} | Update a subscription
 
 
 ## Documentation For Models
 
  - [AccessTokenResponse](docs/AccessTokenResponse.md)
+ - [EmptyEnvelope](docs/EmptyEnvelope.md)
  - [Envelope](docs/Envelope.md)
  - [ErrorEnvelope](docs/ErrorEnvelope.md)
  - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
@@ -146,6 +149,7 @@ Class | Method | HTTP request | Description
  - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [Operation](docs/Operation.md)
  - [RefreshRequest](docs/RefreshRequest.md)
  - [RegisterRequest](docs/RegisterRequest.md)
  - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)

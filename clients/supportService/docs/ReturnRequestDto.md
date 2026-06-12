@@ -10,10 +10,10 @@ Name | Type | Description | Notes
 **approved** | **boolean** |  | [optional] [default to null]
 **approvedTimestamp** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]
-**businessProfileRecordId** | **string** |  | [optional] [default to null]
+**enrollmentId** | **string** |  | [optional] [default to null]
 **supportEntitlementId** | **string** |  | [optional] [default to null]
 **contactId** | **string** |  | [optional] [default to null]
-**accountHolderId** | **string** |  | [optional] [default to null]
+**userId** | **string** |  | [optional] [default to null]
 **returnPolicyId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

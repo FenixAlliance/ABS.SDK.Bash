@@ -36,6 +36,7 @@ docs/OAuthApplicationsApi.md
 docs/OAuthAuthorizationDto.md
 docs/OAuthAuthorizationDtoEnvelope.md
 docs/OAuthAuthorizationDtoListEnvelope.md
+docs/Operation.md
 docs/PermissionsApi.md
 docs/RefreshRequest.md
 docs/RegisterRequest.md

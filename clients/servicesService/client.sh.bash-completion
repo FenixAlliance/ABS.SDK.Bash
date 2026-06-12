@@ -92,18 +92,21 @@ _()
     operations["getServiceCaseTypeByIdAsync"]=1
     operations["getServiceCaseTypesAsync"]=1
     operations["getServiceCaseTypesCountAsync"]=1
+    operations["patchServiceCaseTypeAsync"]=1
     operations["updateServiceCaseTypeAsync"]=1
     operations["createServiceCaseAsync"]=1
     operations["deleteServiceCaseAsync"]=1
     operations["getServiceCaseByIdAsync"]=1
     operations["getServiceCasesAsync"]=1
     operations["getServiceCasesCountAsync"]=1
+    operations["patchServiceCaseAsync"]=1
     operations["updateServiceCaseAsync"]=1
     operations["createServiceLevelAgreementAsync"]=1
     operations["deleteServiceLevelAgreementAsync"]=1
     operations["getServiceLevelAgreementByIdAsync"]=1
     operations["getServiceLevelAgreementsAsync"]=1
     operations["getServiceLevelAgreementsCountAsync"]=1
+    operations["patchServiceLevelAgreementAsync"]=1
     operations["updateServiceLevelAgreementAsync"]=1
     operations["countAllServiceLevelsAsync"]=1
     operations["createServiceLevelAsync"]=1
@@ -112,18 +115,21 @@ _()
     operations["getServiceLevelByIdAsync"]=1
     operations["getServiceLevelsAsync"]=1
     operations["getServiceLevelsCountAsync"]=1
+    operations["patchServiceLevelAsync"]=1
     operations["updateServiceLevelAsync"]=1
     operations["createServiceQueueAsync"]=1
     operations["deleteServiceQueueAsync"]=1
     operations["getServiceQueueByIdAsync"]=1
     operations["getServiceQueuesAsync"]=1
     operations["getServiceQueuesCountAsync"]=1
+    operations["patchServiceQueueAsync"]=1
     operations["updateServiceQueueAsync"]=1
     operations["createServiceAsync"]=1
     operations["deleteServiceAsync"]=1
     operations["getServiceByIdAsync"]=1
     operations["getServicesAsync"]=1
     operations["getServicesCountAsync"]=1
+    operations["patchServiceAsync"]=1
     operations["updateServiceAsync"]=1
 
     # An associative array of operations to their parameters
@@ -152,18 +158,21 @@ _()
     operation_parameters["getServiceCaseTypeByIdAsync"]="serviceCaseTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["getServiceCaseTypesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getServiceCaseTypesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchServiceCaseTypeAsync"]="serviceCaseTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["updateServiceCaseTypeAsync"]="serviceCaseTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["createServiceCaseAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteServiceCaseAsync"]="serviceCaseId= tenantId= api-version= x-api-version: "
     operation_parameters["getServiceCaseByIdAsync"]="serviceCaseId= tenantId= api-version= x-api-version: "
     operation_parameters["getServiceCasesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getServiceCasesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchServiceCaseAsync"]="serviceCaseId= tenantId= api-version= x-api-version: "
     operation_parameters["updateServiceCaseAsync"]="serviceCaseId= tenantId= api-version= x-api-version: "
     operation_parameters["createServiceLevelAgreementAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteServiceLevelAgreementAsync"]="serviceLevelAgreementId= tenantId= api-version= x-api-version: "
     operation_parameters["getServiceLevelAgreementByIdAsync"]="serviceLevelAgreementId= tenantId= api-version= x-api-version: "
     operation_parameters["getServiceLevelAgreementsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getServiceLevelAgreementsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchServiceLevelAgreementAsync"]="serviceLevelAgreementId= tenantId= api-version= x-api-version: "
     operation_parameters["updateServiceLevelAgreementAsync"]="serviceLevelAgreementId= tenantId= api-version= x-api-version: "
     operation_parameters["countAllServiceLevelsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createServiceLevelAsync"]="serviceId= tenantId= api-version= x-api-version: "
@@ -172,18 +181,21 @@ _()
     operation_parameters["getServiceLevelByIdAsync"]="serviceId= serviceLevelId= tenantId= api-version= x-api-version: "
     operation_parameters["getServiceLevelsAsync"]="serviceId= tenantId= api-version= x-api-version: "
     operation_parameters["getServiceLevelsCountAsync"]="serviceId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchServiceLevelAsync"]="serviceId= serviceLevelId= tenantId= api-version= x-api-version: "
     operation_parameters["updateServiceLevelAsync"]="serviceId= serviceLevelId= tenantId= api-version= x-api-version: "
     operation_parameters["createServiceQueueAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteServiceQueueAsync"]="serviceQueueId= tenantId= api-version= x-api-version: "
     operation_parameters["getServiceQueueByIdAsync"]="serviceQueueId= tenantId= api-version= x-api-version: "
     operation_parameters["getServiceQueuesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getServiceQueuesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchServiceQueueAsync"]="serviceQueueId= tenantId= api-version= x-api-version: "
     operation_parameters["updateServiceQueueAsync"]="serviceQueueId= tenantId= api-version= x-api-version: "
     operation_parameters["createServiceAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteServiceAsync"]="serviceId= tenantId= api-version= x-api-version: "
     operation_parameters["getServiceByIdAsync"]="serviceId= tenantId= api-version= x-api-version: "
     operation_parameters["getServicesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getServicesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchServiceAsync"]="serviceId= tenantId= api-version= x-api-version: "
     operation_parameters["updateServiceAsync"]="serviceId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters

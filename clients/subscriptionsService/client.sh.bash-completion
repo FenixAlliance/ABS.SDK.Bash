@@ -92,12 +92,14 @@ _()
     operations["getSubscriptionPlanByIdAsync"]=1
     operations["getSubscriptionPlansAsync"]=1
     operations["getSubscriptionPlansCountAsync"]=1
+    operations["patchSubscriptionPlanAsync"]=1
     operations["updateSubscriptionPlanAsync"]=1
     operations["createSubscriptionAsync"]=1
     operations["deleteSubscriptionAsync"]=1
     operations["getSubscriptionByIdAsync"]=1
     operations["getSubscriptionsAsync"]=1
     operations["getSubscriptionsCountAsync"]=1
+    operations["patchSubscriptionAsync"]=1
     operations["updateSubscriptionAsync"]=1
 
     # An associative array of operations to their parameters
@@ -126,12 +128,14 @@ _()
     operation_parameters["getSubscriptionPlanByIdAsync"]="planId= tenantId= api-version= x-api-version: "
     operation_parameters["getSubscriptionPlansAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSubscriptionPlansCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchSubscriptionPlanAsync"]="planId= tenantId= api-version= x-api-version: "
     operation_parameters["updateSubscriptionPlanAsync"]="planId= tenantId= api-version= x-api-version: "
     operation_parameters["createSubscriptionAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteSubscriptionAsync"]="subscriptionId= tenantId= api-version= x-api-version: "
     operation_parameters["getSubscriptionByIdAsync"]="subscriptionId= tenantId= api-version= x-api-version: "
     operation_parameters["getSubscriptionsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSubscriptionsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchSubscriptionAsync"]="subscriptionId= tenantId= api-version= x-api-version: "
     operation_parameters["updateSubscriptionAsync"]="subscriptionId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters

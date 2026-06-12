@@ -7,8 +7,7 @@ Name | Type | Description | Notes
 **timestamp** | **string** |  | [optional] [default to null]
 **name** | **string** |  | [default to null]
 **logoURL** | **string** |  | [optional] [default to null]
-**countryID** | **string** |  | [optional] [default to null]
-**businessProfileRecordID** | **string** |  | [optional] [default to null]
+**countryId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

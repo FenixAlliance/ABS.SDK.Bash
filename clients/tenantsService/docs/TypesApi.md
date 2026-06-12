@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getTenantTypeById**](TypesApi.md#getTenantTypeById) | **GET** /api/v2/TenantsService/Types/{tenantTypeId} | Retrieve a single tenant type by its ID
 [**getTenantTypes**](TypesApi.md#getTenantTypes) | **GET** /api/v2/TenantsService/Types | Retrieve a list of tenant types
 [**getTenantTypesCount**](TypesApi.md#getTenantTypesCount) | **GET** /api/v2/TenantsService/Types/Count | Get the count of tenant types
+[**patchTenantType**](TypesApi.md#patchTenantType) | **PATCH** /api/v2/TenantsService/Types/{tenantTypeId} | Patch a tenant type
 [**updateTenantType**](TypesApi.md#updateTenantType) | **PUT** /api/v2/TenantsService/Types/{tenantTypeId} | Update a tenant type
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchTenantType
+
+Patch a tenant type
+
+Patch a tenant type
+
+### Example
+
+```bash
+ patchTenantType  tenantId=value tenantTypeId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **tenantTypeId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

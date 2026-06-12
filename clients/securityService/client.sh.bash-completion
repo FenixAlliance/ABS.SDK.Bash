@@ -76,6 +76,7 @@ _()
     operations["getBusinessApplicationsCountAsync"]=1
     operations["getPermissionsByApplicationAsync"]=1
     operations["getRolesByApplicationAsync"]=1
+    operations["patchBusinessApplicationAsync"]=1
     operations["updateBusinessApplicationAsync"]=1
     operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
@@ -105,6 +106,7 @@ _()
     operations["getOAuthAuthorizationByIdAsync"]=1
     operations["getOAuthAuthorizationsAsync"]=1
     operations["getOAuthAuthorizationsCountAsync"]=1
+    operations["patchOAuthApplicationAsync"]=1
     operations["updateOAuthApplicationAsync"]=1
     operations["assignPermissionToBusinessApplicationAsync"]=1
     operations["assignPermissionToEnrollmentAsync"]=1
@@ -118,6 +120,7 @@ _()
     operations["getPermissionsByEnrollmentAsync"]=1
     operations["getPermissionsCountAsync"]=1
     operations["getRolesByPermissionAsync"]=1
+    operations["patchPermissionAsync"]=1
     operations["revokePermissionFromBusinessApplicationAsync"]=1
     operations["revokePermissionFromEnrollmentAsync"]=1
     operations["revokeRoleFromPermissionAsync"]=1
@@ -134,6 +137,7 @@ _()
     operations["getRolesAsync"]=1
     operations["getRolesByEnrollmentAsync"]=1
     operations["getRolesCountAsync"]=1
+    operations["patchRoleAsync"]=1
     operations["revokePermissionFromRoleAsync"]=1
     operations["revokeRoleFromBusinessApplicationAsync"]=1
     operations["revokeRoleFromEnrollmentAsync"]=1
@@ -155,6 +159,7 @@ _()
     operation_parameters["getBusinessApplicationsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getPermissionsByApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["getRolesByApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchBusinessApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["updateBusinessApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
@@ -184,6 +189,7 @@ _()
     operation_parameters["getOAuthAuthorizationByIdAsync"]="authorizationId= tenantId= api-version= x-api-version: "
     operation_parameters["getOAuthAuthorizationsAsync"]="tenantId= userId= api-version= x-api-version: "
     operation_parameters["getOAuthAuthorizationsCountAsync"]="tenantId= userId= api-version= x-api-version: "
+    operation_parameters["patchOAuthApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["updateOAuthApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["assignPermissionToBusinessApplicationAsync"]="securityPermissionId= applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["assignPermissionToEnrollmentAsync"]="securityPermissionId= enrollmentId= tenantId= api-version= x-api-version: "
@@ -197,6 +203,7 @@ _()
     operation_parameters["getPermissionsByEnrollmentAsync"]="enrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getPermissionsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getRolesByPermissionAsync"]="securityPermissionId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchPermissionAsync"]="securityPermissionId= tenantId= api-version= x-api-version: "
     operation_parameters["revokePermissionFromBusinessApplicationAsync"]="securityPermissionId= applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["revokePermissionFromEnrollmentAsync"]="securityPermissionId= enrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["revokeRoleFromPermissionAsync"]="securityPermissionId= securityRoleId= tenantId= api-version= x-api-version: "
@@ -213,6 +220,7 @@ _()
     operation_parameters["getRolesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getRolesByEnrollmentAsync"]="enrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getRolesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchRoleAsync"]="securityRoleId= tenantId= api-version= x-api-version: "
     operation_parameters["revokePermissionFromRoleAsync"]="securityRoleId= securityPermissionId= tenantId= api-version= x-api-version: "
     operation_parameters["revokeRoleFromBusinessApplicationAsync"]="securityRoleId= applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["revokeRoleFromEnrollmentAsync"]="securityRoleId= enrollmentId= tenantId= api-version= x-api-version: "

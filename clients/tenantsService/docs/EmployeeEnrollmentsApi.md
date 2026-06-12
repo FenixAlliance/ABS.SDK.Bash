@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getTenantEmployeeEnrollmentById**](EmployeeEnrollmentsApi.md#getTenantEmployeeEnrollmentById) | **GET** /api/v2/TenantsService/EmployeeEnrollments/{tenantEmployeeEnrollmentId} | Retrieve a single tenant employee enrollment by its ID
 [**getTenantEmployeeEnrollments**](EmployeeEnrollmentsApi.md#getTenantEmployeeEnrollments) | **GET** /api/v2/TenantsService/EmployeeEnrollments | Retrieve a list of tenant employee enrollments
 [**getTenantEmployeeEnrollmentsCount**](EmployeeEnrollmentsApi.md#getTenantEmployeeEnrollmentsCount) | **GET** /api/v2/TenantsService/EmployeeEnrollments/Count | Get the count of tenant employee enrollments
+[**patchTenantEmployeeEnrollmentAsync**](EmployeeEnrollmentsApi.md#patchTenantEmployeeEnrollmentAsync) | **PATCH** /api/v2/TenantsService/EmployeeEnrollments/{tenantEmployeeEnrollmentId} | Patch a tenant employee enrollment
 [**updateTenantEmployeeEnrollment**](EmployeeEnrollmentsApi.md#updateTenantEmployeeEnrollment) | **PUT** /api/v2/TenantsService/EmployeeEnrollments/{tenantEmployeeEnrollmentId} | Update a tenant employee enrollment
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchTenantEmployeeEnrollmentAsync
+
+Patch a tenant employee enrollment
+
+Patch a tenant employee enrollment
+
+### Example
+
+```bash
+ patchTenantEmployeeEnrollmentAsync  tenantId=value tenantEmployeeEnrollmentId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **tenantEmployeeEnrollmentId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -134,6 +134,11 @@ operation_parameters_minimum_occurrences["getSubscriptionPlansAsync:::x-api-vers
 operation_parameters_minimum_occurrences["getSubscriptionPlansCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSubscriptionPlansCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSubscriptionPlansCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSubscriptionPlanAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchSubscriptionPlanAsync:::planId"]=1
+operation_parameters_minimum_occurrences["patchSubscriptionPlanAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSubscriptionPlanAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSubscriptionPlanAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSubscriptionPlanAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSubscriptionPlanAsync:::planId"]=1
 operation_parameters_minimum_occurrences["updateSubscriptionPlanAsync:::api-version"]=0
@@ -157,6 +162,11 @@ operation_parameters_minimum_occurrences["getSubscriptionsAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getSubscriptionsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSubscriptionsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSubscriptionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSubscriptionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchSubscriptionAsync:::subscriptionId"]=1
+operation_parameters_minimum_occurrences["patchSubscriptionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSubscriptionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSubscriptionAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSubscriptionAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSubscriptionAsync:::subscriptionId"]=1
 operation_parameters_minimum_occurrences["updateSubscriptionAsync:::api-version"]=0
@@ -208,6 +218,11 @@ operation_parameters_maximum_occurrences["getSubscriptionPlansAsync:::x-api-vers
 operation_parameters_maximum_occurrences["getSubscriptionPlansCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSubscriptionPlansCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSubscriptionPlansCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSubscriptionPlanAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchSubscriptionPlanAsync:::planId"]=0
+operation_parameters_maximum_occurrences["patchSubscriptionPlanAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSubscriptionPlanAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSubscriptionPlanAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSubscriptionPlanAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSubscriptionPlanAsync:::planId"]=0
 operation_parameters_maximum_occurrences["updateSubscriptionPlanAsync:::api-version"]=0
@@ -231,6 +246,11 @@ operation_parameters_maximum_occurrences["getSubscriptionsAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getSubscriptionsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSubscriptionsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSubscriptionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSubscriptionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchSubscriptionAsync:::subscriptionId"]=0
+operation_parameters_maximum_occurrences["patchSubscriptionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSubscriptionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSubscriptionAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSubscriptionAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSubscriptionAsync:::subscriptionId"]=0
 operation_parameters_maximum_occurrences["updateSubscriptionAsync:::api-version"]=0
@@ -279,6 +299,11 @@ operation_parameters_collection_type["getSubscriptionPlansAsync:::x-api-version"
 operation_parameters_collection_type["getSubscriptionPlansCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSubscriptionPlansCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSubscriptionPlansCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSubscriptionPlanAsync:::tenantId"]=""
+operation_parameters_collection_type["patchSubscriptionPlanAsync:::planId"]=""
+operation_parameters_collection_type["patchSubscriptionPlanAsync:::api-version"]=""
+operation_parameters_collection_type["patchSubscriptionPlanAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSubscriptionPlanAsync:::Operation"]=
 operation_parameters_collection_type["updateSubscriptionPlanAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSubscriptionPlanAsync:::planId"]=""
 operation_parameters_collection_type["updateSubscriptionPlanAsync:::api-version"]=""
@@ -302,6 +327,11 @@ operation_parameters_collection_type["getSubscriptionsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getSubscriptionsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSubscriptionsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSubscriptionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSubscriptionAsync:::tenantId"]=""
+operation_parameters_collection_type["patchSubscriptionAsync:::subscriptionId"]=""
+operation_parameters_collection_type["patchSubscriptionAsync:::api-version"]=""
+operation_parameters_collection_type["patchSubscriptionAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSubscriptionAsync:::Operation"]=
 operation_parameters_collection_type["updateSubscriptionAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSubscriptionAsync:::subscriptionId"]=""
 operation_parameters_collection_type["updateSubscriptionAsync:::api-version"]=""
@@ -664,7 +694,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}SubscriptionsService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}SubscriptionsService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -728,6 +758,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getSubscriptionPlanByIdAsync${OFF};Get a subscription plan by ID
   ${CYAN}getSubscriptionPlansAsync${OFF};Get all subscription plans
   ${CYAN}getSubscriptionPlansCountAsync${OFF};Get subscription plans count
+  ${CYAN}patchSubscriptionPlanAsync${OFF};Patch a subscription plan
   ${CYAN}updateSubscriptionPlanAsync${OFF};Update a subscription plan
 EOF
 echo "  $ops" | column -t -s ';'
@@ -739,6 +770,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getSubscriptionByIdAsync${OFF};Get a subscription by ID
   ${CYAN}getSubscriptionsAsync${OFF};Get all subscriptions
   ${CYAN}getSubscriptionsCountAsync${OFF};Get subscriptions count
+  ${CYAN}patchSubscriptionAsync${OFF};Patch a subscription
   ${CYAN}updateSubscriptionAsync${OFF};Update a subscription
 EOF
 echo "  $ops" | column -t -s ';'
@@ -769,7 +801,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}SubscriptionsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}SubscriptionsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -789,7 +821,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}SubscriptionsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}SubscriptionsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1248,6 +1280,35 @@ print_getSubscriptionPlansCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchSubscriptionPlanAsync operation
+#
+##############################################################################
+print_patchSubscriptionPlanAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSubscriptionPlanAsync - Patch a subscription plan${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a subscription plan" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}planId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: planId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateSubscriptionPlanAsync operation
 #
 ##############################################################################
@@ -1400,6 +1461,35 @@ print_getSubscriptionsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchSubscriptionAsync operation
+#
+##############################################################################
+print_patchSubscriptionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSubscriptionAsync - Patch a subscription${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a subscription" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}subscriptionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: subscriptionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2649,6 +2739,82 @@ call_getSubscriptionPlansCountAsync() {
 
 ##############################################################################
 #
+# Call patchSubscriptionPlanAsync operation
+#
+##############################################################################
+call_patchSubscriptionPlanAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(planId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SubscriptionsService/SubscriptionPlans/{planId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateSubscriptionPlanAsync operation
 #
 ##############################################################################
@@ -2945,6 +3111,82 @@ call_getSubscriptionsCountAsync() {
 
 ##############################################################################
 #
+# Call patchSubscriptionAsync operation
+#
+##############################################################################
+call_patchSubscriptionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(subscriptionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SubscriptionsService/Subscriptions/{subscriptionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateSubscriptionAsync operation
 #
 ##############################################################################
@@ -3185,6 +3427,9 @@ case $key in
     getSubscriptionPlansCountAsync)
     operation="getSubscriptionPlansCountAsync"
     ;;
+    patchSubscriptionPlanAsync)
+    operation="patchSubscriptionPlanAsync"
+    ;;
     updateSubscriptionPlanAsync)
     operation="updateSubscriptionPlanAsync"
     ;;
@@ -3202,6 +3447,9 @@ case $key in
     ;;
     getSubscriptionsCountAsync)
     operation="getSubscriptionsCountAsync"
+    ;;
+    patchSubscriptionAsync)
+    operation="patchSubscriptionAsync"
     ;;
     updateSubscriptionAsync)
     operation="updateSubscriptionAsync"
@@ -3362,6 +3610,9 @@ case $operation in
     getSubscriptionPlansCountAsync)
     call_getSubscriptionPlansCountAsync
     ;;
+    patchSubscriptionPlanAsync)
+    call_patchSubscriptionPlanAsync
+    ;;
     updateSubscriptionPlanAsync)
     call_updateSubscriptionPlanAsync
     ;;
@@ -3379,6 +3630,9 @@ case $operation in
     ;;
     getSubscriptionsCountAsync)
     call_getSubscriptionsCountAsync
+    ;;
+    patchSubscriptionAsync)
+    call_patchSubscriptionAsync
     ;;
     updateSubscriptionAsync)
     call_updateSubscriptionAsync

@@ -304,6 +304,7 @@ case $state in
             "getBusinessApplicationsCountAsync[Get business applications count]" \
             "getPermissionsByApplicationAsync[Get permissions by application]" \
             "getRolesByApplicationAsync[Get roles by application]" \
+            "patchBusinessApplicationAsync[Patch an existing business application]" \
             "updateBusinessApplicationAsync[Update an existing business application]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
@@ -329,6 +330,7 @@ case $state in
             "getOAuthAuthorizationByIdAsync[Get OAuth authorization by ID]" \
             "getOAuthAuthorizationsAsync[Get all OAuth authorizations]" \
             "getOAuthAuthorizationsCountAsync[Get OAuth authorizations count]" \
+            "patchOAuthApplicationAsync[Patch an existing OAuth application]" \
             "updateOAuthApplicationAsync[Update an existing OAuth application]"             "assignPermissionToBusinessApplicationAsync[Assign a permission to a business application]" \
             "assignPermissionToEnrollmentAsync[Assign a permission to an enrollment]" \
             "assignRoleToPermissionAsync[Assign a role to a permission]" \
@@ -341,6 +343,7 @@ case $state in
             "getPermissionsByEnrollmentAsync[Get permissions by enrollment]" \
             "getPermissionsCountAsync[Get permissions count]" \
             "getRolesByPermissionAsync[Get roles by permission]" \
+            "patchPermissionAsync[Patch an existing permission]" \
             "revokePermissionFromBusinessApplicationAsync[Revoke a permission from a business application]" \
             "revokePermissionFromEnrollmentAsync[Revoke a permission from an enrollment]" \
             "revokeRoleFromPermissionAsync[Revoke a role from a permission]" \
@@ -356,6 +359,7 @@ case $state in
             "getRolesAsync[Get all roles]" \
             "getRolesByEnrollmentAsync[Get roles by enrollment]" \
             "getRolesCountAsync[Get roles count]" \
+            "patchRoleAsync[Patch an existing role]" \
             "revokePermissionFromRoleAsync[Revoke a permission from a role]" \
             "revokeRoleFromBusinessApplicationAsync[Revoke a role from a business application]" \
             "revokeRoleFromEnrollmentAsync[Revoke a role from an enrollment]" \
@@ -428,6 +432,16 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getRolesByApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchBusinessApplicationAsync)
         local -a _op_arguments
         _op_arguments=(
           "applicationId=:[PATH] "
@@ -660,6 +674,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchOAuthApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "applicationId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateOAuthApplicationAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -781,6 +805,16 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getRolesByPermissionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityPermissionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchPermissionAsync)
         local -a _op_arguments
         _op_arguments=(
           "securityPermissionId=:[PATH] "
@@ -948,6 +982,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchRoleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "securityRoleId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

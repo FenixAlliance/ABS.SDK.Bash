@@ -7,6 +7,10 @@ docs/AccessTokenResponse.md
 docs/AdditionalAttribute.md
 docs/AntiforgeryApi.md
 docs/BooleanEnvelope.md
+docs/BusinessDomainDto.md
+docs/BusinessDomainDtoEnvelope.md
+docs/BusinessDomainDtoListEnvelope.md
+docs/BusinessDomainsApi.md
 docs/CartDto.md
 docs/CartDtoEnvelope.md
 docs/CartDtoListEnvelope.md
@@ -54,6 +58,7 @@ docs/Module.md
 docs/ModuleListEnvelope.md
 docs/ModulesApi.md
 docs/ObjectEmailDispatchRequest.md
+docs/Operation.md
 docs/OptionCreateDto.md
 docs/OptionDto.md
 docs/OptionDtoEnvelope.md

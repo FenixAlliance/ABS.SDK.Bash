@@ -31,6 +31,7 @@ docs/ItemShippingPolicyDtoEnvelope.md
 docs/ItemShippingPolicyDtoListEnvelope.md
 docs/ItemShippingPolicyUpdateDto.md
 docs/LoginRequest.md
+docs/Operation.md
 docs/RefreshRequest.md
 docs/RegisterRequest.md
 docs/ResendConfirmationEmailRequest.md

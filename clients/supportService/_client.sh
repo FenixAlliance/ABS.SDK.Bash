@@ -318,46 +318,55 @@ case $state in
             "getInquiryRequestAsync[Retrieve an inquiry request by ID]" \
             "getInquiryRequestsAsync[Retrieve inquiry requests]" \
             "getInquiryRequestsCountAsync[Get inquiry requests count]" \
+            "patchInquiryRequestAsync[Patch an inquiry request]" \
             "updateInquiryRequestAsync[Update an inquiry request]"             "createKnowledgeArticleAsync[Create a knowledge article]" \
             "deleteKnowledgeArticleAsync[Delete a knowledge article]" \
             "getKnowledgeArticleAsync[Retrieve a knowledge article by ID]" \
             "getKnowledgeArticlesAsync[Retrieve knowledge articles]" \
             "getKnowledgeArticlesCountAsync[Get knowledge articles count]" \
+            "patchKnowledgeArticleAsync[Patch a knowledge article]" \
             "updateKnowledgeArticleAsync[Update a knowledge article]"             "createMaintenanceVisitAsync[Create a maintenance visit]" \
             "deleteMaintenanceVisitAsync[Delete a maintenance visit]" \
             "getMaintenanceVisitAsync[Retrieve a maintenance visit by ID]" \
             "getMaintenanceVisitsAsync[Retrieve maintenance visits]" \
             "getMaintenanceVisitsCountAsync[Get maintenance visits count]" \
+            "patchMaintenanceVisitAsync[Patch a maintenance visit]" \
             "updateMaintenanceVisitAsync[Update a maintenance visit]"             "createRefundPolicyAsync[Create a new refund policy]" \
             "deleteRefundPolicyAsync[Delete a refund policy]" \
             "getRefundPoliciesAsync[Retrieve a list of refund policies]" \
             "getRefundPoliciesCountAsync[Get the count of refund policies]" \
             "getRefundPolicyAsync[Retrieve a refund policy by ID]" \
+            "patchRefundPolicyAsync[Patch a refund policy]" \
             "updateRefundPolicyAsync[Update a refund policy]"             "createRefundRequestAsync[Create a refund request]" \
             "deleteRefundRequestAsync[Delete a refund request]" \
             "getRefundRequestAsync[Retrieve a refund request by ID]" \
             "getRefundRequestsAsync[Retrieve refund requests]" \
             "getRefundRequestsCountAsync[Get refund requests count]" \
+            "patchRefundRequestAsync[Patch a refund request]" \
             "updateRefundRequestAsync[Update a refund request]"             "createReturnPolicyAsync[Create a new return policy]" \
             "deleteReturnPolicyAsync[Delete a return policy]" \
             "getReturnPoliciesAsync[Retrieve a list of return policies]" \
             "getReturnPoliciesCountAsync[Get the count of return policies]" \
             "getReturnPolicyAsync[Retrieve a return policy by ID]" \
+            "patchReturnPolicyAsync[Patch a return policy]" \
             "updateReturnPolicyAsync[Update a return policy]"             "createReturnRequestAsync[Create a return request]" \
             "deleteReturnRequestAsync[Delete a return request]" \
             "getReturnRequestAsync[Retrieve a return request by ID]" \
             "getReturnRequestsAsync[Retrieve return requests]" \
             "getReturnRequestsCountAsync[Get return requests count]" \
+            "patchReturnRequestAsync[Patch a return request]" \
             "updateReturnRequestAsync[Update a return request]"             "createSupportEntitlementAsync[Create a new support entitlement]" \
             "deleteSupportEntitlementAsync[Delete a support entitlement]" \
             "getSupportEntitlementAsync[Retrieve a support entitlement by ID]" \
             "getSupportEntitlementsAsync[Retrieve a list of support entitlements]" \
             "getSupportEntitlementsCountAsync[Get the count of support entitlements]" \
+            "patchSupportEntitlementAsync[Patch a support entitlement]" \
             "updateSupportEntitlementAsync[Update a support entitlement]"             "createSupportRequestAttachmentAsync[Create a new support request attachment]" \
             "deleteSupportRequestAttachmentAsync[Delete a support request attachment]" \
             "getSupportRequestAttachmentAsync[Retrieve a support request attachment by ID]" \
             "getSupportRequestAttachmentsAsync[Retrieve a list of support request attachments]" \
             "getSupportRequestAttachmentsCountAsync[Get the count of support request attachments]" \
+            "patchSupportRequestAttachmentAsync[Patch a support request attachment]" \
             "updateSupportRequestAttachmentAsync[Update a support request attachment]"             "createSupportRequestAsync[Create a new support request]" \
             "deleteSupportRequestAsync[Delete a support request]" \
             "getSupportRequestAsync[Retrieve a support request by ID]" \
@@ -367,17 +376,20 @@ case $state in
             "getSupportRequestTicketsAsync[Retrieve tickets for a support request]" \
             "getSupportRequestsAsync[Retrieve a list of support requests]" \
             "getSupportRequestsCountAsync[Get the count of support requests]" \
+            "patchSupportRequestAsync[Patch a support request]" \
             "relateSupportRequestToAttachmentAsync[Add an attachment to a support request]" \
             "updateSupportRequestAsync[Update a support request]"             "createSupportTicketPriorityAsync[Create a new support ticket priority]" \
             "deleteSupportTicketPriorityAsync[Delete a support ticket priority]" \
             "getSupportTicketPrioritiesAsync[Retrieve a list of support ticket priorities]" \
             "getSupportTicketPrioritiesCountAsync[Get the count of support ticket priorities]" \
             "getSupportTicketPriorityAsync[Retrieve a support ticket priority by ID]" \
+            "patchSupportTicketPriorityAsync[Patch a support ticket priority]" \
             "updateSupportTicketPriorityAsync[Update a support ticket priority]"             "createSupportTicketTypeAsync[Create a new support ticket type]" \
             "deleteSupportTicketTypeAsync[Delete a support ticket type]" \
             "getSupportTicketTypeAsync[Retrieve a support ticket type by ID]" \
             "getSupportTicketTypesAsync[Retrieve a list of support ticket types]" \
             "getSupportTicketTypesCountAsync[Get the count of support ticket types]" \
+            "patchSupportTicketTypeAsync[Patch a support ticket type]" \
             "updateSupportTicketTypeAsync[Update a support ticket type]"             "createSupportTicketAsync[Create a new support ticket]" \
             "deleteSupportTicketAsync[Delete a support ticket]" \
             "deleteSupportTicketConversationAsync[Delete a conversation from a support ticket]" \
@@ -387,17 +399,20 @@ case $state in
             "getSupportTicketConversationsAsync[Retrieve conversations for a support ticket]" \
             "getSupportTicketsAsync[Retrieve a list of support tickets]" \
             "getSupportTicketsCountAsync[Get the count of support tickets]" \
+            "patchSupportTicketAsync[Patch a support ticket]" \
             "relateSupportTicketToConversationAsync[Create a conversation for a support ticket]" \
             "updateSupportTicketAsync[Update a support ticket]"             "createWarrantyPolicyAsync[Create a new warranty policy]" \
             "deleteWarrantyPolicyAsync[Delete a warranty policy]" \
             "getWarrantyPoliciesAsync[Retrieve a list of warranty policies]" \
             "getWarrantyPoliciesCountAsync[Get the count of warranty policies]" \
             "getWarrantyPolicyAsync[Retrieve a warranty policy by ID]" \
+            "patchWarrantyPolicyAsync[Patch a warranty policy]" \
             "updateWarrantyPolicyAsync[Update a warranty policy]"             "createWarrantyRequestAsync[Create a warranty request]" \
             "deleteWarrantyRequestAsync[Delete a warranty request]" \
             "getWarrantyRequestAsync[Retrieve a warranty request by ID]" \
             "getWarrantyRequestsAsync[Retrieve warranty requests]" \
             "getWarrantyRequestsCountAsync[Get warranty requests count]" \
+            "patchWarrantyRequestAsync[Patch a warranty request]" \
             "updateWarrantyRequestAsync[Update a warranty request]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -571,6 +586,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchInquiryRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "inquiryRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateInquiryRequestAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -623,6 +648,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchKnowledgeArticleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "knowledgeArticleId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -685,6 +720,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchMaintenanceVisitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "maintenanceVisitId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateMaintenanceVisitAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -733,6 +778,16 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getRefundPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "refundPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchRefundPolicyAsync)
         local -a _op_arguments
         _op_arguments=(
           "refundPolicyId=:[PATH] "
@@ -799,6 +854,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchRefundRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "refundRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateRefundRequestAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -847,6 +912,16 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getReturnPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "returnPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchReturnPolicyAsync)
         local -a _op_arguments
         _op_arguments=(
           "returnPolicyId=:[PATH] "
@@ -913,6 +988,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchReturnRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "returnRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateReturnRequestAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -970,6 +1055,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchSupportEntitlementAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportEntitlementId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateSupportEntitlementAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1022,6 +1117,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchSupportRequestAttachmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportRequestAttachmentId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1125,6 +1230,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchSupportRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       relateSupportRequestToAttachmentAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1192,6 +1307,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchSupportTicketPriorityAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportTicketPriorityId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateSupportTicketPriorityAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1244,6 +1369,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchSupportTicketTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportTicketTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1351,6 +1486,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchSupportTicketAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supportTicketId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       relateSupportTicketToConversationAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1418,6 +1563,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchWarrantyPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "warrantyPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateWarrantyPolicyAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1470,6 +1625,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchWarrantyRequestAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "warrantyRequestId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

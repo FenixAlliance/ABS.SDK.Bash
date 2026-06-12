@@ -75,12 +75,14 @@ _()
     operations["getTenantDepartmentById"]=1
     operations["getTenantDepartments"]=1
     operations["getTenantDepartmentsCount"]=1
+    operations["patchTenantDepartmentAsync"]=1
     operations["updateTenantDepartment"]=1
     operations["createTenantEmployeeEnrollment"]=1
     operations["deleteTenantEmployeeEnrollment"]=1
     operations["getTenantEmployeeEnrollmentById"]=1
     operations["getTenantEmployeeEnrollments"]=1
     operations["getTenantEmployeeEnrollmentsCount"]=1
+    operations["patchTenantEmployeeEnrollmentAsync"]=1
     operations["updateTenantEmployeeEnrollment"]=1
     operations["createTenantEnrollment"]=1
     operations["deleteTenantEnrollment"]=1
@@ -89,6 +91,7 @@ _()
     operations["getTenantEnrollmentById"]=1
     operations["getTenantEnrollments"]=1
     operations["getTenantEnrollmentsCount"]=1
+    operations["patchTenantEnrollmentAsync"]=1
     operations["updateTenantEnrollment"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
@@ -112,6 +115,7 @@ _()
     operations["getTenantIndustries"]=1
     operations["getTenantIndustriesCount"]=1
     operations["getTenantIndustryById"]=1
+    operations["patchTenantIndustryAsync"]=1
     operations["updateTenantIndustry"]=1
     operations["acceptTenantInvitation"]=1
     operations["declineTenantInvitation"]=1
@@ -126,6 +130,7 @@ _()
     operations["getTenantOptionByKey"]=1
     operations["getTenantOptions"]=1
     operations["getTenantOptionsCount"]=1
+    operations["patchTenantOption"]=1
     operations["updateTenantOption"]=1
     operations["upsertTenantOption"]=1
     operations["createTenantPosition"]=1
@@ -133,42 +138,49 @@ _()
     operations["getTenantPositionById"]=1
     operations["getTenantPositions"]=1
     operations["getTenantPositionsCount"]=1
+    operations["patchTenantPosition"]=1
     operations["updateTenantPosition"]=1
     operations["createTenantSegment"]=1
     operations["deleteTenantSegment"]=1
     operations["getTenantSegmentById"]=1
     operations["getTenantSegments"]=1
     operations["getTenantSegmentsCount"]=1
+    operations["patchTenantSegment"]=1
     operations["updateTenantSegment"]=1
     operations["createTenantSize"]=1
     operations["deleteTenantSize"]=1
     operations["getTenantSizeById"]=1
     operations["getTenantSizes"]=1
     operations["getTenantSizesCount"]=1
+    operations["patchTenantSize"]=1
     operations["updateTenantSize"]=1
     operations["createTenantTeamContactEnrollment"]=1
     operations["deleteTenantTeamContactEnrollment"]=1
     operations["getTenantTeamContactEnrollmentById"]=1
     operations["getTenantTeamContactEnrollments"]=1
     operations["getTenantTeamContactEnrollmentsCount"]=1
+    operations["patchTenantTeamContactEnrollment"]=1
     operations["updateTenantTeamContactEnrollment"]=1
     operations["createTenantTeamProjectEnrollment"]=1
     operations["deleteTenantTeamProjectEnrollment"]=1
     operations["getTenantTeamProjectEnrollmentById"]=1
     operations["getTenantTeamProjectEnrollments"]=1
     operations["getTenantTeamProjectEnrollmentsCount"]=1
+    operations["patchTenantTeamProjectEnrollment"]=1
     operations["updateTenantTeamProjectEnrollment"]=1
     operations["createTenantTeamRecord"]=1
     operations["deleteTenantTeamRecord"]=1
     operations["getTenantTeamRecordById"]=1
     operations["getTenantTeamRecords"]=1
     operations["getTenantTeamRecordsCount"]=1
+    operations["patchTenantTeamRecord"]=1
     operations["updateTenantTeamRecord"]=1
     operations["createTenantTeam"]=1
     operations["deleteTenantTeam"]=1
     operations["getTenantTeamById"]=1
     operations["getTenantTeams"]=1
     operations["getTenantTeamsCount"]=1
+    operations["patchTenantTeam"]=1
     operations["updateTenantTeam"]=1
     operations["assignLicenseAsync"]=1
     operations["createTenantAsync"]=1
@@ -210,12 +222,14 @@ _()
     operations["getTenantTerritories"]=1
     operations["getTenantTerritoriesCount"]=1
     operations["getTenantTerritoryById"]=1
+    operations["patchTenantTerritory"]=1
     operations["updateTenantTerritory"]=1
     operations["createTenantType"]=1
     operations["deleteTenantType"]=1
     operations["getTenantTypeById"]=1
     operations["getTenantTypes"]=1
     operations["getTenantTypesCount"]=1
+    operations["patchTenantType"]=1
     operations["updateTenantType"]=1
     operations["createUnitAsync"]=1
     operations["createUnitGroupAsync"]=1
@@ -227,6 +241,8 @@ _()
     operations["getUnitGroupsCountAsync"]=1
     operations["getUnitsAsync"]=1
     operations["getUnitsCountAsync"]=1
+    operations["patchUnitAsync"]=1
+    operations["patchUnitGroupAsync"]=1
     operations["updateUnitAsync"]=1
     operations["updateUnitGroupAsync"]=1
     operations["createTenantUnit"]=1
@@ -234,6 +250,7 @@ _()
     operations["getTenantUnitById"]=1
     operations["getTenantUnits"]=1
     operations["getTenantUnitsCount"]=1
+    operations["patchTenantUnit"]=1
     operations["updateTenantUnit"]=1
 
     # An associative array of operations to their parameters
@@ -245,12 +262,14 @@ _()
     operation_parameters["getTenantDepartmentById"]="tenantDepartmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantDepartments"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantDepartmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantDepartmentAsync"]="tenantDepartmentId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantDepartment"]="tenantDepartmentId= tenantId= api-version= x-api-version: "
     operation_parameters["createTenantEmployeeEnrollment"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTenantEmployeeEnrollment"]="tenantEmployeeEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantEmployeeEnrollmentById"]="tenantEmployeeEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantEmployeeEnrollments"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantEmployeeEnrollmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantEmployeeEnrollmentAsync"]="tenantEmployeeEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantEmployeeEnrollment"]="tenantEmployeeEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["createTenantEnrollment"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTenantEnrollment"]="enrollmentId= tenantId= api-version= x-api-version: "
@@ -259,6 +278,7 @@ _()
     operation_parameters["getTenantEnrollmentById"]="enrollmentId= tenantId= userId= api-version= x-api-version: "
     operation_parameters["getTenantEnrollments"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantEnrollmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantEnrollmentAsync"]="enrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantEnrollment"]="enrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
@@ -282,6 +302,7 @@ _()
     operation_parameters["getTenantIndustries"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantIndustriesCount"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantIndustryById"]="tenantIndustryId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantIndustryAsync"]="tenantIndustryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantIndustry"]="tenantIndustryId= tenantId= api-version= x-api-version: "
     operation_parameters["acceptTenantInvitation"]="invitationId= api-version= x-api-version: "
     operation_parameters["declineTenantInvitation"]="invitationId= api-version= x-api-version: "
@@ -296,6 +317,7 @@ _()
     operation_parameters["getTenantOptionByKey"]="key= tenantId= portalId= api-version= x-api-version: "
     operation_parameters["getTenantOptions"]="tenantId= portalId= api-version= x-api-version: "
     operation_parameters["getTenantOptionsCount"]="tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["patchTenantOption"]="optionId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantOption"]="optionId= tenantId= api-version= x-api-version: "
     operation_parameters["upsertTenantOption"]="key= tenantId= portalId= api-version= x-api-version: "
     operation_parameters["createTenantPosition"]="tenantId= api-version= x-api-version: "
@@ -303,42 +325,49 @@ _()
     operation_parameters["getTenantPositionById"]="tenantPositionId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantPositions"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantPositionsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantPosition"]="tenantPositionId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantPosition"]="tenantPositionId= tenantId= api-version= x-api-version: "
     operation_parameters["createTenantSegment"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTenantSegment"]="tenantSegmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantSegmentById"]="tenantSegmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantSegments"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantSegmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantSegment"]="tenantSegmentId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantSegment"]="tenantSegmentId= tenantId= api-version= x-api-version: "
     operation_parameters["createTenantSize"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTenantSize"]="tenantSizeId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantSizeById"]="tenantSizeId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantSizes"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantSizesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantSize"]="tenantSizeId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantSize"]="tenantSizeId= tenantId= api-version= x-api-version: "
     operation_parameters["createTenantTeamContactEnrollment"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTenantTeamContactEnrollment"]="tenantTeamContactEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTeamContactEnrollmentById"]="tenantTeamContactEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTeamContactEnrollments"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTeamContactEnrollmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantTeamContactEnrollment"]="tenantTeamContactEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantTeamContactEnrollment"]="tenantTeamContactEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["createTenantTeamProjectEnrollment"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTenantTeamProjectEnrollment"]="tenantTeamProjectEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTeamProjectEnrollmentById"]="tenantTeamProjectEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTeamProjectEnrollments"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTeamProjectEnrollmentsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantTeamProjectEnrollment"]="tenantTeamProjectEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantTeamProjectEnrollment"]="tenantTeamProjectEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["createTenantTeamRecord"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTenantTeamRecord"]="tenantTeamRecordId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTeamRecordById"]="tenantTeamRecordId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTeamRecords"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTeamRecordsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantTeamRecord"]="tenantTeamRecordId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantTeamRecord"]="tenantTeamRecordId= tenantId= api-version= x-api-version: "
     operation_parameters["createTenantTeam"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTenantTeam"]="tenantTeamId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTeamById"]="tenantTeamId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTeams"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTeamsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantTeam"]="tenantTeamId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantTeam"]="tenantTeamId= tenantId= api-version= x-api-version: "
     operation_parameters["assignLicenseAsync"]="tenantId= enrollmentId= licenseId= api-version= x-api-version: "
     operation_parameters["createTenantAsync"]="api-version= x-api-version: "
@@ -380,12 +409,14 @@ _()
     operation_parameters["getTenantTerritories"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTerritoriesCount"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTerritoryById"]="tenantTerritoryId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantTerritory"]="tenantTerritoryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantTerritory"]="tenantTerritoryId= tenantId= api-version= x-api-version: "
     operation_parameters["createTenantType"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTenantType"]="tenantTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTypeById"]="tenantTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTypes"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantTypesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantType"]="tenantTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantType"]="tenantTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["createUnitAsync"]="unitGroupId= tenantId= api-version= x-api-version: "
     operation_parameters["createUnitGroupAsync"]="tenantId= api-version= x-api-version: "
@@ -397,6 +428,8 @@ _()
     operation_parameters["getUnitGroupsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getUnitsAsync"]="unitGroupId= tenantId= api-version= x-api-version: "
     operation_parameters["getUnitsCountAsync"]="unitGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchUnitAsync"]="unitGroupId= unitId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchUnitGroupAsync"]="unitGroupId= tenantId= api-version= x-api-version: "
     operation_parameters["updateUnitAsync"]="unitGroupId= unitId= tenantId= api-version= x-api-version: "
     operation_parameters["updateUnitGroupAsync"]="unitGroupId= tenantId= api-version= x-api-version: "
     operation_parameters["createTenantUnit"]="tenantId= api-version= x-api-version: "
@@ -404,6 +437,7 @@ _()
     operation_parameters["getTenantUnitById"]="tenantUnitId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantUnits"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantUnitsCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTenantUnit"]="tenantUnitId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantUnit"]="tenantUnitId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters

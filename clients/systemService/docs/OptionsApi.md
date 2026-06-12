@@ -10,6 +10,7 @@ Method | HTTP request | Description
 [**getSystemOptionByKey**](OptionsApi.md#getSystemOptionByKey) | **GET** /api/v2/SystemService/Options/Key/{key} | Retrieve a single system option by its key
 [**getSystemOptions**](OptionsApi.md#getSystemOptions) | **GET** /api/v2/SystemService/Options | Retrieve a list of system options
 [**getSystemOptionsCount**](OptionsApi.md#getSystemOptionsCount) | **GET** /api/v2/SystemService/Options/Count | Get the count of system options
+[**patchSystemOption**](OptionsApi.md#patchSystemOption) | **PATCH** /api/v2/SystemService/Options/{optionId} | Partially update a system option
 [**updateSystemOption**](OptionsApi.md#updateSystemOption) | **PUT** /api/v2/SystemService/Options/{optionId} | Update a system option
 [**upsertSystemOption**](OptionsApi.md#upsertSystemOption) | **PUT** /api/v2/SystemService/Options/Upsert/{key} | Create or update a system option by key
 
@@ -235,6 +236,44 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchSystemOption
+
+Partially update a system option
+
+Partially update a system option using a JSON Patch document
+
+### Example
+
+```bash
+ patchSystemOption optionId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **optionId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

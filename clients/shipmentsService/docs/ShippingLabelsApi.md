@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getShippingLabelByIdAsync**](ShippingLabelsApi.md#getShippingLabelByIdAsync) | **GET** /api/v2/ShipmentsService/ShippingLabels/{labelId} | Get shipping label by ID
 [**getShippingLabelsAsync**](ShippingLabelsApi.md#getShippingLabelsAsync) | **GET** /api/v2/ShipmentsService/ShippingLabels | Get all shipping labels
 [**getShippingLabelsCountAsync**](ShippingLabelsApi.md#getShippingLabelsCountAsync) | **GET** /api/v2/ShipmentsService/ShippingLabels/Count | Get shipping labels count
+[**patchShippingLabelAsync**](ShippingLabelsApi.md#patchShippingLabelAsync) | **PATCH** /api/v2/ShipmentsService/ShippingLabels/{labelId} | Patch a shipping label
 [**updateShippingLabelAsync**](ShippingLabelsApi.md#updateShippingLabelAsync) | **PUT** /api/v2/ShipmentsService/ShippingLabels/{labelId} | Update a shipping label
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchShippingLabelAsync
+
+Patch a shipping label
+
+Partially updates an existing shipping label using JSON Patch.
+
+### Example
+
+```bash
+ patchShippingLabelAsync  tenantId=value labelId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **labelId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**deleteSocialGroupAsync**](SocialGroupsApi.md#deleteSocialGroupAsync) | **DELETE** /api/v2/SocialService/SocialGroups/{socialGroupId} | Delete a social group
 [**getSocialGroupByIdAsync**](SocialGroupsApi.md#getSocialGroupByIdAsync) | **GET** /api/v2/SocialService/SocialGroups/{socialGroupId} | Get social group by ID
 [**getSocialGroupsAsync**](SocialGroupsApi.md#getSocialGroupsAsync) | **GET** /api/v2/SocialService/SocialGroups | Get social groups
+[**patchSocialGroupAsync**](SocialGroupsApi.md#patchSocialGroupAsync) | **PATCH** /api/v2/SocialService/SocialGroups/{socialGroupId} | Patch a social group
 [**updateSocialGroupAsync**](SocialGroupsApi.md#updateSocialGroupAsync) | **PUT** /api/v2/SocialService/SocialGroups/{socialGroupId} | Update a social group
 
 
@@ -198,6 +199,46 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchSocialGroupAsync
+
+Patch a social group
+
+Partially updates an existing social group using a JSON Patch document.
+
+### Example
+
+```bash
+ patchSocialGroupAsync  tenantId=value  socialProfileId=value socialGroupId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **socialProfileId** | **string** |  | [default to null]
+ **socialGroupId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

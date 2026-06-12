@@ -23,6 +23,7 @@ docs/LoginRequest.md
 docs/NotificationDto.md
 docs/NotificationDtoEnvelope.md
 docs/NotificationDtoListEnvelope.md
+docs/Operation.md
 docs/PrivateMessageCreateDto.md
 docs/PrivateMessageDto.md
 docs/PrivateMessageDtoListEnvelope.md

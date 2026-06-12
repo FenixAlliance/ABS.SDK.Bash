@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getServiceCaseByIdAsync**](ServiceCasesApi.md#getServiceCaseByIdAsync) | **GET** /api/v2/ServicesService/ServiceCases/{serviceCaseId} | Get a service case by ID
 [**getServiceCasesAsync**](ServiceCasesApi.md#getServiceCasesAsync) | **GET** /api/v2/ServicesService/ServiceCases | Get all service cases
 [**getServiceCasesCountAsync**](ServiceCasesApi.md#getServiceCasesCountAsync) | **GET** /api/v2/ServicesService/ServiceCases/Count | Get service cases count
+[**patchServiceCaseAsync**](ServiceCasesApi.md#patchServiceCaseAsync) | **PATCH** /api/v2/ServicesService/ServiceCases/{serviceCaseId} | Patch a service case
 [**updateServiceCaseAsync**](ServiceCasesApi.md#updateServiceCaseAsync) | **PUT** /api/v2/ServicesService/ServiceCases/{serviceCaseId} | Update a service case
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchServiceCaseAsync
+
+Patch a service case
+
+Partially updates an existing service case using a JSON Patch document.
+
+### Example
+
+```bash
+ patchServiceCaseAsync  tenantId=value serviceCaseId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **serviceCaseId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**Envelope**](Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

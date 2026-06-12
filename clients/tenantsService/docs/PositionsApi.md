@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getTenantPositionById**](PositionsApi.md#getTenantPositionById) | **GET** /api/v2/TenantsService/Positions/{tenantPositionId} | Retrieve a single tenant position by its ID
 [**getTenantPositions**](PositionsApi.md#getTenantPositions) | **GET** /api/v2/TenantsService/Positions | Retrieve a list of tenant positions
 [**getTenantPositionsCount**](PositionsApi.md#getTenantPositionsCount) | **GET** /api/v2/TenantsService/Positions/Count | Get the count of tenant positions
+[**patchTenantPosition**](PositionsApi.md#patchTenantPosition) | **PATCH** /api/v2/TenantsService/Positions/{tenantPositionId} | Patch a tenant position
 [**updateTenantPosition**](PositionsApi.md#updateTenantPosition) | **PUT** /api/v2/TenantsService/Positions/{tenantPositionId} | Update a tenant position
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchTenantPosition
+
+Patch a tenant position
+
+Patch a tenant position
+
+### Example
+
+```bash
+ patchTenantPosition  tenantId=value tenantPositionId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **tenantPositionId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

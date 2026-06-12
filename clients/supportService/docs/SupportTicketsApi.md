@@ -13,6 +13,7 @@ Method | HTTP request | Description
 [**getSupportTicketConversationsAsync**](SupportTicketsApi.md#getSupportTicketConversationsAsync) | **GET** /api/v2/SupportService/SupportTickets/{supportTicketId}/Conversations | Retrieve conversations for a support ticket
 [**getSupportTicketsAsync**](SupportTicketsApi.md#getSupportTicketsAsync) | **GET** /api/v2/SupportService/SupportTickets | Retrieve a list of support tickets
 [**getSupportTicketsCountAsync**](SupportTicketsApi.md#getSupportTicketsCountAsync) | **GET** /api/v2/SupportService/SupportTickets/Count | Get the count of support tickets
+[**patchSupportTicketAsync**](SupportTicketsApi.md#patchSupportTicketAsync) | **PATCH** /api/v2/SupportService/SupportTickets/{supportTicketId} | Patch a support ticket
 [**relateSupportTicketToConversationAsync**](SupportTicketsApi.md#relateSupportTicketToConversationAsync) | **POST** /api/v2/SupportService/SupportTickets/{supportTicketId}/Conversations | Create a conversation for a support ticket
 [**updateSupportTicketAsync**](SupportTicketsApi.md#updateSupportTicketAsync) | **PUT** /api/v2/SupportService/SupportTickets/{supportTicketId} | Update a support ticket
 
@@ -358,6 +359,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchSupportTicketAsync
+
+Patch a support ticket
+
+Partially updates an existing support ticket by its unique identifier.
+
+### Example
+
+```bash
+ patchSupportTicketAsync  tenantId=value supportTicketId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **supportTicketId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

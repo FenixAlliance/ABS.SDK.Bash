@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getReturnRequestAsync**](ReturnRequestsApi.md#getReturnRequestAsync) | **GET** /api/v2/SupportService/ReturnRequests/{returnRequestId} | Retrieve a return request by ID
 [**getReturnRequestsAsync**](ReturnRequestsApi.md#getReturnRequestsAsync) | **GET** /api/v2/SupportService/ReturnRequests | Retrieve return requests
 [**getReturnRequestsCountAsync**](ReturnRequestsApi.md#getReturnRequestsCountAsync) | **GET** /api/v2/SupportService/ReturnRequests/Count | Get return requests count
+[**patchReturnRequestAsync**](ReturnRequestsApi.md#patchReturnRequestAsync) | **PATCH** /api/v2/SupportService/ReturnRequests/{returnRequestId} | Patch a return request
 [**updateReturnRequestAsync**](ReturnRequestsApi.md#updateReturnRequestAsync) | **PUT** /api/v2/SupportService/ReturnRequests/{returnRequestId} | Update a return request
 
 
@@ -186,6 +187,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchReturnRequestAsync
+
+Patch a return request
+
+Partially updates an existing return request by its unique identifier.
+
+### Example
+
+```bash
+ patchReturnRequestAsync  tenantId=value returnRequestId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **returnRequestId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

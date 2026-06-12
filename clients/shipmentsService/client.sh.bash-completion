@@ -79,6 +79,8 @@ _()
     operations["getBillOfLadingLinesCountAsync"]=1
     operations["getBillsOfLadingAsync"]=1
     operations["getBillsOfLadingCountAsync"]=1
+    operations["patchBillOfLadingAsync"]=1
+    operations["patchBillOfLadingLineAsync"]=1
     operations["updateBillOfLadingAsync"]=1
     operations["updateBillOfLadingLineAsync"]=1
     operations["apiV2AiServiceCompletionsCompleteGet"]=1
@@ -104,48 +106,56 @@ _()
     operations["getItemShippingPoliciesAsync"]=1
     operations["getItemShippingPoliciesCountAsync"]=1
     operations["getItemShippingPolicyByIdAsync"]=1
+    operations["patchItemShippingPolicyAsync"]=1
     operations["updateItemShippingPolicyAsync"]=1
     operations["createShipmentAsync"]=1
     operations["deleteShipmentAsync"]=1
     operations["getShipmentByIdAsync"]=1
     operations["getShipmentsAsync"]=1
     operations["getShipmentsCountAsync"]=1
+    operations["patchShipmentAsync"]=1
     operations["updateShipmentAsync"]=1
     operations["createShippingClassAsync"]=1
     operations["deleteShippingClassAsync"]=1
     operations["getShippingClassByIdAsync"]=1
     operations["getShippingClassesAsync"]=1
     operations["getShippingClassesCountAsync"]=1
+    operations["patchShippingClassAsync"]=1
     operations["updateShippingClassAsync"]=1
     operations["createShippingCourierAsync"]=1
     operations["deleteShippingCourierAsync"]=1
     operations["getShippingCourierByIdAsync"]=1
     operations["getShippingCouriersAsync"]=1
     operations["getShippingCouriersCountAsync"]=1
+    operations["patchShippingCourierAsync"]=1
     operations["updateShippingCourierAsync"]=1
     operations["createShippingLabelAsync"]=1
     operations["deleteShippingLabelAsync"]=1
     operations["getShippingLabelByIdAsync"]=1
     operations["getShippingLabelsAsync"]=1
     operations["getShippingLabelsCountAsync"]=1
+    operations["patchShippingLabelAsync"]=1
     operations["updateShippingLabelAsync"]=1
     operations["createShippingMethodAsync"]=1
     operations["deleteShippingMethodAsync"]=1
     operations["getShippingMethodByIdAsync"]=1
     operations["getShippingMethodsAsync"]=1
     operations["getShippingMethodsCountAsync"]=1
+    operations["patchShippingMethodAsync"]=1
     operations["updateShippingMethodAsync"]=1
     operations["createShippingRegionAsync"]=1
     operations["deleteShippingRegionAsync"]=1
     operations["getShippingRegionByIdAsync"]=1
     operations["getShippingRegionsAsync"]=1
     operations["getShippingRegionsCountAsync"]=1
+    operations["patchShippingRegionAsync"]=1
     operations["updateShippingRegionAsync"]=1
     operations["createShippingZoneAsync"]=1
     operations["deleteShippingZoneAsync"]=1
     operations["getShippingZoneByIdAsync"]=1
     operations["getShippingZonesAsync"]=1
     operations["getShippingZonesCountAsync"]=1
+    operations["patchShippingZoneAsync"]=1
     operations["updateShippingZoneAsync"]=1
 
     # An associative array of operations to their parameters
@@ -161,6 +171,8 @@ _()
     operation_parameters["getBillOfLadingLinesCountAsync"]="billOfLadingId= tenantId= api-version= x-api-version: "
     operation_parameters["getBillsOfLadingAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getBillsOfLadingCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchBillOfLadingAsync"]="billOfLadingId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchBillOfLadingLineAsync"]="billOfLadingId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["updateBillOfLadingAsync"]="billOfLadingId= tenantId= api-version= x-api-version: "
     operation_parameters["updateBillOfLadingLineAsync"]="billOfLadingId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
@@ -186,48 +198,56 @@ _()
     operation_parameters["getItemShippingPoliciesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getItemShippingPoliciesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getItemShippingPolicyByIdAsync"]="policyId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchItemShippingPolicyAsync"]="policyId= tenantId= api-version= x-api-version: "
     operation_parameters["updateItemShippingPolicyAsync"]="policyId= tenantId= api-version= x-api-version: "
     operation_parameters["createShipmentAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteShipmentAsync"]="shipmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getShipmentByIdAsync"]="shipmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getShipmentsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getShipmentsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchShipmentAsync"]="shipmentId= tenantId= api-version= x-api-version: "
     operation_parameters["updateShipmentAsync"]="shipmentId= tenantId= api-version= x-api-version: "
     operation_parameters["createShippingClassAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteShippingClassAsync"]="classId= tenantId= api-version= x-api-version: "
     operation_parameters["getShippingClassByIdAsync"]="classId= tenantId= api-version= x-api-version: "
     operation_parameters["getShippingClassesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getShippingClassesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchShippingClassAsync"]="classId= tenantId= api-version= x-api-version: "
     operation_parameters["updateShippingClassAsync"]="classId= tenantId= api-version= x-api-version: "
     operation_parameters["createShippingCourierAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteShippingCourierAsync"]="courierId= tenantId= api-version= x-api-version: "
     operation_parameters["getShippingCourierByIdAsync"]="courierId= tenantId= api-version= x-api-version: "
     operation_parameters["getShippingCouriersAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getShippingCouriersCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchShippingCourierAsync"]="courierId= tenantId= api-version= x-api-version: "
     operation_parameters["updateShippingCourierAsync"]="courierId= tenantId= api-version= x-api-version: "
     operation_parameters["createShippingLabelAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteShippingLabelAsync"]="labelId= tenantId= api-version= x-api-version: "
     operation_parameters["getShippingLabelByIdAsync"]="labelId= tenantId= api-version= x-api-version: "
     operation_parameters["getShippingLabelsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getShippingLabelsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchShippingLabelAsync"]="labelId= tenantId= api-version= x-api-version: "
     operation_parameters["updateShippingLabelAsync"]="labelId= tenantId= api-version= x-api-version: "
     operation_parameters["createShippingMethodAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteShippingMethodAsync"]="methodId= tenantId= api-version= x-api-version: "
     operation_parameters["getShippingMethodByIdAsync"]="methodId= tenantId= api-version= x-api-version: "
     operation_parameters["getShippingMethodsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getShippingMethodsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchShippingMethodAsync"]="methodId= tenantId= api-version= x-api-version: "
     operation_parameters["updateShippingMethodAsync"]="methodId= tenantId= api-version= x-api-version: "
     operation_parameters["createShippingRegionAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteShippingRegionAsync"]="regionId= tenantId= api-version= x-api-version: "
     operation_parameters["getShippingRegionByIdAsync"]="regionId= tenantId= api-version= x-api-version: "
     operation_parameters["getShippingRegionsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getShippingRegionsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchShippingRegionAsync"]="regionId= tenantId= api-version= x-api-version: "
     operation_parameters["updateShippingRegionAsync"]="regionId= tenantId= api-version= x-api-version: "
     operation_parameters["createShippingZoneAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteShippingZoneAsync"]="zoneId= tenantId= api-version= x-api-version: "
     operation_parameters["getShippingZoneByIdAsync"]="zoneId= tenantId= api-version= x-api-version: "
     operation_parameters["getShippingZonesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getShippingZonesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchShippingZoneAsync"]="zoneId= tenantId= api-version= x-api-version: "
     operation_parameters["updateShippingZoneAsync"]="zoneId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters

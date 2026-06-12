@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
 **name** | **string** |  | [optional] [default to null]
+**discountListType** | **string** |  | [optional] [default to null]
 **currencyId** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]
 **enrollmentId** | **string** |  | [optional] [default to null]

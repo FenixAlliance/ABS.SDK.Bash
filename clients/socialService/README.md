@@ -129,12 +129,14 @@ Class | Method | HTTP request | Description
 *SocialFeedsApi* | [**getFeedPostsCountAsync**](docs/SocialFeedsApi.md#getfeedpostscountasync) | **GET** /api/v2/SocialService/SocialFeeds/{socialFeedId}/Posts/Count | Count social feed posts
 *SocialFeedsApi* | [**getNotificationAsync**](docs/SocialFeedsApi.md#getnotificationasync) | **GET** /api/v2/SocialService/SocialFeeds/{socialFeedId} | Get social feed by ID
 *SocialFeedsApi* | [**getNotificationsCountAsync**](docs/SocialFeedsApi.md#getnotificationscountasync) | **GET** /api/v2/SocialService/SocialFeeds/Count | Count social feeds
+*SocialFeedsApi* | [**patchFeedPostAsync**](docs/SocialFeedsApi.md#patchfeedpostasync) | **PATCH** /api/v2/SocialService/SocialFeeds/{socialFeedId}/Posts/{feedPostId} | Patch a social feed post
 *SocialFeedsApi* | [**updateFeedPostAsync**](docs/SocialFeedsApi.md#updatefeedpostasync) | **PUT** /api/v2/SocialService/SocialFeeds/{socialFeedId}/Posts/{feedPostId} | Update a social feed post
 *SocialGroupsApi* | [**countSocialGroupsAsync**](docs/SocialGroupsApi.md#countsocialgroupsasync) | **GET** /api/v2/SocialService/SocialGroups/Count | Count social groups
 *SocialGroupsApi* | [**createSocialGroupAsync**](docs/SocialGroupsApi.md#createsocialgroupasync) | **POST** /api/v2/SocialService/SocialGroups | Create a social group
 *SocialGroupsApi* | [**deleteSocialGroupAsync**](docs/SocialGroupsApi.md#deletesocialgroupasync) | **DELETE** /api/v2/SocialService/SocialGroups/{socialGroupId} | Delete a social group
 *SocialGroupsApi* | [**getSocialGroupByIdAsync**](docs/SocialGroupsApi.md#getsocialgroupbyidasync) | **GET** /api/v2/SocialService/SocialGroups/{socialGroupId} | Get social group by ID
 *SocialGroupsApi* | [**getSocialGroupsAsync**](docs/SocialGroupsApi.md#getsocialgroupsasync) | **GET** /api/v2/SocialService/SocialGroups | Get social groups
+*SocialGroupsApi* | [**patchSocialGroupAsync**](docs/SocialGroupsApi.md#patchsocialgroupasync) | **PATCH** /api/v2/SocialService/SocialGroups/{socialGroupId} | Patch a social group
 *SocialGroupsApi* | [**updateSocialGroupAsync**](docs/SocialGroupsApi.md#updatesocialgroupasync) | **PUT** /api/v2/SocialService/SocialGroups/{socialGroupId} | Update a social group
 *SocialPostsApi* | [**createSocialPostAsync**](docs/SocialPostsApi.md#createsocialpostasync) | **POST** /api/v2/SocialService/SocialPosts | Create a social post
 *SocialPostsApi* | [**createSocialPostAttachmentAsync**](docs/SocialPostsApi.md#createsocialpostattachmentasync) | **POST** /api/v2/SocialService/SocialPosts/{socialPostId}/Attachments | Create a social post attachment
@@ -156,6 +158,7 @@ Class | Method | HTTP request | Description
 *SocialPostsApi* | [**getSocialPostReactionsCountAsync**](docs/SocialPostsApi.md#getsocialpostreactionscountasync) | **GET** /api/v2/SocialService/SocialPosts/{socialPostId}/Reactions/Count | Count social post reactions
 *SocialPostsApi* | [**getSocialPostsAsync**](docs/SocialPostsApi.md#getsocialpostsasync) | **GET** /api/v2/SocialService/SocialPosts | Get social posts
 *SocialPostsApi* | [**getSocialPostsCountAsync**](docs/SocialPostsApi.md#getsocialpostscountasync) | **GET** /api/v2/SocialService/SocialPosts/Count | Count social posts
+*SocialPostsApi* | [**patchSocialPostAsync**](docs/SocialPostsApi.md#patchsocialpostasync) | **PATCH** /api/v2/SocialService/SocialPosts/{socialPostId} | Patch a social post
 *SocialPostsApi* | [**updateSocialPostAsync**](docs/SocialPostsApi.md#updatesocialpostasync) | **PUT** /api/v2/SocialService/SocialPosts/{socialPostId} | Update a social post
 *SocialPostsApi* | [**updateSocialPostAttachmentAsync**](docs/SocialPostsApi.md#updatesocialpostattachmentasync) | **PUT** /api/v2/SocialService/SocialPosts/{socialPostId}/Attachments/{attachmentId} | Update a social post attachment
 *SocialPostsApi* | [**updateSocialPostCommentAsync**](docs/SocialPostsApi.md#updatesocialpostcommentasync) | **PUT** /api/v2/SocialService/SocialPosts/{socialPostId}/Comments/{commentId} | Update a social post comment
@@ -207,6 +210,7 @@ Class | Method | HTTP request | Description
  - [NotificationDto](docs/NotificationDto.md)
  - [NotificationDtoEnvelope](docs/NotificationDtoEnvelope.md)
  - [NotificationDtoListEnvelope](docs/NotificationDtoListEnvelope.md)
+ - [Operation](docs/Operation.md)
  - [PrivateMessageCreateDto](docs/PrivateMessageCreateDto.md)
  - [PrivateMessageDto](docs/PrivateMessageDto.md)
  - [PrivateMessageDtoListEnvelope](docs/PrivateMessageDtoListEnvelope.md)

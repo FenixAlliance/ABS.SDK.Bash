@@ -137,6 +137,17 @@ operation_parameters_minimum_occurrences["getBillsOfLadingAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getBillsOfLadingCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBillsOfLadingCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBillsOfLadingCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBillOfLadingAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBillOfLadingAsync:::billOfLadingId"]=1
+operation_parameters_minimum_occurrences["patchBillOfLadingAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBillOfLadingAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBillOfLadingAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchBillOfLadingLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBillOfLadingLineAsync:::billOfLadingId"]=1
+operation_parameters_minimum_occurrences["patchBillOfLadingLineAsync:::lineId"]=1
+operation_parameters_minimum_occurrences["patchBillOfLadingLineAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBillOfLadingLineAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBillOfLadingLineAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateBillOfLadingAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBillOfLadingAsync:::billOfLadingId"]=1
 operation_parameters_minimum_occurrences["updateBillOfLadingAsync:::api-version"]=0
@@ -186,6 +197,11 @@ operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::tenan
 operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::policyId"]=1
 operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemShippingPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemShippingPolicyAsync:::policyId"]=1
+operation_parameters_minimum_occurrences["patchItemShippingPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemShippingPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemShippingPolicyAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemShippingPolicyAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemShippingPolicyAsync:::policyId"]=1
 operation_parameters_minimum_occurrences["updateItemShippingPolicyAsync:::api-version"]=0
@@ -209,6 +225,11 @@ operation_parameters_minimum_occurrences["getShipmentsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getShipmentsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getShipmentsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getShipmentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShipmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchShipmentAsync:::shipmentId"]=1
+operation_parameters_minimum_occurrences["patchShipmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchShipmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShipmentAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateShipmentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateShipmentAsync:::shipmentId"]=1
 operation_parameters_minimum_occurrences["updateShipmentAsync:::api-version"]=0
@@ -232,6 +253,11 @@ operation_parameters_minimum_occurrences["getShippingClassesAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getShippingClassesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getShippingClassesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getShippingClassesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingClassAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchShippingClassAsync:::classId"]=1
+operation_parameters_minimum_occurrences["patchShippingClassAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingClassAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingClassAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateShippingClassAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateShippingClassAsync:::classId"]=1
 operation_parameters_minimum_occurrences["updateShippingClassAsync:::api-version"]=0
@@ -255,6 +281,11 @@ operation_parameters_minimum_occurrences["getShippingCouriersAsync:::x-api-versi
 operation_parameters_minimum_occurrences["getShippingCouriersCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getShippingCouriersCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getShippingCouriersCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingCourierAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchShippingCourierAsync:::courierId"]=1
+operation_parameters_minimum_occurrences["patchShippingCourierAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingCourierAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingCourierAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateShippingCourierAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateShippingCourierAsync:::courierId"]=1
 operation_parameters_minimum_occurrences["updateShippingCourierAsync:::api-version"]=0
@@ -278,6 +309,11 @@ operation_parameters_minimum_occurrences["getShippingLabelsAsync:::x-api-version
 operation_parameters_minimum_occurrences["getShippingLabelsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getShippingLabelsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getShippingLabelsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingLabelAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchShippingLabelAsync:::labelId"]=1
+operation_parameters_minimum_occurrences["patchShippingLabelAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingLabelAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingLabelAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateShippingLabelAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateShippingLabelAsync:::labelId"]=1
 operation_parameters_minimum_occurrences["updateShippingLabelAsync:::api-version"]=0
@@ -301,6 +337,11 @@ operation_parameters_minimum_occurrences["getShippingMethodsAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getShippingMethodsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getShippingMethodsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getShippingMethodsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingMethodAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchShippingMethodAsync:::methodId"]=1
+operation_parameters_minimum_occurrences["patchShippingMethodAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingMethodAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingMethodAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateShippingMethodAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateShippingMethodAsync:::methodId"]=1
 operation_parameters_minimum_occurrences["updateShippingMethodAsync:::api-version"]=0
@@ -324,6 +365,11 @@ operation_parameters_minimum_occurrences["getShippingRegionsAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getShippingRegionsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getShippingRegionsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getShippingRegionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingRegionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchShippingRegionAsync:::regionId"]=1
+operation_parameters_minimum_occurrences["patchShippingRegionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingRegionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingRegionAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateShippingRegionAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateShippingRegionAsync:::regionId"]=1
 operation_parameters_minimum_occurrences["updateShippingRegionAsync:::api-version"]=0
@@ -347,6 +393,11 @@ operation_parameters_minimum_occurrences["getShippingZonesAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getShippingZonesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getShippingZonesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getShippingZonesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingZoneAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchShippingZoneAsync:::zoneId"]=1
+operation_parameters_minimum_occurrences["patchShippingZoneAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingZoneAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShippingZoneAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateShippingZoneAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateShippingZoneAsync:::zoneId"]=1
 operation_parameters_minimum_occurrences["updateShippingZoneAsync:::api-version"]=0
@@ -401,6 +452,17 @@ operation_parameters_maximum_occurrences["getBillsOfLadingAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getBillsOfLadingCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBillsOfLadingCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBillsOfLadingCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBillOfLadingAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBillOfLadingAsync:::billOfLadingId"]=0
+operation_parameters_maximum_occurrences["patchBillOfLadingAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBillOfLadingAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBillOfLadingAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchBillOfLadingLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBillOfLadingLineAsync:::billOfLadingId"]=0
+operation_parameters_maximum_occurrences["patchBillOfLadingLineAsync:::lineId"]=0
+operation_parameters_maximum_occurrences["patchBillOfLadingLineAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBillOfLadingLineAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBillOfLadingLineAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateBillOfLadingAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBillOfLadingAsync:::billOfLadingId"]=0
 operation_parameters_maximum_occurrences["updateBillOfLadingAsync:::api-version"]=0
@@ -450,6 +512,11 @@ operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::tenan
 operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::policyId"]=0
 operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemShippingPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemShippingPolicyAsync:::policyId"]=0
+operation_parameters_maximum_occurrences["patchItemShippingPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemShippingPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemShippingPolicyAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemShippingPolicyAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemShippingPolicyAsync:::policyId"]=0
 operation_parameters_maximum_occurrences["updateItemShippingPolicyAsync:::api-version"]=0
@@ -473,6 +540,11 @@ operation_parameters_maximum_occurrences["getShipmentsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getShipmentsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getShipmentsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getShipmentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShipmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchShipmentAsync:::shipmentId"]=0
+operation_parameters_maximum_occurrences["patchShipmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchShipmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShipmentAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateShipmentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateShipmentAsync:::shipmentId"]=0
 operation_parameters_maximum_occurrences["updateShipmentAsync:::api-version"]=0
@@ -496,6 +568,11 @@ operation_parameters_maximum_occurrences["getShippingClassesAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getShippingClassesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getShippingClassesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getShippingClassesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingClassAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchShippingClassAsync:::classId"]=0
+operation_parameters_maximum_occurrences["patchShippingClassAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingClassAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingClassAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateShippingClassAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateShippingClassAsync:::classId"]=0
 operation_parameters_maximum_occurrences["updateShippingClassAsync:::api-version"]=0
@@ -519,6 +596,11 @@ operation_parameters_maximum_occurrences["getShippingCouriersAsync:::x-api-versi
 operation_parameters_maximum_occurrences["getShippingCouriersCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getShippingCouriersCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getShippingCouriersCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingCourierAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchShippingCourierAsync:::courierId"]=0
+operation_parameters_maximum_occurrences["patchShippingCourierAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingCourierAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingCourierAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateShippingCourierAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateShippingCourierAsync:::courierId"]=0
 operation_parameters_maximum_occurrences["updateShippingCourierAsync:::api-version"]=0
@@ -542,6 +624,11 @@ operation_parameters_maximum_occurrences["getShippingLabelsAsync:::x-api-version
 operation_parameters_maximum_occurrences["getShippingLabelsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getShippingLabelsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getShippingLabelsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingLabelAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchShippingLabelAsync:::labelId"]=0
+operation_parameters_maximum_occurrences["patchShippingLabelAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingLabelAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingLabelAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateShippingLabelAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateShippingLabelAsync:::labelId"]=0
 operation_parameters_maximum_occurrences["updateShippingLabelAsync:::api-version"]=0
@@ -565,6 +652,11 @@ operation_parameters_maximum_occurrences["getShippingMethodsAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getShippingMethodsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getShippingMethodsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getShippingMethodsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingMethodAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchShippingMethodAsync:::methodId"]=0
+operation_parameters_maximum_occurrences["patchShippingMethodAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingMethodAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingMethodAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateShippingMethodAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateShippingMethodAsync:::methodId"]=0
 operation_parameters_maximum_occurrences["updateShippingMethodAsync:::api-version"]=0
@@ -588,6 +680,11 @@ operation_parameters_maximum_occurrences["getShippingRegionsAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getShippingRegionsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getShippingRegionsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getShippingRegionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingRegionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchShippingRegionAsync:::regionId"]=0
+operation_parameters_maximum_occurrences["patchShippingRegionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingRegionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingRegionAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateShippingRegionAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateShippingRegionAsync:::regionId"]=0
 operation_parameters_maximum_occurrences["updateShippingRegionAsync:::api-version"]=0
@@ -611,6 +708,11 @@ operation_parameters_maximum_occurrences["getShippingZonesAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getShippingZonesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getShippingZonesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getShippingZonesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingZoneAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchShippingZoneAsync:::zoneId"]=0
+operation_parameters_maximum_occurrences["patchShippingZoneAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingZoneAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShippingZoneAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateShippingZoneAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateShippingZoneAsync:::zoneId"]=0
 operation_parameters_maximum_occurrences["updateShippingZoneAsync:::api-version"]=0
@@ -662,6 +764,17 @@ operation_parameters_collection_type["getBillsOfLadingAsync:::x-api-version"]=""
 operation_parameters_collection_type["getBillsOfLadingCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getBillsOfLadingCountAsync:::api-version"]=""
 operation_parameters_collection_type["getBillsOfLadingCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBillOfLadingAsync:::tenantId"]=""
+operation_parameters_collection_type["patchBillOfLadingAsync:::billOfLadingId"]=""
+operation_parameters_collection_type["patchBillOfLadingAsync:::api-version"]=""
+operation_parameters_collection_type["patchBillOfLadingAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBillOfLadingAsync:::Operation"]=
+operation_parameters_collection_type["patchBillOfLadingLineAsync:::tenantId"]=""
+operation_parameters_collection_type["patchBillOfLadingLineAsync:::billOfLadingId"]=""
+operation_parameters_collection_type["patchBillOfLadingLineAsync:::lineId"]=""
+operation_parameters_collection_type["patchBillOfLadingLineAsync:::api-version"]=""
+operation_parameters_collection_type["patchBillOfLadingLineAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBillOfLadingLineAsync:::Operation"]=
 operation_parameters_collection_type["updateBillOfLadingAsync:::tenantId"]=""
 operation_parameters_collection_type["updateBillOfLadingAsync:::billOfLadingId"]=""
 operation_parameters_collection_type["updateBillOfLadingAsync:::api-version"]=""
@@ -711,6 +824,11 @@ operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::tenantId"
 operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::policyId"]=""
 operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemShippingPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemShippingPolicyAsync:::policyId"]=""
+operation_parameters_collection_type["patchItemShippingPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemShippingPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemShippingPolicyAsync:::Operation"]=
 operation_parameters_collection_type["updateItemShippingPolicyAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemShippingPolicyAsync:::policyId"]=""
 operation_parameters_collection_type["updateItemShippingPolicyAsync:::api-version"]=""
@@ -734,6 +852,11 @@ operation_parameters_collection_type["getShipmentsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getShipmentsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getShipmentsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getShipmentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShipmentAsync:::tenantId"]=""
+operation_parameters_collection_type["patchShipmentAsync:::shipmentId"]=""
+operation_parameters_collection_type["patchShipmentAsync:::api-version"]=""
+operation_parameters_collection_type["patchShipmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShipmentAsync:::Operation"]=
 operation_parameters_collection_type["updateShipmentAsync:::tenantId"]=""
 operation_parameters_collection_type["updateShipmentAsync:::shipmentId"]=""
 operation_parameters_collection_type["updateShipmentAsync:::api-version"]=""
@@ -757,6 +880,11 @@ operation_parameters_collection_type["getShippingClassesAsync:::x-api-version"]=
 operation_parameters_collection_type["getShippingClassesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getShippingClassesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getShippingClassesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShippingClassAsync:::tenantId"]=""
+operation_parameters_collection_type["patchShippingClassAsync:::classId"]=""
+operation_parameters_collection_type["patchShippingClassAsync:::api-version"]=""
+operation_parameters_collection_type["patchShippingClassAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShippingClassAsync:::Operation"]=
 operation_parameters_collection_type["updateShippingClassAsync:::tenantId"]=""
 operation_parameters_collection_type["updateShippingClassAsync:::classId"]=""
 operation_parameters_collection_type["updateShippingClassAsync:::api-version"]=""
@@ -780,6 +908,11 @@ operation_parameters_collection_type["getShippingCouriersAsync:::x-api-version"]
 operation_parameters_collection_type["getShippingCouriersCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getShippingCouriersCountAsync:::api-version"]=""
 operation_parameters_collection_type["getShippingCouriersCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShippingCourierAsync:::tenantId"]=""
+operation_parameters_collection_type["patchShippingCourierAsync:::courierId"]=""
+operation_parameters_collection_type["patchShippingCourierAsync:::api-version"]=""
+operation_parameters_collection_type["patchShippingCourierAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShippingCourierAsync:::Operation"]=
 operation_parameters_collection_type["updateShippingCourierAsync:::tenantId"]=""
 operation_parameters_collection_type["updateShippingCourierAsync:::courierId"]=""
 operation_parameters_collection_type["updateShippingCourierAsync:::api-version"]=""
@@ -803,6 +936,11 @@ operation_parameters_collection_type["getShippingLabelsAsync:::x-api-version"]="
 operation_parameters_collection_type["getShippingLabelsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getShippingLabelsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getShippingLabelsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShippingLabelAsync:::tenantId"]=""
+operation_parameters_collection_type["patchShippingLabelAsync:::labelId"]=""
+operation_parameters_collection_type["patchShippingLabelAsync:::api-version"]=""
+operation_parameters_collection_type["patchShippingLabelAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShippingLabelAsync:::Operation"]=
 operation_parameters_collection_type["updateShippingLabelAsync:::tenantId"]=""
 operation_parameters_collection_type["updateShippingLabelAsync:::labelId"]=""
 operation_parameters_collection_type["updateShippingLabelAsync:::api-version"]=""
@@ -826,6 +964,11 @@ operation_parameters_collection_type["getShippingMethodsAsync:::x-api-version"]=
 operation_parameters_collection_type["getShippingMethodsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getShippingMethodsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getShippingMethodsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShippingMethodAsync:::tenantId"]=""
+operation_parameters_collection_type["patchShippingMethodAsync:::methodId"]=""
+operation_parameters_collection_type["patchShippingMethodAsync:::api-version"]=""
+operation_parameters_collection_type["patchShippingMethodAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShippingMethodAsync:::Operation"]=
 operation_parameters_collection_type["updateShippingMethodAsync:::tenantId"]=""
 operation_parameters_collection_type["updateShippingMethodAsync:::methodId"]=""
 operation_parameters_collection_type["updateShippingMethodAsync:::api-version"]=""
@@ -849,6 +992,11 @@ operation_parameters_collection_type["getShippingRegionsAsync:::x-api-version"]=
 operation_parameters_collection_type["getShippingRegionsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getShippingRegionsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getShippingRegionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShippingRegionAsync:::tenantId"]=""
+operation_parameters_collection_type["patchShippingRegionAsync:::regionId"]=""
+operation_parameters_collection_type["patchShippingRegionAsync:::api-version"]=""
+operation_parameters_collection_type["patchShippingRegionAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShippingRegionAsync:::Operation"]=
 operation_parameters_collection_type["updateShippingRegionAsync:::tenantId"]=""
 operation_parameters_collection_type["updateShippingRegionAsync:::regionId"]=""
 operation_parameters_collection_type["updateShippingRegionAsync:::api-version"]=""
@@ -872,6 +1020,11 @@ operation_parameters_collection_type["getShippingZonesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getShippingZonesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getShippingZonesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getShippingZonesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShippingZoneAsync:::tenantId"]=""
+operation_parameters_collection_type["patchShippingZoneAsync:::zoneId"]=""
+operation_parameters_collection_type["patchShippingZoneAsync:::api-version"]=""
+operation_parameters_collection_type["patchShippingZoneAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShippingZoneAsync:::Operation"]=
 operation_parameters_collection_type["updateShippingZoneAsync:::tenantId"]=""
 operation_parameters_collection_type["updateShippingZoneAsync:::zoneId"]=""
 operation_parameters_collection_type["updateShippingZoneAsync:::api-version"]=""
@@ -1234,7 +1387,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}ShipmentsService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}ShipmentsService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1275,6 +1428,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getBillOfLadingLinesCountAsync${OFF};Get bill of lading lines count
   ${CYAN}getBillsOfLadingAsync${OFF};Get all bills of lading
   ${CYAN}getBillsOfLadingCountAsync${OFF};Get bills of lading count
+  ${CYAN}patchBillOfLadingAsync${OFF};Patch a bill of lading
+  ${CYAN}patchBillOfLadingLineAsync${OFF};Patch a bill of lading line
   ${CYAN}updateBillOfLadingAsync${OFF};Update a bill of lading
   ${CYAN}updateBillOfLadingLineAsync${OFF};Update a bill of lading line
 EOF
@@ -1315,6 +1470,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getItemShippingPoliciesAsync${OFF};Get all item shipping policies
   ${CYAN}getItemShippingPoliciesCountAsync${OFF};Get item shipping policies count
   ${CYAN}getItemShippingPolicyByIdAsync${OFF};Get item shipping policy by ID
+  ${CYAN}patchItemShippingPolicyAsync${OFF};Patch an item shipping policy
   ${CYAN}updateItemShippingPolicyAsync${OFF};Update an item shipping policy
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1326,6 +1482,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getShipmentByIdAsync${OFF};Get shipment by ID
   ${CYAN}getShipmentsAsync${OFF};Get all shipments
   ${CYAN}getShipmentsCountAsync${OFF};Get shipments count
+  ${CYAN}patchShipmentAsync${OFF};Patch a shipment
   ${CYAN}updateShipmentAsync${OFF};Update a shipment
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1337,6 +1494,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getShippingClassByIdAsync${OFF};Get shipping class by ID
   ${CYAN}getShippingClassesAsync${OFF};Get all shipping classes
   ${CYAN}getShippingClassesCountAsync${OFF};Get shipping classes count
+  ${CYAN}patchShippingClassAsync${OFF};Patch a shipping class
   ${CYAN}updateShippingClassAsync${OFF};Update a shipping class
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1348,6 +1506,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getShippingCourierByIdAsync${OFF};Get shipping courier by ID
   ${CYAN}getShippingCouriersAsync${OFF};Get all shipping couriers
   ${CYAN}getShippingCouriersCountAsync${OFF};Get shipping couriers count
+  ${CYAN}patchShippingCourierAsync${OFF};Patch a shipping courier
   ${CYAN}updateShippingCourierAsync${OFF};Update a shipping courier
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1359,6 +1518,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getShippingLabelByIdAsync${OFF};Get shipping label by ID
   ${CYAN}getShippingLabelsAsync${OFF};Get all shipping labels
   ${CYAN}getShippingLabelsCountAsync${OFF};Get shipping labels count
+  ${CYAN}patchShippingLabelAsync${OFF};Patch a shipping label
   ${CYAN}updateShippingLabelAsync${OFF};Update a shipping label
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1370,6 +1530,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getShippingMethodByIdAsync${OFF};Get shipping method by ID
   ${CYAN}getShippingMethodsAsync${OFF};Get all shipping methods
   ${CYAN}getShippingMethodsCountAsync${OFF};Get shipping methods count
+  ${CYAN}patchShippingMethodAsync${OFF};Patch a shipping method
   ${CYAN}updateShippingMethodAsync${OFF};Update a shipping method
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1381,6 +1542,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getShippingRegionByIdAsync${OFF};Get shipping region by ID
   ${CYAN}getShippingRegionsAsync${OFF};Get all shipping regions
   ${CYAN}getShippingRegionsCountAsync${OFF};Get shipping regions count
+  ${CYAN}patchShippingRegionAsync${OFF};Patch a shipping region
   ${CYAN}updateShippingRegionAsync${OFF};Update a shipping region
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1392,6 +1554,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getShippingZoneByIdAsync${OFF};Get shipping zone by ID
   ${CYAN}getShippingZonesAsync${OFF};Get all shipping zones
   ${CYAN}getShippingZonesCountAsync${OFF};Get shipping zones count
+  ${CYAN}patchShippingZoneAsync${OFF};Patch a shipping zone
   ${CYAN}updateShippingZoneAsync${OFF};Update a shipping zone
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1422,7 +1585,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}ShipmentsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}ShipmentsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1442,7 +1605,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}ShipmentsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}ShipmentsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1696,6 +1859,69 @@ print_getBillsOfLadingCountAsync_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchBillOfLadingAsync operation
+#
+##############################################################################
+print_patchBillOfLadingAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBillOfLadingAsync - Patch a bill of lading${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing bill of lading using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billOfLadingId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billOfLadingId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchBillOfLadingLineAsync operation
+#
+##############################################################################
+print_patchBillOfLadingLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBillOfLadingLineAsync - Patch a bill of lading line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing line on a bill of lading using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}billOfLadingId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: billOfLadingId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}lineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: lineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -2199,6 +2425,37 @@ print_getItemShippingPolicyByIdAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchItemShippingPolicyAsync operation
+#
+##############################################################################
+print_patchItemShippingPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemShippingPolicyAsync - Patch an item shipping policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item shipping policy using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}policyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: policyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateItemShippingPolicyAsync operation
 #
 ##############################################################################
@@ -2352,6 +2609,37 @@ print_getShipmentsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchShipmentAsync operation
+#
+##############################################################################
+print_patchShipmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchShipmentAsync - Patch a shipment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing shipment using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}shipmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: shipmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateShipmentAsync operation
 #
 ##############################################################################
@@ -2498,6 +2786,37 @@ print_getShippingClassesCountAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchShippingClassAsync operation
+#
+##############################################################################
+print_patchShippingClassAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchShippingClassAsync - Patch a shipping class${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing shipping class using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}classId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: classId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -2656,6 +2975,37 @@ print_getShippingCouriersCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchShippingCourierAsync operation
+#
+##############################################################################
+print_patchShippingCourierAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchShippingCourierAsync - Patch a shipping courier${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing shipping courier using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courierId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courierId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateShippingCourierAsync operation
 #
 ##############################################################################
@@ -2802,6 +3152,37 @@ print_getShippingLabelsCountAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchShippingLabelAsync operation
+#
+##############################################################################
+print_patchShippingLabelAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchShippingLabelAsync - Patch a shipping label${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing shipping label using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}labelId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: labelId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -2958,6 +3339,37 @@ print_getShippingMethodsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchShippingMethodAsync operation
+#
+##############################################################################
+print_patchShippingMethodAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchShippingMethodAsync - Patch a shipping method${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing shipping method using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}methodId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: methodId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateShippingMethodAsync operation
 #
 ##############################################################################
@@ -3109,6 +3521,37 @@ print_getShippingRegionsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchShippingRegionAsync operation
+#
+##############################################################################
+print_patchShippingRegionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchShippingRegionAsync - Patch a shipping region${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing shipping region using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}regionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: regionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateShippingRegionAsync operation
 #
 ##############################################################################
@@ -3255,6 +3698,37 @@ print_getShippingZonesCountAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchShippingZoneAsync operation
+#
+##############################################################################
+print_patchShippingZoneAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchShippingZoneAsync - Patch a shipping zone${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing shipping zone using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}zoneId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: zoneId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3724,6 +4198,158 @@ call_getBillsOfLadingCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchBillOfLadingAsync operation
+#
+##############################################################################
+call_patchBillOfLadingAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billOfLadingId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ShipmentsService/BillsOfLading/{billOfLadingId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchBillOfLadingLineAsync operation
+#
+##############################################################################
+call_patchBillOfLadingLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(billOfLadingId lineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ShipmentsService/BillsOfLading/{billOfLadingId}/Lines/{lineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5088,6 +5714,82 @@ call_getItemShippingPolicyByIdAsync() {
 
 ##############################################################################
 #
+# Call patchItemShippingPolicyAsync operation
+#
+##############################################################################
+call_patchItemShippingPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(policyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ShipmentsService/ItemShippingPolicies/{policyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateItemShippingPolicyAsync operation
 #
 ##############################################################################
@@ -5379,6 +6081,82 @@ call_getShipmentsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchShipmentAsync operation
+#
+##############################################################################
+call_patchShipmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(shipmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ShipmentsService/Shipments/{shipmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5680,6 +6458,82 @@ call_getShippingClassesCountAsync() {
 
 ##############################################################################
 #
+# Call patchShippingClassAsync operation
+#
+##############################################################################
+call_patchShippingClassAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(classId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ShipmentsService/ShippingClasses/{classId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateShippingClassAsync operation
 #
 ##############################################################################
@@ -5971,6 +6825,82 @@ call_getShippingCouriersCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchShippingCourierAsync operation
+#
+##############################################################################
+call_patchShippingCourierAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courierId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ShipmentsService/ShippingCouriers/{courierId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6272,6 +7202,82 @@ call_getShippingLabelsCountAsync() {
 
 ##############################################################################
 #
+# Call patchShippingLabelAsync operation
+#
+##############################################################################
+call_patchShippingLabelAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(labelId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ShipmentsService/ShippingLabels/{labelId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateShippingLabelAsync operation
 #
 ##############################################################################
@@ -6563,6 +7569,82 @@ call_getShippingMethodsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchShippingMethodAsync operation
+#
+##############################################################################
+call_patchShippingMethodAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(methodId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ShipmentsService/ShippingMethods/{methodId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6864,6 +7946,82 @@ call_getShippingRegionsCountAsync() {
 
 ##############################################################################
 #
+# Call patchShippingRegionAsync operation
+#
+##############################################################################
+call_patchShippingRegionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(regionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ShipmentsService/ShippingRegions/{regionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateShippingRegionAsync operation
 #
 ##############################################################################
@@ -7160,6 +8318,82 @@ call_getShippingZonesCountAsync() {
 
 ##############################################################################
 #
+# Call patchShippingZoneAsync operation
+#
+##############################################################################
+call_patchShippingZoneAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(zoneId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ShipmentsService/ShippingZones/{zoneId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateShippingZoneAsync operation
 #
 ##############################################################################
@@ -7361,6 +8595,12 @@ case $key in
     getBillsOfLadingCountAsync)
     operation="getBillsOfLadingCountAsync"
     ;;
+    patchBillOfLadingAsync)
+    operation="patchBillOfLadingAsync"
+    ;;
+    patchBillOfLadingLineAsync)
+    operation="patchBillOfLadingLineAsync"
+    ;;
     updateBillOfLadingAsync)
     operation="updateBillOfLadingAsync"
     ;;
@@ -7436,6 +8676,9 @@ case $key in
     getItemShippingPolicyByIdAsync)
     operation="getItemShippingPolicyByIdAsync"
     ;;
+    patchItemShippingPolicyAsync)
+    operation="patchItemShippingPolicyAsync"
+    ;;
     updateItemShippingPolicyAsync)
     operation="updateItemShippingPolicyAsync"
     ;;
@@ -7453,6 +8696,9 @@ case $key in
     ;;
     getShipmentsCountAsync)
     operation="getShipmentsCountAsync"
+    ;;
+    patchShipmentAsync)
+    operation="patchShipmentAsync"
     ;;
     updateShipmentAsync)
     operation="updateShipmentAsync"
@@ -7472,6 +8718,9 @@ case $key in
     getShippingClassesCountAsync)
     operation="getShippingClassesCountAsync"
     ;;
+    patchShippingClassAsync)
+    operation="patchShippingClassAsync"
+    ;;
     updateShippingClassAsync)
     operation="updateShippingClassAsync"
     ;;
@@ -7489,6 +8738,9 @@ case $key in
     ;;
     getShippingCouriersCountAsync)
     operation="getShippingCouriersCountAsync"
+    ;;
+    patchShippingCourierAsync)
+    operation="patchShippingCourierAsync"
     ;;
     updateShippingCourierAsync)
     operation="updateShippingCourierAsync"
@@ -7508,6 +8760,9 @@ case $key in
     getShippingLabelsCountAsync)
     operation="getShippingLabelsCountAsync"
     ;;
+    patchShippingLabelAsync)
+    operation="patchShippingLabelAsync"
+    ;;
     updateShippingLabelAsync)
     operation="updateShippingLabelAsync"
     ;;
@@ -7525,6 +8780,9 @@ case $key in
     ;;
     getShippingMethodsCountAsync)
     operation="getShippingMethodsCountAsync"
+    ;;
+    patchShippingMethodAsync)
+    operation="patchShippingMethodAsync"
     ;;
     updateShippingMethodAsync)
     operation="updateShippingMethodAsync"
@@ -7544,6 +8802,9 @@ case $key in
     getShippingRegionsCountAsync)
     operation="getShippingRegionsCountAsync"
     ;;
+    patchShippingRegionAsync)
+    operation="patchShippingRegionAsync"
+    ;;
     updateShippingRegionAsync)
     operation="updateShippingRegionAsync"
     ;;
@@ -7561,6 +8822,9 @@ case $key in
     ;;
     getShippingZonesCountAsync)
     operation="getShippingZonesCountAsync"
+    ;;
+    patchShippingZoneAsync)
+    operation="patchShippingZoneAsync"
     ;;
     updateShippingZoneAsync)
     operation="updateShippingZoneAsync"
@@ -7682,6 +8946,12 @@ case $operation in
     getBillsOfLadingCountAsync)
     call_getBillsOfLadingCountAsync
     ;;
+    patchBillOfLadingAsync)
+    call_patchBillOfLadingAsync
+    ;;
+    patchBillOfLadingLineAsync)
+    call_patchBillOfLadingLineAsync
+    ;;
     updateBillOfLadingAsync)
     call_updateBillOfLadingAsync
     ;;
@@ -7757,6 +9027,9 @@ case $operation in
     getItemShippingPolicyByIdAsync)
     call_getItemShippingPolicyByIdAsync
     ;;
+    patchItemShippingPolicyAsync)
+    call_patchItemShippingPolicyAsync
+    ;;
     updateItemShippingPolicyAsync)
     call_updateItemShippingPolicyAsync
     ;;
@@ -7774,6 +9047,9 @@ case $operation in
     ;;
     getShipmentsCountAsync)
     call_getShipmentsCountAsync
+    ;;
+    patchShipmentAsync)
+    call_patchShipmentAsync
     ;;
     updateShipmentAsync)
     call_updateShipmentAsync
@@ -7793,6 +9069,9 @@ case $operation in
     getShippingClassesCountAsync)
     call_getShippingClassesCountAsync
     ;;
+    patchShippingClassAsync)
+    call_patchShippingClassAsync
+    ;;
     updateShippingClassAsync)
     call_updateShippingClassAsync
     ;;
@@ -7810,6 +9089,9 @@ case $operation in
     ;;
     getShippingCouriersCountAsync)
     call_getShippingCouriersCountAsync
+    ;;
+    patchShippingCourierAsync)
+    call_patchShippingCourierAsync
     ;;
     updateShippingCourierAsync)
     call_updateShippingCourierAsync
@@ -7829,6 +9111,9 @@ case $operation in
     getShippingLabelsCountAsync)
     call_getShippingLabelsCountAsync
     ;;
+    patchShippingLabelAsync)
+    call_patchShippingLabelAsync
+    ;;
     updateShippingLabelAsync)
     call_updateShippingLabelAsync
     ;;
@@ -7846,6 +9131,9 @@ case $operation in
     ;;
     getShippingMethodsCountAsync)
     call_getShippingMethodsCountAsync
+    ;;
+    patchShippingMethodAsync)
+    call_patchShippingMethodAsync
     ;;
     updateShippingMethodAsync)
     call_updateShippingMethodAsync
@@ -7865,6 +9153,9 @@ case $operation in
     getShippingRegionsCountAsync)
     call_getShippingRegionsCountAsync
     ;;
+    patchShippingRegionAsync)
+    call_patchShippingRegionAsync
+    ;;
     updateShippingRegionAsync)
     call_updateShippingRegionAsync
     ;;
@@ -7882,6 +9173,9 @@ case $operation in
     ;;
     getShippingZonesCountAsync)
     call_getShippingZonesCountAsync
+    ;;
+    patchShippingZoneAsync)
+    call_patchShippingZoneAsync
     ;;
     updateShippingZoneAsync)
     call_updateShippingZoneAsync

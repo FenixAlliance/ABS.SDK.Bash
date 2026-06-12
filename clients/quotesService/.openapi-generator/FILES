@@ -19,6 +19,7 @@ docs/InfoRequest.md
 docs/InfoResponse.md
 docs/Int32Envelope.md
 docs/LoginRequest.md
+docs/Operation.md
 docs/QuoteCreateDto.md
 docs/QuoteDto.md
 docs/QuoteDtoEnvelope.md

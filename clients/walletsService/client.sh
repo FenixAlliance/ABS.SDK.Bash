@@ -256,6 +256,16 @@ operation_parameters_minimum_occurrences["getWalletWithdrawsAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getWalletWithdrawsCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletWithdrawsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletWithdrawsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWalletBankAccountAsync:::walletId"]=1
+operation_parameters_minimum_occurrences["patchWalletBankAccountAsync:::bankAccountId"]=1
+operation_parameters_minimum_occurrences["patchWalletBankAccountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchWalletBankAccountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWalletBankAccountAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWalletTokenAsync:::walletId"]=1
+operation_parameters_minimum_occurrences["patchWalletTokenAsync:::tokenId"]=1
+operation_parameters_minimum_occurrences["patchWalletTokenAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchWalletTokenAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWalletTokenAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateWalletBankAccountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["updateWalletBankAccountAsync:::bankAccountId"]=1
 operation_parameters_minimum_occurrences["updateWalletBankAccountAsync:::api-version"]=0
@@ -439,6 +449,16 @@ operation_parameters_maximum_occurrences["getWalletWithdrawsAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getWalletWithdrawsCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWalletBankAccountAsync:::walletId"]=0
+operation_parameters_maximum_occurrences["patchWalletBankAccountAsync:::bankAccountId"]=0
+operation_parameters_maximum_occurrences["patchWalletBankAccountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchWalletBankAccountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWalletBankAccountAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWalletTokenAsync:::walletId"]=0
+operation_parameters_maximum_occurrences["patchWalletTokenAsync:::tokenId"]=0
+operation_parameters_maximum_occurrences["patchWalletTokenAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchWalletTokenAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWalletTokenAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateWalletBankAccountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["updateWalletBankAccountAsync:::bankAccountId"]=0
 operation_parameters_maximum_occurrences["updateWalletBankAccountAsync:::api-version"]=0
@@ -619,6 +639,16 @@ operation_parameters_collection_type["getWalletWithdrawsAsync:::x-api-version"]=
 operation_parameters_collection_type["getWalletWithdrawsCountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletWithdrawsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletWithdrawsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWalletBankAccountAsync:::walletId"]=""
+operation_parameters_collection_type["patchWalletBankAccountAsync:::bankAccountId"]=""
+operation_parameters_collection_type["patchWalletBankAccountAsync:::api-version"]=""
+operation_parameters_collection_type["patchWalletBankAccountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWalletBankAccountAsync:::Operation"]=
+operation_parameters_collection_type["patchWalletTokenAsync:::walletId"]=""
+operation_parameters_collection_type["patchWalletTokenAsync:::tokenId"]=""
+operation_parameters_collection_type["patchWalletTokenAsync:::api-version"]=""
+operation_parameters_collection_type["patchWalletTokenAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWalletTokenAsync:::Operation"]=
 operation_parameters_collection_type["updateWalletBankAccountAsync:::walletId"]=""
 operation_parameters_collection_type["updateWalletBankAccountAsync:::bankAccountId"]=""
 operation_parameters_collection_type["updateWalletBankAccountAsync:::api-version"]=""
@@ -991,7 +1021,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}WalletsService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}WalletsService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1093,6 +1123,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getWalletWithdrawRequestsCountAsync${OFF};Get Wallet Withdraw Requests Count
   ${CYAN}getWalletWithdrawsAsync${OFF};Get Wallet Withdraws
   ${CYAN}getWalletWithdrawsCountAsync${OFF};Get Wallet Withdraws Count
+  ${CYAN}patchWalletBankAccountAsync${OFF};Patch Wallet Bank Account
+  ${CYAN}patchWalletTokenAsync${OFF};Patch Wallet Token
   ${CYAN}updateWalletBankAccountAsync${OFF};Update Wallet Bank Account
   ${CYAN}updateWalletLocationAsync${OFF};Update Wallet Location
   ${CYAN}updateWalletTokenAsync${OFF};Update Wallet Token
@@ -1125,7 +1157,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}WalletsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}WalletsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1145,7 +1177,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}WalletsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}WalletsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -2550,6 +2582,62 @@ print_getWalletWithdrawsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchWalletBankAccountAsync operation
+#
+##############################################################################
+print_patchWalletBankAccountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchWalletBankAccountAsync - Patch Wallet Bank Account${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially update a specific bank account of a specific wallet by ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}bankAccountId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: bankAccountId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchWalletTokenAsync operation
+#
+##############################################################################
+print_patchWalletTokenAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchWalletTokenAsync - Patch Wallet Token${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially update a specific payment token of a specific wallet by ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tokenId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tokenId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5382,6 +5470,158 @@ call_getWalletWithdrawsCountAsync() {
 
 ##############################################################################
 #
+# Call patchWalletBankAccountAsync operation
+#
+##############################################################################
+call_patchWalletBankAccountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(walletId bankAccountId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/BankAccounts/{bankAccountId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchWalletTokenAsync operation
+#
+##############################################################################
+call_patchWalletTokenAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(walletId tokenId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Tokens/{tokenId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateWalletBankAccountAsync operation
 #
 ##############################################################################
@@ -5888,6 +6128,12 @@ case $key in
     getWalletWithdrawsCountAsync)
     operation="getWalletWithdrawsCountAsync"
     ;;
+    patchWalletBankAccountAsync)
+    operation="patchWalletBankAccountAsync"
+    ;;
+    patchWalletTokenAsync)
+    operation="patchWalletTokenAsync"
+    ;;
     updateWalletBankAccountAsync)
     operation="updateWalletBankAccountAsync"
     ;;
@@ -6166,6 +6412,12 @@ case $operation in
     ;;
     getWalletWithdrawsCountAsync)
     call_getWalletWithdrawsCountAsync
+    ;;
+    patchWalletBankAccountAsync)
+    call_patchWalletBankAccountAsync
+    ;;
+    patchWalletTokenAsync)
+    call_patchWalletTokenAsync
     ;;
     updateWalletBankAccountAsync)
     call_updateWalletBankAccountAsync

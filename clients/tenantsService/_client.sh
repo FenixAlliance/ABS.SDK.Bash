@@ -302,11 +302,13 @@ case $state in
             "getTenantDepartmentById[Retrieve a single tenant department by its ID]" \
             "getTenantDepartments[Retrieve a list of tenant departments]" \
             "getTenantDepartmentsCount[Get the count of tenant departments]" \
+            "patchTenantDepartmentAsync[Patch a tenant department]" \
             "updateTenantDepartment[Update a tenant department]"             "createTenantEmployeeEnrollment[Create a new tenant employee enrollment]" \
             "deleteTenantEmployeeEnrollment[Delete a tenant employee enrollment]" \
             "getTenantEmployeeEnrollmentById[Retrieve a single tenant employee enrollment by its ID]" \
             "getTenantEmployeeEnrollments[Retrieve a list of tenant employee enrollments]" \
             "getTenantEmployeeEnrollmentsCount[Get the count of tenant employee enrollments]" \
+            "patchTenantEmployeeEnrollmentAsync[Patch a tenant employee enrollment]" \
             "updateTenantEmployeeEnrollment[Update a tenant employee enrollment]"             "createTenantEnrollment[Create a new tenant enrollment]" \
             "deleteTenantEnrollment[Delete a tenant enrollment]" \
             "getExtendedTenantEnrollments[Retrieve a list of tenant enrollments]" \
@@ -314,6 +316,7 @@ case $state in
             "getTenantEnrollmentById[Retrieve a single tenant enrollment by its ID]" \
             "getTenantEnrollments[Retrieve a list of tenant enrollments]" \
             "getTenantEnrollmentsCount[Get the count of tenant enrollments]" \
+            "patchTenantEnrollmentAsync[Patch a tenant enrollment]" \
             "updateTenantEnrollment[Update a tenant enrollment]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
@@ -335,6 +338,7 @@ case $state in
             "getTenantIndustries[Retrieve a list of tenant industries]" \
             "getTenantIndustriesCount[Get the count of tenant industries]" \
             "getTenantIndustryById[Retrieve a single tenant industry by its ID]" \
+            "patchTenantIndustryAsync[Patch a tenant industry]" \
             "updateTenantIndustry[Update a tenant industry]"             "acceptTenantInvitation[Accept an invitation to join a tenant]" \
             "declineTenantInvitation[Decline an invitation to join a tenant]" \
             "deleteTenantInvitation[Delete a tenant invitation]" \
@@ -347,42 +351,50 @@ case $state in
             "getTenantOptionByKey[Retrieve a single tenant option by its key]" \
             "getTenantOptions[Retrieve a list of tenant options]" \
             "getTenantOptionsCount[Get the count of tenant options]" \
+            "patchTenantOption[Patch a tenant option]" \
             "updateTenantOption[Update a tenant option]" \
             "upsertTenantOption[Create or update a tenant option by key]"             "createTenantPosition[Create a new tenant position]" \
             "deleteTenantPosition[Delete a tenant position]" \
             "getTenantPositionById[Retrieve a single tenant position by its ID]" \
             "getTenantPositions[Retrieve a list of tenant positions]" \
             "getTenantPositionsCount[Get the count of tenant positions]" \
+            "patchTenantPosition[Patch a tenant position]" \
             "updateTenantPosition[Update a tenant position]"             "createTenantSegment[Create a new tenant segment]" \
             "deleteTenantSegment[Delete a tenant segment]" \
             "getTenantSegmentById[Retrieve a single tenant segment by its ID]" \
             "getTenantSegments[Retrieve a list of tenant segments]" \
             "getTenantSegmentsCount[Get the count of tenant segments]" \
+            "patchTenantSegment[Patch a tenant segment]" \
             "updateTenantSegment[Update a tenant segment]"             "createTenantSize[Create a new tenant size]" \
             "deleteTenantSize[Delete a tenant size]" \
             "getTenantSizeById[Retrieve a single tenant size by its ID]" \
             "getTenantSizes[Retrieve a list of tenant sizes]" \
             "getTenantSizesCount[Get the count of tenant sizes]" \
+            "patchTenantSize[Patch a tenant size]" \
             "updateTenantSize[Update a tenant size]"             "createTenantTeamContactEnrollment[Create a new tenant team contact enrollment]" \
             "deleteTenantTeamContactEnrollment[Delete a tenant team contact enrollment]" \
             "getTenantTeamContactEnrollmentById[Retrieve a single tenant team contact enrollment by its ID]" \
             "getTenantTeamContactEnrollments[Retrieve a list of tenant team contact enrollments]" \
             "getTenantTeamContactEnrollmentsCount[Get the count of tenant team contact enrollments]" \
+            "patchTenantTeamContactEnrollment[Patch a tenant team contact enrollment]" \
             "updateTenantTeamContactEnrollment[Update a tenant team contact enrollment]"             "createTenantTeamProjectEnrollment[Create a new tenant team project enrollment]" \
             "deleteTenantTeamProjectEnrollment[Delete a tenant team project enrollment]" \
             "getTenantTeamProjectEnrollmentById[Retrieve a single tenant team project enrollment by its ID]" \
             "getTenantTeamProjectEnrollments[Retrieve a list of tenant team project enrollments]" \
             "getTenantTeamProjectEnrollmentsCount[Get the count of tenant team project enrollments]" \
+            "patchTenantTeamProjectEnrollment[Patch a tenant team project enrollment]" \
             "updateTenantTeamProjectEnrollment[Update a tenant team project enrollment]"             "createTenantTeamRecord[Create a new tenant team record]" \
             "deleteTenantTeamRecord[Delete a tenant team record]" \
             "getTenantTeamRecordById[Retrieve a single tenant team record by its ID]" \
             "getTenantTeamRecords[Retrieve a list of tenant team records]" \
             "getTenantTeamRecordsCount[Get the count of tenant team records]" \
+            "patchTenantTeamRecord[Patch a tenant team record]" \
             "updateTenantTeamRecord[Update a tenant team record]"             "createTenantTeam[Create a new tenant team]" \
             "deleteTenantTeam[Delete a tenant team]" \
             "getTenantTeamById[Retrieve a single tenant team by its ID]" \
             "getTenantTeams[Retrieve a list of tenant teams]" \
             "getTenantTeamsCount[Get the count of tenant teams]" \
+            "patchTenantTeam[Patch a tenant team]" \
             "updateTenantTeam[Update a tenant team]"             "assignLicenseAsync[Assign a license to a specific enrollment]" \
             "createTenantAsync[Create a new business tenant]" \
             "deSelectTenantAsync[Deselect the user's default tenant]" \
@@ -422,11 +434,13 @@ case $state in
             "getTenantTerritories[Retrieve a list of tenant territories]" \
             "getTenantTerritoriesCount[Get the count of tenant territories]" \
             "getTenantTerritoryById[Retrieve a single tenant territory by its ID]" \
+            "patchTenantTerritory[Patch a tenant territory]" \
             "updateTenantTerritory[Update a tenant territory]"             "createTenantType[Create a new tenant type]" \
             "deleteTenantType[Delete a tenant type]" \
             "getTenantTypeById[Retrieve a single tenant type by its ID]" \
             "getTenantTypes[Retrieve a list of tenant types]" \
             "getTenantTypesCount[Get the count of tenant types]" \
+            "patchTenantType[Patch a tenant type]" \
             "updateTenantType[Update a tenant type]"             "createUnitAsync[Create a unit within a unit group]" \
             "createUnitGroupAsync[Create a new unit group]" \
             "deleteUnitAsync[Delete a unit from a unit group]" \
@@ -437,12 +451,15 @@ case $state in
             "getUnitGroupsCountAsync[Get the count of unit groups]" \
             "getUnitsAsync[Retrieve units for a unit group]" \
             "getUnitsCountAsync[Get the count of units in a unit group]" \
+            "patchUnitAsync[Patch a unit within a unit group]" \
+            "patchUnitGroupAsync[Patch a unit group]" \
             "updateUnitAsync[Update a unit within a unit group]" \
             "updateUnitGroupAsync[Update a unit group]"             "createTenantUnit[Create a new tenant unit]" \
             "deleteTenantUnit[Delete a tenant unit]" \
             "getTenantUnitById[Retrieve a single tenant unit by its ID]" \
             "getTenantUnits[Retrieve a list of tenant units]" \
             "getTenantUnitsCount[Get the count of tenant units]" \
+            "patchTenantUnit[Patch a tenant unit]" \
             "updateTenantUnit[Update a tenant unit]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -507,6 +524,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTenantDepartmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantDepartmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTenantDepartment)
         local -a _op_arguments
         _op_arguments=(
@@ -559,6 +586,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchTenantEmployeeEnrollmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantEmployeeEnrollmentId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -635,6 +672,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchTenantEnrollmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "enrollmentId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -806,6 +853,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTenantIndustryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantIndustryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTenantIndustry)
         local -a _op_arguments
         _op_arguments=(
@@ -943,6 +1000,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTenantOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "optionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTenantOption)
         local -a _op_arguments
         _op_arguments=(
@@ -1011,6 +1078,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTenantPosition)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantPositionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTenantPosition)
         local -a _op_arguments
         _op_arguments=(
@@ -1063,6 +1140,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchTenantSegment)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantSegmentId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1125,6 +1212,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTenantSize)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantSizeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTenantSize)
         local -a _op_arguments
         _op_arguments=(
@@ -1177,6 +1274,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchTenantTeamContactEnrollment)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantTeamContactEnrollmentId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1239,6 +1346,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTenantTeamProjectEnrollment)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantTeamProjectEnrollmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTenantTeamProjectEnrollment)
         local -a _op_arguments
         _op_arguments=(
@@ -1296,6 +1413,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTenantTeamRecord)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantTeamRecordId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTenantTeamRecord)
         local -a _op_arguments
         _op_arguments=(
@@ -1348,6 +1475,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchTenantTeam)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantTeamId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1738,6 +1875,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTenantTerritory)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantTerritoryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTenantTerritory)
         local -a _op_arguments
         _op_arguments=(
@@ -1790,6 +1937,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchTenantType)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1904,6 +2061,27 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchUnitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "unitGroupId=:[PATH] "
+"unitId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchUnitGroupAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "unitGroupId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateUnitAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1967,6 +2145,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchTenantUnit)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantUnitId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

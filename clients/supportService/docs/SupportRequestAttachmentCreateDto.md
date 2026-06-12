@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **parentFileUploadId** | **string** |  | [optional] [default to null]
 **filePath** | **string** |  | [optional] [default to null]
 **metadata** | **string** |  | [optional] [default to null]
-**supportRequestID** | **string** |  | [optional] [default to null]
+**supportRequestId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

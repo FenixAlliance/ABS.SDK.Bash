@@ -328,6 +328,8 @@ case $state in
             "getQuoteLinesCount[Get the count of quote lines.]" \
             "getQuotes[Get a list of quotes.]" \
             "getQuotesCount[Get the count of quotes.]" \
+            "patchQuoteAsync[Patch an existing quote.]" \
+            "patchQuoteLineAsync[Patch a quote line.]" \
             "previewQuoteEmailTemplate[Preview the rendered email for an invoice.]" \
             "quoteLineExists[Check if a quote line exists.]" \
             "reopenQuote[Reopen a closed quote.]" \
@@ -577,6 +579,23 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchQuoteAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchQuoteLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "quoteId=:[PATH] "
+"quoteLineId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

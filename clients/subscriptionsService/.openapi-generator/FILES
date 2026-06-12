@@ -5,6 +5,7 @@ client.sh
 client.sh.bash-completion
 docs/AccessTokenResponse.md
 docs/CompletionsApi.md
+docs/EmptyEnvelope.md
 docs/Envelope.md
 docs/ErrorEnvelope.md
 docs/FenixAlliancePortalsWebsiteApi.md
@@ -14,6 +15,7 @@ docs/InfoRequest.md
 docs/InfoResponse.md
 docs/Int32Envelope.md
 docs/LoginRequest.md
+docs/Operation.md
 docs/RefreshRequest.md
 docs/RegisterRequest.md
 docs/ResendConfirmationEmailRequest.md

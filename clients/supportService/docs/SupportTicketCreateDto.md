@@ -5,11 +5,13 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
+**title** | **string** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
-**contactID** | **string** |  | [optional] [default to null]
-**supportTicketTypeID** | **string** |  | [optional] [default to null]
-**supportEntitlementID** | **string** |  | [optional] [default to null]
-**supportPriorityID** | **string** |  | [optional] [default to null]
+**supportTicketStatus** | **string** |  | [optional] [default to null]
+**contactId** | **string** |  | [optional] [default to null]
+**supportTicketTypeId** | **string** |  | [optional] [default to null]
+**supportEntitlementId** | **string** |  | [optional] [default to null]
+**supportPriorityId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

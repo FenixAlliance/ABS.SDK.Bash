@@ -100,6 +100,8 @@ _()
     operations["getOrderLinesCount"]=1
     operations["getOrders"]=1
     operations["getOrdersCount"]=1
+    operations["patchOrder"]=1
+    operations["patchOrderLine"]=1
     operations["previewOrderEmailTemplate"]=1
     operations["sendOrderEmail"]=1
     operations["submitCart"]=1
@@ -140,6 +142,8 @@ _()
     operation_parameters["getOrderLinesCount"]="orderId= tenantId= "
     operation_parameters["getOrders"]="tenantId= "
     operation_parameters["getOrdersCount"]="tenantId= "
+    operation_parameters["patchOrder"]="orderId= tenantId= "
+    operation_parameters["patchOrderLine"]="orderId= orderLineId= tenantId= "
     operation_parameters["previewOrderEmailTemplate"]="orderId= tenantId= "
     operation_parameters["sendOrderEmail"]="orderId= tenantId= "
     operation_parameters["submitCart"]="cartId= "

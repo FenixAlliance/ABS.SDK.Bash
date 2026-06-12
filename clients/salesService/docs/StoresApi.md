@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**deleteStoreAsync**](StoresApi.md#deleteStoreAsync) | **DELETE** /api/v2/SalesService/Stores/{storeId} | Delete a store
 [**getStoreAsync**](StoresApi.md#getStoreAsync) | **GET** /api/v2/SalesService/Stores/{storeId} | Get store by ID
 [**getStoresAsync**](StoresApi.md#getStoresAsync) | **GET** /api/v2/SalesService/Stores | Get stores
+[**patchStoreAsync**](StoresApi.md#patchStoreAsync) | **PATCH** /api/v2/SalesService/Stores/{storeId} | Patch a store
 [**updateStoreAsync**](StoresApi.md#updateStoreAsync) | **PUT** /api/v2/SalesService/Stores/{storeId} | Update a store
 
 
@@ -186,6 +187,43 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchStoreAsync
+
+Patch a store
+
+Partially updates an existing store using a JSON Patch document.
+
+### Example
+
+```bash
+ patchStoreAsync  tenantId=value storeId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **storeId** | **string** |  | [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

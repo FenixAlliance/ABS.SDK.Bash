@@ -134,6 +134,8 @@ Class | Method | HTTP request | Description
 *OrdersApi* | [**getOrderLinesCount**](docs/OrdersApi.md#getorderlinescount) | **GET** /api/v2/OrdersService/Orders/{orderId}/Lines/Count | Gets the count of order lines for an order.
 *OrdersApi* | [**getOrders**](docs/OrdersApi.md#getorders) | **GET** /api/v2/OrdersService/Orders | Gets a list of orders for a tenant.
 *OrdersApi* | [**getOrdersCount**](docs/OrdersApi.md#getorderscount) | **GET** /api/v2/OrdersService/Orders/Count | Gets the count of orders for a tenant.
+*OrdersApi* | [**patchOrder**](docs/OrdersApi.md#patchorder) | **PATCH** /api/v2/OrdersService/Orders/{orderId} | Partially updates an existing order.
+*OrdersApi* | [**patchOrderLine**](docs/OrdersApi.md#patchorderline) | **PATCH** /api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId} | Partially updates an order line.
 *OrdersApi* | [**previewOrderEmailTemplate**](docs/OrdersApi.md#previeworderemailtemplate) | **POST** /api/v2/OrdersService/Orders/{orderId}/Emails/Preview | Preview the rendered email for an Order.
 *OrdersApi* | [**sendOrderEmail**](docs/OrdersApi.md#sendorderemail) | **POST** /api/v2/OrdersService/Orders/{orderId}/Emails/Send | Send a transactional email for an order.
 *OrdersApi* | [**submitCart**](docs/OrdersApi.md#submitcart) | **POST** /api/v2/OrdersService/Orders/SubmitCart | Submits a cart and creates an order.
@@ -156,6 +158,7 @@ Class | Method | HTTP request | Description
  - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [Operation](docs/Operation.md)
  - [OrderCreateDto](docs/OrderCreateDto.md)
  - [OrderDto](docs/OrderDto.md)
  - [OrderDtoEnvelope](docs/OrderDtoEnvelope.md)

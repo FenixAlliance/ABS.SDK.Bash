@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **message** | **string** |  | [optional] [default to null]
 **conversationId** | **string** |  | [optional] [default to null]
 **senderSocialProfileId** | **string** |  | [optional] [default to null]
-**receiverSocialProfileID** | **string** |  | [optional] [default to null]
+**receiverSocialProfileId** | **string** |  | [optional] [default to null]
 **sentTimestamp** | **string** |  | [optional] [default to null]
 **readTimestamp** | **string** |  | [optional] [default to null]
 **receivedTimestamp** | **string** |  | [optional] [default to null]

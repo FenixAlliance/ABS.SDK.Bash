@@ -164,6 +164,8 @@ Class | Method | HTTP request | Description
 *WalletsApi* | [**getWalletWithdrawRequestsCountAsync**](docs/WalletsApi.md#getwalletwithdrawrequestscountasync) | **GET** /api/v2/WalletsService/Wallets/{walletId}/WithdrawRequests/Count | Get Wallet Withdraw Requests Count
 *WalletsApi* | [**getWalletWithdrawsAsync**](docs/WalletsApi.md#getwalletwithdrawsasync) | **GET** /api/v2/WalletsService/Wallets/{walletId}/Withdraws | Get Wallet Withdraws
 *WalletsApi* | [**getWalletWithdrawsCountAsync**](docs/WalletsApi.md#getwalletwithdrawscountasync) | **GET** /api/v2/WalletsService/Wallets/{walletId}/Withdraws/Count | Get Wallet Withdraws Count
+*WalletsApi* | [**patchWalletBankAccountAsync**](docs/WalletsApi.md#patchwalletbankaccountasync) | **PATCH** /api/v2/WalletsService/Wallets/{walletId}/BankAccounts/{bankAccountId} | Patch Wallet Bank Account
+*WalletsApi* | [**patchWalletTokenAsync**](docs/WalletsApi.md#patchwallettokenasync) | **PATCH** /api/v2/WalletsService/Wallets/{walletId}/Tokens/{tokenId} | Patch Wallet Token
 *WalletsApi* | [**updateWalletBankAccountAsync**](docs/WalletsApi.md#updatewalletbankaccountasync) | **PUT** /api/v2/WalletsService/Wallets/{walletId}/BankAccounts/{bankAccountId} | Update Wallet Bank Account
 *WalletsApi* | [**updateWalletLocationAsync**](docs/WalletsApi.md#updatewalletlocationasync) | **PUT** /api/v2/WalletsService/Wallets/{walletId}/Locations/{locationId} | Update Wallet Location
 *WalletsApi* | [**updateWalletTokenAsync**](docs/WalletsApi.md#updatewallettokenasync) | **PUT** /api/v2/WalletsService/Wallets/{walletId}/Tokens/{tokenId} | Update Wallet Token
@@ -195,6 +197,7 @@ Class | Method | HTTP request | Description
  - [LocationDtoListEnvelope](docs/LocationDtoListEnvelope.md)
  - [LocationUpdateDto](docs/LocationUpdateDto.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [Operation](docs/Operation.md)
  - [OrderDto](docs/OrderDto.md)
  - [OrderDtoListEnvelope](docs/OrderDtoListEnvelope.md)
  - [PaymentChargebackDto](docs/PaymentChargebackDto.md)

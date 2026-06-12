@@ -102,6 +102,8 @@ _()
     operations["getQuoteLinesCount"]=1
     operations["getQuotes"]=1
     operations["getQuotesCount"]=1
+    operations["patchQuoteAsync"]=1
+    operations["patchQuoteLineAsync"]=1
     operations["previewQuoteEmailTemplate"]=1
     operations["quoteLineExists"]=1
     operations["reopenQuote"]=1
@@ -146,6 +148,8 @@ _()
     operation_parameters["getQuoteLinesCount"]="quoteId= tenantId= "
     operation_parameters["getQuotes"]="tenantId= "
     operation_parameters["getQuotesCount"]="tenantId= "
+    operation_parameters["patchQuoteAsync"]="quoteId= tenantId= "
+    operation_parameters["patchQuoteLineAsync"]="quoteId= quoteLineId= tenantId= "
     operation_parameters["previewQuoteEmailTemplate"]="quoteId= tenantId= "
     operation_parameters["quoteLineExists"]="quoteId= tenantId= quoteLineId= itemId= "
     operation_parameters["reopenQuote"]="quoteId= tenantId= "

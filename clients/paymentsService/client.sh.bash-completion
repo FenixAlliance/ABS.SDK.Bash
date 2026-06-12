@@ -92,24 +92,28 @@ _()
     operations["getPaymentMethodDetailsAsync"]=1
     operations["getPaymentMethodsAsync"]=1
     operations["getPaymentMethodsCountAsync"]=1
+    operations["patchPaymentMethodAsync"]=1
     operations["updatePaymentMethodAsync"]=1
     operations["createPaymentModeAsync"]=1
     operations["deletePaymentModeAsync"]=1
     operations["getPaymentModeDetailsAsync"]=1
     operations["getPaymentModesAsync"]=1
     operations["getPaymentModesCountAsync"]=1
+    operations["patchPaymentModeAsync"]=1
     operations["updatePaymentModeAsync"]=1
     operations["createPaymentTermAsync"]=1
     operations["deletePaymentTermAsync"]=1
     operations["getPaymentTermDetailsAsync"]=1
     operations["getPaymentTermsAsync"]=1
     operations["getPaymentTermsCountAsync"]=1
+    operations["patchPaymentTermAsync"]=1
     operations["updatePaymentTermAsync"]=1
     operations["createPaymentAsync"]=1
     operations["deletePaymentAsync"]=1
     operations["getPaymentAsync"]=1
     operations["getPaymentAsyncV2"]=1
     operations["getPaymentsAsync"]=1
+    operations["patchPaymentAsync"]=1
     operations["updatePaymentAsync"]=1
 
     # An associative array of operations to their parameters
@@ -138,24 +142,28 @@ _()
     operation_parameters["getPaymentMethodDetailsAsync"]="paymentMethodId= tenantId= api-version= x-api-version: "
     operation_parameters["getPaymentMethodsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getPaymentMethodsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchPaymentMethodAsync"]="paymentMethodId= tenantId= api-version= x-api-version: "
     operation_parameters["updatePaymentMethodAsync"]="paymentMethodId= tenantId= api-version= x-api-version: "
     operation_parameters["createPaymentModeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deletePaymentModeAsync"]="paymentModeId= tenantId= api-version= x-api-version: "
     operation_parameters["getPaymentModeDetailsAsync"]="paymentModeId= tenantId= api-version= x-api-version: "
     operation_parameters["getPaymentModesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getPaymentModesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchPaymentModeAsync"]="paymentModeId= tenantId= api-version= x-api-version: "
     operation_parameters["updatePaymentModeAsync"]="paymentModeId= tenantId= api-version= x-api-version: "
     operation_parameters["createPaymentTermAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deletePaymentTermAsync"]="paymentTermId= tenantId= api-version= x-api-version: "
     operation_parameters["getPaymentTermDetailsAsync"]="paymentTermId= tenantId= api-version= x-api-version: "
     operation_parameters["getPaymentTermsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getPaymentTermsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchPaymentTermAsync"]="paymentTermId= tenantId= api-version= x-api-version: "
     operation_parameters["updatePaymentTermAsync"]="paymentTermId= tenantId= api-version= x-api-version: "
     operation_parameters["createPaymentAsync"]="tenantId= "
     operation_parameters["deletePaymentAsync"]="paymentId= tenantId= "
     operation_parameters["getPaymentAsync"]="paymentId= tenantId= "
     operation_parameters["getPaymentAsyncV2"]="paymentId= tenantId= "
     operation_parameters["getPaymentsAsync"]="tenantId= "
+    operation_parameters["patchPaymentAsync"]="paymentId= tenantId= "
     operation_parameters["updatePaymentAsync"]="paymentId= tenantId= "
 
     # An associative array of possible values for enum parameters

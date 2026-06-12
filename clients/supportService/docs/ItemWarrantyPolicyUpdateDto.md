@@ -18,12 +18,12 @@ Name | Type | Description | Notes
 **years** | **integer** |  | [optional] [default to null]
 **value** | **float** |  | [optional] [default to null]
 **percentage** | **float** |  | [optional] [default to null]
-**currencyID** | **string** |  | [optional] [default to null]
-**countryID** | **string** |  | [optional] [default to null]
-**countryStateID** | **string** |  | [optional] [default to null]
+**currencyId** | **string** |  | [optional] [default to null]
+**countryId** | **string** |  | [optional] [default to null]
+**countryStateId** | **string** |  | [optional] [default to null]
 **customState** | **string** |  | [optional] [default to null]
 **customCity** | **string** |  | [optional] [default to null]
-**cityID** | **string** |  | [optional] [default to null]
+**cityId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -19,6 +19,8 @@ Method | HTTP request | Description
 [**getQuoteLinesCount**](QuotesApi.md#getQuoteLinesCount) | **GET** /api/v2/QuotesService/Quotes/{quoteId}/Lines/Count | Get the count of quote lines.
 [**getQuotes**](QuotesApi.md#getQuotes) | **GET** /api/v2/QuotesService/Quotes | Get a list of quotes.
 [**getQuotesCount**](QuotesApi.md#getQuotesCount) | **GET** /api/v2/QuotesService/Quotes/Count | Get the count of quotes.
+[**patchQuoteAsync**](QuotesApi.md#patchQuoteAsync) | **PATCH** /api/v2/QuotesService/Quotes/{quoteId} | Patch an existing quote.
+[**patchQuoteLineAsync**](QuotesApi.md#patchQuoteLineAsync) | **PATCH** /api/v2/QuotesService/Quotes/{quoteId}/Lines/{quoteLineId} | Patch a quote line.
 [**previewQuoteEmailTemplate**](QuotesApi.md#previewQuoteEmailTemplate) | **POST** /api/v2/QuotesService/Quotes/{quoteId}/Emails/Preview | Preview the rendered email for an invoice.
 [**quoteLineExists**](QuotesApi.md#quoteLineExists) | **GET** /api/v2/QuotesService/Quotes/{quoteId}/Lines/Exists | Check if a quote line exists.
 [**reopenQuote**](QuotesApi.md#reopenQuote) | **PUT** /api/v2/QuotesService/Quotes/{quoteId}/Reopen | Reopen a closed quote.
@@ -566,6 +568,81 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchQuoteAsync
+
+Patch an existing quote.
+
+Partially updates an existing quote for the specified tenant and quote ID using a JSON Patch document.
+
+### Example
+
+```bash
+ patchQuoteAsync  tenantId=value quoteId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **quoteId** | **string** |  | [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchQuoteLineAsync
+
+Patch a quote line.
+
+Partially updates an existing quote line for the specified quote and tenant using a JSON Patch document.
+
+### Example
+
+```bash
+ patchQuoteLineAsync  tenantId=value quoteId=value quoteLineId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **quoteId** | **string** |  | [default to null]
+ **quoteLineId** | **string** |  | [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

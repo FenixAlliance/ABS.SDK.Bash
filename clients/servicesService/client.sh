@@ -134,6 +134,11 @@ operation_parameters_minimum_occurrences["getServiceCaseTypesAsync:::x-api-versi
 operation_parameters_minimum_occurrences["getServiceCaseTypesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getServiceCaseTypesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getServiceCaseTypesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceCaseTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchServiceCaseTypeAsync:::serviceCaseTypeId"]=1
+operation_parameters_minimum_occurrences["patchServiceCaseTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceCaseTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceCaseTypeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateServiceCaseTypeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateServiceCaseTypeAsync:::serviceCaseTypeId"]=1
 operation_parameters_minimum_occurrences["updateServiceCaseTypeAsync:::api-version"]=0
@@ -157,6 +162,11 @@ operation_parameters_minimum_occurrences["getServiceCasesAsync:::x-api-version"]
 operation_parameters_minimum_occurrences["getServiceCasesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getServiceCasesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getServiceCasesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceCaseAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchServiceCaseAsync:::serviceCaseId"]=1
+operation_parameters_minimum_occurrences["patchServiceCaseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceCaseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceCaseAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateServiceCaseAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateServiceCaseAsync:::serviceCaseId"]=1
 operation_parameters_minimum_occurrences["updateServiceCaseAsync:::api-version"]=0
@@ -180,6 +190,11 @@ operation_parameters_minimum_occurrences["getServiceLevelAgreementsAsync:::x-api
 operation_parameters_minimum_occurrences["getServiceLevelAgreementsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getServiceLevelAgreementsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getServiceLevelAgreementsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceLevelAgreementAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchServiceLevelAgreementAsync:::serviceLevelAgreementId"]=1
+operation_parameters_minimum_occurrences["patchServiceLevelAgreementAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceLevelAgreementAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceLevelAgreementAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateServiceLevelAgreementAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateServiceLevelAgreementAsync:::serviceLevelAgreementId"]=1
 operation_parameters_minimum_occurrences["updateServiceLevelAgreementAsync:::api-version"]=0
@@ -214,6 +229,12 @@ operation_parameters_minimum_occurrences["getServiceLevelsCountAsync:::tenantId"
 operation_parameters_minimum_occurrences["getServiceLevelsCountAsync:::serviceId"]=1
 operation_parameters_minimum_occurrences["getServiceLevelsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getServiceLevelsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceLevelAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchServiceLevelAsync:::serviceId"]=1
+operation_parameters_minimum_occurrences["patchServiceLevelAsync:::serviceLevelId"]=1
+operation_parameters_minimum_occurrences["patchServiceLevelAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceLevelAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceLevelAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateServiceLevelAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateServiceLevelAsync:::serviceId"]=1
 operation_parameters_minimum_occurrences["updateServiceLevelAsync:::serviceLevelId"]=1
@@ -238,6 +259,11 @@ operation_parameters_minimum_occurrences["getServiceQueuesAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getServiceQueuesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getServiceQueuesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getServiceQueuesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceQueueAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchServiceQueueAsync:::serviceQueueId"]=1
+operation_parameters_minimum_occurrences["patchServiceQueueAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceQueueAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceQueueAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateServiceQueueAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateServiceQueueAsync:::serviceQueueId"]=1
 operation_parameters_minimum_occurrences["updateServiceQueueAsync:::api-version"]=0
@@ -261,6 +287,11 @@ operation_parameters_minimum_occurrences["getServicesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getServicesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getServicesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getServicesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchServiceAsync:::serviceId"]=1
+operation_parameters_minimum_occurrences["patchServiceAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchServiceAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateServiceAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateServiceAsync:::serviceId"]=1
 operation_parameters_minimum_occurrences["updateServiceAsync:::api-version"]=0
@@ -312,6 +343,11 @@ operation_parameters_maximum_occurrences["getServiceCaseTypesAsync:::x-api-versi
 operation_parameters_maximum_occurrences["getServiceCaseTypesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getServiceCaseTypesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getServiceCaseTypesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceCaseTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchServiceCaseTypeAsync:::serviceCaseTypeId"]=0
+operation_parameters_maximum_occurrences["patchServiceCaseTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceCaseTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceCaseTypeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateServiceCaseTypeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateServiceCaseTypeAsync:::serviceCaseTypeId"]=0
 operation_parameters_maximum_occurrences["updateServiceCaseTypeAsync:::api-version"]=0
@@ -335,6 +371,11 @@ operation_parameters_maximum_occurrences["getServiceCasesAsync:::x-api-version"]
 operation_parameters_maximum_occurrences["getServiceCasesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getServiceCasesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getServiceCasesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceCaseAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchServiceCaseAsync:::serviceCaseId"]=0
+operation_parameters_maximum_occurrences["patchServiceCaseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceCaseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceCaseAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateServiceCaseAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateServiceCaseAsync:::serviceCaseId"]=0
 operation_parameters_maximum_occurrences["updateServiceCaseAsync:::api-version"]=0
@@ -358,6 +399,11 @@ operation_parameters_maximum_occurrences["getServiceLevelAgreementsAsync:::x-api
 operation_parameters_maximum_occurrences["getServiceLevelAgreementsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getServiceLevelAgreementsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getServiceLevelAgreementsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceLevelAgreementAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchServiceLevelAgreementAsync:::serviceLevelAgreementId"]=0
+operation_parameters_maximum_occurrences["patchServiceLevelAgreementAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceLevelAgreementAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceLevelAgreementAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateServiceLevelAgreementAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateServiceLevelAgreementAsync:::serviceLevelAgreementId"]=0
 operation_parameters_maximum_occurrences["updateServiceLevelAgreementAsync:::api-version"]=0
@@ -392,6 +438,12 @@ operation_parameters_maximum_occurrences["getServiceLevelsCountAsync:::tenantId"
 operation_parameters_maximum_occurrences["getServiceLevelsCountAsync:::serviceId"]=0
 operation_parameters_maximum_occurrences["getServiceLevelsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getServiceLevelsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceLevelAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchServiceLevelAsync:::serviceId"]=0
+operation_parameters_maximum_occurrences["patchServiceLevelAsync:::serviceLevelId"]=0
+operation_parameters_maximum_occurrences["patchServiceLevelAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceLevelAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceLevelAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateServiceLevelAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateServiceLevelAsync:::serviceId"]=0
 operation_parameters_maximum_occurrences["updateServiceLevelAsync:::serviceLevelId"]=0
@@ -416,6 +468,11 @@ operation_parameters_maximum_occurrences["getServiceQueuesAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getServiceQueuesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getServiceQueuesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getServiceQueuesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceQueueAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchServiceQueueAsync:::serviceQueueId"]=0
+operation_parameters_maximum_occurrences["patchServiceQueueAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceQueueAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceQueueAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateServiceQueueAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateServiceQueueAsync:::serviceQueueId"]=0
 operation_parameters_maximum_occurrences["updateServiceQueueAsync:::api-version"]=0
@@ -439,6 +496,11 @@ operation_parameters_maximum_occurrences["getServicesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getServicesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getServicesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getServicesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchServiceAsync:::serviceId"]=0
+operation_parameters_maximum_occurrences["patchServiceAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchServiceAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateServiceAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateServiceAsync:::serviceId"]=0
 operation_parameters_maximum_occurrences["updateServiceAsync:::api-version"]=0
@@ -487,6 +549,11 @@ operation_parameters_collection_type["getServiceCaseTypesAsync:::x-api-version"]
 operation_parameters_collection_type["getServiceCaseTypesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getServiceCaseTypesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getServiceCaseTypesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchServiceCaseTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchServiceCaseTypeAsync:::serviceCaseTypeId"]=""
+operation_parameters_collection_type["patchServiceCaseTypeAsync:::api-version"]=""
+operation_parameters_collection_type["patchServiceCaseTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchServiceCaseTypeAsync:::Operation"]=
 operation_parameters_collection_type["updateServiceCaseTypeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateServiceCaseTypeAsync:::serviceCaseTypeId"]=""
 operation_parameters_collection_type["updateServiceCaseTypeAsync:::api-version"]=""
@@ -510,6 +577,11 @@ operation_parameters_collection_type["getServiceCasesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getServiceCasesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getServiceCasesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getServiceCasesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchServiceCaseAsync:::tenantId"]=""
+operation_parameters_collection_type["patchServiceCaseAsync:::serviceCaseId"]=""
+operation_parameters_collection_type["patchServiceCaseAsync:::api-version"]=""
+operation_parameters_collection_type["patchServiceCaseAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchServiceCaseAsync:::Operation"]=
 operation_parameters_collection_type["updateServiceCaseAsync:::tenantId"]=""
 operation_parameters_collection_type["updateServiceCaseAsync:::serviceCaseId"]=""
 operation_parameters_collection_type["updateServiceCaseAsync:::api-version"]=""
@@ -533,6 +605,11 @@ operation_parameters_collection_type["getServiceLevelAgreementsAsync:::x-api-ver
 operation_parameters_collection_type["getServiceLevelAgreementsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getServiceLevelAgreementsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getServiceLevelAgreementsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchServiceLevelAgreementAsync:::tenantId"]=""
+operation_parameters_collection_type["patchServiceLevelAgreementAsync:::serviceLevelAgreementId"]=""
+operation_parameters_collection_type["patchServiceLevelAgreementAsync:::api-version"]=""
+operation_parameters_collection_type["patchServiceLevelAgreementAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchServiceLevelAgreementAsync:::Operation"]=
 operation_parameters_collection_type["updateServiceLevelAgreementAsync:::tenantId"]=""
 operation_parameters_collection_type["updateServiceLevelAgreementAsync:::serviceLevelAgreementId"]=""
 operation_parameters_collection_type["updateServiceLevelAgreementAsync:::api-version"]=""
@@ -567,6 +644,12 @@ operation_parameters_collection_type["getServiceLevelsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getServiceLevelsCountAsync:::serviceId"]=""
 operation_parameters_collection_type["getServiceLevelsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getServiceLevelsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchServiceLevelAsync:::tenantId"]=""
+operation_parameters_collection_type["patchServiceLevelAsync:::serviceId"]=""
+operation_parameters_collection_type["patchServiceLevelAsync:::serviceLevelId"]=""
+operation_parameters_collection_type["patchServiceLevelAsync:::api-version"]=""
+operation_parameters_collection_type["patchServiceLevelAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchServiceLevelAsync:::Operation"]=
 operation_parameters_collection_type["updateServiceLevelAsync:::tenantId"]=""
 operation_parameters_collection_type["updateServiceLevelAsync:::serviceId"]=""
 operation_parameters_collection_type["updateServiceLevelAsync:::serviceLevelId"]=""
@@ -591,6 +674,11 @@ operation_parameters_collection_type["getServiceQueuesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getServiceQueuesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getServiceQueuesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getServiceQueuesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchServiceQueueAsync:::tenantId"]=""
+operation_parameters_collection_type["patchServiceQueueAsync:::serviceQueueId"]=""
+operation_parameters_collection_type["patchServiceQueueAsync:::api-version"]=""
+operation_parameters_collection_type["patchServiceQueueAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchServiceQueueAsync:::Operation"]=
 operation_parameters_collection_type["updateServiceQueueAsync:::tenantId"]=""
 operation_parameters_collection_type["updateServiceQueueAsync:::serviceQueueId"]=""
 operation_parameters_collection_type["updateServiceQueueAsync:::api-version"]=""
@@ -614,6 +702,11 @@ operation_parameters_collection_type["getServicesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getServicesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getServicesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getServicesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchServiceAsync:::tenantId"]=""
+operation_parameters_collection_type["patchServiceAsync:::serviceId"]=""
+operation_parameters_collection_type["patchServiceAsync:::api-version"]=""
+operation_parameters_collection_type["patchServiceAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchServiceAsync:::Operation"]=
 operation_parameters_collection_type["updateServiceAsync:::tenantId"]=""
 operation_parameters_collection_type["updateServiceAsync:::serviceId"]=""
 operation_parameters_collection_type["updateServiceAsync:::api-version"]=""
@@ -976,7 +1069,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}ServicesService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}ServicesService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1040,6 +1133,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getServiceCaseTypeByIdAsync${OFF};Get a service case type by ID
   ${CYAN}getServiceCaseTypesAsync${OFF};Get all service case types
   ${CYAN}getServiceCaseTypesCountAsync${OFF};Get service case types count
+  ${CYAN}patchServiceCaseTypeAsync${OFF};Patch a service case type
   ${CYAN}updateServiceCaseTypeAsync${OFF};Update a service case type
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1051,6 +1145,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getServiceCaseByIdAsync${OFF};Get a service case by ID
   ${CYAN}getServiceCasesAsync${OFF};Get all service cases
   ${CYAN}getServiceCasesCountAsync${OFF};Get service cases count
+  ${CYAN}patchServiceCaseAsync${OFF};Patch a service case
   ${CYAN}updateServiceCaseAsync${OFF};Update a service case
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1062,6 +1157,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getServiceLevelAgreementByIdAsync${OFF};Get a service level agreement by ID
   ${CYAN}getServiceLevelAgreementsAsync${OFF};Get all service level agreements
   ${CYAN}getServiceLevelAgreementsCountAsync${OFF};Get service level agreements count
+  ${CYAN}patchServiceLevelAgreementAsync${OFF};Patch a service level agreement
   ${CYAN}updateServiceLevelAgreementAsync${OFF};Update a service level agreement
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1075,6 +1171,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getServiceLevelByIdAsync${OFF};Get a service level by ID
   ${CYAN}getServiceLevelsAsync${OFF};Get all service levels
   ${CYAN}getServiceLevelsCountAsync${OFF};Get service levels count
+  ${CYAN}patchServiceLevelAsync${OFF};Patch a service level
   ${CYAN}updateServiceLevelAsync${OFF};Update a service level
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1086,6 +1183,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getServiceQueueByIdAsync${OFF};Get a service queue by ID
   ${CYAN}getServiceQueuesAsync${OFF};Get all service queues
   ${CYAN}getServiceQueuesCountAsync${OFF};Get service queues count
+  ${CYAN}patchServiceQueueAsync${OFF};Patch a service queue
   ${CYAN}updateServiceQueueAsync${OFF};Update a service queue
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1097,6 +1195,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getServiceByIdAsync${OFF};Get a service by ID
   ${CYAN}getServicesAsync${OFF};Get all services
   ${CYAN}getServicesCountAsync${OFF};Get services count
+  ${CYAN}patchServiceAsync${OFF};Patch a service
   ${CYAN}updateServiceAsync${OFF};Update a service
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1127,7 +1226,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}ServicesService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}ServicesService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1147,7 +1246,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}ServicesService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}ServicesService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1606,6 +1705,35 @@ print_getServiceCaseTypesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchServiceCaseTypeAsync operation
+#
+##############################################################################
+print_patchServiceCaseTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchServiceCaseTypeAsync - Patch a service case type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing service case type using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}serviceCaseTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: serviceCaseTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateServiceCaseTypeAsync operation
 #
 ##############################################################################
@@ -1769,6 +1897,35 @@ print_getServiceCasesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchServiceCaseAsync operation
+#
+##############################################################################
+print_patchServiceCaseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchServiceCaseAsync - Patch a service case${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing service case using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}serviceCaseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: serviceCaseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateServiceCaseAsync operation
 #
 ##############################################################################
@@ -1921,6 +2078,35 @@ print_getServiceLevelAgreementsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchServiceLevelAgreementAsync operation
+#
+##############################################################################
+print_patchServiceLevelAgreementAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchServiceLevelAgreementAsync - Patch a service level agreement${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing service level agreement using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}serviceLevelAgreementId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: serviceLevelAgreementId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2152,6 +2338,36 @@ print_getServiceLevelsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchServiceLevelAsync operation
+#
+##############################################################################
+print_patchServiceLevelAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchServiceLevelAsync - Patch a service level${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing service level using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}serviceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: serviceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}serviceLevelId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: serviceLevelId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateServiceLevelAsync operation
 #
 ##############################################################################
@@ -2316,6 +2532,35 @@ print_getServiceQueuesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchServiceQueueAsync operation
+#
+##############################################################################
+print_patchServiceQueueAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchServiceQueueAsync - Patch a service queue${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing service queue using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}serviceQueueId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: serviceQueueId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateServiceQueueAsync operation
 #
 ##############################################################################
@@ -2468,6 +2713,35 @@ print_getServicesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchServiceAsync operation
+#
+##############################################################################
+print_patchServiceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchServiceAsync - Patch a service${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing service using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}serviceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: serviceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3717,6 +3991,82 @@ call_getServiceCaseTypesCountAsync() {
 
 ##############################################################################
 #
+# Call patchServiceCaseTypeAsync operation
+#
+##############################################################################
+call_patchServiceCaseTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(serviceCaseTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ServicesService/ServiceCaseTypes/{serviceCaseTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateServiceCaseTypeAsync operation
 #
 ##############################################################################
@@ -4013,6 +4363,82 @@ call_getServiceCasesCountAsync() {
 
 ##############################################################################
 #
+# Call patchServiceCaseAsync operation
+#
+##############################################################################
+call_patchServiceCaseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(serviceCaseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ServicesService/ServiceCases/{serviceCaseId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateServiceCaseAsync operation
 #
 ##############################################################################
@@ -4304,6 +4730,82 @@ call_getServiceLevelAgreementsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchServiceLevelAgreementAsync operation
+#
+##############################################################################
+call_patchServiceLevelAgreementAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(serviceLevelAgreementId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ServicesService/ServiceLevelAgreements/{serviceLevelAgreementId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4677,6 +5179,82 @@ call_getServiceLevelsCountAsync() {
 
 ##############################################################################
 #
+# Call patchServiceLevelAsync operation
+#
+##############################################################################
+call_patchServiceLevelAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(serviceId serviceLevelId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ServicesService/Services/{serviceId}/ServiceLevels/{serviceLevelId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateServiceLevelAsync operation
 #
 ##############################################################################
@@ -4968,6 +5546,82 @@ call_getServiceQueuesCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchServiceQueueAsync operation
+#
+##############################################################################
+call_patchServiceQueueAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(serviceQueueId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ServicesService/ServiceQueues/{serviceQueueId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5269,6 +5923,82 @@ call_getServicesCountAsync() {
 
 ##############################################################################
 #
+# Call patchServiceAsync operation
+#
+##############################################################################
+call_patchServiceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(serviceId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ServicesService/Services/{serviceId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateServiceAsync operation
 #
 ##############################################################################
@@ -5509,6 +6239,9 @@ case $key in
     getServiceCaseTypesCountAsync)
     operation="getServiceCaseTypesCountAsync"
     ;;
+    patchServiceCaseTypeAsync)
+    operation="patchServiceCaseTypeAsync"
+    ;;
     updateServiceCaseTypeAsync)
     operation="updateServiceCaseTypeAsync"
     ;;
@@ -5527,6 +6260,9 @@ case $key in
     getServiceCasesCountAsync)
     operation="getServiceCasesCountAsync"
     ;;
+    patchServiceCaseAsync)
+    operation="patchServiceCaseAsync"
+    ;;
     updateServiceCaseAsync)
     operation="updateServiceCaseAsync"
     ;;
@@ -5544,6 +6280,9 @@ case $key in
     ;;
     getServiceLevelAgreementsCountAsync)
     operation="getServiceLevelAgreementsCountAsync"
+    ;;
+    patchServiceLevelAgreementAsync)
+    operation="patchServiceLevelAgreementAsync"
     ;;
     updateServiceLevelAgreementAsync)
     operation="updateServiceLevelAgreementAsync"
@@ -5569,6 +6308,9 @@ case $key in
     getServiceLevelsCountAsync)
     operation="getServiceLevelsCountAsync"
     ;;
+    patchServiceLevelAsync)
+    operation="patchServiceLevelAsync"
+    ;;
     updateServiceLevelAsync)
     operation="updateServiceLevelAsync"
     ;;
@@ -5587,6 +6329,9 @@ case $key in
     getServiceQueuesCountAsync)
     operation="getServiceQueuesCountAsync"
     ;;
+    patchServiceQueueAsync)
+    operation="patchServiceQueueAsync"
+    ;;
     updateServiceQueueAsync)
     operation="updateServiceQueueAsync"
     ;;
@@ -5604,6 +6349,9 @@ case $key in
     ;;
     getServicesCountAsync)
     operation="getServicesCountAsync"
+    ;;
+    patchServiceAsync)
+    operation="patchServiceAsync"
     ;;
     updateServiceAsync)
     operation="updateServiceAsync"
@@ -5764,6 +6512,9 @@ case $operation in
     getServiceCaseTypesCountAsync)
     call_getServiceCaseTypesCountAsync
     ;;
+    patchServiceCaseTypeAsync)
+    call_patchServiceCaseTypeAsync
+    ;;
     updateServiceCaseTypeAsync)
     call_updateServiceCaseTypeAsync
     ;;
@@ -5782,6 +6533,9 @@ case $operation in
     getServiceCasesCountAsync)
     call_getServiceCasesCountAsync
     ;;
+    patchServiceCaseAsync)
+    call_patchServiceCaseAsync
+    ;;
     updateServiceCaseAsync)
     call_updateServiceCaseAsync
     ;;
@@ -5799,6 +6553,9 @@ case $operation in
     ;;
     getServiceLevelAgreementsCountAsync)
     call_getServiceLevelAgreementsCountAsync
+    ;;
+    patchServiceLevelAgreementAsync)
+    call_patchServiceLevelAgreementAsync
     ;;
     updateServiceLevelAgreementAsync)
     call_updateServiceLevelAgreementAsync
@@ -5824,6 +6581,9 @@ case $operation in
     getServiceLevelsCountAsync)
     call_getServiceLevelsCountAsync
     ;;
+    patchServiceLevelAsync)
+    call_patchServiceLevelAsync
+    ;;
     updateServiceLevelAsync)
     call_updateServiceLevelAsync
     ;;
@@ -5842,6 +6602,9 @@ case $operation in
     getServiceQueuesCountAsync)
     call_getServiceQueuesCountAsync
     ;;
+    patchServiceQueueAsync)
+    call_patchServiceQueueAsync
+    ;;
     updateServiceQueueAsync)
     call_updateServiceQueueAsync
     ;;
@@ -5859,6 +6622,9 @@ case $operation in
     ;;
     getServicesCountAsync)
     call_getServicesCountAsync
+    ;;
+    patchServiceAsync)
+    call_patchServiceAsync
     ;;
     updateServiceAsync)
     call_updateServiceAsync

@@ -124,6 +124,9 @@ operation_parameters_minimum_occurrences["deleteLoyaltyProgramAsync:::loyaltyPro
 operation_parameters_minimum_occurrences["getLoyaltyProgramAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLoyaltyProgramAsync:::loyaltyProgramId"]=1
 operation_parameters_minimum_occurrences["getLoyaltyProgramsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchLoyaltyProgramAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchLoyaltyProgramAsync:::loyaltyProgramId"]=1
+operation_parameters_minimum_occurrences["patchLoyaltyProgramAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateLoyaltyProgramAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateLoyaltyProgramAsync:::loyaltyProgramId"]=1
 operation_parameters_minimum_occurrences["updateLoyaltyProgramAsync:::LoyaltyProgramUpdateDto"]=0
@@ -138,6 +141,9 @@ operation_parameters_minimum_occurrences["deletePointOfSaleAsync:::pointOfSaleId
 operation_parameters_minimum_occurrences["getPointOfSaleAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPointOfSaleAsync:::pointOfSaleId"]=1
 operation_parameters_minimum_occurrences["getPointOfSalesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPointOfSaleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPointOfSaleAsync:::pointOfSaleId"]=1
+operation_parameters_minimum_occurrences["patchPointOfSaleAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updatePointOfSaleAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePointOfSaleAsync:::pointOfSaleId"]=1
 operation_parameters_minimum_occurrences["updatePointOfSaleAsync:::PointOfSaleUpdateDto"]=0
@@ -150,6 +156,9 @@ operation_parameters_minimum_occurrences["getExtendedSalesLiteraturesAsync:::ten
 operation_parameters_minimum_occurrences["getSalesLiteratureAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSalesLiteratureAsync:::salesLiteratureId"]=1
 operation_parameters_minimum_occurrences["getSalesLiteraturesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchSalesLiteratureAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchSalesLiteratureAsync:::salesLiteratureId"]=1
+operation_parameters_minimum_occurrences["patchSalesLiteratureAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSalesLiteratureAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSalesLiteratureAsync:::salesLiteratureId"]=1
 operation_parameters_minimum_occurrences["updateSalesLiteratureAsync:::SalesLiteratureUpdateDto"]=0
@@ -161,6 +170,9 @@ operation_parameters_minimum_occurrences["deleteStoreAsync:::storeId"]=1
 operation_parameters_minimum_occurrences["getStoreAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getStoreAsync:::storeId"]=1
 operation_parameters_minimum_occurrences["getStoresAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchStoreAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchStoreAsync:::storeId"]=1
+operation_parameters_minimum_occurrences["patchStoreAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateStoreAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateStoreAsync:::storeId"]=1
 operation_parameters_minimum_occurrences["updateStoreAsync:::StoreUpdateDto"]=0
@@ -200,6 +212,9 @@ operation_parameters_maximum_occurrences["deleteLoyaltyProgramAsync:::loyaltyPro
 operation_parameters_maximum_occurrences["getLoyaltyProgramAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLoyaltyProgramAsync:::loyaltyProgramId"]=0
 operation_parameters_maximum_occurrences["getLoyaltyProgramsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchLoyaltyProgramAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchLoyaltyProgramAsync:::loyaltyProgramId"]=0
+operation_parameters_maximum_occurrences["patchLoyaltyProgramAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateLoyaltyProgramAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateLoyaltyProgramAsync:::loyaltyProgramId"]=0
 operation_parameters_maximum_occurrences["updateLoyaltyProgramAsync:::LoyaltyProgramUpdateDto"]=0
@@ -214,6 +229,9 @@ operation_parameters_maximum_occurrences["deletePointOfSaleAsync:::pointOfSaleId
 operation_parameters_maximum_occurrences["getPointOfSaleAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPointOfSaleAsync:::pointOfSaleId"]=0
 operation_parameters_maximum_occurrences["getPointOfSalesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPointOfSaleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPointOfSaleAsync:::pointOfSaleId"]=0
+operation_parameters_maximum_occurrences["patchPointOfSaleAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updatePointOfSaleAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePointOfSaleAsync:::pointOfSaleId"]=0
 operation_parameters_maximum_occurrences["updatePointOfSaleAsync:::PointOfSaleUpdateDto"]=0
@@ -226,6 +244,9 @@ operation_parameters_maximum_occurrences["getExtendedSalesLiteraturesAsync:::ten
 operation_parameters_maximum_occurrences["getSalesLiteratureAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSalesLiteratureAsync:::salesLiteratureId"]=0
 operation_parameters_maximum_occurrences["getSalesLiteraturesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchSalesLiteratureAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchSalesLiteratureAsync:::salesLiteratureId"]=0
+operation_parameters_maximum_occurrences["patchSalesLiteratureAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSalesLiteratureAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSalesLiteratureAsync:::salesLiteratureId"]=0
 operation_parameters_maximum_occurrences["updateSalesLiteratureAsync:::SalesLiteratureUpdateDto"]=0
@@ -237,6 +258,9 @@ operation_parameters_maximum_occurrences["deleteStoreAsync:::storeId"]=0
 operation_parameters_maximum_occurrences["getStoreAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getStoreAsync:::storeId"]=0
 operation_parameters_maximum_occurrences["getStoresAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchStoreAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchStoreAsync:::storeId"]=0
+operation_parameters_maximum_occurrences["patchStoreAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateStoreAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateStoreAsync:::storeId"]=0
 operation_parameters_maximum_occurrences["updateStoreAsync:::StoreUpdateDto"]=0
@@ -273,6 +297,9 @@ operation_parameters_collection_type["deleteLoyaltyProgramAsync:::loyaltyProgram
 operation_parameters_collection_type["getLoyaltyProgramAsync:::tenantId"]=""
 operation_parameters_collection_type["getLoyaltyProgramAsync:::loyaltyProgramId"]=""
 operation_parameters_collection_type["getLoyaltyProgramsAsync:::tenantId"]=""
+operation_parameters_collection_type["patchLoyaltyProgramAsync:::tenantId"]=""
+operation_parameters_collection_type["patchLoyaltyProgramAsync:::loyaltyProgramId"]=""
+operation_parameters_collection_type["patchLoyaltyProgramAsync:::Operation"]=
 operation_parameters_collection_type["updateLoyaltyProgramAsync:::tenantId"]=""
 operation_parameters_collection_type["updateLoyaltyProgramAsync:::loyaltyProgramId"]=""
 operation_parameters_collection_type["updateLoyaltyProgramAsync:::LoyaltyProgramUpdateDto"]=""
@@ -287,6 +314,9 @@ operation_parameters_collection_type["deletePointOfSaleAsync:::pointOfSaleId"]="
 operation_parameters_collection_type["getPointOfSaleAsync:::tenantId"]=""
 operation_parameters_collection_type["getPointOfSaleAsync:::pointOfSaleId"]=""
 operation_parameters_collection_type["getPointOfSalesAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPointOfSaleAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPointOfSaleAsync:::pointOfSaleId"]=""
+operation_parameters_collection_type["patchPointOfSaleAsync:::Operation"]=
 operation_parameters_collection_type["updatePointOfSaleAsync:::tenantId"]=""
 operation_parameters_collection_type["updatePointOfSaleAsync:::pointOfSaleId"]=""
 operation_parameters_collection_type["updatePointOfSaleAsync:::PointOfSaleUpdateDto"]=""
@@ -299,6 +329,9 @@ operation_parameters_collection_type["getExtendedSalesLiteraturesAsync:::tenantI
 operation_parameters_collection_type["getSalesLiteratureAsync:::tenantId"]=""
 operation_parameters_collection_type["getSalesLiteratureAsync:::salesLiteratureId"]=""
 operation_parameters_collection_type["getSalesLiteraturesAsync:::tenantId"]=""
+operation_parameters_collection_type["patchSalesLiteratureAsync:::tenantId"]=""
+operation_parameters_collection_type["patchSalesLiteratureAsync:::salesLiteratureId"]=""
+operation_parameters_collection_type["patchSalesLiteratureAsync:::Operation"]=
 operation_parameters_collection_type["updateSalesLiteratureAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSalesLiteratureAsync:::salesLiteratureId"]=""
 operation_parameters_collection_type["updateSalesLiteratureAsync:::SalesLiteratureUpdateDto"]=""
@@ -310,6 +343,9 @@ operation_parameters_collection_type["deleteStoreAsync:::storeId"]=""
 operation_parameters_collection_type["getStoreAsync:::tenantId"]=""
 operation_parameters_collection_type["getStoreAsync:::storeId"]=""
 operation_parameters_collection_type["getStoresAsync:::tenantId"]=""
+operation_parameters_collection_type["patchStoreAsync:::tenantId"]=""
+operation_parameters_collection_type["patchStoreAsync:::storeId"]=""
+operation_parameters_collection_type["patchStoreAsync:::Operation"]=
 operation_parameters_collection_type["updateStoreAsync:::tenantId"]=""
 operation_parameters_collection_type["updateStoreAsync:::storeId"]=""
 operation_parameters_collection_type["updateStoreAsync:::StoreUpdateDto"]=""
@@ -670,7 +706,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}SalesService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}SalesService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -734,6 +770,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteLoyaltyProgramAsync${OFF};Delete a loyalty program
   ${CYAN}getLoyaltyProgramAsync${OFF};Get loyalty program by ID
   ${CYAN}getLoyaltyProgramsAsync${OFF};Get loyalty programs
+  ${CYAN}patchLoyaltyProgramAsync${OFF};Patch a loyalty program
   ${CYAN}updateLoyaltyProgramAsync${OFF};Update a loyalty program
 EOF
 echo "  $ops" | column -t -s ';'
@@ -751,6 +788,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deletePointOfSaleAsync${OFF};Delete a point of sale
   ${CYAN}getPointOfSaleAsync${OFF};Get point of sale by ID
   ${CYAN}getPointOfSalesAsync${OFF};Get point of sales
+  ${CYAN}patchPointOfSaleAsync${OFF};Patch a point of sale
   ${CYAN}updatePointOfSaleAsync${OFF};Update a point of sale
 EOF
 echo "  $ops" | column -t -s ';'
@@ -763,6 +801,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getExtendedSalesLiteraturesAsync${OFF};Get extended sales literatures
   ${CYAN}getSalesLiteratureAsync${OFF};Get sales literature by ID
   ${CYAN}getSalesLiteraturesAsync${OFF};Get sales literatures
+  ${CYAN}patchSalesLiteratureAsync${OFF};Patch a sales literature
   ${CYAN}updateSalesLiteratureAsync${OFF};Update a sales literature
 EOF
 echo "  $ops" | column -t -s ';'
@@ -774,6 +813,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteStoreAsync${OFF};Delete a store
   ${CYAN}getStoreAsync${OFF};Get store by ID
   ${CYAN}getStoresAsync${OFF};Get stores
+  ${CYAN}patchStoreAsync${OFF};Patch a store
   ${CYAN}updateStoreAsync${OFF};Update a store
 EOF
 echo "  $ops" | column -t -s ';'
@@ -804,7 +844,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}SalesService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}SalesService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -824,7 +864,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}SalesService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}SalesService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1258,6 +1298,30 @@ print_getLoyaltyProgramsAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchLoyaltyProgramAsync operation
+#
+##############################################################################
+print_patchLoyaltyProgramAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchLoyaltyProgramAsync - Patch a loyalty program${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing loyalty program using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}loyaltyProgramId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: loyaltyProgramId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateLoyaltyProgramAsync operation
 #
 ##############################################################################
@@ -1403,6 +1467,30 @@ print_getPointOfSalesAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchPointOfSaleAsync operation
+#
+##############################################################################
+print_patchPointOfSaleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchPointOfSaleAsync - Patch a point of sale${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing point of sale using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pointOfSaleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pointOfSaleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1566,6 +1654,30 @@ print_getSalesLiteraturesAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchSalesLiteratureAsync operation
+#
+##############################################################################
+print_patchSalesLiteratureAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSalesLiteratureAsync - Patch a sales literature${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing sales literature using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}salesLiteratureId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: salesLiteratureId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateSalesLiteratureAsync operation
 #
 ##############################################################################
@@ -1690,6 +1802,30 @@ print_getStoresAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchStoreAsync operation
+#
+##############################################################################
+print_patchStoreAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchStoreAsync - Patch a store${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing store using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}storeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: storeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -2932,6 +3068,82 @@ call_getLoyaltyProgramsAsync() {
 
 ##############################################################################
 #
+# Call patchLoyaltyProgramAsync operation
+#
+##############################################################################
+call_patchLoyaltyProgramAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(loyaltyProgramId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SalesService/LoyaltyPrograms/{loyaltyProgramId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateLoyaltyProgramAsync operation
 #
 ##############################################################################
@@ -3259,6 +3471,82 @@ call_getPointOfSalesAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchPointOfSaleAsync operation
+#
+##############################################################################
+call_patchPointOfSaleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pointOfSaleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SalesService/PointOfSales/{pointOfSaleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3596,6 +3884,82 @@ call_getSalesLiteraturesAsync() {
 
 ##############################################################################
 #
+# Call patchSalesLiteratureAsync operation
+#
+##############################################################################
+call_patchSalesLiteratureAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(salesLiteratureId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SalesService/SalesLiteratures/{salesLiteratureId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateSalesLiteratureAsync operation
 #
 ##############################################################################
@@ -3892,6 +4256,82 @@ call_getStoresAsync() {
 
 ##############################################################################
 #
+# Call patchStoreAsync operation
+#
+##############################################################################
+call_patchStoreAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(storeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SalesService/Stores/{storeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateStoreAsync operation
 #
 ##############################################################################
@@ -4132,6 +4572,9 @@ case $key in
     getLoyaltyProgramsAsync)
     operation="getLoyaltyProgramsAsync"
     ;;
+    patchLoyaltyProgramAsync)
+    operation="patchLoyaltyProgramAsync"
+    ;;
     updateLoyaltyProgramAsync)
     operation="updateLoyaltyProgramAsync"
     ;;
@@ -4152,6 +4595,9 @@ case $key in
     ;;
     getPointOfSalesAsync)
     operation="getPointOfSalesAsync"
+    ;;
+    patchPointOfSaleAsync)
+    operation="patchPointOfSaleAsync"
     ;;
     updatePointOfSaleAsync)
     operation="updatePointOfSaleAsync"
@@ -4174,6 +4620,9 @@ case $key in
     getSalesLiteraturesAsync)
     operation="getSalesLiteraturesAsync"
     ;;
+    patchSalesLiteratureAsync)
+    operation="patchSalesLiteratureAsync"
+    ;;
     updateSalesLiteratureAsync)
     operation="updateSalesLiteratureAsync"
     ;;
@@ -4191,6 +4640,9 @@ case $key in
     ;;
     getStoresAsync)
     operation="getStoresAsync"
+    ;;
+    patchStoreAsync)
+    operation="patchStoreAsync"
     ;;
     updateStoreAsync)
     operation="updateStoreAsync"
@@ -4351,6 +4803,9 @@ case $operation in
     getLoyaltyProgramsAsync)
     call_getLoyaltyProgramsAsync
     ;;
+    patchLoyaltyProgramAsync)
+    call_patchLoyaltyProgramAsync
+    ;;
     updateLoyaltyProgramAsync)
     call_updateLoyaltyProgramAsync
     ;;
@@ -4371,6 +4826,9 @@ case $operation in
     ;;
     getPointOfSalesAsync)
     call_getPointOfSalesAsync
+    ;;
+    patchPointOfSaleAsync)
+    call_patchPointOfSaleAsync
     ;;
     updatePointOfSaleAsync)
     call_updatePointOfSaleAsync
@@ -4393,6 +4851,9 @@ case $operation in
     getSalesLiteraturesAsync)
     call_getSalesLiteraturesAsync
     ;;
+    patchSalesLiteratureAsync)
+    call_patchSalesLiteratureAsync
+    ;;
     updateSalesLiteratureAsync)
     call_updateSalesLiteratureAsync
     ;;
@@ -4410,6 +4871,9 @@ case $operation in
     ;;
     getStoresAsync)
     call_getStoresAsync
+    ;;
+    patchStoreAsync)
+    call_patchStoreAsync
     ;;
     updateStoreAsync)
     call_updateStoreAsync

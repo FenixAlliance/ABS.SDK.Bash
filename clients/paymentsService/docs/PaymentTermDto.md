@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **creditWeeks** | **float** |  | [optional] [default to null]
 **creditMonths** | **float** |  | [optional] [default to null]
 **creditYears** | **float** |  | [optional] [default to null]
-**paymentModeID** | **string** |  | [optional] [default to null]
+**paymentModeId** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]
 **enrollmentId** | **string** |  | [optional] [default to null]
 

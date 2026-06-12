@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getTenantDepartmentById**](DepartmentsApi.md#getTenantDepartmentById) | **GET** /api/v2/TenantsService/Departments/{tenantDepartmentId} | Retrieve a single tenant department by its ID
 [**getTenantDepartments**](DepartmentsApi.md#getTenantDepartments) | **GET** /api/v2/TenantsService/Departments | Retrieve a list of tenant departments
 [**getTenantDepartmentsCount**](DepartmentsApi.md#getTenantDepartmentsCount) | **GET** /api/v2/TenantsService/Departments/Count | Get the count of tenant departments
+[**patchTenantDepartmentAsync**](DepartmentsApi.md#patchTenantDepartmentAsync) | **PATCH** /api/v2/TenantsService/Departments/{tenantDepartmentId} | Patch a tenant department
 [**updateTenantDepartment**](DepartmentsApi.md#updateTenantDepartment) | **PUT** /api/v2/TenantsService/Departments/{tenantDepartmentId} | Update a tenant department
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchTenantDepartmentAsync
+
+Patch a tenant department
+
+Patch a tenant department
+
+### Example
+
+```bash
+ patchTenantDepartmentAsync  tenantId=value tenantDepartmentId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **tenantDepartmentId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

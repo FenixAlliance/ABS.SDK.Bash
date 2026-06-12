@@ -321,11 +321,13 @@ case $state in
             "getFeedPostsCountAsync[Count social feed posts]" \
             "getNotificationAsync[Get social feed by ID]" \
             "getNotificationsCountAsync[Count social feeds]" \
+            "patchFeedPostAsync[Patch a social feed post]" \
             "updateFeedPostAsync[Update a social feed post]"             "countSocialGroupsAsync[Count social groups]" \
             "createSocialGroupAsync[Create a social group]" \
             "deleteSocialGroupAsync[Delete a social group]" \
             "getSocialGroupByIdAsync[Get social group by ID]" \
             "getSocialGroupsAsync[Get social groups]" \
+            "patchSocialGroupAsync[Patch a social group]" \
             "updateSocialGroupAsync[Update a social group]"             "createSocialPostAsync[Create a social post]" \
             "createSocialPostAttachmentAsync[Create a social post attachment]" \
             "createSocialPostCommentAsync[Create a social post comment]" \
@@ -346,6 +348,7 @@ case $state in
             "getSocialPostReactionsCountAsync[Count social post reactions]" \
             "getSocialPostsAsync[Get social posts]" \
             "getSocialPostsCountAsync[Count social posts]" \
+            "patchSocialPostAsync[Patch a social post]" \
             "updateSocialPostAsync[Update a social post]" \
             "updateSocialPostAttachmentAsync[Update a social post attachment]" \
             "updateSocialPostCommentAsync[Update a social post comment]" \
@@ -579,6 +582,17 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchFeedPostAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialFeedId=:[PATH] "
+"feedPostId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateFeedPostAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -634,6 +648,17 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchSocialGroupAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialGroupId=:[PATH] "
+          "tenantId=:[QUERY] "
+"socialProfileId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -844,6 +869,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "socialProfileId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchSocialPostAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialPostId=:[PATH] "
+          "socialProfileId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

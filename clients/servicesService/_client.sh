@@ -318,16 +318,19 @@ case $state in
             "getServiceCaseTypeByIdAsync[Get a service case type by ID]" \
             "getServiceCaseTypesAsync[Get all service case types]" \
             "getServiceCaseTypesCountAsync[Get service case types count]" \
+            "patchServiceCaseTypeAsync[Patch a service case type]" \
             "updateServiceCaseTypeAsync[Update a service case type]"             "createServiceCaseAsync[Create a service case]" \
             "deleteServiceCaseAsync[Delete a service case]" \
             "getServiceCaseByIdAsync[Get a service case by ID]" \
             "getServiceCasesAsync[Get all service cases]" \
             "getServiceCasesCountAsync[Get service cases count]" \
+            "patchServiceCaseAsync[Patch a service case]" \
             "updateServiceCaseAsync[Update a service case]"             "createServiceLevelAgreementAsync[Create a service level agreement]" \
             "deleteServiceLevelAgreementAsync[Delete a service level agreement]" \
             "getServiceLevelAgreementByIdAsync[Get a service level agreement by ID]" \
             "getServiceLevelAgreementsAsync[Get all service level agreements]" \
             "getServiceLevelAgreementsCountAsync[Get service level agreements count]" \
+            "patchServiceLevelAgreementAsync[Patch a service level agreement]" \
             "updateServiceLevelAgreementAsync[Update a service level agreement]"             "countAllServiceLevelsAsync[Get all service levels count]" \
             "createServiceLevelAsync[Create a service level]" \
             "deleteServiceLevelAsync[Delete a service level]" \
@@ -335,16 +338,19 @@ case $state in
             "getServiceLevelByIdAsync[Get a service level by ID]" \
             "getServiceLevelsAsync[Get all service levels]" \
             "getServiceLevelsCountAsync[Get service levels count]" \
+            "patchServiceLevelAsync[Patch a service level]" \
             "updateServiceLevelAsync[Update a service level]"             "createServiceQueueAsync[Create a service queue]" \
             "deleteServiceQueueAsync[Delete a service queue]" \
             "getServiceQueueByIdAsync[Get a service queue by ID]" \
             "getServiceQueuesAsync[Get all service queues]" \
             "getServiceQueuesCountAsync[Get service queues count]" \
+            "patchServiceQueueAsync[Patch a service queue]" \
             "updateServiceQueueAsync[Update a service queue]"             "createServiceAsync[Create a service]" \
             "deleteServiceAsync[Delete a service]" \
             "getServiceByIdAsync[Get a service by ID]" \
             "getServicesAsync[Get all services]" \
             "getServicesCountAsync[Get services count]" \
+            "patchServiceAsync[Patch a service]" \
             "updateServiceAsync[Update a service]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -518,6 +524,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchServiceCaseTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "serviceCaseTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateServiceCaseTypeAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -575,6 +591,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchServiceCaseAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "serviceCaseId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateServiceCaseAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -627,6 +653,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchServiceLevelAgreementAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "serviceLevelAgreementId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -712,6 +748,17 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchServiceLevelAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "serviceId=:[PATH] "
+"serviceLevelId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateServiceLevelAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -770,6 +817,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchServiceQueueAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "serviceQueueId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateServiceQueueAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -822,6 +879,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchServiceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "serviceId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

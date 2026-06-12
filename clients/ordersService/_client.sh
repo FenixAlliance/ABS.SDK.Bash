@@ -326,6 +326,8 @@ case $state in
             "getOrderLinesCount[Gets the count of order lines for an order.]" \
             "getOrders[Gets a list of orders for a tenant.]" \
             "getOrdersCount[Gets the count of orders for a tenant.]" \
+            "patchOrder[Partially updates an existing order.]" \
+            "patchOrderLine[Partially updates an order line.]" \
             "previewOrderEmailTemplate[Preview the rendered email for an Order.]" \
             "sendOrderEmail[Send a transactional email for an order.]" \
             "submitCart[Submits a cart and creates an order.]" \
@@ -557,6 +559,23 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchOrder)
+        local -a _op_arguments
+        _op_arguments=(
+          "orderId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchOrderLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "orderId=:[PATH] "
+"orderLineId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

@@ -307,6 +307,8 @@ case $state in
             "getDiscountListEntry[Gets a discount list entry by ID]" \
             "getDiscountLists[Retrieves all discount lists]" \
             "getDiscountListsCount[Counts discount lists]" \
+            "patchDiscountList[Patches a discount list]" \
+            "patchDiscountListEntry[Patches a discount list entry]" \
             "updateDiscountList[Updates a discount list]" \
             "updateDiscountListEntry[Updates a discount list entry]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
@@ -333,6 +335,8 @@ case $state in
             "getPriceListPricesAsync[Retrieves prices in a price list]" \
             "getPriceListsAsync[Retrieves all price lists]" \
             "getPriceListsCountAsync[Counts price lists]" \
+            "patchPriceListAsync[Patches a price list]" \
+            "patchPriceListPriceAsync[Patches a price list entry]" \
             "updatePriceListAsync[Updates a price list]" \
             "updatePriceListPriceAsync[Updates a price list entry]"             "getFinalPrice[Gets the final price for an item]" \
             "getPrice[Gets the calculated price for an item]" \
@@ -342,11 +346,13 @@ case $state in
             "getPricingRuleById[Get pricing rule by ID]" \
             "getPricingRules[Get all pricing rules]" \
             "getPricingRulesCountAsync[Counts pricing rules]" \
+            "patchPricingRule[Patch a pricing rule]" \
             "updatePricingRule[Update a pricing rule]"             "createRoundingPolicyAsync[Creates a rounding policy]" \
             "deleteRoundingPolicyAsync[Deletes a rounding policy]" \
             "getRoundingPoliciesAsync[Gets all rounding policies]" \
             "getRoundingPoliciesCountAsync[Counts rounding policies]" \
             "getRoundingPolicyByIdAsync[Gets a rounding policy by ID]" \
+            "patchRoundingPolicyAsync[Patches a rounding policy]" \
             "updateRoundingPolicyAsync[Updates a rounding policy]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -440,6 +446,23 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchDiscountList)
+        local -a _op_arguments
+        _op_arguments=(
+          "discountListId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchDiscountListEntry)
+        local -a _op_arguments
+        _op_arguments=(
+          "discountListId=:[PATH] "
+"discountListEntryId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -641,6 +664,23 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchPriceListAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "priceListId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchPriceListPriceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "priceListId=:[PATH] "
+"priceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updatePriceListAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -748,6 +788,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchPricingRule)
+        local -a _op_arguments
+        _op_arguments=(
+          "pricingRuleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updatePricingRule)
         local -a _op_arguments
         _op_arguments=(
@@ -796,6 +846,16 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getRoundingPolicyByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "roundingPolicyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchRoundingPolicyAsync)
         local -a _op_arguments
         _op_arguments=(
           "roundingPolicyId=:[PATH] "

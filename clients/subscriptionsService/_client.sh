@@ -318,11 +318,13 @@ case $state in
             "getSubscriptionPlanByIdAsync[Get a subscription plan by ID]" \
             "getSubscriptionPlansAsync[Get all subscription plans]" \
             "getSubscriptionPlansCountAsync[Get subscription plans count]" \
+            "patchSubscriptionPlanAsync[Patch a subscription plan]" \
             "updateSubscriptionPlanAsync[Update a subscription plan]"             "createSubscriptionAsync[Create a subscription]" \
             "deleteSubscriptionAsync[Delete a subscription]" \
             "getSubscriptionByIdAsync[Get a subscription by ID]" \
             "getSubscriptionsAsync[Get all subscriptions]" \
             "getSubscriptionsCountAsync[Get subscriptions count]" \
+            "patchSubscriptionAsync[Patch a subscription]" \
             "updateSubscriptionAsync[Update a subscription]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -496,6 +498,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchSubscriptionPlanAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "planId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateSubscriptionPlanAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -548,6 +560,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchSubscriptionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "subscriptionId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

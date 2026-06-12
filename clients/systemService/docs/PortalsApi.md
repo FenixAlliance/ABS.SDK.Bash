@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getSystemPortalById**](PortalsApi.md#getSystemPortalById) | **GET** /api/v2/SystemService/Portals/{portalId} | Retrieve a single system portal by its ID
 [**getSystemPortals**](PortalsApi.md#getSystemPortals) | **GET** /api/v2/SystemService/Portals | Retrieve a list of system portals
 [**getSystemPortalsCount**](PortalsApi.md#getSystemPortalsCount) | **GET** /api/v2/SystemService/Portals/Count | Get the count of system portals
+[**patchSystemPortal**](PortalsApi.md#patchSystemPortal) | **PATCH** /api/v2/SystemService/Portals/{portalId} | Partially update a system portal
 [**updateSystemPortal**](PortalsApi.md#updateSystemPortal) | **PUT** /api/v2/SystemService/Portals/{portalId} | Update a system portal
 
 
@@ -191,6 +192,44 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchSystemPortal
+
+Partially update a system portal
+
+Partially update an existing web portal in the system using a JSON Patch document
+
+### Example
+
+```bash
+ patchSystemPortal portalId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **portalId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -126,24 +126,28 @@ Class | Method | HTTP request | Description
 *PaymentMethodsApi* | [**getPaymentMethodDetailsAsync**](docs/PaymentMethodsApi.md#getpaymentmethoddetailsasync) | **GET** /api/v2/PaymentsService/PaymentMethods/{paymentMethodId} | Gets a payment method by ID
 *PaymentMethodsApi* | [**getPaymentMethodsAsync**](docs/PaymentMethodsApi.md#getpaymentmethodsasync) | **GET** /api/v2/PaymentsService/PaymentMethods | Retrieves all payment methods
 *PaymentMethodsApi* | [**getPaymentMethodsCountAsync**](docs/PaymentMethodsApi.md#getpaymentmethodscountasync) | **GET** /api/v2/PaymentsService/PaymentMethods/Count | Counts payment methods
+*PaymentMethodsApi* | [**patchPaymentMethodAsync**](docs/PaymentMethodsApi.md#patchpaymentmethodasync) | **PATCH** /api/v2/PaymentsService/PaymentMethods/{paymentMethodId} | Patch a payment method
 *PaymentMethodsApi* | [**updatePaymentMethodAsync**](docs/PaymentMethodsApi.md#updatepaymentmethodasync) | **PUT** /api/v2/PaymentsService/PaymentMethods/{paymentMethodId} | Updates a payment method
 *PaymentModesApi* | [**createPaymentModeAsync**](docs/PaymentModesApi.md#createpaymentmodeasync) | **POST** /api/v2/PaymentsService/PaymentModes | Creates a new payment mode
 *PaymentModesApi* | [**deletePaymentModeAsync**](docs/PaymentModesApi.md#deletepaymentmodeasync) | **DELETE** /api/v2/PaymentsService/PaymentModes/{paymentModeId} | Deletes a payment mode
 *PaymentModesApi* | [**getPaymentModeDetailsAsync**](docs/PaymentModesApi.md#getpaymentmodedetailsasync) | **GET** /api/v2/PaymentsService/PaymentModes/{paymentModeId} | Gets a payment mode by ID
 *PaymentModesApi* | [**getPaymentModesAsync**](docs/PaymentModesApi.md#getpaymentmodesasync) | **GET** /api/v2/PaymentsService/PaymentModes | Retrieves all payment modes
 *PaymentModesApi* | [**getPaymentModesCountAsync**](docs/PaymentModesApi.md#getpaymentmodescountasync) | **GET** /api/v2/PaymentsService/PaymentModes/Count | Counts payment modes
+*PaymentModesApi* | [**patchPaymentModeAsync**](docs/PaymentModesApi.md#patchpaymentmodeasync) | **PATCH** /api/v2/PaymentsService/PaymentModes/{paymentModeId} | Patch a payment mode
 *PaymentModesApi* | [**updatePaymentModeAsync**](docs/PaymentModesApi.md#updatepaymentmodeasync) | **PUT** /api/v2/PaymentsService/PaymentModes/{paymentModeId} | Updates a payment mode
 *PaymentTermsApi* | [**createPaymentTermAsync**](docs/PaymentTermsApi.md#createpaymenttermasync) | **POST** /api/v2/PaymentsService/PaymentTerms | Creates a new payment term
 *PaymentTermsApi* | [**deletePaymentTermAsync**](docs/PaymentTermsApi.md#deletepaymenttermasync) | **DELETE** /api/v2/PaymentsService/PaymentTerms/{paymentTermId} | Deletes a payment term
 *PaymentTermsApi* | [**getPaymentTermDetailsAsync**](docs/PaymentTermsApi.md#getpaymenttermdetailsasync) | **GET** /api/v2/PaymentsService/PaymentTerms/{paymentTermId} | Gets a payment term by ID
 *PaymentTermsApi* | [**getPaymentTermsAsync**](docs/PaymentTermsApi.md#getpaymenttermsasync) | **GET** /api/v2/PaymentsService/PaymentTerms | Retrieves all payment terms
 *PaymentTermsApi* | [**getPaymentTermsCountAsync**](docs/PaymentTermsApi.md#getpaymenttermscountasync) | **GET** /api/v2/PaymentsService/PaymentTerms/Count | Counts payment terms
+*PaymentTermsApi* | [**patchPaymentTermAsync**](docs/PaymentTermsApi.md#patchpaymenttermasync) | **PATCH** /api/v2/PaymentsService/PaymentTerms/{paymentTermId} | Patch a payment term
 *PaymentTermsApi* | [**updatePaymentTermAsync**](docs/PaymentTermsApi.md#updatepaymenttermasync) | **PUT** /api/v2/PaymentsService/PaymentTerms/{paymentTermId} | Updates a payment term
 *PaymentsApi* | [**createPaymentAsync**](docs/PaymentsApi.md#createpaymentasync) | **POST** /api/v2/PaymentsService/Payments | Creates a new payment
 *PaymentsApi* | [**deletePaymentAsync**](docs/PaymentsApi.md#deletepaymentasync) | **DELETE** /api/v2/PaymentsService/Payments/{paymentId} | Deletes a payment
 *PaymentsApi* | [**getPaymentAsync**](docs/PaymentsApi.md#getpaymentasync) | **GET** /api/v2/PaymentsService/Payments/{paymentId}/Details | Gets a payment by ID (deprecated)
 *PaymentsApi* | [**getPaymentAsyncV2**](docs/PaymentsApi.md#getpaymentasyncv2) | **GET** /api/v2/PaymentsService/Payments/{paymentId} | Gets a payment by ID
 *PaymentsApi* | [**getPaymentsAsync**](docs/PaymentsApi.md#getpaymentsasync) | **GET** /api/v2/PaymentsService/Payments | Retrieves all payments
+*PaymentsApi* | [**patchPaymentAsync**](docs/PaymentsApi.md#patchpaymentasync) | **PATCH** /api/v2/PaymentsService/Payments/{paymentId} | Patch a payment
 *PaymentsApi* | [**updatePaymentAsync**](docs/PaymentsApi.md#updatepaymentasync) | **PUT** /api/v2/PaymentsService/Payments/{paymentId} | Updates a payment
 
 
@@ -158,6 +162,7 @@ Class | Method | HTTP request | Description
  - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [Operation](docs/Operation.md)
  - [PaymentCreateDto](docs/PaymentCreateDto.md)
  - [PaymentDto](docs/PaymentDto.md)
  - [PaymentDtoListEnvelope](docs/PaymentDtoListEnvelope.md)

@@ -120,6 +120,13 @@ operation_parameters_minimum_occurrences["getDiscountListEntry:::discountListId"
 operation_parameters_minimum_occurrences["getDiscountListEntry:::discountListEntryId"]=1
 operation_parameters_minimum_occurrences["getDiscountLists:::tenantId"]=1
 operation_parameters_minimum_occurrences["getDiscountListsCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchDiscountList:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchDiscountList:::discountListId"]=1
+operation_parameters_minimum_occurrences["patchDiscountList:::Operation"]=0
+operation_parameters_minimum_occurrences["patchDiscountListEntry:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchDiscountListEntry:::discountListId"]=1
+operation_parameters_minimum_occurrences["patchDiscountListEntry:::discountListEntryId"]=1
+operation_parameters_minimum_occurrences["patchDiscountListEntry:::Operation"]=0
 operation_parameters_minimum_occurrences["updateDiscountList:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateDiscountList:::discountListId"]=1
 operation_parameters_minimum_occurrences["updateDiscountList:::DiscountListUpdateDto"]=0
@@ -164,6 +171,13 @@ operation_parameters_minimum_occurrences["getPriceListPricesAsync:::priceListId"
 operation_parameters_minimum_occurrences["getPriceListPricesAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["getPriceListsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPriceListsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPriceListAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPriceListAsync:::priceListId"]=1
+operation_parameters_minimum_occurrences["patchPriceListAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchPriceListPriceAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPriceListPriceAsync:::priceListId"]=1
+operation_parameters_minimum_occurrences["patchPriceListPriceAsync:::priceId"]=1
+operation_parameters_minimum_occurrences["patchPriceListPriceAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updatePriceListAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePriceListAsync:::priceListId"]=1
 operation_parameters_minimum_occurrences["updatePriceListAsync:::PriceListUpdateDto"]=0
@@ -208,6 +222,11 @@ operation_parameters_minimum_occurrences["getPricingRules:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getPricingRulesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPricingRulesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPricingRulesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchPricingRule:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPricingRule:::pricingRuleId"]=1
+operation_parameters_minimum_occurrences["patchPricingRule:::api-version"]=0
+operation_parameters_minimum_occurrences["patchPricingRule:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchPricingRule:::Operation"]=0
 operation_parameters_minimum_occurrences["updatePricingRule:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePricingRule:::pricingRuleId"]=1
 operation_parameters_minimum_occurrences["updatePricingRule:::api-version"]=0
@@ -231,6 +250,11 @@ operation_parameters_minimum_occurrences["getRoundingPolicyByIdAsync:::tenantId"
 operation_parameters_minimum_occurrences["getRoundingPolicyByIdAsync:::roundingPolicyId"]=1
 operation_parameters_minimum_occurrences["getRoundingPolicyByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRoundingPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchRoundingPolicyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchRoundingPolicyAsync:::roundingPolicyId"]=1
+operation_parameters_minimum_occurrences["patchRoundingPolicyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchRoundingPolicyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchRoundingPolicyAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateRoundingPolicyAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateRoundingPolicyAsync:::roundingPolicyId"]=1
 operation_parameters_minimum_occurrences["updateRoundingPolicyAsync:::RoundingPolicyUpdateDto"]=1
@@ -268,6 +292,13 @@ operation_parameters_maximum_occurrences["getDiscountListEntry:::discountListId"
 operation_parameters_maximum_occurrences["getDiscountListEntry:::discountListEntryId"]=0
 operation_parameters_maximum_occurrences["getDiscountLists:::tenantId"]=0
 operation_parameters_maximum_occurrences["getDiscountListsCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchDiscountList:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchDiscountList:::discountListId"]=0
+operation_parameters_maximum_occurrences["patchDiscountList:::Operation"]=0
+operation_parameters_maximum_occurrences["patchDiscountListEntry:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchDiscountListEntry:::discountListId"]=0
+operation_parameters_maximum_occurrences["patchDiscountListEntry:::discountListEntryId"]=0
+operation_parameters_maximum_occurrences["patchDiscountListEntry:::Operation"]=0
 operation_parameters_maximum_occurrences["updateDiscountList:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateDiscountList:::discountListId"]=0
 operation_parameters_maximum_occurrences["updateDiscountList:::DiscountListUpdateDto"]=0
@@ -312,6 +343,13 @@ operation_parameters_maximum_occurrences["getPriceListPricesAsync:::priceListId"
 operation_parameters_maximum_occurrences["getPriceListPricesAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["getPriceListsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPriceListsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPriceListAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPriceListAsync:::priceListId"]=0
+operation_parameters_maximum_occurrences["patchPriceListAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchPriceListPriceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPriceListPriceAsync:::priceListId"]=0
+operation_parameters_maximum_occurrences["patchPriceListPriceAsync:::priceId"]=0
+operation_parameters_maximum_occurrences["patchPriceListPriceAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updatePriceListAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePriceListAsync:::priceListId"]=0
 operation_parameters_maximum_occurrences["updatePriceListAsync:::PriceListUpdateDto"]=0
@@ -356,6 +394,11 @@ operation_parameters_maximum_occurrences["getPricingRules:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getPricingRulesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPricingRulesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPricingRulesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchPricingRule:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPricingRule:::pricingRuleId"]=0
+operation_parameters_maximum_occurrences["patchPricingRule:::api-version"]=0
+operation_parameters_maximum_occurrences["patchPricingRule:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchPricingRule:::Operation"]=0
 operation_parameters_maximum_occurrences["updatePricingRule:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePricingRule:::pricingRuleId"]=0
 operation_parameters_maximum_occurrences["updatePricingRule:::api-version"]=0
@@ -379,6 +422,11 @@ operation_parameters_maximum_occurrences["getRoundingPolicyByIdAsync:::tenantId"
 operation_parameters_maximum_occurrences["getRoundingPolicyByIdAsync:::roundingPolicyId"]=0
 operation_parameters_maximum_occurrences["getRoundingPolicyByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRoundingPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchRoundingPolicyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchRoundingPolicyAsync:::roundingPolicyId"]=0
+operation_parameters_maximum_occurrences["patchRoundingPolicyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchRoundingPolicyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchRoundingPolicyAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateRoundingPolicyAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateRoundingPolicyAsync:::roundingPolicyId"]=0
 operation_parameters_maximum_occurrences["updateRoundingPolicyAsync:::RoundingPolicyUpdateDto"]=0
@@ -413,6 +461,13 @@ operation_parameters_collection_type["getDiscountListEntry:::discountListId"]=""
 operation_parameters_collection_type["getDiscountListEntry:::discountListEntryId"]=""
 operation_parameters_collection_type["getDiscountLists:::tenantId"]=""
 operation_parameters_collection_type["getDiscountListsCount:::tenantId"]=""
+operation_parameters_collection_type["patchDiscountList:::tenantId"]=""
+operation_parameters_collection_type["patchDiscountList:::discountListId"]=""
+operation_parameters_collection_type["patchDiscountList:::Operation"]=
+operation_parameters_collection_type["patchDiscountListEntry:::tenantId"]=""
+operation_parameters_collection_type["patchDiscountListEntry:::discountListId"]=""
+operation_parameters_collection_type["patchDiscountListEntry:::discountListEntryId"]=""
+operation_parameters_collection_type["patchDiscountListEntry:::Operation"]=
 operation_parameters_collection_type["updateDiscountList:::tenantId"]=""
 operation_parameters_collection_type["updateDiscountList:::discountListId"]=""
 operation_parameters_collection_type["updateDiscountList:::DiscountListUpdateDto"]=""
@@ -457,6 +512,13 @@ operation_parameters_collection_type["getPriceListPricesAsync:::priceListId"]=""
 operation_parameters_collection_type["getPriceListPricesAsync:::itemId"]=""
 operation_parameters_collection_type["getPriceListsAsync:::tenantId"]=""
 operation_parameters_collection_type["getPriceListsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPriceListAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPriceListAsync:::priceListId"]=""
+operation_parameters_collection_type["patchPriceListAsync:::Operation"]=
+operation_parameters_collection_type["patchPriceListPriceAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPriceListPriceAsync:::priceListId"]=""
+operation_parameters_collection_type["patchPriceListPriceAsync:::priceId"]=""
+operation_parameters_collection_type["patchPriceListPriceAsync:::Operation"]=
 operation_parameters_collection_type["updatePriceListAsync:::tenantId"]=""
 operation_parameters_collection_type["updatePriceListAsync:::priceListId"]=""
 operation_parameters_collection_type["updatePriceListAsync:::PriceListUpdateDto"]=""
@@ -501,6 +563,11 @@ operation_parameters_collection_type["getPricingRules:::x-api-version"]=""
 operation_parameters_collection_type["getPricingRulesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getPricingRulesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getPricingRulesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchPricingRule:::tenantId"]=""
+operation_parameters_collection_type["patchPricingRule:::pricingRuleId"]=""
+operation_parameters_collection_type["patchPricingRule:::api-version"]=""
+operation_parameters_collection_type["patchPricingRule:::x-api-version"]=""
+operation_parameters_collection_type["patchPricingRule:::Operation"]=
 operation_parameters_collection_type["updatePricingRule:::tenantId"]=""
 operation_parameters_collection_type["updatePricingRule:::pricingRuleId"]=""
 operation_parameters_collection_type["updatePricingRule:::api-version"]=""
@@ -524,6 +591,11 @@ operation_parameters_collection_type["getRoundingPolicyByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getRoundingPolicyByIdAsync:::roundingPolicyId"]=""
 operation_parameters_collection_type["getRoundingPolicyByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getRoundingPolicyByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchRoundingPolicyAsync:::tenantId"]=""
+operation_parameters_collection_type["patchRoundingPolicyAsync:::roundingPolicyId"]=""
+operation_parameters_collection_type["patchRoundingPolicyAsync:::api-version"]=""
+operation_parameters_collection_type["patchRoundingPolicyAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchRoundingPolicyAsync:::Operation"]=
 operation_parameters_collection_type["updateRoundingPolicyAsync:::tenantId"]=""
 operation_parameters_collection_type["updateRoundingPolicyAsync:::roundingPolicyId"]=""
 operation_parameters_collection_type["updateRoundingPolicyAsync:::RoundingPolicyUpdateDto"]=""
@@ -886,7 +958,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}PricingService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}PricingService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -933,6 +1005,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getDiscountListEntry${OFF};Gets a discount list entry by ID
   ${CYAN}getDiscountLists${OFF};Retrieves all discount lists
   ${CYAN}getDiscountListsCount${OFF};Counts discount lists
+  ${CYAN}patchDiscountList${OFF};Patches a discount list
+  ${CYAN}patchDiscountListEntry${OFF};Patches a discount list entry
   ${CYAN}updateDiscountList${OFF};Updates a discount list
   ${CYAN}updateDiscountListEntry${OFF};Updates a discount list entry
 EOF
@@ -971,6 +1045,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getPriceListPricesAsync${OFF};Retrieves prices in a price list
   ${CYAN}getPriceListsAsync${OFF};Retrieves all price lists
   ${CYAN}getPriceListsCountAsync${OFF};Counts price lists
+  ${CYAN}patchPriceListAsync${OFF};Patches a price list
+  ${CYAN}patchPriceListPriceAsync${OFF};Patches a price list entry
   ${CYAN}updatePriceListAsync${OFF};Updates a price list
   ${CYAN}updatePriceListPriceAsync${OFF};Updates a price list entry
 EOF
@@ -992,6 +1068,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getPricingRuleById${OFF};Get pricing rule by ID
   ${CYAN}getPricingRules${OFF};Get all pricing rules
   ${CYAN}getPricingRulesCountAsync${OFF};Counts pricing rules
+  ${CYAN}patchPricingRule${OFF};Patch a pricing rule
   ${CYAN}updatePricingRule${OFF};Update a pricing rule
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1003,6 +1080,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getRoundingPoliciesAsync${OFF};Gets all rounding policies
   ${CYAN}getRoundingPoliciesCountAsync${OFF};Counts rounding policies
   ${CYAN}getRoundingPolicyByIdAsync${OFF};Gets a rounding policy by ID
+  ${CYAN}patchRoundingPolicyAsync${OFF};Patches a rounding policy
   ${CYAN}updateRoundingPolicyAsync${OFF};Updates a rounding policy
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1033,7 +1111,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}PricingService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}PricingService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1053,7 +1131,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}PricingService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}PricingService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1334,6 +1412,63 @@ print_getDiscountListsCount_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchDiscountList operation
+#
+##############################################################################
+print_patchDiscountList_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchDiscountList - Patches a discount list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified discount list using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchDiscountListEntry operation
+#
+##############################################################################
+print_patchDiscountListEntry_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchDiscountListEntry - Patches a discount list entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified discount entry using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}discountListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}discountListEntryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: discountListEntryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1901,6 +2036,55 @@ print_getPriceListsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchPriceListAsync operation
+#
+##############################################################################
+print_patchPriceListAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchPriceListAsync - Patches a price list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified price list using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchPriceListPriceAsync operation
+#
+##############################################################################
+print_patchPriceListPriceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchPriceListPriceAsync - Patches a price list entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified price entry in a price list using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}priceListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}priceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: priceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updatePriceListAsync operation
 #
 ##############################################################################
@@ -2188,6 +2372,35 @@ print_getPricingRulesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchPricingRule operation
+#
+##############################################################################
+print_patchPricingRule_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchPricingRule - Patch a pricing rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a pricing rule using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pricingRuleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pricingRuleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updatePricingRule operation
 #
 ##############################################################################
@@ -2341,6 +2554,35 @@ print_getRoundingPolicyByIdAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchRoundingPolicyAsync operation
+#
+##############################################################################
+print_patchRoundingPolicyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchRoundingPolicyAsync - Patches a rounding policy${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified rounding policy using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}roundingPolicyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: roundingPolicyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2854,6 +3096,158 @@ call_getDiscountListsCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchDiscountList operation
+#
+##############################################################################
+call_patchDiscountList() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(discountListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchDiscountListEntry operation
+#
+##############################################################################
+call_patchDiscountListEntry() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(discountListId discountListEntryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4366,6 +4760,158 @@ call_getPriceListsCountAsync() {
 
 ##############################################################################
 #
+# Call patchPriceListAsync operation
+#
+##############################################################################
+call_patchPriceListAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(priceListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchPriceListPriceAsync operation
+#
+##############################################################################
+call_patchPriceListPriceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(priceListId priceId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updatePriceListAsync operation
 #
 ##############################################################################
@@ -4882,6 +5428,82 @@ call_getPricingRulesCountAsync() {
 
 ##############################################################################
 #
+# Call patchPricingRule operation
+#
+##############################################################################
+call_patchPricingRule() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pricingRuleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/PricingRules/{pricingRuleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updatePricingRule operation
 #
 ##############################################################################
@@ -5178,6 +5800,82 @@ call_getRoundingPolicyByIdAsync() {
 
 ##############################################################################
 #
+# Call patchRoundingPolicyAsync operation
+#
+##############################################################################
+call_patchRoundingPolicyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(roundingPolicyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PricingService/RoundingPolicies/{roundingPolicyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateRoundingPolicyAsync operation
 #
 ##############################################################################
@@ -5382,6 +6080,12 @@ case $key in
     getDiscountListsCount)
     operation="getDiscountListsCount"
     ;;
+    patchDiscountList)
+    operation="patchDiscountList"
+    ;;
+    patchDiscountListEntry)
+    operation="patchDiscountListEntry"
+    ;;
     updateDiscountList)
     operation="updateDiscountList"
     ;;
@@ -5466,6 +6170,12 @@ case $key in
     getPriceListsCountAsync)
     operation="getPriceListsCountAsync"
     ;;
+    patchPriceListAsync)
+    operation="patchPriceListAsync"
+    ;;
+    patchPriceListPriceAsync)
+    operation="patchPriceListPriceAsync"
+    ;;
     updatePriceListAsync)
     operation="updatePriceListAsync"
     ;;
@@ -5499,6 +6209,9 @@ case $key in
     getPricingRulesCountAsync)
     operation="getPricingRulesCountAsync"
     ;;
+    patchPricingRule)
+    operation="patchPricingRule"
+    ;;
     updatePricingRule)
     operation="updatePricingRule"
     ;;
@@ -5516,6 +6229,9 @@ case $key in
     ;;
     getRoundingPolicyByIdAsync)
     operation="getRoundingPolicyByIdAsync"
+    ;;
+    patchRoundingPolicyAsync)
+    operation="patchRoundingPolicyAsync"
     ;;
     updateRoundingPolicyAsync)
     operation="updateRoundingPolicyAsync"
@@ -5640,6 +6356,12 @@ case $operation in
     getDiscountListsCount)
     call_getDiscountListsCount
     ;;
+    patchDiscountList)
+    call_patchDiscountList
+    ;;
+    patchDiscountListEntry)
+    call_patchDiscountListEntry
+    ;;
     updateDiscountList)
     call_updateDiscountList
     ;;
@@ -5724,6 +6446,12 @@ case $operation in
     getPriceListsCountAsync)
     call_getPriceListsCountAsync
     ;;
+    patchPriceListAsync)
+    call_patchPriceListAsync
+    ;;
+    patchPriceListPriceAsync)
+    call_patchPriceListPriceAsync
+    ;;
     updatePriceListAsync)
     call_updatePriceListAsync
     ;;
@@ -5757,6 +6485,9 @@ case $operation in
     getPricingRulesCountAsync)
     call_getPricingRulesCountAsync
     ;;
+    patchPricingRule)
+    call_patchPricingRule
+    ;;
     updatePricingRule)
     call_updatePricingRule
     ;;
@@ -5774,6 +6505,9 @@ case $operation in
     ;;
     getRoundingPolicyByIdAsync)
     call_getRoundingPolicyByIdAsync
+    ;;
+    patchRoundingPolicyAsync)
+    call_patchRoundingPolicyAsync
     ;;
     updateRoundingPolicyAsync)
     call_updateRoundingPolicyAsync

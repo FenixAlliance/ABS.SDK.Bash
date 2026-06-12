@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**revenue** | **string** |  | [optional] [default to null]
 **minEmployees** | **float** |  | [optional] [default to null]
 **maxEmployees** | **float** |  | [optional] [default to null]
 

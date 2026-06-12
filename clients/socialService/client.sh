@@ -149,6 +149,12 @@ operation_parameters_minimum_occurrences["getNotificationAsync:::x-api-version"]
 operation_parameters_minimum_occurrences["getNotificationsCountAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getNotificationsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getNotificationsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFeedPostAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["patchFeedPostAsync:::socialFeedId"]=1
+operation_parameters_minimum_occurrences["patchFeedPostAsync:::feedPostId"]=1
+operation_parameters_minimum_occurrences["patchFeedPostAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchFeedPostAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchFeedPostAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateFeedPostAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["updateFeedPostAsync:::socialFeedId"]=1
 operation_parameters_minimum_occurrences["updateFeedPostAsync:::feedPostId"]=1
@@ -175,6 +181,12 @@ operation_parameters_minimum_occurrences["getSocialGroupByIdAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getSocialGroupsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSocialGroupsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialGroupsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSocialGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchSocialGroupAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["patchSocialGroupAsync:::socialGroupId"]=1
+operation_parameters_minimum_occurrences["patchSocialGroupAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSocialGroupAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSocialGroupAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::socialGroupId"]=1
@@ -264,6 +276,11 @@ operation_parameters_minimum_occurrences["getSocialPostsAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getSocialPostsCountAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getSocialPostsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialPostsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSocialPostAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["patchSocialPostAsync:::socialPostId"]=1
+operation_parameters_minimum_occurrences["patchSocialPostAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSocialPostAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSocialPostAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSocialPostAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["updateSocialPostAsync:::socialPostId"]=1
 operation_parameters_minimum_occurrences["updateSocialPostAsync:::api-version"]=0
@@ -435,6 +452,12 @@ operation_parameters_maximum_occurrences["getNotificationAsync:::x-api-version"]
 operation_parameters_maximum_occurrences["getNotificationsCountAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getNotificationsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getNotificationsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFeedPostAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["patchFeedPostAsync:::socialFeedId"]=0
+operation_parameters_maximum_occurrences["patchFeedPostAsync:::feedPostId"]=0
+operation_parameters_maximum_occurrences["patchFeedPostAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchFeedPostAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchFeedPostAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateFeedPostAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["updateFeedPostAsync:::socialFeedId"]=0
 operation_parameters_maximum_occurrences["updateFeedPostAsync:::feedPostId"]=0
@@ -461,6 +484,12 @@ operation_parameters_maximum_occurrences["getSocialGroupByIdAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getSocialGroupsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSocialGroupsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialGroupsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSocialGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchSocialGroupAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["patchSocialGroupAsync:::socialGroupId"]=0
+operation_parameters_maximum_occurrences["patchSocialGroupAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSocialGroupAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSocialGroupAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::socialGroupId"]=0
@@ -550,6 +579,11 @@ operation_parameters_maximum_occurrences["getSocialPostsAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getSocialPostsCountAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getSocialPostsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialPostsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSocialPostAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["patchSocialPostAsync:::socialPostId"]=0
+operation_parameters_maximum_occurrences["patchSocialPostAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSocialPostAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSocialPostAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSocialPostAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["updateSocialPostAsync:::socialPostId"]=0
 operation_parameters_maximum_occurrences["updateSocialPostAsync:::api-version"]=0
@@ -718,6 +752,12 @@ operation_parameters_collection_type["getNotificationAsync:::x-api-version"]=""
 operation_parameters_collection_type["getNotificationsCountAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getNotificationsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getNotificationsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFeedPostAsync:::socialProfileId"]=""
+operation_parameters_collection_type["patchFeedPostAsync:::socialFeedId"]=""
+operation_parameters_collection_type["patchFeedPostAsync:::feedPostId"]=""
+operation_parameters_collection_type["patchFeedPostAsync:::api-version"]=""
+operation_parameters_collection_type["patchFeedPostAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchFeedPostAsync:::Operation"]=
 operation_parameters_collection_type["updateFeedPostAsync:::socialProfileId"]=""
 operation_parameters_collection_type["updateFeedPostAsync:::socialFeedId"]=""
 operation_parameters_collection_type["updateFeedPostAsync:::feedPostId"]=""
@@ -744,6 +784,12 @@ operation_parameters_collection_type["getSocialGroupByIdAsync:::x-api-version"]=
 operation_parameters_collection_type["getSocialGroupsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSocialGroupsAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialGroupsAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSocialGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["patchSocialGroupAsync:::socialProfileId"]=""
+operation_parameters_collection_type["patchSocialGroupAsync:::socialGroupId"]=""
+operation_parameters_collection_type["patchSocialGroupAsync:::api-version"]=""
+operation_parameters_collection_type["patchSocialGroupAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSocialGroupAsync:::Operation"]=
 operation_parameters_collection_type["updateSocialGroupAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSocialGroupAsync:::socialProfileId"]=""
 operation_parameters_collection_type["updateSocialGroupAsync:::socialGroupId"]=""
@@ -833,6 +879,11 @@ operation_parameters_collection_type["getSocialPostsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getSocialPostsCountAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getSocialPostsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialPostsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSocialPostAsync:::socialProfileId"]=""
+operation_parameters_collection_type["patchSocialPostAsync:::socialPostId"]=""
+operation_parameters_collection_type["patchSocialPostAsync:::api-version"]=""
+operation_parameters_collection_type["patchSocialPostAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSocialPostAsync:::Operation"]=
 operation_parameters_collection_type["updateSocialPostAsync:::socialProfileId"]=""
 operation_parameters_collection_type["updateSocialPostAsync:::socialPostId"]=""
 operation_parameters_collection_type["updateSocialPostAsync:::api-version"]=""
@@ -1300,7 +1351,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}SocialService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}SocialService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1367,6 +1418,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getFeedPostsCountAsync${OFF};Count social feed posts
   ${CYAN}getNotificationAsync${OFF};Get social feed by ID
   ${CYAN}getNotificationsCountAsync${OFF};Count social feeds
+  ${CYAN}patchFeedPostAsync${OFF};Patch a social feed post
   ${CYAN}updateFeedPostAsync${OFF};Update a social feed post
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1378,6 +1430,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteSocialGroupAsync${OFF};Delete a social group
   ${CYAN}getSocialGroupByIdAsync${OFF};Get social group by ID
   ${CYAN}getSocialGroupsAsync${OFF};Get social groups
+  ${CYAN}patchSocialGroupAsync${OFF};Patch a social group
   ${CYAN}updateSocialGroupAsync${OFF};Update a social group
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1404,6 +1457,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getSocialPostReactionsCountAsync${OFF};Count social post reactions
   ${CYAN}getSocialPostsAsync${OFF};Get social posts
   ${CYAN}getSocialPostsCountAsync${OFF};Count social posts
+  ${CYAN}patchSocialPostAsync${OFF};Patch a social post
   ${CYAN}updateSocialPostAsync${OFF};Update a social post
   ${CYAN}updateSocialPostAttachmentAsync${OFF};Update a social post attachment
   ${CYAN}updateSocialPostCommentAsync${OFF};Update a social post comment
@@ -1467,7 +1521,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}SocialService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}SocialService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1487,7 +1541,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}SocialService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}SocialService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -2030,6 +2084,36 @@ print_getNotificationsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchFeedPostAsync operation
+#
+##############################################################################
+print_patchFeedPostAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchFeedPostAsync - Patch a social feed post${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing post in a specific social feed using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialFeedId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialFeedId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}feedPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: feedPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateFeedPostAsync operation
 #
 ##############################################################################
@@ -2187,6 +2271,37 @@ print_getSocialGroupsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchSocialGroupAsync operation
+#
+##############################################################################
+print_patchSocialGroupAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSocialGroupAsync - Patch a social group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing social group using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialGroupId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialGroupId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2761,6 +2876,35 @@ print_getSocialPostsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchSocialPostAsync operation
+#
+##############################################################################
+print_patchSocialPostAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSocialPostAsync - Patch a social post${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing social post by its ID using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4853,6 +4997,82 @@ call_getNotificationsCountAsync() {
 
 ##############################################################################
 #
+# Call patchFeedPostAsync operation
+#
+##############################################################################
+call_patchFeedPostAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialFeedId feedPostId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/SocialFeeds/{socialFeedId}/Posts/{feedPostId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateFeedPostAsync operation
 #
 ##############################################################################
@@ -5144,6 +5364,82 @@ call_getSocialGroupsAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchSocialGroupAsync operation
+#
+##############################################################################
+call_patchSocialGroupAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialGroupId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId socialProfileId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/SocialGroups/{socialGroupId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6100,6 +6396,82 @@ call_getSocialPostsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchSocialPostAsync operation
+#
+##############################################################################
+call_patchSocialPostAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialPostId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/SocialPosts/{socialPostId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7602,6 +7974,9 @@ case $key in
     getNotificationsCountAsync)
     operation="getNotificationsCountAsync"
     ;;
+    patchFeedPostAsync)
+    operation="patchFeedPostAsync"
+    ;;
     updateFeedPostAsync)
     operation="updateFeedPostAsync"
     ;;
@@ -7619,6 +7994,9 @@ case $key in
     ;;
     getSocialGroupsAsync)
     operation="getSocialGroupsAsync"
+    ;;
+    patchSocialGroupAsync)
+    operation="patchSocialGroupAsync"
     ;;
     updateSocialGroupAsync)
     operation="updateSocialGroupAsync"
@@ -7682,6 +8060,9 @@ case $key in
     ;;
     getSocialPostsCountAsync)
     operation="getSocialPostsCountAsync"
+    ;;
+    patchSocialPostAsync)
+    operation="patchSocialPostAsync"
     ;;
     updateSocialPostAsync)
     operation="updateSocialPostAsync"
@@ -7935,6 +8316,9 @@ case $operation in
     getNotificationsCountAsync)
     call_getNotificationsCountAsync
     ;;
+    patchFeedPostAsync)
+    call_patchFeedPostAsync
+    ;;
     updateFeedPostAsync)
     call_updateFeedPostAsync
     ;;
@@ -7952,6 +8336,9 @@ case $operation in
     ;;
     getSocialGroupsAsync)
     call_getSocialGroupsAsync
+    ;;
+    patchSocialGroupAsync)
+    call_patchSocialGroupAsync
     ;;
     updateSocialGroupAsync)
     call_updateSocialGroupAsync
@@ -8015,6 +8402,9 @@ case $operation in
     ;;
     getSocialPostsCountAsync)
     call_getSocialPostsCountAsync
+    ;;
+    patchSocialPostAsync)
+    call_patchSocialPostAsync
     ;;
     updateSocialPostAsync)
     call_updateSocialPostAsync

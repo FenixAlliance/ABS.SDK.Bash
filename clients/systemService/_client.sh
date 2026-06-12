@@ -298,7 +298,11 @@ case $state in
     # Operations
     _values "Operations" \
             "getAndStoreTokens[Get and store antiforgery tokens]" \
-            "isRequestValidAsync[Validate antiforgery request]"             "deleteSystemCart[Delete a system cart]" \
+            "isRequestValidAsync[Validate antiforgery request]"             "deleteSystemBusinessDomain[Delete a business domain]" \
+            "getSystemBusinessDomainById[Retrieve a business domain by its ID]" \
+            "getSystemBusinessDomains[Retrieve all business domains in the system]" \
+            "getSystemBusinessDomainsCount[Get the count of all business domains in the system]" \
+            "verifySystemBusinessDomain[Verify a business domain]"             "deleteSystemCart[Delete a system cart]" \
             "getSystemCartById[Retrieve a single system cart by its ID]" \
             "getSystemCarts[Retrieve a list of system carts]" \
             "getSystemCartsCount[Get the count of system carts]"             "apiV2AiServiceCompletionsCompleteGet[]"             "createSystemContactOption[Create a new contact option (admin)]" \
@@ -306,6 +310,7 @@ case $state in
             "getSystemContactOptionById[Retrieve a single contact option by its ID (admin)]" \
             "getSystemContactOptions[Retrieve a list of contact options (admin)]" \
             "getSystemContactOptionsCount[Get the count of contact options (admin)]" \
+            "patchSystemContactOption[Partially update a contact option (admin)]" \
             "updateSystemContactOption[Update a contact option (admin)]"             "adminPreviewBasicEmailTemplate[Preview a rendered basic email template.]" \
             "adminSendBasicEmail[Send a basic transactional email to recipients.]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
@@ -344,17 +349,20 @@ case $state in
             "getSystemOptionByKey[Retrieve a single system option by its key]" \
             "getSystemOptions[Retrieve a list of system options]" \
             "getSystemOptionsCount[Get the count of system options]" \
+            "patchSystemOption[Partially update a system option]" \
             "updateSystemOption[Update a system option]" \
             "upsertSystemOption[Create or update a system option by key]"             "getSystemOverview[Get system overview information]"             "createSystemPortal[Create a new system portal]" \
             "deleteSystemPortal[Delete a system portal]" \
             "getSystemPortalById[Retrieve a single system portal by its ID]" \
             "getSystemPortals[Retrieve a list of system portals]" \
             "getSystemPortalsCount[Get the count of system portals]" \
+            "patchSystemPortal[Partially update a system portal]" \
             "updateSystemPortal[Update a system portal]"             "createSystemTenantOption[Create a new tenant option (admin)]" \
             "deleteSystemTenantOption[Delete a tenant option (admin)]" \
             "getSystemTenantOptionById[Retrieve a single tenant option by its ID (admin)]" \
             "getSystemTenantOptions[Retrieve a list of tenant options (admin)]" \
             "getSystemTenantOptionsCount[Get the count of tenant options (admin)]" \
+            "patchSystemTenantOption[Partially update a tenant option (admin)]" \
             "updateSystemTenantOption[Update a tenant option (admin)]"             "adminPreviewTenantEmail[Preview the rendered email for a tenant.]" \
             "adminSendTenantEmail[Send an email to a tenant.]" \
             "createTenant[Create a new tenant.]" \
@@ -364,11 +372,13 @@ case $state in
             "getExtendedTenantsCount[Get the total count of extended tenants available on this suite server instance.]" \
             "getTenant[Get a specific tenant by ID.]" \
             "getTenantsCount[Get the total count of tenants available on this suite server instance.]" \
+            "patchTenant[Partially update a specific tenant by ID.]" \
             "updateTenant[Update a specific tenant by ID.]"             "createSystemUserOption[Create a new user option (admin)]" \
             "deleteSystemUserOption[Delete a user option (admin)]" \
             "getSystemUserOptionById[Retrieve a single user option by its ID (admin)]" \
             "getSystemUserOptions[Retrieve a list of user options (admin)]" \
             "getSystemUserOptionsCount[Get the count of user options (admin)]" \
+            "patchSystemUserOption[Partially update a user option (admin)]" \
             "updateSystemUserOption[Update a user option (admin)]"             "adminPreviewUserEmailTemplate[Preview the rendered email for a user.]" \
             "adminSendUserEmail[Send an email to a user.]" \
             "createAccountHolderAsync[Create a new user]" \
@@ -379,6 +389,7 @@ case $state in
             "getUserAsync[Retrieve a user by ID]" \
             "getUsersAsync[Retrieve a list of users]" \
             "getUsersCountAsync[Get the count of users]" \
+            "patchAccountHolderAsync[Partially update a user]" \
             "updateAccountHolderAsync[Update a user]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -399,6 +410,49 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteSystemBusinessDomain)
+        local -a _op_arguments
+        _op_arguments=(
+          "businessDomainId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSystemBusinessDomainById)
+        local -a _op_arguments
+        _op_arguments=(
+          "businessDomainId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSystemBusinessDomains)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSystemBusinessDomainsCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      verifySystemBusinessDomain)
+        local -a _op_arguments
+        _op_arguments=(
+          "businessDomainId=:[PATH] "
+          "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -493,6 +547,16 @@ case $state in
           "contactId=:[PATH] "
           "portalId=:[QUERY] "
 "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchSystemContactOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"optionId=:[PATH] "
+          "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -870,6 +934,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchSystemOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "optionId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateSystemOption)
         local -a _op_arguments
         _op_arguments=(
@@ -939,6 +1012,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchSystemPortal)
+        local -a _op_arguments
+        _op_arguments=(
+          "portalId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateSystemPortal)
         local -a _op_arguments
         _op_arguments=(
@@ -995,6 +1077,16 @@ case $state in
           "tenantId=:[PATH] "
           "portalId=:[QUERY] "
 "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchSystemTenantOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantId=:[PATH] "
+"optionId=:[PATH] "
+          "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -1085,6 +1177,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTenant)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTenant)
         local -a _op_arguments
         _op_arguments=(
@@ -1141,6 +1242,16 @@ case $state in
           "userId=:[PATH] "
           "portalId=:[QUERY] "
 "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchSystemUserOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "userId=:[PATH] "
+"optionId=:[PATH] "
+          "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -1236,6 +1347,15 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchAccountHolderAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "userId=:[PATH] "
+          "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0

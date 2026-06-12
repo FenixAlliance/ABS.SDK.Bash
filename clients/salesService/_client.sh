@@ -318,22 +318,26 @@ case $state in
             "deleteLoyaltyProgramAsync[Delete a loyalty program]" \
             "getLoyaltyProgramAsync[Get loyalty program by ID]" \
             "getLoyaltyProgramsAsync[Get loyalty programs]" \
+            "patchLoyaltyProgramAsync[Patch a loyalty program]" \
             "updateLoyaltyProgramAsync[Update a loyalty program]"             "getQuoteAsync[Get margin details by ID]"             "countPointOfSalesAsync[Get point of sales count]" \
             "createPointOfSaleAsync[Create a point of sale]" \
             "deletePointOfSaleAsync[Delete a point of sale]" \
             "getPointOfSaleAsync[Get point of sale by ID]" \
             "getPointOfSalesAsync[Get point of sales]" \
+            "patchPointOfSaleAsync[Patch a point of sale]" \
             "updatePointOfSaleAsync[Update a point of sale]"             "countSalesLiteraturesAsync[Get sales literatures count]" \
             "createSalesLiteratureAsync[Create a sales literature]" \
             "deleteSalesLiteratureAsync[Delete a sales literature]" \
             "getExtendedSalesLiteraturesAsync[Get extended sales literatures]" \
             "getSalesLiteratureAsync[Get sales literature by ID]" \
             "getSalesLiteraturesAsync[Get sales literatures]" \
+            "patchSalesLiteratureAsync[Patch a sales literature]" \
             "updateSalesLiteratureAsync[Update a sales literature]"             "countStoresAsync[Get stores count]" \
             "createStoreAsync[Create a store]" \
             "deleteStoreAsync[Delete a store]" \
             "getStoreAsync[Get store by ID]" \
             "getStoresAsync[Get stores]" \
+            "patchStoreAsync[Patch a store]" \
             "updateStoreAsync[Update a store]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -497,6 +501,14 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchLoyaltyProgramAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "loyaltyProgramId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateLoyaltyProgramAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -548,6 +560,14 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchPointOfSaleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pointOfSaleId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -603,6 +623,14 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchSalesLiteratureAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "salesLiteratureId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateSalesLiteratureAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -645,6 +673,14 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchStoreAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "storeId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

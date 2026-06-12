@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getServiceLevelAgreementByIdAsync**](ServiceLevelAgreementsApi.md#getServiceLevelAgreementByIdAsync) | **GET** /api/v2/ServicesService/ServiceLevelAgreements/{serviceLevelAgreementId} | Get a service level agreement by ID
 [**getServiceLevelAgreementsAsync**](ServiceLevelAgreementsApi.md#getServiceLevelAgreementsAsync) | **GET** /api/v2/ServicesService/ServiceLevelAgreements | Get all service level agreements
 [**getServiceLevelAgreementsCountAsync**](ServiceLevelAgreementsApi.md#getServiceLevelAgreementsCountAsync) | **GET** /api/v2/ServicesService/ServiceLevelAgreements/Count | Get service level agreements count
+[**patchServiceLevelAgreementAsync**](ServiceLevelAgreementsApi.md#patchServiceLevelAgreementAsync) | **PATCH** /api/v2/ServicesService/ServiceLevelAgreements/{serviceLevelAgreementId} | Patch a service level agreement
 [**updateServiceLevelAgreementAsync**](ServiceLevelAgreementsApi.md#updateServiceLevelAgreementAsync) | **PUT** /api/v2/ServicesService/ServiceLevelAgreements/{serviceLevelAgreementId} | Update a service level agreement
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchServiceLevelAgreementAsync
+
+Patch a service level agreement
+
+Partially updates an existing service level agreement using a JSON Patch document.
+
+### Example
+
+```bash
+ patchServiceLevelAgreementAsync  tenantId=value serviceLevelAgreementId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **serviceLevelAgreementId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**Envelope**](Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

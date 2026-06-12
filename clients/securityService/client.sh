@@ -122,6 +122,11 @@ operation_parameters_minimum_occurrences["getRolesByApplicationAsync:::tenantId"
 operation_parameters_minimum_occurrences["getRolesByApplicationAsync:::applicationId"]=1
 operation_parameters_minimum_occurrences["getRolesByApplicationAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRolesByApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBusinessApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBusinessApplicationAsync:::applicationId"]=1
+operation_parameters_minimum_occurrences["patchBusinessApplicationAsync:::Operation"]=1
+operation_parameters_minimum_occurrences["patchBusinessApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBusinessApplicationAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateBusinessApplicationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBusinessApplicationAsync:::applicationId"]=1
 operation_parameters_minimum_occurrences["updateBusinessApplicationAsync:::BusinessApplicationUpdateDto"]=1
@@ -183,6 +188,11 @@ operation_parameters_minimum_occurrences["getOAuthAuthorizationsCountAsync:::ten
 operation_parameters_minimum_occurrences["getOAuthAuthorizationsCountAsync:::userId"]=0
 operation_parameters_minimum_occurrences["getOAuthAuthorizationsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getOAuthAuthorizationsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchOAuthApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchOAuthApplicationAsync:::applicationId"]=1
+operation_parameters_minimum_occurrences["patchOAuthApplicationAsync:::Operation"]=1
+operation_parameters_minimum_occurrences["patchOAuthApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchOAuthApplicationAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateOAuthApplicationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateOAuthApplicationAsync:::applicationId"]=1
 operation_parameters_minimum_occurrences["updateOAuthApplicationAsync:::OAuthApplicationUpdateDto"]=1
@@ -237,6 +247,11 @@ operation_parameters_minimum_occurrences["getRolesByPermissionAsync:::tenantId"]
 operation_parameters_minimum_occurrences["getRolesByPermissionAsync:::securityPermissionId"]=1
 operation_parameters_minimum_occurrences["getRolesByPermissionAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRolesByPermissionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchPermissionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPermissionAsync:::securityPermissionId"]=1
+operation_parameters_minimum_occurrences["patchPermissionAsync:::Operation"]=1
+operation_parameters_minimum_occurrences["patchPermissionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchPermissionAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["revokePermissionFromBusinessApplicationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["revokePermissionFromBusinessApplicationAsync:::securityPermissionId"]=1
 operation_parameters_minimum_occurrences["revokePermissionFromBusinessApplicationAsync:::applicationId"]=1
@@ -306,6 +321,11 @@ operation_parameters_minimum_occurrences["getRolesByEnrollmentAsync:::x-api-vers
 operation_parameters_minimum_occurrences["getRolesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getRolesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRolesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchRoleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchRoleAsync:::securityRoleId"]=1
+operation_parameters_minimum_occurrences["patchRoleAsync:::Operation"]=1
+operation_parameters_minimum_occurrences["patchRoleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchRoleAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["revokePermissionFromRoleAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["revokePermissionFromRoleAsync:::securityRoleId"]=1
 operation_parameters_minimum_occurrences["revokePermissionFromRoleAsync:::securityPermissionId"]=1
@@ -378,6 +398,11 @@ operation_parameters_maximum_occurrences["getRolesByApplicationAsync:::tenantId"
 operation_parameters_maximum_occurrences["getRolesByApplicationAsync:::applicationId"]=0
 operation_parameters_maximum_occurrences["getRolesByApplicationAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRolesByApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBusinessApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBusinessApplicationAsync:::applicationId"]=0
+operation_parameters_maximum_occurrences["patchBusinessApplicationAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchBusinessApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBusinessApplicationAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateBusinessApplicationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBusinessApplicationAsync:::applicationId"]=0
 operation_parameters_maximum_occurrences["updateBusinessApplicationAsync:::BusinessApplicationUpdateDto"]=0
@@ -439,6 +464,11 @@ operation_parameters_maximum_occurrences["getOAuthAuthorizationsCountAsync:::ten
 operation_parameters_maximum_occurrences["getOAuthAuthorizationsCountAsync:::userId"]=0
 operation_parameters_maximum_occurrences["getOAuthAuthorizationsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getOAuthAuthorizationsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchOAuthApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchOAuthApplicationAsync:::applicationId"]=0
+operation_parameters_maximum_occurrences["patchOAuthApplicationAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchOAuthApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchOAuthApplicationAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateOAuthApplicationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateOAuthApplicationAsync:::applicationId"]=0
 operation_parameters_maximum_occurrences["updateOAuthApplicationAsync:::OAuthApplicationUpdateDto"]=0
@@ -493,6 +523,11 @@ operation_parameters_maximum_occurrences["getRolesByPermissionAsync:::tenantId"]
 operation_parameters_maximum_occurrences["getRolesByPermissionAsync:::securityPermissionId"]=0
 operation_parameters_maximum_occurrences["getRolesByPermissionAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRolesByPermissionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchPermissionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPermissionAsync:::securityPermissionId"]=0
+operation_parameters_maximum_occurrences["patchPermissionAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchPermissionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchPermissionAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["revokePermissionFromBusinessApplicationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["revokePermissionFromBusinessApplicationAsync:::securityPermissionId"]=0
 operation_parameters_maximum_occurrences["revokePermissionFromBusinessApplicationAsync:::applicationId"]=0
@@ -562,6 +597,11 @@ operation_parameters_maximum_occurrences["getRolesByEnrollmentAsync:::x-api-vers
 operation_parameters_maximum_occurrences["getRolesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getRolesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRolesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchRoleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchRoleAsync:::securityRoleId"]=0
+operation_parameters_maximum_occurrences["patchRoleAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchRoleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchRoleAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["revokePermissionFromRoleAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["revokePermissionFromRoleAsync:::securityRoleId"]=0
 operation_parameters_maximum_occurrences["revokePermissionFromRoleAsync:::securityPermissionId"]=0
@@ -631,6 +671,11 @@ operation_parameters_collection_type["getRolesByApplicationAsync:::tenantId"]=""
 operation_parameters_collection_type["getRolesByApplicationAsync:::applicationId"]=""
 operation_parameters_collection_type["getRolesByApplicationAsync:::api-version"]=""
 operation_parameters_collection_type["getRolesByApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBusinessApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["patchBusinessApplicationAsync:::applicationId"]=""
+operation_parameters_collection_type["patchBusinessApplicationAsync:::Operation"]=
+operation_parameters_collection_type["patchBusinessApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["patchBusinessApplicationAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateBusinessApplicationAsync:::tenantId"]=""
 operation_parameters_collection_type["updateBusinessApplicationAsync:::applicationId"]=""
 operation_parameters_collection_type["updateBusinessApplicationAsync:::BusinessApplicationUpdateDto"]=""
@@ -692,6 +737,11 @@ operation_parameters_collection_type["getOAuthAuthorizationsCountAsync:::tenantI
 operation_parameters_collection_type["getOAuthAuthorizationsCountAsync:::userId"]=""
 operation_parameters_collection_type["getOAuthAuthorizationsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getOAuthAuthorizationsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchOAuthApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["patchOAuthApplicationAsync:::applicationId"]=""
+operation_parameters_collection_type["patchOAuthApplicationAsync:::Operation"]=
+operation_parameters_collection_type["patchOAuthApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["patchOAuthApplicationAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateOAuthApplicationAsync:::tenantId"]=""
 operation_parameters_collection_type["updateOAuthApplicationAsync:::applicationId"]=""
 operation_parameters_collection_type["updateOAuthApplicationAsync:::OAuthApplicationUpdateDto"]=""
@@ -746,6 +796,11 @@ operation_parameters_collection_type["getRolesByPermissionAsync:::tenantId"]=""
 operation_parameters_collection_type["getRolesByPermissionAsync:::securityPermissionId"]=""
 operation_parameters_collection_type["getRolesByPermissionAsync:::api-version"]=""
 operation_parameters_collection_type["getRolesByPermissionAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchPermissionAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPermissionAsync:::securityPermissionId"]=""
+operation_parameters_collection_type["patchPermissionAsync:::Operation"]=
+operation_parameters_collection_type["patchPermissionAsync:::api-version"]=""
+operation_parameters_collection_type["patchPermissionAsync:::x-api-version"]=""
 operation_parameters_collection_type["revokePermissionFromBusinessApplicationAsync:::tenantId"]=""
 operation_parameters_collection_type["revokePermissionFromBusinessApplicationAsync:::securityPermissionId"]=""
 operation_parameters_collection_type["revokePermissionFromBusinessApplicationAsync:::applicationId"]=""
@@ -815,6 +870,11 @@ operation_parameters_collection_type["getRolesByEnrollmentAsync:::x-api-version"
 operation_parameters_collection_type["getRolesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getRolesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getRolesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchRoleAsync:::tenantId"]=""
+operation_parameters_collection_type["patchRoleAsync:::securityRoleId"]=""
+operation_parameters_collection_type["patchRoleAsync:::Operation"]=
+operation_parameters_collection_type["patchRoleAsync:::api-version"]=""
+operation_parameters_collection_type["patchRoleAsync:::x-api-version"]=""
 operation_parameters_collection_type["revokePermissionFromRoleAsync:::tenantId"]=""
 operation_parameters_collection_type["revokePermissionFromRoleAsync:::securityRoleId"]=""
 operation_parameters_collection_type["revokePermissionFromRoleAsync:::securityPermissionId"]=""
@@ -1210,7 +1270,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}SecurityService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}SecurityService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1248,6 +1308,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getBusinessApplicationsCountAsync${OFF};Get business applications count
   ${CYAN}getPermissionsByApplicationAsync${OFF};Get permissions by application
   ${CYAN}getRolesByApplicationAsync${OFF};Get roles by application
+  ${CYAN}patchBusinessApplicationAsync${OFF};Patch an existing business application
   ${CYAN}updateBusinessApplicationAsync${OFF};Update an existing business application
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1297,6 +1358,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getOAuthAuthorizationByIdAsync${OFF};Get OAuth authorization by ID
   ${CYAN}getOAuthAuthorizationsAsync${OFF};Get all OAuth authorizations
   ${CYAN}getOAuthAuthorizationsCountAsync${OFF};Get OAuth authorizations count
+  ${CYAN}patchOAuthApplicationAsync${OFF};Patch an existing OAuth application
   ${CYAN}updateOAuthApplicationAsync${OFF};Update an existing OAuth application
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1315,6 +1377,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getPermissionsByEnrollmentAsync${OFF};Get permissions by enrollment
   ${CYAN}getPermissionsCountAsync${OFF};Get permissions count
   ${CYAN}getRolesByPermissionAsync${OFF};Get roles by permission
+  ${CYAN}patchPermissionAsync${OFF};Patch an existing permission
   ${CYAN}revokePermissionFromBusinessApplicationAsync${OFF};Revoke a permission from a business application
   ${CYAN}revokePermissionFromEnrollmentAsync${OFF};Revoke a permission from an enrollment
   ${CYAN}revokeRoleFromPermissionAsync${OFF};Revoke a role from a permission
@@ -1336,6 +1399,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getRolesAsync${OFF};Get all roles
   ${CYAN}getRolesByEnrollmentAsync${OFF};Get roles by enrollment
   ${CYAN}getRolesCountAsync${OFF};Get roles count
+  ${CYAN}patchRoleAsync${OFF};Patch an existing role
   ${CYAN}revokePermissionFromRoleAsync${OFF};Revoke a permission from a role
   ${CYAN}revokeRoleFromBusinessApplicationAsync${OFF};Revoke a role from a business application
   ${CYAN}revokeRoleFromEnrollmentAsync${OFF};Revoke a role from an enrollment
@@ -1390,7 +1454,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}SecurityService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}SecurityService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1410,7 +1474,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}SecurityService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}SecurityService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1603,6 +1667,37 @@ print_getRolesByApplicationAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchBusinessApplicationAsync operation
+#
+##############################################################################
+print_patchBusinessApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBusinessApplicationAsync - Patch an existing business application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing business application using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}applicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: applicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -2231,6 +2326,37 @@ print_getOAuthAuthorizationsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchOAuthApplicationAsync operation
+#
+##############################################################################
+print_patchOAuthApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchOAuthApplicationAsync - Patch an existing OAuth application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing OAuth application using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}applicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: applicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateOAuthApplicationAsync operation
 #
 ##############################################################################
@@ -2593,6 +2719,37 @@ print_getRolesByPermissionAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchPermissionAsync operation
+#
+##############################################################################
+print_patchPermissionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchPermissionAsync - Patch an existing permission${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing security permission using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}securityPermissionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: securityPermissionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3050,6 +3207,37 @@ print_getRolesCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchRoleAsync operation
+#
+##############################################################################
+print_patchRoleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchRoleAsync - Patch an existing role${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing security role using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}securityRoleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: securityRoleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3621,6 +3809,82 @@ call_getRolesByApplicationAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchBusinessApplicationAsync operation
+#
+##############################################################################
+call_patchBusinessApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(applicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/Applications/{applicationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5089,6 +5353,82 @@ call_getOAuthAuthorizationsCountAsync() {
 
 ##############################################################################
 #
+# Call patchOAuthApplicationAsync operation
+#
+##############################################################################
+call_patchOAuthApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(applicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/OAuthApplications/{applicationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateOAuthApplicationAsync operation
 #
 ##############################################################################
@@ -5632,6 +5972,82 @@ call_getRolesByPermissionAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchPermissionAsync operation
+#
+##############################################################################
+call_patchPermissionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(securityPermissionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/Permissions/{securityPermissionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6293,6 +6709,82 @@ call_getRolesCountAsync() {
 
 ##############################################################################
 #
+# Call patchRoleAsync operation
+#
+##############################################################################
+call_patchRoleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(securityRoleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/Roles/{securityRoleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call revokePermissionFromRoleAsync operation
 #
 ##############################################################################
@@ -6809,6 +7301,9 @@ case $key in
     getRolesByApplicationAsync)
     operation="getRolesByApplicationAsync"
     ;;
+    patchBusinessApplicationAsync)
+    operation="patchBusinessApplicationAsync"
+    ;;
     updateBusinessApplicationAsync)
     operation="updateBusinessApplicationAsync"
     ;;
@@ -6896,6 +7391,9 @@ case $key in
     getOAuthAuthorizationsCountAsync)
     operation="getOAuthAuthorizationsCountAsync"
     ;;
+    patchOAuthApplicationAsync)
+    operation="patchOAuthApplicationAsync"
+    ;;
     updateOAuthApplicationAsync)
     operation="updateOAuthApplicationAsync"
     ;;
@@ -6934,6 +7432,9 @@ case $key in
     ;;
     getRolesByPermissionAsync)
     operation="getRolesByPermissionAsync"
+    ;;
+    patchPermissionAsync)
+    operation="patchPermissionAsync"
     ;;
     revokePermissionFromBusinessApplicationAsync)
     operation="revokePermissionFromBusinessApplicationAsync"
@@ -6982,6 +7483,9 @@ case $key in
     ;;
     getRolesCountAsync)
     operation="getRolesCountAsync"
+    ;;
+    patchRoleAsync)
+    operation="patchRoleAsync"
     ;;
     revokePermissionFromRoleAsync)
     operation="revokePermissionFromRoleAsync"
@@ -7121,6 +7625,9 @@ case $operation in
     getRolesByApplicationAsync)
     call_getRolesByApplicationAsync
     ;;
+    patchBusinessApplicationAsync)
+    call_patchBusinessApplicationAsync
+    ;;
     updateBusinessApplicationAsync)
     call_updateBusinessApplicationAsync
     ;;
@@ -7208,6 +7715,9 @@ case $operation in
     getOAuthAuthorizationsCountAsync)
     call_getOAuthAuthorizationsCountAsync
     ;;
+    patchOAuthApplicationAsync)
+    call_patchOAuthApplicationAsync
+    ;;
     updateOAuthApplicationAsync)
     call_updateOAuthApplicationAsync
     ;;
@@ -7246,6 +7756,9 @@ case $operation in
     ;;
     getRolesByPermissionAsync)
     call_getRolesByPermissionAsync
+    ;;
+    patchPermissionAsync)
+    call_patchPermissionAsync
     ;;
     revokePermissionFromBusinessApplicationAsync)
     call_revokePermissionFromBusinessApplicationAsync
@@ -7294,6 +7807,9 @@ case $operation in
     ;;
     getRolesCountAsync)
     call_getRolesCountAsync
+    ;;
+    patchRoleAsync)
+    call_patchRoleAsync
     ;;
     revokePermissionFromRoleAsync)
     call_revokePermissionFromRoleAsync

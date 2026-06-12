@@ -307,6 +307,8 @@ case $state in
             "getBillOfLadingLinesCountAsync[Get bill of lading lines count]" \
             "getBillsOfLadingAsync[Get all bills of lading]" \
             "getBillsOfLadingCountAsync[Get bills of lading count]" \
+            "patchBillOfLadingAsync[Patch a bill of lading]" \
+            "patchBillOfLadingLineAsync[Patch a bill of lading line]" \
             "updateBillOfLadingAsync[Update a bill of lading]" \
             "updateBillOfLadingLineAsync[Update a bill of lading line]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
@@ -329,41 +331,49 @@ case $state in
             "getItemShippingPoliciesAsync[Get all item shipping policies]" \
             "getItemShippingPoliciesCountAsync[Get item shipping policies count]" \
             "getItemShippingPolicyByIdAsync[Get item shipping policy by ID]" \
+            "patchItemShippingPolicyAsync[Patch an item shipping policy]" \
             "updateItemShippingPolicyAsync[Update an item shipping policy]"             "createShipmentAsync[Create a shipment]" \
             "deleteShipmentAsync[Delete a shipment]" \
             "getShipmentByIdAsync[Get shipment by ID]" \
             "getShipmentsAsync[Get all shipments]" \
             "getShipmentsCountAsync[Get shipments count]" \
+            "patchShipmentAsync[Patch a shipment]" \
             "updateShipmentAsync[Update a shipment]"             "createShippingClassAsync[Create a shipping class]" \
             "deleteShippingClassAsync[Delete a shipping class]" \
             "getShippingClassByIdAsync[Get shipping class by ID]" \
             "getShippingClassesAsync[Get all shipping classes]" \
             "getShippingClassesCountAsync[Get shipping classes count]" \
+            "patchShippingClassAsync[Patch a shipping class]" \
             "updateShippingClassAsync[Update a shipping class]"             "createShippingCourierAsync[Create a shipping courier]" \
             "deleteShippingCourierAsync[Delete a shipping courier]" \
             "getShippingCourierByIdAsync[Get shipping courier by ID]" \
             "getShippingCouriersAsync[Get all shipping couriers]" \
             "getShippingCouriersCountAsync[Get shipping couriers count]" \
+            "patchShippingCourierAsync[Patch a shipping courier]" \
             "updateShippingCourierAsync[Update a shipping courier]"             "createShippingLabelAsync[Create a shipping label]" \
             "deleteShippingLabelAsync[Delete a shipping label]" \
             "getShippingLabelByIdAsync[Get shipping label by ID]" \
             "getShippingLabelsAsync[Get all shipping labels]" \
             "getShippingLabelsCountAsync[Get shipping labels count]" \
+            "patchShippingLabelAsync[Patch a shipping label]" \
             "updateShippingLabelAsync[Update a shipping label]"             "createShippingMethodAsync[Create a shipping method]" \
             "deleteShippingMethodAsync[Delete a shipping method]" \
             "getShippingMethodByIdAsync[Get shipping method by ID]" \
             "getShippingMethodsAsync[Get all shipping methods]" \
             "getShippingMethodsCountAsync[Get shipping methods count]" \
+            "patchShippingMethodAsync[Patch a shipping method]" \
             "updateShippingMethodAsync[Update a shipping method]"             "createShippingRegionAsync[Create a shipping region]" \
             "deleteShippingRegionAsync[Delete a shipping region]" \
             "getShippingRegionByIdAsync[Get shipping region by ID]" \
             "getShippingRegionsAsync[Get all shipping regions]" \
             "getShippingRegionsCountAsync[Get shipping regions count]" \
+            "patchShippingRegionAsync[Patch a shipping region]" \
             "updateShippingRegionAsync[Update a shipping region]"             "createShippingZoneAsync[Create a shipping zone]" \
             "deleteShippingZoneAsync[Delete a shipping zone]" \
             "getShippingZoneByIdAsync[Get shipping zone by ID]" \
             "getShippingZonesAsync[Get all shipping zones]" \
             "getShippingZonesCountAsync[Get shipping zones count]" \
+            "patchShippingZoneAsync[Patch a shipping zone]" \
             "updateShippingZoneAsync[Update a shipping zone]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -466,6 +476,27 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchBillOfLadingAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billOfLadingId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchBillOfLadingLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billOfLadingId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -657,6 +688,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchItemShippingPolicyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "policyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateItemShippingPolicyAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -709,6 +750,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchShipmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "shipmentId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -771,6 +822,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchShippingClassAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "classId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateShippingClassAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -823,6 +884,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchShippingCourierAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "courierId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -885,6 +956,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchShippingLabelAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "labelId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateShippingLabelAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -937,6 +1018,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchShippingMethodAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "methodId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -999,6 +1090,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchShippingRegionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "regionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateShippingRegionAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1051,6 +1152,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchShippingZoneAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "zoneId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

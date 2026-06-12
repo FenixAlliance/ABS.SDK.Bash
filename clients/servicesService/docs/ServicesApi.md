@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getServiceByIdAsync**](ServicesApi.md#getServiceByIdAsync) | **GET** /api/v2/ServicesService/Services/{serviceId} | Get a service by ID
 [**getServicesAsync**](ServicesApi.md#getServicesAsync) | **GET** /api/v2/ServicesService/Services | Get all services
 [**getServicesCountAsync**](ServicesApi.md#getServicesCountAsync) | **GET** /api/v2/ServicesService/Services/Count | Get services count
+[**patchServiceAsync**](ServicesApi.md#patchServiceAsync) | **PATCH** /api/v2/ServicesService/Services/{serviceId} | Patch a service
 [**updateServiceAsync**](ServicesApi.md#updateServiceAsync) | **PUT** /api/v2/ServicesService/Services/{serviceId} | Update a service
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchServiceAsync
+
+Patch a service
+
+Partially updates an existing service using a JSON Patch document.
+
+### Example
+
+```bash
+ patchServiceAsync  tenantId=value serviceId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **serviceId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**Envelope**](Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

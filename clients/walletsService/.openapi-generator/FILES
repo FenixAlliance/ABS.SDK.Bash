@@ -29,6 +29,7 @@ docs/LocationDtoEnvelope.md
 docs/LocationDtoListEnvelope.md
 docs/LocationUpdateDto.md
 docs/LoginRequest.md
+docs/Operation.md
 docs/OrderDto.md
 docs/OrderDtoListEnvelope.md
 docs/PaymentChargebackDto.md

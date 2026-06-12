@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **string** |  | [optional] [default to null]
 **employeeLowRangeValue** | **integer** |  | [optional] [default to null]
 **employeeHighRangeValue** | **integer** |  | [optional] [default to null]
 

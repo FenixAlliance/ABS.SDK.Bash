@@ -318,21 +318,25 @@ case $state in
             "getPaymentMethodDetailsAsync[Gets a payment method by ID]" \
             "getPaymentMethodsAsync[Retrieves all payment methods]" \
             "getPaymentMethodsCountAsync[Counts payment methods]" \
+            "patchPaymentMethodAsync[Patch a payment method]" \
             "updatePaymentMethodAsync[Updates a payment method]"             "createPaymentModeAsync[Creates a new payment mode]" \
             "deletePaymentModeAsync[Deletes a payment mode]" \
             "getPaymentModeDetailsAsync[Gets a payment mode by ID]" \
             "getPaymentModesAsync[Retrieves all payment modes]" \
             "getPaymentModesCountAsync[Counts payment modes]" \
+            "patchPaymentModeAsync[Patch a payment mode]" \
             "updatePaymentModeAsync[Updates a payment mode]"             "createPaymentTermAsync[Creates a new payment term]" \
             "deletePaymentTermAsync[Deletes a payment term]" \
             "getPaymentTermDetailsAsync[Gets a payment term by ID]" \
             "getPaymentTermsAsync[Retrieves all payment terms]" \
             "getPaymentTermsCountAsync[Counts payment terms]" \
+            "patchPaymentTermAsync[Patch a payment term]" \
             "updatePaymentTermAsync[Updates a payment term]"             "createPaymentAsync[Creates a new payment]" \
             "deletePaymentAsync[Deletes a payment]" \
             "getPaymentAsync[Gets a payment by ID (deprecated)]" \
             "getPaymentAsyncV2[Gets a payment by ID]" \
             "getPaymentsAsync[Retrieves all payments]" \
+            "patchPaymentAsync[Patch a payment]" \
             "updatePaymentAsync[Updates a payment]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -506,6 +510,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchPaymentMethodAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentMethodId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updatePaymentMethodAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -558,6 +572,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchPaymentModeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentModeId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -620,6 +644,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchPaymentTermAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentTermId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updatePaymentTermAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -665,6 +699,14 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchPaymentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "paymentId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

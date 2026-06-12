@@ -144,6 +144,13 @@ operation_parameters_minimum_occurrences["getOrderLinesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getOrderLinesCount:::orderId"]=1
 operation_parameters_minimum_occurrences["getOrders:::tenantId"]=1
 operation_parameters_minimum_occurrences["getOrdersCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchOrder:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchOrder:::orderId"]=1
+operation_parameters_minimum_occurrences["patchOrder:::Operation"]=0
+operation_parameters_minimum_occurrences["patchOrderLine:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchOrderLine:::orderId"]=1
+operation_parameters_minimum_occurrences["patchOrderLine:::orderLineId"]=1
+operation_parameters_minimum_occurrences["patchOrderLine:::Operation"]=0
 operation_parameters_minimum_occurrences["previewOrderEmailTemplate:::orderId"]=1
 operation_parameters_minimum_occurrences["previewOrderEmailTemplate:::tenantId"]=1
 operation_parameters_minimum_occurrences["previewOrderEmailTemplate:::EmailDispatchRequest"]=0
@@ -214,6 +221,13 @@ operation_parameters_maximum_occurrences["getOrderLinesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getOrderLinesCount:::orderId"]=0
 operation_parameters_maximum_occurrences["getOrders:::tenantId"]=0
 operation_parameters_maximum_occurrences["getOrdersCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchOrder:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchOrder:::orderId"]=0
+operation_parameters_maximum_occurrences["patchOrder:::Operation"]=0
+operation_parameters_maximum_occurrences["patchOrderLine:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchOrderLine:::orderId"]=0
+operation_parameters_maximum_occurrences["patchOrderLine:::orderLineId"]=0
+operation_parameters_maximum_occurrences["patchOrderLine:::Operation"]=0
 operation_parameters_maximum_occurrences["previewOrderEmailTemplate:::orderId"]=0
 operation_parameters_maximum_occurrences["previewOrderEmailTemplate:::tenantId"]=0
 operation_parameters_maximum_occurrences["previewOrderEmailTemplate:::EmailDispatchRequest"]=0
@@ -281,6 +295,13 @@ operation_parameters_collection_type["getOrderLinesCount:::tenantId"]=""
 operation_parameters_collection_type["getOrderLinesCount:::orderId"]=""
 operation_parameters_collection_type["getOrders:::tenantId"]=""
 operation_parameters_collection_type["getOrdersCount:::tenantId"]=""
+operation_parameters_collection_type["patchOrder:::tenantId"]=""
+operation_parameters_collection_type["patchOrder:::orderId"]=""
+operation_parameters_collection_type["patchOrder:::Operation"]=
+operation_parameters_collection_type["patchOrderLine:::tenantId"]=""
+operation_parameters_collection_type["patchOrderLine:::orderId"]=""
+operation_parameters_collection_type["patchOrderLine:::orderLineId"]=""
+operation_parameters_collection_type["patchOrderLine:::Operation"]=
 operation_parameters_collection_type["previewOrderEmailTemplate:::orderId"]=""
 operation_parameters_collection_type["previewOrderEmailTemplate:::tenantId"]=""
 operation_parameters_collection_type["previewOrderEmailTemplate:::EmailDispatchRequest"]=""
@@ -652,7 +673,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}OrdersService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}OrdersService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -724,6 +745,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getOrderLinesCount${OFF};Gets the count of order lines for an order.
   ${CYAN}getOrders${OFF};Gets a list of orders for a tenant.
   ${CYAN}getOrdersCount${OFF};Gets the count of orders for a tenant.
+  ${CYAN}patchOrder${OFF};Partially updates an existing order.
+  ${CYAN}patchOrderLine${OFF};Partially updates an order line.
   ${CYAN}previewOrderEmailTemplate${OFF};Preview the rendered email for an Order.
   ${CYAN}sendOrderEmail${OFF};Send a transactional email for an order.
   ${CYAN}submitCart${OFF};Submits a cart and creates an order.
@@ -758,7 +781,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}OrdersService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}OrdersService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -778,7 +801,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}OrdersService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}OrdersService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1385,6 +1408,55 @@ print_getOrdersCount_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchOrder operation
+#
+##############################################################################
+print_patchOrder_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchOrder - Partially updates an existing order.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Applies a JSON Patch document to partially update an existing order." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchOrderLine operation
+#
+##############################################################################
+print_patchOrderLine_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchOrderLine - Partially updates an order line.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Applies a JSON Patch document to partially update a specific order line." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}orderLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -3049,6 +3121,158 @@ call_getOrdersCount() {
 
 ##############################################################################
 #
+# Call patchOrder operation
+#
+##############################################################################
+call_patchOrder() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(orderId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchOrderLine operation
+#
+##############################################################################
+call_patchOrderLine() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(orderId orderLineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/OrdersService/Orders/{orderId}/Lines/{orderLineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call previewOrderEmailTemplate operation
 #
 ##############################################################################
@@ -3577,6 +3801,12 @@ case $key in
     getOrdersCount)
     operation="getOrdersCount"
     ;;
+    patchOrder)
+    operation="patchOrder"
+    ;;
+    patchOrderLine)
+    operation="patchOrderLine"
+    ;;
     previewOrderEmailTemplate)
     operation="previewOrderEmailTemplate"
     ;;
@@ -3771,6 +4001,12 @@ case $operation in
     ;;
     getOrdersCount)
     call_getOrdersCount
+    ;;
+    patchOrder)
+    call_patchOrder
+    ;;
+    patchOrderLine)
+    call_patchOrderLine
     ;;
     previewOrderEmailTemplate)
     call_previewOrderEmailTemplate

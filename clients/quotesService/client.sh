@@ -148,6 +148,13 @@ operation_parameters_minimum_occurrences["getQuoteLinesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getQuoteLinesCount:::quoteId"]=1
 operation_parameters_minimum_occurrences["getQuotes:::tenantId"]=1
 operation_parameters_minimum_occurrences["getQuotesCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchQuoteAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchQuoteAsync:::quoteId"]=1
+operation_parameters_minimum_occurrences["patchQuoteAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchQuoteLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchQuoteLineAsync:::quoteId"]=1
+operation_parameters_minimum_occurrences["patchQuoteLineAsync:::quoteLineId"]=1
+operation_parameters_minimum_occurrences["patchQuoteLineAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["previewQuoteEmailTemplate:::quoteId"]=1
 operation_parameters_minimum_occurrences["previewQuoteEmailTemplate:::tenantId"]=1
 operation_parameters_minimum_occurrences["previewQuoteEmailTemplate:::EmailDispatchRequest"]=0
@@ -231,6 +238,13 @@ operation_parameters_maximum_occurrences["getQuoteLinesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getQuoteLinesCount:::quoteId"]=0
 operation_parameters_maximum_occurrences["getQuotes:::tenantId"]=0
 operation_parameters_maximum_occurrences["getQuotesCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchQuoteAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchQuoteAsync:::quoteId"]=0
+operation_parameters_maximum_occurrences["patchQuoteAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchQuoteLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchQuoteLineAsync:::quoteId"]=0
+operation_parameters_maximum_occurrences["patchQuoteLineAsync:::quoteLineId"]=0
+operation_parameters_maximum_occurrences["patchQuoteLineAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["previewQuoteEmailTemplate:::quoteId"]=0
 operation_parameters_maximum_occurrences["previewQuoteEmailTemplate:::tenantId"]=0
 operation_parameters_maximum_occurrences["previewQuoteEmailTemplate:::EmailDispatchRequest"]=0
@@ -311,6 +325,13 @@ operation_parameters_collection_type["getQuoteLinesCount:::tenantId"]=""
 operation_parameters_collection_type["getQuoteLinesCount:::quoteId"]=""
 operation_parameters_collection_type["getQuotes:::tenantId"]=""
 operation_parameters_collection_type["getQuotesCount:::tenantId"]=""
+operation_parameters_collection_type["patchQuoteAsync:::tenantId"]=""
+operation_parameters_collection_type["patchQuoteAsync:::quoteId"]=""
+operation_parameters_collection_type["patchQuoteAsync:::Operation"]=
+operation_parameters_collection_type["patchQuoteLineAsync:::tenantId"]=""
+operation_parameters_collection_type["patchQuoteLineAsync:::quoteId"]=""
+operation_parameters_collection_type["patchQuoteLineAsync:::quoteLineId"]=""
+operation_parameters_collection_type["patchQuoteLineAsync:::Operation"]=
 operation_parameters_collection_type["previewQuoteEmailTemplate:::quoteId"]=""
 operation_parameters_collection_type["previewQuoteEmailTemplate:::tenantId"]=""
 operation_parameters_collection_type["previewQuoteEmailTemplate:::EmailDispatchRequest"]=""
@@ -691,7 +712,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}QuotesService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}QuotesService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -765,6 +786,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getQuoteLinesCount${OFF};Get the count of quote lines.
   ${CYAN}getQuotes${OFF};Get a list of quotes.
   ${CYAN}getQuotesCount${OFF};Get the count of quotes.
+  ${CYAN}patchQuoteAsync${OFF};Patch an existing quote.
+  ${CYAN}patchQuoteLineAsync${OFF};Patch a quote line.
   ${CYAN}previewQuoteEmailTemplate${OFF};Preview the rendered email for an invoice.
   ${CYAN}quoteLineExists${OFF};Check if a quote line exists.
   ${CYAN}reopenQuote${OFF};Reopen a closed quote.
@@ -801,7 +824,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}QuotesService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}QuotesService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -821,7 +844,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}QuotesService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}QuotesService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1474,6 +1497,63 @@ print_getQuotesCount_help() {
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchQuoteAsync operation
+#
+##############################################################################
+print_patchQuoteAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchQuoteAsync - Patch an existing quote.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing quote for the specified tenant and quote ID using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}quoteId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: quoteId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchQuoteLineAsync operation
+#
+##############################################################################
+print_patchQuoteLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchQuoteLineAsync - Patch a quote line.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing quote line for the specified quote and tenant using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}quoteId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: quoteId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}quoteLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: quoteLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=404
     echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
@@ -3260,6 +3340,158 @@ call_getQuotesCount() {
 
 ##############################################################################
 #
+# Call patchQuoteAsync operation
+#
+##############################################################################
+call_patchQuoteAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(quoteId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/QuotesService/Quotes/{quoteId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchQuoteLineAsync operation
+#
+##############################################################################
+call_patchQuoteLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(quoteId quoteLineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/QuotesService/Quotes/{quoteId}/Lines/{quoteLineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call previewQuoteEmailTemplate operation
 #
 ##############################################################################
@@ -3906,6 +4138,12 @@ case $key in
     getQuotesCount)
     operation="getQuotesCount"
     ;;
+    patchQuoteAsync)
+    operation="patchQuoteAsync"
+    ;;
+    patchQuoteLineAsync)
+    operation="patchQuoteLineAsync"
+    ;;
     previewQuoteEmailTemplate)
     operation="previewQuoteEmailTemplate"
     ;;
@@ -4112,6 +4350,12 @@ case $operation in
     ;;
     getQuotesCount)
     call_getQuotesCount
+    ;;
+    patchQuoteAsync)
+    call_patchQuoteAsync
+    ;;
+    patchQuoteLineAsync)
+    call_patchQuoteLineAsync
     ;;
     previewQuoteEmailTemplate)
     call_previewQuoteEmailTemplate

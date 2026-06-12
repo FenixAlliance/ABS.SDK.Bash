@@ -134,6 +134,11 @@ operation_parameters_minimum_occurrences["getPaymentMethodsAsync:::x-api-version
 operation_parameters_minimum_occurrences["getPaymentMethodsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPaymentMethodsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPaymentMethodsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchPaymentMethodAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPaymentMethodAsync:::paymentMethodId"]=1
+operation_parameters_minimum_occurrences["patchPaymentMethodAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchPaymentMethodAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchPaymentMethodAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updatePaymentMethodAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePaymentMethodAsync:::paymentMethodId"]=1
 operation_parameters_minimum_occurrences["updatePaymentMethodAsync:::api-version"]=0
@@ -157,6 +162,11 @@ operation_parameters_minimum_occurrences["getPaymentModesAsync:::x-api-version"]
 operation_parameters_minimum_occurrences["getPaymentModesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPaymentModesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPaymentModesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchPaymentModeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPaymentModeAsync:::paymentModeId"]=1
+operation_parameters_minimum_occurrences["patchPaymentModeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchPaymentModeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchPaymentModeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updatePaymentModeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePaymentModeAsync:::paymentModeId"]=1
 operation_parameters_minimum_occurrences["updatePaymentModeAsync:::api-version"]=0
@@ -180,6 +190,11 @@ operation_parameters_minimum_occurrences["getPaymentTermsAsync:::x-api-version"]
 operation_parameters_minimum_occurrences["getPaymentTermsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPaymentTermsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPaymentTermsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchPaymentTermAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPaymentTermAsync:::paymentTermId"]=1
+operation_parameters_minimum_occurrences["patchPaymentTermAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchPaymentTermAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchPaymentTermAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updatePaymentTermAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePaymentTermAsync:::paymentTermId"]=1
 operation_parameters_minimum_occurrences["updatePaymentTermAsync:::api-version"]=0
@@ -194,6 +209,9 @@ operation_parameters_minimum_occurrences["getPaymentAsync:::paymentId"]=1
 operation_parameters_minimum_occurrences["getPaymentAsyncV2:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPaymentAsyncV2:::paymentId"]=1
 operation_parameters_minimum_occurrences["getPaymentsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPaymentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPaymentAsync:::paymentId"]=1
+operation_parameters_minimum_occurrences["patchPaymentAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updatePaymentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePaymentAsync:::paymentId"]=1
 operation_parameters_minimum_occurrences["updatePaymentAsync:::PaymentUpdateDto"]=0
@@ -243,6 +261,11 @@ operation_parameters_maximum_occurrences["getPaymentMethodsAsync:::x-api-version
 operation_parameters_maximum_occurrences["getPaymentMethodsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPaymentMethodsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPaymentMethodsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchPaymentMethodAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPaymentMethodAsync:::paymentMethodId"]=0
+operation_parameters_maximum_occurrences["patchPaymentMethodAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchPaymentMethodAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchPaymentMethodAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updatePaymentMethodAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePaymentMethodAsync:::paymentMethodId"]=0
 operation_parameters_maximum_occurrences["updatePaymentMethodAsync:::api-version"]=0
@@ -266,6 +289,11 @@ operation_parameters_maximum_occurrences["getPaymentModesAsync:::x-api-version"]
 operation_parameters_maximum_occurrences["getPaymentModesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPaymentModesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPaymentModesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchPaymentModeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPaymentModeAsync:::paymentModeId"]=0
+operation_parameters_maximum_occurrences["patchPaymentModeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchPaymentModeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchPaymentModeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updatePaymentModeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePaymentModeAsync:::paymentModeId"]=0
 operation_parameters_maximum_occurrences["updatePaymentModeAsync:::api-version"]=0
@@ -289,6 +317,11 @@ operation_parameters_maximum_occurrences["getPaymentTermsAsync:::x-api-version"]
 operation_parameters_maximum_occurrences["getPaymentTermsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPaymentTermsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPaymentTermsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchPaymentTermAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPaymentTermAsync:::paymentTermId"]=0
+operation_parameters_maximum_occurrences["patchPaymentTermAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchPaymentTermAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchPaymentTermAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updatePaymentTermAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePaymentTermAsync:::paymentTermId"]=0
 operation_parameters_maximum_occurrences["updatePaymentTermAsync:::api-version"]=0
@@ -303,6 +336,9 @@ operation_parameters_maximum_occurrences["getPaymentAsync:::paymentId"]=0
 operation_parameters_maximum_occurrences["getPaymentAsyncV2:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPaymentAsyncV2:::paymentId"]=0
 operation_parameters_maximum_occurrences["getPaymentsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPaymentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPaymentAsync:::paymentId"]=0
+operation_parameters_maximum_occurrences["patchPaymentAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updatePaymentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePaymentAsync:::paymentId"]=0
 operation_parameters_maximum_occurrences["updatePaymentAsync:::PaymentUpdateDto"]=0
@@ -349,6 +385,11 @@ operation_parameters_collection_type["getPaymentMethodsAsync:::x-api-version"]="
 operation_parameters_collection_type["getPaymentMethodsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getPaymentMethodsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getPaymentMethodsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchPaymentMethodAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPaymentMethodAsync:::paymentMethodId"]=""
+operation_parameters_collection_type["patchPaymentMethodAsync:::api-version"]=""
+operation_parameters_collection_type["patchPaymentMethodAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchPaymentMethodAsync:::Operation"]=
 operation_parameters_collection_type["updatePaymentMethodAsync:::tenantId"]=""
 operation_parameters_collection_type["updatePaymentMethodAsync:::paymentMethodId"]=""
 operation_parameters_collection_type["updatePaymentMethodAsync:::api-version"]=""
@@ -372,6 +413,11 @@ operation_parameters_collection_type["getPaymentModesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getPaymentModesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getPaymentModesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getPaymentModesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchPaymentModeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPaymentModeAsync:::paymentModeId"]=""
+operation_parameters_collection_type["patchPaymentModeAsync:::api-version"]=""
+operation_parameters_collection_type["patchPaymentModeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchPaymentModeAsync:::Operation"]=
 operation_parameters_collection_type["updatePaymentModeAsync:::tenantId"]=""
 operation_parameters_collection_type["updatePaymentModeAsync:::paymentModeId"]=""
 operation_parameters_collection_type["updatePaymentModeAsync:::api-version"]=""
@@ -395,6 +441,11 @@ operation_parameters_collection_type["getPaymentTermsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getPaymentTermsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getPaymentTermsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getPaymentTermsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchPaymentTermAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPaymentTermAsync:::paymentTermId"]=""
+operation_parameters_collection_type["patchPaymentTermAsync:::api-version"]=""
+operation_parameters_collection_type["patchPaymentTermAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchPaymentTermAsync:::Operation"]=
 operation_parameters_collection_type["updatePaymentTermAsync:::tenantId"]=""
 operation_parameters_collection_type["updatePaymentTermAsync:::paymentTermId"]=""
 operation_parameters_collection_type["updatePaymentTermAsync:::api-version"]=""
@@ -409,6 +460,9 @@ operation_parameters_collection_type["getPaymentAsync:::paymentId"]=""
 operation_parameters_collection_type["getPaymentAsyncV2:::tenantId"]=""
 operation_parameters_collection_type["getPaymentAsyncV2:::paymentId"]=""
 operation_parameters_collection_type["getPaymentsAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPaymentAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPaymentAsync:::paymentId"]=""
+operation_parameters_collection_type["patchPaymentAsync:::Operation"]=
 operation_parameters_collection_type["updatePaymentAsync:::tenantId"]=""
 operation_parameters_collection_type["updatePaymentAsync:::paymentId"]=""
 operation_parameters_collection_type["updatePaymentAsync:::PaymentUpdateDto"]=""
@@ -769,7 +823,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}PaymentsService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}PaymentsService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -833,6 +887,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getPaymentMethodDetailsAsync${OFF};Gets a payment method by ID
   ${CYAN}getPaymentMethodsAsync${OFF};Retrieves all payment methods
   ${CYAN}getPaymentMethodsCountAsync${OFF};Counts payment methods
+  ${CYAN}patchPaymentMethodAsync${OFF};Patch a payment method
   ${CYAN}updatePaymentMethodAsync${OFF};Updates a payment method
 EOF
 echo "  $ops" | column -t -s ';'
@@ -844,6 +899,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getPaymentModeDetailsAsync${OFF};Gets a payment mode by ID
   ${CYAN}getPaymentModesAsync${OFF};Retrieves all payment modes
   ${CYAN}getPaymentModesCountAsync${OFF};Counts payment modes
+  ${CYAN}patchPaymentModeAsync${OFF};Patch a payment mode
   ${CYAN}updatePaymentModeAsync${OFF};Updates a payment mode
 EOF
 echo "  $ops" | column -t -s ';'
@@ -855,6 +911,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getPaymentTermDetailsAsync${OFF};Gets a payment term by ID
   ${CYAN}getPaymentTermsAsync${OFF};Retrieves all payment terms
   ${CYAN}getPaymentTermsCountAsync${OFF};Counts payment terms
+  ${CYAN}patchPaymentTermAsync${OFF};Patch a payment term
   ${CYAN}updatePaymentTermAsync${OFF};Updates a payment term
 EOF
 echo "  $ops" | column -t -s ';'
@@ -866,6 +923,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getPaymentAsync${OFF};Gets a payment by ID (deprecated)
   ${CYAN}getPaymentAsyncV2${OFF};Gets a payment by ID
   ${CYAN}getPaymentsAsync${OFF};Retrieves all payments
+  ${CYAN}patchPaymentAsync${OFF};Patch a payment
   ${CYAN}updatePaymentAsync${OFF};Updates a payment
 EOF
 echo "  $ops" | column -t -s ';'
@@ -896,7 +954,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}PaymentsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}PaymentsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -916,7 +974,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}PaymentsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}PaymentsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1375,6 +1433,35 @@ print_getPaymentMethodsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchPaymentMethodAsync operation
+#
+##############################################################################
+print_patchPaymentMethodAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchPaymentMethodAsync - Patch a payment method${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a payment method" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}paymentMethodId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: paymentMethodId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updatePaymentMethodAsync operation
 #
 ##############################################################################
@@ -1535,6 +1622,35 @@ print_getPaymentModesCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=403
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchPaymentModeAsync operation
+#
+##############################################################################
+print_patchPaymentModeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchPaymentModeAsync - Patch a payment mode${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a payment mode" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}paymentModeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: paymentModeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -1701,6 +1817,35 @@ print_getPaymentTermsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchPaymentTermAsync operation
+#
+##############################################################################
+print_patchPaymentTermAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchPaymentTermAsync - Patch a payment term${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a payment term" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}paymentTermId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: paymentTermId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updatePaymentTermAsync operation
 #
 ##############################################################################
@@ -1851,6 +1996,32 @@ print_getPaymentsAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchPaymentAsync operation
+#
+##############################################################################
+print_patchPaymentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchPaymentAsync - Patch a payment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a payment" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}paymentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: paymentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3093,6 +3264,82 @@ call_getPaymentMethodsCountAsync() {
 
 ##############################################################################
 #
+# Call patchPaymentMethodAsync operation
+#
+##############################################################################
+call_patchPaymentMethodAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(paymentMethodId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PaymentsService/PaymentMethods/{paymentMethodId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updatePaymentMethodAsync operation
 #
 ##############################################################################
@@ -3384,6 +3631,82 @@ call_getPaymentModesCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchPaymentModeAsync operation
+#
+##############################################################################
+call_patchPaymentModeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(paymentModeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PaymentsService/PaymentModes/{paymentModeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3685,6 +4008,82 @@ call_getPaymentTermsCountAsync() {
 
 ##############################################################################
 #
+# Call patchPaymentTermAsync operation
+#
+##############################################################################
+call_patchPaymentTermAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(paymentTermId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PaymentsService/PaymentTerms/{paymentTermId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updatePaymentTermAsync operation
 #
 ##############################################################################
@@ -3981,6 +4380,82 @@ call_getPaymentsAsync() {
 
 ##############################################################################
 #
+# Call patchPaymentAsync operation
+#
+##############################################################################
+call_patchPaymentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(paymentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PaymentsService/Payments/{paymentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updatePaymentAsync operation
 #
 ##############################################################################
@@ -4221,6 +4696,9 @@ case $key in
     getPaymentMethodsCountAsync)
     operation="getPaymentMethodsCountAsync"
     ;;
+    patchPaymentMethodAsync)
+    operation="patchPaymentMethodAsync"
+    ;;
     updatePaymentMethodAsync)
     operation="updatePaymentMethodAsync"
     ;;
@@ -4238,6 +4716,9 @@ case $key in
     ;;
     getPaymentModesCountAsync)
     operation="getPaymentModesCountAsync"
+    ;;
+    patchPaymentModeAsync)
+    operation="patchPaymentModeAsync"
     ;;
     updatePaymentModeAsync)
     operation="updatePaymentModeAsync"
@@ -4257,6 +4738,9 @@ case $key in
     getPaymentTermsCountAsync)
     operation="getPaymentTermsCountAsync"
     ;;
+    patchPaymentTermAsync)
+    operation="patchPaymentTermAsync"
+    ;;
     updatePaymentTermAsync)
     operation="updatePaymentTermAsync"
     ;;
@@ -4274,6 +4758,9 @@ case $key in
     ;;
     getPaymentsAsync)
     operation="getPaymentsAsync"
+    ;;
+    patchPaymentAsync)
+    operation="patchPaymentAsync"
     ;;
     updatePaymentAsync)
     operation="updatePaymentAsync"
@@ -4434,6 +4921,9 @@ case $operation in
     getPaymentMethodsCountAsync)
     call_getPaymentMethodsCountAsync
     ;;
+    patchPaymentMethodAsync)
+    call_patchPaymentMethodAsync
+    ;;
     updatePaymentMethodAsync)
     call_updatePaymentMethodAsync
     ;;
@@ -4451,6 +4941,9 @@ case $operation in
     ;;
     getPaymentModesCountAsync)
     call_getPaymentModesCountAsync
+    ;;
+    patchPaymentModeAsync)
+    call_patchPaymentModeAsync
     ;;
     updatePaymentModeAsync)
     call_updatePaymentModeAsync
@@ -4470,6 +4963,9 @@ case $operation in
     getPaymentTermsCountAsync)
     call_getPaymentTermsCountAsync
     ;;
+    patchPaymentTermAsync)
+    call_patchPaymentTermAsync
+    ;;
     updatePaymentTermAsync)
     call_updatePaymentTermAsync
     ;;
@@ -4487,6 +4983,9 @@ case $operation in
     ;;
     getPaymentsAsync)
     call_getPaymentsAsync
+    ;;
+    patchPaymentAsync)
+    call_patchPaymentAsync
     ;;
     updatePaymentAsync)
     call_updatePaymentAsync

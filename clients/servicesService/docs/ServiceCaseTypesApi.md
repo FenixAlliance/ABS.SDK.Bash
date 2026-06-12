@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getServiceCaseTypeByIdAsync**](ServiceCaseTypesApi.md#getServiceCaseTypeByIdAsync) | **GET** /api/v2/ServicesService/ServiceCaseTypes/{serviceCaseTypeId} | Get a service case type by ID
 [**getServiceCaseTypesAsync**](ServiceCaseTypesApi.md#getServiceCaseTypesAsync) | **GET** /api/v2/ServicesService/ServiceCaseTypes | Get all service case types
 [**getServiceCaseTypesCountAsync**](ServiceCaseTypesApi.md#getServiceCaseTypesCountAsync) | **GET** /api/v2/ServicesService/ServiceCaseTypes/Count | Get service case types count
+[**patchServiceCaseTypeAsync**](ServiceCaseTypesApi.md#patchServiceCaseTypeAsync) | **PATCH** /api/v2/ServicesService/ServiceCaseTypes/{serviceCaseTypeId} | Patch a service case type
 [**updateServiceCaseTypeAsync**](ServiceCaseTypesApi.md#updateServiceCaseTypeAsync) | **PUT** /api/v2/ServicesService/ServiceCaseTypes/{serviceCaseTypeId} | Update a service case type
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchServiceCaseTypeAsync
+
+Patch a service case type
+
+Partially updates an existing service case type using a JSON Patch document.
+
+### Example
+
+```bash
+ patchServiceCaseTypeAsync  tenantId=value serviceCaseTypeId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **serviceCaseTypeId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**Envelope**](Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

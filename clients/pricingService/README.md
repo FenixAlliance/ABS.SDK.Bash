@@ -114,6 +114,8 @@ Class | Method | HTTP request | Description
 *DiscountListsApi* | [**getDiscountListEntry**](docs/DiscountListsApi.md#getdiscountlistentry) | **GET** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | Gets a discount list entry by ID
 *DiscountListsApi* | [**getDiscountLists**](docs/DiscountListsApi.md#getdiscountlists) | **GET** /api/v2/PricingService/DiscountLists | Retrieves all discount lists
 *DiscountListsApi* | [**getDiscountListsCount**](docs/DiscountListsApi.md#getdiscountlistscount) | **GET** /api/v2/PricingService/DiscountLists/Count | Counts discount lists
+*DiscountListsApi* | [**patchDiscountList**](docs/DiscountListsApi.md#patchdiscountlist) | **PATCH** /api/v2/PricingService/DiscountLists/{discountListId} | Patches a discount list
+*DiscountListsApi* | [**patchDiscountListEntry**](docs/DiscountListsApi.md#patchdiscountlistentry) | **PATCH** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | Patches a discount list entry
 *DiscountListsApi* | [**updateDiscountList**](docs/DiscountListsApi.md#updatediscountlist) | **PUT** /api/v2/PricingService/DiscountLists/{discountListId} | Updates a discount list
 *DiscountListsApi* | [**updateDiscountListEntry**](docs/DiscountListsApi.md#updatediscountlistentry) | **PUT** /api/v2/PricingService/DiscountLists/{discountListId}/Discounts/{discountListEntryId} | Updates a discount list entry
 *FenixAlliancePortalsWebsiteApi* | [**accountLogoutPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountlogoutpost) | **POST** /Account/Logout | 
@@ -142,6 +144,8 @@ Class | Method | HTTP request | Description
 *PriceListsApi* | [**getPriceListPricesAsync**](docs/PriceListsApi.md#getpricelistpricesasync) | **GET** /api/v2/PricingService/PriceLists/{priceListId}/Prices | Retrieves prices in a price list
 *PriceListsApi* | [**getPriceListsAsync**](docs/PriceListsApi.md#getpricelistsasync) | **GET** /api/v2/PricingService/PriceLists | Retrieves all price lists
 *PriceListsApi* | [**getPriceListsCountAsync**](docs/PriceListsApi.md#getpricelistscountasync) | **GET** /api/v2/PricingService/PriceLists/Count | Counts price lists
+*PriceListsApi* | [**patchPriceListAsync**](docs/PriceListsApi.md#patchpricelistasync) | **PATCH** /api/v2/PricingService/PriceLists/{priceListId} | Patches a price list
+*PriceListsApi* | [**patchPriceListPriceAsync**](docs/PriceListsApi.md#patchpricelistpriceasync) | **PATCH** /api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId} | Patches a price list entry
 *PriceListsApi* | [**updatePriceListAsync**](docs/PriceListsApi.md#updatepricelistasync) | **PUT** /api/v2/PricingService/PriceLists/{priceListId} | Updates a price list
 *PriceListsApi* | [**updatePriceListPriceAsync**](docs/PriceListsApi.md#updatepricelistpriceasync) | **PUT** /api/v2/PricingService/PriceLists/{priceListId}/Prices/{priceId} | Updates a price list entry
 *PricesApi* | [**getFinalPrice**](docs/PricesApi.md#getfinalprice) | **GET** /api/v2/PricingService/Prices/{itemId}/FinalPrice | Gets the final price for an item
@@ -153,12 +157,14 @@ Class | Method | HTTP request | Description
 *PricingRulesApi* | [**getPricingRuleById**](docs/PricingRulesApi.md#getpricingrulebyid) | **GET** /api/v2/PricingService/PricingRules/{pricingRuleId} | Get pricing rule by ID
 *PricingRulesApi* | [**getPricingRules**](docs/PricingRulesApi.md#getpricingrules) | **GET** /api/v2/PricingService/PricingRules | Get all pricing rules
 *PricingRulesApi* | [**getPricingRulesCountAsync**](docs/PricingRulesApi.md#getpricingrulescountasync) | **GET** /api/v2/PricingService/PricingRules/Count | Counts pricing rules
+*PricingRulesApi* | [**patchPricingRule**](docs/PricingRulesApi.md#patchpricingrule) | **PATCH** /api/v2/PricingService/PricingRules/{pricingRuleId} | Patch a pricing rule
 *PricingRulesApi* | [**updatePricingRule**](docs/PricingRulesApi.md#updatepricingrule) | **PUT** /api/v2/PricingService/PricingRules/Update | Update a pricing rule
 *RoundingPoliciesApi* | [**createRoundingPolicyAsync**](docs/RoundingPoliciesApi.md#createroundingpolicyasync) | **POST** /api/v2/PricingService/RoundingPolicies | Creates a rounding policy
 *RoundingPoliciesApi* | [**deleteRoundingPolicyAsync**](docs/RoundingPoliciesApi.md#deleteroundingpolicyasync) | **DELETE** /api/v2/PricingService/RoundingPolicies/{roundingPolicyId} | Deletes a rounding policy
 *RoundingPoliciesApi* | [**getRoundingPoliciesAsync**](docs/RoundingPoliciesApi.md#getroundingpoliciesasync) | **GET** /api/v2/PricingService/RoundingPolicies | Gets all rounding policies
 *RoundingPoliciesApi* | [**getRoundingPoliciesCountAsync**](docs/RoundingPoliciesApi.md#getroundingpoliciescountasync) | **GET** /api/v2/PricingService/RoundingPolicies/Count | Counts rounding policies
 *RoundingPoliciesApi* | [**getRoundingPolicyByIdAsync**](docs/RoundingPoliciesApi.md#getroundingpolicybyidasync) | **GET** /api/v2/PricingService/RoundingPolicies/{roundingPolicyId} | Gets a rounding policy by ID
+*RoundingPoliciesApi* | [**patchRoundingPolicyAsync**](docs/RoundingPoliciesApi.md#patchroundingpolicyasync) | **PATCH** /api/v2/PricingService/RoundingPolicies/{roundingPolicyId} | Patches a rounding policy
 *RoundingPoliciesApi* | [**updateRoundingPolicyAsync**](docs/RoundingPoliciesApi.md#updateroundingpolicyasync) | **PUT** /api/v2/PricingService/RoundingPolicies/{roundingPolicyId} | Updates a rounding policy
 
 
@@ -193,6 +199,7 @@ Class | Method | HTTP request | Description
  - [LoginRequest](docs/LoginRequest.md)
  - [Money](docs/Money.md)
  - [MoneyEnvelope](docs/MoneyEnvelope.md)
+ - [Operation](docs/Operation.md)
  - [PriceListCreateDto](docs/PriceListCreateDto.md)
  - [PriceListDto](docs/PriceListDto.md)
  - [PriceListDtoEnvelope](docs/PriceListDtoEnvelope.md)

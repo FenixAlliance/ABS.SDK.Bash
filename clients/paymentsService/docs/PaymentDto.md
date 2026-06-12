@@ -62,6 +62,8 @@ Name | Type | Description | Notes
 **enrollmentId** | **string** |  | [optional] [default to null]
 **bankId** | **string** |  | [optional] [default to null]
 **paymentTokenId** | **string** |  | [optional] [default to null]
+**emisorWalletAccountId** | **string** |  | [optional] [default to null]
+**receiverWalletAccountId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

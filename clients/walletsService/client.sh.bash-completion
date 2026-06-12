@@ -130,6 +130,8 @@ _()
     operations["getWalletWithdrawRequestsCountAsync"]=1
     operations["getWalletWithdrawsAsync"]=1
     operations["getWalletWithdrawsCountAsync"]=1
+    operations["patchWalletBankAccountAsync"]=1
+    operations["patchWalletTokenAsync"]=1
     operations["updateWalletBankAccountAsync"]=1
     operations["updateWalletLocationAsync"]=1
     operations["updateWalletTokenAsync"]=1
@@ -198,6 +200,8 @@ _()
     operation_parameters["getWalletWithdrawRequestsCountAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getWalletWithdrawsAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getWalletWithdrawsCountAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["patchWalletBankAccountAsync"]="walletId= bankAccountId= api-version= x-api-version: "
+    operation_parameters["patchWalletTokenAsync"]="walletId= tokenId= api-version= x-api-version: "
     operation_parameters["updateWalletBankAccountAsync"]="walletId= bankAccountId= api-version= x-api-version: "
     operation_parameters["updateWalletLocationAsync"]="walletId= locationId= api-version= x-api-version: "
     operation_parameters["updateWalletTokenAsync"]="walletId= tokenId= api-version= x-api-version: "

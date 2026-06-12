@@ -92,6 +92,7 @@ _()
     operations["deleteLoyaltyProgramAsync"]=1
     operations["getLoyaltyProgramAsync"]=1
     operations["getLoyaltyProgramsAsync"]=1
+    operations["patchLoyaltyProgramAsync"]=1
     operations["updateLoyaltyProgramAsync"]=1
     operations["getQuoteAsync"]=1
     operations["countPointOfSalesAsync"]=1
@@ -99,6 +100,7 @@ _()
     operations["deletePointOfSaleAsync"]=1
     operations["getPointOfSaleAsync"]=1
     operations["getPointOfSalesAsync"]=1
+    operations["patchPointOfSaleAsync"]=1
     operations["updatePointOfSaleAsync"]=1
     operations["countSalesLiteraturesAsync"]=1
     operations["createSalesLiteratureAsync"]=1
@@ -106,12 +108,14 @@ _()
     operations["getExtendedSalesLiteraturesAsync"]=1
     operations["getSalesLiteratureAsync"]=1
     operations["getSalesLiteraturesAsync"]=1
+    operations["patchSalesLiteratureAsync"]=1
     operations["updateSalesLiteratureAsync"]=1
     operations["countStoresAsync"]=1
     operations["createStoreAsync"]=1
     operations["deleteStoreAsync"]=1
     operations["getStoreAsync"]=1
     operations["getStoresAsync"]=1
+    operations["patchStoreAsync"]=1
     operations["updateStoreAsync"]=1
 
     # An associative array of operations to their parameters
@@ -140,6 +144,7 @@ _()
     operation_parameters["deleteLoyaltyProgramAsync"]="loyaltyProgramId= tenantId= "
     operation_parameters["getLoyaltyProgramAsync"]="loyaltyProgramId= tenantId= "
     operation_parameters["getLoyaltyProgramsAsync"]="tenantId= "
+    operation_parameters["patchLoyaltyProgramAsync"]="loyaltyProgramId= tenantId= "
     operation_parameters["updateLoyaltyProgramAsync"]="loyaltyProgramId= tenantId= "
     operation_parameters["getQuoteAsync"]="marginId= api-version= x-api-version: "
     operation_parameters["countPointOfSalesAsync"]="tenantId= "
@@ -147,6 +152,7 @@ _()
     operation_parameters["deletePointOfSaleAsync"]="pointOfSaleId= tenantId= "
     operation_parameters["getPointOfSaleAsync"]="pointOfSaleId= tenantId= "
     operation_parameters["getPointOfSalesAsync"]="tenantId= "
+    operation_parameters["patchPointOfSaleAsync"]="pointOfSaleId= tenantId= "
     operation_parameters["updatePointOfSaleAsync"]="pointOfSaleId= tenantId= "
     operation_parameters["countSalesLiteraturesAsync"]="tenantId= "
     operation_parameters["createSalesLiteratureAsync"]="tenantId= "
@@ -154,12 +160,14 @@ _()
     operation_parameters["getExtendedSalesLiteraturesAsync"]="tenantId= "
     operation_parameters["getSalesLiteratureAsync"]="salesLiteratureId= tenantId= "
     operation_parameters["getSalesLiteraturesAsync"]="tenantId= "
+    operation_parameters["patchSalesLiteratureAsync"]="salesLiteratureId= tenantId= "
     operation_parameters["updateSalesLiteratureAsync"]="salesLiteratureId= tenantId= "
     operation_parameters["countStoresAsync"]="tenantId= "
     operation_parameters["createStoreAsync"]="tenantId= "
     operation_parameters["deleteStoreAsync"]="storeId= tenantId= "
     operation_parameters["getStoreAsync"]="storeId= tenantId= "
     operation_parameters["getStoresAsync"]="tenantId= "
+    operation_parameters["patchStoreAsync"]="storeId= tenantId= "
     operation_parameters["updateStoreAsync"]="storeId= tenantId= "
 
     # An associative array of possible values for enum parameters

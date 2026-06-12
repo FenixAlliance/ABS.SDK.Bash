@@ -95,12 +95,14 @@ _()
     operations["getFeedPostsCountAsync"]=1
     operations["getNotificationAsync"]=1
     operations["getNotificationsCountAsync"]=1
+    operations["patchFeedPostAsync"]=1
     operations["updateFeedPostAsync"]=1
     operations["countSocialGroupsAsync"]=1
     operations["createSocialGroupAsync"]=1
     operations["deleteSocialGroupAsync"]=1
     operations["getSocialGroupByIdAsync"]=1
     operations["getSocialGroupsAsync"]=1
+    operations["patchSocialGroupAsync"]=1
     operations["updateSocialGroupAsync"]=1
     operations["createSocialPostAsync"]=1
     operations["createSocialPostAttachmentAsync"]=1
@@ -122,6 +124,7 @@ _()
     operations["getSocialPostReactionsCountAsync"]=1
     operations["getSocialPostsAsync"]=1
     operations["getSocialPostsCountAsync"]=1
+    operations["patchSocialPostAsync"]=1
     operations["updateSocialPostAsync"]=1
     operations["updateSocialPostAttachmentAsync"]=1
     operations["updateSocialPostCommentAsync"]=1
@@ -181,12 +184,14 @@ _()
     operation_parameters["getFeedPostsCountAsync"]="socialFeedId= socialProfileId= api-version= x-api-version: "
     operation_parameters["getNotificationAsync"]="socialFeedId= socialProfileId= api-version= x-api-version: "
     operation_parameters["getNotificationsCountAsync"]="socialProfileId= api-version= x-api-version: "
+    operation_parameters["patchFeedPostAsync"]="socialFeedId= feedPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["updateFeedPostAsync"]="socialFeedId= feedPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["countSocialGroupsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createSocialGroupAsync"]="tenantId= socialProfileId= api-version= x-api-version: "
     operation_parameters["deleteSocialGroupAsync"]="socialGroupId= tenantId= socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialGroupByIdAsync"]="socialGroupId= tenantId= api-version= x-api-version: "
     operation_parameters["getSocialGroupsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchSocialGroupAsync"]="socialGroupId= tenantId= socialProfileId= api-version= x-api-version: "
     operation_parameters["updateSocialGroupAsync"]="socialGroupId= tenantId= socialProfileId= api-version= x-api-version: "
     operation_parameters["createSocialPostAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["createSocialPostAttachmentAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
@@ -208,6 +213,7 @@ _()
     operation_parameters["getSocialPostReactionsCountAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialPostsAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialPostsCountAsync"]="socialProfileId= api-version= x-api-version: "
+    operation_parameters["patchSocialPostAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["updateSocialPostAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["updateSocialPostAttachmentAsync"]="socialPostId= attachmentId= socialProfileId= api-version= x-api-version: "
     operation_parameters["updateSocialPostCommentAsync"]="socialPostId= commentId= socialProfileId= api-version= x-api-version: "

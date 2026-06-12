@@ -126,18 +126,21 @@ Class | Method | HTTP request | Description
 *ServiceCaseTypesApi* | [**getServiceCaseTypeByIdAsync**](docs/ServiceCaseTypesApi.md#getservicecasetypebyidasync) | **GET** /api/v2/ServicesService/ServiceCaseTypes/{serviceCaseTypeId} | Get a service case type by ID
 *ServiceCaseTypesApi* | [**getServiceCaseTypesAsync**](docs/ServiceCaseTypesApi.md#getservicecasetypesasync) | **GET** /api/v2/ServicesService/ServiceCaseTypes | Get all service case types
 *ServiceCaseTypesApi* | [**getServiceCaseTypesCountAsync**](docs/ServiceCaseTypesApi.md#getservicecasetypescountasync) | **GET** /api/v2/ServicesService/ServiceCaseTypes/Count | Get service case types count
+*ServiceCaseTypesApi* | [**patchServiceCaseTypeAsync**](docs/ServiceCaseTypesApi.md#patchservicecasetypeasync) | **PATCH** /api/v2/ServicesService/ServiceCaseTypes/{serviceCaseTypeId} | Patch a service case type
 *ServiceCaseTypesApi* | [**updateServiceCaseTypeAsync**](docs/ServiceCaseTypesApi.md#updateservicecasetypeasync) | **PUT** /api/v2/ServicesService/ServiceCaseTypes/{serviceCaseTypeId} | Update a service case type
 *ServiceCasesApi* | [**createServiceCaseAsync**](docs/ServiceCasesApi.md#createservicecaseasync) | **POST** /api/v2/ServicesService/ServiceCases | Create a service case
 *ServiceCasesApi* | [**deleteServiceCaseAsync**](docs/ServiceCasesApi.md#deleteservicecaseasync) | **DELETE** /api/v2/ServicesService/ServiceCases/{serviceCaseId} | Delete a service case
 *ServiceCasesApi* | [**getServiceCaseByIdAsync**](docs/ServiceCasesApi.md#getservicecasebyidasync) | **GET** /api/v2/ServicesService/ServiceCases/{serviceCaseId} | Get a service case by ID
 *ServiceCasesApi* | [**getServiceCasesAsync**](docs/ServiceCasesApi.md#getservicecasesasync) | **GET** /api/v2/ServicesService/ServiceCases | Get all service cases
 *ServiceCasesApi* | [**getServiceCasesCountAsync**](docs/ServiceCasesApi.md#getservicecasescountasync) | **GET** /api/v2/ServicesService/ServiceCases/Count | Get service cases count
+*ServiceCasesApi* | [**patchServiceCaseAsync**](docs/ServiceCasesApi.md#patchservicecaseasync) | **PATCH** /api/v2/ServicesService/ServiceCases/{serviceCaseId} | Patch a service case
 *ServiceCasesApi* | [**updateServiceCaseAsync**](docs/ServiceCasesApi.md#updateservicecaseasync) | **PUT** /api/v2/ServicesService/ServiceCases/{serviceCaseId} | Update a service case
 *ServiceLevelAgreementsApi* | [**createServiceLevelAgreementAsync**](docs/ServiceLevelAgreementsApi.md#createservicelevelagreementasync) | **POST** /api/v2/ServicesService/ServiceLevelAgreements | Create a service level agreement
 *ServiceLevelAgreementsApi* | [**deleteServiceLevelAgreementAsync**](docs/ServiceLevelAgreementsApi.md#deleteservicelevelagreementasync) | **DELETE** /api/v2/ServicesService/ServiceLevelAgreements/{serviceLevelAgreementId} | Delete a service level agreement
 *ServiceLevelAgreementsApi* | [**getServiceLevelAgreementByIdAsync**](docs/ServiceLevelAgreementsApi.md#getservicelevelagreementbyidasync) | **GET** /api/v2/ServicesService/ServiceLevelAgreements/{serviceLevelAgreementId} | Get a service level agreement by ID
 *ServiceLevelAgreementsApi* | [**getServiceLevelAgreementsAsync**](docs/ServiceLevelAgreementsApi.md#getservicelevelagreementsasync) | **GET** /api/v2/ServicesService/ServiceLevelAgreements | Get all service level agreements
 *ServiceLevelAgreementsApi* | [**getServiceLevelAgreementsCountAsync**](docs/ServiceLevelAgreementsApi.md#getservicelevelagreementscountasync) | **GET** /api/v2/ServicesService/ServiceLevelAgreements/Count | Get service level agreements count
+*ServiceLevelAgreementsApi* | [**patchServiceLevelAgreementAsync**](docs/ServiceLevelAgreementsApi.md#patchservicelevelagreementasync) | **PATCH** /api/v2/ServicesService/ServiceLevelAgreements/{serviceLevelAgreementId} | Patch a service level agreement
 *ServiceLevelAgreementsApi* | [**updateServiceLevelAgreementAsync**](docs/ServiceLevelAgreementsApi.md#updateservicelevelagreementasync) | **PUT** /api/v2/ServicesService/ServiceLevelAgreements/{serviceLevelAgreementId} | Update a service level agreement
 *ServiceLevelsApi* | [**countAllServiceLevelsAsync**](docs/ServiceLevelsApi.md#countallservicelevelsasync) | **GET** /api/v2/ServicesService/ServiceLevels/Count | Get all service levels count
 *ServiceLevelsApi* | [**createServiceLevelAsync**](docs/ServiceLevelsApi.md#createservicelevelasync) | **POST** /api/v2/ServicesService/Services/{serviceId}/ServiceLevels | Create a service level
@@ -146,18 +149,21 @@ Class | Method | HTTP request | Description
 *ServiceLevelsApi* | [**getServiceLevelByIdAsync**](docs/ServiceLevelsApi.md#getservicelevelbyidasync) | **GET** /api/v2/ServicesService/Services/{serviceId}/ServiceLevels/{serviceLevelId} | Get a service level by ID
 *ServiceLevelsApi* | [**getServiceLevelsAsync**](docs/ServiceLevelsApi.md#getservicelevelsasync) | **GET** /api/v2/ServicesService/Services/{serviceId}/ServiceLevels | Get all service levels
 *ServiceLevelsApi* | [**getServiceLevelsCountAsync**](docs/ServiceLevelsApi.md#getservicelevelscountasync) | **GET** /api/v2/ServicesService/Services/{serviceId}/ServiceLevels/Count | Get service levels count
+*ServiceLevelsApi* | [**patchServiceLevelAsync**](docs/ServiceLevelsApi.md#patchservicelevelasync) | **PATCH** /api/v2/ServicesService/Services/{serviceId}/ServiceLevels/{serviceLevelId} | Patch a service level
 *ServiceLevelsApi* | [**updateServiceLevelAsync**](docs/ServiceLevelsApi.md#updateservicelevelasync) | **PUT** /api/v2/ServicesService/Services/{serviceId}/ServiceLevels/{serviceLevelId} | Update a service level
 *ServiceQueuesApi* | [**createServiceQueueAsync**](docs/ServiceQueuesApi.md#createservicequeueasync) | **POST** /api/v2/ServicesService/ServiceQueues | Create a service queue
 *ServiceQueuesApi* | [**deleteServiceQueueAsync**](docs/ServiceQueuesApi.md#deleteservicequeueasync) | **DELETE** /api/v2/ServicesService/ServiceQueues/{serviceQueueId} | Delete a service queue
 *ServiceQueuesApi* | [**getServiceQueueByIdAsync**](docs/ServiceQueuesApi.md#getservicequeuebyidasync) | **GET** /api/v2/ServicesService/ServiceQueues/{serviceQueueId} | Get a service queue by ID
 *ServiceQueuesApi* | [**getServiceQueuesAsync**](docs/ServiceQueuesApi.md#getservicequeuesasync) | **GET** /api/v2/ServicesService/ServiceQueues | Get all service queues
 *ServiceQueuesApi* | [**getServiceQueuesCountAsync**](docs/ServiceQueuesApi.md#getservicequeuescountasync) | **GET** /api/v2/ServicesService/ServiceQueues/Count | Get service queues count
+*ServiceQueuesApi* | [**patchServiceQueueAsync**](docs/ServiceQueuesApi.md#patchservicequeueasync) | **PATCH** /api/v2/ServicesService/ServiceQueues/{serviceQueueId} | Patch a service queue
 *ServiceQueuesApi* | [**updateServiceQueueAsync**](docs/ServiceQueuesApi.md#updateservicequeueasync) | **PUT** /api/v2/ServicesService/ServiceQueues/{serviceQueueId} | Update a service queue
 *ServicesApi* | [**createServiceAsync**](docs/ServicesApi.md#createserviceasync) | **POST** /api/v2/ServicesService/Services | Create a service
 *ServicesApi* | [**deleteServiceAsync**](docs/ServicesApi.md#deleteserviceasync) | **DELETE** /api/v2/ServicesService/Services/{serviceId} | Delete a service
 *ServicesApi* | [**getServiceByIdAsync**](docs/ServicesApi.md#getservicebyidasync) | **GET** /api/v2/ServicesService/Services/{serviceId} | Get a service by ID
 *ServicesApi* | [**getServicesAsync**](docs/ServicesApi.md#getservicesasync) | **GET** /api/v2/ServicesService/Services | Get all services
 *ServicesApi* | [**getServicesCountAsync**](docs/ServicesApi.md#getservicescountasync) | **GET** /api/v2/ServicesService/Services/Count | Get services count
+*ServicesApi* | [**patchServiceAsync**](docs/ServicesApi.md#patchserviceasync) | **PATCH** /api/v2/ServicesService/Services/{serviceId} | Patch a service
 *ServicesApi* | [**updateServiceAsync**](docs/ServicesApi.md#updateserviceasync) | **PUT** /api/v2/ServicesService/Services/{serviceId} | Update a service
 
 
@@ -172,6 +178,7 @@ Class | Method | HTTP request | Description
  - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [Operation](docs/Operation.md)
  - [RefreshRequest](docs/RefreshRequest.md)
  - [RegisterRequest](docs/RegisterRequest.md)
  - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)

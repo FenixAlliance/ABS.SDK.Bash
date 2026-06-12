@@ -117,6 +117,11 @@ operation_parameters_minimum_occurrences["getTenantDepartments:::x-api-version"]
 operation_parameters_minimum_occurrences["getTenantDepartmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantDepartmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantDepartmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantDepartmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantDepartmentAsync:::tenantDepartmentId"]=1
+operation_parameters_minimum_occurrences["patchTenantDepartmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantDepartmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantDepartmentAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantDepartment:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantDepartment:::tenantDepartmentId"]=1
 operation_parameters_minimum_occurrences["updateTenantDepartment:::api-version"]=0
@@ -140,6 +145,11 @@ operation_parameters_minimum_occurrences["getTenantEmployeeEnrollments:::x-api-v
 operation_parameters_minimum_occurrences["getTenantEmployeeEnrollmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantEmployeeEnrollmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantEmployeeEnrollmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantEmployeeEnrollmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantEmployeeEnrollmentAsync:::tenantEmployeeEnrollmentId"]=1
+operation_parameters_minimum_occurrences["patchTenantEmployeeEnrollmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantEmployeeEnrollmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantEmployeeEnrollmentAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantEmployeeEnrollment:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantEmployeeEnrollment:::tenantEmployeeEnrollmentId"]=1
 operation_parameters_minimum_occurrences["updateTenantEmployeeEnrollment:::api-version"]=0
@@ -170,6 +180,11 @@ operation_parameters_minimum_occurrences["getTenantEnrollments:::x-api-version"]
 operation_parameters_minimum_occurrences["getTenantEnrollmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantEnrollmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantEnrollmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantEnrollmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantEnrollmentAsync:::enrollmentId"]=1
+operation_parameters_minimum_occurrences["patchTenantEnrollmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantEnrollmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantEnrollmentAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantEnrollment:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantEnrollment:::enrollmentId"]=1
 operation_parameters_minimum_occurrences["updateTenantEnrollment:::api-version"]=0
@@ -210,6 +225,11 @@ operation_parameters_minimum_occurrences["getTenantIndustryById:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantIndustryById:::tenantIndustryId"]=1
 operation_parameters_minimum_occurrences["getTenantIndustryById:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantIndustryById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantIndustryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantIndustryAsync:::tenantIndustryId"]=1
+operation_parameters_minimum_occurrences["patchTenantIndustryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantIndustryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantIndustryAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantIndustry:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantIndustry:::tenantIndustryId"]=1
 operation_parameters_minimum_occurrences["updateTenantIndustry:::api-version"]=0
@@ -266,6 +286,11 @@ operation_parameters_minimum_occurrences["getTenantOptionsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantOptionsCount:::portalId"]=0
 operation_parameters_minimum_occurrences["getTenantOptionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantOption:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantOption:::optionId"]=1
+operation_parameters_minimum_occurrences["patchTenantOption:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantOption:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantOption:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantOption:::optionId"]=1
 operation_parameters_minimum_occurrences["updateTenantOption:::api-version"]=0
@@ -295,6 +320,11 @@ operation_parameters_minimum_occurrences["getTenantPositions:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantPositionsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantPositionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantPositionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantPosition:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantPosition:::tenantPositionId"]=1
+operation_parameters_minimum_occurrences["patchTenantPosition:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantPosition:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantPosition:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantPosition:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantPosition:::tenantPositionId"]=1
 operation_parameters_minimum_occurrences["updateTenantPosition:::api-version"]=0
@@ -318,6 +348,11 @@ operation_parameters_minimum_occurrences["getTenantSegments:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantSegmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantSegmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantSegmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantSegment:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantSegment:::tenantSegmentId"]=1
+operation_parameters_minimum_occurrences["patchTenantSegment:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantSegment:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantSegment:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantSegment:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantSegment:::tenantSegmentId"]=1
 operation_parameters_minimum_occurrences["updateTenantSegment:::api-version"]=0
@@ -341,6 +376,11 @@ operation_parameters_minimum_occurrences["getTenantSizes:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantSizesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantSizesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantSizesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantSize:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantSize:::tenantSizeId"]=1
+operation_parameters_minimum_occurrences["patchTenantSize:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantSize:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantSize:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantSize:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantSize:::tenantSizeId"]=1
 operation_parameters_minimum_occurrences["updateTenantSize:::api-version"]=0
@@ -364,6 +404,11 @@ operation_parameters_minimum_occurrences["getTenantTeamContactEnrollments:::x-ap
 operation_parameters_minimum_occurrences["getTenantTeamContactEnrollmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTeamContactEnrollmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeamContactEnrollmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTeamContactEnrollment:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantTeamContactEnrollment:::tenantTeamContactEnrollmentId"]=1
+operation_parameters_minimum_occurrences["patchTenantTeamContactEnrollment:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTeamContactEnrollment:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTeamContactEnrollment:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantTeamContactEnrollment:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeamContactEnrollment:::tenantTeamContactEnrollmentId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeamContactEnrollment:::api-version"]=0
@@ -387,6 +432,11 @@ operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollments:::x-ap
 operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTeamProjectEnrollment:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantTeamProjectEnrollment:::tenantTeamProjectEnrollmentId"]=1
+operation_parameters_minimum_occurrences["patchTenantTeamProjectEnrollment:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTeamProjectEnrollment:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTeamProjectEnrollment:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantTeamProjectEnrollment:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeamProjectEnrollment:::tenantTeamProjectEnrollmentId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeamProjectEnrollment:::api-version"]=0
@@ -410,6 +460,11 @@ operation_parameters_minimum_occurrences["getTenantTeamRecords:::x-api-version"]
 operation_parameters_minimum_occurrences["getTenantTeamRecordsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTeamRecordsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeamRecordsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTeamRecord:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantTeamRecord:::tenantTeamRecordId"]=1
+operation_parameters_minimum_occurrences["patchTenantTeamRecord:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTeamRecord:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTeamRecord:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantTeamRecord:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeamRecord:::tenantTeamRecordId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeamRecord:::api-version"]=0
@@ -433,6 +488,11 @@ operation_parameters_minimum_occurrences["getTenantTeams:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeamsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTeamsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeamsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTeam:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantTeam:::tenantTeamId"]=1
+operation_parameters_minimum_occurrences["patchTenantTeam:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTeam:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTeam:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantTeam:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeam:::tenantTeamId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeam:::api-version"]=0
@@ -578,6 +638,11 @@ operation_parameters_minimum_occurrences["getTenantTerritoryById:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTerritoryById:::tenantTerritoryId"]=1
 operation_parameters_minimum_occurrences["getTenantTerritoryById:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTerritoryById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTerritory:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantTerritory:::tenantTerritoryId"]=1
+operation_parameters_minimum_occurrences["patchTenantTerritory:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTerritory:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantTerritory:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantTerritory:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantTerritory:::tenantTerritoryId"]=1
 operation_parameters_minimum_occurrences["updateTenantTerritory:::api-version"]=0
@@ -601,6 +666,11 @@ operation_parameters_minimum_occurrences["getTenantTypes:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTypesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTypesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTypesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantType:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantType:::tenantTypeId"]=1
+operation_parameters_minimum_occurrences["patchTenantType:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantType:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantType:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantType:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantType:::tenantTypeId"]=1
 operation_parameters_minimum_occurrences["updateTenantType:::api-version"]=0
@@ -647,6 +717,17 @@ operation_parameters_minimum_occurrences["getUnitsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getUnitsCountAsync:::unitGroupId"]=1
 operation_parameters_minimum_occurrences["getUnitsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getUnitsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchUnitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchUnitAsync:::unitGroupId"]=1
+operation_parameters_minimum_occurrences["patchUnitAsync:::unitId"]=1
+operation_parameters_minimum_occurrences["patchUnitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchUnitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchUnitAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchUnitGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchUnitGroupAsync:::unitGroupId"]=1
+operation_parameters_minimum_occurrences["patchUnitGroupAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchUnitGroupAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchUnitGroupAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateUnitAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateUnitAsync:::unitGroupId"]=1
 operation_parameters_minimum_occurrences["updateUnitAsync:::unitId"]=1
@@ -676,6 +757,11 @@ operation_parameters_minimum_occurrences["getTenantUnits:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantUnitsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantUnitsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantUnitsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantUnit:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenantUnit:::tenantUnitId"]=1
+operation_parameters_minimum_occurrences["patchTenantUnit:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantUnit:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenantUnit:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenantUnit:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantUnit:::tenantUnitId"]=1
 operation_parameters_minimum_occurrences["updateTenantUnit:::api-version"]=0
@@ -710,6 +796,11 @@ operation_parameters_maximum_occurrences["getTenantDepartments:::x-api-version"]
 operation_parameters_maximum_occurrences["getTenantDepartmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantDepartmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantDepartmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantDepartmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantDepartmentAsync:::tenantDepartmentId"]=0
+operation_parameters_maximum_occurrences["patchTenantDepartmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantDepartmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantDepartmentAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantDepartment:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantDepartment:::tenantDepartmentId"]=0
 operation_parameters_maximum_occurrences["updateTenantDepartment:::api-version"]=0
@@ -733,6 +824,11 @@ operation_parameters_maximum_occurrences["getTenantEmployeeEnrollments:::x-api-v
 operation_parameters_maximum_occurrences["getTenantEmployeeEnrollmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantEmployeeEnrollmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantEmployeeEnrollmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantEmployeeEnrollmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantEmployeeEnrollmentAsync:::tenantEmployeeEnrollmentId"]=0
+operation_parameters_maximum_occurrences["patchTenantEmployeeEnrollmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantEmployeeEnrollmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantEmployeeEnrollmentAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantEmployeeEnrollment:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantEmployeeEnrollment:::tenantEmployeeEnrollmentId"]=0
 operation_parameters_maximum_occurrences["updateTenantEmployeeEnrollment:::api-version"]=0
@@ -763,6 +859,11 @@ operation_parameters_maximum_occurrences["getTenantEnrollments:::x-api-version"]
 operation_parameters_maximum_occurrences["getTenantEnrollmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantEnrollmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantEnrollmentAsync:::enrollmentId"]=0
+operation_parameters_maximum_occurrences["patchTenantEnrollmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantEnrollmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantEnrollmentAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantEnrollment:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantEnrollment:::enrollmentId"]=0
 operation_parameters_maximum_occurrences["updateTenantEnrollment:::api-version"]=0
@@ -803,6 +904,11 @@ operation_parameters_maximum_occurrences["getTenantIndustryById:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantIndustryById:::tenantIndustryId"]=0
 operation_parameters_maximum_occurrences["getTenantIndustryById:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantIndustryById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantIndustryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantIndustryAsync:::tenantIndustryId"]=0
+operation_parameters_maximum_occurrences["patchTenantIndustryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantIndustryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantIndustryAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantIndustry:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantIndustry:::tenantIndustryId"]=0
 operation_parameters_maximum_occurrences["updateTenantIndustry:::api-version"]=0
@@ -859,6 +965,11 @@ operation_parameters_maximum_occurrences["getTenantOptionsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantOptionsCount:::portalId"]=0
 operation_parameters_maximum_occurrences["getTenantOptionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantOption:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantOption:::optionId"]=0
+operation_parameters_maximum_occurrences["patchTenantOption:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantOption:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantOption:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantOption:::optionId"]=0
 operation_parameters_maximum_occurrences["updateTenantOption:::api-version"]=0
@@ -888,6 +999,11 @@ operation_parameters_maximum_occurrences["getTenantPositions:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantPositionsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantPositionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantPositionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantPosition:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantPosition:::tenantPositionId"]=0
+operation_parameters_maximum_occurrences["patchTenantPosition:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantPosition:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantPosition:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantPosition:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantPosition:::tenantPositionId"]=0
 operation_parameters_maximum_occurrences["updateTenantPosition:::api-version"]=0
@@ -911,6 +1027,11 @@ operation_parameters_maximum_occurrences["getTenantSegments:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantSegmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantSegmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantSegmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantSegment:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantSegment:::tenantSegmentId"]=0
+operation_parameters_maximum_occurrences["patchTenantSegment:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantSegment:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantSegment:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantSegment:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantSegment:::tenantSegmentId"]=0
 operation_parameters_maximum_occurrences["updateTenantSegment:::api-version"]=0
@@ -934,6 +1055,11 @@ operation_parameters_maximum_occurrences["getTenantSizes:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantSizesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantSizesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantSizesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantSize:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantSize:::tenantSizeId"]=0
+operation_parameters_maximum_occurrences["patchTenantSize:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantSize:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantSize:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantSize:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantSize:::tenantSizeId"]=0
 operation_parameters_maximum_occurrences["updateTenantSize:::api-version"]=0
@@ -957,6 +1083,11 @@ operation_parameters_maximum_occurrences["getTenantTeamContactEnrollments:::x-ap
 operation_parameters_maximum_occurrences["getTenantTeamContactEnrollmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTeamContactEnrollmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeamContactEnrollmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamContactEnrollment:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamContactEnrollment:::tenantTeamContactEnrollmentId"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamContactEnrollment:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamContactEnrollment:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamContactEnrollment:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamContactEnrollment:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamContactEnrollment:::tenantTeamContactEnrollmentId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamContactEnrollment:::api-version"]=0
@@ -980,6 +1111,11 @@ operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollments:::x-ap
 operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamProjectEnrollment:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamProjectEnrollment:::tenantTeamProjectEnrollmentId"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamProjectEnrollment:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamProjectEnrollment:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamProjectEnrollment:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamProjectEnrollment:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamProjectEnrollment:::tenantTeamProjectEnrollmentId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamProjectEnrollment:::api-version"]=0
@@ -1003,6 +1139,11 @@ operation_parameters_maximum_occurrences["getTenantTeamRecords:::x-api-version"]
 operation_parameters_maximum_occurrences["getTenantTeamRecordsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTeamRecordsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeamRecordsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamRecord:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamRecord:::tenantTeamRecordId"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamRecord:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamRecord:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamRecord:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamRecord:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamRecord:::tenantTeamRecordId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamRecord:::api-version"]=0
@@ -1026,6 +1167,11 @@ operation_parameters_maximum_occurrences["getTenantTeams:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeamsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTeamsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeamsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTeam:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantTeam:::tenantTeamId"]=0
+operation_parameters_maximum_occurrences["patchTenantTeam:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTeam:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTeam:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantTeam:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeam:::tenantTeamId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeam:::api-version"]=0
@@ -1171,6 +1317,11 @@ operation_parameters_maximum_occurrences["getTenantTerritoryById:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTerritoryById:::tenantTerritoryId"]=0
 operation_parameters_maximum_occurrences["getTenantTerritoryById:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTerritoryById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTerritory:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantTerritory:::tenantTerritoryId"]=0
+operation_parameters_maximum_occurrences["patchTenantTerritory:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTerritory:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantTerritory:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantTerritory:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantTerritory:::tenantTerritoryId"]=0
 operation_parameters_maximum_occurrences["updateTenantTerritory:::api-version"]=0
@@ -1194,6 +1345,11 @@ operation_parameters_maximum_occurrences["getTenantTypes:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTypesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTypesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTypesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantType:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantType:::tenantTypeId"]=0
+operation_parameters_maximum_occurrences["patchTenantType:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantType:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantType:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantType:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantType:::tenantTypeId"]=0
 operation_parameters_maximum_occurrences["updateTenantType:::api-version"]=0
@@ -1240,6 +1396,17 @@ operation_parameters_maximum_occurrences["getUnitsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getUnitsCountAsync:::unitGroupId"]=0
 operation_parameters_maximum_occurrences["getUnitsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getUnitsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchUnitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchUnitAsync:::unitGroupId"]=0
+operation_parameters_maximum_occurrences["patchUnitAsync:::unitId"]=0
+operation_parameters_maximum_occurrences["patchUnitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchUnitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchUnitAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchUnitGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchUnitGroupAsync:::unitGroupId"]=0
+operation_parameters_maximum_occurrences["patchUnitGroupAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchUnitGroupAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchUnitGroupAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateUnitAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateUnitAsync:::unitGroupId"]=0
 operation_parameters_maximum_occurrences["updateUnitAsync:::unitId"]=0
@@ -1269,6 +1436,11 @@ operation_parameters_maximum_occurrences["getTenantUnits:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantUnitsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantUnitsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantUnitsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantUnit:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenantUnit:::tenantUnitId"]=0
+operation_parameters_maximum_occurrences["patchTenantUnit:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantUnit:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenantUnit:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenantUnit:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantUnit:::tenantUnitId"]=0
 operation_parameters_maximum_occurrences["updateTenantUnit:::api-version"]=0
@@ -1300,6 +1472,11 @@ operation_parameters_collection_type["getTenantDepartments:::x-api-version"]=""
 operation_parameters_collection_type["getTenantDepartmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantDepartmentsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantDepartmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantDepartmentAsync:::tenantId"]=""
+operation_parameters_collection_type["patchTenantDepartmentAsync:::tenantDepartmentId"]=""
+operation_parameters_collection_type["patchTenantDepartmentAsync:::api-version"]=""
+operation_parameters_collection_type["patchTenantDepartmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantDepartmentAsync:::Operation"]=
 operation_parameters_collection_type["updateTenantDepartment:::tenantId"]=""
 operation_parameters_collection_type["updateTenantDepartment:::tenantDepartmentId"]=""
 operation_parameters_collection_type["updateTenantDepartment:::api-version"]=""
@@ -1323,6 +1500,11 @@ operation_parameters_collection_type["getTenantEmployeeEnrollments:::x-api-versi
 operation_parameters_collection_type["getTenantEmployeeEnrollmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantEmployeeEnrollmentsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantEmployeeEnrollmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantEmployeeEnrollmentAsync:::tenantId"]=""
+operation_parameters_collection_type["patchTenantEmployeeEnrollmentAsync:::tenantEmployeeEnrollmentId"]=""
+operation_parameters_collection_type["patchTenantEmployeeEnrollmentAsync:::api-version"]=""
+operation_parameters_collection_type["patchTenantEmployeeEnrollmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantEmployeeEnrollmentAsync:::Operation"]=
 operation_parameters_collection_type["updateTenantEmployeeEnrollment:::tenantId"]=""
 operation_parameters_collection_type["updateTenantEmployeeEnrollment:::tenantEmployeeEnrollmentId"]=""
 operation_parameters_collection_type["updateTenantEmployeeEnrollment:::api-version"]=""
@@ -1353,6 +1535,11 @@ operation_parameters_collection_type["getTenantEnrollments:::x-api-version"]=""
 operation_parameters_collection_type["getTenantEnrollmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantEnrollmentsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantEnrollmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantEnrollmentAsync:::tenantId"]=""
+operation_parameters_collection_type["patchTenantEnrollmentAsync:::enrollmentId"]=""
+operation_parameters_collection_type["patchTenantEnrollmentAsync:::api-version"]=""
+operation_parameters_collection_type["patchTenantEnrollmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantEnrollmentAsync:::Operation"]=
 operation_parameters_collection_type["updateTenantEnrollment:::tenantId"]=""
 operation_parameters_collection_type["updateTenantEnrollment:::enrollmentId"]=""
 operation_parameters_collection_type["updateTenantEnrollment:::api-version"]=""
@@ -1393,6 +1580,11 @@ operation_parameters_collection_type["getTenantIndustryById:::tenantId"]=""
 operation_parameters_collection_type["getTenantIndustryById:::tenantIndustryId"]=""
 operation_parameters_collection_type["getTenantIndustryById:::api-version"]=""
 operation_parameters_collection_type["getTenantIndustryById:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantIndustryAsync:::tenantId"]=""
+operation_parameters_collection_type["patchTenantIndustryAsync:::tenantIndustryId"]=""
+operation_parameters_collection_type["patchTenantIndustryAsync:::api-version"]=""
+operation_parameters_collection_type["patchTenantIndustryAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantIndustryAsync:::Operation"]=
 operation_parameters_collection_type["updateTenantIndustry:::tenantId"]=""
 operation_parameters_collection_type["updateTenantIndustry:::tenantIndustryId"]=""
 operation_parameters_collection_type["updateTenantIndustry:::api-version"]=""
@@ -1449,6 +1641,11 @@ operation_parameters_collection_type["getTenantOptionsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantOptionsCount:::portalId"]=""
 operation_parameters_collection_type["getTenantOptionsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantOption:::tenantId"]=""
+operation_parameters_collection_type["patchTenantOption:::optionId"]=""
+operation_parameters_collection_type["patchTenantOption:::api-version"]=""
+operation_parameters_collection_type["patchTenantOption:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantOption:::Operation"]=
 operation_parameters_collection_type["updateTenantOption:::tenantId"]=""
 operation_parameters_collection_type["updateTenantOption:::optionId"]=""
 operation_parameters_collection_type["updateTenantOption:::api-version"]=""
@@ -1478,6 +1675,11 @@ operation_parameters_collection_type["getTenantPositions:::x-api-version"]=""
 operation_parameters_collection_type["getTenantPositionsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantPositionsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantPositionsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantPosition:::tenantId"]=""
+operation_parameters_collection_type["patchTenantPosition:::tenantPositionId"]=""
+operation_parameters_collection_type["patchTenantPosition:::api-version"]=""
+operation_parameters_collection_type["patchTenantPosition:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantPosition:::Operation"]=
 operation_parameters_collection_type["updateTenantPosition:::tenantId"]=""
 operation_parameters_collection_type["updateTenantPosition:::tenantPositionId"]=""
 operation_parameters_collection_type["updateTenantPosition:::api-version"]=""
@@ -1501,6 +1703,11 @@ operation_parameters_collection_type["getTenantSegments:::x-api-version"]=""
 operation_parameters_collection_type["getTenantSegmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantSegmentsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantSegmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantSegment:::tenantId"]=""
+operation_parameters_collection_type["patchTenantSegment:::tenantSegmentId"]=""
+operation_parameters_collection_type["patchTenantSegment:::api-version"]=""
+operation_parameters_collection_type["patchTenantSegment:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantSegment:::Operation"]=
 operation_parameters_collection_type["updateTenantSegment:::tenantId"]=""
 operation_parameters_collection_type["updateTenantSegment:::tenantSegmentId"]=""
 operation_parameters_collection_type["updateTenantSegment:::api-version"]=""
@@ -1524,6 +1731,11 @@ operation_parameters_collection_type["getTenantSizes:::x-api-version"]=""
 operation_parameters_collection_type["getTenantSizesCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantSizesCount:::api-version"]=""
 operation_parameters_collection_type["getTenantSizesCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantSize:::tenantId"]=""
+operation_parameters_collection_type["patchTenantSize:::tenantSizeId"]=""
+operation_parameters_collection_type["patchTenantSize:::api-version"]=""
+operation_parameters_collection_type["patchTenantSize:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantSize:::Operation"]=
 operation_parameters_collection_type["updateTenantSize:::tenantId"]=""
 operation_parameters_collection_type["updateTenantSize:::tenantSizeId"]=""
 operation_parameters_collection_type["updateTenantSize:::api-version"]=""
@@ -1547,6 +1759,11 @@ operation_parameters_collection_type["getTenantTeamContactEnrollments:::x-api-ve
 operation_parameters_collection_type["getTenantTeamContactEnrollmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantTeamContactEnrollmentsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantTeamContactEnrollmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantTeamContactEnrollment:::tenantId"]=""
+operation_parameters_collection_type["patchTenantTeamContactEnrollment:::tenantTeamContactEnrollmentId"]=""
+operation_parameters_collection_type["patchTenantTeamContactEnrollment:::api-version"]=""
+operation_parameters_collection_type["patchTenantTeamContactEnrollment:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantTeamContactEnrollment:::Operation"]=
 operation_parameters_collection_type["updateTenantTeamContactEnrollment:::tenantId"]=""
 operation_parameters_collection_type["updateTenantTeamContactEnrollment:::tenantTeamContactEnrollmentId"]=""
 operation_parameters_collection_type["updateTenantTeamContactEnrollment:::api-version"]=""
@@ -1570,6 +1787,11 @@ operation_parameters_collection_type["getTenantTeamProjectEnrollments:::x-api-ve
 operation_parameters_collection_type["getTenantTeamProjectEnrollmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantTeamProjectEnrollmentsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantTeamProjectEnrollmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantTeamProjectEnrollment:::tenantId"]=""
+operation_parameters_collection_type["patchTenantTeamProjectEnrollment:::tenantTeamProjectEnrollmentId"]=""
+operation_parameters_collection_type["patchTenantTeamProjectEnrollment:::api-version"]=""
+operation_parameters_collection_type["patchTenantTeamProjectEnrollment:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantTeamProjectEnrollment:::Operation"]=
 operation_parameters_collection_type["updateTenantTeamProjectEnrollment:::tenantId"]=""
 operation_parameters_collection_type["updateTenantTeamProjectEnrollment:::tenantTeamProjectEnrollmentId"]=""
 operation_parameters_collection_type["updateTenantTeamProjectEnrollment:::api-version"]=""
@@ -1593,6 +1815,11 @@ operation_parameters_collection_type["getTenantTeamRecords:::x-api-version"]=""
 operation_parameters_collection_type["getTenantTeamRecordsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantTeamRecordsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantTeamRecordsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantTeamRecord:::tenantId"]=""
+operation_parameters_collection_type["patchTenantTeamRecord:::tenantTeamRecordId"]=""
+operation_parameters_collection_type["patchTenantTeamRecord:::api-version"]=""
+operation_parameters_collection_type["patchTenantTeamRecord:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantTeamRecord:::Operation"]=
 operation_parameters_collection_type["updateTenantTeamRecord:::tenantId"]=""
 operation_parameters_collection_type["updateTenantTeamRecord:::tenantTeamRecordId"]=""
 operation_parameters_collection_type["updateTenantTeamRecord:::api-version"]=""
@@ -1616,6 +1843,11 @@ operation_parameters_collection_type["getTenantTeams:::x-api-version"]=""
 operation_parameters_collection_type["getTenantTeamsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantTeamsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantTeamsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantTeam:::tenantId"]=""
+operation_parameters_collection_type["patchTenantTeam:::tenantTeamId"]=""
+operation_parameters_collection_type["patchTenantTeam:::api-version"]=""
+operation_parameters_collection_type["patchTenantTeam:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantTeam:::Operation"]=
 operation_parameters_collection_type["updateTenantTeam:::tenantId"]=""
 operation_parameters_collection_type["updateTenantTeam:::tenantTeamId"]=""
 operation_parameters_collection_type["updateTenantTeam:::api-version"]=""
@@ -1761,6 +1993,11 @@ operation_parameters_collection_type["getTenantTerritoryById:::tenantId"]=""
 operation_parameters_collection_type["getTenantTerritoryById:::tenantTerritoryId"]=""
 operation_parameters_collection_type["getTenantTerritoryById:::api-version"]=""
 operation_parameters_collection_type["getTenantTerritoryById:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantTerritory:::tenantId"]=""
+operation_parameters_collection_type["patchTenantTerritory:::tenantTerritoryId"]=""
+operation_parameters_collection_type["patchTenantTerritory:::api-version"]=""
+operation_parameters_collection_type["patchTenantTerritory:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantTerritory:::Operation"]=
 operation_parameters_collection_type["updateTenantTerritory:::tenantId"]=""
 operation_parameters_collection_type["updateTenantTerritory:::tenantTerritoryId"]=""
 operation_parameters_collection_type["updateTenantTerritory:::api-version"]=""
@@ -1784,6 +2021,11 @@ operation_parameters_collection_type["getTenantTypes:::x-api-version"]=""
 operation_parameters_collection_type["getTenantTypesCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantTypesCount:::api-version"]=""
 operation_parameters_collection_type["getTenantTypesCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantType:::tenantId"]=""
+operation_parameters_collection_type["patchTenantType:::tenantTypeId"]=""
+operation_parameters_collection_type["patchTenantType:::api-version"]=""
+operation_parameters_collection_type["patchTenantType:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantType:::Operation"]=
 operation_parameters_collection_type["updateTenantType:::tenantId"]=""
 operation_parameters_collection_type["updateTenantType:::tenantTypeId"]=""
 operation_parameters_collection_type["updateTenantType:::api-version"]=""
@@ -1830,6 +2072,17 @@ operation_parameters_collection_type["getUnitsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getUnitsCountAsync:::unitGroupId"]=""
 operation_parameters_collection_type["getUnitsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getUnitsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchUnitAsync:::tenantId"]=""
+operation_parameters_collection_type["patchUnitAsync:::unitGroupId"]=""
+operation_parameters_collection_type["patchUnitAsync:::unitId"]=""
+operation_parameters_collection_type["patchUnitAsync:::api-version"]=""
+operation_parameters_collection_type["patchUnitAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchUnitAsync:::Operation"]=
+operation_parameters_collection_type["patchUnitGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["patchUnitGroupAsync:::unitGroupId"]=""
+operation_parameters_collection_type["patchUnitGroupAsync:::api-version"]=""
+operation_parameters_collection_type["patchUnitGroupAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchUnitGroupAsync:::Operation"]=
 operation_parameters_collection_type["updateUnitAsync:::tenantId"]=""
 operation_parameters_collection_type["updateUnitAsync:::unitGroupId"]=""
 operation_parameters_collection_type["updateUnitAsync:::unitId"]=""
@@ -1859,6 +2112,11 @@ operation_parameters_collection_type["getTenantUnits:::x-api-version"]=""
 operation_parameters_collection_type["getTenantUnitsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantUnitsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantUnitsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantUnit:::tenantId"]=""
+operation_parameters_collection_type["patchTenantUnit:::tenantUnitId"]=""
+operation_parameters_collection_type["patchTenantUnit:::api-version"]=""
+operation_parameters_collection_type["patchTenantUnit:::x-api-version"]=""
+operation_parameters_collection_type["patchTenantUnit:::Operation"]=
 operation_parameters_collection_type["updateTenantUnit:::tenantId"]=""
 operation_parameters_collection_type["updateTenantUnit:::tenantUnitId"]=""
 operation_parameters_collection_type["updateTenantUnit:::api-version"]=""
@@ -2221,7 +2479,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}TenantsService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}TenantsService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -2263,6 +2521,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantDepartmentById${OFF};Retrieve a single tenant department by its ID
   ${CYAN}getTenantDepartments${OFF};Retrieve a list of tenant departments
   ${CYAN}getTenantDepartmentsCount${OFF};Get the count of tenant departments
+  ${CYAN}patchTenantDepartmentAsync${OFF};Patch a tenant department
   ${CYAN}updateTenantDepartment${OFF};Update a tenant department
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2274,6 +2533,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantEmployeeEnrollmentById${OFF};Retrieve a single tenant employee enrollment by its ID
   ${CYAN}getTenantEmployeeEnrollments${OFF};Retrieve a list of tenant employee enrollments
   ${CYAN}getTenantEmployeeEnrollmentsCount${OFF};Get the count of tenant employee enrollments
+  ${CYAN}patchTenantEmployeeEnrollmentAsync${OFF};Patch a tenant employee enrollment
   ${CYAN}updateTenantEmployeeEnrollment${OFF};Update a tenant employee enrollment
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2287,6 +2547,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantEnrollmentById${OFF};Retrieve a single tenant enrollment by its ID
   ${CYAN}getTenantEnrollments${OFF};Retrieve a list of tenant enrollments
   ${CYAN}getTenantEnrollmentsCount${OFF};Get the count of tenant enrollments
+  ${CYAN}patchTenantEnrollmentAsync${OFF};Patch a tenant enrollment
   ${CYAN}updateTenantEnrollment${OFF};Update a tenant enrollment
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2320,6 +2581,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantIndustries${OFF};Retrieve a list of tenant industries
   ${CYAN}getTenantIndustriesCount${OFF};Get the count of tenant industries
   ${CYAN}getTenantIndustryById${OFF};Retrieve a single tenant industry by its ID
+  ${CYAN}patchTenantIndustryAsync${OFF};Patch a tenant industry
   ${CYAN}updateTenantIndustry${OFF};Update a tenant industry
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2344,6 +2606,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantOptionByKey${OFF};Retrieve a single tenant option by its key
   ${CYAN}getTenantOptions${OFF};Retrieve a list of tenant options
   ${CYAN}getTenantOptionsCount${OFF};Get the count of tenant options
+  ${CYAN}patchTenantOption${OFF};Patch a tenant option
   ${CYAN}updateTenantOption${OFF};Update a tenant option
   ${CYAN}upsertTenantOption${OFF};Create or update a tenant option by key
 EOF
@@ -2356,6 +2619,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantPositionById${OFF};Retrieve a single tenant position by its ID
   ${CYAN}getTenantPositions${OFF};Retrieve a list of tenant positions
   ${CYAN}getTenantPositionsCount${OFF};Get the count of tenant positions
+  ${CYAN}patchTenantPosition${OFF};Patch a tenant position
   ${CYAN}updateTenantPosition${OFF};Update a tenant position
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2367,6 +2631,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantSegmentById${OFF};Retrieve a single tenant segment by its ID
   ${CYAN}getTenantSegments${OFF};Retrieve a list of tenant segments
   ${CYAN}getTenantSegmentsCount${OFF};Get the count of tenant segments
+  ${CYAN}patchTenantSegment${OFF};Patch a tenant segment
   ${CYAN}updateTenantSegment${OFF};Update a tenant segment
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2378,6 +2643,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantSizeById${OFF};Retrieve a single tenant size by its ID
   ${CYAN}getTenantSizes${OFF};Retrieve a list of tenant sizes
   ${CYAN}getTenantSizesCount${OFF};Get the count of tenant sizes
+  ${CYAN}patchTenantSize${OFF};Patch a tenant size
   ${CYAN}updateTenantSize${OFF};Update a tenant size
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2389,6 +2655,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantTeamContactEnrollmentById${OFF};Retrieve a single tenant team contact enrollment by its ID
   ${CYAN}getTenantTeamContactEnrollments${OFF};Retrieve a list of tenant team contact enrollments
   ${CYAN}getTenantTeamContactEnrollmentsCount${OFF};Get the count of tenant team contact enrollments
+  ${CYAN}patchTenantTeamContactEnrollment${OFF};Patch a tenant team contact enrollment
   ${CYAN}updateTenantTeamContactEnrollment${OFF};Update a tenant team contact enrollment
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2400,6 +2667,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantTeamProjectEnrollmentById${OFF};Retrieve a single tenant team project enrollment by its ID
   ${CYAN}getTenantTeamProjectEnrollments${OFF};Retrieve a list of tenant team project enrollments
   ${CYAN}getTenantTeamProjectEnrollmentsCount${OFF};Get the count of tenant team project enrollments
+  ${CYAN}patchTenantTeamProjectEnrollment${OFF};Patch a tenant team project enrollment
   ${CYAN}updateTenantTeamProjectEnrollment${OFF};Update a tenant team project enrollment
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2411,6 +2679,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantTeamRecordById${OFF};Retrieve a single tenant team record by its ID
   ${CYAN}getTenantTeamRecords${OFF};Retrieve a list of tenant team records
   ${CYAN}getTenantTeamRecordsCount${OFF};Get the count of tenant team records
+  ${CYAN}patchTenantTeamRecord${OFF};Patch a tenant team record
   ${CYAN}updateTenantTeamRecord${OFF};Update a tenant team record
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2422,6 +2691,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantTeamById${OFF};Retrieve a single tenant team by its ID
   ${CYAN}getTenantTeams${OFF};Retrieve a list of tenant teams
   ${CYAN}getTenantTeamsCount${OFF};Get the count of tenant teams
+  ${CYAN}patchTenantTeam${OFF};Patch a tenant team
   ${CYAN}updateTenantTeam${OFF};Update a tenant team
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2473,6 +2743,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantTerritories${OFF};Retrieve a list of tenant territories
   ${CYAN}getTenantTerritoriesCount${OFF};Get the count of tenant territories
   ${CYAN}getTenantTerritoryById${OFF};Retrieve a single tenant territory by its ID
+  ${CYAN}patchTenantTerritory${OFF};Patch a tenant territory
   ${CYAN}updateTenantTerritory${OFF};Update a tenant territory
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2484,6 +2755,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantTypeById${OFF};Retrieve a single tenant type by its ID
   ${CYAN}getTenantTypes${OFF};Retrieve a list of tenant types
   ${CYAN}getTenantTypesCount${OFF};Get the count of tenant types
+  ${CYAN}patchTenantType${OFF};Patch a tenant type
   ${CYAN}updateTenantType${OFF};Update a tenant type
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2500,6 +2772,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getUnitGroupsCountAsync${OFF};Get the count of unit groups
   ${CYAN}getUnitsAsync${OFF};Retrieve units for a unit group
   ${CYAN}getUnitsCountAsync${OFF};Get the count of units in a unit group
+  ${CYAN}patchUnitAsync${OFF};Patch a unit within a unit group
+  ${CYAN}patchUnitGroupAsync${OFF};Patch a unit group
   ${CYAN}updateUnitAsync${OFF};Update a unit within a unit group
   ${CYAN}updateUnitGroupAsync${OFF};Update a unit group
 EOF
@@ -2512,6 +2786,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTenantUnitById${OFF};Retrieve a single tenant unit by its ID
   ${CYAN}getTenantUnits${OFF};Retrieve a list of tenant units
   ${CYAN}getTenantUnitsCount${OFF};Get the count of tenant units
+  ${CYAN}patchTenantUnit${OFF};Patch a tenant unit
   ${CYAN}updateTenantUnit${OFF};Update a tenant unit
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2542,7 +2817,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}TenantsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}TenantsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -2562,7 +2837,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}TenantsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}TenantsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -2727,6 +3002,35 @@ print_getTenantDepartmentsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchTenantDepartmentAsync operation
+#
+##############################################################################
+print_patchTenantDepartmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantDepartmentAsync - Patch a tenant department${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant department" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantDepartmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantDepartmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTenantDepartment operation
 #
 ##############################################################################
@@ -2879,6 +3183,35 @@ print_getTenantEmployeeEnrollmentsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTenantEmployeeEnrollmentAsync operation
+#
+##############################################################################
+print_patchTenantEmployeeEnrollmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantEmployeeEnrollmentAsync - Patch a tenant employee enrollment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant employee enrollment" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantEmployeeEnrollmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantEmployeeEnrollmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3096,6 +3429,35 @@ print_getTenantEnrollmentsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTenantEnrollmentAsync operation
+#
+##############################################################################
+print_patchTenantEnrollmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantEnrollmentAsync - Patch a tenant enrollment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant enrollment" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}enrollmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: enrollmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3564,6 +3926,35 @@ print_getTenantIndustryById_help() {
 }
 ##############################################################################
 #
+# Print help for patchTenantIndustryAsync operation
+#
+##############################################################################
+print_patchTenantIndustryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantIndustryAsync - Patch a tenant industry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant industry" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantIndustryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantIndustryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTenantIndustry operation
 #
 ##############################################################################
@@ -3948,6 +4339,35 @@ print_getTenantOptionsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchTenantOption operation
+#
+##############################################################################
+print_patchTenantOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantOption - Patch a tenant option${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant option" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTenantOption operation
 #
 ##############################################################################
@@ -4142,6 +4562,35 @@ print_getTenantPositionsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchTenantPosition operation
+#
+##############################################################################
+print_patchTenantPosition_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantPosition - Patch a tenant position${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant position" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantPositionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantPositionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTenantPosition operation
 #
 ##############################################################################
@@ -4294,6 +4743,35 @@ print_getTenantSegmentsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTenantSegment operation
+#
+##############################################################################
+print_patchTenantSegment_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantSegment - Patch a tenant segment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant segment" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantSegmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantSegmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4468,6 +4946,35 @@ print_getTenantSizesCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchTenantSize operation
+#
+##############################################################################
+print_patchTenantSize_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantSize - Patch a tenant size${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant size" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantSizeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantSizeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTenantSize operation
 #
 ##############################################################################
@@ -4620,6 +5127,35 @@ print_getTenantTeamContactEnrollmentsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTenantTeamContactEnrollment operation
+#
+##############################################################################
+print_patchTenantTeamContactEnrollment_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantTeamContactEnrollment - Patch a tenant team contact enrollment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant team contact enrollment" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantTeamContactEnrollmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantTeamContactEnrollmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4794,6 +5330,35 @@ print_getTenantTeamProjectEnrollmentsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchTenantTeamProjectEnrollment operation
+#
+##############################################################################
+print_patchTenantTeamProjectEnrollment_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantTeamProjectEnrollment - Patch a tenant team project enrollment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant team project enrollment" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantTeamProjectEnrollmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantTeamProjectEnrollmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTenantTeamProjectEnrollment operation
 #
 ##############################################################################
@@ -4957,6 +5522,35 @@ print_getTenantTeamRecordsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchTenantTeamRecord operation
+#
+##############################################################################
+print_patchTenantTeamRecord_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantTeamRecord - Patch a tenant team record${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant team record" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantTeamRecordId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantTeamRecordId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTenantTeamRecord operation
 #
 ##############################################################################
@@ -5109,6 +5703,35 @@ print_getTenantTeamsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTenantTeam operation
+#
+##############################################################################
+print_patchTenantTeam_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantTeam - Patch a tenant team${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant team" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantTeamId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantTeamId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6178,6 +6801,35 @@ print_getTenantTerritoryById_help() {
 }
 ##############################################################################
 #
+# Print help for patchTenantTerritory operation
+#
+##############################################################################
+print_patchTenantTerritory_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantTerritory - Patch a tenant territory${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant territory" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantTerritoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantTerritoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTenantTerritory operation
 #
 ##############################################################################
@@ -6330,6 +6982,35 @@ print_getTenantTypesCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTenantType operation
+#
+##############################################################################
+print_patchTenantType_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantType - Patch a tenant type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant type" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6643,6 +7324,65 @@ print_getUnitsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchUnitAsync operation
+#
+##############################################################################
+print_patchUnitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchUnitAsync - Patch a unit within a unit group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing unit within a specific unit group." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}unitGroupId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: unitGroupId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}unitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: unitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchUnitGroupAsync operation
+#
+##############################################################################
+print_patchUnitGroupAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchUnitGroupAsync - Patch a unit group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing unit group by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}unitGroupId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: unitGroupId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateUnitAsync operation
 #
 ##############################################################################
@@ -6825,6 +7565,35 @@ print_getTenantUnitsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTenantUnit operation
+#
+##############################################################################
+print_patchTenantUnit_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenantUnit - Patch a tenant unit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a tenant unit" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7123,6 +7892,82 @@ call_getTenantDepartmentsCount() {
 
 ##############################################################################
 #
+# Call patchTenantDepartmentAsync operation
+#
+##############################################################################
+call_patchTenantDepartmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantDepartmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Departments/{tenantDepartmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTenantDepartment operation
 #
 ##############################################################################
@@ -7414,6 +8259,82 @@ call_getTenantEmployeeEnrollmentsCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchTenantEmployeeEnrollmentAsync operation
+#
+##############################################################################
+call_patchTenantEmployeeEnrollmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantEmployeeEnrollmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/EmployeeEnrollments/{tenantEmployeeEnrollmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7782,6 +8703,82 @@ call_getTenantEnrollmentsCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchTenantEnrollmentAsync operation
+#
+##############################################################################
+call_patchTenantEnrollmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(enrollmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Enrollments/{enrollmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9034,6 +10031,82 @@ call_getTenantIndustryById() {
 
 ##############################################################################
 #
+# Call patchTenantIndustryAsync operation
+#
+##############################################################################
+call_patchTenantIndustryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantIndustryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Industries/{tenantIndustryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTenantIndustry operation
 #
 ##############################################################################
@@ -9658,6 +10731,82 @@ call_getTenantOptionsCount() {
 
 ##############################################################################
 #
+# Call patchTenantOption operation
+#
+##############################################################################
+call_patchTenantOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTenantOption operation
 #
 ##############################################################################
@@ -10030,6 +11179,82 @@ call_getTenantPositionsCount() {
 
 ##############################################################################
 #
+# Call patchTenantPosition operation
+#
+##############################################################################
+call_patchTenantPosition() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantPositionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Positions/{tenantPositionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTenantPosition operation
 #
 ##############################################################################
@@ -10321,6 +11546,82 @@ call_getTenantSegmentsCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchTenantSegment operation
+#
+##############################################################################
+call_patchTenantSegment() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantSegmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Segments/{tenantSegmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10622,6 +11923,82 @@ call_getTenantSizesCount() {
 
 ##############################################################################
 #
+# Call patchTenantSize operation
+#
+##############################################################################
+call_patchTenantSize() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantSizeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Sizes/{tenantSizeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTenantSize operation
 #
 ##############################################################################
@@ -10913,6 +12290,82 @@ call_getTenantTeamContactEnrollmentsCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchTenantTeamContactEnrollment operation
+#
+##############################################################################
+call_patchTenantTeamContactEnrollment() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantTeamContactEnrollmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/TeamContactEnrollments/{tenantTeamContactEnrollmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11214,6 +12667,82 @@ call_getTenantTeamProjectEnrollmentsCount() {
 
 ##############################################################################
 #
+# Call patchTenantTeamProjectEnrollment operation
+#
+##############################################################################
+call_patchTenantTeamProjectEnrollment() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantTeamProjectEnrollmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/TeamProjectEnrollments/{tenantTeamProjectEnrollmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTenantTeamProjectEnrollment operation
 #
 ##############################################################################
@@ -11510,6 +13039,82 @@ call_getTenantTeamRecordsCount() {
 
 ##############################################################################
 #
+# Call patchTenantTeamRecord operation
+#
+##############################################################################
+call_patchTenantTeamRecord() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantTeamRecordId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/TeamRecords/{tenantTeamRecordId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTenantTeamRecord operation
 #
 ##############################################################################
@@ -11801,6 +13406,82 @@ call_getTenantTeamsCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchTenantTeam operation
+#
+##############################################################################
+call_patchTenantTeam() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantTeamId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Teams/{tenantTeamId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13483,6 +15164,82 @@ call_getTenantTerritoryById() {
 
 ##############################################################################
 #
+# Call patchTenantTerritory operation
+#
+##############################################################################
+call_patchTenantTerritory() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantTerritoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Territories/{tenantTerritoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTenantTerritory operation
 #
 ##############################################################################
@@ -13774,6 +15531,82 @@ call_getTenantTypesCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchTenantType operation
+#
+##############################################################################
+call_patchTenantType() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Types/{tenantTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -14295,6 +16128,158 @@ call_getUnitsCountAsync() {
 
 ##############################################################################
 #
+# Call patchUnitAsync operation
+#
+##############################################################################
+call_patchUnitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(unitGroupId unitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/UnitGroups/{unitGroupId}/Units/{unitId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchUnitGroupAsync operation
+#
+##############################################################################
+call_patchUnitGroupAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(unitGroupId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/UnitGroups/{unitGroupId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateUnitAsync operation
 #
 ##############################################################################
@@ -14667,6 +16652,82 @@ call_getTenantUnitsCount() {
 
 ##############################################################################
 #
+# Call patchTenantUnit operation
+#
+##############################################################################
+call_patchTenantUnit() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantUnitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Units/{tenantUnitId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTenantUnit operation
 #
 ##############################################################################
@@ -14856,6 +16917,9 @@ case $key in
     getTenantDepartmentsCount)
     operation="getTenantDepartmentsCount"
     ;;
+    patchTenantDepartmentAsync)
+    operation="patchTenantDepartmentAsync"
+    ;;
     updateTenantDepartment)
     operation="updateTenantDepartment"
     ;;
@@ -14873,6 +16937,9 @@ case $key in
     ;;
     getTenantEmployeeEnrollmentsCount)
     operation="getTenantEmployeeEnrollmentsCount"
+    ;;
+    patchTenantEmployeeEnrollmentAsync)
+    operation="patchTenantEmployeeEnrollmentAsync"
     ;;
     updateTenantEmployeeEnrollment)
     operation="updateTenantEmployeeEnrollment"
@@ -14897,6 +16964,9 @@ case $key in
     ;;
     getTenantEnrollmentsCount)
     operation="getTenantEnrollmentsCount"
+    ;;
+    patchTenantEnrollmentAsync)
+    operation="patchTenantEnrollmentAsync"
     ;;
     updateTenantEnrollment)
     operation="updateTenantEnrollment"
@@ -14967,6 +17037,9 @@ case $key in
     getTenantIndustryById)
     operation="getTenantIndustryById"
     ;;
+    patchTenantIndustryAsync)
+    operation="patchTenantIndustryAsync"
+    ;;
     updateTenantIndustry)
     operation="updateTenantIndustry"
     ;;
@@ -15009,6 +17082,9 @@ case $key in
     getTenantOptionsCount)
     operation="getTenantOptionsCount"
     ;;
+    patchTenantOption)
+    operation="patchTenantOption"
+    ;;
     updateTenantOption)
     operation="updateTenantOption"
     ;;
@@ -15030,6 +17106,9 @@ case $key in
     getTenantPositionsCount)
     operation="getTenantPositionsCount"
     ;;
+    patchTenantPosition)
+    operation="patchTenantPosition"
+    ;;
     updateTenantPosition)
     operation="updateTenantPosition"
     ;;
@@ -15047,6 +17126,9 @@ case $key in
     ;;
     getTenantSegmentsCount)
     operation="getTenantSegmentsCount"
+    ;;
+    patchTenantSegment)
+    operation="patchTenantSegment"
     ;;
     updateTenantSegment)
     operation="updateTenantSegment"
@@ -15066,6 +17148,9 @@ case $key in
     getTenantSizesCount)
     operation="getTenantSizesCount"
     ;;
+    patchTenantSize)
+    operation="patchTenantSize"
+    ;;
     updateTenantSize)
     operation="updateTenantSize"
     ;;
@@ -15083,6 +17168,9 @@ case $key in
     ;;
     getTenantTeamContactEnrollmentsCount)
     operation="getTenantTeamContactEnrollmentsCount"
+    ;;
+    patchTenantTeamContactEnrollment)
+    operation="patchTenantTeamContactEnrollment"
     ;;
     updateTenantTeamContactEnrollment)
     operation="updateTenantTeamContactEnrollment"
@@ -15102,6 +17190,9 @@ case $key in
     getTenantTeamProjectEnrollmentsCount)
     operation="getTenantTeamProjectEnrollmentsCount"
     ;;
+    patchTenantTeamProjectEnrollment)
+    operation="patchTenantTeamProjectEnrollment"
+    ;;
     updateTenantTeamProjectEnrollment)
     operation="updateTenantTeamProjectEnrollment"
     ;;
@@ -15120,6 +17211,9 @@ case $key in
     getTenantTeamRecordsCount)
     operation="getTenantTeamRecordsCount"
     ;;
+    patchTenantTeamRecord)
+    operation="patchTenantTeamRecord"
+    ;;
     updateTenantTeamRecord)
     operation="updateTenantTeamRecord"
     ;;
@@ -15137,6 +17231,9 @@ case $key in
     ;;
     getTenantTeamsCount)
     operation="getTenantTeamsCount"
+    ;;
+    patchTenantTeam)
+    operation="patchTenantTeam"
     ;;
     updateTenantTeam)
     operation="updateTenantTeam"
@@ -15261,6 +17358,9 @@ case $key in
     getTenantTerritoryById)
     operation="getTenantTerritoryById"
     ;;
+    patchTenantTerritory)
+    operation="patchTenantTerritory"
+    ;;
     updateTenantTerritory)
     operation="updateTenantTerritory"
     ;;
@@ -15278,6 +17378,9 @@ case $key in
     ;;
     getTenantTypesCount)
     operation="getTenantTypesCount"
+    ;;
+    patchTenantType)
+    operation="patchTenantType"
     ;;
     updateTenantType)
     operation="updateTenantType"
@@ -15312,6 +17415,12 @@ case $key in
     getUnitsCountAsync)
     operation="getUnitsCountAsync"
     ;;
+    patchUnitAsync)
+    operation="patchUnitAsync"
+    ;;
+    patchUnitGroupAsync)
+    operation="patchUnitGroupAsync"
+    ;;
     updateUnitAsync)
     operation="updateUnitAsync"
     ;;
@@ -15332,6 +17441,9 @@ case $key in
     ;;
     getTenantUnitsCount)
     operation="getTenantUnitsCount"
+    ;;
+    patchTenantUnit)
+    operation="patchTenantUnit"
     ;;
     updateTenantUnit)
     operation="updateTenantUnit"
@@ -15441,6 +17553,9 @@ case $operation in
     getTenantDepartmentsCount)
     call_getTenantDepartmentsCount
     ;;
+    patchTenantDepartmentAsync)
+    call_patchTenantDepartmentAsync
+    ;;
     updateTenantDepartment)
     call_updateTenantDepartment
     ;;
@@ -15458,6 +17573,9 @@ case $operation in
     ;;
     getTenantEmployeeEnrollmentsCount)
     call_getTenantEmployeeEnrollmentsCount
+    ;;
+    patchTenantEmployeeEnrollmentAsync)
+    call_patchTenantEmployeeEnrollmentAsync
     ;;
     updateTenantEmployeeEnrollment)
     call_updateTenantEmployeeEnrollment
@@ -15482,6 +17600,9 @@ case $operation in
     ;;
     getTenantEnrollmentsCount)
     call_getTenantEnrollmentsCount
+    ;;
+    patchTenantEnrollmentAsync)
+    call_patchTenantEnrollmentAsync
     ;;
     updateTenantEnrollment)
     call_updateTenantEnrollment
@@ -15552,6 +17673,9 @@ case $operation in
     getTenantIndustryById)
     call_getTenantIndustryById
     ;;
+    patchTenantIndustryAsync)
+    call_patchTenantIndustryAsync
+    ;;
     updateTenantIndustry)
     call_updateTenantIndustry
     ;;
@@ -15594,6 +17718,9 @@ case $operation in
     getTenantOptionsCount)
     call_getTenantOptionsCount
     ;;
+    patchTenantOption)
+    call_patchTenantOption
+    ;;
     updateTenantOption)
     call_updateTenantOption
     ;;
@@ -15615,6 +17742,9 @@ case $operation in
     getTenantPositionsCount)
     call_getTenantPositionsCount
     ;;
+    patchTenantPosition)
+    call_patchTenantPosition
+    ;;
     updateTenantPosition)
     call_updateTenantPosition
     ;;
@@ -15632,6 +17762,9 @@ case $operation in
     ;;
     getTenantSegmentsCount)
     call_getTenantSegmentsCount
+    ;;
+    patchTenantSegment)
+    call_patchTenantSegment
     ;;
     updateTenantSegment)
     call_updateTenantSegment
@@ -15651,6 +17784,9 @@ case $operation in
     getTenantSizesCount)
     call_getTenantSizesCount
     ;;
+    patchTenantSize)
+    call_patchTenantSize
+    ;;
     updateTenantSize)
     call_updateTenantSize
     ;;
@@ -15668,6 +17804,9 @@ case $operation in
     ;;
     getTenantTeamContactEnrollmentsCount)
     call_getTenantTeamContactEnrollmentsCount
+    ;;
+    patchTenantTeamContactEnrollment)
+    call_patchTenantTeamContactEnrollment
     ;;
     updateTenantTeamContactEnrollment)
     call_updateTenantTeamContactEnrollment
@@ -15687,6 +17826,9 @@ case $operation in
     getTenantTeamProjectEnrollmentsCount)
     call_getTenantTeamProjectEnrollmentsCount
     ;;
+    patchTenantTeamProjectEnrollment)
+    call_patchTenantTeamProjectEnrollment
+    ;;
     updateTenantTeamProjectEnrollment)
     call_updateTenantTeamProjectEnrollment
     ;;
@@ -15705,6 +17847,9 @@ case $operation in
     getTenantTeamRecordsCount)
     call_getTenantTeamRecordsCount
     ;;
+    patchTenantTeamRecord)
+    call_patchTenantTeamRecord
+    ;;
     updateTenantTeamRecord)
     call_updateTenantTeamRecord
     ;;
@@ -15722,6 +17867,9 @@ case $operation in
     ;;
     getTenantTeamsCount)
     call_getTenantTeamsCount
+    ;;
+    patchTenantTeam)
+    call_patchTenantTeam
     ;;
     updateTenantTeam)
     call_updateTenantTeam
@@ -15846,6 +17994,9 @@ case $operation in
     getTenantTerritoryById)
     call_getTenantTerritoryById
     ;;
+    patchTenantTerritory)
+    call_patchTenantTerritory
+    ;;
     updateTenantTerritory)
     call_updateTenantTerritory
     ;;
@@ -15863,6 +18014,9 @@ case $operation in
     ;;
     getTenantTypesCount)
     call_getTenantTypesCount
+    ;;
+    patchTenantType)
+    call_patchTenantType
     ;;
     updateTenantType)
     call_updateTenantType
@@ -15897,6 +18051,12 @@ case $operation in
     getUnitsCountAsync)
     call_getUnitsCountAsync
     ;;
+    patchUnitAsync)
+    call_patchUnitAsync
+    ;;
+    patchUnitGroupAsync)
+    call_patchUnitGroupAsync
+    ;;
     updateUnitAsync)
     call_updateUnitAsync
     ;;
@@ -15917,6 +18077,9 @@ case $operation in
     ;;
     getTenantUnitsCount)
     call_getTenantUnitsCount
+    ;;
+    patchTenantUnit)
+    call_patchTenantUnit
     ;;
     updateTenantUnit)
     call_updateTenantUnit

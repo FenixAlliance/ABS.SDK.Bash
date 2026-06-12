@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getPricingRuleById**](PricingRulesApi.md#getPricingRuleById) | **GET** /api/v2/PricingService/PricingRules/{pricingRuleId} | Get pricing rule by ID
 [**getPricingRules**](PricingRulesApi.md#getPricingRules) | **GET** /api/v2/PricingService/PricingRules | Get all pricing rules
 [**getPricingRulesCountAsync**](PricingRulesApi.md#getPricingRulesCountAsync) | **GET** /api/v2/PricingService/PricingRules/Count | Counts pricing rules
+[**patchPricingRule**](PricingRulesApi.md#patchPricingRule) | **PATCH** /api/v2/PricingService/PricingRules/{pricingRuleId} | Patch a pricing rule
 [**updatePricingRule**](PricingRulesApi.md#updatePricingRule) | **PUT** /api/v2/PricingService/PricingRules/Update | Update a pricing rule
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchPricingRule
+
+Patch a pricing rule
+
+Partially updates a pricing rule using a JSON Patch document.
+
+### Example
+
+```bash
+ patchPricingRule  tenantId=value pricingRuleId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **pricingRuleId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

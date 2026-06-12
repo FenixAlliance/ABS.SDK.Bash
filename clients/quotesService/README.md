@@ -136,6 +136,8 @@ Class | Method | HTTP request | Description
 *QuotesApi* | [**getQuoteLinesCount**](docs/QuotesApi.md#getquotelinescount) | **GET** /api/v2/QuotesService/Quotes/{quoteId}/Lines/Count | Get the count of quote lines.
 *QuotesApi* | [**getQuotes**](docs/QuotesApi.md#getquotes) | **GET** /api/v2/QuotesService/Quotes | Get a list of quotes.
 *QuotesApi* | [**getQuotesCount**](docs/QuotesApi.md#getquotescount) | **GET** /api/v2/QuotesService/Quotes/Count | Get the count of quotes.
+*QuotesApi* | [**patchQuoteAsync**](docs/QuotesApi.md#patchquoteasync) | **PATCH** /api/v2/QuotesService/Quotes/{quoteId} | Patch an existing quote.
+*QuotesApi* | [**patchQuoteLineAsync**](docs/QuotesApi.md#patchquotelineasync) | **PATCH** /api/v2/QuotesService/Quotes/{quoteId}/Lines/{quoteLineId} | Patch a quote line.
 *QuotesApi* | [**previewQuoteEmailTemplate**](docs/QuotesApi.md#previewquoteemailtemplate) | **POST** /api/v2/QuotesService/Quotes/{quoteId}/Emails/Preview | Preview the rendered email for an invoice.
 *QuotesApi* | [**quoteLineExists**](docs/QuotesApi.md#quotelineexists) | **GET** /api/v2/QuotesService/Quotes/{quoteId}/Lines/Exists | Check if a quote line exists.
 *QuotesApi* | [**reopenQuote**](docs/QuotesApi.md#reopenquote) | **PUT** /api/v2/QuotesService/Quotes/{quoteId}/Reopen | Reopen a closed quote.
@@ -161,6 +163,7 @@ Class | Method | HTTP request | Description
  - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [Operation](docs/Operation.md)
  - [QuoteCreateDto](docs/QuoteCreateDto.md)
  - [QuoteDto](docs/QuoteDto.md)
  - [QuoteDtoEnvelope](docs/QuoteDtoEnvelope.md)

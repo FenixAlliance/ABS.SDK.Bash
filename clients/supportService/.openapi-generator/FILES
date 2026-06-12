@@ -46,6 +46,7 @@ docs/MaintenanceVisitDto.md
 docs/MaintenanceVisitDtoEnvelope.md
 docs/MaintenanceVisitDtoListEnvelope.md
 docs/MaintenanceVisitsApi.md
+docs/Operation.md
 docs/PrivateMessageDto.md
 docs/PrivateMessageDtoListEnvelope.md
 docs/RefreshRequest.md

@@ -11,6 +11,7 @@ Method | HTTP request | Description
 [**getBusinessApplicationsCountAsync**](ApplicationsApi.md#getBusinessApplicationsCountAsync) | **GET** /api/v2/SecurityService/Applications/Count | Get business applications count
 [**getPermissionsByApplicationAsync**](ApplicationsApi.md#getPermissionsByApplicationAsync) | **GET** /api/v2/SecurityService/Applications/{applicationId}/Permissions | Get permissions by application
 [**getRolesByApplicationAsync**](ApplicationsApi.md#getRolesByApplicationAsync) | **GET** /api/v2/SecurityService/Applications/{applicationId}/Roles | Get roles by application
+[**patchBusinessApplicationAsync**](ApplicationsApi.md#patchBusinessApplicationAsync) | **PATCH** /api/v2/SecurityService/Applications/{applicationId} | Patch an existing business application
 [**updateBusinessApplicationAsync**](ApplicationsApi.md#updateBusinessApplicationAsync) | **PUT** /api/v2/SecurityService/Applications/{applicationId} | Update an existing business application
 
 
@@ -274,6 +275,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchBusinessApplicationAsync
+
+Patch an existing business application
+
+Partially updates an existing business application using a JSON Patch document.
+
+### Example
+
+```bash
+ patchBusinessApplicationAsync  tenantId=value applicationId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **applicationId** | **string** |  | [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  |
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

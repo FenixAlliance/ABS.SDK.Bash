@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getServiceQueueByIdAsync**](ServiceQueuesApi.md#getServiceQueueByIdAsync) | **GET** /api/v2/ServicesService/ServiceQueues/{serviceQueueId} | Get a service queue by ID
 [**getServiceQueuesAsync**](ServiceQueuesApi.md#getServiceQueuesAsync) | **GET** /api/v2/ServicesService/ServiceQueues | Get all service queues
 [**getServiceQueuesCountAsync**](ServiceQueuesApi.md#getServiceQueuesCountAsync) | **GET** /api/v2/ServicesService/ServiceQueues/Count | Get service queues count
+[**patchServiceQueueAsync**](ServiceQueuesApi.md#patchServiceQueueAsync) | **PATCH** /api/v2/ServicesService/ServiceQueues/{serviceQueueId} | Patch a service queue
 [**updateServiceQueueAsync**](ServiceQueuesApi.md#updateServiceQueueAsync) | **PUT** /api/v2/ServicesService/ServiceQueues/{serviceQueueId} | Update a service queue
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchServiceQueueAsync
+
+Patch a service queue
+
+Partially updates an existing service queue using a JSON Patch document.
+
+### Example
+
+```bash
+ patchServiceQueueAsync  tenantId=value serviceQueueId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **serviceQueueId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**Envelope**](Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

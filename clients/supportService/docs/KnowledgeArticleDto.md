@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **releaseDateTime** | **string** |  | [optional] [default to null]
 **lastModification** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]
-**businessProfileRecordId** | **string** |  | [optional] [default to null]
+**enrollmentId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

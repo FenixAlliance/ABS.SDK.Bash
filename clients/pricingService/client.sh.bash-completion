@@ -80,6 +80,8 @@ _()
     operations["getDiscountListEntry"]=1
     operations["getDiscountLists"]=1
     operations["getDiscountListsCount"]=1
+    operations["patchDiscountList"]=1
+    operations["patchDiscountListEntry"]=1
     operations["updateDiscountList"]=1
     operations["updateDiscountListEntry"]=1
     operations["accountLogoutPost"]=1
@@ -108,6 +110,8 @@ _()
     operations["getPriceListPricesAsync"]=1
     operations["getPriceListsAsync"]=1
     operations["getPriceListsCountAsync"]=1
+    operations["patchPriceListAsync"]=1
+    operations["patchPriceListPriceAsync"]=1
     operations["updatePriceListAsync"]=1
     operations["updatePriceListPriceAsync"]=1
     operations["getFinalPrice"]=1
@@ -119,12 +123,14 @@ _()
     operations["getPricingRuleById"]=1
     operations["getPricingRules"]=1
     operations["getPricingRulesCountAsync"]=1
+    operations["patchPricingRule"]=1
     operations["updatePricingRule"]=1
     operations["createRoundingPolicyAsync"]=1
     operations["deleteRoundingPolicyAsync"]=1
     operations["getRoundingPoliciesAsync"]=1
     operations["getRoundingPoliciesCountAsync"]=1
     operations["getRoundingPolicyByIdAsync"]=1
+    operations["patchRoundingPolicyAsync"]=1
     operations["updateRoundingPolicyAsync"]=1
 
     # An associative array of operations to their parameters
@@ -141,6 +147,8 @@ _()
     operation_parameters["getDiscountListEntry"]="discountListId= discountListEntryId= tenantId= "
     operation_parameters["getDiscountLists"]="tenantId= "
     operation_parameters["getDiscountListsCount"]="tenantId= "
+    operation_parameters["patchDiscountList"]="discountListId= tenantId= "
+    operation_parameters["patchDiscountListEntry"]="discountListId= discountListEntryId= tenantId= "
     operation_parameters["updateDiscountList"]="discountListId= tenantId= "
     operation_parameters["updateDiscountListEntry"]="discountListId= discountListEntryId= tenantId= "
     operation_parameters["accountLogoutPost"]=""
@@ -169,6 +177,8 @@ _()
     operation_parameters["getPriceListPricesAsync"]="priceListId= tenantId= itemId= "
     operation_parameters["getPriceListsAsync"]="tenantId= "
     operation_parameters["getPriceListsCountAsync"]="tenantId= "
+    operation_parameters["patchPriceListAsync"]="priceListId= tenantId= "
+    operation_parameters["patchPriceListPriceAsync"]="priceListId= priceId= tenantId= "
     operation_parameters["updatePriceListAsync"]="priceListId= tenantId= "
     operation_parameters["updatePriceListPriceAsync"]="priceListId= priceId= tenantId= "
     operation_parameters["getFinalPrice"]="itemId= currencyId= api-version= x-api-version: "
@@ -180,12 +190,14 @@ _()
     operation_parameters["getPricingRuleById"]="pricingRuleId= tenantId= api-version= x-api-version: "
     operation_parameters["getPricingRules"]="tenantId= api-version= x-api-version: "
     operation_parameters["getPricingRulesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchPricingRule"]="pricingRuleId= tenantId= api-version= x-api-version: "
     operation_parameters["updatePricingRule"]="tenantId= pricingRuleId= api-version= x-api-version: "
     operation_parameters["createRoundingPolicyAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteRoundingPolicyAsync"]="roundingPolicyId= tenantId= api-version= x-api-version: "
     operation_parameters["getRoundingPoliciesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getRoundingPoliciesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getRoundingPolicyByIdAsync"]="roundingPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchRoundingPolicyAsync"]="roundingPolicyId= tenantId= api-version= x-api-version: "
     operation_parameters["updateRoundingPolicyAsync"]="roundingPolicyId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters

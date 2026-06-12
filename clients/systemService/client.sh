@@ -100,6 +100,19 @@ operation_parameters_minimum_occurrences["getAndStoreTokens:::api-version"]=0
 operation_parameters_minimum_occurrences["getAndStoreTokens:::x-api-version"]=0
 operation_parameters_minimum_occurrences["isRequestValidAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["isRequestValidAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteSystemBusinessDomain:::businessDomainId"]=1
+operation_parameters_minimum_occurrences["deleteSystemBusinessDomain:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSystemBusinessDomain:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemBusinessDomainById:::businessDomainId"]=1
+operation_parameters_minimum_occurrences["getSystemBusinessDomainById:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemBusinessDomainById:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemBusinessDomains:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemBusinessDomains:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemBusinessDomainsCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getSystemBusinessDomainsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["verifySystemBusinessDomain:::businessDomainId"]=1
+operation_parameters_minimum_occurrences["verifySystemBusinessDomain:::api-version"]=0
+operation_parameters_minimum_occurrences["verifySystemBusinessDomain:::x-api-version"]=0
 operation_parameters_minimum_occurrences["deleteSystemCart:::cartId"]=1
 operation_parameters_minimum_occurrences["deleteSystemCart:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteSystemCart:::x-api-version"]=0
@@ -135,6 +148,11 @@ operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::contact
 operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::portalId"]=0
 operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemContactOption:::contactId"]=1
+operation_parameters_minimum_occurrences["patchSystemContactOption:::optionId"]=1
+operation_parameters_minimum_occurrences["patchSystemContactOption:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemContactOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemContactOption:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSystemContactOption:::contactId"]=1
 operation_parameters_minimum_occurrences["updateSystemContactOption:::optionId"]=1
 operation_parameters_minimum_occurrences["updateSystemContactOption:::api-version"]=0
@@ -251,6 +269,10 @@ operation_parameters_minimum_occurrences["getSystemOptions:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSystemOptionsCount:::portalId"]=1
 operation_parameters_minimum_occurrences["getSystemOptionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemOption:::optionId"]=1
+operation_parameters_minimum_occurrences["patchSystemOption:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemOption:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSystemOption:::optionId"]=1
 operation_parameters_minimum_occurrences["updateSystemOption:::api-version"]=0
 operation_parameters_minimum_occurrences["updateSystemOption:::x-api-version"]=0
@@ -275,6 +297,10 @@ operation_parameters_minimum_occurrences["getSystemPortals:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemPortals:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSystemPortalsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemPortalsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemPortal:::portalId"]=1
+operation_parameters_minimum_occurrences["patchSystemPortal:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemPortal:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemPortal:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSystemPortal:::portalId"]=1
 operation_parameters_minimum_occurrences["updateSystemPortal:::api-version"]=0
 operation_parameters_minimum_occurrences["updateSystemPortal:::x-api-version"]=0
@@ -301,6 +327,11 @@ operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::tenantId
 operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::portalId"]=0
 operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemTenantOption:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchSystemTenantOption:::optionId"]=1
+operation_parameters_minimum_occurrences["patchSystemTenantOption:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemTenantOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemTenantOption:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSystemTenantOption:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSystemTenantOption:::optionId"]=1
 operation_parameters_minimum_occurrences["updateSystemTenantOption:::api-version"]=0
@@ -331,6 +362,10 @@ operation_parameters_minimum_occurrences["getTenant:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenant:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenant:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTenant:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTenant:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTenant:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTenant:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenant:::api-version"]=0
 operation_parameters_minimum_occurrences["updateTenant:::x-api-version"]=0
@@ -357,6 +392,11 @@ operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::userId"]=1
 operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::portalId"]=0
 operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemUserOption:::userId"]=1
+operation_parameters_minimum_occurrences["patchSystemUserOption:::optionId"]=1
+operation_parameters_minimum_occurrences["patchSystemUserOption:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemUserOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSystemUserOption:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSystemUserOption:::userId"]=1
 operation_parameters_minimum_occurrences["updateSystemUserOption:::optionId"]=1
 operation_parameters_minimum_occurrences["updateSystemUserOption:::api-version"]=0
@@ -390,6 +430,10 @@ operation_parameters_minimum_occurrences["getUsersAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getUsersAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getUsersCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getUsersCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountHolderAsync:::userId"]=1
+operation_parameters_minimum_occurrences["patchAccountHolderAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountHolderAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchAccountHolderAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateAccountHolderAsync:::userId"]=1
 operation_parameters_minimum_occurrences["updateAccountHolderAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateAccountHolderAsync:::x-api-version"]=0
@@ -406,6 +450,19 @@ operation_parameters_maximum_occurrences["getAndStoreTokens:::api-version"]=0
 operation_parameters_maximum_occurrences["getAndStoreTokens:::x-api-version"]=0
 operation_parameters_maximum_occurrences["isRequestValidAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["isRequestValidAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteSystemBusinessDomain:::businessDomainId"]=0
+operation_parameters_maximum_occurrences["deleteSystemBusinessDomain:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSystemBusinessDomain:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemBusinessDomainById:::businessDomainId"]=0
+operation_parameters_maximum_occurrences["getSystemBusinessDomainById:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemBusinessDomainById:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemBusinessDomains:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemBusinessDomains:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemBusinessDomainsCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getSystemBusinessDomainsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["verifySystemBusinessDomain:::businessDomainId"]=0
+operation_parameters_maximum_occurrences["verifySystemBusinessDomain:::api-version"]=0
+operation_parameters_maximum_occurrences["verifySystemBusinessDomain:::x-api-version"]=0
 operation_parameters_maximum_occurrences["deleteSystemCart:::cartId"]=0
 operation_parameters_maximum_occurrences["deleteSystemCart:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteSystemCart:::x-api-version"]=0
@@ -441,6 +498,11 @@ operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::contact
 operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::portalId"]=0
 operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemContactOption:::contactId"]=0
+operation_parameters_maximum_occurrences["patchSystemContactOption:::optionId"]=0
+operation_parameters_maximum_occurrences["patchSystemContactOption:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemContactOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemContactOption:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSystemContactOption:::contactId"]=0
 operation_parameters_maximum_occurrences["updateSystemContactOption:::optionId"]=0
 operation_parameters_maximum_occurrences["updateSystemContactOption:::api-version"]=0
@@ -557,6 +619,10 @@ operation_parameters_maximum_occurrences["getSystemOptions:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSystemOptionsCount:::portalId"]=0
 operation_parameters_maximum_occurrences["getSystemOptionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemOption:::optionId"]=0
+operation_parameters_maximum_occurrences["patchSystemOption:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemOption:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSystemOption:::optionId"]=0
 operation_parameters_maximum_occurrences["updateSystemOption:::api-version"]=0
 operation_parameters_maximum_occurrences["updateSystemOption:::x-api-version"]=0
@@ -581,6 +647,10 @@ operation_parameters_maximum_occurrences["getSystemPortals:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemPortals:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSystemPortalsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemPortalsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemPortal:::portalId"]=0
+operation_parameters_maximum_occurrences["patchSystemPortal:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemPortal:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemPortal:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSystemPortal:::portalId"]=0
 operation_parameters_maximum_occurrences["updateSystemPortal:::api-version"]=0
 operation_parameters_maximum_occurrences["updateSystemPortal:::x-api-version"]=0
@@ -607,6 +677,11 @@ operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::tenantId
 operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::portalId"]=0
 operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemTenantOption:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchSystemTenantOption:::optionId"]=0
+operation_parameters_maximum_occurrences["patchSystemTenantOption:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemTenantOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemTenantOption:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSystemTenantOption:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSystemTenantOption:::optionId"]=0
 operation_parameters_maximum_occurrences["updateSystemTenantOption:::api-version"]=0
@@ -637,6 +712,10 @@ operation_parameters_maximum_occurrences["getTenant:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenant:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenant:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTenant:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTenant:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTenant:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTenant:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenant:::api-version"]=0
 operation_parameters_maximum_occurrences["updateTenant:::x-api-version"]=0
@@ -663,6 +742,11 @@ operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::userId"]=0
 operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::portalId"]=0
 operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemUserOption:::userId"]=0
+operation_parameters_maximum_occurrences["patchSystemUserOption:::optionId"]=0
+operation_parameters_maximum_occurrences["patchSystemUserOption:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemUserOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSystemUserOption:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSystemUserOption:::userId"]=0
 operation_parameters_maximum_occurrences["updateSystemUserOption:::optionId"]=0
 operation_parameters_maximum_occurrences["updateSystemUserOption:::api-version"]=0
@@ -696,6 +780,10 @@ operation_parameters_maximum_occurrences["getUsersAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getUsersAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getUsersCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getUsersCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountHolderAsync:::userId"]=0
+operation_parameters_maximum_occurrences["patchAccountHolderAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountHolderAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchAccountHolderAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateAccountHolderAsync:::userId"]=0
 operation_parameters_maximum_occurrences["updateAccountHolderAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateAccountHolderAsync:::x-api-version"]=0
@@ -709,6 +797,19 @@ operation_parameters_collection_type["getAndStoreTokens:::api-version"]=""
 operation_parameters_collection_type["getAndStoreTokens:::x-api-version"]=""
 operation_parameters_collection_type["isRequestValidAsync:::api-version"]=""
 operation_parameters_collection_type["isRequestValidAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteSystemBusinessDomain:::businessDomainId"]=""
+operation_parameters_collection_type["deleteSystemBusinessDomain:::api-version"]=""
+operation_parameters_collection_type["deleteSystemBusinessDomain:::x-api-version"]=""
+operation_parameters_collection_type["getSystemBusinessDomainById:::businessDomainId"]=""
+operation_parameters_collection_type["getSystemBusinessDomainById:::api-version"]=""
+operation_parameters_collection_type["getSystemBusinessDomainById:::x-api-version"]=""
+operation_parameters_collection_type["getSystemBusinessDomains:::api-version"]=""
+operation_parameters_collection_type["getSystemBusinessDomains:::x-api-version"]=""
+operation_parameters_collection_type["getSystemBusinessDomainsCount:::api-version"]=""
+operation_parameters_collection_type["getSystemBusinessDomainsCount:::x-api-version"]=""
+operation_parameters_collection_type["verifySystemBusinessDomain:::businessDomainId"]=""
+operation_parameters_collection_type["verifySystemBusinessDomain:::api-version"]=""
+operation_parameters_collection_type["verifySystemBusinessDomain:::x-api-version"]=""
 operation_parameters_collection_type["deleteSystemCart:::cartId"]=""
 operation_parameters_collection_type["deleteSystemCart:::api-version"]=""
 operation_parameters_collection_type["deleteSystemCart:::x-api-version"]=""
@@ -744,6 +845,11 @@ operation_parameters_collection_type["getSystemContactOptionsCount:::contactId"]
 operation_parameters_collection_type["getSystemContactOptionsCount:::portalId"]=""
 operation_parameters_collection_type["getSystemContactOptionsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemContactOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchSystemContactOption:::contactId"]=""
+operation_parameters_collection_type["patchSystemContactOption:::optionId"]=""
+operation_parameters_collection_type["patchSystemContactOption:::api-version"]=""
+operation_parameters_collection_type["patchSystemContactOption:::x-api-version"]=""
+operation_parameters_collection_type["patchSystemContactOption:::Operation"]=
 operation_parameters_collection_type["updateSystemContactOption:::contactId"]=""
 operation_parameters_collection_type["updateSystemContactOption:::optionId"]=""
 operation_parameters_collection_type["updateSystemContactOption:::api-version"]=""
@@ -860,6 +966,10 @@ operation_parameters_collection_type["getSystemOptions:::x-api-version"]=""
 operation_parameters_collection_type["getSystemOptionsCount:::portalId"]=""
 operation_parameters_collection_type["getSystemOptionsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchSystemOption:::optionId"]=""
+operation_parameters_collection_type["patchSystemOption:::api-version"]=""
+operation_parameters_collection_type["patchSystemOption:::x-api-version"]=""
+operation_parameters_collection_type["patchSystemOption:::Operation"]=
 operation_parameters_collection_type["updateSystemOption:::optionId"]=""
 operation_parameters_collection_type["updateSystemOption:::api-version"]=""
 operation_parameters_collection_type["updateSystemOption:::x-api-version"]=""
@@ -884,6 +994,10 @@ operation_parameters_collection_type["getSystemPortals:::api-version"]=""
 operation_parameters_collection_type["getSystemPortals:::x-api-version"]=""
 operation_parameters_collection_type["getSystemPortalsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemPortalsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchSystemPortal:::portalId"]=""
+operation_parameters_collection_type["patchSystemPortal:::api-version"]=""
+operation_parameters_collection_type["patchSystemPortal:::x-api-version"]=""
+operation_parameters_collection_type["patchSystemPortal:::Operation"]=
 operation_parameters_collection_type["updateSystemPortal:::portalId"]=""
 operation_parameters_collection_type["updateSystemPortal:::api-version"]=""
 operation_parameters_collection_type["updateSystemPortal:::x-api-version"]=""
@@ -910,6 +1024,11 @@ operation_parameters_collection_type["getSystemTenantOptionsCount:::tenantId"]="
 operation_parameters_collection_type["getSystemTenantOptionsCount:::portalId"]=""
 operation_parameters_collection_type["getSystemTenantOptionsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemTenantOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchSystemTenantOption:::tenantId"]=""
+operation_parameters_collection_type["patchSystemTenantOption:::optionId"]=""
+operation_parameters_collection_type["patchSystemTenantOption:::api-version"]=""
+operation_parameters_collection_type["patchSystemTenantOption:::x-api-version"]=""
+operation_parameters_collection_type["patchSystemTenantOption:::Operation"]=
 operation_parameters_collection_type["updateSystemTenantOption:::tenantId"]=""
 operation_parameters_collection_type["updateSystemTenantOption:::optionId"]=""
 operation_parameters_collection_type["updateSystemTenantOption:::api-version"]=""
@@ -940,6 +1059,10 @@ operation_parameters_collection_type["getTenant:::api-version"]=""
 operation_parameters_collection_type["getTenant:::x-api-version"]=""
 operation_parameters_collection_type["getTenantsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchTenant:::tenantId"]=""
+operation_parameters_collection_type["patchTenant:::api-version"]=""
+operation_parameters_collection_type["patchTenant:::x-api-version"]=""
+operation_parameters_collection_type["patchTenant:::Operation"]=
 operation_parameters_collection_type["updateTenant:::tenantId"]=""
 operation_parameters_collection_type["updateTenant:::api-version"]=""
 operation_parameters_collection_type["updateTenant:::x-api-version"]=""
@@ -966,6 +1089,11 @@ operation_parameters_collection_type["getSystemUserOptionsCount:::userId"]=""
 operation_parameters_collection_type["getSystemUserOptionsCount:::portalId"]=""
 operation_parameters_collection_type["getSystemUserOptionsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemUserOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchSystemUserOption:::userId"]=""
+operation_parameters_collection_type["patchSystemUserOption:::optionId"]=""
+operation_parameters_collection_type["patchSystemUserOption:::api-version"]=""
+operation_parameters_collection_type["patchSystemUserOption:::x-api-version"]=""
+operation_parameters_collection_type["patchSystemUserOption:::Operation"]=
 operation_parameters_collection_type["updateSystemUserOption:::userId"]=""
 operation_parameters_collection_type["updateSystemUserOption:::optionId"]=""
 operation_parameters_collection_type["updateSystemUserOption:::api-version"]=""
@@ -999,6 +1127,10 @@ operation_parameters_collection_type["getUsersAsync:::api-version"]=""
 operation_parameters_collection_type["getUsersAsync:::x-api-version"]=""
 operation_parameters_collection_type["getUsersCountAsync:::api-version"]=""
 operation_parameters_collection_type["getUsersCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchAccountHolderAsync:::userId"]=""
+operation_parameters_collection_type["patchAccountHolderAsync:::api-version"]=""
+operation_parameters_collection_type["patchAccountHolderAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchAccountHolderAsync:::Operation"]=
 operation_parameters_collection_type["updateAccountHolderAsync:::userId"]=""
 operation_parameters_collection_type["updateAccountHolderAsync:::api-version"]=""
 operation_parameters_collection_type["updateAccountHolderAsync:::x-api-version"]=""
@@ -1360,7 +1492,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}SystemService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}SystemService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1396,6 +1528,16 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[businessDomains]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}deleteSystemBusinessDomain${OFF};Delete a business domain
+  ${CYAN}getSystemBusinessDomainById${OFF};Retrieve a business domain by its ID
+  ${CYAN}getSystemBusinessDomains${OFF};Retrieve all business domains in the system
+  ${CYAN}getSystemBusinessDomainsCount${OFF};Get the count of all business domains in the system
+  ${CYAN}verifySystemBusinessDomain${OFF};Verify a business domain
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[carts]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}deleteSystemCart${OFF};Delete a system cart
@@ -1418,6 +1560,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getSystemContactOptionById${OFF};Retrieve a single contact option by its ID (admin)
   ${CYAN}getSystemContactOptions${OFF};Retrieve a list of contact options (admin)
   ${CYAN}getSystemContactOptionsCount${OFF};Get the count of contact options (admin)
+  ${CYAN}patchSystemContactOption${OFF};Partially update a contact option (admin)
   ${CYAN}updateSystemContactOption${OFF};Update a contact option (admin)
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1504,6 +1647,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getSystemOptionByKey${OFF};Retrieve a single system option by its key
   ${CYAN}getSystemOptions${OFF};Retrieve a list of system options
   ${CYAN}getSystemOptionsCount${OFF};Get the count of system options
+  ${CYAN}patchSystemOption${OFF};Partially update a system option
   ${CYAN}updateSystemOption${OFF};Update a system option
   ${CYAN}upsertSystemOption${OFF};Create or update a system option by key
 EOF
@@ -1522,6 +1666,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getSystemPortalById${OFF};Retrieve a single system portal by its ID
   ${CYAN}getSystemPortals${OFF};Retrieve a list of system portals
   ${CYAN}getSystemPortalsCount${OFF};Get the count of system portals
+  ${CYAN}patchSystemPortal${OFF};Partially update a system portal
   ${CYAN}updateSystemPortal${OFF};Update a system portal
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1533,6 +1678,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getSystemTenantOptionById${OFF};Retrieve a single tenant option by its ID (admin)
   ${CYAN}getSystemTenantOptions${OFF};Retrieve a list of tenant options (admin)
   ${CYAN}getSystemTenantOptionsCount${OFF};Get the count of tenant options (admin)
+  ${CYAN}patchSystemTenantOption${OFF};Partially update a tenant option (admin)
   ${CYAN}updateSystemTenantOption${OFF};Update a tenant option (admin)
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1548,6 +1694,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getExtendedTenantsCount${OFF};Get the total count of extended tenants available on this suite server instance.
   ${CYAN}getTenant${OFF};Get a specific tenant by ID.
   ${CYAN}getTenantsCount${OFF};Get the total count of tenants available on this suite server instance.
+  ${CYAN}patchTenant${OFF};Partially update a specific tenant by ID.
   ${CYAN}updateTenant${OFF};Update a specific tenant by ID.
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1559,6 +1706,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getSystemUserOptionById${OFF};Retrieve a single user option by its ID (admin)
   ${CYAN}getSystemUserOptions${OFF};Retrieve a list of user options (admin)
   ${CYAN}getSystemUserOptionsCount${OFF};Get the count of user options (admin)
+  ${CYAN}patchSystemUserOption${OFF};Partially update a user option (admin)
   ${CYAN}updateSystemUserOption${OFF};Update a user option (admin)
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1575,6 +1723,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getUserAsync${OFF};Retrieve a user by ID
   ${CYAN}getUsersAsync${OFF};Retrieve a list of users
   ${CYAN}getUsersCountAsync${OFF};Get the count of users
+  ${CYAN}patchAccountHolderAsync${OFF};Partially update a user
   ${CYAN}updateAccountHolderAsync${OFF};Update a user
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1605,7 +1754,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}SystemService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}SystemService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1625,7 +1774,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}SystemService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}SystemService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1666,6 +1815,131 @@ print_isRequestValidAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSystemBusinessDomain operation
+#
+##############################################################################
+print_deleteSystemBusinessDomain_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSystemBusinessDomain - Delete a business domain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes any business domain from the system, regardless of owning tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}businessDomainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: businessDomainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemBusinessDomainById operation
+#
+##############################################################################
+print_getSystemBusinessDomainById_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemBusinessDomainById - Retrieve a business domain by its ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieve any business domain by its ID, regardless of owning tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}businessDomainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: businessDomainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemBusinessDomains operation
+#
+##############################################################################
+print_getSystemBusinessDomains_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemBusinessDomains - Retrieve all business domains in the system${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieve all registered business domains across every tenant (global administrators only)." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSystemBusinessDomainsCount operation
+#
+##############################################################################
+print_getSystemBusinessDomainsCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSystemBusinessDomainsCount - Get the count of all business domains in the system${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get the count of all registered business domains across every tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for verifySystemBusinessDomain operation
+#
+##############################################################################
+print_verifySystemBusinessDomain_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}verifySystemBusinessDomain - Verify a business domain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Checks the domain's DNS TXT records for the verification token and marks it verified." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}businessDomainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: businessDomainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -1920,6 +2194,34 @@ print_getSystemContactOptionsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchSystemContactOption operation
+#
+##############################################################################
+print_patchSystemContactOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSystemContactOption - Partially update a contact option (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to partially update an option for any contact using a JSON Patch document" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2959,6 +3261,33 @@ print_getSystemOptionsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchSystemOption operation
+#
+##############################################################################
+print_patchSystemOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSystemOption - Partially update a system option${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially update a system option using a JSON Patch document" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateSystemOption operation
 #
 ##############################################################################
@@ -3163,6 +3492,33 @@ print_getSystemPortalsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchSystemPortal operation
+#
+##############################################################################
+print_patchSystemPortal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSystemPortal - Partially update a system portal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially update an existing web portal in the system using a JSON Patch document" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateSystemPortal operation
 #
 ##############################################################################
@@ -3316,6 +3672,34 @@ print_getSystemTenantOptionsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchSystemTenantOption operation
+#
+##############################################################################
+print_patchSystemTenantOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSystemTenantOption - Partially update a tenant option (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to partially update an option for any tenant using a JSON Patch document" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3573,6 +3957,33 @@ print_getTenantsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchTenant operation
+#
+##############################################################################
+print_patchTenant_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTenant - Partially update a specific tenant by ID.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTenant operation
 #
 ##############################################################################
@@ -3726,6 +4137,34 @@ print_getSystemUserOptionsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchSystemUserOption operation
+#
+##############################################################################
+print_patchSystemUserOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSystemUserOption - Partially update a user option (admin)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Admin endpoint to partially update an option for any user using a JSON Patch document" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4014,6 +4453,33 @@ print_getUsersCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchAccountHolderAsync operation
+#
+##############################################################################
+print_patchAccountHolderAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchAccountHolderAsync - Partially update a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateAccountHolderAsync operation
 #
 ##############################################################################
@@ -4096,6 +4562,186 @@ call_isRequestValidAsync() {
         exit 1
     fi
     local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSystemBusinessDomain operation
+#
+##############################################################################
+call_deleteSystemBusinessDomain() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(businessDomainId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/BusinessDomains/{businessDomainId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemBusinessDomainById operation
+#
+##############################################################################
+call_getSystemBusinessDomainById() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(businessDomainId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/BusinessDomains/{businessDomainId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemBusinessDomains operation
+#
+##############################################################################
+call_getSystemBusinessDomains() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/BusinessDomains" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSystemBusinessDomainsCount operation
+#
+##############################################################################
+call_getSystemBusinessDomainsCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/BusinessDomains/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call verifySystemBusinessDomain operation
+#
+##############################################################################
+call_verifySystemBusinessDomain() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(businessDomainId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/BusinessDomains/{businessDomainId}/Verify" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -4510,6 +5156,82 @@ call_getSystemContactOptionsCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchSystemContactOption operation
+#
+##############################################################################
+call_patchSystemContactOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Contacts/{contactId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6992,6 +7714,82 @@ call_getSystemOptionsCount() {
 
 ##############################################################################
 #
+# Call patchSystemOption operation
+#
+##############################################################################
+call_patchSystemOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateSystemOption operation
 #
 ##############################################################################
@@ -7400,6 +8198,82 @@ call_getSystemPortalsCount() {
 
 ##############################################################################
 #
+# Call patchSystemPortal operation
+#
+##############################################################################
+call_patchSystemPortal() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(portalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Portals/{portalId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateSystemPortal operation
 #
 ##############################################################################
@@ -7691,6 +8565,82 @@ call_getSystemTenantOptionsCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchSystemTenantOption operation
+#
+##############################################################################
+call_patchSystemTenantOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Tenants/{tenantId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8216,6 +9166,82 @@ call_getTenantsCount() {
 
 ##############################################################################
 #
+# Call patchTenant operation
+#
+##############################################################################
+call_patchTenant() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Tenants/{tenantId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTenant operation
 #
 ##############################################################################
@@ -8507,6 +9533,82 @@ call_getSystemUserOptionsCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchSystemUserOption operation
+#
+##############################################################################
+call_patchSystemUserOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(userId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Users/{userId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9068,6 +10170,82 @@ call_getUsersCountAsync() {
 
 ##############################################################################
 #
+# Call patchAccountHolderAsync operation
+#
+##############################################################################
+call_patchAccountHolderAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(userId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Users/{userId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateAccountHolderAsync operation
 #
 ##############################################################################
@@ -9245,6 +10423,21 @@ case $key in
     isRequestValidAsync)
     operation="isRequestValidAsync"
     ;;
+    deleteSystemBusinessDomain)
+    operation="deleteSystemBusinessDomain"
+    ;;
+    getSystemBusinessDomainById)
+    operation="getSystemBusinessDomainById"
+    ;;
+    getSystemBusinessDomains)
+    operation="getSystemBusinessDomains"
+    ;;
+    getSystemBusinessDomainsCount)
+    operation="getSystemBusinessDomainsCount"
+    ;;
+    verifySystemBusinessDomain)
+    operation="verifySystemBusinessDomain"
+    ;;
     deleteSystemCart)
     operation="deleteSystemCart"
     ;;
@@ -9274,6 +10467,9 @@ case $key in
     ;;
     getSystemContactOptionsCount)
     operation="getSystemContactOptionsCount"
+    ;;
+    patchSystemContactOption)
+    operation="patchSystemContactOption"
     ;;
     updateSystemContactOption)
     operation="updateSystemContactOption"
@@ -9413,6 +10609,9 @@ case $key in
     getSystemOptionsCount)
     operation="getSystemOptionsCount"
     ;;
+    patchSystemOption)
+    operation="patchSystemOption"
+    ;;
     updateSystemOption)
     operation="updateSystemOption"
     ;;
@@ -9437,6 +10636,9 @@ case $key in
     getSystemPortalsCount)
     operation="getSystemPortalsCount"
     ;;
+    patchSystemPortal)
+    operation="patchSystemPortal"
+    ;;
     updateSystemPortal)
     operation="updateSystemPortal"
     ;;
@@ -9454,6 +10656,9 @@ case $key in
     ;;
     getSystemTenantOptionsCount)
     operation="getSystemTenantOptionsCount"
+    ;;
+    patchSystemTenantOption)
+    operation="patchSystemTenantOption"
     ;;
     updateSystemTenantOption)
     operation="updateSystemTenantOption"
@@ -9485,6 +10690,9 @@ case $key in
     getTenantsCount)
     operation="getTenantsCount"
     ;;
+    patchTenant)
+    operation="patchTenant"
+    ;;
     updateTenant)
     operation="updateTenant"
     ;;
@@ -9502,6 +10710,9 @@ case $key in
     ;;
     getSystemUserOptionsCount)
     operation="getSystemUserOptionsCount"
+    ;;
+    patchSystemUserOption)
+    operation="patchSystemUserOption"
     ;;
     updateSystemUserOption)
     operation="updateSystemUserOption"
@@ -9535,6 +10746,9 @@ case $key in
     ;;
     getUsersCountAsync)
     operation="getUsersCountAsync"
+    ;;
+    patchAccountHolderAsync)
+    operation="patchAccountHolderAsync"
     ;;
     updateAccountHolderAsync)
     operation="updateAccountHolderAsync"
@@ -9632,6 +10846,21 @@ case $operation in
     isRequestValidAsync)
     call_isRequestValidAsync
     ;;
+    deleteSystemBusinessDomain)
+    call_deleteSystemBusinessDomain
+    ;;
+    getSystemBusinessDomainById)
+    call_getSystemBusinessDomainById
+    ;;
+    getSystemBusinessDomains)
+    call_getSystemBusinessDomains
+    ;;
+    getSystemBusinessDomainsCount)
+    call_getSystemBusinessDomainsCount
+    ;;
+    verifySystemBusinessDomain)
+    call_verifySystemBusinessDomain
+    ;;
     deleteSystemCart)
     call_deleteSystemCart
     ;;
@@ -9661,6 +10890,9 @@ case $operation in
     ;;
     getSystemContactOptionsCount)
     call_getSystemContactOptionsCount
+    ;;
+    patchSystemContactOption)
+    call_patchSystemContactOption
     ;;
     updateSystemContactOption)
     call_updateSystemContactOption
@@ -9800,6 +11032,9 @@ case $operation in
     getSystemOptionsCount)
     call_getSystemOptionsCount
     ;;
+    patchSystemOption)
+    call_patchSystemOption
+    ;;
     updateSystemOption)
     call_updateSystemOption
     ;;
@@ -9824,6 +11059,9 @@ case $operation in
     getSystemPortalsCount)
     call_getSystemPortalsCount
     ;;
+    patchSystemPortal)
+    call_patchSystemPortal
+    ;;
     updateSystemPortal)
     call_updateSystemPortal
     ;;
@@ -9841,6 +11079,9 @@ case $operation in
     ;;
     getSystemTenantOptionsCount)
     call_getSystemTenantOptionsCount
+    ;;
+    patchSystemTenantOption)
+    call_patchSystemTenantOption
     ;;
     updateSystemTenantOption)
     call_updateSystemTenantOption
@@ -9872,6 +11113,9 @@ case $operation in
     getTenantsCount)
     call_getTenantsCount
     ;;
+    patchTenant)
+    call_patchTenant
+    ;;
     updateTenant)
     call_updateTenant
     ;;
@@ -9889,6 +11133,9 @@ case $operation in
     ;;
     getSystemUserOptionsCount)
     call_getSystemUserOptionsCount
+    ;;
+    patchSystemUserOption)
+    call_patchSystemUserOption
     ;;
     updateSystemUserOption)
     call_updateSystemUserOption
@@ -9922,6 +11169,9 @@ case $operation in
     ;;
     getUsersCountAsync)
     call_getUsersCountAsync
+    ;;
+    patchAccountHolderAsync)
+    call_patchAccountHolderAsync
     ;;
     updateAccountHolderAsync)
     call_updateAccountHolderAsync

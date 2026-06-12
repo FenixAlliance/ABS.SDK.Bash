@@ -92,54 +92,63 @@ _()
     operations["getInquiryRequestAsync"]=1
     operations["getInquiryRequestsAsync"]=1
     operations["getInquiryRequestsCountAsync"]=1
+    operations["patchInquiryRequestAsync"]=1
     operations["updateInquiryRequestAsync"]=1
     operations["createKnowledgeArticleAsync"]=1
     operations["deleteKnowledgeArticleAsync"]=1
     operations["getKnowledgeArticleAsync"]=1
     operations["getKnowledgeArticlesAsync"]=1
     operations["getKnowledgeArticlesCountAsync"]=1
+    operations["patchKnowledgeArticleAsync"]=1
     operations["updateKnowledgeArticleAsync"]=1
     operations["createMaintenanceVisitAsync"]=1
     operations["deleteMaintenanceVisitAsync"]=1
     operations["getMaintenanceVisitAsync"]=1
     operations["getMaintenanceVisitsAsync"]=1
     operations["getMaintenanceVisitsCountAsync"]=1
+    operations["patchMaintenanceVisitAsync"]=1
     operations["updateMaintenanceVisitAsync"]=1
     operations["createRefundPolicyAsync"]=1
     operations["deleteRefundPolicyAsync"]=1
     operations["getRefundPoliciesAsync"]=1
     operations["getRefundPoliciesCountAsync"]=1
     operations["getRefundPolicyAsync"]=1
+    operations["patchRefundPolicyAsync"]=1
     operations["updateRefundPolicyAsync"]=1
     operations["createRefundRequestAsync"]=1
     operations["deleteRefundRequestAsync"]=1
     operations["getRefundRequestAsync"]=1
     operations["getRefundRequestsAsync"]=1
     operations["getRefundRequestsCountAsync"]=1
+    operations["patchRefundRequestAsync"]=1
     operations["updateRefundRequestAsync"]=1
     operations["createReturnPolicyAsync"]=1
     operations["deleteReturnPolicyAsync"]=1
     operations["getReturnPoliciesAsync"]=1
     operations["getReturnPoliciesCountAsync"]=1
     operations["getReturnPolicyAsync"]=1
+    operations["patchReturnPolicyAsync"]=1
     operations["updateReturnPolicyAsync"]=1
     operations["createReturnRequestAsync"]=1
     operations["deleteReturnRequestAsync"]=1
     operations["getReturnRequestAsync"]=1
     operations["getReturnRequestsAsync"]=1
     operations["getReturnRequestsCountAsync"]=1
+    operations["patchReturnRequestAsync"]=1
     operations["updateReturnRequestAsync"]=1
     operations["createSupportEntitlementAsync"]=1
     operations["deleteSupportEntitlementAsync"]=1
     operations["getSupportEntitlementAsync"]=1
     operations["getSupportEntitlementsAsync"]=1
     operations["getSupportEntitlementsCountAsync"]=1
+    operations["patchSupportEntitlementAsync"]=1
     operations["updateSupportEntitlementAsync"]=1
     operations["createSupportRequestAttachmentAsync"]=1
     operations["deleteSupportRequestAttachmentAsync"]=1
     operations["getSupportRequestAttachmentAsync"]=1
     operations["getSupportRequestAttachmentsAsync"]=1
     operations["getSupportRequestAttachmentsCountAsync"]=1
+    operations["patchSupportRequestAttachmentAsync"]=1
     operations["updateSupportRequestAttachmentAsync"]=1
     operations["createSupportRequestAsync"]=1
     operations["deleteSupportRequestAsync"]=1
@@ -150,6 +159,7 @@ _()
     operations["getSupportRequestTicketsAsync"]=1
     operations["getSupportRequestsAsync"]=1
     operations["getSupportRequestsCountAsync"]=1
+    operations["patchSupportRequestAsync"]=1
     operations["relateSupportRequestToAttachmentAsync"]=1
     operations["updateSupportRequestAsync"]=1
     operations["createSupportTicketPriorityAsync"]=1
@@ -157,12 +167,14 @@ _()
     operations["getSupportTicketPrioritiesAsync"]=1
     operations["getSupportTicketPrioritiesCountAsync"]=1
     operations["getSupportTicketPriorityAsync"]=1
+    operations["patchSupportTicketPriorityAsync"]=1
     operations["updateSupportTicketPriorityAsync"]=1
     operations["createSupportTicketTypeAsync"]=1
     operations["deleteSupportTicketTypeAsync"]=1
     operations["getSupportTicketTypeAsync"]=1
     operations["getSupportTicketTypesAsync"]=1
     operations["getSupportTicketTypesCountAsync"]=1
+    operations["patchSupportTicketTypeAsync"]=1
     operations["updateSupportTicketTypeAsync"]=1
     operations["createSupportTicketAsync"]=1
     operations["deleteSupportTicketAsync"]=1
@@ -173,6 +185,7 @@ _()
     operations["getSupportTicketConversationsAsync"]=1
     operations["getSupportTicketsAsync"]=1
     operations["getSupportTicketsCountAsync"]=1
+    operations["patchSupportTicketAsync"]=1
     operations["relateSupportTicketToConversationAsync"]=1
     operations["updateSupportTicketAsync"]=1
     operations["createWarrantyPolicyAsync"]=1
@@ -180,12 +193,14 @@ _()
     operations["getWarrantyPoliciesAsync"]=1
     operations["getWarrantyPoliciesCountAsync"]=1
     operations["getWarrantyPolicyAsync"]=1
+    operations["patchWarrantyPolicyAsync"]=1
     operations["updateWarrantyPolicyAsync"]=1
     operations["createWarrantyRequestAsync"]=1
     operations["deleteWarrantyRequestAsync"]=1
     operations["getWarrantyRequestAsync"]=1
     operations["getWarrantyRequestsAsync"]=1
     operations["getWarrantyRequestsCountAsync"]=1
+    operations["patchWarrantyRequestAsync"]=1
     operations["updateWarrantyRequestAsync"]=1
 
     # An associative array of operations to their parameters
@@ -214,54 +229,63 @@ _()
     operation_parameters["getInquiryRequestAsync"]="inquiryRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["getInquiryRequestsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getInquiryRequestsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchInquiryRequestAsync"]="inquiryRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["updateInquiryRequestAsync"]="inquiryRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["createKnowledgeArticleAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteKnowledgeArticleAsync"]="knowledgeArticleId= tenantId= api-version= x-api-version: "
     operation_parameters["getKnowledgeArticleAsync"]="knowledgeArticleId= tenantId= api-version= x-api-version: "
     operation_parameters["getKnowledgeArticlesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getKnowledgeArticlesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchKnowledgeArticleAsync"]="knowledgeArticleId= tenantId= api-version= x-api-version: "
     operation_parameters["updateKnowledgeArticleAsync"]="knowledgeArticleId= tenantId= api-version= x-api-version: "
     operation_parameters["createMaintenanceVisitAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteMaintenanceVisitAsync"]="maintenanceVisitId= tenantId= api-version= x-api-version: "
     operation_parameters["getMaintenanceVisitAsync"]="maintenanceVisitId= tenantId= api-version= x-api-version: "
     operation_parameters["getMaintenanceVisitsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getMaintenanceVisitsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchMaintenanceVisitAsync"]="maintenanceVisitId= tenantId= api-version= x-api-version: "
     operation_parameters["updateMaintenanceVisitAsync"]="maintenanceVisitId= tenantId= api-version= x-api-version: "
     operation_parameters["createRefundPolicyAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteRefundPolicyAsync"]="refundPolicyId= tenantId= api-version= x-api-version: "
     operation_parameters["getRefundPoliciesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getRefundPoliciesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getRefundPolicyAsync"]="refundPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchRefundPolicyAsync"]="refundPolicyId= tenantId= api-version= x-api-version: "
     operation_parameters["updateRefundPolicyAsync"]="refundPolicyId= tenantId= api-version= x-api-version: "
     operation_parameters["createRefundRequestAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteRefundRequestAsync"]="refundRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["getRefundRequestAsync"]="refundRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["getRefundRequestsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getRefundRequestsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchRefundRequestAsync"]="refundRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["updateRefundRequestAsync"]="refundRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["createReturnPolicyAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteReturnPolicyAsync"]="returnPolicyId= tenantId= api-version= x-api-version: "
     operation_parameters["getReturnPoliciesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getReturnPoliciesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getReturnPolicyAsync"]="returnPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchReturnPolicyAsync"]="returnPolicyId= tenantId= api-version= x-api-version: "
     operation_parameters["updateReturnPolicyAsync"]="returnPolicyId= tenantId= api-version= x-api-version: "
     operation_parameters["createReturnRequestAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteReturnRequestAsync"]="returnRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["getReturnRequestAsync"]="returnRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["getReturnRequestsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getReturnRequestsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchReturnRequestAsync"]="returnRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["updateReturnRequestAsync"]="returnRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["createSupportEntitlementAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteSupportEntitlementAsync"]="supportEntitlementId= tenantId= api-version= x-api-version: "
     operation_parameters["getSupportEntitlementAsync"]="supportEntitlementId= tenantId= api-version= x-api-version: "
     operation_parameters["getSupportEntitlementsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSupportEntitlementsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchSupportEntitlementAsync"]="supportEntitlementId= tenantId= api-version= x-api-version: "
     operation_parameters["updateSupportEntitlementAsync"]="supportEntitlementId= tenantId= api-version= x-api-version: "
     operation_parameters["createSupportRequestAttachmentAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteSupportRequestAttachmentAsync"]="supportRequestAttachmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getSupportRequestAttachmentAsync"]="supportRequestAttachmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getSupportRequestAttachmentsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSupportRequestAttachmentsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchSupportRequestAttachmentAsync"]="supportRequestAttachmentId= tenantId= api-version= x-api-version: "
     operation_parameters["updateSupportRequestAttachmentAsync"]="supportRequestAttachmentId= tenantId= api-version= x-api-version: "
     operation_parameters["createSupportRequestAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteSupportRequestAsync"]="supportRequestId= tenantId= api-version= x-api-version: "
@@ -272,6 +296,7 @@ _()
     operation_parameters["getSupportRequestTicketsAsync"]="supportRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["getSupportRequestsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSupportRequestsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchSupportRequestAsync"]="supportRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["relateSupportRequestToAttachmentAsync"]="supportRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["updateSupportRequestAsync"]="supportRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["createSupportTicketPriorityAsync"]="tenantId= api-version= x-api-version: "
@@ -279,12 +304,14 @@ _()
     operation_parameters["getSupportTicketPrioritiesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSupportTicketPrioritiesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSupportTicketPriorityAsync"]="supportTicketPriorityId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchSupportTicketPriorityAsync"]="supportTicketPriorityId= tenantId= api-version= x-api-version: "
     operation_parameters["updateSupportTicketPriorityAsync"]="supportTicketPriorityId= tenantId= api-version= x-api-version: "
     operation_parameters["createSupportTicketTypeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteSupportTicketTypeAsync"]="supportTicketTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["getSupportTicketTypeAsync"]="supportTicketTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["getSupportTicketTypesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSupportTicketTypesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchSupportTicketTypeAsync"]="supportTicketTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["updateSupportTicketTypeAsync"]="supportTicketTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["createSupportTicketAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteSupportTicketAsync"]="supportTicketId= tenantId= api-version= x-api-version: "
@@ -295,6 +322,7 @@ _()
     operation_parameters["getSupportTicketConversationsAsync"]="supportTicketId= tenantId= api-version= x-api-version: "
     operation_parameters["getSupportTicketsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSupportTicketsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchSupportTicketAsync"]="supportTicketId= tenantId= api-version= x-api-version: "
     operation_parameters["relateSupportTicketToConversationAsync"]="supportTicketId= tenantId= api-version= x-api-version: "
     operation_parameters["updateSupportTicketAsync"]="supportTicketId= tenantId= api-version= x-api-version: "
     operation_parameters["createWarrantyPolicyAsync"]="tenantId= api-version= x-api-version: "
@@ -302,12 +330,14 @@ _()
     operation_parameters["getWarrantyPoliciesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getWarrantyPoliciesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getWarrantyPolicyAsync"]="warrantyPolicyId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchWarrantyPolicyAsync"]="warrantyPolicyId= tenantId= api-version= x-api-version: "
     operation_parameters["updateWarrantyPolicyAsync"]="warrantyPolicyId= tenantId= api-version= x-api-version: "
     operation_parameters["createWarrantyRequestAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteWarrantyRequestAsync"]="warrantyRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["getWarrantyRequestAsync"]="warrantyRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["getWarrantyRequestsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getWarrantyRequestsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchWarrantyRequestAsync"]="warrantyRequestId= tenantId= api-version= x-api-version: "
     operation_parameters["updateWarrantyRequestAsync"]="warrantyRequestId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters

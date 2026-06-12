@@ -71,6 +71,11 @@ _()
     declare -A operations
     operations["getAndStoreTokens"]=1
     operations["isRequestValidAsync"]=1
+    operations["deleteSystemBusinessDomain"]=1
+    operations["getSystemBusinessDomainById"]=1
+    operations["getSystemBusinessDomains"]=1
+    operations["getSystemBusinessDomainsCount"]=1
+    operations["verifySystemBusinessDomain"]=1
     operations["deleteSystemCart"]=1
     operations["getSystemCartById"]=1
     operations["getSystemCarts"]=1
@@ -81,6 +86,7 @@ _()
     operations["getSystemContactOptionById"]=1
     operations["getSystemContactOptions"]=1
     operations["getSystemContactOptionsCount"]=1
+    operations["patchSystemContactOption"]=1
     operations["updateSystemContactOption"]=1
     operations["adminPreviewBasicEmailTemplate"]=1
     operations["adminSendBasicEmail"]=1
@@ -127,6 +133,7 @@ _()
     operations["getSystemOptionByKey"]=1
     operations["getSystemOptions"]=1
     operations["getSystemOptionsCount"]=1
+    operations["patchSystemOption"]=1
     operations["updateSystemOption"]=1
     operations["upsertSystemOption"]=1
     operations["getSystemOverview"]=1
@@ -135,12 +142,14 @@ _()
     operations["getSystemPortalById"]=1
     operations["getSystemPortals"]=1
     operations["getSystemPortalsCount"]=1
+    operations["patchSystemPortal"]=1
     operations["updateSystemPortal"]=1
     operations["createSystemTenantOption"]=1
     operations["deleteSystemTenantOption"]=1
     operations["getSystemTenantOptionById"]=1
     operations["getSystemTenantOptions"]=1
     operations["getSystemTenantOptionsCount"]=1
+    operations["patchSystemTenantOption"]=1
     operations["updateSystemTenantOption"]=1
     operations["adminPreviewTenantEmail"]=1
     operations["adminSendTenantEmail"]=1
@@ -151,12 +160,14 @@ _()
     operations["getExtendedTenantsCount"]=1
     operations["getTenant"]=1
     operations["getTenantsCount"]=1
+    operations["patchTenant"]=1
     operations["updateTenant"]=1
     operations["createSystemUserOption"]=1
     operations["deleteSystemUserOption"]=1
     operations["getSystemUserOptionById"]=1
     operations["getSystemUserOptions"]=1
     operations["getSystemUserOptionsCount"]=1
+    operations["patchSystemUserOption"]=1
     operations["updateSystemUserOption"]=1
     operations["adminPreviewUserEmailTemplate"]=1
     operations["adminSendUserEmail"]=1
@@ -168,6 +179,7 @@ _()
     operations["getUserAsync"]=1
     operations["getUsersAsync"]=1
     operations["getUsersCountAsync"]=1
+    operations["patchAccountHolderAsync"]=1
     operations["updateAccountHolderAsync"]=1
 
     # An associative array of operations to their parameters
@@ -175,6 +187,11 @@ _()
     declare -A operation_parameters
     operation_parameters["getAndStoreTokens"]="api-version= x-api-version: "
     operation_parameters["isRequestValidAsync"]="api-version= x-api-version: "
+    operation_parameters["deleteSystemBusinessDomain"]="businessDomainId= api-version= x-api-version: "
+    operation_parameters["getSystemBusinessDomainById"]="businessDomainId= api-version= x-api-version: "
+    operation_parameters["getSystemBusinessDomains"]="api-version= x-api-version: "
+    operation_parameters["getSystemBusinessDomainsCount"]="api-version= x-api-version: "
+    operation_parameters["verifySystemBusinessDomain"]="businessDomainId= api-version= x-api-version: "
     operation_parameters["deleteSystemCart"]="cartId= api-version= x-api-version: "
     operation_parameters["getSystemCartById"]="cartId= api-version= x-api-version: "
     operation_parameters["getSystemCarts"]="api-version= x-api-version: "
@@ -185,6 +202,7 @@ _()
     operation_parameters["getSystemContactOptionById"]="contactId= optionId= api-version= x-api-version: "
     operation_parameters["getSystemContactOptions"]="contactId= portalId= api-version= x-api-version: "
     operation_parameters["getSystemContactOptionsCount"]="contactId= portalId= api-version= x-api-version: "
+    operation_parameters["patchSystemContactOption"]="contactId= optionId= api-version= x-api-version: "
     operation_parameters["updateSystemContactOption"]="contactId= optionId= api-version= x-api-version: "
     operation_parameters["adminPreviewBasicEmailTemplate"]="api-version= x-api-version: "
     operation_parameters["adminSendBasicEmail"]="api-version= x-api-version: "
@@ -231,6 +249,7 @@ _()
     operation_parameters["getSystemOptionByKey"]="key= portalId= api-version= x-api-version: "
     operation_parameters["getSystemOptions"]="portalId= api-version= x-api-version: "
     operation_parameters["getSystemOptionsCount"]="portalId= api-version= x-api-version: "
+    operation_parameters["patchSystemOption"]="optionId= api-version= x-api-version: "
     operation_parameters["updateSystemOption"]="optionId= api-version= x-api-version: "
     operation_parameters["upsertSystemOption"]="key= portalId= api-version= x-api-version: "
     operation_parameters["getSystemOverview"]="api-version= x-api-version: "
@@ -239,12 +258,14 @@ _()
     operation_parameters["getSystemPortalById"]="portalId= api-version= x-api-version: "
     operation_parameters["getSystemPortals"]="api-version= x-api-version: "
     operation_parameters["getSystemPortalsCount"]="api-version= x-api-version: "
+    operation_parameters["patchSystemPortal"]="portalId= api-version= x-api-version: "
     operation_parameters["updateSystemPortal"]="portalId= api-version= x-api-version: "
     operation_parameters["createSystemTenantOption"]="tenantId= key= portalId= api-version= x-api-version: "
     operation_parameters["deleteSystemTenantOption"]="tenantId= optionId= api-version= x-api-version: "
     operation_parameters["getSystemTenantOptionById"]="tenantId= optionId= api-version= x-api-version: "
     operation_parameters["getSystemTenantOptions"]="tenantId= portalId= api-version= x-api-version: "
     operation_parameters["getSystemTenantOptionsCount"]="tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["patchSystemTenantOption"]="tenantId= optionId= api-version= x-api-version: "
     operation_parameters["updateSystemTenantOption"]="tenantId= optionId= api-version= x-api-version: "
     operation_parameters["adminPreviewTenantEmail"]="tenantId= api-version= x-api-version: "
     operation_parameters["adminSendTenantEmail"]="tenantId= api-version= x-api-version: "
@@ -255,12 +276,14 @@ _()
     operation_parameters["getExtendedTenantsCount"]="api-version= x-api-version: "
     operation_parameters["getTenant"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantsCount"]="api-version= x-api-version: "
+    operation_parameters["patchTenant"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateTenant"]="tenantId= api-version= x-api-version: "
     operation_parameters["createSystemUserOption"]="userId= key= portalId= api-version= x-api-version: "
     operation_parameters["deleteSystemUserOption"]="userId= optionId= api-version= x-api-version: "
     operation_parameters["getSystemUserOptionById"]="userId= optionId= api-version= x-api-version: "
     operation_parameters["getSystemUserOptions"]="userId= portalId= api-version= x-api-version: "
     operation_parameters["getSystemUserOptionsCount"]="userId= portalId= api-version= x-api-version: "
+    operation_parameters["patchSystemUserOption"]="userId= optionId= api-version= x-api-version: "
     operation_parameters["updateSystemUserOption"]="userId= optionId= api-version= x-api-version: "
     operation_parameters["adminPreviewUserEmailTemplate"]="userId= api-version= x-api-version: "
     operation_parameters["adminSendUserEmail"]="userId= api-version= x-api-version: "
@@ -272,6 +295,7 @@ _()
     operation_parameters["getUserAsync"]="userId= api-version= x-api-version: "
     operation_parameters["getUsersAsync"]="api-version= x-api-version: "
     operation_parameters["getUsersCountAsync"]="api-version= x-api-version: "
+    operation_parameters["patchAccountHolderAsync"]="userId= api-version= x-api-version: "
     operation_parameters["updateAccountHolderAsync"]="userId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
